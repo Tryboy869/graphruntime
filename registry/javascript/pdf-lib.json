@@ -1,0 +1,6787 @@
+{
+  "meta": {
+    "projet": "src",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "typescript": 139
+    }
+  },
+  "stats": {
+    "fichiers_total": 139,
+    "edges_total": 452,
+    "edges_circulaires": 34,
+    "noeuds_centraux": 20,
+    "noeuds_feuilles": 2,
+    "noeuds_hubs": 4,
+    "points_entree": 12,
+    "fichier_plus_appele": "core/objects/PDFRef.ts"
+  },
+  "noeuds": {
+    "index.ts": {
+      "fichier": "index.ts",
+      "langage": "typescript",
+      "lignes": 4,
+      "taille_bytes": 129,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/PDFEmbeddedFile.ts": {
+      "fichier": "api/PDFEmbeddedFile.ts",
+      "langage": "typescript",
+      "lignes": 90,
+      "taille_bytes": 3213,
+      "entrees": [
+        "Embeddable",
+        "FileEmbedder",
+        "PDFDocument"
+      ],
+      "sorties": [
+        "const AF",
+        "const EFNames",
+        "const EmbeddedFiles",
+        "const Names",
+        "const ref"
+      ],
+      "appelle": [
+        "api/Embeddable.ts",
+        "api/PDFDocument.ts",
+        "core/embedders/FileEmbedder.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/PDFEmbeddedPage.ts": {
+      "fichier": "api/PDFEmbeddedPage.ts",
+      "langage": "typescript",
+      "lignes": 104,
+      "taille_bytes": 3323,
+      "entrees": [
+        "Embeddable",
+        "PDFDocument"
+      ],
+      "sorties": [],
+      "appelle": [
+        "api/Embeddable.ts",
+        "api/PDFDocument.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts",
+        "api/PDFPage.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/PDFPageOptions.ts": {
+      "fichier": "api/PDFPageOptions.ts",
+      "langage": "typescript",
+      "lignes": 158,
+      "taille_bytes": 3334,
+      "entrees": [
+        "PDFFont"
+      ],
+      "sorties": [
+        "export enum",
+        "export interface"
+      ],
+      "appelle": [
+        "api/PDFFont.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/PDFPage.ts": {
+      "fichier": "api/PDFPage.ts",
+      "langage": "typescript",
+      "lignes": 1621,
+      "taille_bytes": 53425,
+      "entrees": [
+        "PDFDocument",
+        "PDFEmbeddedPage",
+        "PDFFont",
+        "PDFImage"
+      ],
+      "sorties": [
+        "const Rotate",
+        "const annot",
+        "const annots",
+        "const arr",
+        "const artBox",
+        "const bleedBox",
+        "const contentStream",
+        "const cropBox",
+        "const degreesAngle",
+        "const dict",
+        "const dummyRef",
+        "const encodedLines",
+        "const end",
+        "const endRef",
+        "const font",
+        "const fontSize",
+        "const graphicsState",
+        "const graphicsStateKey",
+        "const hasArtBox",
+        "const hasBleedBox",
+        "const hasCropBox",
+        "const hasTrimBox",
+        "const inkLists",
+        "const key",
+        "const lines",
+        "const list",
+        "const mediaBox",
+        "const newFont",
+        "const newFontKey",
+        "const oldFont",
+        "const oldFontKey",
+        "const pageLeaf",
+        "const pageRef",
+        "const selectors",
+        "const start",
+        "const startRef",
+        "const textWidth",
+        "const trimBox",
+        "const wordBreaks",
+        "const xObjectKey",
+        "const xScale",
+        "const yScale"
+      ],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/PDFEmbeddedPage.ts",
+        "api/PDFFont.ts",
+        "api/PDFImage.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts",
+        "api/form/PDFButton.ts",
+        "api/form/PDFCheckBox.ts",
+        "api/form/PDFDropdown.ts",
+        "api/form/PDFForm.ts",
+        "api/form/PDFOptionList.ts",
+        "api/form/PDFRadioGroup.ts",
+        "api/form/PDFTextField.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "api/errors.ts": {
+      "fichier": "api/errors.ts",
+      "langage": "typescript",
+      "lignes": 111,
+      "taille_bytes": 3741,
+      "entrees": [],
+      "sorties": [
+        "const actualType",
+        "const expectedType",
+        "const msg",
+        "export class"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/PDFFont.ts": {
+      "fichier": "api/PDFFont.ts",
+      "langage": "typescript",
+      "lignes": 154,
+      "taille_bytes": 5073,
+      "entrees": [
+        "Embeddable",
+        "PDFDocument"
+      ],
+      "sorties": [
+        "export type"
+      ],
+      "appelle": [
+        "api/Embeddable.ts",
+        "api/PDFDocument.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts",
+        "api/PDFPage.ts",
+        "api/PDFPageOptions.ts",
+        "api/form/PDFButton.ts",
+        "api/form/PDFDropdown.ts",
+        "api/form/PDFField.ts",
+        "api/form/PDFForm.ts",
+        "api/form/PDFOptionList.ts",
+        "api/form/PDFTextField.ts",
+        "api/form/appearances.ts",
+        "api/text/layout.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "api/colors.ts": {
+      "fichier": "api/colors.ts",
+      "langage": "typescript",
+      "lignes": 104,
+      "taille_bytes": 2914,
+      "entrees": [],
+      "sorties": [
+        "export const",
+        "export enum",
+        "export interface",
+        "export type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/PDFJavaScript.ts": {
+      "fichier": "api/PDFJavaScript.ts",
+      "langage": "typescript",
+      "lignes": 82,
+      "taille_bytes": 2720,
+      "entrees": [
+        "Embeddable",
+        "JavaScriptEmbedder",
+        "PDFDocument"
+      ],
+      "sorties": [
+        "const JSNames",
+        "const Javascript",
+        "const Names",
+        "const ref"
+      ],
+      "appelle": [
+        "api/Embeddable.ts",
+        "api/PDFDocument.ts",
+        "core/embedders/JavaScriptEmbedder.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/objects.ts": {
+      "fichier": "api/objects.ts",
+      "langage": "typescript",
+      "lignes": 10,
+      "taille_bytes": 370,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/StandardFonts.ts": {
+      "fichier": "api/StandardFonts.ts",
+      "langage": "typescript",
+      "lignes": 16,
+      "taille_bytes": 523,
+      "entrees": [],
+      "sorties": [
+        "export enum"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/Embeddable.ts": {
+      "fichier": "api/Embeddable.ts",
+      "langage": "typescript",
+      "lignes": 7,
+      "taille_bytes": 180,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "api/PDFDocument.ts",
+        "api/PDFEmbeddedFile.ts",
+        "api/PDFEmbeddedPage.ts",
+        "api/PDFFont.ts",
+        "api/PDFImage.ts",
+        "api/PDFJavaScript.ts"
+      ],
+      "type_noeud": "feuille"
+    },
+    "api/rotations.ts": {
+      "fichier": "api/rotations.ts",
+      "langage": "typescript",
+      "lignes": 87,
+      "taille_bytes": 2634,
+      "entrees": [],
+      "sorties": [
+        "const quadrants",
+        "const rotation",
+        "export const",
+        "export enum",
+        "export interface",
+        "export type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/index.ts": {
+      "fichier": "api/index.ts",
+      "langage": "typescript",
+      "lignes": 20,
+      "taille_bytes": 870,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/operations.ts": {
+      "fichier": "api/operations.ts",
+      "langage": "typescript",
+      "lignes": 800,
+      "taille_bytes": 22159,
+      "entrees": [],
+      "sorties": [
+        "const KAPPA",
+        "const background",
+        "const borderWidth",
+        "const centerX",
+        "const centerY",
+        "const checkMark",
+        "const checkMarkSize",
+        "const clipHeight",
+        "const clipWidth",
+        "const clipX",
+        "const clipY",
+        "const clippingArea",
+        "const dot",
+        "const drawEllipseCurves",
+        "const height",
+        "const highlights",
+        "const line",
+        "const lineHeight",
+        "const lines",
+        "const markedContent",
+        "const operators",
+        "const outline",
+        "const outlineScale",
+        "const ox",
+        "const oy",
+        "const p1x",
+        "const p1y",
+        "const p2x",
+        "const p2y",
+        "const p3x",
+        "const p3y",
+        "const padding",
+        "const size",
+        "const width",
+        "const xScale",
+        "const xe",
+        "const xm",
+        "const yScale",
+        "const ye",
+        "const ym",
+        "export const",
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/PDFDocument.ts": {
+      "fichier": "api/PDFDocument.ts",
+      "langage": "typescript",
+      "lignes": 1395,
+      "taille_bytes": 49174,
+      "entrees": [
+        "Embeddable",
+        "FileEmbedder",
+        "JavaScriptEmbedder",
+        "PDFEmbeddedFile",
+        "PDFEmbeddedPage",
+        "PDFFont",
+        "PDFForm",
+        "PDFImage",
+        "PDFJavaScript",
+        "PDFObject",
+        "PDFPage",
+        "PDFRef"
+      ],
+      "sorties": [
+        "const Writer",
+        "const acroForm",
+        "const annotations",
+        "const author",
+        "const base64",
+        "const box",
+        "const bytes",
+        "const catalog",
+        "const contentPages",
+        "const context",
+        "const copiedPage",
+        "const copiedPages",
+        "const copier",
+        "const creationDate",
+        "const creator",
+        "const currPage",
+        "const dims",
+        "const embeddedFile",
+        "const embeddedPages",
+        "const embedder",
+        "const existingInfo",
+        "const fontkit",
+        "const form",
+        "const info",
+        "const javaScript",
+        "const key",
+        "const keywords",
+        "const matrix",
+        "const maybeCopyPage",
+        "const modificationDate",
+        "const newInfo",
+        "const nextPage",
+        "const now",
+        "const page",
+        "const pageCount",
+        "const pageTree",
+        "const pageTreeRef",
+        "const pages",
+        "const parentRef",
+        "const pdfCopy",
+        "const pdfFont",
+        "const pdfImage",
+        "const pdfLib",
+        "const prefs",
+        "const producer",
+        "const ref",
+        "const srcDoc",
+        "const srcPage",
+        "const srcPages",
+        "const subject",
+        "const title",
+        "function assertIsLiteralOrHexString"
+      ],
+      "appelle": [
+        "api/Embeddable.ts",
+        "api/PDFEmbeddedFile.ts",
+        "api/PDFEmbeddedPage.ts",
+        "api/PDFFont.ts",
+        "api/PDFImage.ts",
+        "api/PDFJavaScript.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFForm.ts",
+        "core/embedders/FileEmbedder.ts",
+        "core/embedders/JavaScriptEmbedder.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFEmbeddedFile.ts",
+        "api/PDFEmbeddedPage.ts",
+        "api/PDFFont.ts",
+        "api/PDFImage.ts",
+        "api/PDFJavaScript.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFButton.ts",
+        "api/form/PDFCheckBox.ts",
+        "api/form/PDFDropdown.ts",
+        "api/form/PDFField.ts",
+        "api/form/PDFForm.ts",
+        "api/form/PDFOptionList.ts",
+        "api/form/PDFRadioGroup.ts",
+        "api/form/PDFSignature.ts",
+        "api/form/PDFTextField.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "api/svgPath.ts": {
+      "fichier": "api/svgPath.ts",
+      "langage": "typescript",
+      "lignes": 489,
+      "taille_bytes": 9545,
+      "entrees": [],
+      "sorties": [
+        "const a00",
+        "const a01",
+        "const a10",
+        "const a11",
+        "const apply",
+        "const arcToSegments",
+        "const bez",
+        "const cmd",
+        "const cmds",
+        "const cosTh",
+        "const parameters",
+        "const parse",
+        "const result",
+        "const ret",
+        "const runners",
+        "const segmentToBezier",
+        "const segments",
+        "const segs",
+        "const sinTh",
+        "const solveArc",
+        "const th",
+        "const th0",
+        "const th1",
+        "const th2",
+        "const th3",
+        "const thHalf",
+        "const x0",
+        "const x1",
+        "const x2",
+        "const x3",
+        "const xc",
+        "const y0",
+        "const y1",
+        "const y2",
+        "const y3",
+        "const yc",
+        "export const",
+        "interface Cmd",
+        "interface CmdToOperatorsMap",
+        "type Bezier",
+        "type Segment"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/PDFDocumentOptions.ts": {
+      "fichier": "api/PDFDocumentOptions.ts",
+      "langage": "typescript",
+      "lignes": 44,
+      "taille_bytes": 951,
+      "entrees": [],
+      "sorties": [
+        "export enum",
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/sizes.ts": {
+      "fichier": "api/sizes.ts",
+      "langage": "typescript",
+      "lignes": 52,
+      "taille_bytes": 2297,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/PDFImage.ts": {
+      "fichier": "api/PDFImage.ts",
+      "langage": "typescript",
+      "lignes": 143,
+      "taille_bytes": 4766,
+      "entrees": [
+        "Embeddable",
+        "PDFDocument"
+      ],
+      "sorties": [
+        "const imgHeightScale",
+        "const imgWidthScale",
+        "const scale",
+        "export type"
+      ],
+      "appelle": [
+        "api/Embeddable.ts",
+        "api/PDFDocument.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFButton.ts",
+        "api/form/PDFField.ts",
+        "api/form/PDFTextField.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "api/operators.ts": {
+      "fichier": "api/operators.ts",
+      "langage": "typescript",
+      "lignes": 360,
+      "taille_bytes": 10164,
+      "entrees": [],
+      "sorties": [
+        "export const",
+        "export enum"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/form/PDFField.ts": {
+      "fichier": "api/form/PDFField.ts",
+      "langage": "typescript",
+      "lignes": 521,
+      "taille_bytes": 16259,
+      "entrees": [
+        "PDFDocument",
+        "PDFFont",
+        "PDFImage"
+      ],
+      "sorties": [
+        "const Resources",
+        "const ac",
+        "const adj",
+        "const ap",
+        "const appearance",
+        "const appearanceDict",
+        "const backgroundColor",
+        "const borderColor",
+        "const borderWidth",
+        "const bs",
+        "const caption",
+        "const da",
+        "const degreesAngle",
+        "const height",
+        "const hidden",
+        "const imageDims",
+        "const imageName",
+        "const newDa",
+        "const offStreamRef",
+        "const onStreamRef",
+        "const options",
+        "const pageRef",
+        "const rect",
+        "const rectangle",
+        "const rotate",
+        "const rotation",
+        "const stream",
+        "const streamRef",
+        "const textColor",
+        "const widget",
+        "const width",
+        "export const",
+        "export interface"
+      ],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/PDFFont.ts",
+        "api/PDFImage.ts"
+      ],
+      "est_appele_par": [
+        "api/form/PDFButton.ts",
+        "api/form/PDFCheckBox.ts",
+        "api/form/PDFDropdown.ts",
+        "api/form/PDFForm.ts",
+        "api/form/PDFOptionList.ts",
+        "api/form/PDFRadioGroup.ts",
+        "api/form/PDFSignature.ts",
+        "api/form/PDFTextField.ts",
+        "api/form/appearances.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "api/form/PDFOptionList.ts": {
+      "fichier": "api/form/PDFOptionList.ts",
+      "langage": "typescript",
+      "lignes": 571,
+      "taille_bytes": 20358,
+      "entrees": [
+        "PDFDocument",
+        "PDFField",
+        "PDFFont",
+        "PDFPage"
+      ],
+      "sorties": [
+        "const apProvider",
+        "const appearances",
+        "const existingOptions",
+        "const existingValues",
+        "const font",
+        "const hasAppearances",
+        "const newOptions",
+        "const optionObjects",
+        "const options",
+        "const optionsArr",
+        "const rawOptions",
+        "const selected",
+        "const validOptions",
+        "const values",
+        "const widget",
+        "const widgetRef",
+        "const widgets"
+      ],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/PDFFont.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFField.ts"
+      ],
+      "est_appele_par": [
+        "api/form/PDFForm.ts",
+        "api/form/appearances.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/form/appearances.ts": {
+      "fichier": "api/form/appearances.ts",
+      "langage": "typescript",
+      "lignes": 665,
+      "taille_bytes": 19177,
+      "entrees": [
+        "PDFButton",
+        "PDFCheckBox",
+        "PDFDropdown",
+        "PDFField",
+        "PDFFont",
+        "PDFOptionList",
+        "PDFRadioGroup",
+        "PDFSignature",
+        "PDFTextField"
+      ],
+      "sorties": [
+        "const ap",
+        "const black",
+        "const blue",
+        "const borderColor",
+        "const borderWidth",
+        "const bounds",
+        "const bs",
+        "const captions",
+        "const colorRegex",
+        "const da",
+        "const daMatch",
+        "const defaultFontSize",
+        "const downBackgroundColor",
+        "const downLayout",
+        "const downText",
+        "const fieldColor",
+        "const fieldFontSize",
+        "const fontSize",
+        "const getDefaultColor",
+        "const getDefaultFontSize",
+        "const layout",
+        "const line",
+        "const normalBackgroundColor",
+        "const normalLayout",
+        "const normalText",
+        "const options",
+        "const padding",
+        "const rectangle",
+        "const rotate",
+        "const rotation",
+        "const selected",
+        "const selectedLines",
+        "const text",
+        "const textColor",
+        "const tfRegex",
+        "const updateDefaultAppearance",
+        "const widgetColor",
+        "const widgetFontSize",
+        "export const",
+        "export type",
+        "type AppearanceOrMapping",
+        "type ButtonAppearanceProvider",
+        "type CheckBoxAppearanceProvider",
+        "type DropdownAppearanceProvider",
+        "type OptionListAppearanceProvider",
+        "type RadioGroupAppearanceProvider",
+        "type SignatureAppearanceProvider",
+        "type TextFieldAppearanceProvider"
+      ],
+      "appelle": [
+        "api/PDFFont.ts",
+        "api/form/PDFButton.ts",
+        "api/form/PDFCheckBox.ts",
+        "api/form/PDFDropdown.ts",
+        "api/form/PDFField.ts",
+        "api/form/PDFOptionList.ts",
+        "api/form/PDFRadioGroup.ts",
+        "api/form/PDFSignature.ts",
+        "api/form/PDFTextField.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "api/form/index.ts": {
+      "fichier": "api/form/index.ts",
+      "langage": "typescript",
+      "lignes": 10,
+      "taille_bytes": 639,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/form/PDFDropdown.ts": {
+      "fichier": "api/form/PDFDropdown.ts",
+      "langage": "typescript",
+      "lignes": 652,
+      "taille_bytes": 23370,
+      "entrees": [
+        "PDFDocument",
+        "PDFField",
+        "PDFFont",
+        "PDFPage"
+      ],
+      "sorties": [
+        "const apProvider",
+        "const appearances",
+        "const existingOptions",
+        "const existingValues",
+        "const font",
+        "const hasAppearances",
+        "const hasCustomOption",
+        "const newOptions",
+        "const optionObjects",
+        "const options",
+        "const optionsArr",
+        "const rawOptions",
+        "const selected",
+        "const validOptions",
+        "const values",
+        "const widget",
+        "const widgetRef",
+        "const widgets"
+      ],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/PDFFont.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFField.ts"
+      ],
+      "est_appele_par": [
+        "api/form/PDFForm.ts",
+        "api/form/appearances.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/form/PDFCheckBox.ts": {
+      "fichier": "api/form/PDFCheckBox.ts",
+      "langage": "typescript",
+      "lignes": 262,
+      "taille_bytes": 9044,
+      "entrees": [
+        "PDFDocument",
+        "PDFField",
+        "PDFPage"
+      ],
+      "sorties": [
+        "const apProvider",
+        "const appearances",
+        "const normal",
+        "const onValue",
+        "const state",
+        "const widget",
+        "const widgetRef",
+        "const widgets"
+      ],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFField.ts"
+      ],
+      "est_appele_par": [
+        "api/form/PDFForm.ts",
+        "api/form/appearances.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/form/PDFForm.ts": {
+      "fichier": "api/form/PDFForm.ts",
+      "langage": "typescript",
+      "lignes": 852,
+      "taille_bytes": 28356,
+      "entrees": [
+        "PDFButton",
+        "PDFCheckBox",
+        "PDFDocument",
+        "PDFDropdown",
+        "PDFField",
+        "PDFFont",
+        "PDFOptionList",
+        "PDFPage",
+        "PDFRadioGroup",
+        "PDFSignature",
+        "PDFTextField"
+      ],
+      "sorties": [
+        "const addFieldToParent",
+        "const allFields",
+        "const button",
+        "const checkBox",
+        "const child",
+        "const comboBox",
+        "const convertToPDFField",
+        "const entries",
+        "const field",
+        "const fieldKids",
+        "const fields",
+        "const kidsCount",
+        "const listBox",
+        "const name",
+        "const namePart",
+        "const nameParts",
+        "const node",
+        "const nodeRef",
+        "const operators",
+        "const page",
+        "const pageRef",
+        "const pages",
+        "const parent",
+        "const parts",
+        "const radioButton",
+        "const rectangle",
+        "const ref",
+        "const res",
+        "const splitFieldName",
+        "const text",
+        "const value",
+        "const widget",
+        "const widgetRef",
+        "const widgets",
+        "const xObjectKey",
+        "export interface"
+      ],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/PDFFont.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFButton.ts",
+        "api/form/PDFCheckBox.ts",
+        "api/form/PDFDropdown.ts",
+        "api/form/PDFField.ts",
+        "api/form/PDFOptionList.ts",
+        "api/form/PDFRadioGroup.ts",
+        "api/form/PDFSignature.ts",
+        "api/form/PDFTextField.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/form/PDFTextField.ts": {
+      "fichier": "api/form/PDFTextField.ts",
+      "langage": "typescript",
+      "lignes": 826,
+      "taille_bytes": 29477,
+      "entrees": [
+        "PDFDocument",
+        "PDFField",
+        "PDFFont",
+        "PDFImage",
+        "PDFPage"
+      ],
+      "sorties": [
+        "const alignment",
+        "const apProvider",
+        "const appearances",
+        "const fieldAlignment",
+        "const font",
+        "const hasAppearances",
+        "const maxLength",
+        "const msg",
+        "const quadding",
+        "const streamRef",
+        "const text",
+        "const value",
+        "const widget",
+        "const widgetRef",
+        "const widgets"
+      ],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/PDFFont.ts",
+        "api/PDFImage.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFField.ts"
+      ],
+      "est_appele_par": [
+        "api/form/PDFForm.ts",
+        "api/form/appearances.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/form/PDFRadioGroup.ts": {
+      "fichier": "api/form/PDFRadioGroup.ts",
+      "langage": "typescript",
+      "lignes": 471,
+      "taille_bytes": 17334,
+      "entrees": [
+        "PDFDocument",
+        "PDFField",
+        "PDFPage"
+      ],
+      "sorties": [
+        "const apProvider",
+        "const apStateValue",
+        "const appearances",
+        "const exportOptions",
+        "const exportValues",
+        "const normal",
+        "const onOptions",
+        "const onValue",
+        "const onValues",
+        "const state",
+        "const validOptions",
+        "const value",
+        "const widget",
+        "const widgetRef",
+        "const widgets"
+      ],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFField.ts"
+      ],
+      "est_appele_par": [
+        "api/form/PDFForm.ts",
+        "api/form/appearances.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/form/PDFSignature.ts": {
+      "fichier": "api/form/PDFSignature.ts",
+      "langage": "typescript",
+      "lignes": 53,
+      "taille_bytes": 1610,
+      "entrees": [
+        "PDFDocument",
+        "PDFField"
+      ],
+      "sorties": [],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/form/PDFField.ts"
+      ],
+      "est_appele_par": [
+        "api/form/PDFForm.ts",
+        "api/form/appearances.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/form/PDFButton.ts": {
+      "fichier": "api/form/PDFButton.ts",
+      "langage": "typescript",
+      "lignes": 267,
+      "taille_bytes": 9139,
+      "entrees": [
+        "PDFDocument",
+        "PDFField",
+        "PDFFont",
+        "PDFImage",
+        "PDFPage"
+      ],
+      "sorties": [
+        "const apProvider",
+        "const appearances",
+        "const font",
+        "const hasAppearances",
+        "const streamRef",
+        "const widget",
+        "const widgetRef",
+        "const widgets"
+      ],
+      "appelle": [
+        "api/PDFDocument.ts",
+        "api/PDFFont.ts",
+        "api/PDFImage.ts",
+        "api/PDFPage.ts",
+        "api/form/PDFField.ts"
+      ],
+      "est_appele_par": [
+        "api/form/PDFForm.ts",
+        "api/form/appearances.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "api/image/alignment.ts": {
+      "fichier": "api/image/alignment.ts",
+      "langage": "typescript",
+      "lignes": 5,
+      "taille_bytes": 70,
+      "entrees": [],
+      "sorties": [
+        "export enum"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/image/index.ts": {
+      "fichier": "api/image/index.ts",
+      "langage": "typescript",
+      "lignes": 1,
+      "taille_bytes": 41,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/text/alignment.ts": {
+      "fichier": "api/text/alignment.ts",
+      "langage": "typescript",
+      "lignes": 5,
+      "taille_bytes": 69,
+      "entrees": [],
+      "sorties": [
+        "export enum"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/text/index.ts": {
+      "fichier": "api/text/index.ts",
+      "langage": "typescript",
+      "lignes": 2,
+      "taille_bytes": 77,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/text/layout.ts": {
+      "fichier": "api/text/layout.ts",
+      "langage": "typescript",
+      "lignes": 343,
+      "taille_bytes": 8747,
+      "entrees": [
+        "PDFFont"
+      ],
+      "sorties": [
+        "const MAX_FONT_SIZE",
+        "const MIN_FONT_SIZE",
+        "const cellCenter",
+        "const cellHeight",
+        "const cellWidth",
+        "const cells",
+        "const chars",
+        "const computeCombedFontSize",
+        "const computeFontSize",
+        "const encoded",
+        "const height",
+        "const isLastWord",
+        "const lastIndexOfWhitespace",
+        "const line",
+        "const lineHeight",
+        "const lines",
+        "const remainder",
+        "const splitOutLines",
+        "const textLines",
+        "const tooLong",
+        "const totalHeight",
+        "const width",
+        "const widthOfWord",
+        "const word",
+        "const words",
+        "export const",
+        "export interface"
+      ],
+      "appelle": [
+        "api/PDFFont.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/errors.ts": {
+      "fichier": "core/errors.ts",
+      "langage": "typescript",
+      "lignes": 221,
+      "taille_bytes": 6227,
+      "entrees": [
+        "PDFObject"
+      ],
+      "sorties": [
+        "const expectedTypes",
+        "const msg",
+        "const name",
+        "const streamType",
+        "export class",
+        "export interface"
+      ],
+      "appelle": [
+        "core/objects/PDFObject.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/PDFObjectCopier.ts": {
+      "fichier": "core/PDFObjectCopier.ts",
+      "langage": "typescript",
+      "lignes": 143,
+      "taille_bytes": 5063,
+      "entrees": [
+        "PDFArray",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFObject",
+        "PDFPageLeaf",
+        "PDFRef",
+        "PDFStream"
+      ],
+      "sorties": [
+        "class PDFObjectCopier",
+        "const alreadyMapped",
+        "const cloned",
+        "const clonedArray",
+        "const clonedDict",
+        "const clonedPage",
+        "const clonedStream",
+        "const dereferencedValue",
+        "const entries",
+        "const key",
+        "const newRef",
+        "const value"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts",
+        "core/structures/PDFPageLeaf.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/PDFContext.ts": {
+      "fichier": "core/PDFContext.ts",
+      "langage": "typescript",
+      "lignes": 299,
+      "taille_bytes": 9573,
+      "entrees": [
+        "Ops",
+        "PDFArray",
+        "PDFBool",
+        "PDFContentStream",
+        "PDFDict",
+        "PDFHeader",
+        "PDFHexString",
+        "PDFName",
+        "PDFNull",
+        "PDFNumber",
+        "PDFObject",
+        "PDFOperator",
+        "PDFRawStream",
+        "PDFRef",
+        "PDFStream",
+        "PDFString",
+        "pako"
+      ],
+      "sorties": [
+        "class PDFContext",
+        "const array",
+        "const byAscendingObjectNumber",
+        "const dict",
+        "const entries",
+        "const key",
+        "const keys",
+        "const op",
+        "const preservePDFNull",
+        "const ref",
+        "const result",
+        "const stream",
+        "const type",
+        "const value",
+        "interface LiteralArray",
+        "interface LiteralObject",
+        "type Literal",
+        "type LookupKey"
+      ],
+      "appelle": [
+        "core/document/PDFHeader.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFBool.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNull.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts",
+        "core/objects/PDFString.ts",
+        "core/operators/PDFOperator.ts",
+        "core/structures/PDFContentStream.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFObjectCopier.ts",
+        "core/acroform/PDFAcroCheckBox.ts",
+        "core/acroform/PDFAcroComboBox.ts",
+        "core/acroform/PDFAcroForm.ts",
+        "core/acroform/PDFAcroListBox.ts",
+        "core/acroform/PDFAcroNonTerminal.ts",
+        "core/acroform/PDFAcroPushButton.ts",
+        "core/acroform/PDFAcroRadioButton.ts",
+        "core/acroform/PDFAcroText.ts",
+        "core/annotation/PDFWidgetAnnotation.ts",
+        "core/embedders/CustomFontEmbedder.ts",
+        "core/embedders/FileEmbedder.ts",
+        "core/embedders/JavaScriptEmbedder.ts",
+        "core/embedders/JpegEmbedder.ts",
+        "core/embedders/PDFPageEmbedder.ts",
+        "core/embedders/PngEmbedder.ts",
+        "core/embedders/StandardFontEmbedder.ts",
+        "core/interactive/ViewerPreferences.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/objects/PDFStream.ts",
+        "core/operators/PDFOperator.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFParser.ts",
+        "core/parser/PDFXRefStreamParser.ts",
+        "core/structures/PDFCatalog.ts",
+        "core/structures/PDFContentStream.ts",
+        "core/structures/PDFCrossRefStream.ts",
+        "core/structures/PDFObjectStream.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/structures/PDFPageTree.ts",
+        "core/writers/PDFStreamWriter.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "hub"
+    },
+    "core/index.ts": {
+      "fichier": "core/index.ts",
+      "langage": "typescript",
+      "lignes": 69,
+      "taille_bytes": 3509,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/document/PDFHeader.ts": {
+      "fichier": "core/document/PDFHeader.ts",
+      "langage": "typescript",
+      "lignes": 49,
+      "taille_bytes": 1356,
+      "entrees": [
+        "CharCodes"
+      ],
+      "sorties": [
+        "class PDFHeader",
+        "const bc",
+        "const initialOffset"
+      ],
+      "appelle": [
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/parser/PDFParser.ts",
+        "core/writers/PDFStreamWriter.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/document/PDFTrailer.ts": {
+      "fichier": "core/document/PDFTrailer.ts",
+      "langage": "typescript",
+      "lignes": 49,
+      "taille_bytes": 1357,
+      "entrees": [
+        "CharCodes"
+      ],
+      "sorties": [
+        "class PDFTrailer",
+        "const initialOffset"
+      ],
+      "appelle": [
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/PDFParser.ts",
+        "core/writers/PDFStreamWriter.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/document/PDFCrossRefSection.ts": {
+      "fichier": "core/document/PDFCrossRefSection.ts",
+      "langage": "typescript",
+      "lignes": 173,
+      "taille_bytes": 4822,
+      "entrees": [
+        "CharCodes",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFCrossRefSection",
+        "const chunk",
+        "const entry",
+        "const entryGen",
+        "const entryOffset",
+        "const firstObjectNumber",
+        "const initialOffset",
+        "const length",
+        "const prevEntry",
+        "const range",
+        "const rangeLength",
+        "const subsection",
+        "const subsectionLength",
+        "export interface"
+      ],
+      "appelle": [
+        "core/objects/PDFRef.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/PDFParser.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/document/PDFTrailerDict.ts": {
+      "fichier": "core/document/PDFTrailerDict.ts",
+      "langage": "typescript",
+      "lignes": 39,
+      "taille_bytes": 943,
+      "entrees": [
+        "CharCodes",
+        "PDFDict"
+      ],
+      "sorties": [
+        "class PDFTrailerDict",
+        "const initialOffset"
+      ],
+      "appelle": [
+        "core/objects/PDFDict.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/operators/PDFOperator.ts": {
+      "fichier": "core/operators/PDFOperator.ts",
+      "langage": "typescript",
+      "lignes": 79,
+      "taille_bytes": 2331,
+      "entrees": [
+        "CharCodes",
+        "PDFArray",
+        "PDFContext",
+        "PDFHexString",
+        "PDFName",
+        "PDFNumber",
+        "PDFObject",
+        "PDFOperatorNames",
+        "PDFString"
+      ],
+      "sorties": [
+        "class PDFOperator",
+        "const arg",
+        "const args",
+        "const initialOffset",
+        "export type"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFString.ts",
+        "core/operators/PDFOperatorNames.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/structures/PDFContentStream.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/operators/PDFOperatorNames.ts": {
+      "fichier": "core/operators/PDFOperatorNames.ts",
+      "langage": "typescript",
+      "lignes": 92,
+      "taille_bytes": 2272,
+      "entrees": [],
+      "sorties": [
+        "enum PDFOperatorNames"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "core/operators/PDFOperator.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/syntax/Keywords.ts": {
+      "fichier": "core/syntax/Keywords.ts",
+      "langage": "typescript",
+      "lignes": 83,
+      "taille_bytes": 1729,
+      "entrees": [
+        "CharCodes"
+      ],
+      "sorties": [
+        "const endstream",
+        "const stream",
+        "export const"
+      ],
+      "appelle": [
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/syntax/Delimiters.ts": {
+      "fichier": "core/syntax/Delimiters.ts",
+      "langage": "typescript",
+      "lignes": 14,
+      "taille_bytes": 502,
+      "entrees": [
+        "CharCodes"
+      ],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/syntax/Numeric.ts": {
+      "fichier": "core/syntax/Numeric.ts",
+      "langage": "typescript",
+      "lignes": 26,
+      "taille_bytes": 719,
+      "entrees": [
+        "CharCodes"
+      ],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/syntax/CharCodes.ts": {
+      "fichier": "core/syntax/CharCodes.ts",
+      "langage": "typescript",
+      "lignes": 62,
+      "taille_bytes": 859,
+      "entrees": [],
+      "sorties": [
+        "enum CharCodes"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "core/document/PDFCrossRefSection.ts",
+        "core/document/PDFHeader.ts",
+        "core/document/PDFTrailer.ts",
+        "core/document/PDFTrailerDict.ts",
+        "core/embedders/PDFPageEmbedder.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFBool.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNull.ts",
+        "core/objects/PDFStream.ts",
+        "core/objects/PDFString.ts",
+        "core/operators/PDFOperator.ts",
+        "core/parser/BaseParser.ts",
+        "core/parser/ByteStream.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFParser.ts",
+        "core/structures/PDFContentStream.ts",
+        "core/structures/PDFObjectStream.ts",
+        "core/syntax/Delimiters.ts",
+        "core/syntax/Irregular.ts",
+        "core/syntax/Keywords.ts",
+        "core/syntax/Numeric.ts",
+        "core/syntax/Whitespace.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "feuille"
+    },
+    "core/syntax/Whitespace.ts": {
+      "fichier": "core/syntax/Whitespace.ts",
+      "langage": "typescript",
+      "lignes": 10,
+      "taille_bytes": 323,
+      "entrees": [
+        "CharCodes"
+      ],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/syntax/Irregular.ts": {
+      "fichier": "core/syntax/Irregular.ts",
+      "langage": "typescript",
+      "lignes": 10,
+      "taille_bytes": 370,
+      "entrees": [
+        "CharCodes"
+      ],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/annotation/AppearanceCharacteristics.ts": {
+      "fichier": "core/annotation/AppearanceCharacteristics.ts",
+      "langage": "typescript",
+      "lignes": 133,
+      "taille_bytes": 3639,
+      "entrees": [
+        "PDFArray",
+        "PDFDict",
+        "PDFHexString",
+        "PDFName",
+        "PDFNumber",
+        "PDFString"
+      ],
+      "sorties": [
+        "class AppearanceCharacteristics",
+        "const AC",
+        "const BC",
+        "const BG",
+        "const CA",
+        "const RC",
+        "const component",
+        "const components"
+      ],
+      "appelle": [
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFString.ts"
+      ],
+      "est_appele_par": [
+        "core/annotation/PDFWidgetAnnotation.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/annotation/flags.ts": {
+      "fichier": "core/annotation/flags.ts",
+      "langage": "typescript",
+      "lignes": 90,
+      "taille_bytes": 3389,
+      "entrees": [],
+      "sorties": [
+        "const flag",
+        "export enum"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/annotation/BorderStyle.ts": {
+      "fichier": "core/annotation/BorderStyle.ts",
+      "langage": "typescript",
+      "lignes": 31,
+      "taille_bytes": 760,
+      "entrees": [
+        "PDFDict",
+        "PDFName",
+        "PDFNumber"
+      ],
+      "sorties": [
+        "class BorderStyle"
+      ],
+      "appelle": [
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts"
+      ],
+      "est_appele_par": [
+        "core/annotation/PDFWidgetAnnotation.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/annotation/PDFAnnotation.ts": {
+      "fichier": "core/annotation/PDFAnnotation.ts",
+      "langage": "typescript",
+      "lignes": 148,
+      "taille_bytes": 3963,
+      "entrees": [
+        "PDFArray",
+        "PDFDict",
+        "PDFName",
+        "PDFNumber",
+        "PDFRef",
+        "PDFStream"
+      ],
+      "sorties": [
+        "class PDFAnnotation",
+        "const AP",
+        "const AS",
+        "const Rect",
+        "const flags",
+        "const numberOrRef"
+      ],
+      "appelle": [
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts"
+      ],
+      "est_appele_par": [
+        "core/annotation/PDFWidgetAnnotation.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/annotation/index.ts": {
+      "fichier": "core/annotation/index.ts",
+      "langage": "typescript",
+      "lignes": 4,
+      "taille_bytes": 313,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/annotation/PDFWidgetAnnotation.ts": {
+      "fichier": "core/annotation/PDFWidgetAnnotation.ts",
+      "langage": "typescript",
+      "lignes": 112,
+      "taille_bytes": 3158,
+      "entrees": [
+        "AppearanceCharacteristics",
+        "BorderStyle",
+        "PDFAnnotation",
+        "PDFContext",
+        "PDFDict",
+        "PDFHexString",
+        "PDFName",
+        "PDFRef",
+        "PDFString"
+      ],
+      "sorties": [
+        "class PDFWidgetAnnotation",
+        "const BS",
+        "const DA",
+        "const MK",
+        "const ac",
+        "const bs",
+        "const da",
+        "const dict",
+        "const key",
+        "const keys",
+        "const normal"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/annotation/AppearanceCharacteristics.ts",
+        "core/annotation/BorderStyle.ts",
+        "core/annotation/PDFAnnotation.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFString.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/PDFAcroTerminal.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/writers/PDFWriter.ts": {
+      "fichier": "core/writers/PDFWriter.ts",
+      "langage": "typescript",
+      "lignes": 156,
+      "taille_bytes": 4904,
+      "entrees": [
+        "CharCodes",
+        "PDFContext",
+        "PDFCrossRefSection",
+        "PDFDict",
+        "PDFHeader",
+        "PDFObject",
+        "PDFObjectStream",
+        "PDFRef",
+        "PDFTrailer",
+        "PDFTrailerDict"
+      ],
+      "sorties": [
+        "class PDFWriter",
+        "const buffer",
+        "const generationNumber",
+        "const header",
+        "const indirectObject",
+        "const indirectObjects",
+        "const objectNumber",
+        "const objectSize",
+        "const refSize",
+        "const trailer",
+        "const trailerDict",
+        "const xref",
+        "const xrefOffset",
+        "export interface"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/document/PDFCrossRefSection.ts",
+        "core/document/PDFHeader.ts",
+        "core/document/PDFTrailer.ts",
+        "core/document/PDFTrailerDict.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts",
+        "core/structures/PDFObjectStream.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/writers/PDFStreamWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/writers/PDFStreamWriter.ts": {
+      "fichier": "core/writers/PDFStreamWriter.ts",
+      "langage": "typescript",
+      "lignes": 123,
+      "taille_bytes": 4134,
+      "entrees": [
+        "PDFContext",
+        "PDFCrossRefStream",
+        "PDFHeader",
+        "PDFInvalidObject",
+        "PDFName",
+        "PDFNumber",
+        "PDFObject",
+        "PDFObjectStream",
+        "PDFRef",
+        "PDFStream",
+        "PDFTrailer",
+        "PDFWriter"
+      ],
+      "sorties": [
+        "class PDFStreamWriter",
+        "const chunk",
+        "const compressedObjects",
+        "const header",
+        "const indirectObject",
+        "const indirectObjects",
+        "const objectStream",
+        "const objectStreamRefs",
+        "const ref",
+        "const shouldNotCompress",
+        "const trailer",
+        "const uncompressedObjects",
+        "const xrefOffset",
+        "const xrefStream",
+        "const xrefStreamRef"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/document/PDFHeader.ts",
+        "core/document/PDFTrailer.ts",
+        "core/objects/PDFInvalidObject.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts",
+        "core/structures/PDFCrossRefStream.ts",
+        "core/structures/PDFObjectStream.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/embedders/CMap.ts": {
+      "fichier": "core/embedders/CMap.ts",
+      "langage": "typescript",
+      "lignes": 70,
+      "taille_bytes": 1989,
+      "entrees": [],
+      "sorties": [
+        "const bfChars",
+        "const cmapCodePointFormat",
+        "const cmapHexFormat",
+        "const cmapHexString",
+        "const fillCmapTemplate",
+        "const glyph",
+        "const hex",
+        "const hs",
+        "const id",
+        "const ls",
+        "const msg",
+        "const unicode",
+        "export const",
+        "type BfChar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/embedders/CustomFontSubsetEmbedder.ts": {
+      "fichier": "core/embedders/CustomFontSubsetEmbedder.ts",
+      "langage": "typescript",
+      "lignes": 84,
+      "taille_bytes": 2505,
+      "entrees": [
+        "CustomFontEmbedder",
+        "PDFHexString"
+      ],
+      "sorties": [
+        "class CustomFontSubsetEmbedder",
+        "const font",
+        "const glyph",
+        "const hexCodes",
+        "const parts",
+        "const subsetGlyphId"
+      ],
+      "appelle": [
+        "core/embedders/CustomFontEmbedder.ts",
+        "core/objects/PDFHexString.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/embedders/PngEmbedder.ts": {
+      "fichier": "core/embedders/PngEmbedder.ts",
+      "langage": "typescript",
+      "lignes": 69,
+      "taille_bytes": 1898,
+      "entrees": [
+        "PDFContext",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PngEmbedder",
+        "const SMask",
+        "const png",
+        "const xObject"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/embedders/FileEmbedder.ts": {
+      "fichier": "core/embedders/FileEmbedder.ts",
+      "langage": "typescript",
+      "lignes": 95,
+      "taille_bytes": 2538,
+      "entrees": [
+        "PDFContext",
+        "PDFHexString",
+        "PDFRef",
+        "PDFString"
+      ],
+      "sorties": [
+        "class FileEmbedder",
+        "const embeddedFileStream",
+        "const embeddedFileStreamRef",
+        "const fileSpecDict",
+        "export enum",
+        "export interface"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFString.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts",
+        "api/PDFEmbeddedFile.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/embedders/CustomFontEmbedder.ts": {
+      "fichier": "core/embedders/CustomFontEmbedder.ts",
+      "langage": "typescript",
+      "lignes": 249,
+      "taille_bytes": 7731,
+      "entrees": [
+        "PDFContext",
+        "PDFHexString",
+        "PDFRef",
+        "PDFString"
+      ],
+      "sorties": [
+        "class CustomFontEmbedder",
+        "const cidFontDict",
+        "const cidFontDictRef",
+        "const cmap",
+        "const cmapStream",
+        "const codePoint",
+        "const currGlyph",
+        "const currGlyphId",
+        "const font",
+        "const fontDescriptor",
+        "const fontDescriptorRef",
+        "const fontDict",
+        "const fontStream",
+        "const fontStreamRef",
+        "const glyphs",
+        "const hexCodes",
+        "const prevGlyph",
+        "const prevGlyphId",
+        "const scale",
+        "const unicodeCMapRef",
+        "const widths",
+        "const yBottom",
+        "const yTop"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFString.ts"
+      ],
+      "est_appele_par": [
+        "core/embedders/CustomFontSubsetEmbedder.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/embedders/PDFPageEmbedder.ts": {
+      "fichier": "core/embedders/PDFPageEmbedder.ts",
+      "langage": "typescript",
+      "lignes": 141,
+      "taille_bytes": 4398,
+      "entrees": [
+        "CharCodes",
+        "PDFArray",
+        "PDFContentStream",
+        "PDFContext",
+        "PDFNumber",
+        "PDFPageLeaf",
+        "PDFRawStream",
+        "PDFRef",
+        "PDFStream"
+      ],
+      "sorties": [
+        "class PDFPageEmbedder",
+        "const bb",
+        "const boundingBoxAdjustedMatrix",
+        "const decodedContents",
+        "const fullPageBoundingBox",
+        "const height",
+        "const mediaBox",
+        "const newline",
+        "const stream",
+        "const width",
+        "const xObject",
+        "export interface"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts",
+        "core/structures/PDFContentStream.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/embedders/JavaScriptEmbedder.ts": {
+      "fichier": "core/embedders/JavaScriptEmbedder.ts",
+      "langage": "typescript",
+      "lignes": 34,
+      "taille_bytes": 879,
+      "entrees": [
+        "PDFContext",
+        "PDFHexString",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class JavaScriptEmbedder",
+        "const jsActionDict"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts",
+        "api/PDFJavaScript.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/embedders/StandardFontEmbedder.ts": {
+      "fichier": "core/embedders/StandardFontEmbedder.ts",
+      "langage": "typescript",
+      "lignes": 130,
+      "taille_bytes": 3898,
+      "entrees": [
+        "PDFContext",
+        "PDFHexString",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class StandardFontEmbedder",
+        "const codePoint",
+        "const codePoints",
+        "const fontDict",
+        "const glyphs",
+        "const hexCodes",
+        "const kernAmount",
+        "const left",
+        "const right",
+        "const scale",
+        "const yBottom",
+        "const yTop",
+        "export interface"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/embedders/JpegEmbedder.ts": {
+      "fichier": "core/embedders/JpegEmbedder.ts",
+      "langage": "typescript",
+      "lignes": 127,
+      "taille_bytes": 3323,
+      "entrees": [
+        "PDFContext",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class JpegEmbedder",
+        "const ChannelToColorSpace",
+        "const MARKERS",
+        "const bitsPerComponent",
+        "const channelByte",
+        "const channelName",
+        "const colorSpace",
+        "const dataView",
+        "const height",
+        "const soi",
+        "const width",
+        "const xObject",
+        "enum ColorSpace"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/embedders/FontFlags.ts": {
+      "fichier": "core/embedders/FontFlags.ts",
+      "langage": "typescript",
+      "lignes": 45,
+      "taille_bytes": 1337,
+      "entrees": [],
+      "sorties": [
+        "const familyClass",
+        "const flags",
+        "const flipBit",
+        "const makeFontFlags",
+        "export const",
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/streams/Stream.ts": {
+      "fichier": "core/streams/Stream.ts",
+      "langage": "typescript",
+      "lignes": 132,
+      "taille_bytes": 2956,
+      "entrees": [],
+      "sorties": [
+        "class Stream",
+        "const b0",
+        "const b1",
+        "const b2",
+        "const b3",
+        "const bytes",
+        "const peekedByte",
+        "const pos",
+        "const strEnd",
+        "const subarray",
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "core/streams/DecodeStream.ts",
+        "core/streams/decode.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/streams/DecodeStream.ts": {
+      "fichier": "core/streams/DecodeStream.ts",
+      "langage": "typescript",
+      "lignes": 170,
+      "taille_bytes": 4132,
+      "entrees": [
+        "Stream"
+      ],
+      "sorties": [
+        "class DecodeStream",
+        "const b0",
+        "const b1",
+        "const b2",
+        "const b3",
+        "const bufEnd",
+        "const buffer",
+        "const buffer2",
+        "const bytes",
+        "const emptyBuffer",
+        "const end",
+        "const peekedByte",
+        "const pos",
+        "const subarray"
+      ],
+      "appelle": [
+        "core/streams/Stream.ts"
+      ],
+      "est_appele_par": [
+        "core/streams/Ascii85Stream.ts",
+        "core/streams/AsciiHexStream.ts",
+        "core/streams/FlateStream.ts",
+        "core/streams/LZWStream.ts",
+        "core/streams/RunLengthStream.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/streams/RunLengthStream.ts": {
+      "fichier": "core/streams/RunLengthStream.ts",
+      "langage": "typescript",
+      "lignes": 55,
+      "taille_bytes": 1736,
+      "entrees": [
+        "DecodeStream"
+      ],
+      "sorties": [
+        "class RunLengthStream",
+        "const repeatHeader",
+        "const source"
+      ],
+      "appelle": [
+        "core/streams/DecodeStream.ts"
+      ],
+      "est_appele_par": [
+        "core/streams/decode.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/streams/LZWStream.ts": {
+      "fichier": "core/streams/LZWStream.ts",
+      "langage": "typescript",
+      "lignes": 164,
+      "taille_bytes": 4979,
+      "entrees": [
+        "DecodeStream"
+      ],
+      "sorties": [
+        "class LZWStream",
+        "const blockSize",
+        "const code",
+        "const currentSequence",
+        "const decodedSizeDelta",
+        "const dictionaryLengths",
+        "const dictionaryPrevCodes",
+        "const dictionaryValues",
+        "const earlyChange",
+        "const hasPrev",
+        "const lzwState",
+        "const maxLzwDictionarySize"
+      ],
+      "appelle": [
+        "core/streams/DecodeStream.ts"
+      ],
+      "est_appele_par": [
+        "core/streams/decode.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/streams/Ascii85Stream.ts": {
+      "fichier": "core/streams/Ascii85Stream.ts",
+      "langage": "typescript",
+      "lignes": 98,
+      "taille_bytes": 2283,
+      "entrees": [
+        "DecodeStream"
+      ],
+      "sorties": [
+        "class Ascii85Stream",
+        "const EOF",
+        "const TILDA_CHAR",
+        "const Z_LOWER_CHAR",
+        "const bufferLength",
+        "const input",
+        "const isSpace",
+        "const stream"
+      ],
+      "appelle": [
+        "core/streams/DecodeStream.ts"
+      ],
+      "est_appele_par": [
+        "core/streams/decode.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/streams/decode.ts": {
+      "fichier": "core/streams/decode.ts",
+      "langage": "typescript",
+      "lignes": 73,
+      "taille_bytes": 2454,
+      "entrees": [
+        "Ascii85Stream",
+        "AsciiHexStream",
+        "FlateStream",
+        "LZWStream",
+        "PDFArray",
+        "PDFDict",
+        "PDFName",
+        "PDFNull",
+        "PDFNumber",
+        "PDFRawStream",
+        "RunLengthStream",
+        "Stream"
+      ],
+      "sorties": [
+        "const DecodeParms",
+        "const EarlyChange",
+        "const Filter",
+        "const decodeStream",
+        "export const"
+      ],
+      "appelle": [
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNull.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/streams/Ascii85Stream.ts",
+        "core/streams/AsciiHexStream.ts",
+        "core/streams/FlateStream.ts",
+        "core/streams/LZWStream.ts",
+        "core/streams/RunLengthStream.ts",
+        "core/streams/Stream.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/streams/FlateStream.ts": {
+      "fichier": "core/streams/FlateStream.ts",
+      "langage": "typescript",
+      "lignes": 407,
+      "taille_bytes": 14462,
+      "entrees": [
+        "DecodeStream"
+      ],
+      "sorties": [
+        "class FlateStream",
+        "const bufferLength",
+        "const cmf",
+        "const code",
+        "const codeLen",
+        "const codeLenCodeLengths",
+        "const codeLenCodeMap",
+        "const codeLenCodeTab",
+        "const codeLengths",
+        "const codeVal",
+        "const codes",
+        "const dist",
+        "const distDecode",
+        "const end",
+        "const fixedDistCodeTab",
+        "const fixedLitCodeTab",
+        "const flg",
+        "const lengthDecode",
+        "const maxLen",
+        "const numCodeLenCodes",
+        "const numDistCodes",
+        "const numLitCodes",
+        "const size",
+        "const str"
+      ],
+      "appelle": [
+        "core/streams/DecodeStream.ts"
+      ],
+      "est_appele_par": [
+        "core/streams/decode.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/streams/AsciiHexStream.ts": {
+      "fichier": "core/streams/AsciiHexStream.ts",
+      "langage": "typescript",
+      "lignes": 77,
+      "taille_bytes": 2088,
+      "entrees": [
+        "DecodeStream"
+      ],
+      "sorties": [
+        "class AsciiHexStream",
+        "const UPSTREAM_BLOCK_SIZE",
+        "const buffer",
+        "const bytes",
+        "const ch",
+        "const maxDecodeLength"
+      ],
+      "appelle": [
+        "core/streams/DecodeStream.ts"
+      ],
+      "est_appele_par": [
+        "core/streams/decode.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/objects/PDFNumber.ts": {
+      "fichier": "core/objects/PDFNumber.ts",
+      "langage": "typescript",
+      "lignes": 44,
+      "taille_bytes": 995,
+      "entrees": [
+        "PDFObject"
+      ],
+      "sorties": [
+        "class PDFNumber"
+      ],
+      "appelle": [
+        "core/objects/PDFObject.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/PDFAcroText.ts",
+        "core/acroform/utils.ts",
+        "core/annotation/AppearanceCharacteristics.ts",
+        "core/annotation/BorderStyle.ts",
+        "core/annotation/PDFAnnotation.ts",
+        "core/embedders/PDFPageEmbedder.ts",
+        "core/interactive/ViewerPreferences.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFStream.ts",
+        "core/operators/PDFOperator.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFObjectStreamParser.ts",
+        "core/parser/PDFXRefStreamParser.ts",
+        "core/streams/decode.ts",
+        "core/structures/PDFObjectStream.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/structures/PDFPageTree.ts",
+        "core/writers/PDFStreamWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/objects/PDFStream.ts": {
+      "fichier": "core/objects/PDFStream.ts",
+      "langage": "typescript",
+      "lignes": 93,
+      "taille_bytes": 2568,
+      "entrees": [
+        "CharCodes",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFNumber",
+        "PDFObject"
+      ],
+      "sorties": [
+        "class PDFStream",
+        "const contents",
+        "const contentsSize",
+        "const initialOffset"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/PDFObjectCopier.ts",
+        "core/annotation/PDFAnnotation.ts",
+        "core/embedders/PDFPageEmbedder.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/structures/PDFFlateStream.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/writers/PDFStreamWriter.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/objects/PDFRawStream.ts": {
+      "fichier": "core/objects/PDFRawStream.ts",
+      "langage": "typescript",
+      "lignes": 38,
+      "taille_bytes": 906,
+      "entrees": [
+        "PDFContext",
+        "PDFDict",
+        "PDFStream"
+      ],
+      "sorties": [
+        "class PDFRawStream"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFStream.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/embedders/PDFPageEmbedder.ts",
+        "core/objects/PDFArray.ts",
+        "core/parser/ByteStream.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFObjectStreamParser.ts",
+        "core/parser/PDFParser.ts",
+        "core/parser/PDFXRefStreamParser.ts",
+        "core/streams/decode.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/objects/PDFObject.ts": {
+      "fichier": "core/objects/PDFObject.ts",
+      "langage": "typescript",
+      "lignes": 22,
+      "taille_bytes": 640,
+      "entrees": [
+        "PDFContext"
+      ],
+      "sorties": [
+        "class PDFObject"
+      ],
+      "appelle": [
+        "core/PDFContext.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts",
+        "core/PDFContext.ts",
+        "core/PDFObjectCopier.ts",
+        "core/acroform/PDFAcroButton.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/utils.ts",
+        "core/errors.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFBool.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFInvalidObject.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNull.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts",
+        "core/objects/PDFString.ts",
+        "core/operators/PDFOperator.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFParser.ts",
+        "core/structures/PDFObjectStream.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/writers/PDFStreamWriter.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/objects/PDFNull.ts": {
+      "fichier": "core/objects/PDFNull.ts",
+      "langage": "typescript",
+      "lignes": 30,
+      "taille_bytes": 571,
+      "entrees": [
+        "CharCodes",
+        "PDFObject"
+      ],
+      "sorties": [
+        "class PDFNull"
+      ],
+      "appelle": [
+        "core/objects/PDFObject.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/streams/decode.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/objects/PDFDict.ts": {
+      "fichier": "core/objects/PDFDict.ts",
+      "langage": "typescript",
+      "lignes": 226,
+      "taille_bytes": 7018,
+      "entrees": [
+        "CharCodes",
+        "PDFArray",
+        "PDFBool",
+        "PDFContext",
+        "PDFHexString",
+        "PDFName",
+        "PDFNull",
+        "PDFNumber",
+        "PDFObject",
+        "PDFRef",
+        "PDFStream",
+        "PDFString"
+      ],
+      "sorties": [
+        "class PDFDict",
+        "const clone",
+        "const entries",
+        "const existingKeys",
+        "const initialOffset",
+        "const preservePDFNull",
+        "const value",
+        "export type"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFBool.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNull.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts",
+        "core/objects/PDFString.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/PDFObjectCopier.ts",
+        "core/acroform/PDFAcroCheckBox.ts",
+        "core/acroform/PDFAcroComboBox.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/PDFAcroForm.ts",
+        "core/acroform/PDFAcroListBox.ts",
+        "core/acroform/PDFAcroNonTerminal.ts",
+        "core/acroform/PDFAcroPushButton.ts",
+        "core/acroform/PDFAcroRadioButton.ts",
+        "core/acroform/PDFAcroSignature.ts",
+        "core/acroform/PDFAcroTerminal.ts",
+        "core/acroform/PDFAcroText.ts",
+        "core/acroform/utils.ts",
+        "core/annotation/AppearanceCharacteristics.ts",
+        "core/annotation/BorderStyle.ts",
+        "core/annotation/PDFAnnotation.ts",
+        "core/annotation/PDFWidgetAnnotation.ts",
+        "core/document/PDFTrailerDict.ts",
+        "core/interactive/ViewerPreferences.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/objects/PDFStream.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFParser.ts",
+        "core/parser/PDFXRefStreamParser.ts",
+        "core/streams/decode.ts",
+        "core/structures/PDFCatalog.ts",
+        "core/structures/PDFContentStream.ts",
+        "core/structures/PDFCrossRefStream.ts",
+        "core/structures/PDFFlateStream.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/structures/PDFPageTree.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "hub"
+    },
+    "core/objects/PDFBool.ts": {
+      "fichier": "core/objects/PDFBool.ts",
+      "langage": "typescript",
+      "lignes": 53,
+      "taille_bytes": 1265,
+      "entrees": [
+        "CharCodes",
+        "PDFObject"
+      ],
+      "sorties": [
+        "class PDFBool",
+        "const ENFORCER"
+      ],
+      "appelle": [
+        "core/objects/PDFObject.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/interactive/ViewerPreferences.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/parser/PDFObjectParser.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/objects/PDFArray.ts": {
+      "fichier": "core/objects/PDFArray.ts",
+      "langage": "typescript",
+      "lignes": 185,
+      "taille_bytes": 5847,
+      "entrees": [
+        "CharCodes",
+        "PDFBool",
+        "PDFContext",
+        "PDFDict",
+        "PDFHexString",
+        "PDFName",
+        "PDFNull",
+        "PDFNumber",
+        "PDFObject",
+        "PDFRawStream",
+        "PDFRef",
+        "PDFStream",
+        "PDFString"
+      ],
+      "sorties": [
+        "class PDFArray",
+        "const clone",
+        "const el",
+        "const factor",
+        "const height",
+        "const index",
+        "const initialOffset",
+        "const lowerLeftX",
+        "const lowerLeftY",
+        "const upperRightX",
+        "const upperRightY",
+        "const width"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFBool.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNull.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts",
+        "core/objects/PDFString.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/PDFObjectCopier.ts",
+        "core/acroform/PDFAcroButton.ts",
+        "core/acroform/PDFAcroChoice.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/PDFAcroForm.ts",
+        "core/acroform/utils.ts",
+        "core/annotation/AppearanceCharacteristics.ts",
+        "core/annotation/PDFAnnotation.ts",
+        "core/embedders/PDFPageEmbedder.ts",
+        "core/interactive/ViewerPreferences.ts",
+        "core/objects/PDFDict.ts",
+        "core/operators/PDFOperator.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFXRefStreamParser.ts",
+        "core/streams/decode.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/structures/PDFPageTree.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/objects/PDFString.ts": {
+      "fichier": "core/objects/PDFString.ts",
+      "langage": "typescript",
+      "lignes": 118,
+      "taille_bytes": 3686,
+      "entrees": [
+        "CharCodes",
+        "PDFObject"
+      ],
+      "sorties": [
+        "class PDFString",
+        "const byte",
+        "const bytes",
+        "const char",
+        "const date",
+        "const day",
+        "const hours",
+        "const mins",
+        "const month",
+        "const nextChar",
+        "const pushByte",
+        "const secs",
+        "const text",
+        "const year"
+      ],
+      "appelle": [
+        "core/objects/PDFObject.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroButton.ts",
+        "core/acroform/PDFAcroChoice.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/PDFAcroText.ts",
+        "core/annotation/AppearanceCharacteristics.ts",
+        "core/annotation/PDFWidgetAnnotation.ts",
+        "core/embedders/CustomFontEmbedder.ts",
+        "core/embedders/FileEmbedder.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/operators/PDFOperator.ts",
+        "core/parser/PDFObjectParser.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/objects/PDFInvalidObject.ts": {
+      "fichier": "core/objects/PDFInvalidObject.ts",
+      "langage": "typescript",
+      "lignes": 34,
+      "taille_bytes": 763,
+      "entrees": [
+        "PDFObject"
+      ],
+      "sorties": [
+        "class PDFInvalidObject",
+        "const length"
+      ],
+      "appelle": [
+        "core/objects/PDFObject.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/PDFParser.ts",
+        "core/writers/PDFStreamWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/objects/PDFRef.ts": {
+      "fichier": "core/objects/PDFRef.ts",
+      "langage": "typescript",
+      "lignes": 55,
+      "taille_bytes": 1335,
+      "entrees": [
+        "PDFObject"
+      ],
+      "sorties": [
+        "class PDFRef",
+        "const ENFORCER",
+        "const pool",
+        "const tag"
+      ],
+      "appelle": [
+        "core/objects/PDFObject.ts"
+      ],
+      "est_appele_par": [
+        "api/PDFDocument.ts",
+        "core/PDFContext.ts",
+        "core/PDFObjectCopier.ts",
+        "core/acroform/PDFAcroButton.ts",
+        "core/acroform/PDFAcroCheckBox.ts",
+        "core/acroform/PDFAcroComboBox.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/PDFAcroForm.ts",
+        "core/acroform/PDFAcroListBox.ts",
+        "core/acroform/PDFAcroNonTerminal.ts",
+        "core/acroform/PDFAcroPushButton.ts",
+        "core/acroform/PDFAcroRadioButton.ts",
+        "core/acroform/PDFAcroSignature.ts",
+        "core/acroform/PDFAcroTerminal.ts",
+        "core/acroform/PDFAcroText.ts",
+        "core/acroform/utils.ts",
+        "core/annotation/PDFAnnotation.ts",
+        "core/annotation/PDFWidgetAnnotation.ts",
+        "core/document/PDFCrossRefSection.ts",
+        "core/embedders/CustomFontEmbedder.ts",
+        "core/embedders/FileEmbedder.ts",
+        "core/embedders/JavaScriptEmbedder.ts",
+        "core/embedders/JpegEmbedder.ts",
+        "core/embedders/PDFPageEmbedder.ts",
+        "core/embedders/PngEmbedder.ts",
+        "core/embedders/StandardFontEmbedder.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFObjectStreamParser.ts",
+        "core/parser/PDFParser.ts",
+        "core/parser/PDFXRefStreamParser.ts",
+        "core/structures/PDFCatalog.ts",
+        "core/structures/PDFCrossRefStream.ts",
+        "core/structures/PDFObjectStream.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/structures/PDFPageTree.ts",
+        "core/writers/PDFStreamWriter.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "hub"
+    },
+    "core/objects/PDFHexString.ts": {
+      "fichier": "core/objects/PDFHexString.ts",
+      "langage": "typescript",
+      "lignes": 94,
+      "taille_bytes": 2243,
+      "entrees": [
+        "CharCodes",
+        "PDFObject"
+      ],
+      "sorties": [
+        "class PDFHexString",
+        "const byte",
+        "const bytes",
+        "const date",
+        "const encoded",
+        "const hex",
+        "const hexLength",
+        "const text"
+      ],
+      "appelle": [
+        "core/objects/PDFObject.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroButton.ts",
+        "core/acroform/PDFAcroChoice.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/PDFAcroText.ts",
+        "core/annotation/AppearanceCharacteristics.ts",
+        "core/annotation/PDFWidgetAnnotation.ts",
+        "core/embedders/CustomFontEmbedder.ts",
+        "core/embedders/CustomFontSubsetEmbedder.ts",
+        "core/embedders/FileEmbedder.ts",
+        "core/embedders/JavaScriptEmbedder.ts",
+        "core/embedders/StandardFontEmbedder.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/operators/PDFOperator.ts",
+        "core/parser/PDFObjectParser.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/objects/PDFName.ts": {
+      "fichier": "core/objects/PDFName.ts",
+      "langage": "typescript",
+      "lignes": 159,
+      "taille_bytes": 4720,
+      "entrees": [
+        "CharCodes",
+        "PDFObject"
+      ],
+      "sorties": [
+        "class PDFName",
+        "const ENFORCER",
+        "const byte",
+        "const bytes",
+        "const char",
+        "const character",
+        "const code",
+        "const decodeName",
+        "const decodedValue",
+        "const isRegularChar",
+        "const nextChar",
+        "const pool",
+        "const pushByte"
+      ],
+      "appelle": [
+        "core/objects/PDFObject.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/PDFObjectCopier.ts",
+        "core/acroform/PDFAcroButton.ts",
+        "core/acroform/PDFAcroCheckBox.ts",
+        "core/acroform/PDFAcroChoice.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/PDFAcroForm.ts",
+        "core/acroform/PDFAcroNonTerminal.ts",
+        "core/acroform/PDFAcroRadioButton.ts",
+        "core/acroform/PDFAcroTerminal.ts",
+        "core/acroform/PDFAcroText.ts",
+        "core/acroform/utils.ts",
+        "core/annotation/AppearanceCharacteristics.ts",
+        "core/annotation/BorderStyle.ts",
+        "core/annotation/PDFAnnotation.ts",
+        "core/annotation/PDFWidgetAnnotation.ts",
+        "core/interactive/ViewerPreferences.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFStream.ts",
+        "core/operators/PDFOperator.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFObjectStreamParser.ts",
+        "core/parser/PDFParser.ts",
+        "core/parser/PDFXRefStreamParser.ts",
+        "core/streams/decode.ts",
+        "core/structures/PDFCatalog.ts",
+        "core/structures/PDFCrossRefStream.ts",
+        "core/structures/PDFFlateStream.ts",
+        "core/structures/PDFObjectStream.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/structures/PDFPageTree.ts",
+        "core/writers/PDFStreamWriter.ts"
+      ],
+      "type_noeud": "hub"
+    },
+    "core/parser/PDFParser.ts": {
+      "fichier": "core/parser/PDFParser.ts",
+      "langage": "typescript",
+      "lignes": 364,
+      "taille_bytes": 11466,
+      "entrees": [
+        "ByteStream",
+        "CharCodes",
+        "PDFContext",
+        "PDFCrossRefSection",
+        "PDFDict",
+        "PDFHeader",
+        "PDFInvalidObject",
+        "PDFName",
+        "PDFObject",
+        "PDFObjectParser",
+        "PDFObjectStreamParser",
+        "PDFRawStream",
+        "PDFRef",
+        "PDFTrailer",
+        "PDFXRefStreamParser"
+      ],
+      "sorties": [
+        "class PDFParser",
+        "const byte",
+        "const catalog",
+        "const dict",
+        "const end",
+        "const firstInt",
+        "const generationNumber",
+        "const header",
+        "const indirectObjects",
+        "const initialOffset",
+        "const isAlphaNumeric",
+        "const isValidCatalog",
+        "const major",
+        "const minor",
+        "const msg",
+        "const object",
+        "const objectNumber",
+        "const offset",
+        "const ref",
+        "const secondInt",
+        "const start",
+        "const startPos",
+        "const xref"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/document/PDFCrossRefSection.ts",
+        "core/document/PDFHeader.ts",
+        "core/document/PDFTrailer.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFInvalidObject.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/objects/PDFRef.ts",
+        "core/parser/ByteStream.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFObjectStreamParser.ts",
+        "core/parser/PDFXRefStreamParser.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/parser/BaseParser.ts": {
+      "fichier": "core/parser/BaseParser.ts",
+      "langage": "typescript",
+      "lignes": 119,
+      "taille_bytes": 3462,
+      "entrees": [
+        "ByteStream",
+        "CharCodes"
+      ],
+      "sorties": [
+        "class BaseParser",
+        "const byte",
+        "const initialOffset",
+        "const msg",
+        "const numberValue"
+      ],
+      "appelle": [
+        "core/parser/ByteStream.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/PDFObjectParser.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/parser/PDFObjectParser.ts": {
+      "fichier": "core/parser/PDFObjectParser.ts",
+      "langage": "typescript",
+      "lignes": 274,
+      "taille_bytes": 8768,
+      "entrees": [
+        "BaseParser",
+        "ByteStream",
+        "CharCodes",
+        "PDFArray",
+        "PDFBool",
+        "PDFCatalog",
+        "PDFContext",
+        "PDFDict",
+        "PDFHexString",
+        "PDFName",
+        "PDFNull",
+        "PDFNumber",
+        "PDFObject",
+        "PDFPageLeaf",
+        "PDFPageTree",
+        "PDFRawStream",
+        "PDFRef",
+        "PDFStream",
+        "PDFString"
+      ],
+      "sorties": [
+        "class PDFObjectParser",
+        "const Length",
+        "const Type",
+        "const byte",
+        "const contents",
+        "const dict",
+        "const element",
+        "const firstNum",
+        "const key",
+        "const lookaheadStart",
+        "const pdfArray",
+        "const secondNum",
+        "const start",
+        "const startPos",
+        "const value"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFBool.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNull.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts",
+        "core/objects/PDFString.ts",
+        "core/parser/BaseParser.ts",
+        "core/parser/ByteStream.ts",
+        "core/structures/PDFCatalog.ts",
+        "core/structures/PDFPageLeaf.ts",
+        "core/structures/PDFPageTree.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/PDFObjectStreamParser.ts",
+        "core/parser/PDFParser.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/parser/PDFXRefStreamParser.ts": {
+      "fichier": "core/parser/PDFXRefStreamParser.ts",
+      "langage": "typescript",
+      "lignes": 130,
+      "taille_bytes": 3987,
+      "entrees": [
+        "ByteStream",
+        "PDFArray",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFNumber",
+        "PDFRawStream",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFXRefStreamParser",
+        "const Index",
+        "const Size",
+        "const entries",
+        "const entry",
+        "const firstObjectNumber",
+        "const length",
+        "const objectNumber",
+        "export interface"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/objects/PDFRef.ts",
+        "core/parser/ByteStream.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/PDFParser.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/parser/ByteStream.ts": {
+      "fichier": "core/parser/ByteStream.ts",
+      "langage": "typescript",
+      "lignes": 76,
+      "taille_bytes": 1749,
+      "entrees": [
+        "CharCodes",
+        "PDFRawStream"
+      ],
+      "sorties": [
+        "class ByteStream",
+        "const byte"
+      ],
+      "appelle": [
+        "core/objects/PDFRawStream.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/BaseParser.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/parser/PDFObjectStreamParser.ts",
+        "core/parser/PDFParser.ts",
+        "core/parser/PDFXRefStreamParser.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/parser/PDFObjectStreamParser.ts": {
+      "fichier": "core/parser/PDFObjectStreamParser.ts",
+      "langage": "typescript",
+      "lignes": 67,
+      "taille_bytes": 2408,
+      "entrees": [
+        "ByteStream",
+        "PDFName",
+        "PDFNumber",
+        "PDFObjectParser",
+        "PDFRawStream",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFObjectStreamParser",
+        "const object",
+        "const objectNumber",
+        "const offset",
+        "const offsetsAndObjectNumbers",
+        "const ref"
+      ],
+      "appelle": [
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFRawStream.ts",
+        "core/objects/PDFRef.ts",
+        "core/parser/ByteStream.ts",
+        "core/parser/PDFObjectParser.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/PDFParser.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/interactive/ViewerPreferences.ts": {
+      "fichier": "core/interactive/ViewerPreferences.ts",
+      "langage": "typescript",
+      "lignes": 579,
+      "taille_bytes": 18235,
+      "entrees": [
+        "PDFArray",
+        "PDFBool",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFNumber"
+      ],
+      "sorties": [
+        "class ViewerPreferences",
+        "const CenterWindow",
+        "const DisplayDocTitle",
+        "const FitWindow",
+        "const HideMenubar",
+        "const HideToolbar",
+        "const HideWindowUI",
+        "const NumCopies",
+        "const PickTrayByPDFSize",
+        "const PrintPageRange",
+        "const asEnum",
+        "const dict",
+        "const direction",
+        "const dup",
+        "const duplex",
+        "const end",
+        "const flatRange",
+        "const mode",
+        "const pageRanges",
+        "const returnObj",
+        "const rng",
+        "const scaling",
+        "const start",
+        "export enum",
+        "interface PageRange",
+        "type BoolViewerPrefKey",
+        "type NameViewerPrefKey"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFBool.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts"
+      ],
+      "est_appele_par": [
+        "core/structures/PDFCatalog.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/structures/PDFFlateStream.ts": {
+      "fichier": "core/structures/PDFFlateStream.ts",
+      "langage": "typescript",
+      "lignes": 43,
+      "taille_bytes": 1169,
+      "entrees": [
+        "PDFDict",
+        "PDFName",
+        "PDFStream",
+        "pako"
+      ],
+      "sorties": [
+        "class PDFFlateStream",
+        "const unencodedContents"
+      ],
+      "appelle": [
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFStream.ts"
+      ],
+      "est_appele_par": [
+        "core/structures/PDFContentStream.ts",
+        "core/structures/PDFCrossRefStream.ts",
+        "core/structures/PDFObjectStream.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/structures/PDFContentStream.ts": {
+      "fichier": "core/structures/PDFContentStream.ts",
+      "langage": "typescript",
+      "lignes": 58,
+      "taille_bytes": 1851,
+      "entrees": [
+        "CharCodes",
+        "PDFContext",
+        "PDFDict",
+        "PDFFlateStream",
+        "PDFOperator"
+      ],
+      "sorties": [
+        "class PDFContentStream",
+        "const buffer",
+        "const operators"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFDict.ts",
+        "core/operators/PDFOperator.ts",
+        "core/structures/PDFFlateStream.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFContext.ts",
+        "core/embedders/PDFPageEmbedder.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/structures/PDFCrossRefStream.ts": {
+      "fichier": "core/structures/PDFCrossRefStream.ts",
+      "langage": "typescript",
+      "lignes": 246,
+      "taille_bytes": 7891,
+      "entrees": [
+        "PDFContext",
+        "PDFDict",
+        "PDFFlateStream",
+        "PDFName",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFCrossRefStream",
+        "const buffer",
+        "const byteWidths",
+        "const currEntry",
+        "const entry",
+        "const entryTuples",
+        "const entryWidth",
+        "const firstBytes",
+        "const firstSize",
+        "const index",
+        "const prevEntry",
+        "const secondBytes",
+        "const secondSize",
+        "const stream",
+        "const subsections",
+        "const thirdBytes",
+        "const thirdSize",
+        "const type",
+        "const widths",
+        "export enum",
+        "export interface",
+        "export type"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFRef.ts",
+        "core/structures/PDFFlateStream.ts"
+      ],
+      "est_appele_par": [
+        "core/writers/PDFStreamWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/structures/PDFPageLeaf.ts": {
+      "fichier": "core/structures/PDFPageLeaf.ts",
+      "langage": "typescript",
+      "lignes": 263,
+      "taille_bytes": 7629,
+      "entrees": [
+        "PDFArray",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFNumber",
+        "PDFObject",
+        "PDFPageTree",
+        "PDFRef",
+        "PDFStream"
+      ],
+      "sorties": [
+        "class PDFPageLeaf",
+        "const Annots",
+        "const Contents",
+        "const ExtGState",
+        "const Font",
+        "const Parent",
+        "const Resources",
+        "const XObject",
+        "const arrayOrRef",
+        "const clone",
+        "const contents",
+        "const contentsRef",
+        "const dict",
+        "const dictOrRef",
+        "const entries",
+        "const index",
+        "const key",
+        "const numberOrRef"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFStream.ts",
+        "core/structures/PDFPageTree.ts"
+      ],
+      "est_appele_par": [
+        "core/PDFObjectCopier.ts",
+        "core/embedders/PDFPageEmbedder.ts",
+        "core/parser/PDFObjectParser.ts",
+        "core/structures/PDFPageTree.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/structures/PDFCatalog.ts": {
+      "fichier": "core/structures/PDFCatalog.ts",
+      "langage": "typescript",
+      "lignes": 85,
+      "taille_bytes": 2770,
+      "entrees": [
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFPageTree",
+        "PDFRef",
+        "ViewerPreferences"
+      ],
+      "sorties": [
+        "class PDFCatalog",
+        "const acroFormRef",
+        "const dict",
+        "const maybeParentRef",
+        "const pagesRef",
+        "const viewerPrefsRef"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/interactive/ViewerPreferences.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFRef.ts",
+        "core/structures/PDFPageTree.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/PDFObjectParser.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/structures/PDFObjectStream.ts": {
+      "fichier": "core/structures/PDFObjectStream.ts",
+      "langage": "typescript",
+      "lignes": 101,
+      "taille_bytes": 3099,
+      "entrees": [
+        "CharCodes",
+        "PDFContext",
+        "PDFFlateStream",
+        "PDFName",
+        "PDFNumber",
+        "PDFObject",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFObjectStream",
+        "const buffer",
+        "const offsets",
+        "export type"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts",
+        "core/structures/PDFFlateStream.ts",
+        "core/syntax/CharCodes.ts"
+      ],
+      "est_appele_par": [
+        "core/writers/PDFStreamWriter.ts",
+        "core/writers/PDFWriter.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/structures/PDFPageTree.ts": {
+      "fichier": "core/structures/PDFPageTree.ts",
+      "langage": "typescript",
+      "lignes": 195,
+      "taille_bytes": 6103,
+      "entrees": [
+        "PDFArray",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFNumber",
+        "PDFPageLeaf",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFPageTree",
+        "const Count",
+        "const Kids",
+        "const Parent",
+        "const dict",
+        "const kid",
+        "const kidRef",
+        "const newCount",
+        "export type"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFRef.ts",
+        "core/structures/PDFPageLeaf.ts"
+      ],
+      "est_appele_par": [
+        "core/parser/PDFObjectParser.ts",
+        "core/structures/PDFCatalog.ts",
+        "core/structures/PDFPageLeaf.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/acroform/PDFAcroField.ts": {
+      "fichier": "core/acroform/PDFAcroField.ts",
+      "langage": "typescript",
+      "lignes": 167,
+      "taille_bytes": 4839,
+      "entrees": [
+        "PDFArray",
+        "PDFDict",
+        "PDFHexString",
+        "PDFName",
+        "PDFNumber",
+        "PDFObject",
+        "PDFRef",
+        "PDFString"
+      ],
+      "sorties": [
+        "class PDFAcroField",
+        "const DA",
+        "const da",
+        "const daEnd",
+        "const daMatch",
+        "const daStart",
+        "const flags",
+        "const fontName",
+        "const modifiedDa",
+        "const name",
+        "const numberOrRef",
+        "const parent",
+        "const parentRef",
+        "const tfRegex",
+        "const valueOrRef"
+      ],
+      "appelle": [
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFString.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/PDFAcroForm.ts",
+        "core/acroform/PDFAcroNonTerminal.ts",
+        "core/acroform/PDFAcroTerminal.ts",
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/acroform/PDFAcroTerminal.ts": {
+      "fichier": "core/acroform/PDFAcroTerminal.ts",
+      "langage": "typescript",
+      "lignes": 71,
+      "taille_bytes": 2193,
+      "entrees": [
+        "PDFAcroField",
+        "PDFDict",
+        "PDFName",
+        "PDFRef",
+        "PDFWidgetAnnotation"
+      ],
+      "sorties": [
+        "class PDFAcroTerminal",
+        "const dict",
+        "const kidDicts",
+        "const nameOrRef",
+        "const widgets"
+      ],
+      "appelle": [
+        "core/acroform/PDFAcroField.ts",
+        "core/annotation/PDFWidgetAnnotation.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/PDFAcroButton.ts",
+        "core/acroform/PDFAcroChoice.ts",
+        "core/acroform/PDFAcroSignature.ts",
+        "core/acroform/PDFAcroText.ts",
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/acroform/PDFAcroSignature.ts": {
+      "fichier": "core/acroform/PDFAcroSignature.ts",
+      "langage": "typescript",
+      "lignes": 10,
+      "taille_bytes": 334,
+      "entrees": [
+        "PDFAcroTerminal",
+        "PDFDict",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFAcroSignature"
+      ],
+      "appelle": [
+        "core/acroform/PDFAcroTerminal.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/acroform/flags.ts": {
+      "fichier": "core/acroform/flags.ts",
+      "langage": "typescript",
+      "lignes": 162,
+      "taille_bytes": 5826,
+      "entrees": [],
+      "sorties": [
+        "const flag",
+        "export enum"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/acroform/utils.ts": {
+      "fichier": "core/acroform/utils.ts",
+      "langage": "typescript",
+      "lignes": 135,
+      "taille_bytes": 5452,
+      "entrees": [
+        "PDFAcroButton",
+        "PDFAcroCheckBox",
+        "PDFAcroChoice",
+        "PDFAcroComboBox",
+        "PDFAcroField",
+        "PDFAcroListBox",
+        "PDFAcroNonTerminal",
+        "PDFAcroPushButton",
+        "PDFAcroRadioButton",
+        "PDFAcroSignature",
+        "PDFAcroTerminal",
+        "PDFAcroText",
+        "PDFArray",
+        "PDFDict",
+        "PDFName",
+        "PDFNumber",
+        "PDFObject",
+        "PDFRef"
+      ],
+      "sorties": [
+        "const Parent",
+        "const ascend",
+        "const createPDFAcroButton",
+        "const createPDFAcroChoice",
+        "const createPDFAcroTerminal",
+        "const dict",
+        "const ffNumber",
+        "const ffNumberOrRef",
+        "const flagIsSet",
+        "const flags",
+        "const ftNameOrRef",
+        "const getInheritableAttribute",
+        "const isNonTerminal",
+        "const isNonTerminalAcroField",
+        "const kid",
+        "const kidIsField",
+        "const kids",
+        "const ref",
+        "const type",
+        "export const"
+      ],
+      "appelle": [
+        "core/acroform/PDFAcroButton.ts",
+        "core/acroform/PDFAcroCheckBox.ts",
+        "core/acroform/PDFAcroChoice.ts",
+        "core/acroform/PDFAcroComboBox.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/PDFAcroListBox.ts",
+        "core/acroform/PDFAcroNonTerminal.ts",
+        "core/acroform/PDFAcroPushButton.ts",
+        "core/acroform/PDFAcroRadioButton.ts",
+        "core/acroform/PDFAcroSignature.ts",
+        "core/acroform/PDFAcroTerminal.ts",
+        "core/acroform/PDFAcroText.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/acroform/PDFAcroForm.ts": {
+      "fichier": "core/acroform/PDFAcroForm.ts",
+      "langage": "typescript",
+      "lignes": 102,
+      "taille_bytes": 2742,
+      "entrees": [
+        "PDFAcroField",
+        "PDFAcroNonTerminal",
+        "PDFArray",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFAcroForm",
+        "const allFields",
+        "const dict",
+        "const field",
+        "const fields",
+        "const index",
+        "const parent",
+        "const pushFields",
+        "const ref"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/acroform/PDFAcroNonTerminal.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "core/acroform/index.ts": {
+      "fichier": "core/acroform/index.ts",
+      "langage": "typescript",
+      "lignes": 15,
+      "taille_bytes": 1108,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/acroform/PDFAcroButton.ts": {
+      "fichier": "core/acroform/PDFAcroButton.ts",
+      "langage": "typescript",
+      "lignes": 114,
+      "taille_bytes": 3242,
+      "entrees": [
+        "PDFAcroTerminal",
+        "PDFArray",
+        "PDFHexString",
+        "PDFName",
+        "PDFObject",
+        "PDFRef",
+        "PDFString"
+      ],
+      "sorties": [
+        "class PDFAcroButton",
+        "const Opt",
+        "const apStateValue",
+        "const exportVal",
+        "const exportValues",
+        "const opt",
+        "const optIdx",
+        "const optText",
+        "const value",
+        "const values",
+        "const widget",
+        "const widgets"
+      ],
+      "appelle": [
+        "core/acroform/PDFAcroTerminal.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFObject.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFString.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/PDFAcroCheckBox.ts",
+        "core/acroform/PDFAcroPushButton.ts",
+        "core/acroform/PDFAcroRadioButton.ts",
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/acroform/PDFAcroCheckBox.ts": {
+      "fichier": "core/acroform/PDFAcroCheckBox.ts",
+      "langage": "typescript",
+      "lignes": 49,
+      "taille_bytes": 1440,
+      "entrees": [
+        "PDFAcroButton",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFAcroCheckBox",
+        "const dict",
+        "const onValue",
+        "const ref",
+        "const state",
+        "const widget",
+        "const widgets"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroButton.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/acroform/PDFAcroComboBox.ts": {
+      "fichier": "core/acroform/PDFAcroComboBox.ts",
+      "langage": "typescript",
+      "lignes": 22,
+      "taille_bytes": 668,
+      "entrees": [
+        "PDFAcroChoice",
+        "PDFContext",
+        "PDFDict",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFAcroComboBox",
+        "const dict",
+        "const ref"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroChoice.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/acroform/PDFAcroNonTerminal.ts": {
+      "fichier": "core/acroform/PDFAcroNonTerminal.ts",
+      "langage": "typescript",
+      "lignes": 34,
+      "taille_bytes": 889,
+      "entrees": [
+        "PDFAcroField",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFAcroNonTerminal",
+        "const dict",
+        "const ref"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroField.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/PDFAcroForm.ts",
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/acroform/PDFAcroChoice.ts": {
+      "fichier": "core/acroform/PDFAcroChoice.ts",
+      "langage": "typescript",
+      "lignes": 153,
+      "taille_bytes": 4554,
+      "entrees": [
+        "PDFAcroTerminal",
+        "PDFArray",
+        "PDFHexString",
+        "PDFName",
+        "PDFString"
+      ],
+      "sorties": [
+        "class PDFAcroChoice",
+        "const Opt",
+        "const first",
+        "const indices",
+        "const item",
+        "const newOpt",
+        "const options",
+        "const res",
+        "const second",
+        "const val",
+        "const value",
+        "const values"
+      ],
+      "appelle": [
+        "core/acroform/PDFAcroTerminal.ts",
+        "core/objects/PDFArray.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFString.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/PDFAcroComboBox.ts",
+        "core/acroform/PDFAcroListBox.ts",
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "central"
+    },
+    "core/acroform/PDFAcroListBox.ts": {
+      "fichier": "core/acroform/PDFAcroListBox.ts",
+      "langage": "typescript",
+      "lignes": 20,
+      "taille_bytes": 572,
+      "entrees": [
+        "PDFAcroChoice",
+        "PDFContext",
+        "PDFDict",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFAcroListBox",
+        "const dict",
+        "const ref"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroChoice.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/acroform/PDFAcroText.ts": {
+      "fichier": "core/acroform/PDFAcroText.ts",
+      "langage": "typescript",
+      "lignes": 76,
+      "taille_bytes": 2146,
+      "entrees": [
+        "PDFAcroTerminal",
+        "PDFContext",
+        "PDFDict",
+        "PDFHexString",
+        "PDFName",
+        "PDFNumber",
+        "PDFRef",
+        "PDFString"
+      ],
+      "sorties": [
+        "class PDFAcroText",
+        "const dict",
+        "const maxLen",
+        "const ref"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroTerminal.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFHexString.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFNumber.ts",
+        "core/objects/PDFRef.ts",
+        "core/objects/PDFString.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/acroform/PDFAcroPushButton.ts": {
+      "fichier": "core/acroform/PDFAcroPushButton.ts",
+      "langage": "typescript",
+      "lignes": 22,
+      "taille_bytes": 682,
+      "entrees": [
+        "PDFAcroButton",
+        "PDFContext",
+        "PDFDict",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFAcroPushButton",
+        "const dict",
+        "const ref"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroButton.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "core/acroform/PDFAcroRadioButton.ts": {
+      "fichier": "core/acroform/PDFAcroRadioButton.ts",
+      "langage": "typescript",
+      "lignes": 58,
+      "taille_bytes": 1711,
+      "entrees": [
+        "PDFAcroButton",
+        "PDFContext",
+        "PDFDict",
+        "PDFName",
+        "PDFRef"
+      ],
+      "sorties": [
+        "class PDFAcroRadioButton",
+        "const dict",
+        "const onValue",
+        "const onValues",
+        "const ref",
+        "const state",
+        "const widget",
+        "const widgets"
+      ],
+      "appelle": [
+        "core/PDFContext.ts",
+        "core/acroform/PDFAcroButton.ts",
+        "core/objects/PDFDict.ts",
+        "core/objects/PDFName.ts",
+        "core/objects/PDFRef.ts"
+      ],
+      "est_appele_par": [
+        "core/acroform/utils.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "types/fontkit.ts": {
+      "fichier": "types/fontkit.ts",
+      "langage": "typescript",
+      "lignes": 640,
+      "taille_bytes": 16136,
+      "entrees": [],
+      "sorties": [
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "types/index.ts": {
+      "fichier": "types/index.ts",
+      "langage": "typescript",
+      "lignes": 1,
+      "taille_bytes": 57,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "types/matrix.ts": {
+      "fichier": "types/matrix.ts",
+      "langage": "typescript",
+      "lignes": 29,
+      "taille_bytes": 1160,
+      "entrees": [],
+      "sorties": [
+        "export const",
+        "export type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/async.ts": {
+      "fichier": "utils/async.ts",
+      "langage": "typescript",
+      "lignes": 8,
+      "taille_bytes": 221,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/strings.ts": {
+      "fichier": "utils/strings.ts",
+      "langage": "typescript",
+      "lignes": 182,
+      "taille_bytes": 5426,
+      "entrees": [],
+      "sorties": [
+        "const breakRules",
+        "const buildWordBreakRegex",
+        "const chars",
+        "const cuFirst",
+        "const date",
+        "const dateRegex",
+        "const escapedRules",
+        "const length",
+        "const lines",
+        "const match",
+        "const newlineCharUnion",
+        "const nextIndex",
+        "const pushCurrLine",
+        "const regex",
+        "const tzOffset",
+        "const width",
+        "const word",
+        "const wordBreak",
+        "const words",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/numbers.ts": {
+      "fichier": "utils/numbers.ts",
+      "langage": "typescript",
+      "lignes": 55,
+      "taille_bytes": 1592,
+      "entrees": [],
+      "sorties": [
+        "const bytes",
+        "const negative",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/errors.ts": {
+      "fichier": "utils/errors.ts",
+      "langage": "typescript",
+      "lignes": 3,
+      "taille_bytes": 67,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/validators.ts": {
+      "fichier": "utils/validators.ts",
+      "langage": "typescript",
+      "lignes": 228,
+      "taille_bytes": 7059,
+      "entrees": [],
+      "sorties": [
+        "const allowedTypes",
+        "const allowedValues",
+        "const formatValue",
+        "const joinedTypes",
+        "const joinedValues",
+        "const type",
+        "export const",
+        "export type",
+        "type Primitive"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/rng.ts": {
+      "fichier": "utils/rng.ts",
+      "langage": "typescript",
+      "lignes": 21,
+      "taille_bytes": 546,
+      "entrees": [],
+      "sorties": [
+        "export class"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/unicode.ts": {
+      "fichier": "utils/unicode.ts",
+      "langage": "typescript",
+      "lignes": 386,
+      "taille_bytes": 14117,
+      "entrees": [],
+      "sorties": [
+        "const REPLACEMENT",
+        "const byte1",
+        "const byte2",
+        "const byte3",
+        "const byte4",
+        "const byteOrder",
+        "const codePoint",
+        "const codePoints",
+        "const decodeValues",
+        "const encoded",
+        "const first",
+        "const hasUtf16BigEndianBOM",
+        "const hasUtf16LittleEndianBOM",
+        "const isHighSurrogate",
+        "const isLowSurrogate",
+        "const readBOM",
+        "const second",
+        "enum ByteOrder",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/Cache.ts": {
+      "fichier": "utils/Cache.ts",
+      "langage": "typescript",
+      "lignes": 26,
+      "taille_bytes": 507,
+      "entrees": [],
+      "sorties": [
+        "class Cache"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/objects.ts": {
+      "fichier": "utils/objects.ts",
+      "langage": "typescript",
+      "lignes": 13,
+      "taille_bytes": 528,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/base64.ts": {
+      "fichier": "utils/base64.ts",
+      "langage": "typescript",
+      "lignes": 99,
+      "taille_bytes": 2903,
+      "entrees": [],
+      "sorties": [
+        "const DATA_URI_PREFIX_REGEX",
+        "const bytes",
+        "const chars",
+        "const data",
+        "const len",
+        "const lookup",
+        "const prefix",
+        "const res",
+        "const trimmedUri",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/arrays.ts": {
+      "fichier": "utils/arrays.ts",
+      "langage": "typescript",
+      "lignes": 146,
+      "taille_bytes": 4243,
+      "entrees": [],
+      "sorties": [
+        "const arr",
+        "const array",
+        "const arrayCount",
+        "const arrayLen",
+        "const curr",
+        "const element",
+        "const leftIdx",
+        "const length",
+        "const merged",
+        "const mergedBuffer",
+        "const plucked",
+        "const prev",
+        "const rightIdx",
+        "const temp",
+        "const typedArray",
+        "const typedArrays",
+        "const uniq",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/pdfDocEncoding.ts": {
+      "fichier": "utils/pdfDocEncoding.ts",
+      "langage": "typescript",
+      "lignes": 69,
+      "taille_bytes": 4489,
+      "entrees": [],
+      "sorties": [
+        "const codePoints",
+        "const pdfDocEncodingToUnicode",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/index.ts": {
+      "fichier": "utils/index.ts",
+      "langage": "typescript",
+      "lignes": 11,
+      "taille_bytes": 407,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/png.ts": {
+      "fichier": "utils/png.ts",
+      "langage": "typescript",
+      "lignes": 70,
+      "taille_bytes": 2086,
+      "entrees": [
+        "UPNG"
+      ],
+      "sorties": [
+        "const alphaChannel",
+        "const frame",
+        "const frames",
+        "const getImageType",
+        "const hasAlphaValues",
+        "const pixelCount",
+        "const rgbChannel",
+        "const splitAlphaChannel",
+        "const upng",
+        "export class",
+        "export enum"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "api/PDFEmbeddedFile.ts",
+      "vers": "api/Embeddable.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFEmbeddedFile.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFEmbeddedFile.ts",
+      "vers": "core/embedders/FileEmbedder.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFEmbeddedPage.ts",
+      "vers": "api/Embeddable.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFEmbeddedPage.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFPageOptions.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFPage.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFPage.ts",
+      "vers": "api/PDFEmbeddedPage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFPage.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFPage.ts",
+      "vers": "api/PDFImage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFFont.ts",
+      "vers": "api/Embeddable.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFFont.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFJavaScript.ts",
+      "vers": "api/Embeddable.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFJavaScript.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFJavaScript.ts",
+      "vers": "core/embedders/JavaScriptEmbedder.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "api/Embeddable.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "api/PDFEmbeddedFile.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "api/PDFEmbeddedPage.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "api/PDFImage.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "api/PDFJavaScript.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "api/PDFPage.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "api/form/PDFForm.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "core/embedders/FileEmbedder.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "core/embedders/JavaScriptEmbedder.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFDocument.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFImage.ts",
+      "vers": "api/Embeddable.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/PDFImage.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/form/PDFField.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFField.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFField.ts",
+      "vers": "api/PDFImage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFOptionList.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFOptionList.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFOptionList.ts",
+      "vers": "api/PDFPage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFOptionList.ts",
+      "vers": "api/form/PDFField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/appearances.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/appearances.ts",
+      "vers": "api/form/PDFButton.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/appearances.ts",
+      "vers": "api/form/PDFCheckBox.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/appearances.ts",
+      "vers": "api/form/PDFDropdown.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/appearances.ts",
+      "vers": "api/form/PDFField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/appearances.ts",
+      "vers": "api/form/PDFOptionList.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/appearances.ts",
+      "vers": "api/form/PDFRadioGroup.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/appearances.ts",
+      "vers": "api/form/PDFSignature.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/appearances.ts",
+      "vers": "api/form/PDFTextField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFDropdown.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFDropdown.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFDropdown.ts",
+      "vers": "api/PDFPage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFDropdown.ts",
+      "vers": "api/form/PDFField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFCheckBox.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFCheckBox.ts",
+      "vers": "api/PDFPage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFCheckBox.ts",
+      "vers": "api/form/PDFField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/PDFPage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/form/PDFButton.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/form/PDFCheckBox.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/form/PDFDropdown.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/form/PDFField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/form/PDFOptionList.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/form/PDFRadioGroup.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/form/PDFSignature.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFForm.ts",
+      "vers": "api/form/PDFTextField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFTextField.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFTextField.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFTextField.ts",
+      "vers": "api/PDFImage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFTextField.ts",
+      "vers": "api/PDFPage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFTextField.ts",
+      "vers": "api/form/PDFField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFRadioGroup.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFRadioGroup.ts",
+      "vers": "api/PDFPage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFRadioGroup.ts",
+      "vers": "api/form/PDFField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFSignature.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFSignature.ts",
+      "vers": "api/form/PDFField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFButton.ts",
+      "vers": "api/PDFDocument.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFButton.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFButton.ts",
+      "vers": "api/PDFImage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFButton.ts",
+      "vers": "api/PDFPage.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/form/PDFButton.ts",
+      "vers": "api/form/PDFField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "api/text/layout.ts",
+      "vers": "api/PDFFont.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/errors.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFObjectCopier.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFObjectCopier.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFObjectCopier.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFObjectCopier.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFObjectCopier.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFObjectCopier.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFObjectCopier.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFObjectCopier.ts",
+      "vers": "core/structures/PDFPageLeaf.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/document/PDFHeader.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFBool.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFNull.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFRawStream.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/operators/PDFOperator.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/PDFContext.ts",
+      "vers": "core/structures/PDFContentStream.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/document/PDFHeader.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/document/PDFTrailer.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/document/PDFCrossRefSection.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/document/PDFCrossRefSection.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/document/PDFTrailerDict.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/document/PDFTrailerDict.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/operators/PDFOperator.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/operators/PDFOperator.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/operators/PDFOperator.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/operators/PDFOperator.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/operators/PDFOperator.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/operators/PDFOperator.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/operators/PDFOperator.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/operators/PDFOperator.ts",
+      "vers": "core/operators/PDFOperatorNames.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/operators/PDFOperator.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/syntax/Keywords.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/syntax/Delimiters.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/syntax/Numeric.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/syntax/Whitespace.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/syntax/Irregular.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/AppearanceCharacteristics.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/AppearanceCharacteristics.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/AppearanceCharacteristics.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/AppearanceCharacteristics.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/AppearanceCharacteristics.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/AppearanceCharacteristics.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/BorderStyle.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/BorderStyle.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/BorderStyle.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFAnnotation.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFAnnotation.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFAnnotation.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFAnnotation.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFAnnotation.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFAnnotation.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFWidgetAnnotation.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFWidgetAnnotation.ts",
+      "vers": "core/annotation/AppearanceCharacteristics.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFWidgetAnnotation.ts",
+      "vers": "core/annotation/BorderStyle.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFWidgetAnnotation.ts",
+      "vers": "core/annotation/PDFAnnotation.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFWidgetAnnotation.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFWidgetAnnotation.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFWidgetAnnotation.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFWidgetAnnotation.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/annotation/PDFWidgetAnnotation.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/document/PDFCrossRefSection.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/document/PDFHeader.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/document/PDFTrailer.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/document/PDFTrailerDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/structures/PDFObjectStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFWriter.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/document/PDFHeader.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/document/PDFTrailer.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/objects/PDFInvalidObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/structures/PDFCrossRefStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/structures/PDFObjectStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/writers/PDFStreamWriter.ts",
+      "vers": "core/writers/PDFWriter.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/CustomFontSubsetEmbedder.ts",
+      "vers": "core/embedders/CustomFontEmbedder.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/CustomFontSubsetEmbedder.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PngEmbedder.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PngEmbedder.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/FileEmbedder.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/FileEmbedder.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/FileEmbedder.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/FileEmbedder.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/CustomFontEmbedder.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/CustomFontEmbedder.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/CustomFontEmbedder.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/CustomFontEmbedder.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PDFPageEmbedder.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PDFPageEmbedder.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PDFPageEmbedder.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PDFPageEmbedder.ts",
+      "vers": "core/objects/PDFRawStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PDFPageEmbedder.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PDFPageEmbedder.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PDFPageEmbedder.ts",
+      "vers": "core/structures/PDFContentStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PDFPageEmbedder.ts",
+      "vers": "core/structures/PDFPageLeaf.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/PDFPageEmbedder.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/JavaScriptEmbedder.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/JavaScriptEmbedder.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/JavaScriptEmbedder.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/StandardFontEmbedder.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/StandardFontEmbedder.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/StandardFontEmbedder.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/JpegEmbedder.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/embedders/JpegEmbedder.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/DecodeStream.ts",
+      "vers": "core/streams/Stream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/RunLengthStream.ts",
+      "vers": "core/streams/DecodeStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/LZWStream.ts",
+      "vers": "core/streams/DecodeStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/Ascii85Stream.ts",
+      "vers": "core/streams/DecodeStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/objects/PDFNull.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/objects/PDFRawStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/streams/Ascii85Stream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/streams/AsciiHexStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/streams/FlateStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/streams/LZWStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/streams/RunLengthStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/decode.ts",
+      "vers": "core/streams/Stream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/FlateStream.ts",
+      "vers": "core/streams/DecodeStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/streams/AsciiHexStream.ts",
+      "vers": "core/streams/DecodeStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFNumber.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFStream.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/objects/PDFStream.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/objects/PDFStream.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFStream.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFStream.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFStream.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFRawStream.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/objects/PDFRawStream.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFRawStream.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFObject.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/objects/PDFNull.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFNull.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFBool.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFNull.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFDict.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFBool.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFBool.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFBool.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFNull.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFRawStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFArray.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFString.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFString.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFInvalidObject.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFRef.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFHexString.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFHexString.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFName.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/objects/PDFName.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/document/PDFCrossRefSection.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/document/PDFHeader.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/document/PDFTrailer.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/objects/PDFInvalidObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/objects/PDFRawStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/parser/ByteStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/parser/PDFObjectParser.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/parser/PDFObjectStreamParser.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/parser/PDFXRefStreamParser.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFParser.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/BaseParser.ts",
+      "vers": "core/parser/ByteStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/BaseParser.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFBool.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFNull.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFRawStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/parser/BaseParser.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/parser/ByteStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/structures/PDFCatalog.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/structures/PDFPageLeaf.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/structures/PDFPageTree.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectParser.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFXRefStreamParser.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFXRefStreamParser.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFXRefStreamParser.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFXRefStreamParser.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFXRefStreamParser.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFXRefStreamParser.ts",
+      "vers": "core/objects/PDFRawStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFXRefStreamParser.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFXRefStreamParser.ts",
+      "vers": "core/parser/ByteStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/ByteStream.ts",
+      "vers": "core/objects/PDFRawStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/ByteStream.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectStreamParser.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectStreamParser.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectStreamParser.ts",
+      "vers": "core/objects/PDFRawStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectStreamParser.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectStreamParser.ts",
+      "vers": "core/parser/ByteStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/parser/PDFObjectStreamParser.ts",
+      "vers": "core/parser/PDFObjectParser.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/interactive/ViewerPreferences.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/interactive/ViewerPreferences.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/interactive/ViewerPreferences.ts",
+      "vers": "core/objects/PDFBool.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/interactive/ViewerPreferences.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/interactive/ViewerPreferences.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/interactive/ViewerPreferences.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFFlateStream.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFFlateStream.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFFlateStream.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFContentStream.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/structures/PDFContentStream.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFContentStream.ts",
+      "vers": "core/operators/PDFOperator.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFContentStream.ts",
+      "vers": "core/structures/PDFFlateStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFContentStream.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCrossRefStream.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCrossRefStream.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCrossRefStream.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCrossRefStream.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCrossRefStream.ts",
+      "vers": "core/structures/PDFFlateStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageLeaf.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageLeaf.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageLeaf.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageLeaf.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageLeaf.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageLeaf.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageLeaf.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageLeaf.ts",
+      "vers": "core/objects/PDFStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageLeaf.ts",
+      "vers": "core/structures/PDFPageTree.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/structures/PDFCatalog.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCatalog.ts",
+      "vers": "core/interactive/ViewerPreferences.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCatalog.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCatalog.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCatalog.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFCatalog.ts",
+      "vers": "core/structures/PDFPageTree.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFObjectStream.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFObjectStream.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFObjectStream.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFObjectStream.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFObjectStream.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFObjectStream.ts",
+      "vers": "core/structures/PDFFlateStream.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFObjectStream.ts",
+      "vers": "core/syntax/CharCodes.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageTree.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageTree.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageTree.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageTree.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageTree.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageTree.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/structures/PDFPageTree.ts",
+      "vers": "core/structures/PDFPageLeaf.ts",
+      "type": "circulaire"
+    },
+    {
+      "de": "core/acroform/PDFAcroField.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroField.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroField.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroField.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroField.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroField.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroField.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroField.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroTerminal.ts",
+      "vers": "core/acroform/PDFAcroField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroTerminal.ts",
+      "vers": "core/annotation/PDFWidgetAnnotation.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroTerminal.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroTerminal.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroTerminal.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroSignature.ts",
+      "vers": "core/acroform/PDFAcroTerminal.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroSignature.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroSignature.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroButton.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroCheckBox.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroChoice.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroComboBox.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroListBox.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroNonTerminal.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroPushButton.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroRadioButton.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroSignature.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroTerminal.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/acroform/PDFAcroText.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/utils.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroForm.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroForm.ts",
+      "vers": "core/acroform/PDFAcroField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroForm.ts",
+      "vers": "core/acroform/PDFAcroNonTerminal.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroForm.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroForm.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroForm.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroForm.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroButton.ts",
+      "vers": "core/acroform/PDFAcroTerminal.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroButton.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroButton.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroButton.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroButton.ts",
+      "vers": "core/objects/PDFObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroButton.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroButton.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroCheckBox.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroCheckBox.ts",
+      "vers": "core/acroform/PDFAcroButton.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroCheckBox.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroCheckBox.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroCheckBox.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroComboBox.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroComboBox.ts",
+      "vers": "core/acroform/PDFAcroChoice.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroComboBox.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroComboBox.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroNonTerminal.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroNonTerminal.ts",
+      "vers": "core/acroform/PDFAcroField.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroNonTerminal.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroNonTerminal.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroNonTerminal.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroChoice.ts",
+      "vers": "core/acroform/PDFAcroTerminal.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroChoice.ts",
+      "vers": "core/objects/PDFArray.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroChoice.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroChoice.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroChoice.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroListBox.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroListBox.ts",
+      "vers": "core/acroform/PDFAcroChoice.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroListBox.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroListBox.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroText.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroText.ts",
+      "vers": "core/acroform/PDFAcroTerminal.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroText.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroText.ts",
+      "vers": "core/objects/PDFHexString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroText.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroText.ts",
+      "vers": "core/objects/PDFNumber.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroText.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroText.ts",
+      "vers": "core/objects/PDFString.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroPushButton.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroPushButton.ts",
+      "vers": "core/acroform/PDFAcroButton.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroPushButton.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroPushButton.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroRadioButton.ts",
+      "vers": "core/PDFContext.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroRadioButton.ts",
+      "vers": "core/acroform/PDFAcroButton.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroRadioButton.ts",
+      "vers": "core/objects/PDFDict.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroRadioButton.ts",
+      "vers": "core/objects/PDFName.ts",
+      "type": "interne"
+    },
+    {
+      "de": "core/acroform/PDFAcroRadioButton.ts",
+      "vers": "core/objects/PDFRef.ts",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "central → 'api/PDFPage.ts' (in=8, out=4)",
+    "central → 'api/PDFFont.ts' (in=11, out=2)",
+    "feuille → 'api/Embeddable.ts' (in=6)",
+    "central → 'api/PDFDocument.ts' (in=15, out=12)",
+    "central → 'api/PDFImage.ts' (in=5, out=2)",
+    "central → 'api/form/PDFField.ts' (in=9, out=3)",
+    "point_entree → 'api/form/appearances.ts'",
+    "point_entree → 'core/PDFObjectCopier.ts'",
+    "hub → 'core/PDFContext.ts' (in=35, 25% du projet)",
+    "feuille → 'core/syntax/CharCodes.ts' (in=26)",
+    "point_entree → 'core/writers/PDFStreamWriter.ts'",
+    "point_entree → 'core/embedders/CustomFontSubsetEmbedder.ts'",
+    "point_entree → 'core/embedders/PngEmbedder.ts'",
+    "point_entree → 'core/embedders/PDFPageEmbedder.ts'",
+    "point_entree → 'core/embedders/StandardFontEmbedder.ts'",
+    "point_entree → 'core/embedders/JpegEmbedder.ts'",
+    "point_entree → 'core/streams/decode.ts'",
+    "central → 'core/objects/PDFStream.ts' (in=11, out=6)",
+    "central → 'core/objects/PDFRawStream.ts' (in=9, out=3)",
+    "central → 'core/objects/PDFNull.ts' (in=5, out=2)",
+    "hub → 'core/objects/PDFDict.ts' (in=34, 24% du projet)",
+    "central → 'core/objects/PDFBool.ts' (in=5, out=2)",
+    "central → 'core/objects/PDFArray.ts' (in=18, out=13)",
+    "central → 'core/objects/PDFString.ts' (in=13, out=2)",
+    "hub → 'core/objects/PDFRef.ts' (in=39, 28% du projet)",
+    "central → 'core/objects/PDFHexString.ts' (in=16, out=2)",
+    "hub → 'core/objects/PDFName.ts' (in=33, 24% du projet)",
+    "point_entree → 'core/parser/PDFParser.ts'",
+    "central → 'core/parser/ByteStream.ts' (in=5, out=2)",
+    "central → 'core/structures/PDFFlateStream.ts' (in=3, out=3)",
+    "central → 'core/structures/PDFPageLeaf.ts' (in=4, out=9)",
+    "central → 'core/structures/PDFPageTree.ts' (in=3, out=7)",
+    "central → 'core/acroform/PDFAcroField.ts' (in=4, out=8)",
+    "central → 'core/acroform/PDFAcroTerminal.ts' (in=5, out=5)",
+    "point_entree → 'core/acroform/utils.ts'",
+    "point_entree → 'core/acroform/PDFAcroForm.ts'",
+    "central → 'core/acroform/PDFAcroButton.ts' (in=4, out=7)",
+    "central → 'core/acroform/PDFAcroChoice.ts' (in=3, out=5)",
+    "circulaire → 34 cycles détectés"
+  ]
+}

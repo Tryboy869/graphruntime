@@ -1,0 +1,1799 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 24
+    }
+  },
+  "stats": {
+    "fichiers_total": 24,
+    "edges_total": 106,
+    "edges_circulaires": 24,
+    "noeuds_centraux": 6,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 7,
+    "points_entree": 5,
+    "fichier_plus_appele": "flask/typing.py"
+  },
+  "noeuds": {
+    "flask/app.py": {
+      "fichier": "flask/app.py",
+      "langage": "python",
+      "lignes": 1536,
+      "taille_bytes": 61719,
+      "entrees": [
+        ".ctx",
+        ".debughelpers",
+        ".globals",
+        ".helpers",
+        ".sansio.app",
+        ".sansio.scaffold",
+        ".sessions",
+        ".signals",
+        ".templating",
+        ".testing",
+        ".typing",
+        ".wrappers",
+        "__future__",
+        "_typeshed.wsgi",
+        "asgiref.sync",
+        "click",
+        "collections.abc",
+        "datetime",
+        "flask",
+        "flask.testing",
+        "inspect",
+        "itertools",
+        "name",
+        "os",
+        "sys",
+        "the",
+        "types",
+        "typing",
+        "urllib.parse",
+        "weakref",
+        "werkzeug.datastructures",
+        "werkzeug.exceptions",
+        "werkzeug.routing",
+        "werkzeug.serving",
+        "werkzeug.wrappers",
+        "werkzeug.wsgi"
+      ],
+      "sorties": [
+        "class CustomClient",
+        "class Flask",
+        "def __call__",
+        "def __init__",
+        "def _make_timedelta",
+        "def app_context",
+        "def async_to_sync",
+        "def create_jinja_environment",
+        "def create_url_adapter",
+        "def dispatch_request",
+        "def do_teardown_appcontext",
+        "def do_teardown_request",
+        "def ensure_sync",
+        "def finalize_request",
+        "def full_dispatch_request",
+        "def get_send_file_max_age",
+        "def handle_exception",
+        "def handle_http_exception",
+        "def handle_user_exception",
+        "def log_exception",
+        "def make_default_options_response",
+        "def make_response",
+        "def make_shell_context",
+        "def open_instance_resource",
+        "def open_resource",
+        "def preprocess_request",
+        "def process_response",
+        "def raise_routing_exception",
+        "def request_context",
+        "def run",
+        "def send_static_file",
+        "def test_cli_runner",
+        "def test_client",
+        "def test_request_context",
+        "def update_template_context",
+        "def url_for",
+        "def wsgi_app"
+      ],
+      "appelle": [
+        "flask/ctx.py",
+        "flask/debughelpers.py",
+        "flask/globals.py",
+        "flask/helpers.py",
+        "flask/sansio/app.py",
+        "flask/sansio/scaffold.py",
+        "flask/sessions.py",
+        "flask/signals.py",
+        "flask/templating.py",
+        "flask/testing.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "flask/testing.py": {
+      "fichier": "flask/testing.py",
+      "langage": "python",
+      "lignes": 298,
+      "taille_bytes": 10117,
+      "entrees": [
+        ".app",
+        ".cli",
+        ".sessions",
+        "__future__",
+        "_typeshed.wsgi",
+        "click.testing",
+        "contextlib",
+        "copy",
+        "importlib.metadata",
+        "this",
+        "types",
+        "typing",
+        "urllib.parse",
+        "werkzeug.test",
+        "werkzeug.wrappers"
+      ],
+      "sorties": [
+        "class EnvironBuilder",
+        "class FlaskCliRunner",
+        "class FlaskClient",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _copy_environ",
+        "def _get_werkzeug_version",
+        "def _request_from_builder_args",
+        "def invoke",
+        "def json_dumps",
+        "def open",
+        "def session_transaction"
+      ],
+      "appelle": [
+        "flask/cli.py",
+        "flask/sansio/app.py",
+        "flask/sessions.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [
+        "flask/app.py",
+        "flask/sansio/app.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "flask/globals.py": {
+      "fichier": "flask/globals.py",
+      "langage": "python",
+      "lignes": 51,
+      "taille_bytes": 1713,
+      "entrees": [
+        ".app",
+        ".ctx",
+        ".sessions",
+        ".wrappers",
+        "__future__",
+        "contextvars",
+        "typing",
+        "werkzeug.local"
+      ],
+      "sorties": [],
+      "appelle": [
+        "flask/ctx.py",
+        "flask/sansio/app.py",
+        "flask/sessions.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/app.py",
+        "flask/blueprints.py",
+        "flask/cli.py",
+        "flask/ctx.py",
+        "flask/debughelpers.py",
+        "flask/helpers.py",
+        "flask/json/__init__.py",
+        "flask/logging.py",
+        "flask/templating.py",
+        "flask/views.py",
+        "flask/wrappers.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "flask/debughelpers.py": {
+      "fichier": "flask/debughelpers.py",
+      "langage": "python",
+      "lignes": 178,
+      "taille_bytes": 6080,
+      "entrees": [
+        ".blueprints",
+        ".globals",
+        ".sansio.app",
+        ".sansio.scaffold",
+        ".wrappers",
+        "__future__",
+        "jinja2.loaders",
+        "typing",
+        "werkzeug.routing"
+      ],
+      "sorties": [
+        "class DebugFilesKeyError",
+        "class FormDataRoutingRedirect",
+        "class UnexpectedUnicodeError",
+        "class newcls",
+        "def __getitem__",
+        "def __init__",
+        "def __str__",
+        "def _dump_loader_info",
+        "def attach_enctype_error_multidict",
+        "def explain_template_loading_attempts"
+      ],
+      "appelle": [
+        "flask/globals.py",
+        "flask/sansio/app.py",
+        "flask/sansio/blueprints.py",
+        "flask/sansio/scaffold.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [
+        "flask/app.py",
+        "flask/templating.py",
+        "flask/wrappers.py"
+      ],
+      "type_noeud": "central"
+    },
+    "flask/blueprints.py": {
+      "fichier": "flask/blueprints.py",
+      "langage": "python",
+      "lignes": 128,
+      "taille_bytes": 4541,
+      "entrees": [
+        ".cli",
+        ".globals",
+        ".helpers",
+        ".sansio.blueprints",
+        ".sansio.scaffold",
+        ".wrappers",
+        "__future__",
+        "datetime",
+        "os",
+        "typing"
+      ],
+      "sorties": [
+        "class Blueprint",
+        "def __init__",
+        "def get_send_file_max_age",
+        "def open_resource",
+        "def send_static_file"
+      ],
+      "appelle": [
+        "flask/cli.py",
+        "flask/globals.py",
+        "flask/helpers.py",
+        "flask/sansio/blueprints.py",
+        "flask/sansio/scaffold.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "flask/signals.py": {
+      "fichier": "flask/signals.py",
+      "langage": "python",
+      "lignes": 17,
+      "taille_bytes": 750,
+      "entrees": [
+        "__future__",
+        "blinker"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/app.py",
+        "flask/ctx.py",
+        "flask/helpers.py",
+        "flask/templating.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "flask/typing.py": {
+      "fichier": "flask/typing.py",
+      "langage": "python",
+      "lignes": 93,
+      "taille_bytes": 3293,
+      "entrees": [
+        "__future__",
+        "_typeshed.wsgi",
+        "collections.abc",
+        "typing",
+        "werkzeug.datastructures",
+        "werkzeug.sansio.response"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/app.py",
+        "flask/blueprints.py",
+        "flask/cli.py",
+        "flask/config.py",
+        "flask/ctx.py",
+        "flask/debughelpers.py",
+        "flask/globals.py",
+        "flask/helpers.py",
+        "flask/json/__init__.py",
+        "flask/json/provider.py",
+        "flask/json/tag.py",
+        "flask/logging.py",
+        "flask/sansio/app.py",
+        "flask/sansio/blueprints.py",
+        "flask/sansio/scaffold.py",
+        "flask/sessions.py",
+        "flask/templating.py",
+        "flask/testing.py",
+        "flask/views.py",
+        "flask/wrappers.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "flask/__main__.py": {
+      "fichier": "flask/__main__.py",
+      "langage": "python",
+      "lignes": 3,
+      "taille_bytes": 30,
+      "entrees": [
+        ".cli"
+      ],
+      "sorties": [],
+      "appelle": [
+        "flask/cli.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "flask/views.py": {
+      "fichier": "flask/views.py",
+      "langage": "python",
+      "lignes": 191,
+      "taille_bytes": 6962,
+      "entrees": [
+        ".globals",
+        "__future__",
+        "typing"
+      ],
+      "sorties": [
+        "class CounterAPI",
+        "class Hello",
+        "class MethodView",
+        "class View",
+        "def __init_subclass__",
+        "def as_view",
+        "def dispatch_request",
+        "def get",
+        "def post",
+        "def view"
+      ],
+      "appelle": [
+        "flask/globals.py",
+        "flask/typing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "flask/config.py": {
+      "fichier": "flask/config.py",
+      "langage": "python",
+      "lignes": 367,
+      "taille_bytes": 13219,
+      "entrees": [
+        ".sansio.app",
+        ":meth:`from_object`.",
+        "__future__",
+        "errno",
+        "json",
+        "os",
+        "the",
+        "tomllib",
+        "types",
+        "typing",
+        "typing_extensions",
+        "werkzeug.utils",
+        "yourapplication"
+      ],
+      "sorties": [
+        "class Config",
+        "class ConfigAttribute",
+        "class and",
+        "def __get__",
+        "def __init__",
+        "def __repr__",
+        "def __set__",
+        "def from_envvar",
+        "def from_file",
+        "def from_mapping",
+        "def from_object",
+        "def from_prefixed_env",
+        "def from_pyfile",
+        "def get_namespace",
+        "export YOURAPPLICATION_SETTINGS"
+      ],
+      "appelle": [
+        "flask/sansio/app.py",
+        "flask/typing.py"
+      ],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/sansio/app.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "flask/sessions.py": {
+      "fichier": "flask/sessions.py",
+      "langage": "python",
+      "lignes": 385,
+      "taille_bytes": 14969,
+      "entrees": [
+        ".app",
+        ".json.tag",
+        ".wrappers",
+        "__future__",
+        "collections.abc",
+        "datetime",
+        "hashlib",
+        "itsdangerous",
+        "the",
+        "typing",
+        "typing_extensions",
+        "werkzeug.datastructures"
+      ],
+      "sorties": [
+        "class NullSession",
+        "class SecureCookieSession",
+        "class SecureCookieSessionInterface",
+        "class Session",
+        "class SessionInterface",
+        "class SessionMixin",
+        "def __init__",
+        "def _fail",
+        "def _lazy_sha1",
+        "def get_cookie_domain",
+        "def get_cookie_httponly",
+        "def get_cookie_name",
+        "def get_cookie_partitioned",
+        "def get_cookie_path",
+        "def get_cookie_samesite",
+        "def get_cookie_secure",
+        "def get_expiration_time",
+        "def get_signing_serializer",
+        "def is_null_session",
+        "def make_null_session",
+        "def on_update",
+        "def open_session",
+        "def permanent",
+        "def save_session",
+        "def should_set_cookie"
+      ],
+      "appelle": [
+        "flask/json/tag.py",
+        "flask/sansio/app.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [
+        "flask/app.py",
+        "flask/ctx.py",
+        "flask/globals.py",
+        "flask/testing.py"
+      ],
+      "type_noeud": "central"
+    },
+    "flask/cli.py": {
+      "fichier": "flask/cli.py",
+      "langage": "python",
+      "lignes": 1135,
+      "taille_bytes": 37184,
+      "entrees": [
+        ".app",
+        ".globals",
+        ".helpers",
+        ":file:`.env`",
+        "__future__",
+        "_typeshed.wsgi",
+        "ast",
+        "click",
+        "click.core",
+        "code",
+        "collections.abc",
+        "cryptography",
+        "dotenv",
+        "functools",
+        "importlib",
+        "importlib.metadata",
+        "importlib_metadata",
+        "inspect",
+        "operator",
+        "os",
+        "platform",
+        "re",
+        "readline",
+        "rlcompleter",
+        "ssl",
+        "sys",
+        "traceback",
+        "types",
+        "typing",
+        "werkzeug",
+        "werkzeug.serving",
+        "werkzeug.utils"
+      ],
+      "sorties": [
+        "class AppGroup",
+        "class CertParamType",
+        "class FlaskGroup",
+        "class NoAppException",
+        "class ScriptInfo",
+        "class SeparatedPathType",
+        "def __init__",
+        "def _called_with_wrong_args",
+        "def _env_file_callback",
+        "def _load_plugin_commands",
+        "def _path_is_ancestor",
+        "def _set_app",
+        "def _set_debug",
+        "def _validate_key",
+        "def app",
+        "def command",
+        "def convert",
+        "def decorator",
+        "def find_app_by_string",
+        "def find_best_app",
+        "def get_command",
+        "def get_version",
+        "def group",
+        "def list_commands",
+        "def load_app",
+        "def load_dotenv",
+        "def locate_app",
+        "def main",
+        "def make_context",
+        "def parse_args",
+        "def prepare_import",
+        "def routes_command",
+        "def run_command",
+        "def shell_command",
+        "def show_server_banner",
+        "def with_appcontext"
+      ],
+      "appelle": [
+        "flask/globals.py",
+        "flask/helpers.py",
+        "flask/sansio/app.py",
+        "flask/typing.py"
+      ],
+      "est_appele_par": [
+        "flask/__main__.py",
+        "flask/blueprints.py",
+        "flask/testing.py"
+      ],
+      "type_noeud": "central"
+    },
+    "flask/logging.py": {
+      "fichier": "flask/logging.py",
+      "langage": "python",
+      "lignes": 79,
+      "taille_bytes": 2377,
+      "entrees": [
+        ".globals",
+        ".sansio.app",
+        "__future__",
+        "logging",
+        "sys",
+        "this",
+        "typing",
+        "werkzeug.local"
+      ],
+      "sorties": [
+        "def create_logger",
+        "def has_level_handler",
+        "def wsgi_errors_stream"
+      ],
+      "appelle": [
+        "flask/globals.py",
+        "flask/sansio/app.py",
+        "flask/typing.py"
+      ],
+      "est_appele_par": [
+        "flask/sansio/app.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "flask/templating.py": {
+      "fichier": "flask/templating.py",
+      "langage": "python",
+      "lignes": 220,
+      "taille_bytes": 7678,
+      "entrees": [
+        ".app",
+        ".debughelpers",
+        ".globals",
+        ".helpers",
+        ".sansio.app",
+        ".sansio.scaffold",
+        ".signals",
+        "__future__",
+        "jinja2",
+        "typing"
+      ],
+      "sorties": [
+        "class DispatchingJinjaLoader",
+        "class Environment",
+        "def __init__",
+        "def _default_template_ctx_processor",
+        "def _get_source_explained",
+        "def _get_source_fast",
+        "def _iter_loaders",
+        "def _render",
+        "def _stream",
+        "def generate",
+        "def get_source",
+        "def list_templates",
+        "def render_template",
+        "def render_template_string",
+        "def stream_template",
+        "def stream_template_string"
+      ],
+      "appelle": [
+        "flask/debughelpers.py",
+        "flask/globals.py",
+        "flask/helpers.py",
+        "flask/sansio/app.py",
+        "flask/sansio/scaffold.py",
+        "flask/signals.py",
+        "flask/typing.py"
+      ],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/app.py",
+        "flask/sansio/app.py",
+        "flask/sansio/scaffold.py"
+      ],
+      "type_noeud": "central"
+    },
+    "flask/wrappers.py": {
+      "fichier": "flask/wrappers.py",
+      "langage": "python",
+      "lignes": 257,
+      "taille_bytes": 9406,
+      "entrees": [
+        ".debughelpers",
+        ".globals",
+        ".helpers",
+        "__future__",
+        "typing",
+        "werkzeug.exceptions",
+        "werkzeug.routing",
+        "werkzeug.wrappers"
+      ],
+      "sorties": [
+        "class Request",
+        "class Response",
+        "def _load_form_data",
+        "def blueprint",
+        "def blueprints",
+        "def endpoint",
+        "def max_content_length",
+        "def max_cookie_size",
+        "def max_form_memory_size",
+        "def max_form_parts",
+        "def on_json_loading_failed"
+      ],
+      "appelle": [
+        "flask/debughelpers.py",
+        "flask/globals.py",
+        "flask/helpers.py",
+        "flask/typing.py"
+      ],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/app.py",
+        "flask/blueprints.py",
+        "flask/ctx.py",
+        "flask/debughelpers.py",
+        "flask/globals.py",
+        "flask/helpers.py",
+        "flask/json/__init__.py",
+        "flask/sansio/app.py",
+        "flask/sessions.py",
+        "flask/testing.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "flask/ctx.py": {
+      "fichier": "flask/ctx.py",
+      "langage": "python",
+      "lignes": 459,
+      "taille_bytes": 15521,
+      "entrees": [
+        ".app",
+        ".globals",
+        ".sessions",
+        ".signals",
+        ".wrappers",
+        "__future__",
+        "_typeshed.wsgi",
+        "contextvars",
+        "flask",
+        "functools",
+        "gevent",
+        "sys",
+        "types",
+        "typing",
+        "werkzeug.exceptions"
+      ],
+      "sorties": [
+        "class AppContext",
+        "class RequestContext",
+        "class User",
+        "class _AppCtxGlobals",
+        "def __contains__",
+        "def __delattr__",
+        "def __enter__",
+        "def __exit__",
+        "def __getattr__",
+        "def __init__",
+        "def __iter__",
+        "def __repr__",
+        "def __setattr__",
+        "def add_header",
+        "def after_this_request",
+        "def copy",
+        "def copy_current_request_context",
+        "def do_some_work",
+        "def get",
+        "def has_app_context",
+        "def has_request_context",
+        "def index",
+        "def match_request",
+        "def pop",
+        "def push",
+        "def session",
+        "def setdefault",
+        "def wrapper"
+      ],
+      "appelle": [
+        "flask/globals.py",
+        "flask/sansio/app.py",
+        "flask/sessions.py",
+        "flask/signals.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/app.py",
+        "flask/globals.py",
+        "flask/sansio/app.py"
+      ],
+      "type_noeud": "central"
+    },
+    "flask/__init__.py": {
+      "fichier": "flask/__init__.py",
+      "langage": "python",
+      "lignes": 61,
+      "taille_bytes": 2701,
+      "entrees": [
+        ".app",
+        ".blueprints",
+        ".config",
+        ".ctx",
+        ".globals",
+        ".helpers",
+        ".json",
+        ".signals",
+        ".templating",
+        ".wrappers",
+        "__future__",
+        "importlib.metadata",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "def __getattr__"
+      ],
+      "appelle": [
+        "flask/config.py",
+        "flask/ctx.py",
+        "flask/globals.py",
+        "flask/helpers.py",
+        "flask/sansio/app.py",
+        "flask/sansio/blueprints.py",
+        "flask/signals.py",
+        "flask/templating.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "flask/helpers.py": {
+      "fichier": "flask/helpers.py",
+      "langage": "python",
+      "lignes": 641,
+      "taille_bytes": 23517,
+      "entrees": [
+        ".globals",
+        ".signals",
+        ".wrappers",
+        "Werkzeug",
+        "__future__",
+        "datetime",
+        "flask",
+        "functools",
+        "importlib.util",
+        "os",
+        "sys",
+        "typing",
+        "werkzeug.exceptions",
+        "werkzeug.utils",
+        "werkzeug.wrappers"
+      ],
+      "sorties": [
+        "def _prepare_send_file_kwargs",
+        "def _split_blueprint_path",
+        "def abort",
+        "def decorator",
+        "def download_file",
+        "def flash",
+        "def generate",
+        "def generator",
+        "def get_debug_flag",
+        "def get_flashed_messages",
+        "def get_load_dotenv",
+        "def get_root_path",
+        "def get_template_attribute",
+        "def index",
+        "def make_response",
+        "def redirect",
+        "def send_file",
+        "def send_from_directory",
+        "def stream_with_context",
+        "def streamed_response",
+        "def url_for"
+      ],
+      "appelle": [
+        "flask/globals.py",
+        "flask/signals.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/app.py",
+        "flask/blueprints.py",
+        "flask/cli.py",
+        "flask/sansio/app.py",
+        "flask/sansio/scaffold.py",
+        "flask/templating.py",
+        "flask/wrappers.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "flask/sansio/app.py": {
+      "fichier": "flask/sansio/app.py",
+      "langage": "python",
+      "lignes": 964,
+      "taille_bytes": 38106,
+      "entrees": [
+        "..",
+        "..config",
+        "..ctx",
+        "..helpers",
+        "..json.provider",
+        "..logging",
+        "..templating",
+        "..testing",
+        ".blueprints",
+        ".scaffold",
+        "__future__",
+        "datetime",
+        "flask",
+        "itertools",
+        "logging",
+        "name",
+        "os",
+        "sys",
+        "typing",
+        "werkzeug.exceptions",
+        "werkzeug.routing",
+        "werkzeug.sansio.response",
+        "werkzeug.utils",
+        "werkzeug.wrappers"
+      ],
+      "sorties": [
+        "class App",
+        "def __init__",
+        "def _check_setup_finished",
+        "def _find_error_handler",
+        "def _make_timedelta",
+        "def add_template_filter",
+        "def add_template_global",
+        "def add_template_test",
+        "def add_url_rule",
+        "def auto_find_instance_path",
+        "def create_global_jinja_loader",
+        "def create_jinja_environment",
+        "def debug",
+        "def decorator",
+        "def double",
+        "def handle_url_build_error",
+        "def inject_url_defaults",
+        "def is_prime",
+        "def iter_blueprints",
+        "def jinja_env",
+        "def logger",
+        "def make_aborter",
+        "def make_config",
+        "def name",
+        "def redirect",
+        "def register_blueprint",
+        "def reverse",
+        "def select_jinja_autoescape",
+        "def shell_context_processor",
+        "def should_ignore_error",
+        "def teardown_appcontext",
+        "def template_filter",
+        "def template_global",
+        "def template_test",
+        "def trap_http_exception",
+        "function name",
+        "function returns"
+      ],
+      "appelle": [
+        "flask/config.py",
+        "flask/ctx.py",
+        "flask/helpers.py",
+        "flask/json/provider.py",
+        "flask/logging.py",
+        "flask/sansio/blueprints.py",
+        "flask/sansio/scaffold.py",
+        "flask/templating.py",
+        "flask/testing.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/app.py",
+        "flask/cli.py",
+        "flask/config.py",
+        "flask/ctx.py",
+        "flask/debughelpers.py",
+        "flask/globals.py",
+        "flask/json/provider.py",
+        "flask/logging.py",
+        "flask/sansio/blueprints.py",
+        "flask/sessions.py",
+        "flask/templating.py",
+        "flask/testing.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "flask/sansio/scaffold.py": {
+      "fichier": "flask/sansio/scaffold.py",
+      "langage": "python",
+      "lignes": 792,
+      "taille_bytes": 30371,
+      "entrees": [
+        "..",
+        "..helpers",
+        "..templating",
+        "__future__",
+        "click",
+        "collections",
+        "functools",
+        "importlib.util",
+        "jinja2",
+        "os",
+        "pathlib",
+        "sys",
+        "typing",
+        "werkzeug.exceptions",
+        "werkzeug.utils"
+      ],
+      "sorties": [
+        "class Scaffold",
+        "def __init__",
+        "def __repr__",
+        "def _check_setup_finished",
+        "def _endpoint_from_view_func",
+        "def _find_package_path",
+        "def _get_exc_class_and_code",
+        "def _method_route",
+        "def add_url_rule",
+        "def after_request",
+        "def before_request",
+        "def context_processor",
+        "def decorator",
+        "def delete",
+        "def endpoint",
+        "def errorhandler",
+        "def example",
+        "def find_package",
+        "def get",
+        "def has_static_folder",
+        "def index",
+        "def jinja_loader",
+        "def load_user",
+        "def page_not_found",
+        "def patch",
+        "def post",
+        "def put",
+        "def register_error_handler",
+        "def route",
+        "def setupmethod",
+        "def special_exception_handler",
+        "def static_folder",
+        "def static_url_path",
+        "def teardown_request",
+        "def url_defaults",
+        "def url_value_preprocessor",
+        "def wrapper_func"
+      ],
+      "appelle": [
+        "flask/helpers.py",
+        "flask/templating.py",
+        "flask/typing.py"
+      ],
+      "est_appele_par": [
+        "flask/app.py",
+        "flask/blueprints.py",
+        "flask/debughelpers.py",
+        "flask/sansio/app.py",
+        "flask/sansio/blueprints.py",
+        "flask/templating.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "flask/sansio/blueprints.py": {
+      "fichier": "flask/sansio/blueprints.py",
+      "langage": "python",
+      "lignes": 632,
+      "taille_bytes": 24637,
+      "entrees": [
+        "..",
+        ".app",
+        ".scaffold",
+        "__future__",
+        "collections",
+        "functools",
+        "os",
+        "typing"
+      ],
+      "sorties": [
+        "class Blueprint",
+        "class BlueprintSetupState",
+        "def __init__",
+        "def _check_setup_finished",
+        "def _merge_blueprint_funcs",
+        "def add_app_template_filter",
+        "def add_app_template_global",
+        "def add_app_template_test",
+        "def add_url_rule",
+        "def after_app_request",
+        "def app_context_processor",
+        "def app_errorhandler",
+        "def app_template_filter",
+        "def app_template_global",
+        "def app_template_test",
+        "def app_url_defaults",
+        "def app_url_value_preprocessor",
+        "def before_app_request",
+        "def decorator",
+        "def extend",
+        "def from_blueprint",
+        "def make_setup_state",
+        "def record",
+        "def record_once",
+        "def register",
+        "def register_blueprint",
+        "def register_template",
+        "def teardown_app_request",
+        "def wrapper",
+        "function name",
+        "function passed",
+        "function that"
+      ],
+      "appelle": [
+        "flask/sansio/app.py",
+        "flask/sansio/scaffold.py",
+        "flask/typing.py"
+      ],
+      "est_appele_par": [
+        "flask/__init__.py",
+        "flask/blueprints.py",
+        "flask/debughelpers.py",
+        "flask/sansio/app.py"
+      ],
+      "type_noeud": "central"
+    },
+    "flask/json/tag.py": {
+      "fichier": "flask/json/tag.py",
+      "langage": "python",
+      "lignes": 327,
+      "taille_bytes": 9281,
+      "entrees": [
+        "..json",
+        "__future__",
+        "base64",
+        "datetime",
+        "flask.json.tag",
+        "markupsafe",
+        "typing",
+        "uuid",
+        "werkzeug.http"
+      ],
+      "sorties": [
+        "class JSONTag",
+        "class PassDict",
+        "class PassList",
+        "class TagBytes",
+        "class TagDateTime",
+        "class TagDict",
+        "class TagMarkup",
+        "class TagOrderedDict",
+        "class TagTuple",
+        "class TagUUID",
+        "class TaggedJSONSerializer",
+        "def __init__",
+        "def _untag_scan",
+        "def check",
+        "def dumps",
+        "def loads",
+        "def register",
+        "def tag",
+        "def to_json",
+        "def to_python",
+        "def untag"
+      ],
+      "appelle": [
+        "flask/typing.py"
+      ],
+      "est_appele_par": [
+        "flask/sessions.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "flask/json/provider.py": {
+      "fichier": "flask/json/provider.py",
+      "langage": "python",
+      "lignes": 215,
+      "taille_bytes": 7672,
+      "entrees": [
+        "..sansio.app",
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "decimal",
+        "json",
+        "typing",
+        "uuid",
+        "weakref",
+        "werkzeug.http",
+        "werkzeug.sansio.response"
+      ],
+      "sorties": [
+        "class DefaultJSONProvider",
+        "class JSONProvider",
+        "class and",
+        "def __init__",
+        "def _default",
+        "def _prepare_response_obj",
+        "def dump",
+        "def dumps",
+        "def load",
+        "def loads",
+        "def response",
+        "output will"
+      ],
+      "appelle": [
+        "flask/sansio/app.py",
+        "flask/typing.py"
+      ],
+      "est_appele_par": [
+        "flask/json/__init__.py",
+        "flask/sansio/app.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "flask/json/__init__.py": {
+      "fichier": "flask/json/__init__.py",
+      "langage": "python",
+      "lignes": 170,
+      "taille_bytes": 5602,
+      "entrees": [
+        "..globals",
+        "..wrappers",
+        ".provider",
+        "__future__",
+        "json",
+        "typing"
+      ],
+      "sorties": [
+        "def dump",
+        "def dumps",
+        "def jsonify",
+        "def load",
+        "def loads"
+      ],
+      "appelle": [
+        "flask/globals.py",
+        "flask/json/provider.py",
+        "flask/typing.py",
+        "flask/wrappers.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    }
+  },
+  "edges": [
+    {
+      "de": "flask/app.py",
+      "vers": "flask/ctx.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/debughelpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/sansio/app.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/sansio/scaffold.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/sessions.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/signals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/templating.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/testing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/app.py",
+      "vers": "flask/wrappers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/testing.py",
+      "vers": "flask/cli.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/testing.py",
+      "vers": "flask/sansio/app.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/testing.py",
+      "vers": "flask/sessions.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/testing.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/testing.py",
+      "vers": "flask/wrappers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/globals.py",
+      "vers": "flask/ctx.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/globals.py",
+      "vers": "flask/sansio/app.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/globals.py",
+      "vers": "flask/sessions.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/globals.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/globals.py",
+      "vers": "flask/wrappers.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/debughelpers.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/debughelpers.py",
+      "vers": "flask/sansio/app.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/debughelpers.py",
+      "vers": "flask/sansio/blueprints.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/debughelpers.py",
+      "vers": "flask/sansio/scaffold.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/debughelpers.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/debughelpers.py",
+      "vers": "flask/wrappers.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/blueprints.py",
+      "vers": "flask/cli.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/blueprints.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/blueprints.py",
+      "vers": "flask/helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/blueprints.py",
+      "vers": "flask/sansio/blueprints.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/blueprints.py",
+      "vers": "flask/sansio/scaffold.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/blueprints.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/blueprints.py",
+      "vers": "flask/wrappers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__main__.py",
+      "vers": "flask/cli.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/views.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/views.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/config.py",
+      "vers": "flask/sansio/app.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/config.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sessions.py",
+      "vers": "flask/json/tag.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sessions.py",
+      "vers": "flask/sansio/app.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sessions.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sessions.py",
+      "vers": "flask/wrappers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/cli.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/cli.py",
+      "vers": "flask/helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/cli.py",
+      "vers": "flask/sansio/app.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/cli.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/logging.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/logging.py",
+      "vers": "flask/sansio/app.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/logging.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/templating.py",
+      "vers": "flask/debughelpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/templating.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/templating.py",
+      "vers": "flask/helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/templating.py",
+      "vers": "flask/sansio/app.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/templating.py",
+      "vers": "flask/sansio/scaffold.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/templating.py",
+      "vers": "flask/signals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/templating.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/wrappers.py",
+      "vers": "flask/debughelpers.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/wrappers.py",
+      "vers": "flask/globals.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/wrappers.py",
+      "vers": "flask/helpers.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/wrappers.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/ctx.py",
+      "vers": "flask/globals.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/ctx.py",
+      "vers": "flask/sansio/app.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/ctx.py",
+      "vers": "flask/sessions.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/ctx.py",
+      "vers": "flask/signals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/ctx.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/ctx.py",
+      "vers": "flask/wrappers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/config.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/ctx.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/sansio/app.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/sansio/blueprints.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/signals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/templating.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/__init__.py",
+      "vers": "flask/wrappers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/helpers.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/helpers.py",
+      "vers": "flask/signals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/helpers.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/helpers.py",
+      "vers": "flask/wrappers.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/config.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/ctx.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/json/provider.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/logging.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/sansio/blueprints.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/sansio/scaffold.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/templating.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/testing.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sansio/app.py",
+      "vers": "flask/wrappers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sansio/scaffold.py",
+      "vers": "flask/helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sansio/scaffold.py",
+      "vers": "flask/templating.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/scaffold.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sansio/blueprints.py",
+      "vers": "flask/sansio/app.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/sansio/blueprints.py",
+      "vers": "flask/sansio/scaffold.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/sansio/blueprints.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/json/tag.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/json/provider.py",
+      "vers": "flask/sansio/app.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "flask/json/provider.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/json/__init__.py",
+      "vers": "flask/globals.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/json/__init__.py",
+      "vers": "flask/json/provider.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/json/__init__.py",
+      "vers": "flask/typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "flask/json/__init__.py",
+      "vers": "flask/wrappers.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'flask/app.py'",
+    "hub → 'flask/globals.py' (in=12, 50% du projet)",
+    "central → 'flask/debughelpers.py' (in=3, out=6)",
+    "point_entree → 'flask/blueprints.py'",
+    "hub → 'flask/signals.py' (in=5, 21% du projet)",
+    "hub → 'flask/typing.py' (in=21, 88% du projet)",
+    "point_entree → 'flask/views.py'",
+    "central → 'flask/sessions.py' (in=4, out=4)",
+    "central → 'flask/cli.py' (in=3, out=4)",
+    "central → 'flask/templating.py' (in=4, out=7)",
+    "hub → 'flask/wrappers.py' (in=11, 46% du projet)",
+    "central → 'flask/ctx.py' (in=4, out=6)",
+    "point_entree → 'flask/__init__.py'",
+    "hub → 'flask/helpers.py' (in=8, 33% du projet)",
+    "hub → 'flask/sansio/app.py' (in=13, 54% du projet)",
+    "hub → 'flask/sansio/scaffold.py' (in=6, 25% du projet)",
+    "central → 'flask/sansio/blueprints.py' (in=4, out=3)",
+    "point_entree → 'flask/json/__init__.py'",
+    "circulaire → 24 cycles détectés"
+  ]
+}

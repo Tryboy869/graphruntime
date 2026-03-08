@@ -1,0 +1,2320 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "typescript": 1,
+      "json": 1,
+      "javascript": 63
+    }
+  },
+  "stats": {
+    "fichiers_total": 65,
+    "edges_total": 114,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 5,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 1,
+    "points_entree": 7,
+    "fichier_plus_appele": "package/lib/platform/common/utils.js"
+  },
+  "noeuds": {
+    "package/index.d.ts": {
+      "fichier": "package/index.d.ts",
+      "langage": "typescript",
+      "lignes": 810,
+      "taille_bytes": 20532,
+      "entrees": [],
+      "sorties": [
+        "export class",
+        "export enum",
+        "export function",
+        "export interface",
+        "export type",
+        "interface AxiosInterceptorHandler",
+        "interface RawAxiosHeaders",
+        "type AxiosAdapterConfig",
+        "type AxiosAdapterName",
+        "type AxiosHeaderMatcher",
+        "type AxiosHeaderParser",
+        "type AxiosInterceptorFulfilled",
+        "type AxiosInterceptorRejected",
+        "type AxiosRequestInterceptorUse",
+        "type AxiosResponseInterceptorUse",
+        "type BrowserProgressEvent",
+        "type CommonRequestHeadersList",
+        "type CommonResponseHeadersList",
+        "type ContentType",
+        "type MaxDownloadRate",
+        "type MaxUploadRate",
+        "type MethodsHeaders",
+        "type Milliseconds",
+        "type RawCommonResponseHeaders",
+        "type StringLiteralsOrString"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/package.json": {
+      "fichier": "package/package.json",
+      "langage": "json",
+      "lignes": 226,
+      "taille_bytes": 7357,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/index.js": {
+      "fichier": "package/index.js",
+      "langage": "javascript",
+      "lignes": 43,
+      "taille_bytes": 684,
+      "entrees": [
+        "axios"
+      ],
+      "sorties": [],
+      "appelle": [
+        "package/lib/axios.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/axios.js": {
+      "fichier": "package/lib/axios.js",
+      "langage": "javascript",
+      "lignes": 89,
+      "taille_bytes": 2558,
+      "entrees": [
+        "Axios",
+        "AxiosError",
+        "AxiosHeaders",
+        "CancelToken",
+        "CanceledError",
+        "HttpStatusCode",
+        "adapters",
+        "bind",
+        "defaults",
+        "formDataToJSON",
+        "isAxiosError",
+        "isCancel",
+        "mergeConfig",
+        "spread",
+        "toFormData",
+        "utils"
+      ],
+      "sorties": [
+        "const axios",
+        "const context",
+        "const instance",
+        "function createInstance"
+      ],
+      "appelle": [
+        "package/lib/adapters/adapters.js",
+        "package/lib/cancel/CancelToken.js",
+        "package/lib/cancel/CanceledError.js",
+        "package/lib/cancel/isCancel.js",
+        "package/lib/core/Axios.js",
+        "package/lib/core/AxiosError.js",
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/core/mergeConfig.js",
+        "package/lib/helpers/HttpStatusCode.js",
+        "package/lib/helpers/bind.js",
+        "package/lib/helpers/formDataToJSON.js",
+        "package/lib/helpers/isAxiosError.js",
+        "package/lib/helpers/spread.js",
+        "package/lib/helpers/toFormData.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/index.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/utils.js": {
+      "fichier": "package/lib/utils.js",
+      "langage": "javascript",
+      "lignes": 919,
+      "taille_bytes": 23296,
+      "entrees": [
+        "bind"
+      ],
+      "sorties": [
+        "const FormDataCtor",
+        "const _global",
+        "const _iterator",
+        "const _setImmediate",
+        "const arr",
+        "const asap",
+        "const assignValue",
+        "const define",
+        "const descriptors",
+        "const endsWith",
+        "const extend",
+        "const forEachEntry",
+        "const freezeMethods",
+        "const generator",
+        "const hasOwnProperty",
+        "const inherits",
+        "const isArrayBuffer",
+        "const isAsyncFn",
+        "const isBlob",
+        "const isBoolean",
+        "const isContextDefined",
+        "const isDate",
+        "const isEmptyObject",
+        "const isFile",
+        "const isFileList",
+        "const isFormData",
+        "const isFunction",
+        "const isHTMLForm",
+        "const isIterable",
+        "const isNumber",
+        "const isObject",
+        "const isPlainObject",
+        "const isReactNative",
+        "const isReactNativeBlob",
+        "const isRegExp",
+        "const isStream",
+        "const isString",
+        "const isThenable",
+        "const isTypedArray",
+        "const isURLSearchParams",
+        "const isUndefined",
+        "const keys",
+        "const kindOf",
+        "const kindOfTest",
+        "const lastIndex",
+        "const len",
+        "const matchAll",
+        "const merged",
+        "const noop",
+        "const obj",
+        "const pair",
+        "const prototype",
+        "const reduceDescriptors",
+        "const reducedDescriptors",
+        "const reducedValue",
+        "const result",
+        "const stack",
+        "const str",
+        "const stripBOM",
+        "const target",
+        "const targetKey",
+        "const toArray",
+        "const toCamelCase",
+        "const toFiniteNumber",
+        "const toFlatObject",
+        "const toJSONObject",
+        "const toObjectSet",
+        "const trim",
+        "const typeOfTest",
+        "const value",
+        "const visit",
+        "function findKey",
+        "function forEach",
+        "function getGlobal",
+        "function isArrayBufferView",
+        "function isBuffer",
+        "function isSpecCompliantForm",
+        "function merge"
+      ],
+      "appelle": [
+        "package/lib/helpers/bind.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/adapters/xhr.js": {
+      "fichier": "package/lib/adapters/xhr.js",
+      "langage": "javascript",
+      "lignes": 222,
+      "taille_bytes": 7448,
+      "entrees": [
+        "AxiosError",
+        "AxiosHeaders",
+        "CanceledError",
+        "parseProtocol",
+        "platform",
+        "resolveConfig",
+        "settle",
+        "transitionalDefaults",
+        "utils"
+      ],
+      "sorties": [
+        "const _config",
+        "const err",
+        "const isXHRAdapterSupported",
+        "const msg",
+        "const protocol",
+        "const requestHeaders",
+        "const response",
+        "const responseData",
+        "const responseHeaders",
+        "const transitional",
+        "function _reject",
+        "function _resolve",
+        "function done",
+        "function onloadend"
+      ],
+      "appelle": [
+        "package/lib/cancel/CanceledError.js",
+        "package/lib/core/AxiosError.js",
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/core/settle.js",
+        "package/lib/helpers/parseProtocol.js",
+        "package/lib/helpers/resolveConfig.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "package/lib/adapters/adapters.js": {
+      "fichier": "package/lib/adapters/adapters.js",
+      "langage": "javascript",
+      "lignes": 130,
+      "taille_bytes": 3310,
+      "entrees": [
+        "AxiosError",
+        "httpAdapter",
+        "utils",
+        "xhrAdapter"
+      ],
+      "sorties": [
+        "const isResolvedHandle",
+        "const knownAdapters",
+        "const reasons",
+        "const rejectedReasons",
+        "const renderReason",
+        "function getAdapter"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosError.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/axios.js",
+        "package/lib/core/dispatchRequest.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/adapters/http.js": {
+      "fichier": "package/lib/adapters/http.js",
+      "langage": "javascript",
+      "lignes": 949,
+      "taille_bytes": 29327,
+      "entrees": [
+        "AxiosError",
+        "AxiosHeaders",
+        "AxiosTransformStream",
+        "CanceledError",
+        "ZlibHeaderTransformStream",
+        "buildFullPath",
+        "buildURL",
+        "callbackify",
+        "estimateDataURLDecodedBytes",
+        "followRedirects",
+        "formDataToStream",
+        "fromDataURI",
+        "http",
+        "http2",
+        "https",
+        "platform",
+        "proxyFromEnv",
+        "readBlob",
+        "settle",
+        "stream",
+        "transitionalDefaults",
+        "util",
+        "utils",
+        "zlib"
+      ],
+      "sorties": [
+        "class Http2Sessions",
+        "const _lookup",
+        "const _reject",
+        "const _resolve",
+        "const abortEmitter",
+        "const addresses",
+        "const authority",
+        "const base64",
+        "const brotliOptions",
+        "const buildAddressEntry",
+        "const contentLength",
+        "const customErr",
+        "const dataUrl",
+        "const done",
+        "const err",
+        "const estimated",
+        "const flushOnFinish",
+        "const fullPath",
+        "const headers",
+        "const http2Headers",
+        "const http2Sessions",
+        "const http2Transport",
+        "const isBrotliSupported",
+        "const isHttp2",
+        "const isHttpAdapterSupported",
+        "const isHttps",
+        "const isHttpsRequest",
+        "const knownLength",
+        "const lastRequest",
+        "const maxRate",
+        "const method",
+        "const offListeners",
+        "const onFinished",
+        "const options",
+        "const originalRequestFn",
+        "const parsed",
+        "const password",
+        "const protocol",
+        "const proxyHost",
+        "const proxyUrl",
+        "const removeSession",
+        "const req",
+        "const resolveFamily",
+        "const response",
+        "const responseBuffer",
+        "const responseLength",
+        "const session",
+        "const status",
+        "const stream",
+        "const streams",
+        "const supportedProtocols",
+        "const timeout",
+        "const transformStream",
+        "const transitional",
+        "const urlPassword",
+        "const urlUsername",
+        "const userBoundary",
+        "const username",
+        "const validProxyAuth",
+        "const wrapAsync",
+        "const zlibOptions",
+        "export const",
+        "function abort",
+        "function dispatchBeforeRedirect",
+        "function httpAdapter",
+        "function setProxy"
+      ],
+      "appelle": [
+        "package/lib/cancel/CanceledError.js",
+        "package/lib/core/AxiosError.js",
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/core/buildFullPath.js",
+        "package/lib/core/settle.js",
+        "package/lib/helpers/AxiosTransformStream.js",
+        "package/lib/helpers/ZlibHeaderTransformStream.js",
+        "package/lib/helpers/buildURL.js",
+        "package/lib/helpers/callbackify.js",
+        "package/lib/helpers/estimateDataURLDecodedBytes.js",
+        "package/lib/helpers/formDataToStream.js",
+        "package/lib/helpers/fromDataURI.js",
+        "package/lib/helpers/readBlob.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "package/lib/adapters/fetch.js": {
+      "fichier": "package/lib/adapters/fetch.js",
+      "langage": "javascript",
+      "lignes": 334,
+      "taille_bytes": 8678,
+      "entrees": [
+        "AxiosError",
+        "AxiosHeaders",
+        "composeSignals",
+        "platform",
+        "resolveConfig",
+        "settle",
+        "utils"
+      ],
+      "sorties": [
+        "const DEFAULT_CHUNK_SIZE",
+        "const _request",
+        "const adapter",
+        "const encodeText",
+        "const factory",
+        "const getBodyLength",
+        "const globalFetchAPI",
+        "const hasContentType",
+        "const isCredentialsSupported",
+        "const isFetchSupported",
+        "const isReadableStreamSupported",
+        "const isRequestSupported",
+        "const isResponseSupported",
+        "const isStreamResponse",
+        "const length",
+        "const options",
+        "const resolveBodyLength",
+        "const resolvedOptions",
+        "const resolvers",
+        "const responseContentLength",
+        "const seedCache",
+        "const seeds",
+        "const supportsRequestStream",
+        "const supportsResponseStream",
+        "const test",
+        "const unsubscribe",
+        "export const"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosError.js",
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/core/settle.js",
+        "package/lib/helpers/composeSignals.js",
+        "package/lib/helpers/resolveConfig.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "package/lib/env/data.js": {
+      "fichier": "package/lib/env/data.js",
+      "langage": "javascript",
+      "lignes": 1,
+      "taille_bytes": 32,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/env/classes/FormData.js": {
+      "fichier": "package/lib/env/classes/FormData.js",
+      "langage": "javascript",
+      "lignes": 2,
+      "taille_bytes": 106,
+      "entrees": [
+        "_FormData"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/platform/index.js": {
+      "fichier": "package/lib/platform/index.js",
+      "langage": "javascript",
+      "lignes": 7,
+      "taille_bytes": 132,
+      "entrees": [
+        "platform"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/platform/browser/index.js": {
+      "fichier": "package/lib/platform/browser/index.js",
+      "langage": "javascript",
+      "lignes": 13,
+      "taille_bytes": 310,
+      "entrees": [
+        "Blob",
+        "FormData",
+        "URLSearchParams"
+      ],
+      "sorties": [],
+      "appelle": [
+        "package/lib/platform/browser/classes/Blob.js",
+        "package/lib/platform/node/classes/FormData.js",
+        "package/lib/platform/node/classes/URLSearchParams.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "package/lib/platform/browser/classes/URLSearchParams.js": {
+      "fichier": "package/lib/platform/browser/classes/URLSearchParams.js",
+      "langage": "javascript",
+      "lignes": 4,
+      "taille_bytes": 188,
+      "entrees": [
+        "AxiosURLSearchParams"
+      ],
+      "sorties": [],
+      "appelle": [
+        "package/lib/helpers/AxiosURLSearchParams.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/platform/browser/classes/FormData.js": {
+      "fichier": "package/lib/platform/browser/classes/FormData.js",
+      "langage": "javascript",
+      "lignes": 3,
+      "taille_bytes": 81,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/platform/browser/classes/Blob.js": {
+      "fichier": "package/lib/platform/browser/classes/Blob.js",
+      "langage": "javascript",
+      "lignes": 3,
+      "taille_bytes": 73,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/platform/browser/index.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/platform/common/utils.js": {
+      "fichier": "package/lib/platform/common/utils.js",
+      "langage": "javascript",
+      "lignes": 52,
+      "taille_bytes": 1603,
+      "entrees": [],
+      "sorties": [
+        "const _navigator",
+        "const hasBrowserEnv",
+        "const hasStandardBrowserEnv",
+        "const hasStandardBrowserWebWorkerEnv",
+        "const origin"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/adapters/adapters.js",
+        "package/lib/adapters/fetch.js",
+        "package/lib/adapters/http.js",
+        "package/lib/adapters/xhr.js",
+        "package/lib/axios.js",
+        "package/lib/core/Axios.js",
+        "package/lib/core/AxiosError.js",
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/core/InterceptorManager.js",
+        "package/lib/core/mergeConfig.js",
+        "package/lib/core/transformData.js",
+        "package/lib/defaults/index.js",
+        "package/lib/helpers/AxiosTransformStream.js",
+        "package/lib/helpers/buildURL.js",
+        "package/lib/helpers/callbackify.js",
+        "package/lib/helpers/composeSignals.js",
+        "package/lib/helpers/cookies.js",
+        "package/lib/helpers/formDataToJSON.js",
+        "package/lib/helpers/formDataToStream.js",
+        "package/lib/helpers/isAxiosError.js",
+        "package/lib/helpers/parseHeaders.js",
+        "package/lib/helpers/progressEventReducer.js",
+        "package/lib/helpers/resolveConfig.js",
+        "package/lib/helpers/toFormData.js",
+        "package/lib/helpers/toURLEncodedForm.js"
+      ],
+      "type_noeud": "hub"
+    },
+    "package/lib/platform/node/index.js": {
+      "fichier": "package/lib/platform/node/index.js",
+      "langage": "javascript",
+      "lignes": 37,
+      "taille_bytes": 837,
+      "entrees": [
+        "FormData",
+        "URLSearchParams",
+        "crypto"
+      ],
+      "sorties": [
+        "const ALPHA",
+        "const ALPHABET",
+        "const DIGIT",
+        "const generateString",
+        "const randomValues"
+      ],
+      "appelle": [
+        "package/lib/platform/node/classes/FormData.js",
+        "package/lib/platform/node/classes/URLSearchParams.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "package/lib/platform/node/classes/URLSearchParams.js": {
+      "fichier": "package/lib/platform/node/classes/URLSearchParams.js",
+      "langage": "javascript",
+      "lignes": 4,
+      "taille_bytes": 74,
+      "entrees": [
+        "url"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/platform/browser/index.js",
+        "package/lib/platform/node/index.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/platform/node/classes/FormData.js": {
+      "fichier": "package/lib/platform/node/classes/FormData.js",
+      "langage": "javascript",
+      "lignes": 3,
+      "taille_bytes": 60,
+      "entrees": [
+        "FormData"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/platform/browser/index.js",
+        "package/lib/platform/node/index.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/cancel/isCancel.js": {
+      "fichier": "package/lib/cancel/isCancel.js",
+      "langage": "javascript",
+      "lignes": 5,
+      "taille_bytes": 99,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/axios.js",
+        "package/lib/core/dispatchRequest.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/cancel/CanceledError.js": {
+      "fichier": "package/lib/cancel/CanceledError.js",
+      "langage": "javascript",
+      "lignes": 22,
+      "taille_bytes": 618,
+      "entrees": [
+        "AxiosError"
+      ],
+      "sorties": [
+        "class CanceledError"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosError.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/http.js",
+        "package/lib/adapters/xhr.js",
+        "package/lib/axios.js",
+        "package/lib/cancel/CancelToken.js",
+        "package/lib/core/dispatchRequest.js",
+        "package/lib/helpers/composeSignals.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/cancel/CancelToken.js": {
+      "fichier": "package/lib/cancel/CancelToken.js",
+      "langage": "javascript",
+      "lignes": 135,
+      "taille_bytes": 2796,
+      "entrees": [
+        "CanceledError"
+      ],
+      "sorties": [
+        "class CancelToken",
+        "const abort",
+        "const controller",
+        "const index",
+        "const promise",
+        "const token"
+      ],
+      "appelle": [
+        "package/lib/cancel/CanceledError.js"
+      ],
+      "est_appele_par": [
+        "package/lib/axios.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/defaults/index.js": {
+      "fichier": "package/lib/defaults/index.js",
+      "langage": "javascript",
+      "lignes": 172,
+      "taille_bytes": 4725,
+      "entrees": [
+        "AxiosError",
+        "formDataToJSON",
+        "platform",
+        "toFormData",
+        "toURLEncodedForm",
+        "transitionalDefaults",
+        "utils"
+      ],
+      "sorties": [
+        "const JSONRequested",
+        "const _FormData",
+        "const contentType",
+        "const defaults",
+        "const forcedJSONParsing",
+        "const hasJSONContentType",
+        "const isFormData",
+        "const isObjectPayload",
+        "const silentJSONParsing",
+        "const strictJSONParsing",
+        "const transitional",
+        "function stringifySafely",
+        "function transformRequest",
+        "function transformResponse"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosError.js",
+        "package/lib/helpers/formDataToJSON.js",
+        "package/lib/helpers/toFormData.js",
+        "package/lib/helpers/toURLEncodedForm.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "package/lib/defaults/transitional.js": {
+      "fichier": "package/lib/defaults/transitional.js",
+      "langage": "javascript",
+      "lignes": 8,
+      "taille_bytes": 160,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/core/mergeConfig.js": {
+      "fichier": "package/lib/core/mergeConfig.js",
+      "langage": "javascript",
+      "lignes": 107,
+      "taille_bytes": 3488,
+      "entrees": [
+        "AxiosHeaders",
+        "utils"
+      ],
+      "sorties": [
+        "const config",
+        "const configValue",
+        "const headersToObject",
+        "const merge",
+        "const mergeMap",
+        "function defaultToConfig2",
+        "function getMergedValue",
+        "function mergeDeepProperties",
+        "function mergeDirectKeys",
+        "function valueFromConfig2"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/axios.js",
+        "package/lib/core/Axios.js",
+        "package/lib/helpers/resolveConfig.js"
+      ],
+      "type_noeud": "central"
+    },
+    "package/lib/core/InterceptorManager.js": {
+      "fichier": "package/lib/core/InterceptorManager.js",
+      "langage": "javascript",
+      "lignes": 72,
+      "taille_bytes": 1594,
+      "entrees": [
+        "utils"
+      ],
+      "sorties": [
+        "class InterceptorManager"
+      ],
+      "appelle": [
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/core/Axios.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/core/Axios.js": {
+      "fichier": "package/lib/core/Axios.js",
+      "langage": "javascript",
+      "lignes": 263,
+      "taille_bytes": 7509,
+      "entrees": [
+        "AxiosHeaders",
+        "InterceptorManager",
+        "buildFullPath",
+        "buildURL",
+        "dispatchRequest",
+        "mergeConfig",
+        "transitionalDefaults",
+        "utils",
+        "validator"
+      ],
+      "sorties": [
+        "class Axios",
+        "const chain",
+        "const fullPath",
+        "const legacyInterceptorReqResOrdering",
+        "const onFulfilled",
+        "const onRejected",
+        "const requestInterceptorChain",
+        "const responseInterceptorChain",
+        "const stack",
+        "const transitional",
+        "const validators",
+        "function generateHTTPMethod"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/core/InterceptorManager.js",
+        "package/lib/core/buildFullPath.js",
+        "package/lib/core/dispatchRequest.js",
+        "package/lib/core/mergeConfig.js",
+        "package/lib/helpers/buildURL.js",
+        "package/lib/helpers/validator.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/axios.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/core/buildFullPath.js": {
+      "fichier": "package/lib/core/buildFullPath.js",
+      "langage": "javascript",
+      "lignes": 22,
+      "taille_bytes": 783,
+      "entrees": [
+        "combineURLs",
+        "isAbsoluteURL"
+      ],
+      "sorties": [],
+      "appelle": [
+        "package/lib/helpers/combineURLs.js",
+        "package/lib/helpers/isAbsoluteURL.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/http.js",
+        "package/lib/core/Axios.js",
+        "package/lib/helpers/resolveConfig.js"
+      ],
+      "type_noeud": "central"
+    },
+    "package/lib/core/AxiosHeaders.js": {
+      "fichier": "package/lib/core/AxiosHeaders.js",
+      "langage": "javascript",
+      "lignes": 344,
+      "taille_bytes": 7614,
+      "entrees": [
+        "parseHeaders",
+        "utils"
+      ],
+      "sorties": [
+        "class AxiosHeaders",
+        "const accessorName",
+        "const accessors",
+        "const computed",
+        "const headers",
+        "const internals",
+        "const isValidHeaderName",
+        "const key",
+        "const keys",
+        "const lHeader",
+        "const normalized",
+        "const obj",
+        "const prototype",
+        "const setHeaders",
+        "const tokens",
+        "const tokensRE",
+        "const value",
+        "function buildAccessors",
+        "function defineAccessor",
+        "function deleteHeader",
+        "function formatHeader",
+        "function matchHeaderValue",
+        "function normalizeHeader",
+        "function normalizeValue",
+        "function parseTokens",
+        "function setHeader"
+      ],
+      "appelle": [
+        "package/lib/helpers/parseHeaders.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/fetch.js",
+        "package/lib/adapters/http.js",
+        "package/lib/adapters/xhr.js",
+        "package/lib/axios.js",
+        "package/lib/core/Axios.js",
+        "package/lib/core/dispatchRequest.js",
+        "package/lib/core/mergeConfig.js",
+        "package/lib/core/transformData.js",
+        "package/lib/helpers/resolveConfig.js"
+      ],
+      "type_noeud": "central"
+    },
+    "package/lib/core/settle.js": {
+      "fichier": "package/lib/core/settle.js",
+      "langage": "javascript",
+      "lignes": 31,
+      "taille_bytes": 880,
+      "entrees": [
+        "AxiosError"
+      ],
+      "sorties": [
+        "const validateStatus"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosError.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/fetch.js",
+        "package/lib/adapters/http.js",
+        "package/lib/adapters/xhr.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/core/AxiosError.js": {
+      "fichier": "package/lib/core/AxiosError.js",
+      "langage": "javascript",
+      "lignes": 90,
+      "taille_bytes": 2921,
+      "entrees": [
+        "utils"
+      ],
+      "sorties": [
+        "class AxiosError",
+        "const axiosError"
+      ],
+      "appelle": [
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/adapters.js",
+        "package/lib/adapters/fetch.js",
+        "package/lib/adapters/http.js",
+        "package/lib/adapters/xhr.js",
+        "package/lib/axios.js",
+        "package/lib/cancel/CanceledError.js",
+        "package/lib/core/settle.js",
+        "package/lib/defaults/index.js",
+        "package/lib/helpers/composeSignals.js",
+        "package/lib/helpers/fromDataURI.js",
+        "package/lib/helpers/toFormData.js",
+        "package/lib/helpers/validator.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/core/transformData.js": {
+      "fichier": "package/lib/core/transformData.js",
+      "langage": "javascript",
+      "lignes": 28,
+      "taille_bytes": 776,
+      "entrees": [
+        "AxiosHeaders",
+        "defaults",
+        "utils"
+      ],
+      "sorties": [
+        "const config",
+        "const context",
+        "const headers"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/core/dispatchRequest.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/core/dispatchRequest.js": {
+      "fichier": "package/lib/core/dispatchRequest.js",
+      "langage": "javascript",
+      "lignes": 77,
+      "taille_bytes": 2211,
+      "entrees": [
+        "AxiosHeaders",
+        "CanceledError",
+        "adapters",
+        "defaults",
+        "isCancel",
+        "transformData"
+      ],
+      "sorties": [
+        "const adapter",
+        "function onAdapterRejection",
+        "function onAdapterResolution",
+        "function throwIfCancellationRequested"
+      ],
+      "appelle": [
+        "package/lib/adapters/adapters.js",
+        "package/lib/cancel/CanceledError.js",
+        "package/lib/cancel/isCancel.js",
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/core/transformData.js"
+      ],
+      "est_appele_par": [
+        "package/lib/core/Axios.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/ZlibHeaderTransformStream.js": {
+      "fichier": "package/lib/helpers/ZlibHeaderTransformStream.js",
+      "langage": "javascript",
+      "lignes": 29,
+      "taille_bytes": 688,
+      "entrees": [
+        "stream"
+      ],
+      "sorties": [
+        "class ZlibHeaderTransformStream",
+        "const header"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/adapters/http.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/parseProtocol.js": {
+      "fichier": "package/lib/helpers/parseProtocol.js",
+      "langage": "javascript",
+      "lignes": 6,
+      "taille_bytes": 153,
+      "entrees": [],
+      "sorties": [
+        "const match"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/adapters/xhr.js",
+        "package/lib/helpers/fromDataURI.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/fromDataURI.js": {
+      "fichier": "package/lib/helpers/fromDataURI.js",
+      "langage": "javascript",
+      "lignes": 53,
+      "taille_bytes": 1369,
+      "entrees": [
+        "AxiosError",
+        "parseProtocol",
+        "platform"
+      ],
+      "sorties": [
+        "const DATA_URL_PATTERN",
+        "const _Blob",
+        "const body",
+        "const buffer",
+        "const isBase64",
+        "const match",
+        "const mime",
+        "const protocol"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosError.js",
+        "package/lib/helpers/parseProtocol.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/http.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/parseHeaders.js": {
+      "fichier": "package/lib/helpers/parseHeaders.js",
+      "langage": "javascript",
+      "lignes": 69,
+      "taille_bytes": 1445,
+      "entrees": [
+        "utils"
+      ],
+      "sorties": [
+        "const ignoreDuplicateOf",
+        "const parsed"
+      ],
+      "appelle": [
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/core/AxiosHeaders.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/HttpStatusCode.js": {
+      "fichier": "package/lib/helpers/HttpStatusCode.js",
+      "langage": "javascript",
+      "lignes": 77,
+      "taille_bytes": 1760,
+      "entrees": [],
+      "sorties": [
+        "const HttpStatusCode"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/axios.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/isAbsoluteURL.js": {
+      "fichier": "package/lib/helpers/isAbsoluteURL.js",
+      "langage": "javascript",
+      "lignes": 19,
+      "taille_bytes": 617,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/core/buildFullPath.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/validator.js": {
+      "fichier": "package/lib/helpers/validator.js",
+      "langage": "javascript",
+      "lignes": 110,
+      "taille_bytes": 2867,
+      "entrees": [
+        "AxiosError"
+      ],
+      "sorties": [
+        "const deprecatedWarnings",
+        "const keys",
+        "const opt",
+        "const result",
+        "const validator",
+        "const validators",
+        "const value",
+        "function assertOptions",
+        "function formatMessage"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosError.js"
+      ],
+      "est_appele_par": [
+        "package/lib/core/Axios.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/buildURL.js": {
+      "fichier": "package/lib/helpers/buildURL.js",
+      "langage": "javascript",
+      "lignes": 66,
+      "taille_bytes": 1592,
+      "entrees": [
+        "AxiosURLSearchParams",
+        "utils"
+      ],
+      "sorties": [
+        "const _encode",
+        "const _options",
+        "const hashmarkIndex",
+        "const serializeFn",
+        "function encode"
+      ],
+      "appelle": [
+        "package/lib/helpers/AxiosURLSearchParams.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/http.js",
+        "package/lib/core/Axios.js",
+        "package/lib/helpers/resolveConfig.js"
+      ],
+      "type_noeud": "central"
+    },
+    "package/lib/helpers/AxiosTransformStream.js": {
+      "fichier": "package/lib/helpers/AxiosTransformStream.js",
+      "langage": "javascript",
+      "lignes": 156,
+      "taille_bytes": 3809,
+      "entrees": [
+        "stream",
+        "utils"
+      ],
+      "sorties": [
+        "class AxiosTransformStream",
+        "const bytes",
+        "const bytesThreshold",
+        "const chunkSize",
+        "const divider",
+        "const internals",
+        "const kInternals",
+        "const maxRate",
+        "const minChunkSize",
+        "const now",
+        "const pushChunk",
+        "const readableHighWaterMark",
+        "const timeWindow",
+        "const transformChunk"
+      ],
+      "appelle": [
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/http.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/formDataToJSON.js": {
+      "fichier": "package/lib/helpers/formDataToJSON.js",
+      "langage": "javascript",
+      "lignes": 95,
+      "taille_bytes": 2166,
+      "entrees": [
+        "utils"
+      ],
+      "sorties": [
+        "const isLast",
+        "const isNumericKey",
+        "const keys",
+        "const len",
+        "const obj",
+        "const result",
+        "function arrayToObject",
+        "function buildPath",
+        "function formDataToJSON",
+        "function parsePropPath"
+      ],
+      "appelle": [
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/axios.js",
+        "package/lib/defaults/index.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/resolveConfig.js": {
+      "fichier": "package/lib/helpers/resolveConfig.js",
+      "langage": "javascript",
+      "lignes": 70,
+      "taille_bytes": 2278,
+      "entrees": [
+        "AxiosHeaders",
+        "buildFullPath",
+        "buildURL",
+        "cookies",
+        "isURLSameOrigin",
+        "mergeConfig",
+        "platform",
+        "utils"
+      ],
+      "sorties": [
+        "const allowedHeaders",
+        "const formHeaders",
+        "const newConfig",
+        "const xsrfValue"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosHeaders.js",
+        "package/lib/core/buildFullPath.js",
+        "package/lib/core/mergeConfig.js",
+        "package/lib/helpers/buildURL.js",
+        "package/lib/helpers/cookies.js",
+        "package/lib/helpers/isURLSameOrigin.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/fetch.js",
+        "package/lib/adapters/xhr.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/combineURLs.js": {
+      "fichier": "package/lib/helpers/combineURLs.js",
+      "langage": "javascript",
+      "lignes": 15,
+      "taille_bytes": 382,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/core/buildFullPath.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/isURLSameOrigin.js": {
+      "fichier": "package/lib/helpers/isURLSameOrigin.js",
+      "langage": "javascript",
+      "lignes": 16,
+      "taille_bytes": 464,
+      "entrees": [
+        "platform"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/helpers/resolveConfig.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/trackStream.js": {
+      "fichier": "package/lib/helpers/trackStream.js",
+      "langage": "javascript",
+      "lignes": 89,
+      "taille_bytes": 1764,
+      "entrees": [],
+      "sorties": [
+        "const iterator",
+        "const readStream",
+        "const reader",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/spread.js": {
+      "fichier": "package/lib/helpers/spread.js",
+      "langage": "javascript",
+      "lignes": 28,
+      "taille_bytes": 566,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/axios.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/toURLEncodedForm.js": {
+      "fichier": "package/lib/helpers/toURLEncodedForm.js",
+      "langage": "javascript",
+      "lignes": 19,
+      "taille_bytes": 542,
+      "entrees": [
+        "platform",
+        "toFormData",
+        "utils"
+      ],
+      "sorties": [],
+      "appelle": [
+        "package/lib/helpers/toFormData.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/defaults/index.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/estimateDataURLDecodedBytes.js": {
+      "fichier": "package/lib/helpers/estimateDataURLDecodedBytes.js",
+      "langage": "javascript",
+      "lignes": 73,
+      "taille_bytes": 2060,
+      "entrees": [],
+      "sorties": [
+        "const body",
+        "const bytes",
+        "const comma",
+        "const groups",
+        "const isBase64",
+        "const isHex",
+        "const len",
+        "const meta",
+        "const tailIsPct3D"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/adapters/http.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/toFormData.js": {
+      "fichier": "package/lib/helpers/toFormData.js",
+      "langage": "javascript",
+      "lignes": 241,
+      "taille_bytes": 6435,
+      "entrees": [
+        "AxiosError",
+        "PlatformFormData",
+        "utils"
+      ],
+      "sorties": [
+        "const _Blob",
+        "const dots",
+        "const exposedHelpers",
+        "const indexes",
+        "const metaTokens",
+        "const predicates",
+        "const result",
+        "const stack",
+        "const useBlob",
+        "const visitor",
+        "function build",
+        "function convertValue",
+        "function defaultVisitor",
+        "function defined",
+        "function isFlatArray",
+        "function isVisitable",
+        "function removeBrackets",
+        "function renderKey",
+        "function toFormData"
+      ],
+      "appelle": [
+        "package/lib/core/AxiosError.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/axios.js",
+        "package/lib/defaults/index.js",
+        "package/lib/helpers/AxiosURLSearchParams.js",
+        "package/lib/helpers/toURLEncodedForm.js"
+      ],
+      "type_noeud": "central"
+    },
+    "package/lib/helpers/throttle.js": {
+      "fichier": "package/lib/helpers/throttle.js",
+      "langage": "javascript",
+      "lignes": 44,
+      "taille_bytes": 854,
+      "entrees": [],
+      "sorties": [
+        "const flush",
+        "const invoke",
+        "const now",
+        "const passed",
+        "const throttled",
+        "function throttle"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/helpers/progressEventReducer.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/callbackify.js": {
+      "fichier": "package/lib/helpers/callbackify.js",
+      "langage": "javascript",
+      "lignes": 18,
+      "taille_bytes": 417,
+      "entrees": [
+        "utils"
+      ],
+      "sorties": [
+        "const callbackify",
+        "const cb"
+      ],
+      "appelle": [
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/http.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/bind.js": {
+      "fichier": "package/lib/helpers/bind.js",
+      "langage": "javascript",
+      "lignes": 14,
+      "taille_bytes": 444,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/axios.js",
+        "package/lib/utils.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/deprecatedMethod.js": {
+      "fichier": "package/lib/helpers/deprecatedMethod.js",
+      "langage": "javascript",
+      "lignes": 31,
+      "taille_bytes": 777,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/AxiosURLSearchParams.js": {
+      "fichier": "package/lib/helpers/AxiosURLSearchParams.js",
+      "langage": "javascript",
+      "lignes": 62,
+      "taille_bytes": 1471,
+      "entrees": [
+        "toFormData"
+      ],
+      "sorties": [
+        "const _encode",
+        "const charMap",
+        "const prototype",
+        "function AxiosURLSearchParams",
+        "function encode"
+      ],
+      "appelle": [
+        "package/lib/helpers/toFormData.js"
+      ],
+      "est_appele_par": [
+        "package/lib/helpers/buildURL.js",
+        "package/lib/platform/browser/classes/URLSearchParams.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/cookies.js": {
+      "fichier": "package/lib/helpers/cookies.js",
+      "langage": "javascript",
+      "lignes": 48,
+      "taille_bytes": 1399,
+      "entrees": [
+        "platform",
+        "utils"
+      ],
+      "sorties": [
+        "const cookie",
+        "const match"
+      ],
+      "appelle": [
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/helpers/resolveConfig.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/speedometer.js": {
+      "fichier": "package/lib/helpers/speedometer.js",
+      "langage": "javascript",
+      "lignes": 55,
+      "taille_bytes": 1094,
+      "entrees": [],
+      "sorties": [
+        "const bytes",
+        "const now",
+        "const passed",
+        "const startedAt",
+        "const timestamps",
+        "function speedometer"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/helpers/progressEventReducer.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/null.js": {
+      "fichier": "package/lib/helpers/null.js",
+      "langage": "javascript",
+      "lignes": 2,
+      "taille_bytes": 56,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/readBlob.js": {
+      "fichier": "package/lib/helpers/readBlob.js",
+      "langage": "javascript",
+      "lignes": 15,
+      "taille_bytes": 323,
+      "entrees": [],
+      "sorties": [
+        "const readBlob"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "package/lib/adapters/http.js",
+        "package/lib/helpers/formDataToStream.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/formDataToStream.js": {
+      "fichier": "package/lib/helpers/formDataToStream.js",
+      "langage": "javascript",
+      "lignes": 118,
+      "taille_bytes": 3029,
+      "entrees": [
+        "platform",
+        "readBlob",
+        "util",
+        "utils"
+      ],
+      "sorties": [
+        "class FormDataPart",
+        "const BOUNDARY_ALPHABET",
+        "const CRLF",
+        "const CRLF_BYTES",
+        "const CRLF_BYTES_COUNT",
+        "const boundaryBytes",
+        "const computedHeaders",
+        "const footerBytes",
+        "const formDataToStream",
+        "const isStringValue",
+        "const part",
+        "const parts",
+        "const textEncoder"
+      ],
+      "appelle": [
+        "package/lib/helpers/readBlob.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/http.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/isAxiosError.js": {
+      "fichier": "package/lib/helpers/isAxiosError.js",
+      "langage": "javascript",
+      "lignes": 14,
+      "taille_bytes": 369,
+      "entrees": [
+        "utils"
+      ],
+      "sorties": [],
+      "appelle": [
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/axios.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "package/lib/helpers/progressEventReducer.js": {
+      "fichier": "package/lib/helpers/progressEventReducer.js",
+      "langage": "javascript",
+      "lignes": 51,
+      "taille_bytes": 1282,
+      "entrees": [
+        "speedometer",
+        "throttle",
+        "utils"
+      ],
+      "sorties": [
+        "const _speedometer",
+        "const data",
+        "const inRange",
+        "const lengthComputable",
+        "const loaded",
+        "const progressBytes",
+        "const rate",
+        "const total",
+        "export const"
+      ],
+      "appelle": [
+        "package/lib/helpers/speedometer.js",
+        "package/lib/helpers/throttle.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "package/lib/helpers/composeSignals.js": {
+      "fichier": "package/lib/helpers/composeSignals.js",
+      "langage": "javascript",
+      "lignes": 56,
+      "taille_bytes": 1460,
+      "entrees": [
+        "AxiosError",
+        "CanceledError",
+        "utils"
+      ],
+      "sorties": [
+        "const composeSignals",
+        "const err",
+        "const onabort",
+        "const unsubscribe"
+      ],
+      "appelle": [
+        "package/lib/cancel/CanceledError.js",
+        "package/lib/core/AxiosError.js",
+        "package/lib/platform/common/utils.js"
+      ],
+      "est_appele_par": [
+        "package/lib/adapters/fetch.js"
+      ],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "package/index.js",
+      "vers": "package/lib/axios.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/adapters/adapters.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/cancel/CancelToken.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/cancel/CanceledError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/cancel/isCancel.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/core/Axios.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/core/AxiosHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/core/mergeConfig.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/helpers/HttpStatusCode.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/helpers/bind.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/helpers/formDataToJSON.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/helpers/isAxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/helpers/spread.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/helpers/toFormData.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/axios.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/utils.js",
+      "vers": "package/lib/helpers/bind.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/xhr.js",
+      "vers": "package/lib/cancel/CanceledError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/xhr.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/xhr.js",
+      "vers": "package/lib/core/AxiosHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/xhr.js",
+      "vers": "package/lib/core/settle.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/xhr.js",
+      "vers": "package/lib/helpers/parseProtocol.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/xhr.js",
+      "vers": "package/lib/helpers/resolveConfig.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/xhr.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/adapters.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/adapters.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/cancel/CanceledError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/core/AxiosHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/core/buildFullPath.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/core/settle.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/helpers/AxiosTransformStream.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/helpers/ZlibHeaderTransformStream.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/helpers/buildURL.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/helpers/callbackify.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/helpers/estimateDataURLDecodedBytes.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/helpers/formDataToStream.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/helpers/fromDataURI.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/helpers/readBlob.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/http.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/fetch.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/fetch.js",
+      "vers": "package/lib/core/AxiosHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/fetch.js",
+      "vers": "package/lib/core/settle.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/fetch.js",
+      "vers": "package/lib/helpers/composeSignals.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/fetch.js",
+      "vers": "package/lib/helpers/resolveConfig.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/adapters/fetch.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/platform/browser/index.js",
+      "vers": "package/lib/platform/browser/classes/Blob.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/platform/browser/index.js",
+      "vers": "package/lib/platform/node/classes/FormData.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/platform/browser/index.js",
+      "vers": "package/lib/platform/node/classes/URLSearchParams.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/platform/browser/classes/URLSearchParams.js",
+      "vers": "package/lib/helpers/AxiosURLSearchParams.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/platform/node/index.js",
+      "vers": "package/lib/platform/node/classes/FormData.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/platform/node/index.js",
+      "vers": "package/lib/platform/node/classes/URLSearchParams.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/cancel/CanceledError.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/cancel/CancelToken.js",
+      "vers": "package/lib/cancel/CanceledError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/defaults/index.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/defaults/index.js",
+      "vers": "package/lib/helpers/formDataToJSON.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/defaults/index.js",
+      "vers": "package/lib/helpers/toFormData.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/defaults/index.js",
+      "vers": "package/lib/helpers/toURLEncodedForm.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/defaults/index.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/mergeConfig.js",
+      "vers": "package/lib/core/AxiosHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/mergeConfig.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/InterceptorManager.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/Axios.js",
+      "vers": "package/lib/core/AxiosHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/Axios.js",
+      "vers": "package/lib/core/InterceptorManager.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/Axios.js",
+      "vers": "package/lib/core/buildFullPath.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/Axios.js",
+      "vers": "package/lib/core/dispatchRequest.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/Axios.js",
+      "vers": "package/lib/core/mergeConfig.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/Axios.js",
+      "vers": "package/lib/helpers/buildURL.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/Axios.js",
+      "vers": "package/lib/helpers/validator.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/Axios.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/buildFullPath.js",
+      "vers": "package/lib/helpers/combineURLs.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/buildFullPath.js",
+      "vers": "package/lib/helpers/isAbsoluteURL.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/AxiosHeaders.js",
+      "vers": "package/lib/helpers/parseHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/AxiosHeaders.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/settle.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/AxiosError.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/transformData.js",
+      "vers": "package/lib/core/AxiosHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/transformData.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/dispatchRequest.js",
+      "vers": "package/lib/adapters/adapters.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/dispatchRequest.js",
+      "vers": "package/lib/cancel/CanceledError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/dispatchRequest.js",
+      "vers": "package/lib/cancel/isCancel.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/dispatchRequest.js",
+      "vers": "package/lib/core/AxiosHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/core/dispatchRequest.js",
+      "vers": "package/lib/core/transformData.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/fromDataURI.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/fromDataURI.js",
+      "vers": "package/lib/helpers/parseProtocol.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/parseHeaders.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/validator.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/buildURL.js",
+      "vers": "package/lib/helpers/AxiosURLSearchParams.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/buildURL.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/AxiosTransformStream.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/formDataToJSON.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/resolveConfig.js",
+      "vers": "package/lib/core/AxiosHeaders.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/resolveConfig.js",
+      "vers": "package/lib/core/buildFullPath.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/resolveConfig.js",
+      "vers": "package/lib/core/mergeConfig.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/resolveConfig.js",
+      "vers": "package/lib/helpers/buildURL.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/resolveConfig.js",
+      "vers": "package/lib/helpers/cookies.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/resolveConfig.js",
+      "vers": "package/lib/helpers/isURLSameOrigin.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/resolveConfig.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/toURLEncodedForm.js",
+      "vers": "package/lib/helpers/toFormData.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/toURLEncodedForm.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/toFormData.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/toFormData.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/callbackify.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/AxiosURLSearchParams.js",
+      "vers": "package/lib/helpers/toFormData.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/cookies.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/formDataToStream.js",
+      "vers": "package/lib/helpers/readBlob.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/formDataToStream.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/isAxiosError.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/progressEventReducer.js",
+      "vers": "package/lib/helpers/speedometer.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/progressEventReducer.js",
+      "vers": "package/lib/helpers/throttle.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/progressEventReducer.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/composeSignals.js",
+      "vers": "package/lib/cancel/CanceledError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/composeSignals.js",
+      "vers": "package/lib/core/AxiosError.js",
+      "type": "interne"
+    },
+    {
+      "de": "package/lib/helpers/composeSignals.js",
+      "vers": "package/lib/platform/common/utils.js",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'package/lib/adapters/xhr.js'",
+    "point_entree → 'package/lib/adapters/http.js'",
+    "point_entree → 'package/lib/adapters/fetch.js'",
+    "point_entree → 'package/lib/platform/browser/index.js'",
+    "hub → 'package/lib/platform/common/utils.js' (in=25, 38% du projet)",
+    "point_entree → 'package/lib/platform/node/index.js'",
+    "point_entree → 'package/lib/defaults/index.js'",
+    "central → 'package/lib/core/mergeConfig.js' (in=3, out=2)",
+    "central → 'package/lib/core/buildFullPath.js' (in=3, out=2)",
+    "central → 'package/lib/core/AxiosHeaders.js' (in=9, out=2)",
+    "central → 'package/lib/helpers/buildURL.js' (in=3, out=2)",
+    "central → 'package/lib/helpers/toFormData.js' (in=4, out=2)",
+    "point_entree → 'package/lib/helpers/progressEventReducer.js'"
+  ]
+}

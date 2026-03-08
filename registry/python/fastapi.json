@@ -1,0 +1,2150 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 48
+    }
+  },
+  "stats": {
+    "fichiers_total": 48,
+    "edges_total": 110,
+    "edges_circulaires": 6,
+    "noeuds_centraux": 4,
+    "noeuds_feuilles": 4,
+    "noeuds_hubs": 2,
+    "points_entree": 5,
+    "fichier_plus_appele": "fastapi/exceptions.py"
+  },
+  "noeuds": {
+    "fastapi/applications.py": {
+      "fichier": "fastapi/applications.py",
+      "langage": "python",
+      "lignes": 4692,
+      "taille_bytes": 181192,
+      "entrees": [
+        ".dependencies",
+        ".internal",
+        ".users",
+        "Starlette",
+        "annotated_doc",
+        "case.",
+        "collections.abc",
+        "enum",
+        "fastapi",
+        "fastapi.datastructures",
+        "fastapi.exception_handlers",
+        "fastapi.exceptions",
+        "fastapi.logger",
+        "fastapi.middleware.asyncexitstack",
+        "fastapi.openapi.docs",
+        "fastapi.openapi.utils",
+        "fastapi.params",
+        "fastapi.responses",
+        "fastapi.types",
+        "fastapi.utils",
+        "pydantic",
+        "starlette.applications",
+        "starlette.datastructures",
+        "starlette.exceptions",
+        "starlette.middleware",
+        "starlette.middleware.base",
+        "starlette.middleware.errors",
+        "starlette.middleware.exceptions",
+        "starlette.requests",
+        "starlette.responses",
+        "starlette.routing",
+        "starlette.types",
+        "the",
+        "time",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "class FastAPI",
+        "class Item",
+        "class UnicornException",
+        "def __init__",
+        "def add_api_route",
+        "def add_api_websocket_route",
+        "def api_route",
+        "def build_middleware_stack",
+        "def create_item",
+        "def decorator",
+        "def delete",
+        "def delete_item",
+        "def exception_handler",
+        "def get",
+        "def get_item_options",
+        "def get_items_headers",
+        "def head",
+        "def include_router",
+        "def middleware",
+        "def on_event",
+        "def openapi",
+        "def options",
+        "def patch",
+        "def post",
+        "def put",
+        "def read_items",
+        "def replace_item",
+        "def setup",
+        "def trace",
+        "def trace_item",
+        "def update_item",
+        "def websocket",
+        "def websocket_route"
+      ],
+      "appelle": [
+        "fastapi/datastructures.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/exception_handlers.py",
+        "fastapi/exceptions.py",
+        "fastapi/logger.py",
+        "fastapi/middleware/asyncexitstack.py",
+        "fastapi/openapi/docs.py",
+        "fastapi/params.py",
+        "fastapi/requests.py",
+        "fastapi/responses.py",
+        "fastapi/routing.py",
+        "fastapi/security/base.py",
+        "fastapi/types.py"
+      ],
+      "est_appele_par": [
+        "fastapi/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/websockets.py": {
+      "fichier": "fastapi/websockets.py",
+      "langage": "python",
+      "lignes": 3,
+      "taille_bytes": 222,
+      "entrees": [
+        "starlette.websockets"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "fastapi/__init__.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/exception_handlers.py",
+        "fastapi/routing.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "fastapi/utils.py": {
+      "fichier": "fastapi/utils.py",
+      "langage": "python",
+      "lignes": 136,
+      "taille_bytes": 4341,
+      "entrees": [
+        "._compat",
+        ".routing",
+        "fastapi",
+        "fastapi._compat",
+        "fastapi.datastructures",
+        "fastapi.exceptions",
+        "pydantic.fields",
+        "re",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "def create_model_field",
+        "def deep_dict_update",
+        "def generate_operation_id_for_path",
+        "def generate_unique_id",
+        "def get_path_param_names",
+        "def get_value_or_default",
+        "def is_body_allowed_for_status_code"
+      ],
+      "appelle": [
+        "fastapi/datastructures.py",
+        "fastapi/exceptions.py",
+        "fastapi/routing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "fastapi/testclient.py": {
+      "fichier": "fastapi/testclient.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 66,
+      "entrees": [
+        "starlette.testclient"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/background.py": {
+      "fichier": "fastapi/background.py",
+      "langage": "python",
+      "lignes": 61,
+      "taille_bytes": 1820,
+      "entrees": [
+        "annotated_doc",
+        "collections.abc",
+        "fastapi",
+        "starlette.background",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "class BackgroundTasks",
+        "def add_task",
+        "def write_notification"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "fastapi/__init__.py",
+        "fastapi/dependencies/utils.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/encoders.py": {
+      "fichier": "fastapi/encoders.py",
+      "langage": "python",
+      "lignes": 347,
+      "taille_bytes": 11049,
+      "entrees": [
+        "._compat",
+        "annotated_doc",
+        "collections",
+        "collections.abc",
+        "dataclasses",
+        "datetime",
+        "decimal",
+        "enum",
+        "fastapi.exceptions",
+        "fastapi.types",
+        "ipaddress",
+        "pathlib",
+        "pydantic",
+        "pydantic.color",
+        "pydantic.networks",
+        "pydantic.types",
+        "pydantic_core",
+        "re",
+        "types",
+        "typing",
+        "uuid"
+      ],
+      "sorties": [
+        "def decimal_encoder",
+        "def generate_encoders_by_class_tuples",
+        "def isoformat",
+        "def jsonable_encoder"
+      ],
+      "appelle": [
+        "fastapi/exceptions.py",
+        "fastapi/types.py"
+      ],
+      "est_appele_par": [
+        "fastapi/exception_handlers.py",
+        "fastapi/openapi/docs.py",
+        "fastapi/openapi/utils.py",
+        "fastapi/routing.py"
+      ],
+      "type_noeud": "central"
+    },
+    "fastapi/routing.py": {
+      "fichier": "fastapi/routing.py",
+      "langage": "python",
+      "lignes": 4952,
+      "taille_bytes": 197300,
+      "entrees": [
+        "Starlette",
+        "annotated_doc",
+        "anyio",
+        "anyio.abc",
+        "collections.abc",
+        "contextlib",
+        "email.message",
+        "enum",
+        "fastapi",
+        "fastapi._compat",
+        "fastapi.datastructures",
+        "fastapi.dependencies.models",
+        "fastapi.dependencies.utils",
+        "fastapi.encoders",
+        "fastapi.exceptions",
+        "fastapi.sse",
+        "fastapi.types",
+        "fastapi.utils",
+        "functools",
+        "inspect",
+        "json",
+        "pydantic",
+        "starlette",
+        "starlette._exception_handler",
+        "starlette._utils",
+        "starlette.concurrency",
+        "starlette.exceptions",
+        "starlette.requests",
+        "starlette.responses",
+        "starlette.routing",
+        "starlette.types",
+        "starlette.websockets",
+        "the",
+        "types",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "class APIRoute",
+        "class APIRouter",
+        "class APIWebSocketRoute",
+        "class Item",
+        "class _AsyncLiftContextManager",
+        "class _DefaultLifespan",
+        "def __call__",
+        "def __init__",
+        "def _build_response_args",
+        "def _extract_endpoint_context",
+        "def _merge_lifespan_context",
+        "def _serialize_data",
+        "def _serialize_item",
+        "def _serialize_sse_item",
+        "def _sync_stream_jsonl",
+        "def _wrap_gen_lifespan_context",
+        "def add_api_route",
+        "def add_api_websocket_route",
+        "def add_event_handler",
+        "def api_route",
+        "def create_item",
+        "def decorator",
+        "def delete",
+        "def delete_item",
+        "def get",
+        "def get_item_options",
+        "def get_items_headers",
+        "def get_request_handler",
+        "def get_route_handler",
+        "def get_websocket_app",
+        "def head",
+        "def include_router",
+        "def matches",
+        "def on_event",
+        "def options",
+        "def patch",
+        "def post",
+        "def put",
+        "def read_items",
+        "def read_users",
+        "def replace_item",
+        "def request_response",
+        "def route",
+        "def trace",
+        "def trace_item",
+        "def update_item",
+        "def websocket",
+        "def websocket_route",
+        "def websocket_session",
+        "def wrapper"
+      ],
+      "appelle": [
+        "fastapi/concurrency.py",
+        "fastapi/datastructures.py",
+        "fastapi/dependencies/models.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/encoders.py",
+        "fastapi/exceptions.py",
+        "fastapi/requests.py",
+        "fastapi/responses.py",
+        "fastapi/sse.py",
+        "fastapi/types.py",
+        "fastapi/websockets.py"
+      ],
+      "est_appele_par": [
+        "fastapi/__init__.py",
+        "fastapi/applications.py",
+        "fastapi/openapi/utils.py",
+        "fastapi/utils.py"
+      ],
+      "type_noeud": "central"
+    },
+    "fastapi/params.py": {
+      "fichier": "fastapi/params.py",
+      "langage": "python",
+      "lignes": 755,
+      "taille_bytes": 26043,
+      "entrees": [
+        "._compat",
+        "collections.abc",
+        "dataclasses",
+        "enum",
+        "fastapi.exceptions",
+        "fastapi.openapi.models",
+        "pydantic",
+        "pydantic.fields",
+        "typing",
+        "typing_extensions",
+        "warnings"
+      ],
+      "sorties": [
+        "class Body",
+        "class Cookie",
+        "class Depends",
+        "class File",
+        "class Form",
+        "class Header",
+        "class Param",
+        "class ParamTypes",
+        "class Path",
+        "class Query",
+        "class Security",
+        "def __init__",
+        "def __repr__"
+      ],
+      "appelle": [
+        "fastapi/dependencies/models.py",
+        "fastapi/exceptions.py"
+      ],
+      "est_appele_par": [
+        "fastapi/applications.py",
+        "fastapi/openapi/utils.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/exceptions.py": {
+      "fichier": "fastapi/exceptions.py",
+      "langage": "python",
+      "lignes": 256,
+      "taille_bytes": 7453,
+      "entrees": [
+        "annotated_doc",
+        "collections.abc",
+        "fastapi",
+        "pydantic",
+        "starlette.exceptions",
+        "typing"
+      ],
+      "sorties": [
+        "class DependencyScopeError",
+        "class EndpointContext",
+        "class FastAPIDeprecationWarning",
+        "class FastAPIError",
+        "class HTTPException",
+        "class PydanticV1NotSupportedError",
+        "class RequestValidationError",
+        "class ResponseValidationError",
+        "class ValidationException",
+        "class WebSocketException",
+        "class WebSocketRequestValidationError",
+        "def __init__",
+        "def __str__",
+        "def _format_endpoint_context",
+        "def errors"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "fastapi/__init__.py",
+        "fastapi/applications.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/encoders.py",
+        "fastapi/exception_handlers.py",
+        "fastapi/openapi/utils.py",
+        "fastapi/params.py",
+        "fastapi/responses.py",
+        "fastapi/routing.py",
+        "fastapi/security/api_key.py",
+        "fastapi/security/http.py",
+        "fastapi/security/oauth2.py",
+        "fastapi/security/open_id_connect_url.py",
+        "fastapi/utils.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "fastapi/requests.py": {
+      "fichier": "fastapi/requests.py",
+      "langage": "python",
+      "lignes": 2,
+      "taille_bytes": 142,
+      "entrees": [
+        "starlette.requests"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "fastapi/__init__.py",
+        "fastapi/applications.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/exception_handlers.py",
+        "fastapi/routing.py",
+        "fastapi/security/api_key.py",
+        "fastapi/security/http.py",
+        "fastapi/security/oauth2.py",
+        "fastapi/security/open_id_connect_url.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "fastapi/staticfiles.py": {
+      "fichier": "fastapi/staticfiles.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 69,
+      "entrees": [
+        "starlette.staticfiles"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/types.py": {
+      "fichier": "fastapi/types.py",
+      "langage": "python",
+      "lignes": 12,
+      "taille_bytes": 438,
+      "entrees": [
+        "collections.abc",
+        "enum",
+        "pydantic",
+        "pydantic.main",
+        "types",
+        "typing"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "fastapi/_compat/shared.py",
+        "fastapi/_compat/v2.py",
+        "fastapi/applications.py",
+        "fastapi/dependencies/models.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/encoders.py",
+        "fastapi/middleware/asyncexitstack.py",
+        "fastapi/openapi/utils.py",
+        "fastapi/routing.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "fastapi/__main__.py": {
+      "fichier": "fastapi/__main__.py",
+      "langage": "python",
+      "lignes": 3,
+      "taille_bytes": 37,
+      "entrees": [
+        "fastapi.cli"
+      ],
+      "sorties": [],
+      "appelle": [
+        "fastapi/cli.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/cli.py": {
+      "fichier": "fastapi/cli.py",
+      "langage": "python",
+      "lignes": 13,
+      "taille_bytes": 418,
+      "entrees": [
+        "fastapi_cli.cli"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "fastapi/__main__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/responses.py": {
+      "fichier": "fastapi/responses.py",
+      "langage": "python",
+      "lignes": 85,
+      "taille_bytes": 3710,
+      "entrees": [
+        "fastapi.exceptions",
+        "fastapi.sse",
+        "orjson",
+        "starlette.responses",
+        "typing",
+        "typing_extensions",
+        "ujson"
+      ],
+      "sorties": [
+        "class ORJSONResponse",
+        "class UJSONResponse",
+        "def render"
+      ],
+      "appelle": [
+        "fastapi/exceptions.py",
+        "fastapi/sse.py"
+      ],
+      "est_appele_par": [
+        "fastapi/__init__.py",
+        "fastapi/applications.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/exception_handlers.py",
+        "fastapi/openapi/docs.py",
+        "fastapi/openapi/utils.py",
+        "fastapi/routing.py",
+        "fastapi/sse.py"
+      ],
+      "type_noeud": "central"
+    },
+    "fastapi/logger.py": {
+      "fichier": "fastapi/logger.py",
+      "langage": "python",
+      "lignes": 3,
+      "taille_bytes": 54,
+      "entrees": [
+        "logging"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "fastapi/applications.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/openapi/models.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "fastapi/datastructures.py": {
+      "fichier": "fastapi/datastructures.py",
+      "langage": "python",
+      "lignes": 181,
+      "taille_bytes": 5206,
+      "entrees": [
+        "._compat.v2",
+        "annotated_doc",
+        "collections.abc",
+        "fastapi",
+        "pydantic",
+        "starlette.datastructures",
+        "typing"
+      ],
+      "sorties": [
+        "class DefaultPlaceholder",
+        "class UploadFile",
+        "def Default",
+        "def __bool__",
+        "def __eq__",
+        "def __get_pydantic_core_schema__",
+        "def __get_pydantic_json_schema__",
+        "def __init__",
+        "def _validate"
+      ],
+      "appelle": [
+        "fastapi/_compat/v2.py"
+      ],
+      "est_appele_par": [
+        "fastapi/__init__.py",
+        "fastapi/_compat/shared.py",
+        "fastapi/applications.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/openapi/utils.py",
+        "fastapi/routing.py",
+        "fastapi/utils.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/concurrency.py": {
+      "fichier": "fastapi/concurrency.py",
+      "langage": "python",
+      "lignes": 41,
+      "taille_bytes": 1489,
+      "entrees": [
+        "anyio",
+        "anyio.to_thread",
+        "collections.abc",
+        "contextlib",
+        "starlette.concurrency",
+        "typing"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "fastapi/dependencies/utils.py",
+        "fastapi/routing.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/templating.py": {
+      "fichier": "fastapi/templating.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 76,
+      "entrees": [
+        "starlette.templating"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/sse.py": {
+      "fichier": "fastapi/sse.py",
+      "langage": "python",
+      "lignes": 222,
+      "taille_bytes": 6394,
+      "entrees": [
+        "annotated_doc",
+        "pydantic",
+        "starlette.responses",
+        "typing"
+      ],
+      "sorties": [
+        "class EventSourceResponse",
+        "class ServerSentEvent",
+        "def _check_data_exclusive",
+        "def _check_id_no_null",
+        "def format_sse_event"
+      ],
+      "appelle": [
+        "fastapi/responses.py"
+      ],
+      "est_appele_par": [
+        "fastapi/openapi/utils.py",
+        "fastapi/responses.py",
+        "fastapi/routing.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/param_functions.py": {
+      "fichier": "fastapi/param_functions.py",
+      "langage": "python",
+      "lignes": 2461,
+      "taille_bytes": 69467,
+      "entrees": [
+        ".db",
+        ".security",
+        "annotated_doc",
+        "case",
+        "collections.abc",
+        "fastapi",
+        "fastapi._compat",
+        "fastapi.openapi.models",
+        "pydantic",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "def Body",
+        "def Cookie",
+        "def Depends",
+        "def File",
+        "def Form",
+        "def Header",
+        "def Path",
+        "def Query",
+        "def Security",
+        "function will"
+      ],
+      "appelle": [
+        "fastapi/dependencies/models.py"
+      ],
+      "est_appele_par": [
+        "fastapi/__init__.py",
+        "fastapi/security/oauth2.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/exception_handlers.py": {
+      "fichier": "fastapi/exception_handlers.py",
+      "langage": "python",
+      "lignes": 34,
+      "taille_bytes": 1275,
+      "entrees": [
+        "fastapi.encoders",
+        "fastapi.exceptions",
+        "fastapi.utils",
+        "fastapi.websockets",
+        "starlette.exceptions",
+        "starlette.requests",
+        "starlette.responses",
+        "starlette.status"
+      ],
+      "sorties": [],
+      "appelle": [
+        "fastapi/dependencies/utils.py",
+        "fastapi/encoders.py",
+        "fastapi/exceptions.py",
+        "fastapi/requests.py",
+        "fastapi/responses.py",
+        "fastapi/websockets.py"
+      ],
+      "est_appele_par": [
+        "fastapi/applications.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/__init__.py": {
+      "fichier": "fastapi/__init__.py",
+      "langage": "python",
+      "lignes": 25,
+      "taille_bytes": 1081,
+      "entrees": [
+        ".applications",
+        ".background",
+        ".datastructures",
+        ".exceptions",
+        ".param_functions",
+        ".requests",
+        ".responses",
+        ".routing",
+        ".websockets",
+        "starlette"
+      ],
+      "sorties": [],
+      "appelle": [
+        "fastapi/applications.py",
+        "fastapi/background.py",
+        "fastapi/datastructures.py",
+        "fastapi/exceptions.py",
+        "fastapi/param_functions.py",
+        "fastapi/requests.py",
+        "fastapi/responses.py",
+        "fastapi/routing.py",
+        "fastapi/websockets.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "fastapi/security/api_key.py": {
+      "fichier": "fastapi/security/api_key.py",
+      "langage": "python",
+      "lignes": 318,
+      "taille_bytes": 9737,
+      "entrees": [
+        "annotated_doc",
+        "fastapi",
+        "fastapi.openapi.models",
+        "fastapi.security",
+        "fastapi.security.base",
+        "starlette.exceptions",
+        "starlette.requests",
+        "starlette.status",
+        "typing"
+      ],
+      "sorties": [
+        "class APIKeyBase",
+        "class APIKeyCookie",
+        "class APIKeyHeader",
+        "class APIKeyQuery",
+        "def __init__",
+        "def check_api_key",
+        "def make_not_authenticated_error"
+      ],
+      "appelle": [
+        "fastapi/dependencies/models.py",
+        "fastapi/exceptions.py",
+        "fastapi/requests.py",
+        "fastapi/security/base.py"
+      ],
+      "est_appele_par": [
+        "fastapi/security/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/security/utils.py": {
+      "fichier": "fastapi/security/utils.py",
+      "langage": "python",
+      "lignes": 7,
+      "taille_bytes": 261,
+      "entrees": [],
+      "sorties": [
+        "def get_authorization_scheme_param"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/security/base.py": {
+      "fichier": "fastapi/security/base.py",
+      "langage": "python",
+      "lignes": 6,
+      "taille_bytes": 141,
+      "entrees": [
+        "fastapi.openapi.models"
+      ],
+      "sorties": [
+        "class SecurityBase"
+      ],
+      "appelle": [
+        "fastapi/dependencies/models.py"
+      ],
+      "est_appele_par": [
+        "fastapi/applications.py",
+        "fastapi/dependencies/models.py",
+        "fastapi/security/api_key.py",
+        "fastapi/security/http.py",
+        "fastapi/security/oauth2.py",
+        "fastapi/security/open_id_connect_url.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/security/http.py": {
+      "fichier": "fastapi/security/http.py",
+      "langage": "python",
+      "lignes": 417,
+      "taille_bytes": 13424,
+      "entrees": [
+        "annotated_doc",
+        "base64",
+        "binascii",
+        "fastapi",
+        "fastapi.exceptions",
+        "fastapi.openapi.models",
+        "fastapi.security",
+        "fastapi.security.base",
+        "fastapi.security.utils",
+        "pydantic",
+        "starlette.requests",
+        "starlette.status",
+        "typing"
+      ],
+      "sorties": [
+        "class HTTPAuthorizationCredentials",
+        "class HTTPBase",
+        "class HTTPBasic",
+        "class HTTPBasicCredentials",
+        "class HTTPBearer",
+        "class HTTPDigest",
+        "def __init__",
+        "def make_authenticate_headers",
+        "def make_not_authenticated_error",
+        "def read_current_user"
+      ],
+      "appelle": [
+        "fastapi/dependencies/models.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/exceptions.py",
+        "fastapi/requests.py",
+        "fastapi/security/base.py"
+      ],
+      "est_appele_par": [
+        "fastapi/security/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/security/oauth2.py": {
+      "fichier": "fastapi/security/oauth2.py",
+      "langage": "python",
+      "lignes": 693,
+      "taille_bytes": 24192,
+      "entrees": [
+        "HTTP",
+        "annotated_doc",
+        "fastapi",
+        "fastapi.exceptions",
+        "fastapi.openapi.models",
+        "fastapi.param_functions",
+        "fastapi.security",
+        "fastapi.security.base",
+        "fastapi.security.utils",
+        "starlette.requests",
+        "starlette.status",
+        "this",
+        "typing"
+      ],
+      "sorties": [
+        "class OAuth2",
+        "class OAuth2AuthorizationCodeBearer",
+        "class OAuth2PasswordBearer",
+        "class OAuth2PasswordRequestForm",
+        "class OAuth2PasswordRequestFormStrict",
+        "class SecurityScopes",
+        "def __init__",
+        "def login",
+        "def make_not_authenticated_error"
+      ],
+      "appelle": [
+        "fastapi/dependencies/models.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/exceptions.py",
+        "fastapi/param_functions.py",
+        "fastapi/requests.py",
+        "fastapi/security/base.py"
+      ],
+      "est_appele_par": [
+        "fastapi/dependencies/utils.py",
+        "fastapi/security/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/security/open_id_connect_url.py": {
+      "fichier": "fastapi/security/open_id_connect_url.py",
+      "langage": "python",
+      "lignes": 94,
+      "taille_bytes": 3139,
+      "entrees": [
+        "annotated_doc",
+        "fastapi.openapi.models",
+        "fastapi.security.base",
+        "starlette.exceptions",
+        "starlette.requests",
+        "starlette.status",
+        "typing"
+      ],
+      "sorties": [
+        "class OpenIdConnect",
+        "def __init__",
+        "def make_not_authenticated_error"
+      ],
+      "appelle": [
+        "fastapi/dependencies/models.py",
+        "fastapi/exceptions.py",
+        "fastapi/requests.py",
+        "fastapi/security/base.py"
+      ],
+      "est_appele_par": [
+        "fastapi/security/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/security/__init__.py": {
+      "fichier": "fastapi/security/__init__.py",
+      "langage": "python",
+      "lignes": 15,
+      "taille_bytes": 881,
+      "entrees": [
+        ".api_key",
+        ".http",
+        ".oauth2",
+        ".open_id_connect_url"
+      ],
+      "sorties": [],
+      "appelle": [
+        "fastapi/security/api_key.py",
+        "fastapi/security/http.py",
+        "fastapi/security/oauth2.py",
+        "fastapi/security/open_id_connect_url.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "fastapi/middleware/asyncexitstack.py": {
+      "fichier": "fastapi/middleware/asyncexitstack.py",
+      "langage": "python",
+      "lignes": 18,
+      "taille_bytes": 637,
+      "entrees": [
+        "contextlib",
+        "starlette.types"
+      ],
+      "sorties": [
+        "class AsyncExitStackMiddleware",
+        "def __init__"
+      ],
+      "appelle": [
+        "fastapi/types.py"
+      ],
+      "est_appele_par": [
+        "fastapi/applications.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/middleware/cors.py": {
+      "fichier": "fastapi/middleware/cors.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 79,
+      "entrees": [
+        "starlette.middleware.cors"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/middleware/httpsredirect.py": {
+      "fichier": "fastapi/middleware/httpsredirect.py",
+      "langage": "python",
+      "lignes": 3,
+      "taille_bytes": 115,
+      "entrees": [
+        "starlette.middleware.httpsredirect"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/middleware/gzip.py": {
+      "fichier": "fastapi/middleware/gzip.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 79,
+      "entrees": [
+        "starlette.middleware.gzip"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/middleware/wsgi.py": {
+      "fichier": "fastapi/middleware/wsgi.py",
+      "langage": "python",
+      "lignes": 3,
+      "taille_bytes": 107,
+      "entrees": [
+        "starlette.middleware.wsgi"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/middleware/__init__.py": {
+      "fichier": "fastapi/middleware/__init__.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 58,
+      "entrees": [
+        "starlette.middleware"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/middleware/trustedhost.py": {
+      "fichier": "fastapi/middleware/trustedhost.py",
+      "langage": "python",
+      "lignes": 3,
+      "taille_bytes": 109,
+      "entrees": [
+        "starlette.middleware.trustedhost"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/openapi/constants.py": {
+      "fichier": "fastapi/openapi/constants.py",
+      "langage": "python",
+      "lignes": 3,
+      "taille_bytes": 153,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "fastapi/_compat/v2.py",
+        "fastapi/openapi/utils.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/openapi/utils.py": {
+      "fichier": "fastapi/openapi/utils.py",
+      "langage": "python",
+      "lignes": 609,
+      "taille_bytes": 26200,
+      "entrees": [
+        "collections.abc",
+        "copy",
+        "fastapi",
+        "fastapi._compat",
+        "fastapi.datastructures",
+        "fastapi.dependencies.models",
+        "fastapi.dependencies.utils",
+        "fastapi.encoders",
+        "fastapi.exceptions",
+        "fastapi.openapi.constants",
+        "fastapi.openapi.models",
+        "fastapi.params",
+        "fastapi.responses",
+        "fastapi.sse",
+        "fastapi.types",
+        "fastapi.utils",
+        "http.client",
+        "inspect",
+        "pydantic",
+        "starlette.responses",
+        "starlette.routing",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "def _get_openapi_operation_parameters",
+        "def generate_operation_id",
+        "def generate_operation_summary",
+        "def get_fields_from_routes",
+        "def get_openapi",
+        "def get_openapi_operation_metadata",
+        "def get_openapi_operation_request_body",
+        "def get_openapi_path",
+        "def get_openapi_security_definitions"
+      ],
+      "appelle": [
+        "fastapi/datastructures.py",
+        "fastapi/dependencies/models.py",
+        "fastapi/dependencies/utils.py",
+        "fastapi/encoders.py",
+        "fastapi/exceptions.py",
+        "fastapi/openapi/constants.py",
+        "fastapi/params.py",
+        "fastapi/responses.py",
+        "fastapi/routing.py",
+        "fastapi/sse.py",
+        "fastapi/types.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "fastapi/openapi/docs.py": {
+      "fichier": "fastapi/openapi/docs.py",
+      "langage": "python",
+      "lignes": 389,
+      "taille_bytes": 12425,
+      "entrees": [
+        "annotated_doc",
+        "fastapi.encoders",
+        "json",
+        "starlette.responses",
+        "typing"
+      ],
+      "sorties": [
+        "const ui",
+        "def _html_safe_json",
+        "def get_redoc_html",
+        "def get_swagger_ui_html",
+        "def get_swagger_ui_oauth2_redirect_html",
+        "function run"
+      ],
+      "appelle": [
+        "fastapi/encoders.py",
+        "fastapi/responses.py"
+      ],
+      "est_appele_par": [
+        "fastapi/applications.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/openapi/models.py": {
+      "fichier": "fastapi/openapi/models.py",
+      "langage": "python",
+      "lignes": 435,
+      "taille_bytes": 14554,
+      "entrees": [
+        "collections.abc",
+        "email_validator",
+        "enum",
+        "fastapi._compat",
+        "fastapi.logger",
+        "pydantic",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "class APIKey",
+        "class APIKeyIn",
+        "class BaseModelWithConfig",
+        "class Components",
+        "class Contact",
+        "class Discriminator",
+        "class EmailStr",
+        "class Encoding",
+        "class Example",
+        "class ExternalDocumentation",
+        "class HTTPBase",
+        "class HTTPBearer",
+        "class Header",
+        "class Info",
+        "class License",
+        "class Link",
+        "class MediaType",
+        "class OAuth2",
+        "class OAuthFlow",
+        "class OAuthFlowAuthorizationCode",
+        "class OAuthFlowClientCredentials",
+        "class OAuthFlowImplicit",
+        "class OAuthFlowPassword",
+        "class OAuthFlows",
+        "class OpenAPI",
+        "class OpenIdConnect",
+        "class Operation",
+        "class Parameter",
+        "class ParameterBase",
+        "class ParameterInType",
+        "class PathItem",
+        "class Reference",
+        "class RequestBody",
+        "class Response",
+        "class Schema",
+        "class SecurityBase",
+        "class SecuritySchemeType",
+        "class Server",
+        "class ServerVariable",
+        "class Tag",
+        "class XML",
+        "def __get_pydantic_core_schema__",
+        "def __get_pydantic_json_schema__",
+        "def __get_validators__",
+        "def _validate",
+        "def validate"
+      ],
+      "appelle": [
+        "fastapi/logger.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/openapi/__init__.py": {
+      "fichier": "fastapi/openapi/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/dependencies/utils.py": {
+      "fichier": "fastapi/dependencies/utils.py",
+      "langage": "python",
+      "lignes": 1054,
+      "taille_bytes": 39276,
+      "entrees": [
+        "annotationlib",
+        "collections.abc",
+        "contextlib",
+        "copy",
+        "dataclasses",
+        "fastapi",
+        "fastapi._compat",
+        "fastapi.background",
+        "fastapi.concurrency",
+        "fastapi.dependencies.models",
+        "fastapi.exceptions",
+        "fastapi.logger",
+        "fastapi.security.oauth2",
+        "fastapi.types",
+        "fastapi.utils",
+        "inspect",
+        "multipart",
+        "multipart.multipart",
+        "pydantic",
+        "pydantic.fields",
+        "python_multipart",
+        "starlette.background",
+        "starlette.concurrency",
+        "starlette.datastructures",
+        "starlette.requests",
+        "starlette.responses",
+        "starlette.websockets",
+        "sys",
+        "typing",
+        "typing_inspection.typing_objects"
+      ],
+      "sorties": [
+        "class ParamDetails",
+        "class SolvedDependency",
+        "def _get_flat_fields_from_params",
+        "def _get_multidict_value",
+        "def _get_signature",
+        "def _is_json_field",
+        "def _should_embed_body_fields",
+        "def _validate_value_with_model_field",
+        "def add_non_field_param_to_dependency",
+        "def add_param_to_fields",
+        "def analyze_param",
+        "def ensure_multipart_is_installed",
+        "def get_body_field",
+        "def get_dependant",
+        "def get_flat_dependant",
+        "def get_flat_params",
+        "def get_parameterless_sub_dependant",
+        "def get_stream_item_type",
+        "def get_typed_annotation",
+        "def get_typed_return_annotation",
+        "def get_typed_signature",
+        "def get_validation_alias",
+        "def is_union_of_base_models",
+        "def request_params_to_args"
+      ],
+      "appelle": [
+        "fastapi/background.py",
+        "fastapi/concurrency.py",
+        "fastapi/datastructures.py",
+        "fastapi/dependencies/models.py",
+        "fastapi/exceptions.py",
+        "fastapi/logger.py",
+        "fastapi/requests.py",
+        "fastapi/responses.py",
+        "fastapi/security/oauth2.py",
+        "fastapi/types.py",
+        "fastapi/websockets.py"
+      ],
+      "est_appele_par": [
+        "fastapi/applications.py",
+        "fastapi/exception_handlers.py",
+        "fastapi/openapi/utils.py",
+        "fastapi/routing.py",
+        "fastapi/security/http.py",
+        "fastapi/security/oauth2.py"
+      ],
+      "type_noeud": "central"
+    },
+    "fastapi/dependencies/models.py": {
+      "fichier": "fastapi/dependencies/models.py",
+      "langage": "python",
+      "lignes": 193,
+      "taille_bytes": 7250,
+      "entrees": [
+        "asyncio",
+        "collections.abc",
+        "dataclasses",
+        "fastapi._compat",
+        "fastapi.security.base",
+        "fastapi.types",
+        "functools",
+        "inspect",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class Dependant",
+        "def _impartial",
+        "def _is_security_scheme",
+        "def _security_dependencies",
+        "def _security_scheme",
+        "def _unwrapped_call",
+        "def _uses_scopes",
+        "def cache_key",
+        "def computed_scope",
+        "def is_async_gen_callable",
+        "def is_coroutine_callable",
+        "def is_gen_callable",
+        "def oauth_scopes"
+      ],
+      "appelle": [
+        "fastapi/security/base.py",
+        "fastapi/types.py"
+      ],
+      "est_appele_par": [
+        "fastapi/dependencies/utils.py",
+        "fastapi/openapi/utils.py",
+        "fastapi/param_functions.py",
+        "fastapi/params.py",
+        "fastapi/routing.py",
+        "fastapi/security/api_key.py",
+        "fastapi/security/base.py",
+        "fastapi/security/http.py",
+        "fastapi/security/oauth2.py",
+        "fastapi/security/open_id_connect_url.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "fastapi/dependencies/__init__.py": {
+      "fichier": "fastapi/dependencies/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fastapi/_compat/shared.py": {
+      "fichier": "fastapi/_compat/shared.py",
+      "langage": "python",
+      "lignes": 214,
+      "taille_bytes": 7045,
+      "entrees": [
+        "collections",
+        "collections.abc",
+        "dataclasses",
+        "fastapi.types",
+        "pydantic",
+        "pydantic.version",
+        "starlette.datastructures",
+        "types",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "def _annotation_is_complex",
+        "def _annotation_is_sequence",
+        "def annotation_is_pydantic_v1",
+        "def field_annotation_is_complex",
+        "def field_annotation_is_scalar",
+        "def field_annotation_is_scalar_sequence",
+        "def field_annotation_is_sequence",
+        "def is_bytes_or_nonable_bytes_annotation",
+        "def is_bytes_sequence_annotation",
+        "def is_pydantic_v1_model_class",
+        "def is_pydantic_v1_model_instance",
+        "def is_uploadfile_or_nonable_uploadfile_annotation",
+        "def is_uploadfile_sequence_annotation",
+        "def lenient_issubclass",
+        "def value_is_sequence"
+      ],
+      "appelle": [
+        "fastapi/datastructures.py",
+        "fastapi/types.py"
+      ],
+      "est_appele_par": [
+        "fastapi/_compat/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/_compat/v2.py": {
+      "fichier": "fastapi/_compat/v2.py",
+      "langage": "python",
+      "lignes": 480,
+      "taille_bytes": 16951,
+      "entrees": [
+        "collections.abc",
+        "copy",
+        "dataclasses",
+        "enum",
+        "fastapi",
+        "fastapi._compat",
+        "fastapi.openapi.constants",
+        "fastapi.types",
+        "functools",
+        "pydantic",
+        "pydantic._internal._schema_generation_shared",
+        "pydantic._internal._typing_extra",
+        "pydantic.fields",
+        "pydantic.json_schema",
+        "pydantic.warnings",
+        "pydantic_core",
+        "pydantic_core.core_schema",
+        "re",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "class GenerateJsonSchema",
+        "class ModelField",
+        "def __hash__",
+        "def __post_init__",
+        "def _has_computed_fields",
+        "def _regenerate_error_with_loc",
+        "def alias",
+        "def asdict",
+        "def bytes_schema",
+        "def copy_field_info",
+        "def create_body_model",
+        "def get_cached_model_fields",
+        "def get_default",
+        "def get_definitions",
+        "def get_flat_models_from_annotation",
+        "def get_flat_models_from_field",
+        "def get_flat_models_from_fields",
+        "def get_flat_models_from_model",
+        "def get_missing_field_error",
+        "def get_model_fields",
+        "def get_model_name_map",
+        "def get_schema_from_model_field",
+        "def is_scalar_field",
+        "def normalize_name",
+        "def serialization_alias",
+        "def serialize",
+        "def serialize_json",
+        "def serialize_sequence_value",
+        "def validate",
+        "def validation_alias"
+      ],
+      "appelle": [
+        "fastapi/openapi/constants.py",
+        "fastapi/types.py"
+      ],
+      "est_appele_par": [
+        "fastapi/_compat/__init__.py",
+        "fastapi/datastructures.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "fastapi/_compat/__init__.py": {
+      "fichier": "fastapi/_compat/__init__.py",
+      "langage": "python",
+      "lignes": 40,
+      "taille_bytes": 2095,
+      "entrees": [
+        ".shared",
+        ".v2"
+      ],
+      "sorties": [],
+      "appelle": [
+        "fastapi/_compat/shared.py",
+        "fastapi/_compat/v2.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    }
+  },
+  "edges": [
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/datastructures.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/dependencies/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/exception_handlers.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/logger.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/middleware/asyncexitstack.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/openapi/docs.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/params.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/requests.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/responses.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/routing.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/security/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/applications.py",
+      "vers": "fastapi/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/utils.py",
+      "vers": "fastapi/datastructures.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/utils.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/utils.py",
+      "vers": "fastapi/routing.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/encoders.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/encoders.py",
+      "vers": "fastapi/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/concurrency.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/datastructures.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/dependencies/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/encoders.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/requests.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/responses.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/sse.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/routing.py",
+      "vers": "fastapi/websockets.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/params.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/params.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__main__.py",
+      "vers": "fastapi/cli.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/responses.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/responses.py",
+      "vers": "fastapi/sse.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "fastapi/datastructures.py",
+      "vers": "fastapi/_compat/v2.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/sse.py",
+      "vers": "fastapi/responses.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "fastapi/param_functions.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/exception_handlers.py",
+      "vers": "fastapi/dependencies/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/exception_handlers.py",
+      "vers": "fastapi/encoders.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/exception_handlers.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/exception_handlers.py",
+      "vers": "fastapi/requests.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/exception_handlers.py",
+      "vers": "fastapi/responses.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/exception_handlers.py",
+      "vers": "fastapi/websockets.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__init__.py",
+      "vers": "fastapi/applications.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__init__.py",
+      "vers": "fastapi/background.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__init__.py",
+      "vers": "fastapi/datastructures.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__init__.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__init__.py",
+      "vers": "fastapi/param_functions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__init__.py",
+      "vers": "fastapi/requests.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__init__.py",
+      "vers": "fastapi/responses.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__init__.py",
+      "vers": "fastapi/routing.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/__init__.py",
+      "vers": "fastapi/websockets.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/api_key.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/api_key.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/api_key.py",
+      "vers": "fastapi/requests.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/api_key.py",
+      "vers": "fastapi/security/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/base.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "fastapi/security/http.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/http.py",
+      "vers": "fastapi/dependencies/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/http.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/http.py",
+      "vers": "fastapi/requests.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/http.py",
+      "vers": "fastapi/security/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/oauth2.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/oauth2.py",
+      "vers": "fastapi/dependencies/utils.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "fastapi/security/oauth2.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/oauth2.py",
+      "vers": "fastapi/param_functions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/oauth2.py",
+      "vers": "fastapi/requests.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/oauth2.py",
+      "vers": "fastapi/security/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/open_id_connect_url.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/open_id_connect_url.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/open_id_connect_url.py",
+      "vers": "fastapi/requests.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/open_id_connect_url.py",
+      "vers": "fastapi/security/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/__init__.py",
+      "vers": "fastapi/security/api_key.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/__init__.py",
+      "vers": "fastapi/security/http.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/__init__.py",
+      "vers": "fastapi/security/oauth2.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/security/__init__.py",
+      "vers": "fastapi/security/open_id_connect_url.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/middleware/asyncexitstack.py",
+      "vers": "fastapi/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/datastructures.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/dependencies/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/encoders.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/openapi/constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/params.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/responses.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/routing.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/sse.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/utils.py",
+      "vers": "fastapi/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/docs.py",
+      "vers": "fastapi/encoders.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/docs.py",
+      "vers": "fastapi/responses.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/openapi/models.py",
+      "vers": "fastapi/logger.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/background.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/concurrency.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/datastructures.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/dependencies/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/logger.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/requests.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/responses.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/security/oauth2.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/utils.py",
+      "vers": "fastapi/websockets.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/dependencies/models.py",
+      "vers": "fastapi/security/base.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "fastapi/dependencies/models.py",
+      "vers": "fastapi/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/_compat/shared.py",
+      "vers": "fastapi/datastructures.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/_compat/shared.py",
+      "vers": "fastapi/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/_compat/v2.py",
+      "vers": "fastapi/openapi/constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/_compat/v2.py",
+      "vers": "fastapi/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/_compat/__init__.py",
+      "vers": "fastapi/_compat/shared.py",
+      "type": "interne"
+    },
+    {
+      "de": "fastapi/_compat/__init__.py",
+      "vers": "fastapi/_compat/v2.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'fastapi/websockets.py' (in=4)",
+    "point_entree → 'fastapi/utils.py'",
+    "central → 'fastapi/encoders.py' (in=4, out=2)",
+    "central → 'fastapi/routing.py' (in=4, out=11)",
+    "hub → 'fastapi/exceptions.py' (in=14, 29% du projet)",
+    "feuille → 'fastapi/requests.py' (in=9)",
+    "feuille → 'fastapi/types.py' (in=9)",
+    "central → 'fastapi/responses.py' (in=8, out=2)",
+    "feuille → 'fastapi/logger.py' (in=3)",
+    "point_entree → 'fastapi/__init__.py'",
+    "point_entree → 'fastapi/security/__init__.py'",
+    "point_entree → 'fastapi/openapi/utils.py'",
+    "central → 'fastapi/dependencies/utils.py' (in=6, out=11)",
+    "hub → 'fastapi/dependencies/models.py' (in=10, 21% du projet)",
+    "point_entree → 'fastapi/_compat/__init__.py'",
+    "circulaire → 6 cycles détectés"
+  ]
+}
