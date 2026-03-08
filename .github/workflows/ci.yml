@@ -1,0 +1,118 @@
+name: CI — Validate PRs & Auto Release
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
+    paths:
+      - 'CHANGELOG.md'
+      - 'registry/**'
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+
+  # ── Validate registry PR ─────────────────────────────────────────
+  validate-registry-pr:
+    name: Validate Registry Contribution
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run PR validation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER:    ${{ github.event.pull_request.number }}
+        run: |
+          chmod +x .github/check_pr.sh
+          bash .github/check_pr.sh
+
+  # ── Auto-label issues ─────────────────────────────────────────────
+  label-issue:
+    name: Auto-label Issues
+    runs-on: ubuntu-latest
+    if: github.event_name == 'issues'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Label issue
+        env:
+          GITHUB_TOKEN:  ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER:  ${{ github.event.issue.number }}
+        run: |
+          chmod +x .github/check_pr.sh
+          bash .github/check_pr.sh
+
+  # ── Auto release on CHANGELOG update ─────────────────────────────
+  auto-release:
+    name: Auto Release
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/main' &&
+      contains(github.event.commits[0].modified, 'CHANGELOG.md')
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run auto release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          chmod +x .github/auto_release.sh
+          bash .github/auto_release.sh changelog
+
+      - name: Build and publish to PyPI
+        if: success()
+        env:
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+        run: |
+          pip install build twine
+          python -m build
+          twine upload dist/* -u __token__ -p "$PYPI_TOKEN"
+
+  # ── Auto index update on new registry graph ───────────────────────
+  update-registry-index:
+    name: Update Registry Index
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'push' &&
+      github.ref == 'refs/heads/main' &&
+      contains(join(github.event.commits[*].added, ','), 'registry/')
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Update index and release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          chmod +x .github/auto_release.sh
+          bash .github/auto_release.sh registry

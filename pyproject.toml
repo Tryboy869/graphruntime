@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "graphruntime"
+version = "1.0.0b1"
+description = "Universal architecture graph extractor, merger and runtime generator — 42 languages supported"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Daouda Abdoul Anzize", email = "anzize.contact@proton.me" }
+]
+keywords = [
+  "graph", "architecture", "llm", "cli", "code-analysis",
+  "dependency-graph", "runtime", "merger", "universal"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Code Generators",
+]
+requires-python = ">=3.10"
+dependencies = [
+  "click>=8.1.0",
+  "groq>=0.9.0",
+  "requests>=2.31.0",
+  "rich>=13.0.0",
+  "pathspec>=0.12.0",
+  "toml>=0.10.2",
+]
+
+[project.optional-dependencies]
+openai   = ["openai>=1.0.0"]
+anthropic = ["anthropic>=0.25.0"]
+ollama   = ["ollama>=0.2.0"]
+all      = ["openai>=1.0.0", "anthropic>=0.25.0", "ollama>=0.2.0"]
+
+[project.scripts]
+graphruntime = "graphruntime.cli:main"
+grt          = "graphruntime.cli:main"
+
+[project.urls]
+Homepage    = "https://github.com/tryboy869/graphruntime"
+Repository  = "https://github.com/tryboy869/graphruntime"
+Issues      = "https://github.com/tryboy869/graphruntime/issues"
+Registry    = "https://github.com/tryboy869/graphruntime/tree/main/registry"
+
+[tool.hatch.build.targets.wheel]
+packages = ["graphruntime"]

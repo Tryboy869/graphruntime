@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" aria-labelledby="contrib-title">
+  <title id="contrib-title">Contributors — Daouda Abdoul Anzize</title>
+  <style>
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    text { font-family: 'Courier New', monospace; }
+  </style>
+  <defs>
+    <linearGradient id="cbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1e"/><stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/><stop offset="100%" stop-color="#1a1f35"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="card-shadow">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#00d4ff" flood-opacity="0.15"/>
+    </filter>
+    <filter id="avatar-glow">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="420" fill="url(#cbg)" rx="12"/>
+
+  <!-- Animated background particles -->
+  <g opacity="0.15">
+    <circle cx="800" cy="50" r="80" fill="none" stroke="#00d4ff" stroke-width="0.5">
+      <animate attributeName="r" values="80;100;80" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="350" r="60" fill="none" stroke="#7c3aed" stroke-width="0.5">
+      <animate attributeName="r" values="60;80;60" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Main card -->
+  <rect x="40" y="30" width="820" height="360" rx="16" fill="url(#card-grad)"
+        stroke="none" filter="url(#card-shadow)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.2s" fill="freeze"/>
+  </rect>
+
+  <!-- Top accent line -->
+  <rect x="40" y="30" width="820" height="3" rx="2" fill="url(#accent)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.4s" fill="freeze"/>
+  </rect>
+
+  <!-- Avatar circle -->
+  <g filter="url(#avatar-glow)" opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.6s" fill="freeze"/>
+    <circle cx="120" cy="130" r="55" fill="#1e3a5f" stroke="url(#accent)" stroke-width="2"/>
+    <!-- DAA initials -->
+    <text x="120" y="122" text-anchor="middle" font-size="28" fill="#00d4ff" font-weight="bold">DA</text>
+    <text x="120" y="150" text-anchor="middle" font-size="14" fill="#7c3aed">◆</text>
+    <!-- Orbit ring -->
+    <circle cx="120" cy="130" r="65" fill="none" stroke="#00d4ff" stroke-width="0.8" stroke-dasharray="8,6" opacity="0.4">
+      <animateTransform attributeName="transform" type="rotate" from="0 120 130" to="360 120 130" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Name & title -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="0.8s" fill="freeze"/>
+    <text x="200" y="90" font-size="22" fill="#ffffff" font-weight="bold">Daouda Abdoul Anzize</text>
+    <text x="200" y="114" font-size="13" fill="#00d4ff" letter-spacing="1">🌌 Computational Paradigm Designer</text>
+    <text x="200" y="134" font-size="11" fill="#ffffff" opacity="0.5" font-style="italic">
+      "I don't build apps. I build the clay others use to build apps."
+    </text>
+    <text x="200" y="156" font-size="11" fill="#ffffff" opacity="0.4">24 ans • Cotonou, Bénin → Global Remote</text>
+  </g>
+
+  <!-- Divider -->
+  <line x1="60" y1="190" x2="840" y2="190" stroke="#ffffff" stroke-width="0.5" opacity="0.1">
+    <animate attributeName="opacity" values="0;0.1" dur="0.3s" begin="1.0s" fill="freeze"/>
+  </line>
+
+  <!-- What I Create -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.1s" fill="freeze"/>
+    <text x="60" y="215" font-size="12" fill="#f59e0b" font-weight="bold" letter-spacing="1">🧬 WHAT I CREATE</text>
+    <text x="60" y="235" font-size="11" fill="#ffffff" opacity="0.7">Meta-Architectures</text>
+    <text x="210" y="235" font-size="11" fill="#ffffff" opacity="0.4">→ Systems that absorb multiple paradigms</text>
+    <text x="60" y="252" font-size="11" fill="#ffffff" opacity="0.7">Universal Protocols</text>
+    <text x="210" y="252" font-size="11" fill="#ffffff" opacity="0.4">→ Standards for distributed reliability</text>
+    <text x="60" y="269" font-size="11" fill="#ffffff" opacity="0.7">Emergent Computing</text>
+    <text x="210" y="269" font-size="11" fill="#ffffff" opacity="0.4">→ Solutions from simple physical laws</text>
+    <text x="60" y="286" font-size="11" fill="#ffffff" opacity="0.7">AI Infrastructure</text>
+    <text x="210" y="286" font-size="11" fill="#ffffff" opacity="0.4">→ Collective intelligence platforms</text>
+  </g>
+
+  <!-- Featured -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.4s" fill="freeze"/>
+    <text x="500" y="215" font-size="12" fill="#7c3aed" font-weight="bold" letter-spacing="1">🔬 FEATURED</text>
+    <text x="500" y="235" font-size="11" fill="#00d4ff">🌟 NEXUS AXION</text>
+    <text x="500" y="250" font-size="10" fill="#ffffff" opacity="0.5">Universal computational framework</text>
+    <text x="500" y="265" font-size="11" fill="#10b981">⚡ Backpressure Protocol</text>
+    <text x="500" y="280" font-size="10" fill="#ffffff" opacity="0.5">60%+ latency reduction in distributed systems</text>
+    <text x="500" y="295" font-size="11" fill="#f59e0b">🧠 Informatique Réalitaire</text>
+    <text x="500" y="310" font-size="10" fill="#ffffff" opacity="0.5">Artificial cognition through synthetic reality</text>
+    <text x="500" y="325" font-size="11" fill="#7c3aed">🎮 Weak Hardware Booster</text>
+    <text x="500" y="340" font-size="10" fill="#ffffff" opacity="0.5">95% CPU load reduction via semantic collision</text>
+  </g>
+
+  <!-- Stack -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.7s" fill="freeze"/>
+    <text x="60" y="318" font-size="12" fill="#10b981" font-weight="bold" letter-spacing="1">🛠️ STACK</text>
+    <!-- Language badges -->
+    <rect x="60" y="326" width="55" height="18" rx="4" fill="#1a3a1a"/>
+    <text x="87" y="339" text-anchor="middle" font-size="9" fill="#10b981">Python</text>
+    <rect x="122" y="326" width="42" height="18" rx="4" fill="#2a1a1a"/>
+    <text x="143" y="339" text-anchor="middle" font-size="9" fill="#f59e0b">Rust</text>
+    <rect x="171" y="326" width="40" height="18" rx="4" fill="#1a1a3a"/>
+    <text x="191" y="339" text-anchor="middle" font-size="9" fill="#00d4ff">C++</text>
+    <rect x="218" y="326" width="50" height="18" rx="4" fill="#2a2a1a"/>
+    <text x="243" y="339" text-anchor="middle" font-size="9" fill="#facc15">JavaScript</text>
+    <rect x="275" y="326" width="35" height="18" rx="4" fill="#1a2a1a"/>
+    <text x="292" y="339" text-anchor="middle" font-size="9" fill="#34d399">Go</text>
+  </g>
+
+  <!-- Contact -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="1.9s" fill="freeze"/>
+    <text x="60" y="375" font-size="11" fill="#ffffff" opacity="0.5">
+      📫 anzize.contact@proton.me  •  🐦 @Nexusstudio100  •  🌐 tryboy869.github.io/daa
+    </text>
+    <text x="60" y="393" font-size="10" fill="#7c3aed" opacity="0.7">
+      🎯 Open to: Research labs • Protocol foundations • Remote roles • Relocation-ready
+    </text>
+  </g>
+
+  <!-- Background: Baccalauréat → self-taught badge -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.1s" fill="freeze"/>
+    <rect x="680" y="355" width="180" height="28" rx="6" fill="#0f1a0f" stroke="#10b981" stroke-width="1"/>
+    <text x="770" y="374" text-anchor="middle" font-size="10" fill="#10b981">
+      Self-Taught · 40+ Open Source Projects
+    </text>
+  </g>
+</svg>

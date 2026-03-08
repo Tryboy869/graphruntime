@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" width="900" height="160" role="img" aria-labelledby="header-title">
+  <title id="header-title">GraphRuntime — Universal Architecture Graph CLI</title>
+  <style>
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    @font-face { font-family: 'mono'; src: local('Courier New'); }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1e"/>
+      <stop offset="100%" stop-color="#0d1b2a"/>
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00d4ff"/>
+      <stop offset="50%"  stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#00d4ff">
+        <animate attributeName="stop-color" values="#00d4ff;#f59e0b;#00d4ff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <filter id="glow-filter">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="text-glow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Clip paths for letter-by-letter reveal -->
+    <clipPath id="clip-G">  <rect x="0"   y="0" width="64"  height="100"/></clipPath>
+    <clipPath id="clip-r1"> <rect x="64"  y="0" width="44"  height="100"/></clipPath>
+    <clipPath id="clip-a">  <rect x="108" y="0" width="44"  height="100"/></clipPath>
+    <clipPath id="clip-p">  <rect x="152" y="0" width="44"  height="100"/></clipPath>
+    <clipPath id="clip-h">  <rect x="196" y="0" width="44"  height="100"/></clipPath>
+    <clipPath id="clip-R">  <rect x="258" y="0" width="52"  height="100"/></clipPath>
+    <clipPath id="clip-u">  <rect x="310" y="0" width="44"  height="100"/></clipPath>
+    <clipPath id="clip-n">  <rect x="354" y="0" width="44"  height="100"/></clipPath>
+    <clipPath id="clip-t">  <rect x="398" y="0" width="32"  height="100"/></clipPath>
+    <clipPath id="clip-i">  <rect x="430" y="0" width="22"  height="100"/></clipPath>
+    <clipPath id="clip-m">  <rect x="452" y="0" width="52"  height="100"/></clipPath>
+    <clipPath id="clip-e">  <rect x="504" y="0" width="44"  height="100"/></clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="160" fill="url(#bg)" rx="12"/>
+
+  <!-- Animated grid lines -->
+  <g opacity="0.08" stroke="#00d4ff" stroke-width="0.5">
+    <line x1="0" y1="40" x2="900" y2="40"><animate attributeName="opacity" values="0.08;0.15;0.08" dur="3s" repeatCount="indefinite"/></line>
+    <line x1="0" y1="80" x2="900" y2="80"><animate attributeName="opacity" values="0.08;0.15;0.08" dur="3s" begin="1s" repeatCount="indefinite"/></line>
+    <line x1="0" y1="120" x2="900" y2="120"><animate attributeName="opacity" values="0.08;0.15;0.08" dur="3s" begin="2s" repeatCount="indefinite"/></line>
+    <line x1="150" y1="0" x2="150" y2="160"><animate attributeName="opacity" values="0.08;0.15;0.08" dur="4s" repeatCount="indefinite"/></line>
+    <line x1="450" y1="0" x2="450" y2="160"><animate attributeName="opacity" values="0.08;0.15;0.08" dur="4s" begin="2s" repeatCount="indefinite"/></line>
+    <line x1="750" y1="0" x2="750" y2="160"><animate attributeName="opacity" values="0.08;0.15;0.08" dur="4s" begin="1s" repeatCount="indefinite"/></line>
+  </g>
+
+  <!-- Floating nodes (graph metaphor) -->
+  <g filter="url(#glow-filter)">
+    <circle cx="820" cy="30" r="4" fill="#00d4ff" opacity="0.6">
+      <animate attributeName="cy" values="30;40;30" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="850" cy="60" r="3" fill="#7c3aed" opacity="0.5">
+      <animate attributeName="cy" values="60;50;60" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="830" cy="90" r="5" fill="#f59e0b" opacity="0.4">
+      <animate attributeName="cy" values="90;80;90" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="820" y1="30" x2="850" y2="60" stroke="#00d4ff" stroke-width="1" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="850" y1="60" x2="830" y2="90" stroke="#7c3aed" stroke-width="1" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Main title — sequential letter reveal -->
+  <g transform="translate(30, 110)" filter="url(#text-glow)">
+    <!-- "Graph" -->
+    <g clip-path="url(#clip-G)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.0s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="url(#glow-grad)">G</text></g>
+    <g clip-path="url(#clip-r1)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.12s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="url(#glow-grad)">r</text></g>
+    <g clip-path="url(#clip-a)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.24s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="url(#glow-grad)">a</text></g>
+    <g clip-path="url(#clip-p)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.36s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="url(#glow-grad)">p</text></g>
+    <g clip-path="url(#clip-h)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.48s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="url(#glow-grad)">h</text></g>
+    <!-- "Runtime" -->
+    <g clip-path="url(#clip-R)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.70s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="#ffffff">R</text></g>
+    <g clip-path="url(#clip-u)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.82s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="#ffffff">u</text></g>
+    <g clip-path="url(#clip-n)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.94s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="#ffffff">n</text></g>
+    <g clip-path="url(#clip-t)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.06s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="#ffffff">t</text></g>
+    <g clip-path="url(#clip-i)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.18s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="#ffffff">i</text></g>
+    <g clip-path="url(#clip-m)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.30s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="#ffffff">m</text></g>
+    <g clip-path="url(#clip-e)" opacity="0"><animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.42s" fill="freeze"/>
+      <text font-family="'Courier New', monospace" font-size="72" font-weight="bold" fill="#ffffff">e</text></g>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="30" y="148" font-family="'Courier New', monospace" font-size="12"
+        fill="#00d4ff" opacity="0" letter-spacing="3">
+    UNIVERSAL ARCHITECTURE GRAPH CLI — 42 LANGUAGES
+    <animate attributeName="opacity" values="0;0.8" dur="0.5s" begin="2s" fill="freeze"/>
+  </text>
+
+  <!-- Cursor blink -->
+  <rect x="572" y="74" width="3" height="52" fill="#00d4ff" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.6;0.65;0.9;1"
+             dur="1s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
