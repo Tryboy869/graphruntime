@@ -1,0 +1,1859 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 39,
+      "json": 15
+    }
+  },
+  "stats": {
+    "fichiers_total": 54,
+    "edges_total": 75,
+    "edges_circulaires": 2,
+    "noeuds_centraux": 2,
+    "noeuds_feuilles": 4,
+    "noeuds_hubs": 1,
+    "points_entree": 5,
+    "fichier_plus_appele": "boto3/docs/utils.py"
+  },
+  "noeuds": {
+    "boto3/compat.py": {
+      "fichier": "boto3/compat.py",
+      "langage": "python",
+      "lignes": 97,
+      "taille_bytes": 3202,
+      "entrees": [
+        "boto3.exceptions",
+        "collections.abc",
+        "errno",
+        "os",
+        "s3transfer.manager",
+        "socket",
+        "sys",
+        "warnings"
+      ],
+      "sorties": [
+        "def _warn_deprecated_python",
+        "def filter_python_deprecation_warnings",
+        "def is_append_mode",
+        "def rename_file"
+      ],
+      "appelle": [
+        "boto3/exceptions.py"
+      ],
+      "est_appele_par": [
+        "boto3/__init__.py",
+        "boto3/crt.py",
+        "boto3/docs/base.py",
+        "boto3/dynamodb/transform.py",
+        "boto3/dynamodb/types.py",
+        "boto3/s3/inject.py",
+        "boto3/s3/transfer.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/utils.py": {
+      "fichier": "boto3/utils.py",
+      "langage": "python",
+      "lignes": 90,
+      "taille_bytes": 3005,
+      "entrees": [
+        "collections",
+        "importlib"
+      ],
+      "sorties": [
+        "class LazyLoadedWaiterModel",
+        "class ServiceContext",
+        "def __init__",
+        "def _handler",
+        "def get_waiter",
+        "def inject_attribute",
+        "def lazy_call"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/crt.py": {
+      "fichier": "boto3/crt.py",
+      "langage": "python",
+      "lignes": 217,
+      "taille_bytes": 7254,
+      "entrees": [
+        "boto3.compat",
+        "boto3.exceptions",
+        "boto3.s3.constants",
+        "botocore.exceptions",
+        "botocore.session",
+        "logging",
+        "s3transfer.crt",
+        "threading"
+      ],
+      "sorties": [
+        "class CRTS3Client",
+        "def __init__",
+        "def _create_crt_client",
+        "def _create_crt_request_serializer",
+        "def _create_crt_s3_client",
+        "def _initialize_crt_transfer_primatives",
+        "def _validate_crt_transfer_config",
+        "def compare_identity",
+        "def create_crt_transfer_manager",
+        "def get_crt_s3_client",
+        "def is_crt_compatible_request"
+      ],
+      "appelle": [
+        "boto3/compat.py",
+        "boto3/exceptions.py",
+        "boto3/s3/constants.py",
+        "boto3/session.py"
+      ],
+      "est_appele_par": [
+        "boto3/s3/transfer.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/exceptions.py": {
+      "fichier": "boto3/exceptions.py",
+      "langage": "python",
+      "lignes": 130,
+      "taille_bytes": 4187,
+      "entrees": [
+        "botocore.exceptions"
+      ],
+      "sorties": [
+        "class Boto3Error",
+        "class DynamoDBNeedsConditionError",
+        "class DynamoDBNeedsKeyConditionError",
+        "class DynamoDBOperationNotSupportedError",
+        "class InvalidCrtTransferConfigError",
+        "class NoVersionFound",
+        "class PythonDeprecationWarning",
+        "class ResourceLoadException",
+        "class ResourceNotExistsError",
+        "class RetriesExceededError",
+        "class S3TransferFailedError",
+        "class S3UploadFailedError",
+        "class UnknownAPIVersionError",
+        "def __init__"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "boto3/compat.py",
+        "boto3/crt.py",
+        "boto3/docs/service.py",
+        "boto3/dynamodb/conditions.py",
+        "boto3/resources/factory.py",
+        "boto3/resources/params.py",
+        "boto3/s3/inject.py",
+        "boto3/s3/transfer.py",
+        "boto3/session.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "boto3/session.py": {
+      "fichier": "boto3/session.py",
+      "langage": "python",
+      "lignes": 574,
+      "taille_bytes": 22106,
+      "entrees": [
+        ".resources.factory",
+        "boto3",
+        "boto3.exceptions",
+        "boto3.utils",
+        "botocore.client",
+        "botocore.exceptions",
+        "botocore.session",
+        "copy",
+        "os",
+        "the"
+      ],
+      "sorties": [
+        "class Session",
+        "def __init__",
+        "def __repr__",
+        "def _account_id_set_without_credentials",
+        "def _register_default_handlers",
+        "def _setup_loader",
+        "def available_profiles",
+        "def client",
+        "def events",
+        "def get_available_partitions",
+        "def get_available_regions",
+        "def get_available_resources",
+        "def get_available_services",
+        "def get_credentials",
+        "def get_partition_for_region",
+        "def profile_name",
+        "def region_name",
+        "def resource"
+      ],
+      "appelle": [
+        "boto3/docs/client.py",
+        "boto3/docs/utils.py",
+        "boto3/exceptions.py",
+        "boto3/resources/factory.py"
+      ],
+      "est_appele_par": [
+        "boto3/__init__.py",
+        "boto3/crt.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/__init__.py": {
+      "fichier": "boto3/__init__.py",
+      "langage": "python",
+      "lignes": 107,
+      "taille_bytes": 3367,
+      "entrees": [
+        "boto3.compat",
+        "boto3.session",
+        "logging"
+      ],
+      "sorties": [
+        "def _get_default_session",
+        "def client",
+        "def resource",
+        "def set_stream_logger",
+        "def setup_default_session"
+      ],
+      "appelle": [
+        "boto3/compat.py",
+        "boto3/session.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "boto3/docs/service.py": {
+      "fichier": "boto3/docs/service.py",
+      "langage": "python",
+      "lignes": 201,
+      "taille_bytes": 8514,
+      "entrees": [
+        "boto3",
+        "boto3.docs.client",
+        "boto3.docs.resource",
+        "boto3.utils",
+        "botocore.docs.bcdoc.restdoc",
+        "botocore.docs.service",
+        "botocore.exceptions",
+        "os"
+      ],
+      "sorties": [
+        "class ServiceDocumenter",
+        "def __init__",
+        "def _document_examples",
+        "def _document_resources",
+        "def _document_service_resource",
+        "def _get_example_file",
+        "def client_api",
+        "def document_service",
+        "def resource_section"
+      ],
+      "appelle": [
+        "boto3/docs/client.py",
+        "boto3/docs/resource.py",
+        "boto3/docs/utils.py",
+        "boto3/exceptions.py"
+      ],
+      "est_appele_par": [
+        "boto3/docs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/docs/waiter.py": {
+      "fichier": "boto3/docs/waiter.py",
+      "langage": "python",
+      "lignes": 130,
+      "taille_bytes": 5165,
+      "entrees": [
+        "boto3.docs.base",
+        "boto3.docs.utils",
+        "botocore",
+        "botocore.docs.bcdoc.restdoc",
+        "botocore.docs.method",
+        "botocore.utils",
+        "os"
+      ],
+      "sorties": [
+        "class WaiterResourceDocumenter",
+        "def __init__",
+        "def document_resource_waiter",
+        "def document_resource_waiters"
+      ],
+      "appelle": [
+        "boto3/docs/method.py",
+        "boto3/docs/utils.py",
+        "boto3/resources/base.py"
+      ],
+      "est_appele_par": [
+        "boto3/docs/docstring.py",
+        "boto3/docs/resource.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/docs/client.py": {
+      "fichier": "boto3/docs/client.py",
+      "langage": "python",
+      "lignes": 24,
+      "taille_bytes": 1003,
+      "entrees": [
+        "botocore.docs.client"
+      ],
+      "sorties": [
+        "class Boto3ClientDocumenter",
+        "def _add_client_creation_example"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "boto3/docs/service.py",
+        "boto3/session.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/docs/attr.py": {
+      "fichier": "boto3/docs/attr.py",
+      "langage": "python",
+      "lignes": 72,
+      "taille_bytes": 2500,
+      "entrees": [
+        "boto3.docs.utils",
+        "botocore.docs.params"
+      ],
+      "sorties": [
+        "class ResourceShapeDocumenter",
+        "def document_attribute",
+        "def document_identifier",
+        "def document_reference"
+      ],
+      "appelle": [
+        "boto3/docs/utils.py",
+        "boto3/resources/params.py"
+      ],
+      "est_appele_par": [
+        "boto3/docs/docstring.py",
+        "boto3/docs/resource.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/docs/docstring.py": {
+      "fichier": "boto3/docs/docstring.py",
+      "langage": "python",
+      "lignes": 77,
+      "taille_bytes": 2511,
+      "entrees": [
+        "boto3.docs.action",
+        "boto3.docs.attr",
+        "boto3.docs.collection",
+        "boto3.docs.subresource",
+        "boto3.docs.waiter",
+        "botocore.docs.docstring"
+      ],
+      "sorties": [
+        "class ActionDocstring",
+        "class AttributeDocstring",
+        "class BatchActionDocstring",
+        "class CollectionDocstring",
+        "class CollectionMethodDocstring",
+        "class IdentifierDocstring",
+        "class LoadReloadDocstring",
+        "class ReferenceDocstring",
+        "class ResourceWaiterDocstring",
+        "class SubResourceDocstring",
+        "def _write_docstring"
+      ],
+      "appelle": [
+        "boto3/docs/attr.py",
+        "boto3/docs/subresource.py",
+        "boto3/docs/waiter.py",
+        "boto3/resources/action.py",
+        "boto3/resources/collection.py"
+      ],
+      "est_appele_par": [
+        "boto3/resources/action.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/docs/utils.py": {
+      "fichier": "boto3/docs/utils.py",
+      "langage": "python",
+      "lignes": 146,
+      "taille_bytes": 5436,
+      "entrees": [
+        "inspect",
+        "jmespath"
+      ],
+      "sorties": [
+        "class DocumentModifiedShape",
+        "def __init__",
+        "def _replace_documentation",
+        "def add_resource_type_overview",
+        "def get_identifier_args_for_signature",
+        "def get_identifier_description",
+        "def get_identifier_values_for_example",
+        "def get_resource_ignore_params",
+        "def get_resource_public_actions",
+        "def is_resource_action",
+        "def replace_documentation_for_matching_shape"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "boto3/docs/action.py",
+        "boto3/docs/attr.py",
+        "boto3/docs/collection.py",
+        "boto3/docs/resource.py",
+        "boto3/docs/service.py",
+        "boto3/docs/subresource.py",
+        "boto3/docs/waiter.py",
+        "boto3/dynamodb/transform.py",
+        "boto3/resources/action.py",
+        "boto3/resources/collection.py",
+        "boto3/s3/transfer.py",
+        "boto3/session.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "boto3/docs/subresource.py": {
+      "fichier": "boto3/docs/subresource.py",
+      "langage": "python",
+      "lignes": 145,
+      "taille_bytes": 5766,
+      "entrees": [
+        "boto3.docs.base",
+        "boto3.docs.utils",
+        "botocore",
+        "botocore.docs.bcdoc.restdoc",
+        "botocore.utils",
+        "os"
+      ],
+      "sorties": [
+        "class SubResourceDocumenter",
+        "def document_sub_resource",
+        "def document_sub_resources"
+      ],
+      "appelle": [
+        "boto3/docs/utils.py",
+        "boto3/resources/base.py"
+      ],
+      "est_appele_par": [
+        "boto3/docs/docstring.py",
+        "boto3/docs/resource.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/docs/base.py": {
+      "fichier": "boto3/docs/base.py",
+      "langage": "python",
+      "lignes": 51,
+      "taille_bytes": 2103,
+      "entrees": [
+        "botocore.compat"
+      ],
+      "sorties": [
+        "class BaseDocumenter",
+        "class NestedDocumenter",
+        "def __init__",
+        "def class_name"
+      ],
+      "appelle": [
+        "boto3/compat.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/docs/method.py": {
+      "fichier": "boto3/docs/method.py",
+      "langage": "python",
+      "lignes": 77,
+      "taille_bytes": 2725,
+      "entrees": [
+        "botocore.docs.method"
+      ],
+      "sorties": [
+        "def _method_returns_resource_list",
+        "def document_model_driven_resource_method"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "boto3/docs/action.py",
+        "boto3/docs/collection.py",
+        "boto3/docs/waiter.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "boto3/docs/resource.py": {
+      "fichier": "boto3/docs/resource.py",
+      "langage": "python",
+      "lignes": 354,
+      "taille_bytes": 15134,
+      "entrees": [
+        "boto3.docs.action",
+        "boto3.docs.attr",
+        "boto3.docs.base",
+        "boto3.docs.collection",
+        "boto3.docs.subresource",
+        "boto3.docs.utils",
+        "boto3.docs.waiter",
+        "botocore",
+        "botocore.docs.bcdoc.restdoc",
+        "botocore.docs.utils",
+        "os"
+      ],
+      "sorties": [
+        "class ResourceDocumenter",
+        "class ServiceResourceDocumenter",
+        "def __init__",
+        "def _add_actions",
+        "def _add_attributes",
+        "def _add_collections",
+        "def _add_description",
+        "def _add_example",
+        "def _add_identifiers",
+        "def _add_intro",
+        "def _add_overview_of_member_type",
+        "def _add_params_description",
+        "def _add_references",
+        "def _add_resource_note",
+        "def _add_sub_resources",
+        "def _add_title",
+        "def _add_waiters",
+        "def class_name",
+        "def document_resource"
+      ],
+      "appelle": [
+        "boto3/docs/attr.py",
+        "boto3/docs/subresource.py",
+        "boto3/docs/utils.py",
+        "boto3/docs/waiter.py",
+        "boto3/resources/action.py",
+        "boto3/resources/base.py",
+        "boto3/resources/collection.py"
+      ],
+      "est_appele_par": [
+        "boto3/docs/service.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/docs/collection.py": {
+      "fichier": "boto3/docs/collection.py",
+      "langage": "python",
+      "lignes": 290,
+      "taille_bytes": 11296,
+      "entrees": [
+        "boto3.docs.base",
+        "boto3.docs.method",
+        "boto3.docs.utils",
+        "botocore",
+        "botocore.docs.bcdoc.restdoc",
+        "botocore.docs.method",
+        "botocore.docs.utils",
+        "os"
+      ],
+      "sorties": [
+        "class CollectionDocumenter",
+        "def _document_collection",
+        "def document_batch_action",
+        "def document_collection_method",
+        "def document_collection_object",
+        "def document_collections"
+      ],
+      "appelle": [
+        "boto3/docs/method.py",
+        "boto3/docs/utils.py",
+        "boto3/resources/base.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "boto3/docs/action.py": {
+      "fichier": "boto3/docs/action.py",
+      "langage": "python",
+      "lignes": 214,
+      "taille_bytes": 8122,
+      "entrees": [
+        "boto3.docs.base",
+        "boto3.docs.method",
+        "boto3.docs.utils",
+        "botocore",
+        "botocore.docs.bcdoc.restdoc",
+        "botocore.docs.method",
+        "botocore.model",
+        "botocore.utils",
+        "os"
+      ],
+      "sorties": [
+        "class ActionDocumenter",
+        "def document_action",
+        "def document_actions",
+        "def document_load_reload_action"
+      ],
+      "appelle": [
+        "boto3/docs/method.py",
+        "boto3/docs/utils.py",
+        "boto3/resources/base.py",
+        "boto3/resources/model.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "boto3/docs/__init__.py": {
+      "fichier": "boto3/docs/__init__.py",
+      "langage": "python",
+      "lignes": 51,
+      "taille_bytes": 1844,
+      "entrees": [
+        "boto3.docs.service",
+        "botocore.docs",
+        "os"
+      ],
+      "sorties": [
+        "def generate_docs"
+      ],
+      "appelle": [
+        "boto3/docs/service.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/s3/constants.py": {
+      "fichier": "boto3/s3/constants.py",
+      "langage": "python",
+      "lignes": 18,
+      "taille_bytes": 718,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "boto3/crt.py",
+        "boto3/s3/transfer.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/s3/transfer.py": {
+      "fichier": "boto3/s3/transfer.py",
+      "langage": "python",
+      "lignes": 516,
+      "taille_bytes": 19010,
+      "entrees": [
+        "awscrt.s3",
+        "boto3.compat",
+        "boto3.crt",
+        "boto3.exceptions",
+        "boto3.s3.constants",
+        "botocore.compat",
+        "botocore.exceptions",
+        "logging",
+        "os",
+        "s3transfer.exceptions",
+        "s3transfer.futures",
+        "s3transfer.manager",
+        "s3transfer.subscribers",
+        "s3transfer.utils",
+        "threading"
+      ],
+      "sorties": [
+        "class ProgressCallbackInvoker",
+        "class ProgressPercentage",
+        "class S3Transfer",
+        "class TransferConfig",
+        "def __call__",
+        "def __enter__",
+        "def __exit__",
+        "def __getattribute__",
+        "def __init__",
+        "def __setattr__",
+        "def _create_default_transfer_manager",
+        "def _get_subscribers",
+        "def _resolve_init_args",
+        "def _should_use_crt",
+        "def create_transfer_manager",
+        "def download_file",
+        "def has_minimum_crt_version",
+        "def on_progress",
+        "def upload_file"
+      ],
+      "appelle": [
+        "boto3/compat.py",
+        "boto3/crt.py",
+        "boto3/docs/utils.py",
+        "boto3/exceptions.py",
+        "boto3/s3/constants.py"
+      ],
+      "est_appele_par": [
+        "boto3/s3/inject.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/s3/inject.py": {
+      "fichier": "boto3/s3/inject.py",
+      "langage": "python",
+      "lignes": 958,
+      "taille_bytes": 30629,
+      "entrees": [
+        "boto3",
+        "boto3.compat",
+        "boto3.s3.transfer",
+        "botocore.context",
+        "botocore.exceptions",
+        "botocore.useragent",
+        "copy",
+        "functools",
+        "logging",
+        "object"
+      ],
+      "sorties": [
+        "def bucket_copy",
+        "def bucket_download_file",
+        "def bucket_download_fileobj",
+        "def bucket_load",
+        "def bucket_upload_file",
+        "def bucket_upload_fileobj",
+        "def copy",
+        "def decorator",
+        "def disable_threading_if_append_mode",
+        "def download_file",
+        "def download_fileobj",
+        "def inject_bucket_methods",
+        "def inject_object_methods",
+        "def inject_object_summary_methods",
+        "def inject_s3_transfer_methods",
+        "def object_copy",
+        "def object_download_file",
+        "def object_download_fileobj",
+        "def object_summary_load",
+        "def object_upload_file",
+        "def object_upload_fileobj",
+        "def register_feature_id",
+        "def upload_file",
+        "def upload_fileobj",
+        "def with_current_context",
+        "def wrapper"
+      ],
+      "appelle": [
+        "boto3/compat.py",
+        "boto3/exceptions.py",
+        "boto3/s3/transfer.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "boto3/s3/__init__.py": {
+      "fichier": "boto3/s3/__init__.py",
+      "langage": "python",
+      "lignes": 12,
+      "taille_bytes": 562,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/ec2/deletetags.py": {
+      "fichier": "boto3/ec2/deletetags.py",
+      "langage": "python",
+      "lignes": 37,
+      "taille_bytes": 1217,
+      "entrees": [
+        "boto3.resources.action"
+      ],
+      "sorties": [
+        "def delete_tags",
+        "def inject_delete_tags"
+      ],
+      "appelle": [
+        "boto3/resources/action.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/ec2/__init__.py": {
+      "fichier": "boto3/ec2/__init__.py",
+      "langage": "python",
+      "lignes": 12,
+      "taille_bytes": 562,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/ec2/createtags.py": {
+      "fichier": "boto3/ec2/createtags.py",
+      "langage": "python",
+      "lignes": 40,
+      "taille_bytes": 1577,
+      "entrees": [],
+      "sorties": [
+        "def create_tags",
+        "def inject_create_tags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/sns/2010-03-31/resources-1.json": {
+      "fichier": "boto3/data/sns/2010-03-31/resources-1.json",
+      "langage": "json",
+      "lignes": 327,
+      "taille_bytes": 9091,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/s3/2006-03-01/resources-1.json": {
+      "fichier": "boto3/data/s3/2006-03-01/resources-1.json",
+      "langage": "json",
+      "lignes": 1249,
+      "taille_bytes": 37204,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/glacier/2012-06-01/resources-1.json": {
+      "fichier": "boto3/data/glacier/2012-06-01/resources-1.json",
+      "langage": "json",
+      "lignes": 581,
+      "taille_bytes": 19940,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/cloudwatch/2010-08-01/resources-1.json": {
+      "fichier": "boto3/data/cloudwatch/2010-08-01/resources-1.json",
+      "langage": "json",
+      "lignes": 334,
+      "taille_bytes": 11690,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/ec2/2016-04-01/resources-1.json": {
+      "fichier": "boto3/data/ec2/2016-04-01/resources-1.json",
+      "langage": "json",
+      "lignes": 2567,
+      "taille_bytes": 76564,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/ec2/2015-03-01/resources-1.json": {
+      "fichier": "boto3/data/ec2/2015-03-01/resources-1.json",
+      "langage": "json",
+      "lignes": 2289,
+      "taille_bytes": 68469,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/ec2/2016-09-15/resources-1.json": {
+      "fichier": "boto3/data/ec2/2016-09-15/resources-1.json",
+      "langage": "json",
+      "lignes": 2567,
+      "taille_bytes": 76564,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/ec2/2014-10-01/resources-1.json": {
+      "fichier": "boto3/data/ec2/2014-10-01/resources-1.json",
+      "langage": "json",
+      "lignes": 2289,
+      "taille_bytes": 68469,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/ec2/2015-10-01/resources-1.json": {
+      "fichier": "boto3/data/ec2/2015-10-01/resources-1.json",
+      "langage": "json",
+      "lignes": 2567,
+      "taille_bytes": 76564,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/ec2/2016-11-15/resources-1.json": {
+      "fichier": "boto3/data/ec2/2016-11-15/resources-1.json",
+      "langage": "json",
+      "lignes": 2582,
+      "taille_bytes": 76922,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/ec2/2015-04-15/resources-1.json": {
+      "fichier": "boto3/data/ec2/2015-04-15/resources-1.json",
+      "langage": "json",
+      "lignes": 2289,
+      "taille_bytes": 68469,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/cloudformation/2010-05-15/resources-1.json": {
+      "fichier": "boto3/data/cloudformation/2010-05-15/resources-1.json",
+      "langage": "json",
+      "lignes": 195,
+      "taille_bytes": 5110,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/iam/2010-05-08/resources-1.json": {
+      "fichier": "boto3/data/iam/2010-05-08/resources-1.json",
+      "langage": "json",
+      "lignes": 1721,
+      "taille_bytes": 50357,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/dynamodb/2012-08-10/resources-1.json": {
+      "fichier": "boto3/data/dynamodb/2012-08-10/resources-1.json",
+      "langage": "json",
+      "lignes": 150,
+      "taille_bytes": 3849,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/data/sqs/2012-11-05/resources-1.json": {
+      "fichier": "boto3/data/sqs/2012-11-05/resources-1.json",
+      "langage": "json",
+      "lignes": 232,
+      "taille_bytes": 6545,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/dynamodb/table.py": {
+      "fichier": "boto3/dynamodb/table.py",
+      "langage": "python",
+      "lignes": 167,
+      "taille_bytes": 6340,
+      "entrees": [
+        "logging"
+      ],
+      "sorties": [
+        "class BatchWriter",
+        "class TableResource",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _add_request_and_process",
+        "def _extract_pkey_values",
+        "def _flush",
+        "def _flush_if_needed",
+        "def _remove_dup_pkeys_request_if_any",
+        "def batch_writer",
+        "def delete_item",
+        "def put_item",
+        "def register_table_methods"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/dynamodb/conditions.py": {
+      "fichier": "boto3/dynamodb/conditions.py",
+      "langage": "python",
+      "lignes": 461,
+      "taille_bytes": 15028,
+      "entrees": [
+        "boto3.exceptions",
+        "collections",
+        "re"
+      ],
+      "sorties": [
+        "class And",
+        "class Attr",
+        "class AttributeBase",
+        "class AttributeExists",
+        "class AttributeNotExists",
+        "class AttributeType",
+        "class BeginsWith",
+        "class Between",
+        "class ComparisonCondition",
+        "class ConditionAttributeBase",
+        "class ConditionBase",
+        "class ConditionExpressionBuilder",
+        "class Contains",
+        "class Equals",
+        "class GreaterThan",
+        "class GreaterThanEquals",
+        "class In",
+        "class Key",
+        "class LessThan",
+        "class LessThanEquals",
+        "class Not",
+        "class NotEquals",
+        "class Or",
+        "class Size",
+        "def __and__",
+        "def __eq__",
+        "def __init__",
+        "def __invert__",
+        "def __ne__",
+        "def __or__",
+        "def _build_expression",
+        "def _build_expression_component",
+        "def _build_name_placeholder",
+        "def _build_value_placeholder",
+        "def _get_name_placeholder",
+        "def _get_value_placeholder",
+        "def attribute_type",
+        "def begins_with",
+        "def between",
+        "def build_expression",
+        "def contains",
+        "def eq",
+        "def exists",
+        "def get_expression",
+        "def gt",
+        "def gte",
+        "def is_in",
+        "def lt",
+        "def lte",
+        "def ne",
+        "def not_exists",
+        "def reset",
+        "def size"
+      ],
+      "appelle": [
+        "boto3/exceptions.py"
+      ],
+      "est_appele_par": [
+        "boto3/dynamodb/transform.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/dynamodb/types.py": {
+      "fichier": "boto3/dynamodb/types.py",
+      "langage": "python",
+      "lignes": 310,
+      "taille_bytes": 9541,
+      "entrees": [
+        "boto3.compat",
+        "decimal"
+      ],
+      "sorties": [
+        "class Binary",
+        "class TypeDeserializer",
+        "class TypeSerializer",
+        "def __bytes__",
+        "def __eq__",
+        "def __hash__",
+        "def __init__",
+        "def __ne__",
+        "def __repr__",
+        "def __str__",
+        "def _deserialize_b",
+        "def _deserialize_bool",
+        "def _deserialize_bs",
+        "def _deserialize_l",
+        "def _deserialize_m",
+        "def _deserialize_n",
+        "def _deserialize_ns",
+        "def _deserialize_null",
+        "def _deserialize_s",
+        "def _deserialize_ss",
+        "def _get_dynamodb_type",
+        "def _is_binary",
+        "def _is_boolean",
+        "def _is_listlike",
+        "def _is_map",
+        "def _is_null",
+        "def _is_number",
+        "def _is_set",
+        "def _is_string",
+        "def _is_type_set",
+        "def _serialize_b",
+        "def _serialize_bool",
+        "def _serialize_bs",
+        "def _serialize_l",
+        "def _serialize_m",
+        "def _serialize_n",
+        "def _serialize_ns",
+        "def _serialize_null",
+        "def _serialize_s",
+        "def _serialize_ss",
+        "def deserialize",
+        "def serialize"
+      ],
+      "appelle": [
+        "boto3/compat.py"
+      ],
+      "est_appele_par": [
+        "boto3/dynamodb/transform.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/dynamodb/transform.py": {
+      "fichier": "boto3/dynamodb/transform.py",
+      "langage": "python",
+      "lignes": 343,
+      "taille_bytes": 12909,
+      "entrees": [
+        "boto3.compat",
+        "boto3.docs.utils",
+        "boto3.dynamodb.conditions",
+        "boto3.dynamodb.types",
+        "copy"
+      ],
+      "sorties": [
+        "class ConditionExpressionTransformation",
+        "class DynamoDBHighLevelResource",
+        "class ParameterTransformer",
+        "class TransformationInjector",
+        "class _ForgetfulDict",
+        "def __call__",
+        "def __init__",
+        "def __setitem__",
+        "def _transform_list",
+        "def _transform_map",
+        "def _transform_parameters",
+        "def _transform_structure",
+        "def copy_dynamodb_params",
+        "def inject_attribute_value_input",
+        "def inject_attribute_value_output",
+        "def inject_condition_expressions",
+        "def register_high_level_interface",
+        "def transform"
+      ],
+      "appelle": [
+        "boto3/compat.py",
+        "boto3/docs/utils.py",
+        "boto3/dynamodb/conditions.py",
+        "boto3/dynamodb/types.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "boto3/dynamodb/__init__.py": {
+      "fichier": "boto3/dynamodb/__init__.py",
+      "langage": "python",
+      "lignes": 12,
+      "taille_bytes": 562,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/resources/factory.py": {
+      "fichier": "boto3/resources/factory.py",
+      "langage": "python",
+      "lignes": 601,
+      "taille_bytes": 22707,
+      "entrees": [
+        "..docs",
+        "..exceptions",
+        ".action",
+        ".base",
+        ".collection",
+        ".model",
+        ".response",
+        "functools",
+        "logging"
+      ],
+      "sorties": [
+        "class ResourceFactory",
+        "def __init__",
+        "def _create_action",
+        "def _create_autoload_property",
+        "def _create_available_subresources_command",
+        "def _create_class_partial",
+        "def _create_collection",
+        "def _create_identifier",
+        "def _create_identifier_alias",
+        "def _create_reference",
+        "def _create_waiter",
+        "def _load_actions",
+        "def _load_attributes",
+        "def _load_collections",
+        "def _load_has_relations",
+        "def _load_identifiers",
+        "def _load_waiters",
+        "def create_resource",
+        "def do_action",
+        "def do_waiter",
+        "def get_available_subresources",
+        "def get_collection",
+        "def get_identifier",
+        "def get_reference",
+        "def load_from_definition",
+        "def property_loader",
+        "resource model"
+      ],
+      "appelle": [
+        "boto3/exceptions.py",
+        "boto3/resources/action.py",
+        "boto3/resources/base.py",
+        "boto3/resources/collection.py",
+        "boto3/resources/model.py",
+        "boto3/resources/response.py"
+      ],
+      "est_appele_par": [
+        "boto3/session.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/resources/response.py": {
+      "fichier": "boto3/resources/response.py",
+      "langage": "python",
+      "lignes": 316,
+      "taille_bytes": 11638,
+      "entrees": [
+        ".params",
+        "botocore",
+        "jmespath"
+      ],
+      "sorties": [
+        "class RawHandler",
+        "class ResourceHandler",
+        "def __call__",
+        "def __init__",
+        "def all_not_none",
+        "def build_empty_response",
+        "def build_identifiers",
+        "def handle_response_item"
+      ],
+      "appelle": [
+        "boto3/resources/params.py"
+      ],
+      "est_appele_par": [
+        "boto3/resources/action.py",
+        "boto3/resources/collection.py",
+        "boto3/resources/factory.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/resources/params.py": {
+      "fichier": "boto3/resources/params.py",
+      "langage": "python",
+      "lignes": 167,
+      "taille_bytes": 6107,
+      "entrees": [
+        "..exceptions",
+        "botocore",
+        "jmespath",
+        "re"
+      ],
+      "sorties": [
+        "def build_param_structure",
+        "def create_request_parameters",
+        "def get_data_member",
+        "resource cannot",
+        "resource data"
+      ],
+      "appelle": [
+        "boto3/exceptions.py"
+      ],
+      "est_appele_par": [
+        "boto3/docs/attr.py",
+        "boto3/resources/action.py",
+        "boto3/resources/collection.py",
+        "boto3/resources/response.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "boto3/resources/base.py": {
+      "fichier": "boto3/resources/base.py",
+      "langage": "python",
+      "lignes": 149,
+      "taille_bytes": 4929,
+      "entrees": [
+        "boto3",
+        "logging",
+        "when"
+      ],
+      "sorties": [
+        "class ResourceMeta",
+        "class ServiceResource",
+        "def __eq__",
+        "def __hash__",
+        "def __init__",
+        "def __repr__",
+        "def copy"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "boto3/docs/action.py",
+        "boto3/docs/collection.py",
+        "boto3/docs/resource.py",
+        "boto3/docs/subresource.py",
+        "boto3/docs/waiter.py",
+        "boto3/resources/factory.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "boto3/resources/collection.py": {
+      "fichier": "boto3/resources/collection.py",
+      "langage": "python",
+      "lignes": 566,
+      "taille_bytes": 19113,
+      "entrees": [
+        "..docs",
+        ".action",
+        ".params",
+        ".response",
+        "botocore",
+        "botocore.utils",
+        "copy",
+        "logging"
+      ],
+      "sorties": [
+        "class CollectionFactory",
+        "class CollectionManager",
+        "class ResourceCollection",
+        "def __init__",
+        "def __iter__",
+        "def __repr__",
+        "def _clone",
+        "def _create_batch_action",
+        "def _load_batch_actions",
+        "def _load_documented_collection_methods",
+        "def all",
+        "def batch_action",
+        "def filter",
+        "def iterator",
+        "def limit",
+        "def load_from_definition",
+        "def page_size",
+        "def pages"
+      ],
+      "appelle": [
+        "boto3/docs/utils.py",
+        "boto3/resources/action.py",
+        "boto3/resources/params.py",
+        "boto3/resources/response.py"
+      ],
+      "est_appele_par": [
+        "boto3/docs/docstring.py",
+        "boto3/docs/resource.py",
+        "boto3/resources/factory.py"
+      ],
+      "type_noeud": "central"
+    },
+    "boto3/resources/action.py": {
+      "fichier": "boto3/resources/action.py",
+      "langage": "python",
+      "lignes": 257,
+      "taille_bytes": 9600,
+      "entrees": [
+        ".model",
+        ".params",
+        ".response",
+        "boto3.docs.docstring",
+        "boto3.utils",
+        "botocore",
+        "logging",
+        "the"
+      ],
+      "sorties": [
+        "class BatchAction",
+        "class CustomModeledAction",
+        "class ServiceAction",
+        "class WaiterAction",
+        "def __call__",
+        "def __init__",
+        "def inject"
+      ],
+      "appelle": [
+        "boto3/docs/docstring.py",
+        "boto3/docs/utils.py",
+        "boto3/resources/model.py",
+        "boto3/resources/params.py",
+        "boto3/resources/response.py"
+      ],
+      "est_appele_par": [
+        "boto3/docs/docstring.py",
+        "boto3/docs/resource.py",
+        "boto3/ec2/deletetags.py",
+        "boto3/resources/collection.py",
+        "boto3/resources/factory.py"
+      ],
+      "type_noeud": "central"
+    },
+    "boto3/resources/__init__.py": {
+      "fichier": "boto3/resources/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "boto3/resources/model.py": {
+      "fichier": "boto3/resources/model.py",
+      "langage": "python",
+      "lignes": 630,
+      "taille_bytes": 20340,
+      "entrees": [
+        "botocore",
+        "logging"
+      ],
+      "sorties": [
+        "class Action",
+        "class Collection",
+        "class DefinitionWithParams",
+        "class Identifier",
+        "class Parameter",
+        "class Request",
+        "class ResourceModel",
+        "class ResponseResource",
+        "class Waiter",
+        "def __init__",
+        "def _get_has_definition",
+        "def _get_name",
+        "def _get_related_resources",
+        "def _load_name_with_category",
+        "def actions",
+        "def batch_actions",
+        "def collections",
+        "def get_attributes",
+        "def identifiers",
+        "def load",
+        "def load_rename_map",
+        "def model",
+        "def params",
+        "def references",
+        "def subresources",
+        "def waiters",
+        "service resource"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "boto3/docs/action.py",
+        "boto3/resources/action.py",
+        "boto3/resources/factory.py"
+      ],
+      "type_noeud": "feuille"
+    }
+  },
+  "edges": [
+    {
+      "de": "boto3/compat.py",
+      "vers": "boto3/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/crt.py",
+      "vers": "boto3/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/crt.py",
+      "vers": "boto3/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/crt.py",
+      "vers": "boto3/s3/constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/crt.py",
+      "vers": "boto3/session.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/session.py",
+      "vers": "boto3/docs/client.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/session.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/session.py",
+      "vers": "boto3/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/session.py",
+      "vers": "boto3/resources/factory.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/__init__.py",
+      "vers": "boto3/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/__init__.py",
+      "vers": "boto3/session.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/service.py",
+      "vers": "boto3/docs/client.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/service.py",
+      "vers": "boto3/docs/resource.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/service.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/service.py",
+      "vers": "boto3/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/waiter.py",
+      "vers": "boto3/docs/method.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/waiter.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/waiter.py",
+      "vers": "boto3/resources/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/attr.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/attr.py",
+      "vers": "boto3/resources/params.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/docstring.py",
+      "vers": "boto3/docs/attr.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/docstring.py",
+      "vers": "boto3/docs/subresource.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/docstring.py",
+      "vers": "boto3/docs/waiter.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/docstring.py",
+      "vers": "boto3/resources/action.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "boto3/docs/docstring.py",
+      "vers": "boto3/resources/collection.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/subresource.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/subresource.py",
+      "vers": "boto3/resources/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/base.py",
+      "vers": "boto3/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/resource.py",
+      "vers": "boto3/docs/attr.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/resource.py",
+      "vers": "boto3/docs/subresource.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/resource.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/resource.py",
+      "vers": "boto3/docs/waiter.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/resource.py",
+      "vers": "boto3/resources/action.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/resource.py",
+      "vers": "boto3/resources/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/resource.py",
+      "vers": "boto3/resources/collection.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/collection.py",
+      "vers": "boto3/docs/method.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/collection.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/collection.py",
+      "vers": "boto3/resources/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/action.py",
+      "vers": "boto3/docs/method.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/action.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/action.py",
+      "vers": "boto3/resources/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/action.py",
+      "vers": "boto3/resources/model.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/docs/__init__.py",
+      "vers": "boto3/docs/service.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/s3/transfer.py",
+      "vers": "boto3/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/s3/transfer.py",
+      "vers": "boto3/crt.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/s3/transfer.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/s3/transfer.py",
+      "vers": "boto3/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/s3/transfer.py",
+      "vers": "boto3/s3/constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/s3/inject.py",
+      "vers": "boto3/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/s3/inject.py",
+      "vers": "boto3/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/s3/inject.py",
+      "vers": "boto3/s3/transfer.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/ec2/deletetags.py",
+      "vers": "boto3/resources/action.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/dynamodb/conditions.py",
+      "vers": "boto3/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/dynamodb/types.py",
+      "vers": "boto3/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/dynamodb/transform.py",
+      "vers": "boto3/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/dynamodb/transform.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/dynamodb/transform.py",
+      "vers": "boto3/dynamodb/conditions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/dynamodb/transform.py",
+      "vers": "boto3/dynamodb/types.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/factory.py",
+      "vers": "boto3/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/factory.py",
+      "vers": "boto3/resources/action.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/factory.py",
+      "vers": "boto3/resources/base.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/factory.py",
+      "vers": "boto3/resources/collection.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/factory.py",
+      "vers": "boto3/resources/model.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/factory.py",
+      "vers": "boto3/resources/response.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/response.py",
+      "vers": "boto3/resources/params.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/params.py",
+      "vers": "boto3/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/collection.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/collection.py",
+      "vers": "boto3/resources/action.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/collection.py",
+      "vers": "boto3/resources/params.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/collection.py",
+      "vers": "boto3/resources/response.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/action.py",
+      "vers": "boto3/docs/docstring.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "boto3/resources/action.py",
+      "vers": "boto3/docs/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/action.py",
+      "vers": "boto3/resources/model.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/action.py",
+      "vers": "boto3/resources/params.py",
+      "type": "interne"
+    },
+    {
+      "de": "boto3/resources/action.py",
+      "vers": "boto3/resources/response.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'boto3/exceptions.py' (in=9)",
+    "point_entree → 'boto3/__init__.py'",
+    "hub → 'boto3/docs/utils.py' (in=12, 22% du projet)",
+    "feuille → 'boto3/docs/method.py' (in=3)",
+    "point_entree → 'boto3/docs/collection.py'",
+    "point_entree → 'boto3/docs/action.py'",
+    "point_entree → 'boto3/s3/inject.py'",
+    "point_entree → 'boto3/dynamodb/transform.py'",
+    "feuille → 'boto3/resources/base.py' (in=6)",
+    "central → 'boto3/resources/collection.py' (in=3, out=4)",
+    "central → 'boto3/resources/action.py' (in=5, out=5)",
+    "feuille → 'boto3/resources/model.py' (in=3)",
+    "circulaire → 2 cycles détectés"
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 8
+    }
+  },
+  "stats": {
+    "fichiers_total": 8,
+    "edges_total": 7,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 2,
+    "points_entree": 1,
+    "fichier_plus_appele": "idna/core.py"
+  },
+  "noeuds": {
+    "idna/package_data.py": {
+      "fichier": "idna/package_data.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 21,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "idna/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "idna/compat.py": {
+      "fichier": "idna/compat.py",
+      "langage": "python",
+      "lignes": 15,
+      "taille_bytes": 316,
+      "entrees": [
+        ".core",
+        "typing"
+      ],
+      "sorties": [
+        "def ToASCII",
+        "def ToUnicode",
+        "def nameprep"
+      ],
+      "appelle": [
+        "idna/core.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "idna/core.py": {
+      "fichier": "idna/core.py",
+      "langage": "python",
+      "lignes": 437,
+      "taille_bytes": 13246,
+      "entrees": [
+        ".intranges",
+        ".uts46data",
+        "bisect",
+        "re",
+        "typing",
+        "unicodedata"
+      ],
+      "sorties": [
+        "class IDNABidiError",
+        "class IDNAError",
+        "class InvalidCodepoint",
+        "class InvalidCodepointContext",
+        "def _combining_class",
+        "def _is_script",
+        "def _punycode",
+        "def _unot",
+        "def alabel",
+        "def check_bidi",
+        "def check_hyphen_ok",
+        "def check_initial_combiner",
+        "def check_label",
+        "def check_nfc",
+        "def decode",
+        "def encode",
+        "def ulabel",
+        "def uts46_remap",
+        "def valid_contextj",
+        "def valid_contexto",
+        "def valid_label_length",
+        "def valid_string_length"
+      ],
+      "appelle": [
+        "idna/intranges.py",
+        "idna/uts46data.py"
+      ],
+      "est_appele_par": [
+        "idna/__init__.py",
+        "idna/codec.py",
+        "idna/compat.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "idna/codec.py": {
+      "fichier": "idna/codec.py",
+      "langage": "python",
+      "lignes": 122,
+      "taille_bytes": 3438,
+      "entrees": [
+        ".core",
+        "codecs",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "class Codec",
+        "class IncrementalDecoder",
+        "class IncrementalEncoder",
+        "class StreamReader",
+        "class StreamWriter",
+        "def _buffer_decode",
+        "def _buffer_encode",
+        "def decode",
+        "def encode",
+        "def search_function"
+      ],
+      "appelle": [
+        "idna/core.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "idna/idnadata.py": {
+      "fichier": "idna/idnadata.py",
+      "langage": "python",
+      "lignes": 4309,
+      "taille_bytes": 79623,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "idna/uts46data.py": {
+      "fichier": "idna/uts46data.py",
+      "langage": "python",
+      "lignes": 8841,
+      "taille_bytes": 243725,
+      "entrees": [
+        "typing"
+      ],
+      "sorties": [
+        "def _seg_0",
+        "def _seg_1",
+        "def _seg_10",
+        "def _seg_11",
+        "def _seg_12",
+        "def _seg_13",
+        "def _seg_14",
+        "def _seg_15",
+        "def _seg_16",
+        "def _seg_17",
+        "def _seg_18",
+        "def _seg_19",
+        "def _seg_2",
+        "def _seg_20",
+        "def _seg_21",
+        "def _seg_22",
+        "def _seg_23",
+        "def _seg_24",
+        "def _seg_25",
+        "def _seg_26",
+        "def _seg_27",
+        "def _seg_28",
+        "def _seg_29",
+        "def _seg_3",
+        "def _seg_30",
+        "def _seg_31",
+        "def _seg_32",
+        "def _seg_33",
+        "def _seg_34",
+        "def _seg_35",
+        "def _seg_36",
+        "def _seg_37",
+        "def _seg_38",
+        "def _seg_39",
+        "def _seg_4",
+        "def _seg_40",
+        "def _seg_41",
+        "def _seg_42",
+        "def _seg_43",
+        "def _seg_44",
+        "def _seg_45",
+        "def _seg_46",
+        "def _seg_47",
+        "def _seg_48",
+        "def _seg_49",
+        "def _seg_5",
+        "def _seg_50",
+        "def _seg_51",
+        "def _seg_52",
+        "def _seg_53",
+        "def _seg_54",
+        "def _seg_55",
+        "def _seg_56",
+        "def _seg_57",
+        "def _seg_58",
+        "def _seg_59",
+        "def _seg_6",
+        "def _seg_60",
+        "def _seg_61",
+        "def _seg_62",
+        "def _seg_63",
+        "def _seg_64",
+        "def _seg_65",
+        "def _seg_66",
+        "def _seg_67",
+        "def _seg_68",
+        "def _seg_69",
+        "def _seg_7",
+        "def _seg_70",
+        "def _seg_71",
+        "def _seg_72",
+        "def _seg_73",
+        "def _seg_74",
+        "def _seg_75",
+        "def _seg_76",
+        "def _seg_77",
+        "def _seg_78",
+        "def _seg_79",
+        "def _seg_8",
+        "def _seg_80",
+        "def _seg_81",
+        "def _seg_82",
+        "def _seg_83",
+        "def _seg_9"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "idna/core.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "idna/intranges.py": {
+      "fichier": "idna/intranges.py",
+      "langage": "python",
+      "lignes": 57,
+      "taille_bytes": 1898,
+      "entrees": [
+        "bisect",
+        "typing"
+      ],
+      "sorties": [
+        "def _decode_range",
+        "def _encode_range",
+        "def intranges_contain",
+        "def intranges_from_list"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "idna/__init__.py",
+        "idna/core.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "idna/__init__.py": {
+      "fichier": "idna/__init__.py",
+      "langage": "python",
+      "lignes": 45,
+      "taille_bytes": 868,
+      "entrees": [
+        ".core",
+        ".intranges",
+        ".package_data"
+      ],
+      "sorties": [],
+      "appelle": [
+        "idna/core.py",
+        "idna/intranges.py",
+        "idna/package_data.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    }
+  },
+  "edges": [
+    {
+      "de": "idna/compat.py",
+      "vers": "idna/core.py",
+      "type": "interne"
+    },
+    {
+      "de": "idna/core.py",
+      "vers": "idna/intranges.py",
+      "type": "interne"
+    },
+    {
+      "de": "idna/core.py",
+      "vers": "idna/uts46data.py",
+      "type": "interne"
+    },
+    {
+      "de": "idna/codec.py",
+      "vers": "idna/core.py",
+      "type": "interne"
+    },
+    {
+      "de": "idna/__init__.py",
+      "vers": "idna/core.py",
+      "type": "interne"
+    },
+    {
+      "de": "idna/__init__.py",
+      "vers": "idna/intranges.py",
+      "type": "interne"
+    },
+    {
+      "de": "idna/__init__.py",
+      "vers": "idna/package_data.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 'idna/core.py' (in=3, 38% du projet)",
+    "hub → 'idna/intranges.py' (in=2, 25% du projet)",
+    "point_entree → 'idna/__init__.py'"
+  ]
+}

@@ -1,0 +1,3192 @@
+{
+  "meta": {
+    "projet": "questdb",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 8,
+      "yaml": 3,
+      "xml": 4,
+      "shell": 2,
+      "r": 1,
+      "toml": 2,
+      "rust": 2,
+      "json": 5,
+      "javascript": 2,
+      "unknown": 1,
+      "csharp": 2,
+      "go": 5,
+      "java": 82,
+      "php": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 3,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "compat/src/test/python/common.py"
+  },
+  "noeuds": {
+    "find_unterminated_logs.py": {
+      "fichier": "find_unterminated_logs.py",
+      "langage": "python",
+      "lignes": 448,
+      "taille_bytes": 12732,
+      "entrees": [
+        "os",
+        "re",
+        "sys"
+      ],
+      "sorties": [
+        "def _extract",
+        "def _find_semicolon",
+        "def _has_proper_terminator",
+        "def _is_comment_line",
+        "def _is_logrecord_assignment",
+        "def _is_nested_in_call",
+        "def _is_return_statement",
+        "def _prefix_is_in_comment_or_string",
+        "def main",
+        "def scan_file"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples.manifest.yaml": {
+      "fichier": "examples.manifest.yaml",
+      "langage": "yaml",
+      "lignes": 133,
+      "taille_bytes": 3598,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".coderabbit.yaml": {
+      "fichier": ".coderabbit.yaml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 380,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pom.xml": {
+      "fichier": "pom.xml",
+      "langage": "xml",
+      "lignes": 103,
+      "taille_bytes": 4160,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "github_run_action.py": {
+      "fichier": "github_run_action.py",
+      "langage": "python",
+      "lignes": 65,
+      "taille_bytes": 1689,
+      "entrees": [
+        "argparse",
+        "json",
+        "subprocess",
+        "sys"
+      ],
+      "sorties": [
+        "def check_gh_authentication",
+        "def get_current_branch",
+        "def main",
+        "def parse_args",
+        "def trigger_github_action"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/pom.xml": {
+      "fichier": "compat/pom.xml",
+      "langage": "xml",
+      "lignes": 155,
+      "taille_bytes": 5919,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/scenarios_latest.sh": {
+      "fichier": "compat/src/test/scenarios_latest.sh",
+      "langage": "shell",
+      "lignes": 94,
+      "taille_bytes": 2563,
+      "entrees": [
+        "venv/asyncpg_latest/bin/activate",
+        "venv/psycopg2_latest/bin/activate",
+        "venv/psycopg3_latest/bin/activate"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/scenarios_stable.sh": {
+      "fichier": "compat/src/test/scenarios_stable.sh",
+      "langage": "shell",
+      "lignes": 236,
+      "taille_bytes": 6161,
+      "entrees": [
+        "venv/asyncpg_stable/bin/activate",
+        "venv/psycopg2_stable/bin/activate",
+        "venv/psycopg3_stable/bin/activate"
+      ],
+      "sorties": [
+        "export DB_DRIVER"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/R/test_sequence.R": {
+      "fichier": "compat/src/test/R/test_sequence.R",
+      "langage": "r",
+      "lignes": 90,
+      "taille_bytes": 3087,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/rust-tokio/Cargo.toml": {
+      "fichier": "compat/src/test/rust-tokio/Cargo.toml",
+      "langage": "toml",
+      "lignes": 16,
+      "taille_bytes": 442,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/rust-tokio/src/main.rs": {
+      "fichier": "compat/src/test/rust-tokio/src/main.rs",
+      "langage": "rust",
+      "lignes": 701,
+      "taille_bytes": 22554,
+      "entrees": [
+        "chrono::NaiveDateTime",
+        "crate::TestError::AssertionError",
+        "fallible_iterator::FallibleIterator",
+        "postgres_protocol::types::",
+        "regex::Regex",
+        "rust_decimal::Decimal",
+        "serde::Deserialize",
+        "serde_yaml::Value",
+        "std::collections::HashMap",
+        "std::env",
+        "std::error::Error",
+        "std::fmt",
+        "std::fs",
+        "std::process",
+        "thiserror::Error",
+        "tokio_postgres::",
+        "tokio_postgres::types::"
+      ],
+      "sorties": [
+        "enum Action",
+        "enum AssertError",
+        "enum Step",
+        "enum TestError",
+        "fn accepts",
+        "fn array_to_text",
+        "fn assert_result",
+        "fn extract_parameters",
+        "fn fmt",
+        "fn from_sql",
+        "fn get_value_as_yaml",
+        "fn handle_execute_result",
+        "fn handle_query_result",
+        "fn parse_timestamp",
+        "fn parse_varchar_array",
+        "fn replace_param_placeholders",
+        "fn substitute_variables",
+        "fn value_to_string",
+        "pub struct PgArrayString",
+        "struct ActionStep",
+        "struct Expect",
+        "struct Loop",
+        "struct Range",
+        "struct TestCase",
+        "struct TestFile",
+        "struct TypedParameter",
+        "type TestResult"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/nodejs-pg/package.json": {
+      "fichier": "compat/src/test/nodejs-pg/package.json",
+      "langage": "json",
+      "lignes": 16,
+      "taille_bytes": 303,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/nodejs-pg/runner.js": {
+      "fichier": "compat/src/test/nodejs-pg/runner.js",
+      "langage": "javascript",
+      "lignes": 394,
+      "taille_bytes": 15465,
+      "entrees": [],
+      "sorties": [
+        "class TestRunner",
+        "const actualStr",
+        "const client",
+        "const data",
+        "const expect",
+        "const expectedResult",
+        "const expectedStr",
+        "const floatArray",
+        "const found",
+        "const fs",
+        "const globalVariables",
+        "const isoString",
+        "const iterations",
+        "const loopVarName",
+        "const loopVariables",
+        "const normalizedActual",
+        "const normalizedFraction",
+        "const num",
+        "const parameters",
+        "const pgArray",
+        "const port",
+        "const prepareSteps",
+        "const query",
+        "const queryTemplate",
+        "const queryWithVars",
+        "const resolvedParameters",
+        "const result",
+        "const runner",
+        "const strippedValue",
+        "const teardownSteps",
+        "const testSteps",
+        "const tests",
+        "const trimmed",
+        "const trimmedItem",
+        "const type",
+        "const variables",
+        "const yaml",
+        "const yamlFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/nodejs-pg/package-lock.json": {
+      "fichier": "compat/src/test/nodejs-pg/package-lock.json",
+      "langage": "json",
+      "lignes": 181,
+      "taille_bytes": 6381,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/rust-sqlx/Cargo.toml": {
+      "fichier": "compat/src/test/rust-sqlx/Cargo.toml",
+      "langage": "toml",
+      "lignes": 14,
+      "taille_bytes": 364,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/rust-sqlx/src/main.rs": {
+      "fichier": "compat/src/test/rust-sqlx/src/main.rs",
+      "langage": "rust",
+      "lignes": 630,
+      "taille_bytes": 20656,
+      "entrees": [
+        "chrono::",
+        "regex::Regex",
+        "serde::Deserialize",
+        "serde_yaml::Value",
+        "sqlx::",
+        "sqlx::postgres::",
+        "sqlx::types::BigDecimal",
+        "std::collections::HashMap",
+        "std::env",
+        "std::error::Error",
+        "std::fs",
+        "std::process",
+        "thiserror::Error"
+      ],
+      "sorties": [
+        "enum Action",
+        "enum AssertError",
+        "enum Step",
+        "fn assert_result",
+        "fn bind_parameters",
+        "fn get_value_as_yaml",
+        "fn parse_timestamp",
+        "fn parse_varchar_array",
+        "fn replace_param_placeholders",
+        "fn substitute_variables",
+        "fn value_to_string",
+        "struct ActionStep",
+        "struct Expect",
+        "struct Loop",
+        "struct Range",
+        "struct TestCase",
+        "struct TestFile",
+        "struct TypedParameter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/csharp/csharp.csproj": {
+      "fichier": "compat/src/test/csharp/csharp.csproj",
+      "langage": "unknown",
+      "lignes": 15,
+      "taille_bytes": 393,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/csharp/Program.cs": {
+      "fichier": "compat/src/test/csharp/Program.cs",
+      "langage": "csharp",
+      "lignes": 567,
+      "taille_bytes": 18673,
+      "entrees": [
+        "InvalidCastException",
+        "Npgsql",
+        "NpgsqlTypes",
+        "System.Text",
+        "YamlDotNet.Serialization",
+        "YamlDotNet.Serialization.NamingConventions"
+      ],
+      "sorties": [
+        "public class AssertionException",
+        "public class ExpectDefinition",
+        "public class LoopDefinition",
+        "public class Parameter",
+        "public class Program",
+        "public class RangeDefinition",
+        "public class Step",
+        "public class Test",
+        "public class TestData",
+        "public class TestRunner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/csharp/ExtraTests.cs": {
+      "fichier": "compat/src/test/csharp/ExtraTests.cs",
+      "langage": "csharp",
+      "lignes": 168,
+      "taille_bytes": 6559,
+      "entrees": [
+        "Npgsql"
+      ],
+      "sorties": [
+        "const int",
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/resources/test_cases.yaml": {
+      "fichier": "compat/src/test/resources/test_cases.yaml",
+      "langage": "yaml",
+      "lignes": 902,
+      "taille_bytes": 31890,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/golang/main.go": {
+      "fichier": "compat/src/test/golang/main.go",
+      "langage": "go",
+      "lignes": 748,
+      "taille_bytes": 20084,
+      "entrees": [],
+      "sorties": [
+        "func init",
+        "func isExcluded",
+        "func main",
+        "type ExpectClause",
+        "type Loop",
+        "type Parameter",
+        "type Step",
+        "type Test",
+        "type TestConfig",
+        "type TestRunner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/golang/drivers/pqdriver.go": {
+      "fichier": "compat/src/test/golang/drivers/pqdriver.go",
+      "langage": "go",
+      "lignes": 213,
+      "taille_bytes": 5131,
+      "entrees": [],
+      "sorties": [
+        "type PqDriver",
+        "type PqExecResult",
+        "type PqQueryResult"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/golang/drivers/pgxdriver.go": {
+      "fichier": "compat/src/test/golang/drivers/pgxdriver.go",
+      "langage": "go",
+      "lignes": 107,
+      "taille_bytes": 2501,
+      "entrees": [],
+      "sorties": [
+        "type PgxDriver",
+        "type PgxQueryResult"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/golang/drivers/factory.go": {
+      "fichier": "compat/src/test/golang/drivers/factory.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 615,
+      "entrees": [],
+      "sorties": [
+        "func NewDriver",
+        "func SupportedDrivers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/golang/drivers/dbdriver.go": {
+      "fichier": "compat/src/test/golang/drivers/dbdriver.go",
+      "langage": "go",
+      "lignes": 28,
+      "taille_bytes": 622,
+      "entrees": [],
+      "sorties": [
+        "type DatabaseDriver",
+        "type QueryResult"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/python/runner_psycopg2.py": {
+      "fichier": "compat/src/test/python/runner_psycopg2.py",
+      "langage": "python",
+      "lignes": 164,
+      "taille_bytes": 5117,
+      "entrees": [
+        "common",
+        "os",
+        "psycopg2",
+        "re",
+        "sys"
+      ],
+      "sorties": [
+        "def adjust_placeholder_syntax",
+        "def execute_loop",
+        "def execute_query",
+        "def execute_step",
+        "def execute_steps",
+        "def main",
+        "def run_test"
+      ],
+      "appelle": [
+        "compat/src/test/python/common.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/python/runner_psycopg3.py": {
+      "fichier": "compat/src/test/python/runner_psycopg3.py",
+      "langage": "python",
+      "lignes": 246,
+      "taille_bytes": 8082,
+      "entrees": [
+        "common",
+        "os",
+        "psycopg",
+        "psycopg.adapt",
+        "psycopg.pq",
+        "re",
+        "struct",
+        "sys"
+      ],
+      "sorties": [
+        "class VarcharArray",
+        "class VarcharArrayBinaryDumper",
+        "class VarcharArrayTextDumper",
+        "def adjust_placeholder_syntax",
+        "def dump",
+        "def escape_elem",
+        "def execute_loop",
+        "def execute_query",
+        "def execute_step",
+        "def execute_steps",
+        "def main",
+        "def register_varchar_array_type",
+        "def run_test",
+        "def wrap_varchar_arrays"
+      ],
+      "appelle": [
+        "compat/src/test/python/common.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/python/runner_asyncpg.py": {
+      "fichier": "compat/src/test/python/runner_asyncpg.py",
+      "langage": "python",
+      "lignes": 195,
+      "taille_bytes": 6081,
+      "entrees": [
+        "asyncio",
+        "asyncpg",
+        "common",
+        "os",
+        "re",
+        "sys"
+      ],
+      "sorties": [
+        "def adjust_placeholder_syntax"
+      ],
+      "appelle": [
+        "compat/src/test/python/common.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/python/common.py": {
+      "fichier": "compat/src/test/python/common.py",
+      "langage": "python",
+      "lignes": 231,
+      "taille_bytes": 9030,
+      "entrees": [
+        "datetime",
+        "decimal",
+        "string",
+        "yaml"
+      ],
+      "sorties": [
+        "def assert_result",
+        "def convert_and_append_parameters",
+        "def convert_query_result",
+        "def convert_value",
+        "def load_yaml",
+        "def resolve_parameters",
+        "def substitute_variables"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "compat/src/test/python/runner_asyncpg.py",
+        "compat/src/test/python/runner_psycopg2.py",
+        "compat/src/test/python/runner_psycopg3.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "compat/src/test/python/runner_parquet.py": {
+      "fichier": "compat/src/test/python/runner_parquet.py",
+      "langage": "python",
+      "lignes": 595,
+      "taille_bytes": 19823,
+      "entrees": [
+        "argparse",
+        "duckdb",
+        "fastparquet",
+        "long_sequence",
+        "os",
+        "pandas",
+        "polars",
+        "pyarrow",
+        "pyarrow.parquet",
+        "pyspark",
+        "pyspark.sql",
+        "requests",
+        "sys",
+        "tempfile"
+      ],
+      "sorties": [
+        "class ParquetCompatTest",
+        "class TestSymbolColumnTop",
+        "class TestSymbolHighCardinality",
+        "class TestSymbolMultipleRowGroups",
+        "class TestSymbolWithNulls",
+        "def __init__",
+        "def execute_sql",
+        "def expected_min_row_groups",
+        "def expected_null_count",
+        "def expected_row_count",
+        "def export_parquet",
+        "def main",
+        "def read_parquet",
+        "def read_parquet_duckdb",
+        "def read_parquet_pandas",
+        "def read_parquet_polars",
+        "def read_parquet_pyarrow",
+        "def read_parquet_pyspark",
+        "def run",
+        "def setup",
+        "def table_name",
+        "def teardown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/LineOkHttpFuzzTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/LineOkHttpFuzzTest.java",
+      "langage": "java",
+      "lignes": 355,
+      "taille_bytes": 15106,
+      "entrees": [
+        "io.questdb.DefaultHttpClientConfiguration",
+        "io.questdb.ServerMain",
+        "io.questdb.cutlass.http.client.HttpClient",
+        "io.questdb.cutlass.http.client.HttpClientFactory",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.str.StringSink",
+        "java.io.IOException",
+        "java.util.HashMap",
+        "okhttp3.*",
+        "okio.BufferedSink",
+        "org.influxdb.InfluxDB",
+        "org.influxdb.InfluxDBFactory",
+        "org.jetbrains.annotations.NotNull",
+        "org.jetbrains.annotations.Nullable",
+        "org.junit.Assert",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class LineOkHttpFuzzTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/InfluxDBClientStreamingTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/InfluxDBClientStreamingTest.java",
+      "langage": "java",
+      "lignes": 160,
+      "taille_bytes": 6226,
+      "entrees": [
+        "io.questdb.ServerMain",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.mp.SOCountDownLatch",
+        "io.questdb.std.Misc",
+        "io.questdb.std.Os",
+        "java.time.Instant",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "java.util.concurrent.atomic.AtomicInteger",
+        "java.util.concurrent.atomic.AtomicReference",
+        "org.influxdb.BatchOptions",
+        "org.influxdb.InfluxDB",
+        "org.influxdb.dto.Point",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "public class InfluxDBClientStreamingTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/InfluxDBUtils.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/InfluxDBUtils.java",
+      "langage": "java",
+      "lignes": 76,
+      "taille_bytes": 2828,
+      "entrees": [
+        "com.influxdb.client.InfluxDBClient",
+        "com.influxdb.client.InfluxDBClientFactory",
+        "io.questdb.ServerMain",
+        "io.questdb.std.Chars",
+        "java.util.List",
+        "org.influxdb.InfluxDB",
+        "org.influxdb.InfluxDBException",
+        "org.influxdb.InfluxDBFactory",
+        "org.jetbrains.annotations.NotNull",
+        "org.junit.Assert"
+      ],
+      "sorties": [
+        "public class InfluxDBUtils"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/ParquetTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/ParquetTest.java",
+      "langage": "java",
+      "lignes": 1623,
+      "taille_bytes": 92344,
+      "entrees": [
+        "io.questdb.ServerMain",
+        "io.questdb.cairo.CairoEngine",
+        "io.questdb.cairo.ColumnType",
+        "io.questdb.cairo.PartitionBy",
+        "io.questdb.cairo.TableReader",
+        "io.questdb.cairo.TableToken",
+        "io.questdb.cairo.arr.ArrayView",
+        "io.questdb.cairo.arr.BorrowedArray",
+        "io.questdb.cairo.sql.Record",
+        "io.questdb.cairo.sql.RecordCursor",
+        "io.questdb.cairo.sql.RecordCursorFactory",
+        "io.questdb.griffin.SqlExecutionContext",
+        "io.questdb.griffin.SqlExecutionContextImpl",
+        "io.questdb.griffin.engine.table.parquet.ParquetCompression",
+        "io.questdb.griffin.engine.table.parquet.ParquetVersion",
+        "io.questdb.griffin.engine.table.parquet.PartitionDescriptor",
+        "io.questdb.griffin.engine.table.parquet.PartitionEncoder",
+        "io.questdb.log.Log",
+        "io.questdb.log.LogFactory",
+        "io.questdb.std.BinarySequence",
+        "io.questdb.std.Decimal128",
+        "io.questdb.std.Decimal256",
+        "io.questdb.std.Decimals",
+        "io.questdb.std.DirectIntList",
+        "io.questdb.std.Long256",
+        "io.questdb.std.Long256Impl",
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Numbers",
+        "io.questdb.std.Unsafe",
+        "io.questdb.std.Uuid",
+        "io.questdb.std.str.Path",
+        "io.questdb.std.str.StringSink",
+        "io.questdb.std.str.Utf8Sequence",
+        "io.questdb.std.str.Utf8s",
+        "java.io.IOException",
+        "java.nio.ByteBuffer",
+        "java.nio.ByteOrder",
+        "java.util.ArrayList",
+        "java.util.List",
+        "org.apache.avro.generic.GenericData",
+        "org.apache.avro.generic.GenericRecord",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.parquet.avro.AvroParquetReader",
+        "org.apache.parquet.column.ColumnDescriptor",
+        "org.apache.parquet.column.statistics.Statistics",
+        "org.apache.parquet.column.values.bloomfilter.BloomFilter",
+        "org.apache.parquet.hadoop.ParquetFileReader",
+        "org.apache.parquet.hadoop.ParquetReader",
+        "org.apache.parquet.hadoop.metadata.BlockMetaData",
+        "org.apache.parquet.hadoop.metadata.ColumnChunkMetaData",
+        "org.apache.parquet.hadoop.metadata.FileMetaData",
+        "org.apache.parquet.hadoop.metadata.ParquetMetadata",
+        "org.apache.parquet.hadoop.util.HadoopInputFile",
+        "org.apache.parquet.io.InputFile",
+        "org.apache.parquet.io.api.Binary",
+        "org.apache.parquet.schema.MessageType",
+        "org.apache.parquet.schema.PrimitiveType",
+        "org.junit.Assert",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class ParquetTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/AbstractTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/AbstractTest.java",
+      "langage": "java",
+      "lignes": 143,
+      "taille_bytes": 4978,
+      "entrees": [
+        "io.questdb.cairo.CairoEngine",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.log.Log",
+        "io.questdb.log.LogFactory",
+        "io.questdb.std.Chars",
+        "io.questdb.std.Files",
+        "io.questdb.std.FilesFacade",
+        "io.questdb.std.FilesFacadeImpl",
+        "io.questdb.std.Os",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.str.Path",
+        "io.questdb.std.str.StringSink",
+        "java.util.concurrent.TimeUnit",
+        "org.junit.After",
+        "org.junit.AfterClass",
+        "org.junit.Assert",
+        "org.junit.Before",
+        "org.junit.BeforeClass",
+        "org.junit.ClassRule",
+        "org.junit.Rule",
+        "org.junit.rules.TemporaryFolder",
+        "org.junit.rules.TestName"
+      ],
+      "sorties": [
+        "public class AbstractTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/InfluxDBv2ClientCompatTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/InfluxDBv2ClientCompatTest.java",
+      "langage": "java",
+      "lignes": 75,
+      "taille_bytes": 3436,
+      "entrees": [
+        "com.influxdb.client.InfluxDBClient",
+        "com.influxdb.client.WriteApi",
+        "com.influxdb.client.domain.WritePrecision",
+        "io.questdb.PropertyKey",
+        "io.questdb.ServerMain",
+        "io.questdb.cairo.NanosTimestampDriver",
+        "java.util.HashMap",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "public class InfluxDBv2ClientCompatTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/ParquetSymbolExportTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/ParquetSymbolExportTest.java",
+      "langage": "java",
+      "lignes": 749,
+      "taille_bytes": 35869,
+      "entrees": [
+        "io.questdb.DefaultHttpClientConfiguration",
+        "io.questdb.ServerMain",
+        "io.questdb.cutlass.http.client.Fragment",
+        "io.questdb.cutlass.http.client.HttpClient",
+        "io.questdb.cutlass.http.client.HttpClientFactory",
+        "io.questdb.cutlass.http.client.Response",
+        "io.questdb.log.Log",
+        "io.questdb.log.LogFactory",
+        "io.questdb.std.Numbers",
+        "io.questdb.std.Unsafe",
+        "java.io.File",
+        "java.io.FileOutputStream",
+        "java.io.IOException",
+        "java.net.URLEncoder",
+        "java.nio.charset.StandardCharsets",
+        "java.util.List",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.parquet.hadoop.ParquetFileReader",
+        "org.apache.parquet.hadoop.metadata.BlockMetaData",
+        "org.apache.parquet.hadoop.metadata.ParquetMetadata",
+        "org.apache.parquet.hadoop.util.HadoopInputFile",
+        "org.apache.parquet.io.InputFile",
+        "org.junit.Assert",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "public class ParquetSymbolExportTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/R2DBCTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/R2DBCTest.java",
+      "langage": "java",
+      "lignes": 188,
+      "taille_bytes": 7633,
+      "entrees": [
+        "io.questdb.ServerMain",
+        "io.r2dbc.postgresql.PostgresqlConnectionConfiguration",
+        "io.r2dbc.postgresql.PostgresqlConnectionFactory",
+        "io.r2dbc.spi.Connection",
+        "io.r2dbc.spi.ConnectionFactory",
+        "io.r2dbc.spi.Result",
+        "io.r2dbc.spi.Statement",
+        "java.time.Duration",
+        "java.time.Instant",
+        "org.junit.AfterClass",
+        "org.junit.Assert",
+        "org.junit.Test",
+        "org.reactivestreams.Publisher",
+        "reactor.core.publisher.Flux",
+        "reactor.core.publisher.Mono",
+        "reactor.core.scheduler.Schedulers",
+        "reactor.test.StepVerifier"
+      ],
+      "sorties": [
+        "public class R2DBCTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/HttpClientCompatTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/HttpClientCompatTest.java",
+      "langage": "java",
+      "lignes": 144,
+      "taille_bytes": 5851,
+      "entrees": [
+        "io.questdb.DefaultHttpClientConfiguration",
+        "io.questdb.cutlass.http.client.HttpClient",
+        "io.questdb.cutlass.http.client.HttpClientFactory",
+        "io.questdb.std.str.Utf8StringSink",
+        "io.questdb.std.str.Utf8s",
+        "java.io.ByteArrayOutputStream",
+        "java.io.OutputStreamWriter",
+        "java.nio.ByteBuffer",
+        "org.eclipse.jetty.http.HttpMethod",
+        "org.eclipse.jetty.http.HttpStatus",
+        "org.eclipse.jetty.http.MimeTypes",
+        "org.eclipse.jetty.server.Handler",
+        "org.eclipse.jetty.server.Request",
+        "org.eclipse.jetty.server.Server",
+        "org.eclipse.jetty.util.Callback",
+        "org.junit.Assert",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class HttpClientCompatTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/InfluxDBClientTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/InfluxDBClientTest.java",
+      "langage": "java",
+      "lignes": 842,
+      "taille_bytes": 42632,
+      "entrees": [
+        "io.questdb.PropertyKey",
+        "io.questdb.ServerMain",
+        "io.questdb.cairo.MicrosTimestampDriver",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.std.Chars",
+        "io.questdb.std.NumericException",
+        "io.questdb.std.ObjList",
+        "io.questdb.std.str.StringSink",
+        "java.util.ArrayList",
+        "java.util.HashMap",
+        "java.util.List",
+        "java.util.concurrent.CyclicBarrier",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.atomic.AtomicReference",
+        "org.influxdb.InfluxDB",
+        "org.influxdb.dto.BatchPoints",
+        "org.influxdb.dto.Point",
+        "org.influxdb.dto.Pong",
+        "org.junit.Assert",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class InfluxDBClientTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/java/io/questdb/compat/InfluxDBClientFailureTest.java": {
+      "fichier": "compat/src/test/java/io/questdb/compat/InfluxDBClientFailureTest.java",
+      "langage": "java",
+      "lignes": 444,
+      "taille_bytes": 18714,
+      "entrees": [
+        "io.questdb.Bootstrap",
+        "io.questdb.DefaultBootstrapConfiguration",
+        "io.questdb.DefaultHttpClientConfiguration",
+        "io.questdb.ServerMain",
+        "io.questdb.cairo.MicrosTimestampDriver",
+        "io.questdb.cutlass.http.client.HttpClient",
+        "io.questdb.cutlass.http.client.HttpClientFactory",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.std.Chars",
+        "io.questdb.std.Files",
+        "io.questdb.std.FilesFacade",
+        "io.questdb.std.FilesFacadeImpl",
+        "io.questdb.std.Numbers",
+        "io.questdb.std.NumericException",
+        "io.questdb.std.str.LPSZ",
+        "io.questdb.std.str.Utf8s",
+        "java.util.ArrayList",
+        "java.util.List",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.atomic.AtomicInteger",
+        "java.util.concurrent.atomic.AtomicReference",
+        "org.influxdb.InfluxDB",
+        "org.junit.Assert",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class InfluxDBClientFailureTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/nodejs-postgres/package.json": {
+      "fichier": "compat/src/test/nodejs-postgres/package.json",
+      "langage": "json",
+      "lignes": 14,
+      "taille_bytes": 281,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/nodejs-postgres/runner.js": {
+      "fichier": "compat/src/test/nodejs-postgres/runner.js",
+      "langage": "javascript",
+      "lignes": 412,
+      "taille_bytes": 15870,
+      "entrees": [],
+      "sorties": [
+        "class TestRunner",
+        "const actualStr",
+        "const data",
+        "const exclusions",
+        "const expect",
+        "const expectedResult",
+        "const expectedStr",
+        "const floatArray",
+        "const found",
+        "const fs",
+        "const globalVariables",
+        "const isoString",
+        "const iterations",
+        "const loopVarName",
+        "const loopVariables",
+        "const normalizedActual",
+        "const normalizedFraction",
+        "const num",
+        "const parameters",
+        "const pgArray",
+        "const port",
+        "const postgres",
+        "const prepareSteps",
+        "const query",
+        "const queryTemplate",
+        "const queryWithVars",
+        "const resolvedParameters",
+        "const result",
+        "const runner",
+        "const strippedValue",
+        "const teardownSteps",
+        "const testSteps",
+        "const tests",
+        "const trimmed",
+        "const trimmedItem",
+        "const type",
+        "const variables",
+        "const yaml",
+        "const yamlFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/nodejs-postgres/package-lock.json": {
+      "fichier": "compat/src/test/nodejs-postgres/package-lock.json",
+      "langage": "json",
+      "lignes": 47,
+      "taille_bytes": 1452,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/php/composer.json": {
+      "fichier": "compat/src/test/php/composer.json",
+      "langage": "json",
+      "lignes": 5,
+      "taille_bytes": 50,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compat/src/test/php/runner.php": {
+      "fichier": "compat/src/test/php/runner.php",
+      "langage": "php",
+      "lignes": 295,
+      "taille_bytes": 11038,
+      "entrees": [
+        "Symfony\\Component\\Yaml\\Yaml"
+      ],
+      "sorties": [
+        "class TestRunner",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/pom.xml": {
+      "fichier": "benchmarks/pom.xml",
+      "langage": "xml",
+      "lignes": 241,
+      "taille_bytes": 9453,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/resources/log4j2.xml": {
+      "fichier": "benchmarks/src/main/resources/log4j2.xml",
+      "langage": "xml",
+      "lignes": 40,
+      "taille_bytes": 1692,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/python/insert_bench.py": {
+      "fichier": "benchmarks/src/main/python/insert_bench.py",
+      "langage": "python",
+      "lignes": 104,
+      "taille_bytes": 3074,
+      "entrees": [
+        "asyncio",
+        "asyncpg",
+        "datetime",
+        "random"
+      ],
+      "sorties": [
+        "CREATE TABLE IF",
+        "def generate_test_data"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/module-info.java": {
+      "fichier": "benchmarks/src/main/java/module-info.java",
+      "langage": "java",
+      "lignes": 36,
+      "taille_bytes": 1348,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/Decimal256DivideBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/Decimal256DivideBenchmark.java",
+      "langage": "java",
+      "lignes": 175,
+      "taille_bytes": 7354,
+      "entrees": [
+        "io.questdb.std.Decimal256",
+        "java.math.BigDecimal",
+        "java.math.MathContext",
+        "java.math.RoundingMode",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Fork",
+        "org.openjdk.jmh.annotations.Measurement",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.Warmup",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class Decimal256DivideBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/CoalesceBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/CoalesceBenchmark.java",
+      "langage": "java",
+      "lignes": 106,
+      "taille_bytes": 3625,
+      "entrees": [
+        "io.questdb.cairo.sql.Function",
+        "io.questdb.cairo.sql.Record",
+        "io.questdb.griffin.engine.functions.LongFunction",
+        "io.questdb.griffin.engine.functions.conditional.CoalesceFunctionFactory",
+        "io.questdb.griffin.engine.functions.constants.LongConstant",
+        "io.questdb.std.Numbers",
+        "io.questdb.std.ObjList",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class CoalesceBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/Decimal256MultiplyBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/Decimal256MultiplyBenchmark.java",
+      "langage": "java",
+      "lignes": 177,
+      "taille_bytes": 7717,
+      "entrees": [
+        "io.questdb.std.Decimal256",
+        "java.math.BigDecimal",
+        "java.math.MathContext",
+        "java.math.RoundingMode",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Fork",
+        "org.openjdk.jmh.annotations.Measurement",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.Warmup",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class Decimal256MultiplyBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/SqlJitCompilerScalarBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/SqlJitCompilerScalarBenchmark.java",
+      "langage": "java",
+      "lignes": 195,
+      "taille_bytes": 7388,
+      "entrees": [
+        "io.questdb.cairo.CairoConfiguration",
+        "io.questdb.cairo.CairoEngine",
+        "io.questdb.cairo.DefaultCairoConfiguration",
+        "io.questdb.cairo.SqlJitMode",
+        "io.questdb.cairo.sql.Record",
+        "io.questdb.cairo.sql.RecordCursor",
+        "io.questdb.cairo.sql.RecordCursorFactory",
+        "io.questdb.griffin.SqlCompilerImpl",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.griffin.SqlExecutionContext",
+        "io.questdb.griffin.SqlExecutionContextImpl",
+        "io.questdb.log.LogFactory",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.TearDown",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class SqlJitCompilerScalarBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/Utf8StringIntHashMapBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/Utf8StringIntHashMapBenchmark.java",
+      "langage": "java",
+      "lignes": 117,
+      "taille_bytes": 4144,
+      "entrees": [
+        "io.questdb.std.CharSequenceIntHashMap",
+        "io.questdb.std.Misc",
+        "io.questdb.std.Utf8StringIntHashMap",
+        "io.questdb.std.str.*",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class Utf8StringIntHashMapBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/GroupByLongHashSetBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/GroupByLongHashSetBenchmark.java",
+      "langage": "java",
+      "lignes": 102,
+      "taille_bytes": 3884,
+      "entrees": [
+        "io.questdb.cairo.ColumnType",
+        "io.questdb.cairo.SingleColumnType",
+        "io.questdb.cairo.map.MapKey",
+        "io.questdb.cairo.map.OrderedMap",
+        "io.questdb.griffin.engine.groupby.FastGroupByAllocator",
+        "io.questdb.griffin.engine.groupby.GroupByAllocator",
+        "io.questdb.griffin.engine.groupby.GroupByLongHashSet",
+        "io.questdb.std.Numbers",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class GroupByLongHashSetBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/CsvLexerBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/CsvLexerBenchmark.java",
+      "langage": "java",
+      "lignes": 77,
+      "taille_bytes": 3249,
+      "entrees": [
+        "io.questdb.cutlass.text.CsvTextLexer",
+        "io.questdb.cutlass.text.DefaultTextConfiguration",
+        "io.questdb.std.Files",
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Unsafe",
+        "io.questdb.std.str.Path",
+        "java.util.concurrent.atomic.AtomicInteger"
+      ],
+      "sorties": [
+        "public class CsvLexerBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/VirtualMemoryStrWriteBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/VirtualMemoryStrWriteBenchmark.java",
+      "langage": "java",
+      "lignes": 80,
+      "taille_bytes": 2850,
+      "entrees": [
+        "io.questdb.cairo.vm.MemoryCARWImpl",
+        "io.questdb.cairo.vm.MemoryPARWImpl",
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class VirtualMemoryStrWriteBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/LogBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/LogBenchmark.java",
+      "langage": "java",
+      "lignes": 93,
+      "taille_bytes": 2936,
+      "entrees": [
+        "io.questdb.log.*",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class LogBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/Decimal256AddBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/Decimal256AddBenchmark.java",
+      "langage": "java",
+      "lignes": 185,
+      "taille_bytes": 7879,
+      "entrees": [
+        "io.questdb.std.Decimal256",
+        "java.math.BigDecimal",
+        "java.math.MathContext",
+        "java.math.RoundingMode",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Fork",
+        "org.openjdk.jmh.annotations.Measurement",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.Warmup",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class Decimal256AddBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/IlpAndPgWireInsertSelectBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/IlpAndPgWireInsertSelectBenchmark.java",
+      "langage": "java",
+      "lignes": 199,
+      "taille_bytes": 9425,
+      "entrees": [
+        "io.questdb.client.Sender",
+        "java.sql.Connection",
+        "java.sql.DriverManager",
+        "java.sql.PreparedStatement",
+        "java.sql.ResultSet",
+        "java.sql.Statement",
+        "java.time.temporal.ChronoUnit",
+        "java.util.Properties",
+        "java.util.TimeZone",
+        "java.util.concurrent.ExecutorService",
+        "java.util.concurrent.Executors",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.atomic.AtomicLongArray",
+        "java.util.stream.IntStream",
+        "static"
+      ],
+      "sorties": [
+        "public class IlpAndPgWireInsertSelectBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/TableReaderReloadBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/TableReaderReloadBenchmark.java",
+      "langage": "java",
+      "lignes": 167,
+      "taille_bytes": 6566,
+      "entrees": [
+        "io.questdb.MessageBusImpl",
+        "io.questdb.cairo.CairoConfiguration",
+        "io.questdb.cairo.CairoEngine",
+        "io.questdb.cairo.DefaultCairoConfiguration",
+        "io.questdb.cairo.DefaultDdlListener",
+        "io.questdb.cairo.DefaultLifecycleManager",
+        "io.questdb.cairo.TableReader",
+        "io.questdb.cairo.TableToken",
+        "io.questdb.cairo.TableWriter",
+        "io.questdb.cairo.TxnScoreboardPoolV2",
+        "io.questdb.griffin.SqlCompilerImpl",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.griffin.SqlExecutionContext",
+        "io.questdb.griffin.SqlExecutionContextImpl",
+        "io.questdb.log.LogFactory",
+        "io.questdb.std.NumericException",
+        "io.questdb.std.datetime.microtime.MicrosFormatUtils",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.TearDown",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class TableReaderReloadBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/MapWriteLongBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/MapWriteLongBenchmark.java",
+      "langage": "java",
+      "lignes": 105,
+      "taille_bytes": 3816,
+      "entrees": [
+        "io.questdb.cairo.ColumnType",
+        "io.questdb.cairo.SingleColumnType",
+        "io.questdb.cairo.map.MapKey",
+        "io.questdb.cairo.map.MapValue",
+        "io.questdb.cairo.map.OrderedMap",
+        "io.questdb.cairo.map.Unordered8Map",
+        "io.questdb.std.Rnd",
+        "java.util.HashMap",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class MapWriteLongBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/ParseFloatCharSequenceBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/ParseFloatCharSequenceBenchmark.java",
+      "langage": "java",
+      "lignes": 87,
+      "taille_bytes": 2805,
+      "entrees": [
+        "io.questdb.std.Numbers",
+        "io.questdb.std.NumericException",
+        "io.questdb.std.Os",
+        "io.questdb.std.Rnd",
+        "java.util.ArrayList",
+        "java.util.List",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class ParseFloatCharSequenceBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/PrometheusSimpleClientBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/PrometheusSimpleClientBenchmark.java",
+      "langage": "java",
+      "lignes": 94,
+      "taille_bytes": 3114,
+      "entrees": [
+        "io.prometheus.client.Counter",
+        "io.prometheus.client.Gauge",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class PrometheusSimpleClientBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/LineTCPSenderMainDupCols.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/LineTCPSenderMainDupCols.java",
+      "langage": "java",
+      "lignes": 56,
+      "taille_bytes": 2239,
+      "entrees": [
+        "io.questdb.client.cutlass.line.AbstractLineTcpSender",
+        "io.questdb.client.cutlass.line.LineTcpSenderV2",
+        "io.questdb.network.Net",
+        "io.questdb.std.Rnd"
+      ],
+      "sorties": [
+        "public class LineTCPSenderMainDupCols"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/OrderedMapMergeBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/OrderedMapMergeBenchmark.java",
+      "langage": "java",
+      "lignes": 150,
+      "taille_bytes": 5337,
+      "entrees": [
+        "io.questdb.cairo.ArrayColumnTypes",
+        "io.questdb.cairo.ColumnType",
+        "io.questdb.cairo.map.*",
+        "io.questdb.std.ObjList",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class OrderedMapMergeBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/GeoHashesFromCoordsBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/GeoHashesFromCoordsBenchmark.java",
+      "langage": "java",
+      "lignes": 57,
+      "taille_bytes": 1985,
+      "entrees": [
+        "io.questdb.cairo.GeoHashes",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class GeoHashesFromCoordsBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/MemCopyBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/MemCopyBenchmark.java",
+      "langage": "java",
+      "lignes": 96,
+      "taille_bytes": 3032,
+      "entrees": [
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Os",
+        "io.questdb.std.Unsafe",
+        "io.questdb.std.Vect",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class MemCopyBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/PGSymbolInBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/PGSymbolInBenchmark.java",
+      "langage": "java",
+      "lignes": 244,
+      "taille_bytes": 10453,
+      "entrees": [
+        "io.questdb.std.Rnd",
+        "java.sql.Array",
+        "java.sql.Connection",
+        "java.sql.DriverManager",
+        "java.sql.PreparedStatement",
+        "java.sql.ResultSet",
+        "java.sql.Statement",
+        "java.sql.Timestamp",
+        "java.util.Properties",
+        "java.util.TimeZone"
+      ],
+      "sorties": [
+        "public class PGSymbolInBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/AtomicIntListBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/AtomicIntListBenchmark.java",
+      "langage": "java",
+      "lignes": 72,
+      "taille_bytes": 2394,
+      "entrees": [
+        "io.questdb.std.AtomicIntList",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class AtomicIntListBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/SqlJitCompilerSimdBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/SqlJitCompilerSimdBenchmark.java",
+      "langage": "java",
+      "lignes": 187,
+      "taille_bytes": 7106,
+      "entrees": [
+        "io.questdb.cairo.CairoConfiguration",
+        "io.questdb.cairo.CairoEngine",
+        "io.questdb.cairo.DefaultCairoConfiguration",
+        "io.questdb.cairo.SqlJitMode",
+        "io.questdb.cairo.sql.Record",
+        "io.questdb.cairo.sql.RecordCursor",
+        "io.questdb.cairo.sql.RecordCursorFactory",
+        "io.questdb.griffin.SqlCompilerImpl",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.griffin.SqlExecutionContext",
+        "io.questdb.griffin.SqlExecutionContextImpl",
+        "io.questdb.log.LogFactory",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.TearDown",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class SqlJitCompilerSimdBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/MapWriteIntBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/MapWriteIntBenchmark.java",
+      "langage": "java",
+      "lignes": 97,
+      "taille_bytes": 3562,
+      "entrees": [
+        "io.questdb.cairo.ColumnType",
+        "io.questdb.cairo.SingleColumnType",
+        "io.questdb.cairo.map.MapKey",
+        "io.questdb.cairo.map.MapValue",
+        "io.questdb.cairo.map.OrderedMap",
+        "io.questdb.cairo.map.Unordered4Map",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class MapWriteIntBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/ParseDoubleCharSequenceBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/ParseDoubleCharSequenceBenchmark.java",
+      "langage": "java",
+      "lignes": 117,
+      "taille_bytes": 3880,
+      "entrees": [
+        "io.questdb.std.*",
+        "io.questdb.std.str.DirectUtf8String",
+        "io.questdb.std.str.Utf8s",
+        "java.util.ArrayList",
+        "java.util.List",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class ParseDoubleCharSequenceBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/JNIBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/JNIBenchmark.java",
+      "langage": "java",
+      "lignes": 68,
+      "taille_bytes": 2101,
+      "entrees": [
+        "io.questdb.std.Files",
+        "io.questdb.std.Os",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class JNIBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/WalWriterSymbolBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/WalWriterSymbolBenchmark.java",
+      "langage": "java",
+      "lignes": 184,
+      "taille_bytes": 7030,
+      "entrees": [
+        "io.questdb.cairo.sql.SymbolTable",
+        "io.questdb.cairo.vm.MemoryCARWImpl",
+        "io.questdb.cairo.vm.api.MemoryARW",
+        "io.questdb.cairo.wal.DirectCharSequenceIntHashMap",
+        "io.questdb.std.CharSequenceIntHashMap",
+        "io.questdb.std.Chars",
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Numbers",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.Unsafe",
+        "io.questdb.std.str.DirectString",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.TearDown",
+        "org.openjdk.jmh.profile.GCProfiler",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class WalWriterSymbolBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/CastBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/CastBenchmark.java",
+      "langage": "java",
+      "lignes": 72,
+      "taille_bytes": 2198,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class CastBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/LineTCPSenderMainVarLenStrings.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/LineTCPSenderMainVarLenStrings.java",
+      "langage": "java",
+      "lignes": 137,
+      "taille_bytes": 5473,
+      "entrees": [
+        "io.questdb.cairo.CairoConfiguration",
+        "io.questdb.cairo.CairoException",
+        "io.questdb.client.cutlass.line.AbstractLineTcpSender",
+        "io.questdb.client.cutlass.line.LineChannel",
+        "io.questdb.client.cutlass.line.LineTcpSenderV2",
+        "io.questdb.client.cutlass.line.tcp.PlainTcpLineChannel",
+        "io.questdb.client.network.NetworkFacadeImpl",
+        "io.questdb.network.Net",
+        "io.questdb.std.FilesFacade",
+        "io.questdb.std.FilesFacadeImpl",
+        "io.questdb.std.Misc",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.str.Path",
+        "io.questdb.std.str.StringSink"
+      ],
+      "sorties": [
+        "public class LineTCPSenderMainVarLenStrings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/CreateTableAsSelectBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/CreateTableAsSelectBenchmark.java",
+      "langage": "java",
+      "lignes": 110,
+      "taille_bytes": 4520,
+      "entrees": [
+        "io.questdb.cairo.CairoConfiguration",
+        "io.questdb.cairo.CairoEngine",
+        "io.questdb.cairo.DefaultCairoConfiguration",
+        "io.questdb.griffin.SqlCompilerImpl",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.griffin.SqlExecutionContext",
+        "io.questdb.griffin.SqlExecutionContextImpl",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.TearDown",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class CreateTableAsSelectBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/GroupByUtf8SequenceLongHashMapBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/GroupByUtf8SequenceLongHashMapBenchmark.java",
+      "langage": "java",
+      "lignes": 102,
+      "taille_bytes": 3990,
+      "entrees": [
+        "io.questdb.griffin.engine.groupby.FastGroupByAllocator",
+        "io.questdb.griffin.engine.groupby.GroupByAllocator",
+        "io.questdb.griffin.engine.groupby.GroupByUtf8SequenceLongHashMap",
+        "io.questdb.std.Numbers",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.Utf8SequenceLongHashMap",
+        "io.questdb.std.str.Utf8StringSink",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class GroupByUtf8SequenceLongHashMapBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/SumIntBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/SumIntBenchmark.java",
+      "langage": "java",
+      "lignes": 128,
+      "taille_bytes": 4066,
+      "entrees": [
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Os",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.Unsafe",
+        "io.questdb.std.Vect",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.TearDown",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class SumIntBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/VirtualMemoryBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/VirtualMemoryBenchmark.java",
+      "langage": "java",
+      "lignes": 100,
+      "taille_bytes": 3379,
+      "entrees": [
+        "io.questdb.cairo.vm.MemoryCARWImpl",
+        "io.questdb.cairo.vm.MemoryPARWImpl",
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class VirtualMemoryBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/StrPosBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/StrPosBenchmark.java",
+      "langage": "java",
+      "lignes": 159,
+      "taille_bytes": 5095,
+      "entrees": [
+        "io.questdb.cairo.sql.Function",
+        "io.questdb.cairo.sql.Record",
+        "io.questdb.griffin.engine.functions.CharFunction",
+        "io.questdb.griffin.engine.functions.StrFunction",
+        "io.questdb.griffin.engine.functions.str.StrPosCharFunctionFactory",
+        "io.questdb.griffin.engine.functions.str.StrPosFunctionFactory",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class StrPosBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/ClockBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/ClockBenchmark.java",
+      "langage": "java",
+      "lignes": 68,
+      "taille_bytes": 2152,
+      "entrees": [
+        "io.questdb.std.Os",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class ClockBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/GroupByLong256HashSetBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/GroupByLong256HashSetBenchmark.java",
+      "langage": "java",
+      "lignes": 105,
+      "taille_bytes": 4116,
+      "entrees": [
+        "io.questdb.cairo.ColumnType",
+        "io.questdb.cairo.SingleColumnType",
+        "io.questdb.cairo.map.MapKey",
+        "io.questdb.cairo.map.OrderedMap",
+        "io.questdb.griffin.engine.groupby.FastGroupByAllocator",
+        "io.questdb.griffin.engine.groupby.GroupByAllocator",
+        "io.questdb.griffin.engine.groupby.GroupByLong256HashSet",
+        "io.questdb.std.Numbers",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class GroupByLong256HashSetBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/IlpProtocolV2Benchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/IlpProtocolV2Benchmark.java",
+      "langage": "java",
+      "lignes": 181,
+      "taille_bytes": 8422,
+      "entrees": [
+        "io.questdb.client.Sender",
+        "java.sql.Connection",
+        "java.sql.DriverManager",
+        "java.sql.PreparedStatement",
+        "java.sql.ResultSet",
+        "java.sql.Statement",
+        "java.time.temporal.ChronoUnit",
+        "java.util.Properties",
+        "java.util.TimeZone",
+        "java.util.concurrent.ExecutorService",
+        "java.util.concurrent.Executors",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.atomic.AtomicLongArray",
+        "java.util.stream.IntStream",
+        "static"
+      ],
+      "sorties": [
+        "public class IlpProtocolV2Benchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/Decimal128SubtractBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/Decimal128SubtractBenchmark.java",
+      "langage": "java",
+      "lignes": 185,
+      "taille_bytes": 7778,
+      "entrees": [
+        "io.questdb.std.Decimal128",
+        "java.math.BigDecimal",
+        "java.math.MathContext",
+        "java.math.RoundingMode",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Fork",
+        "org.openjdk.jmh.annotations.Measurement",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.Warmup",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class Decimal128SubtractBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/StrLoopBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/StrLoopBenchmark.java",
+      "langage": "java",
+      "lignes": 86,
+      "taille_bytes": 2594,
+      "entrees": [
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class StrLoopBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/CopyTimestampBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/CopyTimestampBenchmark.java",
+      "langage": "java",
+      "lignes": 71,
+      "taille_bytes": 2909,
+      "entrees": [
+        "io.questdb.cairo.CairoConfiguration",
+        "io.questdb.cairo.CairoEngine",
+        "io.questdb.cairo.DefaultCairoConfiguration",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.griffin.SqlExecutionContext",
+        "io.questdb.griffin.SqlExecutionContextImpl"
+      ],
+      "sorties": [
+        "public class CopyTimestampBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/LineTCPSenderMainFileLimitSimulation.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/LineTCPSenderMainFileLimitSimulation.java",
+      "langage": "java",
+      "lignes": 149,
+      "taille_bytes": 5857,
+      "entrees": [
+        "io.questdb.cairo.MicrosTimestampDriver",
+        "io.questdb.client.cutlass.line.AbstractLineTcpSender",
+        "io.questdb.client.cutlass.line.LineTcpSenderV2",
+        "io.questdb.network.Net",
+        "io.questdb.std.Os",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.locks.LockSupport"
+      ],
+      "sorties": [
+        "public class LineTCPSenderMainFileLimitSimulation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/PrometheusSimpleClientScrapeBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/PrometheusSimpleClientScrapeBenchmark.java",
+      "langage": "java",
+      "lignes": 130,
+      "taille_bytes": 3703,
+      "entrees": [
+        "io.prometheus.client.CollectorRegistry",
+        "io.prometheus.client.Counter",
+        "io.prometheus.client.Gauge",
+        "io.prometheus.client.exporter.common.TextFormat",
+        "java.io.IOException",
+        "java.io.Writer",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class PrometheusSimpleClientScrapeBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/PongMain.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/PongMain.java",
+      "langage": "java",
+      "lignes": 196,
+      "taille_bytes": 8216,
+      "entrees": [
+        "io.questdb.Metrics",
+        "io.questdb.log.Log",
+        "io.questdb.log.LogFactory",
+        "io.questdb.mp.WorkerPool",
+        "io.questdb.mp.WorkerPoolConfiguration",
+        "io.questdb.network.DefaultIODispatcherConfiguration",
+        "io.questdb.network.IOContext",
+        "io.questdb.network.IOContextFactoryImpl",
+        "io.questdb.network.IODispatcher",
+        "io.questdb.network.IODispatcherConfiguration",
+        "io.questdb.network.IODispatchers",
+        "io.questdb.network.IOOperation",
+        "io.questdb.network.IORequestProcessor",
+        "io.questdb.network.Net",
+        "io.questdb.network.NetworkFacade",
+        "io.questdb.network.PeerIsSlowToReadException",
+        "io.questdb.network.PeerIsSlowToWriteException",
+        "io.questdb.network.PlainSocketFactory",
+        "io.questdb.network.ServerDisconnectException",
+        "io.questdb.network.SocketFactory",
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Unsafe",
+        "io.questdb.std.str.DirectUtf8String",
+        "io.questdb.std.str.Utf8String",
+        "io.questdb.std.str.Utf8s",
+        "static"
+      ],
+      "sorties": [
+        "public class PongMain"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/RecordSinkBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/RecordSinkBenchmark.java",
+      "langage": "java",
+      "lignes": 410,
+      "taille_bytes": 12204,
+      "entrees": [
+        "io.questdb.cairo.CairoConfiguration",
+        "io.questdb.cairo.CairoConfigurationWrapper",
+        "io.questdb.cairo.ColumnType",
+        "io.questdb.cairo.ColumnTypes",
+        "io.questdb.cairo.DefaultCairoConfiguration",
+        "io.questdb.cairo.EntityColumnFilter",
+        "io.questdb.cairo.LoopingRecordSink",
+        "io.questdb.cairo.RecordSink",
+        "io.questdb.cairo.RecordSinkFactory",
+        "io.questdb.cairo.RecordSinkSPI",
+        "io.questdb.cairo.arr.ArrayView",
+        "io.questdb.cairo.sql.Record",
+        "io.questdb.std.BinarySequence",
+        "io.questdb.std.BytecodeAssembler",
+        "io.questdb.std.Decimal128",
+        "io.questdb.std.Decimal256",
+        "io.questdb.std.Interval",
+        "io.questdb.std.Long256",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.str.Utf8Sequence",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Fork",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Measurement",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.Warmup",
+        "org.openjdk.jmh.infra.Blackhole",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class RecordSinkBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/LineTCPSender03MultiTableMain.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/LineTCPSender03MultiTableMain.java",
+      "langage": "java",
+      "lignes": 69,
+      "taille_bytes": 2705,
+      "entrees": [
+        "io.questdb.client.cutlass.line.AbstractLineTcpSender",
+        "io.questdb.client.cutlass.line.LineTcpSenderV2",
+        "io.questdb.mp.SOCountDownLatch",
+        "io.questdb.network.Net",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.datetime.Clock",
+        "io.questdb.std.datetime.microtime.MicrosecondClockImpl"
+      ],
+      "sorties": [
+        "public class LineTCPSender03MultiTableMain"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/Decimal128ModuloBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/Decimal128ModuloBenchmark.java",
+      "langage": "java",
+      "lignes": 167,
+      "taille_bytes": 6876,
+      "entrees": [
+        "io.questdb.std.Decimal128",
+        "java.math.BigDecimal",
+        "java.math.MathContext",
+        "java.math.RoundingMode",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Fork",
+        "org.openjdk.jmh.annotations.Measurement",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.Warmup",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class Decimal128ModuloBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/OooCppBenchmarkSetMemoryVanilla.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/OooCppBenchmarkSetMemoryVanilla.java",
+      "langage": "java",
+      "lignes": 97,
+      "taille_bytes": 3288,
+      "entrees": [
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Os",
+        "io.questdb.std.Unsafe",
+        "io.questdb.std.Vect"
+      ],
+      "sorties": [
+        "public class OooCppBenchmarkSetMemoryVanilla"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/CountIntBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/CountIntBenchmark.java",
+      "langage": "java",
+      "lignes": 103,
+      "taille_bytes": 3274,
+      "entrees": [
+        "io.questdb.std.*",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class CountIntBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/MemEqBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/MemEqBenchmark.java",
+      "langage": "java",
+      "lignes": 97,
+      "taille_bytes": 3217,
+      "entrees": [
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Os",
+        "io.questdb.std.Unsafe",
+        "io.questdb.std.Vect",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class MemEqBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/PingMain.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/PingMain.java",
+      "langage": "java",
+      "lignes": 89,
+      "taille_bytes": 3303,
+      "entrees": [
+        "io.questdb.cairo.MicrosTimestampDriver",
+        "io.questdb.log.Log",
+        "io.questdb.log.LogFactory",
+        "io.questdb.network.Net",
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Os",
+        "io.questdb.std.Unsafe",
+        "io.questdb.std.str.DirectUtf8String",
+        "io.questdb.std.str.Utf8s"
+      ],
+      "sorties": [
+        "public class PingMain"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/StringHashFunctionBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/StringHashFunctionBenchmark.java",
+      "langage": "java",
+      "lignes": 91,
+      "taille_bytes": 3145,
+      "entrees": [
+        "io.questdb.std.Chars",
+        "io.questdb.std.Hash",
+        "io.questdb.std.Misc",
+        "io.questdb.std.str.DirectString",
+        "io.questdb.std.str.DirectUtf16Sink",
+        "io.questdb.std.str.DirectUtf8Sink",
+        "io.questdb.std.str.DirectUtf8String",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class StringHashFunctionBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/VirtualMemoryLongWriteBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/VirtualMemoryLongWriteBenchmark.java",
+      "langage": "java",
+      "lignes": 79,
+      "taille_bytes": 2677,
+      "entrees": [
+        "io.questdb.cairo.vm.MemoryCARWImpl",
+        "io.questdb.cairo.vm.MemoryPARWImpl",
+        "io.questdb.std.MemoryTag",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class VirtualMemoryLongWriteBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/LineTCPSenderMainDupTimestamp.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/LineTCPSenderMainDupTimestamp.java",
+      "langage": "java",
+      "lignes": 56,
+      "taille_bytes": 2250,
+      "entrees": [
+        "io.questdb.client.cutlass.line.AbstractLineTcpSender",
+        "io.questdb.client.cutlass.line.LineTcpSenderV2",
+        "io.questdb.network.Net",
+        "io.questdb.std.Rnd"
+      ],
+      "sorties": [
+        "public class LineTCPSenderMainDupTimestamp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/Decimal256ModuloBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/Decimal256ModuloBenchmark.java",
+      "langage": "java",
+      "lignes": 183,
+      "taille_bytes": 7772,
+      "entrees": [
+        "io.questdb.std.Decimal256",
+        "java.math.BigDecimal",
+        "java.math.MathContext",
+        "java.math.RoundingMode",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Fork",
+        "org.openjdk.jmh.annotations.Measurement",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.Warmup",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class Decimal256ModuloBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/HyperLogLogBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/HyperLogLogBenchmark.java",
+      "langage": "java",
+      "lignes": 104,
+      "taille_bytes": 3664,
+      "entrees": [
+        "io.questdb.griffin.engine.groupby.FastGroupByAllocator",
+        "io.questdb.griffin.engine.groupby.GroupByAllocator",
+        "io.questdb.griffin.engine.groupby.GroupByLongHashSet",
+        "io.questdb.griffin.engine.groupby.hyperloglog.HyperLogLog",
+        "io.questdb.std.Hash",
+        "io.questdb.std.Numbers",
+        "io.questdb.std.Rnd",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class HyperLogLogBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/SOCountDownLatchBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/SOCountDownLatchBenchmark.java",
+      "langage": "java",
+      "lignes": 98,
+      "taille_bytes": 3181,
+      "entrees": [
+        "io.questdb.mp.SOCountDownLatch",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.infra.Blackhole",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class SOCountDownLatchBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/AssociativeCacheBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/AssociativeCacheBenchmark.java",
+      "langage": "java",
+      "lignes": 182,
+      "taille_bytes": 6454,
+      "entrees": [
+        "io.questdb.metrics.Counter",
+        "io.questdb.metrics.CounterImpl",
+        "io.questdb.metrics.LongGauge",
+        "io.questdb.metrics.LongGaugeImpl",
+        "io.questdb.std.Chars",
+        "io.questdb.std.ConcurrentAssociativeCache",
+        "io.questdb.std.ConcurrentCacheConfiguration",
+        "io.questdb.std.DefaultConcurrentCacheConfiguration",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.SimpleAssociativeCache",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.Threads",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class AssociativeCacheBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/ColumnSizeLookup.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/ColumnSizeLookup.java",
+      "langage": "java",
+      "lignes": 88,
+      "taille_bytes": 2799,
+      "entrees": [
+        "io.questdb.cairo.ColumnType",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class ColumnSizeLookup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/Decimal128MultiplyBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/Decimal128MultiplyBenchmark.java",
+      "langage": "java",
+      "lignes": 171,
+      "taille_bytes": 6971,
+      "entrees": [
+        "io.questdb.std.Decimal128",
+        "java.math.BigDecimal",
+        "java.math.MathContext",
+        "java.math.RoundingMode",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Fork",
+        "org.openjdk.jmh.annotations.Measurement",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.Warmup",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class Decimal128MultiplyBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/IlpArrayBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/IlpArrayBenchmark.java",
+      "langage": "java",
+      "lignes": 184,
+      "taille_bytes": 8574,
+      "entrees": [
+        "io.questdb.client.Sender",
+        "java.sql.Connection",
+        "java.sql.DriverManager",
+        "java.sql.PreparedStatement",
+        "java.sql.ResultSet",
+        "java.sql.Statement",
+        "java.time.temporal.ChronoUnit",
+        "java.util.Properties",
+        "java.util.TimeZone",
+        "java.util.concurrent.ExecutorService",
+        "java.util.concurrent.Executors",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.atomic.AtomicLongArray",
+        "java.util.stream.IntStream",
+        "static"
+      ],
+      "sorties": [
+        "public class IlpArrayBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/LineTCPSenderMainLowConstantRate.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/LineTCPSenderMainLowConstantRate.java",
+      "langage": "java",
+      "lignes": 79,
+      "taille_bytes": 2950,
+      "entrees": [
+        "io.questdb.client.cutlass.line.AbstractLineTcpSender",
+        "io.questdb.client.cutlass.line.LineTcpSenderV2",
+        "io.questdb.mp.SOCountDownLatch",
+        "io.questdb.network.Net",
+        "io.questdb.std.Os",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.datetime.Clock",
+        "io.questdb.std.datetime.microtime.MicrosecondClockImpl"
+      ],
+      "sorties": [
+        "public class LineTCPSenderMainLowConstantRate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/ExpressionParserBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/ExpressionParserBenchmark.java",
+      "langage": "java",
+      "lignes": 124,
+      "taille_bytes": 4196,
+      "entrees": [
+        "io.questdb.cairo.CairoConfiguration",
+        "io.questdb.cairo.CairoEngine",
+        "io.questdb.cairo.DefaultCairoConfiguration",
+        "io.questdb.griffin.ExpressionParserListener",
+        "io.questdb.griffin.SqlCompiler",
+        "io.questdb.griffin.SqlException",
+        "io.questdb.griffin.model.ExpressionNode",
+        "io.questdb.log.LogFactory",
+        "io.questdb.std.str.StringSink",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class ExpressionParserBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/CharsIndexOfBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/CharsIndexOfBenchmark.java",
+      "langage": "java",
+      "lignes": 91,
+      "taille_bytes": 3139,
+      "entrees": [
+        "io.questdb.std.Chars",
+        "io.questdb.std.Rnd",
+        "io.questdb.std.datetime.microtime.MicrosecondClockImpl",
+        "io.questdb.std.datetime.nanotime.NanosecondClockImpl",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class CharsIndexOfBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/ArrayFillBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/ArrayFillBenchmark.java",
+      "langage": "java",
+      "lignes": 88,
+      "taille_bytes": 2656,
+      "entrees": [
+        "io.questdb.std.DirectLongList",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class ArrayFillBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/TxnScoreboardV2Benchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/TxnScoreboardV2Benchmark.java",
+      "langage": "java",
+      "lignes": 120,
+      "taille_bytes": 3901,
+      "entrees": [
+        "io.questdb.cairo.TxnScoreboardV2",
+        "java.util.concurrent.ThreadLocalRandom",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Group",
+        "org.openjdk.jmh.annotations.GroupThreads",
+        "org.openjdk.jmh.annotations.Level",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.Setup",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.annotations.TearDown",
+        "org.openjdk.jmh.infra.Blackhole",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class TxnScoreboardV2Benchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/Base64Benchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/Base64Benchmark.java",
+      "langage": "java",
+      "lignes": 84,
+      "taille_bytes": 2530,
+      "entrees": [
+        "io.questdb.std.Chars",
+        "java.nio.ByteBuffer",
+        "java.util.Base64",
+        "java.util.Random",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class Base64Benchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/VirtualMemoryIntWriteBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/VirtualMemoryIntWriteBenchmark.java",
+      "langage": "java",
+      "lignes": 79,
+      "taille_bytes": 2653,
+      "entrees": [
+        "io.questdb.cairo.vm.MemoryCARWImpl",
+        "io.questdb.cairo.vm.MemoryPARWImpl",
+        "io.questdb.std.MemoryTag",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class VirtualMemoryIntWriteBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/SampleByIntervalIteratorBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/SampleByIntervalIteratorBenchmark.java",
+      "langage": "java",
+      "lignes": 121,
+      "taille_bytes": 4452,
+      "entrees": [
+        "io.questdb.cairo.MicrosTimestampDriver",
+        "io.questdb.cairo.TimestampDriver",
+        "io.questdb.cairo.mv.FixedOffsetIntervalIterator",
+        "io.questdb.cairo.mv.TimeZoneIntervalIterator",
+        "io.questdb.griffin.engine.groupby.TimestampSampler",
+        "io.questdb.griffin.engine.groupby.TimestampSamplerFactory",
+        "io.questdb.std.datetime.DateLocaleFactory",
+        "io.questdb.std.datetime.TimeZoneRules",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.Benchmark",
+        "org.openjdk.jmh.annotations.BenchmarkMode",
+        "org.openjdk.jmh.annotations.Mode",
+        "org.openjdk.jmh.annotations.OutputTimeUnit",
+        "org.openjdk.jmh.annotations.Param",
+        "org.openjdk.jmh.annotations.Scope",
+        "org.openjdk.jmh.annotations.State",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class SampleByIntervalIteratorBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/CutlassLexerTest.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/CutlassLexerTest.java",
+      "langage": "java",
+      "lignes": 93,
+      "taille_bytes": 3120,
+      "entrees": [
+        "io.questdb.cutlass.line.udp.CachedCharSequence",
+        "io.questdb.cutlass.line.udp.CharSequenceCache",
+        "io.questdb.cutlass.line.udp.LineUdpLexer",
+        "io.questdb.cutlass.line.udp.LineUdpParser",
+        "io.questdb.std.MemoryTag",
+        "io.questdb.std.Unsafe",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class CutlassLexerTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/MetricsBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/MetricsBenchmark.java",
+      "langage": "java",
+      "lignes": 101,
+      "taille_bytes": 3558,
+      "entrees": [
+        "io.questdb.metrics.*",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class MetricsBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/java/org/questdb/AbsBenchmark.java": {
+      "fichier": "benchmarks/src/main/java/org/questdb/AbsBenchmark.java",
+      "langage": "java",
+      "lignes": 67,
+      "taille_bytes": 2058,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.*",
+        "org.openjdk.jmh.runner.Runner",
+        "org.openjdk.jmh.runner.RunnerException",
+        "org.openjdk.jmh.runner.options.Options",
+        "org.openjdk.jmh.runner.options.OptionsBuilder"
+      ],
+      "sorties": [
+        "public class AbsBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "compat/src/test/python/runner_psycopg2.py",
+      "vers": "compat/src/test/python/common.py",
+      "type": "interne"
+    },
+    {
+      "de": "compat/src/test/python/runner_psycopg3.py",
+      "vers": "compat/src/test/python/common.py",
+      "type": "interne"
+    },
+    {
+      "de": "compat/src/test/python/runner_asyncpg.py",
+      "vers": "compat/src/test/python/common.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'compat/src/test/python/common.py' (in=3)"
+  ]
+}

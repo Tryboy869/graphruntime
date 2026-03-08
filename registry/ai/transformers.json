@@ -1,0 +1,3524 @@
+{
+  "meta": {
+    "projet": "transformers",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "toml": 1,
+      "python": 102,
+      "shell": 4,
+      "json": 1,
+      "yaml": 12
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 30,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 2,
+    "fichier_plus_appele": "examples/pytorch/question-answering/utils_qa.py"
+  },
+  "noeuds": {
+    "pyproject.toml": {
+      "fichier": "pyproject.toml",
+      "langage": "toml",
+      "lignes": 115,
+      "taille_bytes": 5519,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setup.py": {
+      "fichier": "setup.py",
+      "langage": "python",
+      "lignes": 356,
+      "taille_bytes": 13057,
+      "entrees": [
+        "pathlib",
+        "re",
+        "setuptools",
+        "shutil",
+        "sys"
+      ],
+      "sorties": [
+        "class DepsTableUpdateCommand",
+        "def deps_list",
+        "def finalize_options",
+        "def initialize_options",
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "conftest.py": {
+      "fichier": "conftest.py",
+      "langage": "python",
+      "lignes": 153,
+      "taille_bytes": 5890,
+      "entrees": [
+        "_pytest",
+        "doctest",
+        "os",
+        "os.path",
+        "pytest",
+        "sys",
+        "transformers.testing_utils",
+        "transformers.utils",
+        "warnings"
+      ],
+      "sorties": [
+        "class CustomOutputChecker",
+        "def check_output",
+        "def pytest_addoption",
+        "def pytest_collection_modifyitems",
+        "def pytest_configure",
+        "def pytest_sessionfinish",
+        "def pytest_terminal_summary"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/run_on_remote.py": {
+      "fichier": "examples/run_on_remote.py",
+      "langage": "python",
+      "lignes": 70,
+      "taille_bytes": 3608,
+      "entrees": [
+        "argparse",
+        "runhouse",
+        "shlex"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/3D_parallel.py": {
+      "fichier": "examples/3D_parallel.py",
+      "langage": "python",
+      "lignes": 434,
+      "taille_bytes": 17897,
+      "entrees": [
+        "collections.abc",
+        "contextlib",
+        "datasets",
+        "logging",
+        "os",
+        "torch",
+        "torch.distributed",
+        "torch.distributed.checkpoint",
+        "torch.distributed.checkpoint.state_dict",
+        "torch.distributed.checkpoint.stateful",
+        "torch.distributed.device_mesh",
+        "torch.distributed.fsdp",
+        "torch.distributed.tensor",
+        "torch.distributed.tensor.experimental",
+        "torch.distributed.tensor.experimental._attention",
+        "torch.nn.attention",
+        "torch.optim",
+        "torch.utils.data",
+        "torch.utils.data.distributed",
+        "transformers",
+        "wandb"
+      ],
+      "sorties": [
+        "class AppState",
+        "def __init__",
+        "def all_reduce_grads",
+        "def clip_grad_norm_",
+        "def collate_fn",
+        "def create_packed_sequences",
+        "def load_state_dict",
+        "def main",
+        "def state_dict",
+        "def tokenize_function",
+        "export CUDA_VISIBLE_DEVICES"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/continuous_batching.py": {
+      "fichier": "examples/pytorch/continuous_batching.py",
+      "langage": "python",
+      "lignes": 363,
+      "taille_bytes": 16091,
+      "entrees": [
+        "argparse",
+        "contextlib",
+        "datasets",
+        "itertools",
+        "json",
+        "logging",
+        "opentelemetry",
+        "opentelemetry.exporter.otlp.proto.http.metric_exporter",
+        "opentelemetry.exporter.otlp.proto.http.trace_exporter",
+        "opentelemetry.sdk.metrics",
+        "opentelemetry.sdk.metrics.export",
+        "opentelemetry.sdk.resources",
+        "opentelemetry.sdk.trace",
+        "opentelemetry.sdk.trace.export",
+        "os",
+        "time",
+        "torch",
+        "torch.profiler",
+        "tqdm",
+        "transformers",
+        "transformers.generation",
+        "transformers.generation.continuous_batching.requests"
+      ],
+      "sorties": [
+        "def batch_generate",
+        "def generate_without_cb",
+        "def maybe_setup_metrics"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/3d_parallel_checks.py": {
+      "fichier": "examples/pytorch/3d_parallel_checks.py",
+      "langage": "python",
+      "lignes": 792,
+      "taille_bytes": 34899,
+      "entrees": [
+        "collections.abc",
+        "contextlib",
+        "datasets",
+        "logging",
+        "os",
+        "torch",
+        "torch.distributed",
+        "torch.distributed.checkpoint",
+        "torch.distributed.checkpoint.state_dict",
+        "torch.distributed.checkpoint.stateful",
+        "torch.distributed.device_mesh",
+        "torch.distributed.fsdp",
+        "torch.distributed.tensor",
+        "torch.distributed.tensor.experimental",
+        "torch.distributed.tensor.experimental._attention",
+        "torch.nn",
+        "torch.nn.attention",
+        "torch.optim",
+        "torch.utils.data",
+        "torch.utils.data.distributed",
+        "transformers",
+        "wandb"
+      ],
+      "sorties": [
+        "class AppState",
+        "class ContextParallelCollator",
+        "def __call__",
+        "def __init__",
+        "def all_reduce_grads",
+        "def check_params_sync",
+        "def clip_grad_norm_",
+        "def collate_fn",
+        "def create_packed_sequences",
+        "def get_parameters",
+        "def load_state_dict",
+        "def main",
+        "def sanity_check_tensor_sync",
+        "def state_dict",
+        "def tokenize_function",
+        "def update_model_parameters",
+        "export CUDA_VISIBLE_DEVICES"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/xla_spawn.py": {
+      "fichier": "examples/pytorch/xla_spawn.py",
+      "langage": "python",
+      "lignes": 82,
+      "taille_bytes": 2445,
+      "entrees": [
+        "argparse",
+        "importlib",
+        "pathlib",
+        "sys",
+        "torch_xla.distributed.xla_multiprocessing"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/old_test_xla_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/old_test_xla_examples.py": {
+      "fichier": "examples/pytorch/old_test_xla_examples.py",
+      "langage": "python",
+      "lignes": 92,
+      "taille_bytes": 2796,
+      "entrees": [
+        "json",
+        "logging",
+        "os",
+        "sys",
+        "time",
+        "transformers.testing_utils",
+        "unittest.mock",
+        "xla_spawn"
+      ],
+      "sorties": [
+        "class TorchXLAExamplesTests",
+        "def get_results",
+        "def test_run_glue",
+        "def test_trainer_tpu"
+      ],
+      "appelle": [
+        "examples/pytorch/xla_spawn.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/conftest.py": {
+      "fichier": "examples/pytorch/conftest.py",
+      "langage": "python",
+      "lignes": 45,
+      "taille_bytes": 1716,
+      "entrees": [
+        "os.path",
+        "sys",
+        "transformers.testing_utils",
+        "warnings"
+      ],
+      "sorties": [
+        "def pytest_addoption",
+        "def pytest_terminal_summary"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/context_parallel.py": {
+      "fichier": "examples/pytorch/context_parallel.py",
+      "langage": "python",
+      "lignes": 94,
+      "taille_bytes": 3214,
+      "entrees": [
+        "os",
+        "torch",
+        "torch.distributed",
+        "torch.distributed.device_mesh",
+        "torch.distributed.tensor.experimental",
+        "torch.nn.attention",
+        "torch.nn.parallel",
+        "transformers",
+        "transformers.loss.loss_utils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/test_pytorch_examples.py": {
+      "fichier": "examples/pytorch/test_pytorch_examples.py",
+      "langage": "python",
+      "lignes": 660,
+      "taille_bytes": 23121,
+      "entrees": [
+        "json",
+        "logging",
+        "os",
+        "run_audio_classification",
+        "run_clm",
+        "run_generation",
+        "run_glue",
+        "run_image_classification",
+        "run_instance_segmentation",
+        "run_mae",
+        "run_mlm",
+        "run_ner",
+        "run_object_detection",
+        "run_qa",
+        "run_semantic_segmentation",
+        "run_seq2seq_qa",
+        "run_speech_recognition_ctc",
+        "run_speech_recognition_ctc_adapter",
+        "run_speech_recognition_seq2seq",
+        "run_summarization",
+        "run_swag",
+        "run_translation",
+        "run_wav2vec2_pretraining_no_trainer",
+        "sys",
+        "transformers",
+        "transformers.testing_utils",
+        "unittest.mock"
+      ],
+      "sorties": [
+        "class ExamplesTests",
+        "def get_results",
+        "def test_generation",
+        "def test_run_audio_classification",
+        "def test_run_clm",
+        "def test_run_clm_config_overrides",
+        "def test_run_glue",
+        "def test_run_image_classification",
+        "def test_run_instance_segmentation",
+        "def test_run_mlm",
+        "def test_run_ner",
+        "def test_run_object_detection",
+        "def test_run_semantic_segmentation",
+        "def test_run_speech_recognition_ctc",
+        "def test_run_speech_recognition_ctc_adapter",
+        "def test_run_speech_recognition_seq2seq",
+        "def test_run_squad",
+        "def test_run_squad_seq2seq",
+        "def test_run_summarization",
+        "def test_run_swag",
+        "def test_run_translation",
+        "def test_run_vit_mae_pretraining",
+        "def test_run_wav2vec2_pretraining"
+      ],
+      "appelle": [
+        "examples/pytorch/audio-classification/run_audio_classification.py",
+        "examples/pytorch/image-classification/run_image_classification.py",
+        "examples/pytorch/image-pretraining/run_mae.py",
+        "examples/pytorch/instance-segmentation/run_instance_segmentation.py",
+        "examples/pytorch/language-modeling/run_clm.py",
+        "examples/pytorch/language-modeling/run_mlm.py",
+        "examples/pytorch/multiple-choice/run_swag.py",
+        "examples/pytorch/object-detection/run_object_detection.py",
+        "examples/pytorch/question-answering/run_qa.py",
+        "examples/pytorch/question-answering/run_seq2seq_qa.py",
+        "examples/pytorch/semantic-segmentation/run_semantic_segmentation.py",
+        "examples/pytorch/speech-pretraining/run_wav2vec2_pretraining_no_trainer.py",
+        "examples/pytorch/speech-recognition/run_speech_recognition_ctc.py",
+        "examples/pytorch/speech-recognition/run_speech_recognition_ctc_adapter.py",
+        "examples/pytorch/speech-recognition/run_speech_recognition_seq2seq.py",
+        "examples/pytorch/summarization/run_summarization.py",
+        "examples/pytorch/text-classification/run_glue.py",
+        "examples/pytorch/text-generation/run_generation.py",
+        "examples/pytorch/token-classification/run_ner.py",
+        "examples/pytorch/translation/run_translation.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "examples/pytorch/test_accelerate_examples.py": {
+      "fichier": "examples/pytorch/test_accelerate_examples.py",
+      "langage": "python",
+      "lignes": 386,
+      "taille_bytes": 15558,
+      "entrees": [
+        "accelerate.utils",
+        "argparse",
+        "json",
+        "logging",
+        "os",
+        "shutil",
+        "sys",
+        "tempfile",
+        "transformers.testing_utils",
+        "unittest"
+      ],
+      "sorties": [
+        "class ExamplesTestsNoTrainer",
+        "def get_results",
+        "def get_setup_file",
+        "def setUpClass",
+        "def tearDownClass",
+        "def test_run_clm_no_trainer",
+        "def test_run_glue_no_trainer",
+        "def test_run_image_classification_no_trainer",
+        "def test_run_instance_segmentation_no_trainer",
+        "def test_run_mlm_no_trainer",
+        "def test_run_ner_no_trainer",
+        "def test_run_object_detection_no_trainer",
+        "def test_run_semantic_segmentation_no_trainer",
+        "def test_run_squad_no_trainer",
+        "def test_run_summarization_no_trainer",
+        "def test_run_swag_no_trainer",
+        "def test_run_translation_no_trainer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/continuous_batching_simple.py": {
+      "fichier": "examples/pytorch/continuous_batching_simple.py",
+      "langage": "python",
+      "lignes": 112,
+      "taille_bytes": 4210,
+      "entrees": [
+        "argparse",
+        "datasets",
+        "time",
+        "torch",
+        "transformers",
+        "transformers.generation",
+        "transformers.utils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/translation/run_translation.py": {
+      "fichier": "examples/pytorch/translation/run_translation.py",
+      "langage": "python",
+      "lignes": 691,
+      "taille_bytes": 29465,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "numpy",
+        "os",
+        "sys",
+        "transformers",
+        "transformers.tokenization_utils_sentencepiece",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def main",
+        "def postprocess_text",
+        "def preprocess_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/translation/run_translation_no_trainer.py": {
+      "fichier": "examples/pytorch/translation/run_translation_no_trainer.py",
+      "langage": "python",
+      "lignes": 800,
+      "taille_bytes": 33788,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "evaluate",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def postprocess_text",
+        "def preprocess_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/image-pretraining/run_mim_no_trainer.py": {
+      "fichier": "examples/pytorch/image-pretraining/run_mim_no_trainer.py",
+      "langage": "python",
+      "lignes": 811,
+      "taille_bytes": 30416,
+      "entrees": [
+        "accelerate",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "huggingface_hub",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "torch",
+        "torch.utils.data",
+        "torchvision.transforms",
+        "tqdm.auto",
+        "transformers",
+        "transformers.trainer_pt_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class MaskGenerator",
+        "def __call__",
+        "def __init__",
+        "def collate_fn",
+        "def main",
+        "def parse_args",
+        "def preprocess_images"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/image-pretraining/run_mim.py": {
+      "fichier": "examples/pytorch/image-pretraining/run_mim.py",
+      "langage": "python",
+      "lignes": 468,
+      "taille_bytes": 18249,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "logging",
+        "numpy",
+        "os",
+        "sys",
+        "torch",
+        "torchvision.transforms",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class MaskGenerator",
+        "class ModelArguments",
+        "def __call__",
+        "def __init__",
+        "def __post_init__",
+        "def collate_fn",
+        "def main",
+        "def preprocess_images"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/image-pretraining/run_mae.py": {
+      "fichier": "examples/pytorch/image-pretraining/run_mae.py",
+      "langage": "python",
+      "lignes": 393,
+      "taille_bytes": 14921,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "logging",
+        "os",
+        "sys",
+        "torch",
+        "torchvision.transforms",
+        "torchvision.transforms.functional",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class CustomTrainingArguments",
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def collate_fn",
+        "def main",
+        "def preprocess_images"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/image-classification/run_image_classification.py": {
+      "fichier": "examples/pytorch/image-classification/run_image_classification.py",
+      "langage": "python",
+      "lignes": 430,
+      "taille_bytes": 16760,
+      "entrees": [
+        "PIL",
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "numpy",
+        "os",
+        "sys",
+        "torch",
+        "torchvision.transforms",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def collate_fn",
+        "def compute_metrics",
+        "def main",
+        "def pil_loader",
+        "def train_transforms",
+        "def val_transforms"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/image-classification/run_image_classification_no_trainer.py": {
+      "fichier": "examples/pytorch/image-classification/run_image_classification_no_trainer.py",
+      "langage": "python",
+      "lignes": 658,
+      "taille_bytes": 27659,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "evaluate",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "math",
+        "os",
+        "pathlib",
+        "torch",
+        "torch.utils.data",
+        "torchvision.transforms",
+        "tqdm.auto",
+        "transformers",
+        "transformers.trainer_pt_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "def collate_fn",
+        "def main",
+        "def parse_args",
+        "def preprocess_train",
+        "def preprocess_val"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/question-answering/utils_qa.py": {
+      "fichier": "examples/pytorch/question-answering/utils_qa.py",
+      "langage": "python",
+      "lignes": 442,
+      "taille_bytes": 22686,
+      "entrees": [
+        "collections",
+        "json",
+        "logging",
+        "numpy",
+        "os",
+        "tqdm.auto"
+      ],
+      "sorties": [
+        "def postprocess_qa_predictions",
+        "def postprocess_qa_predictions_with_beam_search"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/question-answering/run_qa.py",
+        "examples/pytorch/question-answering/run_qa_beam_search.py",
+        "examples/pytorch/question-answering/run_qa_beam_search_no_trainer.py",
+        "examples/pytorch/question-answering/run_qa_no_trainer.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "examples/pytorch/question-answering/run_seq2seq_qa.py": {
+      "fichier": "examples/pytorch/question-answering/run_seq2seq_qa.py",
+      "langage": "python",
+      "lignes": 720,
+      "taille_bytes": 31672,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "numpy",
+        "os",
+        "sys",
+        "trainer_seq2seq_qa",
+        "transformers",
+        "transformers.trainer_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def generate_input",
+        "def main",
+        "def post_processing_function",
+        "def preprocess_function",
+        "def preprocess_squad_batch",
+        "def preprocess_validation_function"
+      ],
+      "appelle": [
+        "examples/pytorch/question-answering/trainer_seq2seq_qa.py"
+      ],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/question-answering/run_qa.py": {
+      "fichier": "examples/pytorch/question-answering/run_qa.py",
+      "langage": "python",
+      "lignes": 691,
+      "taille_bytes": 31671,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "os",
+        "sys",
+        "trainer_qa",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions",
+        "utils_qa",
+        "warnings"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def main",
+        "def post_processing_function",
+        "def prepare_train_features",
+        "def prepare_validation_features"
+      ],
+      "appelle": [
+        "examples/pytorch/question-answering/trainer_qa.py",
+        "examples/pytorch/question-answering/utils_qa.py"
+      ],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/question-answering/run_qa_no_trainer.py": {
+      "fichier": "examples/pytorch/question-answering/run_qa_no_trainer.py",
+      "langage": "python",
+      "lignes": 1042,
+      "taille_bytes": 46972,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "evaluate",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.trainer_pt_utils",
+        "transformers.utils",
+        "transformers.utils.versions",
+        "utils_qa"
+      ],
+      "sorties": [
+        "def create_and_fill_np_array",
+        "def main",
+        "def parse_args",
+        "def post_processing_function",
+        "def prepare_train_features",
+        "def prepare_validation_features",
+        "def save_prefixed_metrics"
+      ],
+      "appelle": [
+        "examples/pytorch/question-answering/utils_qa.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/question-answering/trainer_qa.py": {
+      "fichier": "examples/pytorch/question-answering/trainer_qa.py",
+      "langage": "python",
+      "lignes": 130,
+      "taille_bytes": 5678,
+      "entrees": [
+        "math",
+        "time",
+        "torch_xla.core.xla_model",
+        "torch_xla.debug.metrics",
+        "transformers",
+        "transformers.trainer_utils"
+      ],
+      "sorties": [
+        "class QuestionAnsweringTrainer",
+        "def __init__",
+        "def evaluate",
+        "def predict"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/question-answering/run_qa.py",
+        "examples/pytorch/question-answering/run_qa_beam_search.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/question-answering/run_qa_beam_search_no_trainer.py": {
+      "fichier": "examples/pytorch/question-answering/run_qa_beam_search_no_trainer.py",
+      "langage": "python",
+      "lignes": 1064,
+      "taille_bytes": 49145,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "evaluate",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.trainer_pt_utils",
+        "transformers.utils",
+        "transformers.utils.versions",
+        "utils_qa"
+      ],
+      "sorties": [
+        "def create_and_fill_np_array",
+        "def main",
+        "def parse_args",
+        "def post_processing_function",
+        "def prepare_train_features",
+        "def prepare_validation_features",
+        "def save_prefixed_metrics"
+      ],
+      "appelle": [
+        "examples/pytorch/question-answering/utils_qa.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/question-answering/run_qa_beam_search.py": {
+      "fichier": "examples/pytorch/question-answering/run_qa_beam_search.py",
+      "langage": "python",
+      "lignes": 718,
+      "taille_bytes": 32762,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "os",
+        "sys",
+        "trainer_qa",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions",
+        "utils_qa"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def main",
+        "def post_processing_function",
+        "def prepare_train_features",
+        "def prepare_validation_features"
+      ],
+      "appelle": [
+        "examples/pytorch/question-answering/trainer_qa.py",
+        "examples/pytorch/question-answering/utils_qa.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "examples/pytorch/question-answering/trainer_seq2seq_qa.py": {
+      "fichier": "examples/pytorch/question-answering/trainer_seq2seq_qa.py",
+      "langage": "python",
+      "lignes": 156,
+      "taille_bytes": 6582,
+      "entrees": [
+        "math",
+        "time",
+        "torch.utils.data",
+        "torch_xla.core.xla_model",
+        "torch_xla.debug.metrics",
+        "transformers",
+        "transformers.trainer_utils"
+      ],
+      "sorties": [
+        "class QuestionAnsweringSeq2SeqTrainer",
+        "def __init__",
+        "def evaluate",
+        "def predict"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/question-answering/run_seq2seq_qa.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/token-classification/run_ner.py": {
+      "fichier": "examples/pytorch/token-classification/run_ner.py",
+      "langage": "python",
+      "lignes": 641,
+      "taille_bytes": 26585,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "numpy",
+        "os",
+        "sys",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def get_label_list",
+        "def main",
+        "def tokenize_and_align_labels"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/token-classification/run_no_trainer.sh": {
+      "fichier": "examples/pytorch/token-classification/run_no_trainer.sh",
+      "langage": "shell",
+      "lignes": 21,
+      "taille_bytes": 828,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/token-classification/run.sh": {
+      "fichier": "examples/pytorch/token-classification/run.sh",
+      "langage": "shell",
+      "lignes": 20,
+      "taille_bytes": 758,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/token-classification/run_ner_no_trainer.py": {
+      "fichier": "examples/pytorch/token-classification/run_ner_no_trainer.py",
+      "langage": "python",
+      "lignes": 842,
+      "taille_bytes": 36027,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "evaluate",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.trainer_pt_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "def compute_metrics",
+        "def get_label_list",
+        "def get_labels",
+        "def main",
+        "def parse_args",
+        "def tokenize_and_align_labels"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/contrastive-image-text/run_clip.py": {
+      "fichier": "examples/pytorch/contrastive-image-text/run_clip.py",
+      "langage": "python",
+      "lignes": 516,
+      "taille_bytes": 21114,
+      "entrees": [
+        "PIL",
+        "dataclasses",
+        "datasets",
+        "logging",
+        "os",
+        "sys",
+        "torch",
+        "torchvision.io",
+        "torchvision.transforms",
+        "torchvision.transforms.functional",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "class Transform",
+        "def __init__",
+        "def __post_init__",
+        "def _freeze_params",
+        "def collate_fn",
+        "def filter_corrupt_images",
+        "def forward",
+        "def main",
+        "def tokenize_captions",
+        "def transform_images"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/text-classification/run_xnli.py": {
+      "fichier": "examples/pytorch/text-classification/run_xnli.py",
+      "langage": "python",
+      "lignes": 446,
+      "taille_bytes": 17052,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "numpy",
+        "os",
+        "random",
+        "sys",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def compute_metrics",
+        "def main",
+        "def preprocess_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/text-classification/run_glue_no_trainer.py": {
+      "fichier": "examples/pytorch/text-classification/run_glue_no_trainer.py",
+      "langage": "python",
+      "lignes": 699,
+      "taille_bytes": 30167,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "evaluate",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "math",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.trainer_pt_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def preprocess_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/text-classification/run_glue.py": {
+      "fichier": "examples/pytorch/text-classification/run_glue.py",
+      "langage": "python",
+      "lignes": 644,
+      "taille_bytes": 27464,
+      "entrees": [
+        "collections",
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "numpy",
+        "os",
+        "random",
+        "sys",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def main",
+        "def preprocess_function",
+        "def print_class_distribution"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/text-classification/run_classification.py": {
+      "fichier": "examples/pytorch/text-classification/run_classification.py",
+      "langage": "python",
+      "lignes": 744,
+      "taille_bytes": 32645,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "numpy",
+        "os",
+        "random",
+        "sys",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def get_label_list",
+        "def main",
+        "def multi_labels_to_ids",
+        "def preprocess_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/summarization/run_summarization.py": {
+      "fichier": "examples/pytorch/summarization/run_summarization.py",
+      "langage": "python",
+      "lignes": 766,
+      "taille_bytes": 32096,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "filelock",
+        "huggingface_hub",
+        "logging",
+        "nltk",
+        "numpy",
+        "os",
+        "sys",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def main",
+        "def postprocess_text",
+        "def preprocess_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/summarization/run_summarization_no_trainer.py": {
+      "fichier": "examples/pytorch/summarization/run_summarization_no_trainer.py",
+      "langage": "python",
+      "lignes": 813,
+      "taille_bytes": 33845,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "evaluate",
+        "filelock",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "math",
+        "nltk",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def postprocess_text",
+        "def preprocess_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/speech-pretraining/run_wav2vec2_pretraining_no_trainer.py": {
+      "fichier": "examples/pytorch/speech-pretraining/run_wav2vec2_pretraining_no_trainer.py",
+      "langage": "python",
+      "lignes": 807,
+      "taille_bytes": 32709,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "aiohttp",
+        "argparse",
+        "dataclasses",
+        "datasets",
+        "huggingface_hub",
+        "math",
+        "os",
+        "pathlib",
+        "torch",
+        "torch.utils.data.dataloader",
+        "tqdm.auto",
+        "transformers",
+        "transformers.models.wav2vec2.modeling_wav2vec2",
+        "wandb"
+      ],
+      "sorties": [
+        "class DataCollatorForWav2Vec2Pretraining",
+        "def __call__",
+        "def get_grad_norm",
+        "def main",
+        "def multiply_grads",
+        "def parse_args",
+        "def prepare_dataset"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/speech-recognition/run_speech_recognition_ctc.py": {
+      "fichier": "examples/pytorch/speech-recognition/run_speech_recognition_ctc.py",
+      "langage": "python",
+      "lignes": 811,
+      "taille_bytes": 31976,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "functools",
+        "json",
+        "logging",
+        "os",
+        "re",
+        "sys",
+        "torch",
+        "transformers",
+        "transformers.trainer_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataCollatorCTCWithPadding",
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __call__",
+        "def compute_metrics",
+        "def create_vocabulary_from_data",
+        "def extract_all_chars",
+        "def is_audio_in_length_range",
+        "def list_field",
+        "def main",
+        "def prepare_dataset",
+        "def preprocess_logits_for_metrics",
+        "def remove_special_characters"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/speech-recognition/run_speech_recognition_ctc_adapter.py": {
+      "fichier": "examples/pytorch/speech-recognition/run_speech_recognition_ctc_adapter.py",
+      "langage": "python",
+      "lignes": 809,
+      "taille_bytes": 32093,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "functools",
+        "json",
+        "logging",
+        "numpy",
+        "os",
+        "re",
+        "safetensors.torch",
+        "sys",
+        "torch",
+        "transformers",
+        "transformers.models.wav2vec2.modeling_wav2vec2",
+        "transformers.trainer_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataCollatorCTCWithPadding",
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __call__",
+        "def compute_metrics",
+        "def create_vocabulary_from_data",
+        "def extract_all_chars",
+        "def is_audio_in_length_range",
+        "def list_field",
+        "def main",
+        "def prepare_dataset",
+        "def remove_special_characters"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/speech-recognition/run_speech_recognition_seq2seq.py": {
+      "fichier": "examples/pytorch/speech-recognition/run_speech_recognition_seq2seq.py",
+      "langage": "python",
+      "lignes": 601,
+      "taille_bytes": 23565,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "os",
+        "sys",
+        "torch",
+        "transformers",
+        "transformers.trainer_utils",
+        "transformers.utils",
+        "transformers.utils.versions",
+        "typing"
+      ],
+      "sorties": [
+        "class DataCollatorSpeechSeq2SeqWithPadding",
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __call__",
+        "def compute_metrics",
+        "def is_audio_in_length_range",
+        "def main",
+        "def prepare_dataset"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/language-modeling/run_fim_no_trainer.py": {
+      "fichier": "examples/pytorch/language-modeling/run_fim_no_trainer.py",
+      "langage": "python",
+      "lignes": 918,
+      "taille_bytes": 39433,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "deepspeed",
+        "huggingface_hub",
+        "itertools",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.integrations",
+        "transformers.trainer_pt_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "def apply_fim",
+        "def fim_transform",
+        "def group_texts",
+        "def main",
+        "def parse_args",
+        "def tokenize_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/language-modeling/run_clm.py": {
+      "fichier": "examples/pytorch/language-modeling/run_clm.py",
+      "langage": "python",
+      "lignes": 710,
+      "taille_bytes": 30129,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "itertools",
+        "logging",
+        "math",
+        "os",
+        "sys",
+        "torch",
+        "transformers",
+        "transformers.testing_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def group_texts",
+        "def main",
+        "def preprocess_logits_for_metrics",
+        "def split_generator",
+        "def split_streaming_dataset",
+        "def tokenize_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/language-modeling/run_plm.py": {
+      "fichier": "examples/pytorch/language-modeling/run_plm.py",
+      "langage": "python",
+      "lignes": 565,
+      "taille_bytes": 23564,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "itertools",
+        "logging",
+        "math",
+        "os",
+        "sys",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def group_texts",
+        "def main",
+        "def tokenize_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/language-modeling/run_clm_no_trainer.py": {
+      "fichier": "examples/pytorch/language-modeling/run_clm_no_trainer.py",
+      "langage": "python",
+      "lignes": 737,
+      "taille_bytes": 31288,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "huggingface_hub",
+        "itertools",
+        "json",
+        "logging",
+        "math",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.trainer_pt_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "def group_texts",
+        "def main",
+        "def parse_args",
+        "def tokenize_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/language-modeling/run_fim.py": {
+      "fichier": "examples/pytorch/language-modeling/run_fim.py",
+      "langage": "python",
+      "lignes": 844,
+      "taille_bytes": 36087,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "deepspeed",
+        "evaluate",
+        "itertools",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "sys",
+        "torch",
+        "transformers",
+        "transformers.integrations",
+        "transformers.testing_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def apply_fim",
+        "def compute_metrics",
+        "def fim_transform",
+        "def group_texts",
+        "def main",
+        "def preprocess_logits_for_metrics",
+        "def tokenize_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/language-modeling/run_mlm_no_trainer.py": {
+      "fichier": "examples/pytorch/language-modeling/run_mlm_no_trainer.py",
+      "langage": "python",
+      "lignes": 767,
+      "taille_bytes": 33085,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "huggingface_hub",
+        "itertools",
+        "json",
+        "logging",
+        "math",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.trainer_pt_utils",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "def group_texts",
+        "def main",
+        "def parse_args",
+        "def tokenize_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/language-modeling/run_mlm.py": {
+      "fichier": "examples/pytorch/language-modeling/run_mlm.py",
+      "langage": "python",
+      "lignes": 668,
+      "taille_bytes": 28434,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "itertools",
+        "logging",
+        "math",
+        "os",
+        "sys",
+        "torch",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def group_texts",
+        "def main",
+        "def preprocess_logits_for_metrics",
+        "def tokenize_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/audio-classification/run_audio_classification.py": {
+      "fichier": "examples/pytorch/audio-classification/run_audio_classification.py",
+      "langage": "python",
+      "lignes": 399,
+      "taille_bytes": 15882,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "logging",
+        "numpy",
+        "os",
+        "random",
+        "sys",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def compute_metrics",
+        "def main",
+        "def random_subsample",
+        "def train_transforms",
+        "def val_transforms"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/multiple-choice/run_swag.py": {
+      "fichier": "examples/pytorch/multiple-choice/run_swag.py",
+      "langage": "python",
+      "lignes": 432,
+      "taille_bytes": 16892,
+      "entrees": [
+        "dataclasses",
+        "datasets",
+        "itertools",
+        "logging",
+        "numpy",
+        "os",
+        "sys",
+        "transformers",
+        "transformers.utils"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def _mp_fn",
+        "def compute_metrics",
+        "def main",
+        "def preprocess_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/multiple-choice/run_no_trainer.sh": {
+      "fichier": "examples/pytorch/multiple-choice/run_no_trainer.sh",
+      "langage": "shell",
+      "lignes": 19,
+      "taille_bytes": 782,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/multiple-choice/run_swag_no_trainer.py": {
+      "fichier": "examples/pytorch/multiple-choice/run_swag_no_trainer.py",
+      "langage": "python",
+      "lignes": 661,
+      "taille_bytes": 27717,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "argparse",
+        "datasets",
+        "evaluate",
+        "huggingface_hub",
+        "itertools",
+        "json",
+        "logging",
+        "math",
+        "os",
+        "pathlib",
+        "random",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.trainer_pt_utils",
+        "transformers.utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def preprocess_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/text-generation/run_generation.py": {
+      "fichier": "examples/pytorch/text-generation/run_generation.py",
+      "langage": "python",
+      "lignes": 448,
+      "taille_bytes": 17060,
+      "entrees": [
+        "accelerate",
+        "accelerate.utils",
+        "argparse",
+        "inspect",
+        "logging",
+        "torch",
+        "transformers",
+        "transformers.modeling_outputs"
+      ],
+      "sorties": [
+        "class _ModelFallbackWrapper",
+        "def __call__",
+        "def __getattr__",
+        "def __init__",
+        "def _reorder_cache",
+        "def adjust_length_to_model",
+        "def generate_past_key_values",
+        "def main",
+        "def prepare_ctrl_input",
+        "def prepare_inputs_for_generation",
+        "def prepare_jit_inputs",
+        "def prepare_transfoxl_input",
+        "def prepare_xlm_input",
+        "def prepare_xlnet_input",
+        "def sparse_model_config"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/semantic-segmentation/run_semantic_segmentation.py": {
+      "fichier": "examples/pytorch/semantic-segmentation/run_semantic_segmentation.py",
+      "langage": "python",
+      "lignes": 419,
+      "taille_bytes": 16617,
+      "entrees": [
+        "albumentations",
+        "albumentations.pytorch",
+        "dataclasses",
+        "datasets",
+        "evaluate",
+        "functools",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "numpy",
+        "os",
+        "sys",
+        "torch",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "def __post_init__",
+        "def compute_metrics",
+        "def main",
+        "def preprocess_batch",
+        "def reduce_labels_transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/semantic-segmentation/run_semantic_segmentation_no_trainer.py": {
+      "fichier": "examples/pytorch/semantic-segmentation/run_semantic_segmentation_no_trainer.py",
+      "langage": "python",
+      "lignes": 622,
+      "taille_bytes": 25905,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "albumentations",
+        "albumentations.pytorch",
+        "argparse",
+        "datasets",
+        "evaluate",
+        "functools",
+        "huggingface_hub",
+        "json",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "torch",
+        "torch.utils.data",
+        "tqdm.auto",
+        "transformers",
+        "transformers.utils",
+        "transformers.utils.versions"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def preprocess_batch",
+        "def reduce_labels_transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/object-detection/run_object_detection.py": {
+      "fichier": "examples/pytorch/object-detection/run_object_detection.py",
+      "langage": "python",
+      "lignes": 520,
+      "taille_bytes": 20800,
+      "entrees": [
+        "albumentations",
+        "collections.abc",
+        "dataclasses",
+        "datasets",
+        "functools",
+        "logging",
+        "numpy",
+        "os",
+        "sys",
+        "torch",
+        "torchmetrics.detection.mean_ap",
+        "transformers",
+        "transformers.image_processing_utils",
+        "transformers.image_transforms",
+        "transformers.trainer",
+        "transformers.utils",
+        "transformers.utils.versions",
+        "typing"
+      ],
+      "sorties": [
+        "class DataTrainingArguments",
+        "class ModelArguments",
+        "class ModelOutput",
+        "def augment_and_transform_batch",
+        "def collate_fn",
+        "def compute_metrics",
+        "def convert_bbox_yolo_to_pascal",
+        "def format_image_annotations_as_coco",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/object-detection/run_object_detection_no_trainer.py": {
+      "fichier": "examples/pytorch/object-detection/run_object_detection_no_trainer.py",
+      "langage": "python",
+      "lignes": 795,
+      "taille_bytes": 32460,
+      "entrees": [
+        "accelerate",
+        "accelerate.logging",
+        "accelerate.utils",
+        "albumentations",
+        "argparse",
+        "collections.abc",
+        "datasets",
+        "functools",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "torch",
+        "torch.utils.data",
+        "torchmetrics.detection.mean_ap",
+        "tqdm.auto",
+        "transformers",
+        "transformers.image_processing_utils",
+        "transformers.image_transforms",
+        "transformers.utils",
+        "transformers.utils.versions",
+        "typing"
+      ],
+      "sorties": [
+        "def augment_and_transform_batch",
+        "def collate_fn",
+        "def convert_bbox_yolo_to_pascal",
+        "def evaluation_loop",
+        "def format_image_annotations_as_coco",
+        "def main",
+        "def nested_to_cpu",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/instance-segmentation/run_instance_segmentation.py": {
+      "fichier": "examples/pytorch/instance-segmentation/run_instance_segmentation.py",
+      "langage": "python",
+      "lignes": 474,
+      "taille_bytes": 18872,
+      "entrees": [
+        "albumentations",
+        "collections.abc",
+        "dataclasses",
+        "datasets",
+        "functools",
+        "logging",
+        "numpy",
+        "os",
+        "sys",
+        "torch",
+        "torchmetrics.detection.mean_ap",
+        "transformers",
+        "transformers.image_processing_utils",
+        "transformers.trainer",
+        "transformers.utils",
+        "transformers.utils.versions",
+        "typing"
+      ],
+      "sorties": [
+        "class Arguments",
+        "class Evaluator",
+        "class ModelOutput",
+        "def __call__",
+        "def __init__",
+        "def augment_and_transform_batch",
+        "def collate_fn",
+        "def find_last_checkpoint",
+        "def get_metric",
+        "def get_target_sizes",
+        "def main",
+        "def nested_cpu",
+        "def postprocess_prediction_batch",
+        "def postprocess_target_batch",
+        "def reset_metric",
+        "def setup_logging"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pytorch/test_pytorch_examples.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/pytorch/instance-segmentation/run_instance_segmentation_no_trainer.py": {
+      "fichier": "examples/pytorch/instance-segmentation/run_instance_segmentation_no_trainer.py",
+      "langage": "python",
+      "lignes": 751,
+      "taille_bytes": 30421,
+      "entrees": [
+        "accelerate",
+        "accelerate.utils",
+        "albumentations",
+        "argparse",
+        "collections.abc",
+        "datasets",
+        "functools",
+        "huggingface_hub",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "os",
+        "pathlib",
+        "sys",
+        "torch",
+        "torch.utils.data",
+        "torchmetrics.detection.mean_ap",
+        "tqdm",
+        "transformers",
+        "transformers.image_processing_utils",
+        "transformers.utils",
+        "transformers.utils.versions",
+        "typing"
+      ],
+      "sorties": [
+        "def augment_and_transform_batch",
+        "def collate_fn",
+        "def evaluation_loop",
+        "def handle_repository_creation",
+        "def main",
+        "def nested_cpu",
+        "def parse_args",
+        "def setup_logging"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/metrics-monitoring/metrics_example.py": {
+      "fichier": "examples/metrics-monitoring/metrics_example.py",
+      "langage": "python",
+      "lignes": 48,
+      "taille_bytes": 1551,
+      "entrees": [
+        "transformers.utils.metrics"
+      ],
+      "sorties": [
+        "class ExampleClass",
+        "def __init__",
+        "def operation_with_attributes",
+        "def process_data",
+        "def special_operation",
+        "def standalone_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/metrics-monitoring/continuous-batching-dashboard.json": {
+      "fichier": "examples/metrics-monitoring/continuous-batching-dashboard.json",
+      "langage": "json",
+      "lignes": 974,
+      "taille_bytes": 33502,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/metrics-monitoring/tempo.yaml": {
+      "fichier": "examples/metrics-monitoring/tempo.yaml",
+      "langage": "yaml",
+      "lignes": 90,
+      "taille_bytes": 2664,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/metrics-monitoring/docker-compose.yml": {
+      "fichier": "examples/metrics-monitoring/docker-compose.yml",
+      "langage": "yaml",
+      "lignes": 55,
+      "taille_bytes": 1831,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/metrics-monitoring/grafana-dashboard.yaml": {
+      "fichier": "examples/metrics-monitoring/grafana-dashboard.yaml",
+      "langage": "yaml",
+      "lignes": 11,
+      "taille_bytes": 225,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/metrics-monitoring/prometheus.yml": {
+      "fichier": "examples/metrics-monitoring/prometheus.yml",
+      "langage": "yaml",
+      "lignes": 3,
+      "taille_bytes": 32,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/metrics-monitoring/grafana-datasources.yaml": {
+      "fichier": "examples/metrics-monitoring/grafana-datasources.yaml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 233,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/quantization/custom_quantization_int8_example.py": {
+      "fichier": "examples/quantization/custom_quantization_int8_example.py",
+      "langage": "python",
+      "lignes": 252,
+      "taille_bytes": 9422,
+      "entrees": [
+        "accelerate",
+        "huggingface_hub",
+        "json",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "transformers",
+        "transformers.quantizers",
+        "transformers.utils.quantization_config",
+        "typing"
+      ],
+      "sorties": [
+        "class Int8SymmetricConfig",
+        "class Int8SymmetricLinear",
+        "class Int8SymmetricQuantizer",
+        "def __init__",
+        "def __repr__",
+        "def _process_model_after_weight_loading",
+        "def _process_model_before_weight_loading",
+        "def _replace_with_int8_symmetric_linear",
+        "def create_quantized_param",
+        "def forward",
+        "def is_serializable",
+        "def is_trainable",
+        "def param_needs_quantization",
+        "def replace_with_int8_symmetric_linear",
+        "def to_diff_dict",
+        "def update_missing_keys"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/quantization/custom_quantization.py": {
+      "fichier": "examples/quantization/custom_quantization.py",
+      "langage": "python",
+      "lignes": 78,
+      "taille_bytes": 2335,
+      "entrees": [
+        "json",
+        "torch",
+        "transformers",
+        "transformers.quantizers",
+        "transformers.utils.quantization_config",
+        "typing"
+      ],
+      "sorties": [
+        "class CustomConfig",
+        "class CustomQuantizer",
+        "def __init__",
+        "def __repr__",
+        "def _process_model_after_weight_loading",
+        "def _process_model_before_weight_loading",
+        "def is_serializable",
+        "def is_trainable",
+        "def to_dict",
+        "def to_diff_dict"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_duplicated_method.py": {
+      "fichier": "examples/modular-transformers/modular_duplicated_method.py",
+      "langage": "python",
+      "lignes": 11,
+      "taille_bytes": 262,
+      "entrees": [
+        "transformers.models.llama.configuration_llama"
+      ],
+      "sorties": [
+        "class DuplicatedMethodConfig",
+        "def vocab_size"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_my_new_model2.py": {
+      "fichier": "examples/modular-transformers/modeling_my_new_model2.py",
+      "langage": "python",
+      "lignes": 273,
+      "taille_bytes": 11894,
+      "entrees": [
+        "...",
+        "...activations",
+        "...cache_utils",
+        "...integrations",
+        "...modeling_layers",
+        "...modeling_utils",
+        "...processing_utils",
+        "...utils",
+        ".configuration_my_new_model2",
+        "collections.abc",
+        "torch"
+      ],
+      "sorties": [
+        "class MyNewModel2Attention",
+        "class MyNewModel2DecoderLayer",
+        "class MyNewModel2ForSequenceClassification",
+        "class MyNewModel2MLP",
+        "class MyNewModel2PreTrainedModel",
+        "class MyNewModel2RMSNorm",
+        "def __init__",
+        "def _init_weights",
+        "def _norm",
+        "def apply_rotary_pos_emb",
+        "def eager_attention_forward",
+        "def extra_repr",
+        "def forward",
+        "def repeat_kv",
+        "def rotate_half"
+      ],
+      "appelle": [
+        "examples/modular-transformers/configuration_my_new_model2.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_add_function.py": {
+      "fichier": "examples/modular-transformers/modular_add_function.py",
+      "langage": "python",
+      "lignes": 15,
+      "taille_bytes": 704,
+      "entrees": [
+        "transformers.models.llama.modeling_llama",
+        "transformers.models.zamba.modeling_zamba"
+      ],
+      "sorties": [
+        "class TestAttention",
+        "def __init__",
+        "def forward"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_roberta.py": {
+      "fichier": "examples/modular-transformers/modeling_roberta.py",
+      "langage": "python",
+      "lignes": 670,
+      "taille_bytes": 28478,
+      "entrees": [
+        "...",
+        "...activations",
+        "...cache_utils",
+        "...masking_utils",
+        "...modeling_layers",
+        "...modeling_outputs",
+        "...modeling_utils",
+        "...processing_utils",
+        "...pytorch_utils",
+        "...utils",
+        "...utils.generic",
+        "...utils.output_capturing",
+        ".configuration_roberta",
+        "collections.abc",
+        "torch",
+        "torch.nn"
+      ],
+      "sorties": [
+        "class RobertaAttention",
+        "class RobertaCrossAttention",
+        "class RobertaEmbeddings",
+        "class RobertaEncoder",
+        "class RobertaIntermediate",
+        "class RobertaLMPredictionHead",
+        "class RobertaLayer",
+        "class RobertaModel",
+        "class RobertaOutput",
+        "class RobertaPooler",
+        "class RobertaPreTrainedModel",
+        "class RobertaPredictionHeadTransform",
+        "class RobertaSelfAttention",
+        "class RobertaSelfOutput",
+        "def __init__",
+        "def _create_attention_masks",
+        "def _init_weights",
+        "def eager_attention_forward",
+        "def feed_forward_chunk",
+        "def forward",
+        "def get_input_embeddings",
+        "def set_input_embeddings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_dummy_bert.py": {
+      "fichier": "examples/modular-transformers/modular_dummy_bert.py",
+      "langage": "python",
+      "lignes": 28,
+      "taille_bytes": 1137,
+      "entrees": [
+        "...modeling_outputs",
+        "...processing_utils",
+        "...utils",
+        "torch",
+        "transformers.models.bert.modeling_bert"
+      ],
+      "sorties": [
+        "class DummyBertModel",
+        "def forward"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_super.py": {
+      "fichier": "examples/modular-transformers/modular_super.py",
+      "langage": "python",
+      "lignes": 37,
+      "taille_bytes": 1180,
+      "entrees": [
+        "...cache_utils",
+        "torch",
+        "transformers.modeling_outputs",
+        "transformers.models.llama.modeling_llama"
+      ],
+      "sorties": [
+        "class SuperModel",
+        "def forward"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_from_uppercase_model.py": {
+      "fichier": "examples/modular-transformers/modeling_from_uppercase_model.py",
+      "langage": "python",
+      "lignes": 149,
+      "taille_bytes": 6219,
+      "entrees": [
+        "...activations",
+        "...modeling_layers",
+        "...modeling_utils",
+        "...processing_utils",
+        "...utils",
+        ".configuration_from_uppercase_model",
+        "collections.abc",
+        "torch"
+      ],
+      "sorties": [
+        "class FromUppercaseModelAttention",
+        "class FromUppercaseModelEncoderLayer",
+        "class FromUppercaseModelMLP",
+        "def __init__",
+        "def eager_attention_forward",
+        "def forward"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_super.py": {
+      "fichier": "examples/modular-transformers/modeling_super.py",
+      "langage": "python",
+      "lignes": 383,
+      "taille_bytes": 16461,
+      "entrees": [
+        "...activations",
+        "...cache_utils",
+        "...integrations",
+        "...modeling_layers",
+        "...modeling_rope_utils",
+        "...modeling_utils",
+        "...processing_utils",
+        "...utils",
+        "...utils.generic",
+        "...utils.output_capturing",
+        ".configuration_super",
+        "collections.abc",
+        "torch",
+        "transformers.modeling_outputs",
+        "typing"
+      ],
+      "sorties": [
+        "class SuperAttention",
+        "class SuperDecoderLayer",
+        "class SuperMLP",
+        "class SuperModel",
+        "class SuperPreTrainedModel",
+        "class SuperRMSNorm",
+        "class SuperRotaryEmbedding",
+        "def __init__",
+        "def apply_rotary_pos_emb",
+        "def compute_default_rope_parameters",
+        "def eager_attention_forward",
+        "def extra_repr",
+        "def forward",
+        "def repeat_kv",
+        "def rotate_half"
+      ],
+      "appelle": [
+        "examples/modular-transformers/configuration_super.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_roberta.py": {
+      "fichier": "examples/modular-transformers/modular_roberta.py",
+      "langage": "python",
+      "lignes": 17,
+      "taille_bytes": 527,
+      "entrees": [
+        "torch.nn",
+        "transformers.models.bert.modeling_bert"
+      ],
+      "sorties": [
+        "class RobertaEmbeddings",
+        "class RobertaModel",
+        "def __init__"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/configuration_my_new_model2.py": {
+      "fichier": "examples/modular-transformers/configuration_my_new_model2.py",
+      "langage": "python",
+      "lignes": 106,
+      "taille_bytes": 5114,
+      "entrees": [
+        "...configuration_utils",
+        "...modeling_rope_utils"
+      ],
+      "sorties": [
+        "class MyNewModel2Config",
+        "def __init__"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/modular-transformers/modeling_my_new_model2.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/image_processing_new_imgproc_model.py": {
+      "fichier": "examples/modular-transformers/image_processing_new_imgproc_model.py",
+      "langage": "python",
+      "lignes": 280,
+      "taille_bytes": 15059,
+      "entrees": [
+        "...image_processing_utils",
+        "...image_transforms",
+        "...image_utils",
+        "...utils",
+        "PIL",
+        "numpy",
+        "the",
+        "torch"
+      ],
+      "sorties": [
+        "class ImgprocModelImageProcessor",
+        "def __init__",
+        "def new_image_processing_method",
+        "def preprocess",
+        "def resize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_new_imgproc_model.py": {
+      "fichier": "examples/modular-transformers/modular_new_imgproc_model.py",
+      "langage": "python",
+      "lignes": 9,
+      "taille_bytes": 286,
+      "entrees": [
+        "torch",
+        "torch.utils.checkpoint",
+        "transformers.models.blip.image_processing_blip"
+      ],
+      "sorties": [
+        "class ImgprocModelImageProcessor",
+        "def new_image_processing_method"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/convert_examples.sh": {
+      "fichier": "examples/modular-transformers/convert_examples.sh",
+      "langage": "shell",
+      "lignes": 10,
+      "taille_bytes": 333,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_new_task_model.py": {
+      "fichier": "examples/modular-transformers/modular_new_task_model.py",
+      "langage": "python",
+      "lignes": 80,
+      "taille_bytes": 3009,
+      "entrees": [
+        "...cache_utils",
+        "torch",
+        "torch.utils.checkpoint",
+        "transformers.models.paligemma.modeling_paligemma",
+        "typing"
+      ],
+      "sorties": [
+        "class NewTaskModelForNewTask",
+        "def __init__",
+        "def forward",
+        "def resize_token_embeddings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_my_new_model2.py": {
+      "fichier": "examples/modular-transformers/modular_my_new_model2.py",
+      "langage": "python",
+      "lignes": 31,
+      "taille_bytes": 1612,
+      "entrees": [
+        "transformers.models.gemma.modeling_gemma",
+        "transformers.models.llama.configuration_llama"
+      ],
+      "sorties": [
+        "class MyNewModel2Config",
+        "class MyNewModel2ForSequenceClassification"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/configuration_super.py": {
+      "fichier": "examples/modular-transformers/configuration_super.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/modular-transformers/modeling_super.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_switch_function.py": {
+      "fichier": "examples/modular-transformers/modular_switch_function.py",
+      "langage": "python",
+      "lignes": 10,
+      "taille_bytes": 488,
+      "entrees": [
+        "transformers.models.cohere.modeling_cohere",
+        "transformers.models.llama.modeling_llama"
+      ],
+      "sorties": [
+        "class SwitchFunctionAttention"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_multimodal2.py": {
+      "fichier": "examples/modular-transformers/modeling_multimodal2.py",
+      "langage": "python",
+      "lignes": 404,
+      "taille_bytes": 16186,
+      "entrees": [
+        "...activations",
+        "...modeling_layers",
+        "...modeling_outputs",
+        "...modeling_utils",
+        "...processing_utils",
+        "...utils",
+        "...utils.generic",
+        "...utils.output_capturing",
+        ".configuration_multimodal2",
+        "collections.abc",
+        "torch",
+        "transformers.utils"
+      ],
+      "sorties": [
+        "class Multimodal2VisionAttention",
+        "class Multimodal2VisionEmbeddings",
+        "class Multimodal2VisionEncoder",
+        "class Multimodal2VisionEncoderLayer",
+        "class Multimodal2VisionMLP",
+        "class Multimodal2VisionModel",
+        "class Multimodal2VisionPreTrainedModel",
+        "class Multimodal2VisionTransformer",
+        "def __init__",
+        "def _init_weights",
+        "def eager_attention_forward",
+        "def forward",
+        "def get_input_embeddings",
+        "def interpolate_pos_encoding"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_multimodal2.py": {
+      "fichier": "examples/modular-transformers/modular_multimodal2.py",
+      "langage": "python",
+      "lignes": 75,
+      "taille_bytes": 2599,
+      "entrees": [
+        "the",
+        "torch",
+        "transformers.models.clip.modeling_clip",
+        "transformers.utils"
+      ],
+      "sorties": [
+        "class Multimodal2VisionAttention",
+        "class Multimodal2VisionEncoder",
+        "class Multimodal2VisionEncoderLayer",
+        "class Multimodal2VisionMLP",
+        "class Multimodal2VisionModel",
+        "class Multimodal2VisionPreTrainedModel",
+        "class Multimodal2VisionTransformer",
+        "def __init__",
+        "def _init_weights"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_my_new_model.py": {
+      "fichier": "examples/modular-transformers/modular_my_new_model.py",
+      "langage": "python",
+      "lignes": 126,
+      "taille_bytes": 8464,
+      "entrees": [
+        "transformers.models.llama.configuration_llama"
+      ],
+      "sorties": [
+        "class MyNewModelConfig",
+        "def __init__"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_global_indexing.py": {
+      "fichier": "examples/modular-transformers/modeling_global_indexing.py",
+      "langage": "python",
+      "lignes": 170,
+      "taille_bytes": 7811,
+      "entrees": [
+        "...cache_utils",
+        "...integrations",
+        "...processing_utils",
+        "...utils",
+        ".configuration_global_indexing",
+        "collections.abc",
+        "torch",
+        "transformers.modeling_utils"
+      ],
+      "sorties": [
+        "class GlobalIndexingAttention",
+        "def __init__",
+        "def apply_rotary_pos_emb",
+        "def custom_flex",
+        "def eager_attention_forward",
+        "def forward",
+        "def repeat_kv",
+        "def rotate_half"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_switch_function.py": {
+      "fichier": "examples/modular-transformers/modeling_switch_function.py",
+      "langage": "python",
+      "lignes": 161,
+      "taille_bytes": 7649,
+      "entrees": [
+        "...cache_utils",
+        "...integrations",
+        "...modeling_utils",
+        "...processing_utils",
+        "...utils",
+        ".configuration_switch_function",
+        "collections.abc",
+        "torch"
+      ],
+      "sorties": [
+        "class SwitchFunctionAttention",
+        "def __init__",
+        "def apply_rotary_pos_emb",
+        "def eager_attention_forward",
+        "def forward",
+        "def repeat_kv",
+        "def rotate_half"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/configuration_duplicated_method.py": {
+      "fichier": "examples/modular-transformers/configuration_duplicated_method.py",
+      "langage": "python",
+      "lignes": 174,
+      "taille_bytes": 9491,
+      "entrees": [
+        "...configuration_utils",
+        "...modeling_rope_utils"
+      ],
+      "sorties": [
+        "class DuplicatedMethodConfig",
+        "def __init__",
+        "def vocab_size"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_from_uppercase_model.py": {
+      "fichier": "examples/modular-transformers/modular_from_uppercase_model.py",
+      "langage": "python",
+      "lignes": 6,
+      "taille_bytes": 230,
+      "entrees": [
+        "transformers.models.clip.modeling_clip"
+      ],
+      "sorties": [
+        "class FromUppercaseModelEncoderLayer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_add_function.py": {
+      "fichier": "examples/modular-transformers/modeling_add_function.py",
+      "langage": "python",
+      "lignes": 66,
+      "taille_bytes": 3707,
+      "entrees": [
+        "...integrations",
+        "torch"
+      ],
+      "sorties": [
+        "class TestAttention",
+        "def __init__",
+        "def apply_rotary_pos_emb",
+        "def forward",
+        "def rotate_half"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_global_indexing.py": {
+      "fichier": "examples/modular-transformers/modular_global_indexing.py",
+      "langage": "python",
+      "lignes": 16,
+      "taille_bytes": 441,
+      "entrees": [
+        "transformers.modeling_utils",
+        "transformers.models.llama.modeling_llama"
+      ],
+      "sorties": [
+        "class GlobalIndexingAttention",
+        "def custom_flex"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_test_detr.py": {
+      "fichier": "examples/modular-transformers/modular_test_detr.py",
+      "langage": "python",
+      "lignes": 7,
+      "taille_bytes": 341,
+      "entrees": [
+        "transformers.models.deformable_detr.modeling_deformable_detr"
+      ],
+      "sorties": [
+        "class TestDetrModel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/configuration_dummy.py": {
+      "fichier": "examples/modular-transformers/configuration_dummy.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_dummy_bert.py": {
+      "fichier": "examples/modular-transformers/modeling_dummy_bert.py",
+      "langage": "python",
+      "lignes": 670,
+      "taille_bytes": 28629,
+      "entrees": [
+        "...",
+        "...activations",
+        "...cache_utils",
+        "...masking_utils",
+        "...modeling_layers",
+        "...modeling_outputs",
+        "...modeling_utils",
+        "...processing_utils",
+        "...pytorch_utils",
+        "...utils",
+        "...utils.generic",
+        "...utils.output_capturing",
+        ".configuration_dummy_bert",
+        "collections.abc",
+        "torch"
+      ],
+      "sorties": [
+        "class DummyBertAttention",
+        "class DummyBertCrossAttention",
+        "class DummyBertEmbeddings",
+        "class DummyBertEncoder",
+        "class DummyBertIntermediate",
+        "class DummyBertLMPredictionHead",
+        "class DummyBertLayer",
+        "class DummyBertModel",
+        "class DummyBertOutput",
+        "class DummyBertPooler",
+        "class DummyBertPreTrainedModel",
+        "class DummyBertPredictionHeadTransform",
+        "class DummyBertSelfAttention",
+        "class DummyBertSelfOutput",
+        "def __init__",
+        "def _create_attention_masks",
+        "def _init_weights",
+        "def eager_attention_forward",
+        "def feed_forward_chunk",
+        "def forward",
+        "def get_input_embeddings",
+        "def set_input_embeddings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_test_suffix.py": {
+      "fichier": "examples/modular-transformers/modular_test_suffix.py",
+      "langage": "python",
+      "lignes": 12,
+      "taille_bytes": 313,
+      "entrees": [
+        "torch.nn",
+        "transformers.models.llama.modeling_llama"
+      ],
+      "sorties": [
+        "class TestSuffixDecoderLayer",
+        "class TestSuffixLlamaDecoderLayer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modular_new_model.py": {
+      "fichier": "examples/modular-transformers/modular_new_model.py",
+      "langage": "python",
+      "lignes": 36,
+      "taille_bytes": 982,
+      "entrees": [
+        "transformers.models.gemma.configuration_gemma"
+      ],
+      "sorties": [
+        "class NewModelConfig",
+        "def __init__",
+        "def num_heads"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/configuration_my_new_model.py": {
+      "fichier": "examples/modular-transformers/configuration_my_new_model.py",
+      "langage": "python",
+      "lignes": 204,
+      "taille_bytes": 12052,
+      "entrees": [
+        "...configuration_utils",
+        "...modeling_rope_utils"
+      ],
+      "sorties": [
+        "class MyNewModelConfig",
+        "def __init__"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_test_suffix.py": {
+      "fichier": "examples/modular-transformers/modeling_test_suffix.py",
+      "langage": "python",
+      "lignes": 247,
+      "taille_bytes": 11016,
+      "entrees": [
+        "...activations",
+        "...cache_utils",
+        "...integrations",
+        "...modeling_layers",
+        "...modeling_utils",
+        "...processing_utils",
+        "...utils",
+        ".configuration_test_suffix",
+        "collections.abc",
+        "torch",
+        "torch.nn"
+      ],
+      "sorties": [
+        "class TestSuffixDecoderLayer",
+        "class TestSuffixLlamaAttention",
+        "class TestSuffixLlamaDecoderLayer",
+        "class TestSuffixLlamaMLP",
+        "class TestSuffixLlamaRMSNorm",
+        "def __init__",
+        "def apply_rotary_pos_emb",
+        "def eager_attention_forward",
+        "def extra_repr",
+        "def forward",
+        "def repeat_kv",
+        "def rotate_half"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_new_task_model.py": {
+      "fichier": "examples/modular-transformers/modeling_new_task_model.py",
+      "langage": "python",
+      "lignes": 568,
+      "taille_bytes": 25629,
+      "entrees": [
+        "...cache_utils",
+        "...configuration_utils",
+        "...generation",
+        "...masking_utils",
+        "...modeling_flash_attention_utils",
+        "...modeling_outputs",
+        "...modeling_utils",
+        "...processing_utils",
+        "...utils",
+        "..auto",
+        ".configuration_new_task_model",
+        "collections.abc",
+        "dataclasses",
+        "torch",
+        "typing"
+      ],
+      "sorties": [
+        "class NewTaskModelCausalLMOutputWithPast",
+        "class NewTaskModelForNewTask",
+        "class NewTaskModelModel",
+        "class NewTaskModelModelOutputWithPast",
+        "class NewTaskModelMultiModalProjector",
+        "class NewTaskModelPreTrainedModel",
+        "def __init__",
+        "def create_causal_mask_mapping",
+        "def create_masks_for_generate",
+        "def forward",
+        "def get_image_features",
+        "def get_input_embeddings",
+        "def get_placeholder_mask",
+        "def inner_mask",
+        "def prepare_inputs_for_generation",
+        "def resize_token_embeddings",
+        "def set_input_embeddings",
+        "def token_type_ids_mask_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/configuration_new_model.py": {
+      "fichier": "examples/modular-transformers/configuration_new_model.py",
+      "langage": "python",
+      "lignes": 152,
+      "taille_bytes": 8068,
+      "entrees": [
+        "...configuration_utils"
+      ],
+      "sorties": [
+        "class NewModelConfig",
+        "def __init__",
+        "def num_heads"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/modular-transformers/modeling_test_detr.py": {
+      "fichier": "examples/modular-transformers/modeling_test_detr.py",
+      "langage": "python",
+      "lignes": 1419,
+      "taille_bytes": 64315,
+      "entrees": [
+        "...",
+        "...activations",
+        "...backbone_utils",
+        "...integrations",
+        "...modeling_layers",
+        "...modeling_outputs",
+        "...modeling_utils",
+        "...processing_utils",
+        "...pytorch_utils",
+        "...utils",
+        "...utils.generic",
+        "...utils.output_capturing",
+        ".configuration_test_detr",
+        "collections.abc",
+        "dataclasses",
+        "math",
+        "torch",
+        "torch.nn",
+        "torch.nn.functional",
+        "warnings"
+      ],
+      "sorties": [
+        "class MultiScaleDeformableAttention",
+        "class TestDetrConvEncoder",
+        "class TestDetrDecoder",
+        "class TestDetrDecoderLayer",
+        "class TestDetrDecoderOutput",
+        "class TestDetrEncoder",
+        "class TestDetrEncoderLayer",
+        "class TestDetrFrozenBatchNorm2d",
+        "class TestDetrLearnedPositionEmbedding",
+        "class TestDetrMLP",
+        "class TestDetrModel",
+        "class TestDetrModelOutput",
+        "class TestDetrMultiscaleDeformableAttention",
+        "class TestDetrPreTrainedModel",
+        "class TestDetrSelfAttention",
+        "class TestDetrSinePositionEmbedding",
+        "def __init__",
+        "def _init_weights",
+        "def _load_from_state_dict",
+        "def eager_attention_forward",
+        "def forward",
+        "def freeze_backbone",
+        "def gen_encoder_output_proposals",
+        "def get_proposal_pos_embed",
+        "def get_reference_points",
+        "def get_valid_ratio",
+        "def inverse_sigmoid",
+        "def replace_batch_norm",
+        "def unfreeze_backbone"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/training/distributed_training.py": {
+      "fichier": "examples/training/distributed_training.py",
+      "langage": "python",
+      "lignes": 113,
+      "taille_bytes": 3051,
+      "entrees": [
+        "argparse",
+        "os",
+        "torch",
+        "torch.distributed"
+      ],
+      "sorties": [
+        "def init_processes",
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/_config.py": {
+      "fichier": "docs/source/_config.py",
+      "langage": "python",
+      "lignes": 14,
+      "taille_bytes": 534,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/de/_toctree.yml": {
+      "fichier": "docs/source/de/_toctree.yml",
+      "langage": "yaml",
+      "lignes": 40,
+      "taille_bytes": 1209,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/de/_config.py": {
+      "fichier": "docs/source/de/_config.py",
+      "langage": "python",
+      "lignes": 14,
+      "taille_bytes": 534,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/zh/_toctree.yml": {
+      "fichier": "docs/source/zh/_toctree.yml",
+      "langage": "yaml",
+      "lignes": 166,
+      "taille_bytes": 4883,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/ar/_toctree.yml": {
+      "fichier": "docs/source/ar/_toctree.yml",
+      "langage": "yaml",
+      "lignes": 880,
+      "taille_bytes": 29870,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/ar/_config.py": {
+      "fichier": "docs/source/ar/_config.py",
+      "langage": "python",
+      "lignes": 14,
+      "taille_bytes": 534,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/fr/_toctree.yml": {
+      "fichier": "docs/source/fr/_toctree.yml",
+      "langage": "yaml",
+      "lignes": 34,
+      "taille_bytes": 1065,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/fr/_config.py": {
+      "fichier": "docs/source/fr/_config.py",
+      "langage": "python",
+      "lignes": 14,
+      "taille_bytes": 560,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/en/_redirects.yml": {
+      "fichier": "docs/source/en/_redirects.yml",
+      "langage": "yaml",
+      "lignes": 5,
+      "taille_bytes": 128,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/en/_toctree.yml": {
+      "fichier": "docs/source/en/_toctree.yml",
+      "langage": "yaml",
+      "lignes": 1379,
+      "taille_bytes": 40673,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/en/_config.py": {
+      "fichier": "docs/source/en/_config.py",
+      "langage": "python",
+      "lignes": 14,
+      "taille_bytes": 534,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/source/es/_toctree.yml": {
+      "fichier": "docs/source/es/_toctree.yml",
+      "langage": "yaml",
+      "lignes": 107,
+      "taille_bytes": 3275,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "examples/pytorch/old_test_xla_examples.py",
+      "vers": "examples/pytorch/xla_spawn.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/audio-classification/run_audio_classification.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/image-classification/run_image_classification.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/image-pretraining/run_mae.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/instance-segmentation/run_instance_segmentation.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/language-modeling/run_clm.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/language-modeling/run_mlm.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/multiple-choice/run_swag.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/object-detection/run_object_detection.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/question-answering/run_qa.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/question-answering/run_seq2seq_qa.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/semantic-segmentation/run_semantic_segmentation.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/speech-pretraining/run_wav2vec2_pretraining_no_trainer.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/speech-recognition/run_speech_recognition_ctc.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/speech-recognition/run_speech_recognition_ctc_adapter.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/speech-recognition/run_speech_recognition_seq2seq.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/summarization/run_summarization.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/text-classification/run_glue.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/text-generation/run_generation.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/token-classification/run_ner.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/test_pytorch_examples.py",
+      "vers": "examples/pytorch/translation/run_translation.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/question-answering/run_seq2seq_qa.py",
+      "vers": "examples/pytorch/question-answering/trainer_seq2seq_qa.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/question-answering/run_qa.py",
+      "vers": "examples/pytorch/question-answering/trainer_qa.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/question-answering/run_qa.py",
+      "vers": "examples/pytorch/question-answering/utils_qa.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/question-answering/run_qa_no_trainer.py",
+      "vers": "examples/pytorch/question-answering/utils_qa.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/question-answering/run_qa_beam_search_no_trainer.py",
+      "vers": "examples/pytorch/question-answering/utils_qa.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/question-answering/run_qa_beam_search.py",
+      "vers": "examples/pytorch/question-answering/trainer_qa.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pytorch/question-answering/run_qa_beam_search.py",
+      "vers": "examples/pytorch/question-answering/utils_qa.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/modular-transformers/modeling_my_new_model2.py",
+      "vers": "examples/modular-transformers/configuration_my_new_model2.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/modular-transformers/modeling_super.py",
+      "vers": "examples/modular-transformers/configuration_super.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'examples/pytorch/test_pytorch_examples.py'",
+    "feuille → 'examples/pytorch/question-answering/utils_qa.py' (in=4)",
+    "point_entree → 'examples/pytorch/question-answering/run_qa_beam_search.py'"
+  ]
+}

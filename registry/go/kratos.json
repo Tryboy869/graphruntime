@@ -1,0 +1,2016 @@
+{
+  "meta": {
+    "projet": "kratos",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "go": 113,
+      "yaml": 4,
+      "protobuf": 3
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "options.go"
+  },
+  "noeuds": {
+    "options.go": {
+      "fichier": "options.go",
+      "langage": "go",
+      "lignes": 129,
+      "taille_bytes": 3024,
+      "entrees": [],
+      "sorties": [
+        "func AfterStart",
+        "func AfterStop",
+        "func BeforeStart",
+        "func BeforeStop",
+        "func Context",
+        "func Endpoint",
+        "func ID",
+        "func Logger",
+        "func Metadata",
+        "func Name",
+        "func Registrar",
+        "func RegistrarTimeout",
+        "func Server",
+        "func Signal",
+        "func StopTimeout",
+        "func Version",
+        "type Option",
+        "type options"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app.go": {
+      "fichier": "app.go",
+      "langage": "go",
+      "lignes": 212,
+      "taille_bytes": 4827,
+      "entrees": [],
+      "sorties": [
+        "func FromContext",
+        "func New",
+        "func NewContext",
+        "type App",
+        "type AppInfo",
+        "type appKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app_test.go": {
+      "fichier": "app_test.go",
+      "langage": "go",
+      "lignes": 300,
+      "taille_bytes": 7396,
+      "entrees": [],
+      "sorties": [
+        "func TestApp",
+        "func TestApp_Context",
+        "func TestApp_ContextCanceled",
+        "func TestApp_Endpoint",
+        "func TestApp_ID",
+        "func TestApp_Metadata",
+        "func TestApp_Name",
+        "func TestApp_Version",
+        "func TestApp_buildInstance",
+        "service map",
+        "type fields",
+        "type mockRegistry"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".golangci.yml": {
+      "fichier": ".golangci.yml",
+      "langage": "yaml",
+      "lignes": 71,
+      "taille_bytes": 1148,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "codecov.yml": {
+      "fichier": "codecov.yml",
+      "langage": "yaml",
+      "lignes": 3,
+      "taille_bytes": 40,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "version.go": {
+      "fichier": "version.go",
+      "langage": "go",
+      "lignes": 4,
+      "taille_bytes": 83,
+      "entrees": [],
+      "sorties": [
+        "const Release"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "options_test.go": {
+      "fichier": "options_test.go",
+      "langage": "go",
+      "lignes": 199,
+      "taille_bytes": 3975,
+      "entrees": [],
+      "sorties": [
+        "func TestAfterStart",
+        "func TestAfterStop",
+        "func TestBeforeStart",
+        "func TestBeforeStop",
+        "func TestContext",
+        "func TestEndpoint",
+        "func TestID",
+        "func TestLogger",
+        "func TestMetadata",
+        "func TestName",
+        "func TestRegistrar",
+        "func TestRegistrarTimeout",
+        "func TestServer",
+        "func TestSignal",
+        "func TestStopTimeout",
+        "func TestVersion",
+        "type ctxKey",
+        "type mockRegistrar",
+        "type mockServer",
+        "type mockSignal"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/metadata/metadata.proto": {
+      "fichier": "api/metadata/metadata.proto",
+      "langage": "protobuf",
+      "lignes": 41,
+      "taille_bytes": 1075,
+      "entrees": [],
+      "sorties": [
+        "message GetServiceDescReply",
+        "message GetServiceDescRequest",
+        "message ListServicesReply",
+        "message ListServicesRequest",
+        "rpc GetServiceDesc",
+        "rpc ListServices",
+        "service Metadata"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/metadata/metadata_grpc.pb.go": {
+      "fichier": "api/metadata/metadata_grpc.pb.go",
+      "langage": "go",
+      "lignes": 145,
+      "taille_bytes": 5381,
+      "entrees": [],
+      "sorties": [
+        "func NewMetadataClient",
+        "func RegisterMetadataServer",
+        "func _Metadata_GetServiceDesc_Handler",
+        "func _Metadata_ListServices_Handler",
+        "type MetadataClient",
+        "type MetadataServer",
+        "type UnimplementedMetadataServer",
+        "type UnsafeMetadataServer",
+        "type metadataClient"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/metadata/metadata.pb.go": {
+      "fichier": "api/metadata/metadata.pb.go",
+      "langage": "go",
+      "lignes": 365,
+      "taille_bytes": 13581,
+      "entrees": [],
+      "sorties": [
+        "func file_metadata_metadata_proto_init",
+        "func file_metadata_metadata_proto_rawDescGZIP",
+        "func init",
+        "type GetServiceDescReply",
+        "type GetServiceDescRequest",
+        "type ListServicesReply",
+        "type ListServicesRequest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/metadata/metadata_http.pb.go": {
+      "fichier": "api/metadata/metadata_http.pb.go",
+      "langage": "go",
+      "lignes": 109,
+      "taille_bytes": 3616,
+      "entrees": [],
+      "sorties": [
+        "func NewMetadataHTTPClient",
+        "func RegisterMetadataHTTPServer",
+        "func _Metadata_GetServiceDesc0_HTTP_Handler",
+        "func _Metadata_ListServices0_HTTP_Handler",
+        "type MetadataHTTPClient",
+        "type MetadataHTTPClientImpl",
+        "type MetadataHTTPServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/metadata/server.go": {
+      "fichier": "api/metadata/server.go",
+      "langage": "go",
+      "lignes": 206,
+      "taille_bytes": 5542,
+      "entrees": [],
+      "sorties": [
+        "func NewServer",
+        "func allDependency",
+        "func decodeFileDesc",
+        "func decompress",
+        "func fileDescriptorProto",
+        "func parseMetadata",
+        "type Server"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/encoding_test.go": {
+      "fichier": "encoding/encoding_test.go",
+      "langage": "go",
+      "lignes": 87,
+      "taille_bytes": 2040,
+      "entrees": [],
+      "sorties": [
+        "func TestRegisterCodec",
+        "func didPanic",
+        "type PanicTestFunc",
+        "type codec",
+        "type codec2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/encoding.go": {
+      "fichier": "encoding/encoding.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 1340,
+      "entrees": [],
+      "sorties": [
+        "func GetCodec",
+        "func RegisterCodec",
+        "type Codec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/form/form_test.go": {
+      "fichier": "encoding/form/form_test.go",
+      "langage": "go",
+      "lignes": 296,
+      "taille_bytes": 8439,
+      "entrees": [],
+      "sorties": [
+        "func TestDecodeBytesValuePb",
+        "func TestDecodeStructPb",
+        "func TestEncodeFieldMask",
+        "func TestFormCodecMarshal",
+        "func TestFormCodecUnmarshal",
+        "func TestFormEncoderAndDecoder",
+        "func TestOptional",
+        "func TestProtoEncodeDecode",
+        "func TestWithUnsupportedType",
+        "func init",
+        "type LoginRequest",
+        "type testFormTagName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/form/form.go": {
+      "fichier": "encoding/form/form.go",
+      "langage": "go",
+      "lignes": 87,
+      "taille_bytes": 1596,
+      "entrees": [],
+      "sorties": [
+        "func init",
+        "type codec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/form/proto_encode_test.go": {
+      "fichier": "encoding/form/proto_encode_test.go",
+      "langage": "go",
+      "lignes": 112,
+      "taille_bytes": 3159,
+      "entrees": [],
+      "sorties": [
+        "func TestEncodeValues",
+        "func TestIsASCIILower",
+        "func TestJsonCamelCase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/form/well_known_types_test.go": {
+      "fichier": "encoding/form/well_known_types_test.go",
+      "langage": "go",
+      "lignes": 95,
+      "taille_bytes": 2145,
+      "entrees": [],
+      "sorties": [
+        "func TestMarshalBytes",
+        "func TestMarshalDuration",
+        "func TestMarshalTimeStamp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/form/proto_decode.go": {
+      "fichier": "encoding/form/proto_decode.go",
+      "langage": "go",
+      "lignes": 381,
+      "taille_bytes": 11745,
+      "entrees": [],
+      "sorties": [
+        "const fieldSeparator",
+        "func DecodeValues",
+        "func getDescriptorByFieldAndName",
+        "func getFieldDescriptor",
+        "func isASCIIUpper",
+        "func jsonSnakeCase",
+        "func parseField",
+        "func parseMessage",
+        "func parseURLQueryMapKey",
+        "func populateField",
+        "func populateFieldValues",
+        "func populateMapField",
+        "func populateRepeatedField"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/form/proto_encode.go": {
+      "fichier": "encoding/form/proto_encode.go",
+      "langage": "go",
+      "lignes": 218,
+      "taille_bytes": 6046,
+      "entrees": [],
+      "sorties": [
+        "func EncodeField",
+        "func EncodeFieldMask",
+        "func EncodeValues",
+        "func encodeByField",
+        "func encodeMapField",
+        "func encodeMessage",
+        "func encodeRepeatedField",
+        "func isASCIILower",
+        "func jsonCamelCase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/form/proto_decode_test.go": {
+      "fichier": "encoding/form/proto_decode_test.go",
+      "langage": "go",
+      "lignes": 348,
+      "taille_bytes": 9264,
+      "entrees": [],
+      "sorties": [
+        "func BenchmarkParseURLQueryMapKey",
+        "func TestDecodeValues",
+        "func TestGetFieldDescriptor",
+        "func TestIsASCIIUpper",
+        "func TestJsonSnakeCase",
+        "func TestParseField",
+        "func TestParseURLQueryMapKey",
+        "func TestPopulateMapField",
+        "func TestPopulateMapSepField",
+        "func TestPopulateRepeatedField"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/form/well_known_types.go": {
+      "fichier": "encoding/form/well_known_types.go",
+      "langage": "go",
+      "lignes": 94,
+      "taille_bytes": 3062,
+      "entrees": [],
+      "sorties": [
+        "func marshalBytes",
+        "func marshalDuration",
+        "func marshalTimestamp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/proto/proto.go": {
+      "fichier": "encoding/proto/proto.go",
+      "langage": "go",
+      "lignes": 51,
+      "taille_bytes": 1034,
+      "entrees": [],
+      "sorties": [
+        "const Name",
+        "func getProtoMessage",
+        "func init",
+        "type codec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/proto/proto_test.go": {
+      "fichier": "encoding/proto/proto_test.go",
+      "langage": "go",
+      "lignes": 104,
+      "taille_bytes": 2461,
+      "entrees": [],
+      "sorties": [
+        "func TestCodec",
+        "func TestCodec2",
+        "func TestName",
+        "func Test_getProtoMessage",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/json/json_test.go": {
+      "fichier": "encoding/json/json_test.go",
+      "langage": "go",
+      "lignes": 147,
+      "taille_bytes": 2905,
+      "entrees": [],
+      "sorties": [
+        "func TestJSON_Marshal",
+        "func TestJSON_Unmarshal",
+        "type mock",
+        "type testEmbed",
+        "type testMessage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/json/json.go": {
+      "fichier": "encoding/json/json.go",
+      "langage": "go",
+      "lignes": 68,
+      "taille_bytes": 1430,
+      "entrees": [],
+      "sorties": [
+        "const Name",
+        "func init",
+        "type codec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/xml/xml_test.go": {
+      "fichier": "encoding/xml/xml_test.go",
+      "langage": "go",
+      "lignes": 117,
+      "taille_bytes": 2602,
+      "entrees": [],
+      "sorties": [
+        "func TestCodec_Marshal",
+        "func TestCodec_NilUnmarshal",
+        "func TestCodec_Unmarshal",
+        "type NestedOrder",
+        "type Plain"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/xml/xml.go": {
+      "fichier": "encoding/xml/xml.go",
+      "langage": "go",
+      "lignes": 29,
+      "taille_bytes": 472,
+      "entrees": [],
+      "sorties": [
+        "const Name",
+        "func init",
+        "type codec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/yaml/yaml.go": {
+      "fichier": "encoding/yaml/yaml.go",
+      "langage": "go",
+      "lignes": 29,
+      "taille_bytes": 482,
+      "entrees": [],
+      "sorties": [
+        "const Name",
+        "func init",
+        "type codec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encoding/yaml/yaml_test.go": {
+      "fichier": "encoding/yaml/yaml_test.go",
+      "langage": "go",
+      "lignes": 104,
+      "taille_bytes": 1675,
+      "entrees": [],
+      "sorties": [
+        "func TestCodec_Marshal",
+        "func TestCodec_Unmarshal"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/middleware_test.go": {
+      "fichier": "middleware/middleware_test.go",
+      "langage": "go",
+      "lignes": 61,
+      "taille_bytes": 1330,
+      "entrees": [],
+      "sorties": [
+        "func TestChain",
+        "func test1Middleware",
+        "func test2Middleware",
+        "func test3Middleware"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/middleware.go": {
+      "fichier": "middleware/middleware.go",
+      "langage": "go",
+      "lignes": 21,
+      "taille_bytes": 485,
+      "entrees": [],
+      "sorties": [
+        "func Chain",
+        "type Handler",
+        "type Middleware"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/ratelimit/ratelimit.go": {
+      "fichier": "middleware/ratelimit/ratelimit.go",
+      "langage": "go",
+      "lignes": 52,
+      "taille_bytes": 1196,
+      "entrees": [],
+      "sorties": [
+        "func Server",
+        "func WithLimiter",
+        "type Option",
+        "type options"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/ratelimit/ratelimit_test.go": {
+      "fichier": "middleware/ratelimit/ratelimit_test.go",
+      "langage": "go",
+      "lignes": 64,
+      "taille_bytes": 1226,
+      "entrees": [],
+      "sorties": [
+        "func TestServer",
+        "func Test_WithLimiter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/recovery/recovery.go": {
+      "fichier": "middleware/recovery/recovery.go",
+      "langage": "go",
+      "lignes": 62,
+      "taille_bytes": 1524,
+      "entrees": [],
+      "sorties": [
+        "func Recovery",
+        "func WithHandler",
+        "type HandlerFunc",
+        "type Latency",
+        "type Option",
+        "type options"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/recovery/recovery_test.go": {
+      "fichier": "middleware/recovery/recovery_test.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 1004,
+      "entrees": [],
+      "sorties": [
+        "func TestNotPanic",
+        "func TestOnce"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/circuitbreaker/circuitbreaker_test.go": {
+      "fichier": "middleware/circuitbreaker/circuitbreaker_test.go",
+      "langage": "go",
+      "lignes": 80,
+      "taille_bytes": 1795,
+      "entrees": [],
+      "sorties": [
+        "func TestServer",
+        "func Test_WithGroup",
+        "type circuitBreakerMock",
+        "type transportMock"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/circuitbreaker/circuitbreaker.go": {
+      "fichier": "middleware/circuitbreaker/circuitbreaker.go",
+      "langage": "go",
+      "lignes": 74,
+      "taille_bytes": 2188,
+      "entrees": [],
+      "sorties": [
+        "func Client",
+        "func WithCircuitBreaker",
+        "func WithGroup",
+        "type Option",
+        "type options"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/metadata/metadata.go": {
+      "fichier": "middleware/metadata/metadata.go",
+      "langage": "go",
+      "lignes": 116,
+      "taille_bytes": 2520,
+      "entrees": [],
+      "sorties": [
+        "func Client",
+        "func Server",
+        "func WithConstants",
+        "func WithPropagatedPrefix",
+        "type Option",
+        "type options"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/metadata/metadata_test.go": {
+      "fichier": "middleware/metadata/metadata_test.go",
+      "langage": "go",
+      "lignes": 179,
+      "taille_bytes": 5005,
+      "entrees": [],
+      "sorties": [
+        "func TestClient",
+        "func TestOptions_WithPropagatedPrefix",
+        "func TestOptions_hasPrefix",
+        "func TestSever",
+        "func TestWithConstants",
+        "type headerCarrier",
+        "type testTransport"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/metrics/otel.go": {
+      "fichier": "middleware/metrics/otel.go",
+      "langage": "go",
+      "lignes": 7,
+      "taille_bytes": 114,
+      "entrees": [],
+      "sorties": [
+        "func EnableOTELExemplar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/metrics/metrics_test.go": {
+      "fichier": "middleware/metrics/metrics_test.go",
+      "langage": "go",
+      "lignes": 256,
+      "taille_bytes": 6508,
+      "entrees": [],
+      "sorties": [
+        "func TestClient",
+        "func TestServer",
+        "func TestWithRequests",
+        "func TestWithSeconds",
+        "func init",
+        "type dummyExporter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/metrics/metrics.go": {
+      "fichier": "middleware/metrics/metrics.go",
+      "langage": "go",
+      "lignes": 210,
+      "taille_bytes": 5728,
+      "entrees": [],
+      "sorties": [
+        "func Client",
+        "func DefaultRequestsCounter",
+        "func DefaultSecondsHistogram",
+        "func DefaultSecondsHistogramView",
+        "func Server",
+        "func WithRequests",
+        "func WithSeconds",
+        "type Option",
+        "type options"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/selector/selector_test.go": {
+      "fichier": "middleware/selector/selector_test.go",
+      "langage": "go",
+      "lignes": 356,
+      "taille_bytes": 8989,
+      "entrees": [],
+      "sorties": [
+        "func TestFunc",
+        "func TestHeaderFunc",
+        "func TestMatch",
+        "func TestMatchClient",
+        "func Test_InvalidRegexSkipped",
+        "func Test_RegexMatch",
+        "func Test_matches",
+        "func testMiddleware",
+        "type Transport",
+        "type mockHeader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/selector/selector.go": {
+      "fichier": "middleware/selector/selector.go",
+      "langage": "go",
+      "lignes": 143,
+      "taille_bytes": 3327,
+      "entrees": [],
+      "sorties": [
+        "func Client",
+        "func Server",
+        "func pathMatch",
+        "func prefixMatch",
+        "func selector",
+        "type Builder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/validate/validate_test.go": {
+      "fichier": "middleware/validate/validate_test.go",
+      "langage": "go",
+      "lignes": 43,
+      "taille_bytes": 891,
+      "entrees": [],
+      "sorties": [
+        "func TestTable",
+        "type protoVali"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/validate/validate.go": {
+      "fichier": "middleware/validate/validate.go",
+      "langage": "go",
+      "lignes": 60,
+      "taille_bytes": 1640,
+      "entrees": [],
+      "sorties": [
+        "func Validator",
+        "type ValidatorFunc",
+        "type validator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/logging/logging.go": {
+      "fichier": "middleware/logging/logging.go",
+      "langage": "go",
+      "lignes": 119,
+      "taille_bytes": 2870,
+      "entrees": [],
+      "sorties": [
+        "func Client",
+        "func Server",
+        "func extractArgs",
+        "func extractError",
+        "type Redacter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/logging/logging_test.go": {
+      "fichier": "middleware/logging/logging_test.go",
+      "langage": "go",
+      "lignes": 235,
+      "taille_bytes": 5809,
+      "entrees": [],
+      "sorties": [
+        "func TestClient_CallerPath",
+        "func TestExtractArgs",
+        "func TestExtractError",
+        "func TestHTTP",
+        "func TestServer_CallerPath",
+        "type Transport",
+        "type extractKeyValues"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/auth/jwt/jwt_test.go": {
+      "fichier": "middleware/auth/jwt/jwt_test.go",
+      "langage": "go",
+      "lignes": 525,
+      "taille_bytes": 14537,
+      "entrees": [],
+      "sorties": [
+        "func TestClient",
+        "func TestClientMissKey",
+        "func TestClientWithClaims",
+        "func TestClientWithHeader",
+        "func TestJWTServerParse",
+        "func TestMissingKeyFunc",
+        "func TestNewContextAndFromContext",
+        "func TestServer",
+        "func TestTokenExpire",
+        "func newTokenHeader",
+        "type CustomerClaims",
+        "type Transport",
+        "type headerCarrier"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/auth/jwt/jwt.go": {
+      "fichier": "middleware/auth/jwt/jwt.go",
+      "langage": "go",
+      "lignes": 177,
+      "taille_bytes": 5319,
+      "entrees": [],
+      "sorties": [
+        "func Client",
+        "func FromContext",
+        "func NewContext",
+        "func Server",
+        "func WithClaims",
+        "func WithSigningMethod",
+        "func WithTokenHeader",
+        "type Option",
+        "type authKey",
+        "type options"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/tracer_test.go": {
+      "fichier": "middleware/tracing/tracer_test.go",
+      "langage": "go",
+      "lignes": 56,
+      "taille_bytes": 1435,
+      "entrees": [],
+      "sorties": [
+        "func TestNewTracer",
+        "func TestTracer_End"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/tracer.go": {
+      "fichier": "middleware/tracing/tracer.go",
+      "langage": "go",
+      "lignes": 82,
+      "taille_bytes": 2154,
+      "entrees": [],
+      "sorties": [
+        "func NewTracer",
+        "type Tracer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/statshandler.go": {
+      "fichier": "middleware/tracing/statshandler.go",
+      "langage": "go",
+      "lignes": 43,
+      "taille_bytes": 1071,
+      "entrees": [],
+      "sorties": [
+        "type ClientHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/span.go": {
+      "fichier": "middleware/tracing/span.go",
+      "langage": "go",
+      "lignes": 152,
+      "taille_bytes": 4253,
+      "entrees": [],
+      "sorties": [
+        "func parseFullMethod",
+        "func parseTarget",
+        "func peerAttr",
+        "func setClientSpan",
+        "func setServerSpan"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/statshandler_test.go": {
+      "fichier": "middleware/tracing/statshandler_test.go",
+      "langage": "go",
+      "lignes": 80,
+      "taille_bytes": 2143,
+      "entrees": [],
+      "sorties": [
+        "const testKey",
+        "func TestClient_HandleConn",
+        "func TestClient_HandleRPC",
+        "func TestClient_TagConn",
+        "func TestClient_TagRPC",
+        "type ctxKey",
+        "type mockSpan"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/tracing.go": {
+      "fichier": "middleware/tracing/tracing.go",
+      "langage": "go",
+      "lignes": 96,
+      "taille_bytes": 2641,
+      "entrees": [],
+      "sorties": [
+        "func Client",
+        "func Server",
+        "func SpanID",
+        "func TraceID",
+        "func WithPropagator",
+        "func WithTracerName",
+        "func WithTracerProvider",
+        "type Option",
+        "type options"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/metadata.go": {
+      "fichier": "middleware/tracing/metadata.go",
+      "langage": "go",
+      "lignes": 46,
+      "taille_bytes": 1165,
+      "entrees": [],
+      "sorties": [
+        "const serviceHeader",
+        "type Metadata"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/tracing_test.go": {
+      "fichier": "middleware/tracing/tracing_test.go",
+      "langage": "go",
+      "lignes": 239,
+      "taille_bytes": 7059,
+      "entrees": [],
+      "sorties": [
+        "func TestClient",
+        "func TestServer",
+        "func TestTracer",
+        "type headerCarrier",
+        "type mockTransport"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/span_test.go": {
+      "fichier": "middleware/tracing/span_test.go",
+      "langage": "go",
+      "lignes": 251,
+      "taille_bytes": 5973,
+      "entrees": [],
+      "sorties": [
+        "func TestSetClientSpan",
+        "func TestSetServerSpan",
+        "func Test_parseFullMethod",
+        "func Test_parseTarget",
+        "func Test_peerAttr"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "middleware/tracing/metadata_test.go": {
+      "fichier": "middleware/tracing/metadata_test.go",
+      "langage": "go",
+      "lignes": 107,
+      "taille_bytes": 2714,
+      "entrees": [],
+      "sorties": [
+        "func TestFields",
+        "func TestMetadata_Extract",
+        "func TestMetadata_Inject",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-errors/errors.go": {
+      "fichier": "cmd/protoc-gen-go-errors/errors.go",
+      "langage": "go",
+      "lignes": 135,
+      "taille_bytes": 3628,
+      "entrees": [],
+      "sorties": [
+        "func case2Camel",
+        "func genErrorsReason",
+        "func generateFile",
+        "func generateFileContent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-errors/buf.yaml": {
+      "fichier": "cmd/protoc-gen-go-errors/buf.yaml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 312,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-errors/buf.gen.yaml": {
+      "fichier": "cmd/protoc-gen-go-errors/buf.gen.yaml",
+      "langage": "yaml",
+      "lignes": 6,
+      "taille_bytes": 120,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-errors/errors_test.go": {
+      "fichier": "cmd/protoc-gen-go-errors/errors_test.go",
+      "langage": "go",
+      "lignes": 62,
+      "taille_bytes": 1010,
+      "entrees": [],
+      "sorties": [
+        "func Test_case2Camel",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-errors/template.go": {
+      "fichier": "cmd/protoc-gen-go-errors/template.go",
+      "langage": "go",
+      "lignes": 35,
+      "taille_bytes": 552,
+      "entrees": [],
+      "sorties": [
+        "type errorInfo",
+        "type errorWrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-errors/version.go": {
+      "fichier": "cmd/protoc-gen-go-errors/version.go",
+      "langage": "go",
+      "lignes": 4,
+      "taille_bytes": 95,
+      "entrees": [],
+      "sorties": [
+        "const release"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-errors/main.go": {
+      "fichier": "cmd/protoc-gen-go-errors/main.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 637,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-errors/errors/errors.pb.go": {
+      "fichier": "cmd/protoc-gen-go-errors/errors/errors.pb.go",
+      "langage": "go",
+      "lignes": 229,
+      "taille_bytes": 8402,
+      "entrees": [],
+      "sorties": [
+        "func file_errors_proto_init",
+        "func file_errors_proto_rawDescGZIP",
+        "func init",
+        "type Error"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-errors/errors/errors.proto": {
+      "fichier": "cmd/protoc-gen-go-errors/errors/errors.proto",
+      "langage": "protobuf",
+      "lignes": 25,
+      "taille_bytes": 529,
+      "entrees": [],
+      "sorties": [
+        "message Error"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-http/template.go": {
+      "fichier": "cmd/protoc-gen-go-http/template.go",
+      "langage": "go",
+      "lignes": 52,
+      "taille_bytes": 1060,
+      "entrees": [],
+      "sorties": [
+        "type methodDesc",
+        "type serviceDesc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-http/http.go": {
+      "fichier": "cmd/protoc-gen-go-http/http.go",
+      "langage": "go",
+      "lignes": 340,
+      "taille_bytes": 10493,
+      "entrees": [],
+      "sorties": [
+        "const deprecationComment",
+        "func buildHTTPRule",
+        "func buildMethodDesc",
+        "func buildPathVars",
+        "func camelCase",
+        "func camelCaseVars",
+        "func genService",
+        "func generateFile",
+        "func generateFileContent",
+        "func hasHTTPRule",
+        "func isASCIIDigit",
+        "func isASCIILower",
+        "func protocVersion",
+        "func replacePath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-http/version.go": {
+      "fichier": "cmd/protoc-gen-go-http/version.go",
+      "langage": "go",
+      "lignes": 4,
+      "taille_bytes": 93,
+      "entrees": [],
+      "sorties": [
+        "const release"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-http/http_test.go": {
+      "fichier": "cmd/protoc-gen-go-http/http_test.go",
+      "langage": "go",
+      "lignes": 100,
+      "taille_bytes": 3007,
+      "entrees": [],
+      "sorties": [
+        "func TestIteration",
+        "func TestIterationMiddle",
+        "func TestNoParameters",
+        "func TestNoReplacePath",
+        "func TestReplaceBoundary",
+        "func TestReplacePath",
+        "func TestSingleParam",
+        "func TestTwoParametersReplacement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protoc-gen-go-http/main.go": {
+      "fichier": "cmd/protoc-gen-go-http/main.go",
+      "langage": "go",
+      "lignes": 35,
+      "taille_bytes": 826,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/version.go": {
+      "fichier": "cmd/kratos/version.go",
+      "langage": "go",
+      "lignes": 4,
+      "taille_bytes": 86,
+      "entrees": [],
+      "sorties": [
+        "const release"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/main.go": {
+      "fichier": "cmd/kratos/main.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 838,
+      "entrees": [],
+      "sorties": [
+        "func init",
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/change/get_test.go": {
+      "fichier": "cmd/kratos/internal/change/get_test.go",
+      "langage": "go",
+      "lignes": 25,
+      "taille_bytes": 675,
+      "entrees": [],
+      "sorties": [
+        "func TestParseGithubURL"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/change/get.go": {
+      "fichier": "cmd/kratos/internal/change/get.go",
+      "langage": "go",
+      "lignes": 216,
+      "taille_bytes": 4860,
+      "entrees": [],
+      "sorties": [
+        "func ParseCommitsInfo",
+        "func ParseGithubURL",
+        "func ParseReleaseInfo",
+        "func fatal",
+        "func printGithubErrorInfo",
+        "func requestGithubAPI",
+        "type CommitInfo",
+        "type ErrorInfo",
+        "type GithubAPI",
+        "type ReleaseInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/change/change.go": {
+      "fichier": "cmd/kratos/internal/change/change.go",
+      "langage": "go",
+      "lignes": 45,
+      "taille_bytes": 989,
+      "entrees": [],
+      "sorties": [
+        "func init",
+        "func run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/base/repo.go": {
+      "fichier": "cmd/kratos/internal/base/repo.go",
+      "langage": "go",
+      "lignes": 126,
+      "taille_bytes": 2852,
+      "entrees": [],
+      "sorties": [
+        "func NewRepo",
+        "func repoDir",
+        "type Repo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/base/repo_test.go": {
+      "fichier": "cmd/kratos/internal/base/repo_test.go",
+      "langage": "go",
+      "lignes": 51,
+      "taille_bytes": 1545,
+      "entrees": [],
+      "sorties": [
+        "func TestRepo",
+        "func TestRepoClone"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/base/install.go": {
+      "fichier": "cmd/kratos/internal/base/install.go",
+      "langage": "go",
+      "lignes": 25,
+      "taille_bytes": 405,
+      "entrees": [],
+      "sorties": [
+        "func GoInstall"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/base/path.go": {
+      "fichier": "cmd/kratos/internal/base/path.go",
+      "langage": "go",
+      "lignes": 108,
+      "taille_bytes": 2052,
+      "entrees": [],
+      "sorties": [
+        "func Tree",
+        "func copyDir",
+        "func copyFile",
+        "func hasSets",
+        "func kratosHome",
+        "func kratosHomeWithDir"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/base/vcs_url.go": {
+      "fichier": "cmd/kratos/internal/base/vcs_url.go",
+      "langage": "go",
+      "lignes": 58,
+      "taille_bytes": 1441,
+      "entrees": [],
+      "sorties": [
+        "func ParseVCSUrl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/base/mod.go": {
+      "fichier": "cmd/kratos/internal/base/mod.go",
+      "langage": "go",
+      "lignes": 62,
+      "taille_bytes": 1525,
+      "entrees": [],
+      "sorties": [
+        "func KratosMod",
+        "func ModulePath",
+        "func ModuleVersion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/base/mod_test.go": {
+      "fichier": "cmd/kratos/internal/base/mod_test.go",
+      "langage": "go",
+      "lignes": 43,
+      "taille_bytes": 750,
+      "entrees": [],
+      "sorties": [
+        "func TestModulePath",
+        "func TestModuleVersion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/base/vcs_url_test.go": {
+      "fichier": "cmd/kratos/internal/base/vcs_url_test.go",
+      "langage": "go",
+      "lignes": 55,
+      "taille_bytes": 1511,
+      "entrees": [],
+      "sorties": [
+        "func TestParseSsh",
+        "func TestParseVCSUrl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/run/run.go": {
+      "fichier": "cmd/kratos/internal/run/run.go",
+      "langage": "go",
+      "lignes": 145,
+      "taille_bytes": 3254,
+      "entrees": [],
+      "sorties": [
+        "func Run",
+        "func changeWorkingDirectory",
+        "func findCMD",
+        "func init",
+        "func splitArgs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/project/project_linux_test.go": {
+      "fichier": "cmd/kratos/internal/project/project_linux_test.go",
+      "langage": "go",
+      "lignes": 28,
+      "taille_bytes": 614,
+      "entrees": [],
+      "sorties": [
+        "func Test_processProjectParams",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/project/project_windows_test.go": {
+      "fichier": "cmd/kratos/internal/project/project_windows_test.go",
+      "langage": "go",
+      "lignes": 29,
+      "taille_bytes": 742,
+      "entrees": [],
+      "sorties": [
+        "func Test_processProjectParams",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/project/new.go": {
+      "fichier": "cmd/kratos/internal/project/new.go",
+      "langage": "go",
+      "lignes": 66,
+      "taille_bytes": 1802,
+      "entrees": [],
+      "sorties": [
+        "type Project"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/project/project_test.go": {
+      "fichier": "cmd/kratos/internal/project/project_test.go",
+      "langage": "go",
+      "lignes": 144,
+      "taille_bytes": 3446,
+      "entrees": [],
+      "sorties": [
+        "func TestCmdNew",
+        "func TestCmdNewNoMod",
+        "func assertGoMod",
+        "func assertImportsInclude",
+        "func changeCurrentDir",
+        "func imports"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/project/add.go": {
+      "fichier": "cmd/kratos/internal/project/add.go",
+      "langage": "go",
+      "lignes": 70,
+      "taille_bytes": 1938,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/project/project.go": {
+      "fichier": "cmd/kratos/internal/project/project.go",
+      "langage": "go",
+      "lignes": 205,
+      "taille_bytes": 5197,
+      "entrees": [],
+      "sorties": [
+        "func getgomodProjectRoot",
+        "func gomodIsNotExistIn",
+        "func init",
+        "func processProjectParams",
+        "func run",
+        "func selectRepo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/upgrade/upgrade.go": {
+      "fichier": "cmd/kratos/internal/upgrade/upgrade.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 840,
+      "entrees": [],
+      "sorties": [
+        "func Run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/proto/proto.go": {
+      "fichier": "cmd/kratos/internal/proto/proto.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 545,
+      "entrees": [],
+      "sorties": [
+        "func init"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/proto/client/client.go": {
+      "fichier": "cmd/kratos/internal/proto/client/client.go",
+      "langage": "go",
+      "lignes": 130,
+      "taille_bytes": 3098,
+      "entrees": [],
+      "sorties": [
+        "func generate",
+        "func init",
+        "func look",
+        "func pathExists",
+        "func run",
+        "func walk"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/proto/add/proto.go": {
+      "fichier": "cmd/kratos/internal/proto/add/proto.go",
+      "langage": "go",
+      "lignes": 40,
+      "taille_bytes": 749,
+      "entrees": [],
+      "sorties": [
+        "type Proto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/proto/add/template.go": {
+      "fichier": "cmd/kratos/internal/proto/add/template.go",
+      "langage": "go",
+      "lignes": 52,
+      "taille_bytes": 1326,
+      "entrees": [],
+      "sorties": [
+        "const protoTemplate",
+        "message Create",
+        "message Delete",
+        "message Get",
+        "message List",
+        "message Update",
+        "rpc Create",
+        "rpc Delete",
+        "rpc Get",
+        "rpc List",
+        "rpc Update"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/proto/add/add.go": {
+      "fichier": "cmd/kratos/internal/proto/add/add.go",
+      "langage": "go",
+      "lignes": 78,
+      "taille_bytes": 1664,
+      "entrees": [],
+      "sorties": [
+        "func goPackage",
+        "func javaPackage",
+        "func modName",
+        "func run",
+        "func serviceName",
+        "func toUpperCamelCase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/proto/add/add_test.go": {
+      "fichier": "cmd/kratos/internal/proto/add/add_test.go",
+      "langage": "go",
+      "lignes": 38,
+      "taille_bytes": 629,
+      "entrees": [],
+      "sorties": [
+        "func TestUnderscoreToUpperCamelCase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/proto/server/template.go": {
+      "fichier": "cmd/kratos/internal/proto/server/template.go",
+      "langage": "go",
+      "lignes": 147,
+      "taille_bytes": 3326,
+      "entrees": [],
+      "sorties": [
+        "const empty",
+        "const emptyV2",
+        "func New",
+        "type Method",
+        "type MethodType",
+        "type Service"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/proto/server/server.go": {
+      "fichier": "cmd/kratos/internal/proto/server/server.go",
+      "langage": "go",
+      "lignes": 120,
+      "taille_bytes": 2925,
+      "entrees": [],
+      "sorties": [
+        "func getMethodType",
+        "func init",
+        "func parametersName",
+        "func run",
+        "func serviceName",
+        "func toUpperCamelCase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/kratos/internal/proto/server/server_test.go": {
+      "fichier": "cmd/kratos/internal/proto/server/server_test.go",
+      "langage": "go",
+      "lignes": 102,
+      "taille_bytes": 2073,
+      "entrees": [],
+      "sorties": [
+        "func Test_parametersName",
+        "func Test_serviceName",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "metadata/metadata.go": {
+      "fichier": "metadata/metadata.go",
+      "langage": "go",
+      "lignes": 126,
+      "taille_bytes": 3160,
+      "entrees": [],
+      "sorties": [
+        "func AppendToClientContext",
+        "func FromClientContext",
+        "func FromServerContext",
+        "func MergeToClientContext",
+        "func New",
+        "func NewClientContext",
+        "func NewServerContext",
+        "type Metadata",
+        "type clientMetadataKey",
+        "type serverMetadataKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "metadata/metadata_test.go": {
+      "fichier": "metadata/metadata_test.go",
+      "langage": "go",
+      "lignes": 435,
+      "taille_bytes": 10732,
+      "entrees": [],
+      "sorties": [
+        "func TestAppendToClientContext",
+        "func TestAppendToClientContextThatPanics",
+        "func TestClientContext",
+        "func TestMergeToClientContext",
+        "func TestMetadata_Add",
+        "func TestMetadata_Clone",
+        "func TestMetadata_CloneDeepCopy",
+        "func TestMetadata_Get",
+        "func TestMetadata_Range",
+        "func TestMetadata_Set",
+        "func TestMetadata_Values",
+        "func TestNew",
+        "func TestServerContext",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/matcher/middleware_test.go": {
+      "fichier": "internal/matcher/middleware_test.go",
+      "langage": "go",
+      "lignes": 62,
+      "taille_bytes": 1285,
+      "entrees": [],
+      "sorties": [
+        "func TestMatcher",
+        "func equal",
+        "func logging"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/matcher/middleware.go": {
+      "fichier": "internal/matcher/middleware.go",
+      "langage": "go",
+      "lignes": 62,
+      "taille_bytes": 1389,
+      "entrees": [],
+      "sorties": [
+        "func New",
+        "type Matcher",
+        "type matcher"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/context/context.go": {
+      "fichier": "internal/context/context.go",
+      "langage": "go",
+      "lignes": 115,
+      "taille_bytes": 2075,
+      "entrees": [],
+      "sorties": [
+        "func Merge",
+        "type mergeCtx"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/context/context_test.go": {
+      "fichier": "internal/context/context_test.go",
+      "langage": "go",
+      "lignes": 280,
+      "taille_bytes": 6844,
+      "entrees": [],
+      "sorties": [
+        "func TestCancel",
+        "func TestContext",
+        "func TestDone",
+        "func TestErr",
+        "func TestFinish",
+        "func TestMerge",
+        "func TestWait",
+        "func Test_Err2",
+        "func Test_mergeCtx_Deadline",
+        "type ctxKey1",
+        "type ctxKey2",
+        "type fields"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/host/host_test.go": {
+      "fichier": "internal/host/host_test.go",
+      "langage": "go",
+      "lignes": 149,
+      "taille_bytes": 3422,
+      "entrees": [],
+      "sorties": [
+        "func TestExtract",
+        "func TestExtract2",
+        "func TestExtractHostPort",
+        "func TestIpIsUp",
+        "func TestPort",
+        "func TestValidIP"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/host/host.go": {
+      "fichier": "internal/host/host.go",
+      "langage": "go",
+      "lignes": 91,
+      "taille_bytes": 1864,
+      "entrees": [],
+      "sorties": [
+        "func Extract",
+        "func ExtractHostPort",
+        "func Port",
+        "func isValidIP"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/endpoint/endpoint_test.go": {
+      "fichier": "internal/endpoint/endpoint_test.go",
+      "langage": "go",
+      "lignes": 126,
+      "taille_bytes": 2646,
+      "entrees": [],
+      "sorties": [
+        "func TestNewEndpoint",
+        "func TestParseEndpoint",
+        "func TestSchema",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/endpoint/endpoint.go": {
+      "fichier": "internal/endpoint/endpoint.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 660,
+      "entrees": [],
+      "sorties": [
+        "func NewEndpoint",
+        "func ParseEndpoint",
+        "func Scheme"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/httputil/http.go": {
+      "fichier": "internal/httputil/http.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 775,
+      "entrees": [],
+      "sorties": [
+        "func ContentSubtype",
+        "func ContentType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/httputil/http_test.go": {
+      "fichier": "internal/httputil/http_test.go",
+      "langage": "go",
+      "lignes": 47,
+      "taille_bytes": 1031,
+      "entrees": [],
+      "sorties": [
+        "func TestContentSubtype",
+        "func TestContentType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/testdata/binding/generate.go": {
+      "fichier": "internal/testdata/binding/generate.go",
+      "langage": "go",
+      "lignes": 3,
+      "taille_bytes": 89,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/testdata/binding/test.proto": {
+      "fichier": "internal/testdata/binding/test.proto",
+      "langage": "protobuf",
+      "lignes": 23,
+      "taille_bytes": 550,
+      "entrees": [],
+      "sorties": [
+        "message HelloRequest",
+        "message Sub"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/testdata/binding/test.pb.go": {
+      "fichier": "internal/testdata/binding/test.pb.go",
+      "langage": "go",
+      "lignes": 291,
+      "taille_bytes": 9968,
+      "entrees": [],
+      "sorties": [
+        "func file_test_proto_init",
+        "func file_test_proto_rawDescGZIP",
+        "func init",
+        "type HelloRequest",
+        "type Sub"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

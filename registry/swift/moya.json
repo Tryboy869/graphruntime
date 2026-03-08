@@ -1,0 +1,1503 @@
+{
+  "meta": {
+    "projet": "Moya",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "swift": 64,
+      "yaml": 3,
+      "c": 3,
+      "json": 3,
+      "shell": 7
+    }
+  },
+  "stats": {
+    "fichiers_total": 80,
+    "edges_total": 23,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 1,
+    "points_entree": 0,
+    "fichier_plus_appele": "Sources/Supporting Files/Moya.h"
+  },
+  "noeuds": {
+    "Package.swift": {
+      "fichier": "Package.swift",
+      "langage": "swift",
+      "lignes": 97,
+      "taille_bytes": 2989,
+      "entrees": [
+        "PackageConfig",
+        "PackageDescription"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Dangerfile.swift": {
+      "fichier": "Dangerfile.swift",
+      "langage": "swift",
+      "lignes": 138,
+      "taille_bytes": 7377,
+      "entrees": [
+        "Danger",
+        "DangerSwiftProse",
+        "DangerXCodeSummary",
+        "Foundation"
+      ],
+      "sorties": [
+        "func filePathForPlatform",
+        "func labelTestSummary",
+        "func summary"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".swiftlint.yml": {
+      "fichier": ".swiftlint.yml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 232,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "codecov.yml": {
+      "fichier": "codecov.yml",
+      "langage": "yaml",
+      "lignes": 5,
+      "taille_bytes": 58,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/.swiftlint.yml": {
+      "fichier": "Tests/.swiftlint.yml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 276,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/Single+MoyaSpec.swift": {
+      "fichier": "Tests/MoyaTests/Single+MoyaSpec.swift",
+      "langage": "swift",
+      "lignes": 586,
+      "taille_bytes": 26010,
+      "entrees": [
+        "Foundation",
+        "Moya",
+        "Nimble",
+        "Quick",
+        "RxSwift"
+      ],
+      "sorties": [],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/AccessTokenPluginSpec.swift": {
+      "fichier": "Tests/MoyaTests/AccessTokenPluginSpec.swift",
+      "langage": "swift",
+      "lignes": 65,
+      "taille_bytes": 2755,
+      "entrees": [
+        "Foundation",
+        "Moya",
+        "Nimble",
+        "Quick"
+      ],
+      "sorties": [
+        "struct TestTarget"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/PropertyListEncoding.swift": {
+      "fichier": "Tests/MoyaTests/PropertyListEncoding.swift",
+      "langage": "swift",
+      "lignes": 68,
+      "taille_bytes": 2635,
+      "entrees": [
+        "Alamofire",
+        "Foundation"
+      ],
+      "sorties": [
+        "func encode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/MethodSpec.swift": {
+      "fichier": "Tests/MoyaTests/MethodSpec.swift",
+      "langage": "swift",
+      "lignes": 26,
+      "taille_bytes": 756,
+      "entrees": [
+        "Moya",
+        "Nimble",
+        "Quick"
+      ],
+      "sorties": [],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/TestHelpers.swift": {
+      "fichier": "Tests/MoyaTests/TestHelpers.swift",
+      "langage": "swift",
+      "lignes": 280,
+      "taille_bytes": 9368,
+      "entrees": [
+        "AppKit",
+        "Foundation",
+        "Moya",
+        "UIKit"
+      ],
+      "sorties": [
+        "class TestClass",
+        "class var",
+        "enum CodingKeys",
+        "enum GitHub",
+        "enum HTTPBin",
+        "func asJPEGRepresentation",
+        "func url",
+        "struct Issue",
+        "struct OptionalIssue"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/SignalProducer+MoyaSpec.swift": {
+      "fichier": "Tests/MoyaTests/SignalProducer+MoyaSpec.swift",
+      "langage": "swift",
+      "lignes": 576,
+      "taille_bytes": 25055,
+      "entrees": [
+        "Foundation",
+        "Moya",
+        "Nimble",
+        "Quick",
+        "ReactiveSwift"
+      ],
+      "sorties": [],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/RxTestHelpers.swift": {
+      "fichier": "Tests/MoyaTests/RxTestHelpers.swift",
+      "langage": "swift",
+      "lignes": 8,
+      "taille_bytes": 188,
+      "entrees": [
+        "Moya",
+        "RxSwift"
+      ],
+      "sorties": [
+        "func asObservable",
+        "func asSingle"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/MoyaProvider+ReactiveSpec.swift": {
+      "fichier": "Tests/MoyaTests/MoyaProvider+ReactiveSpec.swift",
+      "langage": "swift",
+      "lignes": 192,
+      "taille_bytes": 7953,
+      "entrees": [
+        "Nimble",
+        "OHHTTPStubs",
+        "OHHTTPStubsSwift",
+        "Quick",
+        "ReactiveSwift"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/ErrorTests.swift": {
+      "fichier": "Tests/MoyaTests/ErrorTests.swift",
+      "langage": "swift",
+      "lignes": 252,
+      "taille_bytes": 9876,
+      "entrees": [
+        "Nimble",
+        "Quick",
+        "XCTest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/MoyaProvider+RxSpec.swift": {
+      "fichier": "Tests/MoyaTests/MoyaProvider+RxSpec.swift",
+      "langage": "swift",
+      "lignes": 300,
+      "taille_bytes": 12438,
+      "entrees": [
+        "Nimble",
+        "OHHTTPStubs",
+        "OHHTTPStubsSwift",
+        "Quick",
+        "RxSwift"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/EndpointClosureSpec.swift": {
+      "fichier": "Tests/MoyaTests/EndpointClosureSpec.swift",
+      "langage": "swift",
+      "lignes": 106,
+      "taille_bytes": 5497,
+      "entrees": [
+        "Alamofire",
+        "Foundation",
+        "Nimble",
+        "Quick"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/Error+MoyaSpec.swift": {
+      "fichier": "Tests/MoyaTests/Error+MoyaSpec.swift",
+      "langage": "swift",
+      "lignes": 79,
+      "taille_bytes": 2385,
+      "entrees": [
+        "Moya",
+        "Nimble"
+      ],
+      "sorties": [
+        "public func beOfSameErrorType"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/NimbleHelpers.swift": {
+      "fichier": "Tests/MoyaTests/NimbleHelpers.swift",
+      "langage": "swift",
+      "lignes": 18,
+      "taille_bytes": 746,
+      "entrees": [
+        "Nimble"
+      ],
+      "sorties": [
+        "public func containOne"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/NetworkLoggerPluginSpec.swift": {
+      "fichier": "Tests/MoyaTests/NetworkLoggerPluginSpec.swift",
+      "langage": "swift",
+      "lignes": 236,
+      "taille_bytes": 9829,
+      "entrees": [
+        "Foundation",
+        "Moya",
+        "Nimble",
+        "Quick",
+        "enum"
+      ],
+      "sorties": [
+        "func authenticate",
+        "func cURLDescription"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/MultiTargetSpec.swift": {
+      "fichier": "Tests/MoyaTests/MultiTargetSpec.swift",
+      "langage": "swift",
+      "lignes": 78,
+      "taille_bytes": 2928,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "Quick"
+      ],
+      "sorties": [
+        "struct StructAPI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/MultipartFormDataSpec.swift": {
+      "fichier": "Tests/MoyaTests/MultipartFormDataSpec.swift",
+      "langage": "swift",
+      "lignes": 33,
+      "taille_bytes": 1048,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "Quick"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/MoyaProvider+CombineSpec.swift": {
+      "fichier": "Tests/MoyaTests/MoyaProvider+CombineSpec.swift",
+      "langage": "swift",
+      "lignes": 359,
+      "taille_bytes": 15898,
+      "entrees": [
+        "Combine",
+        "CombineMoya",
+        "Nimble",
+        "OHHTTPStubs",
+        "OHHTTPStubsCore",
+        "OHHTTPStubsSwift",
+        "Quick"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/TestPlugin.swift": {
+      "fichier": "Tests/MoyaTests/TestPlugin.swift",
+      "langage": "swift",
+      "lignes": 39,
+      "taille_bytes": 1255,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func didReceive",
+        "func prepare",
+        "func process",
+        "func willSend"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/MoyaProviderIntegrationTests.swift": {
+      "fichier": "Tests/MoyaTests/MoyaProviderIntegrationTests.swift",
+      "langage": "swift",
+      "lignes": 458,
+      "taille_bytes": 18962,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "OHHTTPStubs",
+        "OHHTTPStubsSwift",
+        "Quick"
+      ],
+      "sorties": [
+        "func beIdenticalToResponse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/TestImage.swift": {
+      "fichier": "Tests/MoyaTests/TestImage.swift",
+      "langage": "swift",
+      "lignes": 16,
+      "taille_bytes": 160453,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/MoyaProviderSpec.swift": {
+      "fichier": "Tests/MoyaTests/MoyaProviderSpec.swift",
+      "langage": "swift",
+      "lignes": 1184,
+      "taille_bytes": 48945,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "OHHTTPStubs",
+        "OHHTTPStubsSwift",
+        "Quick"
+      ],
+      "sorties": [
+        "func delay",
+        "struct PathlessAPI",
+        "struct StructAPI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/EndpointSpec.swift": {
+      "fichier": "Tests/MoyaTests/EndpointSpec.swift",
+      "langage": "swift",
+      "lignes": 683,
+      "taille_bytes": 38351,
+      "entrees": [
+        "Foundation",
+        "Moya",
+        "Nimble",
+        "Quick"
+      ],
+      "sorties": [
+        "class InvalidParameter",
+        "enum Empty"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/MoyaTests/Observable+MoyaSpec.swift": {
+      "fichier": "Tests/MoyaTests/Observable+MoyaSpec.swift",
+      "langage": "swift",
+      "lignes": 599,
+      "taille_bytes": 26664,
+      "entrees": [
+        "Foundation",
+        "Moya",
+        "Nimble",
+        "Quick",
+        "RxSwift"
+      ],
+      "sorties": [],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/RxMoya/MoyaProvider+Rx.swift": {
+      "fichier": "Sources/RxMoya/MoyaProvider+Rx.swift",
+      "langage": "swift",
+      "lignes": 60,
+      "taille_bytes": 2281,
+      "entrees": [
+        "Foundation",
+        "Moya",
+        "RxSwift"
+      ],
+      "sorties": [
+        "func request",
+        "func requestWithProgress"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/RxMoya/Observable+Response.swift": {
+      "fichier": "Sources/RxMoya/Observable+Response.swift",
+      "langage": "swift",
+      "lignes": 84,
+      "taille_bytes": 3346,
+      "entrees": [
+        "AppKit.NSImage",
+        "Foundation",
+        "Moya",
+        "RxSwift",
+        "UIKit.UIImage"
+      ],
+      "sorties": [
+        "func filter",
+        "func filterCompleted",
+        "func filterProgress",
+        "func filterSuccessfulStatusAndRedirectCodes",
+        "func filterSuccessfulStatusCodes",
+        "func map",
+        "func mapImage",
+        "func mapJSON",
+        "func mapString"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/RxMoya/Single+Response.swift": {
+      "fichier": "Sources/RxMoya/Single+Response.swift",
+      "langage": "swift",
+      "lignes": 55,
+      "taille_bytes": 2359,
+      "entrees": [
+        "AppKit.NSImage",
+        "Foundation",
+        "Moya",
+        "RxSwift",
+        "UIKit.UIImage"
+      ],
+      "sorties": [
+        "func filter",
+        "func filterSuccessfulStatusAndRedirectCodes",
+        "func filterSuccessfulStatusCodes",
+        "func map",
+        "func mapImage",
+        "func mapJSON",
+        "func mapString"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Supporting Files/ReactiveMoya.h": {
+      "fichier": "Sources/Supporting Files/ReactiveMoya.h",
+      "langage": "c",
+      "lignes": 14,
+      "taille_bytes": 427,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Supporting Files/RxMoya.h": {
+      "fichier": "Sources/Supporting Files/RxMoya.h",
+      "langage": "c",
+      "lignes": 14,
+      "taille_bytes": 385,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Supporting Files/Moya.h": {
+      "fichier": "Sources/Supporting Files/Moya.h",
+      "langage": "c",
+      "lignes": 14,
+      "taille_bytes": 371,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "Examples/Basic/ViewController.swift",
+        "Examples/Multi-Target/ViewController.swift",
+        "Examples/_shared/GiphyAPI.swift",
+        "Examples/_shared/GitHubAPI.swift",
+        "Examples/_shared/GitHubUserContentAPI.swift",
+        "Sources/CombineMoya/MoyaProvider+Combine.swift",
+        "Sources/CombineMoya/MoyaPublisher.swift",
+        "Sources/CombineMoya/Publisher+Response.swift",
+        "Sources/ReactiveMoya/MoyaProvider+Reactive.swift",
+        "Sources/ReactiveMoya/SignalProducer+Response.swift",
+        "Sources/RxMoya/MoyaProvider+Rx.swift",
+        "Sources/RxMoya/Observable+Response.swift",
+        "Sources/RxMoya/Single+Response.swift",
+        "Tests/MoyaTests/AccessTokenPluginSpec.swift",
+        "Tests/MoyaTests/EndpointSpec.swift",
+        "Tests/MoyaTests/Error+MoyaSpec.swift",
+        "Tests/MoyaTests/MethodSpec.swift",
+        "Tests/MoyaTests/NetworkLoggerPluginSpec.swift",
+        "Tests/MoyaTests/Observable+MoyaSpec.swift",
+        "Tests/MoyaTests/RxTestHelpers.swift",
+        "Tests/MoyaTests/SignalProducer+MoyaSpec.swift",
+        "Tests/MoyaTests/Single+MoyaSpec.swift",
+        "Tests/MoyaTests/TestHelpers.swift"
+      ],
+      "type_noeud": "hub"
+    },
+    "Sources/ReactiveMoya/MoyaProvider+Reactive.swift": {
+      "fichier": "Sources/ReactiveMoya/MoyaProvider+Reactive.swift",
+      "langage": "swift",
+      "lignes": 55,
+      "taille_bytes": 2175,
+      "entrees": [
+        "Foundation",
+        "Moya",
+        "ReactiveSwift"
+      ],
+      "sorties": [
+        "func request",
+        "func requestWithProgress"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/ReactiveMoya/SignalProducer+Response.swift": {
+      "fichier": "Sources/ReactiveMoya/SignalProducer+Response.swift",
+      "langage": "swift",
+      "lignes": 85,
+      "taille_bytes": 3534,
+      "entrees": [
+        "AppKit.NSImage",
+        "Foundation",
+        "Moya",
+        "ReactiveSwift",
+        "UIKit.UIImage"
+      ],
+      "sorties": [
+        "func filter",
+        "func filterSuccessfulStatusAndRedirectCodes",
+        "func filterSuccessfulStatusCodes",
+        "func map",
+        "func mapImage",
+        "func mapJSON",
+        "func mapString"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/CombineMoya/Publisher+Response.swift": {
+      "fichier": "Sources/CombineMoya/Publisher+Response.swift",
+      "langage": "swift",
+      "lignes": 121,
+      "taille_bytes": 4430,
+      "entrees": [
+        "AppKit.NSImage",
+        "Combine",
+        "Foundation",
+        "Moya",
+        "UIKit.UIImage"
+      ],
+      "sorties": [
+        "func filter",
+        "func filterCompleted",
+        "func filterProgress",
+        "func filterSuccessfulStatusAndRedirectCodes",
+        "func filterSuccessfulStatusCodes",
+        "func map",
+        "func mapImage",
+        "func mapJSON",
+        "func mapString"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/CombineMoya/MoyaPublisher.swift": {
+      "fichier": "Sources/CombineMoya/MoyaPublisher.swift",
+      "langage": "swift",
+      "lignes": 45,
+      "taille_bytes": 1459,
+      "entrees": [
+        "Combine",
+        "Moya"
+      ],
+      "sorties": [
+        "func cancel",
+        "func request"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/CombineMoya/MoyaProvider+Combine.swift": {
+      "fichier": "Sources/CombineMoya/MoyaProvider+Combine.swift",
+      "langage": "swift",
+      "lignes": 63,
+      "taille_bytes": 2591,
+      "entrees": [
+        "Combine",
+        "Foundation",
+        "Moya"
+      ],
+      "sorties": [
+        "func requestPublisher",
+        "func requestWithProgressPublisher"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/URL+Moya.swift": {
+      "fichier": "Sources/Moya/URL+Moya.swift",
+      "langage": "swift",
+      "lignes": 17,
+      "taille_bytes": 585,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Moya+Alamofire.swift": {
+      "fichier": "Sources/Moya/Moya+Alamofire.swift",
+      "langage": "swift",
+      "lignes": 125,
+      "taille_bytes": 4323,
+      "entrees": [
+        "Alamofire",
+        "Foundation"
+      ],
+      "sorties": [
+        "func adapt",
+        "func response",
+        "public func cancel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Image.swift": {
+      "fichier": "Sources/Moya/Image.swift",
+      "langage": "swift",
+      "lignes": 10,
+      "taille_bytes": 262,
+      "entrees": [
+        "AppKit.NSImage",
+        "UIKit.UIImage"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/MultiTarget.swift": {
+      "fichier": "Sources/Moya/MultiTarget.swift",
+      "langage": "swift",
+      "lignes": 47,
+      "taille_bytes": 1450,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/MultipartFormData.swift": {
+      "fichier": "Sources/Moya/MultipartFormData.swift",
+      "langage": "swift",
+      "lignes": 90,
+      "taille_bytes": 3041,
+      "entrees": [
+        "Alamofire",
+        "Foundation"
+      ],
+      "sorties": [
+        "func append",
+        "func applyMoyaMultipartFormData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Cancellable.swift": {
+      "fichier": "Sources/Moya/Cancellable.swift",
+      "langage": "swift",
+      "lignes": 26,
+      "taille_bytes": 638,
+      "entrees": [],
+      "sorties": [
+        "func cancel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/AnyEncodable.swift": {
+      "fichier": "Sources/Moya/AnyEncodable.swift",
+      "langage": "swift",
+      "lignes": 14,
+      "taille_bytes": 271,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func encode",
+        "struct AnyEncodable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/URLRequest+Encoding.swift": {
+      "fichier": "Sources/Moya/URLRequest+Encoding.swift",
+      "langage": "swift",
+      "lignes": 28,
+      "taille_bytes": 901,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func encoded"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/MoyaProvider+Defaults.swift": {
+      "fichier": "Sources/Moya/MoyaProvider+Defaults.swift",
+      "langage": "swift",
+      "lignes": 34,
+      "taille_bytes": 1317,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Endpoint.swift": {
+      "fichier": "Sources/Moya/Endpoint.swift",
+      "langage": "swift",
+      "lignes": 165,
+      "taille_bytes": 8033,
+      "entrees": [
+        "Foundation",
+        "class",
+        "func"
+      ],
+      "sorties": [
+        "func urlRequest",
+        "public func hash"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Atomic.swift": {
+      "fichier": "Sources/Moya/Atomic.swift",
+      "langage": "swift",
+      "lignes": 31,
+      "taille_bytes": 544,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/MoyaError.swift": {
+      "fichier": "Sources/Moya/MoyaError.swift",
+      "langage": "swift",
+      "lignes": 102,
+      "taille_bytes": 3566,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Response.swift": {
+      "fichier": "Sources/Moya/Response.swift",
+      "langage": "swift",
+      "lignes": 190,
+      "taille_bytes": 6898,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func filter",
+        "func filterSuccessfulStatusAndRedirectCodes",
+        "func filterSuccessfulStatusCodes",
+        "func map",
+        "func mapImage",
+        "func mapJSON",
+        "func mapString"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/MoyaProvider.swift": {
+      "fichier": "Sources/Moya/MoyaProvider.swift",
+      "langage": "swift",
+      "lignes": 212,
+      "taille_bytes": 8974,
+      "entrees": [
+        "Foundation",
+        "class",
+        "func",
+        "var"
+      ],
+      "sorties": [
+        "func request",
+        "public func convertResponseToResult"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Plugin.swift": {
+      "fichier": "Sources/Moya/Plugin.swift",
+      "langage": "swift",
+      "lignes": 54,
+      "taille_bytes": 2347,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func authenticate",
+        "func cURLDescription",
+        "func didReceive",
+        "func prepare",
+        "func process",
+        "func willSend"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/ValidationType.swift": {
+      "fichier": "Sources/Moya/ValidationType.swift",
+      "langage": "swift",
+      "lignes": 47,
+      "taille_bytes": 1233,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/MoyaProvider+Internal.swift": {
+      "fichier": "Sources/Moya/MoyaProvider+Internal.swift",
+      "langage": "swift",
+      "lignes": 303,
+      "taille_bytes": 15704,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func cancelCompletion",
+        "func requestNormal",
+        "func sendAlamofireRequest",
+        "func sendDownloadRequest",
+        "func sendRequest",
+        "func sendUploadFile",
+        "func sendUploadMultipart"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/TargetType.swift": {
+      "fichier": "Sources/Moya/TargetType.swift",
+      "langage": "swift",
+      "lignes": 35,
+      "taille_bytes": 1037,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/RequestTypeWrapper.swift": {
+      "fichier": "Sources/Moya/RequestTypeWrapper.swift",
+      "langage": "swift",
+      "lignes": 32,
+      "taille_bytes": 1186,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func authenticate",
+        "func cURLDescription",
+        "struct RequestTypeWrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Task.swift": {
+      "fichier": "Sources/Moya/Task.swift",
+      "langage": "swift",
+      "lignes": 49,
+      "taille_bytes": 2025,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Plugins/CredentialsPlugin.swift": {
+      "fichier": "Sources/Moya/Plugins/CredentialsPlugin.swift",
+      "langage": "swift",
+      "lignes": 21,
+      "taille_bytes": 638,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func willSend"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Plugins/NetworkLoggerPlugin.swift": {
+      "fichier": "Sources/Moya/Plugins/NetworkLoggerPlugin.swift",
+      "langage": "swift",
+      "lignes": 249,
+      "taille_bytes": 10218,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "class var",
+        "func logNetworkError",
+        "func logNetworkRequest",
+        "func logNetworkResponse",
+        "public func didReceive",
+        "public func willSend",
+        "struct Configuration",
+        "struct Formatter",
+        "struct LogOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Plugins/NetworkActivityPlugin.swift": {
+      "fichier": "Sources/Moya/Plugins/NetworkActivityPlugin.swift",
+      "langage": "swift",
+      "lignes": 30,
+      "taille_bytes": 1081,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func didReceive",
+        "public func willSend"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Moya/Plugins/AccessTokenPlugin.swift": {
+      "fichier": "Sources/Moya/Plugins/AccessTokenPlugin.swift",
+      "langage": "swift",
+      "lignes": 101,
+      "taille_bytes": 2711,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func prepare"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/Basic/AppDelegate.swift": {
+      "fichier": "Examples/Basic/AppDelegate.swift",
+      "langage": "swift",
+      "lignes": 8,
+      "taille_bytes": 119,
+      "entrees": [
+        "UIKit"
+      ],
+      "sorties": [
+        "class AppDelegate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/Basic/ViewController.swift": {
+      "fichier": "Examples/Basic/ViewController.swift",
+      "langage": "swift",
+      "lignes": 143,
+      "taille_bytes": 4903,
+      "entrees": [
+        "Combine",
+        "CombineMoya",
+        "Moya",
+        "UIKit"
+      ],
+      "sorties": [
+        "class ViewController",
+        "func downloadMoyaLogo",
+        "func downloadRepositories",
+        "func downloadZen",
+        "func uploadGiphy"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/Multi-Target/AppDelegate.swift": {
+      "fichier": "Examples/Multi-Target/AppDelegate.swift",
+      "langage": "swift",
+      "lignes": 8,
+      "taille_bytes": 119,
+      "entrees": [
+        "UIKit"
+      ],
+      "sorties": [
+        "class AppDelegate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/Multi-Target/ViewController.swift": {
+      "fichier": "Examples/Multi-Target/ViewController.swift",
+      "langage": "swift",
+      "lignes": 147,
+      "taille_bytes": 5089,
+      "entrees": [
+        "Moya",
+        "UIKit"
+      ],
+      "sorties": [
+        "class ViewController",
+        "func downloadMoyaLogo",
+        "func downloadRepositories",
+        "func downloadZen",
+        "func uploadGiphy"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/_shared/GitHubAPI.swift": {
+      "fichier": "Examples/_shared/GitHubAPI.swift",
+      "langage": "swift",
+      "lignes": 93,
+      "taille_bytes": 2826,
+      "entrees": [
+        "Foundation",
+        "Moya"
+      ],
+      "sorties": [
+        "func mapNSArray",
+        "public func url"
+      ],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/_shared/GiphyAPI.swift": {
+      "fichier": "Examples/_shared/GiphyAPI.swift",
+      "langage": "swift",
+      "lignes": 43,
+      "taille_bytes": 7615,
+      "entrees": [
+        "Foundation",
+        "Moya"
+      ],
+      "sorties": [],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/_shared/GitHubUserContentAPI.swift": {
+      "fichier": "Examples/_shared/GitHubUserContentAPI.swift",
+      "langage": "swift",
+      "lignes": 51,
+      "taille_bytes": 1617,
+      "entrees": [
+        "Foundation",
+        "Moya"
+      ],
+      "sorties": [],
+      "appelle": [
+        "Sources/Supporting Files/Moya.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/_shared/Images.xcassets/Contents.json": {
+      "fichier": "Examples/_shared/Images.xcassets/Contents.json",
+      "langage": "json",
+      "lignes": 6,
+      "taille_bytes": 62,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/_shared/Images.xcassets/AppIcon.appiconset/Contents.json": {
+      "fichier": "Examples/_shared/Images.xcassets/AppIcon.appiconset/Contents.json",
+      "langage": "json",
+      "lignes": 48,
+      "taille_bytes": 753,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Examples/_shared/Images.xcassets/LaunchImage.launchimage/Contents.json": {
+      "fichier": "Examples/_shared/Images.xcassets/LaunchImage.launchimage/Contents.json",
+      "langage": "json",
+      "lignes": 9,
+      "taille_bytes": 83,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/update_changelog.sh": {
+      "fichier": "scripts/update_changelog.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 169,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/update_podspec.sh": {
+      "fichier": "scripts/update_podspec.sh",
+      "langage": "shell",
+      "lignes": 6,
+      "taille_bytes": 197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/update_docs_website.sh": {
+      "fichier": "scripts/update_docs_website.sh",
+      "langage": "shell",
+      "lignes": 19,
+      "taille_bytes": 570,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/bootstrap.sh": {
+      "fichier": "scripts/bootstrap.sh",
+      "langage": "shell",
+      "lignes": 4,
+      "taille_bytes": 71,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/carthage.sh": {
+      "fichier": "scripts/carthage.sh",
+      "langage": "shell",
+      "lignes": 17,
+      "taille_bytes": 739,
+      "entrees": [],
+      "sorties": [
+        "export XCODE_XCCONFIG_FILE"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/copy-carthage-frameworks.sh": {
+      "fichier": "scripts/copy-carthage-frameworks.sh",
+      "langage": "shell",
+      "lignes": 24,
+      "taille_bytes": 662,
+      "entrees": [],
+      "sorties": [
+        "export SCRIPT_INPUT_FILE_"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/bootstrap-if-needed.sh": {
+      "fichier": "scripts/bootstrap-if-needed.sh",
+      "langage": "shell",
+      "lignes": 12,
+      "taille_bytes": 310,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "Tests/MoyaTests/Single+MoyaSpec.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/MoyaTests/AccessTokenPluginSpec.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/MoyaTests/MethodSpec.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/MoyaTests/TestHelpers.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/MoyaTests/SignalProducer+MoyaSpec.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/MoyaTests/RxTestHelpers.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/MoyaTests/Error+MoyaSpec.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/MoyaTests/NetworkLoggerPluginSpec.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/MoyaTests/EndpointSpec.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/MoyaTests/Observable+MoyaSpec.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Sources/RxMoya/MoyaProvider+Rx.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Sources/RxMoya/Observable+Response.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Sources/RxMoya/Single+Response.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Sources/ReactiveMoya/MoyaProvider+Reactive.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Sources/ReactiveMoya/SignalProducer+Response.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Sources/CombineMoya/Publisher+Response.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Sources/CombineMoya/MoyaPublisher.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Sources/CombineMoya/MoyaProvider+Combine.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Examples/Basic/ViewController.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Examples/Multi-Target/ViewController.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Examples/_shared/GitHubAPI.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Examples/_shared/GiphyAPI.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    },
+    {
+      "de": "Examples/_shared/GitHubUserContentAPI.swift",
+      "vers": "Sources/Supporting Files/Moya.h",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 'Sources/Supporting Files/Moya.h' (in=23, 29% du projet)"
+  ]
+}

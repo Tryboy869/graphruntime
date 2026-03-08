@@ -1,0 +1,569 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 12
+    }
+  },
+  "stats": {
+    "fichiers_total": 12,
+    "edges_total": 26,
+    "edges_circulaires": 2,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 4,
+    "points_entree": 1,
+    "fichier_plus_appele": "charset_normalizer/constant.py"
+  },
+  "noeuds": {
+    "charset_normalizer/api.py": {
+      "fichier": "charset_normalizer/api.py",
+      "langage": "python",
+      "lignes": 671,
+      "taille_bytes": 22719,
+      "entrees": [
+        ".cd",
+        ".constant",
+        ".md",
+        ".models",
+        ".utils",
+        "__future__",
+        "logging",
+        "os",
+        "typing"
+      ],
+      "sorties": [
+        "def from_bytes",
+        "def from_fp",
+        "def from_path",
+        "def is_binary"
+      ],
+      "appelle": [
+        "charset_normalizer/cd.py",
+        "charset_normalizer/constant.py",
+        "charset_normalizer/md.py",
+        "charset_normalizer/models.py",
+        "charset_normalizer/utils.py"
+      ],
+      "est_appele_par": [
+        "charset_normalizer/__init__.py",
+        "charset_normalizer/legacy.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "charset_normalizer/legacy.py": {
+      "fichier": "charset_normalizer/legacy.py",
+      "langage": "python",
+      "lignes": 80,
+      "taille_bytes": 2731,
+      "entrees": [
+        ".api",
+        ".constant",
+        "__future__",
+        "typing",
+        "typing_extensions",
+        "warnings"
+      ],
+      "sorties": [
+        "class ResultDict",
+        "def detect"
+      ],
+      "appelle": [
+        "charset_normalizer/api.py",
+        "charset_normalizer/constant.py"
+      ],
+      "est_appele_par": [
+        "charset_normalizer/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "charset_normalizer/utils.py": {
+      "fichier": "charset_normalizer/utils.py",
+      "langage": "python",
+      "lignes": 420,
+      "taille_bytes": 12240,
+      "entrees": [
+        ".constant",
+        "__future__",
+        "_multibytecodec",
+        "bisect",
+        "codecs",
+        "encodings.aliases",
+        "functools",
+        "importlib",
+        "logging",
+        "re",
+        "typing",
+        "unicodedata"
+      ],
+      "sorties": [
+        "def _character_flags",
+        "def any_specified_encoding",
+        "def cp_similarity",
+        "def cut_sequence_chunks",
+        "def iana_name",
+        "def identify_sig_or_bom",
+        "def is_accentuated",
+        "def is_arabic",
+        "def is_arabic_isolated_form",
+        "def is_case_variable",
+        "def is_cjk",
+        "def is_cjk_uncommon",
+        "def is_cp_similar",
+        "def is_emoticon",
+        "def is_hangul",
+        "def is_hiragana",
+        "def is_katakana",
+        "def is_latin",
+        "def is_multi_byte_encoding",
+        "def is_punctuation",
+        "def is_separator",
+        "def is_symbol",
+        "def is_thai",
+        "def is_unicode_range_secondary",
+        "def is_unprintable",
+        "def remove_accent",
+        "def set_logging_handler",
+        "def should_strip_sig_or_bom",
+        "def unicode_range"
+      ],
+      "appelle": [
+        "charset_normalizer/constant.py"
+      ],
+      "est_appele_par": [
+        "charset_normalizer/__init__.py",
+        "charset_normalizer/api.py",
+        "charset_normalizer/cd.py",
+        "charset_normalizer/md.py",
+        "charset_normalizer/models.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "charset_normalizer/cd.py": {
+      "fichier": "charset_normalizer/cd.py",
+      "langage": "python",
+      "lignes": 421,
+      "taille_bytes": 13639,
+      "entrees": [
+        ".constant",
+        ".md",
+        ".models",
+        ".utils",
+        "__future__",
+        "codecs",
+        "collections",
+        "functools",
+        "importlib",
+        "typing"
+      ],
+      "sorties": [
+        "def alpha_unicode_split",
+        "def alphabet_languages",
+        "def characters_popularity_compare",
+        "def coherence_ratio",
+        "def encoding_languages",
+        "def encoding_unicode_range",
+        "def filter_alt_coherence_matches",
+        "def get_target_features",
+        "def mb_encoding_languages",
+        "def merge_coherence_ratios",
+        "def unicode_range_languages"
+      ],
+      "appelle": [
+        "charset_normalizer/constant.py",
+        "charset_normalizer/md.py",
+        "charset_normalizer/models.py",
+        "charset_normalizer/utils.py"
+      ],
+      "est_appele_par": [
+        "charset_normalizer/api.py",
+        "charset_normalizer/models.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "charset_normalizer/__main__.py": {
+      "fichier": "charset_normalizer/__main__.py",
+      "langage": "python",
+      "lignes": 6,
+      "taille_bytes": 109,
+      "entrees": [
+        ".cli",
+        "__future__"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "charset_normalizer/md.py": {
+      "fichier": "charset_normalizer/md.py",
+      "langage": "python",
+      "lignes": 744,
+      "taille_bytes": 23023,
+      "entrees": [
+        ".constant",
+        ".utils",
+        "__future__",
+        "functools",
+        "logging",
+        "sys",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "class ArabicIsolatedFormPlugin",
+        "class ArchaicUpperLowerPlugin",
+        "class CjkUncommonPlugin",
+        "class MessDetectorPlugin",
+        "class SuperWeirdWordPlugin",
+        "class SuspiciousDuplicateAccentPlugin",
+        "class SuspiciousRange",
+        "class TooManyAccentuatedPlugin",
+        "class TooManySymbolOrPunctuationPlugin",
+        "class UnprintablePlugin",
+        "def __init__",
+        "def eligible",
+        "def feed",
+        "def final",
+        "def is_suspiciously_successive_range",
+        "def mess_ratio",
+        "def ratio",
+        "def reset"
+      ],
+      "appelle": [
+        "charset_normalizer/constant.py",
+        "charset_normalizer/utils.py"
+      ],
+      "est_appele_par": [
+        "charset_normalizer/api.py",
+        "charset_normalizer/cd.py",
+        "charset_normalizer/cli/__main__.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "charset_normalizer/models.py": {
+      "fichier": "charset_normalizer/models.py",
+      "langage": "python",
+      "lignes": 359,
+      "taille_bytes": 12320,
+      "entrees": [
+        ".constant",
+        ".utils",
+        "__future__",
+        "charset_normalizer.cd",
+        "encodings.aliases",
+        "json",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "class CharsetMatch",
+        "class CharsetMatches",
+        "class CliDetectionResult",
+        "def __bool__",
+        "def __dict__",
+        "def __eq__",
+        "def __getitem__",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def __lt__",
+        "def __repr__",
+        "def __str__",
+        "def add_submatch",
+        "def alphabets",
+        "def append",
+        "def best",
+        "def bom",
+        "def byte_order_mark",
+        "def chaos",
+        "def coherence",
+        "def could_be_from_charset",
+        "def encoding",
+        "def encoding_aliases",
+        "def fingerprint",
+        "def first",
+        "def has_submatch",
+        "def language",
+        "def languages",
+        "def multi_byte_usage",
+        "def output",
+        "def percent_chaos",
+        "def percent_coherence",
+        "def raw",
+        "def submatch",
+        "def to_json"
+      ],
+      "appelle": [
+        "charset_normalizer/cd.py",
+        "charset_normalizer/constant.py",
+        "charset_normalizer/utils.py"
+      ],
+      "est_appele_par": [
+        "charset_normalizer/__init__.py",
+        "charset_normalizer/api.py",
+        "charset_normalizer/cd.py",
+        "charset_normalizer/cli/__main__.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "charset_normalizer/version.py": {
+      "fichier": "charset_normalizer/version.py",
+      "langage": "python",
+      "lignes": 8,
+      "taille_bytes": 115,
+      "entrees": [
+        "__future__"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "charset_normalizer/__init__.py",
+        "charset_normalizer/cli/__main__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "charset_normalizer/__init__.py": {
+      "fichier": "charset_normalizer/__init__.py",
+      "langage": "python",
+      "lignes": 48,
+      "taille_bytes": 1590,
+      "entrees": [
+        ".api",
+        ".legacy",
+        ".models",
+        ".utils",
+        ".version",
+        "__future__",
+        "logging"
+      ],
+      "sorties": [],
+      "appelle": [
+        "charset_normalizer/api.py",
+        "charset_normalizer/legacy.py",
+        "charset_normalizer/models.py",
+        "charset_normalizer/utils.py",
+        "charset_normalizer/version.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "charset_normalizer/constant.py": {
+      "fichier": "charset_normalizer/constant.py",
+      "langage": "python",
+      "lignes": 2031,
+      "taille_bytes": 43552,
+      "entrees": [
+        "__future__",
+        "codecs",
+        "encodings.aliases",
+        "re"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "charset_normalizer/api.py",
+        "charset_normalizer/cd.py",
+        "charset_normalizer/legacy.py",
+        "charset_normalizer/md.py",
+        "charset_normalizer/models.py",
+        "charset_normalizer/utils.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "charset_normalizer/cli/__main__.py": {
+      "fichier": "charset_normalizer/cli/__main__.py",
+      "langage": "python",
+      "lignes": 363,
+      "taille_bytes": 11946,
+      "entrees": [
+        "__future__",
+        "argparse",
+        "charset_normalizer",
+        "charset_normalizer.md",
+        "charset_normalizer.models",
+        "charset_normalizer.version",
+        "json",
+        "os.path",
+        "platform",
+        "sys",
+        "typing",
+        "unicodedata"
+      ],
+      "sorties": [
+        "class FileType",
+        "def __call__",
+        "def __init__",
+        "def __repr__",
+        "def cli_detect",
+        "def query_yes_no"
+      ],
+      "appelle": [
+        "charset_normalizer/md.py",
+        "charset_normalizer/models.py",
+        "charset_normalizer/version.py"
+      ],
+      "est_appele_par": [
+        "charset_normalizer/cli/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "charset_normalizer/cli/__init__.py": {
+      "fichier": "charset_normalizer/cli/__init__.py",
+      "langage": "python",
+      "lignes": 8,
+      "taille_bytes": 136,
+      "entrees": [
+        ".__main__",
+        "__future__"
+      ],
+      "sorties": [],
+      "appelle": [
+        "charset_normalizer/cli/__main__.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "charset_normalizer/api.py",
+      "vers": "charset_normalizer/cd.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/api.py",
+      "vers": "charset_normalizer/constant.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/api.py",
+      "vers": "charset_normalizer/md.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/api.py",
+      "vers": "charset_normalizer/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/api.py",
+      "vers": "charset_normalizer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/legacy.py",
+      "vers": "charset_normalizer/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/legacy.py",
+      "vers": "charset_normalizer/constant.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/utils.py",
+      "vers": "charset_normalizer/constant.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/cd.py",
+      "vers": "charset_normalizer/constant.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/cd.py",
+      "vers": "charset_normalizer/md.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/cd.py",
+      "vers": "charset_normalizer/models.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "charset_normalizer/cd.py",
+      "vers": "charset_normalizer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/md.py",
+      "vers": "charset_normalizer/constant.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/md.py",
+      "vers": "charset_normalizer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/models.py",
+      "vers": "charset_normalizer/cd.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "charset_normalizer/models.py",
+      "vers": "charset_normalizer/constant.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/models.py",
+      "vers": "charset_normalizer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/__init__.py",
+      "vers": "charset_normalizer/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/__init__.py",
+      "vers": "charset_normalizer/legacy.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/__init__.py",
+      "vers": "charset_normalizer/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/__init__.py",
+      "vers": "charset_normalizer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/__init__.py",
+      "vers": "charset_normalizer/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/cli/__main__.py",
+      "vers": "charset_normalizer/md.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/cli/__main__.py",
+      "vers": "charset_normalizer/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/cli/__main__.py",
+      "vers": "charset_normalizer/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "charset_normalizer/cli/__init__.py",
+      "vers": "charset_normalizer/cli/__main__.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 'charset_normalizer/utils.py' (in=5, 42% du projet)",
+    "hub → 'charset_normalizer/md.py' (in=3, 25% du projet)",
+    "hub → 'charset_normalizer/models.py' (in=4, 33% du projet)",
+    "point_entree → 'charset_normalizer/__init__.py'",
+    "hub → 'charset_normalizer/constant.py' (in=6, 50% du projet)",
+    "circulaire → 2 cycles détectés"
+  ]
+}

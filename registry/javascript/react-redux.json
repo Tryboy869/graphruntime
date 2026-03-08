@@ -1,0 +1,757 @@
+{
+  "meta": {
+    "projet": "src",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "typescript": 30
+    }
+  },
+  "stats": {
+    "fichiers_total": 30,
+    "edges_total": 13,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 1,
+    "fichier_plus_appele": "utils/warning.ts"
+  },
+  "noeuds": {
+    "exports.ts": {
+      "fichier": "exports.ts",
+      "langage": "typescript",
+      "lignes": 51,
+      "taille_bytes": 1453,
+      "entrees": [
+        "Provider",
+        "connect",
+        "shallowEqual"
+      ],
+      "sorties": [
+        "const batch",
+        "export type"
+      ],
+      "appelle": [
+        "components/Provider.tsx",
+        "components/connect.tsx",
+        "utils/shallowEqual.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "index.ts": {
+      "fichier": "index.ts",
+      "langage": "typescript",
+      "lignes": 1,
+      "taille_bytes": 26,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "index-rsc.ts": {
+      "fichier": "index-rsc.ts",
+      "langage": "typescript",
+      "lignes": 34,
+      "taille_bytes": 1222,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const _check",
+        "const _check2",
+        "const throwNotSupportedError",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "types.ts": {
+      "fichier": "types.ts",
+      "langage": "typescript",
+      "lignes": 180,
+      "taille_bytes": 5771,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "export interface",
+        "export type",
+        "type Identity"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hooks/useSelector.ts": {
+      "fichier": "hooks/useSelector.ts",
+      "langage": "typescript",
+      "lignes": 286,
+      "taille_bytes": 9762,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const firstRun",
+        "const reduxContext",
+        "const refEquality",
+        "const selected",
+        "const selectedState",
+        "const toCompare",
+        "const useReduxContext",
+        "const useSelector",
+        "const wrappedSelector",
+        "export const",
+        "export function",
+        "export interface",
+        "export type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hooks/useReduxContext.ts": {
+      "fichier": "hooks/useReduxContext.ts",
+      "langage": "typescript",
+      "lignes": 42,
+      "taille_bytes": 1440,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const contextValue",
+        "export const",
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hooks/useDispatch.ts": {
+      "fichier": "hooks/useDispatch.ts",
+      "langage": "typescript",
+      "lignes": 104,
+      "taille_bytes": 3039,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const store",
+        "const useDispatch",
+        "const useStore",
+        "export const",
+        "export function",
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hooks/useStore.ts": {
+      "fichier": "hooks/useStore.ts",
+      "langage": "typescript",
+      "lignes": 123,
+      "taille_bytes": 3395,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const useReduxContext",
+        "const useStore",
+        "export const",
+        "export function",
+        "export interface",
+        "export type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "connect/selectorFactory.ts": {
+      "fichier": "connect/selectorFactory.ts",
+      "langage": "typescript",
+      "lignes": 242,
+      "taille_bytes": 7680,
+      "entrees": [
+        "type",
+        "verifySubselectors"
+      ],
+      "sorties": [
+        "const mapDispatchToProps",
+        "const mapStateToProps",
+        "const mergeProps",
+        "const nextStateProps",
+        "const propsChanged",
+        "const stateChanged",
+        "const statePropsChanged",
+        "export interface",
+        "export type",
+        "function handleFirstCall",
+        "function handleNewProps",
+        "function handleNewPropsAndNewState",
+        "function handleNewState",
+        "function handleSubsequentCalls",
+        "function pureFinalPropsSelectorFactory",
+        "interface PureSelectorFactoryComparisonOptions",
+        "interface WrappedMapDispatchToProps",
+        "interface WrappedMapStateToProps"
+      ],
+      "appelle": [
+        "connect/verifySubselectors.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "connect/mapStateToProps.ts": {
+      "fichier": "connect/mapStateToProps.ts",
+      "langage": "typescript",
+      "lignes": 14,
+      "taille_bytes": 616,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "connect/invalidArgFactory.ts": {
+      "fichier": "connect/invalidArgFactory.ts",
+      "langage": "typescript",
+      "lignes": 14,
+      "taille_bytes": 407,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "connect/verifySubselectors.ts": {
+      "fichier": "connect/verifySubselectors.ts",
+      "langage": "typescript",
+      "lignes": 26,
+      "taille_bytes": 777,
+      "entrees": [
+        "warning"
+      ],
+      "sorties": [
+        "function verify"
+      ],
+      "appelle": [
+        "utils/warning.ts"
+      ],
+      "est_appele_par": [
+        "connect/selectorFactory.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "connect/mapDispatchToProps.ts": {
+      "fichier": "connect/mapDispatchToProps.ts",
+      "langage": "typescript",
+      "lignes": 25,
+      "taille_bytes": 1064,
+      "entrees": [
+        "bindActionCreators",
+        "type"
+      ],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [
+        "utils/bindActionCreators.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "connect/mergeProps.ts": {
+      "fichier": "connect/mergeProps.ts",
+      "langage": "typescript",
+      "lignes": 78,
+      "taille_bytes": 2063,
+      "entrees": [
+        "type",
+        "verifyPlainObject"
+      ],
+      "sorties": [
+        "const nextMergedProps",
+        "export function",
+        "function defaultMergeProps",
+        "function wrapMergePropsFunc"
+      ],
+      "appelle": [
+        "utils/verifyPlainObject.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "connect/wrapMapToProps.ts": {
+      "fichier": "connect/wrapMapToProps.ts",
+      "langage": "typescript",
+      "lignes": 110,
+      "taille_bytes": 3937,
+      "entrees": [
+        "type",
+        "verifyPlainObject"
+      ],
+      "sorties": [
+        "const constant",
+        "const proxy",
+        "export function",
+        "export type",
+        "function constantSelector",
+        "function getDependsOnOwnProps",
+        "type AnyProps",
+        "type AnyState",
+        "type StateOrDispatch"
+      ],
+      "appelle": [
+        "utils/verifyPlainObject.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "components/connect.tsx": {
+      "fichier": "components/connect.tsx",
+      "langage": "typescript",
+      "lignes": 813,
+      "taille_bytes": 30843,
+      "entrees": [
+        "defaultSelectorFactory",
+        "hoistStatics",
+        "shallowEqual",
+        "type",
+        "warning"
+      ],
+      "sorties": [
+        "const Connect",
+        "const Context",
+        "const ContextToUse",
+        "const EMPTY_ARRAY",
+        "const NO_SUBSCRIPTION_ARRAY",
+        "const _Connect",
+        "const _forwarded",
+        "const actualChildPropsSelector",
+        "const checkForUpdates",
+        "const childPropsFromStoreUpdate",
+        "const childPropsSelector",
+        "const contextValue",
+        "const didStoreComeFromContext",
+        "const didStoreComeFromProps",
+        "const displayName",
+        "const forwarded",
+        "const getServerState",
+        "const initMapDispatchToProps",
+        "const initMapStateToProps",
+        "const initMergeProps",
+        "const initStateUpdates",
+        "const isMounted",
+        "const isValid",
+        "const lastChildProps",
+        "const lastWrapperProps",
+        "const latestStoreState",
+        "const latestSubscriptionCallbackError",
+        "const notifyNestedSubs",
+        "const overriddenContextValue",
+        "const renderIsScheduled",
+        "const renderedChild",
+        "const renderedWrappedComponent",
+        "const selector",
+        "const selectorFactoryOptions",
+        "const shouldHandleStateChanges",
+        "const store",
+        "const stringifyComponent",
+        "const subscribe",
+        "const subscribeForReact",
+        "const subscription",
+        "const unsubscribeWrapper",
+        "const wrapWithConnect",
+        "const wrappedComponentName",
+        "export interface",
+        "export type",
+        "function ConnectFunction",
+        "function captureWrapperProps",
+        "function connect",
+        "function forwardConnectRef",
+        "function strictEqual",
+        "function subscribeUpdates",
+        "function useIsomorphicLayoutEffectWithArgs",
+        "interface InternalConnectProps",
+        "type ConnectedWrapperComponent",
+        "type EffectFunc",
+        "type WrappedComponentProps"
+      ],
+      "appelle": [
+        "utils/hoistStatics.ts",
+        "utils/shallowEqual.ts",
+        "utils/warning.ts"
+      ],
+      "est_appele_par": [
+        "exports.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "components/Provider.tsx": {
+      "fichier": "components/Provider.tsx",
+      "langage": "typescript",
+      "lignes": 105,
+      "taille_bytes": 3414,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const Context",
+        "const baseContextValue",
+        "const contextValue",
+        "const previousState",
+        "const subscription",
+        "export interface",
+        "function Provider"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "exports.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "components/Context.ts": {
+      "fichier": "components/Context.ts",
+      "langage": "typescript",
+      "lignes": 50,
+      "taille_bytes": 1569,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const ContextKey",
+        "const contextMap",
+        "const gT",
+        "export const",
+        "export interface",
+        "export type",
+        "function getContext"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/react-is.ts": {
+      "fichier": "utils/react-is.ts",
+      "langage": "typescript",
+      "lignes": 97,
+      "taille_bytes": 3618,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const REACT_CLIENT_REFERENCE",
+        "const REACT_CONSUMER_TYPE",
+        "const REACT_CONTEXT_TYPE",
+        "const REACT_ELEMENT_TYPE",
+        "const REACT_FORWARD_REF_TYPE",
+        "const REACT_FRAGMENT_TYPE",
+        "const REACT_LAZY_TYPE",
+        "const REACT_MEMO_TYPE",
+        "const REACT_OFFSCREEN_TYPE",
+        "const REACT_PORTAL_TYPE",
+        "const REACT_PROFILER_TYPE",
+        "const REACT_STRICT_MODE_TYPE",
+        "const REACT_SUSPENSE_LIST_TYPE",
+        "const REACT_SUSPENSE_TYPE",
+        "export const",
+        "export function",
+        "function typeOf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/bindActionCreators.ts": {
+      "fichier": "utils/bindActionCreators.ts",
+      "langage": "typescript",
+      "lignes": 16,
+      "taille_bytes": 512,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const actionCreator",
+        "const boundActionCreators"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "connect/mapDispatchToProps.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "utils/useSyncExternalStore.ts": {
+      "fichier": "utils/useSyncExternalStore.ts",
+      "langage": "typescript",
+      "lignes": 9,
+      "taille_bytes": 364,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "export const",
+        "export type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/batch.ts": {
+      "fichier": "utils/batch.ts",
+      "langage": "typescript",
+      "lignes": 4,
+      "taille_bytes": 149,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/react.ts": {
+      "fichier": "utils/react.ts",
+      "langage": "typescript",
+      "lignes": 3,
+      "taille_bytes": 49,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/verifyPlainObject.ts": {
+      "fichier": "utils/verifyPlainObject.ts",
+      "langage": "typescript",
+      "lignes": 14,
+      "taille_bytes": 341,
+      "entrees": [
+        "isPlainObject",
+        "warning"
+      ],
+      "sorties": [],
+      "appelle": [
+        "utils/isPlainObject.ts",
+        "utils/warning.ts"
+      ],
+      "est_appele_par": [
+        "connect/mergeProps.ts",
+        "connect/wrapMapToProps.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "utils/useIsomorphicLayoutEffect.ts": {
+      "fichier": "utils/useIsomorphicLayoutEffect.ts",
+      "langage": "typescript",
+      "lignes": 40,
+      "taille_bytes": 1619,
+      "entrees": [],
+      "sorties": [
+        "const canUseDOM",
+        "const getUseIsomorphicLayoutEffect",
+        "const isDOM",
+        "const isReactNative",
+        "const isRunningInReactNative",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/Subscription.ts": {
+      "fichier": "utils/Subscription.ts",
+      "langage": "typescript",
+      "lignes": 183,
+      "taille_bytes": 4022,
+      "entrees": [],
+      "sorties": [
+        "const cleanupListener",
+        "const listener",
+        "const listeners",
+        "const nullListeners",
+        "const subscription",
+        "export function",
+        "export interface",
+        "function addNestedSub",
+        "function createListenerCollection",
+        "function handleChangeWrapper",
+        "function isSubscribed",
+        "function notifyNestedSubs",
+        "function trySubscribe",
+        "function trySubscribeSelf",
+        "function tryUnsubscribe",
+        "function tryUnsubscribeSelf",
+        "type Listener",
+        "type ListenerCollection",
+        "type VoidFunc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/isPlainObject.ts": {
+      "fichier": "utils/isPlainObject.ts",
+      "langage": "typescript",
+      "lignes": 17,
+      "taille_bytes": 480,
+      "entrees": [],
+      "sorties": [
+        "const proto"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "utils/verifyPlainObject.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "utils/hoistStatics.ts": {
+      "fichier": "utils/hoistStatics.ts",
+      "langage": "typescript",
+      "lignes": 139,
+      "taille_bytes": 3702,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "const FORWARD_REF_STATICS",
+        "const KNOWN_STATICS",
+        "const MEMO_STATICS",
+        "const REACT_STATICS",
+        "const TYPE_STATICS",
+        "const defineProperty",
+        "const descriptor",
+        "const getOwnPropertyDescriptor",
+        "const getOwnPropertyNames",
+        "const getOwnPropertySymbols",
+        "const getPrototypeOf",
+        "const inheritedComponent",
+        "const key",
+        "const objectPrototype",
+        "const sourceStatics",
+        "const targetStatics",
+        "export type",
+        "function getStatics"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "components/connect.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "utils/warning.ts": {
+      "fichier": "utils/warning.ts",
+      "langage": "typescript",
+      "lignes": 21,
+      "taille_bytes": 665,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "components/connect.tsx",
+        "connect/verifySubselectors.ts",
+        "utils/verifyPlainObject.ts"
+      ],
+      "type_noeud": "feuille"
+    },
+    "utils/shallowEqual.ts": {
+      "fichier": "utils/shallowEqual.ts",
+      "langage": "typescript",
+      "lignes": 36,
+      "taille_bytes": 753,
+      "entrees": [],
+      "sorties": [
+        "const keysA",
+        "const keysB",
+        "function is"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "components/connect.tsx",
+        "exports.ts"
+      ],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "exports.ts",
+      "vers": "components/Provider.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "exports.ts",
+      "vers": "components/connect.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "exports.ts",
+      "vers": "utils/shallowEqual.ts",
+      "type": "interne"
+    },
+    {
+      "de": "connect/selectorFactory.ts",
+      "vers": "connect/verifySubselectors.ts",
+      "type": "interne"
+    },
+    {
+      "de": "connect/verifySubselectors.ts",
+      "vers": "utils/warning.ts",
+      "type": "interne"
+    },
+    {
+      "de": "connect/mapDispatchToProps.ts",
+      "vers": "utils/bindActionCreators.ts",
+      "type": "interne"
+    },
+    {
+      "de": "connect/mergeProps.ts",
+      "vers": "utils/verifyPlainObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "connect/wrapMapToProps.ts",
+      "vers": "utils/verifyPlainObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "components/connect.tsx",
+      "vers": "utils/hoistStatics.ts",
+      "type": "interne"
+    },
+    {
+      "de": "components/connect.tsx",
+      "vers": "utils/shallowEqual.ts",
+      "type": "interne"
+    },
+    {
+      "de": "components/connect.tsx",
+      "vers": "utils/warning.ts",
+      "type": "interne"
+    },
+    {
+      "de": "utils/verifyPlainObject.ts",
+      "vers": "utils/isPlainObject.ts",
+      "type": "interne"
+    },
+    {
+      "de": "utils/verifyPlainObject.ts",
+      "vers": "utils/warning.ts",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'exports.ts'",
+    "feuille → 'utils/warning.ts' (in=3)"
+  ]
+}

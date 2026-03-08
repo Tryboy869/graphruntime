@@ -1,0 +1,1812 @@
+{
+  "meta": {
+    "projet": "dive",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 10,
+      "go": 110
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".bouncer.yaml"
+  },
+  "noeuds": {
+    ".bouncer.yaml": {
+      "fichier": ".bouncer.yaml",
+      "langage": "yaml",
+      "lignes": 13,
+      "taille_bytes": 235,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".goreleaser.yaml": {
+      "fichier": ".goreleaser.yaml",
+      "langage": "yaml",
+      "lignes": 148,
+      "taille_bytes": 4616,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".golangci.yaml": {
+      "fichier": ".golangci.yaml",
+      "langage": "yaml",
+      "lignes": 74,
+      "taille_bytes": 2578,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".binny.yaml": {
+      "fichier": ".binny.yaml",
+      "langage": "yaml",
+      "lignes": 64,
+      "taille_bytes": 1321,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Taskfile.yaml": {
+      "fichier": "Taskfile.yaml",
+      "langage": "yaml",
+      "lignes": 393,
+      "taille_bytes": 11467,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/main.go": {
+      "fichier": "cmd/dive/main.go",
+      "langage": "go",
+      "lignes": 55,
+      "taille_bytes": 1877,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/cli_build_test.go": {
+      "fichier": "cmd/dive/cli/cli_build_test.go",
+      "langage": "go",
+      "lignes": 91,
+      "taille_bytes": 3188,
+      "entrees": [],
+      "sorties": [
+        "func Test_BuildFailure",
+        "func Test_Build_CI_gate_fail",
+        "func Test_Build_Containerfile",
+        "func Test_Build_Dockerfile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/cli_test.go": {
+      "fichier": "cmd/dive/cli/cli_test.go",
+      "langage": "go",
+      "lignes": 175,
+      "taille_bytes": 3152,
+      "entrees": [],
+      "sorties": [
+        "func Capture",
+        "func TestMain",
+        "func TestUpdateSnapshotDisabled",
+        "func getTestCommand",
+        "func repoPath",
+        "func repoRoot",
+        "type capturer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/cli_config_test.go": {
+      "fichier": "cmd/dive/cli/cli_config_test.go",
+      "langage": "go",
+      "lignes": 17,
+      "taille_bytes": 355,
+      "entrees": [],
+      "sorties": [
+        "func Test_Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/cli_ci_test.go": {
+      "fichier": "cmd/dive/cli/cli_ci_test.go",
+      "langage": "go",
+      "lignes": 51,
+      "taille_bytes": 1910,
+      "entrees": [],
+      "sorties": [
+        "func Test_CI_DefaultCIConfig",
+        "func Test_CI_Fail",
+        "func Test_CI_LegacyRules"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/cli_json_test.go": {
+      "fichier": "cmd/dive/cli/cli_json_test.go",
+      "langage": "go",
+      "lignes": 29,
+      "taille_bytes": 724,
+      "entrees": [],
+      "sorties": [
+        "func Test_JsonOutput"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/cli_load_test.go": {
+      "fichier": "cmd/dive/cli/cli_load_test.go",
+      "langage": "go",
+      "lignes": 105,
+      "taille_bytes": 3050,
+      "entrees": [],
+      "sorties": [
+        "func Test_FetchFailure",
+        "func Test_LoadImage",
+        "func assertLoadOutput",
+        "func cd",
+        "func runWithCombinedOutput"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/cli.go": {
+      "fichier": "cmd/dive/cli/cli.go",
+      "langage": "go",
+      "lignes": 53,
+      "taille_bytes": 1365,
+      "entrees": [],
+      "sorties": [
+        "func Application",
+        "func Command",
+        "func create"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1.go",
+      "langage": "go",
+      "lignes": 176,
+      "taille_bytes": 4164,
+      "entrees": [],
+      "sorties": [
+        "func NewV1UI",
+        "type V1UI",
+        "type environWithoutCI",
+        "type format"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/no_ui.go": {
+      "fichier": "cmd/dive/cli/internal/ui/no_ui.go",
+      "langage": "go",
+      "lignes": 30,
+      "taille_bytes": 446,
+      "entrees": [],
+      "sorties": [
+        "type NoUI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/config.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/config.go",
+      "langage": "go",
+      "lignes": 67,
+      "taille_bytes": 1670,
+      "entrees": [],
+      "sorties": [
+        "func DefaultPreferences",
+        "type Config",
+        "type ContentReader",
+        "type Preferences"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/format/format.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/format/format.go",
+      "langage": "go",
+      "lignes": 104,
+      "taille_bytes": 3477,
+      "entrees": [],
+      "sorties": [
+        "func RenderHeader",
+        "func RenderHelpKey",
+        "func RenderNoHeader",
+        "func init"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/key/config.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/key/config.go",
+      "langage": "go",
+      "lignes": 100,
+      "taille_bytes": 3750,
+      "entrees": [],
+      "sorties": [
+        "func DefaultBindings",
+        "type Bindings",
+        "type Config",
+        "type FiletreeBindings",
+        "type GlobalBindings",
+        "type LayerBindings",
+        "type NavigationBindings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/key/binding.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/key/binding.go",
+      "langage": "go",
+      "lignes": 86,
+      "taille_bytes": 2037,
+      "entrees": [],
+      "sorties": [
+        "func GenerateBindings",
+        "func newBinding",
+        "type Binding",
+        "type BindingInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/layout/manager_test.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/layout/manager_test.go",
+      "langage": "go",
+      "lignes": 382,
+      "taille_bytes": 6964,
+      "entrees": [],
+      "sorties": [
+        "func Test_layout",
+        "func Test_planAndLayoutColumns",
+        "func Test_planAndLayoutHeaders",
+        "func newTestElement",
+        "type layoutReturn",
+        "type testElement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/layout/layout.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/layout/layout.go",
+      "langage": "go",
+      "lignes": 11,
+      "taille_bytes": 231,
+      "entrees": [],
+      "sorties": [
+        "type Layout"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/layout/location.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/layout/location.go",
+      "langage": "go",
+      "lignes": 9,
+      "taille_bytes": 109,
+      "entrees": [],
+      "sorties": [
+        "type Location"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/layout/area.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/layout/area.go",
+      "langage": "go",
+      "lignes": 5,
+      "taille_bytes": 65,
+      "entrees": [],
+      "sorties": [
+        "type Area"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/layout/manager.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/layout/manager.go",
+      "langage": "go",
+      "lignes": 263,
+      "taille_bytes": 7957,
+      "entrees": [],
+      "sorties": [
+        "func NewManager",
+        "type Constraint",
+        "type Manager"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/layout/compound/layer_details_column.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/layout/compound/layer_details_column.go",
+      "langage": "go",
+      "lignes": 111,
+      "taille_bytes": 3625,
+      "entrees": [],
+      "sorties": [
+        "func NewLayerDetailsCompoundLayout",
+        "type LayerDetailsCompoundLayout"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/viewmodel/filetree_test.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/viewmodel/filetree_test.go",
+      "langage": "go",
+      "lignes": 422,
+      "taille_bytes": 9796,
+      "entrees": [],
+      "sorties": [
+        "func TestFileShowAggregateChanges",
+        "func TestFileTreeDirCollapse",
+        "func TestFileTreeDirCollapseAll",
+        "func TestFileTreeDirCursorRight",
+        "func TestFileTreeFilterTree",
+        "func TestFileTreeGoCase",
+        "func TestFileTreeHideAddedRemovedModified",
+        "func TestFileTreeHideTypeWithFilter",
+        "func TestFileTreeHideUnmodified",
+        "func TestFileTreeNoAttributes",
+        "func TestFileTreePageDown",
+        "func TestFileTreePageUp",
+        "func TestFileTreeRestrictedHeight",
+        "func TestFileTreeSelectLayer",
+        "func TestUpdateSnapshotDisabled",
+        "func assertPath",
+        "func checkError",
+        "func fileExists",
+        "func helperCaptureBytes",
+        "func helperLoadBytes",
+        "func initializeTestViewModel",
+        "func repoPath",
+        "func repoRoot",
+        "func runTestCase",
+        "func testCaseDataFilePath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/viewmodel/layer_compare.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/viewmodel/layer_compare.go",
+      "langage": "go",
+      "lignes": 8,
+      "taille_bytes": 118,
+      "entrees": [],
+      "sorties": [
+        "type LayerCompareMode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/viewmodel/layer_set_state.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/viewmodel/layer_set_state.go",
+      "langage": "go",
+      "lignes": 36,
+      "taille_bytes": 1106,
+      "entrees": [],
+      "sorties": [
+        "func NewLayerSetState",
+        "type LayerSetState"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/viewmodel/filetree.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/viewmodel/filetree.go",
+      "langage": "go",
+      "lignes": 472,
+      "taille_bytes": 13682,
+      "entrees": [],
+      "sorties": [
+        "func NewFileTreeViewModel",
+        "type FileTreeViewModel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/viewmodel/layer_set_state_test.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/viewmodel/layer_set_state_test.go",
+      "langage": "go",
+      "lignes": 52,
+      "taille_bytes": 1339,
+      "entrees": [],
+      "sorties": [
+        "func TestGetCompareIndexes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/viewmodel/config.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/viewmodel/config.go",
+      "langage": "go",
+      "lignes": 1,
+      "taille_bytes": 18,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/viewmodel/layer_selection.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/viewmodel/layer_selection.go",
+      "langage": "go",
+      "lignes": 10,
+      "taille_bytes": 239,
+      "entrees": [],
+      "sorties": [
+        "type LayerSelection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/app/controller.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/app/controller.go",
+      "langage": "go",
+      "lignes": 248,
+      "taille_bytes": 6352,
+      "entrees": [],
+      "sorties": [
+        "func newController",
+        "type controller"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/app/job_control_unix.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/app/job_control_unix.go",
+      "langage": "go",
+      "lignes": 19,
+      "taille_bytes": 315,
+      "entrees": [],
+      "sorties": [
+        "func handle_ctrl_z"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/app/app.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/app/app.go",
+      "langage": "go",
+      "lignes": 136,
+      "taille_bytes": 3330,
+      "entrees": [],
+      "sorties": [
+        "const debug",
+        "func Run",
+        "func newApp",
+        "type app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/app/job_control_other.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/app/job_control_other.go",
+      "langage": "go",
+      "lignes": 13,
+      "taille_bytes": 209,
+      "entrees": [],
+      "sorties": [
+        "func handle_ctrl_z"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/debug.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/debug.go",
+      "langage": "go",
+      "lignes": 124,
+      "taille_bytes": 3023,
+      "entrees": [],
+      "sorties": [
+        "func newDebugView",
+        "type Debug"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/layer.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/layer.go",
+      "langage": "go",
+      "lignes": 377,
+      "taille_bytes": 9711,
+      "entrees": [],
+      "sorties": [
+        "func newLayerView",
+        "type Layer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/status.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/status.go",
+      "langage": "go",
+      "lignes": 131,
+      "taille_bytes": 3165,
+      "entrees": [],
+      "sorties": [
+        "func newStatusView",
+        "type Status"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/layer_change_listener.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/layer_change_listener.go",
+      "langage": "go",
+      "lignes": 7,
+      "taille_bytes": 155,
+      "entrees": [],
+      "sorties": [
+        "type LayerChangeListener"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/cursor.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/cursor.go",
+      "langage": "go",
+      "lignes": 38,
+      "taille_bytes": 959,
+      "entrees": [],
+      "sorties": [
+        "func CursorDown",
+        "func CursorStep",
+        "func CursorUp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/image_details.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/image_details.go",
+      "langage": "go",
+      "lignes": 180,
+      "taille_bytes": 4750,
+      "entrees": [],
+      "sorties": [
+        "type ImageDetails"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/views.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/views.go",
+      "langage": "go",
+      "lignes": 67,
+      "taille_bytes": 1395,
+      "entrees": [],
+      "sorties": [
+        "func NewViews",
+        "type View",
+        "type Views"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/filetree.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/filetree.go",
+      "langage": "go",
+      "lignes": 496,
+      "taille_bytes": 13207,
+      "entrees": [],
+      "sorties": [
+        "func newFileTreeView",
+        "type FileTree",
+        "type ViewExtractListener",
+        "type ViewOptionChangeListener"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/layer_details.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/layer_details.go",
+      "langage": "go",
+      "lignes": 149,
+      "taille_bytes": 3601,
+      "entrees": [],
+      "sorties": [
+        "type LayerDetails"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/renderer.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/renderer.go",
+      "langage": "go",
+      "lignes": 12,
+      "taille_bytes": 198,
+      "entrees": [],
+      "sorties": [
+        "type Helper",
+        "type Renderer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/ui/v1/view/filter.go": {
+      "fichier": "cmd/dive/cli/internal/ui/v1/view/filter.go",
+      "langage": "go",
+      "lignes": 188,
+      "taille_bytes": 4886,
+      "entrees": [],
+      "sorties": [
+        "func newFilterView",
+        "type Filter",
+        "type FilterEditListener"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/build.go": {
+      "fichier": "cmd/dive/cli/internal/command/build.go",
+      "langage": "go",
+      "lignes": 46,
+      "taille_bytes": 1363,
+      "entrees": [],
+      "sorties": [
+        "func Build",
+        "type buildOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/root.go": {
+      "fichier": "cmd/dive/cli/internal/command/root.go",
+      "langage": "go",
+      "lignes": 99,
+      "taille_bytes": 2777,
+      "entrees": [],
+      "sorties": [
+        "func Root",
+        "func run",
+        "func setUI",
+        "type Stater",
+        "type rootOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/export/main_test.go": {
+      "fichier": "cmd/dive/cli/internal/command/export/main_test.go",
+      "langage": "go",
+      "lignes": 68,
+      "taille_bytes": 1387,
+      "entrees": [],
+      "sorties": [
+        "func TestMain",
+        "func TestUpdateSnapshotDisabled",
+        "func repoPath",
+        "func repoRoot"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/export/export_test.go": {
+      "fichier": "cmd/dive/cli/internal/command/export/export_test.go",
+      "langage": "go",
+      "lignes": 19,
+      "taille_bytes": 387,
+      "entrees": [],
+      "sorties": [
+        "func Test_Export"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/export/export.go": {
+      "fichier": "cmd/dive/cli/internal/command/export/export.go",
+      "langage": "go",
+      "lignes": 86,
+      "taille_bytes": 2426,
+      "entrees": [],
+      "sorties": [
+        "func NewExport",
+        "type Export",
+        "type FileReference",
+        "type Image",
+        "type Layer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/ci/rules.go": {
+      "fichier": "cmd/dive/cli/internal/command/ci/rules.go",
+      "langage": "go",
+      "lignes": 196,
+      "taille_bytes": 5305,
+      "entrees": [],
+      "sorties": [
+        "func DisabledRule",
+        "func NewHighestUserWastedPercentRule",
+        "func NewHighestWastedBytesRule",
+        "func NewLowestEfficiencyRule",
+        "func Rules",
+        "func isRuleDisabled",
+        "type BaseRule",
+        "type HighestUserWastedPercentRule",
+        "type HighestWastedBytesRule",
+        "type LowestEfficiencyRule"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/ci/evaluator_test.go": {
+      "fichier": "cmd/dive/cli/internal/command/ci/evaluator_test.go",
+      "langage": "go",
+      "lignes": 198,
+      "taille_bytes": 4965,
+      "entrees": [],
+      "sorties": [
+        "func Test_Evaluator",
+        "func Test_Evaluator_Misconfigurations",
+        "func repoPath",
+        "func repoRoot"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/ci/evaluator.go": {
+      "fichier": "cmd/dive/cli/internal/command/ci/evaluator.go",
+      "langage": "go",
+      "lignes": 308,
+      "taille_bytes": 7417,
+      "entrees": [],
+      "sorties": [
+        "func NewEvaluator",
+        "func formatKeyValue",
+        "type Evaluation",
+        "type Evaluator",
+        "type ReferenceFile",
+        "type ResultTally",
+        "type format",
+        "type tallyItem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/ci/rule.go": {
+      "fichier": "cmd/dive/cli/internal/command/ci/rule.go",
+      "langage": "go",
+      "lignes": 47,
+      "taille_bytes": 831,
+      "entrees": [],
+      "sorties": [
+        "message string",
+        "type Rule",
+        "type RuleResult",
+        "type RuleStatus"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/adapter/evaluator.go": {
+      "fichier": "cmd/dive/cli/internal/command/adapter/evaluator.go",
+      "langage": "go",
+      "lignes": 48,
+      "taille_bytes": 1272,
+      "entrees": [],
+      "sorties": [
+        "func NewEvaluator",
+        "type Evaluator",
+        "type evaluationActionObserver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/adapter/exporter.go": {
+      "fichier": "cmd/dive/cli/internal/command/adapter/exporter.go",
+      "langage": "go",
+      "lignes": 63,
+      "taille_bytes": 1540,
+      "entrees": [],
+      "sorties": [
+        "func NewExporter",
+        "type Exporter",
+        "type jsonExporter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/adapter/resolver.go": {
+      "fichier": "cmd/dive/cli/internal/command/adapter/resolver.go",
+      "langage": "go",
+      "lignes": 91,
+      "taille_bytes": 2259,
+      "entrees": [],
+      "sorties": [
+        "func ImageResolver",
+        "type imageActionObserver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/command/adapter/analyzer.go": {
+      "fichier": "cmd/dive/cli/internal/command/adapter/analyzer.go",
+      "langage": "go",
+      "lignes": 68,
+      "taille_bytes": 1713,
+      "entrees": [],
+      "sorties": [
+        "func NewAnalyzer",
+        "type Analyzer",
+        "type analysisActionObserver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/ui_layers.go": {
+      "fichier": "cmd/dive/cli/internal/options/ui_layers.go",
+      "langage": "go",
+      "lignes": 20,
+      "taille_bytes": 550,
+      "entrees": [],
+      "sorties": [
+        "func DefaultUILayers",
+        "type UILayers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/ui_keybindings.go": {
+      "fichier": "cmd/dive/cli/internal/options/ui_keybindings.go",
+      "langage": "go",
+      "lignes": 178,
+      "taille_bytes": 6491,
+      "entrees": [],
+      "sorties": [
+        "func DefaultUIKeybinding",
+        "func createKeyBindings",
+        "func getUIBindingValues",
+        "type FiletreeBindings",
+        "type GlobalBindings",
+        "type LayerBindings",
+        "type NavigationBindings",
+        "type UIKeybindings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/ci_rules.go": {
+      "fichier": "cmd/dive/cli/internal/options/ci_rules.go",
+      "langage": "go",
+      "lignes": 73,
+      "taille_bytes": 3180,
+      "entrees": [],
+      "sorties": [
+        "func DefaultCIRules",
+        "type CIRules"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/application.go": {
+      "fichier": "cmd/dive/cli/internal/options/application.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 936,
+      "entrees": [],
+      "sorties": [
+        "func DefaultApplication",
+        "type Application"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/ui_diff.go": {
+      "fichier": "cmd/dive/cli/internal/options/ui_diff.go",
+      "langage": "go",
+      "lignes": 39,
+      "taille_bytes": 1012,
+      "entrees": [],
+      "sorties": [
+        "func DefaultUIDiff",
+        "type UIDiff"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/analysis.go": {
+      "fichier": "cmd/dive/cli/internal/options/analysis.go",
+      "langage": "go",
+      "lignes": 75,
+      "taille_bytes": 2549,
+      "entrees": [],
+      "sorties": [
+        "const defaultContainerEngine",
+        "func DefaultAnalysis",
+        "type Analysis"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/ci.go": {
+      "fichier": "cmd/dive/cli/internal/options/ci.go",
+      "langage": "go",
+      "lignes": 105,
+      "taille_bytes": 2965,
+      "entrees": [],
+      "sorties": [
+        "const defaultCIConfigPath",
+        "func DefaultCI",
+        "func fileExists",
+        "func truthy",
+        "type CI",
+        "type legacyRuleFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/ui_filetree.go": {
+      "fichier": "cmd/dive/cli/internal/options/ui_filetree.go",
+      "langage": "go",
+      "lignes": 43,
+      "taille_bytes": 1404,
+      "entrees": [],
+      "sorties": [
+        "func DefaultUIFiletree",
+        "type UIFiletree"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/ui.go": {
+      "fichier": "cmd/dive/cli/internal/options/ui.go",
+      "langage": "go",
+      "lignes": 18,
+      "taille_bytes": 519,
+      "entrees": [],
+      "sorties": [
+        "func DefaultUI",
+        "type UI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/internal/options/export.go": {
+      "fichier": "cmd/dive/cli/internal/options/export.go",
+      "langage": "go",
+      "lignes": 40,
+      "taille_bytes": 850,
+      "entrees": [],
+      "sorties": [
+        "func DefaultExport",
+        "type Export"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/testdata/dive-enable-ci.yaml": {
+      "fichier": "cmd/dive/cli/testdata/dive-enable-ci.yaml",
+      "langage": "yaml",
+      "lignes": 10,
+      "taille_bytes": 536,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/testdata/image-multi-layer-dockerfile/dive-pass.yaml": {
+      "fichier": "cmd/dive/cli/testdata/image-multi-layer-dockerfile/dive-pass.yaml",
+      "langage": "yaml",
+      "lignes": 5,
+      "taille_bytes": 123,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/testdata/image-multi-layer-dockerfile/dive-fail.yaml": {
+      "fichier": "cmd/dive/cli/testdata/image-multi-layer-dockerfile/dive-fail.yaml",
+      "langage": "yaml",
+      "lignes": 3,
+      "taille_bytes": 53,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/testdata/image-multi-layer-containerfile/dive-pass.yaml": {
+      "fichier": "cmd/dive/cli/testdata/image-multi-layer-containerfile/dive-pass.yaml",
+      "langage": "yaml",
+      "lignes": 10,
+      "taille_bytes": 536,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/dive/cli/testdata/config/dive-ci-legacy.yaml": {
+      "fichier": "cmd/dive/cli/testdata/config/dive-ci-legacy.yaml",
+      "langage": "yaml",
+      "lignes": 4,
+      "taille_bytes": 92,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/bus/bus.go": {
+      "fichier": "internal/bus/bus.go",
+      "langage": "go",
+      "lignes": 19,
+      "taille_bytes": 278,
+      "entrees": [],
+      "sorties": [
+        "func Get",
+        "func Publish",
+        "func Set"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/bus/helpers.go": {
+      "fichier": "internal/bus/helpers.go",
+      "langage": "go",
+      "lignes": 63,
+      "taille_bytes": 1372,
+      "entrees": [],
+      "sorties": [
+        "func ExploreAnalysis",
+        "func Notify",
+        "func Report",
+        "func StartSizedTask",
+        "func StartTask"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/bus/event/event.go": {
+      "fichier": "internal/bus/event/event.go",
+      "langage": "go",
+      "lignes": 21,
+      "taille_bytes": 791,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/bus/event/payload/explore.go": {
+      "fichier": "internal/bus/event/payload/explore.go",
+      "langage": "go",
+      "lignes": 8,
+      "taille_bytes": 143,
+      "entrees": [],
+      "sorties": [
+        "type Explore"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/bus/event/payload/generic.go": {
+      "fichier": "internal/bus/event/payload/generic.go",
+      "langage": "go",
+      "lignes": 48,
+      "taille_bytes": 818,
+      "entrees": [],
+      "sorties": [
+        "func GetGenericProgressFromContext",
+        "func SetGenericProgressToContext",
+        "type GenericProgress",
+        "type GenericTask",
+        "type Title",
+        "type genericProgressKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/bus/event/parser/parsers.go": {
+      "fichier": "internal/bus/event/parser/parsers.go",
+      "langage": "go",
+      "lignes": 106,
+      "taille_bytes": 2383,
+      "entrees": [],
+      "sorties": [
+        "func ParseExploreAnalysis",
+        "func ParseNotification",
+        "func ParseReport",
+        "func ParseTaskStarted",
+        "func checkEventType",
+        "func newPayloadErr",
+        "type ErrBadPayload"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/log/log.go": {
+      "fichier": "internal/log/log.go",
+      "langage": "go",
+      "lignes": 79,
+      "taille_bytes": 2177,
+      "entrees": [],
+      "sorties": [
+        "func Debug",
+        "func Debugf",
+        "func Error",
+        "func Errorf",
+        "func Get",
+        "func Info",
+        "func Infof",
+        "func Nested",
+        "func Set",
+        "func Trace",
+        "func Tracef",
+        "func Warn",
+        "func Warnf",
+        "func WithFields"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/utils/view.go": {
+      "fichier": "internal/utils/view.go",
+      "langage": "go",
+      "lignes": 21,
+      "taille_bytes": 474,
+      "entrees": [],
+      "sorties": [
+        "func IsNewView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/utils/format.go": {
+      "fichier": "internal/utils/format.go",
+      "langage": "go",
+      "lignes": 16,
+      "taille_bytes": 259,
+      "entrees": [],
+      "sorties": [
+        "func CleanArgs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/get_image_resolver.go": {
+      "fichier": "dive/get_image_resolver.go",
+      "langage": "go",
+      "lignes": 73,
+      "taille_bytes": 1756,
+      "entrees": [],
+      "sorties": [
+        "func DeriveImageSource",
+        "func GetImageResolver",
+        "func ParseImageSource",
+        "type ImageSource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/efficiency_test.go": {
+      "fichier": "dive/filetree/efficiency_test.go",
+      "langage": "go",
+      "lignes": 80,
+      "taille_bytes": 2404,
+      "entrees": [],
+      "sorties": [
+        "func TestEfficiency",
+        "func TestEfficiency_ScratchImage",
+        "func checkError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/file_tree_test.go": {
+      "fichier": "dive/filetree/file_tree_test.go",
+      "langage": "go",
+      "lignes": 845,
+      "taille_bytes": 21630,
+      "entrees": [],
+      "sorties": [
+        "func AssertDiffType",
+        "func TestAddPath",
+        "func TestAddRelativePath",
+        "func TestAddWhiteoutPath",
+        "func TestCompareWithAdds",
+        "func TestCompareWithChanges",
+        "func TestCompareWithNoChanges",
+        "func TestCompareWithRemoves",
+        "func TestCopy",
+        "func TestRejectPurelyRelativePath",
+        "func TestRemoveOnIterate",
+        "func TestRemovePath",
+        "func TestStack",
+        "func TestStackRange",
+        "func TestString",
+        "func TestStringBetween",
+        "func TestStringCollapsed",
+        "func stringInSlice"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/file_info.go": {
+      "fichier": "dive/filetree/file_info.go",
+      "langage": "go",
+      "lignes": 143,
+      "taille_bytes": 3164,
+      "entrees": [],
+      "sorties": [
+        "func NewFileInfo",
+        "func NewFileInfoFromTarHeader",
+        "func getHashFromReader",
+        "type FileInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/node_data.go": {
+      "fichier": "dive/filetree/node_data.go",
+      "langage": "go",
+      "lignes": 28,
+      "taille_bytes": 581,
+      "entrees": [],
+      "sorties": [
+        "func NewNodeData",
+        "type NodeData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/comparer.go": {
+      "fichier": "dive/filetree/comparer.go",
+      "langage": "go",
+      "lignes": 171,
+      "taille_bytes": 4727,
+      "entrees": [],
+      "sorties": [
+        "func NewComparer",
+        "func NewTreeIndexKey",
+        "type Comparer",
+        "type TreeIndexKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/efficiency.go": {
+      "fichier": "dive/filetree/efficiency.go",
+      "langage": "go",
+      "lignes": 131,
+      "taille_bytes": 3794,
+      "entrees": [],
+      "sorties": [
+        "func Efficiency",
+        "type EfficiencyData",
+        "type EfficiencySlice"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/file_node_test.go": {
+      "fichier": "dive/filetree/file_node_test.go",
+      "langage": "go",
+      "lignes": 168,
+      "taille_bytes": 4729,
+      "entrees": [],
+      "sorties": [
+        "func TestAddChild",
+        "func TestDiffTypeFromAddedChildren",
+        "func TestDiffTypeFromRemovedChildren",
+        "func TestDirSize",
+        "func TestIsWhiteout",
+        "func TestPath",
+        "func TestRemoveChild"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/node_data_test.go": {
+      "fichier": "dive/filetree/node_data_test.go",
+      "langage": "go",
+      "lignes": 41,
+      "taille_bytes": 829,
+      "entrees": [],
+      "sorties": [
+        "func BlankFileChangeInfo",
+        "func TestAssignDiffType",
+        "func TestMergeDiffTypes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/path_error.go": {
+      "fichier": "dive/filetree/path_error.go",
+      "langage": "go",
+      "lignes": 39,
+      "taille_bytes": 623,
+      "entrees": [],
+      "sorties": [
+        "func NewPathError",
+        "type FileAction",
+        "type PathError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/view_info.go": {
+      "fichier": "dive/filetree/view_info.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 444,
+      "entrees": [],
+      "sorties": [
+        "func NewViewInfo",
+        "type ViewInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/order_strategy.go": {
+      "fichier": "dive/filetree/order_strategy.go",
+      "langage": "go",
+      "lignes": 61,
+      "taille_bytes": 1057,
+      "entrees": [],
+      "sorties": [
+        "func GetSortOrderStrategy",
+        "type OrderStrategy",
+        "type SortOrder",
+        "type orderByNameStrategy",
+        "type orderBySizeDescStrategy"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/file_node.go": {
+      "fichier": "dive/filetree/file_node.go",
+      "langage": "go",
+      "lignes": 354,
+      "taille_bytes": 9516,
+      "entrees": [],
+      "sorties": [
+        "func NewNode",
+        "type FileNode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/file_tree.go": {
+      "fichier": "dive/filetree/file_tree.go",
+      "langage": "go",
+      "lignes": 390,
+      "taille_bytes": 11976,
+      "entrees": [],
+      "sorties": [
+        "func NewFileTree",
+        "func StackTreeRange",
+        "type FileTree",
+        "type VisitEvaluator",
+        "type Visitor",
+        "type compareMark",
+        "type renderParams"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/filetree/diff.go": {
+      "fichier": "dive/filetree/diff.go",
+      "langage": "go",
+      "lignes": 40,
+      "taille_bytes": 744,
+      "entrees": [],
+      "sorties": [
+        "type DiffType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/image.go": {
+      "fichier": "dive/image/image.go",
+      "langage": "go",
+      "lignes": 11,
+      "taille_bytes": 156,
+      "entrees": [],
+      "sorties": [
+        "type Image"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/layer.go": {
+      "fichier": "dive/image/layer.go",
+      "langage": "go",
+      "lignes": 52,
+      "taille_bytes": 898,
+      "entrees": [],
+      "sorties": [
+        "type Layer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/analysis.go": {
+      "fichier": "dive/image/analysis.go",
+      "langage": "go",
+      "lignes": 47,
+      "taille_bytes": 1209,
+      "entrees": [],
+      "sorties": [
+        "func Analyze",
+        "type Analysis"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/resolver.go": {
+      "fichier": "dive/image/resolver.go",
+      "langage": "go",
+      "lignes": 14,
+      "taille_bytes": 333,
+      "entrees": [],
+      "sorties": [
+        "type ContentReader",
+        "type Resolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/podman/build.go": {
+      "fichier": "dive/image/podman/build.go",
+      "langage": "go",
+      "lignes": 29,
+      "taille_bytes": 535,
+      "entrees": [],
+      "sorties": [
+        "func buildImageFromCli"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/podman/resolver_unsupported.go": {
+      "fichier": "dive/image/podman/resolver_unsupported.go",
+      "langage": "go",
+      "lignes": 33,
+      "taille_bytes": 749,
+      "entrees": [],
+      "sorties": [
+        "func NewResolverFromEngine",
+        "type resolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/podman/resolver.go": {
+      "fichier": "dive/image/podman/resolver.go",
+      "langage": "go",
+      "lignes": 70,
+      "taille_bytes": 1544,
+      "entrees": [],
+      "sorties": [
+        "func NewResolverFromEngine",
+        "type resolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/podman/cli.go": {
+      "fichier": "dive/image/podman/cli.go",
+      "langage": "go",
+      "lignes": 63,
+      "taille_bytes": 1426,
+      "entrees": [],
+      "sorties": [
+        "func isPodmanClientBinaryAvailable",
+        "func runPodmanCmd",
+        "func streamPodmanCmd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/build.go": {
+      "fichier": "dive/image/docker/build.go",
+      "langage": "go",
+      "lignes": 84,
+      "taille_bytes": 2341,
+      "entrees": [],
+      "sorties": [
+        "func buildImageFromCli",
+        "func isFileFlagsAreSet",
+        "func tryFindContainerfile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/engine_resolver.go": {
+      "fichier": "dive/image/docker/engine_resolver.go",
+      "langage": "go",
+      "lignes": 197,
+      "taille_bytes": 5560,
+      "entrees": [],
+      "sorties": [
+        "func NewResolverFromEngine",
+        "func determineDockerHost",
+        "type engineResolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/archive_resolver.go": {
+      "fichier": "dive/image/docker/archive_resolver.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 934,
+      "entrees": [],
+      "sorties": [
+        "func NewResolverFromArchive",
+        "type archiveResolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/layer.go": {
+      "fichier": "dive/image/docker/layer.go",
+      "langage": "go",
+      "lignes": 30,
+      "taille_bytes": 670,
+      "entrees": [],
+      "sorties": [
+        "type layer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/manifest.go": {
+      "fichier": "dive/image/docker/manifest.go",
+      "langage": "go",
+      "lignes": 21,
+      "taille_bytes": 427,
+      "entrees": [],
+      "sorties": [
+        "func newManifest",
+        "type manifest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/image_archive_analysis_test.go": {
+      "fichier": "dive/image/docker/image_archive_analysis_test.go",
+      "langage": "go",
+      "lignes": 43,
+      "taille_bytes": 1270,
+      "entrees": [],
+      "sorties": [
+        "func Test_Analysis"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/image_archive.go": {
+      "fichier": "dive/image/docker/image_archive.go",
+      "langage": "go",
+      "lignes": 378,
+      "taille_bytes": 9017,
+      "entrees": [],
+      "sorties": [
+        "func ExtractFromImage",
+        "func NewImageArchive",
+        "func extractInner",
+        "func getFileList",
+        "func processLayerTar",
+        "type ImageArchive"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/docker_host_unix.go": {
+      "fichier": "dive/image/docker/docker_host_unix.go",
+      "langage": "go",
+      "lignes": 7,
+      "taille_bytes": 98,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/docker_host_windows.go": {
+      "fichier": "dive/image/docker/docker_host_windows.go",
+      "langage": "go",
+      "lignes": 5,
+      "taille_bytes": 79,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/cli.go": {
+      "fichier": "dive/image/docker/cli.go",
+      "langage": "go",
+      "lignes": 37,
+      "taille_bytes": 819,
+      "entrees": [],
+      "sorties": [
+        "func isDockerClientBinaryAvailable",
+        "func runDockerCmd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/config.go": {
+      "fichier": "dive/image/docker/config.go",
+      "langage": "go",
+      "lignes": 54,
+      "taille_bytes": 1137,
+      "entrees": [],
+      "sorties": [
+        "func isConfig",
+        "func newConfig",
+        "type config",
+        "type historyEntry",
+        "type rootFs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/testing.go": {
+      "fichier": "dive/image/docker/testing.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 760,
+      "entrees": [],
+      "sorties": [
+        "func TestAnalysisFromArchive",
+        "func TestLoadArchive"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dive/image/docker/build_test.go": {
+      "fichier": "dive/image/docker/build_test.go",
+      "langage": "go",
+      "lignes": 231,
+      "taille_bytes": 6526,
+      "entrees": [],
+      "sorties": [
+        "func TestIsFileFlagsAreSet",
+        "func TestTryFindContainerfile",
+        "func create"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

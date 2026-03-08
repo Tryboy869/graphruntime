@@ -1,0 +1,5422 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 120
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 168,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 6,
+    "noeuds_feuilles": 6,
+    "noeuds_hubs": 0,
+    "points_entree": 15,
+    "fichier_plus_appele": "setuptools/warnings.py"
+  },
+  "noeuds": {
+    "_distutils_hack/override.py": {
+      "fichier": "_distutils_hack/override.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 44,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/__init__.py",
+        "setuptools/discovery.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "_distutils_hack/__init__.py": {
+      "fichier": "_distutils_hack/__init__.py",
+      "langage": "python",
+      "lignes": 239,
+      "taille_bytes": 6755,
+      "entrees": [
+        "importlib",
+        "importlib.abc",
+        "importlib.util",
+        "os",
+        "sys",
+        "traceback",
+        "warnings"
+      ],
+      "sorties": [
+        "class DistutilsLoader",
+        "class DistutilsMetaFinder",
+        "class _TrivialRe",
+        "class shim",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _remove_shim",
+        "def add_shim",
+        "def clear_distutils",
+        "def create_module",
+        "def do_override",
+        "def enabled",
+        "def ensure_local_distutils",
+        "def exec_module",
+        "def find_spec",
+        "def frame_file_is_setup",
+        "def insert_shim",
+        "def is_cpython",
+        "def match",
+        "def pip_imported_during_build",
+        "def spec_for_distutils",
+        "def spec_for_pip",
+        "def spec_for_sensitive_tests",
+        "def warn_distutils_present"
+      ],
+      "appelle": [
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/glob.py": {
+      "fichier": "setuptools/glob.py",
+      "langage": "python",
+      "lignes": 185,
+      "taille_bytes": 6062,
+      "entrees": [
+        "__future__",
+        "_typeshed",
+        "collections.abc",
+        "fnmatch",
+        "os",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "def _iglob",
+        "def _isrecursive",
+        "def _rlistdir",
+        "def escape",
+        "def glob",
+        "def glob0",
+        "def glob1",
+        "def glob2",
+        "def has_magic",
+        "def iglob"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/extension.py": {
+      "fichier": "setuptools/extension.py",
+      "langage": "python",
+      "lignes": 179,
+      "taille_bytes": 6818,
+      "entrees": [
+        ".monkey",
+        "__future__",
+        "collections.abc",
+        "distutils.core",
+        "distutils.errors",
+        "distutils.extension",
+        "functools",
+        "re",
+        "setuptools._path",
+        "the",
+        "typing"
+      ],
+      "sorties": [
+        "class Extension",
+        "class Library",
+        "def __init__",
+        "def _convert_pyx_sources_to_lang",
+        "def _have_cython"
+      ],
+      "appelle": [
+        "setuptools/_path.py",
+        "setuptools/_vendor/autocommand/errors.py",
+        "setuptools/monkey.py"
+      ],
+      "est_appele_par": [
+        "setuptools/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_importlib.py": {
+      "fichier": "setuptools/_importlib.py",
+      "langage": "python",
+      "lignes": 9,
+      "taille_bytes": 223,
+      "entrees": [
+        "importlib.metadata",
+        "importlib.resources",
+        "importlib_metadata",
+        "sys"
+      ],
+      "sorties": [],
+      "appelle": [
+        "setuptools/_vendor/wheel/metadata.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_entry_points.py",
+        "setuptools/_scripts.py",
+        "setuptools/dist.py",
+        "setuptools/installer.py",
+        "setuptools/version.py",
+        "setuptools/wheel.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/errors.py": {
+      "fichier": "setuptools/errors.py",
+      "langage": "python",
+      "lignes": 67,
+      "taille_bytes": 3024,
+      "entrees": [
+        "__future__",
+        "``setuptools``",
+        "distutils"
+      ],
+      "sorties": [
+        "class InvalidConfigError",
+        "class PackageDiscoveryError",
+        "class RemovedCommandError",
+        "class RemovedConfigError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/dist.py": {
+      "fichier": "setuptools/dist.py",
+      "langage": "python",
+      "lignes": 1124,
+      "taille_bytes": 45184,
+      "entrees": [
+        "._importlib",
+        "._normalization",
+        "._path",
+        "._reqs",
+        ".command.bdist_wheel",
+        ".config",
+        ".discovery",
+        ".errors",
+        ".installer",
+        ".monkey",
+        ".warnings",
+        "__future__",
+        "an",
+        "collections.abc",
+        "configparser",
+        "distutils.cmd",
+        "distutils.command",
+        "distutils.core",
+        "distutils.debug",
+        "distutils.dist",
+        "distutils.errors",
+        "distutils.fancy_getopt",
+        "distutils.log",
+        "distutils.util",
+        "functools",
+        "glob",
+        "io",
+        "itertools",
+        "more_itertools",
+        "numbers",
+        "os",
+        "packaging.markers",
+        "packaging.specifiers",
+        "packaging.version",
+        "pathlib",
+        "re",
+        "shlex",
+        "sys",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "class DistDeprecationWarning",
+        "class Distribution",
+        "def __getattr__",
+        "def __init__",
+        "def _check_extra",
+        "def _check_marker",
+        "def _enforce_option_lowercase",
+        "def _enforce_underscore",
+        "def _exclude_misc",
+        "def _exclude_packages",
+        "def _expand_patterns",
+        "def _finalize_license_expression",
+        "def _finalize_license_files",
+        "def _finalize_requires",
+        "def _finalize_setup_keywords",
+        "def _find_pattern",
+        "def _get_project_config_files",
+        "def _include_misc",
+        "def _is_setuptools_section",
+        "def _normalize_requires",
+        "def _normalize_version",
+        "def _parse_command_opts",
+        "def _parse_config_files",
+        "def _removed",
+        "def _set_command_options",
+        "def _set_metadata_defaults",
+        "def _setuptools_commands",
+        "def _skip_setupcfg_normalization",
+        "def _validate_metadata",
+        "def assert_bool",
+        "def assert_string_list",
+        "def by_order",
+        "def check_entry_points",
+        "def check_extras",
+        "def check_importable",
+        "def check_nsp",
+        "def check_package_data",
+        "def check_packages",
+        "def check_requirements",
+        "def check_specifier",
+        "def exclude",
+        "def exclude_package",
+        "def fetch_build_egg",
+        "def fetch_build_eggs",
+        "def finalize_options",
+        "def get_cmdline_options",
+        "def get_command_class",
+        "def get_command_list",
+        "def get_egg_cache_dir",
+        "def handle_display_options",
+        "def has_contents_for",
+        "def include",
+        "def invalid_unless_false",
+        "def iter_distribution_names",
+        "def parse_config_files",
+        "def print_commands",
+        "def run_command"
+      ],
+      "appelle": [
+        "setuptools/_importlib.py",
+        "setuptools/_normalization.py",
+        "setuptools/_path.py",
+        "setuptools/_reqs.py",
+        "setuptools/_vendor/autocommand/errors.py",
+        "setuptools/_vendor/packaging/markers.py",
+        "setuptools/_vendor/packaging/specifiers.py",
+        "setuptools/_vendor/packaging/version.py",
+        "setuptools/_vendor/wheel/bdist_wheel.py",
+        "setuptools/_vendor/zipp/glob.py",
+        "setuptools/discovery.py",
+        "setuptools/installer.py",
+        "setuptools/monkey.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [
+        "setuptools/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/wheel.py": {
+      "fichier": "setuptools/wheel.py",
+      "langage": "python",
+      "lignes": 262,
+      "taille_bytes": 9532,
+      "entrees": [
+        "._discovery",
+        "._importlib",
+        ".unicode_utils",
+        "collections.abc",
+        "contextlib",
+        "distutils",
+        "distutils.util",
+        "email",
+        "functools",
+        "itertools",
+        "os",
+        "packaging.requirements",
+        "packaging.tags",
+        "packaging.utils",
+        "packaging.version",
+        "posixpath",
+        "re",
+        "setuptools",
+        "setuptools.archive_util",
+        "setuptools.command.egg_info",
+        "zipfile"
+      ],
+      "sorties": [
+        "class Wheel",
+        "def __init__",
+        "def _convert_metadata",
+        "def _convert_requires",
+        "def _fix_namespace_packages",
+        "def _get_supported_tags",
+        "def _install_as_egg",
+        "def _move_data_entries",
+        "def disable_info_traces",
+        "def egg_name",
+        "def eval",
+        "def for_extra",
+        "def get_dist_info",
+        "def get_metadata",
+        "def install_as_egg",
+        "def is_compatible",
+        "def raw_req",
+        "def tags",
+        "def unpack"
+      ],
+      "appelle": [
+        "setuptools/_discovery.py",
+        "setuptools/_importlib.py",
+        "setuptools/_vendor/packaging/requirements.py",
+        "setuptools/_vendor/packaging/utils.py",
+        "setuptools/_vendor/packaging/version.py",
+        "setuptools/_vendor/wheel/_commands/tags.py",
+        "setuptools/archive_util.py",
+        "setuptools/unicode_utils.py"
+      ],
+      "est_appele_par": [
+        "setuptools/installer.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_static.py": {
+      "fichier": "setuptools/_static.py",
+      "langage": "python",
+      "lignes": 188,
+      "taille_bytes": 4855,
+      "entrees": [
+        ".warnings",
+        "functools",
+        "packaging.specifiers",
+        "typing"
+      ],
+      "sorties": [
+        "class Dict",
+        "class List",
+        "class SpecifierSet",
+        "class Static",
+        "class Str",
+        "class Tuple",
+        "def _prevent_modification",
+        "def _replacement",
+        "def attempt_conversion",
+        "def is_static",
+        "def noop"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/specifiers.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_core_metadata.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_discovery.py": {
+      "fichier": "setuptools/_discovery.py",
+      "langage": "python",
+      "lignes": 33,
+      "taille_bytes": 836,
+      "entrees": [
+        "functools",
+        "operator",
+        "packaging.requirements"
+      ],
+      "sorties": [
+        "def extras_from_dep",
+        "def extras_from_deps"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/requirements.py"
+      ],
+      "est_appele_par": [
+        "setuptools/wheel.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/namespaces.py": {
+      "fichier": "setuptools/namespaces.py",
+      "langage": "python",
+      "lignes": 101,
+      "taille_bytes": 3045,
+      "entrees": [
+        ".compat",
+        "distutils",
+        "itertools",
+        "os"
+      ],
+      "sorties": [
+        "class DevelopInstaller",
+        "class Installer",
+        "def _gen_nspkg_line",
+        "def _get_all_ns_packages",
+        "def _get_nspkg_file",
+        "def _get_root",
+        "def _get_target",
+        "def _pkg_names",
+        "def install_namespaces",
+        "def uninstall_namespaces"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/installer.py": {
+      "fichier": "setuptools/installer.py",
+      "langage": "python",
+      "lignes": 155,
+      "taille_bytes": 5184,
+      "entrees": [
+        "._importlib",
+        ".warnings",
+        ".wheel",
+        "__future__",
+        "distutils",
+        "distutils.errors",
+        "glob",
+        "itertools",
+        "os",
+        "packaging.requirements",
+        "packaging.utils",
+        "subprocess",
+        "sys",
+        "tempfile"
+      ],
+      "sorties": [
+        "class _DeprecatedInstaller",
+        "def _dist_matches_req",
+        "def _fetch_build_egg_no_warn",
+        "def _fetch_build_eggs",
+        "def _fixup_find_links",
+        "def _present",
+        "def _warn_wheel_not_available",
+        "def fetch_build_egg",
+        "def strip_marker"
+      ],
+      "appelle": [
+        "setuptools/_importlib.py",
+        "setuptools/_vendor/autocommand/errors.py",
+        "setuptools/_vendor/packaging/requirements.py",
+        "setuptools/_vendor/packaging/utils.py",
+        "setuptools/_vendor/zipp/glob.py",
+        "setuptools/warnings.py",
+        "setuptools/wheel.py"
+      ],
+      "est_appele_par": [
+        "setuptools/dist.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_reqs.py": {
+      "fichier": "setuptools/_reqs.py",
+      "langage": "python",
+      "lignes": 42,
+      "taille_bytes": 1380,
+      "entrees": [
+        "__future__",
+        "collections.abc",
+        "functools",
+        "jaraco.text",
+        "packaging.requirements",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "def parse",
+        "def parse_strings"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/requirements.py"
+      ],
+      "est_appele_par": [
+        "setuptools/build_meta.py",
+        "setuptools/dist.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/launch.py": {
+      "fichier": "setuptools/launch.py",
+      "langage": "python",
+      "lignes": 36,
+      "taille_bytes": 820,
+      "entrees": [
+        "sys",
+        "tokenize"
+      ],
+      "sorties": [
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/msvc.py": {
+      "fichier": "setuptools/msvc.py",
+      "langage": "python",
+      "lignes": 1557,
+      "taille_bytes": 42909,
+      "entrees": [
+        "._path",
+        ".compat",
+        "__future__",
+        "contextlib",
+        "distutils.errors",
+        "itertools",
+        "json",
+        "more_itertools",
+        "os",
+        "os.path",
+        "platform",
+        "typing",
+        "typing_extensions",
+        "winreg"
+      ],
+      "sorties": [
+        "class EnvironmentInfo",
+        "class PlatformInfo",
+        "class RegistryInfo",
+        "class SystemInfo",
+        "class _EnvironmentDict",
+        "class winreg",
+        "def FSharp",
+        "def FSharpInstallDir",
+        "def FrameworkDir32",
+        "def FrameworkDir64",
+        "def FrameworkVersion32",
+        "def FrameworkVersion64",
+        "def FxTools",
+        "def HTMLHelpWorkshop",
+        "def MSBuild",
+        "def NetFxSDKIncludes",
+        "def NetFxSDKLibraries",
+        "def NetFxSdkDir",
+        "def NetFxSdkVersion",
+        "def OSIncludes",
+        "def OSLibpath",
+        "def OSLibraries",
+        "def SdkSetup",
+        "def SdkTools",
+        "def UCRTIncludes",
+        "def UCRTLibraries",
+        "def UniversalCRTSdkDir",
+        "def UniversalCRTSdkLastVersion",
+        "def VCIncludes",
+        "def VCInstallDir",
+        "def VCLibraries",
+        "def VCRuntimeRedist",
+        "def VCStoreRefs",
+        "def VCTools",
+        "def VSInstallDir",
+        "def VSTools",
+        "def VsTDb",
+        "def WindowsSDKExecutablePath",
+        "def WindowsSdkDir",
+        "def WindowsSdkLastVersion",
+        "def WindowsSdkVersion",
+        "def __init__",
+        "def _as_float_version",
+        "def _build_paths",
+        "def _find_dot_net_versions",
+        "def _find_latest_available_vs_ver",
+        "def _guess_vc",
+        "def _guess_vc_legacy",
+        "def _sdk_subdir",
+        "def _sdk_tools",
+        "def _ucrt_subdir",
+        "def _use_last_dir_name",
+        "def cross_dir",
+        "def current_dir",
+        "def current_is_x86",
+        "def find_programdata_vs_vers",
+        "def find_reg_vs_vers",
+        "def lookup",
+        "def microsoft",
+        "def microsoft_sdk",
+        "def netfx_sdk",
+        "def return_env",
+        "def sxs",
+        "def target_cpu",
+        "def target_dir",
+        "def target_is_x86",
+        "def vc",
+        "def vc_for_python",
+        "def vc_ver",
+        "def visualstudio",
+        "def vs",
+        "def vs_ver",
+        "def windows_kits_roots",
+        "def windows_sdk"
+      ],
+      "appelle": [
+        "setuptools/_path.py",
+        "setuptools/_vendor/autocommand/errors.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/discovery.py": {
+      "fichier": "setuptools/discovery.py",
+      "langage": "python",
+      "lignes": 614,
+      "taille_bytes": 21286,
+      "entrees": [
+        "._path",
+        "__future__",
+        "_distutils_hack.override",
+        "case",
+        "collections.abc",
+        "distutils",
+        "distutils.util",
+        "fnmatch",
+        "glob",
+        "inspect",
+        "itertools",
+        "os",
+        "pathlib",
+        "setuptools",
+        "setuptools.errors",
+        "typing"
+      ],
+      "sorties": [
+        "class ConfigDiscovery",
+        "class FlatLayoutModuleFinder",
+        "class FlatLayoutPackageFinder",
+        "class ModuleFinder",
+        "class PEP420PackageFinder",
+        "class PackageFinder",
+        "class _Filter",
+        "class _Finder",
+        "def __call__",
+        "def __contains__",
+        "def __init__",
+        "def _analyse_explicit_layout",
+        "def _analyse_flat_layout",
+        "def _analyse_flat_modules",
+        "def _analyse_flat_packages",
+        "def _analyse_package_layout",
+        "def _analyse_src_layout",
+        "def _disable",
+        "def _ensure_no_accidental_inclusion",
+        "def _explicitly_specified",
+        "def _find_iter",
+        "def _find_name_from_packages",
+        "def _find_name_single_package_or_module",
+        "def _find_packages_within",
+        "def _ignore_ext_modules",
+        "def _looks_like_package",
+        "def _package_dir",
+        "def _root_dir",
+        "def _valid_name",
+        "def analyse_name",
+        "def construct_package_dir",
+        "def find",
+        "def find_package_path",
+        "def find_parent_package",
+        "def remove_nested_packages",
+        "def remove_stubs"
+      ],
+      "appelle": [
+        "_distutils_hack/override.py",
+        "setuptools/_path.py",
+        "setuptools/_vendor/autocommand/errors.py",
+        "setuptools/_vendor/zipp/glob.py"
+      ],
+      "est_appele_par": [
+        "setuptools/__init__.py",
+        "setuptools/dist.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/build_meta.py": {
+      "fichier": "setuptools/build_meta.py",
+      "langage": "python",
+      "lignes": 556,
+      "taille_bytes": 20234,
+      "entrees": [
+        "._path",
+        "._reqs",
+        ".warnings",
+        "__future__",
+        "collections.abc",
+        "contextlib",
+        "distutils",
+        "distutils.util",
+        "io",
+        "os",
+        "pathlib",
+        "setuptools",
+        "shlex",
+        "shutil",
+        "sys",
+        "tempfile",
+        "tokenize",
+        "typing",
+        "typing_extensions",
+        "warnings"
+      ],
+      "sorties": [
+        "class Distribution",
+        "class SetupRequirementsError",
+        "class _BuildMetaBackend",
+        "class _BuildMetaLegacyBackend",
+        "class _ConfigSettingsTranslator",
+        "class _IncompatibleBdistWheel",
+        "def __dist_info_args",
+        "def __init__",
+        "def _arbitrary_args",
+        "def _bubble_up_info_directory",
+        "def _build",
+        "def _build_with_temp_dir",
+        "def _editable_args",
+        "def _file_with_extension",
+        "def _find_info_directory",
+        "def _get_build_requires",
+        "def _get_config",
+        "def _get_dist_info_dir",
+        "def _get_immediate_subdirectories",
+        "def _global_args",
+        "def _open_setup_script",
+        "def build_editable",
+        "def build_sdist",
+        "def build_wheel",
+        "def fetch_build_eggs",
+        "def get_requires_for_build_editable",
+        "def get_requires_for_build_sdist",
+        "def get_requires_for_build_wheel",
+        "def no_install_setup_requires",
+        "def patch",
+        "def prepare_metadata_for_build_editable",
+        "def prepare_metadata_for_build_wheel",
+        "def run_setup",
+        "def suppress_known_deprecation"
+      ],
+      "appelle": [
+        "setuptools/_path.py",
+        "setuptools/_reqs.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/depends.py": {
+      "fichier": "setuptools/depends.py",
+      "langage": "python",
+      "lignes": 185,
+      "taille_bytes": 5965,
+      "entrees": [
+        "._imp",
+        "__future__",
+        "contextlib",
+        "dis",
+        "marshal",
+        "packaging.version",
+        "sys",
+        "types",
+        "typing"
+      ],
+      "sorties": [
+        "class Require",
+        "def __init__",
+        "def empty",
+        "def extract_constant",
+        "def full_name",
+        "def get_module_constant",
+        "def get_version",
+        "def is_current",
+        "def is_present",
+        "def maybe_close",
+        "def version_ok"
+      ],
+      "appelle": [
+        "setuptools/_imp.py",
+        "setuptools/_vendor/packaging/version.py"
+      ],
+      "est_appele_par": [
+        "setuptools/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_shutil.py": {
+      "fichier": "setuptools/_shutil.py",
+      "langage": "python",
+      "lignes": 59,
+      "taille_bytes": 1578,
+      "entrees": [
+        ".compat",
+        "distutils",
+        "os",
+        "stat",
+        "typing"
+      ],
+      "sorties": [
+        "def _auto_chmod",
+        "def attempt_chmod_verbose",
+        "def chmod",
+        "def current_umask",
+        "def rmdir",
+        "def rmtree"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/unicode_utils.py": {
+      "fichier": "setuptools/unicode_utils.py",
+      "langage": "python",
+      "lignes": 102,
+      "taille_bytes": 3189,
+      "entrees": [
+        ".compat",
+        ".warnings",
+        "configparser",
+        "sys",
+        "unicodedata"
+      ],
+      "sorties": [
+        "class _Utf8EncodingNeeded",
+        "def _cfg_read_utf8_with_fallback",
+        "def _read_utf8_with_fallback",
+        "def decompose",
+        "def filesys_decode",
+        "def try_encode"
+      ],
+      "appelle": [
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [
+        "setuptools/wheel.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_imp.py": {
+      "fichier": "setuptools/_imp.py",
+      "langage": "python",
+      "lignes": 87,
+      "taille_bytes": 2435,
+      "entrees": [
+        "importlib.machinery",
+        "importlib.util",
+        "os",
+        "the",
+        "tokenize"
+      ],
+      "sorties": [
+        "def find_module",
+        "def find_spec",
+        "def get_frozen_object",
+        "def get_module"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/depends.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/archive_util.py": {
+      "fichier": "setuptools/archive_util.py",
+      "langage": "python",
+      "lignes": 219,
+      "taille_bytes": 7356,
+      "entrees": [
+        "._path",
+        "contextlib",
+        "distutils.errors",
+        "os",
+        "posixpath",
+        "shutil",
+        "tarfile",
+        "zipfile"
+      ],
+      "sorties": [
+        "class UnrecognizedFormat",
+        "def _iter_open_tar",
+        "def _resolve_tar_file_or_dir",
+        "def _unpack_zipfile_obj",
+        "def default_filter",
+        "def unpack_archive",
+        "def unpack_directory",
+        "def unpack_tarfile",
+        "def unpack_zipfile"
+      ],
+      "appelle": [
+        "setuptools/_path.py",
+        "setuptools/_vendor/autocommand/errors.py"
+      ],
+      "est_appele_par": [
+        "setuptools/wheel.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/modified.py": {
+      "fichier": "setuptools/modified.py",
+      "langage": "python",
+      "lignes": 18,
+      "taille_bytes": 568,
+      "entrees": [
+        "._distutils._modified",
+        "distutils._modified"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_path.py": {
+      "fichier": "setuptools/_path.py",
+      "langage": "python",
+      "lignes": 93,
+      "taille_bytes": 2976,
+      "entrees": [
+        "__future__",
+        "contextlib",
+        "more_itertools",
+        "os",
+        "sys",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "def _cygwin_patch",
+        "def ensure_directory",
+        "def normpath",
+        "def paths_on_pythonpath",
+        "def same_path"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/archive_util.py",
+        "setuptools/build_meta.py",
+        "setuptools/discovery.py",
+        "setuptools/dist.py",
+        "setuptools/extension.py",
+        "setuptools/msvc.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "setuptools/logging.py": {
+      "fichier": "setuptools/logging.py",
+      "langage": "python",
+      "lignes": 40,
+      "taille_bytes": 1261,
+      "entrees": [
+        "distutils.log",
+        "inspect",
+        "logging",
+        "sys"
+      ],
+      "sorties": [
+        "def _not_warning",
+        "def configure",
+        "def set_threshold"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/packaging/pylock.py",
+        "setuptools/_vendor/packaging/tags.py",
+        "setuptools/_vendor/wheel/_bdist_wheel.py",
+        "setuptools/_vendor/wheel/_setuptools_logging.py",
+        "setuptools/_vendor/wheel/wheelfile.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "setuptools/_entry_points.py": {
+      "fichier": "setuptools/_entry_points.py",
+      "langage": "python",
+      "lignes": 94,
+      "taille_bytes": 2468,
+      "entrees": [
+        "._importlib",
+        "._itertools",
+        ".errors",
+        "functools",
+        "itertools",
+        "jaraco.functools",
+        "jaraco.text",
+        "more_itertools",
+        "operator"
+      ],
+      "sorties": [
+        "def by_group_and_name",
+        "def ensure_valid",
+        "def load",
+        "def load_group",
+        "def render",
+        "def render_items",
+        "def validate"
+      ],
+      "appelle": [
+        "setuptools/_importlib.py",
+        "setuptools/_vendor/autocommand/errors.py",
+        "setuptools/_vendor/importlib_metadata/_itertools.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/warnings.py": {
+      "fichier": "setuptools/warnings.py",
+      "langage": "python",
+      "lignes": 110,
+      "taille_bytes": 3796,
+      "entrees": [
+        "__future__",
+        "datetime",
+        "inspect",
+        "os",
+        "textwrap",
+        "typing",
+        "typing_extensions",
+        "warnings"
+      ],
+      "sorties": [
+        "class InformationOnly",
+        "class SetuptoolsDeprecationWarning",
+        "class SetuptoolsWarning",
+        "def _format",
+        "def _should_enforce",
+        "def emit"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "_distutils_hack/__init__.py",
+        "setuptools/__init__.py",
+        "setuptools/_core_metadata.py",
+        "setuptools/_scripts.py",
+        "setuptools/_static.py",
+        "setuptools/_vendor/backports/tarfile/__init__.py",
+        "setuptools/_vendor/jaraco/functools/__init__.py",
+        "setuptools/_vendor/more_itertools/more.py",
+        "setuptools/_vendor/packaging/_manylinux.py",
+        "setuptools/_vendor/packaging/version.py",
+        "setuptools/_vendor/tomli/_parser.py",
+        "setuptools/_vendor/wheel/_bdist_wheel.py",
+        "setuptools/_vendor/wheel/bdist_wheel.py",
+        "setuptools/_vendor/wheel/metadata.py",
+        "setuptools/build_meta.py",
+        "setuptools/dist.py",
+        "setuptools/installer.py",
+        "setuptools/unicode_utils.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "setuptools/_scripts.py": {
+      "fichier": "setuptools/_scripts.py",
+      "langage": "python",
+      "lignes": 361,
+      "taille_bytes": 11247,
+      "entrees": [
+        "._importlib",
+        ".warnings",
+        "__future__",
+        "collections.abc",
+        "distutils.command.build_scripts",
+        "distutils.util",
+        "importlib.metadata",
+        "importlib_metadata",
+        "os",
+        "pkg_resources",
+        "re",
+        "shlex",
+        "shutil",
+        "struct",
+        "subprocess",
+        "sys",
+        "textwrap",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "class CommandSpec",
+        "class ScriptWriter",
+        "class WindowsCommandSpec",
+        "class WindowsExecutableLauncherWriter",
+        "class WindowsScriptWriter",
+        "class _SplitArgs",
+        "def _adjust_header",
+        "def _ensure_safe_name",
+        "def _extract_options",
+        "def _first_line_re",
+        "def _get_script_args",
+        "def _render",
+        "def _strip_quotes",
+        "def _sys_executable",
+        "def _use_header",
+        "def as_header",
+        "def best",
+        "def from_environment",
+        "def from_param",
+        "def from_string",
+        "def get_args",
+        "def get_header",
+        "def get_win_launcher",
+        "def importlib_load_entry_point",
+        "def install_options",
+        "def is_64bit",
+        "def isascii",
+        "def load_launcher_manifest"
+      ],
+      "appelle": [
+        "setuptools/_importlib.py",
+        "setuptools/_vendor/wheel/metadata.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/windows_support.py": {
+      "fichier": "setuptools/windows_support.py",
+      "langage": "python",
+      "lignes": 30,
+      "taille_bytes": 726,
+      "entrees": [
+        "ctypes",
+        "ctypes.wintypes",
+        "platform"
+      ],
+      "sorties": [
+        "def hide_file",
+        "def windows_only"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/monkey.py": {
+      "fichier": "setuptools/monkey.py",
+      "langage": "python",
+      "lignes": 126,
+      "taille_bytes": 3733,
+      "entrees": [
+        "__future__",
+        "distutils.filelist",
+        "inspect",
+        "platform",
+        "setuptools",
+        "sys",
+        "types",
+        "typing"
+      ],
+      "sorties": [
+        "def _get_mro",
+        "def _patch_distribution_metadata",
+        "def get_unpatched",
+        "def get_unpatched_class",
+        "def get_unpatched_function",
+        "def patch_all",
+        "def patch_func",
+        "function will"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/dist.py",
+        "setuptools/extension.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_itertools.py": {
+      "fichier": "setuptools/_itertools.py",
+      "langage": "python",
+      "lignes": 23,
+      "taille_bytes": 657,
+      "entrees": [
+        "more_itertools"
+      ],
+      "sorties": [
+        "def ensure_unique"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/version.py": {
+      "fichier": "setuptools/version.py",
+      "langage": "python",
+      "lignes": 6,
+      "taille_bytes": 161,
+      "entrees": [
+        "._importlib"
+      ],
+      "sorties": [],
+      "appelle": [
+        "setuptools/_importlib.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_core_metadata.py": {
+      "fichier": "setuptools/_core_metadata.py",
+      "langage": "python",
+      "lignes": 337,
+      "taille_bytes": 11978,
+      "entrees": [
+        "._static",
+        ".warnings",
+        "__future__",
+        "distutils.util",
+        "email",
+        "email.message",
+        "os",
+        "packaging.markers",
+        "packaging.requirements",
+        "packaging.utils",
+        "packaging.version",
+        "stat",
+        "tempfile",
+        "textwrap"
+      ],
+      "sorties": [
+        "def _distribution_fullname",
+        "def _include_extra",
+        "def _read_field_from_msg",
+        "def _read_field_unescaped_from_msg",
+        "def _read_list_from_msg",
+        "def _read_payload_from_msg",
+        "def _safe_license_file",
+        "def _write_provides_extra",
+        "def _write_requirements",
+        "def get_fullname",
+        "def get_metadata_version",
+        "def read_pkg_file",
+        "def rfc822_unescape",
+        "def single_line",
+        "def write_field",
+        "def write_pkg_file",
+        "def write_pkg_info"
+      ],
+      "appelle": [
+        "setuptools/_static.py",
+        "setuptools/_vendor/packaging/markers.py",
+        "setuptools/_vendor/packaging/requirements.py",
+        "setuptools/_vendor/packaging/utils.py",
+        "setuptools/_vendor/packaging/version.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/__init__.py": {
+      "fichier": "setuptools/__init__.py",
+      "langage": "python",
+      "lignes": 256,
+      "taille_bytes": 9521,
+      "entrees": [
+        ".depends",
+        ".discovery",
+        ".dist",
+        ".extension",
+        ".version",
+        ".warnings",
+        "__future__",
+        "_distutils_hack.override",
+        "``setuptools.Command``",
+        "abc",
+        "collections.abc",
+        "distutils.core",
+        "functools",
+        "os",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class Command",
+        "class MinimalDistribution",
+        "class sic",
+        "def __init__",
+        "def _fetch_build_eggs",
+        "def _find_all_simple",
+        "def _get_project_config_files",
+        "def _install_setup_requires",
+        "def finalize_options",
+        "def findall",
+        "def initialize_options",
+        "def reinitialize_command",
+        "def run",
+        "def setup"
+      ],
+      "appelle": [
+        "_distutils_hack/override.py",
+        "setuptools/_vendor/packaging/version.py",
+        "setuptools/depends.py",
+        "setuptools/discovery.py",
+        "setuptools/dist.py",
+        "setuptools/extension.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_normalization.py": {
+      "fichier": "setuptools/_normalization.py",
+      "langage": "python",
+      "lignes": 180,
+      "taille_bytes": 5798,
+      "entrees": [
+        "packaging",
+        "packaging.licenses",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "def _missing_canonicalize_license_expression",
+        "def best_effort_version",
+        "def filename_component",
+        "def filename_component_broken",
+        "def safe_extra",
+        "def safe_identifier",
+        "def safe_name",
+        "def safe_version",
+        "def safer_best_effort_version",
+        "def safer_name"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/dist.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/compat/py311.py": {
+      "fichier": "setuptools/compat/py311.py",
+      "langage": "python",
+      "lignes": 27,
+      "taille_bytes": 790,
+      "entrees": [
+        "__future__",
+        "_typeshed",
+        "shutil",
+        "sys",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "def _handler",
+        "def shutil_rmtree"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/compat/py310.py": {
+      "fichier": "setuptools/compat/py310.py",
+      "langage": "python",
+      "lignes": 20,
+      "taille_bytes": 344,
+      "entrees": [
+        "sys",
+        "tomli",
+        "tomllib"
+      ],
+      "sorties": [
+        "def add_note"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/compat/py312.py": {
+      "fichier": "setuptools/compat/py312.py",
+      "langage": "python",
+      "lignes": 13,
+      "taille_bytes": 366,
+      "entrees": [
+        ".py39",
+        "__future__",
+        "sys"
+      ],
+      "sorties": [],
+      "appelle": [
+        "setuptools/_vendor/importlib_metadata/compat/py39.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/compat/py39.py": {
+      "fichier": "setuptools/compat/py39.py",
+      "langage": "python",
+      "lignes": 9,
+      "taille_bytes": 493,
+      "entrees": [
+        "sys"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/compat/__init__.py": {
+      "fichier": "setuptools/compat/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/platformdirs/api.py": {
+      "fichier": "setuptools/_vendor/platformdirs/api.py",
+      "langage": "python",
+      "lignes": 299,
+      "taille_bytes": 9281,
+      "entrees": [
+        "__future__",
+        "abc",
+        "collections.abc",
+        "os",
+        "pathlib",
+        "typing"
+      ],
+      "sorties": [
+        "class PlatformDirsABC",
+        "def __init__",
+        "def _append_app_name_and_version",
+        "def _first_item_as_path_if_multipath",
+        "def _optionally_create_directory",
+        "def iter_cache_dirs",
+        "def iter_cache_paths",
+        "def iter_config_dirs",
+        "def iter_config_paths",
+        "def iter_data_dirs",
+        "def iter_data_paths",
+        "def iter_runtime_dirs",
+        "def iter_runtime_paths",
+        "def site_cache_dir",
+        "def site_cache_path",
+        "def site_config_dir",
+        "def site_config_path",
+        "def site_data_dir",
+        "def site_data_path",
+        "def site_runtime_dir",
+        "def site_runtime_path",
+        "def user_cache_dir",
+        "def user_cache_path",
+        "def user_config_dir",
+        "def user_config_path",
+        "def user_data_dir",
+        "def user_data_path",
+        "def user_desktop_dir",
+        "def user_desktop_path",
+        "def user_documents_dir",
+        "def user_documents_path",
+        "def user_downloads_dir",
+        "def user_downloads_path",
+        "def user_log_dir",
+        "def user_log_path",
+        "def user_music_dir",
+        "def user_music_path",
+        "def user_pictures_dir",
+        "def user_pictures_path",
+        "def user_runtime_dir",
+        "def user_runtime_path",
+        "def user_state_dir",
+        "def user_state_path",
+        "def user_videos_dir",
+        "def user_videos_path"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/platformdirs/__init__.py",
+        "setuptools/_vendor/platformdirs/android.py",
+        "setuptools/_vendor/platformdirs/macos.py",
+        "setuptools/_vendor/platformdirs/unix.py",
+        "setuptools/_vendor/platformdirs/windows.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "setuptools/_vendor/platformdirs/__main__.py": {
+      "fichier": "setuptools/_vendor/platformdirs/__main__.py",
+      "langage": "python",
+      "lignes": 55,
+      "taille_bytes": 1493,
+      "entrees": [
+        "__future__",
+        "platformdirs"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/platformdirs/unix.py": {
+      "fichier": "setuptools/_vendor/platformdirs/unix.py",
+      "langage": "python",
+      "lignes": 272,
+      "taille_bytes": 10458,
+      "entrees": [
+        ".api",
+        "__future__",
+        "collections.abc",
+        "configparser",
+        "os",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class Unix",
+        "def _get_user_dirs_folder",
+        "def _get_user_media_dir",
+        "def _site_config_dirs",
+        "def _site_data_dirs",
+        "def getuid",
+        "def iter_config_dirs",
+        "def iter_data_dirs",
+        "def site_cache_dir",
+        "def site_cache_path",
+        "def site_config_dir",
+        "def site_config_path",
+        "def site_data_dir",
+        "def site_data_path",
+        "def site_runtime_dir",
+        "def user_cache_dir",
+        "def user_config_dir",
+        "def user_data_dir",
+        "def user_desktop_dir",
+        "def user_documents_dir",
+        "def user_downloads_dir",
+        "def user_log_dir",
+        "def user_music_dir",
+        "def user_pictures_dir",
+        "def user_runtime_dir",
+        "def user_state_dir",
+        "def user_videos_dir"
+      ],
+      "appelle": [
+        "setuptools/_vendor/platformdirs/api.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/platformdirs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/platformdirs/macos.py": {
+      "fichier": "setuptools/_vendor/platformdirs/macos.py",
+      "langage": "python",
+      "lignes": 146,
+      "taille_bytes": 6322,
+      "entrees": [
+        ".api",
+        "__future__",
+        "os.path",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class MacOS",
+        "def site_cache_dir",
+        "def site_cache_path",
+        "def site_config_dir",
+        "def site_data_dir",
+        "def site_data_path",
+        "def site_runtime_dir",
+        "def user_cache_dir",
+        "def user_config_dir",
+        "def user_data_dir",
+        "def user_desktop_dir",
+        "def user_documents_dir",
+        "def user_downloads_dir",
+        "def user_log_dir",
+        "def user_music_dir",
+        "def user_pictures_dir",
+        "def user_runtime_dir",
+        "def user_state_dir",
+        "def user_videos_dir"
+      ],
+      "appelle": [
+        "setuptools/_vendor/platformdirs/api.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/platformdirs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/platformdirs/version.py": {
+      "fichier": "setuptools/_vendor/platformdirs/version.py",
+      "langage": "python",
+      "lignes": 34,
+      "taille_bytes": 704,
+      "entrees": [
+        "typing"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/platformdirs/windows.py": {
+      "fichier": "setuptools/_vendor/platformdirs/windows.py",
+      "langage": "python",
+      "lignes": 272,
+      "taille_bytes": 10125,
+      "entrees": [
+        ".api",
+        "__future__",
+        "collections.abc",
+        "ctypes",
+        "functools",
+        "os",
+        "sys",
+        "typing",
+        "winreg"
+      ],
+      "sorties": [
+        "class Windows",
+        "def _append_parts",
+        "def _pick_get_win_folder",
+        "def get_win_folder_from_env_vars",
+        "def get_win_folder_from_registry",
+        "def get_win_folder_if_csidl_name_not_env_var",
+        "def get_win_folder_via_ctypes",
+        "def site_cache_dir",
+        "def site_config_dir",
+        "def site_data_dir",
+        "def site_runtime_dir",
+        "def user_cache_dir",
+        "def user_config_dir",
+        "def user_data_dir",
+        "def user_desktop_dir",
+        "def user_documents_dir",
+        "def user_downloads_dir",
+        "def user_log_dir",
+        "def user_music_dir",
+        "def user_pictures_dir",
+        "def user_runtime_dir",
+        "def user_state_dir",
+        "def user_videos_dir"
+      ],
+      "appelle": [
+        "setuptools/_vendor/platformdirs/api.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/platformdirs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/platformdirs/__init__.py": {
+      "fichier": "setuptools/_vendor/platformdirs/__init__.py",
+      "langage": "python",
+      "lignes": 631,
+      "taille_bytes": 22284,
+      "entrees": [
+        ".api",
+        ".version",
+        "__future__",
+        "os",
+        "pathlib",
+        "platformdirs.android",
+        "platformdirs.macos",
+        "platformdirs.unix",
+        "platformdirs.windows",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "def _set_platform_dir_class",
+        "def site_cache_dir",
+        "def site_cache_path",
+        "def site_config_dir",
+        "def site_config_path",
+        "def site_data_dir",
+        "def site_data_path",
+        "def site_runtime_dir",
+        "def site_runtime_path",
+        "def user_cache_dir",
+        "def user_cache_path",
+        "def user_config_dir",
+        "def user_config_path",
+        "def user_data_dir",
+        "def user_data_path",
+        "def user_desktop_dir",
+        "def user_desktop_path",
+        "def user_documents_dir",
+        "def user_documents_path",
+        "def user_downloads_dir",
+        "def user_downloads_path",
+        "def user_log_dir",
+        "def user_log_path",
+        "def user_music_dir",
+        "def user_music_path",
+        "def user_pictures_dir",
+        "def user_pictures_path",
+        "def user_runtime_dir",
+        "def user_runtime_path",
+        "def user_state_dir",
+        "def user_state_path",
+        "def user_videos_dir",
+        "def user_videos_path"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/version.py",
+        "setuptools/_vendor/platformdirs/android.py",
+        "setuptools/_vendor/platformdirs/api.py",
+        "setuptools/_vendor/platformdirs/macos.py",
+        "setuptools/_vendor/platformdirs/unix.py",
+        "setuptools/_vendor/platformdirs/windows.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_vendor/platformdirs/android.py": {
+      "fichier": "setuptools/_vendor/platformdirs/android.py",
+      "langage": "python",
+      "lignes": 249,
+      "taille_bytes": 9013,
+      "entrees": [
+        ".api",
+        "__future__",
+        "android",
+        "functools",
+        "jnius",
+        "os",
+        "re",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class Android",
+        "def _android_documents_folder",
+        "def _android_downloads_folder",
+        "def _android_folder",
+        "def _android_music_folder",
+        "def _android_pictures_folder",
+        "def _android_videos_folder",
+        "def site_cache_dir",
+        "def site_config_dir",
+        "def site_data_dir",
+        "def site_runtime_dir",
+        "def user_cache_dir",
+        "def user_config_dir",
+        "def user_data_dir",
+        "def user_desktop_dir",
+        "def user_documents_dir",
+        "def user_downloads_dir",
+        "def user_log_dir",
+        "def user_music_dir",
+        "def user_pictures_dir",
+        "def user_runtime_dir",
+        "def user_state_dir",
+        "def user_videos_dir"
+      ],
+      "appelle": [
+        "setuptools/_vendor/platformdirs/api.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/platformdirs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/tomli/_re.py": {
+      "fichier": "setuptools/_vendor/tomli/_re.py",
+      "langage": "python",
+      "lignes": 119,
+      "taille_bytes": 3396,
+      "entrees": [
+        "._types",
+        "__future__",
+        "datetime",
+        "functools",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "def cached_tz",
+        "def match_to_datetime",
+        "def match_to_localtime",
+        "def match_to_number"
+      ],
+      "appelle": [
+        "setuptools/_vendor/tomli/_types.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/tomli/_parser.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/tomli/_parser.py": {
+      "fichier": "setuptools/_vendor/tomli/_parser.py",
+      "langage": "python",
+      "lignes": 782,
+      "taille_bytes": 25958,
+      "entrees": [
+        "._re",
+        "._types",
+        "__future__",
+        "collections.abc",
+        "sys",
+        "types",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "class DEPRECATED_DEFAULT",
+        "class Flags",
+        "class NestedDict",
+        "class Output",
+        "class TOMLDecodeError",
+        "def __init__",
+        "def add_pending",
+        "def append_nest_to_list",
+        "def create_dict_rule",
+        "def create_list_rule",
+        "def finalize_pending",
+        "def get_or_create_nest",
+        "def is_",
+        "def is_unicode_scalar_value",
+        "def key_value_rule",
+        "def load",
+        "def loads",
+        "def make_safe_parse_float",
+        "def parse_array",
+        "def parse_basic_str",
+        "def parse_basic_str_escape",
+        "def parse_basic_str_escape_multiline",
+        "def parse_hex_char",
+        "def parse_inline_table",
+        "def parse_key",
+        "def parse_key_part",
+        "def parse_key_value_pair",
+        "def parse_literal_str",
+        "def parse_multiline_str",
+        "def parse_one_line_basic_str",
+        "def parse_value",
+        "def safe_parse_float",
+        "def set",
+        "def skip_chars",
+        "def skip_comment",
+        "def skip_comments_and_array_ws",
+        "def skip_until",
+        "def unset_all"
+      ],
+      "appelle": [
+        "setuptools/_vendor/tomli/_re.py",
+        "setuptools/_vendor/tomli/_types.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_vendor/tomli/_types.py": {
+      "fichier": "setuptools/_vendor/tomli/_types.py",
+      "langage": "python",
+      "lignes": 10,
+      "taille_bytes": 254,
+      "entrees": [
+        "typing"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/tomli/_parser.py",
+        "setuptools/_vendor/tomli/_re.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/tomli/__init__.py": {
+      "fichier": "setuptools/_vendor/tomli/__init__.py",
+      "langage": "python",
+      "lignes": 8,
+      "taille_bytes": 314,
+      "entrees": [
+        "._parser"
+      ],
+      "sorties": [],
+      "appelle": [
+        "setuptools/_vendor/packaging/_parser.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/diagnose.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/diagnose.py",
+      "langage": "python",
+      "lignes": 21,
+      "taille_bytes": 379,
+      "entrees": [
+        "sys"
+      ],
+      "sorties": [
+        "def inspect",
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/_adapters.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/_adapters.py",
+      "langage": "python",
+      "lignes": 136,
+      "taille_bytes": 3797,
+      "entrees": [
+        "._text",
+        "email.message",
+        "email.policy",
+        "re",
+        "textwrap"
+      ],
+      "sorties": [
+        "class Message",
+        "class RawPolicy",
+        "def __getitem__",
+        "def __init__",
+        "def __iter__",
+        "def __new__",
+        "def _repair_headers",
+        "def as_string",
+        "def fold",
+        "def json",
+        "def redent",
+        "def transform"
+      ],
+      "appelle": [
+        "setuptools/_vendor/importlib_metadata/_text.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/_text.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/_text.py",
+      "langage": "python",
+      "lignes": 99,
+      "taille_bytes": 2166,
+      "entrees": [
+        "._functools",
+        "re"
+      ],
+      "sorties": [
+        "class FoldedCase",
+        "def __contains__",
+        "def __eq__",
+        "def __gt__",
+        "def __hash__",
+        "def __lt__",
+        "def __ne__",
+        "def in_",
+        "def index",
+        "def lower",
+        "def split"
+      ],
+      "appelle": [
+        "setuptools/_vendor/zipp/_functools.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/importlib_metadata/_adapters.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/_compat.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/_compat.py",
+      "langage": "python",
+      "lignes": 56,
+      "taille_bytes": 1313,
+      "entrees": [
+        "platform",
+        "sys"
+      ],
+      "sorties": [
+        "class NullFinder",
+        "def disable_stdlib_finder",
+        "def find_spec",
+        "def install",
+        "def matches",
+        "def pypy_partial"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/importlib_metadata/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/_collections.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/_collections.py",
+      "langage": "python",
+      "lignes": 34,
+      "taille_bytes": 760,
+      "entrees": [
+        "collections",
+        "typing"
+      ],
+      "sorties": [
+        "class FreezableDefaultDict",
+        "class Pair",
+        "def __missing__",
+        "def freeze",
+        "def parse"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/importlib_metadata/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/_typing.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/_typing.py",
+      "langage": "python",
+      "lignes": 15,
+      "taille_bytes": 367,
+      "entrees": [
+        "._meta",
+        "functools",
+        "typing"
+      ],
+      "sorties": [],
+      "appelle": [
+        "setuptools/_vendor/importlib_metadata/_meta.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/importlib_metadata/__init__.py",
+        "setuptools/_vendor/importlib_metadata/compat/py39.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/_functools.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/_functools.py",
+      "langage": "python",
+      "lignes": 135,
+      "taille_bytes": 3510,
+      "entrees": [
+        "functools",
+        "types",
+        "typing"
+      ],
+      "sorties": [
+        "def method_cache",
+        "def noop",
+        "def pass_none",
+        "def passthrough",
+        "def wrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/_meta.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/_meta.py",
+      "langage": "python",
+      "lignes": 71,
+      "taille_bytes": 1765,
+      "entrees": [
+        "__future__",
+        "collections.abc",
+        "os",
+        "typing"
+      ],
+      "sorties": [
+        "class PackageMetadata",
+        "class SimplePath",
+        "def __contains__",
+        "def __getitem__",
+        "def __iter__",
+        "def __len__",
+        "def __truediv__",
+        "def exists",
+        "def get",
+        "def get_all",
+        "def joinpath",
+        "def json",
+        "def parent",
+        "def read_bytes",
+        "def read_text"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/importlib_metadata/__init__.py",
+        "setuptools/_vendor/importlib_metadata/_typing.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/_itertools.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/_itertools.py",
+      "langage": "python",
+      "lignes": 171,
+      "taille_bytes": 5351,
+      "entrees": [
+        "collections",
+        "itertools"
+      ],
+      "sorties": [
+        "class bucket",
+        "def __contains__",
+        "def __getitem__",
+        "def __init__",
+        "def __iter__",
+        "def _get_values",
+        "def always_iterable",
+        "def unique_everseen"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_entry_points.py",
+        "setuptools/_vendor/importlib_metadata/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/__init__.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/__init__.py",
+      "langage": "python",
+      "lignes": 1191,
+      "taille_bytes": 37734,
+      "entrees": [
+        "._collections",
+        "._compat",
+        "._functools",
+        "._itertools",
+        "._meta",
+        "._typing",
+        ".compat",
+        "__future__",
+        "abc",
+        "collections",
+        "collections.abc",
+        "contextlib",
+        "csv",
+        "email",
+        "functools",
+        "importlib",
+        "importlib.abc",
+        "inspect",
+        "itertools",
+        "json",
+        "operator",
+        "os",
+        "pathlib",
+        "posixpath",
+        "re",
+        "sys",
+        "textwrap",
+        "types",
+        "typing",
+        "zipp.compat.overlay"
+      ],
+      "sorties": [
+        "class Context",
+        "class Distribution",
+        "class DistributionFinder",
+        "class EntryPoint",
+        "class EntryPoints",
+        "class FastPath",
+        "class FileHash",
+        "class Lookup",
+        "class MetadataPathFinder",
+        "class PackageNotFoundError",
+        "class PackagePath",
+        "class PathDistribution",
+        "class Prepared",
+        "class Sectioned",
+        "class _EntryPointMatch",
+        "def __bool__",
+        "def __eq__",
+        "def __getitem__",
+        "def __hash__",
+        "def __init__",
+        "def __lt__",
+        "def __new__",
+        "def __repr__",
+        "def __setattr__",
+        "def __str__",
+        "def _assemble_message",
+        "def _clear_after_fork",
+        "def _convert_egg_info_reqs_to_simple_reqs",
+        "def _deps_from_requires_text",
+        "def _disallow_dist",
+        "def _discover_resolvers",
+        "def _for",
+        "def _from_text",
+        "def _from_text_for",
+        "def _get_toplevel_name",
+        "def _key",
+        "def _load_json",
+        "def _match",
+        "def _name_from_stem",
+        "def _normalized_name",
+        "def _prefer_valid",
+        "def _read_dist_info_reqs",
+        "def _read_egg_info_reqs",
+        "def _read_files_distinfo",
+        "def _read_files_egginfo_installed",
+        "def _read_files_egginfo_sources",
+        "def _search_paths",
+        "def _top_level_declared",
+        "def _top_level_inferred",
+        "def _topmost",
+        "def at",
+        "def attr",
+        "def children",
+        "def discover",
+        "def distribution",
+        "def distributions",
+        "def entry_points",
+        "def extras",
+        "def files",
+        "def find_distributions",
+        "def from_name",
+        "def groups",
+        "def importable_name",
+        "def invalidate_caches",
+        "def joinpath",
+        "def legacy_normalize",
+        "def load",
+        "def locate",
+        "def locate_file",
+        "def lookup",
+        "def make_condition",
+        "def make_file",
+        "def make_files",
+        "def matches",
+        "def metadata",
+        "def module",
+        "def mtime",
+        "def name",
+        "def names",
+        "def normalize",
+        "def origin",
+        "def packages_distributions",
+        "def path",
+        "def quoted_marker",
+        "def read",
+        "def read_binary",
+        "def read_text",
+        "def requires",
+        "def search",
+        "def section_pairs",
+        "def select",
+        "def skip_missing_files",
+        "def url_req_space",
+        "def valid",
+        "def version",
+        "def zip_children"
+      ],
+      "appelle": [
+        "setuptools/_vendor/importlib_metadata/_collections.py",
+        "setuptools/_vendor/importlib_metadata/_compat.py",
+        "setuptools/_vendor/importlib_metadata/_itertools.py",
+        "setuptools/_vendor/importlib_metadata/_meta.py",
+        "setuptools/_vendor/importlib_metadata/_typing.py",
+        "setuptools/_vendor/zipp/_functools.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_vendor/importlib_metadata/compat/py311.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/compat/py311.py",
+      "langage": "python",
+      "lignes": 22,
+      "taille_bytes": 608,
+      "entrees": [
+        "os",
+        "pathlib",
+        "sys",
+        "types"
+      ],
+      "sorties": [
+        "def relative_to",
+        "def wrap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/compat/py39.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/compat/py39.py",
+      "langage": "python",
+      "lignes": 42,
+      "taille_bytes": 1187,
+      "entrees": [
+        "..",
+        ".._typing",
+        "__future__",
+        "typing"
+      ],
+      "sorties": [
+        "def ep_matches",
+        "def normalized_name"
+      ],
+      "appelle": [
+        "setuptools/_vendor/importlib_metadata/_typing.py"
+      ],
+      "est_appele_par": [
+        "setuptools/compat/py312.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/importlib_metadata/compat/__init__.py": {
+      "fichier": "setuptools/_vendor/importlib_metadata/compat/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/backports/__init__.py": {
+      "fichier": "setuptools/_vendor/backports/__init__.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 81,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/backports/tarfile/__main__.py": {
+      "fichier": "setuptools/_vendor/backports/tarfile/__main__.py",
+      "langage": "python",
+      "lignes": 5,
+      "taille_bytes": 59,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/backports/tarfile/__init__.py": {
+      "fichier": "setuptools/_vendor/backports/tarfile/__init__.py",
+      "langage": "python",
+      "lignes": 2937,
+      "taille_bytes": 108491,
+      "entrees": [
+        ".compat.py38",
+        "argparse",
+        "builtins",
+        "bz2",
+        "copy",
+        "grp",
+        "gzip",
+        "io",
+        "its",
+        "lzma",
+        "os",
+        "pwd",
+        "re",
+        "shutil",
+        "stat",
+        "struct",
+        "sys",
+        "time",
+        "warnings",
+        "zlib"
+      ],
+      "sorties": [
+        "class AbsoluteLinkError",
+        "class AbsolutePathError",
+        "class CompressionError",
+        "class EOFHeaderError",
+        "class EmptyHeaderError",
+        "class ExFileObject",
+        "class ExtractError",
+        "class FilterError",
+        "class HeaderError",
+        "class InvalidHeaderError",
+        "class LinkOutsideDestinationError",
+        "class OutsideDestinationError",
+        "class ReadError",
+        "class SpecialFileError",
+        "class StreamError",
+        "class SubsequentHeaderError",
+        "class TarError",
+        "class TarFile",
+        "class TarInfo",
+        "class TruncatedHeaderError",
+        "class _FileInFile",
+        "class _LowLevelFile",
+        "class _Stream",
+        "class _StreamProxy",
+        "def __del__",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def __iter__",
+        "def __read",
+        "def __repr__",
+        "def __write",
+        "def _apply_pax_info",
+        "def _block",
+        "def _check",
+        "def _create_gnu_long_header",
+        "def _create_header",
+        "def _create_pax_generic_header",
+        "def _create_payload",
+        "def _dbg",
+        "def _decode_pax_field",
+        "def _extract_member",
+        "def _extract_one",
+        "def _find_link_target",
+        "def _get_extract_tarinfo",
+        "def _get_filter_function",
+        "def _get_filtered_attrs",
+        "def _getmember",
+        "def _handle_fatal_error",
+        "def _handle_nonfatal_error",
+        "def _init_read_gz",
+        "def _init_write_gz",
+        "def _load",
+        "def _posix_split_name",
+        "def _proc_builtin",
+        "def _proc_gnulong",
+        "def _proc_gnusparse_00",
+        "def _proc_gnusparse_01",
+        "def _proc_gnusparse_10",
+        "def _proc_member",
+        "def _proc_pax",
+        "def _proc_sparse",
+        "def _read",
+        "def _safe_print",
+        "def add",
+        "def addfile",
+        "def bz2open",
+        "def calc_chksums",
+        "def chmod",
+        "def chown",
+        "def close",
+        "def copyfileobj",
+        "def create_gnu_header",
+        "def create_pax_global_header",
+        "def create_pax_header",
+        "def create_ustar_header",
+        "def data_filter",
+        "def extract",
+        "def extractall",
+        "def extractfile",
+        "def flush",
+        "def frombuf",
+        "def fromtarfile",
+        "def fully_trusted_filter",
+        "def get_info",
+        "def getcomptype",
+        "def getmember",
+        "def getmembers",
+        "def getnames",
+        "def gettarinfo",
+        "def gzopen",
+        "def is_tarfile",
+        "def isblk",
+        "def ischr",
+        "def isdev",
+        "def isdir",
+        "def isfifo",
+        "def isfile",
+        "def islnk",
+        "def isreg",
+        "def issparse",
+        "def issym",
+        "def itn",
+        "def linkpath",
+        "def list",
+        "def main",
+        "def makedev",
+        "def makedir",
+        "def makefifo",
+        "def makefile",
+        "def makelink",
+        "def makeunknown",
+        "def mode",
+        "def next",
+        "def not_compressed",
+        "def nti",
+        "def nts",
+        "def open",
+        "def path",
+        "def read",
+        "def readable",
+        "def readinto",
+        "def replace",
+        "def seek",
+        "def seekable",
+        "def stn",
+        "def tar_filter",
+        "def tarfile",
+        "def taropen",
+        "def tell",
+        "def tobuf",
+        "def utime",
+        "def writable",
+        "def write",
+        "def xzopen",
+        "output is"
+      ],
+      "appelle": [
+        "setuptools/_vendor/backports/tarfile/compat/py38.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_vendor/backports/tarfile/compat/py38.py": {
+      "fichier": "setuptools/_vendor/backports/tarfile/compat/py38.py",
+      "langage": "python",
+      "lignes": 24,
+      "taille_bytes": 568,
+      "entrees": [
+        "sys"
+      ],
+      "sorties": [
+        "def removeprefix",
+        "def removesuffix"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/backports/tarfile/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/backports/tarfile/compat/__init__.py": {
+      "fichier": "setuptools/_vendor/backports/tarfile/compat/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/more_itertools/more.py": {
+      "fichier": "setuptools/_vendor/more_itertools/more.py",
+      "langage": "python",
+      "lignes": 5303,
+      "taille_bytes": 163690,
+      "entrees": [
+        ".recipes",
+        ":func:`take`",
+        "collections",
+        "collections.abc",
+        "contextlib",
+        "functools",
+        "heapq",
+        "itertools",
+        "math",
+        "operator",
+        "queue",
+        "random",
+        "sys",
+        "the",
+        "time",
+        "warnings"
+      ],
+      "sorties": [
+        "class AbortThread",
+        "class SequenceView",
+        "class bucket",
+        "class callback_iter",
+        "class countable",
+        "class islice_extended",
+        "class numeric_range",
+        "class peekable",
+        "class run_length",
+        "class seekable",
+        "class time_limited",
+        "def __bool__",
+        "def __contains__",
+        "def __enter__",
+        "def __eq__",
+        "def __exit__",
+        "def __getitem__",
+        "def __hash__",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def __next__",
+        "def __reduce__",
+        "def __repr__",
+        "def __reversed__",
+        "def _complex_sumprod",
+        "def _fsumprod",
+        "def _full",
+        "def _get_by_index",
+        "def _get_slice",
+        "def _get_values",
+        "def _ichunk",
+        "def _islice_helper",
+        "def _len",
+        "def _nth_prime_bounds",
+        "def _partial",
+        "def _reader",
+        "def _sample_counted",
+        "def _sample_unweighted",
+        "def _sample_weighted",
+        "def adjacent",
+        "def all_unique",
+        "def always_iterable",
+        "def always_reversible",
+        "def argmax",
+        "def argmin",
+        "def callback",
+        "def chunked",
+        "def chunked_even",
+        "def circular_shifts",
+        "def classify_unique",
+        "def collapse",
+        "def combination_index",
+        "def combination_with_replacement_index",
+        "def consecutive_groups",
+        "def constrained_batches",
+        "def consumer",
+        "def count",
+        "def count_cycle",
+        "def decode",
+        "def decorator",
+        "def derangements",
+        "def dft",
+        "def difference",
+        "def distinct_combinations",
+        "def distinct_permutations",
+        "def distribute",
+        "def divide",
+        "def dl_mul",
+        "def dl_split",
+        "def done",
+        "def doublestarmap",
+        "def duplicates_everseen",
+        "def duplicates_justseen",
+        "def elements",
+        "def encode",
+        "def exactly_n",
+        "def extract",
+        "def feed",
+        "def filter_except",
+        "def filter_map",
+        "def first",
+        "def generator",
+        "def gray_product",
+        "def groupby_transform",
+        "def ichunked",
+        "def idft",
+        "def iequals",
+        "def ilen",
+        "def index",
+        "def inner_wrapper",
+        "def interleave",
+        "def interleave_evenly",
+        "def interleave_longest",
+        "def interleave_randomly",
+        "def intersperse",
+        "def is_scalar",
+        "def is_sorted",
+        "def iter_suppress",
+        "def iterate",
+        "def join_mappings",
+        "def last",
+        "def locate",
+        "def longest_common_prefix",
+        "def lstrip",
+        "def make_decorator",
+        "def map_except",
+        "def map_if",
+        "def map_reduce",
+        "def mark_ends",
+        "def materialize_next",
+        "def minmax",
+        "def nth_combination_with_replacement",
+        "def nth_or_last",
+        "def nth_permutation",
+        "def nth_prime",
+        "def nth_product",
+        "def one",
+        "def only",
+        "def outer_product",
+        "def outer_wrapper",
+        "def padded",
+        "def partial_product",
+        "def partitions",
+        "def peek",
+        "def permutation_index",
+        "def permuted_items",
+        "def powerset_of_sets",
+        "def prepend",
+        "def product_index",
+        "def raise_",
+        "def relative_seek",
+        "def repeat_each",
+        "def repeat_last",
+        "def replace",
+        "def result",
+        "def ret",
+        "def rlocate",
+        "def rstrip",
+        "def sample",
+        "def seek",
+        "def set_partitions",
+        "def set_partitions_helper",
+        "def side_effect",
+        "def slice_generator",
+        "def sliced",
+        "def sort_together",
+        "def split_after",
+        "def split_at",
+        "def split_before",
+        "def split_into",
+        "def split_when",
+        "def spy",
+        "def stagger",
+        "def strictly_n",
+        "def strip",
+        "def substrings",
+        "def substrings_indexes",
+        "def takewhile_inclusive",
+        "def unique_in_window",
+        "def unique_to_each",
+        "def unzip",
+        "def value_chain",
+        "def windowed",
+        "def windowed_complete",
+        "def with_iter",
+        "def wrapper",
+        "def zip_broadcast",
+        "def zip_equal",
+        "def zip_offset",
+        "function takes",
+        "output at",
+        "output items"
+      ],
+      "appelle": [
+        "setuptools/_vendor/more_itertools/recipes.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/more_itertools/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/more_itertools/recipes.py": {
+      "fichier": "setuptools/_vendor/more_itertools/recipes.py",
+      "langage": "python",
+      "lignes": 1471,
+      "taille_bytes": 41811,
+      "entrees": [
+        "bisect",
+        "collections",
+        "contextlib",
+        "functools",
+        "heapq",
+        "itertools",
+        "math",
+        "operator",
+        "random",
+        "sys"
+      ],
+      "sorties": [
+        "class UnequalIterablesError",
+        "def __init__",
+        "def _batched",
+        "def _factor_pollard",
+        "def _flatten_tensor",
+        "def _is_scalar",
+        "def _pairwise",
+        "def _running_median_minheap_and_maxheap",
+        "def _running_median_minheap_only",
+        "def _running_median_windowed",
+        "def _shift_to_odd",
+        "def _sliding_window_deque",
+        "def _sliding_window_islice",
+        "def _strong_probable_prime",
+        "def _zip_equal",
+        "def _zip_equal_generator",
+        "def all_equal",
+        "def batched",
+        "def before_and_after",
+        "def consume",
+        "def convolve",
+        "def dotproduct",
+        "def factor",
+        "def first_true",
+        "def flatten",
+        "def grouper",
+        "def is_prime",
+        "def iter_except",
+        "def iter_index",
+        "def loops",
+        "def matmul",
+        "def multinomial",
+        "def ncycles",
+        "def nth",
+        "def nth_combination",
+        "def pad_none",
+        "def pairwise",
+        "def partition",
+        "def polynomial_derivative",
+        "def polynomial_eval",
+        "def polynomial_from_roots",
+        "def powerset",
+        "def prepend",
+        "def quantify",
+        "def random_combination",
+        "def random_combination_with_replacement",
+        "def random_permutation",
+        "def random_product",
+        "def repeatfunc",
+        "def reshape",
+        "def roundrobin",
+        "def running_median",
+        "def sieve",
+        "def sliding_window",
+        "def subslices",
+        "def sum_of_squares",
+        "def tabulate",
+        "def tail",
+        "def take",
+        "def totient",
+        "def transpose",
+        "def triplewise",
+        "def unique",
+        "def unique_everseen",
+        "def unique_justseen",
+        "function evaluated"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/more_itertools/__init__.py",
+        "setuptools/_vendor/more_itertools/more.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/more_itertools/__init__.py": {
+      "fichier": "setuptools/_vendor/more_itertools/__init__.py",
+      "langage": "python",
+      "lignes": 6,
+      "taille_bytes": 149,
+      "entrees": [
+        ".more",
+        ".recipes"
+      ],
+      "sorties": [],
+      "appelle": [
+        "setuptools/_vendor/more_itertools/more.py",
+        "setuptools/_vendor/more_itertools/recipes.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_vendor/jaraco/context/__init__.py": {
+      "fichier": "setuptools/_vendor/jaraco/context/__init__.py",
+      "langage": "python",
+      "lignes": 367,
+      "taille_bytes": 9809,
+      "entrees": [
+        "__future__",
+        "backports",
+        "collections.abc",
+        "contextlib",
+        "errno",
+        "functools",
+        "operator",
+        "os",
+        "platform",
+        "shutil",
+        "stat",
+        "subprocess",
+        "sys",
+        "tarfile",
+        "tempfile",
+        "urllib.request"
+      ],
+      "sorties": [
+        "class ExceptionTrap",
+        "class on_interrupt",
+        "class suppress",
+        "def __bool__",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _compose",
+        "def _compose_tarfile_filters",
+        "def compose_two",
+        "def composed",
+        "def passes",
+        "def pushd",
+        "def raises",
+        "def remove_readonly",
+        "def repo_context",
+        "def robust_remover",
+        "def strip_first_component",
+        "def tarball",
+        "def tb",
+        "def temp_dir",
+        "def type",
+        "def value",
+        "def wrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/jaraco/functools/__init__.py": {
+      "fichier": "setuptools/_vendor/jaraco/functools/__init__.py",
+      "langage": "python",
+      "lignes": 722,
+      "taille_bytes": 18599,
+      "entrees": [
+        "__future__",
+        "collections.abc",
+        "functools",
+        "inspect",
+        "itertools",
+        "more_itertools",
+        "operator",
+        "time",
+        "types",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "class Throttler",
+        "def __call__",
+        "def __get__",
+        "def __init__",
+        "def _special_method_cache",
+        "def _splat_inner",
+        "def _wait",
+        "def apply",
+        "def assign_params",
+        "def bypass_unless",
+        "def bypass_when",
+        "def chainable",
+        "def compose",
+        "def compose_two",
+        "def decorate",
+        "def except_",
+        "def first_invoke",
+        "def identity",
+        "def invoke",
+        "def method_cache",
+        "def none_as",
+        "def noop",
+        "def once",
+        "def pass_none",
+        "def passthrough",
+        "def print_yielded",
+        "def proxy",
+        "def reset",
+        "def result_invoke",
+        "def retry",
+        "def retry_call",
+        "def save_method_args",
+        "def splat",
+        "def wrap",
+        "def wrapper",
+        "function immediately",
+        "function to"
+      ],
+      "appelle": [
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/jaraco/text/to-qwerty.py": {
+      "fichier": "setuptools/_vendor/jaraco/text/to-qwerty.py",
+      "langage": "python",
+      "lignes": 5,
+      "taille_bytes": 118,
+      "entrees": [
+        "sys"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/jaraco/text/show-newlines.py": {
+      "fichier": "setuptools/_vendor/jaraco/text/show-newlines.py",
+      "langage": "python",
+      "lignes": 32,
+      "taille_bytes": 903,
+      "entrees": [
+        "autocommand",
+        "inflect",
+        "jaraco.text",
+        "more_itertools"
+      ],
+      "sorties": [
+        "def report_newlines"
+      ],
+      "appelle": [
+        "setuptools/_vendor/autocommand/autocommand.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/jaraco/text/strip-prefix.py": {
+      "fichier": "setuptools/_vendor/jaraco/text/strip-prefix.py",
+      "langage": "python",
+      "lignes": 21,
+      "taille_bytes": 412,
+      "entrees": [
+        "autocommand",
+        "jaraco.text",
+        "sys"
+      ],
+      "sorties": [
+        "def strip_prefix"
+      ],
+      "appelle": [
+        "setuptools/_vendor/autocommand/autocommand.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/jaraco/text/layouts.py": {
+      "fichier": "setuptools/_vendor/jaraco/text/layouts.py",
+      "langage": "python",
+      "lignes": 25,
+      "taille_bytes": 643,
+      "entrees": [],
+      "sorties": [
+        "def _translate_stream",
+        "def translate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/jaraco/text/to-dvorak.py": {
+      "fichier": "setuptools/_vendor/jaraco/text/to-dvorak.py",
+      "langage": "python",
+      "lignes": 5,
+      "taille_bytes": 118,
+      "entrees": [
+        "sys"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/jaraco/text/__init__.py": {
+      "fichier": "setuptools/_vendor/jaraco/text/__init__.py",
+      "langage": "python",
+      "lignes": 647,
+      "taille_bytes": 16762,
+      "entrees": [
+        "functools",
+        "importlib.resources",
+        "importlib_resources",
+        "itertools",
+        "jaraco.context",
+        "jaraco.functools",
+        "re",
+        "textwrap",
+        "typing"
+      ],
+      "sorties": [
+        "class FoldedCase",
+        "class SeparatedValues",
+        "class Splitter",
+        "class Stripper",
+        "class WordSet",
+        "def __call__",
+        "def __contains__",
+        "def __eq__",
+        "def __getitem__",
+        "def __gt__",
+        "def __hash__",
+        "def __init__",
+        "def __iter__",
+        "def __lt__",
+        "def __ne__",
+        "def _nonblank",
+        "def camel_case",
+        "def capitalized",
+        "def casefold",
+        "def clean",
+        "def common_prefix",
+        "def dash_separated",
+        "def drop_comment",
+        "def from_class_name",
+        "def headless_camel_case",
+        "def in_",
+        "def indent",
+        "def index",
+        "def is_binary",
+        "def is_decodable",
+        "def join_continuation",
+        "def lines_from",
+        "def lowered",
+        "def multi_substitution",
+        "def normalize_newlines",
+        "def parse",
+        "def read_newlines",
+        "def remove_prefix",
+        "def remove_suffix",
+        "def simple_html_strip",
+        "def space_separated",
+        "def split",
+        "def strip_prefix",
+        "def substitution",
+        "def trim",
+        "def trim_left",
+        "def trim_right",
+        "def underscore_separated",
+        "def unwrap",
+        "def wrap",
+        "def yield_lines"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/autocommand/autoparse.py": {
+      "fichier": "setuptools/_vendor/autocommand/autoparse.py",
+      "langage": "python",
+      "lignes": 333,
+      "taille_bytes": 11642,
+      "entrees": [
+        "argparse",
+        "autocommand.errors",
+        "contextlib",
+        "functools",
+        "inspect",
+        "io",
+        "re",
+        "sys",
+        "up"
+      ],
+      "sorties": [
+        "class AnnotationError",
+        "class DocstringError",
+        "class KWArgError",
+        "class PositionalArgError",
+        "class TooManySplitsError",
+        "def _add_arguments",
+        "def _get_type_description",
+        "def autoparse",
+        "def autoparse_wrapper",
+        "def make_parser",
+        "def parse_docstring",
+        "def smart_open",
+        "def work_with_file",
+        "function can",
+        "function which"
+      ],
+      "appelle": [
+        "setuptools/_vendor/autocommand/errors.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/autocommand/__init__.py",
+        "setuptools/_vendor/autocommand/autocommand.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/autocommand/automain.py": {
+      "fichier": "setuptools/_vendor/autocommand/automain.py",
+      "langage": "python",
+      "lignes": 59,
+      "taille_bytes": 2076,
+      "entrees": [
+        ".errors",
+        "sys"
+      ],
+      "sorties": [
+        "class AutomainRequiresModuleError",
+        "def automain",
+        "def automain_decorator",
+        "def main"
+      ],
+      "appelle": [
+        "setuptools/_vendor/autocommand/errors.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/autocommand/__init__.py",
+        "setuptools/_vendor/autocommand/autocommand.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/autocommand/errors.py": {
+      "fichier": "setuptools/_vendor/autocommand/errors.py",
+      "langage": "python",
+      "lignes": 23,
+      "taille_bytes": 886,
+      "entrees": [],
+      "sorties": [
+        "class AutocommandError"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_entry_points.py",
+        "setuptools/_vendor/autocommand/automain.py",
+        "setuptools/_vendor/autocommand/autoparse.py",
+        "setuptools/archive_util.py",
+        "setuptools/discovery.py",
+        "setuptools/dist.py",
+        "setuptools/extension.py",
+        "setuptools/installer.py",
+        "setuptools/msvc.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "setuptools/_vendor/autocommand/autocommand.py": {
+      "fichier": "setuptools/_vendor/autocommand/autocommand.py",
+      "langage": "python",
+      "lignes": 70,
+      "taille_bytes": 2505,
+      "entrees": [
+        ".autoasync",
+        ".automain",
+        ".autoparse"
+      ],
+      "sorties": [
+        "def autocommand",
+        "def autocommand_decorator"
+      ],
+      "appelle": [
+        "setuptools/_vendor/autocommand/autoasync.py",
+        "setuptools/_vendor/autocommand/automain.py",
+        "setuptools/_vendor/autocommand/autoparse.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/autocommand/__init__.py",
+        "setuptools/_vendor/jaraco/text/show-newlines.py",
+        "setuptools/_vendor/jaraco/text/strip-prefix.py"
+      ],
+      "type_noeud": "central"
+    },
+    "setuptools/_vendor/autocommand/autoasync.py": {
+      "fichier": "setuptools/_vendor/autocommand/autoasync.py",
+      "langage": "python",
+      "lignes": 142,
+      "taille_bytes": 5680,
+      "entrees": [
+        "asyncio",
+        "functools",
+        "inspect"
+      ],
+      "sorties": [
+        "def autoasync",
+        "def autoasync_wrapper",
+        "def get_file",
+        "def server"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/autocommand/__init__.py",
+        "setuptools/_vendor/autocommand/autocommand.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/autocommand/__init__.py": {
+      "fichier": "setuptools/_vendor/autocommand/__init__.py",
+      "langage": "python",
+      "lignes": 27,
+      "taille_bytes": 1037,
+      "entrees": [
+        ".autoasync",
+        ".autocommand",
+        ".automain",
+        ".autoparse"
+      ],
+      "sorties": [],
+      "appelle": [
+        "setuptools/_vendor/autocommand/autoasync.py",
+        "setuptools/_vendor/autocommand/autocommand.py",
+        "setuptools/_vendor/autocommand/automain.py",
+        "setuptools/_vendor/autocommand/autoparse.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_vendor/packaging/pylock.py": {
+      "fichier": "setuptools/_vendor/packaging/pylock.py",
+      "langage": "python",
+      "lignes": 635,
+      "taille_bytes": 22537,
+      "entrees": [
+        ".markers",
+        ".specifiers",
+        ".utils",
+        ".version",
+        "__future__",
+        "collections.abc",
+        "dataclasses",
+        "datetime",
+        "logging",
+        "pathlib",
+        "re",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "class Package",
+        "class PackageArchive",
+        "class PackageDirectory",
+        "class PackageSdist",
+        "class PackageVcs",
+        "class PackageWheel",
+        "class Pylock",
+        "class PylockUnsupportedVersionError",
+        "class PylockValidationError",
+        "class _FromMappingProtocol",
+        "class _PylockRequiredKeyError",
+        "def __init__",
+        "def __str__",
+        "def _from_dict",
+        "def _get",
+        "def _get_as",
+        "def _get_object",
+        "def _get_required",
+        "def _get_required_as",
+        "def _get_required_sequence_of_objects",
+        "def _get_sequence",
+        "def _get_sequence_as",
+        "def _get_sequence_of_objects",
+        "def _toml_dict_factory",
+        "def _toml_key",
+        "def _toml_value",
+        "def _validate_hashes",
+        "def _validate_normalized_name",
+        "def _validate_path_url",
+        "def from_dict",
+        "def is_direct",
+        "def is_valid_pylock_path",
+        "def to_dict",
+        "def validate"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/markers.py",
+        "setuptools/_vendor/packaging/specifiers.py",
+        "setuptools/_vendor/packaging/utils.py",
+        "setuptools/_vendor/packaging/version.py",
+        "setuptools/logging.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_vendor/packaging/utils.py": {
+      "fichier": "setuptools/_vendor/packaging/utils.py",
+      "langage": "python",
+      "lignes": 158,
+      "taille_bytes": 5040,
+      "entrees": [
+        ".tags",
+        ".version",
+        "__future__",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "class InvalidName",
+        "class InvalidSdistFilename",
+        "class InvalidWheelFilename",
+        "def canonicalize_name",
+        "def canonicalize_version",
+        "def is_normalized_name",
+        "def parse_sdist_filename",
+        "def parse_wheel_filename"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/version.py",
+        "setuptools/_vendor/wheel/_commands/tags.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_core_metadata.py",
+        "setuptools/_vendor/packaging/markers.py",
+        "setuptools/_vendor/packaging/pylock.py",
+        "setuptools/_vendor/packaging/requirements.py",
+        "setuptools/_vendor/packaging/specifiers.py",
+        "setuptools/installer.py",
+        "setuptools/wheel.py"
+      ],
+      "type_noeud": "central"
+    },
+    "setuptools/_vendor/packaging/markers.py": {
+      "fichier": "setuptools/_vendor/packaging/markers.py",
+      "langage": "python",
+      "lignes": 388,
+      "taille_bytes": 12771,
+      "entrees": [
+        "._parser",
+        "._tokenizer",
+        ".specifiers",
+        ".utils",
+        "__future__",
+        "operator",
+        "os",
+        "platform",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class Environment",
+        "class InvalidMarker",
+        "class Marker",
+        "class UndefinedComparison",
+        "class UndefinedEnvironmentName",
+        "def __eq__",
+        "def __hash__",
+        "def __init__",
+        "def __repr__",
+        "def __str__",
+        "def _eval_op",
+        "def _evaluate_markers",
+        "def _format_marker",
+        "def _normalize",
+        "def _normalize_extra_values",
+        "def _normalize_extras",
+        "def _repair_python_full_version",
+        "def default_environment",
+        "def evaluate",
+        "def format_full_version"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/_parser.py",
+        "setuptools/_vendor/packaging/_tokenizer.py",
+        "setuptools/_vendor/packaging/specifiers.py",
+        "setuptools/_vendor/packaging/utils.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_core_metadata.py",
+        "setuptools/_vendor/packaging/pylock.py",
+        "setuptools/_vendor/packaging/requirements.py",
+        "setuptools/dist.py"
+      ],
+      "type_noeud": "central"
+    },
+    "setuptools/_vendor/packaging/_tokenizer.py": {
+      "fichier": "setuptools/_vendor/packaging/_tokenizer.py",
+      "langage": "python",
+      "lignes": 193,
+      "taille_bytes": 5421,
+      "entrees": [
+        ".specifiers",
+        "__future__",
+        "contextlib",
+        "dataclasses",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "class ParserSyntaxError",
+        "class Token",
+        "class Tokenizer",
+        "def __init__",
+        "def __str__",
+        "def check",
+        "def consume",
+        "def enclosing_tokens",
+        "def expect",
+        "def raise_syntax_error",
+        "def read"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/specifiers.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/packaging/_parser.py",
+        "setuptools/_vendor/packaging/markers.py",
+        "setuptools/_vendor/packaging/requirements.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/packaging/_structures.py": {
+      "fichier": "setuptools/_vendor/packaging/_structures.py",
+      "langage": "python",
+      "lignes": 69,
+      "taille_bytes": 1514,
+      "entrees": [
+        "typing"
+      ],
+      "sorties": [
+        "class InfinityType",
+        "class NegativeInfinityType",
+        "def __eq__",
+        "def __ge__",
+        "def __gt__",
+        "def __hash__",
+        "def __le__",
+        "def __lt__",
+        "def __neg__",
+        "def __repr__"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/packaging/version.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/packaging/_parser.py": {
+      "fichier": "setuptools/_vendor/packaging/_parser.py",
+      "langage": "python",
+      "lignes": 365,
+      "taille_bytes": 10518,
+      "entrees": [
+        "._tokenizer",
+        "__future__",
+        "ast",
+        "typing"
+      ],
+      "sorties": [
+        "class Node",
+        "class Op",
+        "class ParsedRequirement",
+        "class Value",
+        "class Variable",
+        "def __init__",
+        "def __repr__",
+        "def __str__",
+        "def _parse_extras",
+        "def _parse_extras_list",
+        "def _parse_full_marker",
+        "def _parse_marker",
+        "def _parse_marker_atom",
+        "def _parse_marker_item",
+        "def _parse_marker_op",
+        "def _parse_marker_var",
+        "def _parse_requirement",
+        "def _parse_requirement_details",
+        "def _parse_requirement_marker",
+        "def _parse_specifier",
+        "def _parse_version_many",
+        "def parse_marker",
+        "def parse_requirement",
+        "def process_env_var",
+        "def process_python_str",
+        "def serialize"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/_tokenizer.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/packaging/markers.py",
+        "setuptools/_vendor/packaging/requirements.py",
+        "setuptools/_vendor/tomli/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/packaging/_musllinux.py": {
+      "fichier": "setuptools/_vendor/packaging/_musllinux.py",
+      "langage": "python",
+      "lignes": 85,
+      "taille_bytes": 2707,
+      "entrees": [
+        "._elffile",
+        "__future__",
+        "functools",
+        "re",
+        "subprocess",
+        "sys",
+        "sysconfig",
+        "typing"
+      ],
+      "sorties": [
+        "class _MuslVersion",
+        "def _get_musl_version",
+        "def _parse_musl_version",
+        "def platform_tags"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/_elffile.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/packaging/metadata.py": {
+      "fichier": "setuptools/_vendor/packaging/metadata.py",
+      "langage": "python",
+      "lignes": 978,
+      "taille_bytes": 39360,
+      "entrees": [
+        ".licenses",
+        "__future__",
+        "email.feedparser",
+        "email.header",
+        "email.message",
+        "email.parser",
+        "email.policy",
+        "keyword",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class ExceptionGroup",
+        "class InvalidMetadata",
+        "class Metadata",
+        "class RFC822Message",
+        "class RFC822Policy",
+        "class RawMetadata",
+        "class _Validator",
+        "def __get__",
+        "def __init__",
+        "def __repr__",
+        "def __set_name__",
+        "def _get_payload",
+        "def _invalid_metadata",
+        "def _parse_keywords",
+        "def _parse_project_urls",
+        "def _process_description_content_type",
+        "def _process_dynamic",
+        "def _process_import_names",
+        "def _process_license_expression",
+        "def _process_license_files",
+        "def _process_metadata_version",
+        "def _process_name",
+        "def _process_provides_extra",
+        "def _process_requires_dist",
+        "def _process_requires_python",
+        "def _process_summary",
+        "def _process_version",
+        "def _write_metadata",
+        "def as_bytes",
+        "def as_rfc822",
+        "def from_email",
+        "def from_raw",
+        "def header_store_parse",
+        "def parse_email"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/packaging/specifiers.py": {
+      "fichier": "setuptools/_vendor/packaging/specifiers.py",
+      "langage": "python",
+      "lignes": 1068,
+      "taille_bytes": 40797,
+      "entrees": [
+        ".utils",
+        ".version",
+        "__future__",
+        "abc",
+        "itertools",
+        "packaging.specifiers",
+        "packaging.version",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "class BaseSpecifier",
+        "class InvalidSpecifier",
+        "class Specifier",
+        "class SpecifierSet",
+        "def __and__",
+        "def __contains__",
+        "def __eq__",
+        "def __hash__",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def __repr__",
+        "def __str__",
+        "def _base_version",
+        "def _canonical_spec",
+        "def _coerce_version",
+        "def _compare_arbitrary",
+        "def _compare_compatible",
+        "def _compare_equal",
+        "def _compare_greater_than",
+        "def _compare_greater_than_equal",
+        "def _compare_less_than",
+        "def _compare_less_than_equal",
+        "def _compare_not_equal",
+        "def _get_operator",
+        "def _get_spec_version",
+        "def _is_not_suffix",
+        "def _pad_version",
+        "def _public_version",
+        "def _require_spec_version",
+        "def _str",
+        "def _version_join",
+        "def _version_split",
+        "def contains",
+        "def filter",
+        "def operator",
+        "def prereleases",
+        "def version"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/utils.py",
+        "setuptools/_vendor/packaging/version.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_static.py",
+        "setuptools/_vendor/packaging/_tokenizer.py",
+        "setuptools/_vendor/packaging/markers.py",
+        "setuptools/_vendor/packaging/pylock.py",
+        "setuptools/_vendor/packaging/requirements.py",
+        "setuptools/dist.py"
+      ],
+      "type_noeud": "central"
+    },
+    "setuptools/_vendor/packaging/_elffile.py": {
+      "fichier": "setuptools/_vendor/packaging/_elffile.py",
+      "langage": "python",
+      "lignes": 108,
+      "taille_bytes": 3211,
+      "entrees": [
+        "__future__",
+        "enum",
+        "os",
+        "struct",
+        "typing"
+      ],
+      "sorties": [
+        "class EIClass",
+        "class EIData",
+        "class ELFFile",
+        "class ELFInvalid",
+        "class EMachine",
+        "def __init__",
+        "def _read",
+        "def interpreter",
+        "interface to"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/packaging/_manylinux.py",
+        "setuptools/_vendor/packaging/_musllinux.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/packaging/_manylinux.py": {
+      "fichier": "setuptools/_vendor/packaging/_manylinux.py",
+      "langage": "python",
+      "lignes": 262,
+      "taille_bytes": 9559,
+      "entrees": [
+        "._elffile",
+        "__future__",
+        "_manylinux",
+        "collections",
+        "contextlib",
+        "ctypes",
+        "functools",
+        "os",
+        "re",
+        "sys",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "class _GLibCVersion",
+        "def _get_glibc_version",
+        "def _glibc_version_string",
+        "def _glibc_version_string_confstr",
+        "def _glibc_version_string_ctypes",
+        "def _have_compatible_abi",
+        "def _is_compatible",
+        "def _is_linux_armhf",
+        "def _is_linux_i686",
+        "def _parse_elf",
+        "def _parse_glibc_version",
+        "def platform_tags"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/_elffile.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_vendor/packaging/version.py": {
+      "fichier": "setuptools/_vendor/packaging/version.py",
+      "langage": "python",
+      "lignes": 792,
+      "taille_bytes": 23272,
+      "entrees": [
+        "._structures",
+        "__future__",
+        "functools",
+        "packaging.version",
+        "re",
+        "sys",
+        "typing",
+        "typing_extensions",
+        "warnings"
+      ],
+      "sorties": [
+        "class InvalidVersion",
+        "class Version",
+        "class _BaseVersion",
+        "class _TrimmedRelease",
+        "class _Version",
+        "class _VersionReplace",
+        "def __eq__",
+        "def __ge__",
+        "def __gt__",
+        "def __hash__",
+        "def __init__",
+        "def __le__",
+        "def __lt__",
+        "def __ne__",
+        "def __replace__",
+        "def __repr__",
+        "def __str__",
+        "def _cmpkey",
+        "def _deprecated",
+        "def _key",
+        "def _parse_letter_version",
+        "def _parse_local_version",
+        "def _str",
+        "def _validate_dev",
+        "def _validate_epoch",
+        "def _validate_local",
+        "def _validate_post",
+        "def _validate_pre",
+        "def _validate_release",
+        "def _version",
+        "def base_version",
+        "def decorator",
+        "def dev",
+        "def epoch",
+        "def is_devrelease",
+        "def is_postrelease",
+        "def is_prerelease",
+        "def local",
+        "def major",
+        "def micro",
+        "def minor",
+        "def parse",
+        "def post",
+        "def pre",
+        "def public",
+        "def release",
+        "def wrapper"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/_structures.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [
+        "setuptools/__init__.py",
+        "setuptools/_core_metadata.py",
+        "setuptools/_vendor/packaging/pylock.py",
+        "setuptools/_vendor/packaging/specifiers.py",
+        "setuptools/_vendor/packaging/utils.py",
+        "setuptools/_vendor/platformdirs/__init__.py",
+        "setuptools/depends.py",
+        "setuptools/dist.py",
+        "setuptools/wheel.py"
+      ],
+      "type_noeud": "central"
+    },
+    "setuptools/_vendor/packaging/__init__.py": {
+      "fichier": "setuptools/_vendor/packaging/__init__.py",
+      "langage": "python",
+      "lignes": 15,
+      "taille_bytes": 494,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/packaging/requirements.py": {
+      "fichier": "setuptools/_vendor/packaging/requirements.py",
+      "langage": "python",
+      "lignes": 86,
+      "taille_bytes": 2870,
+      "entrees": [
+        "._parser",
+        "._tokenizer",
+        ".markers",
+        ".specifiers",
+        ".utils",
+        "__future__",
+        "typing"
+      ],
+      "sorties": [
+        "class InvalidRequirement",
+        "class Requirement",
+        "def __eq__",
+        "def __hash__",
+        "def __init__",
+        "def __repr__",
+        "def __str__",
+        "def _iter_parts"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/_parser.py",
+        "setuptools/_vendor/packaging/_tokenizer.py",
+        "setuptools/_vendor/packaging/markers.py",
+        "setuptools/_vendor/packaging/specifiers.py",
+        "setuptools/_vendor/packaging/utils.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_core_metadata.py",
+        "setuptools/_discovery.py",
+        "setuptools/_reqs.py",
+        "setuptools/_vendor/wheel/_metadata.py",
+        "setuptools/installer.py",
+        "setuptools/wheel.py"
+      ],
+      "type_noeud": "central"
+    },
+    "setuptools/_vendor/packaging/tags.py": {
+      "fichier": "setuptools/_vendor/packaging/tags.py",
+      "langage": "python",
+      "lignes": 651,
+      "taille_bytes": 22856,
+      "entrees": [
+        "__future__",
+        "importlib.machinery",
+        "logging",
+        "platform",
+        "re",
+        "struct",
+        "subprocess",
+        "sys",
+        "sysconfig",
+        "typing"
+      ],
+      "sorties": [
+        "class Tag",
+        "def __eq__",
+        "def __hash__",
+        "def __init__",
+        "def __repr__",
+        "def __setstate__",
+        "def __str__",
+        "def _abi3_applies",
+        "def _cpython_abis",
+        "def _generic_abi",
+        "def _generic_platforms",
+        "def _get_config_var",
+        "def _is_threaded_cpython",
+        "def _linux_platforms",
+        "def _mac_arch",
+        "def _mac_binary_formats",
+        "def _normalize_string",
+        "def _py_interpreter_range",
+        "def _version_nodot",
+        "def abi",
+        "def android_platforms",
+        "def compatible_tags",
+        "def cpython_tags",
+        "def generic_tags",
+        "def interpreter",
+        "def interpreter_name",
+        "def interpreter_version",
+        "def ios_platforms",
+        "def mac_platforms",
+        "def parse_tag",
+        "def platform",
+        "def platform_tags",
+        "def sys_tags"
+      ],
+      "appelle": [
+        "setuptools/logging.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/packaging/licenses/__init__.py": {
+      "fichier": "setuptools/_vendor/packaging/licenses/__init__.py",
+      "langage": "python",
+      "lignes": 147,
+      "taille_bytes": 5819,
+      "entrees": [
+        "._spdx",
+        "__future__",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "class InvalidLicenseExpression",
+        "def canonicalize_license_expression"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/licenses/_spdx.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/packaging/licenses/_spdx.py": {
+      "fichier": "setuptools/_vendor/packaging/licenses/_spdx.py",
+      "langage": "python",
+      "lignes": 799,
+      "taille_bytes": 51122,
+      "entrees": [
+        "__future__",
+        "typing"
+      ],
+      "sorties": [
+        "class SPDXException",
+        "class SPDXLicense"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/packaging/licenses/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/bdist_wheel.py": {
+      "fichier": "setuptools/_vendor/wheel/bdist_wheel.py",
+      "langage": "python",
+      "lignes": 26,
+      "taille_bytes": 1102,
+      "entrees": [
+        "._bdist_wheel",
+        "setuptools.command.bdist_wheel",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [],
+      "appelle": [
+        "setuptools/_vendor/wheel/_bdist_wheel.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [
+        "setuptools/dist.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/_metadata.py": {
+      "fichier": "setuptools/_vendor/wheel/_metadata.py",
+      "langage": "python",
+      "lignes": 184,
+      "taille_bytes": 6188,
+      "entrees": [
+        "__future__",
+        "collections.abc",
+        "email.message",
+        "email.parser",
+        "functools",
+        "itertools",
+        "os.path",
+        "packaging.requirements",
+        "re",
+        "textwrap",
+        "the",
+        "typing"
+      ],
+      "sorties": [
+        "def _nonblank",
+        "def convert_requirements",
+        "def generate_requirements",
+        "def pkginfo_to_metadata",
+        "def requires_to_requires_dist",
+        "def safe_extra",
+        "def safe_name",
+        "def split_sections",
+        "def yield_lines"
+      ],
+      "appelle": [
+        "setuptools/_vendor/packaging/requirements.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/wheel/_bdist_wheel.py",
+        "setuptools/_vendor/wheel/_commands/convert.py",
+        "setuptools/_vendor/wheel/metadata.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/wheelfile.py": {
+      "fichier": "setuptools/_vendor/wheel/wheelfile.py",
+      "langage": "python",
+      "lignes": 241,
+      "taille_bytes": 8720,
+      "entrees": [
+        "__future__",
+        "_typeshed",
+        "base64",
+        "csv",
+        "hashlib",
+        "io",
+        "logging",
+        "os.path",
+        "re",
+        "stat",
+        "time",
+        "typing",
+        "zipfile"
+      ],
+      "sorties": [
+        "class WheelError",
+        "class WheelFile",
+        "def __init__",
+        "def _update_crc",
+        "def close",
+        "def get_zipinfo_datetime",
+        "def open",
+        "def urlsafe_b64decode",
+        "def urlsafe_b64encode",
+        "def write",
+        "def write_files",
+        "def writestr"
+      ],
+      "appelle": [
+        "setuptools/logging.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/wheel/_bdist_wheel.py",
+        "setuptools/_vendor/wheel/_commands/__init__.py",
+        "setuptools/_vendor/wheel/_commands/convert.py",
+        "setuptools/_vendor/wheel/_commands/pack.py",
+        "setuptools/_vendor/wheel/_commands/tags.py",
+        "setuptools/_vendor/wheel/_commands/unpack.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/macosx_libfile.py": {
+      "fichier": "setuptools/_vendor/wheel/macosx_libfile.py",
+      "langage": "python",
+      "lignes": 486,
+      "taille_bytes": 16712,
+      "entrees": [
+        "__future__",
+        "ctypes",
+        "io",
+        "os",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class FatArch",
+        "class FatHeader",
+        "class MachHeader",
+        "class SegmentBase",
+        "class VersionBuild",
+        "class VersionMinCommand",
+        "def calculate_macosx_platform_tag",
+        "def extract_macosx_min_system_version",
+        "def get_base_class_and_magic_number",
+        "def parse_version",
+        "def read_data",
+        "def read_mach_header",
+        "def swap32",
+        "struct build_version_command",
+        "struct fat_arch",
+        "struct fat_arch_64",
+        "struct fat_header",
+        "struct mach_header",
+        "struct mach_header_64",
+        "struct segment_command",
+        "struct segment_command_64",
+        "struct version_min_command"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/wheel/_bdist_wheel.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/_setuptools_logging.py": {
+      "fichier": "setuptools/_vendor/wheel/_setuptools_logging.py",
+      "langage": "python",
+      "lignes": 26,
+      "taille_bytes": 781,
+      "entrees": [
+        "__future__",
+        "logging",
+        "sys"
+      ],
+      "sorties": [
+        "def _not_warning",
+        "def configure"
+      ],
+      "appelle": [
+        "setuptools/logging.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/metadata.py": {
+      "fichier": "setuptools/_vendor/wheel/metadata.py",
+      "langage": "python",
+      "lignes": 17,
+      "taille_bytes": 757,
+      "entrees": [
+        "._metadata",
+        "warnings"
+      ],
+      "sorties": [],
+      "appelle": [
+        "setuptools/_vendor/wheel/_metadata.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_importlib.py",
+        "setuptools/_scripts.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/__main__.py": {
+      "fichier": "setuptools/_vendor/wheel/__main__.py",
+      "langage": "python",
+      "lignes": 25,
+      "taille_bytes": 512,
+      "entrees": [
+        "._commands",
+        "__future__",
+        "os.path",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/_bdist_wheel.py": {
+      "fichier": "setuptools/_vendor/wheel/_bdist_wheel.py",
+      "langage": "python",
+      "lignes": 616,
+      "taille_bytes": 21729,
+      "entrees": [
+        "._metadata",
+        ".macosx_libfile",
+        ".wheelfile",
+        "__future__",
+        "collections.abc",
+        "email.generator",
+        "email.message",
+        "email.policy",
+        "glob",
+        "logging",
+        "os",
+        "packaging",
+        "re",
+        "setuptools",
+        "shutil",
+        "stat",
+        "struct",
+        "sys",
+        "sysconfig",
+        "types",
+        "typing",
+        "warnings",
+        "zipfile"
+      ],
+      "sorties": [
+        "class bdist_wheel",
+        "def _ensure_relative",
+        "def _is_32bit_interpreter",
+        "def adios",
+        "def egg2dist",
+        "def finalize_options",
+        "def get_abi_tag",
+        "def get_flag",
+        "def get_platform",
+        "def get_tag",
+        "def initialize_options",
+        "def license_paths",
+        "def python_tag",
+        "def remove_readonly",
+        "def remove_readonly_exc",
+        "def run",
+        "def safe_name",
+        "def safe_version",
+        "def safer_name",
+        "def safer_version",
+        "def wheel_dist_name",
+        "def write_wheelfile"
+      ],
+      "appelle": [
+        "setuptools/_vendor/wheel/_metadata.py",
+        "setuptools/_vendor/wheel/macosx_libfile.py",
+        "setuptools/_vendor/wheel/wheelfile.py",
+        "setuptools/_vendor/zipp/glob.py",
+        "setuptools/logging.py",
+        "setuptools/warnings.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/wheel/bdist_wheel.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/__init__.py": {
+      "fichier": "setuptools/_vendor/wheel/__init__.py",
+      "langage": "python",
+      "lignes": 3,
+      "taille_bytes": 59,
+      "entrees": [
+        "__future__"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/_commands/convert.py": {
+      "fichier": "setuptools/_vendor/wheel/_commands/convert.py",
+      "langage": "python",
+      "lignes": 337,
+      "taille_bytes": 12743,
+      "entrees": [
+        "..",
+        ".._metadata",
+        "..wheelfile",
+        "__future__",
+        "abc",
+        "collections",
+        "collections.abc",
+        "email.message",
+        "email.parser",
+        "email.policy",
+        "glob",
+        "os.path",
+        "packaging.tags",
+        "pathlib",
+        "re",
+        "textwrap",
+        "zipfile"
+      ],
+      "sorties": [
+        "class ConvertSource",
+        "class EggDirectorySource",
+        "class EggFileSource",
+        "class WininstFileSource",
+        "def __init__",
+        "def convert",
+        "def convert_pkg_info",
+        "def convert_requires",
+        "def dist_info_dir",
+        "def generate_contents",
+        "def normalize"
+      ],
+      "appelle": [
+        "setuptools/_vendor/wheel/_commands/tags.py",
+        "setuptools/_vendor/wheel/_metadata.py",
+        "setuptools/_vendor/wheel/wheelfile.py",
+        "setuptools/_vendor/zipp/glob.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/wheel/_commands/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/_commands/pack.py": {
+      "fichier": "setuptools/_vendor/wheel/_commands/pack.py",
+      "langage": "python",
+      "lignes": 84,
+      "taille_bytes": 3078,
+      "entrees": [
+        "..wheelfile",
+        "__future__",
+        "email.generator",
+        "email.parser",
+        "email.policy",
+        "os.path",
+        "re"
+      ],
+      "sorties": [
+        "def compute_tagline",
+        "def pack"
+      ],
+      "appelle": [
+        "setuptools/_vendor/wheel/wheelfile.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/wheel/_commands/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/_commands/unpack.py": {
+      "fichier": "setuptools/_vendor/wheel/_commands/unpack.py",
+      "langage": "python",
+      "lignes": 30,
+      "taille_bytes": 1016,
+      "entrees": [
+        "..wheelfile",
+        "__future__",
+        "pathlib"
+      ],
+      "sorties": [
+        "def unpack"
+      ],
+      "appelle": [
+        "setuptools/_vendor/wheel/wheelfile.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/wheel/_commands/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/wheel/_commands/__init__.py": {
+      "fichier": "setuptools/_vendor/wheel/_commands/__init__.py",
+      "langage": "python",
+      "lignes": 153,
+      "taille_bytes": 4432,
+      "entrees": [
+        "..",
+        "..wheelfile",
+        ".convert",
+        ".pack",
+        ".tags",
+        ".unpack",
+        "__future__",
+        "argparse",
+        "os",
+        "sys"
+      ],
+      "sorties": [
+        "def convert_f",
+        "def main",
+        "def pack_f",
+        "def parse_build_tag",
+        "def parser",
+        "def tags_f",
+        "def unpack_f",
+        "def version_f",
+        "output filename"
+      ],
+      "appelle": [
+        "setuptools/_vendor/wheel/_commands/convert.py",
+        "setuptools/_vendor/wheel/_commands/pack.py",
+        "setuptools/_vendor/wheel/_commands/tags.py",
+        "setuptools/_vendor/wheel/_commands/unpack.py",
+        "setuptools/_vendor/wheel/wheelfile.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "setuptools/_vendor/wheel/_commands/tags.py": {
+      "fichier": "setuptools/_vendor/wheel/_commands/tags.py",
+      "langage": "python",
+      "lignes": 140,
+      "taille_bytes": 4775,
+      "entrees": [
+        "..wheelfile",
+        "__future__",
+        "collections.abc",
+        "email.parser",
+        "email.policy",
+        "itertools",
+        "os"
+      ],
+      "sorties": [
+        "def _compute_tags",
+        "def tags"
+      ],
+      "appelle": [
+        "setuptools/_vendor/wheel/wheelfile.py"
+      ],
+      "est_appele_par": [
+        "setuptools/_vendor/packaging/utils.py",
+        "setuptools/_vendor/wheel/_commands/__init__.py",
+        "setuptools/_vendor/wheel/_commands/convert.py",
+        "setuptools/wheel.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "setuptools/_vendor/zipp/glob.py": {
+      "fichier": "setuptools/_vendor/zipp/glob.py",
+      "langage": "python",
+      "lignes": 116,
+      "taille_bytes": 3382,
+      "entrees": [
+        ".compat.py313",
+        "os",
+        "re"
+      ],
+      "sorties": [
+        "class Translator",
+        "def __init__",
+        "def extend",
+        "def handle_segment",
+        "def match_dirs",
+        "def replace",
+        "def restrict_rglob",
+        "def separate",
+        "def star_not_empty",
+        "def translate",
+        "def translate_core"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/wheel/_bdist_wheel.py",
+        "setuptools/_vendor/wheel/_commands/convert.py",
+        "setuptools/discovery.py",
+        "setuptools/dist.py",
+        "setuptools/installer.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "setuptools/_vendor/zipp/_functools.py": {
+      "fichier": "setuptools/_vendor/zipp/_functools.py",
+      "langage": "python",
+      "lignes": 20,
+      "taille_bytes": 575,
+      "entrees": [
+        "collections",
+        "functools"
+      ],
+      "sorties": [
+        "def save_method_args",
+        "def wrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "setuptools/_vendor/importlib_metadata/__init__.py",
+        "setuptools/_vendor/importlib_metadata/_text.py"
+      ],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "_distutils_hack/__init__.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/extension.py",
+      "vers": "setuptools/_path.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/extension.py",
+      "vers": "setuptools/_vendor/autocommand/errors.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/extension.py",
+      "vers": "setuptools/monkey.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_importlib.py",
+      "vers": "setuptools/_vendor/wheel/metadata.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_importlib.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_normalization.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_path.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_reqs.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_vendor/autocommand/errors.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_vendor/packaging/markers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_vendor/packaging/specifiers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_vendor/packaging/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_vendor/wheel/bdist_wheel.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/_vendor/zipp/glob.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/discovery.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/installer.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/monkey.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/dist.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/wheel.py",
+      "vers": "setuptools/_discovery.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/wheel.py",
+      "vers": "setuptools/_importlib.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/wheel.py",
+      "vers": "setuptools/_vendor/packaging/requirements.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/wheel.py",
+      "vers": "setuptools/_vendor/packaging/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/wheel.py",
+      "vers": "setuptools/_vendor/packaging/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/wheel.py",
+      "vers": "setuptools/_vendor/wheel/_commands/tags.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/wheel.py",
+      "vers": "setuptools/archive_util.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/wheel.py",
+      "vers": "setuptools/unicode_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_static.py",
+      "vers": "setuptools/_vendor/packaging/specifiers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_static.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_discovery.py",
+      "vers": "setuptools/_vendor/packaging/requirements.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/installer.py",
+      "vers": "setuptools/_importlib.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/installer.py",
+      "vers": "setuptools/_vendor/autocommand/errors.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/installer.py",
+      "vers": "setuptools/_vendor/packaging/requirements.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/installer.py",
+      "vers": "setuptools/_vendor/packaging/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/installer.py",
+      "vers": "setuptools/_vendor/zipp/glob.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/installer.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/installer.py",
+      "vers": "setuptools/wheel.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_reqs.py",
+      "vers": "setuptools/_vendor/packaging/requirements.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/msvc.py",
+      "vers": "setuptools/_path.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/msvc.py",
+      "vers": "setuptools/_vendor/autocommand/errors.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/discovery.py",
+      "vers": "_distutils_hack/override.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/discovery.py",
+      "vers": "setuptools/_path.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/discovery.py",
+      "vers": "setuptools/_vendor/autocommand/errors.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/discovery.py",
+      "vers": "setuptools/_vendor/zipp/glob.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/build_meta.py",
+      "vers": "setuptools/_path.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/build_meta.py",
+      "vers": "setuptools/_reqs.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/build_meta.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/depends.py",
+      "vers": "setuptools/_imp.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/depends.py",
+      "vers": "setuptools/_vendor/packaging/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/unicode_utils.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/archive_util.py",
+      "vers": "setuptools/_path.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/archive_util.py",
+      "vers": "setuptools/_vendor/autocommand/errors.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_entry_points.py",
+      "vers": "setuptools/_importlib.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_entry_points.py",
+      "vers": "setuptools/_vendor/autocommand/errors.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_entry_points.py",
+      "vers": "setuptools/_vendor/importlib_metadata/_itertools.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_scripts.py",
+      "vers": "setuptools/_importlib.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_scripts.py",
+      "vers": "setuptools/_vendor/wheel/metadata.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_scripts.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/version.py",
+      "vers": "setuptools/_importlib.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_core_metadata.py",
+      "vers": "setuptools/_static.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_core_metadata.py",
+      "vers": "setuptools/_vendor/packaging/markers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_core_metadata.py",
+      "vers": "setuptools/_vendor/packaging/requirements.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_core_metadata.py",
+      "vers": "setuptools/_vendor/packaging/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_core_metadata.py",
+      "vers": "setuptools/_vendor/packaging/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_core_metadata.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/__init__.py",
+      "vers": "_distutils_hack/override.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/__init__.py",
+      "vers": "setuptools/_vendor/packaging/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/__init__.py",
+      "vers": "setuptools/depends.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/__init__.py",
+      "vers": "setuptools/discovery.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/__init__.py",
+      "vers": "setuptools/dist.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/__init__.py",
+      "vers": "setuptools/extension.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/__init__.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/compat/py312.py",
+      "vers": "setuptools/_vendor/importlib_metadata/compat/py39.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/unix.py",
+      "vers": "setuptools/_vendor/platformdirs/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/macos.py",
+      "vers": "setuptools/_vendor/platformdirs/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/windows.py",
+      "vers": "setuptools/_vendor/platformdirs/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/__init__.py",
+      "vers": "setuptools/_vendor/packaging/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/__init__.py",
+      "vers": "setuptools/_vendor/platformdirs/android.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/__init__.py",
+      "vers": "setuptools/_vendor/platformdirs/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/__init__.py",
+      "vers": "setuptools/_vendor/platformdirs/macos.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/__init__.py",
+      "vers": "setuptools/_vendor/platformdirs/unix.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/__init__.py",
+      "vers": "setuptools/_vendor/platformdirs/windows.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/platformdirs/android.py",
+      "vers": "setuptools/_vendor/platformdirs/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/tomli/_re.py",
+      "vers": "setuptools/_vendor/tomli/_types.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/tomli/_parser.py",
+      "vers": "setuptools/_vendor/tomli/_re.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/tomli/_parser.py",
+      "vers": "setuptools/_vendor/tomli/_types.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/tomli/_parser.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/tomli/__init__.py",
+      "vers": "setuptools/_vendor/packaging/_parser.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/_adapters.py",
+      "vers": "setuptools/_vendor/importlib_metadata/_text.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/_text.py",
+      "vers": "setuptools/_vendor/zipp/_functools.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/_typing.py",
+      "vers": "setuptools/_vendor/importlib_metadata/_meta.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/__init__.py",
+      "vers": "setuptools/_vendor/importlib_metadata/_collections.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/__init__.py",
+      "vers": "setuptools/_vendor/importlib_metadata/_compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/__init__.py",
+      "vers": "setuptools/_vendor/importlib_metadata/_itertools.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/__init__.py",
+      "vers": "setuptools/_vendor/importlib_metadata/_meta.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/__init__.py",
+      "vers": "setuptools/_vendor/importlib_metadata/_typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/__init__.py",
+      "vers": "setuptools/_vendor/zipp/_functools.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/importlib_metadata/compat/py39.py",
+      "vers": "setuptools/_vendor/importlib_metadata/_typing.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/backports/tarfile/__init__.py",
+      "vers": "setuptools/_vendor/backports/tarfile/compat/py38.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/backports/tarfile/__init__.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/more_itertools/more.py",
+      "vers": "setuptools/_vendor/more_itertools/recipes.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/more_itertools/more.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/more_itertools/__init__.py",
+      "vers": "setuptools/_vendor/more_itertools/more.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/more_itertools/__init__.py",
+      "vers": "setuptools/_vendor/more_itertools/recipes.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/jaraco/functools/__init__.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/jaraco/text/show-newlines.py",
+      "vers": "setuptools/_vendor/autocommand/autocommand.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/jaraco/text/strip-prefix.py",
+      "vers": "setuptools/_vendor/autocommand/autocommand.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/autocommand/autoparse.py",
+      "vers": "setuptools/_vendor/autocommand/errors.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/autocommand/automain.py",
+      "vers": "setuptools/_vendor/autocommand/errors.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/autocommand/autocommand.py",
+      "vers": "setuptools/_vendor/autocommand/autoasync.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/autocommand/autocommand.py",
+      "vers": "setuptools/_vendor/autocommand/automain.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/autocommand/autocommand.py",
+      "vers": "setuptools/_vendor/autocommand/autoparse.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/autocommand/__init__.py",
+      "vers": "setuptools/_vendor/autocommand/autoasync.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/autocommand/__init__.py",
+      "vers": "setuptools/_vendor/autocommand/autocommand.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/autocommand/__init__.py",
+      "vers": "setuptools/_vendor/autocommand/automain.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/autocommand/__init__.py",
+      "vers": "setuptools/_vendor/autocommand/autoparse.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/pylock.py",
+      "vers": "setuptools/_vendor/packaging/markers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/pylock.py",
+      "vers": "setuptools/_vendor/packaging/specifiers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/pylock.py",
+      "vers": "setuptools/_vendor/packaging/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/pylock.py",
+      "vers": "setuptools/_vendor/packaging/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/pylock.py",
+      "vers": "setuptools/logging.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/utils.py",
+      "vers": "setuptools/_vendor/packaging/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/utils.py",
+      "vers": "setuptools/_vendor/wheel/_commands/tags.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/markers.py",
+      "vers": "setuptools/_vendor/packaging/_parser.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/markers.py",
+      "vers": "setuptools/_vendor/packaging/_tokenizer.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/markers.py",
+      "vers": "setuptools/_vendor/packaging/specifiers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/markers.py",
+      "vers": "setuptools/_vendor/packaging/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/_tokenizer.py",
+      "vers": "setuptools/_vendor/packaging/specifiers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/_parser.py",
+      "vers": "setuptools/_vendor/packaging/_tokenizer.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/_musllinux.py",
+      "vers": "setuptools/_vendor/packaging/_elffile.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/specifiers.py",
+      "vers": "setuptools/_vendor/packaging/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/specifiers.py",
+      "vers": "setuptools/_vendor/packaging/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/_manylinux.py",
+      "vers": "setuptools/_vendor/packaging/_elffile.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/_manylinux.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/version.py",
+      "vers": "setuptools/_vendor/packaging/_structures.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/version.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/requirements.py",
+      "vers": "setuptools/_vendor/packaging/_parser.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/requirements.py",
+      "vers": "setuptools/_vendor/packaging/_tokenizer.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/requirements.py",
+      "vers": "setuptools/_vendor/packaging/markers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/requirements.py",
+      "vers": "setuptools/_vendor/packaging/specifiers.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/requirements.py",
+      "vers": "setuptools/_vendor/packaging/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/tags.py",
+      "vers": "setuptools/logging.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/packaging/licenses/__init__.py",
+      "vers": "setuptools/_vendor/packaging/licenses/_spdx.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/bdist_wheel.py",
+      "vers": "setuptools/_vendor/wheel/_bdist_wheel.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/bdist_wheel.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_metadata.py",
+      "vers": "setuptools/_vendor/packaging/requirements.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/wheelfile.py",
+      "vers": "setuptools/logging.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_setuptools_logging.py",
+      "vers": "setuptools/logging.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/metadata.py",
+      "vers": "setuptools/_vendor/wheel/_metadata.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/metadata.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_bdist_wheel.py",
+      "vers": "setuptools/_vendor/wheel/_metadata.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_bdist_wheel.py",
+      "vers": "setuptools/_vendor/wheel/macosx_libfile.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_bdist_wheel.py",
+      "vers": "setuptools/_vendor/wheel/wheelfile.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_bdist_wheel.py",
+      "vers": "setuptools/_vendor/zipp/glob.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_bdist_wheel.py",
+      "vers": "setuptools/logging.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_bdist_wheel.py",
+      "vers": "setuptools/warnings.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/convert.py",
+      "vers": "setuptools/_vendor/wheel/_commands/tags.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/convert.py",
+      "vers": "setuptools/_vendor/wheel/_metadata.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/convert.py",
+      "vers": "setuptools/_vendor/wheel/wheelfile.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/convert.py",
+      "vers": "setuptools/_vendor/zipp/glob.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/pack.py",
+      "vers": "setuptools/_vendor/wheel/wheelfile.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/unpack.py",
+      "vers": "setuptools/_vendor/wheel/wheelfile.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/__init__.py",
+      "vers": "setuptools/_vendor/wheel/_commands/convert.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/__init__.py",
+      "vers": "setuptools/_vendor/wheel/_commands/pack.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/__init__.py",
+      "vers": "setuptools/_vendor/wheel/_commands/tags.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/__init__.py",
+      "vers": "setuptools/_vendor/wheel/_commands/unpack.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/__init__.py",
+      "vers": "setuptools/_vendor/wheel/wheelfile.py",
+      "type": "interne"
+    },
+    {
+      "de": "setuptools/_vendor/wheel/_commands/tags.py",
+      "vers": "setuptools/_vendor/wheel/wheelfile.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'setuptools/msvc.py'",
+    "point_entree → 'setuptools/build_meta.py'",
+    "feuille → 'setuptools/_path.py' (in=6)",
+    "feuille → 'setuptools/logging.py' (in=5)",
+    "point_entree → 'setuptools/_entry_points.py'",
+    "feuille → 'setuptools/warnings.py' (in=18)",
+    "point_entree → 'setuptools/_scripts.py'",
+    "point_entree → 'setuptools/_core_metadata.py'",
+    "point_entree → 'setuptools/__init__.py'",
+    "feuille → 'setuptools/_vendor/platformdirs/api.py' (in=5)",
+    "point_entree → 'setuptools/_vendor/platformdirs/__init__.py'",
+    "point_entree → 'setuptools/_vendor/tomli/_parser.py'",
+    "point_entree → 'setuptools/_vendor/importlib_metadata/__init__.py'",
+    "point_entree → 'setuptools/_vendor/backports/tarfile/__init__.py'",
+    "point_entree → 'setuptools/_vendor/more_itertools/__init__.py'",
+    "feuille → 'setuptools/_vendor/autocommand/errors.py' (in=9)",
+    "central → 'setuptools/_vendor/autocommand/autocommand.py' (in=3, out=3)",
+    "point_entree → 'setuptools/_vendor/autocommand/__init__.py'",
+    "point_entree → 'setuptools/_vendor/packaging/pylock.py'",
+    "central → 'setuptools/_vendor/packaging/utils.py' (in=7, out=2)",
+    "central → 'setuptools/_vendor/packaging/markers.py' (in=4, out=4)",
+    "central → 'setuptools/_vendor/packaging/specifiers.py' (in=6, out=2)",
+    "point_entree → 'setuptools/_vendor/packaging/_manylinux.py'",
+    "central → 'setuptools/_vendor/packaging/version.py' (in=9, out=2)",
+    "central → 'setuptools/_vendor/packaging/requirements.py' (in=6, out=5)",
+    "point_entree → 'setuptools/_vendor/wheel/_commands/__init__.py'",
+    "feuille → 'setuptools/_vendor/zipp/glob.py' (in=5)"
+  ]
+}

@@ -1,0 +1,1711 @@
+{
+  "meta": {
+    "projet": "gitleaks",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 3,
+      "toml": 1,
+      "go": 116
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".golangci.yaml"
+  },
+  "noeuds": {
+    ".golangci.yaml": {
+      "fichier": ".golangci.yaml",
+      "langage": "yaml",
+      "lignes": 86,
+      "taille_bytes": 1757,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".pre-commit-hooks.yaml": {
+      "fichier": ".pre-commit-hooks.yaml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 635,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".gitleaks.toml": {
+      "fichier": ".gitleaks.toml",
+      "langage": "toml",
+      "lignes": 14,
+      "taille_bytes": 434,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main.go": {
+      "fichier": "main.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 514,
+      "entrees": [],
+      "sorties": [
+        "func listenForInterrupt",
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".goreleaser.yml": {
+      "fichier": ".goreleaser.yml",
+      "langage": "yaml",
+      "lignes": 31,
+      "taille_bytes": 525,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sources/file.go": {
+      "fichier": "sources/file.go",
+      "langage": "go",
+      "lignes": 264,
+      "taille_bytes": 7246,
+      "entrees": [],
+      "sorties": [
+        "const InnerPathSeparator",
+        "const defaultBufferSize",
+        "type File",
+        "type seekReaderAt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sources/common_test.go": {
+      "fichier": "sources/common_test.go",
+      "langage": "go",
+      "lignes": 72,
+      "taille_bytes": 1714,
+      "entrees": [],
+      "sorties": [
+        "func Test_readUntilSafeBoundary"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sources/git.go": {
+      "fichier": "sources/git.go",
+      "langage": "go",
+      "lignes": 530,
+      "taille_bytes": 14837,
+      "entrees": [],
+      "sorties": [
+        "func NewGitDiffCmd",
+        "func NewGitDiffCmdContext",
+        "func NewGitLogCmd",
+        "func NewGitLogCmdContext",
+        "func NewRemoteInfo",
+        "func NewRemoteInfoContext",
+        "func getRemoteUrl",
+        "func listenForStdErr",
+        "func platformFromHost",
+        "type CommitInfo",
+        "type Git",
+        "type GitCmd",
+        "type RemoteInfo",
+        "type blobReader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sources/common.go": {
+      "fichier": "sources/common.go",
+      "langage": "go",
+      "lignes": 125,
+      "taille_bytes": 3214,
+      "entrees": [],
+      "sorties": [
+        "const maxPeekSize",
+        "func init",
+        "func isArchive",
+        "func readUntilSafeBoundary",
+        "func shouldSkipPath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sources/git_test.go": {
+      "fichier": "sources/git_test.go",
+      "langage": "go",
+      "lignes": 158,
+      "taille_bytes": 4087,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sources/files.go": {
+      "fichier": "sources/files.go",
+      "langage": "go",
+      "lignes": 191,
+      "taille_bytes": 4642,
+      "entrees": [],
+      "sorties": [
+        "func DirectoryTargets",
+        "type Files",
+        "type ScanTarget"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sources/source.go": {
+      "fichier": "sources/source.go",
+      "langage": "go",
+      "lignes": 16,
+      "taille_bytes": 425,
+      "entrees": [],
+      "sorties": [
+        "type FragmentsFunc",
+        "type Source"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sources/fragment.go": {
+      "fichier": "sources/fragment.go",
+      "langage": "go",
+      "lignes": 28,
+      "taille_bytes": 939,
+      "entrees": [],
+      "sorties": [
+        "type Fragment"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regexp/stdlib_regex.go": {
+      "fichier": "regexp/stdlib_regex.go",
+      "langage": "go",
+      "lignes": 15,
+      "taille_bytes": 188,
+      "entrees": [],
+      "sorties": [
+        "const Version",
+        "func MustCompile",
+        "type Regexp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regexp/wasilibs_regex.go": {
+      "fichier": "regexp/wasilibs_regex.go",
+      "langage": "go",
+      "lignes": 15,
+      "taille_bytes": 227,
+      "entrees": [],
+      "sorties": [
+        "const Version",
+        "func MustCompile",
+        "type Regexp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/diagnostics.go": {
+      "fichier": "cmd/diagnostics.go",
+      "langage": "go",
+      "lignes": 239,
+      "taille_bytes": 6159,
+      "entrees": [],
+      "sorties": [
+        "func NewDiagnosticsManager",
+        "type DiagnosticsManager"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/stdin.go": {
+      "fichier": "cmd/stdin.go",
+      "langage": "go",
+      "lignes": 54,
+      "taille_bytes": 1064,
+      "entrees": [],
+      "sorties": [
+        "func init",
+        "func runStdIn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/protect.go": {
+      "fichier": "cmd/protect.go",
+      "langage": "go",
+      "lignes": 66,
+      "taille_bytes": 1674,
+      "entrees": [
+        ":="
+      ],
+      "sorties": [
+        "func init",
+        "func runProtect"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/git.go": {
+      "fichier": "cmd/git.go",
+      "langage": "go",
+      "lignes": 96,
+      "taille_bytes": 2543,
+      "entrees": [
+        ":="
+      ],
+      "sorties": [
+        "func init",
+        "func runGit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/directory.go": {
+      "fichier": "cmd/directory.go",
+      "langage": "go",
+      "lignes": 74,
+      "taille_bytes": 1640,
+      "entrees": [
+        ":="
+      ],
+      "sorties": [
+        "func init",
+        "func runDirectory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/version.go": {
+      "fichier": "cmd/version.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 350,
+      "entrees": [],
+      "sorties": [
+        "func init",
+        "func runVersion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/root.go": {
+      "fichier": "cmd/root.go",
+      "langage": "go",
+      "lignes": 548,
+      "taille_bytes": 17157,
+      "entrees": [],
+      "sorties": [
+        "const banner",
+        "const configDescription",
+        "func Config",
+        "func Detector",
+        "func Execute",
+        "func FormatDuration",
+        "func bytesConvert",
+        "func fileExists",
+        "func findingSummaryAndExit",
+        "func init",
+        "func initConfig",
+        "func initDiagnostics",
+        "func initLog",
+        "func mustGetBoolFlag",
+        "func mustGetIntFlag",
+        "func mustGetStringFlag"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/detect.go": {
+      "fichier": "cmd/detect.go",
+      "langage": "go",
+      "lignes": 136,
+      "taille_bytes": 4132,
+      "entrees": [],
+      "sorties": [
+        "func init",
+        "func runDetect"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/secrets/regen.go": {
+      "fichier": "cmd/generate/secrets/regen.go",
+      "langage": "go",
+      "lignes": 15,
+      "taille_bytes": 332,
+      "entrees": [],
+      "sorties": [
+        "func NewSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/main.go": {
+      "fichier": "cmd/generate/config/main.go",
+      "langage": "go",
+      "lignes": 301,
+      "taille_bytes": 8360,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/base/config_test.go": {
+      "fichier": "cmd/generate/config/base/config_test.go",
+      "langage": "go",
+      "lignes": 203,
+      "taille_bytes": 5622,
+      "entrees": [],
+      "sorties": [
+        "func BenchmarkConfigAllowlistPaths",
+        "func BenchmarkConfigAllowlistRegexes",
+        "func TestConfigAllowlistPaths",
+        "func TestConfigAllowlistRegexes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/base/config.go": {
+      "fichier": "cmd/generate/config/base/config.go",
+      "langage": "go",
+      "lignes": 121,
+      "taille_bytes": 5530,
+      "entrees": [],
+      "sorties": [
+        "func CreateGlobalConfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/lob.go": {
+      "fichier": "cmd/generate/config/rules/lob.go",
+      "langage": "go",
+      "lignes": 43,
+      "taille_bytes": 1255,
+      "entrees": [],
+      "sorties": [
+        "func LobAPIToken",
+        "func LobPubAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/nytimes.go": {
+      "fichier": "cmd/generate/config/rules/nytimes.go",
+      "langage": "go",
+      "lignes": 28,
+      "taille_bytes": 807,
+      "entrees": [],
+      "sorties": [
+        "func NytimesAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/definednetworking.go": {
+      "fichier": "cmd/generate/config/rules/definednetworking.go",
+      "langage": "go",
+      "lignes": 28,
+      "taille_bytes": 1047,
+      "entrees": [],
+      "sorties": [
+        "func DefinedNetworkingAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/twitch.go": {
+      "fichier": "cmd/generate/config/rules/twitch.go",
+      "langage": "go",
+      "lignes": 23,
+      "taille_bytes": 704,
+      "entrees": [],
+      "sorties": [
+        "func TwitchAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/shopify.go": {
+      "fichier": "cmd/generate/config/rules/shopify.go",
+      "langage": "go",
+      "lignes": 68,
+      "taille_bytes": 2310,
+      "entrees": [],
+      "sorties": [
+        "func ShopifyAccessToken",
+        "func ShopifyCustomAccessToken",
+        "func ShopifyPrivateAppAccessToken",
+        "func ShopifySharedSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/fastly.go": {
+      "fichier": "cmd/generate/config/rules/fastly.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 741,
+      "entrees": [],
+      "sorties": [
+        "func FastlyAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/etsy.go": {
+      "fichier": "cmd/generate/config/rules/etsy.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 2596,
+      "entrees": [],
+      "sorties": [
+        "func EtsyAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/pypi.go": {
+      "fichier": "cmd/generate/config/rules/pypi.go",
+      "langage": "go",
+      "lignes": 25,
+      "taille_bytes": 816,
+      "entrees": [],
+      "sorties": [
+        "func PyPiUploadToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/algolia.go": {
+      "fichier": "cmd/generate/config/rules/algolia.go",
+      "langage": "go",
+      "lignes": 21,
+      "taille_bytes": 714,
+      "entrees": [],
+      "sorties": [
+        "func AlgoliaApiKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/cloudflare.go": {
+      "fichier": "cmd/generate/config/rules/cloudflare.go",
+      "langage": "go",
+      "lignes": 81,
+      "taille_bytes": 3333,
+      "entrees": [],
+      "sorties": [
+        "func CloudflareAPIKey",
+        "func CloudflareGlobalAPIKey",
+        "func CloudflareOriginCAKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/contentful.go": {
+      "fichier": "cmd/generate/config/rules/contentful.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 731,
+      "entrees": [],
+      "sorties": [
+        "func Contentful"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/authress.go": {
+      "fichier": "cmd/generate/config/rules/authress.go",
+      "langage": "go",
+      "lignes": 31,
+      "taille_bytes": 1350,
+      "entrees": [],
+      "sorties": [
+        "func Authress"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/sendbird.go": {
+      "fichier": "cmd/generate/config/rules/sendbird.go",
+      "langage": "go",
+      "lignes": 41,
+      "taille_bytes": 1234,
+      "entrees": [],
+      "sorties": [
+        "func SendbirdAccessID",
+        "func SendbirdAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/easypost.go": {
+      "fichier": "cmd/generate/config/rules/easypost.go",
+      "langage": "go",
+      "lignes": 55,
+      "taille_bytes": 1938,
+      "entrees": [],
+      "sorties": [
+        "func EasyPost",
+        "func EasyPostTestAPI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/droneci.go": {
+      "fichier": "cmd/generate/config/rules/droneci.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 724,
+      "entrees": [],
+      "sorties": [
+        "func DroneciAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/finicity.go": {
+      "fichier": "cmd/generate/config/rules/finicity.go",
+      "langage": "go",
+      "lignes": 37,
+      "taille_bytes": 1243,
+      "entrees": [],
+      "sorties": [
+        "func FinicityAPIToken",
+        "func FinicityClientSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/bitbucket.go": {
+      "fichier": "cmd/generate/config/rules/bitbucket.go",
+      "langage": "go",
+      "lignes": 36,
+      "taille_bytes": 1286,
+      "entrees": [],
+      "sorties": [
+        "func BitBucketClientID",
+        "func BitBucketClientSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/gitlab.go": {
+      "fichier": "cmd/generate/config/rules/gitlab.go",
+      "langage": "go",
+      "lignes": 222,
+      "taille_bytes": 8492,
+      "entrees": [],
+      "sorties": [
+        "func GitlabCiCdJobToken",
+        "func GitlabDeployToken",
+        "func GitlabFeatureFlagClientToken",
+        "func GitlabFeedToken",
+        "func GitlabIncomingMailToken",
+        "func GitlabKubernetesAgentToken",
+        "func GitlabOauthAppSecret",
+        "func GitlabPat",
+        "func GitlabPatRoutable",
+        "func GitlabPipelineTriggerToken",
+        "func GitlabRunnerAuthenticationToken",
+        "func GitlabRunnerAuthenticationTokenRoutable",
+        "func GitlabRunnerRegistrationToken",
+        "func GitlabScimToken",
+        "func GitlabSessionCookie"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/flyio.go": {
+      "fichier": "cmd/generate/config/rules/flyio.go",
+      "langage": "go",
+      "lignes": 57,
+      "taille_bytes": 5542,
+      "entrees": [],
+      "sorties": [
+        "func FlyIOAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/nuget.go": {
+      "fichier": "cmd/generate/config/rules/nuget.go",
+      "langage": "go",
+      "lignes": 48,
+      "taille_bytes": 2142,
+      "entrees": [],
+      "sorties": [
+        "func NugetConfigPassword"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/rapidapi.go": {
+      "fichier": "cmd/generate/config/rules/rapidapi.go",
+      "langage": "go",
+      "lignes": 25,
+      "taille_bytes": 755,
+      "entrees": [],
+      "sorties": [
+        "func RapidAPIAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/frameio.go": {
+      "fichier": "cmd/generate/config/rules/frameio.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 720,
+      "entrees": [],
+      "sorties": [
+        "func FrameIO"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/alibaba.go": {
+      "fichier": "cmd/generate/config/rules/alibaba.go",
+      "langage": "go",
+      "lignes": 40,
+      "taille_bytes": 1296,
+      "entrees": [],
+      "sorties": [
+        "func AlibabaAccessKey",
+        "func AlibabaSecretKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/infracost.go": {
+      "fichier": "cmd/generate/config/rules/infracost.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 1503,
+      "entrees": [],
+      "sorties": [
+        "func InfracostAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/snyk.go": {
+      "fichier": "cmd/generate/config/rules/snyk.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 1408,
+      "entrees": [],
+      "sorties": [
+        "func Snyk"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/perplexity.go": {
+      "fichier": "cmd/generate/config/rules/perplexity.go",
+      "langage": "go",
+      "lignes": 27,
+      "taille_bytes": 799,
+      "entrees": [],
+      "sorties": [
+        "func PerplexityAPIKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/privatekey.go": {
+      "fichier": "cmd/generate/config/rules/privatekey.go",
+      "langage": "go",
+      "lignes": 61,
+      "taille_bytes": 1950,
+      "entrees": [],
+      "sorties": [
+        "func PrivateKey",
+        "func PrivateKeyPKCS12File"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/sendgrid.go": {
+      "fichier": "cmd/generate/config/rules/sendgrid.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 737,
+      "entrees": [],
+      "sorties": [
+        "func SendGridAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/intercom.go": {
+      "fichier": "cmd/generate/config/rules/intercom.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 721,
+      "entrees": [],
+      "sorties": [
+        "func Intercom"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/hashicorp.go": {
+      "fichier": "cmd/generate/config/rules/hashicorp.go",
+      "langage": "go",
+      "lignes": 58,
+      "taille_bytes": 2299,
+      "entrees": [],
+      "sorties": [
+        "func HashiCorpTerraform",
+        "func HashicorpField"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/intra42.go": {
+      "fichier": "cmd/generate/config/rules/intra42.go",
+      "langage": "go",
+      "lignes": 31,
+      "taille_bytes": 1054,
+      "entrees": [],
+      "sorties": [
+        "func Intra42ClientSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/plaid.go": {
+      "fichier": "cmd/generate/config/rules/plaid.go",
+      "langage": "go",
+      "lignes": 61,
+      "taille_bytes": 1853,
+      "entrees": [],
+      "sorties": [
+        "func PlaidAccessID",
+        "func PlaidAccessToken",
+        "func PlaidSecretKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/curl.go": {
+      "fichier": "cmd/generate/config/rules/curl.go",
+      "langage": "go",
+      "lignes": 201,
+      "taille_bytes": 12256,
+      "entrees": [],
+      "sorties": [
+        "func CurlBasicAuth",
+        "func CurlHeaderAuth"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/sentry.go": {
+      "fichier": "cmd/generate/config/rules/sentry.go",
+      "langage": "go",
+      "lignes": 98,
+      "taille_bytes": 4166,
+      "entrees": [],
+      "sorties": [
+        "func SentryAccessToken",
+        "func SentryOrgToken",
+        "func SentryUserToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/twilio.go": {
+      "fichier": "cmd/generate/config/rules/twilio.go",
+      "langage": "go",
+      "lignes": 23,
+      "taille_bytes": 707,
+      "entrees": [],
+      "sorties": [
+        "func Twilio"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/jfrog.go": {
+      "fichier": "cmd/generate/config/rules/jfrog.go",
+      "langage": "go",
+      "lignes": 64,
+      "taille_bytes": 2342,
+      "entrees": [],
+      "sorties": [
+        "func JFrogAPIKey",
+        "func JFrogIdentityToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/postman.go": {
+      "fichier": "cmd/generate/config/rules/postman.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 755,
+      "entrees": [],
+      "sorties": [
+        "func PostManAPI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/rubygems.go": {
+      "fichier": "cmd/generate/config/rules/rubygems.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 730,
+      "entrees": [],
+      "sorties": [
+        "func RubyGemsAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/typeform.go": {
+      "fichier": "cmd/generate/config/rules/typeform.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 727,
+      "entrees": [],
+      "sorties": [
+        "func Typeform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/teams.go": {
+      "fichier": "cmd/generate/config/rules/teams.go",
+      "langage": "go",
+      "lignes": 29,
+      "taille_bytes": 1150,
+      "entrees": [],
+      "sorties": [
+        "func TeamsWebhook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/sendinblue.go": {
+      "fichier": "cmd/generate/config/rules/sendinblue.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 794,
+      "entrees": [],
+      "sorties": [
+        "func SendInBlueAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/npm.go": {
+      "fichier": "cmd/generate/config/rules/npm.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 702,
+      "entrees": [],
+      "sorties": [
+        "func NPM"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/yandex.go": {
+      "fichier": "cmd/generate/config/rules/yandex.go",
+      "langage": "go",
+      "lignes": 60,
+      "taille_bytes": 1826,
+      "entrees": [],
+      "sorties": [
+        "func YandexAPIKey",
+        "func YandexAWSAccessToken",
+        "func YandexAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/sourcegraph.go": {
+      "fichier": "cmd/generate/config/rules/sourcegraph.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 1305,
+      "entrees": [],
+      "sorties": [
+        "func SourceGraph"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/freshbooks.go": {
+      "fichier": "cmd/generate/config/rules/freshbooks.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 753,
+      "entrees": [],
+      "sorties": [
+        "func FreshbooksAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/flickr.go": {
+      "fichier": "cmd/generate/config/rules/flickr.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 721,
+      "entrees": [],
+      "sorties": [
+        "func FlickrAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/maxmind.go": {
+      "fichier": "cmd/generate/config/rules/maxmind.go",
+      "langage": "go",
+      "lignes": 21,
+      "taille_bytes": 618,
+      "entrees": [],
+      "sorties": [
+        "func MaxMindLicenseKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/settlemint.go": {
+      "fichier": "cmd/generate/config/rules/settlemint.go",
+      "langage": "go",
+      "lignes": 70,
+      "taille_bytes": 2276,
+      "entrees": [],
+      "sorties": [
+        "func SettlemintApplicationAccessToken",
+        "func SettlemintPersonalAccessToken",
+        "func SettlemintServiceAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/artifactory.go": {
+      "fichier": "cmd/generate/config/rules/artifactory.go",
+      "langage": "go",
+      "lignes": 58,
+      "taille_bytes": 2071,
+      "entrees": [],
+      "sorties": [
+        "func ArtifactoryApiKey",
+        "func ArtifactoryReferenceToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/beamer.go": {
+      "fichier": "cmd/generate/config/rules/beamer.go",
+      "langage": "go",
+      "lignes": 25,
+      "taille_bytes": 851,
+      "entrees": [],
+      "sorties": [
+        "func Beamer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/confluent.go": {
+      "fichier": "cmd/generate/config/rules/confluent.go",
+      "langage": "go",
+      "lignes": 40,
+      "taille_bytes": 1292,
+      "entrees": [],
+      "sorties": [
+        "func ConfluentAccessToken",
+        "func ConfluentSecretKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/bittrex.go": {
+      "fichier": "cmd/generate/config/rules/bittrex.go",
+      "langage": "go",
+      "lignes": 36,
+      "taille_bytes": 1254,
+      "entrees": [],
+      "sorties": [
+        "func BittrexAccessKey",
+        "func BittrexSecretKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/dropbox.go": {
+      "fichier": "cmd/generate/config/rules/dropbox.go",
+      "langage": "go",
+      "lignes": 48,
+      "taille_bytes": 1615,
+      "entrees": [],
+      "sorties": [
+        "func DropBoxAPISecret",
+        "func DropBoxLongLivedAPIToken",
+        "func DropBoxShortLivedAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/airtable.go": {
+      "fichier": "cmd/generate/config/rules/airtable.go",
+      "langage": "go",
+      "lignes": 37,
+      "taille_bytes": 1320,
+      "entrees": [],
+      "sorties": [
+        "func AirtableApiKey",
+        "func AirtablePersonalAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/1password.go": {
+      "fichier": "cmd/generate/config/rules/1password.go",
+      "langage": "go",
+      "lignes": 81,
+      "taille_bytes": 6001,
+      "entrees": [],
+      "sorties": [
+        "export OP_SERVICE_ACCOUNT_TOKEN",
+        "func OnePasswordSecretKey",
+        "func OnePasswordServiceAccountToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/shippo.go": {
+      "fichier": "cmd/generate/config/rules/shippo.go",
+      "langage": "go",
+      "lignes": 25,
+      "taille_bytes": 836,
+      "entrees": [],
+      "sorties": [
+        "func ShippoAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/slack.go": {
+      "fichier": "cmd/generate/config/rules/slack.go",
+      "langage": "go",
+      "lignes": 296,
+      "taille_bytes": 17829,
+      "entrees": [],
+      "sorties": [
+        "func SlackAppLevelToken",
+        "func SlackBotToken",
+        "func SlackConfigurationRefreshToken",
+        "func SlackConfigurationToken",
+        "func SlackLegacyBotToken",
+        "func SlackLegacyToken",
+        "func SlackLegacyWorkspaceToken",
+        "func SlackUserToken",
+        "func SlackWebHookUrl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/aws.go": {
+      "fichier": "cmd/generate/config/rules/aws.go",
+      "langage": "go",
+      "lignes": 109,
+      "taille_bytes": 7520,
+      "entrees": [],
+      "sorties": [
+        "func AWS",
+        "func AmazonBedrockAPIKeyLongLived",
+        "func AmazonBedrockAPIKeyShortLived"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/freemius.go": {
+      "fichier": "cmd/generate/config/rules/freemius.go",
+      "langage": "go",
+      "lignes": 47,
+      "taille_bytes": 1483,
+      "entrees": [],
+      "sorties": [
+        "func Freemius"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/adobe.go": {
+      "fichier": "cmd/generate/config/rules/adobe.go",
+      "langage": "go",
+      "lignes": 39,
+      "taille_bytes": 1266,
+      "entrees": [],
+      "sorties": [
+        "func AdobeClientID",
+        "func AdobeClientSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/atlassian.go": {
+      "fichier": "cmd/generate/config/rules/atlassian.go",
+      "langage": "go",
+      "lignes": 36,
+      "taille_bytes": 1658,
+      "entrees": [],
+      "sorties": [
+        "func Atlassian"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/doppler.go": {
+      "fichier": "cmd/generate/config/rules/doppler.go",
+      "langage": "go",
+      "lignes": 26,
+      "taille_bytes": 823,
+      "entrees": [],
+      "sorties": [
+        "func Doppler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/messagebird.go": {
+      "fichier": "cmd/generate/config/rules/messagebird.go",
+      "langage": "go",
+      "lignes": 50,
+      "taille_bytes": 1716,
+      "entrees": [],
+      "sorties": [
+        "func MessageBirdAPIToken",
+        "func MessageBirdClientID"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/notion.go": {
+      "fichier": "cmd/generate/config/rules/notion.go",
+      "langage": "go",
+      "lignes": 39,
+      "taille_bytes": 963,
+      "entrees": [],
+      "sorties": [
+        "func Notion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/mailgun.go": {
+      "fichier": "cmd/generate/config/rules/mailgun.go",
+      "langage": "go",
+      "lignes": 58,
+      "taille_bytes": 1797,
+      "entrees": [],
+      "sorties": [
+        "func MailGunPrivateAPIToken",
+        "func MailGunPubAPIToken",
+        "func MailGunSigningKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/kubernetes.go": {
+      "fichier": "cmd/generate/config/rules/kubernetes.go",
+      "langage": "go",
+      "lignes": 463,
+      "taille_bytes": 14909,
+      "entrees": [],
+      "sorties": [
+        "func KubernetesSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/sumologic.go": {
+      "fichier": "cmd/generate/config/rules/sumologic.go",
+      "langage": "go",
+      "lignes": 75,
+      "taille_bytes": 3062,
+      "entrees": [],
+      "sorties": [
+        "func SumoLogicAccessID",
+        "func SumoLogicAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/squarespace.go": {
+      "fichier": "cmd/generate/config/rules/squarespace.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 746,
+      "entrees": [],
+      "sorties": [
+        "func SquareSpaceAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/kucoin.go": {
+      "fichier": "cmd/generate/config/rules/kucoin.go",
+      "langage": "go",
+      "lignes": 41,
+      "taille_bytes": 1232,
+      "entrees": [],
+      "sorties": [
+        "func KucoinAccessToken",
+        "func KucoinSecretKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/cohere.go": {
+      "fichier": "cmd/generate/config/rules/cohere.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 1020,
+      "entrees": [],
+      "sorties": [
+        "func CohereAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/heroku.go": {
+      "fichier": "cmd/generate/config/rules/heroku.go",
+      "langage": "go",
+      "lignes": 45,
+      "taille_bytes": 1586,
+      "entrees": [],
+      "sorties": [
+        "func Heroku",
+        "func HerokuV2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/databricks.go": {
+      "fichier": "cmd/generate/config/rules/databricks.go",
+      "langage": "go",
+      "lignes": 26,
+      "taille_bytes": 884,
+      "entrees": [],
+      "sorties": [
+        "func Databricks"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/digitalocean.go": {
+      "fichier": "cmd/generate/config/rules/digitalocean.go",
+      "langage": "go",
+      "lignes": 46,
+      "taille_bytes": 1663,
+      "entrees": [],
+      "sorties": [
+        "func DigitalOceanOAuthToken",
+        "func DigitalOceanPAT",
+        "func DigitalOceanRefreshToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/okta.go": {
+      "fichier": "cmd/generate/config/rules/okta.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 1133,
+      "entrees": [],
+      "sorties": [
+        "func OktaAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/sonar.go": {
+      "fichier": "cmd/generate/config/rules/sonar.go",
+      "langage": "go",
+      "lignes": 31,
+      "taille_bytes": 1441,
+      "entrees": [],
+      "sorties": [
+        "func Sonar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/trello.go": {
+      "fichier": "cmd/generate/config/rules/trello.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 620,
+      "entrees": [],
+      "sorties": [
+        "func TrelloAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/mapbox.go": {
+      "fichier": "cmd/generate/config/rules/mapbox.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 756,
+      "entrees": [],
+      "sorties": [
+        "func MapBox"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/clickhouse.go": {
+      "fichier": "cmd/generate/config/rules/clickhouse.go",
+      "langage": "go",
+      "lignes": 30,
+      "taille_bytes": 1115,
+      "entrees": [],
+      "sorties": [
+        "func ClickHouseCloud"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/kraken.go": {
+      "fichier": "cmd/generate/config/rules/kraken.go",
+      "langage": "go",
+      "lignes": 25,
+      "taille_bytes": 754,
+      "entrees": [],
+      "sorties": [
+        "func KrakenAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/octopusdeploy.go": {
+      "fichier": "cmd/generate/config/rules/octopusdeploy.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 1187,
+      "entrees": [],
+      "sorties": [
+        "func OctopusDeployApiKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/gitter.go": {
+      "fichier": "cmd/generate/config/rules/gitter.go",
+      "langage": "go",
+      "lignes": 25,
+      "taille_bytes": 742,
+      "entrees": [],
+      "sorties": [
+        "func GitterAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/readme.go": {
+      "fichier": "cmd/generate/config/rules/readme.go",
+      "langage": "go",
+      "lignes": 28,
+      "taille_bytes": 820,
+      "entrees": [],
+      "sorties": [
+        "func ReadMe"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/flutterwave.go": {
+      "fichier": "cmd/generate/config/rules/flutterwave.go",
+      "langage": "go",
+      "lignes": 53,
+      "taille_bytes": 1861,
+      "entrees": [],
+      "sorties": [
+        "func FlutterwaveEncKey",
+        "func FlutterwavePublicKey",
+        "func FlutterwaveSecretKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/generic.go": {
+      "fichier": "cmd/generate/config/rules/generic.go",
+      "langage": "go",
+      "lignes": 299,
+      "taille_bytes": 11854,
+      "entrees": [],
+      "sorties": [
+        "func GenericCredential",
+        "func newPlausibleSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/meraki.go": {
+      "fichier": "cmd/generate/config/rules/meraki.go",
+      "langage": "go",
+      "lignes": 29,
+      "taille_bytes": 1259,
+      "entrees": [],
+      "sorties": [
+        "func Meraki"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/github.go": {
+      "fichier": "cmd/generate/config/rules/github.go",
+      "langage": "go",
+      "lignes": 111,
+      "taille_bytes": 3622,
+      "entrees": [],
+      "sorties": [
+        "func GitHubApp",
+        "func GitHubFineGrainedPat",
+        "func GitHubOauth",
+        "func GitHubPat",
+        "func GitHubRefresh"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/grafana.go": {
+      "fichier": "cmd/generate/config/rules/grafana.go",
+      "langage": "go",
+      "lignes": 80,
+      "taille_bytes": 3119,
+      "entrees": [],
+      "sorties": [
+        "func GrafanaApiKey",
+        "func GrafanaCloudApiToken",
+        "func GrafanaServiceAccountToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/sidekiq.go": {
+      "fichier": "cmd/generate/config/rules/sidekiq.go",
+      "langage": "go",
+      "lignes": 62,
+      "taille_bytes": 2865,
+      "entrees": [],
+      "sorties": [
+        "func SidekiqSecret",
+        "func SidekiqSensitiveUrl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/pulumi.go": {
+      "fichier": "cmd/generate/config/rules/pulumi.go",
+      "langage": "go",
+      "lignes": 27,
+      "taille_bytes": 894,
+      "entrees": [],
+      "sorties": [
+        "func PulumiAPIToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/travisci.go": {
+      "fichier": "cmd/generate/config/rules/travisci.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 733,
+      "entrees": [],
+      "sorties": [
+        "func TravisCIAccessToken"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/looker.go": {
+      "fichier": "cmd/generate/config/rules/looker.go",
+      "langage": "go",
+      "lignes": 35,
+      "taille_bytes": 1224,
+      "entrees": [],
+      "sorties": [
+        "func LookerClientID",
+        "func LookerClientSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/discord.go": {
+      "fichier": "cmd/generate/config/rules/discord.go",
+      "langage": "go",
+      "lignes": 61,
+      "taille_bytes": 1995,
+      "entrees": [],
+      "sorties": [
+        "func DiscordAPIToken",
+        "func DiscordClientID",
+        "func DiscordClientSecret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/generate/config/rules/zendesk.go": {
+      "fichier": "cmd/generate/config/rules/zendesk.go",
+      "langage": "go",
+      "lignes": 23,
+      "taille_bytes": 730,
+      "entrees": [],
+      "sorties": [
+        "func ZendeskSecretKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

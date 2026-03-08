@@ -1,0 +1,1031 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 18
+    }
+  },
+  "stats": {
+    "fichiers_total": 18,
+    "edges_total": 42,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 1,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 3,
+    "points_entree": 1,
+    "fichier_plus_appele": "yaml/error.py"
+  },
+  "noeuds": {
+    "_yaml/__init__.py": {
+      "fichier": "_yaml/__init__.py",
+      "langage": "python",
+      "lignes": 33,
+      "taille_bytes": 1402,
+      "entrees": [
+        "sys",
+        "warnings",
+        "yaml",
+        "yaml._yaml"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "yaml/serializer.py": {
+      "fichier": "yaml/serializer.py",
+      "langage": "python",
+      "lignes": 111,
+      "taille_bytes": 4165,
+      "entrees": [
+        ".error",
+        ".events",
+        ".nodes"
+      ],
+      "sorties": [
+        "class Serializer",
+        "class SerializerError",
+        "def __init__",
+        "def anchor_node",
+        "def close",
+        "def generate_anchor",
+        "def open",
+        "def serialize",
+        "def serialize_node"
+      ],
+      "appelle": [
+        "yaml/error.py",
+        "yaml/events.py",
+        "yaml/nodes.py"
+      ],
+      "est_appele_par": [
+        "yaml/cyaml.py",
+        "yaml/dumper.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/tokens.py": {
+      "fichier": "yaml/tokens.py",
+      "langage": "python",
+      "lignes": 104,
+      "taille_bytes": 2573,
+      "entrees": [],
+      "sorties": [
+        "class AliasToken",
+        "class AnchorToken",
+        "class BlockEndToken",
+        "class BlockEntryToken",
+        "class BlockMappingStartToken",
+        "class BlockSequenceStartToken",
+        "class DirectiveToken",
+        "class DocumentEndToken",
+        "class DocumentStartToken",
+        "class FlowEntryToken",
+        "class FlowMappingEndToken",
+        "class FlowMappingStartToken",
+        "class FlowSequenceEndToken",
+        "class FlowSequenceStartToken",
+        "class KeyToken",
+        "class ScalarToken",
+        "class StreamEndToken",
+        "class StreamStartToken",
+        "class TagToken",
+        "class Token",
+        "class ValueToken",
+        "def __init__",
+        "def __repr__"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "yaml/__init__.py",
+        "yaml/parser.py",
+        "yaml/scanner.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "yaml/cyaml.py": {
+      "fichier": "yaml/cyaml.py",
+      "langage": "python",
+      "lignes": 101,
+      "taille_bytes": 3851,
+      "entrees": [
+        ".constructor",
+        ".representer",
+        ".resolver",
+        ".serializer",
+        "yaml._yaml"
+      ],
+      "sorties": [
+        "class CBaseDumper",
+        "class CBaseLoader",
+        "class CDumper",
+        "class CFullLoader",
+        "class CLoader",
+        "class CSafeDumper",
+        "class CSafeLoader",
+        "class CUnsafeLoader",
+        "def __init__"
+      ],
+      "appelle": [
+        "yaml/constructor.py",
+        "yaml/representer.py",
+        "yaml/resolver.py",
+        "yaml/serializer.py"
+      ],
+      "est_appele_par": [
+        "yaml/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/nodes.py": {
+      "fichier": "yaml/nodes.py",
+      "langage": "python",
+      "lignes": 49,
+      "taille_bytes": 1440,
+      "entrees": [],
+      "sorties": [
+        "class CollectionNode",
+        "class MappingNode",
+        "class Node",
+        "class ScalarNode",
+        "class SequenceNode",
+        "def __init__",
+        "def __repr__"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "yaml/__init__.py",
+        "yaml/composer.py",
+        "yaml/constructor.py",
+        "yaml/representer.py",
+        "yaml/resolver.py",
+        "yaml/serializer.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "yaml/composer.py": {
+      "fichier": "yaml/composer.py",
+      "langage": "python",
+      "lignes": 139,
+      "taille_bytes": 4883,
+      "entrees": [
+        ".error",
+        ".events",
+        ".nodes"
+      ],
+      "sorties": [
+        "class Composer",
+        "class ComposerError",
+        "def __init__",
+        "def check_node",
+        "def compose_document",
+        "def compose_mapping_node",
+        "def compose_node",
+        "def compose_scalar_node",
+        "def compose_sequence_node",
+        "def get_node",
+        "def get_single_node"
+      ],
+      "appelle": [
+        "yaml/error.py",
+        "yaml/events.py",
+        "yaml/nodes.py"
+      ],
+      "est_appele_par": [
+        "yaml/loader.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/reader.py": {
+      "fichier": "yaml/reader.py",
+      "langage": "python",
+      "lignes": 185,
+      "taille_bytes": 6794,
+      "entrees": [
+        ".error",
+        "codecs"
+      ],
+      "sorties": [
+        "class Reader",
+        "class ReaderError",
+        "def __init__",
+        "def __str__",
+        "def check_printable",
+        "def determine_encoding",
+        "def forward",
+        "def get_mark",
+        "def peek",
+        "def prefix",
+        "def update",
+        "def update_raw"
+      ],
+      "appelle": [
+        "yaml/error.py"
+      ],
+      "est_appele_par": [
+        "yaml/loader.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/events.py": {
+      "fichier": "yaml/events.py",
+      "langage": "python",
+      "lignes": 86,
+      "taille_bytes": 2445,
+      "entrees": [],
+      "sorties": [
+        "class AliasEvent",
+        "class CollectionEndEvent",
+        "class CollectionStartEvent",
+        "class DocumentEndEvent",
+        "class DocumentStartEvent",
+        "class Event",
+        "class MappingEndEvent",
+        "class MappingStartEvent",
+        "class NodeEvent",
+        "class ScalarEvent",
+        "class SequenceEndEvent",
+        "class SequenceStartEvent",
+        "class StreamEndEvent",
+        "class StreamStartEvent",
+        "def __init__",
+        "def __repr__"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "yaml/__init__.py",
+        "yaml/composer.py",
+        "yaml/emitter.py",
+        "yaml/parser.py",
+        "yaml/serializer.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "yaml/representer.py": {
+      "fichier": "yaml/representer.py",
+      "langage": "python",
+      "lignes": 389,
+      "taille_bytes": 14190,
+      "entrees": [
+        ".error",
+        ".nodes",
+        "datetime"
+      ],
+      "sorties": [
+        "class BaseRepresenter",
+        "class Representer",
+        "class RepresenterError",
+        "class SafeRepresenter",
+        "def __init__",
+        "def add_multi_representer",
+        "def add_representer",
+        "def ignore_aliases",
+        "def represent",
+        "def represent_binary",
+        "def represent_bool",
+        "def represent_complex",
+        "def represent_data",
+        "def represent_date",
+        "def represent_datetime",
+        "def represent_dict",
+        "def represent_float",
+        "def represent_int",
+        "def represent_list",
+        "def represent_mapping",
+        "def represent_module",
+        "def represent_name",
+        "def represent_none",
+        "def represent_object",
+        "def represent_ordered_dict",
+        "def represent_scalar",
+        "def represent_sequence",
+        "def represent_set",
+        "def represent_str",
+        "def represent_tuple",
+        "def represent_undefined",
+        "def represent_yaml_object"
+      ],
+      "appelle": [
+        "yaml/error.py",
+        "yaml/nodes.py"
+      ],
+      "est_appele_par": [
+        "yaml/cyaml.py",
+        "yaml/dumper.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/constructor.py": {
+      "fichier": "yaml/constructor.py",
+      "langage": "python",
+      "lignes": 748,
+      "taille_bytes": 28639,
+      "entrees": [
+        ".error",
+        ".nodes",
+        "collections.abc"
+      ],
+      "sorties": [
+        "class BaseConstructor",
+        "class Constructor",
+        "class ConstructorError",
+        "class FullConstructor",
+        "class SafeConstructor",
+        "class UnsafeConstructor",
+        "def __init__",
+        "def add_constructor",
+        "def add_multi_constructor",
+        "def check_data",
+        "def check_state_key",
+        "def construct_document",
+        "def construct_mapping",
+        "def construct_object",
+        "def construct_pairs",
+        "def construct_python_bytes",
+        "def construct_python_complex",
+        "def construct_python_long",
+        "def construct_python_module",
+        "def construct_python_name",
+        "def construct_python_object",
+        "def construct_python_object_apply",
+        "def construct_python_object_new",
+        "def construct_python_str",
+        "def construct_python_tuple",
+        "def construct_python_unicode",
+        "def construct_scalar",
+        "def construct_sequence",
+        "def construct_undefined",
+        "def construct_yaml_binary",
+        "def construct_yaml_bool",
+        "def construct_yaml_float",
+        "def construct_yaml_int",
+        "def construct_yaml_map",
+        "def construct_yaml_null",
+        "def construct_yaml_object",
+        "def construct_yaml_omap",
+        "def construct_yaml_pairs",
+        "def construct_yaml_seq",
+        "def construct_yaml_set",
+        "def construct_yaml_str",
+        "def construct_yaml_timestamp",
+        "def find_python_module",
+        "def find_python_name",
+        "def flatten_mapping",
+        "def get_data",
+        "def get_single_data",
+        "def get_state_keys_blacklist",
+        "def get_state_keys_blacklist_regexp",
+        "def make_python_instance",
+        "def set_python_instance_state"
+      ],
+      "appelle": [
+        "yaml/error.py",
+        "yaml/nodes.py"
+      ],
+      "est_appele_par": [
+        "yaml/cyaml.py",
+        "yaml/loader.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/resolver.py": {
+      "fichier": "yaml/resolver.py",
+      "langage": "python",
+      "lignes": 227,
+      "taille_bytes": 9004,
+      "entrees": [
+        ".error",
+        ".nodes",
+        "re"
+      ],
+      "sorties": [
+        "class BaseResolver",
+        "class Resolver",
+        "class ResolverError",
+        "def __init__",
+        "def add_implicit_resolver",
+        "def add_path_resolver",
+        "def ascend_resolver",
+        "def check_resolver_prefix",
+        "def descend_resolver",
+        "def resolve"
+      ],
+      "appelle": [
+        "yaml/error.py",
+        "yaml/nodes.py"
+      ],
+      "est_appele_par": [
+        "yaml/cyaml.py",
+        "yaml/dumper.py",
+        "yaml/loader.py"
+      ],
+      "type_noeud": "central"
+    },
+    "yaml/error.py": {
+      "fichier": "yaml/error.py",
+      "langage": "python",
+      "lignes": 75,
+      "taille_bytes": 2533,
+      "entrees": [],
+      "sorties": [
+        "class Mark",
+        "class MarkedYAMLError",
+        "class YAMLError",
+        "def __init__",
+        "def __str__",
+        "def get_snippet"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "yaml/__init__.py",
+        "yaml/composer.py",
+        "yaml/constructor.py",
+        "yaml/emitter.py",
+        "yaml/parser.py",
+        "yaml/reader.py",
+        "yaml/representer.py",
+        "yaml/resolver.py",
+        "yaml/scanner.py",
+        "yaml/serializer.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "yaml/dumper.py": {
+      "fichier": "yaml/dumper.py",
+      "langage": "python",
+      "lignes": 62,
+      "taille_bytes": 2837,
+      "entrees": [
+        ".emitter",
+        ".representer",
+        ".resolver",
+        ".serializer"
+      ],
+      "sorties": [
+        "class BaseDumper",
+        "class Dumper",
+        "class SafeDumper",
+        "def __init__"
+      ],
+      "appelle": [
+        "yaml/emitter.py",
+        "yaml/representer.py",
+        "yaml/resolver.py",
+        "yaml/serializer.py"
+      ],
+      "est_appele_par": [
+        "yaml/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/scanner.py": {
+      "fichier": "yaml/scanner.py",
+      "langage": "python",
+      "lignes": 1435,
+      "taille_bytes": 51279,
+      "entrees": [
+        ".error",
+        ".tokens"
+      ],
+      "sorties": [
+        "class Scanner",
+        "class ScannerError",
+        "class SimpleKey",
+        "def __init__",
+        "def add_indent",
+        "def check_block_entry",
+        "def check_directive",
+        "def check_document_end",
+        "def check_document_start",
+        "def check_key",
+        "def check_plain",
+        "def check_token",
+        "def check_value",
+        "def fetch_alias",
+        "def fetch_anchor",
+        "def fetch_block_entry",
+        "def fetch_block_scalar",
+        "def fetch_directive",
+        "def fetch_document_end",
+        "def fetch_document_indicator",
+        "def fetch_document_start",
+        "def fetch_double",
+        "def fetch_flow_collection_end",
+        "def fetch_flow_collection_start",
+        "def fetch_flow_entry",
+        "def fetch_flow_mapping_end",
+        "def fetch_flow_mapping_start",
+        "def fetch_flow_scalar",
+        "def fetch_flow_sequence_end",
+        "def fetch_flow_sequence_start",
+        "def fetch_folded",
+        "def fetch_key",
+        "def fetch_literal",
+        "def fetch_more_tokens",
+        "def fetch_plain",
+        "def fetch_single",
+        "def fetch_stream_end",
+        "def fetch_stream_start",
+        "def fetch_tag",
+        "def fetch_value",
+        "def get_token",
+        "def need_more_tokens",
+        "def next_possible_simple_key",
+        "def peek_token",
+        "def remove_possible_simple_key",
+        "def save_possible_simple_key",
+        "def scan_anchor",
+        "def scan_block_scalar",
+        "def scan_block_scalar_breaks",
+        "def scan_block_scalar_ignored_line",
+        "def scan_block_scalar_indentation",
+        "def scan_block_scalar_indicators",
+        "def scan_directive",
+        "def scan_directive_ignored_line",
+        "def scan_directive_name",
+        "def scan_flow_scalar",
+        "def scan_flow_scalar_breaks",
+        "def scan_flow_scalar_non_spaces",
+        "def scan_flow_scalar_spaces",
+        "def scan_line_break",
+        "def scan_plain",
+        "def scan_plain_spaces",
+        "def scan_tag",
+        "def scan_tag_directive_handle",
+        "def scan_tag_directive_prefix",
+        "def scan_tag_directive_value",
+        "def scan_tag_handle",
+        "def scan_tag_uri",
+        "def scan_to_next_token",
+        "def scan_uri_escapes",
+        "def scan_yaml_directive_number",
+        "def scan_yaml_directive_value",
+        "def stale_possible_simple_keys",
+        "def unwind_indent"
+      ],
+      "appelle": [
+        "yaml/error.py",
+        "yaml/tokens.py"
+      ],
+      "est_appele_par": [
+        "yaml/loader.py",
+        "yaml/parser.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/emitter.py": {
+      "fichier": "yaml/emitter.py",
+      "langage": "python",
+      "lignes": 1137,
+      "taille_bytes": 43006,
+      "entrees": [
+        ".error",
+        ".events"
+      ],
+      "sorties": [
+        "class Emitter",
+        "class EmitterError",
+        "class ScalarAnalysis",
+        "def __init__",
+        "def analyze_scalar",
+        "def check_empty_document",
+        "def check_empty_mapping",
+        "def check_empty_sequence",
+        "def check_simple_key",
+        "def choose_scalar_style",
+        "def determine_block_hints",
+        "def dispose",
+        "def emit",
+        "def expect_alias",
+        "def expect_block_mapping",
+        "def expect_block_mapping_key",
+        "def expect_block_mapping_simple_value",
+        "def expect_block_mapping_value",
+        "def expect_block_sequence",
+        "def expect_block_sequence_item",
+        "def expect_document_end",
+        "def expect_document_root",
+        "def expect_document_start",
+        "def expect_first_block_mapping_key",
+        "def expect_first_block_sequence_item",
+        "def expect_first_document_start",
+        "def expect_first_flow_mapping_key",
+        "def expect_first_flow_sequence_item",
+        "def expect_flow_mapping",
+        "def expect_flow_mapping_key",
+        "def expect_flow_mapping_simple_value",
+        "def expect_flow_mapping_value",
+        "def expect_flow_sequence",
+        "def expect_flow_sequence_item",
+        "def expect_node",
+        "def expect_nothing",
+        "def expect_scalar",
+        "def expect_stream_start",
+        "def flush_stream",
+        "def increase_indent",
+        "def need_events",
+        "def need_more_events",
+        "def prepare_anchor",
+        "def prepare_tag",
+        "def prepare_tag_handle",
+        "def prepare_tag_prefix",
+        "def prepare_version",
+        "def process_anchor",
+        "def process_scalar",
+        "def process_tag",
+        "def write_double_quoted",
+        "def write_folded",
+        "def write_indent",
+        "def write_indicator",
+        "def write_line_break",
+        "def write_literal",
+        "def write_plain",
+        "def write_single_quoted",
+        "def write_stream_end",
+        "def write_stream_start",
+        "def write_tag_directive",
+        "def write_version_directive"
+      ],
+      "appelle": [
+        "yaml/error.py",
+        "yaml/events.py"
+      ],
+      "est_appele_par": [
+        "yaml/dumper.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/parser.py": {
+      "fichier": "yaml/parser.py",
+      "langage": "python",
+      "lignes": 589,
+      "taille_bytes": 25495,
+      "entrees": [
+        ".error",
+        ".events",
+        ".scanner",
+        ".tokens"
+      ],
+      "sorties": [
+        "class Parser",
+        "class ParserError",
+        "def __init__",
+        "def check_event",
+        "def dispose",
+        "def get_event",
+        "def parse_block_mapping_first_key",
+        "def parse_block_mapping_key",
+        "def parse_block_mapping_value",
+        "def parse_block_node",
+        "def parse_block_node_or_indentless_sequence",
+        "def parse_block_sequence_entry",
+        "def parse_block_sequence_first_entry",
+        "def parse_document_content",
+        "def parse_document_end",
+        "def parse_document_start",
+        "def parse_flow_mapping_empty_value",
+        "def parse_flow_mapping_first_key",
+        "def parse_flow_mapping_key",
+        "def parse_flow_mapping_value",
+        "def parse_flow_node",
+        "def parse_flow_sequence_entry",
+        "def parse_flow_sequence_entry_mapping_end",
+        "def parse_flow_sequence_entry_mapping_key",
+        "def parse_flow_sequence_entry_mapping_value",
+        "def parse_flow_sequence_first_entry",
+        "def parse_implicit_document_start",
+        "def parse_indentless_sequence_entry",
+        "def parse_node",
+        "def parse_stream_start",
+        "def peek_event",
+        "def process_directives",
+        "def process_empty_scalar"
+      ],
+      "appelle": [
+        "yaml/error.py",
+        "yaml/events.py",
+        "yaml/scanner.py",
+        "yaml/tokens.py"
+      ],
+      "est_appele_par": [
+        "yaml/loader.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/loader.py": {
+      "fichier": "yaml/loader.py",
+      "langage": "python",
+      "lignes": 63,
+      "taille_bytes": 2061,
+      "entrees": [
+        ".composer",
+        ".constructor",
+        ".parser",
+        ".reader",
+        ".resolver",
+        ".scanner"
+      ],
+      "sorties": [
+        "class BaseLoader",
+        "class FullLoader",
+        "class Loader",
+        "class SafeLoader",
+        "class UnsafeLoader",
+        "def __init__"
+      ],
+      "appelle": [
+        "yaml/composer.py",
+        "yaml/constructor.py",
+        "yaml/parser.py",
+        "yaml/reader.py",
+        "yaml/resolver.py",
+        "yaml/scanner.py"
+      ],
+      "est_appele_par": [
+        "yaml/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "yaml/__init__.py": {
+      "fichier": "yaml/__init__.py",
+      "langage": "python",
+      "lignes": 390,
+      "taille_bytes": 12311,
+      "entrees": [
+        ".cyaml",
+        ".dumper",
+        ".error",
+        ".events",
+        ".loader",
+        ".nodes",
+        ".tokens",
+        "io"
+      ],
+      "sorties": [
+        "class YAMLObject",
+        "class YAMLObjectMetaclass",
+        "def __init__",
+        "def add_constructor",
+        "def add_implicit_resolver",
+        "def add_multi_constructor",
+        "def add_multi_representer",
+        "def add_path_resolver",
+        "def add_representer",
+        "def compose",
+        "def compose_all",
+        "def dump",
+        "def dump_all",
+        "def emit",
+        "def from_yaml",
+        "def full_load",
+        "def full_load_all",
+        "def load",
+        "def load_all",
+        "def parse",
+        "def safe_dump",
+        "def safe_dump_all",
+        "def safe_load",
+        "def safe_load_all",
+        "def scan",
+        "def serialize",
+        "def serialize_all",
+        "def to_yaml",
+        "def unsafe_load",
+        "def unsafe_load_all",
+        "def warnings"
+      ],
+      "appelle": [
+        "yaml/cyaml.py",
+        "yaml/dumper.py",
+        "yaml/error.py",
+        "yaml/events.py",
+        "yaml/loader.py",
+        "yaml/nodes.py",
+        "yaml/tokens.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    }
+  },
+  "edges": [
+    {
+      "de": "yaml/serializer.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/serializer.py",
+      "vers": "yaml/events.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/serializer.py",
+      "vers": "yaml/nodes.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/cyaml.py",
+      "vers": "yaml/constructor.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/cyaml.py",
+      "vers": "yaml/representer.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/cyaml.py",
+      "vers": "yaml/resolver.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/cyaml.py",
+      "vers": "yaml/serializer.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/composer.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/composer.py",
+      "vers": "yaml/events.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/composer.py",
+      "vers": "yaml/nodes.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/reader.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/representer.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/representer.py",
+      "vers": "yaml/nodes.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/constructor.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/constructor.py",
+      "vers": "yaml/nodes.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/resolver.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/resolver.py",
+      "vers": "yaml/nodes.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/dumper.py",
+      "vers": "yaml/emitter.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/dumper.py",
+      "vers": "yaml/representer.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/dumper.py",
+      "vers": "yaml/resolver.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/dumper.py",
+      "vers": "yaml/serializer.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/scanner.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/scanner.py",
+      "vers": "yaml/tokens.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/emitter.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/emitter.py",
+      "vers": "yaml/events.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/parser.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/parser.py",
+      "vers": "yaml/events.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/parser.py",
+      "vers": "yaml/scanner.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/parser.py",
+      "vers": "yaml/tokens.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/loader.py",
+      "vers": "yaml/composer.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/loader.py",
+      "vers": "yaml/constructor.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/loader.py",
+      "vers": "yaml/parser.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/loader.py",
+      "vers": "yaml/reader.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/loader.py",
+      "vers": "yaml/resolver.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/loader.py",
+      "vers": "yaml/scanner.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/__init__.py",
+      "vers": "yaml/cyaml.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/__init__.py",
+      "vers": "yaml/dumper.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/__init__.py",
+      "vers": "yaml/error.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/__init__.py",
+      "vers": "yaml/events.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/__init__.py",
+      "vers": "yaml/loader.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/__init__.py",
+      "vers": "yaml/nodes.py",
+      "type": "interne"
+    },
+    {
+      "de": "yaml/__init__.py",
+      "vers": "yaml/tokens.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'yaml/tokens.py' (in=3)",
+    "hub → 'yaml/nodes.py' (in=6, 33% du projet)",
+    "hub → 'yaml/events.py' (in=5, 28% du projet)",
+    "central → 'yaml/resolver.py' (in=3, out=2)",
+    "hub → 'yaml/error.py' (in=10, 56% du projet)",
+    "point_entree → 'yaml/__init__.py'"
+  ]
+}

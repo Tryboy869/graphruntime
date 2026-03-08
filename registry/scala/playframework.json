@@ -1,0 +1,2504 @@
+{
+  "meta": {
+    "projet": "playframework",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "kotlin": 2,
+      "java": 54,
+      "toml": 1,
+      "scala": 34,
+      "html": 4,
+      "xml": 4,
+      "sql": 4,
+      "javascript": 17
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 25,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 1,
+    "noeuds_feuilles": 2,
+    "noeuds_hubs": 0,
+    "points_entree": 3,
+    "fichier_plus_appele": "dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java"
+  },
+  "noeuds": {
+    "dev-mode/gradle-plugin/settings.gradle.kts": {
+      "fichier": "dev-mode/gradle-plugin/settings.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 4,
+      "taille_bytes": 190,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/build.gradle.kts": {
+      "fichier": "dev-mode/gradle-plugin/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 130,
+      "taille_bytes": 4112,
+      "entrees": [
+        "java.time.Duration",
+        "java.util.Base64",
+        "java.util.Properties",
+        "kotlin.text.Charsets.UTF_8"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayPluginTest.java": {
+      "fichier": "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayPluginTest.java",
+      "langage": "java",
+      "lignes": 33,
+      "taille_bytes": 1035,
+      "entrees": [
+        "org.gradle.api.Project",
+        "org.gradle.testfixtures.ProjectBuilder",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.DisplayName",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "class PlayPluginTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayRunPluginTest.java": {
+      "fichier": "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayRunPluginTest.java",
+      "langage": "java",
+      "lignes": 89,
+      "taille_bytes": 4242,
+      "entrees": [
+        "java.io.File",
+        "org.gradle.api.Project",
+        "org.gradle.api.internal.SettingsInternal",
+        "org.gradle.api.internal.project.DefaultProject",
+        "org.gradle.groovy.scripts.ScriptSource",
+        "org.gradle.initialization.SettingsState",
+        "org.gradle.internal.resource.ResourceLocation",
+        "org.gradle.internal.resource.TextResource",
+        "org.gradle.invocation.DefaultGradle",
+        "org.gradle.testfixtures.ProjectBuilder",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.DisplayName",
+        "org.junit.jupiter.api.Test",
+        "play.gradle.task.PlayRun",
+        "static"
+      ],
+      "sorties": [
+        "class PlayRunPluginTest"
+      ],
+      "appelle": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayRoutesPluginTest.java": {
+      "fichier": "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayRoutesPluginTest.java",
+      "langage": "java",
+      "lignes": 72,
+      "taille_bytes": 2800,
+      "entrees": [
+        "org.gradle.api.Project",
+        "org.gradle.api.artifacts.Configuration",
+        "org.gradle.api.file.SourceDirectorySet",
+        "org.gradle.api.internal.artifacts.configurations.DefaultConfiguration",
+        "org.gradle.api.tasks.SourceSet",
+        "org.gradle.testfixtures.ProjectBuilder",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.DisplayName",
+        "org.junit.jupiter.api.Test",
+        "play.gradle.plugin.PlayPlugin",
+        "static"
+      ],
+      "sorties": [
+        "class PlayRoutesPluginTest"
+      ],
+      "appelle": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/test/java/play/gradle/functional/RoutesCompilerRoutesCompilationJavaTest.java": {
+      "fichier": "dev-mode/gradle-plugin/src/test/java/play/gradle/functional/RoutesCompilerRoutesCompilationJavaTest.java",
+      "langage": "java",
+      "lignes": 84,
+      "taille_bytes": 3575,
+      "entrees": [
+        "java.io.IOException",
+        "java.nio.file.Path",
+        "java.nio.file.Paths",
+        "java.util.Map",
+        "org.apache.commons.io.file.PathUtils",
+        "org.apache.groovy.util.Maps",
+        "org.gradle.testkit.runner.BuildResult",
+        "org.gradle.testkit.runner.BuildTask",
+        "org.gradle.testkit.runner.TaskOutcome",
+        "org.junit.jupiter.api.DisplayName",
+        "org.junit.jupiter.params.ParameterizedTest",
+        "org.junit.jupiter.params.provider.MethodSource",
+        "static"
+      ],
+      "sorties": [
+        "public class RoutesCompilerRoutesCompilationJavaTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/test/java/play/gradle/functional/RoutesCompilerRoutesCompilationTest.java": {
+      "fichier": "dev-mode/gradle-plugin/src/test/java/play/gradle/functional/RoutesCompilerRoutesCompilationTest.java",
+      "langage": "java",
+      "lignes": 208,
+      "taille_bytes": 9457,
+      "entrees": [
+        "java.io.IOException",
+        "java.nio.file.Files",
+        "java.nio.file.Path",
+        "java.nio.file.Paths",
+        "java.util.Map",
+        "org.apache.commons.io.file.PathUtils",
+        "org.apache.groovy.util.Maps",
+        "org.gradle.testkit.runner.BuildResult",
+        "org.gradle.testkit.runner.BuildTask",
+        "org.gradle.testkit.runner.TaskOutcome",
+        "org.junit.jupiter.api.DisplayName",
+        "org.junit.jupiter.params.ParameterizedTest",
+        "org.junit.jupiter.params.provider.MethodSource",
+        "static"
+      ],
+      "sorties": [
+        "public class RoutesCompilerRoutesCompilationTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/test/java/play/gradle/functional/AbstractFunctionalTest.java": {
+      "fichier": "dev-mode/gradle-plugin/src/test/java/play/gradle/functional/AbstractFunctionalTest.java",
+      "langage": "java",
+      "lignes": 119,
+      "taille_bytes": 3801,
+      "entrees": [
+        "freemarker.template.Configuration",
+        "freemarker.template.Template",
+        "java.io.IOException",
+        "java.io.StringWriter",
+        "java.nio.file.Path",
+        "java.util.Map",
+        "java.util.stream.Stream",
+        "org.apache.commons.io.file.PathUtils",
+        "org.gradle.api.JavaVersion",
+        "org.gradle.testkit.runner.BuildResult",
+        "org.gradle.testkit.runner.GradleRunner",
+        "org.gradle.util.GradleVersion",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.io.TempDir",
+        "play.gradle.plugin.PlayPlugin",
+        "static"
+      ],
+      "sorties": [
+        "abstract class AbstractFunctionalTest"
+      ],
+      "appelle": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/RoutesSettings.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/RoutesSettings.java",
+      "langage": "java",
+      "lignes": 24,
+      "taille_bytes": 747,
+      "entrees": [
+        "org.gradle.api.Incubating",
+        "org.gradle.api.Project",
+        "org.gradle.api.provider.ListProperty",
+        "org.gradle.api.provider.Property",
+        "org.gradle.api.provider.SetProperty"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/Language.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/Language.java",
+      "langage": "java",
+      "lignes": 9,
+      "taille_bytes": 218,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/Utils.java",
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/AssetsSettings.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/AssetsSettings.java",
+      "langage": "java",
+      "lignes": 12,
+      "taille_bytes": 352,
+      "entrees": [
+        "org.gradle.api.Incubating",
+        "org.gradle.api.provider.Property"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java",
+      "langage": "java",
+      "lignes": 35,
+      "taille_bytes": 912,
+      "entrees": [
+        "org.gradle.api.Action",
+        "org.gradle.api.Incubating",
+        "org.gradle.api.provider.Property",
+        "org.gradle.api.tasks.Nested"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/Utils.java",
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java",
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRoutesPlugin.java"
+      ],
+      "type_noeud": "feuille"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/Utils.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/Utils.java",
+      "langage": "java",
+      "lignes": 100,
+      "taille_bytes": 3626,
+      "entrees": [
+        "java.util.ArrayList",
+        "java.util.List",
+        "org.gradle.api.Project",
+        "org.gradle.api.artifacts.Configuration",
+        "org.gradle.api.artifacts.component.ComponentIdentifier",
+        "org.gradle.api.artifacts.component.ProjectComponentIdentifier",
+        "org.gradle.api.plugins.ExtensionAware",
+        "org.gradle.api.plugins.JavaApplication",
+        "org.gradle.api.plugins.JavaPluginExtension",
+        "org.gradle.api.tasks.ScalaSourceDirectorySet",
+        "org.gradle.api.tasks.SourceSet",
+        "org.gradle.util.GradleVersion",
+        "play.gradle.Language",
+        "play.gradle.PlayExtension",
+        "play.gradle.plugin.PlayPlugin",
+        "static"
+      ],
+      "sorties": [
+        "public class Utils"
+      ],
+      "appelle": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/Language.java",
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java",
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/RoutesCompileAction.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/RoutesCompileAction.java",
+      "langage": "java",
+      "lignes": 106,
+      "taille_bytes": 3933,
+      "entrees": [
+        "java.io.File",
+        "java.io.IOException",
+        "java.nio.file.Files",
+        "java.nio.file.Path",
+        "java.util.Collection",
+        "java.util.stream.Stream",
+        "org.gradle.api.logging.Logger",
+        "org.gradle.api.logging.Logging",
+        "org.gradle.work.ChangeType",
+        "org.gradle.workers.WorkAction",
+        "play.routes.compiler.RoutesCompiler$",
+        "play.routes.compiler.RoutesCompiler.GeneratedSource",
+        "play.routes.compiler.RoutesCompiler.GeneratedSource$",
+        "scala.Option",
+        "static"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/task/RoutesCompile.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/RoutesCompileParams.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/RoutesCompileParams.java",
+      "langage": "java",
+      "lignes": 31,
+      "taille_bytes": 926,
+      "entrees": [
+        "org.gradle.api.file.DirectoryProperty",
+        "org.gradle.api.file.RegularFileProperty",
+        "org.gradle.api.provider.Property",
+        "org.gradle.api.provider.SetProperty",
+        "org.gradle.work.ChangeType",
+        "org.gradle.workers.WorkParameters"
+      ],
+      "sorties": [
+        "public interface RoutesCompileParams"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/PlayRunParams.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/PlayRunParams.java",
+      "langage": "java",
+      "lignes": 64,
+      "taille_bytes": 1636,
+      "entrees": [
+        "java.io.File",
+        "java.util.List",
+        "java.util.Map"
+      ],
+      "sorties": [
+        "public class PlayRunParams"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/PlayRunHandle.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/PlayRunHandle.java",
+      "langage": "java",
+      "lignes": 139,
+      "taille_bytes": 4005,
+      "entrees": [
+        "java.util.List",
+        "java.util.Map",
+        "java.util.concurrent.locks.ReadWriteLock",
+        "java.util.concurrent.locks.ReentrantReadWriteLock",
+        "java.util.stream.Collectors",
+        "javax.inject.Inject",
+        "org.gradle.deployment.internal.Deployment",
+        "org.gradle.deployment.internal.DeploymentHandle",
+        "org.jetbrains.annotations.NotNull",
+        "org.slf4j.Logger",
+        "org.slf4j.LoggerFactory",
+        "play.api.PlayException",
+        "play.runsupport.CompileResult",
+        "play.runsupport.CompileResult.CompileFailure",
+        "play.runsupport.CompileResult.CompileSuccess",
+        "play.runsupport.DevServer",
+        "play.runsupport.DevServerRunner",
+        "play.runsupport.classloader.AssetsClassLoader"
+      ],
+      "sorties": [
+        "public class PlayRunHandle"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/task/RoutesCompile.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/task/RoutesCompile.java",
+      "langage": "java",
+      "lignes": 116,
+      "taille_bytes": 4257,
+      "entrees": [
+        "javax.inject.Inject",
+        "org.gradle.api.DefaultTask",
+        "org.gradle.api.Incubating",
+        "org.gradle.api.file.ConfigurableFileCollection",
+        "org.gradle.api.file.DirectoryProperty",
+        "org.gradle.api.file.FileType",
+        "org.gradle.api.provider.Property",
+        "org.gradle.api.provider.SetProperty",
+        "org.gradle.api.tasks.CacheableTask",
+        "org.gradle.api.tasks.Classpath",
+        "org.gradle.api.tasks.IgnoreEmptyDirectories",
+        "org.gradle.api.tasks.Input",
+        "org.gradle.api.tasks.InputFiles",
+        "org.gradle.api.tasks.OutputDirectory",
+        "org.gradle.api.tasks.PathSensitive",
+        "org.gradle.api.tasks.PathSensitivity",
+        "org.gradle.api.tasks.TaskAction",
+        "org.gradle.work.FileChange",
+        "org.gradle.work.Incremental",
+        "org.gradle.work.InputChanges",
+        "org.gradle.workers.WorkerExecutor",
+        "play.gradle.internal.RoutesCompileAction"
+      ],
+      "sorties": [],
+      "appelle": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/RoutesCompileAction.java"
+      ],
+      "est_appele_par": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRoutesPlugin.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java",
+      "langage": "java",
+      "lignes": 101,
+      "taille_bytes": 3541,
+      "entrees": [
+        "java.util.ArrayList",
+        "javax.inject.Inject",
+        "org.gradle.api.DefaultTask",
+        "org.gradle.api.Incubating",
+        "org.gradle.api.file.ConfigurableFileCollection",
+        "org.gradle.api.file.DirectoryProperty",
+        "org.gradle.api.provider.MapProperty",
+        "org.gradle.api.provider.Property",
+        "org.gradle.api.tasks.Classpath",
+        "org.gradle.api.tasks.Input",
+        "org.gradle.api.tasks.InputFiles",
+        "org.gradle.api.tasks.Internal",
+        "org.gradle.api.tasks.PathSensitive",
+        "org.gradle.api.tasks.PathSensitivity",
+        "org.gradle.api.tasks.TaskAction",
+        "org.gradle.deployment.internal.DeploymentHandle",
+        "org.gradle.deployment.internal.DeploymentRegistry",
+        "org.gradle.deployment.internal.DeploymentRegistry.ChangeBehavior",
+        "org.gradle.work.DisableCachingByDefault",
+        "org.gradle.work.Incremental",
+        "org.gradle.work.InputChanges",
+        "org.slf4j.Logger",
+        "org.slf4j.LoggerFactory",
+        "play.gradle.internal.PlayRunHandle",
+        "play.gradle.internal.PlayRunParams"
+      ],
+      "sorties": [],
+      "appelle": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/PlayRunHandle.java",
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/PlayRunParams.java"
+      ],
+      "est_appele_par": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRunPlugin.java",
+        "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayRunPluginTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRoutesPlugin.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRoutesPlugin.java",
+      "langage": "java",
+      "lignes": 184,
+      "taille_bytes": 7862,
+      "entrees": [
+        "java.util.ArrayList",
+        "java.util.List",
+        "javax.inject.Inject",
+        "org.gradle.api.Incubating",
+        "org.gradle.api.Plugin",
+        "org.gradle.api.Project",
+        "org.gradle.api.artifacts.Configuration",
+        "org.gradle.api.artifacts.Dependency",
+        "org.gradle.api.file.DirectoryProperty",
+        "org.gradle.api.file.SourceDirectorySet",
+        "org.gradle.api.internal.tasks.DefaultSourceSet",
+        "org.gradle.api.model.ObjectFactory",
+        "org.gradle.api.tasks.SourceSet",
+        "org.gradle.api.tasks.TaskProvider",
+        "org.jetbrains.annotations.NotNull",
+        "play.gradle.PlayExtension",
+        "play.gradle.task.RoutesCompile",
+        "static"
+      ],
+      "sorties": [
+        "public class PlayRoutesPlugin"
+      ],
+      "appelle": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java",
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/task/RoutesCompile.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRunPlugin.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRunPlugin.java",
+      "langage": "java",
+      "lignes": 138,
+      "taille_bytes": 6247,
+      "entrees": [
+        "java.util.ArrayList",
+        "java.util.List",
+        "java.util.Objects",
+        "java.util.stream.Collectors",
+        "java.util.stream.Stream",
+        "org.gradle.api.Incubating",
+        "org.gradle.api.Plugin",
+        "org.gradle.api.Project",
+        "org.gradle.api.artifacts.Configuration",
+        "org.gradle.api.artifacts.component.ComponentArtifactIdentifier",
+        "org.gradle.api.artifacts.component.ComponentIdentifier",
+        "org.gradle.api.file.ConfigurableFileCollection",
+        "org.gradle.api.file.DirectoryProperty",
+        "org.gradle.api.file.FileCollection",
+        "org.gradle.api.file.SourceDirectorySet",
+        "org.gradle.api.plugins.JavaPlugin",
+        "org.gradle.api.tasks.compile.AbstractCompile",
+        "org.gradle.language.jvm.tasks.ProcessResources",
+        "org.jetbrains.annotations.NotNull",
+        "org.jetbrains.annotations.Nullable",
+        "play.gradle.task.PlayRun",
+        "static"
+      ],
+      "sorties": [
+        "public class PlayRunPlugin"
+      ],
+      "appelle": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java",
+      "langage": "java",
+      "lignes": 123,
+      "taille_bytes": 4850,
+      "entrees": [
+        "java.util.List",
+        "javax.inject.Inject",
+        "org.gradle.api.Incubating",
+        "org.gradle.api.Plugin",
+        "org.gradle.api.Project",
+        "org.gradle.api.file.SourceDirectorySet",
+        "org.gradle.api.plugins.ApplicationPlugin",
+        "org.gradle.api.plugins.scala.ScalaBasePlugin",
+        "org.gradle.api.tasks.SourceSet",
+        "org.jetbrains.annotations.NotNull",
+        "play.TemplateImports",
+        "play.gradle.Language",
+        "play.gradle.PlayExtension",
+        "play.twirl.gradle.TwirlSourceDirectorySet",
+        "static"
+      ],
+      "sorties": [
+        "public class PlayPlugin"
+      ],
+      "appelle": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/Language.java",
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java",
+        "dev-mode/play-build-link/src/main/java/play/TemplateImports.java"
+      ],
+      "est_appele_par": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/Utils.java",
+        "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayRoutesPluginTest.java",
+        "dev-mode/gradle-plugin/src/test/java/play/gradle/functional/AbstractFunctionalTest.java"
+      ],
+      "type_noeud": "central"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayApplicationPlugin.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayApplicationPlugin.java",
+      "langage": "java",
+      "lignes": 20,
+      "taille_bytes": 627,
+      "entrees": [
+        "org.gradle.api.Incubating",
+        "org.gradle.api.Plugin",
+        "org.gradle.api.Project",
+        "org.jetbrains.annotations.NotNull",
+        "static"
+      ],
+      "sorties": [
+        "public class PlayApplicationPlugin"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayAssetsPlugin.java": {
+      "fichier": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayAssetsPlugin.java",
+      "langage": "java",
+      "lignes": 156,
+      "taille_bytes": 6219,
+      "entrees": [
+        "javax.inject.Inject",
+        "org.gradle.api.Incubating",
+        "org.gradle.api.Plugin",
+        "org.gradle.api.Project",
+        "org.gradle.api.Task",
+        "org.gradle.api.file.SourceDirectorySet",
+        "org.gradle.api.model.ObjectFactory",
+        "org.gradle.api.plugins.BasePlugin",
+        "org.gradle.api.tasks.Copy",
+        "org.gradle.api.tasks.TaskProvider",
+        "org.gradle.api.tasks.bundling.Jar",
+        "org.jetbrains.annotations.NotNull",
+        "static"
+      ],
+      "sorties": [
+        "public class PlayAssetsPlugin"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/gradle-plugin/gradle/libs.versions.toml": {
+      "fichier": "dev-mode/gradle-plugin/gradle/libs.versions.toml",
+      "langage": "toml",
+      "lignes": 22,
+      "taille_bytes": 958,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-docs/src/main/scala/play/docs/DocumentationHandler.scala": {
+      "fichier": "dev-mode/play-docs/src/main/scala/play/docs/DocumentationHandler.scala",
+      "langage": "scala",
+      "lignes": 127,
+      "taille_bytes": 4445,
+      "entrees": [
+        "java.io.Closeable",
+        "org.apache.pekko.stream.scaladsl.StreamConverters",
+        "play.api.http._",
+        "play.api.mvc.Results._",
+        "play.api.mvc._",
+        "play.core.BuildDocHandler",
+        "play.core.PlayVersion",
+        "play.doc._"
+      ],
+      "sorties": [
+        "class DocumentationHandler",
+        "class Memoise",
+        "def apply",
+        "def close",
+        "def maybeHandleDocRequest",
+        "def playDoc",
+        "def sendFileInline",
+        "def this"
+      ],
+      "appelle": [
+        "dev-mode/play-build-link/src/main/java/play/core/BuildDocHandler.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-docs/src/main/scala/play/docs/AggregateFileRepository.scala": {
+      "fichier": "dev-mode/play-docs/src/main/scala/play/docs/AggregateFileRepository.scala",
+      "langage": "scala",
+      "lignes": 27,
+      "taille_bytes": 931,
+      "entrees": [
+        "java.io.InputStream",
+        "play.doc.FileHandle",
+        "play.doc.FileRepository"
+      ],
+      "sorties": [
+        "class AggregateFileRepository",
+        "def findFileWithName",
+        "def handleFile",
+        "def loadFile",
+        "def this"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-docs/src/main/scala/play/docs/DocServerStart.scala": {
+      "fichier": "dev-mode/play-docs/src/main/scala/play/docs/DocServerStart.scala",
+      "langage": "scala",
+      "lignes": 78,
+      "taille_bytes": 2483,
+      "entrees": [
+        "executionContext",
+        "java.io.File",
+        "java.util.concurrent.Callable",
+        "play.api._",
+        "play.api.mvc._",
+        "play.api.routing.Router",
+        "play.api.routing.sird._",
+        "play.core._",
+        "play.core.server._",
+        "scala.concurrent.Future"
+      ],
+      "sorties": [
+        "class DocServerStart",
+        "def start"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-docs/src/main/java/play/docs/BuildDocHandlerFactory.java": {
+      "fichier": "dev-mode/play-docs/src/main/java/play/docs/BuildDocHandlerFactory.java",
+      "langage": "java",
+      "lignes": 136,
+      "taille_bytes": 5330,
+      "entrees": [
+        "java.io.File",
+        "java.io.IOException",
+        "java.util.ArrayList",
+        "java.util.List",
+        "java.util.jar.JarFile",
+        "play.core.BuildDocHandler",
+        "play.doc.FileRepository",
+        "play.doc.FilesystemRepository",
+        "play.doc.JarRepository",
+        "scala.Option"
+      ],
+      "sorties": [
+        "public class BuildDocHandlerFactory"
+      ],
+      "appelle": [
+        "dev-mode/play-build-link/src/main/java/play/core/BuildDocHandler.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-docs-sbt-plugin/src/main/scala/sbt/internal/PlayDocsPluginCompat.scala": {
+      "fichier": "dev-mode/play-docs-sbt-plugin/src/main/scala/sbt/internal/PlayDocsPluginCompat.scala",
+      "langage": "scala",
+      "lignes": 23,
+      "taille_bytes": 657,
+      "entrees": [
+        "sbt._",
+        "sbt.compiler.Eval"
+      ],
+      "sorties": [
+        "def defaultLoad",
+        "def evaluateConfigurations",
+        "trait PlayDocsPluginCompat"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala": {
+      "fichier": "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala",
+      "langage": "scala",
+      "lignes": 355,
+      "taille_bytes": 14505,
+      "entrees": [
+        "Imports.PlayDocsKeys._",
+        "Imports._",
+        "java.io.Closeable",
+        "java.util.concurrent.Callable",
+        "org.playframework.docs.sbtplugin.PlayDocsValidation.CodeSamplesReport",
+        "org.playframework.docs.sbtplugin.PlayDocsValidation.MarkdownRefReport",
+        "org.playframework.docs.sbtplugin.PlayDocsValidation.ValidationConfig",
+        "play.TemplateImports",
+        "play.core.BuildDocHandler",
+        "play.core.PlayVersion",
+        "play.core.server.ReloadableServer",
+        "play.routes.compiler.RoutesCompiler.RoutesCompilerTask",
+        "play.sbt.Colors",
+        "play.sbt.routes.RoutesCompiler",
+        "play.sbt.routes.RoutesKeys._",
+        "sbt.Keys._",
+        "sbt._",
+        "sbt.internal.PlayDocsPluginCompat",
+        "scala.collection.JavaConverters._",
+        "scala.util.control.NonFatal"
+      ],
+      "sorties": [
+        "def call",
+        "def compileTemplates",
+        "def docsReportSettings",
+        "def docsRunSettings",
+        "def docsTestSettings",
+        "def file",
+        "def waitEOF"
+      ],
+      "appelle": [
+        "dev-mode/play-build-link/src/main/java/play/TemplateImports.java",
+        "dev-mode/play-build-link/src/main/java/play/core/BuildDocHandler.java",
+        "dev-mode/play-build-link/src/main/java/play/core/server/ReloadableServer.java",
+        "dev-mode/play-docs-sbt-plugin/src/main/scala/sbt/internal/PlayDocsPluginCompat.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsValidation.scala": {
+      "fichier": "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsValidation.scala",
+      "langage": "scala",
+      "lignes": 615,
+      "taille_bytes": 22210,
+      "entrees": [
+        "Imports.PlayDocsKeys._",
+        "Path._",
+        "java.io.BufferedReader",
+        "java.io.InputStream",
+        "java.io.InputStreamReader",
+        "java.net.HttpURLConnection",
+        "java.net.URI",
+        "java.util.concurrent.Executors",
+        "java.util.jar.JarFile",
+        "org.pegdown._",
+        "org.pegdown.ast.Node",
+        "org.pegdown.ast._",
+        "org.pegdown.plugins.PegDownPlugins",
+        "org.pegdown.plugins.ToHtmlSerializerPlugin",
+        "org.playframework.docs.sbtplugin.Imports._",
+        "play.doc._",
+        "play.sbt.Colors",
+        "sbt.",
+        "sbt.Keys._",
+        "scala.collection.JavaConverters._",
+        "scala.collection.mutable",
+        "scala.collection.mutable.ListBuffer",
+        "scala.concurrent.Await",
+        "scala.concurrent.ExecutionContext",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration.Duration",
+        "scala.util.control.NonFatal"
+      ],
+      "sorties": [
+        "class AggregateFileRepository",
+        "def assertLinksNotMissing",
+        "def doAssertion",
+        "def fileExists",
+        "def findFileWithName",
+        "def handleFile",
+        "def hasCodeSample",
+        "def loadFile",
+        "def parseMarkdownFile",
+        "def relativeLinkOk",
+        "def sameCodeSample",
+        "def segmentExists",
+        "def stripFragment",
+        "def this",
+        "def visit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/Version.scala": {
+      "fichier": "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/Version.scala",
+      "langage": "scala",
+      "lignes": 17,
+      "taille_bytes": 775,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-docs-sbt-plugin/src/main/twirl/org/playframework/docs/sbtplugin/translationReport.scala.html": {
+      "fichier": "dev-mode/play-docs-sbt-plugin/src/main/twirl/org/playframework/docs/sbtplugin/translationReport.scala.html",
+      "langage": "html",
+      "lignes": 150,
+      "taille_bytes": 5319,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-build-link/src/main/java/play/TemplateImports.java": {
+      "fichier": "dev-mode/play-build-link/src/main/java/play/TemplateImports.java",
+      "langage": "java",
+      "lignes": 45,
+      "taille_bytes": 1700,
+      "entrees": [
+        "java.util.ArrayList",
+        "java.util.Collections",
+        "java.util.List"
+      ],
+      "sorties": [
+        "public class TemplateImports"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java",
+        "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-build-link/src/main/java/play/core/Build.java": {
+      "fichier": "dev-mode/play-build-link/src/main/java/play/core/Build.java",
+      "langage": "java",
+      "lignes": 22,
+      "taille_bytes": 823,
+      "entrees": [
+        "java.util.List"
+      ],
+      "sorties": [
+        "public class Build"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-build-link/src/main/java/play/core/BuildDocHandler.java": {
+      "fichier": "dev-mode/play-build-link/src/main/java/play/core/BuildDocHandler.java",
+      "langage": "java",
+      "lignes": 27,
+      "taille_bytes": 1134,
+      "entrees": [],
+      "sorties": [
+        "public interface BuildDocHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala",
+        "dev-mode/play-docs/src/main/java/play/docs/BuildDocHandlerFactory.java",
+        "dev-mode/play-docs/src/main/scala/play/docs/DocumentationHandler.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "dev-mode/play-build-link/src/main/java/play/core/BuildLink.java": {
+      "fichier": "dev-mode/play-build-link/src/main/java/play/core/BuildLink.java",
+      "langage": "java",
+      "lignes": 85,
+      "taille_bytes": 3394,
+      "entrees": [
+        "java.io.File",
+        "java.util.Map"
+      ],
+      "sorties": [
+        "public interface BuildLink"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/play-build-link/src/main/java/play/core/server/ReloadableServer.java": {
+      "fichier": "dev-mode/play-build-link/src/main/java/play/core/server/ReloadableServer.java",
+      "langage": "java",
+      "lignes": 15,
+      "taille_bytes": 371,
+      "entrees": [],
+      "sorties": [
+        "public interface ReloadableServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/test/scala/play/sbt/ApplicationSecretGeneratorSpec.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/test/scala/play/sbt/ApplicationSecretGeneratorSpec.scala",
+      "langage": "scala",
+      "lignes": 95,
+      "taille_bytes": 3320,
+      "entrees": [
+        "com.typesafe.config.ConfigFactory",
+        "org.specs2.mutable.*"
+      ],
+      "sorties": [
+        "class ApplicationSecretGeneratorSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/test/scala/play/sbt/PlayRunHookSpec.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/test/scala/play/sbt/PlayRunHookSpec.scala",
+      "langage": "scala",
+      "lignes": 74,
+      "taille_bytes": 2563,
+      "entrees": [
+        "org.specs2.mutable.*",
+        "play.runsupport.RunHook",
+        "play.runsupport.RunHookCompositeThrowable",
+        "play.runsupport.RunHooksRunner",
+        "scala.collection.mutable.HashMap",
+        "scala.jdk.CollectionConverters.*"
+      ],
+      "sorties": [
+        "class HookFirstMockException",
+        "class HookMockException",
+        "class HookSecondMockException",
+        "class PlayRunHookSpec",
+        "def createDummyHooks"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/test/resources/logback-test.xml": {
+      "fichier": "dev-mode/sbt-plugin/src/test/resources/logback-test.xml",
+      "langage": "xml",
+      "lignes": 28,
+      "taille_bytes": 1005,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/changes/2.sql": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/changes/2.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 177,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/changes/3.sql": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/changes/3.sql",
+      "langage": "sql",
+      "lignes": 12,
+      "taille_bytes": 185,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/conf/evolutions/default/1.sql": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/conf/evolutions/default/1.sql",
+      "langage": "sql",
+      "lignes": 15,
+      "taille_bytes": 263,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE users"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/views/main.scala.html": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/views/main.scala.html",
+      "langage": "html",
+      "lignes": 12,
+      "taille_bytes": 273,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/views/index.scala.html": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/views/index.scala.html",
+      "langage": "html",
+      "lignes": 21,
+      "taille_bytes": 325,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/startup/Startup.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/startup/Startup.java",
+      "langage": "java",
+      "lignes": 23,
+      "taille_bytes": 664,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "jakarta.inject.Singleton",
+        "play.api.db.evolutions.ApplicationEvolutions",
+        "play.db.Database"
+      ],
+      "sorties": [
+        "public class Startup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/startup/StartupModule.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/startup/StartupModule.java",
+      "langage": "java",
+      "lignes": 22,
+      "taille_bytes": 573,
+      "entrees": [
+        "com.typesafe.config.Config",
+        "java.util.Arrays",
+        "java.util.List",
+        "play.Environment",
+        "play.inject.Binding",
+        "play.inject.Module"
+      ],
+      "sorties": [
+        "public class StartupModule"
+      ],
+      "appelle": [
+        "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/main/scala/Module.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/models/User.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/models/User.java",
+      "langage": "java",
+      "lignes": 15,
+      "taille_bytes": 361,
+      "entrees": [],
+      "sorties": [
+        "public class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/controllers/UsersController.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/controllers/UsersController.java",
+      "langage": "java",
+      "lignes": 53,
+      "taille_bytes": 1413,
+      "entrees": [
+        "jakarta.inject.*",
+        "java.sql.*",
+        "java.util.*",
+        "models.*",
+        "play.db.*",
+        "play.mvc.*"
+      ],
+      "sorties": [
+        "public class UsersController"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-pekko-http-http2/src/test/scala/controllers/IntegrationTest.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-pekko-http-http2/src/test/scala/controllers/IntegrationTest.scala",
+      "langage": "scala",
+      "lignes": 43,
+      "taille_bytes": 1562,
+      "entrees": [
+        "play.api.http.HttpProtocol",
+        "play.api.inject.guice.GuiceApplicationBuilder",
+        "play.api.libs.ws.WSClient",
+        "play.api.libs.ws.WSRequest",
+        "play.api.test.PlaySpecification",
+        "play.api.test._"
+      ],
+      "sorties": [
+        "class IntegrationTest",
+        "def wsUrl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-pekko-http-http2/src/main/scala/controllers/HomeController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/http-backend-pekko-http-http2/src/main/scala/controllers/HomeController.scala",
+      "langage": "scala",
+      "lignes": 16,
+      "taille_bytes": 447,
+      "entrees": [
+        "jakarta.inject._",
+        "play.api._",
+        "play.api.mvc._"
+      ],
+      "sorties": [
+        "class HomeController",
+        "def index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/dev-mode/app/Module.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/dev-mode/app/Module.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 667,
+      "entrees": [
+        "com.google.inject.AbstractModule",
+        "java.io.FileWriter",
+        "java.util.Date",
+        "play.api._"
+      ],
+      "sorties": [
+        "class Module"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/dev-mode/app/controllers/Application.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/dev-mode/app/controllers/Application.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 363,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "play.api.mvc._"
+      ],
+      "sorties": [
+        "class Application",
+        "def index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-downing/src/test/scala/controllers/HomeControllerSpec.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-downing/src/test/scala/controllers/HomeControllerSpec.scala",
+      "langage": "scala",
+      "lignes": 28,
+      "taille_bytes": 862,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.scalatestplus.play._",
+        "org.scalatestplus.play.guice._",
+        "play.api.test.Helpers._",
+        "play.api.test._"
+      ],
+      "sorties": [
+        "class HomeControllerSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-downing/src/main/scala/Module.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-downing/src/main/scala/Module.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 359,
+      "entrees": [
+        "com.google.inject.AbstractModule",
+        "java.io.FileWriter",
+        "java.util.Date",
+        "play.api._"
+      ],
+      "sorties": [
+        "class Module"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-downing/src/main/scala/controllers/HomeController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-downing/src/main/scala/controllers/HomeController.scala",
+      "langage": "scala",
+      "lignes": 49,
+      "taille_bytes": 1706,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "org.apache.pekko.Done",
+        "org.apache.pekko.actor.ActorSystem",
+        "org.apache.pekko.actor.CoordinatedShutdown",
+        "play.api.mvc.AbstractController",
+        "play.api.mvc.Action",
+        "play.api.mvc.AnyContent",
+        "play.api.mvc.ControllerComponents",
+        "scala.concurrent.Await",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration.FiniteDuration"
+      ],
+      "sorties": [
+        "class HomeController",
+        "def downing",
+        "def index",
+        "def indexVerbose"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-downing/src/main/resources/logback.xml": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-downing/src/main/resources/logback.xml",
+      "langage": "xml",
+      "lignes": 24,
+      "taille_bytes": 693,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolution-path-config/conf/evolutions/default/1.sql": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolution-path-config/conf/evolutions/default/1.sql",
+      "langage": "sql",
+      "lignes": 11,
+      "taille_bytes": 131,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE table1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolution-path-config/integration-tests/test/controllers/HomeControllerSpec.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolution-path-config/integration-tests/test/controllers/HomeControllerSpec.scala",
+      "langage": "scala",
+      "lignes": 25,
+      "taille_bytes": 728,
+      "entrees": [
+        "org.scalatestplus.play._",
+        "org.scalatestplus.play.guice._",
+        "play.api.db.Database",
+        "play.api.test._"
+      ],
+      "sorties": [
+        "class HomeControllerSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolution-path-config/app/controllers/HomeController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolution-path-config/app/controllers/HomeController.scala",
+      "langage": "scala",
+      "lignes": 26,
+      "taille_bytes": 702,
+      "entrees": [
+        "jakarta.inject._",
+        "play.api._",
+        "play.api.db.Database",
+        "play.api.mvc._"
+      ],
+      "sorties": [
+        "class HomeController",
+        "def index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/generated-keystore/src/main/scala/router/Routes.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/generated-keystore/src/main/scala/router/Routes.scala",
+      "langage": "scala",
+      "lignes": 17,
+      "taille_bytes": 496,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "play.api.mvc._",
+        "play.api.routing.Router",
+        "play.api.routing.SimpleRouter",
+        "play.api.routing.sird._"
+      ],
+      "sorties": [
+        "class Routes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/generated-keystore/src/main/scala/controllers/HomeController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/generated-keystore/src/main/scala/controllers/HomeController.scala",
+      "langage": "scala",
+      "lignes": 18,
+      "taille_bytes": 482,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "play.api.mvc._"
+      ],
+      "sorties": [
+        "class HomeController",
+        "def index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/tests/RouterSpec.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/tests/RouterSpec.scala",
+      "langage": "scala",
+      "lignes": 238,
+      "taille_bytes": 10341,
+      "entrees": [
+        "models.UserId",
+        "play.api.mvc.Result",
+        "play.api.test._",
+        "scala.concurrent.Future"
+      ],
+      "sorties": [
+        "def checkDecoding",
+        "def checkEncoding"
+      ],
+      "appelle": [
+        "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/models/UserId.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/tests/assets/JavaScriptRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/tests/assets/JavaScriptRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 56,
+      "taille_bytes": 2512,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/models/UserId.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/models/UserId.scala",
+      "langage": "scala",
+      "lignes": 27,
+      "taille_bytes": 847,
+      "entrees": [
+        "java.net.URLEncoder",
+        "play.api.mvc.PathBindable",
+        "play.api.mvc.QueryStringBindable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/Application.scala",
+        "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/tests/RouterSpec.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/Application.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/Application.scala",
+      "langage": "scala",
+      "lignes": 68,
+      "taille_bytes": 1623,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "models.UserId",
+        "play.api.mvc._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class Application",
+        "def hello",
+        "def index",
+        "def interpolatorWarning",
+        "def post",
+        "def queryUser",
+        "def route",
+        "def routedefault",
+        "def routetest",
+        "def takeBool",
+        "def takeBool2",
+        "def takeInt",
+        "def takeJavaList",
+        "def takeList",
+        "def takeListTickedParam",
+        "def takeTickedParams",
+        "def urlcoding",
+        "def user",
+        "def withParam"
+      ],
+      "appelle": [
+        "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/models/UserId.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/InstanceController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/InstanceController.scala",
+      "langage": "scala",
+      "lignes": 17,
+      "taille_bytes": 412,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "play.api.mvc._"
+      ],
+      "sorties": [
+        "class InstanceController",
+        "def index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/πø$7ß.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/πø$7ß.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 359,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "play.api.mvc._"
+      ],
+      "sorties": [
+        "class πø",
+        "def ôü65"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/module/ModuleController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/module/ModuleController.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 363,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "play.api.mvc._"
+      ],
+      "sorties": [
+        "class ModuleController",
+        "def index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/utils/JavaScriptRouterGenerator.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/utils/JavaScriptRouterGenerator.scala",
+      "langage": "scala",
+      "lignes": 44,
+      "taille_bytes": 1032,
+      "entrees": [
+        "controllers.routes.javascript._",
+        "java.nio.file.Files",
+        "java.nio.file.Paths"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/assets-pipeline/project/BufferLogger.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/assets-pipeline/project/BufferLogger.scala",
+      "langage": "scala",
+      "lignes": 31,
+      "taille_bytes": 1024,
+      "entrees": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.core.",
+        "org.apache.logging.log4j.core.Filter.Result",
+        "org.apache.logging.log4j.core.appender.AbstractAppender",
+        "org.apache.logging.log4j.core.filter.LevelRangeFilter",
+        "org.apache.logging.log4j.core.layout.PatternLayout"
+      ],
+      "sorties": [
+        "def append",
+        "def resetMessages"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/assets-pipeline/tests/public/javascripts/jquery-3.7.1.min.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/assets-pipeline/tests/public/javascripts/jquery-3.7.1.min.js",
+      "langage": "javascript",
+      "lignes": 2,
+      "taille_bytes": 87533,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/assets-pipeline/public/javascripts/jquery-1.11.3.min.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/assets-pipeline/public/javascripts/jquery-1.11.3.min.js",
+      "langage": "javascript",
+      "lignes": 5,
+      "taille_bytes": 95957,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/assets-pipeline/app/controllers/Application.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/assets-pipeline/app/controllers/Application.java",
+      "langage": "java",
+      "lignes": 14,
+      "taille_bytes": 329,
+      "entrees": [
+        "play.*",
+        "play.mvc.*"
+      ],
+      "sorties": [
+        "public class Application"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/changes/HomeController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/changes/HomeController.scala",
+      "langage": "scala",
+      "lignes": 53,
+      "taille_bytes": 1718,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "org.apache.pekko.Done",
+        "org.apache.pekko.actor.ActorSystem",
+        "org.apache.pekko.actor.CoordinatedShutdown",
+        "org.slf4j.Logger",
+        "org.slf4j.LoggerFactory",
+        "play.api.libs.concurrent.Futures",
+        "play.api.mvc._",
+        "scala.concurrent.ExecutionContext",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration._"
+      ],
+      "sorties": [
+        "class HomeController",
+        "def index",
+        "def slow"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/test/scala/controllers/HomeControllerSpec.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/test/scala/controllers/HomeControllerSpec.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 1036,
+      "entrees": [
+        "org.scalatestplus.play._",
+        "org.scalatestplus.play.guice._",
+        "play.api.libs.concurrent.Futures",
+        "play.api.test.Helpers._",
+        "play.api.test._",
+        "scala.concurrent.ExecutionContext"
+      ],
+      "sorties": [
+        "class HomeControllerSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/main/scala/Module.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/main/scala/Module.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 359,
+      "entrees": [
+        "com.google.inject.AbstractModule",
+        "java.io.FileWriter",
+        "java.util.Date",
+        "play.api._"
+      ],
+      "sorties": [
+        "class Module"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/startup/StartupModule.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/main/scala/controllers/HomeController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/main/scala/controllers/HomeController.scala",
+      "langage": "scala",
+      "lignes": 52,
+      "taille_bytes": 1707,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "org.apache.pekko.Done",
+        "org.apache.pekko.actor.ActorSystem",
+        "org.apache.pekko.actor.CoordinatedShutdown",
+        "org.slf4j.Logger",
+        "org.slf4j.LoggerFactory",
+        "play.api.libs.concurrent.Futures",
+        "play.api.mvc._",
+        "scala.concurrent.ExecutionContext",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration._"
+      ],
+      "sorties": [
+        "class HomeController",
+        "def index",
+        "def slow"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/main/resources/logback.xml": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/main/resources/logback.xml",
+      "langage": "xml",
+      "lignes": 24,
+      "taille_bytes": 693,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/basic-service-with-routes-file/src/main/scala/controllers/HomeController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/basic-service-with-routes-file/src/main/scala/controllers/HomeController.scala",
+      "langage": "scala",
+      "lignes": 18,
+      "taille_bytes": 482,
+      "entrees": [
+        "jakarta.inject.Inject",
+        "play.api.mvc._"
+      ],
+      "sorties": [
+        "class HomeController",
+        "def index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/maven-layout-twirl-reload/src/main/scala/controllers/HomeController.scala": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/maven-layout-twirl-reload/src/main/scala/controllers/HomeController.scala",
+      "langage": "scala",
+      "lignes": 17,
+      "taille_bytes": 444,
+      "entrees": [
+        "jakarta.inject._",
+        "play.api._",
+        "play.api.mvc._"
+      ],
+      "sorties": [
+        "class HomeController",
+        "def index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/maven-layout-twirl-reload/src/main/resources/logback.xml": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/maven-layout-twirl-reload/src/main/resources/logback.xml",
+      "langage": "xml",
+      "lignes": 43,
+      "taille_bytes": 1372,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/maven-layout-twirl-reload/src/main/twirl/views/index.scala.html": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/maven-layout-twirl-reload/src/main/twirl/views/index.scala.html",
+      "langage": "html",
+      "lignes": 3,
+      "taille_bytes": 14,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/ReverseRoutesTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/ReverseRoutesTest.java",
+      "langage": "java",
+      "lignes": 73,
+      "taille_bytes": 2273,
+      "entrees": [
+        "java.util.Optional",
+        "java.util.OptionalDouble",
+        "java.util.OptionalInt",
+        "java.util.OptionalLong",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class ReverseRoutesTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/UserParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/UserParamTest.java",
+      "langage": "java",
+      "lignes": 229,
+      "taille_bytes": 9775,
+      "entrees": [
+        "controllers.UserController",
+        "java.util.List",
+        "java.util.Optional",
+        "models.UserPathBindable",
+        "models.UserQueryBindable",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class UserParamTest"
+      ],
+      "appelle": [
+        "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/app/models/UserPathBindable.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/MultiParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/MultiParamTest.java",
+      "langage": "java",
+      "lignes": 29,
+      "taille_bytes": 1085,
+      "entrees": [
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class MultiParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/UUIDParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/UUIDParamTest.java",
+      "langage": "java",
+      "lignes": 262,
+      "taille_bytes": 11701,
+      "entrees": [
+        "controllers.UUIDController",
+        "java.util.List",
+        "java.util.Optional",
+        "java.util.UUID",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class UUIDParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/CharacterParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/CharacterParamTest.java",
+      "langage": "java",
+      "lignes": 283,
+      "taille_bytes": 12700,
+      "entrees": [
+        "controllers.CharacterController",
+        "java.util.List",
+        "java.util.Optional",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class CharacterParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/DoubleParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/DoubleParamTest.java",
+      "langage": "java",
+      "lignes": 344,
+      "taille_bytes": 16976,
+      "entrees": [
+        "controllers.DoubleController",
+        "java.util.List",
+        "java.util.Optional",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DoubleParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/AssetsTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/AssetsTest.java",
+      "langage": "java",
+      "lignes": 38,
+      "taille_bytes": 1173,
+      "entrees": [
+        "controllers.Assets",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class AssetsTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/MethodTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/MethodTest.java",
+      "langage": "java",
+      "lignes": 87,
+      "taille_bytes": 3128,
+      "entrees": [
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class MethodTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/LongParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/LongParamTest.java",
+      "langage": "java",
+      "lignes": 290,
+      "taille_bytes": 13000,
+      "entrees": [
+        "controllers.LongController",
+        "java.util.List",
+        "java.util.Optional",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class LongParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/AbstractRoutesTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/AbstractRoutesTest.java",
+      "langage": "java",
+      "lignes": 95,
+      "taille_bytes": 3506,
+      "entrees": [
+        "java.util.function.BiConsumer",
+        "play.mvc.Result",
+        "play.test.WithApplication",
+        "static"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/BooleanParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/BooleanParamTest.java",
+      "langage": "java",
+      "lignes": 269,
+      "taille_bytes": 12090,
+      "entrees": [
+        "controllers.BooleanController",
+        "java.util.List",
+        "java.util.Optional",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class BooleanParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/FloatParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/FloatParamTest.java",
+      "langage": "java",
+      "lignes": 344,
+      "taille_bytes": 16892,
+      "entrees": [
+        "controllers.FloatController",
+        "java.util.List",
+        "java.util.Optional",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class FloatParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/PatternPathParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/PatternPathParamTest.java",
+      "langage": "java",
+      "lignes": 28,
+      "taille_bytes": 944,
+      "entrees": [
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class PatternPathParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/ShortParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/ShortParamTest.java",
+      "langage": "java",
+      "lignes": 274,
+      "taille_bytes": 12675,
+      "entrees": [
+        "controllers.ShortController",
+        "java.util.List",
+        "java.util.Optional",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class ShortParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/DocumentationTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/DocumentationTest.java",
+      "langage": "java",
+      "lignes": 27,
+      "taille_bytes": 935,
+      "entrees": [
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DocumentationTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/IntegerParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/IntegerParamTest.java",
+      "langage": "java",
+      "lignes": 272,
+      "taille_bytes": 12642,
+      "entrees": [
+        "controllers.IntegerController",
+        "java.util.List",
+        "java.util.Optional",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class IntegerParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/OptionalParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/OptionalParamTest.java",
+      "langage": "java",
+      "lignes": 121,
+      "taille_bytes": 5635,
+      "entrees": [
+        "controllers.OptionalController",
+        "java.util.OptionalInt",
+        "java.util.OptionalLong",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class OptionalParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/ApplicationTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/ApplicationTest.java",
+      "langage": "java",
+      "lignes": 90,
+      "taille_bytes": 2705,
+      "entrees": [
+        "java.net.URI",
+        "java.util.ArrayList",
+        "java.util.List",
+        "org.java_websocket.client.WebSocketClient",
+        "org.java_websocket.handshake.ServerHandshake",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class ApplicationTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/StringParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/StringParamTest.java",
+      "langage": "java",
+      "lignes": 250,
+      "taille_bytes": 11507,
+      "entrees": [
+        "controllers.StringController",
+        "java.util.List",
+        "java.util.Optional",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class StringParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/EncodingDecodingParamTest.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/EncodingDecodingParamTest.java",
+      "langage": "java",
+      "lignes": 72,
+      "taille_bytes": 2811,
+      "entrees": [
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class EncodingDecodingParamTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/UserRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/UserRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 165,
+      "taille_bytes": 8619,
+      "entrees": [],
+      "sorties": [
+        "class User",
+        "const defaultList",
+        "const testList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/LongRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/LongRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 169,
+      "taille_bytes": 9115,
+      "entrees": [],
+      "sorties": [
+        "const defaultList",
+        "const testList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/FloatRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/FloatRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 240,
+      "taille_bytes": 14097,
+      "entrees": [],
+      "sorties": [
+        "const defaultList",
+        "const infinityList",
+        "const testList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/OptionalRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/OptionalRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 94,
+      "taille_bytes": 4691,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/ShortRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/ShortRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 169,
+      "taille_bytes": 9135,
+      "entrees": [],
+      "sorties": [
+        "const defaultList",
+        "const testList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/BooleanRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/BooleanRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 203,
+      "taille_bytes": 11613,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/MethodRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/MethodRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 44,
+      "taille_bytes": 1932,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/StringRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/StringRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 184,
+      "taille_bytes": 10482,
+      "entrees": [],
+      "sorties": [
+        "const defaultList",
+        "const testList",
+        "const unicodeList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/IntegerRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/IntegerRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 169,
+      "taille_bytes": 9259,
+      "entrees": [],
+      "sorties": [
+        "const defaultList",
+        "const testList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/UUIDRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/UUIDRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 161,
+      "taille_bytes": 8898,
+      "entrees": [],
+      "sorties": [
+        "const defaultList",
+        "const defaultUUID",
+        "const testList",
+        "const testUUID"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/AssetsRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/AssetsRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 17,
+      "taille_bytes": 629,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/DoubleRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/DoubleRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 240,
+      "taille_bytes": 14206,
+      "entrees": [],
+      "sorties": [
+        "const defaultList",
+        "const infinityList",
+        "const testList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/ReverseRoutesSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/ReverseRoutesSpec.js",
+      "langage": "javascript",
+      "lignes": 52,
+      "taille_bytes": 1608,
+      "entrees": [],
+      "sorties": [
+        "const defaultUUID",
+        "const testUUID"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/CharacterRouterSpec.js": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/assets/CharacterRouterSpec.js",
+      "langage": "javascript",
+      "lignes": 184,
+      "taille_bytes": 10516,
+      "entrees": [],
+      "sorties": [
+        "const defaultList",
+        "const testList",
+        "const unicodeList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/app/models/UserPathBindable.java": {
+      "fichier": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/app/models/UserPathBindable.java",
+      "langage": "java",
+      "lignes": 33,
+      "taille_bytes": 719,
+      "entrees": [
+        "play.mvc.PathBindable"
+      ],
+      "sorties": [
+        "public class UserPathBindable"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/UserParamTest.java"
+      ],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayRunPluginTest.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/test/java/play/gradle/PlayRoutesPluginTest.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/test/java/play/gradle/functional/AbstractFunctionalTest.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/Utils.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/Language.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/Utils.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/Utils.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/task/RoutesCompile.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/RoutesCompileAction.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/PlayRunHandle.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/internal/PlayRunParams.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRoutesPlugin.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRoutesPlugin.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/task/RoutesCompile.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRunPlugin.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/task/PlayRun.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/Language.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java",
+      "vers": "dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java",
+      "vers": "dev-mode/play-build-link/src/main/java/play/TemplateImports.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/play-docs/src/main/scala/play/docs/DocumentationHandler.scala",
+      "vers": "dev-mode/play-build-link/src/main/java/play/core/BuildDocHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/play-docs/src/main/java/play/docs/BuildDocHandlerFactory.java",
+      "vers": "dev-mode/play-build-link/src/main/java/play/core/BuildDocHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala",
+      "vers": "dev-mode/play-build-link/src/main/java/play/TemplateImports.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala",
+      "vers": "dev-mode/play-build-link/src/main/java/play/core/BuildDocHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala",
+      "vers": "dev-mode/play-build-link/src/main/java/play/core/server/ReloadableServer.java",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala",
+      "vers": "dev-mode/play-docs-sbt-plugin/src/main/scala/sbt/internal/PlayDocsPluginCompat.scala",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/evolutions-auto-apply-false/app/startup/StartupModule.java",
+      "vers": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/shutdown-happy-path/src/main/scala/Module.scala",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/tests/RouterSpec.scala",
+      "vers": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/models/UserId.scala",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/controllers/Application.scala",
+      "vers": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-injected-routes-compilation/app/models/UserId.scala",
+      "type": "interne"
+    },
+    {
+      "de": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/tests/test/UserParamTest.java",
+      "vers": "dev-mode/sbt-plugin/src/sbt-test/play-sbt-plugin/routes-compiler-routes-compilation-java/app/models/UserPathBindable.java",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'dev-mode/gradle-plugin/src/main/java/play/gradle/PlayExtension.java' (in=3)",
+    "point_entree → 'dev-mode/gradle-plugin/src/main/java/play/gradle/internal/Utils.java'",
+    "point_entree → 'dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayRoutesPlugin.java'",
+    "central → 'dev-mode/gradle-plugin/src/main/java/play/gradle/plugin/PlayPlugin.java' (in=3, out=3)",
+    "point_entree → 'dev-mode/play-docs-sbt-plugin/src/main/scala/org/playframework/docs/sbtplugin/PlayDocsPlugin.scala'",
+    "feuille → 'dev-mode/play-build-link/src/main/java/play/core/BuildDocHandler.java' (in=3)"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 3
+    }
+  },
+  "stats": {
+    "fichiers_total": 3,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 1,
+    "points_entree": 0,
+    "fichier_plus_appele": "certifi/core.py"
+  },
+  "noeuds": {
+    "certifi/core.py": {
+      "fichier": "certifi/core.py",
+      "langage": "python",
+      "lignes": 83,
+      "taille_bytes": 3394,
+      "entrees": [
+        "atexit",
+        "importlib.resources",
+        "sys"
+      ],
+      "sorties": [
+        "def contents",
+        "def exit_cacert_ctx",
+        "def where"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "certifi/__init__.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "certifi/__main__.py": {
+      "fichier": "certifi/__main__.py",
+      "langage": "python",
+      "lignes": 12,
+      "taille_bytes": 243,
+      "entrees": [
+        "argparse",
+        "certifi"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "certifi/__init__.py": {
+      "fichier": "certifi/__init__.py",
+      "langage": "python",
+      "lignes": 4,
+      "taille_bytes": 94,
+      "entrees": [
+        ".core"
+      ],
+      "sorties": [],
+      "appelle": [
+        "certifi/core.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "certifi/__init__.py",
+      "vers": "certifi/core.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 'certifi/core.py' (in=1, 33% du projet)"
+  ]
+}

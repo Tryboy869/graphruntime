@@ -1,0 +1,1230 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 16
+    }
+  },
+  "stats": {
+    "fichiers_total": 16,
+    "edges_total": 47,
+    "edges_circulaires": 2,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 6,
+    "points_entree": 4,
+    "fichier_plus_appele": "s3transfer/exceptions.py"
+  },
+  "noeuds": {
+    "s3transfer/constants.py": {
+      "fichier": "s3transfer/constants.py",
+      "langage": "python",
+      "lignes": 38,
+      "taille_bytes": 1049,
+      "entrees": [
+        "s3transfer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "s3transfer/crt.py",
+        "s3transfer/manager.py",
+        "s3transfer/processpool.py",
+        "s3transfer/upload.py",
+        "s3transfer/utils.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "s3transfer/compat.py": {
+      "fichier": "s3transfer/compat.py",
+      "langage": "python",
+      "lignes": 94,
+      "taille_bytes": 2970,
+      "entrees": [
+        "botocore.compat",
+        "errno",
+        "inspect",
+        "multiprocessing.managers",
+        "os",
+        "socket",
+        "sys"
+      ],
+      "sorties": [
+        "def accepts_kwargs",
+        "def fallocate",
+        "def readable",
+        "def rename_file",
+        "def seekable"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "s3transfer/__init__.py",
+        "s3transfer/crt.py",
+        "s3transfer/download.py",
+        "s3transfer/futures.py",
+        "s3transfer/processpool.py",
+        "s3transfer/subscribers.py",
+        "s3transfer/upload.py",
+        "s3transfer/utils.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "s3transfer/utils.py": {
+      "fichier": "s3transfer/utils.py",
+      "langage": "python",
+      "lignes": 848,
+      "taille_bytes": 28975,
+      "entrees": [
+        "botocore.exceptions",
+        "botocore.httpchecksum",
+        "botocore.utils",
+        "collections",
+        "functools",
+        "logging",
+        "math",
+        "os",
+        "random",
+        "s3transfer.compat",
+        "s3transfer.constants",
+        "socket",
+        "stat",
+        "string",
+        "threading"
+      ],
+      "sorties": [
+        "class CallArgs",
+        "class ChunksizeAdjuster",
+        "class CountCallbackInvoker",
+        "class DeferredOpenFile",
+        "class FunctionContainer",
+        "class NoResourcesAvailable",
+        "class OSUtils",
+        "class ReadFileChunk",
+        "class SlidingWindowSemaphore",
+        "class StreamReaderProgress",
+        "class TaskSemaphore",
+        "class but",
+        "def __call__",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def __repr__",
+        "def _adjust_for_chunksize_limits",
+        "def _adjust_for_max_parts",
+        "def _calculate_file_size",
+        "def _open_if_needed",
+        "def acquire",
+        "def add_s3express_defaults",
+        "def adjust_chunksize",
+        "def allocate",
+        "def calculate_num_parts",
+        "def calculate_range_parameter",
+        "def close",
+        "def create_client",
+        "def create_nested_client",
+        "def current_count",
+        "def decrement",
+        "def disable_callback",
+        "def enable_callback",
+        "def finalize",
+        "def from_filename",
+        "def get_callbacks",
+        "def get_file_size",
+        "def get_filtered_dict",
+        "def get_temp_filename",
+        "def increment",
+        "def invoke_progress_callbacks",
+        "def is_special_file",
+        "def name",
+        "def open",
+        "def open_file_chunk_reader",
+        "def open_file_chunk_reader_from_fileobj",
+        "def random_file_extension",
+        "def read",
+        "def release",
+        "def remove_file",
+        "def rename_file",
+        "def seek",
+        "def set_default_checksum_algorithm",
+        "def signal_not_transferring",
+        "def signal_transferring",
+        "def tell",
+        "def write"
+      ],
+      "appelle": [
+        "s3transfer/compat.py",
+        "s3transfer/constants.py",
+        "s3transfer/exceptions.py"
+      ],
+      "est_appele_par": [
+        "s3transfer/copies.py",
+        "s3transfer/crt.py",
+        "s3transfer/download.py",
+        "s3transfer/futures.py",
+        "s3transfer/manager.py",
+        "s3transfer/processpool.py",
+        "s3transfer/tasks.py",
+        "s3transfer/upload.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "s3transfer/bandwidth.py": {
+      "fichier": "s3transfer/bandwidth.py",
+      "langage": "python",
+      "lignes": 437,
+      "taille_bytes": 15603,
+      "entrees": [
+        "threading",
+        "time"
+      ],
+      "sorties": [
+        "class BandwidthLimitedStream",
+        "class BandwidthLimiter",
+        "class BandwidthRateTracker",
+        "class ConsumptionScheduler",
+        "class LeakyBucket",
+        "class RequestExceededException",
+        "class RequestToken",
+        "class TimeUtils",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _calculate_exponential_moving_average_rate",
+        "def _calculate_rate",
+        "def _consume_through_leaky_bucket",
+        "def _projected_to_exceed_max_rate",
+        "def _raise_request_exceeded_exception",
+        "def _release_requested_amt",
+        "def _release_requested_amt_for_scheduled_request",
+        "def close",
+        "def consume",
+        "def current_rate",
+        "def disable_bandwidth_limiting",
+        "def enable_bandwidth_limiting",
+        "def get_bandwith_limited_stream",
+        "def get_projected_rate",
+        "def is_scheduled",
+        "def process_scheduled_consumption",
+        "def read",
+        "def record_consumption_rate",
+        "def schedule_consumption",
+        "def seek",
+        "def signal_not_transferring",
+        "def signal_transferring",
+        "def sleep",
+        "def tell",
+        "def time"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "s3transfer/manager.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "s3transfer/download.py": {
+      "fichier": "s3transfer/download.py",
+      "langage": "python",
+      "lignes": 863,
+      "taille_bytes": 31698,
+      "entrees": [
+        "botocore.exceptions",
+        "heapq",
+        "logging",
+        "s3transfer.compat",
+        "s3transfer.exceptions",
+        "s3transfer.futures",
+        "s3transfer.tasks",
+        "s3transfer.utils",
+        "threading"
+      ],
+      "sorties": [
+        "class CompleteDownloadNOOPTask",
+        "class DeferQueue",
+        "class DownloadChunkIterator",
+        "class DownloadFilenameOutputManager",
+        "class DownloadNonSeekableOutputManager",
+        "class DownloadOutputManager",
+        "class DownloadSeekableOutputManager",
+        "class DownloadSpecialFilenameOutputManager",
+        "class DownloadSubmissionTask",
+        "class GetObjectTask",
+        "class IOCloseTask",
+        "class IORenameFileTask",
+        "class IOStreamingWriteTask",
+        "class IOWriteTask",
+        "class ImmediatelyWriteIOGetObjectTask",
+        "def __init__",
+        "def __iter__",
+        "def __next__",
+        "def _calculate_range_param",
+        "def _get_download_output_manager_cls",
+        "def _get_fileobj_from_filename",
+        "def _get_final_io_task_submission_callback",
+        "def _get_temp_fileobj",
+        "def _handle_io",
+        "def _main",
+        "def _submit",
+        "def _submit_download_request",
+        "def _submit_ranged_download_request",
+        "def _validate_content_range",
+        "def get_download_task_tag",
+        "def get_fileobj_for_io_writes",
+        "def get_final_io_task",
+        "def get_io_write_task",
+        "def is_compatible",
+        "def queue_file_io_task",
+        "def request_writes"
+      ],
+      "appelle": [
+        "s3transfer/compat.py",
+        "s3transfer/exceptions.py",
+        "s3transfer/futures.py",
+        "s3transfer/tasks.py",
+        "s3transfer/utils.py"
+      ],
+      "est_appele_par": [
+        "s3transfer/manager.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "s3transfer/futures.py": {
+      "fichier": "s3transfer/futures.py",
+      "langage": "python",
+      "lignes": 628,
+      "taille_bytes": 21810,
+      "entrees": [
+        "botocore.context",
+        "collections",
+        "concurrent",
+        "copy",
+        "logging",
+        "s3transfer.compat",
+        "s3transfer.exceptions",
+        "s3transfer.utils",
+        "sys",
+        "the",
+        "threading"
+      ],
+      "sorties": [
+        "class BaseExecutor",
+        "class BaseTransferFuture",
+        "class BaseTransferMeta",
+        "class BoundedExecutor",
+        "class ExecutorFuture",
+        "class NonThreadedExecutor",
+        "class NonThreadedExecutorFuture",
+        "class TransferCoordinator",
+        "class TransferFuture",
+        "class TransferMeta",
+        "def __init__",
+        "def __repr__",
+        "def _invoke_done_callback",
+        "def _run_callback",
+        "def _run_callbacks",
+        "def _run_done_callbacks",
+        "def _run_failure_cleanups",
+        "def _set_done",
+        "def _transition_to_non_done_state",
+        "def add_associated_future",
+        "def add_done_callback",
+        "def add_failure_cleanup",
+        "def announce_done",
+        "def associated_futures",
+        "def call_args",
+        "def cancel",
+        "def done",
+        "def done_callback",
+        "def etag",
+        "def exception",
+        "def failure_cleanups",
+        "def get_context",
+        "def meta",
+        "def provide_object_etag",
+        "def provide_transfer_size",
+        "def remove_associated_future",
+        "def result",
+        "def set_exception",
+        "def set_exception_info",
+        "def set_result",
+        "def set_status_to_queued",
+        "def set_status_to_running",
+        "def shutdown",
+        "def size",
+        "def status",
+        "def submit",
+        "def transfer_id",
+        "def user_context"
+      ],
+      "appelle": [
+        "s3transfer/compat.py",
+        "s3transfer/exceptions.py",
+        "s3transfer/utils.py"
+      ],
+      "est_appele_par": [
+        "s3transfer/__init__.py",
+        "s3transfer/crt.py",
+        "s3transfer/download.py",
+        "s3transfer/exceptions.py",
+        "s3transfer/manager.py",
+        "s3transfer/processpool.py",
+        "s3transfer/upload.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "s3transfer/crt.py": {
+      "fichier": "s3transfer/crt.py",
+      "langage": "python",
+      "lignes": 1081,
+      "taille_bytes": 39532,
+      "entrees": [
+        "awscrt.auth",
+        "awscrt.http",
+        "awscrt.io",
+        "awscrt.s3",
+        "botocore",
+        "botocore.awsrequest",
+        "botocore.compat",
+        "botocore.config",
+        "botocore.exceptions",
+        "botocore.session",
+        "botocore.utils",
+        "collections",
+        "io",
+        "logging",
+        "re",
+        "s3transfer.constants",
+        "s3transfer.exceptions",
+        "s3transfer.futures",
+        "s3transfer.manager",
+        "s3transfer.utils",
+        "threading",
+        "with"
+      ],
+      "sorties": [
+        "class AfterDoneHandler",
+        "class BaseCRTRequestSerializer",
+        "class BotocoreCRTCredentialsWrapper",
+        "class BotocoreCRTRequestSerializer",
+        "class CRTTransferCoordinator",
+        "class CRTTransferFuture",
+        "class CRTTransferManager",
+        "class CRTTransferMeta",
+        "class FakeRawResponse",
+        "class OnBodyFileObjWriter",
+        "class RenameTempFileHandler",
+        "class S3ClientArgsCreator",
+        "class _S3ArnParamHandler",
+        "def __call__",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _add_resource_type_and_name",
+        "def _cancel_transfers",
+        "def _capture_http_request",
+        "def _change_response_to_serialized_http_request",
+        "def _convert_to_crt_http_request",
+        "def _crt_request_from_aws_request",
+        "def _default_get_make_request_args",
+        "def _finish_transfers",
+        "def _get_arn_details_from_bucket",
+        "def _get_botocore_http_request",
+        "def _get_credentials",
+        "def _get_crt_options_put_object",
+        "def _get_crt_throughput_target_gbps",
+        "def _get_crt_transfer_config_options",
+        "def _get_make_request_args_get_object",
+        "def _get_make_request_args_put_object",
+        "def _has_minimum_crt_version",
+        "def _make_fake_http_response",
+        "def _release_semaphore",
+        "def _remove_checksum_context",
+        "def _remove_param_if_not_min_crt_version",
+        "def _resolve_client_config",
+        "def _shutdown",
+        "def _submit_transfer",
+        "def _translate_crt_s3_response_error",
+        "def _validate_all_known_args",
+        "def _validate_checksum_algorithm_supported",
+        "def _validate_if_bucket_supported",
+        "def _wait_transfers_done",
+        "def acquire_crt_s3_process_lock",
+        "def call_args",
+        "def cancel",
+        "def create_s3_crt_client",
+        "def delete",
+        "def done",
+        "def download",
+        "def get_crt_callback",
+        "def get_make_request_args",
+        "def handle_arn",
+        "def handle_exception",
+        "def invoke_all_callbacks",
+        "def meta",
+        "def result",
+        "def s3_request",
+        "def serialize_http_request",
+        "def set_done_callbacks_complete",
+        "def set_exception",
+        "def set_s3_request",
+        "def shutdown",
+        "def stream",
+        "def to_crt_credentials_provider",
+        "def transfer_id",
+        "def translate_crt_exception",
+        "def upload",
+        "def user_context",
+        "def wait_until_on_done_callbacks_complete"
+      ],
+      "appelle": [
+        "s3transfer/compat.py",
+        "s3transfer/constants.py",
+        "s3transfer/exceptions.py",
+        "s3transfer/futures.py",
+        "s3transfer/manager.py",
+        "s3transfer/utils.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "s3transfer/delete.py": {
+      "fichier": "s3transfer/delete.py",
+      "langage": "python",
+      "lignes": 71,
+      "taille_bytes": 2557,
+      "entrees": [
+        "s3transfer.tasks"
+      ],
+      "sorties": [
+        "class DeleteObjectTask",
+        "class DeleteSubmissionTask",
+        "def _main",
+        "def _submit"
+      ],
+      "appelle": [
+        "s3transfer/tasks.py"
+      ],
+      "est_appele_par": [
+        "s3transfer/manager.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "s3transfer/manager.py": {
+      "fichier": "s3transfer/manager.py",
+      "langage": "python",
+      "lignes": 764,
+      "taille_bytes": 29095,
+      "entrees": [
+        "copy",
+        "logging",
+        "object",
+        "re",
+        "s3transfer.bandwidth",
+        "s3transfer.constants",
+        "s3transfer.copies",
+        "s3transfer.delete",
+        "s3transfer.download",
+        "s3transfer.exceptions",
+        "s3transfer.futures",
+        "s3transfer.upload",
+        "s3transfer.utils",
+        "threading",
+        "with"
+      ],
+      "sorties": [
+        "class TransferConfig",
+        "class TransferCoordinatorController",
+        "class TransferManager",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _add_operation_defaults",
+        "def _get_future_with_components",
+        "def _get_submission_task_main_kwargs",
+        "def _register_handlers",
+        "def _shutdown",
+        "def _submit_transfer",
+        "def _validate_all_known_args",
+        "def _validate_attrs_are_nonzero",
+        "def _validate_if_bucket_supported",
+        "def add_transfer_coordinator",
+        "def cancel",
+        "def client",
+        "def config",
+        "def copy",
+        "def delete",
+        "def download",
+        "def get_deep_attr",
+        "def remove_transfer_coordinator",
+        "def shutdown",
+        "def tracked_transfer_coordinators",
+        "def upload",
+        "def wait"
+      ],
+      "appelle": [
+        "s3transfer/bandwidth.py",
+        "s3transfer/constants.py",
+        "s3transfer/copies.py",
+        "s3transfer/delete.py",
+        "s3transfer/download.py",
+        "s3transfer/exceptions.py",
+        "s3transfer/futures.py",
+        "s3transfer/upload.py",
+        "s3transfer/utils.py"
+      ],
+      "est_appele_par": [
+        "s3transfer/crt.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "s3transfer/exceptions.py": {
+      "fichier": "s3transfer/exceptions.py",
+      "langage": "python",
+      "lignes": 49,
+      "taille_bytes": 1210,
+      "entrees": [
+        "concurrent.futures"
+      ],
+      "sorties": [
+        "class FatalError",
+        "class InvalidSubscriberMethodError",
+        "class RetriesExceededError",
+        "class S3CopyFailedError",
+        "class S3DownloadFailedError",
+        "class S3UploadFailedError",
+        "class S3ValidationError",
+        "class TransferNotDoneError",
+        "def __init__"
+      ],
+      "appelle": [
+        "s3transfer/futures.py"
+      ],
+      "est_appele_par": [
+        "s3transfer/__init__.py",
+        "s3transfer/copies.py",
+        "s3transfer/crt.py",
+        "s3transfer/download.py",
+        "s3transfer/futures.py",
+        "s3transfer/manager.py",
+        "s3transfer/processpool.py",
+        "s3transfer/subscribers.py",
+        "s3transfer/utils.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "s3transfer/processpool.py": {
+      "fichier": "s3transfer/processpool.py",
+      "langage": "python",
+      "lignes": 1009,
+      "taille_bytes": 36306,
+      "entrees": [
+        "botocore.config",
+        "botocore.session",
+        "collections",
+        "contextlib",
+        "copy",
+        "logging",
+        "multiprocessing",
+        "s3transfer.compat",
+        "s3transfer.constants",
+        "s3transfer.exceptions",
+        "s3transfer.futures",
+        "s3transfer.processpool",
+        "s3transfer.utils",
+        "signal",
+        "threading"
+      ],
+      "sorties": [
+        "class BaseS3TransferProcess",
+        "class ClientFactory",
+        "class GetObjectSubmitter",
+        "class GetObjectWorker",
+        "class ProcessPoolDownloader",
+        "class ProcessPoolTransferFuture",
+        "class ProcessPoolTransferMeta",
+        "class ProcessTransferConfig",
+        "class TransferMonitor",
+        "class TransferMonitorManager",
+        "class TransferState",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _add_ignore_handler_for_interrupts",
+        "def _allocate_temp_file",
+        "def _do_file_rename",
+        "def _do_get_object",
+        "def _do_run",
+        "def _finalize_download",
+        "def _get_size",
+        "def _get_transfer_future",
+        "def _notify_jobs_to_complete",
+        "def _run_get_object_job",
+        "def _shutdown",
+        "def _shutdown_get_object_workers",
+        "def _shutdown_if_needed",
+        "def _shutdown_submitter",
+        "def _shutdown_transfer_monitor_manager",
+        "def _start",
+        "def _start_get_object_workers",
+        "def _start_if_needed",
+        "def _start_submitter",
+        "def _start_transfer_monitor_manager",
+        "def _submit_get_object_job",
+        "def _submit_get_object_jobs",
+        "def _submit_ranged_get_object_jobs",
+        "def _submit_single_get_object_job",
+        "def _validate_all_known_args",
+        "def _write_to_file",
+        "def call_args",
+        "def cancel",
+        "def create_client",
+        "def decrement_jobs_to_complete",
+        "def done",
+        "def download_file",
+        "def exception",
+        "def get_exception",
+        "def ignore_ctrl_c",
+        "def is_done",
+        "def jobs_to_complete",
+        "def meta",
+        "def notify_cancel_all_in_progress",
+        "def notify_done",
+        "def notify_exception",
+        "def notify_expected_jobs_to_complete",
+        "def notify_job_complete",
+        "def notify_new_transfer",
+        "def poll_for_result",
+        "def result",
+        "def run",
+        "def set_done",
+        "def shutdown",
+        "def transfer_id",
+        "def user_context",
+        "def wait_till_done"
+      ],
+      "appelle": [
+        "s3transfer/compat.py",
+        "s3transfer/constants.py",
+        "s3transfer/exceptions.py",
+        "s3transfer/futures.py",
+        "s3transfer/utils.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "s3transfer/subscribers.py": {
+      "fichier": "s3transfer/subscribers.py",
+      "langage": "python",
+      "lignes": 94,
+      "taille_bytes": 3594,
+      "entrees": [
+        "functools",
+        "s3transfer.compat",
+        "s3transfer.exceptions"
+      ],
+      "sorties": [
+        "class BaseSubscriber",
+        "def __new__",
+        "def _validate_subscriber_methods",
+        "def on_done",
+        "def on_progress",
+        "def on_queued"
+      ],
+      "appelle": [
+        "s3transfer/compat.py",
+        "s3transfer/exceptions.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "s3transfer/copies.py": {
+      "fichier": "s3transfer/copies.py",
+      "langage": "python",
+      "lignes": 413,
+      "taille_bytes": 15487,
+      "entrees": [
+        "botocore.exceptions",
+        "copy",
+        "math",
+        "s3transfer.exceptions",
+        "s3transfer.tasks",
+        "s3transfer.utils"
+      ],
+      "sorties": [
+        "class CopyObjectTask",
+        "class CopyPartTask",
+        "class CopySubmissionTask",
+        "def _extra_complete_multipart_args",
+        "def _extra_upload_part_args",
+        "def _get_head_object_request_from_copy_source",
+        "def _get_transfer_size",
+        "def _main",
+        "def _submit",
+        "def _submit_copy_request",
+        "def _submit_multipart_request"
+      ],
+      "appelle": [
+        "s3transfer/exceptions.py",
+        "s3transfer/tasks.py",
+        "s3transfer/utils.py"
+      ],
+      "est_appele_par": [
+        "s3transfer/manager.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "s3transfer/tasks.py": {
+      "fichier": "s3transfer/tasks.py",
+      "langage": "python",
+      "lignes": 390,
+      "taille_bytes": 16430,
+      "entrees": [
+        "botocore.context",
+        "contextlib",
+        "copy",
+        "logging",
+        "s3transfer.utils"
+      ],
+      "sorties": [
+        "class CompleteMultipartUploadTask",
+        "class CreateMultipartUploadTask",
+        "class SubmissionTask",
+        "class Task",
+        "def __call__",
+        "def __init__",
+        "def __repr__",
+        "def _execute_main",
+        "def _get_all_main_kwargs",
+        "def _get_kwargs_with_params_to_exclude",
+        "def _get_kwargs_with_params_to_include",
+        "def _log_and_set_exception",
+        "def _main",
+        "def _submit",
+        "def _wait_for_all_submitted_futures_to_complete",
+        "def _wait_on_dependent_futures",
+        "def _wait_until_all_complete",
+        "def transfer_id"
+      ],
+      "appelle": [
+        "s3transfer/utils.py"
+      ],
+      "est_appele_par": [
+        "s3transfer/copies.py",
+        "s3transfer/delete.py",
+        "s3transfer/download.py",
+        "s3transfer/upload.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "s3transfer/__init__.py": {
+      "fichier": "s3transfer/__init__.py",
+      "langage": "python",
+      "lignes": 882,
+      "taille_bytes": 29558,
+      "entrees": [
+        "botocore.compat",
+        "botocore.exceptions",
+        "botocore.vendored.requests.packages.urllib3.exceptions",
+        "concurrent.futures",
+        "functools",
+        "logging",
+        "math",
+        "os",
+        "queue",
+        "random",
+        "s3transfer.compat",
+        "s3transfer.exceptions",
+        "socket",
+        "string",
+        "threading"
+      ],
+      "sorties": [
+        "class MultipartDownloader",
+        "class MultipartUploader",
+        "class OSUtils",
+        "class ProgressPercentage",
+        "class QueueShutdownError",
+        "class ReadFileChunk",
+        "class S3Transfer",
+        "class ShutdownQueue",
+        "class StreamReaderProgress",
+        "class TransferConfig",
+        "def __call__",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def _calculate_file_size",
+        "def _calculate_range_param",
+        "def _do_get_object",
+        "def _download_file",
+        "def _download_file_as_future",
+        "def _download_range",
+        "def _extra_upload_part_args",
+        "def _get_object",
+        "def _init",
+        "def _multipart_upload",
+        "def _object_size",
+        "def _perform_io_writes",
+        "def _process_future_results",
+        "def _put_object",
+        "def _ranged_download",
+        "def _update_checksum_context",
+        "def _upload_one_part",
+        "def _upload_parts",
+        "def _validate_all_known_args",
+        "def close",
+        "def disable_callback",
+        "def disable_upload_callbacks",
+        "def download_file",
+        "def enable_callback",
+        "def enable_upload_callbacks",
+        "def from_filename",
+        "def get_file_size",
+        "def open",
+        "def open_file_chunk_reader",
+        "def put",
+        "def random_file_extension",
+        "def read",
+        "def remove_file",
+        "def rename_file",
+        "def seek",
+        "def tell",
+        "def trigger_shutdown",
+        "def upload_file"
+      ],
+      "appelle": [
+        "s3transfer/compat.py",
+        "s3transfer/exceptions.py",
+        "s3transfer/futures.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "s3transfer/upload.py": {
+      "fichier": "s3transfer/upload.py",
+      "langage": "python",
+      "lignes": 840,
+      "taille_bytes": 31757,
+      "entrees": [
+        "io",
+        "math",
+        "s3transfer.compat",
+        "s3transfer.constants",
+        "s3transfer.futures",
+        "s3transfer.tasks",
+        "s3transfer.utils"
+      ],
+      "sorties": [
+        "class AggregatedProgressCallback",
+        "class InterruptReader",
+        "class PutObjectTask",
+        "class UploadFilenameInputManager",
+        "class UploadInputManager",
+        "class UploadNonSeekableInputManager",
+        "class UploadPartTask",
+        "class UploadSeekableInputManager",
+        "class UploadSubmissionTask",
+        "def __call__",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _extra_complete_multipart_args",
+        "def _extra_create_multipart_args",
+        "def _extra_put_object_args",
+        "def _extra_upload_part_args",
+        "def _get_close_callbacks",
+        "def _get_deferred_open_file",
+        "def _get_num_parts",
+        "def _get_progress_callbacks",
+        "def _get_put_object_fileobj_with_full_size",
+        "def _get_upload_input_manager_cls",
+        "def _get_upload_part_fileobj_with_full_size",
+        "def _get_upload_task_tag",
+        "def _main",
+        "def _read",
+        "def _submit",
+        "def _submit_multipart_request",
+        "def _submit_upload_request",
+        "def _trigger_callbacks",
+        "def _wrap_data",
+        "def _wrap_fileobj",
+        "def close",
+        "def flush",
+        "def get_put_object_body",
+        "def is_compatible",
+        "def provide_transfer_size",
+        "def read",
+        "def requires_multipart_upload",
+        "def seek",
+        "def stores_body_in_memory",
+        "def tell",
+        "def yield_upload_part_bodies"
+      ],
+      "appelle": [
+        "s3transfer/compat.py",
+        "s3transfer/constants.py",
+        "s3transfer/futures.py",
+        "s3transfer/tasks.py",
+        "s3transfer/utils.py"
+      ],
+      "est_appele_par": [
+        "s3transfer/manager.py"
+      ],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "s3transfer/utils.py",
+      "vers": "s3transfer/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/utils.py",
+      "vers": "s3transfer/constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/utils.py",
+      "vers": "s3transfer/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/download.py",
+      "vers": "s3transfer/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/download.py",
+      "vers": "s3transfer/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/download.py",
+      "vers": "s3transfer/futures.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/download.py",
+      "vers": "s3transfer/tasks.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/download.py",
+      "vers": "s3transfer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/futures.py",
+      "vers": "s3transfer/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/futures.py",
+      "vers": "s3transfer/exceptions.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "s3transfer/futures.py",
+      "vers": "s3transfer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/crt.py",
+      "vers": "s3transfer/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/crt.py",
+      "vers": "s3transfer/constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/crt.py",
+      "vers": "s3transfer/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/crt.py",
+      "vers": "s3transfer/futures.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/crt.py",
+      "vers": "s3transfer/manager.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/crt.py",
+      "vers": "s3transfer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/delete.py",
+      "vers": "s3transfer/tasks.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/manager.py",
+      "vers": "s3transfer/bandwidth.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/manager.py",
+      "vers": "s3transfer/constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/manager.py",
+      "vers": "s3transfer/copies.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/manager.py",
+      "vers": "s3transfer/delete.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/manager.py",
+      "vers": "s3transfer/download.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/manager.py",
+      "vers": "s3transfer/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/manager.py",
+      "vers": "s3transfer/futures.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/manager.py",
+      "vers": "s3transfer/upload.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/manager.py",
+      "vers": "s3transfer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/exceptions.py",
+      "vers": "s3transfer/futures.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "s3transfer/processpool.py",
+      "vers": "s3transfer/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/processpool.py",
+      "vers": "s3transfer/constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/processpool.py",
+      "vers": "s3transfer/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/processpool.py",
+      "vers": "s3transfer/futures.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/processpool.py",
+      "vers": "s3transfer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/subscribers.py",
+      "vers": "s3transfer/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/subscribers.py",
+      "vers": "s3transfer/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/copies.py",
+      "vers": "s3transfer/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/copies.py",
+      "vers": "s3transfer/tasks.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/copies.py",
+      "vers": "s3transfer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/tasks.py",
+      "vers": "s3transfer/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/__init__.py",
+      "vers": "s3transfer/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/__init__.py",
+      "vers": "s3transfer/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/__init__.py",
+      "vers": "s3transfer/futures.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/upload.py",
+      "vers": "s3transfer/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/upload.py",
+      "vers": "s3transfer/constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/upload.py",
+      "vers": "s3transfer/futures.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/upload.py",
+      "vers": "s3transfer/tasks.py",
+      "type": "interne"
+    },
+    {
+      "de": "s3transfer/upload.py",
+      "vers": "s3transfer/utils.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 's3transfer/constants.py' (in=5, 31% du projet)",
+    "hub → 's3transfer/compat.py' (in=8, 50% du projet)",
+    "hub → 's3transfer/utils.py' (in=8, 50% du projet)",
+    "hub → 's3transfer/futures.py' (in=7, 44% du projet)",
+    "point_entree → 's3transfer/crt.py'",
+    "hub → 's3transfer/exceptions.py' (in=9, 56% du projet)",
+    "point_entree → 's3transfer/processpool.py'",
+    "point_entree → 's3transfer/subscribers.py'",
+    "hub → 's3transfer/tasks.py' (in=4, 25% du projet)",
+    "point_entree → 's3transfer/__init__.py'",
+    "circulaire → 2 cycles détectés"
+  ]
+}

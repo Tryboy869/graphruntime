@@ -1,0 +1,1777 @@
+{
+  "meta": {
+    "projet": "memos",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 1,
+      "go": 40,
+      "sql": 79
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".golangci.yaml"
+  },
+  "noeuds": {
+    ".golangci.yaml": {
+      "fichier": ".golangci.yaml",
+      "langage": "yaml",
+      "lignes": 101,
+      "taille_bytes": 2630,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/memos/main.go": {
+      "fichier": "cmd/memos/main.go",
+      "langage": "go",
+      "lignes": 182,
+      "taille_bytes": 5598,
+      "entrees": [],
+      "sorties": [
+        "func init",
+        "func main",
+        "func printGreetings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/base/resource_name.go": {
+      "fichier": "internal/base/resource_name.go",
+      "langage": "go",
+      "lignes": 7,
+      "taille_bytes": 121,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/base/resource_name_test.go": {
+      "fichier": "internal/base/resource_name_test.go",
+      "langage": "go",
+      "lignes": 35,
+      "taille_bytes": 697,
+      "entrees": [],
+      "sorties": [
+        "func TestUIDMatcher"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/util/util.go": {
+      "fichier": "internal/util/util.go",
+      "langage": "go",
+      "lignes": 73,
+      "taille_bytes": 1746,
+      "entrees": [],
+      "sorties": [
+        "func ConvertStringToInt32",
+        "func GenUUID",
+        "func HasPrefixes",
+        "func RandomString",
+        "func ReplaceString",
+        "func ValidateEmail"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/util/util_test.go": {
+      "fichier": "internal/util/util_test.go",
+      "langage": "go",
+      "lignes": 31,
+      "taille_bytes": 551,
+      "entrees": [],
+      "sorties": [
+        "func TestValidateEmail"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/profile/profile.go": {
+      "fichier": "internal/profile/profile.go",
+      "langage": "go",
+      "lignes": 107,
+      "taille_bytes": 2960,
+      "entrees": [],
+      "sorties": [
+        "func checkDataDir",
+        "type Profile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/version/version_test.go": {
+      "fichier": "internal/version/version_test.go",
+      "langage": "go",
+      "lignes": 103,
+      "taille_bytes": 1830,
+      "entrees": [],
+      "sorties": [
+        "func TestIsVersionGreaterOrEqualThan",
+        "func TestIsVersionGreaterThan",
+        "func TestSortVersion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/version/version.go": {
+      "fichier": "internal/version/version.go",
+      "langage": "go",
+      "lignes": 54,
+      "taille_bytes": 1487,
+      "entrees": [],
+      "sorties": [
+        "func GetCurrentVersion",
+        "func GetMinorVersion",
+        "func IsVersionGreaterOrEqualThan",
+        "func IsVersionGreaterThan",
+        "type SortVersion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/attachment.go": {
+      "fichier": "store/attachment.go",
+      "langage": "go",
+      "lignes": 172,
+      "taille_bytes": 4541,
+      "entrees": [],
+      "sorties": [
+        "type Attachment",
+        "type DeleteAttachment",
+        "type FindAttachment",
+        "type UpdateAttachment"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/memo.go": {
+      "fichier": "store/memo.go",
+      "langage": "go",
+      "lignes": 159,
+      "taille_bytes": 3414,
+      "entrees": [],
+      "sorties": [
+        "type DeleteMemo",
+        "type FindMemo",
+        "type FindMemoPayload",
+        "type Memo",
+        "type UpdateMemo",
+        "type Visibility"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/user_setting.go": {
+      "fichier": "store/user_setting.go",
+      "langage": "go",
+      "lignes": 486,
+      "taille_bytes": 14287,
+      "entrees": [],
+      "sorties": [
+        "func convertUserSettingFromRaw",
+        "func convertUserSettingToRaw",
+        "type FindUserSetting",
+        "type PATQueryResult",
+        "type RefreshTokenQueryResult",
+        "type UserSetting"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/inbox.go": {
+      "fichier": "store/inbox.go",
+      "langage": "go",
+      "lignes": 76,
+      "taille_bytes": 2141,
+      "entrees": [],
+      "sorties": [
+        "type DeleteInbox",
+        "type FindInbox",
+        "type Inbox",
+        "type InboxStatus",
+        "type UpdateInbox"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/driver.go": {
+      "fichier": "store/driver.go",
+      "langage": "go",
+      "lignes": 70,
+      "taille_bytes": 3336,
+      "entrees": [],
+      "sorties": [
+        "type Driver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/activity.go": {
+      "fichier": "store/activity.go",
+      "langage": "go",
+      "lignes": 68,
+      "taille_bytes": 1205,
+      "entrees": [],
+      "sorties": [
+        "type Activity",
+        "type ActivityLevel",
+        "type ActivityType",
+        "type FindActivity"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/reaction.go": {
+      "fichier": "store/reaction.go",
+      "langage": "go",
+      "lignes": 41,
+      "taille_bytes": 927,
+      "entrees": [],
+      "sorties": [
+        "type DeleteReaction",
+        "type FindReaction",
+        "type Reaction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/idp.go": {
+      "fichier": "store/idp.go",
+      "langage": "go",
+      "lignes": 186,
+      "taille_bytes": 5278,
+      "entrees": [],
+      "sorties": [
+        "func convertIdentityProviderConfigFromRaw",
+        "func convertIdentityProviderConfigToRaw",
+        "func convertIdentityProviderFromRaw",
+        "func convertIdentityProviderToRaw",
+        "type DeleteIdentityProvider",
+        "type FindIdentityProvider",
+        "type IdentityProvider",
+        "type UpdateIdentityProvider",
+        "type UpdateIdentityProviderV1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migrator.go": {
+      "fichier": "store/migrator.go",
+      "langage": "go",
+      "lignes": 405,
+      "taille_bytes": 15685,
+      "entrees": [],
+      "sorties": [
+        "func getSchemaVersionOrDefault",
+        "func isVersionEmpty",
+        "func shouldApplyMigration",
+        "func validateMigrationFileName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/common.go": {
+      "fichier": "store/common.go",
+      "langage": "go",
+      "lignes": 24,
+      "taille_bytes": 465,
+      "entrees": [],
+      "sorties": [
+        "type RowStatus"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/store.go": {
+      "fichier": "store/store.go",
+      "langage": "go",
+      "lignes": 57,
+      "taille_bytes": 1285,
+      "entrees": [],
+      "sorties": [
+        "func New",
+        "type Store"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/cache.go": {
+      "fichier": "store/cache.go",
+      "langage": "go",
+      "lignes": 9,
+      "taille_bytes": 141,
+      "entrees": [],
+      "sorties": [
+        "func getUserSettingCacheKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/memo_relation.go": {
+      "fichier": "store/memo_relation.go",
+      "langage": "go",
+      "lignes": 47,
+      "taille_bytes": 1223,
+      "entrees": [],
+      "sorties": [
+        "type DeleteMemoRelation",
+        "type FindMemoRelation",
+        "type MemoRelation",
+        "type MemoRelationType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/user.go": {
+      "fichier": "store/user.go",
+      "langage": "go",
+      "lignes": 157,
+      "taille_bytes": 2754,
+      "entrees": [],
+      "sorties": [
+        "type DeleteUser",
+        "type FindUser",
+        "type Role",
+        "type UpdateUser",
+        "type User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/instance_setting.go": {
+      "fichier": "store/instance_setting.go",
+      "langage": "go",
+      "lignes": 239,
+      "taille_bytes": 9159,
+      "entrees": [],
+      "sorties": [
+        "const DefaultContentLengthLimit",
+        "func convertInstanceSettingFromRaw",
+        "type DeleteInstanceSetting",
+        "type FindInstanceSetting",
+        "type InstanceSetting"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/memo_filter_test.go": {
+      "fichier": "store/test/memo_filter_test.go",
+      "langage": "go",
+      "lignes": 939,
+      "taille_bytes": 32499,
+      "entrees": [],
+      "sorties": [
+        "func TestMemoFilterAllComparisonOperators",
+        "func TestMemoFilterCombinedJSONBool",
+        "func TestMemoFilterComplexLogical",
+        "func TestMemoFilterContentCaseSensitivity",
+        "func TestMemoFilterContentContains",
+        "func TestMemoFilterContentSpecialCharacters",
+        "func TestMemoFilterContentUnicode",
+        "func TestMemoFilterContentUnicodeCaseFold",
+        "func TestMemoFilterCreatedTsArithmetic",
+        "func TestMemoFilterCreatedTsComparison",
+        "func TestMemoFilterCreatedTsWithNow",
+        "func TestMemoFilterCreatorIdEquals",
+        "func TestMemoFilterCreatorIdNotEquals",
+        "func TestMemoFilterElementInTags",
+        "func TestMemoFilterEmptyTags",
+        "func TestMemoFilterHasCode",
+        "func TestMemoFilterHasIncompleteTasks",
+        "func TestMemoFilterHasLink",
+        "func TestMemoFilterHasTaskList",
+        "func TestMemoFilterHierarchicalTags",
+        "func TestMemoFilterIssue5480_ArchiveWorkflow",
+        "func TestMemoFilterJSONBooleanLogic",
+        "func TestMemoFilterLogicalAnd",
+        "func TestMemoFilterLogicalNot",
+        "func TestMemoFilterLogicalOr",
+        "func TestMemoFilterMultipleFilters",
+        "func TestMemoFilterNegatedComparison",
+        "func TestMemoFilterNoMatches",
+        "func TestMemoFilterNullPayload",
+        "func TestMemoFilterPinnedEquals",
+        "func TestMemoFilterPinnedPredicate",
+        "func TestMemoFilterTagInList",
+        "func TestMemoFilterTagsExistsCombinedWithOtherFilters",
+        "func TestMemoFilterTagsExistsContains",
+        "func TestMemoFilterTagsExistsEmptyAndNullCases",
+        "func TestMemoFilterTagsExistsEndsWith",
+        "func TestMemoFilterTagsExistsStartsWith",
+        "func TestMemoFilterUpdatedTs",
+        "func TestMemoFilterVisibilityEquals",
+        "func TestMemoFilterVisibilityInList",
+        "func TestMemoFilterVisibilityNotEquals"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/inbox_test.go": {
+      "fichier": "store/test/inbox_test.go",
+      "langage": "go",
+      "lignes": 592,
+      "taille_bytes": 16633,
+      "entrees": [],
+      "sorties": [
+        "const systemBotID",
+        "func TestInboxListByID",
+        "func TestInboxListByMessageType",
+        "func TestInboxListByMessageTypeMultipleTypes",
+        "func TestInboxListBySenderID",
+        "func TestInboxListByStatus",
+        "func TestInboxListCombinedFilters",
+        "func TestInboxListPagination",
+        "func TestInboxMessagePayload",
+        "func TestInboxMessageTypeFilterWithPayload",
+        "func TestInboxMessageTypeFilterWithStatusAndPagination",
+        "func TestInboxMultipleReceivers",
+        "func TestInboxStore",
+        "func TestInboxUpdateStatus"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/user_setting_test.go": {
+      "fichier": "store/test/user_setting_test.go",
+      "langage": "go",
+      "lignes": 993,
+      "taille_bytes": 30315,
+      "entrees": [],
+      "sorties": [
+        "func TestUserSettingGetByUserID",
+        "func TestUserSettingGetUserByPATHash",
+        "func TestUserSettingGetUserByPATHashAfterRemoval",
+        "func TestUserSettingGetUserByPATHashEmptyTokensArray",
+        "func TestUserSettingGetUserByPATHashLargeTokenCount",
+        "func TestUserSettingGetUserByPATHashMultiplePATsSameUser",
+        "func TestUserSettingGetUserByPATHashMultipleUsers",
+        "func TestUserSettingGetUserByPATHashNoTokensKey",
+        "func TestUserSettingGetUserByPATHashNotFound",
+        "func TestUserSettingGetUserByPATHashSpecialCharacters",
+        "func TestUserSettingGetUserByPATHashWithExpiredToken",
+        "func TestUserSettingGetUserByPATHashWithOtherUsers",
+        "func TestUserSettingJSONFieldsEdgeCases",
+        "func TestUserSettingMultipleSettingTypes",
+        "func TestUserSettingPersonalAccessTokens",
+        "func TestUserSettingRefreshTokens",
+        "func TestUserSettingShortcuts",
+        "func TestUserSettingShortcutsEdgeCases",
+        "func TestUserSettingShortcutsPartialUpdate",
+        "func TestUserSettingStore",
+        "func TestUserSettingUpdatePATLastUsed",
+        "func TestUserSettingUpsertUpdate",
+        "func TestUserSettingWebhooks"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/containers.go": {
+      "fichier": "store/test/containers.go",
+      "langage": "go",
+      "lignes": 317,
+      "taille_bytes": 9289,
+      "entrees": [],
+      "sorties": [
+        "func GetMySQLDSN",
+        "func GetPostgresDSN",
+        "func StartMemosContainer",
+        "func TerminateContainers",
+        "func getTestNetwork",
+        "func waitForDB",
+        "type MemosContainerConfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/main_test.go": {
+      "fichier": "store/test/main_test.go",
+      "langage": "go",
+      "lignes": 50,
+      "taille_bytes": 1132,
+      "entrees": [],
+      "sorties": [
+        "func TestMain",
+        "func runAllDrivers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/instance_setting_test.go": {
+      "fichier": "store/test/instance_setting_test.go",
+      "langage": "go",
+      "lignes": 300,
+      "taille_bytes": 9018,
+      "entrees": [],
+      "sorties": [
+        "func TestInstanceSettingBasicSetting",
+        "func TestInstanceSettingEdgeCases",
+        "func TestInstanceSettingGeneralSetting",
+        "func TestInstanceSettingGetNonExistent",
+        "func TestInstanceSettingListAll",
+        "func TestInstanceSettingMemoRelatedSetting",
+        "func TestInstanceSettingStorageSetting",
+        "func TestInstanceSettingUpsertUpdate",
+        "func TestInstanceSettingV1Store"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/attachment_test.go": {
+      "fichier": "store/test/attachment_test.go",
+      "langage": "go",
+      "lignes": 247,
+      "taille_bytes": 6022,
+      "entrees": [],
+      "sorties": [
+        "func TestAttachmentGetByUID",
+        "func TestAttachmentInvalidUID",
+        "func TestAttachmentListWithPagination",
+        "func TestAttachmentStore",
+        "func TestAttachmentStoreWithFilter",
+        "func TestAttachmentUpdate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/activity_test.go": {
+      "fichier": "store/test/activity_test.go",
+      "langage": "go",
+      "lignes": 380,
+      "taille_bytes": 10797,
+      "entrees": [],
+      "sorties": [
+        "func TestActivityCreatedTs",
+        "func TestActivityCreatorID",
+        "func TestActivityEmptyPayload",
+        "func TestActivityGetByID",
+        "func TestActivityLevel",
+        "func TestActivityListByType",
+        "func TestActivityListEmpty",
+        "func TestActivityListMultiple",
+        "func TestActivityListWithIDAndType",
+        "func TestActivityPayloadComplexMemoComment",
+        "func TestActivityPayloadMemoComment",
+        "func TestActivityStore"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/user_test.go": {
+      "fichier": "store/test/user_test.go",
+      "langage": "go",
+      "lignes": 256,
+      "taille_bytes": 6972,
+      "entrees": [],
+      "sorties": [
+        "func TestUserGetByID",
+        "func TestUserGetByUsername",
+        "func TestUserListByRole",
+        "func TestUserListWithLimit",
+        "func TestUserStore",
+        "func TestUserUpdateAllFields",
+        "func TestUserUpdateRowStatus",
+        "func createTestingHostUser",
+        "func createTestingUserWithRole"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/idp_test.go": {
+      "fichier": "store/test/idp_test.go",
+      "langage": "go",
+      "lignes": 468,
+      "taille_bytes": 14449,
+      "entrees": [],
+      "sorties": [
+        "func TestIdentityProviderDelete",
+        "func TestIdentityProviderDeleteNotAffectOthers",
+        "func TestIdentityProviderFieldMapping",
+        "func TestIdentityProviderGetByID",
+        "func TestIdentityProviderIdentifierFilterPatterns",
+        "func TestIdentityProviderListByID",
+        "func TestIdentityProviderListMultiple",
+        "func TestIdentityProviderOAuth2ConfigScopes",
+        "func TestIdentityProviderStore",
+        "func TestIdentityProviderUpdateConfig",
+        "func TestIdentityProviderUpdateIdentifierFilter",
+        "func TestIdentityProviderUpdateMultipleFields",
+        "func TestIdentityProviderUpdateName",
+        "func createTestOAuth2IDP"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/filter_helpers_test.go": {
+      "fichier": "store/test/filter_helpers_test.go",
+      "langage": "go",
+      "lignes": 290,
+      "taille_bytes": 7814,
+      "entrees": [],
+      "sorties": [
+        "func NewAttachmentBuilder",
+        "func NewAttachmentFilterTestContext",
+        "func NewAttachmentFilterTestContextWithUser",
+        "func NewMemoBuilder",
+        "func NewMemoFilterTestContext",
+        "func boolPtr",
+        "func formatInt",
+        "func formatInt32",
+        "func formatInt64",
+        "type AttachmentBuilder",
+        "type AttachmentFilterTestContext",
+        "type FilterTestCase",
+        "type MemoBuilder",
+        "type MemoFilterTestContext"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/store.go": {
+      "fichier": "store/test/store.go",
+      "langage": "go",
+      "lignes": 111,
+      "taille_bytes": 2767,
+      "entrees": [],
+      "sorties": [
+        "func NewTestingStore",
+        "func NewTestingStoreWithDSN",
+        "func getDriverFromEnv",
+        "func getTestingProfileForDriver",
+        "func getUnusedPort"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/reaction_test.go": {
+      "fichier": "store/test/reaction_test.go",
+      "langage": "go",
+      "lignes": 189,
+      "taille_bytes": 4523,
+      "entrees": [],
+      "sorties": [
+        "func TestReactionListByCreatorID",
+        "func TestReactionMultipleContentIDs",
+        "func TestReactionStore",
+        "func TestReactionUpsertDifferentTypes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/memo_relation_test.go": {
+      "fichier": "store/test/memo_relation_test.go",
+      "langage": "go",
+      "lignes": 946,
+      "taille_bytes": 25292,
+      "entrees": [],
+      "sorties": [
+        "func TestMemoRelationBidirectional",
+        "func TestMemoRelationDelete",
+        "func TestMemoRelationDeleteByMemoID",
+        "func TestMemoRelationDeleteByType",
+        "func TestMemoRelationDifferentTypes",
+        "func TestMemoRelationListByMemoID",
+        "func TestMemoRelationListByMemoIDList",
+        "func TestMemoRelationListByMemoIDListBothDirections",
+        "func TestMemoRelationListByMemoIDListEmpty",
+        "func TestMemoRelationListByMemoIDListWithTypeFilter",
+        "func TestMemoRelationListByRelatedMemoID",
+        "func TestMemoRelationListCombinedFilters",
+        "func TestMemoRelationListEmpty",
+        "func TestMemoRelationMultipleRelationsToSameMemo",
+        "func TestMemoRelationStore",
+        "func TestMemoRelationUpsertSameRelation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/attachment_filter_test.go": {
+      "fichier": "store/test/attachment_filter_test.go",
+      "langage": "go",
+      "lignes": 375,
+      "taille_bytes": 14428,
+      "entrees": [],
+      "sorties": [
+        "func TestAttachmentFilterAllComparisonOperators",
+        "func TestAttachmentFilterComplexLogical",
+        "func TestAttachmentFilterCreateTimeArithmetic",
+        "func TestAttachmentFilterCreateTimeComparison",
+        "func TestAttachmentFilterCreateTimeWithNow",
+        "func TestAttachmentFilterEmptyFilename",
+        "func TestAttachmentFilterFilenameContains",
+        "func TestAttachmentFilterFilenameSpecialCharacters",
+        "func TestAttachmentFilterFilenameUnicode",
+        "func TestAttachmentFilterLogicalAnd",
+        "func TestAttachmentFilterLogicalNot",
+        "func TestAttachmentFilterLogicalOr",
+        "func TestAttachmentFilterMemoIdEquals",
+        "func TestAttachmentFilterMemoIdNotEquals",
+        "func TestAttachmentFilterMimeTypeEquals",
+        "func TestAttachmentFilterMimeTypeInList",
+        "func TestAttachmentFilterMimeTypeNotEquals",
+        "func TestAttachmentFilterMultipleFilters",
+        "func TestAttachmentFilterNoMatches",
+        "func TestAttachmentFilterNullMemoId"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/memo_test.go": {
+      "fichier": "store/test/memo_test.go",
+      "langage": "go",
+      "lignes": 478,
+      "taille_bytes": 12246,
+      "entrees": [],
+      "sorties": [
+        "func TestDeleteMemoStore",
+        "func TestMemoCreateWithCustomTimestamps",
+        "func TestMemoCreateWithOnlyCreatedTs",
+        "func TestMemoGetByID",
+        "func TestMemoGetByUID",
+        "func TestMemoInvalidUID",
+        "func TestMemoListByTags",
+        "func TestMemoListByVisibility",
+        "func TestMemoListWithPagination",
+        "func TestMemoStore",
+        "func TestMemoUpdatePinned",
+        "func TestMemoUpdateVisibility",
+        "func TestMemoWithPayload"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/test/migrator_test.go": {
+      "fichier": "store/test/migrator_test.go",
+      "langage": "go",
+      "lignes": 200,
+      "taille_bytes": 6819,
+      "entrees": [],
+      "sorties": [
+        "func TestFreshInstall",
+        "func TestMigrationFromStableVersion",
+        "func TestMigrationMultipleReRuns",
+        "func TestMigrationReRun",
+        "func TestMigrationWithData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/LATEST.sql": {
+      "fichier": "store/migration/mysql/LATEST.sql",
+      "langage": "sql",
+      "lignes": 108,
+      "taille_bytes": 3220,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.17/01__delete_activity.sql": {
+      "fichier": "store/migration/mysql/0.17/01__delete_activity.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 24,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.17/00__inbox.sql": {
+      "fichier": "store/migration/mysql/0.17/00__inbox.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 254,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.20/00__reaction.sql": {
+      "fichier": "store/migration/mysql/0.20/00__reaction.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 312,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.27/01__add_idp_uid.sql": {
+      "fichier": "store/migration/mysql/0.27/01__add_idp_uid.sql",
+      "langage": "sql",
+      "lignes": 8,
+      "taille_bytes": 328,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.27/00__migrate_storage_setting.sql": {
+      "fichier": "store/migration/mysql/0.27/00__migrate_storage_setting.sql",
+      "langage": "sql",
+      "lignes": 6,
+      "taille_bytes": 371,
+      "entrees": [
+        "DUAL"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.26/01__drop_memo_organizer.sql": {
+      "fichier": "store/migration/mysql/0.26/01__drop_memo_organizer.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 37,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.26/00__rename_resource_to_attachment.sql": {
+      "fichier": "store/migration/mysql/0.26/00__rename_resource_to_attachment.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 37,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.26/02__migrate_host_to_admin.sql": {
+      "fichier": "store/migration/mysql/0.26/02__migrate_host_to_admin.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 58,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.23/00__reactions.sql": {
+      "fichier": "store/migration/mysql/0.23/00__reactions.sql",
+      "langage": "sql",
+      "lignes": 12,
+      "taille_bytes": 1000,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.24/01__memo_pinned.sql": {
+      "fichier": "store/migration/mysql/0.24/01__memo_pinned.sql",
+      "langage": "sql",
+      "lignes": 8,
+      "taille_bytes": 263,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.24/00__memo.sql": {
+      "fichier": "store/migration/mysql/0.24/00__memo.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 70,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.24/02__s3_reference_length.sql": {
+      "fichier": "store/migration/mysql/0.24/02__s3_reference_length.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 119,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.25/00__remove_webhook.sql": {
+      "fichier": "store/migration/mysql/0.25/00__remove_webhook.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 30,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.22/00__resource_storage_type.sql": {
+      "fichier": "store/migration/mysql/0.22/00__resource_storage_type.sql",
+      "langage": "sql",
+      "lignes": 11,
+      "taille_bytes": 650,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.22/03__drop_tag.sql": {
+      "fichier": "store/migration/mysql/0.22/03__drop_tag.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 28,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.22/02__memo_payload.sql": {
+      "fichier": "store/migration/mysql/0.22/02__memo_payload.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 165,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.22/01__memo_tags.sql": {
+      "fichier": "store/migration/mysql/0.22/01__memo_tags.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 153,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.19/00__add_resource_name.sql": {
+      "fichier": "store/migration/mysql/0.19/00__add_resource_name.sql",
+      "langage": "sql",
+      "lignes": 15,
+      "taille_bytes": 545,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.21/01__rename_uid.sql": {
+      "fichier": "store/migration/mysql/0.21/01__rename_uid.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 123,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.21/00__user_description.sql": {
+      "fichier": "store/migration/mysql/0.21/00__user_description.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 78,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.18/00__extend_text.sql": {
+      "fichier": "store/migration/mysql/0.18/00__extend_text.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 182,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.18/02__user_setting.sql": {
+      "fichier": "store/migration/mysql/0.18/02__user_setting.sql",
+      "langage": "sql",
+      "lignes": 4,
+      "taille_bytes": 514,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/mysql/0.18/01__webhook.sql": {
+      "fichier": "store/migration/mysql/0.18/01__webhook.sql",
+      "langage": "sql",
+      "lignes": 10,
+      "taille_bytes": 339,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/LATEST.sql": {
+      "fichier": "store/migration/sqlite/LATEST.sql",
+      "langage": "sql",
+      "lignes": 109,
+      "taille_bytes": 3210,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE activity",
+        "CREATE TABLE attachment",
+        "CREATE TABLE idp",
+        "CREATE TABLE inbox",
+        "CREATE TABLE memo",
+        "CREATE TABLE memo_relation",
+        "CREATE TABLE reaction",
+        "CREATE TABLE system_setting",
+        "CREATE TABLE user",
+        "CREATE TABLE user_setting",
+        "message TEXT",
+        "type TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.12/04__resource_public_id.sql": {
+      "fichier": "store/migration/sqlite/0.12/04__resource_public_id.sql",
+      "langage": "sql",
+      "lignes": 18,
+      "taille_bytes": 383,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.12/01__system_setting.sql": {
+      "fichier": "store/migration/sqlite/0.12/01__system_setting.sql",
+      "langage": "sql",
+      "lignes": 69,
+      "taille_bytes": 899,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.12/00__user_setting.sql": {
+      "fichier": "store/migration/sqlite/0.12/00__user_setting.sql",
+      "langage": "sql",
+      "lignes": 6,
+      "taille_bytes": 83,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.12/03__resource_internal_path.sql": {
+      "fichier": "store/migration/sqlite/0.12/03__resource_internal_path.sql",
+      "langage": "sql",
+      "lignes": 4,
+      "taille_bytes": 75,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.17/00__inbox.sql": {
+      "fichier": "store/migration/sqlite/0.17/00__inbox.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 258,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE inbox",
+        "message TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.17/01__delete_activities.sql": {
+      "fichier": "store/migration/sqlite/0.17/01__delete_activities.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 22,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.20/00__reaction.sql": {
+      "fichier": "store/migration/sqlite/0.20/00__reaction.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 279,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE reaction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.13/01__remove_memo_organizer_id.sql": {
+      "fichier": "store/migration/sqlite/0.13/01__remove_memo_organizer_id.sql",
+      "langage": "sql",
+      "lignes": 22,
+      "taille_bytes": 437,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE memo_organizer_temp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.13/00__memo_relation.sql": {
+      "fichier": "store/migration/sqlite/0.13/00__memo_relation.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 175,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE memo_relation",
+        "type TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.27/01__add_idp_uid.sql": {
+      "fichier": "store/migration/sqlite/0.27/01__add_idp_uid.sql",
+      "langage": "sql",
+      "lignes": 8,
+      "taille_bytes": 300,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.27/00__migrate_storage_setting.sql": {
+      "fichier": "store/migration/sqlite/0.27/00__migrate_storage_setting.sql",
+      "langage": "sql",
+      "lignes": 5,
+      "taille_bytes": 361,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.26/01__drop_memo_organizer.sql": {
+      "fichier": "store/migration/sqlite/0.26/01__drop_memo_organizer.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 37,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.26/04__migrate_host_to_admin.sql": {
+      "fichier": "store/migration/sqlite/0.26/04__migrate_host_to_admin.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 52,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.26/00__rename_resource_to_attachment.sql": {
+      "fichier": "store/migration/sqlite/0.26/00__rename_resource_to_attachment.sql",
+      "langage": "sql",
+      "lignes": 5,
+      "taille_bytes": 280,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.26/02__drop_indexes.sql": {
+      "fichier": "store/migration/sqlite/0.26/02__drop_indexes.sql",
+      "langage": "sql",
+      "lignes": 4,
+      "taille_bytes": 175,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.26/03__alter_user_role.sql": {
+      "fichier": "store/migration/sqlite/0.26/03__alter_user_role.sql",
+      "langage": "sql",
+      "lignes": 24,
+      "taille_bytes": 859,
+      "entrees": [
+        "user_old"
+      ],
+      "sorties": [
+        "CREATE TABLE user"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.5/02__system_setting.sql": {
+      "fichier": "store/migration/sqlite/0.5/02__system_setting.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 150,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE system_setting"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.5/00__regenerate_foreign_keys.sql": {
+      "fichier": "store/migration/sqlite/0.5/00__regenerate_foreign_keys.sql",
+      "langage": "sql",
+      "lignes": 217,
+      "taille_bytes": 4708,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE memo",
+        "CREATE TABLE memo_organizer",
+        "CREATE TABLE resource",
+        "CREATE TABLE shortcut",
+        "CREATE TABLE user",
+        "CREATE TABLE user_setting",
+        "resource RENAME",
+        "type TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.5/01__memo_resource.sql": {
+      "fichier": "store/migration/sqlite/0.5/01__memo_resource.sql",
+      "langage": "sql",
+      "lignes": 10,
+      "taille_bytes": 395,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE memo_resource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.5/03__resource_extermal_link.sql": {
+      "fichier": "store/migration/sqlite/0.5/03__resource_extermal_link.sql",
+      "langage": "sql",
+      "lignes": 4,
+      "taille_bytes": 75,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.2/01__memo_visibility.sql": {
+      "fichier": "store/migration/sqlite/0.2/01__memo_visibility.sql",
+      "langage": "sql",
+      "lignes": 4,
+      "taille_bytes": 119,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.2/00__user_role.sql": {
+      "fichier": "store/migration/sqlite/0.2/00__user_role.sql",
+      "langage": "sql",
+      "lignes": 60,
+      "taille_bytes": 1069,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE user"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.23/00__reactions.sql": {
+      "fichier": "store/migration/sqlite/0.23/00__reactions.sql",
+      "langage": "sql",
+      "lignes": 12,
+      "taille_bytes": 1000,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.10/00__activity.sql": {
+      "fichier": "store/migration/sqlite/0.10/00__activity.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 322,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE activity",
+        "type TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.24/01__memo_pinned.sql": {
+      "fichier": "store/migration/sqlite/0.24/01__memo_pinned.sql",
+      "langage": "sql",
+      "lignes": 11,
+      "taille_bytes": 311,
+      "entrees": [
+        "memo_organizer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.24/00__memo.sql": {
+      "fichier": "store/migration/sqlite/0.24/00__memo.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 214,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.25/00__remove_webhook.sql": {
+      "fichier": "store/migration/sqlite/0.25/00__remove_webhook.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 30,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.14/00__drop_resource_public_id.sql": {
+      "fichier": "store/migration/sqlite/0.14/00__drop_resource_public_id.sql",
+      "langage": "sql",
+      "lignes": 25,
+      "taille_bytes": 798,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE resource_temp",
+        "type TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.14/01__create_indexes.sql": {
+      "fichier": "store/migration/sqlite/0.14/01__create_indexes.sql",
+      "langage": "sql",
+      "lignes": 5,
+      "taille_bytes": 343,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.7/00__remove_fk.sql": {
+      "fichier": "store/migration/sqlite/0.7/00__remove_fk.sql",
+      "langage": "sql",
+      "lignes": 191,
+      "taille_bytes": 3921,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE memo",
+        "CREATE TABLE memo_organizer",
+        "CREATE TABLE memo_resource",
+        "CREATE TABLE resource",
+        "CREATE TABLE shortcut",
+        "CREATE TABLE user",
+        "CREATE TABLE user_setting",
+        "resource RENAME",
+        "type TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.7/01__remove_triggers.sql": {
+      "fichier": "store/migration/sqlite/0.7/01__remove_triggers.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 266,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.4/00__user_setting.sql": {
+      "fichier": "store/migration/sqlite/0.4/00__user_setting.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 262,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE user_setting"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.22/00__resource_storage_type.sql": {
+      "fichier": "store/migration/sqlite/0.22/00__resource_storage_type.sql",
+      "langage": "sql",
+      "lignes": 17,
+      "taille_bytes": 566,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.22/03__drop_tag.sql": {
+      "fichier": "store/migration/sqlite/0.22/03__drop_tag.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 15,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.22/02__memo_payload.sql": {
+      "fichier": "store/migration/sqlite/0.22/02__memo_payload.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 64,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.22/01__memo_tags.sql": {
+      "fichier": "store/migration/sqlite/0.22/01__memo_tags.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 105,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.19/00__add_resource_name.sql": {
+      "fichier": "store/migration/sqlite/0.19/00__add_resource_name.sql",
+      "langage": "sql",
+      "lignes": 11,
+      "taille_bytes": 411,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.6/00__recreate_triggers.sql": {
+      "fichier": "store/migration/sqlite/0.6/00__recreate_triggers.sql",
+      "langage": "sql",
+      "lignes": 59,
+      "taille_bytes": 1114,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.11/01__idp.sql": {
+      "fichier": "store/migration/sqlite/0.11/01__idp.sql",
+      "langage": "sql",
+      "lignes": 8,
+      "taille_bytes": 194,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE idp",
+        "type TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.11/00__user_avatar.sql": {
+      "fichier": "store/migration/sqlite/0.11/00__user_avatar.sql",
+      "langage": "sql",
+      "lignes": 4,
+      "taille_bytes": 68,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.11/02__storage.sql": {
+      "fichier": "store/migration/sqlite/0.11/02__storage.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 156,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE storage",
+        "type TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.8/00__migration_history.sql": {
+      "fichier": "store/migration/sqlite/0.8/00__migration_history.sql",
+      "langage": "sql",
+      "lignes": 5,
+      "taille_bytes": 168,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE IF"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.8/01__user_username.sql": {
+      "fichier": "store/migration/sqlite/0.8/01__user_username.sql",
+      "langage": "sql",
+      "lignes": 50,
+      "taille_bytes": 1030,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE user"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.16/00__add_memo_id_to_resource.sql": {
+      "fichier": "store/migration/sqlite/0.16/00__add_memo_id_to_resource.sql",
+      "langage": "sql",
+      "lignes": 13,
+      "taille_bytes": 276,
+      "entrees": [
+        "memo_resource"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.16/01__drop_shortcut_table.sql": {
+      "fichier": "store/migration/sqlite/0.16/01__drop_shortcut_table.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 31,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.9/00__tag.sql": {
+      "fichier": "store/migration/sqlite/0.9/00__tag.sql",
+      "langage": "sql",
+      "lignes": 6,
+      "taille_bytes": 108,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE tag"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.15/00__drop_user_open_id.sql": {
+      "fichier": "store/migration/sqlite/0.15/00__drop_user_open_id.sql",
+      "langage": "sql",
+      "lignes": 25,
+      "taille_bytes": 871,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE user_temp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.3/00__memo_visibility_protected.sql": {
+      "fichier": "store/migration/sqlite/0.3/00__memo_visibility_protected.sql",
+      "langage": "sql",
+      "lignes": 43,
+      "taille_bytes": 1000,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE memo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.21/01__rename_uid.sql": {
+      "fichier": "store/migration/sqlite/0.21/01__rename_uid.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 111,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.21/00__user_description.sql": {
+      "fichier": "store/migration/sqlite/0.21/00__user_description.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 66,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.18/01__user_setting.sql": {
+      "fichier": "store/migration/sqlite/0.18/01__user_setting.sql",
+      "langage": "sql",
+      "lignes": 4,
+      "taille_bytes": 474,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/sqlite/0.18/00__webhook.sql": {
+      "fichier": "store/migration/sqlite/0.18/00__webhook.sql",
+      "langage": "sql",
+      "lignes": 12,
+      "taille_bytes": 426,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE webhook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/postgres/LATEST.sql": {
+      "fichier": "store/migration/postgres/LATEST.sql",
+      "langage": "sql",
+      "lignes": 108,
+      "taille_bytes": 2857,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE activity",
+        "CREATE TABLE attachment",
+        "CREATE TABLE idp",
+        "CREATE TABLE inbox",
+        "CREATE TABLE memo",
+        "CREATE TABLE memo_relation",
+        "CREATE TABLE reaction",
+        "CREATE TABLE system_setting",
+        "CREATE TABLE user_setting",
+        "message TEXT",
+        "type TEXT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "store/migration/postgres/0.20/00__reaction.sql": {
+      "fichier": "store/migration/postgres/0.20/00__reaction.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 266,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE reaction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

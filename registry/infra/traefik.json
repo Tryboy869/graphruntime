@@ -1,0 +1,1545 @@
+{
+  "meta": {
+    "projet": "traefik",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "go": 30,
+      "yaml": 33,
+      "toml": 5,
+      "json": 47,
+      "javascript": 2,
+      "shell": 3
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "generate.go"
+  },
+  "noeuds": {
+    "generate.go": {
+      "fichier": "generate.go",
+      "langage": "go",
+      "lignes": 5,
+      "taille_bytes": 63,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "traefik.sample.yml": {
+      "fichier": "traefik.sample.yml",
+      "langage": "yaml",
+      "lignes": 155,
+      "taille_bytes": 3595,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".golangci.yml": {
+      "fichier": ".golangci.yml",
+      "langage": "yaml",
+      "lignes": 352,
+      "taille_bytes": 11614,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "traefik.sample.toml": {
+      "fichier": "traefik.sample.toml",
+      "langage": "toml",
+      "lignes": 156,
+      "taille_bytes": 3632,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/configuration.go": {
+      "fichier": "cmd/configuration.go",
+      "langage": "go",
+      "lignes": 39,
+      "taille_bytes": 1157,
+      "entrees": [],
+      "sorties": [
+        "func NewTraefikConfiguration",
+        "type TraefikCmdConfiguration"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/traefik/traefik_test.go": {
+      "fichier": "cmd/traefik/traefik_test.go",
+      "langage": "go",
+      "lignes": 186,
+      "taille_bytes": 5115,
+      "entrees": [],
+      "sorties": [
+        "const barCert",
+        "const fooCert",
+        "func TestAppendCertMetric",
+        "func TestGetDefaultsEntrypoints",
+        "type gaugeMock"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/traefik/traefik.go": {
+      "fichier": "cmd/traefik/traefik.go",
+      "langage": "go",
+      "lignes": 672,
+      "taille_bytes": 21845,
+      "entrees": [],
+      "sorties": [
+        "func appendCertMetric",
+        "func checkNewVersion",
+        "func collect",
+        "func getDefaultsEntrypoints",
+        "func getHTTPChallengeHandler",
+        "func initACMEProvider",
+        "func initTailscaleProviders",
+        "func main",
+        "func registerMetricClients",
+        "func runCmd",
+        "func setupAccessLog",
+        "func setupServer",
+        "func setupTracing",
+        "func stats",
+        "func switchRouter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/traefik/logger.go": {
+      "fichier": "cmd/traefik/logger.go",
+      "langage": "go",
+      "lignes": 110,
+      "taille_bytes": 3382,
+      "entrees": [],
+      "sorties": [
+        "func getLogLevel",
+        "func getLogWriter",
+        "func init",
+        "func setupLogger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/traefik/plugins.go": {
+      "fichier": "cmd/traefik/plugins.go",
+      "langage": "go",
+      "lignes": 102,
+      "taille_bytes": 2795,
+      "entrees": [],
+      "sorties": [
+        "const outputDir",
+        "func checkUniquePluginNames",
+        "func createPluginBuilder",
+        "func hasLocalPlugins",
+        "func hasPlugins",
+        "func initPlugins"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/internal/gen/centrifuge.go": {
+      "fichier": "cmd/internal/gen/centrifuge.go",
+      "langage": "go",
+      "lignes": 332,
+      "taille_bytes": 6399,
+      "entrees": [],
+      "sorties": [
+        "func NewCentrifuge",
+        "func extractPackage",
+        "func lookupTagValue",
+        "type Centrifuge",
+        "type Element",
+        "type File",
+        "type fileWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/internal/gen/main.go": {
+      "fichier": "cmd/internal/gen/main.go",
+      "langage": "go",
+      "lignes": 124,
+      "taille_bytes": 2803,
+      "entrees": [],
+      "sorties": [
+        "const marsh",
+        "const rootPkg",
+        "func cleanPackage",
+        "func cleanType",
+        "func main",
+        "func run",
+        "type JSONPayload"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/version/version.go": {
+      "fichier": "cmd/version/version.go",
+      "langage": "go",
+      "lignes": 60,
+      "taille_bytes": 1174,
+      "entrees": [],
+      "sorties": [
+        "func GetPrint",
+        "func NewCmd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/healthcheck/healthcheck.go": {
+      "fichier": "cmd/healthcheck/healthcheck.go",
+      "langage": "go",
+      "lignes": 84,
+      "taille_bytes": 2011,
+      "entrees": [],
+      "sorties": [
+        "func Do",
+        "func NewCmd",
+        "func runCmd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/.markdownlint.json": {
+      "fichier": "docs/.markdownlint.json",
+      "langage": "json",
+      "lignes": 13,
+      "taille_bytes": 240,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/mkdocs.yml": {
+      "fichier": "docs/mkdocs.yml",
+      "langage": "yaml",
+      "lignes": 395,
+      "taille_bytes": 28563,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/static-configuration/file.toml": {
+      "fichier": "docs/content/reference/static-configuration/file.toml",
+      "langage": "toml",
+      "lignes": 648,
+      "taille_bytes": 18219,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/static-configuration/file.yaml": {
+      "fichier": "docs/content/reference/static-configuration/file.yaml",
+      "langage": "yaml",
+      "lignes": 715,
+      "taille_bytes": 14783,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/file.toml": {
+      "fichier": "docs/content/reference/dynamic-configuration/file.toml",
+      "langage": "toml",
+      "lignes": 636,
+      "taille_bytes": 21370,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml",
+      "langage": "yaml",
+      "lignes": 4044,
+      "taille_bytes": 217231,
+      "entrees": [
+        "EntryPoint",
+        "RedirectRegex",
+        "clients",
+        "the"
+      ],
+      "sorties": [
+        "service configuration",
+        "type to"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-gateway-rbac.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-gateway-rbac.yml",
+      "langage": "yaml",
+      "lignes": 79,
+      "taille_bytes": 1573,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_ingressroutes.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_ingressroutes.yaml",
+      "langage": "yaml",
+      "lignes": 486,
+      "taille_bytes": 26999,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_middlewaretcps.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_middlewaretcps.yaml",
+      "langage": "yaml",
+      "lignes": 89,
+      "taille_bytes": 3761,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-whoami-svc.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-whoami-svc.yml",
+      "langage": "yaml",
+      "lignes": 34,
+      "taille_bytes": 414,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_ingressroutetcps.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_ingressroutetcps.yaml",
+      "langage": "yaml",
+      "lignes": 263,
+      "taille_bytes": 13372,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-gateway-simple-https.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-gateway-simple-https.yml",
+      "langage": "yaml",
+      "lignes": 49,
+      "taille_bytes": 792,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/file.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/file.yaml",
+      "langage": "yaml",
+      "lignes": 720,
+      "taille_bytes": 16184,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_tlsstores.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_tlsstores.yaml",
+      "langage": "yaml",
+      "lignes": 97,
+      "taille_bytes": 4073,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-gateway-traefik-lb-svc.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-gateway-traefik-lb-svc.yml",
+      "langage": "yaml",
+      "lignes": 61,
+      "taille_bytes": 1036,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_ingressrouteudps.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_ingressrouteudps.yaml",
+      "langage": "yaml",
+      "lignes": 116,
+      "taille_bytes": 5284,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml",
+      "langage": "yaml",
+      "lignes": 81,
+      "taille_bytes": 1563,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_serverstransports.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_serverstransports.yaml",
+      "langage": "yaml",
+      "lignes": 184,
+      "taille_bytes": 8465,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-ingress-nginx-rbac.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-ingress-nginx-rbac.yml",
+      "langage": "yaml",
+      "lignes": 66,
+      "taille_bytes": 1387,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_middlewares.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_middlewares.yaml",
+      "langage": "yaml",
+      "lignes": 1409,
+      "taille_bytes": 77888,
+      "entrees": [
+        "EntryPoint",
+        "RedirectRegex",
+        "the"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-gateway-resource.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-gateway-resource.yml",
+      "langage": "yaml",
+      "lignes": 115,
+      "taille_bytes": 1971,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-crd-resource.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-crd-resource.yml",
+      "langage": "yaml",
+      "lignes": 244,
+      "taille_bytes": 4697,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_traefikservices.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_traefikservices.yaml",
+      "langage": "yaml",
+      "lignes": 1125,
+      "taille_bytes": 64526,
+      "entrees": [],
+      "sorties": [
+        "service configuration"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/kubernetes-knative-rbac.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/kubernetes-knative-rbac.yml",
+      "langage": "yaml",
+      "lignes": 49,
+      "taille_bytes": 876,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/docker-labels.yml": {
+      "fichier": "docs/content/reference/dynamic-configuration/docker-labels.yml",
+      "langage": "yaml",
+      "lignes": 283,
+      "taille_bytes": 20290,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_serverstransporttcps.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_serverstransporttcps.yaml",
+      "langage": "yaml",
+      "lignes": 157,
+      "taille_bytes": 7457,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/dynamic-configuration/traefik.io_tlsoptions.yaml": {
+      "fichier": "docs/content/reference/dynamic-configuration/traefik.io_tlsoptions.yaml",
+      "langage": "yaml",
+      "lignes": 119,
+      "taille_bytes": 5410,
+      "entrees": [
+        "clients"
+      ],
+      "sorties": [
+        "type to"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/routing-configuration/other-providers/file.toml": {
+      "fichier": "docs/content/reference/routing-configuration/other-providers/file.toml",
+      "langage": "toml",
+      "lignes": 666,
+      "taille_bytes": 22484,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/reference/routing-configuration/other-providers/file.yaml": {
+      "fichier": "docs/content/reference/routing-configuration/other-providers/file.yaml",
+      "langage": "yaml",
+      "lignes": 760,
+      "taille_bytes": 17166,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/user-guides/docker-compose/acme-dns/docker-compose.yml": {
+      "fichier": "docs/content/user-guides/docker-compose/acme-dns/docker-compose.yml",
+      "langage": "yaml",
+      "lignes": 38,
+      "taille_bytes": 1372,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/user-guides/docker-compose/acme-dns/docker-compose_secrets.yml": {
+      "fichier": "docs/content/user-guides/docker-compose/acme-dns/docker-compose_secrets.yml",
+      "langage": "yaml",
+      "lignes": 53,
+      "taille_bytes": 1911,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/user-guides/docker-compose/acme-http/docker-compose.yml": {
+      "fichier": "docs/content/user-guides/docker-compose/acme-http/docker-compose.yml",
+      "langage": "yaml",
+      "lignes": 33,
+      "taille_bytes": 1230,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/user-guides/docker-compose/acme-tls/docker-compose.yml": {
+      "fichier": "docs/content/user-guides/docker-compose/acme-tls/docker-compose.yml",
+      "langage": "yaml",
+      "lignes": 30,
+      "taille_bytes": 1094,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/user-guides/docker-compose/basic-example/docker-compose.yml": {
+      "fichier": "docs/content/user-guides/docker-compose/basic-example/docker-compose.yml",
+      "langage": "yaml",
+      "lignes": 24,
+      "taille_bytes": 631,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/assets/js/extra.js": {
+      "fichier": "docs/content/assets/js/extra.js",
+      "langage": "javascript",
+      "lignes": 14,
+      "taille_bytes": 511,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/assets/js/hljs/highlight.pack.js": {
+      "fichier": "docs/content/assets/js/hljs/highlight.pack.js",
+      "langage": "javascript",
+      "lignes": 2,
+      "taille_bytes": 29390,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/operations/.markdownlint.json": {
+      "fichier": "docs/content/operations/.markdownlint.json",
+      "langage": "json",
+      "lignes": 5,
+      "taille_bytes": 86,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/routing/services/.markdownlint.json": {
+      "fichier": "docs/content/routing/services/.markdownlint.json",
+      "langage": "json",
+      "lignes": 5,
+      "taille_bytes": 89,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/routing/routers/.markdownlint.json": {
+      "fichier": "docs/content/routing/routers/.markdownlint.json",
+      "langage": "json",
+      "lignes": 4,
+      "taille_bytes": 69,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/https/ref-acme.yaml": {
+      "fichier": "docs/content/https/ref-acme.yaml",
+      "langage": "yaml",
+      "lignes": 125,
+      "taille_bytes": 3205,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/https/.markdownlint.json": {
+      "fichier": "docs/content/https/.markdownlint.json",
+      "langage": "json",
+      "lignes": 4,
+      "taille_bytes": 66,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/https/ref-acme.toml": {
+      "fichier": "docs/content/https/ref-acme.toml",
+      "langage": "toml",
+      "lignes": 121,
+      "taille_bytes": 2892,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/content/includes/.markdownlint.json": {
+      "fichier": "docs/content/includes/.markdownlint.json",
+      "langage": "json",
+      "lignes": 4,
+      "taille_bytes": 62,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/scripts/lint.sh": {
+      "fichier": "docs/scripts/lint.sh",
+      "langage": "shell",
+      "lignes": 32,
+      "taille_bytes": 1100,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/scripts/lint-yaml.sh": {
+      "fichier": "docs/scripts/lint-yaml.sh",
+      "langage": "shell",
+      "lignes": 48,
+      "taille_bytes": 1670,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/scripts/verify.sh": {
+      "fichier": "docs/scripts/verify.sh",
+      "langage": "shell",
+      "lignes": 28,
+      "taille_bytes": 1470,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/debug.go": {
+      "fichier": "pkg/api/debug.go",
+      "langage": "go",
+      "lignes": 49,
+      "taille_bytes": 1372,
+      "entrees": [],
+      "sorties": [
+        "func goroutines",
+        "func init",
+        "type DebugHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/sort.go": {
+      "fichier": "pkg/api/sort.go",
+      "langage": "go",
+      "lignes": 381,
+      "taille_bytes": 7886,
+      "entrees": [],
+      "sorties": [
+        "func sortByFunc",
+        "func sortByName",
+        "func sortMiddlewares",
+        "func sortRouters",
+        "func sortServices",
+        "type orderedMiddleware",
+        "type orderedRouter",
+        "type orderedService",
+        "type orderedWithName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_http_test.go": {
+      "fichier": "pkg/api/handler_http_test.go",
+      "langage": "go",
+      "lignes": 1061,
+      "taille_bytes": 29122,
+      "entrees": [],
+      "sorties": [
+        "func TestHandler_HTTP",
+        "func generateHTTPRouters",
+        "func pointer",
+        "type expected"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/criterion.go": {
+      "fichier": "pkg/api/criterion.go",
+      "langage": "go",
+      "lignes": 127,
+      "taille_bytes": 2702,
+      "entrees": [],
+      "sorties": [
+        "const nextPageHeader",
+        "func getIntParam",
+        "func newSearchCriterion",
+        "func pagination",
+        "type pageInfo",
+        "type searchCriterion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/sort_test.go": {
+      "fichier": "pkg/api/sort_test.go",
+      "langage": "go",
+      "lignes": 1686,
+      "taille_bytes": 33072,
+      "entrees": [],
+      "sorties": [
+        "func TestSortMiddlewares",
+        "func TestSortRouters",
+        "func TestSortServices"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_overview.go": {
+      "fichier": "pkg/api/handler_overview.go",
+      "langage": "go",
+      "lignes": 287,
+      "taille_bytes": 6625,
+      "entrees": [],
+      "sorties": [
+        "func getFeatures",
+        "func getHTTPMiddlewareSection",
+        "func getHTTPRouterSection",
+        "func getHTTPServiceSection",
+        "func getMetrics",
+        "func getProviders",
+        "func getTCPMiddlewareSection",
+        "func getTCPRouterSection",
+        "func getTCPServiceSection",
+        "func getTracing",
+        "func getUDPRouterSection",
+        "func getUDPServiceSection",
+        "type features",
+        "type overview",
+        "type schemeOverview",
+        "type section"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_overview_test.go": {
+      "fichier": "pkg/api/handler_overview_test.go",
+      "langage": "go",
+      "lignes": 311,
+      "taille_bytes": 8672,
+      "entrees": [],
+      "sorties": [
+        "func TestHandler_Overview",
+        "type expected"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_http.go": {
+      "fichier": "pkg/api/handler_http.go",
+      "langage": "go",
+      "lignes": 270,
+      "taille_bytes": 7739,
+      "entrees": [],
+      "sorties": [
+        "func keepMiddleware",
+        "func keepRouter",
+        "func keepService",
+        "func newMiddlewareRepresentation",
+        "func newRouterRepresentation",
+        "func newServiceRepresentation",
+        "type middlewareRepresentation",
+        "type routerRepresentation",
+        "type serviceRepresentation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_tcp_test.go": {
+      "fichier": "pkg/api/handler_tcp_test.go",
+      "langage": "go",
+      "lignes": 983,
+      "taille_bytes": 27542,
+      "entrees": [],
+      "sorties": [
+        "func TestHandler_TCP",
+        "type expected"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_udp.go": {
+      "fichier": "pkg/api/handler_udp.go",
+      "langage": "go",
+      "lignes": 178,
+      "taille_bytes": 4947,
+      "entrees": [],
+      "sorties": [
+        "func keepUDPRouter",
+        "func keepUDPService",
+        "func newUDPRouterRepresentation",
+        "func newUDPServiceRepresentation",
+        "type udpRouterRepresentation",
+        "type udpServiceRepresentation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_test.go": {
+      "fichier": "pkg/api/handler_test.go",
+      "langage": "go",
+      "lignes": 281,
+      "taille_bytes": 6971,
+      "entrees": [],
+      "sorties": [
+        "func TestHandler_GetMiddleware",
+        "func TestHandler_RawData",
+        "type expected"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_entrypoint_test.go": {
+      "fichier": "pkg/api/handler_entrypoint_test.go",
+      "langage": "go",
+      "lignes": 265,
+      "taille_bytes": 6885,
+      "entrees": [],
+      "sorties": [
+        "func TestHandler_EntryPoints",
+        "func generateEntryPoints",
+        "type expected"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_entrypoint.go": {
+      "fichier": "pkg/api/handler_entrypoint.go",
+      "langage": "go",
+      "lignes": 80,
+      "taille_bytes": 2017,
+      "entrees": [],
+      "sorties": [
+        "type entryPointRepresentation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_support_dump_test.go": {
+      "fichier": "pkg/api/handler_support_dump_test.go",
+      "langage": "go",
+      "lignes": 144,
+      "taille_bytes": 3908,
+      "entrees": [],
+      "sorties": [
+        "func TestHandler_SupportDump",
+        "func extractTarGz"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_support_dump.go": {
+      "fichier": "pkg/api/handler_support_dump.go",
+      "langage": "go",
+      "lignes": 96,
+      "taille_bytes": 2582,
+      "entrees": [],
+      "sorties": [
+        "func addFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_tcp.go": {
+      "fichier": "pkg/api/handler_tcp.go",
+      "langage": "go",
+      "lignes": 265,
+      "taille_bytes": 7792,
+      "entrees": [],
+      "sorties": [
+        "func keepTCPMiddleware",
+        "func keepTCPRouter",
+        "func keepTCPService",
+        "func newTCPMiddlewareRepresentation",
+        "func newTCPRouterRepresentation",
+        "func newTCPServiceRepresentation",
+        "type tcpMiddlewareRepresentation",
+        "type tcpRouterRepresentation",
+        "type tcpServiceRepresentation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler_udp_test.go": {
+      "fichier": "pkg/api/handler_udp_test.go",
+      "langage": "go",
+      "lignes": 613,
+      "taille_bytes": 15845,
+      "entrees": [],
+      "sorties": [
+        "func TestHandler_UDP",
+        "type expected"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/handler.go": {
+      "fichier": "pkg/api/handler.go",
+      "langage": "go",
+      "lignes": 187,
+      "taille_bytes": 6929,
+      "entrees": [],
+      "sorties": [
+        "func New",
+        "func NewBuilder",
+        "func extractType",
+        "func getProviderName",
+        "func writeError",
+        "type Handler",
+        "type RunTimeRepresentation",
+        "type apiError",
+        "type serviceInfoRepresentation",
+        "type tcpServiceInfoRepresentation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/dashboard/dashboard_test.go": {
+      "fichier": "pkg/api/dashboard/dashboard_test.go",
+      "langage": "go",
+      "lignes": 115,
+      "taille_bytes": 2365,
+      "entrees": [],
+      "sorties": [
+        "func Test_ContentSecurityPolicy",
+        "func Test_XForwardedPrefix",
+        "type errorFS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/dashboard/dashboard.go": {
+      "fichier": "pkg/api/dashboard/dashboard.go",
+      "langage": "go",
+      "lignes": 127,
+      "taille_bytes": 4152,
+      "entrees": [],
+      "sorties": [
+        "func Append",
+        "type Handler",
+        "type indexTemplateData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/services.json": {
+      "fichier": "pkg/api/testdata/services.json",
+      "langage": "json",
+      "lignes": 87,
+      "taille_bytes": 1358,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/router-foo-slash-bar.json": {
+      "fichier": "pkg/api/testdata/router-foo-slash-bar.json",
+      "langage": "json",
+      "lignes": 18,
+      "taille_bytes": 292,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcprouters-filtered-search.json": {
+      "fichier": "pkg/api/testdata/tcprouters-filtered-search.json",
+      "langage": "json",
+      "lignes": 16,
+      "taille_bytes": 237,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/middlewares.json": {
+      "fichier": "pkg/api/testdata/middlewares.json",
+      "langage": "json",
+      "lignes": 41,
+      "taille_bytes": 642,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/middlewares-page2.json": {
+      "fichier": "pkg/api/testdata/middlewares-page2.json",
+      "langage": "json",
+      "lignes": 14,
+      "taille_bytes": 203,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/routers-filtered-status.json": {
+      "fichier": "pkg/api/testdata/routers-filtered-status.json",
+      "langage": "json",
+      "lignes": 20,
+      "taille_bytes": 298,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcprouter-bar.json": {
+      "fichier": "pkg/api/testdata/tcprouter-bar.json",
+      "langage": "json",
+      "lignes": 14,
+      "taille_bytes": 219,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/middlewares-empty.json": {
+      "fichier": "pkg/api/testdata/middlewares-empty.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/services-filtered-status.json": {
+      "fichier": "pkg/api/testdata/services-filtered-status.json",
+      "langage": "json",
+      "lignes": 23,
+      "taille_bytes": 343,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/udprouters-filtered-search.json": {
+      "fichier": "pkg/api/testdata/udprouters-filtered-search.json",
+      "langage": "json",
+      "lignes": 14,
+      "taille_bytes": 186,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/udprouter-foo-slash-bar.json": {
+      "fichier": "pkg/api/testdata/udprouter-foo-slash-bar.json",
+      "langage": "json",
+      "lignes": 12,
+      "taille_bytes": 177,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/service-bar.json": {
+      "fichier": "pkg/api/testdata/service-bar.json",
+      "langage": "json",
+      "lignes": 21,
+      "taille_bytes": 318,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/routers-filtered-search.json": {
+      "fichier": "pkg/api/testdata/routers-filtered-search.json",
+      "langage": "json",
+      "lignes": 20,
+      "taille_bytes": 298,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/overview-features.json": {
+      "fichier": "pkg/api/testdata/overview-features.json",
+      "langage": "json",
+      "lignes": 53,
+      "taille_bytes": 682,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/udprouters-page2.json": {
+      "fichier": "pkg/api/testdata/udprouters-page2.json",
+      "langage": "json",
+      "lignes": 14,
+      "taille_bytes": 186,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/router-bar.json": {
+      "fichier": "pkg/api/testdata/router-bar.json",
+      "langage": "json",
+      "lignes": 18,
+      "taille_bytes": 285,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/middlewares-filtered-status.json": {
+      "fichier": "pkg/api/testdata/middlewares-filtered-status.json",
+      "langage": "json",
+      "lignes": 29,
+      "taille_bytes": 441,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/udprouters-filtered-status.json": {
+      "fichier": "pkg/api/testdata/udprouters-filtered-status.json",
+      "langage": "json",
+      "lignes": 14,
+      "taille_bytes": 187,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcpmiddleware-ipallowlist.json": {
+      "fichier": "pkg/api/testdata/tcpmiddleware-ipallowlist.json",
+      "langage": "json",
+      "lignes": 13,
+      "taille_bytes": 224,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcprouters.json": {
+      "fichier": "pkg/api/testdata/tcprouters.json",
+      "langage": "json",
+      "lignes": 47,
+      "taille_bytes": 755,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/overview-dynamic.json": {
+      "fichier": "pkg/api/testdata/overview-dynamic.json",
+      "langage": "json",
+      "lignes": 53,
+      "taille_bytes": 672,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/router-baz-custom-tls-options.json": {
+      "fichier": "pkg/api/testdata/router-baz-custom-tls-options.json",
+      "langage": "json",
+      "lignes": 21,
+      "taille_bytes": 321,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcpservices-filtered-status.json": {
+      "fichier": "pkg/api/testdata/tcpservices-filtered-status.json",
+      "langage": "json",
+      "lignes": 22,
+      "taille_bytes": 316,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/entrypoints.json": {
+      "fichier": "pkg/api/testdata/entrypoints.json",
+      "langage": "json",
+      "lignes": 62,
+      "taille_bytes": 1015,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/entrypoints-page2.json": {
+      "fichier": "pkg/api/testdata/entrypoints-page2.json",
+      "langage": "json",
+      "lignes": 7,
+      "taille_bytes": 61,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcprouters-page2.json": {
+      "fichier": "pkg/api/testdata/tcprouters-page2.json",
+      "langage": "json",
+      "lignes": 16,
+      "taille_bytes": 238,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcprouter-foo-slash-bar.json": {
+      "fichier": "pkg/api/testdata/tcprouter-foo-slash-bar.json",
+      "langage": "json",
+      "lignes": 14,
+      "taille_bytes": 226,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcpservices-empty.json": {
+      "fichier": "pkg/api/testdata/tcpservices-empty.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcpservices.json": {
+      "fichier": "pkg/api/testdata/tcpservices.json",
+      "langage": "json",
+      "lignes": 60,
+      "taille_bytes": 901,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/middleware-foo-slash-bar.json": {
+      "fichier": "pkg/api/testdata/middleware-foo-slash-bar.json",
+      "langage": "json",
+      "lignes": 12,
+      "taille_bytes": 196,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcprouters-filtered-serviceName.json": {
+      "fichier": "pkg/api/testdata/tcprouters-filtered-serviceName.json",
+      "langage": "json",
+      "lignes": 33,
+      "taille_bytes": 508,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/udpservice-foo-slash-bar.json": {
+      "fichier": "pkg/api/testdata/udpservice-foo-slash-bar.json",
+      "langage": "json",
+      "lignes": 17,
+      "taille_bytes": 251,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/entrypoint-foo-slash-bar.json": {
+      "fichier": "pkg/api/testdata/entrypoint-foo-slash-bar.json",
+      "langage": "json",
+      "lignes": 5,
+      "taille_bytes": 57,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcpmiddlewares-empty.json": {
+      "fichier": "pkg/api/testdata/tcpmiddlewares-empty.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/udpservices.json": {
+      "fichier": "pkg/api/testdata/udpservices.json",
+      "langage": "json",
+      "lignes": 51,
+      "taille_bytes": 748,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/routers-many-lastpage.json": {
+      "fichier": "pkg/api/testdata/routers-many-lastpage.json",
+      "langage": "json",
+      "lignes": 72,
+      "taille_bytes": 1197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcpmiddlewares.json": {
+      "fichier": "pkg/api/testdata/tcpmiddlewares.json",
+      "langage": "json",
+      "lignes": 39,
+      "taille_bytes": 687,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcprouters-empty.json": {
+      "fichier": "pkg/api/testdata/tcprouters-empty.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/routers-filtered-middlewareName.json": {
+      "fichier": "pkg/api/testdata/routers-filtered-middlewareName.json",
+      "langage": "json",
+      "lignes": 38,
+      "taille_bytes": 604,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/getrawdata.json": {
+      "fichier": "pkg/api/testdata/getrawdata.json",
+      "langage": "json",
+      "lignes": 111,
+      "taille_bytes": 1841,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/api/testdata/tcpservice-bar.json": {
+      "fichier": "pkg/api/testdata/tcpservice-bar.json",
+      "langage": "json",
+      "lignes": 20,
+      "taille_bytes": 292,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

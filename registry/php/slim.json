@@ -1,0 +1,1358 @@
+{
+  "meta": {
+    "projet": "Slim",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 1,
+      "php": 72
+    }
+  },
+  "stats": {
+    "fichiers_total": 73,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "composer.json"
+  },
+  "noeuds": {
+    "composer.json": {
+      "fichier": "composer.json",
+      "langage": "json",
+      "lignes": 105,
+      "taille_bytes": 3577,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Logger.php": {
+      "fichier": "Slim/Logger.php",
+      "langage": "php",
+      "lignes": 32,
+      "taille_bytes": 637,
+      "entrees": [
+        "Psr\\Log\\AbstractLogger",
+        "Psr\\Log\\InvalidArgumentException",
+        "Stringable",
+        "function"
+      ],
+      "sorties": [
+        "class Logger",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/ResponseEmitter.php": {
+      "fichier": "Slim/ResponseEmitter.php",
+      "langage": "php",
+      "lignes": 136,
+      "taille_bytes": 3577,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "const",
+        "function"
+      ],
+      "sorties": [
+        "class ResponseEmitter",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/CallableResolver.php": {
+      "fichier": "Slim/CallableResolver.php",
+      "langage": "php",
+      "lignes": 200,
+      "taille_bytes": 6074,
+      "entrees": [
+        "Closure",
+        "Psr\\Container\\ContainerInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "RuntimeException",
+        "Slim\\Interfaces\\AdvancedCallableResolverInterface",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/MiddlewareDispatcher.php": {
+      "fichier": "Slim/MiddlewareDispatcher.php",
+      "langage": "php",
+      "lignes": 289,
+      "taille_bytes": 9460,
+      "entrees": [
+        "Closure",
+        "Psr\\Container\\ContainerInterface",
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "RuntimeException",
+        "Slim\\Interfaces\\AdvancedCallableResolverInterface",
+        "Slim\\Interfaces\\CallableResolverInterface",
+        "Slim\\Interfaces\\MiddlewareDispatcherInterface",
+        "function"
+      ],
+      "sorties": [
+        "class MiddlewareDispatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/App.php": {
+      "fichier": "Slim/App.php",
+      "langage": "php",
+      "lignes": 226,
+      "taille_bytes": 7048,
+      "entrees": [
+        "Psr\\Container\\ContainerInterface",
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "Psr\\Log\\LoggerInterface",
+        "Slim\\Factory\\ServerRequestCreatorFactory",
+        "Slim\\Interfaces\\CallableResolverInterface",
+        "Slim\\Interfaces\\MiddlewareDispatcherInterface",
+        "Slim\\Interfaces\\RouteCollectorInterface",
+        "Slim\\Interfaces\\RouteResolverInterface",
+        "Slim\\Middleware\\BodyParsingMiddleware",
+        "Slim\\Middleware\\ErrorMiddleware",
+        "Slim\\Middleware\\RoutingMiddleware",
+        "Slim\\Routing\\RouteCollectorProxy",
+        "Slim\\Routing\\RouteResolver",
+        "Slim\\Routing\\RouteRunner",
+        "function"
+      ],
+      "sorties": [
+        "class App",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Error/AbstractErrorRenderer.php": {
+      "fichier": "Slim/Error/AbstractErrorRenderer.php",
+      "langage": "php",
+      "lignes": 46,
+      "taille_bytes": 1200,
+      "entrees": [
+        "Slim\\Exception\\HttpException",
+        "Slim\\Interfaces\\ErrorRendererInterface",
+        "Throwable"
+      ],
+      "sorties": [
+        "abstract class AbstractErrorRenderer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Error/Renderers/JsonErrorRenderer.php": {
+      "fichier": "Slim/Error/Renderers/JsonErrorRenderer.php",
+      "langage": "php",
+      "lignes": 55,
+      "taille_bytes": 1405,
+      "entrees": [
+        "Slim\\Error\\AbstractErrorRenderer",
+        "Throwable",
+        "const",
+        "function"
+      ],
+      "sorties": [
+        "class JsonErrorRenderer",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Error/Renderers/HtmlErrorRenderer.php": {
+      "fichier": "Slim/Error/Renderers/HtmlErrorRenderer.php",
+      "langage": "php",
+      "lignes": 83,
+      "taille_bytes": 2733,
+      "entrees": [
+        "Slim\\Error\\AbstractErrorRenderer",
+        "Throwable",
+        "function"
+      ],
+      "sorties": [
+        "class HtmlErrorRenderer",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Error/Renderers/PlainTextErrorRenderer.php": {
+      "fichier": "Slim/Error/Renderers/PlainTextErrorRenderer.php",
+      "langage": "php",
+      "lignes": 59,
+      "taille_bytes": 1468,
+      "entrees": [
+        "Slim\\Error\\AbstractErrorRenderer",
+        "Throwable",
+        "function"
+      ],
+      "sorties": [
+        "class PlainTextErrorRenderer",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Error/Renderers/XmlErrorRenderer.php": {
+      "fichier": "Slim/Error/Renderers/XmlErrorRenderer.php",
+      "langage": "php",
+      "lignes": 54,
+      "taille_bytes": 1664,
+      "entrees": [
+        "Slim\\Error\\AbstractErrorRenderer",
+        "Throwable",
+        "function"
+      ],
+      "sorties": [
+        "class XmlErrorRenderer",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Handlers/ErrorHandler.php": {
+      "fichier": "Slim/Handlers/ErrorHandler.php",
+      "langage": "php",
+      "lignes": 314,
+      "taille_bytes": 9948,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Log\\LoggerInterface",
+        "RuntimeException",
+        "Slim\\Error\\Renderers\\HtmlErrorRenderer",
+        "Slim\\Error\\Renderers\\JsonErrorRenderer",
+        "Slim\\Error\\Renderers\\PlainTextErrorRenderer",
+        "Slim\\Error\\Renderers\\XmlErrorRenderer",
+        "Slim\\Exception\\HttpException",
+        "Slim\\Exception\\HttpMethodNotAllowedException",
+        "Slim\\Interfaces\\CallableResolverInterface",
+        "Slim\\Interfaces\\ErrorHandlerInterface",
+        "Slim\\Interfaces\\ErrorRendererInterface",
+        "Slim\\Logger",
+        "Throwable",
+        "function"
+      ],
+      "sorties": [
+        "class ErrorHandler",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Handlers/Strategies/RequestResponseArgs.php": {
+      "fichier": "Slim/Handlers/Strategies/RequestResponseArgs.php",
+      "langage": "php",
+      "lignes": 40,
+      "taille_bytes": 1033,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Slim\\Interfaces\\InvocationStrategyInterface",
+        "function"
+      ],
+      "sorties": [
+        "class RequestResponseArgs",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Handlers/Strategies/RequestResponse.php": {
+      "fichier": "Slim/Handlers/Strategies/RequestResponse.php",
+      "langage": "php",
+      "lignes": 41,
+      "taille_bytes": 1102,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Slim\\Interfaces\\InvocationStrategyInterface"
+      ],
+      "sorties": [
+        "class RequestResponse",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Handlers/Strategies/RequestHandler.php": {
+      "fichier": "Slim/Handlers/Strategies/RequestHandler.php",
+      "langage": "php",
+      "lignes": 49,
+      "taille_bytes": 1366,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Slim\\Interfaces\\RequestHandlerInvocationStrategyInterface"
+      ],
+      "sorties": [
+        "class RequestHandler",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Handlers/Strategies/RequestResponseNamedArgs.php": {
+      "fichier": "Slim/Handlers/Strategies/RequestResponseNamedArgs.php",
+      "langage": "php",
+      "lignes": 39,
+      "taille_bytes": 1018,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "RuntimeException",
+        "Slim\\Interfaces\\InvocationStrategyInterface"
+      ],
+      "sorties": [
+        "class RequestResponseNamedArgs",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/RouteRunner.php": {
+      "fichier": "Slim/Routing/RouteRunner.php",
+      "langage": "php",
+      "lignes": 76,
+      "taille_bytes": 2656,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "Slim\\Exception\\HttpMethodNotAllowedException",
+        "Slim\\Exception\\HttpNotFoundException",
+        "Slim\\Interfaces\\RouteCollectorProxyInterface",
+        "Slim\\Interfaces\\RouteParserInterface",
+        "Slim\\Interfaces\\RouteResolverInterface",
+        "Slim\\Middleware\\RoutingMiddleware"
+      ],
+      "sorties": [
+        "class RouteRunner",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/RouteResolver.php": {
+      "fichier": "Slim/Routing/RouteResolver.php",
+      "langage": "php",
+      "lignes": 56,
+      "taille_bytes": 1512,
+      "entrees": [
+        "RuntimeException",
+        "Slim\\Interfaces\\DispatcherInterface",
+        "Slim\\Interfaces\\RouteCollectorInterface",
+        "Slim\\Interfaces\\RouteInterface",
+        "Slim\\Interfaces\\RouteResolverInterface",
+        "function"
+      ],
+      "sorties": [
+        "class RouteResolver",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/RouteCollector.php": {
+      "fichier": "Slim/Routing/RouteCollector.php",
+      "langage": "php",
+      "lignes": 302,
+      "taille_bytes": 7988,
+      "entrees": [
+        "Psr\\Container\\ContainerInterface",
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "RuntimeException",
+        "Slim\\Handlers\\Strategies\\RequestResponse",
+        "Slim\\Interfaces\\CallableResolverInterface",
+        "Slim\\Interfaces\\InvocationStrategyInterface",
+        "Slim\\Interfaces\\RouteCollectorInterface",
+        "Slim\\Interfaces\\RouteCollectorProxyInterface",
+        "Slim\\Interfaces\\RouteGroupInterface",
+        "Slim\\Interfaces\\RouteInterface",
+        "Slim\\Interfaces\\RouteParserInterface",
+        "function"
+      ],
+      "sorties": [
+        "class RouteCollector",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/RouteCollectorProxy.php": {
+      "fichier": "Slim/Routing/RouteCollectorProxy.php",
+      "langage": "php",
+      "lignes": 196,
+      "taille_bytes": 4906,
+      "entrees": [
+        "Psr\\Container\\ContainerInterface",
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Slim\\Interfaces\\CallableResolverInterface",
+        "Slim\\Interfaces\\RouteCollectorInterface",
+        "Slim\\Interfaces\\RouteCollectorProxyInterface",
+        "Slim\\Interfaces\\RouteGroupInterface",
+        "Slim\\Interfaces\\RouteInterface"
+      ],
+      "sorties": [
+        "class RouteCollectorProxy",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/RouteContext.php": {
+      "fichier": "Slim/Routing/RouteContext.php",
+      "langage": "php",
+      "lignes": 89,
+      "taille_bytes": 2426,
+      "entrees": [
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "RuntimeException",
+        "Slim\\Interfaces\\RouteInterface",
+        "Slim\\Interfaces\\RouteParserInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/Dispatcher.php": {
+      "fichier": "Slim/Routing/Dispatcher.php",
+      "langage": "php",
+      "lignes": 78,
+      "taille_bytes": 2472,
+      "entrees": [
+        "FastRoute\\DataGenerator\\GroupCountBased",
+        "FastRoute\\RouteCollector",
+        "FastRoute\\RouteParser\\Std",
+        "Slim\\Interfaces\\DispatcherInterface",
+        "Slim\\Interfaces\\RouteCollectorInterface"
+      ],
+      "sorties": [
+        "class Dispatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/FastRouteDispatcher.php": {
+      "fichier": "Slim/Routing/FastRouteDispatcher.php",
+      "langage": "php",
+      "lignes": 109,
+      "taille_bytes": 3179,
+      "entrees": [
+        "FastRoute\\Dispatcher\\GroupCountBased"
+      ],
+      "sorties": [
+        "class FastRouteDispatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/RouteGroup.php": {
+      "fichier": "Slim/Routing/RouteGroup.php",
+      "langage": "php",
+      "lignes": 109,
+      "taille_bytes": 2815,
+      "entrees": [
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Slim\\Interfaces\\AdvancedCallableResolverInterface",
+        "Slim\\Interfaces\\CallableResolverInterface",
+        "Slim\\Interfaces\\RouteCollectorProxyInterface",
+        "Slim\\Interfaces\\RouteGroupInterface",
+        "Slim\\MiddlewareDispatcher"
+      ],
+      "sorties": [
+        "class RouteGroup",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/Route.php": {
+      "fichier": "Slim/Routing/Route.php",
+      "langage": "php",
+      "lignes": 364,
+      "taille_bytes": 9054,
+      "entrees": [
+        "Psr\\Container\\ContainerInterface",
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "Slim\\Handlers\\Strategies\\RequestHandler",
+        "Slim\\Handlers\\Strategies\\RequestResponse",
+        "Slim\\Interfaces\\AdvancedCallableResolverInterface",
+        "Slim\\Interfaces\\CallableResolverInterface",
+        "Slim\\Interfaces\\InvocationStrategyInterface",
+        "Slim\\Interfaces\\RequestHandlerInvocationStrategyInterface",
+        "Slim\\Interfaces\\RouteGroupInterface",
+        "Slim\\Interfaces\\RouteInterface",
+        "Slim\\MiddlewareDispatcher",
+        "function"
+      ],
+      "sorties": [
+        "class Route",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/RouteParser.php": {
+      "fichier": "Slim/Routing/RouteParser.php",
+      "langage": "php",
+      "lignes": 127,
+      "taille_bytes": 3906,
+      "entrees": [
+        "FastRoute\\RouteParser\\Std",
+        "InvalidArgumentException",
+        "Psr\\Http\\Message\\UriInterface",
+        "Slim\\Interfaces\\RouteCollectorInterface",
+        "Slim\\Interfaces\\RouteParserInterface",
+        "function"
+      ],
+      "sorties": [
+        "class RouteParser",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Routing/RoutingResults.php": {
+      "fichier": "Slim/Routing/RoutingResults.php",
+      "langage": "php",
+      "lignes": 113,
+      "taille_bytes": 2391,
+      "entrees": [
+        "Slim\\Interfaces\\DispatcherInterface",
+        "function"
+      ],
+      "sorties": [
+        "class RoutingResults",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/InvocationStrategyInterface.php": {
+      "fichier": "Slim/Interfaces/InvocationStrategyInterface.php",
+      "langage": "php",
+      "lignes": 37,
+      "taille_bytes": 1035,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface"
+      ],
+      "sorties": [
+        "interface InvocationStrategyInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/RouteGroupInterface.php": {
+      "fichier": "Slim/Interfaces/RouteGroupInterface.php",
+      "langage": "php",
+      "lignes": 43,
+      "taille_bytes": 1076,
+      "entrees": [
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Slim\\MiddlewareDispatcher"
+      ],
+      "sorties": [
+        "interface RouteGroupInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/Psr17FactoryProviderInterface.php": {
+      "fichier": "Slim/Interfaces/Psr17FactoryProviderInterface.php",
+      "langage": "php",
+      "lignes": 27,
+      "taille_bytes": 522,
+      "entrees": [],
+      "sorties": [
+        "interface Psr17FactoryProviderInterface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/ErrorHandlerInterface.php": {
+      "fichier": "Slim/Interfaces/ErrorHandlerInterface.php",
+      "langage": "php",
+      "lignes": 26,
+      "taille_bytes": 551,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Throwable"
+      ],
+      "sorties": [
+        "interface ErrorHandlerInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/RouteResolverInterface.php": {
+      "fichier": "Slim/Interfaces/RouteResolverInterface.php",
+      "langage": "php",
+      "lignes": 17,
+      "taille_bytes": 387,
+      "entrees": [
+        "Slim\\Routing\\RoutingResults"
+      ],
+      "sorties": [
+        "interface RouteResolverInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/DispatcherInterface.php": {
+      "fichier": "Slim/Interfaces/DispatcherInterface.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 568,
+      "entrees": [
+        "Slim\\Routing\\RoutingResults"
+      ],
+      "sorties": [
+        "interface DispatcherInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/AdvancedCallableResolverInterface.php": {
+      "fichier": "Slim/Interfaces/AdvancedCallableResolverInterface.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 665,
+      "entrees": [],
+      "sorties": [
+        "interface AdvancedCallableResolverInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/RouteInterface.php": {
+      "fichier": "Slim/Interfaces/RouteInterface.php",
+      "langage": "php",
+      "lignes": 128,
+      "taille_bytes": 2978,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface"
+      ],
+      "sorties": [
+        "interface RouteInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/RouteCollectorProxyInterface.php": {
+      "fichier": "Slim/Interfaces/RouteCollectorProxyInterface.php",
+      "langage": "php",
+      "lignes": 126,
+      "taille_bytes": 3810,
+      "entrees": [
+        "Psr\\Container\\ContainerInterface",
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Psr\\Http\\Message\\UriInterface"
+      ],
+      "sorties": [
+        "interface RouteCollectorProxyInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/RouteParserInterface.php": {
+      "fichier": "Slim/Interfaces/RouteParserInterface.php",
+      "langage": "php",
+      "lignes": 53,
+      "taille_bytes": 2177,
+      "entrees": [
+        "InvalidArgumentException",
+        "Psr\\Http\\Message\\UriInterface",
+        "RuntimeException"
+      ],
+      "sorties": [
+        "interface RouteParserInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/RouteCollectorInterface.php": {
+      "fichier": "Slim/Interfaces/RouteCollectorInterface.php",
+      "langage": "php",
+      "lignes": 103,
+      "taille_bytes": 2553,
+      "entrees": [
+        "InvalidArgumentException",
+        "RuntimeException"
+      ],
+      "sorties": [
+        "interface RouteCollectorInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/RequestHandlerInvocationStrategyInterface.php": {
+      "fichier": "Slim/Interfaces/RequestHandlerInvocationStrategyInterface.php",
+      "langage": "php",
+      "lignes": 15,
+      "taille_bytes": 289,
+      "entrees": [],
+      "sorties": [
+        "interface RequestHandlerInvocationStrategyInterface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/Psr17FactoryInterface.php": {
+      "fichier": "Slim/Interfaces/Psr17FactoryInterface.php",
+      "langage": "php",
+      "lignes": 48,
+      "taille_bytes": 1235,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Psr\\Http\\Message\\StreamFactoryInterface",
+        "RuntimeException"
+      ],
+      "sorties": [
+        "interface Psr17FactoryInterface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/MiddlewareDispatcherInterface.php": {
+      "fichier": "Slim/Interfaces/MiddlewareDispatcherInterface.php",
+      "langage": "php",
+      "lignes": 43,
+      "taille_bytes": 1195,
+      "entrees": [
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface"
+      ],
+      "sorties": [
+        "interface MiddlewareDispatcherInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/ServerRequestCreatorInterface.php": {
+      "fichier": "Slim/Interfaces/ServerRequestCreatorInterface.php",
+      "langage": "php",
+      "lignes": 18,
+      "taille_bytes": 365,
+      "entrees": [
+        "Psr\\Http\\Message\\ServerRequestInterface"
+      ],
+      "sorties": [
+        "interface ServerRequestCreatorInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/CallableResolverInterface.php": {
+      "fichier": "Slim/Interfaces/CallableResolverInterface.php",
+      "langage": "php",
+      "lignes": 21,
+      "taille_bytes": 422,
+      "entrees": [],
+      "sorties": [
+        "interface CallableResolverInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Interfaces/ErrorRendererInterface.php": {
+      "fichier": "Slim/Interfaces/ErrorRendererInterface.php",
+      "langage": "php",
+      "lignes": 18,
+      "taille_bytes": 337,
+      "entrees": [
+        "Throwable"
+      ],
+      "sorties": [
+        "interface ErrorRendererInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/AppFactory.php": {
+      "fichier": "Slim/Factory/AppFactory.php",
+      "langage": "php",
+      "lignes": 217,
+      "taille_bytes": 7935,
+      "entrees": [
+        "Psr\\Container\\ContainerInterface",
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Psr\\Http\\Message\\StreamFactoryInterface",
+        "RuntimeException",
+        "Slim\\App",
+        "Slim\\Factory\\Psr17\\Psr17Factory",
+        "Slim\\Factory\\Psr17\\Psr17FactoryProvider",
+        "Slim\\Factory\\Psr17\\SlimHttpPsr17Factory",
+        "Slim\\Interfaces\\CallableResolverInterface",
+        "Slim\\Interfaces\\MiddlewareDispatcherInterface",
+        "Slim\\Interfaces\\Psr17FactoryProviderInterface",
+        "Slim\\Interfaces\\RouteCollectorInterface",
+        "Slim\\Interfaces\\RouteResolverInterface"
+      ],
+      "sorties": [
+        "class AppFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/ServerRequestCreatorFactory.php": {
+      "fichier": "Slim/Factory/ServerRequestCreatorFactory.php",
+      "langage": "php",
+      "lignes": 88,
+      "taille_bytes": 3079,
+      "entrees": [
+        "RuntimeException",
+        "Slim\\Factory\\Psr17\\Psr17Factory",
+        "Slim\\Factory\\Psr17\\Psr17FactoryProvider",
+        "Slim\\Factory\\Psr17\\SlimHttpServerRequestCreator",
+        "Slim\\Interfaces\\Psr17FactoryProviderInterface",
+        "Slim\\Interfaces\\ServerRequestCreatorInterface"
+      ],
+      "sorties": [
+        "class ServerRequestCreatorFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/SlimPsr17Factory.php": {
+      "fichier": "Slim/Factory/Psr17/SlimPsr17Factory.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 600,
+      "entrees": [],
+      "sorties": [
+        "class SlimPsr17Factory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/SlimHttpPsr17Factory.php": {
+      "fichier": "Slim/Factory/Psr17/SlimHttpPsr17Factory.php",
+      "langage": "php",
+      "lignes": 39,
+      "taille_bytes": 1144,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Psr\\Http\\Message\\StreamFactoryInterface",
+        "RuntimeException"
+      ],
+      "sorties": [
+        "class SlimHttpPsr17Factory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/SlimHttpServerRequestCreator.php": {
+      "fichier": "Slim/Factory/Psr17/SlimHttpServerRequestCreator.php",
+      "langage": "php",
+      "lignes": 56,
+      "taille_bytes": 1622,
+      "entrees": [
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "RuntimeException",
+        "Slim\\Interfaces\\ServerRequestCreatorInterface",
+        "function"
+      ],
+      "sorties": [
+        "class SlimHttpServerRequestCreator",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/NyholmPsr17Factory.php": {
+      "fichier": "Slim/Factory/Psr17/NyholmPsr17Factory.php",
+      "langage": "php",
+      "lignes": 36,
+      "taille_bytes": 1167,
+      "entrees": [
+        "Slim\\Interfaces\\ServerRequestCreatorInterface"
+      ],
+      "sorties": [
+        "class NyholmPsr17Factory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/HttpSoftPsr17Factory.php": {
+      "fichier": "Slim/Factory/Psr17/HttpSoftPsr17Factory.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 607,
+      "entrees": [],
+      "sorties": [
+        "class HttpSoftPsr17Factory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/GuzzlePsr17Factory.php": {
+      "fichier": "Slim/Factory/Psr17/GuzzlePsr17Factory.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 577,
+      "entrees": [],
+      "sorties": [
+        "class GuzzlePsr17Factory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/Psr17Factory.php": {
+      "fichier": "Slim/Factory/Psr17/Psr17Factory.php",
+      "langage": "php",
+      "lignes": 101,
+      "taille_bytes": 2796,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Psr\\Http\\Message\\StreamFactoryInterface",
+        "RuntimeException",
+        "Slim\\Interfaces\\Psr17FactoryInterface",
+        "Slim\\Interfaces\\ServerRequestCreatorInterface",
+        "function"
+      ],
+      "sorties": [
+        "abstract class Psr17Factory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/ServerRequestCreator.php": {
+      "fichier": "Slim/Factory/Psr17/ServerRequestCreator.php",
+      "langage": "php",
+      "lignes": 46,
+      "taille_bytes": 1165,
+      "entrees": [
+        "Closure",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Slim\\Interfaces\\ServerRequestCreatorInterface"
+      ],
+      "sorties": [
+        "class ServerRequestCreator",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/LaminasDiactorosPsr17Factory.php": {
+      "fichier": "Slim/Factory/Psr17/LaminasDiactorosPsr17Factory.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 606,
+      "entrees": [],
+      "sorties": [
+        "class LaminasDiactorosPsr17Factory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Factory/Psr17/Psr17FactoryProvider.php": {
+      "fichier": "Slim/Factory/Psr17/Psr17FactoryProvider.php",
+      "langage": "php",
+      "lignes": 53,
+      "taille_bytes": 1077,
+      "entrees": [
+        "Slim\\Interfaces\\Psr17FactoryProviderInterface",
+        "function"
+      ],
+      "sorties": [
+        "class Psr17FactoryProvider"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpNotImplementedException.php": {
+      "fichier": "Slim/Exception/HttpNotImplementedException.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 591,
+      "entrees": [],
+      "sorties": [
+        "class HttpNotImplementedException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpUnauthorizedException.php": {
+      "fichier": "Slim/Exception/HttpUnauthorizedException.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 552,
+      "entrees": [],
+      "sorties": [
+        "class HttpUnauthorizedException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpException.php": {
+      "fichier": "Slim/Exception/HttpException.php",
+      "langage": "php",
+      "lignes": 65,
+      "taille_bytes": 1293,
+      "entrees": [
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "RuntimeException",
+        "Throwable"
+      ],
+      "sorties": [
+        "class HttpException",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpSpecializedException.php": {
+      "fichier": "Slim/Exception/HttpSpecializedException.php",
+      "langage": "php",
+      "lignes": 32,
+      "taille_bytes": 789,
+      "entrees": [
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Throwable"
+      ],
+      "sorties": [
+        "abstract class HttpSpecializedException",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpMethodNotAllowedException.php": {
+      "fichier": "Slim/Exception/HttpMethodNotAllowedException.php",
+      "langage": "php",
+      "lignes": 52,
+      "taille_bytes": 1089,
+      "entrees": [
+        "function"
+      ],
+      "sorties": [
+        "class HttpMethodNotAllowedException",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpBadRequestException.php": {
+      "fichier": "Slim/Exception/HttpBadRequestException.php",
+      "langage": "php",
+      "lignes": 29,
+      "taille_bytes": 596,
+      "entrees": [],
+      "sorties": [
+        "class HttpBadRequestException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpTooManyRequestsException.php": {
+      "fichier": "Slim/Exception/HttpTooManyRequestsException.php",
+      "langage": "php",
+      "lignes": 29,
+      "taille_bytes": 674,
+      "entrees": [],
+      "sorties": [
+        "class HttpTooManyRequestsException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpForbiddenException.php": {
+      "fichier": "Slim/Exception/HttpForbiddenException.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 553,
+      "entrees": [],
+      "sorties": [
+        "class HttpForbiddenException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpNotFoundException.php": {
+      "fichier": "Slim/Exception/HttpNotFoundException.php",
+      "langage": "php",
+      "lignes": 27,
+      "taille_bytes": 562,
+      "entrees": [],
+      "sorties": [
+        "class HttpNotFoundException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpGoneException.php": {
+      "fichier": "Slim/Exception/HttpGoneException.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 545,
+      "entrees": [],
+      "sorties": [
+        "class HttpGoneException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Exception/HttpInternalServerErrorException.php": {
+      "fichier": "Slim/Exception/HttpInternalServerErrorException.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 605,
+      "entrees": [],
+      "sorties": [
+        "class HttpInternalServerErrorException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Middleware/BodyParsingMiddleware.php": {
+      "fichier": "Slim/Middleware/BodyParsingMiddleware.php",
+      "langage": "php",
+      "lignes": 201,
+      "taille_bytes": 5942,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "RuntimeException",
+        "const",
+        "function"
+      ],
+      "sorties": [
+        "class BodyParsingMiddleware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Middleware/ContentLengthMiddleware.php": {
+      "fichier": "Slim/Middleware/ContentLengthMiddleware.php",
+      "langage": "php",
+      "lignes": 33,
+      "taille_bytes": 919,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface"
+      ],
+      "sorties": [
+        "class ContentLengthMiddleware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Middleware/RoutingMiddleware.php": {
+      "fichier": "Slim/Middleware/RoutingMiddleware.php",
+      "langage": "php",
+      "lignes": 98,
+      "taille_bytes": 3281,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "RuntimeException",
+        "Slim\\Exception\\HttpMethodNotAllowedException",
+        "Slim\\Exception\\HttpNotFoundException",
+        "Slim\\Interfaces\\RouteParserInterface",
+        "Slim\\Interfaces\\RouteResolverInterface",
+        "Slim\\Routing\\RouteContext",
+        "Slim\\Routing\\RoutingResults"
+      ],
+      "sorties": [
+        "class RoutingMiddleware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Middleware/OutputBufferingMiddleware.php": {
+      "fichier": "Slim/Middleware/OutputBufferingMiddleware.php",
+      "langage": "php",
+      "lignes": 75,
+      "taille_bytes": 2103,
+      "entrees": [
+        "InvalidArgumentException",
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Message\\StreamFactoryInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "Throwable",
+        "function"
+      ],
+      "sorties": [
+        "class OutputBufferingMiddleware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Middleware/ErrorMiddleware.php": {
+      "fichier": "Slim/Middleware/ErrorMiddleware.php",
+      "langage": "php",
+      "lignes": 215,
+      "taille_bytes": 6605,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseFactoryInterface",
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "Psr\\Log\\LoggerInterface",
+        "Slim\\Exception\\HttpException",
+        "Slim\\Handlers\\ErrorHandler",
+        "Slim\\Interfaces\\CallableResolverInterface",
+        "Slim\\Interfaces\\ErrorHandlerInterface",
+        "Throwable",
+        "function"
+      ],
+      "sorties": [
+        "class ErrorMiddleware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Slim/Middleware/MethodOverrideMiddleware.php": {
+      "fichier": "Slim/Middleware/MethodOverrideMiddleware.php",
+      "langage": "php",
+      "lignes": 44,
+      "taille_bytes": 1238,
+      "entrees": [
+        "Psr\\Http\\Message\\ResponseInterface",
+        "Psr\\Http\\Message\\ServerRequestInterface",
+        "Psr\\Http\\Server\\MiddlewareInterface",
+        "Psr\\Http\\Server\\RequestHandlerInterface",
+        "function"
+      ],
+      "sorties": [
+        "class MethodOverrideMiddleware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

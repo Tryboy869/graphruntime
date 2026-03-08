@@ -1,0 +1,269 @@
+{
+  "meta": {
+    "projet": "src",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "javascript": 9
+    }
+  },
+  "stats": {
+    "fichiers_total": 9,
+    "edges_total": 6,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 1,
+    "points_entree": 1,
+    "fichier_plus_appele": "Animate.js"
+  },
+  "noeuds": {
+    "AnimateGroupChild.js": {
+      "fichier": "AnimateGroupChild.js",
+      "langage": "javascript",
+      "lignes": 86,
+      "taille_bytes": 2066,
+      "entrees": [
+        "Animate",
+        "PropTypes",
+        "React"
+      ],
+      "sorties": [
+        "class AnimateGroupChild",
+        "const onAnimationEnd",
+        "const parseDurationOfSingleTransition"
+      ],
+      "appelle": [
+        "Animate.js"
+      ],
+      "est_appele_par": [
+        "AnimateGroup.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "easing.js": {
+      "fichier": "easing.js",
+      "langage": "javascript",
+      "lignes": 159,
+      "taille_bytes": 4110,
+      "entrees": [],
+      "sorties": [
+        "const ACCURACY",
+        "const FDamping",
+        "const FSpring",
+        "const bezier",
+        "const cubicBezier",
+        "const cubicBezierFactor",
+        "const curveX",
+        "const curveY",
+        "const derCurveX",
+        "const derVal",
+        "const derivativeCubicBezier",
+        "const easing",
+        "const evalT",
+        "const multyTime",
+        "const newParams",
+        "const newV",
+        "const newX",
+        "const params",
+        "const rangeValue",
+        "const stepper",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "configUpdate.js": {
+      "fichier": "configUpdate.js",
+      "langage": "javascript",
+      "lignes": 134,
+      "taille_bytes": 3110,
+      "entrees": [],
+      "sorties": [
+        "const alpha",
+        "const calStepperVals",
+        "const currStyle",
+        "const deltaTime",
+        "const finalStyle",
+        "const getCurrStyle",
+        "const interKeys",
+        "const needContinue",
+        "const nextStepVals",
+        "const shouldStopAnimation",
+        "const stepperUpdate",
+        "const steps",
+        "const timingStyle",
+        "const timingUpdate"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "Animate.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "AnimateGroup.js": {
+      "fichier": "AnimateGroup.js",
+      "langage": "javascript",
+      "lignes": 37,
+      "taille_bytes": 963,
+      "entrees": [
+        "AnimateGroupChild",
+        "PropTypes",
+        "React"
+      ],
+      "sorties": [
+        "function AnimateGroup"
+      ],
+      "appelle": [
+        "AnimateGroupChild.js"
+      ],
+      "est_appele_par": [
+        "index.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "setRafTimeout.js": {
+      "fichier": "setRafTimeout.js",
+      "langage": "javascript",
+      "lignes": 22,
+      "taille_bytes": 496,
+      "entrees": [],
+      "sorties": [
+        "const shouldUpdate",
+        "function safeRequestAnimationFrame"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "AnimateManager.js"
+      ],
+      "type_noeud": "standard"
+    },
+    "AnimateManager.js": {
+      "fichier": "AnimateManager.js",
+      "langage": "javascript",
+      "lignes": 58,
+      "taille_bytes": 1093,
+      "entrees": [
+        "setRafTimeout"
+      ],
+      "sorties": [
+        "const setStyle",
+        "const styles"
+      ],
+      "appelle": [
+        "setRafTimeout.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "index.js": {
+      "fichier": "index.js",
+      "langage": "javascript",
+      "lignes": 7,
+      "taille_bytes": 210,
+      "entrees": [
+        "Animate",
+        "AnimateGroup"
+      ],
+      "sorties": [],
+      "appelle": [
+        "Animate.js",
+        "AnimateGroup.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "Animate.js": {
+      "fichier": "Animate.js",
+      "langage": "javascript",
+      "lignes": 336,
+      "taille_bytes": 8433,
+      "entrees": [
+        "PropTypes",
+        "React",
+        "configUpdate",
+        "createAnimateManager"
+      ],
+      "sorties": [
+        "class Animate",
+        "const addStyle",
+        "const cloneContainer",
+        "const count",
+        "const finalStartAnimation",
+        "const isTriggered",
+        "const manager",
+        "const newState",
+        "const newStyle",
+        "const preItem",
+        "const properties",
+        "const res",
+        "const startAnimation",
+        "const stateStyle",
+        "const to",
+        "const transition"
+      ],
+      "appelle": [
+        "configUpdate.js"
+      ],
+      "est_appele_par": [
+        "AnimateGroupChild.js",
+        "index.js"
+      ],
+      "type_noeud": "hub"
+    },
+    "util.js": {
+      "fichier": "util.js",
+      "langage": "javascript",
+      "lignes": 82,
+      "taille_bytes": 2078,
+      "entrees": [],
+      "sorties": [
+        "const argNames",
+        "const args",
+        "const isDev",
+        "const name",
+        "const res",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "AnimateGroupChild.js",
+      "vers": "Animate.js",
+      "type": "interne"
+    },
+    {
+      "de": "AnimateGroup.js",
+      "vers": "AnimateGroupChild.js",
+      "type": "interne"
+    },
+    {
+      "de": "AnimateManager.js",
+      "vers": "setRafTimeout.js",
+      "type": "interne"
+    },
+    {
+      "de": "index.js",
+      "vers": "Animate.js",
+      "type": "interne"
+    },
+    {
+      "de": "index.js",
+      "vers": "AnimateGroup.js",
+      "type": "interne"
+    },
+    {
+      "de": "Animate.js",
+      "vers": "configUpdate.js",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'index.js'",
+    "hub → 'Animate.js' (in=2, 22% du projet)"
+  ]
+}

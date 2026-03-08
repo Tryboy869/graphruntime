@@ -1,0 +1,1427 @@
+{
+  "meta": {
+    "projet": "vaultwarden",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 2,
+      "toml": 5,
+      "rust": 1,
+      "sql": 112
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".hadolint.yaml"
+  },
+  "noeuds": {
+    ".hadolint.yaml": {
+      "fichier": ".hadolint.yaml",
+      "langage": "yaml",
+      "lignes": 13,
+      "taille_bytes": 325,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Cargo.toml": {
+      "fichier": "Cargo.toml",
+      "langage": "toml",
+      "lignes": 336,
+      "taille_bytes": 10507,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "diesel.toml": {
+      "fichier": "diesel.toml",
+      "langage": "toml",
+      "lignes": 5,
+      "taille_bytes": 138,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.rs": {
+      "fichier": "build.rs",
+      "langage": "rust",
+      "lignes": 91,
+      "taille_bytes": 3611,
+      "entrees": [
+        "std::env",
+        "std::io::Error",
+        "std::process::Command"
+      ],
+      "sorties": [
+        "fn main",
+        "fn run",
+        "fn version_from_git_info"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "rust-toolchain.toml": {
+      "fichier": "rust-toolchain.toml",
+      "langage": "toml",
+      "lignes": 4,
+      "taille_bytes": 88,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "rustfmt.toml": {
+      "fichier": "rustfmt.toml",
+      "langage": "toml",
+      "lignes": 4,
+      "taille_bytes": 85,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".pre-commit-config.yaml": {
+      "fichier": ".pre-commit-config.yaml",
+      "langage": "yaml",
+      "lignes": 58,
+      "taille_bytes": 1819,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".typos.toml": {
+      "fichier": ".typos.toml",
+      "langage": "toml",
+      "lignes": 26,
+      "taille_bytes": 951,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-03-06-170000_add_sso_users/up.sql": {
+      "fichier": "migrations/mysql/2024-03-06-170000_add_sso_users/up.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 238,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_users"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-03-06-170000_add_sso_users/down.sql": {
+      "fichier": "migrations/mysql/2024-03-06-170000_add_sso_users/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 32,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-09-01-170620_update_auth_request_table/up.sql": {
+      "fichier": "migrations/mysql/2023-09-01-170620_update_auth_request_table/up.sql",
+      "langage": "sql",
+      "lignes": 5,
+      "taille_bytes": 108,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-09-01-170620_update_auth_request_table/down.sql": {
+      "fichier": "migrations/mysql/2023-09-01-170620_update_auth_request_table/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2025-08-20-120000_sso_nonce_to_auth/up.sql": {
+      "fichier": "migrations/mysql/2025-08-20-120000_sso_nonce_to_auth/up.sql",
+      "langage": "sql",
+      "lignes": 12,
+      "taille_bytes": 411,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_auth"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2025-08-20-120000_sso_nonce_to_auth/down.sql": {
+      "fichier": "migrations/mysql/2025-08-20-120000_sso_nonce_to_auth/down.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 284,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_nonce"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-01-11-205851_add_avatar_color/up.sql": {
+      "fichier": "migrations/mysql/2023-01-11-205851_add_avatar_color/up.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 54,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-01-11-205851_add_avatar_color/down.sql": {
+      "fichier": "migrations/mysql/2023-01-11-205851_add_avatar_color/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-01-14-171611_create_tables/up.sql": {
+      "fichier": "migrations/mysql/2018-01-14-171611_create_tables/up.sql",
+      "langage": "sql",
+      "lignes": 62,
+      "taille_bytes": 1943,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE attachments",
+        "CREATE TABLE ciphers",
+        "CREATE TABLE devices",
+        "CREATE TABLE folders",
+        "CREATE TABLE users",
+        "type INTEGER"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-01-14-171611_create_tables/down.sql": {
+      "fichier": "migrations/mysql/2018-01-14-171611_create_tables/down.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 105,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-09-04-091351_use_device_type_for_mails/up.sql": {
+      "fichier": "migrations/mysql/2024-09-04-091351_use_device_type_for_mails/up.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 109,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-09-04-091351_use_device_type_for_mails/down.sql": {
+      "fichier": "migrations/mysql/2024-09-04-091351_use_device_type_for_mails/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 62,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-01-12-210182_change_attachment_size/up.sql": {
+      "fichier": "migrations/mysql/2024-01-12-210182_change_attachment_size/up.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 58,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-01-12-210182_change_attachment_size/down.sql": {
+      "fichier": "migrations/mysql/2024-01-12-210182_change_attachment_size/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-03-13-170000_sso_users_cascade/up.sql": {
+      "fichier": "migrations/mysql/2024-03-13-170000_sso_users_cascade/up.sql",
+      "langage": "sql",
+      "lignes": 15,
+      "taille_bytes": 678,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-03-13-170000_sso_users_cascade/down.sql": {
+      "fichier": "migrations/mysql/2024-03-13-170000_sso_users_cascade/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-06-01-112529_update_devices_twofactor_remember/up.sql": {
+      "fichier": "migrations/mysql/2018-06-01-112529_update_devices_twofactor_remember/up.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 63,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-06-01-112529_update_devices_twofactor_remember/down.sql": {
+      "fichier": "migrations/mysql/2018-06-01-112529_update_devices_twofactor_remember/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 45,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-06-05-131359_add_2fa_duo_store/up.sql": {
+      "fichier": "migrations/mysql/2024-06-05-131359_add_2fa_duo_store/up.sql",
+      "langage": "sql",
+      "lignes": 8,
+      "taille_bytes": 212,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE twofactor_duo_ctx"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-06-05-131359_add_2fa_duo_store/down.sql": {
+      "fichier": "migrations/mysql/2024-06-05-131359_add_2fa_duo_store/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 29,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-09-10-111213_add_invites/up.sql": {
+      "fichier": "migrations/mysql/2018-09-10-111213_add_invites/up.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 76,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE invitations"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-09-10-111213_add_invites/down.sql": {
+      "fichier": "migrations/mysql/2018-09-10-111213_add_invites/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 23,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-03-11-190243_add_sends/up.sql": {
+      "fichier": "migrations/mysql/2021-03-11-190243_add_sends/up.sql",
+      "langage": "sql",
+      "lignes": 25,
+      "taille_bytes": 729,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sends"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-03-11-190243_add_sends/down.sql": {
+      "fichier": "migrations/mysql/2021-03-11-190243_add_sends/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 18,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-05-08-161616_create_collection_cipher_map/up.sql": {
+      "fichier": "migrations/mysql/2018-05-08-161616_create_collection_cipher_map/up.sql",
+      "langage": "sql",
+      "lignes": 5,
+      "taille_bytes": 215,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE ciphers_collections"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-05-08-161616_create_collection_cipher_map/down.sql": {
+      "fichier": "migrations/mysql/2018-05-08-161616_create_collection_cipher_map/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 31,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-04-30-233251_add_reprompt/up.sql": {
+      "fichier": "migrations/mysql/2021-04-30-233251_add_reprompt/up.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 49,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-04-30-233251_add_reprompt/down.sql": {
+      "fichier": "migrations/mysql/2021-04-30-233251_add_reprompt/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-06-02-200424_create_organization_api_key/up.sql": {
+      "fichier": "migrations/mysql/2023-06-02-200424_create_organization_api_key/up.sql",
+      "langage": "sql",
+      "lignes": 10,
+      "taille_bytes": 299,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE organization_api_key"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-06-02-200424_create_organization_api_key/down.sql": {
+      "fichier": "migrations/mysql/2023-06-02-200424_create_organization_api_key/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2019-05-26-216651_rename_key_and_type_columns/up.sql": {
+      "fichier": "migrations/mysql/2019-05-26-216651_rename_key_and_type_columns/up.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 432,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2019-05-26-216651_rename_key_and_type_columns/down.sql": {
+      "fichier": "migrations/mysql/2019-05-26-216651_rename_key_and_type_columns/down.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 432,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2022-01-17-234911_add_api_key/up.sql": {
+      "fichier": "migrations/mysql/2022-01-17-234911_add_api_key/up.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 51,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2022-01-17-234911_add_api_key/down.sql": {
+      "fichier": "migrations/mysql/2022-01-17-234911_add_api_key/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2019-10-10-083032_add_column_to_twofactor/up.sql": {
+      "fichier": "migrations/mysql/2019-10-10-083032_add_column_to_twofactor/up.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 70,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2019-10-10-083032_add_column_to_twofactor/down.sql": {
+      "fichier": "migrations/mysql/2019-10-10-083032_add_column_to_twofactor/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-12-09-173101_add_stamp_exception/up.sql": {
+      "fichier": "migrations/mysql/2020-12-09-173101_add_stamp_exception/up.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 63,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-12-09-173101_add_stamp_exception/down.sql": {
+      "fichier": "migrations/mysql/2020-12-09-173101_add_stamp_exception/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-06-17-200424_create_auth_requests_table/up.sql": {
+      "fichier": "migrations/mysql/2023-06-17-200424_create_auth_requests_table/up.sql",
+      "langage": "sql",
+      "lignes": 19,
+      "taille_bytes": 718,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE auth_requests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-06-17-200424_create_auth_requests_table/down.sql": {
+      "fichier": "migrations/mysql/2023-06-17-200424_create_auth_requests_table/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-04-27-155151_create_users_ciphers/up.sql": {
+      "fichier": "migrations/mysql/2018-04-27-155151_create_users_ciphers/up.sql",
+      "langage": "sql",
+      "lignes": 34,
+      "taille_bytes": 1287,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE ciphers",
+        "CREATE TABLE folders_ciphers",
+        "type INTEGER"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-04-27-155151_create_users_ciphers/down.sql": {
+      "fichier": "migrations/mysql/2018-04-27-155151_create_users_ciphers/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-09-14-133000_add_users_organizations_invited_by_email/up.sql": {
+      "fichier": "migrations/mysql/2023-09-14-133000_add_users_organizations_invited_by_email/up.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 79,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-09-14-133000_add_users_organizations_invited_by_email/down.sql": {
+      "fichier": "migrations/mysql/2023-09-14-133000_add_users_organizations_invited_by_email/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 62,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-09-02-212336_move_user_external_id/up.sql": {
+      "fichier": "migrations/mysql/2023-09-02-212336_move_user_external_id/up.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 61,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-09-02-212336_move_user_external_id/down.sql": {
+      "fichier": "migrations/mysql/2023-09-02-212336_move_user_external_id/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2025-01-09-172300_add_manage/up.sql": {
+      "fichier": "migrations/mysql/2025-01-09-172300_add_manage/up.sql",
+      "langage": "sql",
+      "lignes": 5,
+      "taille_bytes": 162,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2025-01-09-172300_add_manage/down.sql": {
+      "fichier": "migrations/mysql/2025-01-09-172300_add_manage/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-02-26-170000_add_pkce_to_sso_nonce/up.sql": {
+      "fichier": "migrations/mysql/2024-02-26-170000_add_pkce_to_sso_nonce/up.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 277,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_nonce"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-02-26-170000_add_pkce_to_sso_nonce/down.sql": {
+      "fichier": "migrations/mysql/2024-02-26-170000_add_pkce_to_sso_nonce/down.sql",
+      "langage": "sql",
+      "lignes": 8,
+      "taille_bytes": 255,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_nonce"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-09-19-144557_add_kdf_columns/up.sql": {
+      "fichier": "migrations/mysql/2018-09-19-144557_add_kdf_columns/up.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 178,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-09-19-144557_add_kdf_columns/down.sql": {
+      "fichier": "migrations/mysql/2018-09-19-144557_add_kdf_columns/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-06-28-133700_add_collection_external_id/up.sql": {
+      "fichier": "migrations/mysql/2023-06-28-133700_add_collection_external_id/up.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 53,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-06-28-133700_add_collection_external_id/down.sql": {
+      "fichier": "migrations/mysql/2023-06-28-133700_add_collection_external_id/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-10-21-221242_add_cipher_key/up.sql": {
+      "fichier": "migrations/mysql/2023-10-21-221242_add_cipher_key/up.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 43,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-10-21-221242_add_cipher_key/down.sql": {
+      "fichier": "migrations/mysql/2023-10-21-221242_add_cipher_key/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-09-10-133000_add_sso/up.sql": {
+      "fichier": "migrations/mysql/2023-09-10-133000_add_sso/up.sql",
+      "langage": "sql",
+      "lignes": 4,
+      "taille_bytes": 147,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_nonce"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-09-10-133000_add_sso/down.sql": {
+      "fichier": "migrations/mysql/2023-09-10-133000_add_sso/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 22,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-07-01-214531_add_hide_passwords/up.sql": {
+      "fichier": "migrations/mysql/2020-07-01-214531_add_hide_passwords/up.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 88,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-07-01-214531_add_hide_passwords/down.sql": {
+      "fichier": "migrations/mysql/2020-07-01-214531_add_hide_passwords/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-02-17-205753_create_collections_and_orgs/up.sql": {
+      "fichier": "migrations/mysql/2018-02-17-205753_create_collections_and_orgs/up.sql",
+      "langage": "sql",
+      "lignes": 30,
+      "taille_bytes": 877,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE collections",
+        "CREATE TABLE organizations",
+        "CREATE TABLE users_collections",
+        "CREATE TABLE users_organizations",
+        "type INTEGER"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-02-17-205753_create_collections_and_orgs/down.sql": {
+      "fichier": "migrations/mysql/2018-02-17-205753_create_collections_and_orgs/down.sql",
+      "langage": "sql",
+      "lignes": 8,
+      "taille_bytes": 116,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-01-06-151600_add_reset_password_support/up.sql": {
+      "fichier": "migrations/mysql/2023-01-06-151600_add_reset_password_support/up.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 68,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-01-06-151600_add_reset_password_support/down.sql": {
+      "fichier": "migrations/mysql/2023-01-06-151600_add_reset_password_support/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-02-18-125735_push_uuid_table/up.sql": {
+      "fichier": "migrations/mysql/2023-02-18-125735_push_uuid_table/up.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 46,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-02-18-125735_push_uuid_table/down.sql": {
+      "fichier": "migrations/mysql/2023-02-18-125735_push_uuid_table/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2022-10-18-170602_add_events/up.sql": {
+      "fichier": "migrations/mysql/2022-10-18-170602_add_events/up.sql",
+      "langage": "sql",
+      "lignes": 19,
+      "taille_bytes": 579,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE event"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2022-10-18-170602_add_events/down.sql": {
+      "fichier": "migrations/mysql/2022-10-18-170602_add_events/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 18,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-10-24-164321_add_2fa_incomplete/up.sql": {
+      "fichier": "migrations/mysql/2021-10-24-164321_add_2fa_incomplete/up.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 267,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE twofactor_incomplete"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-10-24-164321_add_2fa_incomplete/down.sql": {
+      "fichier": "migrations/mysql/2021-10-24-164321_add_2fa_incomplete/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 33,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-08-30-193501_create_emergency_access/up.sql": {
+      "fichier": "migrations/mysql/2021-08-30-193501_create_emergency_access/up.sql",
+      "langage": "sql",
+      "lignes": 14,
+      "taille_bytes": 616,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE emergency_access"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-08-30-193501_create_emergency_access/down.sql": {
+      "fichier": "migrations/mysql/2021-08-30-193501_create_emergency_access/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 29,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-05-25-232323_update_attachments_reference/up.sql": {
+      "fichier": "migrations/mysql/2018-05-25-232323_update_attachments_reference/up.sql",
+      "langage": "sql",
+      "lignes": 14,
+      "taille_bytes": 409,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE attachments"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-05-25-232323_update_attachments_reference/down.sql": {
+      "fichier": "migrations/mysql/2018-05-25-232323_update_attachments_reference/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-01-31-222222_add_argon2/up.sql": {
+      "fichier": "migrations/mysql/2023-01-31-222222_add_argon2/up.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 160,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2023-01-31-222222_add_argon2/down.sql": {
+      "fichier": "migrations/mysql/2023-01-31-222222_add_argon2/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2019-11-17-011009_add_email_verification/up.sql": {
+      "fichier": "migrations/mysql/2019-11-17-011009_add_email_verification/up.sql",
+      "langage": "sql",
+      "lignes": 5,
+      "taille_bytes": 347,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2019-11-17-011009_add_email_verification/down.sql": {
+      "fichier": "migrations/mysql/2019-11-17-011009_add_email_verification/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 1,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-03-13-205045_add_policy_table/up.sql": {
+      "fichier": "migrations/mysql/2020-03-13-205045_add_policy_table/up.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 258,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE org_policies"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-03-13-205045_add_policy_table/down.sql": {
+      "fichier": "migrations/mysql/2020-03-13-205045_add_policy_table/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 25,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-08-02-025025_add_favorites_table/up.sql": {
+      "fichier": "migrations/mysql/2020-08-02-025025_add_favorites_table/up.sql",
+      "langage": "sql",
+      "lignes": 16,
+      "taille_bytes": 411,
+      "entrees": [
+        "ciphers"
+      ],
+      "sorties": [
+        "CREATE TABLE favorites"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-08-02-025025_add_favorites_table/down.sql": {
+      "fichier": "migrations/mysql/2020-08-02-025025_add_favorites_table/down.sql",
+      "langage": "sql",
+      "lignes": 13,
+      "taille_bytes": 320,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-07-01-203140_add_password_reset_keys/up.sql": {
+      "fichier": "migrations/mysql/2021-07-01-203140_add_password_reset_keys/up.sql",
+      "langage": "sql",
+      "lignes": 5,
+      "taille_bytes": 114,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-07-01-203140_add_password_reset_keys/down.sql": {
+      "fichier": "migrations/mysql/2021-07-01-203140_add_password_reset_keys/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2022-03-02-210038_update_devices_primary_key/up.sql": {
+      "fichier": "migrations/mysql/2022-03-02-210038_update_devices_primary_key/up.sql",
+      "langage": "sql",
+      "lignes": 4,
+      "taille_bytes": 160,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2022-03-02-210038_update_devices_primary_key/down.sql": {
+      "fichier": "migrations/mysql/2022-03-02-210038_update_devices_primary_key/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-07-11-181453_create_u2f_twofactor/up.sql": {
+      "fichier": "migrations/mysql/2018-07-11-181453_create_u2f_twofactor/up.sql",
+      "langage": "sql",
+      "lignes": 15,
+      "taille_bytes": 501,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE twofactor",
+        "type INTEGER"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-07-11-181453_create_u2f_twofactor/down.sql": {
+      "fichier": "migrations/mysql/2018-07-11-181453_create_u2f_twofactor/down.sql",
+      "langage": "sql",
+      "lignes": 8,
+      "taille_bytes": 170,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-11-30-224000_add_user_enabled/up.sql": {
+      "fichier": "migrations/mysql/2020-11-30-224000_add_user_enabled/up.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 65,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-11-30-224000_add_user_enabled/down.sql": {
+      "fichier": "migrations/mysql/2020-11-30-224000_add_user_enabled/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-11-27-152651_add_att_key_columns/up.sql": {
+      "fichier": "migrations/mysql/2018-11-27-152651_add_att_key_columns/up.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 55,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-11-27-152651_add_att_key_columns/down.sql": {
+      "fichier": "migrations/mysql/2018-11-27-152651_add_att_key_columns/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2022-07-27-110000_add_group_support/up.sql": {
+      "fichier": "migrations/mysql/2022-07-27-110000_add_group_support/up.sql",
+      "langage": "sql",
+      "lignes": 23,
+      "taille_bytes": 1076,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE collections_groups",
+        "CREATE TABLE groups_users"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2022-07-27-110000_add_group_support/down.sql": {
+      "fichier": "migrations/mysql/2022-07-27-110000_add_group_support/down.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 76,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-08-27-172114_update_ciphers/up.sql": {
+      "fichier": "migrations/mysql/2018-08-27-172114_update_ciphers/up.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 61,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2018-08-27-172114_update_ciphers/down.sql": {
+      "fichier": "migrations/mysql/2018-08-27-172114_update_ciphers/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-02-14-135828_change_time_stamp_data_type/up.sql": {
+      "fichier": "migrations/mysql/2024-02-14-135828_change_time_stamp_data_type/up.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 56,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-02-14-135828_change_time_stamp_data_type/down.sql": {
+      "fichier": "migrations/mysql/2024-02-14-135828_change_time_stamp_data_type/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-02-14-170000_add_state_to_sso_nonce/up.sql": {
+      "fichier": "migrations/mysql/2024-02-14-170000_add_state_to_sso_nonce/up.sql",
+      "langage": "sql",
+      "lignes": 8,
+      "taille_bytes": 244,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_nonce"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2024-02-14-170000_add_state_to_sso_nonce/down.sql": {
+      "fichier": "migrations/mysql/2024-02-14-170000_add_state_to_sso_nonce/down.sql",
+      "langage": "sql",
+      "lignes": 6,
+      "taille_bytes": 180,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_nonce"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-04-09-235005_add_cipher_delete_date/up.sql": {
+      "fichier": "migrations/mysql/2020-04-09-235005_add_cipher_delete_date/up.sql",
+      "langage": "sql",
+      "lignes": 3,
+      "taille_bytes": 60,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2020-04-09-235005_add_cipher_delete_date/down.sql": {
+      "fichier": "migrations/mysql/2020-04-09-235005_add_cipher_delete_date/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 1,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-05-11-205202_add_hide_email/up.sql": {
+      "fichier": "migrations/mysql/2021-05-11-205202_add_hide_email/up.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 49,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/mysql/2021-05-11-205202_add_hide_email/down.sql": {
+      "fichier": "migrations/mysql/2021-05-11-205202_add_hide_email/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/sqlite/2024-03-06-170000_add_sso_users/up.sql": {
+      "fichier": "migrations/sqlite/2024-03-06-170000_add_sso_users/up.sql",
+      "langage": "sql",
+      "lignes": 7,
+      "taille_bytes": 242,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_users"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/sqlite/2024-03-06-170000_add_sso_users/down.sql": {
+      "fichier": "migrations/sqlite/2024-03-06-170000_add_sso_users/down.sql",
+      "langage": "sql",
+      "lignes": 1,
+      "taille_bytes": 32,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/sqlite/2023-09-01-170620_update_auth_request_table/up.sql": {
+      "fichier": "migrations/sqlite/2023-09-01-170620_update_auth_request_table/up.sql",
+      "langage": "sql",
+      "lignes": 29,
+      "taille_bytes": 1156,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE auth_requests_new"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/sqlite/2023-09-01-170620_update_auth_request_table/down.sql": {
+      "fichier": "migrations/sqlite/2023-09-01-170620_update_auth_request_table/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/sqlite/2025-08-20-120000_sso_nonce_to_auth/up.sql": {
+      "fichier": "migrations/sqlite/2025-08-20-120000_sso_nonce_to_auth/up.sql",
+      "langage": "sql",
+      "lignes": 12,
+      "taille_bytes": 425,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_auth"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/sqlite/2025-08-20-120000_sso_nonce_to_auth/down.sql": {
+      "fichier": "migrations/sqlite/2025-08-20-120000_sso_nonce_to_auth/down.sql",
+      "langage": "sql",
+      "lignes": 9,
+      "taille_bytes": 277,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE sso_nonce"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/sqlite/2023-01-11-205851_add_avatar_color/up.sql": {
+      "fichier": "migrations/sqlite/2023-01-11-205851_add_avatar_color/up.sql",
+      "langage": "sql",
+      "lignes": 2,
+      "taille_bytes": 48,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "migrations/sqlite/2023-01-11-205851_add_avatar_color/down.sql": {
+      "fichier": "migrations/sqlite/2023-01-11-205851_add_avatar_color/down.sql",
+      "langage": "sql",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

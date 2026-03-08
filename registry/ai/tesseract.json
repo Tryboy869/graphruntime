@@ -1,0 +1,2126 @@
+{
+  "meta": {
+    "projet": "tesseract",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 2,
+      "shell": 4,
+      "cpp": 76,
+      "python": 1,
+      "c": 37
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "appveyor.yml"
+  },
+  "noeuds": {
+    "appveyor.yml": {
+      "fichier": "appveyor.yml",
+      "langage": "yaml",
+      "lignes": 48,
+      "taille_bytes": 1510,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "autogen.sh": {
+      "fichier": "autogen.sh",
+      "langage": "shell",
+      "lignes": 126,
+      "taille_bytes": 4021,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sw.cpp": {
+      "fichier": "sw.cpp",
+      "langage": "cpp",
+      "lignes": 364,
+      "taille_bytes": 12963,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nsis/find_deps.py": {
+      "fichier": "nsis/find_deps.py",
+      "langage": "python",
+      "lignes": 64,
+      "taille_bytes": 1820,
+      "entrees": [
+        "argparse",
+        "os",
+        "pefile"
+      ],
+      "sorties": [
+        "def find_dependencies",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nsis/build.sh": {
+      "fichier": "nsis/build.sh",
+      "langage": "shell",
+      "lignes": 111,
+      "taille_bytes": 3290,
+      "entrees": [
+        "venv/bin/activate"
+      ],
+      "sorties": [
+        "export PKG_CONFIG_PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nsis/winpath.cpp": {
+      "fichier": "nsis/winpath.cpp",
+      "langage": "cpp",
+      "lignes": 39,
+      "taille_bytes": 860,
+      "entrees": [
+        "<process.h>",
+        "<stdlib.h>",
+        "<string.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/resultiterator.h": {
+      "fichier": "include/tesseract/resultiterator.h",
+      "langage": "c",
+      "lignes": 250,
+      "taille_bytes": 9484,
+      "entrees": [
+        "<set>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class TESS_API",
+        "const LTRResultIterator",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/export.h": {
+      "fichier": "include/tesseract/export.h",
+      "langage": "c",
+      "lignes": 37,
+      "taille_bytes": 1214,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/baseapi.h": {
+      "fichier": "include/tesseract/baseapi.h",
+      "langage": "c",
+      "lignes": 820,
+      "taille_bytes": 31766,
+      "entrees": [
+        "<cstdio>",
+        "<tesseract/version.h>",
+        "<vector>",
+        "DictFunc",
+        "FileReader",
+        "ProbabilityInContextFunc"
+      ],
+      "sorties": [
+        "class BLOCK_LIST",
+        "class Dawg",
+        "class Dict",
+        "class ETEXT_DESC",
+        "class EquationDetect",
+        "class ImageThresholder",
+        "class LTRResultIterator",
+        "class MutableIterator",
+        "class PAGE_RES",
+        "class PageIterator",
+        "class ParagraphModel",
+        "class ResultIterator",
+        "class TESS_API",
+        "class TessResultRenderer",
+        "class Tesseract",
+        "class UNICHARSET",
+        "const Dawg",
+        "const PAGE_RES",
+        "const char",
+        "const std",
+        "struct Boxa",
+        "struct OSResults",
+        "struct Pix",
+        "struct Pixa"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/renderer.h": {
+      "fichier": "include/tesseract/renderer.h",
+      "langage": "c",
+      "lignes": 334,
+      "taille_bytes": 10417,
+      "entrees": [
+        "<cstdint>",
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class TESS_API",
+        "class TessBaseAPI",
+        "const char",
+        "struct Pix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/publictypes.h": {
+      "fichier": "include/tesseract/publictypes.h",
+      "langage": "c",
+      "lignes": 281,
+      "taille_bytes": 12068,
+      "entrees": [],
+      "sorties": [
+        "enum OcrEngineMode",
+        "enum Orientation",
+        "enum PageIteratorLevel",
+        "enum PageSegMode",
+        "enum ParagraphJustification",
+        "enum PolyBlockType",
+        "enum TextlineOrder",
+        "enum WritingDirection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/unichar.h": {
+      "fichier": "include/tesseract/unichar.h",
+      "langage": "c",
+      "lignes": 174,
+      "taille_bytes": 6305,
+      "entrees": [
+        "<cstring>",
+        "<memory.h>",
+        "<string>",
+        "<vector>",
+        "CI",
+        "UNICHAR_ID",
+        "char32"
+      ],
+      "sorties": [
+        "class TESS_API",
+        "const char",
+        "enum StrongScriptDirection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/capi.h": {
+      "fichier": "include/tesseract/capi.h",
+      "langage": "c",
+      "lignes": 625,
+      "taille_bytes": 25425,
+      "entrees": [
+        "<stdbool.h>",
+        "<stdio.h>"
+      ],
+      "sorties": [
+        "const TessBaseAPI",
+        "const TessChoiceIterator",
+        "const TessPageIterator",
+        "const TessResultIterator",
+        "const char",
+        "const unsigned",
+        "struct Boxa",
+        "struct Pix",
+        "struct Pixa"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/ocrclass.h": {
+      "fichier": "include/tesseract/ocrclass.h",
+      "langage": "c",
+      "lignes": 158,
+      "taille_bytes": 7176,
+      "entrees": [
+        "<chrono>",
+        "<ctime>",
+        "CANCEL_FUNC",
+        "PROGRESS_FUNC",
+        "PROGRESS_FUNC2"
+      ],
+      "sorties": [
+        "class ETEXT_DESC",
+        "struct EANYCODE_CHAR"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/ltrresultiterator.h": {
+      "fichier": "include/tesseract/ltrresultiterator.h",
+      "langage": "c",
+      "lignes": 235,
+      "taille_bytes": 10291,
+      "entrees": [],
+      "sorties": [
+        "class BLOB_CHOICE_IT",
+        "class PAGE_RES",
+        "class TESS_API",
+        "class Tesseract",
+        "class WERD_RES",
+        "const char",
+        "const int",
+        "const void"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/osdetect.h": {
+      "fichier": "include/tesseract/osdetect.h",
+      "langage": "c",
+      "lignes": 136,
+      "taille_bytes": 4397,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class BLOBNBOX",
+        "class BLOBNBOX_CLIST",
+        "class BLOB_CHOICE_LIST",
+        "class OrientationDetector",
+        "class ScriptDetector",
+        "class TO_BLOCK_LIST",
+        "class Tesseract",
+        "class UNICHARSET",
+        "const int",
+        "const std",
+        "struct OSBestResult",
+        "struct OSResults"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/tesseract/pageiterator.h": {
+      "fichier": "include/tesseract/pageiterator.h",
+      "langage": "c",
+      "lignes": 364,
+      "taille_bytes": 15156,
+      "entrees": [],
+      "sorties": [
+        "class C_BLOB_IT",
+        "class PAGE_RES",
+        "class PAGE_RES_IT",
+        "class TESS_API",
+        "class Tesseract",
+        "class WERD",
+        "const PageIterator",
+        "struct BlamerBundle",
+        "struct Pix",
+        "struct Pta"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "snap/snapcraft.yaml": {
+      "fichier": "snap/snapcraft.yaml",
+      "langage": "yaml",
+      "lignes": 50,
+      "taille_bytes": 1310,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/bitvector_test.cc": {
+      "fichier": "unittest/bitvector_test.cc",
+      "langage": "cpp",
+      "lignes": 173,
+      "taille_bytes": 5429,
+      "entrees": [
+        "<cmath>",
+        "<cstdio>",
+        "<string>"
+      ],
+      "sorties": [
+        "class BitVectorTest",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/tablefind_test.cc": {
+      "fichier": "unittest/tablefind_test.cc",
+      "langage": "cpp",
+      "lignes": 276,
+      "taille_bytes": 9223,
+      "entrees": [
+        "<memory>",
+        "TableFinder::GapInXProjection",
+        "TableFinder::HasLeaderAdjacent",
+        "TableFinder::InsertLeaderPartition",
+        "TableFinder::InsertTextPartition",
+        "TableFinder::SplitAndInsertFragmentedTextPartition",
+        "TableFinder::set_global_median_blob_width",
+        "TableFinder::set_global_median_ledding",
+        "TableFinder::set_global_median_xheight"
+      ],
+      "sorties": [
+        "class TableFinderTest",
+        "class TestableTableFinder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/matrix_test.cc": {
+      "fichier": "unittest/matrix_test.cc",
+      "langage": "cpp",
+      "lignes": 139,
+      "taille_bytes": 4615,
+      "entrees": [],
+      "sorties": [
+        "class MatrixTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/layout_test.cc": {
+      "fichier": "unittest/layout_test.cc",
+      "langage": "cpp",
+      "lignes": 235,
+      "taille_bytes": 8718,
+      "entrees": [
+        "<allheaders.h>",
+        "<string>",
+        "<tesseract/baseapi.h>",
+        "<tesseract/resultiterator.h>",
+        "<utility>"
+      ],
+      "sorties": [
+        "class LayoutTest",
+        "const PAGE_RES_IT",
+        "const PolyBlockType",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/shapetable_test.cc": {
+      "fichier": "unittest/shapetable_test.cc",
+      "langage": "cpp",
+      "lignes": 181,
+      "taille_bytes": 5866,
+      "entrees": [
+        "<string>",
+        "<utility>"
+      ],
+      "sorties": [
+        "class ShapeTableTest",
+        "class ShapeTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/stats_test.cc": {
+      "fichier": "unittest/stats_test.cc",
+      "langage": "cpp",
+      "lignes": 66,
+      "taille_bytes": 2044,
+      "entrees": [],
+      "sorties": [
+        "class STATSTest",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/params_model_test.cc": {
+      "fichier": "unittest/params_model_test.cc",
+      "langage": "cpp",
+      "lignes": 75,
+      "taille_bytes": 2572,
+      "entrees": [
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class ParamsModelTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/pagesegmode_test.cc": {
+      "fichier": "unittest/pagesegmode_test.cc",
+      "langage": "cpp",
+      "lignes": 102,
+      "taille_bytes": 3753,
+      "entrees": [
+        "<allheaders.h>",
+        "<filesystem>",
+        "<string>",
+        "<tesseract/baseapi.h>"
+      ],
+      "sorties": [
+        "class PageSegModeTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/commandlineflags_test.cc": {
+      "fichier": "unittest/commandlineflags_test.cc",
+      "langage": "cpp",
+      "lignes": 153,
+      "taille_bytes": 5827,
+      "entrees": [],
+      "sorties": [
+        "class CommandlineflagsTest",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/capiexample_c_test.c": {
+      "fichier": "unittest/capiexample_c_test.c",
+      "langage": "c",
+      "lignes": 20,
+      "taille_bytes": 891,
+      "entrees": [
+        "<tesseract/capi.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/linlsq_test.cc": {
+      "fichier": "unittest/linlsq_test.cc",
+      "langage": "cpp",
+      "lignes": 117,
+      "taille_bytes": 4165,
+      "entrees": [],
+      "sorties": [
+        "class LLSQTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/normstrngs_test.cc": {
+      "fichier": "unittest/normstrngs_test.cc",
+      "langage": "cpp",
+      "lignes": 415,
+      "taille_bytes": 23683,
+      "entrees": [
+        "<tesseract/unichar.h>"
+      ],
+      "sorties": [
+        "const char",
+        "const int32_t",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/tfile_test.cc": {
+      "fichier": "unittest/tfile_test.cc",
+      "langage": "cpp",
+      "lignes": 215,
+      "taille_bytes": 6397,
+      "entrees": [],
+      "sorties": [
+        "class MathData",
+        "class TfileTest",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/tablerecog_test.cc": {
+      "fichier": "unittest/tablerecog_test.cc",
+      "langage": "cpp",
+      "lignes": 332,
+      "taille_bytes": 10986,
+      "entrees": [
+        "<memory>",
+        "StructuredTable::CountHorizontalIntersections",
+        "StructuredTable::CountVerticalIntersections",
+        "StructuredTable::FindLinedStructure",
+        "StructuredTable::FindWhitespacedColumns",
+        "StructuredTable::FindWhitespacedStructure",
+        "StructuredTable::VerifyLinedTableCells",
+        "TableRecognizer::FindLinesBoundingBox",
+        "TableRecognizer::HasSignificantLines",
+        "TableRecognizer::RecognizeLinedTable",
+        "TableRecognizer::RecognizeTable",
+        "TableRecognizer::RecognizeWhitespacedTable"
+      ],
+      "sorties": [
+        "class SharedTest",
+        "class StructuredTableTest",
+        "class TableRecognizerTest",
+        "class TestableStructuredTable",
+        "class TestableTableRecognizer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/ligature_table_test.cc": {
+      "fichier": "unittest/ligature_table_test.cc",
+      "langage": "cpp",
+      "lignes": 110,
+      "taille_bytes": 4112,
+      "entrees": [],
+      "sorties": [
+        "class LigatureTableTest",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/stridemap_test.cc": {
+      "fichier": "unittest/stridemap_test.cc",
+      "langage": "cpp",
+      "lignes": 205,
+      "taille_bytes": 7276,
+      "entrees": [],
+      "sorties": [
+        "class Array2D",
+        "class StridemapTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/nthitem_test.cc": {
+      "fichier": "unittest/nthitem_test.cc",
+      "langage": "cpp",
+      "lignes": 119,
+      "taille_bytes": 3689,
+      "entrees": [],
+      "sorties": [
+        "class NthItemTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/tabvector_test.cc": {
+      "fichier": "unittest/tabvector_test.cc",
+      "langage": "cpp",
+      "lignes": 130,
+      "taille_bytes": 3797,
+      "entrees": [
+        "<memory>"
+      ],
+      "sorties": [
+        "class TabVectorTest",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/lstm_recode_test.cc": {
+      "fichier": "unittest/lstm_recode_test.cc",
+      "langage": "cpp",
+      "lignes": 45,
+      "taille_bytes": 1914,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/tatweel_test.cc": {
+      "fichier": "unittest/tatweel_test.cc",
+      "langage": "cpp",
+      "lignes": 97,
+      "taille_bytes": 3614,
+      "entrees": [
+        "<filesystem>"
+      ],
+      "sorties": [
+        "class TatweelTest",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/cycletimer.h": {
+      "fichier": "unittest/cycletimer.h",
+      "langage": "c",
+      "lignes": 64,
+      "taille_bytes": 1624,
+      "entrees": [
+        "<chrono>"
+      ],
+      "sorties": [
+        "class CycleTimer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/loadlang_test.cc": {
+      "fichier": "unittest/loadlang_test.cc",
+      "langage": "cpp",
+      "lignes": 571,
+      "taille_bytes": 14091,
+      "entrees": [
+        "<memory>",
+        "<tesseract/baseapi.h>",
+        "<time.h>"
+      ],
+      "sorties": [
+        "class LoadLang",
+        "class LoadLanguage",
+        "class LoadScript",
+        "class QuickTest",
+        "const time_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/normstrngs_test.h": {
+      "fichier": "unittest/normstrngs_test.h",
+      "langage": "c",
+      "lignes": 88,
+      "taille_bytes": 3357,
+      "entrees": [
+        "<sstream>",
+        "<string>",
+        "<tesseract/unichar.h>",
+        "<vector>"
+      ],
+      "sorties": [
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/intfeaturemap_test.cc": {
+      "fichier": "unittest/intfeaturemap_test.cc",
+      "langage": "cpp",
+      "lignes": 126,
+      "taille_bytes": 4973,
+      "entrees": [],
+      "sorties": [
+        "class IntFeatureMapTest",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/equationdetect_test.cc": {
+      "fichier": "unittest/equationdetect_test.cc",
+      "langage": "cpp",
+      "lignes": 522,
+      "taille_bytes": 18915,
+      "entrees": [
+        "<allheaders.h>",
+        "<memory>",
+        "<string>",
+        "<utility>"
+      ],
+      "sorties": [
+        "class EquationFinderTest",
+        "class TestableEquationDetect",
+        "const UNICHARSET",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/resultiterator_test.cc": {
+      "fichier": "unittest/resultiterator_test.cc",
+      "langage": "cpp",
+      "lignes": 602,
+      "taille_bytes": 23360,
+      "entrees": [
+        "<allheaders.h>",
+        "<string>",
+        "<tesseract/baseapi.h>",
+        "<tesseract/resultiterator.h>"
+      ],
+      "sorties": [
+        "class ResultIteratorTest",
+        "const StrongScriptDirection",
+        "const char",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/intsimdmatrix_test.cc": {
+      "fichier": "unittest/intsimdmatrix_test.cc",
+      "langage": "cpp",
+      "lignes": 137,
+      "taille_bytes": 4724,
+      "entrees": [
+        "<gtest/gtest.h>",
+        "<gtest/internal/gtest-port.h>",
+        "<memory>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class IntSimdMatrixTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/baseapi_thread_test.cc": {
+      "fichier": "unittest/baseapi_thread_test.cc",
+      "langage": "cpp",
+      "lignes": 232,
+      "taille_bytes": 8148,
+      "entrees": [
+        "<allheaders.h>",
+        "<functional>",
+        "<memory>",
+        "<string>",
+        "<tesseract/baseapi.h>"
+      ],
+      "sorties": [
+        "class BaseapiThreadTest",
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/networkio_test.cc": {
+      "fichier": "unittest/networkio_test.cc",
+      "langage": "cpp",
+      "lignes": 215,
+      "taille_bytes": 6952,
+      "entrees": [],
+      "sorties": [
+        "class NetworkioTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/unichar_test.cc": {
+      "fichier": "unittest/unichar_test.cc",
+      "langage": "cpp",
+      "lignes": 43,
+      "taille_bytes": 1838,
+      "entrees": [
+        "<tesseract/unichar.h>"
+      ],
+      "sorties": [
+        "const char",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/rect_test.cc": {
+      "fichier": "unittest/rect_test.cc",
+      "langage": "cpp",
+      "lignes": 170,
+      "taille_bytes": 5544,
+      "entrees": [],
+      "sorties": [
+        "class TBOXTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/imagedata_test.cc": {
+      "fichier": "unittest/imagedata_test.cc",
+      "langage": "cpp",
+      "lignes": 124,
+      "taille_bytes": 5462,
+      "entrees": [
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class ImagedataTest",
+        "const ImageData",
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/capiexample_test.cc": {
+      "fichier": "unittest/capiexample_test.cc",
+      "langage": "cpp",
+      "lignes": 21,
+      "taille_bytes": 901,
+      "entrees": [
+        "<gtest/gtest.h>",
+        "<tesseract/capi.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/recodebeam_test.cc": {
+      "fichier": "unittest/recodebeam_test.cc",
+      "langage": "cpp",
+      "lignes": 486,
+      "taille_bytes": 20353,
+      "entrees": [],
+      "sorties": [
+        "class RecodeBeamTest",
+        "const WERD_RES",
+        "const char",
+        "const float",
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/lang_model_test.cc": {
+      "fichier": "unittest/lang_model_test.cc",
+      "langage": "cpp",
+      "lignes": 201,
+      "taille_bytes": 9910,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/unicharcompress_test.cc": {
+      "fichier": "unittest/unicharcompress_test.cc",
+      "langage": "cpp",
+      "lignes": 247,
+      "taille_bytes": 9074,
+      "entrees": [
+        "<allheaders.h>",
+        "<string>"
+      ],
+      "sorties": [
+        "class UnicharcompressTest",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/doubleptr.h": {
+      "fichier": "unittest/doubleptr.h",
+      "langage": "c",
+      "lignes": 92,
+      "taille_bytes": 3461,
+      "entrees": [],
+      "sorties": [
+        "class DoublePtr"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/mastertrainer_test.cc": {
+      "fichier": "unittest/mastertrainer_test.cc",
+      "langage": "cpp",
+      "lignes": 287,
+      "taille_bytes": 12013,
+      "entrees": [
+        "<string>",
+        "<utility>",
+        "<vector>",
+        "namespace"
+      ],
+      "sorties": [
+        "class MasterTrainerTest",
+        "class MockClassifier",
+        "const ShapeTable",
+        "const char",
+        "const double"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/unicharset_test.cc": {
+      "fichier": "unittest/unicharset_test.cc",
+      "langage": "cpp",
+      "lignes": 157,
+      "taille_bytes": 5985,
+      "entrees": [
+        "<string>",
+        "testing::ElementsAreArray"
+      ],
+      "sorties": [
+        "class UnicharsetTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/lstm_test.h": {
+      "fichier": "unittest/lstm_test.h",
+      "langage": "c",
+      "lignes": 184,
+      "taille_bytes": 7665,
+      "entrees": [
+        "<memory>",
+        "<string>",
+        "<utility>"
+      ],
+      "sorties": [
+        "class LSTMTrainerTest",
+        "const ImageData",
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/lstm_test.cc": {
+      "fichier": "unittest/lstm_test.cc",
+      "langage": "cpp",
+      "lignes": 214,
+      "taille_bytes": 9738,
+      "entrees": [],
+      "sorties": [
+        "const char",
+        "const int",
+        "const size_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/textlineprojection_test.cc": {
+      "fichier": "unittest/textlineprojection_test.cc",
+      "langage": "cpp",
+      "lignes": 254,
+      "taille_bytes": 10609,
+      "entrees": [
+        "<allheaders.h>",
+        "<string>",
+        "<tesseract/baseapi.h>",
+        "<tesseract/osdetect.h>"
+      ],
+      "sorties": [
+        "class TextlineProjectionTest",
+        "const DENORM",
+        "const PAGE_RES_IT",
+        "const TextlineProjection",
+        "const char",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/stringrenderer_test.cc": {
+      "fichier": "unittest/stringrenderer_test.cc",
+      "langage": "cpp",
+      "lignes": 530,
+      "taille_bytes": 21193,
+      "entrees": [
+        "<allheaders.h>",
+        "<memory>",
+        "<string>"
+      ],
+      "sorties": [
+        "class StringRendererTest",
+        "const char",
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/indexmapbidi_test.cc": {
+      "fichier": "unittest/indexmapbidi_test.cc",
+      "langage": "cpp",
+      "lignes": 121,
+      "taille_bytes": 3797,
+      "entrees": [
+        "<cmath>",
+        "<cstdio>",
+        "<string>"
+      ],
+      "sorties": [
+        "class IndexMapBiDiTest",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/lstm_squashed_test.cc": {
+      "fichier": "unittest/lstm_squashed_test.cc",
+      "langage": "cpp",
+      "lignes": 31,
+      "taille_bytes": 1322,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/fileio_test.cc": {
+      "fichier": "unittest/fileio_test.cc",
+      "langage": "cpp",
+      "lignes": 65,
+      "taille_bytes": 1855,
+      "entrees": [
+        "<memory>",
+        "<stdio.h>"
+      ],
+      "sorties": [
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/progress_test.cc": {
+      "fichier": "unittest/progress_test.cc",
+      "langage": "cpp",
+      "lignes": 156,
+      "taille_bytes": 4961,
+      "entrees": [
+        "::testing::AllOf",
+        "::testing::AtLeast",
+        "::testing::DoAll",
+        "::testing::Gt",
+        "::testing::Le",
+        "::testing::Return",
+        "::testing::SaveArg",
+        "::testing::_",
+        "<allheaders.h>",
+        "<fstream>",
+        "<iostream>",
+        "<locale>",
+        "<memory>",
+        "<string>",
+        "<tesseract/baseapi.h>",
+        "<tesseract/ocrclass.h>",
+        "<time.h>"
+      ],
+      "sorties": [
+        "class ClassicMockProgressSink",
+        "class NewMockProgressSink",
+        "class QuickTest",
+        "const time_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/heap_test.cc": {
+      "fichier": "unittest/heap_test.cc",
+      "langage": "cpp",
+      "lignes": 200,
+      "taille_bytes": 6958,
+      "entrees": [
+        "<string>",
+        "<utility>"
+      ],
+      "sorties": [
+        "class HeapTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/colpartition_test.cc": {
+      "fichier": "unittest/colpartition_test.cc",
+      "langage": "cpp",
+      "lignes": 76,
+      "taille_bytes": 2056,
+      "entrees": [],
+      "sorties": [
+        "class ColPartitionTest",
+        "class TestableColPartition"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/paragraphs_test.cc": {
+      "fichier": "unittest/paragraphs_test.cc",
+      "langage": "cpp",
+      "lignes": 730,
+      "taille_bytes": 39064,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "const ParagraphJustification",
+        "const TextAndModel",
+        "const char",
+        "const int",
+        "const std",
+        "enum TextModelInputType",
+        "struct TextAndModel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/pango_font_info_test.cc": {
+      "fichier": "unittest/pango_font_info_test.cc",
+      "langage": "cpp",
+      "lignes": 330,
+      "taille_bytes": 12581,
+      "entrees": [
+        "<cstdio>",
+        "<pango/pango.h>",
+        "<string>"
+      ],
+      "sorties": [
+        "class FontUtilsTest",
+        "class PangoFontInfoTest",
+        "const char",
+        "const int32_t",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/applybox_test.cc": {
+      "fichier": "unittest/applybox_test.cc",
+      "langage": "cpp",
+      "lignes": 128,
+      "taille_bytes": 4778,
+      "entrees": [
+        "<allheaders.h>",
+        "<string>",
+        "<tesseract/baseapi.h>",
+        "<tesseract/resultiterator.h>"
+      ],
+      "sorties": [
+        "class ApplyBoxTest",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/validate_grapheme_test.cc": {
+      "fichier": "unittest/validate_grapheme_test.cc",
+      "langage": "cpp",
+      "lignes": 169,
+      "taille_bytes": 8033,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/validate_indic_test.cc": {
+      "fichier": "unittest/validate_indic_test.cc",
+      "langage": "cpp",
+      "lignes": 223,
+      "taille_bytes": 10843,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/dawg_test.cc": {
+      "fichier": "unittest/dawg_test.cc",
+      "langage": "cpp",
+      "lignes": 110,
+      "taille_bytes": 4193,
+      "entrees": [
+        "<cstdlib>",
+        "<fstream>",
+        "<set>",
+        "<string>",
+        "<sys/stat.h>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class DawgTest",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/lstmtrainer_test.cc": {
+      "fichier": "unittest/lstmtrainer_test.cc",
+      "langage": "cpp",
+      "lignes": 102,
+      "taille_bytes": 4667,
+      "entrees": [
+        "<allheaders.h>",
+        "<tesseract/baseapi.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/baseapi_test.cc": {
+      "fichier": "unittest/baseapi_test.cc",
+      "langage": "cpp",
+      "lignes": 474,
+      "taille_bytes": 17795,
+      "entrees": [
+        "::testing::ContainsRegex",
+        "::testing::HasSubstr",
+        "<allheaders.h>",
+        "<memory>",
+        "<regex>",
+        "<string>",
+        "<tesseract/baseapi.h>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class FriendlyTessBaseAPI",
+        "class TesseractTest",
+        "const PAGE_RES",
+        "const char",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/list_test.cc": {
+      "fichier": "unittest/list_test.cc",
+      "langage": "cpp",
+      "lignes": 150,
+      "taille_bytes": 4021,
+      "entrees": [],
+      "sorties": [
+        "class Clst",
+        "class Elst",
+        "class Elst2",
+        "class ListTest",
+        "const size_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/log.h": {
+      "fichier": "unittest/log.h",
+      "langage": "c",
+      "lignes": 63,
+      "taille_bytes": 2003,
+      "entrees": [
+        "<iostream>"
+      ],
+      "sorties": [
+        "enum LogLevel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/include_gunit.h": {
+      "fichier": "unittest/include_gunit.h",
+      "langage": "c",
+      "lignes": 87,
+      "taille_bytes": 2882,
+      "entrees": [],
+      "sorties": [
+        "class file"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/cleanapi_test.cc": {
+      "fichier": "unittest/cleanapi_test.cc",
+      "langage": "cpp",
+      "lignes": 30,
+      "taille_bytes": 1149,
+      "entrees": [
+        "<tesseract/baseapi.h>"
+      ],
+      "sorties": [
+        "enum NameTester"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/osd_test.cc": {
+      "fichier": "unittest/osd_test.cc",
+      "langage": "cpp",
+      "lignes": 124,
+      "taille_bytes": 5912,
+      "entrees": [
+        "<allheaders.h>",
+        "<iostream>",
+        "<memory>",
+        "<string>",
+        "<tesseract/baseapi.h>"
+      ],
+      "sorties": [
+        "class OSDTest",
+        "class TestClass",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/validate_khmer_test.cc": {
+      "fichier": "unittest/validate_khmer_test.cc",
+      "langage": "cpp",
+      "lignes": 47,
+      "taille_bytes": 2088,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/scanutils_test.cc": {
+      "fichier": "unittest/scanutils_test.cc",
+      "langage": "cpp",
+      "lignes": 115,
+      "taille_bytes": 3748,
+      "entrees": [
+        "<iostream>"
+      ],
+      "sorties": [
+        "class ScanutilsTest",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/qrsequence_test.cc": {
+      "fichier": "unittest/qrsequence_test.cc",
+      "langage": "cpp",
+      "lignes": 71,
+      "taille_bytes": 2454,
+      "entrees": [
+        "<algorithm>",
+        "<vector>",
+        "QRSequenceGenerator::GetBinaryReversedInteger"
+      ],
+      "sorties": [
+        "class QRSequenceGeneratorTest",
+        "class TestableQRSequenceGenerator",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/apiexample_test.cc": {
+      "fichier": "unittest/apiexample_test.cc",
+      "langage": "cpp",
+      "lignes": 114,
+      "taille_bytes": 4513,
+      "entrees": [
+        "<allheaders.h>",
+        "<fstream>",
+        "<iostream>",
+        "<locale>",
+        "<memory>",
+        "<string>",
+        "<tesseract/baseapi.h>",
+        "<time.h>"
+      ],
+      "sorties": [
+        "class EuroText",
+        "class MatchGroundTruth",
+        "class QuickTest",
+        "const char",
+        "const time_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/validate_myanmar_test.cc": {
+      "fichier": "unittest/validate_myanmar_test.cc",
+      "langage": "cpp",
+      "lignes": 52,
+      "taille_bytes": 2562,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/validator_test.cc": {
+      "fichier": "unittest/validator_test.cc",
+      "langage": "cpp",
+      "lignes": 67,
+      "taille_bytes": 3390,
+      "entrees": [],
+      "sorties": [
+        "class TestableValidator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/denorm_test.cc": {
+      "fichier": "unittest/denorm_test.cc",
+      "langage": "cpp",
+      "lignes": 101,
+      "taille_bytes": 3606,
+      "entrees": [],
+      "sorties": [
+        "class DENORMTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/syntaxnet/base.h": {
+      "fichier": "unittest/syntaxnet/base.h",
+      "langage": "c",
+      "lignes": 66,
+      "taille_bytes": 1823,
+      "entrees": [
+        "<functional>",
+        "<map>",
+        "<string>",
+        "<unordered_map>",
+        "<unordered_set>",
+        "<vector>",
+        "std::map",
+        "std::pair",
+        "std::string",
+        "std::unordered_map",
+        "std::unordered_set",
+        "std::vector",
+        "tensorflow::StringPiece",
+        "tensorflow::int16",
+        "tensorflow::int32",
+        "tensorflow::int64",
+        "tensorflow::int8",
+        "tensorflow::mutex",
+        "tensorflow::mutex_lock",
+        "tensorflow::protobuf::TextFormat",
+        "tensorflow::uint16",
+        "tensorflow::uint32",
+        "tensorflow::uint64",
+        "tensorflow::uint8"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/util/utf8/unilib.cc": {
+      "fichier": "unittest/util/utf8/unilib.cc",
+      "langage": "cpp",
+      "lignes": 56,
+      "taille_bytes": 2016,
+      "entrees": [],
+      "sorties": [
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/util/utf8/unilib.h": {
+      "fichier": "unittest/util/utf8/unilib.h",
+      "langage": "c",
+      "lignes": 63,
+      "taille_bytes": 2373,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/util/utf8/unicodetext.h": {
+      "fichier": "unittest/util/utf8/unicodetext.h",
+      "langage": "c",
+      "lignes": 490,
+      "taille_bytes": 18456,
+      "entrees": [
+        "<iterator>",
+        "<stddef.h>",
+        "<string>",
+        "<utility>"
+      ],
+      "sorties": [
+        "class Repr",
+        "class UnicodeText",
+        "class const_iterator",
+        "class const_reverse_iterator",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/util/utf8/unilib_utf8_utils.h": {
+      "fichier": "unittest/util/utf8/unilib_utf8_utils.h",
+      "langage": "c",
+      "lignes": 66,
+      "taille_bytes": 2435,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/util/utf8/unicodetext.cc": {
+      "fichier": "unittest/util/utf8/unicodetext.cc",
+      "langage": "cpp",
+      "lignes": 509,
+      "taille_bytes": 15519,
+      "entrees": [
+        "<algorithm>",
+        "<string.h>"
+      ],
+      "sorties": [
+        "const UnicodeText",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/fuzzers/fuzzer-api.cpp": {
+      "fichier": "unittest/fuzzers/fuzzer-api.cpp",
+      "langage": "cpp",
+      "lignes": 100,
+      "taille_bytes": 2104,
+      "entrees": [
+        "<allheaders.h>",
+        "<cstdio>",
+        "<cstdlib>",
+        "<libgen.h>",
+        "<string>",
+        "<tesseract/baseapi.h>"
+      ],
+      "sorties": [
+        "class BitReader",
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/fuzzers/oss-fuzz-build.sh": {
+      "fichier": "unittest/fuzzers/oss-fuzz-build.sh",
+      "langage": "shell",
+      "lignes": 62,
+      "taille_bytes": 2157,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/third_party/utf/rune.c": {
+      "fichier": "unittest/third_party/utf/rune.c",
+      "langage": "c",
+      "lignes": 341,
+      "taille_bytes": 7617,
+      "entrees": [
+        "<stdarg.h>",
+        "<stdint.h>",
+        "<string.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unittest/third_party/utf/utf.h": {
+      "fichier": "unittest/third_party/utf/utf.h",
+      "langage": "c",
+      "lignes": 226,
+      "taille_bytes": 7905,
+      "entrees": [
+        "<stdint.h>"
+      ],
+      "sorties": [
+        "const Rune",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "doc/generate_manpages.sh": {
+      "fichier": "doc/generate_manpages.sh",
+      "langage": "shell",
+      "lignes": 34,
+      "taille_bytes": 1298,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/svpaint.cpp": {
+      "fichier": "src/svpaint.cpp",
+      "langage": "cpp",
+      "lignes": 251,
+      "taille_bytes": 9267,
+      "entrees": [],
+      "sorties": [
+        "class SVPaint",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tesseract.cpp": {
+      "fichier": "src/tesseract.cpp",
+      "langage": "cpp",
+      "lignes": 865,
+      "taille_bytes": 29046,
+      "entrees": [
+        "<allheaders.h>",
+        "<cerrno>",
+        "<climits>",
+        "<cstdlib>",
+        "<iostream>",
+        "<map>",
+        "<memory>",
+        "<tesseract/baseapi.h>",
+        "<tesseract/renderer.h>",
+        "namespace"
+      ],
+      "sorties": [
+        "class AutoWin32ConsoleOutputCP",
+        "const auto",
+        "const char",
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/quspline.h": {
+      "fichier": "src/ccstruct/quspline.h",
+      "langage": "c",
+      "lignes": 99,
+      "taille_bytes": 3390,
+      "entrees": [
+        "<cstdint>"
+      ],
+      "sorties": [
+        "class ICOORD",
+        "class QUAD_COEFFS",
+        "class ROW",
+        "class TBOX",
+        "class TESS_API",
+        "const QSPLINE",
+        "struct Pix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/ocrpara.h": {
+      "fichier": "src/ccstruct/ocrpara.h",
+      "langage": "c",
+      "lignes": 203,
+      "taille_bytes": 7447,
+      "entrees": [
+        "<tesseract/publictypes.h>"
+      ],
+      "sorties": [
+        "class ParagraphModel",
+        "class TESS_API",
+        "const ParagraphModel",
+        "struct PARA"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/coutln.h": {
+      "fichier": "src/ccstruct/coutln.h",
+      "langage": "c",
+      "lignes": 297,
+      "taille_bytes": 11404,
+      "entrees": [
+        "<bitset>",
+        "<cstdint>",
+        "<tesseract/export.h>"
+      ],
+      "sorties": [
+        "class CRACKEDGE",
+        "class C_OUTLINE",
+        "class DENORM",
+        "const C_OUTLINE",
+        "const ICOORD",
+        "const TBOX",
+        "enum C_OUTLINE_FLAGS",
+        "struct EdgeOffset",
+        "struct Pix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/crakedge.h": {
+      "fichier": "src/ccstruct/crakedge.h",
+      "langage": "c",
+      "lignes": 42,
+      "taille_bytes": 1323,
+      "entrees": [],
+      "sorties": [
+        "class CRACKEDGE"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/blobs.h": {
+      "fichier": "src/ccstruct/blobs.h",
+      "langage": "c",
+      "lignes": 476,
+      "taille_bytes": 16444,
+      "entrees": [
+        "<tesseract/publictypes.h>",
+        "VECTOR"
+      ],
+      "sorties": [
+        "class BLOCK",
+        "class C_BLOB",
+        "class C_OUTLINE",
+        "class LLSQ",
+        "class ROW",
+        "class WERD",
+        "const DENORM",
+        "const EDGEPT",
+        "const TBOX",
+        "struct EDGEPT",
+        "struct Pix",
+        "struct TBLOB",
+        "struct TESSLINE",
+        "struct TPOINT",
+        "struct TWERD"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/boxread.h": {
+      "fichier": "src/ccstruct/boxread.h",
+      "langage": "c",
+      "lignes": 89,
+      "taille_bytes": 4009,
+      "entrees": [
+        "<cstdio>",
+        "<string>",
+        "<tesseract/export.h>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class TBOX",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/blamer.cpp": {
+      "fichier": "src/ccstruct/blamer.cpp",
+      "langage": "cpp",
+      "lignes": 576,
+      "taille_bytes": 24624,
+      "entrees": [
+        "<cmath>",
+        "<cstdlib>"
+      ],
+      "sorties": [
+        "const BLOB_CHOICE",
+        "const BLOB_CHOICE_LIST",
+        "const TBOX",
+        "const UNICHARSET",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/points.cpp": {
+      "fichier": "src/ccstruct/points.cpp",
+      "langage": "cpp",
+      "lignes": 158,
+      "taille_bytes": 5214,
+      "entrees": [
+        "<algorithm>",
+        "<cmath>",
+        "<cstdlib>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/rejctmap.h": {
+      "fichier": "src/ccstruct/rejctmap.h",
+      "langage": "c",
+      "lignes": 376,
+      "taille_bytes": 10683,
+      "entrees": [
+        "<bitset>",
+        "<memory>"
+      ],
+      "sorties": [
+        "class REJ",
+        "class REJMAP",
+        "const REJ",
+        "enum REJ_FLAGS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/dppoint.h": {
+      "fichier": "src/ccstruct/dppoint.h",
+      "langage": "c",
+      "lignes": 105,
+      "taille_bytes": 3920,
+      "entrees": [
+        "<cstdint>",
+        "CostFunc"
+      ],
+      "sorties": [
+        "class DPPoint",
+        "const DPPoint"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/coutln.cpp": {
+      "fichier": "src/ccstruct/coutln.cpp",
+      "langage": "cpp",
+      "lignes": 1062,
+      "taille_bytes": 35128,
+      "entrees": [
+        "<algorithm>",
+        "<allheaders.h>",
+        "<cmath>",
+        "<cstdlib>",
+        "<cstring>"
+      ],
+      "sorties": [
+        "const C_OUTLINE",
+        "const DENORM",
+        "const l_uint32"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/quadlsq.h": {
+      "fichier": "src/ccstruct/quadlsq.h",
+      "langage": "c",
+      "lignes": 70,
+      "taille_bytes": 1982,
+      "entrees": [],
+      "sorties": [
+        "class QLSQ"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/blread.cpp": {
+      "fichier": "src/ccstruct/blread.cpp",
+      "langage": "cpp",
+      "lignes": 74,
+      "taille_bytes": 2618,
+      "entrees": [
+        "<cstdio>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/normalis.h": {
+      "fichier": "src/ccstruct/normalis.h",
+      "langage": "c",
+      "lignes": 310,
+      "taille_bytes": 14246,
+      "entrees": [
+        "<tesseract/export.h>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class BLOCK",
+        "class FCOORD",
+        "class TBOX",
+        "class TESS_API",
+        "class UNICHARSET",
+        "const BLOCK",
+        "const DENORM",
+        "const FCOORD",
+        "const int",
+        "const std",
+        "enum NormalizationMode",
+        "struct Pix",
+        "struct TBLOB",
+        "struct TPOINT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/ocrblock.h": {
+      "fichier": "src/ccstruct/ocrblock.h",
+      "langage": "c",
+      "lignes": 227,
+      "taille_bytes": 6922,
+      "entrees": [],
+      "sorties": [
+        "class BLOCK",
+        "class TESS_API",
+        "const ICOORD",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/ocrrow.cpp": {
+      "fichier": "src/ccstruct/ocrrow.cpp",
+      "langage": "cpp",
+      "lignes": 245,
+      "taille_bytes": 7338,
+      "entrees": [],
+      "sorties": [
+        "const ICOORD"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/polyaprx.h": {
+      "fichier": "src/ccstruct/polyaprx.h",
+      "langage": "c",
+      "lignes": 32,
+      "taille_bytes": 1142,
+      "entrees": [],
+      "sorties": [
+        "class C_OUTLINE",
+        "struct TESSLINE"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/ccstruct.cpp": {
+      "fichier": "src/ccstruct/ccstruct.cpp",
+      "langage": "cpp",
+      "lignes": 31,
+      "taille_bytes": 1286,
+      "entrees": [],
+      "sorties": [
+        "const double"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/blread.h": {
+      "fichier": "src/ccstruct/blread.h",
+      "langage": "c",
+      "lignes": 40,
+      "taille_bytes": 1342,
+      "entrees": [
+        "<cstdint>",
+        "<string>"
+      ],
+      "sorties": [
+        "class BLOCK_LIST"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ccstruct/boxword.cpp": {
+      "fichier": "src/ccstruct/boxword.cpp",
+      "langage": "cpp",
+      "lignes": 211,
+      "taille_bytes": 6732,
+      "entrees": [],
+      "sorties": [
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

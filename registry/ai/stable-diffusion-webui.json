@@ -1,0 +1,3681 @@
+{
+  "meta": {
+    "projet": "stable-diffusion-webui",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "shell": 3,
+      "toml": 2,
+      "javascript": 5,
+      "python": 97,
+      "json": 1,
+      "yaml": 1,
+      "html": 11
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 69,
+    "edges_circulaires": 6,
+    "noeuds_centraux": 1,
+    "noeuds_feuilles": 3,
+    "noeuds_hubs": 0,
+    "points_entree": 5,
+    "fichier_plus_appele": "extensions-builtin/Lora/network.py"
+  },
+  "noeuds": {
+    "webui-macos-env.sh": {
+      "fichier": "webui-macos-env.sh",
+      "langage": "shell",
+      "lignes": 17,
+      "taille_bytes": 751,
+      "entrees": [],
+      "sorties": [
+        "export COMMANDLINE_ARGS",
+        "export PYTORCH_ENABLE_MPS_FALLBACK",
+        "export TORCH_COMMAND",
+        "export install_dir"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "webui-user.sh": {
+      "fichier": "webui-user.sh",
+      "langage": "shell",
+      "lignes": 48,
+      "taille_bytes": 1332,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pyproject.toml": {
+      "fichier": "pyproject.toml",
+      "langage": "toml",
+      "lignes": 38,
+      "taille_bytes": 841,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "script.js": {
+      "fichier": "script.js",
+      "langage": "javascript",
+      "lignes": 214,
+      "taille_bytes": 6600,
+      "entrees": [],
+      "sorties": [
+        "const callback",
+        "const clRect",
+        "const computedStyle",
+        "const elem",
+        "const elems",
+        "const generateButton",
+        "const globalPopup",
+        "const interruptButton",
+        "const isAltKey",
+        "const isCtrlKey",
+        "const isEnter",
+        "const isEsc",
+        "const isOnScreen",
+        "const isVisible",
+        "const lightboxModal",
+        "const newTab",
+        "const observer",
+        "const skipButton",
+        "const windowHeight",
+        "function executeCallbacks",
+        "function get_uiCurrentTab",
+        "function get_uiCurrentTabContent",
+        "function gradioApp",
+        "function onAfterUiUpdate",
+        "function onOptionsAvailable",
+        "function onOptionsChanged",
+        "function onUiLoaded",
+        "function onUiTabChange",
+        "function onUiUpdate",
+        "function scheduleAfterUiUpdateCallbacks",
+        "function uiElementInSight",
+        "function uiElementIsVisible"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".eslintrc.js": {
+      "fichier": ".eslintrc.js",
+      "langage": "javascript",
+      "lignes": 98,
+      "taille_bytes": 3423,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launch.py": {
+      "fichier": "launch.py",
+      "langage": "python",
+      "lignes": 48,
+      "taille_bytes": 1297,
+      "entrees": [
+        "modules"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package.json": {
+      "fichier": "package.json",
+      "langage": "json",
+      "lignes": 11,
+      "taille_bytes": 185,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_typos.toml": {
+      "fichier": "_typos.toml",
+      "langage": "toml",
+      "lignes": 5,
+      "taille_bytes": 146,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "webui.sh": {
+      "fichier": "webui.sh",
+      "langage": "shell",
+      "lignes": 304,
+      "taille_bytes": 11221,
+      "entrees": [],
+      "sorties": [
+        "export ERROR_REPORTING",
+        "export GIT",
+        "export GIT_PYTHON_GIT_EXECUTABLE",
+        "export HSA_OVERRIDE_GFX_VERSION",
+        "export LD_PRELOAD",
+        "export PIP_IGNORE_INSTALLED",
+        "export SD_WEBUI_RESTART",
+        "export TORCH_COMMAND"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "webui.py": {
+      "fichier": "webui.py",
+      "langage": "python",
+      "lignes": 162,
+      "taille_bytes": 5413,
+      "entrees": [
+        "__future__",
+        "fastapi",
+        "modules",
+        "modules.api.api",
+        "modules.call_queue",
+        "modules.shared_cmd_options",
+        "os",
+        "time"
+      ],
+      "sorties": [
+        "def api_only",
+        "def create_api",
+        "def webui"
+      ],
+      "appelle": [
+        "modules/call_queue.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "environment-wsl2.yaml": {
+      "fichier": "environment-wsl2.yaml",
+      "langage": "yaml",
+      "lignes": 11,
+      "taille_bytes": 167,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/lyco_helpers.py": {
+      "fichier": "extensions-builtin/Lora/lyco_helpers.py",
+      "langage": "python",
+      "lignes": 68,
+      "taille_bytes": 2409,
+      "entrees": [
+        "torch"
+      ],
+      "sorties": [
+        "def factorization",
+        "def make_weight_cp",
+        "def rebuild_conventional",
+        "def rebuild_cp_decomposition"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "extensions-builtin/Lora/network_hada.py",
+        "extensions-builtin/Lora/network_lokr.py",
+        "extensions-builtin/Lora/network_lora.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "extensions-builtin/Lora/preload.py": {
+      "fichier": "extensions-builtin/Lora/preload.py",
+      "langage": "python",
+      "lignes": 8,
+      "taille_bytes": 513,
+      "entrees": [
+        "modules",
+        "modules.paths_internal",
+        "os"
+      ],
+      "sorties": [
+        "def preload"
+      ],
+      "appelle": [
+        "modules/paths_internal.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/network_norm.py": {
+      "fichier": "extensions-builtin/Lora/network_norm.py",
+      "langage": "python",
+      "lignes": 28,
+      "taille_bytes": 889,
+      "entrees": [
+        "network"
+      ],
+      "sorties": [
+        "class ModuleTypeNorm",
+        "class NetworkModuleNorm",
+        "def __init__",
+        "def calc_updown",
+        "def create_module"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/network.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/network_oft.py": {
+      "fichier": "extensions-builtin/Lora/network_oft.py",
+      "langage": "python",
+      "lignes": 118,
+      "taille_bytes": 5247,
+      "entrees": [
+        "einops",
+        "network",
+        "torch"
+      ],
+      "sorties": [
+        "class ModuleTypeOFT",
+        "class NetworkModuleOFT",
+        "def __init__",
+        "def calc_updown",
+        "def create_module"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/network.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/network_full.py": {
+      "fichier": "extensions-builtin/Lora/network_full.py",
+      "langage": "python",
+      "lignes": 27,
+      "taille_bytes": 904,
+      "entrees": [
+        "network"
+      ],
+      "sorties": [
+        "class ModuleTypeFull",
+        "class NetworkModuleFull",
+        "def __init__",
+        "def calc_updown",
+        "def create_module"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/network.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/networks.py": {
+      "fichier": "extensions-builtin/Lora/networks.py",
+      "langage": "python",
+      "lignes": 737,
+      "taille_bytes": 29205,
+      "entrees": [
+        "__future__",
+        "gradio",
+        "logging",
+        "lora_logger",
+        "lora_patches",
+        "modules",
+        "modules.models.sd3.mmdit",
+        "modules.textual_inversion.textual_inversion",
+        "network",
+        "network_full",
+        "network_glora",
+        "network_hada",
+        "network_ia3",
+        "network_lokr",
+        "network_lora",
+        "network_norm",
+        "network_oft",
+        "os",
+        "re",
+        "torch",
+        "typing"
+      ],
+      "sorties": [
+        "class BundledTIHash",
+        "def __init__",
+        "def __str__",
+        "def allowed_layer_without_weight",
+        "def assign_network_names_to_compvis_modules",
+        "def convert_diffusers_name_to_compvis",
+        "def infotext_pasted",
+        "def list_available_networks",
+        "def load_network",
+        "def load_networks",
+        "def match",
+        "def network_Conv2d_forward",
+        "def network_Conv2d_load_state_dict",
+        "def network_GroupNorm_forward",
+        "def network_GroupNorm_load_state_dict",
+        "def network_LayerNorm_forward",
+        "def network_LayerNorm_load_state_dict",
+        "def network_Linear_forward",
+        "def network_Linear_load_state_dict",
+        "def network_MultiheadAttention_forward",
+        "def network_MultiheadAttention_load_state_dict",
+        "def network_apply_weights",
+        "def network_forward",
+        "def network_reset_cached_weight",
+        "def network_restore_weights_from_backup",
+        "def process_network_files",
+        "def purge_networks_from_memory",
+        "def restore_weights_backup",
+        "def store_weights_backup",
+        "def update_available_networks_by_names"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/lora_logger.py",
+        "extensions-builtin/Lora/lora_patches.py",
+        "extensions-builtin/Lora/network.py",
+        "extensions-builtin/Lora/network_full.py",
+        "extensions-builtin/Lora/network_glora.py",
+        "extensions-builtin/Lora/network_hada.py",
+        "extensions-builtin/Lora/network_ia3.py",
+        "extensions-builtin/Lora/network_lokr.py",
+        "extensions-builtin/Lora/network_lora.py",
+        "extensions-builtin/Lora/network_norm.py",
+        "extensions-builtin/Lora/network_oft.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/extra_networks_lora.py",
+        "extensions-builtin/Lora/lora.py",
+        "extensions-builtin/Lora/lora_patches.py",
+        "extensions-builtin/Lora/network.py",
+        "extensions-builtin/Lora/scripts/lora_script.py",
+        "extensions-builtin/Lora/ui_extra_networks_lora.py"
+      ],
+      "type_noeud": "central"
+    },
+    "extensions-builtin/Lora/network_lora.py": {
+      "fichier": "extensions-builtin/Lora/network_lora.py",
+      "langage": "python",
+      "lignes": 94,
+      "taille_bytes": 4116,
+      "entrees": [
+        "lyco_helpers",
+        "modules",
+        "modules.models.sd3.mmdit",
+        "network",
+        "torch"
+      ],
+      "sorties": [
+        "class ModuleTypeLora",
+        "class NetworkModuleLora",
+        "def __init__",
+        "def calc_updown",
+        "def create_module",
+        "def forward"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/lyco_helpers.py",
+        "extensions-builtin/Lora/network.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/network_hada.py": {
+      "fichier": "extensions-builtin/Lora/network_hada.py",
+      "langage": "python",
+      "lignes": 55,
+      "taille_bytes": 1985,
+      "entrees": [
+        "lyco_helpers",
+        "network"
+      ],
+      "sorties": [
+        "class ModuleTypeHada",
+        "class NetworkModuleHada",
+        "def __init__",
+        "def calc_updown",
+        "def create_module"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/lyco_helpers.py",
+        "extensions-builtin/Lora/network.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/network_glora.py": {
+      "fichier": "extensions-builtin/Lora/network_glora.py",
+      "langage": "python",
+      "lignes": 33,
+      "taille_bytes": 1246,
+      "entrees": [
+        "network"
+      ],
+      "sorties": [
+        "class ModuleTypeGLora",
+        "class NetworkModuleGLora",
+        "def __init__",
+        "def calc_updown",
+        "def create_module"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/network.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/network_lokr.py": {
+      "fichier": "extensions-builtin/Lora/network_lokr.py",
+      "langage": "python",
+      "lignes": 64,
+      "taille_bytes": 2354,
+      "entrees": [
+        "lyco_helpers",
+        "network",
+        "torch"
+      ],
+      "sorties": [
+        "class ModuleTypeLokr",
+        "class NetworkModuleLokr",
+        "def __init__",
+        "def calc_updown",
+        "def create_module",
+        "def make_kron"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/lyco_helpers.py",
+        "extensions-builtin/Lora/network.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/extra_networks_lora.py": {
+      "fichier": "extensions-builtin/Lora/extra_networks_lora.py",
+      "langage": "python",
+      "lignes": 62,
+      "taille_bytes": 2647,
+      "entrees": [
+        "modules",
+        "networks"
+      ],
+      "sorties": [
+        "class ExtraNetworkLora",
+        "def __init__",
+        "def activate",
+        "def deactivate"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/scripts/lora_script.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/network.py": {
+      "fichier": "extensions-builtin/Lora/network.py",
+      "langage": "python",
+      "lignes": 228,
+      "taille_bytes": 7944,
+      "entrees": [
+        "__future__",
+        "collections",
+        "enum",
+        "modules",
+        "modules.models.sd3.mmdit",
+        "networks",
+        "os",
+        "torch.nn",
+        "torch.nn.functional"
+      ],
+      "sorties": [
+        "class ModuleType",
+        "class Network",
+        "class NetworkModule",
+        "class NetworkOnDisk",
+        "class SdVersion",
+        "def __init__",
+        "def apply_weight_decompose",
+        "def calc_scale",
+        "def calc_updown",
+        "def create_module",
+        "def detect_version",
+        "def finalize_updown",
+        "def forward",
+        "def get_alias",
+        "def multiplier",
+        "def read_hash",
+        "def read_metadata",
+        "def set_hash"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/network_full.py",
+        "extensions-builtin/Lora/network_glora.py",
+        "extensions-builtin/Lora/network_hada.py",
+        "extensions-builtin/Lora/network_ia3.py",
+        "extensions-builtin/Lora/network_lokr.py",
+        "extensions-builtin/Lora/network_lora.py",
+        "extensions-builtin/Lora/network_norm.py",
+        "extensions-builtin/Lora/network_oft.py",
+        "extensions-builtin/Lora/networks.py",
+        "extensions-builtin/Lora/scripts/lora_script.py",
+        "extensions-builtin/Lora/ui_extra_networks_lora.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/lora_patches.py": {
+      "fichier": "extensions-builtin/Lora/lora_patches.py",
+      "langage": "python",
+      "lignes": 31,
+      "taille_bytes": 2556,
+      "entrees": [
+        "modules",
+        "networks",
+        "torch"
+      ],
+      "sorties": [
+        "class LoraPatches",
+        "def __init__",
+        "def undo"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py",
+        "extensions-builtin/Lora/scripts/lora_script.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/lora.py": {
+      "fichier": "extensions-builtin/Lora/lora.py",
+      "langage": "python",
+      "lignes": 9,
+      "taille_bytes": 357,
+      "entrees": [
+        "networks"
+      ],
+      "sorties": [],
+      "appelle": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/scripts/lora_script.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/network_ia3.py": {
+      "fichier": "extensions-builtin/Lora/network_ia3.py",
+      "langage": "python",
+      "lignes": 30,
+      "taille_bytes": 908,
+      "entrees": [
+        "network"
+      ],
+      "sorties": [
+        "class ModuleTypeIa3",
+        "class NetworkModuleIa3",
+        "def __init__",
+        "def calc_updown",
+        "def create_module"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/network.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/ui_extra_networks_lora.py": {
+      "fichier": "extensions-builtin/Lora/ui_extra_networks_lora.py",
+      "langage": "python",
+      "lignes": 90,
+      "taille_bytes": 3796,
+      "entrees": [
+        "modules",
+        "modules.ui_extra_networks",
+        "network",
+        "networks",
+        "os",
+        "ui_edit_user_metadata"
+      ],
+      "sorties": [
+        "class ExtraNetworksPageLora",
+        "def __init__",
+        "def allowed_directories_for_previews",
+        "def create_item",
+        "def create_user_metadata_editor",
+        "def list_items",
+        "def refresh"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/network.py",
+        "extensions-builtin/Lora/networks.py",
+        "extensions-builtin/Lora/ui_edit_user_metadata.py",
+        "modules/ui_extra_networks.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/scripts/lora_script.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/ui_edit_user_metadata.py": {
+      "fichier": "extensions-builtin/Lora/ui_edit_user_metadata.py",
+      "langage": "python",
+      "lignes": 226,
+      "taille_bytes": 8703,
+      "entrees": [
+        "datetime",
+        "gradio",
+        "html",
+        "modules",
+        "random",
+        "re"
+      ],
+      "sorties": [
+        "class LoraUserMetadataEditor",
+        "def __init__",
+        "def build_tags",
+        "def create_editor",
+        "def create_extra_default_items_in_left_column",
+        "def generate_random_prompt",
+        "def generate_random_prompt_from_tags",
+        "def get_metadata_table",
+        "def is_non_comma_tagset",
+        "def put_values_into_components",
+        "def save_lora_user_metadata",
+        "def select_tag"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "extensions-builtin/Lora/ui_extra_networks_lora.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/lora_logger.py": {
+      "fichier": "extensions-builtin/Lora/lora_logger.py",
+      "langage": "python",
+      "lignes": 33,
+      "taille_bytes": 929,
+      "entrees": [
+        "copy",
+        "logging",
+        "sys"
+      ],
+      "sorties": [
+        "class ColoredFormatter",
+        "def format"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "extensions-builtin/Lora/networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/Lora/scripts/lora_script.py": {
+      "fichier": "extensions-builtin/Lora/scripts/lora_script.py",
+      "langage": "python",
+      "lignes": 102,
+      "taille_bytes": 4182,
+      "entrees": [
+        "extra_networks_lora",
+        "fastapi",
+        "gradio",
+        "lora",
+        "lora_patches",
+        "modules",
+        "network",
+        "networks",
+        "re",
+        "ui_extra_networks_lora"
+      ],
+      "sorties": [
+        "def api_networks",
+        "def before_ui",
+        "def create_lora_json",
+        "def infotext_pasted",
+        "def network_replacement",
+        "def unload"
+      ],
+      "appelle": [
+        "extensions-builtin/Lora/extra_networks_lora.py",
+        "extensions-builtin/Lora/lora.py",
+        "extensions-builtin/Lora/lora_patches.py",
+        "extensions-builtin/Lora/network.py",
+        "extensions-builtin/Lora/networks.py",
+        "extensions-builtin/Lora/ui_extra_networks_lora.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "extensions-builtin/LDSR/preload.py": {
+      "fichier": "extensions-builtin/LDSR/preload.py",
+      "langage": "python",
+      "lignes": 6,
+      "taille_bytes": 221,
+      "entrees": [
+        "modules",
+        "os"
+      ],
+      "sorties": [
+        "def preload"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/LDSR/sd_hijack_autoencoder.py": {
+      "fichier": "extensions-builtin/LDSR/sd_hijack_autoencoder.py",
+      "langage": "python",
+      "lignes": 293,
+      "taille_bytes": 11836,
+      "entrees": [
+        "contextlib",
+        "ldm.models.autoencoder",
+        "ldm.modules.diffusionmodules.model",
+        "ldm.modules.ema",
+        "ldm.util",
+        "numpy",
+        "packaging",
+        "pytorch_lightning",
+        "torch",
+        "torch.nn.functional",
+        "torch.optim.lr_scheduler",
+        "vqvae_quantize"
+      ],
+      "sorties": [
+        "class VQModel",
+        "class VQModelInterface",
+        "def __init__",
+        "def _validation_step",
+        "def configure_optimizers",
+        "def decode",
+        "def decode_code",
+        "def ema_scope",
+        "def encode",
+        "def encode_to_prequant",
+        "def forward",
+        "def get_input",
+        "def get_last_layer",
+        "def init_from_ckpt",
+        "def log_images",
+        "def on_train_batch_end",
+        "def to_rgb",
+        "def training_step",
+        "def validation_step"
+      ],
+      "appelle": [
+        "extensions-builtin/LDSR/vqvae_quantize.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/LDSR/scripts/ldsr_model.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/LDSR/ldsr_model_arch.py": {
+      "fichier": "extensions-builtin/LDSR/ldsr_model_arch.py",
+      "langage": "python",
+      "lignes": 250,
+      "taille_bytes": 9759,
+      "entrees": [
+        "PIL",
+        "einops",
+        "gc",
+        "ldm.models.diffusion.ddim",
+        "ldm.util",
+        "modules",
+        "numpy",
+        "omegaconf",
+        "os",
+        "safetensors.torch",
+        "time",
+        "torch",
+        "torchvision"
+      ],
+      "sorties": [
+        "class LDSR",
+        "def __init__",
+        "def convsample_ddim",
+        "def get_cond",
+        "def load_model_from_config",
+        "def make_convolutional_sample",
+        "def run",
+        "def super_resolution"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "extensions-builtin/LDSR/scripts/ldsr_model.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py": {
+      "fichier": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "langage": "python",
+      "lignes": 1443,
+      "taille_bytes": 67254,
+      "entrees": [
+        "contextlib",
+        "einops",
+        "functools",
+        "ldm.models.autoencoder",
+        "ldm.models.diffusion.ddim",
+        "ldm.models.diffusion.ddpm",
+        "ldm.modules.diffusionmodules.util",
+        "ldm.modules.distributions.distributions",
+        "ldm.modules.ema",
+        "ldm.util",
+        "numpy",
+        "pytorch_lightning",
+        "pytorch_lightning.utilities.distributed",
+        "torch",
+        "torch.nn",
+        "torch.optim.lr_scheduler",
+        "torchvision.utils",
+        "tqdm"
+      ],
+      "sorties": [
+        "class DDPMV1",
+        "class DiffusionWrapperV1",
+        "class LatentDiffusionV1",
+        "class Layout2ImgDiffusionV1",
+        "def __init__",
+        "def _get_denoise_row_from_list",
+        "def _get_rows_from_list",
+        "def _predict_eps_from_xstart",
+        "def _prior_bpd",
+        "def apply_model",
+        "def configure_optimizers",
+        "def decode_first_stage",
+        "def delta_border",
+        "def differentiable_decode_first_stage",
+        "def disabled_train",
+        "def ema_scope",
+        "def encode_first_stage",
+        "def forward",
+        "def get_first_stage_encoding",
+        "def get_fold_unfold",
+        "def get_input",
+        "def get_learned_conditioning",
+        "def get_loss",
+        "def get_weighting",
+        "def init_from_ckpt",
+        "def instantiate_cond_stage",
+        "def instantiate_first_stage",
+        "def log_images",
+        "def make_cond_schedule",
+        "def meshgrid",
+        "def on_train_batch_end",
+        "def on_train_batch_start",
+        "def p_losses",
+        "def p_mean_variance",
+        "def p_sample",
+        "def p_sample_loop",
+        "def predict_start_from_noise",
+        "def progressive_denoising",
+        "def q_mean_variance",
+        "def q_posterior",
+        "def q_sample",
+        "def register_schedule",
+        "def sample",
+        "def sample_log",
+        "def shared_step",
+        "def to_rgb",
+        "def training_step",
+        "def uniform_on_device",
+        "def validation_step"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "extensions-builtin/LDSR/scripts/ldsr_model.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/LDSR/vqvae_quantize.py": {
+      "fichier": "extensions-builtin/LDSR/vqvae_quantize.py",
+      "langage": "python",
+      "lignes": 147,
+      "taille_bytes": 6479,
+      "entrees": [
+        "einops",
+        "numpy",
+        "torch",
+        "torch.nn"
+      ],
+      "sorties": [
+        "class VectorQuantizer2",
+        "def __init__",
+        "def forward",
+        "def get_codebook_entry",
+        "def remap_to_used",
+        "def unmap_to_all"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "extensions-builtin/LDSR/sd_hijack_autoencoder.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/LDSR/scripts/ldsr_model.py": {
+      "fichier": "extensions-builtin/LDSR/scripts/ldsr_model.py",
+      "langage": "python",
+      "lignes": 68,
+      "taille_bytes": 3128,
+      "entrees": [
+        "gradio",
+        "ldsr_model_arch",
+        "modules",
+        "modules.modelloader",
+        "modules.upscaler",
+        "os",
+        "sd_hijack_autoencoder",
+        "sd_hijack_ddpm_v1"
+      ],
+      "sorties": [
+        "class UpscalerLDSR",
+        "def __init__",
+        "def do_upscale",
+        "def load_model",
+        "def on_ui_settings"
+      ],
+      "appelle": [
+        "extensions-builtin/LDSR/ldsr_model_arch.py",
+        "extensions-builtin/LDSR/sd_hijack_autoencoder.py",
+        "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "extensions-builtin/postprocessing-for-training/scripts/postprocessing_focal_crop.py": {
+      "fichier": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_focal_crop.py",
+      "langage": "python",
+      "lignes": 54,
+      "taille_bytes": 2392,
+      "entrees": [
+        "gradio",
+        "modules",
+        "modules.textual_inversion"
+      ],
+      "sorties": [
+        "class ScriptPostprocessingFocalCrop",
+        "def process",
+        "def ui"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/postprocessing-for-training/scripts/postprocessing_autosized_crop.py": {
+      "fichier": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_autosized_crop.py",
+      "langage": "python",
+      "lignes": 64,
+      "taille_bytes": 3145,
+      "entrees": [
+        "PIL",
+        "gradio",
+        "modules"
+      ],
+      "sorties": [
+        "class ScriptPostprocessingAutosizedCrop",
+        "def center_crop",
+        "def multicrop_pic",
+        "def process",
+        "def ui"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/postprocessing-for-training/scripts/postprocessing_create_flipped_copies.py": {
+      "fichier": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_create_flipped_copies.py",
+      "langage": "python",
+      "lignes": 32,
+      "taille_bytes": 1150,
+      "entrees": [
+        "PIL",
+        "gradio",
+        "modules"
+      ],
+      "sorties": [
+        "class ScriptPostprocessingCreateFlippedCopies",
+        "def process",
+        "def ui"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/postprocessing-for-training/scripts/postprocessing_split_oversized.py": {
+      "fichier": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_split_oversized.py",
+      "langage": "python",
+      "lignes": 71,
+      "taille_bytes": 2481,
+      "entrees": [
+        "gradio",
+        "math",
+        "modules"
+      ],
+      "sorties": [
+        "class ScriptPostprocessingSplitOversized",
+        "def process",
+        "def split_pic",
+        "def ui"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/postprocessing-for-training/scripts/postprocessing_caption.py": {
+      "fichier": "extensions-builtin/postprocessing-for-training/scripts/postprocessing_caption.py",
+      "langage": "python",
+      "lignes": 30,
+      "taille_bytes": 971,
+      "entrees": [
+        "gradio",
+        "modules"
+      ],
+      "sorties": [
+        "class ScriptPostprocessingCeption",
+        "def process",
+        "def ui"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/extra-options-section/scripts/extra_options_section.py": {
+      "fichier": "extensions-builtin/extra-options-section/scripts/extra_options_section.py",
+      "langage": "python",
+      "lignes": 82,
+      "taille_bytes": 4065,
+      "entrees": [
+        "gradio",
+        "math",
+        "modules",
+        "modules.ui_components"
+      ],
+      "sorties": [
+        "class ExtraOptionsSection",
+        "def __init__",
+        "def before_process",
+        "def get_settings_values",
+        "def show",
+        "def title",
+        "def ui"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/prompt-bracket-checker/javascript/prompt-bracket-checker.js": {
+      "fichier": "extensions-builtin/prompt-bracket-checker/javascript/prompt-bracket-checker.js",
+      "langage": "javascript",
+      "lignes": 42,
+      "taille_bytes": 1714,
+      "entrees": [],
+      "sorties": [
+        "function checkBrackets",
+        "function checkPair",
+        "function setupBracketChecking"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/hypertile/hypertile.py": {
+      "fichier": "extensions-builtin/hypertile/hypertile.py",
+      "langage": "python",
+      "lignes": 351,
+      "taille_bytes": 14160,
+      "entrees": [
+        "__future__",
+        "dataclasses",
+        "einops",
+        "functools",
+        "math",
+        "random",
+        "torch.nn",
+        "typing"
+      ],
+      "sorties": [
+        "class HypertileParams",
+        "def find_hw_candidates",
+        "def get_divisors",
+        "def hypertile_hook_model",
+        "def iterative_closest_divisors",
+        "def largest_tile_size_available",
+        "def random_divisor",
+        "def self_attn_forward",
+        "def set_hypertile_seed",
+        "def wrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "extensions-builtin/hypertile/scripts/hypertile_script.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/hypertile/scripts/hypertile_script.py": {
+      "fichier": "extensions-builtin/hypertile/scripts/hypertile_script.py",
+      "langage": "python",
+      "lignes": 122,
+      "taille_bytes": 7451,
+      "entrees": [
+        "gradio",
+        "hypertile",
+        "modules"
+      ],
+      "sorties": [
+        "class ScriptHypertile",
+        "def add_axis_options",
+        "def add_infotext",
+        "def before_hr",
+        "def configure_hypertile",
+        "def on_ui_settings",
+        "def option",
+        "def process",
+        "def show",
+        "def title"
+      ],
+      "appelle": [
+        "extensions-builtin/hypertile/hypertile.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/SwinIR/preload.py": {
+      "fichier": "extensions-builtin/SwinIR/preload.py",
+      "langage": "python",
+      "lignes": 6,
+      "taille_bytes": 227,
+      "entrees": [
+        "modules",
+        "os"
+      ],
+      "sorties": [
+        "def preload"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/SwinIR/scripts/swinir_model.py": {
+      "fichier": "extensions-builtin/SwinIR/scripts/swinir_model.py",
+      "langage": "python",
+      "lignes": 95,
+      "taille_bytes": 3767,
+      "entrees": [
+        "PIL",
+        "gradio",
+        "logging",
+        "modules",
+        "modules.upscaler",
+        "sys",
+        "torch"
+      ],
+      "sorties": [
+        "class UpscalerSwinIR",
+        "def __init__",
+        "def _get_device",
+        "def do_upscale",
+        "def load_model",
+        "def on_ui_settings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/soft-inpainting/scripts/soft_inpainting.py": {
+      "fichier": "extensions-builtin/soft-inpainting/scripts/soft_inpainting.py",
+      "langage": "python",
+      "lignes": 760,
+      "taille_bytes": 30877,
+      "entrees": [
+        "PIL",
+        "gradio",
+        "math",
+        "modules",
+        "modules.images",
+        "modules.processing",
+        "modules.scripts",
+        "modules.shared",
+        "modules.torch_utils",
+        "modules.ui_components",
+        "numpy",
+        "torch"
+      ],
+      "sorties": [
+        "class Script",
+        "class SoftInpaintingSettings",
+        "class WeightedElement",
+        "def __init__",
+        "def add_generation_params",
+        "def apply_adaptive_masks",
+        "def apply_masks",
+        "def gaussian",
+        "def gaussian_kernel_func",
+        "def get_gaussian_kernel",
+        "def get_modified_nmask",
+        "def latent_blend",
+        "def on_mask_blend",
+        "def post_sample",
+        "def postprocess_maskoverlay",
+        "def process",
+        "def processing_uses_inpainting",
+        "def show",
+        "def smootherstep",
+        "def smoothstep",
+        "def sort_key",
+        "def title",
+        "def ui",
+        "def vec",
+        "def weighted_histogram_filter",
+        "def weighted_histogram_filter_single"
+      ],
+      "appelle": [
+        "modules/shared.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/mobile/javascript/mobile.js": {
+      "fichier": "extensions-builtin/mobile/javascript/mobile.js",
+      "langage": "javascript",
+      "lignes": 34,
+      "taille_bytes": 1089,
+      "entrees": [],
+      "sorties": [
+        "function isMobile",
+        "function reportWindowSize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/canvas-zoom-and-pan/javascript/zoom.js": {
+      "fichier": "extensions-builtin/canvas-zoom-and-pan/javascript/zoom.js",
+      "langage": "javascript",
+      "lignes": 995,
+      "taille_bytes": 36827,
+      "entrees": [],
+      "sorties": [
+        "const action",
+        "const activeTab",
+        "const applyZoomAndPanIntegration",
+        "const canvas",
+        "const changeAmount",
+        "const checkForElement",
+        "const closeBtn",
+        "const computedStyle",
+        "const configValue",
+        "const defaultHotkeysConfig",
+        "const defaultValue",
+        "const el",
+        "const elemData",
+        "const element",
+        "const elementHeight",
+        "const elementIDs",
+        "const elementRect",
+        "const elementWidth",
+        "const elementX",
+        "const elementY",
+        "const elements",
+        "const fileInput",
+        "const functionMap",
+        "const hasOwnProperty",
+        "const hotkeyActions",
+        "const hotkeys",
+        "const hotkeysConfig",
+        "const hotkeysConfigOpts",
+        "const hotkeysInfo",
+        "const imageARPreview",
+        "const img",
+        "const info",
+        "const input",
+        "const key",
+        "const mainEl",
+        "const mainTab",
+        "const mainTabId",
+        "const maxValue",
+        "const newValue",
+        "const normalizedUserValue",
+        "const observer",
+        "const offsetX",
+        "const offsetY",
+        "const operation",
+        "const originXValue",
+        "const originYValue",
+        "const parentElement",
+        "const parentRect",
+        "const preHotkeysConfig",
+        "const rangeInputs",
+        "const result",
+        "const scale",
+        "const scaleMatch",
+        "const scaleX",
+        "const scaleY",
+        "const screenHeight",
+        "const screenWidth",
+        "const scrollbarWidth",
+        "const specialKeys",
+        "const tabNameToElementId",
+        "const tabs",
+        "const targetElement",
+        "const toolTipElement",
+        "const tooltip",
+        "const tooltipContent",
+        "const transformOrigin",
+        "const transformString",
+        "const usedKeys",
+        "const userValue",
+        "const waitForElement",
+        "const zIndex1",
+        "const zIndex2",
+        "function adjustBrushSize",
+        "function applyZoomAndPan",
+        "function autoExpand",
+        "function changeZoomLevel",
+        "function checkForOutBox",
+        "function createHotkeyConfig",
+        "function createTooltip",
+        "function disableFunctions",
+        "function fitToElement",
+        "function fitToScreen",
+        "function fixCanvas",
+        "function formatHotkeyForDisplay",
+        "function getActiveTab",
+        "function getMousePosition",
+        "function getTabId",
+        "function handleAltKeyUp",
+        "function handleKeyDown",
+        "function handleMouseLeave",
+        "function handleMouseMove",
+        "function handleMoveByKey",
+        "function handleMoveKeyDown",
+        "function handleMoveKeyUp",
+        "function hasHorizontalScrollbar",
+        "function isModifierKey",
+        "function isValidHotkey",
+        "function normalizeHotkey",
+        "function resetZoom",
+        "function restoreImgRedMask",
+        "function toggleOverlap",
+        "function updatePanPosition",
+        "function updateZoom"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/canvas-zoom-and-pan/scripts/hotkey_config.py": {
+      "fichier": "extensions-builtin/canvas-zoom-and-pan/scripts/hotkey_config.py",
+      "langage": "python",
+      "lignes": 17,
+      "taille_bytes": 1961,
+      "entrees": [
+        "gradio",
+        "modules"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/ScuNET/preload.py": {
+      "fichier": "extensions-builtin/ScuNET/preload.py",
+      "langage": "python",
+      "lignes": 6,
+      "taille_bytes": 227,
+      "entrees": [
+        "modules",
+        "os"
+      ],
+      "sorties": [
+        "def preload"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions-builtin/ScuNET/scripts/scunet_model.py": {
+      "fichier": "extensions-builtin/ScuNET/scripts/scunet_model.py",
+      "langage": "python",
+      "lignes": 74,
+      "taille_bytes": 3095,
+      "entrees": [
+        "PIL.Image",
+        "gradio",
+        "modules",
+        "modules.upscaler",
+        "sys"
+      ],
+      "sorties": [
+        "class UpscalerScuNET",
+        "def __init__",
+        "def do_upscale",
+        "def load_model",
+        "def on_ui_settings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/extra-networks-pane.html": {
+      "fichier": "html/extra-networks-pane.html",
+      "langage": "html",
+      "lignes": 81,
+      "taille_bytes": 3675,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/extra-networks-metadata-button.html": {
+      "fichier": "html/extra-networks-metadata-button.html",
+      "langage": "html",
+      "lignes": 4,
+      "taille_bytes": 161,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/extra-networks-tree-button.html": {
+      "fichier": "html/extra-networks-tree-button.html",
+      "langage": "html",
+      "lignes": 23,
+      "taille_bytes": 912,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/extra-networks-copy-path-button.html": {
+      "fichier": "html/extra-networks-copy-path-button.html",
+      "langage": "html",
+      "lignes": 5,
+      "taille_bytes": 168,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/licenses.html": {
+      "fichier": "html/licenses.html",
+      "langage": "html",
+      "lignes": 382,
+      "taille_bytes": 20645,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/extra-networks-edit-item-button.html": {
+      "fichier": "html/extra-networks-edit-item-button.html",
+      "langage": "html",
+      "lignes": 4,
+      "taille_bytes": 162,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/extra-networks-no-cards.html": {
+      "fichier": "html/extra-networks-no-cards.html",
+      "langage": "html",
+      "lignes": 8,
+      "taille_bytes": 119,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/extra-networks-card.html": {
+      "fichier": "html/extra-networks-card.html",
+      "langage": "html",
+      "lignes": 9,
+      "taille_bytes": 360,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/footer.html": {
+      "fichier": "html/footer.html",
+      "langage": "html",
+      "lignes": 15,
+      "taille_bytes": 556,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/extra-networks-pane-tree.html": {
+      "fichier": "html/extra-networks-pane-tree.html",
+      "langage": "html",
+      "lignes": 8,
+      "taille_bytes": 423,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "html/extra-networks-pane-dirs.html": {
+      "fichier": "html/extra-networks-pane-dirs.html",
+      "langage": "html",
+      "lignes": 8,
+      "taille_bytes": 322,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/face_restoration_utils.py": {
+      "fichier": "modules/face_restoration_utils.py",
+      "langage": "python",
+      "lignes": 180,
+      "taille_bytes": 6443,
+      "entrees": [
+        "__future__",
+        "cv2",
+        "facexlib.detection",
+        "facexlib.parsing",
+        "facexlib.utils.face_restoration_helper",
+        "functools",
+        "logging",
+        "modules",
+        "numpy",
+        "os",
+        "torch",
+        "torchvision.transforms.functional",
+        "typing"
+      ],
+      "sorties": [
+        "class CommonFaceRestoration",
+        "def __init__",
+        "def bgr_image_to_rgb_tensor",
+        "def create_face_helper",
+        "def face_helper",
+        "def facex_load_file_from_url",
+        "def facex_load_file_from_url2",
+        "def get_device",
+        "def load_net",
+        "def patch_facexlib",
+        "def restore_with_face_helper",
+        "def restore_with_helper",
+        "def rgb_tensor_to_bgr_image",
+        "def send_model_to",
+        "def update_kwargs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/progress.py": {
+      "fichier": "modules/progress.py",
+      "langage": "python",
+      "lignes": 152,
+      "taille_bytes": 5977,
+      "entrees": [
+        "base64",
+        "collections",
+        "gradio",
+        "io",
+        "modules.shared",
+        "pydantic",
+        "random",
+        "string",
+        "time",
+        "typing"
+      ],
+      "sorties": [
+        "class PendingTasksResponse",
+        "class ProgressRequest",
+        "class ProgressResponse",
+        "def add_task_to_queue",
+        "def create_task_id",
+        "def finish_task",
+        "def get_pending_tasks",
+        "def progressapi",
+        "def record_results",
+        "def restore_progress",
+        "def setup_progress_api",
+        "def start_task"
+      ],
+      "appelle": [
+        "modules/shared.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/rng.py": {
+      "fichier": "modules/rng.py",
+      "langage": "python",
+      "lignes": 170,
+      "taille_bytes": 6516,
+      "entrees": [
+        "modules",
+        "torch"
+      ],
+      "sorties": [
+        "class ImageRNG",
+        "def __init__",
+        "def create_generator",
+        "def first",
+        "def manual_seed",
+        "def next",
+        "def randn",
+        "def randn_like",
+        "def randn_local",
+        "def randn_without_seed",
+        "def slerp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/ui_extra_networks.py": {
+      "fichier": "modules/ui_extra_networks.py",
+      "langage": "python",
+      "lignes": 838,
+      "taille_bytes": 33805,
+      "entrees": [
+        "PIL",
+        "base64",
+        "dataclasses",
+        "fastapi.exceptions",
+        "functools",
+        "gradio",
+        "html",
+        "io",
+        "json",
+        "modules",
+        "modules.images",
+        "modules.infotext_utils",
+        "modules.ui_extra_networks_checkpoints",
+        "modules.ui_extra_networks_hypernets",
+        "modules.ui_extra_networks_textual_inversion",
+        "os.path",
+        "pathlib",
+        "starlette.responses",
+        "typing",
+        "urllib.parse"
+      ],
+      "sorties": [
+        "class ExtraNetworksItem",
+        "class ExtraNetworksPage",
+        "class ExtraNetworksUi",
+        "def __init__",
+        "def _build_tree",
+        "def _get_tree",
+        "def add_pages_to_demo",
+        "def allowed_directories_for_previews",
+        "def allowed_preview_extensions",
+        "def allowed_preview_extensions_with_extra",
+        "def create_card_view_html",
+        "def create_dirs_view_html",
+        "def create_html",
+        "def create_item",
+        "def create_item_html",
+        "def create_tree_dir_item_html",
+        "def create_tree_file_item_html",
+        "def create_tree_view_html",
+        "def create_ui",
+        "def create_user_metadata_editor",
+        "def fetch_cover_images",
+        "def fetch_file",
+        "def find_description",
+        "def find_embedded_preview",
+        "def find_preview",
+        "def get_metadata",
+        "def get_single_card",
+        "def get_sort_keys",
+        "def get_tree",
+        "def initialize",
+        "def link_preview",
+        "def list_items",
+        "def pages_html",
+        "def pages_in_preferred_order",
+        "def path_is_parent",
+        "def quote_js",
+        "def read_user_metadata",
+        "def refresh",
+        "def register_default_pages",
+        "def register_page",
+        "def save_preview",
+        "def search_terms_from_path",
+        "def setup_ui",
+        "def tab_name_score"
+      ],
+      "appelle": [
+        "modules/ui_extra_networks_hypernets.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/Lora/ui_extra_networks_lora.py",
+        "modules/ui_extra_networks_hypernets.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/script_callbacks.py": {
+      "fichier": "modules/script_callbacks.py",
+      "langage": "python",
+      "lignes": 613,
+      "taille_bytes": 22112,
+      "entrees": [
+        "__future__",
+        "dataclasses",
+        "fastapi",
+        "gradio",
+        "inspect",
+        "modules",
+        "os",
+        "typing"
+      ],
+      "sorties": [
+        "class AfterCFGCallbackParams",
+        "class BeforeTokenCounterParams",
+        "class CFGDenoisedParams",
+        "class CFGDenoiserParams",
+        "class ExtraNoiseParams",
+        "class ImageGridLoopParams",
+        "class ImageSaveParams",
+        "class ScriptCallback",
+        "class UiTrainTabParams",
+        "def __init__",
+        "def add_callback",
+        "def after_component_callback",
+        "def app_reload_callback",
+        "def app_started_callback",
+        "def before_component_callback",
+        "def before_image_saved_callback",
+        "def before_token_counter_callback",
+        "def before_ui_callback",
+        "def cfg_after_cfg_callback",
+        "def cfg_denoised_callback",
+        "def cfg_denoiser_callback",
+        "def clear_callbacks",
+        "def enumerate_callbacks",
+        "def extra_noise_callback",
+        "def image_grid_callback",
+        "def image_saved_callback",
+        "def infotext_pasted_callback",
+        "def list_optimizers_callback",
+        "def list_unets_callback",
+        "def model_loaded_callback",
+        "def on_after_component",
+        "def on_app_started",
+        "def on_before_component",
+        "def on_before_image_saved",
+        "def on_before_reload",
+        "def on_before_token_counter",
+        "def on_before_ui",
+        "def on_cfg_after_cfg",
+        "def on_cfg_denoised",
+        "def on_cfg_denoiser",
+        "def on_extra_noise",
+        "def on_image_grid",
+        "def on_image_saved",
+        "def on_infotext_pasted",
+        "def on_list_optimizers",
+        "def on_list_unets",
+        "def on_model_loaded",
+        "def on_script_unloaded",
+        "def on_ui_settings",
+        "def on_ui_tabs",
+        "def on_ui_train_tabs",
+        "def ordered_callbacks",
+        "def remove_callbacks_for_function",
+        "def remove_current_script_callbacks",
+        "def report_exception",
+        "def script_unloaded_callback",
+        "def sort_callbacks",
+        "def ui_settings_callback",
+        "def ui_tabs_callback",
+        "def ui_train_tabs_callback"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/profiling.py": {
+      "fichier": "modules/profiling.py",
+      "langage": "python",
+      "lignes": 46,
+      "taille_bytes": 1347,
+      "entrees": [
+        "modules",
+        "torch"
+      ],
+      "sorties": [
+        "class Profiler",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def webpath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/sd_vae_approx.py": {
+      "fichier": "modules/sd_vae_approx.py",
+      "langage": "python",
+      "lignes": 103,
+      "taille_bytes": 3836,
+      "entrees": [
+        "modules",
+        "os",
+        "torch"
+      ],
+      "sorties": [
+        "class VAEApprox",
+        "def __init__",
+        "def cheap_approximation",
+        "def download_model",
+        "def forward",
+        "def model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/call_queue.py": {
+      "fichier": "modules/call_queue.py",
+      "langage": "python",
+      "lignes": 134,
+      "taille_bytes": 5012,
+      "entrees": [
+        "functools",
+        "html",
+        "modules",
+        "os.path",
+        "time"
+      ],
+      "sorties": [
+        "def wrap_gradio_call",
+        "def wrap_gradio_call_no_job",
+        "def wrap_gradio_gpu_call",
+        "def wrap_queued_call"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "webui.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/scripts_auto_postprocessing.py": {
+      "fichier": "modules/scripts_auto_postprocessing.py",
+      "langage": "python",
+      "lignes": 42,
+      "taille_bytes": 1491,
+      "entrees": [
+        "modules"
+      ],
+      "sorties": [
+        "class ScriptPostprocessingForMainUI",
+        "def __init__",
+        "def create_auto_preprocessing_script_data",
+        "def postprocess_image",
+        "def show",
+        "def title",
+        "def ui"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/shared.py": {
+      "fichier": "modules/shared.py",
+      "langage": "python",
+      "lignes": 94,
+      "taille_bytes": 2942,
+      "entrees": [
+        "gradio",
+        "modules",
+        "modules.paths_internal",
+        "os",
+        "sys",
+        "typing"
+      ],
+      "sorties": [],
+      "appelle": [
+        "modules/paths_internal.py"
+      ],
+      "est_appele_par": [
+        "extensions-builtin/soft-inpainting/scripts/soft_inpainting.py",
+        "modules/hat_model.py",
+        "modules/postprocessing.py",
+        "modules/progress.py",
+        "modules/realesrgan_model.py",
+        "modules/sd_models.py",
+        "modules/sd_samplers_common.py",
+        "modules/txt2img.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/xpu_specific.py": {
+      "fichier": "modules/xpu_specific.py",
+      "langage": "python",
+      "lignes": 138,
+      "taille_bytes": 5851,
+      "entrees": [
+        "intel_extension_for_pytorch",
+        "modules",
+        "modules.sd_hijack_utils",
+        "torch"
+      ],
+      "sorties": [
+        "def check_for_xpu",
+        "def get_xpu_device_string",
+        "def is_xpu_device",
+        "def torch_xpu_gc",
+        "def torch_xpu_scaled_dot_product_attention"
+      ],
+      "appelle": [
+        "modules/sd_hijack_utils.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/scripts_postprocessing.py": {
+      "fichier": "modules/scripts_postprocessing.py",
+      "langage": "python",
+      "lignes": 230,
+      "taille_bytes": 7226,
+      "entrees": [
+        "dataclasses",
+        "gradio",
+        "modules",
+        "modules.scripts",
+        "os"
+      ],
+      "sorties": [
+        "class PostprocessedImage",
+        "class PostprocessedImageSharedInfo",
+        "class ScriptPostprocessing",
+        "class ScriptPostprocessingRunner",
+        "def __init__",
+        "def create_args_for_run",
+        "def create_copy",
+        "def create_script_ui",
+        "def get_suffix",
+        "def image_changed",
+        "def initialize_scripts",
+        "def process",
+        "def process_firstpass",
+        "def run",
+        "def script_score",
+        "def scripts_in_preferred_order",
+        "def setup_ui",
+        "def ui",
+        "def wrap_call"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/localization.py": {
+      "fichier": "modules/localization.py",
+      "langage": "python",
+      "lignes": 37,
+      "taille_bytes": 1084,
+      "entrees": [
+        "json",
+        "modules",
+        "os"
+      ],
+      "sorties": [
+        "def list_localizations",
+        "def localization_js"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/errors.py": {
+      "fichier": "modules/errors.py",
+      "langage": "python",
+      "lignes": 150,
+      "taille_bytes": 4585,
+      "entrees": [
+        "gradio",
+        "modules",
+        "packaging",
+        "sys",
+        "textwrap",
+        "torch",
+        "traceback",
+        "xformers"
+      ],
+      "sorties": [
+        "def check_versions",
+        "def display",
+        "def display_once",
+        "def format_exception",
+        "def format_traceback",
+        "def get_exceptions",
+        "def print_error_explanation",
+        "def record_exception",
+        "def report",
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/txt2img.py": {
+      "fichier": "modules/txt2img.py",
+      "langage": "python",
+      "lignes": 120,
+      "taille_bytes": 4845,
+      "entrees": [
+        "PIL",
+        "contextlib",
+        "gradio",
+        "json",
+        "modules",
+        "modules.infotext_utils",
+        "modules.scripts",
+        "modules.shared",
+        "modules.ui"
+      ],
+      "sorties": [
+        "def txt2img",
+        "def txt2img_create_processing",
+        "def txt2img_upscale"
+      ],
+      "appelle": [
+        "modules/shared.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/sysinfo.py": {
+      "fichier": "modules/sysinfo.py",
+      "langage": "python",
+      "lignes": 215,
+      "taille_bytes": 6634,
+      "entrees": [
+        "hashlib",
+        "importlib.metadata",
+        "json",
+        "modules",
+        "os",
+        "pathlib",
+        "platform",
+        "psutil",
+        "re",
+        "subprocess",
+        "sys",
+        "torch.utils.collect_env"
+      ],
+      "sorties": [
+        "def check",
+        "def get",
+        "def get_argv",
+        "def get_config",
+        "def get_cpu_info",
+        "def get_dict",
+        "def get_environment",
+        "def get_extensions",
+        "def get_info_from_repo_path",
+        "def get_packages",
+        "def get_ram_info",
+        "def get_torch_sysinfo",
+        "def git_status",
+        "def pretty_bytes",
+        "def run_git",
+        "def to_json"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/sd_schedulers.py": {
+      "fichier": "modules/sd_schedulers.py",
+      "langage": "python",
+      "lignes": 145,
+      "taille_bytes": 4951,
+      "entrees": [
+        "dataclasses",
+        "k_diffusion",
+        "modules",
+        "numpy",
+        "scipy",
+        "torch"
+      ],
+      "sorties": [
+        "class Scheduler",
+        "def beta_scheduler",
+        "def ddim_scheduler",
+        "def get_align_your_steps_sigmas",
+        "def kl_optimal",
+        "def loglinear_interp",
+        "def normal_scheduler",
+        "def sgm_uniform",
+        "def simple_scheduler",
+        "def to_d",
+        "def uniform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/xlmr_m18.py": {
+      "fichier": "modules/xlmr_m18.py",
+      "langage": "python",
+      "lignes": 166,
+      "taille_bytes": 7165,
+      "entrees": [
+        "modules",
+        "torch",
+        "torch.nn",
+        "transformers",
+        "transformers.models.xlm_roberta.configuration_xlm_roberta",
+        "typing"
+      ],
+      "sorties": [
+        "class BertSeriesConfig",
+        "class BertSeriesModelWithTransformation",
+        "class RobertaSeriesConfig",
+        "class RobertaSeriesModelWithTransformation",
+        "def __init__",
+        "def encode",
+        "def forward"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/gfpgan_model.py": {
+      "fichier": "modules/gfpgan_model.py",
+      "langage": "python",
+      "lignes": 69,
+      "taille_bytes": 2097,
+      "entrees": [
+        "__future__",
+        "logging",
+        "modules",
+        "os",
+        "torch"
+      ],
+      "sorties": [
+        "class FaceRestorerGFPGAN",
+        "def get_device",
+        "def gfpgan_fix_faces",
+        "def load_net",
+        "def name",
+        "def restore",
+        "def restore_face",
+        "def setup_model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/hat_model.py": {
+      "fichier": "modules/hat_model.py",
+      "langage": "python",
+      "lignes": 43,
+      "taille_bytes": 1685,
+      "entrees": [
+        "modules",
+        "modules.shared",
+        "modules.upscaler",
+        "modules.upscaler_utils",
+        "os",
+        "sys"
+      ],
+      "sorties": [
+        "class UpscalerHAT",
+        "def __init__",
+        "def do_upscale",
+        "def load_model"
+      ],
+      "appelle": [
+        "modules/shared.py",
+        "modules/upscaler_utils.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "modules/sd_hijack_utils.py": {
+      "fichier": "modules/sd_hijack_utils.py",
+      "langage": "python",
+      "lignes": 36,
+      "taille_bytes": 1558,
+      "entrees": [
+        "importlib"
+      ],
+      "sorties": [
+        "class CondFunc",
+        "def __call__",
+        "def __init__",
+        "def __new__"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "modules/mac_specific.py",
+        "modules/sd_hijack_unet.py",
+        "modules/xpu_specific.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "modules/restart.py": {
+      "fichier": "modules/restart.py",
+      "langage": "python",
+      "lignes": 25,
+      "taille_bytes": 638,
+      "entrees": [
+        "modules.paths_internal",
+        "os",
+        "pathlib"
+      ],
+      "sorties": [
+        "def is_restartable",
+        "def restart_program",
+        "def stop_program"
+      ],
+      "appelle": [
+        "modules/paths_internal.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/styles.py": {
+      "fichier": "modules/styles.py",
+      "langage": "python",
+      "lignes": 234,
+      "taille_bytes": 9572,
+      "entrees": [
+        "__future__",
+        "csv",
+        "modules",
+        "os",
+        "pathlib",
+        "shutil",
+        "typing"
+      ],
+      "sorties": [
+        "class PromptStyle",
+        "class StyleDatabase",
+        "def __init__",
+        "def apply_negative_styles_to_prompt",
+        "def apply_styles_to_prompt",
+        "def extract_original_prompts",
+        "def extract_style_text_from_prompt",
+        "def extract_styles_from_prompt",
+        "def get_negative_style_prompts",
+        "def get_style_paths",
+        "def get_style_prompts",
+        "def load_from_csv",
+        "def merge_prompts",
+        "def reload",
+        "def save_styles"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/sd_disable_initialization.py": {
+      "fichier": "modules/sd_disable_initialization.py",
+      "langage": "python",
+      "lignes": 232,
+      "taille_bytes": 11425,
+      "entrees": [
+        "ldm.modules.encoders.modules",
+        "modules",
+        "open_clip",
+        "torch",
+        "transformers.utils.hub"
+      ],
+      "sorties": [
+        "class DisableInitialization",
+        "class InitializeOnMeta",
+        "class LoadStateDictOnMeta",
+        "class ReplaceHelper",
+        "def CLIPTextModel_from_pretrained",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def create_model_and_transforms_without_pretrained",
+        "def do_nothing",
+        "def get_weight_dtype",
+        "def load_from_state_dict",
+        "def load_state_dict",
+        "def replace",
+        "def restore",
+        "def set_device",
+        "def transformers_configuration_utils_cached_file",
+        "def transformers_modeling_utils_load_pretrained_model",
+        "def transformers_tokenization_utils_base_cached_file",
+        "def transformers_utils_hub_get_file_from_cache",
+        "def transformers_utils_hub_get_from_cache"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/ui_checkpoint_merger.py": {
+      "fichier": "modules/ui_checkpoint_merger.py",
+      "langage": "python",
+      "lignes": 124,
+      "taille_bytes": 7889,
+      "entrees": [
+        "gradio",
+        "modules",
+        "modules.ui_common",
+        "modules.ui_components"
+      ],
+      "sorties": [
+        "class UiCheckpointMerger",
+        "def __init__",
+        "def modelmerger",
+        "def setup_ui",
+        "def update_interp_description"
+      ],
+      "appelle": [
+        "modules/ui_common.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/codeformer_model.py": {
+      "fichier": "modules/codeformer_model.py",
+      "langage": "python",
+      "lignes": 64,
+      "taille_bytes": 1911,
+      "entrees": [
+        "__future__",
+        "logging",
+        "modules",
+        "torch"
+      ],
+      "sorties": [
+        "class FaceRestorerCodeFormer",
+        "def get_device",
+        "def load_net",
+        "def name",
+        "def restore",
+        "def restore_face",
+        "def setup_model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/fifo_lock.py": {
+      "fichier": "modules/fifo_lock.py",
+      "langage": "python",
+      "lignes": 37,
+      "taille_bytes": 1020,
+      "entrees": [
+        "collections",
+        "threading"
+      ],
+      "sorties": [
+        "class FIFOLock",
+        "def __exit__",
+        "def __init__",
+        "def acquire",
+        "def release"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/logging_config.py": {
+      "fichier": "modules/logging_config.py",
+      "langage": "python",
+      "lignes": 58,
+      "taille_bytes": 1616,
+      "entrees": [
+        "logging",
+        "os",
+        "rich.logging",
+        "tqdm"
+      ],
+      "sorties": [
+        "class TqdmLoggingHandler",
+        "def __init__",
+        "def emit",
+        "def setup_logging"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/ngrok.py": {
+      "fichier": "modules/ngrok.py",
+      "langage": "python",
+      "lignes": 30,
+      "taille_bytes": 1146,
+      "entrees": [
+        "ngrok"
+      ],
+      "sorties": [
+        "def connect"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/realesrgan_model.py": {
+      "fichier": "modules/realesrgan_model.py",
+      "langage": "python",
+      "lignes": 105,
+      "taille_bytes": 4058,
+      "entrees": [
+        "modules",
+        "modules.shared",
+        "modules.upscaler",
+        "modules.upscaler_utils",
+        "os"
+      ],
+      "sorties": [
+        "class UpscalerRealESRGAN",
+        "def __init__",
+        "def do_upscale",
+        "def get_realesrgan_models",
+        "def load_model"
+      ],
+      "appelle": [
+        "modules/shared.py",
+        "modules/upscaler_utils.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "modules/extras.py": {
+      "fichier": "modules/extras.py",
+      "langage": "python",
+      "lignes": 330,
+      "taille_bytes": 12610,
+      "entrees": [
+        "gradio",
+        "json",
+        "modules",
+        "modules.ui_common",
+        "os",
+        "re",
+        "safetensors.torch",
+        "shutil",
+        "torch",
+        "tqdm"
+      ],
+      "sorties": [
+        "def add_difference",
+        "def add_model_metadata",
+        "def config",
+        "def create_config",
+        "def fail",
+        "def filename_add_difference",
+        "def filename_nothing",
+        "def filename_weighted_sum",
+        "def get_difference",
+        "def read_metadata",
+        "def run_modelmerger",
+        "def run_pnginfo",
+        "def to_half",
+        "def weighted_sum"
+      ],
+      "appelle": [
+        "modules/ui_common.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/ui_extra_networks_hypernets.py": {
+      "fichier": "modules/ui_extra_networks_hypernets.py",
+      "langage": "python",
+      "lignes": 48,
+      "taille_bytes": 1795,
+      "entrees": [
+        "modules",
+        "modules.hashes",
+        "modules.ui_extra_networks",
+        "os"
+      ],
+      "sorties": [
+        "class ExtraNetworksPageHypernetworks",
+        "def __init__",
+        "def allowed_directories_for_previews",
+        "def create_item",
+        "def list_items",
+        "def refresh"
+      ],
+      "appelle": [
+        "modules/hashes.py",
+        "modules/ui_extra_networks.py"
+      ],
+      "est_appele_par": [
+        "modules/ui_extra_networks.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/infotext_versions.py": {
+      "fichier": "modules/infotext_versions.py",
+      "langage": "python",
+      "lignes": 46,
+      "taille_bytes": 1113,
+      "entrees": [
+        "modules",
+        "packaging",
+        "re"
+      ],
+      "sorties": [
+        "def backcompat",
+        "def parse_version"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/sd_hijack_unet.py": {
+      "fichier": "modules/sd_hijack_unet.py",
+      "langage": "python",
+      "lignes": 154,
+      "taille_bytes": 7267,
+      "entrees": [
+        "einops",
+        "math",
+        "modules",
+        "modules.sd_hijack_utils",
+        "packaging",
+        "torch"
+      ],
+      "sorties": [
+        "class GELUHijack",
+        "class TorchHijackForUnet",
+        "def __getattr__",
+        "def __init__",
+        "def apply_model",
+        "def cat",
+        "def forward",
+        "def hijack_ddpm_edit",
+        "def spatial_transformer_forward",
+        "def timestep_embedding",
+        "def timestep_embedding_cast_result"
+      ],
+      "appelle": [
+        "modules/sd_hijack_utils.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/gitpython_hack.py": {
+      "fichier": "modules/gitpython_hack.py",
+      "langage": "python",
+      "lignes": 42,
+      "taille_bytes": 1464,
+      "entrees": [
+        "__future__",
+        "git",
+        "io",
+        "subprocess"
+      ],
+      "sorties": [
+        "class Git",
+        "class Repo",
+        "def _get_persistent_cmd",
+        "def get_object_header",
+        "def stream_object_data"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/gradio_extensons.py": {
+      "fichier": "modules/gradio_extensons.py",
+      "langage": "python",
+      "lignes": 83,
+      "taille_bytes": 2743,
+      "entrees": [
+        "gradio",
+        "modules"
+      ],
+      "sorties": [
+        "def BlockContext_init",
+        "def Block_get_config",
+        "def Blocks_get_config_file",
+        "def IOComponent_init",
+        "def add_classes_to_gradio_component"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/sd_samplers_compvis.py": {
+      "fichier": "modules/sd_samplers_compvis.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/rng_philox.py": {
+      "fichier": "modules/rng_philox.py",
+      "langage": "python",
+      "lignes": 102,
+      "taille_bytes": 3089,
+      "entrees": [
+        "numpy"
+      ],
+      "sorties": [
+        "class Generator",
+        "def __init__",
+        "def box_muller",
+        "def philox4_32",
+        "def philox4_round",
+        "def randn",
+        "def uint32"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/shared_state.py": {
+      "fichier": "modules/shared_state.py",
+      "langage": "python",
+      "lignes": 168,
+      "taille_bytes": 5566,
+      "entrees": [
+        "datetime",
+        "logging",
+        "modules",
+        "modules.sd_samplers",
+        "threading",
+        "time",
+        "typing"
+      ],
+      "sorties": [
+        "class State",
+        "def __init__",
+        "def assign_current_image",
+        "def begin",
+        "def dict",
+        "def do_set_current_image",
+        "def end",
+        "def interrupt",
+        "def need_restart",
+        "def nextjob",
+        "def request_restart",
+        "def server_command",
+        "def set_current_image",
+        "def skip",
+        "def stop_generating",
+        "def wait_for_server_command"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/upscaler_utils.py": {
+      "fichier": "modules/upscaler_utils.py",
+      "langage": "python",
+      "lignes": 190,
+      "taille_bytes": 6103,
+      "entrees": [
+        "PIL",
+        "logging",
+        "modules",
+        "numpy",
+        "torch",
+        "tqdm",
+        "typing"
+      ],
+      "sorties": [
+        "def pil_image_to_torch_bgr",
+        "def tiled_upscale_2",
+        "def torch_bgr_to_pil_image",
+        "def upscale_2",
+        "def upscale_pil_patch",
+        "def upscale_with_model"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "modules/hat_model.py",
+        "modules/realesrgan_model.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/hashes.py": {
+      "fichier": "modules/hashes.py",
+      "langage": "python",
+      "lignes": 84,
+      "taille_bytes": 2197,
+      "entrees": [
+        "hashlib",
+        "modules",
+        "modules.cache",
+        "os.path"
+      ],
+      "sorties": [
+        "def addnet_hash_safetensors",
+        "def calculate_sha256",
+        "def sha256",
+        "def sha256_from_cache"
+      ],
+      "appelle": [
+        "modules/cache.py"
+      ],
+      "est_appele_par": [
+        "modules/ui_extra_networks_hypernets.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/sd_samplers_common.py": {
+      "fichier": "modules/sd_samplers_common.py",
+      "langage": "python",
+      "lignes": 355,
+      "taille_bytes": 13566,
+      "entrees": [
+        "PIL",
+        "collections",
+        "inspect",
+        "k_diffusion.sampling",
+        "modules",
+        "modules.shared",
+        "numpy",
+        "torch",
+        "torchsde._brownian.brownian_interval"
+      ],
+      "sorties": [
+        "class InterruptedException",
+        "class Sampler",
+        "class SamplerData",
+        "class TorchHijack",
+        "def __getattr__",
+        "def __init__",
+        "def add_infotext",
+        "def apply_refiner",
+        "def callback_state",
+        "def create_noise_sampler",
+        "def decode_first_stage",
+        "def images_tensor_to_samples",
+        "def initialize",
+        "def is_sampler_using_eta_noise_seed_delta",
+        "def launch_sampling",
+        "def number_of_needed_noises",
+        "def randn_like",
+        "def replace_torchsde_browinan",
+        "def sample",
+        "def sample_img2img",
+        "def sample_to_image",
+        "def samples_to_image_grid",
+        "def samples_to_images_tensor",
+        "def setup_img2img_steps",
+        "def single_sample_to_image",
+        "def store_latent",
+        "def torchsde_randn",
+        "def total_steps"
+      ],
+      "appelle": [
+        "modules/shared.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/shared_gradio_themes.py": {
+      "fichier": "modules/shared_gradio_themes.py",
+      "langage": "python",
+      "lignes": 112,
+      "taille_bytes": 4080,
+      "entrees": [
+        "gradio",
+        "modules",
+        "modules.paths_internal",
+        "os"
+      ],
+      "sorties": [
+        "def reload_gradio_theme",
+        "def resolve_var"
+      ],
+      "appelle": [
+        "modules/paths_internal.py"
+      ],
+      "est_appele_par": [
+        "modules/ui_gradio_extensions.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/postprocessing.py": {
+      "fichier": "modules/postprocessing.py",
+      "langage": "python",
+      "lignes": 163,
+      "taille_bytes": 6640,
+      "entrees": [
+        "PIL",
+        "modules",
+        "modules.shared",
+        "os"
+      ],
+      "sorties": [
+        "def get_images",
+        "def run_extras",
+        "def run_postprocessing",
+        "def run_postprocessing_webui"
+      ],
+      "appelle": [
+        "modules/shared.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/cache.py": {
+      "fichier": "modules/cache.py",
+      "langage": "python",
+      "lignes": 123,
+      "taille_bytes": 4132,
+      "entrees": [
+        "diskcache",
+        "json",
+        "modules.paths",
+        "os",
+        "os.path",
+        "threading",
+        "tqdm"
+      ],
+      "sorties": [
+        "def cache",
+        "def cached_data_for_file",
+        "def convert_old_cached_data",
+        "def dump_cache",
+        "def make_cache"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "modules/hashes.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/sd_models.py": {
+      "fichier": "modules/sd_models.py",
+      "langage": "python",
+      "lignes": 1034,
+      "taille_bytes": 37536,
+      "entrees": [
+        "collections",
+        "enum",
+        "hashlib",
+        "importlib",
+        "json",
+        "ldm.models.diffusion.ddpm",
+        "ldm.modules.midas",
+        "modules",
+        "modules.shared",
+        "modules.timer",
+        "numpy",
+        "omegaconf",
+        "os",
+        "re",
+        "safetensors.torch",
+        "sys",
+        "threading",
+        "tomesd",
+        "torch",
+        "transformers",
+        "urllib"
+      ],
+      "sorties": [
+        "class CheckpointInfo",
+        "class ModelType",
+        "class SdModelData",
+        "class SkipWritingToConfig",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def apply_alpha_schedule_override",
+        "def apply_token_merging",
+        "def calculate_shorthash",
+        "def check_fp8",
+        "def checkpoint_tiles",
+        "def enable_midas_autodownload",
+        "def get_checkpoint_state_dict",
+        "def get_closet_checkpoint_match",
+        "def get_empty_cond",
+        "def get_obj_from_str",
+        "def get_sd_model",
+        "def get_state_dict_from_checkpoint",
+        "def instantiate_from_config",
+        "def list_models",
+        "def load_model",
+        "def load_model_weights",
+        "def load_model_wrapper",
+        "def model_hash",
+        "def model_target_device",
+        "def patch_given_betas",
+        "def patched_register_schedule",
+        "def read_metadata",
+        "def read_metadata_from_safetensors",
+        "def read_state_dict",
+        "def register",
+        "def reload_model_weights",
+        "def repair_config",
+        "def replace_key",
+        "def rescale_zero_terminal_snr_abar",
+        "def reuse_model_from_already_loaded",
+        "def select_checkpoint",
+        "def send_model_to_cpu",
+        "def send_model_to_device",
+        "def send_model_to_trash",
+        "def set_model_fields",
+        "def set_model_type",
+        "def set_sd_model",
+        "def setup_model",
+        "def transform_checkpoint_dict_key",
+        "def unload_model_weights"
+      ],
+      "appelle": [
+        "modules/shared.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/sd_samplers_timesteps_impl.py": {
+      "fichier": "modules/sd_samplers_timesteps_impl.py",
+      "langage": "python",
+      "lignes": 178,
+      "taille_bytes": 7483,
+      "entrees": [
+        "k_diffusion.sampling",
+        "modules",
+        "modules.models.diffusion.uni_pc",
+        "modules.torch_utils",
+        "numpy",
+        "torch",
+        "tqdm"
+      ],
+      "sorties": [
+        "class UniPCCFG",
+        "def __init__",
+        "def after_update",
+        "def ddim",
+        "def ddim_cfgpp",
+        "def get_model_input_time",
+        "def get_x_prev_and_pred_x0",
+        "def model",
+        "def plms",
+        "def unipc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/sd_samplers_lcm.py": {
+      "fichier": "modules/sd_samplers_lcm.py",
+      "langage": "python",
+      "lignes": 104,
+      "taille_bytes": 3904,
+      "entrees": [
+        "k_diffusion",
+        "k_diffusion.external",
+        "k_diffusion.sampling",
+        "modules",
+        "torch"
+      ],
+      "sorties": [
+        "class CFGDenoiserLCM",
+        "class LCMCompVisDenoiser",
+        "class LCMSampler",
+        "def __init__",
+        "def forward",
+        "def get_eps",
+        "def get_scaled_out",
+        "def get_sigmas",
+        "def inner_model",
+        "def sample_lcm",
+        "def sigma_to_t",
+        "def t_to_sigma"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/options.py": {
+      "fichier": "modules/options.py",
+      "langage": "python",
+      "lignes": 336,
+      "taille_bytes": 13089,
+      "entrees": [
+        "dataclasses",
+        "gradio",
+        "json",
+        "modules",
+        "modules.paths_internal",
+        "modules.shared_cmd_options",
+        "os",
+        "sys"
+      ],
+      "sorties": [
+        "class OptionHTML",
+        "class OptionInfo",
+        "class Options",
+        "class OptionsCategories",
+        "class OptionsCategory",
+        "def __getattr__",
+        "def __init__",
+        "def __setattr__",
+        "def add_option",
+        "def cast_value",
+        "def dumpjson",
+        "def get_default",
+        "def html",
+        "def info",
+        "def js",
+        "def link",
+        "def load",
+        "def needs_reload_ui",
+        "def needs_restart",
+        "def onchange",
+        "def options_section",
+        "def register_category",
+        "def reorder",
+        "def same_type",
+        "def save",
+        "def set",
+        "def sort_key"
+      ],
+      "appelle": [
+        "modules/paths_internal.py"
+      ],
+      "est_appele_par": [
+        "modules/shared_options.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/ui_toprow.py": {
+      "fichier": "modules/ui_toprow.py",
+      "langage": "python",
+      "lignes": 144,
+      "taille_bytes": 7300,
+      "entrees": [
+        "gradio",
+        "modules",
+        "modules.images",
+        "modules.ui",
+        "modules.ui_components"
+      ],
+      "sorties": [
+        "class Toprow",
+        "def __init__",
+        "def create_classic_toprow",
+        "def create_inline_toprow_image",
+        "def create_inline_toprow_prompts",
+        "def create_prompts",
+        "def create_styles_ui",
+        "def create_submit_box",
+        "def create_tools_row",
+        "def interrupt_function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/mac_specific.py": {
+      "fichier": "modules/mac_specific.py",
+      "langage": "python",
+      "lignes": 98,
+      "taille_bytes": 5902,
+      "entrees": [
+        "logging",
+        "modules",
+        "modules.sd_hijack_utils",
+        "packaging",
+        "platform",
+        "torch",
+        "torch.mps"
+      ],
+      "sorties": [
+        "def check_for_mps",
+        "def cumsum_fix",
+        "def interpolate_with_fp32_fallback",
+        "def torch_mps_gc"
+      ],
+      "appelle": [
+        "modules/sd_hijack_utils.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/initialize.py": {
+      "fichier": "modules/initialize.py",
+      "langage": "python",
+      "lignes": 169,
+      "taille_bytes": 5887,
+      "entrees": [
+        "gradio",
+        "importlib",
+        "ldm.modules.encoders.modules",
+        "logging",
+        "modules",
+        "modules.shared_cmd_options",
+        "modules.timer",
+        "os",
+        "pytorch_lightning",
+        "sgm.modules.encoders.modules",
+        "sys",
+        "threading",
+        "torch",
+        "warnings"
+      ],
+      "sorties": [
+        "def check_versions",
+        "def imports",
+        "def initialize",
+        "def initialize_rest",
+        "def load_model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/ui_gradio_extensions.py": {
+      "fichier": "modules/ui_gradio_extensions.py",
+      "langage": "python",
+      "lignes": 67,
+      "taille_bytes": 2404,
+      "entrees": [
+        "gradio",
+        "modules",
+        "modules.paths",
+        "modules.shared_gradio_themes",
+        "os"
+      ],
+      "sorties": [
+        "def css_html",
+        "def javascript_html",
+        "def reload_javascript",
+        "def stylesheet",
+        "def template_response",
+        "def webpath"
+      ],
+      "appelle": [
+        "modules/shared_gradio_themes.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "modules/ui_common.py": {
+      "fichier": "modules/ui_common.py",
+      "langage": "python",
+      "lignes": 325,
+      "taille_bytes": 13703,
+      "entrees": [
+        "contextlib",
+        "csv",
+        "dataclasses",
+        "gradio",
+        "html",
+        "json",
+        "modules",
+        "modules.images",
+        "modules.infotext_utils",
+        "modules.ui_components",
+        "os",
+        "zipfile"
+      ],
+      "sorties": [
+        "class MyObject",
+        "class OutputPanel",
+        "def __init__",
+        "def create_output_panel",
+        "def create_refresh_button",
+        "def open_folder",
+        "def plaintext_to_html",
+        "def refresh",
+        "def save_files",
+        "def setup_dialog",
+        "def update_generation_info",
+        "def update_logfile"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "modules/extras.py",
+        "modules/ui_checkpoint_merger.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "modules/shared_options.py": {
+      "fichier": "modules/shared_options.py",
+      "langage": "python",
+      "lignes": 425,
+      "taille_bytes": 49656,
+      "entrees": [
+        "gradio",
+        "modules",
+        "modules.options",
+        "modules.paths_internal",
+        "modules.shared_cmd_options",
+        "os"
+      ],
+      "sorties": [],
+      "appelle": [
+        "modules/options.py",
+        "modules/paths_internal.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "modules/paths_internal.py": {
+      "fichier": "modules/paths_internal.py",
+      "langage": "python",
+      "lignes": 38,
+      "taille_bytes": 1679,
+      "entrees": [
+        "argparse",
+        "os",
+        "pathlib",
+        "shlex",
+        "sys"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "extensions-builtin/Lora/preload.py",
+        "modules/options.py",
+        "modules/restart.py",
+        "modules/shared.py",
+        "modules/shared_gradio_themes.py",
+        "modules/shared_options.py"
+      ],
+      "type_noeud": "feuille"
+    }
+  },
+  "edges": [
+    {
+      "de": "webui.py",
+      "vers": "modules/call_queue.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/preload.py",
+      "vers": "modules/paths_internal.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_norm.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_oft.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_full.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/lora_logger.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/lora_patches.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/network_full.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/network_glora.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/network_hada.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/network_ia3.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/network_lokr.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/network_lora.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/network_norm.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/networks.py",
+      "vers": "extensions-builtin/Lora/network_oft.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_lora.py",
+      "vers": "extensions-builtin/Lora/lyco_helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_lora.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_hada.py",
+      "vers": "extensions-builtin/Lora/lyco_helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_hada.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_glora.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_lokr.py",
+      "vers": "extensions-builtin/Lora/lyco_helpers.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_lokr.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/extra_networks_lora.py",
+      "vers": "extensions-builtin/Lora/networks.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network.py",
+      "vers": "extensions-builtin/Lora/networks.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "extensions-builtin/Lora/lora_patches.py",
+      "vers": "extensions-builtin/Lora/networks.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "extensions-builtin/Lora/lora.py",
+      "vers": "extensions-builtin/Lora/networks.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/network_ia3.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/ui_extra_networks_lora.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/ui_extra_networks_lora.py",
+      "vers": "extensions-builtin/Lora/networks.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/ui_extra_networks_lora.py",
+      "vers": "extensions-builtin/Lora/ui_edit_user_metadata.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/ui_extra_networks_lora.py",
+      "vers": "modules/ui_extra_networks.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/scripts/lora_script.py",
+      "vers": "extensions-builtin/Lora/extra_networks_lora.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/scripts/lora_script.py",
+      "vers": "extensions-builtin/Lora/lora.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/scripts/lora_script.py",
+      "vers": "extensions-builtin/Lora/lora_patches.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/scripts/lora_script.py",
+      "vers": "extensions-builtin/Lora/network.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/scripts/lora_script.py",
+      "vers": "extensions-builtin/Lora/networks.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/Lora/scripts/lora_script.py",
+      "vers": "extensions-builtin/Lora/ui_extra_networks_lora.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/LDSR/sd_hijack_autoencoder.py",
+      "vers": "extensions-builtin/LDSR/vqvae_quantize.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/LDSR/scripts/ldsr_model.py",
+      "vers": "extensions-builtin/LDSR/ldsr_model_arch.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/LDSR/scripts/ldsr_model.py",
+      "vers": "extensions-builtin/LDSR/sd_hijack_autoencoder.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/LDSR/scripts/ldsr_model.py",
+      "vers": "extensions-builtin/LDSR/sd_hijack_ddpm_v1.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/hypertile/scripts/hypertile_script.py",
+      "vers": "extensions-builtin/hypertile/hypertile.py",
+      "type": "interne"
+    },
+    {
+      "de": "extensions-builtin/soft-inpainting/scripts/soft_inpainting.py",
+      "vers": "modules/shared.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/progress.py",
+      "vers": "modules/shared.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/ui_extra_networks.py",
+      "vers": "modules/ui_extra_networks_hypernets.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "modules/shared.py",
+      "vers": "modules/paths_internal.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/xpu_specific.py",
+      "vers": "modules/sd_hijack_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/txt2img.py",
+      "vers": "modules/shared.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/hat_model.py",
+      "vers": "modules/shared.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/hat_model.py",
+      "vers": "modules/upscaler_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/restart.py",
+      "vers": "modules/paths_internal.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/ui_checkpoint_merger.py",
+      "vers": "modules/ui_common.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/realesrgan_model.py",
+      "vers": "modules/shared.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/realesrgan_model.py",
+      "vers": "modules/upscaler_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/extras.py",
+      "vers": "modules/ui_common.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/ui_extra_networks_hypernets.py",
+      "vers": "modules/hashes.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/ui_extra_networks_hypernets.py",
+      "vers": "modules/ui_extra_networks.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "modules/sd_hijack_unet.py",
+      "vers": "modules/sd_hijack_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/hashes.py",
+      "vers": "modules/cache.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/sd_samplers_common.py",
+      "vers": "modules/shared.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/shared_gradio_themes.py",
+      "vers": "modules/paths_internal.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/postprocessing.py",
+      "vers": "modules/shared.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/sd_models.py",
+      "vers": "modules/shared.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/options.py",
+      "vers": "modules/paths_internal.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/mac_specific.py",
+      "vers": "modules/sd_hijack_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/ui_gradio_extensions.py",
+      "vers": "modules/shared_gradio_themes.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/shared_options.py",
+      "vers": "modules/options.py",
+      "type": "interne"
+    },
+    {
+      "de": "modules/shared_options.py",
+      "vers": "modules/paths_internal.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'extensions-builtin/Lora/lyco_helpers.py' (in=3)",
+    "central → 'extensions-builtin/Lora/networks.py' (in=6, out=11)",
+    "point_entree → 'extensions-builtin/Lora/scripts/lora_script.py'",
+    "point_entree → 'extensions-builtin/LDSR/scripts/ldsr_model.py'",
+    "point_entree → 'modules/hat_model.py'",
+    "feuille → 'modules/sd_hijack_utils.py' (in=3)",
+    "point_entree → 'modules/realesrgan_model.py'",
+    "point_entree → 'modules/shared_options.py'",
+    "feuille → 'modules/paths_internal.py' (in=6)",
+    "circulaire → 6 cycles détectés"
+  ]
+}

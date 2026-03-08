@@ -1,0 +1,6103 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 120
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 262,
+    "edges_circulaires": 4,
+    "noeuds_centraux": 17,
+    "noeuds_feuilles": 3,
+    "noeuds_hubs": 1,
+    "points_entree": 20,
+    "fichier_plus_appele": "pip/_vendor/resolvelib/resolvers/exceptions.py"
+  },
+  "noeuds": {
+    "pip/__main__.py": {
+      "fichier": "pip/__main__.py",
+      "langage": "python",
+      "lignes": 24,
+      "taille_bytes": 854,
+      "entrees": [
+        "os",
+        "pip._internal.cli.main",
+        "sys"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/__pip-runner__.py": {
+      "fichier": "pip/__pip-runner__.py",
+      "langage": "python",
+      "lignes": 50,
+      "taille_bytes": 1450,
+      "entrees": [
+        "importlib.machinery",
+        "os.path",
+        "runpy",
+        "sys"
+      ],
+      "sorties": [
+        "class PipImportRedirectingFinder",
+        "def find_spec",
+        "def version_str"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/__init__.py": {
+      "fichier": "pip/__init__.py",
+      "langage": "python",
+      "lignes": 13,
+      "taille_bytes": 355,
+      "entrees": [
+        "__future__",
+        "pip._internal.utils.entrypoints"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/__init__.py": {
+      "fichier": "pip/_vendor/__init__.py",
+      "langage": "python",
+      "lignes": 117,
+      "taille_bytes": 4907,
+      "entrees": [
+        "__future__",
+        "glob",
+        "os.path",
+        "sys"
+      ],
+      "sorties": [
+        "def vendored"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/response.py": {
+      "fichier": "pip/_vendor/urllib3/response.py",
+      "langage": "python",
+      "lignes": 879,
+      "taille_bytes": 30641,
+      "entrees": [
+        "._collections",
+        ".connection",
+        ".exceptions",
+        ".packages",
+        ".util.response",
+        "__future__",
+        "contextlib",
+        "io",
+        "logging",
+        "socket",
+        "sys",
+        "warnings",
+        "zlib"
+      ],
+      "sorties": [
+        "class BrotliDecoder",
+        "class DeflateDecoder",
+        "class GzipDecoder",
+        "class GzipDecoderState",
+        "class HTTPResponse",
+        "class MultiDecoder",
+        "class is",
+        "def __getattr__",
+        "def __init__",
+        "def __iter__",
+        "def _decode",
+        "def _error_catcher",
+        "def _flush_decoder",
+        "def _fp_read",
+        "def _get_decoder",
+        "def _handle_chunk",
+        "def _init_decoder",
+        "def _init_length",
+        "def _update_chunk_length",
+        "def close",
+        "def closed",
+        "def connection",
+        "def data",
+        "def decompress",
+        "def drain_conn",
+        "def fileno",
+        "def flush",
+        "def from_httplib",
+        "def get_redirect_location",
+        "def getheader",
+        "def getheaders",
+        "def geturl",
+        "def info",
+        "def isclosed",
+        "def read",
+        "def read_chunked",
+        "def readable",
+        "def readinto",
+        "def release_conn",
+        "def stream",
+        "def supports_chunked_reads",
+        "def tell"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/_collections.py",
+        "pip/_vendor/urllib3/util/connection.py",
+        "pip/_vendor/urllib3/util/response.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/urllib3/request.py": {
+      "fichier": "pip/_vendor/urllib3/request.py",
+      "langage": "python",
+      "lignes": 191,
+      "taille_bytes": 6691,
+      "entrees": [
+        ".filepost",
+        ".packages",
+        ".packages.six.moves.urllib.parse",
+        "__future__",
+        "sys"
+      ],
+      "sorties": [
+        "class RequestMethods",
+        "class RequestModule",
+        "def __call__",
+        "def __init__",
+        "def request",
+        "def request_encode_body",
+        "def request_encode_url",
+        "def urlopen"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/urllib3/filepost.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/urllib3/_version.py": {
+      "fichier": "pip/_vendor/urllib3/_version.py",
+      "langage": "python",
+      "lignes": 2,
+      "taille_bytes": 64,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/__init__.py",
+        "pip/_vendor/urllib3/connection.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/exceptions.py": {
+      "fichier": "pip/_vendor/urllib3/exceptions.py",
+      "langage": "python",
+      "lignes": 323,
+      "taille_bytes": 8217,
+      "entrees": [
+        ".packages.six.moves.http_client",
+        "__future__"
+      ],
+      "sorties": [
+        "class BodyNotHttplibCompatible",
+        "class ClosedPoolError",
+        "class ConnectTimeoutError",
+        "class DecodeError",
+        "class DependencyWarning",
+        "class EmptyPoolError",
+        "class HTTPError",
+        "class HTTPWarning",
+        "class HeaderParsingError",
+        "class HostChangedError",
+        "class IncompleteRead",
+        "class InsecurePlatformWarning",
+        "class InsecureRequestWarning",
+        "class InvalidChunkLength",
+        "class InvalidHeader",
+        "class LocationParseError",
+        "class LocationValueError",
+        "class MaxRetryError",
+        "class NewConnectionError",
+        "class PoolError",
+        "class ProtocolError",
+        "class ProxyError",
+        "class ProxySchemeUnknown",
+        "class ProxySchemeUnsupported",
+        "class ReadTimeoutError",
+        "class RequestError",
+        "class ResponseError",
+        "class ResponseNotChunked",
+        "class SNIMissingWarning",
+        "class SSLError",
+        "class SecurityWarning",
+        "class SubjectAltNameWarning",
+        "class SystemTimeWarning",
+        "class TimeoutError",
+        "class TimeoutStateError",
+        "class URLSchemeUnknown",
+        "class UnrewindableBodyError",
+        "def __init__",
+        "def __reduce__",
+        "def __repr__"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/fields.py": {
+      "fichier": "pip/_vendor/urllib3/fields.py",
+      "langage": "python",
+      "lignes": 274,
+      "taille_bytes": 8579,
+      "entrees": [
+        ".packages",
+        "__future__",
+        "email.utils",
+        "mimetypes",
+        "re"
+      ],
+      "sorties": [
+        "class RequestField",
+        "def __init__",
+        "def _render_part",
+        "def _render_parts",
+        "def _replace_multiple",
+        "def format_header_param_html5",
+        "def format_header_param_rfc2231",
+        "def from_tuples",
+        "def guess_content_type",
+        "def make_multipart",
+        "def render_headers",
+        "def replacer"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/requests/utils.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/urllib3/filepost.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/_collections.py": {
+      "fichier": "pip/_vendor/urllib3/_collections.py",
+      "langage": "python",
+      "lignes": 355,
+      "taille_bytes": 11372,
+      "entrees": [
+        ".exceptions",
+        ".packages",
+        ".packages.six",
+        "__future__",
+        "collections",
+        "collections.abc",
+        "threading"
+      ],
+      "sorties": [
+        "class HTTPHeaderDict",
+        "class RLock",
+        "class RecentlyUsedContainer",
+        "def __contains__",
+        "def __delitem__",
+        "def __enter__",
+        "def __eq__",
+        "def __exit__",
+        "def __getitem__",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def __ne__",
+        "def __repr__",
+        "def __setitem__",
+        "def _copy_from",
+        "def _prepare_for_method_change",
+        "def add",
+        "def clear",
+        "def copy",
+        "def discard",
+        "def extend",
+        "def from_httplib",
+        "def getlist",
+        "def items",
+        "def iteritems",
+        "def itermerged",
+        "def keys",
+        "def pop"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/packages/six.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/connection.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/poolmanager.py",
+        "pip/_vendor/urllib3/response.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/urllib3/connection.py": {
+      "fichier": "pip/_vendor/urllib3/connection.py",
+      "langage": "python",
+      "lignes": 572,
+      "taille_bytes": 20314,
+      "entrees": [
+        "._collections",
+        "._version",
+        ".exceptions",
+        ".packages",
+        ".packages.six.moves.http_client",
+        ".util",
+        ".util.proxy",
+        ".util.ssl_",
+        ".util.ssl_match_hostname",
+        "__future__",
+        "datetime",
+        "logging",
+        "os",
+        "re",
+        "socket",
+        "ssl",
+        "warnings"
+      ],
+      "sorties": [
+        "class BaseSSLError",
+        "class BrokenPipeError",
+        "class ConnectionError",
+        "class DummyConnection",
+        "class HTTPConnection",
+        "class HTTPSConnection",
+        "def __init__",
+        "def _connect_tls_proxy",
+        "def _get_default_user_agent",
+        "def _is_using_tunnel",
+        "def _match_hostname",
+        "def _new_conn",
+        "def _prepare_conn",
+        "def connect",
+        "def host",
+        "def putheader",
+        "def putrequest",
+        "def request",
+        "def request_chunked",
+        "def set_cert"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/_collections.py",
+        "pip/_vendor/urllib3/_version.py",
+        "pip/_vendor/urllib3/util/proxy.py",
+        "pip/_vendor/urllib3/util/ssl_.py",
+        "pip/_vendor/urllib3/util/ssl_match_hostname.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/urllib3/filepost.py": {
+      "fichier": "pip/_vendor/urllib3/filepost.py",
+      "langage": "python",
+      "lignes": 98,
+      "taille_bytes": 2440,
+      "entrees": [
+        ".fields",
+        ".packages",
+        ".packages.six",
+        "__future__",
+        "binascii",
+        "codecs",
+        "io",
+        "os"
+      ],
+      "sorties": [
+        "def choose_boundary",
+        "def encode_multipart_formdata",
+        "def iter_field_objects",
+        "def iter_fields"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/urllib3/fields.py",
+        "pip/_vendor/urllib3/packages/six.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/urllib3/__init__.py",
+        "pip/_vendor/urllib3/request.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/urllib3/poolmanager.py": {
+      "fichier": "pip/_vendor/urllib3/poolmanager.py",
+      "langage": "python",
+      "lignes": 540,
+      "taille_bytes": 19990,
+      "entrees": [
+        "._collections",
+        ".connectionpool",
+        ".exceptions",
+        ".packages",
+        ".packages.six.moves.urllib.parse",
+        ".request",
+        ".util.proxy",
+        ".util.retry",
+        ".util.url",
+        "__future__",
+        "collections",
+        "functools",
+        "logging"
+      ],
+      "sorties": [
+        "class PoolManager",
+        "class ProxyManager",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _default_key_normalizer",
+        "def _merge_pool_kwargs",
+        "def _new_pool",
+        "def _proxy_requires_url_absolute_form",
+        "def _set_proxy_headers",
+        "def _validate_proxy_scheme_url_selection",
+        "def clear",
+        "def connection_from_context",
+        "def connection_from_host",
+        "def connection_from_pool_key",
+        "def connection_from_url",
+        "def proxy_from_url",
+        "def urlopen"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/_collections.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/util/proxy.py",
+        "pip/_vendor/urllib3/util/request.py",
+        "pip/_vendor/urllib3/util/retry.py",
+        "pip/_vendor/urllib3/util/url.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/urllib3/__init__.py",
+        "pip/_vendor/urllib3/contrib/socks.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/urllib3/__init__.py": {
+      "fichier": "pip/_vendor/urllib3/__init__.py",
+      "langage": "python",
+      "lignes": 102,
+      "taille_bytes": 3333,
+      "entrees": [
+        "._version",
+        ".connectionpool",
+        ".filepost",
+        ".poolmanager",
+        ".response",
+        ".util.request",
+        ".util.retry",
+        ".util.timeout",
+        ".util.url",
+        "__future__",
+        "logging",
+        "urllib3_secure_extra",
+        "warnings"
+      ],
+      "sorties": [
+        "def add_stderr_logger",
+        "def disable_warnings"
+      ],
+      "appelle": [
+        "pip/_vendor/urllib3/_version.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/filepost.py",
+        "pip/_vendor/urllib3/poolmanager.py",
+        "pip/_vendor/urllib3/util/request.py",
+        "pip/_vendor/urllib3/util/response.py",
+        "pip/_vendor/urllib3/util/retry.py",
+        "pip/_vendor/urllib3/util/timeout.py",
+        "pip/_vendor/urllib3/util/url.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/urllib3/connectionpool.py": {
+      "fichier": "pip/_vendor/urllib3/connectionpool.py",
+      "langage": "python",
+      "lignes": 1140,
+      "taille_bytes": 40408,
+      "entrees": [
+        "._collections",
+        ".connection",
+        ".exceptions",
+        ".packages",
+        ".packages.backports.weakref_finalize",
+        ".packages.six.moves",
+        ".request",
+        ".response",
+        ".util.connection",
+        ".util.proxy",
+        ".util.queue",
+        ".util.request",
+        ".util.response",
+        ".util.retry",
+        ".util.ssl_match_hostname",
+        ".util.timeout",
+        ".util.url",
+        "__future__",
+        "errno",
+        "logging",
+        "re",
+        "socket",
+        "sys",
+        "the",
+        "warnings",
+        "weakref"
+      ],
+      "sorties": [
+        "class ConnectionPool",
+        "class HTTPConnectionPool",
+        "class HTTPSConnectionPool",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def __str__",
+        "def _absolute_url",
+        "def _close_pool_connections",
+        "def _get_conn",
+        "def _get_timeout",
+        "def _is_ssl_error_message_from_http_proxy",
+        "def _make_request",
+        "def _new_conn",
+        "def _normalize_host",
+        "def _prepare_conn",
+        "def _prepare_proxy",
+        "def _put_conn",
+        "def _raise_timeout",
+        "def _validate_conn",
+        "def close",
+        "def connection_from_url",
+        "def is_same_host",
+        "def urlopen"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/_collections.py",
+        "pip/_vendor/urllib3/packages/backports/weakref_finalize.py",
+        "pip/_vendor/urllib3/util/connection.py",
+        "pip/_vendor/urllib3/util/proxy.py",
+        "pip/_vendor/urllib3/util/queue.py",
+        "pip/_vendor/urllib3/util/request.py",
+        "pip/_vendor/urllib3/util/response.py",
+        "pip/_vendor/urllib3/util/retry.py",
+        "pip/_vendor/urllib3/util/ssl_match_hostname.py",
+        "pip/_vendor/urllib3/util/timeout.py",
+        "pip/_vendor/urllib3/util/url.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/__init__.py",
+        "pip/_vendor/urllib3/contrib/socks.py",
+        "pip/_vendor/urllib3/poolmanager.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/urllib3/util/response.py": {
+      "fichier": "pip/_vendor/urllib3/util/response.py",
+      "langage": "python",
+      "lignes": 107,
+      "taille_bytes": 3510,
+      "entrees": [
+        "..exceptions",
+        "..packages.six.moves",
+        "__future__",
+        "email.errors"
+      ],
+      "sorties": [
+        "def assert_header_parsing",
+        "def is_fp_closed",
+        "def is_response_to_head"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/__init__.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/contrib/appengine.py",
+        "pip/_vendor/urllib3/response.py",
+        "pip/_vendor/urllib3/util/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/util/wait.py": {
+      "fichier": "pip/_vendor/urllib3/util/wait.py",
+      "langage": "python",
+      "lignes": 152,
+      "taille_bytes": 5403,
+      "entrees": [
+        "errno",
+        "functools",
+        "select",
+        "sys",
+        "time"
+      ],
+      "sorties": [
+        "class NoWayToWaitForSocketError",
+        "def _have_working_poll",
+        "def _retry_on_intr",
+        "def do_poll",
+        "def null_wait_for_socket",
+        "def poll_wait_for_socket",
+        "def select_wait_for_socket",
+        "def wait_for_read",
+        "def wait_for_socket",
+        "def wait_for_write"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/util/__init__.py",
+        "pip/_vendor/urllib3/util/connection.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/util/ssltransport.py": {
+      "fichier": "pip/_vendor/urllib3/util/ssltransport.py",
+      "langage": "python",
+      "lignes": 221,
+      "taille_bytes": 6895,
+      "entrees": [
+        "..exceptions",
+        "..packages",
+        "io",
+        "socket",
+        "ssl"
+      ],
+      "sorties": [
+        "class SSLTransport",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _decref_socketios",
+        "def _ssl_io_loop",
+        "def _validate_ssl_context_for_tls_in_tls",
+        "def _wrap_ssl_read",
+        "def cipher",
+        "def close",
+        "def compression",
+        "def fileno",
+        "def getpeercert",
+        "def gettimeout",
+        "def makefile",
+        "def read",
+        "def recv",
+        "def recv_into",
+        "def selected_alpn_protocol",
+        "def selected_npn_protocol",
+        "def send",
+        "def sendall",
+        "def settimeout",
+        "def shared_ciphers",
+        "def unwrap",
+        "def version"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/util/ssl_.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/util/request.py": {
+      "fichier": "pip/_vendor/urllib3/util/request.py",
+      "langage": "python",
+      "lignes": 137,
+      "taille_bytes": 3997,
+      "entrees": [
+        "..exceptions",
+        "..packages.six",
+        "__future__",
+        "base64"
+      ],
+      "sorties": [
+        "def make_headers",
+        "def rewind_body",
+        "def set_file_position"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/packages/six.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/distlib/compat.py",
+        "pip/_vendor/requests/compat.py",
+        "pip/_vendor/urllib3/__init__.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/contrib/appengine.py",
+        "pip/_vendor/urllib3/poolmanager.py",
+        "pip/_vendor/urllib3/util/__init__.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/urllib3/util/timeout.py": {
+      "fichier": "pip/_vendor/urllib3/util/timeout.py",
+      "langage": "python",
+      "lignes": 271,
+      "taille_bytes": 10168,
+      "entrees": [
+        "..exceptions",
+        "__future__",
+        "socket",
+        "time"
+      ],
+      "sorties": [
+        "class Timeout",
+        "def __init__",
+        "def __repr__",
+        "def _validate_timeout",
+        "def clone",
+        "def connect_timeout",
+        "def from_float",
+        "def get_connect_duration",
+        "def read_timeout",
+        "def resolve_default_timeout",
+        "def start_connect"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/__init__.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/contrib/appengine.py",
+        "pip/_vendor/urllib3/util/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/util/ssl_match_hostname.py": {
+      "fichier": "pip/_vendor/urllib3/util/ssl_match_hostname.py",
+      "langage": "python",
+      "lignes": 159,
+      "taille_bytes": 5758,
+      "entrees": [
+        "ipaddress",
+        "re",
+        "sys"
+      ],
+      "sorties": [
+        "class CertificateError",
+        "def _dnsname_match",
+        "def _ipaddress_match",
+        "def _to_unicode",
+        "def match_hostname"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/connection.py",
+        "pip/_vendor/urllib3/connectionpool.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/util/proxy.py": {
+      "fichier": "pip/_vendor/urllib3/util/proxy.py",
+      "langage": "python",
+      "lignes": 57,
+      "taille_bytes": 1605,
+      "entrees": [
+        ".ssl_"
+      ],
+      "sorties": [
+        "def connection_requires_http_tunnel",
+        "def create_proxy_ssl_context"
+      ],
+      "appelle": [
+        "pip/_vendor/urllib3/util/ssl_.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/connection.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/poolmanager.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/util/connection.py": {
+      "fichier": "pip/_vendor/urllib3/util/connection.py",
+      "langage": "python",
+      "lignes": 149,
+      "taille_bytes": 4901,
+      "entrees": [
+        "..contrib",
+        "..exceptions",
+        "..packages",
+        ".wait",
+        "__future__",
+        "socket"
+      ],
+      "sorties": [
+        "def _has_ipv6",
+        "def _set_socket_options",
+        "def allowed_gai_family",
+        "def create_connection",
+        "def is_connection_dropped"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/util/wait.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/contrib/socks.py",
+        "pip/_vendor/urllib3/response.py",
+        "pip/_vendor/urllib3/util/__init__.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/urllib3/util/retry.py": {
+      "fichier": "pip/_vendor/urllib3/util/retry.py",
+      "langage": "python",
+      "lignes": 622,
+      "taille_bytes": 22050,
+      "entrees": [
+        "..exceptions",
+        "..packages",
+        "__future__",
+        "collections",
+        "email",
+        "itertools",
+        "logging",
+        "re",
+        "time",
+        "warnings"
+      ],
+      "sorties": [
+        "class Retry",
+        "class _RetryMeta",
+        "def BACKOFF_MAX",
+        "def DEFAULT_METHOD_WHITELIST",
+        "def DEFAULT_REDIRECT_HEADERS_BLACKLIST",
+        "def __getattr__",
+        "def __init__",
+        "def __repr__",
+        "def _is_connection_error",
+        "def _is_method_retryable",
+        "def _is_read_error",
+        "def _sleep_backoff",
+        "def from_int",
+        "def get_backoff_time",
+        "def get_retry_after",
+        "def increment",
+        "def is_exhausted",
+        "def is_retry",
+        "def new",
+        "def parse_retry_after",
+        "def sleep",
+        "def sleep_for_retry"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/urllib3/__init__.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/contrib/appengine.py",
+        "pip/_vendor/urllib3/poolmanager.py",
+        "pip/_vendor/urllib3/util/__init__.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/urllib3/util/ssl_.py": {
+      "fichier": "pip/_vendor/urllib3/util/ssl_.py",
+      "langage": "python",
+      "lignes": 504,
+      "taille_bytes": 17460,
+      "entrees": [
+        "..exceptions",
+        "..packages",
+        ".ssltransport",
+        ".url",
+        "__future__",
+        "binascii",
+        "hashlib",
+        "hmac",
+        "os",
+        "pip._vendor.urllib3.util",
+        "ssl",
+        "sys",
+        "warnings"
+      ],
+      "sorties": [
+        "class SSLContext",
+        "def __init__",
+        "def _const_compare_digest_backport",
+        "def _is_key_file_encrypted",
+        "def _ssl_wrap_socket_impl",
+        "def assert_fingerprint",
+        "def create_urllib3_context",
+        "def disable_check_hostname",
+        "def is_ipaddress",
+        "def load_cert_chain",
+        "def load_verify_locations",
+        "def resolve_cert_reqs",
+        "def resolve_ssl_version",
+        "def set_ciphers",
+        "def ssl_wrap_socket",
+        "def wrap_socket"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/util/ssltransport.py",
+        "pip/_vendor/urllib3/util/url.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/truststore/_api.py",
+        "pip/_vendor/urllib3/connection.py",
+        "pip/_vendor/urllib3/contrib/pyopenssl.py",
+        "pip/_vendor/urllib3/contrib/securetransport.py",
+        "pip/_vendor/urllib3/util/__init__.py",
+        "pip/_vendor/urllib3/util/proxy.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/urllib3/util/url.py": {
+      "fichier": "pip/_vendor/urllib3/util/url.py",
+      "langage": "python",
+      "lignes": 435,
+      "taille_bytes": 14296,
+      "entrees": [
+        "..exceptions",
+        "..packages",
+        "__future__",
+        "collections",
+        "pip._vendor",
+        "re"
+      ],
+      "sorties": [
+        "class Url",
+        "def __new__",
+        "def __str__",
+        "def _encode_invalid_chars",
+        "def _encode_target",
+        "def _idna_encode",
+        "def _normalize_host",
+        "def _remove_path_dot_segments",
+        "def ensure_type",
+        "def get_host",
+        "def hostname",
+        "def netloc",
+        "def parse_url",
+        "def request_uri",
+        "def split_first",
+        "def url"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/__init__.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/contrib/socks.py",
+        "pip/_vendor/urllib3/poolmanager.py",
+        "pip/_vendor/urllib3/util/__init__.py",
+        "pip/_vendor/urllib3/util/ssl_.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/urllib3/util/queue.py": {
+      "fichier": "pip/_vendor/urllib3/util/queue.py",
+      "langage": "python",
+      "lignes": 22,
+      "taille_bytes": 498,
+      "entrees": [
+        "..packages",
+        "..packages.six.moves",
+        "Queue",
+        "collections"
+      ],
+      "sorties": [
+        "class LifoQueue",
+        "def _get",
+        "def _init",
+        "def _put",
+        "def _qsize"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/distlib/compat.py",
+        "pip/_vendor/urllib3/connectionpool.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/util/__init__.py": {
+      "fichier": "pip/_vendor/urllib3/util/__init__.py",
+      "langage": "python",
+      "lignes": 49,
+      "taille_bytes": 1155,
+      "entrees": [
+        ".connection",
+        ".request",
+        ".response",
+        ".retry",
+        ".ssl_",
+        ".timeout",
+        ".url",
+        ".wait",
+        "__future__"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/urllib3/util/connection.py",
+        "pip/_vendor/urllib3/util/request.py",
+        "pip/_vendor/urllib3/util/response.py",
+        "pip/_vendor/urllib3/util/retry.py",
+        "pip/_vendor/urllib3/util/ssl_.py",
+        "pip/_vendor/urllib3/util/timeout.py",
+        "pip/_vendor/urllib3/util/url.py",
+        "pip/_vendor/urllib3/util/wait.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/urllib3/contrib/socks.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/socks.py",
+      "langage": "python",
+      "lignes": 216,
+      "taille_bytes": 7097,
+      "entrees": [
+        "..connection",
+        "..connectionpool",
+        "..exceptions",
+        "..poolmanager",
+        "..util.url",
+        "__future__",
+        "socket",
+        "socks",
+        "ssl",
+        "warnings"
+      ],
+      "sorties": [
+        "class SOCKSConnection",
+        "class SOCKSHTTPConnectionPool",
+        "class SOCKSHTTPSConnection",
+        "class SOCKSHTTPSConnectionPool",
+        "class SOCKSProxyManager",
+        "def __init__",
+        "def _new_conn"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/poolmanager.py",
+        "pip/_vendor/urllib3/util/connection.py",
+        "pip/_vendor/urllib3/util/url.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/adapters.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/contrib/_appengine_environ.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/_appengine_environ.py",
+      "langage": "python",
+      "lignes": 36,
+      "taille_bytes": 957,
+      "entrees": [
+        "os"
+      ],
+      "sorties": [
+        "def is_appengine",
+        "def is_appengine_sandbox",
+        "def is_local_appengine",
+        "def is_prod_appengine",
+        "def is_prod_appengine_mvms"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/contrib/securetransport.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "langage": "python",
+      "lignes": 920,
+      "taille_bytes": 34446,
+      "entrees": [
+        "..",
+        "..packages",
+        "..packages.backports.makefile",
+        "..util.ssl_",
+        "._securetransport.bindings",
+        "._securetransport.low_level",
+        "__future__",
+        "contextlib",
+        "ctypes",
+        "errno",
+        "of",
+        "os.path",
+        "pip._vendor.urllib3.contrib.securetransport",
+        "shutil",
+        "socket",
+        "ssl",
+        "struct",
+        "threading",
+        "weakref"
+      ],
+      "sorties": [
+        "class SecureTransportContext",
+        "class WrappedSocket",
+        "def __init__",
+        "def _custom_validate",
+        "def _decref_socketios",
+        "def _drop",
+        "def _evaluate_trust",
+        "def _raise_on_error",
+        "def _read_callback",
+        "def _reuse",
+        "def _set_alpn_protocols",
+        "def _set_ciphers",
+        "def _write_callback",
+        "def check_hostname",
+        "def close",
+        "def extract_from_urllib3",
+        "def fileno",
+        "def getpeercert",
+        "def gettimeout",
+        "def handshake",
+        "def inject_into_urllib3",
+        "def load_cert_chain",
+        "def load_default_certs",
+        "def load_verify_locations",
+        "def makefile",
+        "def options",
+        "def recv",
+        "def recv_into",
+        "def send",
+        "def sendall",
+        "def set_alpn_protocols",
+        "def set_ciphers",
+        "def set_default_verify_paths",
+        "def settimeout",
+        "def shutdown",
+        "def verify_mode",
+        "def version",
+        "def wrap_socket",
+        "interface of"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/urllib3/contrib/_securetransport/bindings.py",
+        "pip/_vendor/urllib3/contrib/_securetransport/low_level.py",
+        "pip/_vendor/urllib3/packages/backports/makefile.py",
+        "pip/_vendor/urllib3/util/ssl_.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/urllib3/contrib/ntlmpool.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/ntlmpool.py",
+      "langage": "python",
+      "lignes": 130,
+      "taille_bytes": 4528,
+      "entrees": [
+        "..",
+        "..packages.six.moves.http_client",
+        "__future__",
+        "logging",
+        "ntlm",
+        "warnings"
+      ],
+      "sorties": [
+        "class NTLMConnectionPool",
+        "def __init__",
+        "def _new_conn",
+        "def urlopen"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/contrib/appengine.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/appengine.py",
+      "langage": "python",
+      "lignes": 314,
+      "taille_bytes": 11036,
+      "entrees": [
+        "..exceptions",
+        "..packages.six.moves.urllib.parse",
+        "..request",
+        "..response",
+        "..util.retry",
+        "..util.timeout",
+        "__future__",
+        "google.appengine.api",
+        "io",
+        "logging",
+        "pip._vendor.urllib3",
+        "pip._vendor.urllib3.contrib.appengine",
+        "warnings"
+      ],
+      "sorties": [
+        "class AppEngineManager",
+        "class AppEnginePlatformError",
+        "class AppEnginePlatformWarning",
+        "def __enter__",
+        "def __exit__",
+        "def __init__",
+        "def _get_absolute_timeout",
+        "def _get_retries",
+        "def _urlfetch_response_to_http_response",
+        "def urlopen"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/api.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/util/request.py",
+        "pip/_vendor/urllib3/util/response.py",
+        "pip/_vendor/urllib3/util/retry.py",
+        "pip/_vendor/urllib3/util/timeout.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/urllib3/contrib/pyopenssl.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "langage": "python",
+      "lignes": 518,
+      "taille_bytes": 17081,
+      "entrees": [
+        "..",
+        "..packages",
+        "..packages.backports.makefile",
+        "..util.ssl_",
+        "ASCII",
+        "OpenSSL.SSL",
+        "OpenSSL.crypto",
+        "__future__",
+        "all",
+        "cryptography",
+        "cryptography.hazmat.backends.openssl",
+        "cryptography.x509",
+        "cryptography.x509.extensions",
+        "io",
+        "logging",
+        "pip._vendor",
+        "pip._vendor.urllib3.contrib.pyopenssl",
+        "socket",
+        "ssl",
+        "sys",
+        "warnings"
+      ],
+      "sorties": [
+        "class PyOpenSSLContext",
+        "class UnsupportedExtension",
+        "class WrappedSocket",
+        "def __init__",
+        "def _decref_socketios",
+        "def _dnsname_to_stdlib",
+        "def _drop",
+        "def _reuse",
+        "def _send_until_done",
+        "def _validate_dependencies_met",
+        "def _verify_callback",
+        "def close",
+        "def extract_from_urllib3",
+        "def fileno",
+        "def get_subj_alt_name",
+        "def getpeercert",
+        "def idna_encode",
+        "def inject_into_urllib3",
+        "def load_cert_chain",
+        "def load_verify_locations",
+        "def makefile",
+        "def options",
+        "def recv",
+        "def recv_into",
+        "def sendall",
+        "def set_alpn_protocols",
+        "def set_ciphers",
+        "def set_default_verify_paths",
+        "def settimeout",
+        "def shutdown",
+        "def verify_mode",
+        "def version",
+        "def wrap_socket"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/urllib3/packages/backports/makefile.py",
+        "pip/_vendor/urllib3/util/ssl_.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/urllib3/contrib/__init__.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/contrib/_securetransport/bindings.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/_securetransport/bindings.py",
+      "langage": "python",
+      "lignes": 519,
+      "taille_bytes": 17632,
+      "entrees": [
+        "...packages.six",
+        "__future__",
+        "ctypes",
+        "ctypes.util",
+        "platform"
+      ],
+      "sorties": [
+        "class CFConst",
+        "class SecurityConst",
+        "def load_cdll"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/urllib3/packages/six.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/contrib/_securetransport/low_level.py",
+        "pip/_vendor/urllib3/contrib/securetransport.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/contrib/_securetransport/low_level.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/_securetransport/low_level.py",
+      "langage": "python",
+      "lignes": 397,
+      "taille_bytes": 13922,
+      "entrees": [
+        ".bindings",
+        "base64",
+        "ctypes",
+        "itertools",
+        "os",
+        "re",
+        "ssl",
+        "struct",
+        "tempfile"
+      ],
+      "sorties": [
+        "def _assert_no_error",
+        "def _build_tls_unknown_ca_alert",
+        "def _cert_array_from_pem",
+        "def _cf_data_from_bytes",
+        "def _cf_dictionary_from_tuples",
+        "def _cf_string_to_unicode",
+        "def _cfstr",
+        "def _create_cfstring_array",
+        "def _is_cert",
+        "def _is_identity",
+        "def _load_client_cert_chain",
+        "def _load_items_from_file",
+        "def _temporary_keychain"
+      ],
+      "appelle": [
+        "pip/_vendor/urllib3/contrib/_securetransport/bindings.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/contrib/securetransport.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/contrib/_securetransport/__init__.py": {
+      "fichier": "pip/_vendor/urllib3/contrib/_securetransport/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/packages/six.py": {
+      "fichier": "pip/_vendor/urllib3/packages/six.py",
+      "langage": "python",
+      "lignes": 1076,
+      "taille_bytes": 34665,
+      "entrees": [
+        "StringIO",
+        "__future__",
+        "functools",
+        "importlib.util",
+        "io",
+        "itertools",
+        "operator",
+        "struct",
+        "sys",
+        "types"
+      ],
+      "sorties": [
+        "class Iterator",
+        "class Module_six_moves_urllib",
+        "class Module_six_moves_urllib_error",
+        "class Module_six_moves_urllib_parse",
+        "class Module_six_moves_urllib_request",
+        "class Module_six_moves_urllib_response",
+        "class Module_six_moves_urllib_robotparser",
+        "class MovedAttribute",
+        "class MovedModule",
+        "class _LazyDescr",
+        "class _LazyModule",
+        "class _MovedItems",
+        "class _SixMetaPathImporter",
+        "class metaclass",
+        "def __dir__",
+        "def __get__",
+        "def __get_module",
+        "def __getattr__",
+        "def __init__",
+        "def __len__",
+        "def __new__",
+        "def __prepare__",
+        "def _add_doc",
+        "def _add_module",
+        "def _get_module",
+        "def _import_module",
+        "def _resolve",
+        "def _update_wrapper",
+        "def add_metaclass",
+        "def add_move",
+        "def advance_iterator",
+        "def assertCountEqual",
+        "def assertNotRegex",
+        "def assertRaisesRegex",
+        "def assertRegex",
+        "def byte2int",
+        "def callable",
+        "def create_bound_method",
+        "def create_module",
+        "def create_unbound_method",
+        "def ensure_binary",
+        "def ensure_str",
+        "def ensure_text",
+        "def exec_",
+        "def exec_module",
+        "def find_module",
+        "def find_spec",
+        "def get_code",
+        "def get_unbound_function",
+        "def indexbytes",
+        "def is_package",
+        "def iteritems",
+        "def iterkeys",
+        "def iterlists",
+        "def itervalues",
+        "def load_module",
+        "def next",
+        "def print_",
+        "def python_2_unicode_compatible",
+        "def raise_from",
+        "def remove_move",
+        "def reraise",
+        "def with_metaclass",
+        "def wrapper",
+        "def wraps",
+        "def write"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/_collections.py",
+        "pip/_vendor/urllib3/contrib/_securetransport/bindings.py",
+        "pip/_vendor/urllib3/filepost.py",
+        "pip/_vendor/urllib3/util/request.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/packages/__init__.py": {
+      "fichier": "pip/_vendor/urllib3/packages/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/packages/backports/weakref_finalize.py": {
+      "fichier": "pip/_vendor/urllib3/packages/backports/weakref_finalize.py",
+      "langage": "python",
+      "lignes": 155,
+      "taille_bytes": 5343,
+      "entrees": [
+        "__future__",
+        "atexit",
+        "gc",
+        "itertools",
+        "sys",
+        "weakref"
+      ],
+      "sorties": [
+        "class _Info",
+        "class weakref_finalize",
+        "def __call__",
+        "def __init__",
+        "def __repr__",
+        "def _exitfunc",
+        "def _select_for_exit",
+        "def alive",
+        "def atexit",
+        "def detach",
+        "def peek"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/connectionpool.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/packages/backports/makefile.py": {
+      "fichier": "pip/_vendor/urllib3/packages/backports/makefile.py",
+      "langage": "python",
+      "lignes": 51,
+      "taille_bytes": 1417,
+      "entrees": [
+        "io",
+        "socket"
+      ],
+      "sorties": [
+        "def backport_makefile"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/contrib/pyopenssl.py",
+        "pip/_vendor/urllib3/contrib/securetransport.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/urllib3/packages/backports/__init__.py": {
+      "fichier": "pip/_vendor/urllib3/packages/backports/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/platformdirs/api.py": {
+      "fichier": "pip/_vendor/platformdirs/api.py",
+      "langage": "python",
+      "lignes": 299,
+      "taille_bytes": 9281,
+      "entrees": [
+        "__future__",
+        "abc",
+        "collections.abc",
+        "os",
+        "pathlib",
+        "typing"
+      ],
+      "sorties": [
+        "class PlatformDirsABC",
+        "def __init__",
+        "def _append_app_name_and_version",
+        "def _first_item_as_path_if_multipath",
+        "def _optionally_create_directory",
+        "def iter_cache_dirs",
+        "def iter_cache_paths",
+        "def iter_config_dirs",
+        "def iter_config_paths",
+        "def iter_data_dirs",
+        "def iter_data_paths",
+        "def iter_runtime_dirs",
+        "def iter_runtime_paths",
+        "def site_cache_dir",
+        "def site_cache_path",
+        "def site_config_dir",
+        "def site_config_path",
+        "def site_data_dir",
+        "def site_data_path",
+        "def site_runtime_dir",
+        "def site_runtime_path",
+        "def user_cache_dir",
+        "def user_cache_path",
+        "def user_config_dir",
+        "def user_config_path",
+        "def user_data_dir",
+        "def user_data_path",
+        "def user_desktop_dir",
+        "def user_desktop_path",
+        "def user_documents_dir",
+        "def user_documents_path",
+        "def user_downloads_dir",
+        "def user_downloads_path",
+        "def user_log_dir",
+        "def user_log_path",
+        "def user_music_dir",
+        "def user_music_path",
+        "def user_pictures_dir",
+        "def user_pictures_path",
+        "def user_runtime_dir",
+        "def user_runtime_path",
+        "def user_state_dir",
+        "def user_state_path",
+        "def user_videos_dir",
+        "def user_videos_path"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/platformdirs/__main__.py": {
+      "fichier": "pip/_vendor/platformdirs/__main__.py",
+      "langage": "python",
+      "lignes": 55,
+      "taille_bytes": 1505,
+      "entrees": [
+        "__future__",
+        "pip._vendor.platformdirs"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/platformdirs/unix.py": {
+      "fichier": "pip/_vendor/platformdirs/unix.py",
+      "langage": "python",
+      "lignes": 272,
+      "taille_bytes": 10458,
+      "entrees": [
+        ".api",
+        "__future__",
+        "collections.abc",
+        "configparser",
+        "os",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class Unix",
+        "def _get_user_dirs_folder",
+        "def _get_user_media_dir",
+        "def _site_config_dirs",
+        "def _site_data_dirs",
+        "def getuid",
+        "def iter_config_dirs",
+        "def iter_data_dirs",
+        "def site_cache_dir",
+        "def site_cache_path",
+        "def site_config_dir",
+        "def site_config_path",
+        "def site_data_dir",
+        "def site_data_path",
+        "def site_runtime_dir",
+        "def user_cache_dir",
+        "def user_config_dir",
+        "def user_data_dir",
+        "def user_desktop_dir",
+        "def user_documents_dir",
+        "def user_downloads_dir",
+        "def user_log_dir",
+        "def user_music_dir",
+        "def user_pictures_dir",
+        "def user_runtime_dir",
+        "def user_state_dir",
+        "def user_videos_dir"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/api.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/platformdirs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/platformdirs/macos.py": {
+      "fichier": "pip/_vendor/platformdirs/macos.py",
+      "langage": "python",
+      "lignes": 146,
+      "taille_bytes": 6322,
+      "entrees": [
+        ".api",
+        "__future__",
+        "os.path",
+        "pathlib",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class MacOS",
+        "def site_cache_dir",
+        "def site_cache_path",
+        "def site_config_dir",
+        "def site_data_dir",
+        "def site_data_path",
+        "def site_runtime_dir",
+        "def user_cache_dir",
+        "def user_config_dir",
+        "def user_data_dir",
+        "def user_desktop_dir",
+        "def user_documents_dir",
+        "def user_downloads_dir",
+        "def user_log_dir",
+        "def user_music_dir",
+        "def user_pictures_dir",
+        "def user_runtime_dir",
+        "def user_state_dir",
+        "def user_videos_dir"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/api.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/platformdirs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/platformdirs/version.py": {
+      "fichier": "pip/_vendor/platformdirs/version.py",
+      "langage": "python",
+      "lignes": 34,
+      "taille_bytes": 704,
+      "entrees": [
+        "typing"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/platformdirs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/platformdirs/windows.py": {
+      "fichier": "pip/_vendor/platformdirs/windows.py",
+      "langage": "python",
+      "lignes": 278,
+      "taille_bytes": 10362,
+      "entrees": [
+        ".api",
+        "__future__",
+        "collections.abc",
+        "ctypes",
+        "functools",
+        "os",
+        "sys",
+        "typing",
+        "winreg"
+      ],
+      "sorties": [
+        "class Windows",
+        "def _append_parts",
+        "def _pick_get_win_folder",
+        "def get_win_folder_from_env_vars",
+        "def get_win_folder_from_registry",
+        "def get_win_folder_if_csidl_name_not_env_var",
+        "def get_win_folder_via_ctypes",
+        "def site_cache_dir",
+        "def site_config_dir",
+        "def site_data_dir",
+        "def site_runtime_dir",
+        "def user_cache_dir",
+        "def user_config_dir",
+        "def user_data_dir",
+        "def user_desktop_dir",
+        "def user_documents_dir",
+        "def user_downloads_dir",
+        "def user_log_dir",
+        "def user_music_dir",
+        "def user_pictures_dir",
+        "def user_runtime_dir",
+        "def user_state_dir",
+        "def user_videos_dir"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/api.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/platformdirs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/platformdirs/__init__.py": {
+      "fichier": "pip/_vendor/platformdirs/__init__.py",
+      "langage": "python",
+      "lignes": 631,
+      "taille_bytes": 22344,
+      "entrees": [
+        ".api",
+        ".version",
+        "__future__",
+        "os",
+        "pathlib",
+        "pip._vendor.platformdirs.android",
+        "pip._vendor.platformdirs.macos",
+        "pip._vendor.platformdirs.unix",
+        "pip._vendor.platformdirs.windows",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "def _set_platform_dir_class",
+        "def site_cache_dir",
+        "def site_cache_path",
+        "def site_config_dir",
+        "def site_config_path",
+        "def site_data_dir",
+        "def site_data_path",
+        "def site_runtime_dir",
+        "def site_runtime_path",
+        "def user_cache_dir",
+        "def user_cache_path",
+        "def user_config_dir",
+        "def user_config_path",
+        "def user_data_dir",
+        "def user_data_path",
+        "def user_desktop_dir",
+        "def user_desktop_path",
+        "def user_documents_dir",
+        "def user_documents_path",
+        "def user_downloads_dir",
+        "def user_downloads_path",
+        "def user_log_dir",
+        "def user_log_path",
+        "def user_music_dir",
+        "def user_music_path",
+        "def user_pictures_dir",
+        "def user_pictures_path",
+        "def user_runtime_dir",
+        "def user_runtime_path",
+        "def user_state_dir",
+        "def user_state_path",
+        "def user_videos_dir",
+        "def user_videos_path"
+      ],
+      "appelle": [
+        "pip/_vendor/platformdirs/android.py",
+        "pip/_vendor/platformdirs/macos.py",
+        "pip/_vendor/platformdirs/unix.py",
+        "pip/_vendor/platformdirs/version.py",
+        "pip/_vendor/platformdirs/windows.py",
+        "pip/_vendor/requests/api.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/platformdirs/android.py": {
+      "fichier": "pip/_vendor/platformdirs/android.py",
+      "langage": "python",
+      "lignes": 249,
+      "taille_bytes": 9013,
+      "entrees": [
+        ".api",
+        "__future__",
+        "android",
+        "functools",
+        "jnius",
+        "os",
+        "re",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "class Android",
+        "def _android_documents_folder",
+        "def _android_downloads_folder",
+        "def _android_folder",
+        "def _android_music_folder",
+        "def _android_pictures_folder",
+        "def _android_videos_folder",
+        "def site_cache_dir",
+        "def site_config_dir",
+        "def site_data_dir",
+        "def site_runtime_dir",
+        "def user_cache_dir",
+        "def user_config_dir",
+        "def user_data_dir",
+        "def user_desktop_dir",
+        "def user_documents_dir",
+        "def user_downloads_dir",
+        "def user_log_dir",
+        "def user_music_dir",
+        "def user_pictures_dir",
+        "def user_runtime_dir",
+        "def user_state_dir",
+        "def user_videos_dir"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/api.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/platformdirs/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/truststore/_macos.py": {
+      "fichier": "pip/_vendor/truststore/_macos.py",
+      "langage": "python",
+      "lignes": 571,
+      "taille_bytes": 20503,
+      "entrees": [
+        "._ssl_constants",
+        "contextlib",
+        "ctypes",
+        "ctypes.util",
+        "platform",
+        "ssl",
+        "typing"
+      ],
+      "sorties": [
+        "class CFConst",
+        "def _bytes_to_cf_data_ref",
+        "def _bytes_to_cf_string",
+        "def _cf_string_ref_to_str",
+        "def _configure_context",
+        "def _der_certs_to_cf_cert_array",
+        "def _handle_osstatus",
+        "def _load_cdll",
+        "def _verify_peercerts_impl",
+        "def _verify_peercerts_impl_macos_10_13",
+        "def _verify_peercerts_impl_macos_10_14"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/truststore/_ssl_constants.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/truststore/_api.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/truststore/_api.py": {
+      "fichier": "pip/_vendor/truststore/_api.py",
+      "langage": "python",
+      "lignes": 341,
+      "taille_bytes": 11413,
+      "entrees": [
+        "._macos",
+        "._openssl",
+        "._ssl_constants",
+        "._windows",
+        "_ssl",
+        "contextlib",
+        "os",
+        "pip._vendor.requests",
+        "pip._vendor.urllib3.util.ssl_",
+        "platform",
+        "socket",
+        "ssl",
+        "sys",
+        "threading",
+        "typing",
+        "typing_extensions"
+      ],
+      "sorties": [
+        "class SSLContext",
+        "class TruststoreSSLObject",
+        "def __class__",
+        "def __init__",
+        "def _get_unverified_chain_bytes",
+        "def _verify_peercerts",
+        "def cert_store_stats",
+        "def check_hostname",
+        "def do_handshake",
+        "def extract_from_ssl",
+        "def get_ca_certs",
+        "def get_ciphers",
+        "def hostname_checks_common_name",
+        "def inject_into_ssl",
+        "def keylog_filename",
+        "def load_cert_chain",
+        "def load_default_certs",
+        "def load_verify_locations",
+        "def maximum_version",
+        "def minimum_version",
+        "def options",
+        "def post_handshake_auth",
+        "def protocol",
+        "def security_level",
+        "def session_stats",
+        "def set_alpn_protocols",
+        "def set_ciphers",
+        "def set_default_verify_paths",
+        "def set_npn_protocols",
+        "def verify_flags",
+        "def verify_mode",
+        "def wrap_bio",
+        "def wrap_socket"
+      ],
+      "appelle": [
+        "pip/_vendor/truststore/_macos.py",
+        "pip/_vendor/truststore/_openssl.py",
+        "pip/_vendor/truststore/_ssl_constants.py",
+        "pip/_vendor/truststore/_windows.py",
+        "pip/_vendor/urllib3/util/ssl_.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/truststore/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/truststore/_windows.py": {
+      "fichier": "pip/_vendor/truststore/_windows.py",
+      "langage": "python",
+      "lignes": 567,
+      "taille_bytes": 17993,
+      "entrees": [
+        "._ssl_constants",
+        "contextlib",
+        "ctypes",
+        "ctypes.wintypes",
+        "ssl",
+        "typing"
+      ],
+      "sorties": [
+        "class CERT_CHAIN_CONTEXT",
+        "class CERT_CHAIN_ELEMENT",
+        "class CERT_CHAIN_ENGINE_CONFIG",
+        "class CERT_CHAIN_PARA",
+        "class CERT_CHAIN_POLICY_PARA",
+        "class CERT_CHAIN_POLICY_STATUS",
+        "class CERT_CONTEXT",
+        "class CERT_ENHKEY_USAGE",
+        "class CERT_SIMPLE_CHAIN",
+        "class CERT_TRUST_STATUS",
+        "class CERT_USAGE_MATCH",
+        "class SSL_EXTRA_CERT_CHAIN_POLICY_PARA",
+        "def _configure_context",
+        "def _get_and_verify_cert_chain",
+        "def _handle_win_error",
+        "def _verify_peercerts_impl",
+        "def _verify_using_custom_ca_certs"
+      ],
+      "appelle": [
+        "pip/_vendor/truststore/_ssl_constants.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/truststore/_api.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/truststore/_ssl_constants.py": {
+      "fichier": "pip/_vendor/truststore/_ssl_constants.py",
+      "langage": "python",
+      "lignes": 31,
+      "taille_bytes": 1130,
+      "entrees": [
+        "ssl",
+        "sys",
+        "typing"
+      ],
+      "sorties": [
+        "def _set_ssl_context_verify_mode"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/truststore/_api.py",
+        "pip/_vendor/truststore/_macos.py",
+        "pip/_vendor/truststore/_windows.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "pip/_vendor/truststore/_openssl.py": {
+      "fichier": "pip/_vendor/truststore/_openssl.py",
+      "langage": "python",
+      "lignes": 68,
+      "taille_bytes": 2412,
+      "entrees": [
+        "contextlib",
+        "os",
+        "re",
+        "ssl",
+        "typing"
+      ],
+      "sorties": [
+        "def _capath_contains_certs",
+        "def _configure_context",
+        "def _verify_peercerts_impl"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/truststore/_api.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/truststore/__init__.py": {
+      "fichier": "pip/_vendor/truststore/__init__.py",
+      "langage": "python",
+      "lignes": 36,
+      "taille_bytes": 1320,
+      "entrees": [
+        "._api",
+        "ssl",
+        "sys"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/truststore/_api.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/distro/distro.py": {
+      "fichier": "pip/_vendor/distro/distro.py",
+      "langage": "python",
+      "lignes": 1403,
+      "taille_bytes": 49430,
+      "entrees": [
+        "argparse",
+        "functools",
+        "json",
+        "logging",
+        "of",
+        "os",
+        "re",
+        "shlex",
+        "subprocess",
+        "sys",
+        "the",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "class InfoDict",
+        "class LinuxDistribution",
+        "class VersionDict",
+        "class cached_property",
+        "def __get__",
+        "def __init__",
+        "def __repr__",
+        "def _debian_version",
+        "def _distro_release_info",
+        "def _lsb_release_info",
+        "def _os_release_info",
+        "def _oslevel_info",
+        "def _parse_distro_release_content",
+        "def _parse_distro_release_file",
+        "def _parse_lsb_release_content",
+        "def _parse_os_release_content",
+        "def _parse_uname_content",
+        "def _to_str",
+        "def _uname_info",
+        "def build_number",
+        "def codename",
+        "def distro_release_attr",
+        "def distro_release_info",
+        "def id",
+        "def info",
+        "def like",
+        "def linux_distribution",
+        "def lsb_release_attr",
+        "def lsb_release_info",
+        "def main",
+        "def major_version",
+        "def minor_version",
+        "def name",
+        "def normalize",
+        "def os_release_attr",
+        "def os_release_info",
+        "def oslevel_info",
+        "def uname_attr",
+        "def uname_info",
+        "def version",
+        "def version_parts",
+        "output data",
+        "output is"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/distro/__init__.py",
+        "pip/_vendor/distro/__main__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/distro/__main__.py": {
+      "fichier": "pip/_vendor/distro/__main__.py",
+      "langage": "python",
+      "lignes": 4,
+      "taille_bytes": 64,
+      "entrees": [
+        ".distro"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/distro/distro.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/distro/__init__.py": {
+      "fichier": "pip/_vendor/distro/__init__.py",
+      "langage": "python",
+      "lignes": 54,
+      "taille_bytes": 981,
+      "entrees": [
+        ".distro"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/distro/distro.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/msgpack/ext.py": {
+      "fichier": "pip/_vendor/msgpack/ext.py",
+      "langage": "python",
+      "lignes": 170,
+      "taille_bytes": 5726,
+      "entrees": [
+        "collections",
+        "datetime",
+        "struct"
+      ],
+      "sorties": [
+        "class ExtType",
+        "class Timestamp",
+        "def __eq__",
+        "def __hash__",
+        "def __init__",
+        "def __ne__",
+        "def __new__",
+        "def __repr__",
+        "def from_bytes",
+        "def from_datetime",
+        "def from_unix",
+        "def from_unix_nano",
+        "def to_bytes",
+        "def to_datetime",
+        "def to_unix",
+        "def to_unix_nano"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/msgpack/__init__.py",
+        "pip/_vendor/msgpack/fallback.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/msgpack/fallback.py": {
+      "fichier": "pip/_vendor/msgpack/fallback.py",
+      "langage": "python",
+      "lignes": 929,
+      "taille_bytes": 32390,
+      "entrees": [
+        ".exceptions",
+        ".ext",
+        "__pypy__",
+        "__pypy__.builders",
+        "datetime",
+        "io",
+        "serializable",
+        "struct",
+        "sys"
+      ],
+      "sorties": [
+        "class BytesIO",
+        "class Packer",
+        "class Unpacker",
+        "def __init__",
+        "def __iter__",
+        "def __next__",
+        "def _check_type_strict",
+        "def _consume",
+        "def _get_data_from_buffer",
+        "def _get_extradata",
+        "def _got_extradata",
+        "def _pack",
+        "def _pack_array_header",
+        "def _pack_bin_header",
+        "def _pack_map_header",
+        "def _pack_map_pairs",
+        "def _pack_raw_header",
+        "def _read",
+        "def _read_header",
+        "def _reserve",
+        "def _unpack",
+        "def bytes",
+        "def feed",
+        "def getbuffer",
+        "def getvalue",
+        "def newlist_hint",
+        "def pack",
+        "def pack_array_header",
+        "def pack_ext_type",
+        "def pack_map_header",
+        "def pack_map_pairs",
+        "def read_array_header",
+        "def read_bytes",
+        "def read_map_header",
+        "def reset",
+        "def skip",
+        "def tell",
+        "def unpack",
+        "def unpackb",
+        "def write"
+      ],
+      "appelle": [
+        "pip/_vendor/msgpack/ext.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/msgpack/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/msgpack/exceptions.py": {
+      "fichier": "pip/_vendor/msgpack/exceptions.py",
+      "langage": "python",
+      "lignes": 48,
+      "taille_bytes": 1081,
+      "entrees": [],
+      "sorties": [
+        "class BufferFull",
+        "class ExtraData",
+        "class FormatError",
+        "class OutOfData",
+        "class StackError",
+        "class UnpackException",
+        "def __init__",
+        "def __str__"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/msgpack/__init__.py": {
+      "fichier": "pip/_vendor/msgpack/__init__.py",
+      "langage": "python",
+      "lignes": 55,
+      "taille_bytes": 1109,
+      "entrees": [
+        "._cmsgpack",
+        ".exceptions",
+        ".ext",
+        ".fallback",
+        "os"
+      ],
+      "sorties": [
+        "def pack",
+        "def packb",
+        "def unpack"
+      ],
+      "appelle": [
+        "pip/_vendor/msgpack/ext.py",
+        "pip/_vendor/msgpack/fallback.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/idna/package_data.py": {
+      "fichier": "pip/_vendor/idna/package_data.py",
+      "langage": "python",
+      "lignes": 1,
+      "taille_bytes": 21,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/idna/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/idna/compat.py": {
+      "fichier": "pip/_vendor/idna/compat.py",
+      "langage": "python",
+      "lignes": 15,
+      "taille_bytes": 316,
+      "entrees": [
+        ".core",
+        "typing"
+      ],
+      "sorties": [
+        "def ToASCII",
+        "def ToUnicode",
+        "def nameprep"
+      ],
+      "appelle": [
+        "pip/_vendor/idna/core.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/idna/core.py": {
+      "fichier": "pip/_vendor/idna/core.py",
+      "langage": "python",
+      "lignes": 437,
+      "taille_bytes": 13246,
+      "entrees": [
+        ".intranges",
+        ".uts46data",
+        "bisect",
+        "re",
+        "typing",
+        "unicodedata"
+      ],
+      "sorties": [
+        "class IDNABidiError",
+        "class IDNAError",
+        "class InvalidCodepoint",
+        "class InvalidCodepointContext",
+        "def _combining_class",
+        "def _is_script",
+        "def _punycode",
+        "def _unot",
+        "def alabel",
+        "def check_bidi",
+        "def check_hyphen_ok",
+        "def check_initial_combiner",
+        "def check_label",
+        "def check_nfc",
+        "def decode",
+        "def encode",
+        "def ulabel",
+        "def uts46_remap",
+        "def valid_contextj",
+        "def valid_contexto",
+        "def valid_label_length",
+        "def valid_string_length"
+      ],
+      "appelle": [
+        "pip/_vendor/idna/intranges.py",
+        "pip/_vendor/idna/uts46data.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/idna/__init__.py",
+        "pip/_vendor/idna/codec.py",
+        "pip/_vendor/idna/compat.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/idna/codec.py": {
+      "fichier": "pip/_vendor/idna/codec.py",
+      "langage": "python",
+      "lignes": 122,
+      "taille_bytes": 3438,
+      "entrees": [
+        ".core",
+        "codecs",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "class Codec",
+        "class IncrementalDecoder",
+        "class IncrementalEncoder",
+        "class StreamReader",
+        "class StreamWriter",
+        "def _buffer_decode",
+        "def _buffer_encode",
+        "def decode",
+        "def encode",
+        "def search_function"
+      ],
+      "appelle": [
+        "pip/_vendor/idna/core.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/idna/idnadata.py": {
+      "fichier": "pip/_vendor/idna/idnadata.py",
+      "langage": "python",
+      "lignes": 4309,
+      "taille_bytes": 79623,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/idna/uts46data.py": {
+      "fichier": "pip/_vendor/idna/uts46data.py",
+      "langage": "python",
+      "lignes": 8841,
+      "taille_bytes": 243725,
+      "entrees": [
+        "typing"
+      ],
+      "sorties": [
+        "def _seg_0",
+        "def _seg_1",
+        "def _seg_10",
+        "def _seg_11",
+        "def _seg_12",
+        "def _seg_13",
+        "def _seg_14",
+        "def _seg_15",
+        "def _seg_16",
+        "def _seg_17",
+        "def _seg_18",
+        "def _seg_19",
+        "def _seg_2",
+        "def _seg_20",
+        "def _seg_21",
+        "def _seg_22",
+        "def _seg_23",
+        "def _seg_24",
+        "def _seg_25",
+        "def _seg_26",
+        "def _seg_27",
+        "def _seg_28",
+        "def _seg_29",
+        "def _seg_3",
+        "def _seg_30",
+        "def _seg_31",
+        "def _seg_32",
+        "def _seg_33",
+        "def _seg_34",
+        "def _seg_35",
+        "def _seg_36",
+        "def _seg_37",
+        "def _seg_38",
+        "def _seg_39",
+        "def _seg_4",
+        "def _seg_40",
+        "def _seg_41",
+        "def _seg_42",
+        "def _seg_43",
+        "def _seg_44",
+        "def _seg_45",
+        "def _seg_46",
+        "def _seg_47",
+        "def _seg_48",
+        "def _seg_49",
+        "def _seg_5",
+        "def _seg_50",
+        "def _seg_51",
+        "def _seg_52",
+        "def _seg_53",
+        "def _seg_54",
+        "def _seg_55",
+        "def _seg_56",
+        "def _seg_57",
+        "def _seg_58",
+        "def _seg_59",
+        "def _seg_6",
+        "def _seg_60",
+        "def _seg_61",
+        "def _seg_62",
+        "def _seg_63",
+        "def _seg_64",
+        "def _seg_65",
+        "def _seg_66",
+        "def _seg_67",
+        "def _seg_68",
+        "def _seg_69",
+        "def _seg_7",
+        "def _seg_70",
+        "def _seg_71",
+        "def _seg_72",
+        "def _seg_73",
+        "def _seg_74",
+        "def _seg_75",
+        "def _seg_76",
+        "def _seg_77",
+        "def _seg_78",
+        "def _seg_79",
+        "def _seg_8",
+        "def _seg_80",
+        "def _seg_81",
+        "def _seg_82",
+        "def _seg_83",
+        "def _seg_9"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/idna/core.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/idna/intranges.py": {
+      "fichier": "pip/_vendor/idna/intranges.py",
+      "langage": "python",
+      "lignes": 57,
+      "taille_bytes": 1898,
+      "entrees": [
+        "bisect",
+        "typing"
+      ],
+      "sorties": [
+        "def _decode_range",
+        "def _encode_range",
+        "def intranges_contain",
+        "def intranges_from_list"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/idna/__init__.py",
+        "pip/_vendor/idna/core.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/idna/__init__.py": {
+      "fichier": "pip/_vendor/idna/__init__.py",
+      "langage": "python",
+      "lignes": 45,
+      "taille_bytes": 868,
+      "entrees": [
+        ".core",
+        ".intranges",
+        ".package_data"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/idna/core.py",
+        "pip/_vendor/idna/intranges.py",
+        "pip/_vendor/idna/package_data.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/distlib/resources.py": {
+      "fichier": "pip/_vendor/distlib/resources.py",
+      "langage": "python",
+      "lignes": 358,
+      "taille_bytes": 10820,
+      "entrees": [
+        ".util",
+        "__future__",
+        "_frozen_importlib",
+        "_frozen_importlib_external",
+        "bisect",
+        "io",
+        "logging",
+        "os",
+        "pkgutil",
+        "sys",
+        "types",
+        "zipimport"
+      ],
+      "sorties": [
+        "class Resource",
+        "class ResourceBase",
+        "class ResourceCache",
+        "class ResourceContainer",
+        "class ResourceFinder",
+        "class ZipResourceFinder",
+        "def __init__",
+        "def _adjust_path",
+        "def _find",
+        "def _is_directory",
+        "def _make_path",
+        "def allowed",
+        "def as_stream",
+        "def bytes",
+        "def file_path",
+        "def find",
+        "def finder",
+        "def finder_for_path",
+        "def get",
+        "def get_bytes",
+        "def get_cache_info",
+        "def get_resources",
+        "def get_size",
+        "def get_stream",
+        "def is_container",
+        "def is_stale",
+        "def iterator",
+        "def register_finder",
+        "def resources",
+        "def size"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/distlib/scripts.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/distlib/compat.py": {
+      "fichier": "pip/_vendor/distlib/compat.py",
+      "langage": "python",
+      "lignes": 1137,
+      "taille_bytes": 41467,
+      "entrees": [
+        "ConfigParser",
+        "HTMLParser",
+        "Queue",
+        "StringIO",
+        "__builtin__",
+        "__future__",
+        "_abcoll",
+        "builtins",
+        "cgi",
+        "codecs",
+        "collections",
+        "collections.abc",
+        "configparser",
+        "dummy_thread",
+        "html",
+        "html.entities",
+        "html.parser",
+        "htmlentitydefs",
+        "http.client",
+        "httplib",
+        "importlib.util",
+        "io",
+        "itertools",
+        "logging.config",
+        "os",
+        "platform",
+        "queue",
+        "re",
+        "reprlib",
+        "shutil",
+        "ssl",
+        "sys",
+        "sysconfig",
+        "thread",
+        "tokenize",
+        "types",
+        "urllib",
+        "urllib.error",
+        "urllib.parse",
+        "urllib.request",
+        "urllib2",
+        "urlparse",
+        "xmlrpc.client",
+        "xmlrpclib",
+        "zipfile"
+      ],
+      "sorties": [
+        "class BaseConfigurator",
+        "class CertificateError",
+        "class ChainMap",
+        "class Container",
+        "class ConvertingDict",
+        "class ConvertingList",
+        "class ConvertingTuple",
+        "class OrderedDict",
+        "class ZipExtFile",
+        "class ZipFile",
+        "def __bool__",
+        "def __contains__",
+        "def __delitem__",
+        "def __enter__",
+        "def __eq__",
+        "def __exit__",
+        "def __getitem__",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def __missing__",
+        "def __ne__",
+        "def __reduce__",
+        "def __repr__",
+        "def __reversed__",
+        "def __setitem__",
+        "def _access_check",
+        "def _dnsname_match",
+        "def _get_normal_name",
+        "def _recursive_repr",
+        "def as_tuple",
+        "def cache_from_source",
+        "def callable",
+        "def cfg_convert",
+        "def clear",
+        "def configure_custom",
+        "def convert",
+        "def copy",
+        "def decorating_function",
+        "def detect_encoding",
+        "def ext_convert",
+        "def find_cookie",
+        "def fromkeys",
+        "def fsdecode",
+        "def fsencode",
+        "def get",
+        "def items",
+        "def iteritems",
+        "def iterkeys",
+        "def itervalues",
+        "def keys",
+        "def match_hostname",
+        "def new_child",
+        "def open",
+        "def parents",
+        "def pop",
+        "def popitem",
+        "def python_implementation",
+        "def quote",
+        "def read_or_stop",
+        "def resolve",
+        "def setdefault",
+        "def update",
+        "def valid_ident",
+        "def values",
+        "def viewitems",
+        "def viewkeys",
+        "def viewvalues",
+        "def which",
+        "def wrapper"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/urllib3/util/queue.py",
+        "pip/_vendor/urllib3/util/request.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/distlib/scripts.py": {
+      "fichier": "pip/_vendor/distlib/scripts.py",
+      "langage": "python",
+      "lignes": 447,
+      "taille_bytes": 18612,
+      "entrees": [
+        ".compat",
+        ".resources",
+        ".util",
+        "io",
+        "java",
+        "logging",
+        "os",
+        "re",
+        "struct",
+        "sys",
+        "time",
+        "zipfile"
+      ],
+      "sorties": [
+        "class ScriptMaker",
+        "def __init__",
+        "def _build_shebang",
+        "def _copy_script",
+        "def _fix_jython_executable",
+        "def _get_alternate_executable",
+        "def _get_launcher",
+        "def _get_script_text",
+        "def _get_shebang",
+        "def _is_shell",
+        "def _make_script",
+        "def _write_script",
+        "def dry_run",
+        "def enquote_executable",
+        "def get_manifest",
+        "def get_script_filenames",
+        "def make",
+        "def make_multiple"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/resources.py",
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/requests/compat.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/distlib/util.py": {
+      "fichier": "pip/_vendor/distlib/util.py",
+      "langage": "python",
+      "lignes": 1984,
+      "taille_bytes": 66682,
+      "entrees": [
+        ".compat",
+        "_aix_support",
+        "_osx_support",
+        "codecs",
+        "collections",
+        "contextlib",
+        "csv",
+        "distutils",
+        "dummy_threading",
+        "glob",
+        "io",
+        "json",
+        "logging",
+        "os",
+        "py_compile",
+        "re",
+        "socket",
+        "ssl",
+        "subprocess",
+        "sys",
+        "sysconfig",
+        "tarfile",
+        "tempfile",
+        "textwrap",
+        "threading",
+        "time"
+      ],
+      "sorties": [
+        "class CSVBase",
+        "class CSVReader",
+        "class CSVWriter",
+        "class Cache",
+        "class Configurator",
+        "class EventMixin",
+        "class ExportEntry",
+        "class FileOperator",
+        "class HTTPSConnection",
+        "class HTTPSHandler",
+        "class HTTPSOnlyHandler",
+        "class Progress",
+        "class PyPIRCFile",
+        "class SafeTransport",
+        "class Sequencer",
+        "class ServerProxy",
+        "class SubprocessMixin",
+        "class Transport",
+        "class cached_property",
+        "def ETA",
+        "def __enter__",
+        "def __eq__",
+        "def __exit__",
+        "def __get__",
+        "def __getitem__",
+        "def __init__",
+        "def __iter__",
+        "def __repr__",
+        "def _conn_maker",
+        "def _csv_open",
+        "def _get_external_data",
+        "def _iglob",
+        "def _init_record",
+        "def _load_pypirc",
+        "def _store_pypirc",
+        "def add",
+        "def add_node",
+        "def byte_compile",
+        "def chdir",
+        "def check_path",
+        "def clear",
+        "def commit",
+        "def configure_custom",
+        "def connect",
+        "def convert",
+        "def convert_path",
+        "def copy_file",
+        "def copy_stream",
+        "def dot",
+        "def ensure_dir",
+        "def ensure_removed",
+        "def ensure_slash",
+        "def extract_by_key",
+        "def extraction_filter",
+        "def format_duration",
+        "def get_cache_base",
+        "def get_executable",
+        "def get_export_entry",
+        "def get_extras",
+        "def get_host_platform",
+        "def get_package_data",
+        "def get_platform",
+        "def get_process_umask",
+        "def get_project_data",
+        "def get_rel_path",
+        "def get_resources_dests",
+        "def get_steps",
+        "def get_subscribers",
+        "def get_versions",
+        "def http_open",
+        "def https_open",
+        "def iglob",
+        "def in_venv",
+        "def inc_convert",
+        "def increment",
+        "def is_step",
+        "def is_string_sequence",
+        "def is_writable",
+        "def make_connection",
+        "def marker",
+        "def marker_and",
+        "def marker_expr",
+        "def marker_var",
+        "def maximum",
+        "def newer",
+        "def next",
+        "def normalize_name",
+        "def parse_credentials",
+        "def parse_marker",
+        "def parse_name_and_version",
+        "def parse_requirement",
+        "def path_to_cache_dir",
+        "def percentage",
+        "def prefix_to_dir",
+        "def proceed",
+        "def publish",
+        "def read",
+        "def read_exports",
+        "def read_stream",
+        "def reader",
+        "def record_as_written",
+        "def remove",
+        "def remove_node",
+        "def resolve",
+        "def rollback",
+        "def run_command",
+        "def set_mode",
+        "def socket_timeout",
+        "def speed",
+        "def split_filename",
+        "def start",
+        "def stop",
+        "def strong_connections",
+        "def strongconnect",
+        "def tempdir",
+        "def unarchive",
+        "def update",
+        "def value",
+        "def write_binary_file",
+        "def write_exports",
+        "def write_text_file",
+        "def writerow",
+        "def zip_dir"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/compat.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/distlib/compat.py",
+        "pip/_vendor/distlib/resources.py",
+        "pip/_vendor/distlib/scripts.py",
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/utils.py",
+        "pip/_vendor/truststore/_macos.py",
+        "pip/_vendor/urllib3/connection.py",
+        "pip/_vendor/urllib3/contrib/_securetransport/bindings.py",
+        "pip/_vendor/urllib3/packages/six.py",
+        "pip/_vendor/urllib3/util/ssl_.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/distlib/__init__.py": {
+      "fichier": "pip/_vendor/distlib/__init__.py",
+      "langage": "python",
+      "lignes": 33,
+      "taille_bytes": 625,
+      "entrees": [
+        "logging"
+      ],
+      "sorties": [
+        "class DistlibException",
+        "class NullHandler",
+        "def createLock",
+        "def emit",
+        "def handle"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/api.py": {
+      "fichier": "pip/_vendor/requests/api.py",
+      "langage": "python",
+      "lignes": 157,
+      "taille_bytes": 6449,
+      "entrees": [],
+      "sorties": [
+        "def delete",
+        "def get",
+        "def head",
+        "def options",
+        "def patch",
+        "def post",
+        "def put",
+        "def request"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/platformdirs/__init__.py",
+        "pip/_vendor/platformdirs/android.py",
+        "pip/_vendor/platformdirs/macos.py",
+        "pip/_vendor/platformdirs/unix.py",
+        "pip/_vendor/platformdirs/windows.py",
+        "pip/_vendor/requests/__init__.py",
+        "pip/_vendor/urllib3/contrib/appengine.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "pip/_vendor/requests/_internal_utils.py": {
+      "fichier": "pip/_vendor/requests/_internal_utils.py",
+      "langage": "python",
+      "lignes": 50,
+      "taille_bytes": 1495,
+      "entrees": [
+        ".compat",
+        "re"
+      ],
+      "sorties": [
+        "def to_native_string",
+        "def unicode_is_ascii"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/compat.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/auth.py",
+        "pip/_vendor/requests/cookies.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/sessions.py",
+        "pip/_vendor/requests/utils.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/help.py": {
+      "fichier": "pip/_vendor/requests/help.py",
+      "langage": "python",
+      "lignes": 127,
+      "taille_bytes": 3813,
+      "entrees": [
+        "OpenSSL",
+        "cryptography",
+        "json",
+        "pip._vendor",
+        "pip._vendor.urllib3.contrib",
+        "platform",
+        "ssl",
+        "sys"
+      ],
+      "sorties": [
+        "def _implementation",
+        "def info",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/compat.py": {
+      "fichier": "pip/_vendor/requests/compat.py",
+      "langage": "python",
+      "lignes": 90,
+      "taille_bytes": 1822,
+      "entrees": [
+        "collections",
+        "collections.abc",
+        "http",
+        "http.cookies",
+        "io",
+        "json",
+        "pip._vendor.urllib3",
+        "sys",
+        "urllib.parse",
+        "urllib.request"
+      ],
+      "sorties": [
+        "def _resolve_char_detection"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/cookies.py",
+        "pip/_vendor/urllib3/util/request.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/distlib/scripts.py",
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/requests/__init__.py",
+        "pip/_vendor/requests/_internal_utils.py",
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/requests/auth.py",
+        "pip/_vendor/requests/cookies.py",
+        "pip/_vendor/requests/exceptions.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/packages.py",
+        "pip/_vendor/requests/sessions.py",
+        "pip/_vendor/requests/structures.py",
+        "pip/_vendor/requests/utils.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/requests/utils.py": {
+      "fichier": "pip/_vendor/requests/utils.py",
+      "langage": "python",
+      "lignes": 1086,
+      "taille_bytes": 33225,
+      "entrees": [
+        ".__version__",
+        "._internal_utils",
+        ".compat",
+        ".cookies",
+        ".exceptions",
+        ".structures",
+        "codecs",
+        "collections",
+        "contextlib",
+        "for",
+        "io",
+        "netrc",
+        "os",
+        "pip._vendor.urllib3.util",
+        "re",
+        "socket",
+        "struct",
+        "sys",
+        "tempfile",
+        "warnings",
+        "winreg",
+        "zipfile"
+      ],
+      "sorties": [
+        "def _parse_content_type_header",
+        "def _validate_header_part",
+        "def add_dict_to_cookiejar",
+        "def address_in_network",
+        "def atomic_open",
+        "def check_header_validity",
+        "def default_headers",
+        "def default_user_agent",
+        "def dict_from_cookiejar",
+        "def dict_to_sequence",
+        "def dotted_netmask",
+        "def extract_zipped_paths",
+        "def from_key_val_list",
+        "def get_auth_from_url",
+        "def get_encoding_from_headers",
+        "def get_encodings_from_content",
+        "def get_environ_proxies",
+        "def get_netrc_auth",
+        "def get_proxy",
+        "def get_unicode_from_response",
+        "def guess_filename",
+        "def guess_json_utf",
+        "def is_ipv4_address",
+        "def is_valid_cidr",
+        "def iter_slices",
+        "def parse_dict_header",
+        "def parse_header_links",
+        "def parse_list_header",
+        "def prepend_scheme_if_needed",
+        "def proxy_bypass",
+        "def proxy_bypass_registry",
+        "def requote_uri",
+        "def resolve_proxies",
+        "def rewind_body",
+        "def select_proxy",
+        "def set_environ",
+        "def should_bypass_proxies",
+        "def stream_decode_response_unicode",
+        "def super_len",
+        "def to_key_val_list",
+        "def unquote_header_value",
+        "def unquote_unreserved",
+        "def urldefragauth"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/requests/__version__.py",
+        "pip/_vendor/requests/_internal_utils.py",
+        "pip/_vendor/requests/compat.py",
+        "pip/_vendor/requests/cookies.py",
+        "pip/_vendor/requests/structures.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/controller.py",
+        "pip/_vendor/cachecontrol/heuristics.py",
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/requests/auth.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/sessions.py",
+        "pip/_vendor/urllib3/fields.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/requests/certs.py": {
+      "fichier": "pip/_vendor/requests/certs.py",
+      "langage": "python",
+      "lignes": 17,
+      "taille_bytes": 441,
+      "entrees": [
+        "pip._vendor.certifi"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/status_codes.py": {
+      "fichier": "pip/_vendor/requests/status_codes.py",
+      "langage": "python",
+      "lignes": 128,
+      "taille_bytes": 4322,
+      "entrees": [
+        ".structures"
+      ],
+      "sorties": [
+        "def _init",
+        "def doc"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/structures.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/__init__.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/sessions.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/auth.py": {
+      "fichier": "pip/_vendor/requests/auth.py",
+      "langage": "python",
+      "lignes": 314,
+      "taille_bytes": 10186,
+      "entrees": [
+        "._internal_utils",
+        ".compat",
+        ".cookies",
+        ".utils",
+        "base64",
+        "hashlib",
+        "os",
+        "re",
+        "threading",
+        "time",
+        "warnings"
+      ],
+      "sorties": [
+        "class AuthBase",
+        "class HTTPBasicAuth",
+        "class HTTPDigestAuth",
+        "class HTTPProxyAuth",
+        "def __call__",
+        "def __eq__",
+        "def __init__",
+        "def __ne__",
+        "def _basic_auth_str",
+        "def build_digest_header",
+        "def handle_401",
+        "def handle_redirect",
+        "def init_per_thread_state",
+        "def md5_utf8",
+        "def sha256_utf8",
+        "def sha512_utf8",
+        "def sha_utf8"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/_internal_utils.py",
+        "pip/_vendor/requests/compat.py",
+        "pip/_vendor/requests/cookies.py",
+        "pip/_vendor/requests/utils.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/sessions.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/requests/hooks.py": {
+      "fichier": "pip/_vendor/requests/hooks.py",
+      "langage": "python",
+      "lignes": 33,
+      "taille_bytes": 733,
+      "entrees": [],
+      "sorties": [
+        "def default_hooks",
+        "def dispatch_hook"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/sessions.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/exceptions.py": {
+      "fichier": "pip/_vendor/requests/exceptions.py",
+      "langage": "python",
+      "lignes": 151,
+      "taille_bytes": 4272,
+      "entrees": [
+        ".compat",
+        "pip._vendor.urllib3.exceptions"
+      ],
+      "sorties": [
+        "class ChunkedEncodingError",
+        "class ConnectTimeout",
+        "class ConnectionError",
+        "class ContentDecodingError",
+        "class FileModeWarning",
+        "class HTTPError",
+        "class InvalidHeader",
+        "class InvalidJSONError",
+        "class InvalidProxyURL",
+        "class InvalidSchema",
+        "class InvalidURL",
+        "class JSONDecodeError",
+        "class MissingSchema",
+        "class ProxyError",
+        "class ReadTimeout",
+        "class RequestException",
+        "class RequestsDependencyWarning",
+        "class RequestsWarning",
+        "class RetryError",
+        "class SSLError",
+        "class StreamConsumedError",
+        "class Timeout",
+        "class TooManyRedirects",
+        "class URLRequired",
+        "class UnrewindableBodyError",
+        "def __init__",
+        "def __reduce__"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/compat.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/requests/packages.py": {
+      "fichier": "pip/_vendor/requests/packages.py",
+      "langage": "python",
+      "lignes": 25,
+      "taille_bytes": 1057,
+      "entrees": [
+        ".compat",
+        "sys"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/requests/compat.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/urllib3/_collections.py",
+        "pip/_vendor/urllib3/connection.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/contrib/pyopenssl.py",
+        "pip/_vendor/urllib3/contrib/securetransport.py",
+        "pip/_vendor/urllib3/fields.py",
+        "pip/_vendor/urllib3/filepost.py",
+        "pip/_vendor/urllib3/poolmanager.py",
+        "pip/_vendor/urllib3/request.py",
+        "pip/_vendor/urllib3/response.py",
+        "pip/_vendor/urllib3/util/connection.py",
+        "pip/_vendor/urllib3/util/queue.py",
+        "pip/_vendor/urllib3/util/retry.py",
+        "pip/_vendor/urllib3/util/ssl_.py",
+        "pip/_vendor/urllib3/util/ssltransport.py",
+        "pip/_vendor/urllib3/util/url.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/__version__.py": {
+      "fichier": "pip/_vendor/requests/__version__.py",
+      "langage": "python",
+      "lignes": 14,
+      "taille_bytes": 435,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/requests/__init__.py",
+        "pip/_vendor/requests/utils.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/structures.py": {
+      "fichier": "pip/_vendor/requests/structures.py",
+      "langage": "python",
+      "lignes": 99,
+      "taille_bytes": 2912,
+      "entrees": [
+        ".compat",
+        "collections"
+      ],
+      "sorties": [
+        "class CaseInsensitiveDict",
+        "class LookupDict",
+        "def __delitem__",
+        "def __eq__",
+        "def __getitem__",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def __repr__",
+        "def __setitem__",
+        "def copy",
+        "def get",
+        "def lower_items"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/compat.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/controller.py",
+        "pip/_vendor/cachecontrol/serialize.py",
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/sessions.py",
+        "pip/_vendor/requests/status_codes.py",
+        "pip/_vendor/requests/utils.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/sessions.py": {
+      "fichier": "pip/_vendor/requests/sessions.py",
+      "langage": "python",
+      "lignes": 831,
+      "taille_bytes": 30503,
+      "entrees": [
+        "._internal_utils",
+        ".adapters",
+        ".auth",
+        ".compat",
+        ".cookies",
+        ".exceptions",
+        ".hooks",
+        ".models",
+        ".status_codes",
+        ".structures",
+        ".utils",
+        "collections",
+        "datetime",
+        "os",
+        "sys",
+        "time"
+      ],
+      "sorties": [
+        "class Session",
+        "class SessionRedirectMixin",
+        "def __enter__",
+        "def __exit__",
+        "def __getstate__",
+        "def __init__",
+        "def __setstate__",
+        "def close",
+        "def delete",
+        "def get",
+        "def get_adapter",
+        "def get_redirect_target",
+        "def head",
+        "def merge_environment_settings",
+        "def merge_hooks",
+        "def merge_setting",
+        "def mount",
+        "def options",
+        "def patch",
+        "def post",
+        "def prepare_request",
+        "def put",
+        "def rebuild_auth",
+        "def rebuild_method",
+        "def rebuild_proxies",
+        "def request",
+        "def resolve_redirects",
+        "def send",
+        "def session",
+        "def should_strip_auth"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/_internal_utils.py",
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/requests/auth.py",
+        "pip/_vendor/requests/compat.py",
+        "pip/_vendor/requests/cookies.py",
+        "pip/_vendor/requests/hooks.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/status_codes.py",
+        "pip/_vendor/requests/structures.py",
+        "pip/_vendor/requests/utils.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/requests/cookies.py": {
+      "fichier": "pip/_vendor/requests/cookies.py",
+      "langage": "python",
+      "lignes": 561,
+      "taille_bytes": 18590,
+      "entrees": [
+        "._internal_utils",
+        ".compat",
+        "calendar",
+        "copy",
+        "dummy_threading",
+        "the",
+        "threading",
+        "time"
+      ],
+      "sorties": [
+        "class CookieConflictError",
+        "class MockRequest",
+        "class MockResponse",
+        "class RequestsCookieJar",
+        "def __contains__",
+        "def __delitem__",
+        "def __getitem__",
+        "def __getstate__",
+        "def __init__",
+        "def __setitem__",
+        "def __setstate__",
+        "def _copy_cookie_jar",
+        "def _find",
+        "def _find_no_duplicates",
+        "def add_header",
+        "def add_unredirected_header",
+        "def cookiejar_from_dict",
+        "def copy",
+        "def create_cookie",
+        "def extract_cookies_to_jar",
+        "def get",
+        "def get_cookie_header",
+        "def get_dict",
+        "def get_full_url",
+        "def get_header",
+        "def get_host",
+        "def get_new_headers",
+        "def get_origin_req_host",
+        "def get_policy",
+        "def get_type",
+        "def getheaders",
+        "def has_header",
+        "def host",
+        "def info",
+        "def is_unverifiable",
+        "def items",
+        "def iteritems",
+        "def iterkeys",
+        "def itervalues",
+        "def keys",
+        "def list_domains",
+        "def list_paths",
+        "def merge_cookies",
+        "def morsel_to_cookie",
+        "def multiple_domains",
+        "def origin_req_host",
+        "def remove_cookie_by_name",
+        "def set",
+        "def set_cookie",
+        "def unverifiable",
+        "def update",
+        "def values"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/_internal_utils.py",
+        "pip/_vendor/requests/compat.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/requests/auth.py",
+        "pip/_vendor/requests/compat.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/sessions.py",
+        "pip/_vendor/requests/utils.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/requests/models.py": {
+      "fichier": "pip/_vendor/requests/models.py",
+      "langage": "python",
+      "lignes": 1039,
+      "taille_bytes": 35575,
+      "entrees": [
+        "._internal_utils",
+        ".auth",
+        ".compat",
+        ".cookies",
+        ".exceptions",
+        ".hooks",
+        ".status_codes",
+        ".structures",
+        ".utils",
+        "datetime",
+        "encodings.idna",
+        "io",
+        "pip._vendor",
+        "pip._vendor.urllib3.exceptions",
+        "pip._vendor.urllib3.fields",
+        "pip._vendor.urllib3.filepost",
+        "pip._vendor.urllib3.util"
+      ],
+      "sorties": [
+        "class PreparedRequest",
+        "class Request",
+        "class RequestEncodingMixin",
+        "class RequestHooksMixin",
+        "class Response",
+        "def __bool__",
+        "def __enter__",
+        "def __exit__",
+        "def __getstate__",
+        "def __init__",
+        "def __iter__",
+        "def __nonzero__",
+        "def __repr__",
+        "def __setstate__",
+        "def _encode_files",
+        "def _encode_params",
+        "def _get_idna_encoded_host",
+        "def apparent_encoding",
+        "def close",
+        "def content",
+        "def copy",
+        "def deregister_hook",
+        "def generate",
+        "def is_permanent_redirect",
+        "def is_redirect",
+        "def iter_content",
+        "def iter_lines",
+        "def json",
+        "def links",
+        "def next",
+        "def ok",
+        "def path_url",
+        "def prepare",
+        "def prepare_auth",
+        "def prepare_body",
+        "def prepare_content_length",
+        "def prepare_cookies",
+        "def prepare_headers",
+        "def prepare_hooks",
+        "def prepare_method",
+        "def prepare_url",
+        "def raise_for_status",
+        "def register_hook",
+        "def text",
+        "function differently"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/requests/_internal_utils.py",
+        "pip/_vendor/requests/auth.py",
+        "pip/_vendor/requests/compat.py",
+        "pip/_vendor/requests/cookies.py",
+        "pip/_vendor/requests/hooks.py",
+        "pip/_vendor/requests/status_codes.py",
+        "pip/_vendor/requests/structures.py",
+        "pip/_vendor/requests/utils.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/fields.py",
+        "pip/_vendor/urllib3/filepost.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/requests/__init__.py",
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/requests/sessions.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/requests/__init__.py": {
+      "fichier": "pip/_vendor/requests/__init__.py",
+      "langage": "python",
+      "lignes": 179,
+      "taille_bytes": 5057,
+      "entrees": [
+        ".__version__",
+        ".api",
+        ".exceptions",
+        ".models",
+        ".sessions",
+        ".status_codes",
+        "cryptography",
+        "logging",
+        "pip._internal.utils.compat",
+        "pip._vendor",
+        "pip._vendor.urllib3.contrib",
+        "pip._vendor.urllib3.exceptions",
+        "ssl",
+        "warnings"
+      ],
+      "sorties": [
+        "def _check_cryptography",
+        "def check_compatibility"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/__version__.py",
+        "pip/_vendor/requests/api.py",
+        "pip/_vendor/requests/compat.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/sessions.py",
+        "pip/_vendor/requests/status_codes.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/requests/adapters.py": {
+      "fichier": "pip/_vendor/requests/adapters.py",
+      "langage": "python",
+      "lignes": 696,
+      "taille_bytes": 26429,
+      "entrees": [
+        ".auth",
+        ".compat",
+        ".cookies",
+        ".exceptions",
+        ".models",
+        ".structures",
+        ".utils",
+        "os.path",
+        "pip._vendor.urllib3.contrib.socks",
+        "pip._vendor.urllib3.exceptions",
+        "pip._vendor.urllib3.poolmanager",
+        "pip._vendor.urllib3.util",
+        "pip._vendor.urllib3.util.retry",
+        "socket",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "class BaseAdapter",
+        "class HTTPAdapter",
+        "def SOCKSProxyManager",
+        "def __getstate__",
+        "def __init__",
+        "def __setstate__",
+        "def _urllib3_request_context",
+        "def add_headers",
+        "def build_connection_pool_key_attributes",
+        "def build_response",
+        "def cert_verify",
+        "def close",
+        "def get_connection",
+        "def get_connection_with_tls_context",
+        "def init_poolmanager",
+        "def proxy_headers",
+        "def proxy_manager_for",
+        "def request_url",
+        "def send"
+      ],
+      "appelle": [
+        "pip/_vendor/distlib/util.py",
+        "pip/_vendor/requests/auth.py",
+        "pip/_vendor/requests/compat.py",
+        "pip/_vendor/requests/cookies.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/structures.py",
+        "pip/_vendor/requests/utils.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/urllib3/contrib/socks.py",
+        "pip/_vendor/urllib3/poolmanager.py",
+        "pip/_vendor/urllib3/util/retry.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/adapter.py",
+        "pip/_vendor/requests/sessions.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/cachecontrol/controller.py": {
+      "fichier": "pip/_vendor/cachecontrol/controller.py",
+      "langage": "python",
+      "lignes": 511,
+      "taille_bytes": 19102,
+      "entrees": [
+        "__future__",
+        "calendar",
+        "email.utils",
+        "logging",
+        "pip._vendor.cachecontrol.cache",
+        "pip._vendor.cachecontrol.serialize",
+        "pip._vendor.requests",
+        "pip._vendor.requests.structures",
+        "pip._vendor.urllib3",
+        "re",
+        "time",
+        "typing",
+        "weakref"
+      ],
+      "sorties": [
+        "class CacheController",
+        "def __init__",
+        "def _cache_set",
+        "def _load_from_cache",
+        "def _urlnorm",
+        "def cache_response",
+        "def cache_url",
+        "def cached_request",
+        "def conditional_headers",
+        "def parse_cache_control",
+        "def parse_uri",
+        "def update_cached_response"
+      ],
+      "appelle": [
+        "pip/_vendor/cachecontrol/cache.py",
+        "pip/_vendor/cachecontrol/serialize.py",
+        "pip/_vendor/requests/structures.py",
+        "pip/_vendor/requests/utils.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/__init__.py",
+        "pip/_vendor/cachecontrol/_cmd.py",
+        "pip/_vendor/cachecontrol/adapter.py",
+        "pip/_vendor/cachecontrol/caches/file_cache.py",
+        "pip/_vendor/cachecontrol/wrapper.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/cachecontrol/cache.py": {
+      "fichier": "pip/_vendor/cachecontrol/cache.py",
+      "langage": "python",
+      "lignes": 75,
+      "taille_bytes": 1953,
+      "entrees": [
+        "__future__",
+        "datetime",
+        "threading",
+        "typing"
+      ],
+      "sorties": [
+        "class BaseCache",
+        "class DictCache",
+        "class SeparateBodyBaseCache",
+        "def __init__",
+        "def close",
+        "def delete",
+        "def get",
+        "def get_body",
+        "def set",
+        "def set_body"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/_cmd.py",
+        "pip/_vendor/cachecontrol/adapter.py",
+        "pip/_vendor/cachecontrol/caches/file_cache.py",
+        "pip/_vendor/cachecontrol/caches/redis_cache.py",
+        "pip/_vendor/cachecontrol/controller.py",
+        "pip/_vendor/cachecontrol/wrapper.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "pip/_vendor/cachecontrol/adapter.py": {
+      "fichier": "pip/_vendor/cachecontrol/adapter.py",
+      "langage": "python",
+      "lignes": 167,
+      "taille_bytes": 6586,
+      "entrees": [
+        "__future__",
+        "functools",
+        "pip._vendor.cachecontrol.cache",
+        "pip._vendor.cachecontrol.controller",
+        "pip._vendor.cachecontrol.filewrapper",
+        "pip._vendor.cachecontrol.heuristics",
+        "pip._vendor.cachecontrol.serialize",
+        "pip._vendor.requests",
+        "pip._vendor.requests.adapters",
+        "pip._vendor.urllib3",
+        "typing",
+        "weakref",
+        "zlib"
+      ],
+      "sorties": [
+        "class CacheControlAdapter",
+        "def __init__",
+        "def _update_chunk_length",
+        "def build_response",
+        "def close",
+        "def send"
+      ],
+      "appelle": [
+        "pip/_vendor/cachecontrol/cache.py",
+        "pip/_vendor/cachecontrol/controller.py",
+        "pip/_vendor/cachecontrol/filewrapper.py",
+        "pip/_vendor/cachecontrol/heuristics.py",
+        "pip/_vendor/cachecontrol/serialize.py",
+        "pip/_vendor/requests/adapters.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/__init__.py",
+        "pip/_vendor/cachecontrol/_cmd.py",
+        "pip/_vendor/cachecontrol/wrapper.py"
+      ],
+      "type_noeud": "central"
+    },
+    "pip/_vendor/cachecontrol/filewrapper.py": {
+      "fichier": "pip/_vendor/cachecontrol/filewrapper.py",
+      "langage": "python",
+      "lignes": 121,
+      "taille_bytes": 4354,
+      "entrees": [
+        "__future__",
+        "collections.abc",
+        "http.client",
+        "mmap",
+        "tempfile",
+        "typing"
+      ],
+      "sorties": [
+        "class CallbackFileWrapper",
+        "def __getattr__",
+        "def __init__",
+        "def __is_fp_closed",
+        "def _close",
+        "def _safe_read",
+        "def read"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/adapter.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/cachecontrol/wrapper.py": {
+      "fichier": "pip/_vendor/cachecontrol/wrapper.py",
+      "langage": "python",
+      "lignes": 43,
+      "taille_bytes": 1417,
+      "entrees": [
+        "__future__",
+        "pip._vendor",
+        "pip._vendor.cachecontrol.adapter",
+        "pip._vendor.cachecontrol.cache",
+        "pip._vendor.cachecontrol.controller",
+        "pip._vendor.cachecontrol.heuristics",
+        "pip._vendor.cachecontrol.serialize",
+        "typing"
+      ],
+      "sorties": [
+        "def CacheControl"
+      ],
+      "appelle": [
+        "pip/_vendor/cachecontrol/adapter.py",
+        "pip/_vendor/cachecontrol/cache.py",
+        "pip/_vendor/cachecontrol/controller.py",
+        "pip/_vendor/cachecontrol/heuristics.py",
+        "pip/_vendor/cachecontrol/serialize.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/cachecontrol/heuristics.py": {
+      "fichier": "pip/_vendor/cachecontrol/heuristics.py",
+      "langage": "python",
+      "lignes": 157,
+      "taille_bytes": 4881,
+      "entrees": [
+        "__future__",
+        "calendar",
+        "datetime",
+        "email.utils",
+        "pip._vendor.urllib3",
+        "the",
+        "time",
+        "typing"
+      ],
+      "sorties": [
+        "class BaseHeuristic",
+        "class ExpiresAfter",
+        "class LastModified",
+        "class OneDayCache",
+        "def __init__",
+        "def apply",
+        "def datetime_to_header",
+        "def expire_after",
+        "def update_headers",
+        "def warning"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/utils.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/adapter.py",
+        "pip/_vendor/cachecontrol/wrapper.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/cachecontrol/_cmd.py": {
+      "fichier": "pip/_vendor/cachecontrol/_cmd.py",
+      "langage": "python",
+      "lignes": 70,
+      "taille_bytes": 1737,
+      "entrees": [
+        "__future__",
+        "argparse",
+        "logging",
+        "pip._vendor",
+        "pip._vendor.cachecontrol.adapter",
+        "pip._vendor.cachecontrol.cache",
+        "pip._vendor.cachecontrol.controller",
+        "typing"
+      ],
+      "sorties": [
+        "def get_args",
+        "def get_session",
+        "def main",
+        "def setup_logging"
+      ],
+      "appelle": [
+        "pip/_vendor/cachecontrol/adapter.py",
+        "pip/_vendor/cachecontrol/cache.py",
+        "pip/_vendor/cachecontrol/controller.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/cachecontrol/serialize.py": {
+      "fichier": "pip/_vendor/cachecontrol/serialize.py",
+      "langage": "python",
+      "lignes": 146,
+      "taille_bytes": 5163,
+      "entrees": [
+        "__future__",
+        "io",
+        "pip._vendor",
+        "pip._vendor.requests",
+        "pip._vendor.requests.structures",
+        "pip._vendor.urllib3",
+        "typing"
+      ],
+      "sorties": [
+        "class Serializer",
+        "def _loads_v4",
+        "def dumps",
+        "def loads",
+        "def prepare_response",
+        "def serialize"
+      ],
+      "appelle": [
+        "pip/_vendor/requests/structures.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/adapter.py",
+        "pip/_vendor/cachecontrol/controller.py",
+        "pip/_vendor/cachecontrol/wrapper.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/cachecontrol/__init__.py": {
+      "fichier": "pip/_vendor/cachecontrol/__init__.py",
+      "langage": "python",
+      "lignes": 32,
+      "taille_bytes": 820,
+      "entrees": [
+        "importlib.metadata",
+        "logging",
+        "pip._vendor.cachecontrol.adapter",
+        "pip._vendor.cachecontrol.controller",
+        "pip._vendor.cachecontrol.wrapper"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/cachecontrol/adapter.py",
+        "pip/_vendor/cachecontrol/controller.py",
+        "pip/_vendor/cachecontrol/wrapper.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/cachecontrol/caches/redis_cache.py": {
+      "fichier": "pip/_vendor/cachecontrol/caches/redis_cache.py",
+      "langage": "python",
+      "lignes": 48,
+      "taille_bytes": 1386,
+      "entrees": [
+        "__future__",
+        "datetime",
+        "pip._vendor.cachecontrol.cache",
+        "redis",
+        "typing"
+      ],
+      "sorties": [
+        "class RedisCache",
+        "def __init__",
+        "def clear",
+        "def close",
+        "def delete",
+        "def get",
+        "def set"
+      ],
+      "appelle": [
+        "pip/_vendor/cachecontrol/cache.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/caches/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/cachecontrol/caches/file_cache.py": {
+      "fichier": "pip/_vendor/cachecontrol/caches/file_cache.py",
+      "langage": "python",
+      "lignes": 145,
+      "taille_bytes": 4117,
+      "entrees": [
+        "__future__",
+        "datetime",
+        "filelock",
+        "hashlib",
+        "os",
+        "pathlib",
+        "pip._vendor.cachecontrol.cache",
+        "pip._vendor.cachecontrol.controller",
+        "tempfile",
+        "textwrap",
+        "typing"
+      ],
+      "sorties": [
+        "class FileCache",
+        "class SeparateBodyFileCache",
+        "class _FileCacheMixin",
+        "def __init__",
+        "def _delete",
+        "def _fn",
+        "def _write",
+        "def delete",
+        "def encode",
+        "def get",
+        "def get_body",
+        "def set",
+        "def set_body",
+        "def url_to_file_path"
+      ],
+      "appelle": [
+        "pip/_vendor/cachecontrol/cache.py",
+        "pip/_vendor/cachecontrol/controller.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/cachecontrol/caches/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/cachecontrol/caches/__init__.py": {
+      "fichier": "pip/_vendor/cachecontrol/caches/__init__.py",
+      "langage": "python",
+      "lignes": 8,
+      "taille_bytes": 303,
+      "entrees": [
+        "pip._vendor.cachecontrol.caches.file_cache",
+        "pip._vendor.cachecontrol.caches.redis_cache"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/cachecontrol/caches/file_cache.py",
+        "pip/_vendor/cachecontrol/caches/redis_cache.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/tomli/_re.py": {
+      "fichier": "pip/_vendor/tomli/_re.py",
+      "langage": "python",
+      "lignes": 115,
+      "taille_bytes": 3235,
+      "entrees": [
+        "._types",
+        "__future__",
+        "datetime",
+        "functools",
+        "re",
+        "typing"
+      ],
+      "sorties": [
+        "def cached_tz",
+        "def match_to_datetime",
+        "def match_to_localtime",
+        "def match_to_number"
+      ],
+      "appelle": [
+        "pip/_vendor/tomli/_types.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/tomli/_parser.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/tomli/_parser.py": {
+      "fichier": "pip/_vendor/tomli/_parser.py",
+      "langage": "python",
+      "lignes": 777,
+      "taille_bytes": 25778,
+      "entrees": [
+        "._re",
+        "._types",
+        "__future__",
+        "collections.abc",
+        "sys",
+        "types",
+        "typing",
+        "warnings"
+      ],
+      "sorties": [
+        "class DEPRECATED_DEFAULT",
+        "class Flags",
+        "class NestedDict",
+        "class Output",
+        "class TOMLDecodeError",
+        "def __init__",
+        "def add_pending",
+        "def append_nest_to_list",
+        "def create_dict_rule",
+        "def create_list_rule",
+        "def finalize_pending",
+        "def get_or_create_nest",
+        "def is_",
+        "def is_unicode_scalar_value",
+        "def key_value_rule",
+        "def load",
+        "def loads",
+        "def make_safe_parse_float",
+        "def parse_array",
+        "def parse_basic_str",
+        "def parse_basic_str_escape",
+        "def parse_basic_str_escape_multiline",
+        "def parse_hex_char",
+        "def parse_inline_table",
+        "def parse_key",
+        "def parse_key_part",
+        "def parse_key_value_pair",
+        "def parse_literal_str",
+        "def parse_multiline_str",
+        "def parse_one_line_basic_str",
+        "def parse_value",
+        "def safe_parse_float",
+        "def set",
+        "def skip_chars",
+        "def skip_comment",
+        "def skip_comments_and_array_ws",
+        "def skip_until",
+        "def unset_all"
+      ],
+      "appelle": [
+        "pip/_vendor/tomli/_re.py",
+        "pip/_vendor/tomli/_types.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/tomli/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/tomli/_types.py": {
+      "fichier": "pip/_vendor/tomli/_types.py",
+      "langage": "python",
+      "lignes": 10,
+      "taille_bytes": 254,
+      "entrees": [
+        "typing"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "pip/_vendor/tomli/_parser.py",
+        "pip/_vendor/tomli/_re.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/tomli/__init__.py": {
+      "fichier": "pip/_vendor/tomli/__init__.py",
+      "langage": "python",
+      "lignes": 8,
+      "taille_bytes": 314,
+      "entrees": [
+        "._parser"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/tomli/_parser.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/resolvelib/structs.py": {
+      "fichier": "pip/_vendor/resolvelib/structs.py",
+      "langage": "python",
+      "lignes": 209,
+      "taille_bytes": 6420,
+      "entrees": [
+        ".resolvers.criterion",
+        "__future__",
+        "collections",
+        "itertools",
+        "typing"
+      ],
+      "sorties": [
+        "class DirectedGraph",
+        "class IteratorMapping",
+        "class RequirementInformation",
+        "class State",
+        "class _FactoryIterableView",
+        "class _SequenceIterableView",
+        "def __bool__",
+        "def __contains__",
+        "def __getitem__",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def __repr__",
+        "def add",
+        "def build_iter_view",
+        "def connect",
+        "def connected",
+        "def copy",
+        "def iter_children",
+        "def iter_edges",
+        "def iter_parents",
+        "def remove"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/resolvers/criterion.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/resolvelib/providers.py",
+        "pip/_vendor/resolvelib/reporters.py",
+        "pip/_vendor/resolvelib/resolvers/__init__.py",
+        "pip/_vendor/resolvelib/resolvers/abstract.py",
+        "pip/_vendor/resolvelib/resolvers/criterion.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/resolvelib/resolvers/resolution.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/resolvelib/reporters.py": {
+      "fichier": "pip/_vendor/resolvelib/reporters.py",
+      "langage": "python",
+      "lignes": 55,
+      "taille_bytes": 2037,
+      "entrees": [
+        ".resolvers",
+        ".structs",
+        "__future__",
+        "typing"
+      ],
+      "sorties": [
+        "class BaseReporter",
+        "def adding_requirement",
+        "def ending",
+        "def ending_round",
+        "def pinning",
+        "def rejecting_candidate",
+        "def resolving_conflicts",
+        "def starting",
+        "def starting_round"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/structs.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/resolvelib/__init__.py",
+        "pip/_vendor/resolvelib/resolvers/abstract.py",
+        "pip/_vendor/resolvelib/resolvers/resolution.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/resolvelib/providers.py": {
+      "fichier": "pip/_vendor/resolvelib/providers.py",
+      "langage": "python",
+      "lignes": 196,
+      "taille_bytes": 8914,
+      "entrees": [
+        ".structs",
+        "__future__",
+        "typing"
+      ],
+      "sorties": [
+        "class AbstractProvider",
+        "class Preference",
+        "def __lt__",
+        "def find_matches",
+        "def get_dependencies",
+        "def get_preference",
+        "def identify",
+        "def is_satisfied_by",
+        "def narrow_requirement_selection"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/structs.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/resolvelib/__init__.py",
+        "pip/_vendor/resolvelib/resolvers/abstract.py",
+        "pip/_vendor/resolvelib/resolvers/resolution.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/resolvelib/__init__.py": {
+      "fichier": "pip/_vendor/resolvelib/__init__.py",
+      "langage": "python",
+      "lignes": 27,
+      "taille_bytes": 541,
+      "entrees": [
+        ".providers",
+        ".reporters",
+        ".resolvers"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/resolvelib/providers.py",
+        "pip/_vendor/resolvelib/reporters.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "pip/_vendor/resolvelib/resolvers/criterion.py": {
+      "fichier": "pip/_vendor/resolvelib/resolvers/criterion.py",
+      "langage": "python",
+      "lignes": 48,
+      "taille_bytes": 1768,
+      "entrees": [
+        "..structs",
+        "__future__",
+        "the",
+        "typing"
+      ],
+      "sorties": [
+        "class Criterion",
+        "def __init__",
+        "def __repr__",
+        "def iter_parent",
+        "def iter_requirement"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/structs.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/resolvelib/resolvers/__init__.py",
+        "pip/_vendor/resolvelib/resolvers/abstract.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/resolvelib/resolvers/resolution.py",
+        "pip/_vendor/resolvelib/structs.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/resolvelib/resolvers/exceptions.py": {
+      "fichier": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "langage": "python",
+      "lignes": 57,
+      "taille_bytes": 1768,
+      "entrees": [
+        "..structs",
+        ".criterion",
+        "__future__",
+        "typing"
+      ],
+      "sorties": [
+        "class InconsistentCandidate",
+        "class RequirementsConflicted",
+        "class ResolutionError",
+        "class ResolutionImpossible",
+        "class ResolutionTooDeep",
+        "class ResolverException",
+        "def __init__",
+        "def __str__"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/resolvers/criterion.py",
+        "pip/_vendor/resolvelib/structs.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/msgpack/__init__.py",
+        "pip/_vendor/msgpack/fallback.py",
+        "pip/_vendor/requests/__init__.py",
+        "pip/_vendor/requests/adapters.py",
+        "pip/_vendor/requests/exceptions.py",
+        "pip/_vendor/requests/models.py",
+        "pip/_vendor/requests/sessions.py",
+        "pip/_vendor/requests/utils.py",
+        "pip/_vendor/resolvelib/resolvers/__init__.py",
+        "pip/_vendor/resolvelib/resolvers/resolution.py",
+        "pip/_vendor/urllib3/_collections.py",
+        "pip/_vendor/urllib3/connection.py",
+        "pip/_vendor/urllib3/connectionpool.py",
+        "pip/_vendor/urllib3/contrib/appengine.py",
+        "pip/_vendor/urllib3/contrib/socks.py",
+        "pip/_vendor/urllib3/poolmanager.py",
+        "pip/_vendor/urllib3/response.py",
+        "pip/_vendor/urllib3/util/connection.py",
+        "pip/_vendor/urllib3/util/request.py",
+        "pip/_vendor/urllib3/util/response.py",
+        "pip/_vendor/urllib3/util/retry.py",
+        "pip/_vendor/urllib3/util/ssl_.py",
+        "pip/_vendor/urllib3/util/ssltransport.py",
+        "pip/_vendor/urllib3/util/timeout.py",
+        "pip/_vendor/urllib3/util/url.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "pip/_vendor/resolvelib/resolvers/resolution.py": {
+      "fichier": "pip/_vendor/resolvelib/resolvers/resolution.py",
+      "langage": "python",
+      "lignes": 627,
+      "taille_bytes": 24212,
+      "entrees": [
+        "..providers",
+        "..reporters",
+        "..structs",
+        ".abstract",
+        ".criterion",
+        ".exceptions",
+        "__future__",
+        "collections",
+        "collections.abc",
+        "itertools",
+        "operator",
+        "typing"
+      ],
+      "sorties": [
+        "class Resolution",
+        "class Resolver",
+        "def __init__",
+        "def _add_to_criteria",
+        "def _attempt_to_pin_criterion",
+        "def _backjump",
+        "def _build_result",
+        "def _extract_causes",
+        "def _get_preference",
+        "def _get_updated_criteria",
+        "def _has_route_to_root",
+        "def _is_current_pin_satisfying",
+        "def _patch_criteria",
+        "def _push_new_state",
+        "def _remove_information_from_criteria",
+        "def _rollback_states",
+        "def _save_state",
+        "def resolve",
+        "def state"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/providers.py",
+        "pip/_vendor/resolvelib/reporters.py",
+        "pip/_vendor/resolvelib/resolvers/abstract.py",
+        "pip/_vendor/resolvelib/resolvers/criterion.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/resolvelib/structs.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/resolvelib/resolvers/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/resolvelib/resolvers/abstract.py": {
+      "fichier": "pip/_vendor/resolvelib/resolvers/abstract.py",
+      "langage": "python",
+      "lignes": 47,
+      "taille_bytes": 1543,
+      "entrees": [
+        "..providers",
+        "..reporters",
+        "..structs",
+        ".criterion",
+        "__future__",
+        "collections",
+        "typing"
+      ],
+      "sorties": [
+        "class AbstractResolver",
+        "class Result",
+        "def __init__",
+        "def resolve"
+      ],
+      "appelle": [
+        "pip/_vendor/resolvelib/providers.py",
+        "pip/_vendor/resolvelib/reporters.py",
+        "pip/_vendor/resolvelib/resolvers/criterion.py",
+        "pip/_vendor/resolvelib/structs.py"
+      ],
+      "est_appele_par": [
+        "pip/_vendor/resolvelib/resolvers/__init__.py",
+        "pip/_vendor/resolvelib/resolvers/resolution.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "pip/_vendor/resolvelib/resolvers/__init__.py": {
+      "fichier": "pip/_vendor/resolvelib/resolvers/__init__.py",
+      "langage": "python",
+      "lignes": 27,
+      "taille_bytes": 640,
+      "entrees": [
+        "..structs",
+        ".abstract",
+        ".criterion",
+        ".exceptions",
+        ".resolution"
+      ],
+      "sorties": [],
+      "appelle": [
+        "pip/_vendor/resolvelib/resolvers/abstract.py",
+        "pip/_vendor/resolvelib/resolvers/criterion.py",
+        "pip/_vendor/resolvelib/resolvers/exceptions.py",
+        "pip/_vendor/resolvelib/resolvers/resolution.py",
+        "pip/_vendor/resolvelib/structs.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    }
+  },
+  "edges": [
+    {
+      "de": "pip/_vendor/urllib3/response.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/response.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/response.py",
+      "vers": "pip/_vendor/urllib3/_collections.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/response.py",
+      "vers": "pip/_vendor/urllib3/util/connection.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/response.py",
+      "vers": "pip/_vendor/urllib3/util/response.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/request.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/request.py",
+      "vers": "pip/_vendor/urllib3/filepost.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/fields.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/fields.py",
+      "vers": "pip/_vendor/requests/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/_collections.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/_collections.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/_collections.py",
+      "vers": "pip/_vendor/urllib3/packages/six.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connection.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connection.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connection.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connection.py",
+      "vers": "pip/_vendor/urllib3/_collections.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connection.py",
+      "vers": "pip/_vendor/urllib3/_version.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connection.py",
+      "vers": "pip/_vendor/urllib3/util/proxy.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connection.py",
+      "vers": "pip/_vendor/urllib3/util/ssl_.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connection.py",
+      "vers": "pip/_vendor/urllib3/util/ssl_match_hostname.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/filepost.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/filepost.py",
+      "vers": "pip/_vendor/urllib3/fields.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/filepost.py",
+      "vers": "pip/_vendor/urllib3/packages/six.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/poolmanager.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/poolmanager.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/poolmanager.py",
+      "vers": "pip/_vendor/urllib3/_collections.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/poolmanager.py",
+      "vers": "pip/_vendor/urllib3/connectionpool.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/poolmanager.py",
+      "vers": "pip/_vendor/urllib3/util/proxy.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/poolmanager.py",
+      "vers": "pip/_vendor/urllib3/util/request.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/poolmanager.py",
+      "vers": "pip/_vendor/urllib3/util/retry.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/poolmanager.py",
+      "vers": "pip/_vendor/urllib3/util/url.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/__init__.py",
+      "vers": "pip/_vendor/urllib3/_version.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/__init__.py",
+      "vers": "pip/_vendor/urllib3/connectionpool.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/__init__.py",
+      "vers": "pip/_vendor/urllib3/filepost.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/__init__.py",
+      "vers": "pip/_vendor/urllib3/poolmanager.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/request.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/response.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/retry.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/timeout.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/url.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/_collections.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/packages/backports/weakref_finalize.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/util/connection.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/util/proxy.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/util/queue.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/util/request.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/util/response.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/util/retry.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/util/ssl_match_hostname.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/util/timeout.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/connectionpool.py",
+      "vers": "pip/_vendor/urllib3/util/url.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/response.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/ssltransport.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/ssltransport.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/request.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/request.py",
+      "vers": "pip/_vendor/urllib3/packages/six.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/timeout.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/proxy.py",
+      "vers": "pip/_vendor/urllib3/util/ssl_.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/connection.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/connection.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/connection.py",
+      "vers": "pip/_vendor/urllib3/util/wait.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/retry.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/retry.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/ssl_.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/ssl_.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/ssl_.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/ssl_.py",
+      "vers": "pip/_vendor/urllib3/util/ssltransport.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/ssl_.py",
+      "vers": "pip/_vendor/urllib3/util/url.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/url.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/url.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/queue.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/connection.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/request.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/response.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/retry.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/ssl_.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/timeout.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/url.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/util/__init__.py",
+      "vers": "pip/_vendor/urllib3/util/wait.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/socks.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/socks.py",
+      "vers": "pip/_vendor/urllib3/connectionpool.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/socks.py",
+      "vers": "pip/_vendor/urllib3/poolmanager.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/socks.py",
+      "vers": "pip/_vendor/urllib3/util/connection.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/socks.py",
+      "vers": "pip/_vendor/urllib3/util/url.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "vers": "pip/_vendor/urllib3/contrib/_securetransport/bindings.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "vers": "pip/_vendor/urllib3/contrib/_securetransport/low_level.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "vers": "pip/_vendor/urllib3/packages/backports/makefile.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/securetransport.py",
+      "vers": "pip/_vendor/urllib3/util/ssl_.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/appengine.py",
+      "vers": "pip/_vendor/requests/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/appengine.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/appengine.py",
+      "vers": "pip/_vendor/urllib3/util/request.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/appengine.py",
+      "vers": "pip/_vendor/urllib3/util/response.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/appengine.py",
+      "vers": "pip/_vendor/urllib3/util/retry.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/appengine.py",
+      "vers": "pip/_vendor/urllib3/util/timeout.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "vers": "pip/_vendor/requests/packages.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "vers": "pip/_vendor/urllib3/packages/backports/makefile.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/pyopenssl.py",
+      "vers": "pip/_vendor/urllib3/util/ssl_.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/_securetransport/bindings.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/_securetransport/bindings.py",
+      "vers": "pip/_vendor/urllib3/packages/six.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/contrib/_securetransport/low_level.py",
+      "vers": "pip/_vendor/urllib3/contrib/_securetransport/bindings.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/urllib3/packages/six.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/unix.py",
+      "vers": "pip/_vendor/requests/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/macos.py",
+      "vers": "pip/_vendor/requests/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/windows.py",
+      "vers": "pip/_vendor/requests/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/__init__.py",
+      "vers": "pip/_vendor/platformdirs/android.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/__init__.py",
+      "vers": "pip/_vendor/platformdirs/macos.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/__init__.py",
+      "vers": "pip/_vendor/platformdirs/unix.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/__init__.py",
+      "vers": "pip/_vendor/platformdirs/version.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/__init__.py",
+      "vers": "pip/_vendor/platformdirs/windows.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/__init__.py",
+      "vers": "pip/_vendor/requests/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/platformdirs/android.py",
+      "vers": "pip/_vendor/requests/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/truststore/_macos.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/truststore/_macos.py",
+      "vers": "pip/_vendor/truststore/_ssl_constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/truststore/_api.py",
+      "vers": "pip/_vendor/truststore/_macos.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/truststore/_api.py",
+      "vers": "pip/_vendor/truststore/_openssl.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/truststore/_api.py",
+      "vers": "pip/_vendor/truststore/_ssl_constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/truststore/_api.py",
+      "vers": "pip/_vendor/truststore/_windows.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/truststore/_api.py",
+      "vers": "pip/_vendor/urllib3/util/ssl_.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/truststore/_windows.py",
+      "vers": "pip/_vendor/truststore/_ssl_constants.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/truststore/__init__.py",
+      "vers": "pip/_vendor/truststore/_api.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distro/__main__.py",
+      "vers": "pip/_vendor/distro/distro.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distro/__init__.py",
+      "vers": "pip/_vendor/distro/distro.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/msgpack/fallback.py",
+      "vers": "pip/_vendor/msgpack/ext.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/msgpack/fallback.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/msgpack/__init__.py",
+      "vers": "pip/_vendor/msgpack/ext.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/msgpack/__init__.py",
+      "vers": "pip/_vendor/msgpack/fallback.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/msgpack/__init__.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/idna/compat.py",
+      "vers": "pip/_vendor/idna/core.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/idna/core.py",
+      "vers": "pip/_vendor/idna/intranges.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/idna/core.py",
+      "vers": "pip/_vendor/idna/uts46data.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/idna/codec.py",
+      "vers": "pip/_vendor/idna/core.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/idna/__init__.py",
+      "vers": "pip/_vendor/idna/core.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/idna/__init__.py",
+      "vers": "pip/_vendor/idna/intranges.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/idna/__init__.py",
+      "vers": "pip/_vendor/idna/package_data.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distlib/resources.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distlib/compat.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distlib/compat.py",
+      "vers": "pip/_vendor/urllib3/util/queue.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distlib/compat.py",
+      "vers": "pip/_vendor/urllib3/util/request.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distlib/scripts.py",
+      "vers": "pip/_vendor/distlib/resources.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distlib/scripts.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distlib/scripts.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/distlib/util.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/_internal_utils.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/compat.py",
+      "vers": "pip/_vendor/requests/cookies.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "pip/_vendor/requests/compat.py",
+      "vers": "pip/_vendor/urllib3/util/request.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/utils.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/utils.py",
+      "vers": "pip/_vendor/requests/__version__.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/utils.py",
+      "vers": "pip/_vendor/requests/_internal_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/utils.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/utils.py",
+      "vers": "pip/_vendor/requests/cookies.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/utils.py",
+      "vers": "pip/_vendor/requests/structures.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/utils.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/status_codes.py",
+      "vers": "pip/_vendor/requests/structures.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/auth.py",
+      "vers": "pip/_vendor/requests/_internal_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/auth.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/auth.py",
+      "vers": "pip/_vendor/requests/cookies.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/auth.py",
+      "vers": "pip/_vendor/requests/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/exceptions.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/exceptions.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/packages.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/structures.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/_internal_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/adapters.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/auth.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/cookies.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/hooks.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/status_codes.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/structures.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/requests/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/sessions.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/cookies.py",
+      "vers": "pip/_vendor/requests/_internal_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/cookies.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/requests/_internal_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/requests/auth.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/requests/cookies.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/requests/hooks.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/requests/status_codes.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/requests/structures.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/requests/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/urllib3/fields.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/models.py",
+      "vers": "pip/_vendor/urllib3/filepost.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/__init__.py",
+      "vers": "pip/_vendor/requests/__version__.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/__init__.py",
+      "vers": "pip/_vendor/requests/api.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/__init__.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/__init__.py",
+      "vers": "pip/_vendor/requests/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/__init__.py",
+      "vers": "pip/_vendor/requests/sessions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/__init__.py",
+      "vers": "pip/_vendor/requests/status_codes.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/__init__.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/distlib/util.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/requests/auth.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/requests/compat.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/requests/cookies.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/requests/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/requests/structures.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/requests/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/urllib3/contrib/socks.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/urllib3/poolmanager.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/requests/adapters.py",
+      "vers": "pip/_vendor/urllib3/util/retry.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/controller.py",
+      "vers": "pip/_vendor/cachecontrol/cache.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/controller.py",
+      "vers": "pip/_vendor/cachecontrol/serialize.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/controller.py",
+      "vers": "pip/_vendor/requests/structures.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/controller.py",
+      "vers": "pip/_vendor/requests/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/adapter.py",
+      "vers": "pip/_vendor/cachecontrol/cache.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/adapter.py",
+      "vers": "pip/_vendor/cachecontrol/controller.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/adapter.py",
+      "vers": "pip/_vendor/cachecontrol/filewrapper.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/adapter.py",
+      "vers": "pip/_vendor/cachecontrol/heuristics.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/adapter.py",
+      "vers": "pip/_vendor/cachecontrol/serialize.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/adapter.py",
+      "vers": "pip/_vendor/requests/adapters.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/wrapper.py",
+      "vers": "pip/_vendor/cachecontrol/adapter.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/wrapper.py",
+      "vers": "pip/_vendor/cachecontrol/cache.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/wrapper.py",
+      "vers": "pip/_vendor/cachecontrol/controller.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/wrapper.py",
+      "vers": "pip/_vendor/cachecontrol/heuristics.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/wrapper.py",
+      "vers": "pip/_vendor/cachecontrol/serialize.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/heuristics.py",
+      "vers": "pip/_vendor/requests/utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/_cmd.py",
+      "vers": "pip/_vendor/cachecontrol/adapter.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/_cmd.py",
+      "vers": "pip/_vendor/cachecontrol/cache.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/_cmd.py",
+      "vers": "pip/_vendor/cachecontrol/controller.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/serialize.py",
+      "vers": "pip/_vendor/requests/structures.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/__init__.py",
+      "vers": "pip/_vendor/cachecontrol/adapter.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/__init__.py",
+      "vers": "pip/_vendor/cachecontrol/controller.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/__init__.py",
+      "vers": "pip/_vendor/cachecontrol/wrapper.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/caches/redis_cache.py",
+      "vers": "pip/_vendor/cachecontrol/cache.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/caches/file_cache.py",
+      "vers": "pip/_vendor/cachecontrol/cache.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/caches/file_cache.py",
+      "vers": "pip/_vendor/cachecontrol/controller.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/caches/__init__.py",
+      "vers": "pip/_vendor/cachecontrol/caches/file_cache.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/cachecontrol/caches/__init__.py",
+      "vers": "pip/_vendor/cachecontrol/caches/redis_cache.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/tomli/_re.py",
+      "vers": "pip/_vendor/tomli/_types.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/tomli/_parser.py",
+      "vers": "pip/_vendor/tomli/_re.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/tomli/_parser.py",
+      "vers": "pip/_vendor/tomli/_types.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/tomli/__init__.py",
+      "vers": "pip/_vendor/tomli/_parser.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/structs.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/criterion.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/reporters.py",
+      "vers": "pip/_vendor/resolvelib/structs.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/providers.py",
+      "vers": "pip/_vendor/resolvelib/structs.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/__init__.py",
+      "vers": "pip/_vendor/resolvelib/providers.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/__init__.py",
+      "vers": "pip/_vendor/resolvelib/reporters.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/criterion.py",
+      "vers": "pip/_vendor/resolvelib/structs.py",
+      "type": "circulaire"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/criterion.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "vers": "pip/_vendor/resolvelib/structs.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/resolution.py",
+      "vers": "pip/_vendor/resolvelib/providers.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/resolution.py",
+      "vers": "pip/_vendor/resolvelib/reporters.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/resolution.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/abstract.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/resolution.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/criterion.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/resolution.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/resolution.py",
+      "vers": "pip/_vendor/resolvelib/structs.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/abstract.py",
+      "vers": "pip/_vendor/resolvelib/providers.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/abstract.py",
+      "vers": "pip/_vendor/resolvelib/reporters.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/abstract.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/criterion.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/abstract.py",
+      "vers": "pip/_vendor/resolvelib/structs.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/__init__.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/abstract.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/__init__.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/criterion.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/__init__.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/exceptions.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/__init__.py",
+      "vers": "pip/_vendor/resolvelib/resolvers/resolution.py",
+      "type": "interne"
+    },
+    {
+      "de": "pip/_vendor/resolvelib/resolvers/__init__.py",
+      "vers": "pip/_vendor/resolvelib/structs.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'pip/_vendor/urllib3/response.py'",
+    "point_entree → 'pip/_vendor/urllib3/request.py'",
+    "central → 'pip/_vendor/urllib3/_collections.py' (in=4, out=3)",
+    "point_entree → 'pip/_vendor/urllib3/connection.py'",
+    "central → 'pip/_vendor/urllib3/filepost.py' (in=3, out=3)",
+    "central → 'pip/_vendor/urllib3/poolmanager.py' (in=3, out=8)",
+    "point_entree → 'pip/_vendor/urllib3/__init__.py'",
+    "central → 'pip/_vendor/urllib3/connectionpool.py' (in=3, out=13)",
+    "central → 'pip/_vendor/urllib3/util/request.py' (in=7, out=2)",
+    "central → 'pip/_vendor/urllib3/util/connection.py' (in=4, out=3)",
+    "central → 'pip/_vendor/urllib3/util/retry.py' (in=6, out=2)",
+    "central → 'pip/_vendor/urllib3/util/ssl_.py' (in=6, out=5)",
+    "central → 'pip/_vendor/urllib3/util/url.py' (in=6, out=2)",
+    "point_entree → 'pip/_vendor/urllib3/util/__init__.py'",
+    "point_entree → 'pip/_vendor/urllib3/contrib/securetransport.py'",
+    "point_entree → 'pip/_vendor/urllib3/contrib/appengine.py'",
+    "point_entree → 'pip/_vendor/urllib3/contrib/pyopenssl.py'",
+    "point_entree → 'pip/_vendor/platformdirs/__init__.py'",
+    "feuille → 'pip/_vendor/truststore/_ssl_constants.py' (in=3)",
+    "point_entree → 'pip/_vendor/msgpack/__init__.py'",
+    "central → 'pip/_vendor/idna/core.py' (in=3, out=2)",
+    "point_entree → 'pip/_vendor/idna/__init__.py'",
+    "point_entree → 'pip/_vendor/distlib/compat.py'",
+    "point_entree → 'pip/_vendor/distlib/scripts.py'",
+    "feuille → 'pip/_vendor/requests/api.py' (in=7)",
+    "central → 'pip/_vendor/requests/compat.py' (in=13, out=2)",
+    "central → 'pip/_vendor/requests/utils.py' (in=7, out=7)",
+    "central → 'pip/_vendor/requests/auth.py' (in=3, out=4)",
+    "point_entree → 'pip/_vendor/requests/exceptions.py'",
+    "central → 'pip/_vendor/requests/cookies.py' (in=6, out=2)",
+    "central → 'pip/_vendor/requests/models.py' (in=3, out=12)",
+    "point_entree → 'pip/_vendor/requests/__init__.py'",
+    "central → 'pip/_vendor/cachecontrol/controller.py' (in=5, out=4)",
+    "feuille → 'pip/_vendor/cachecontrol/cache.py' (in=6)",
+    "central → 'pip/_vendor/cachecontrol/adapter.py' (in=3, out=6)",
+    "point_entree → 'pip/_vendor/cachecontrol/_cmd.py'",
+    "point_entree → 'pip/_vendor/cachecontrol/__init__.py'",
+    "point_entree → 'pip/_vendor/cachecontrol/caches/__init__.py'",
+    "point_entree → 'pip/_vendor/resolvelib/__init__.py'",
+    "hub → 'pip/_vendor/resolvelib/resolvers/exceptions.py' (in=25, 21% du projet)",
+    "point_entree → 'pip/_vendor/resolvelib/resolvers/__init__.py'",
+    "circulaire → 4 cycles détectés"
+  ]
+}

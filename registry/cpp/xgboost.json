@@ -1,0 +1,3116 @@
+{
+  "meta": {
+    "projet": "xgboost",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 2,
+      "xml": 9,
+      "python": 1,
+      "scala": 58,
+      "java": 46,
+      "cpp": 2,
+      "c": 2
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 81,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 2,
+    "noeuds_feuilles": 7,
+    "noeuds_hubs": 0,
+    "points_entree": 15,
+    "fichier_plus_appele": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+  },
+  "noeuds": {
+    ".readthedocs.yaml": {
+      "fichier": ".readthedocs.yaml",
+      "langage": "yaml",
+      "lignes": 34,
+      "taille_bytes": 709,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".pre-commit-config.yaml": {
+      "fichier": ".pre-commit-config.yaml",
+      "langage": "yaml",
+      "lignes": 64,
+      "taille_bytes": 1937,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/scalastyle-config.xml": {
+      "fichier": "jvm-packages/scalastyle-config.xml",
+      "langage": "xml",
+      "lignes": 348,
+      "taille_bytes": 15786,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/create_jni.py": {
+      "fichier": "jvm-packages/create_jni.py",
+      "langage": "python",
+      "lignes": 198,
+      "taille_bytes": 6873,
+      "entrees": [
+        "argparse",
+        "contextlib",
+        "errno",
+        "glob",
+        "os",
+        "platform",
+        "shutil",
+        "subprocess",
+        "sys"
+      ],
+      "sorties": [
+        "def cd",
+        "def cp",
+        "def maybe_makedirs",
+        "def native_build",
+        "def normpath",
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/checkstyle.xml": {
+      "fichier": "jvm-packages/checkstyle.xml",
+      "langage": "xml",
+      "lignes": 158,
+      "taille_bytes": 6894,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/checkstyle-suppressions.xml": {
+      "fichier": "jvm-packages/checkstyle-suppressions.xml",
+      "langage": "xml",
+      "lignes": 32,
+      "taille_bytes": 1241,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/pom.xml": {
+      "fichier": "jvm-packages/pom.xml",
+      "langage": "xml",
+      "lignes": 427,
+      "taille_bytes": 17083,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/pom.xml": {
+      "fichier": "jvm-packages/xgboost4j-example/pom.xml",
+      "langage": "xml",
+      "lignes": 50,
+      "taille_bytes": 1840,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/test/scala/ml/dmlc/xgboost4j/scala/example/ScalaExamplesTest.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/test/scala/ml/dmlc/xgboost4j/scala/example/ScalaExamplesTest.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1244,
+      "entrees": [
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class ScalaExamplesTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/test/scala/ml/dmlc/xgboost4j/scala/example/spark/SparkExamplesTest.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/test/scala/ml/dmlc/xgboost4j/scala/example/spark/SparkExamplesTest.scala",
+      "langage": "scala",
+      "lignes": 125,
+      "taille_bytes": 3959,
+      "entrees": [
+        "java.io.File",
+        "java.nio.file.",
+        "org.apache.spark.sql.SparkSession",
+        "org.scalatest.BeforeAndAfterAll",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "org.slf4j.LoggerFactory",
+        "scala.jdk.CollectionConverters._",
+        "scala.util."
+      ],
+      "sorties": [
+        "class SparkExamplesTest",
+        "def generateLine"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/test/scala/ml/dmlc/xgboost4j/scala/example/flink/DistTrainWithFlinkSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/test/scala/ml/dmlc/xgboost4j/scala/example/flink/DistTrainWithFlinkSuite.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1413,
+      "entrees": [
+        "java.nio.file.Paths",
+        "org.apache.flink.api.java.ExecutionEnvironment",
+        "org.scalatest.Inspectors._",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "org.scalatest.matchers.should.Matchers._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class DistTrainWithFlinkSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/test/scala/ml/dmlc/xgboost4j/java/example/flink/DistTrainWithFlinkExampleTest.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/test/scala/ml/dmlc/xgboost4j/java/example/flink/DistTrainWithFlinkExampleTest.scala",
+      "langage": "scala",
+      "lignes": 37,
+      "taille_bytes": 1349,
+      "entrees": [
+        "java.nio.file.Paths",
+        "org.apache.flink.api.java.ExecutionEnvironment",
+        "org.scalatest.Inspectors._",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "org.scalatest.matchers.should.Matchers._"
+      ],
+      "sorties": [
+        "class DistTrainWithFlinkExampleTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/test/java/ml/dmlc/xgboost4j/java/example/JavaExamplesTest.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/test/java/ml/dmlc/xgboost4j/java/example/JavaExamplesTest.java",
+      "langage": "java",
+      "lignes": 45,
+      "taille_bytes": 1478,
+      "entrees": [
+        "java.io.IOException",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "public class JavaExamplesTest"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/PredictFirstNTree.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/PredictFirstNTree.scala",
+      "langage": "scala",
+      "lignes": 53,
+      "taille_bytes": 1772,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.example.util.CustomEval",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/CrossValidation.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/CrossValidation.scala",
+      "langage": "scala",
+      "lignes": 45,
+      "taille_bytes": 1393,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/BoostFromPrediction.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/BoostFromPrediction.scala",
+      "langage": "scala",
+      "lignes": 54,
+      "taille_bytes": 1766,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/GeneralizedLinearModel.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/GeneralizedLinearModel.scala",
+      "langage": "scala",
+      "lignes": 59,
+      "taille_bytes": 2254,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.example.util.CustomEval",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/BasicWalkThrough.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/BasicWalkThrough.scala",
+      "langage": "scala",
+      "lignes": 103,
+      "taille_bytes": 3678,
+      "entrees": [
+        "fPredicts.length",
+        "java.io.File",
+        "java.io.PrintWriter",
+        "ml.dmlc.xgboost4j.java.",
+        "ml.dmlc.xgboost4j.java.example.util.DataLoader",
+        "ml.dmlc.xgboost4j.scala.",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def checkPredicts",
+        "def main",
+        "def saveDumpModel"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/DataLoader.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/PredictLeafIndices.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/PredictLeafIndices.scala",
+      "langage": "scala",
+      "lignes": 54,
+      "taille_bytes": 1689,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/CustomObjective.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/CustomObjective.scala",
+      "langage": "scala",
+      "lignes": 159,
+      "taille_bytes": 4911,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "ml.dmlc.xgboost4j.scala.",
+        "org.apache.commons.logging.",
+        "scala.collection.mutable",
+        "scala.collection.mutable.ListBuffer"
+      ],
+      "sorties": [
+        "class EvalError",
+        "class LogRegObj",
+        "def main",
+        "def sigmoid",
+        "def transform"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/util/CustomEval.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/util/CustomEval.scala",
+      "langage": "scala",
+      "lignes": 61,
+      "taille_bytes": 1713,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "ml.dmlc.xgboost4j.scala.",
+        "org.apache.commons.logging."
+      ],
+      "sorties": [
+        "class CustomEval"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/spark/SparkMLlibPipeline.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/spark/SparkMLlibPipeline.scala",
+      "langage": "scala",
+      "lignes": 147,
+      "taille_bytes": 5198,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.spark.",
+        "org.apache.spark.ml.",
+        "org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator",
+        "org.apache.spark.ml.feature._",
+        "org.apache.spark.ml.tuning._",
+        "org.apache.spark.sql.",
+        "org.apache.spark.sql.types._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/spark/SparkTraining.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/spark/SparkTraining.scala",
+      "langage": "scala",
+      "lignes": 93,
+      "taille_bytes": 3530,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.spark.XGBoostClassifier",
+        "org.apache.spark.ml.feature.",
+        "org.apache.spark.sql.",
+        "org.apache.spark.sql.types."
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostClassifier.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/flink/DistTrainWithFlink.scala": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/flink/DistTrainWithFlink.scala",
+      "langage": "scala",
+      "lignes": 101,
+      "taille_bytes": 3856,
+      "entrees": [
+        "java.lang.",
+        "java.nio.file.",
+        "ml.dmlc.xgboost4j.java.flink.",
+        "org.apache.flink.api.common.typeinfo.",
+        "org.apache.flink.api.java.",
+        "org.apache.flink.api.java.tuple.",
+        "org.apache.flink.api.java.utils.DataSetUtils",
+        "org.apache.flink.ml.linalg.",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+      "langage": "java",
+      "lignes": 134,
+      "taille_bytes": 4302,
+      "entrees": [
+        "java.io.File",
+        "java.io.IOException",
+        "java.io.PrintWriter",
+        "java.util.Arrays",
+        "java.util.HashMap",
+        "ml.dmlc.xgboost4j.java.Booster",
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.XGBoost",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "ml.dmlc.xgboost4j.java.example.util.DataLoader"
+      ],
+      "sorties": [
+        "public class BasicWalkThrough"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/DataLoader.java",
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java",
+      "langage": "java",
+      "lignes": 66,
+      "taille_bytes": 2108,
+      "entrees": [
+        "java.util.Arrays",
+        "java.util.HashMap",
+        "ml.dmlc.xgboost4j.java.Booster",
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.XGBoost",
+        "ml.dmlc.xgboost4j.java.XGBoostError"
+      ],
+      "sorties": [
+        "public class PredictLeafIndices"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+      "langage": "java",
+      "lignes": 66,
+      "taille_bytes": 2232,
+      "entrees": [
+        "java.util.HashMap",
+        "ml.dmlc.xgboost4j.java.Booster",
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.XGBoost",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "ml.dmlc.xgboost4j.java.example.util.CustomEval"
+      ],
+      "sorties": [
+        "public class PredictFirstNtree"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CrossValidation.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CrossValidation.java",
+      "langage": "java",
+      "lignes": 55,
+      "taille_bytes": 1648,
+      "entrees": [
+        "java.io.IOException",
+        "java.util.HashMap",
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.XGBoost",
+        "ml.dmlc.xgboost4j.java.XGBoostError"
+      ],
+      "sorties": [
+        "public class CrossValidation"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java",
+      "langage": "java",
+      "lignes": 62,
+      "taille_bytes": 2172,
+      "entrees": [
+        "java.util.HashMap",
+        "ml.dmlc.xgboost4j.java.Booster",
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.XGBoost",
+        "ml.dmlc.xgboost4j.java.XGBoostError"
+      ],
+      "sorties": [
+        "public class BoostFromPrediction"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+      "langage": "java",
+      "lignes": 67,
+      "taille_bytes": 2487,
+      "entrees": [
+        "java.io.IOException",
+        "java.util.HashMap",
+        "java.util.LinkedHashMap",
+        "java.util.Map",
+        "ml.dmlc.xgboost4j.java.Booster",
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.XGBoost",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "ml.dmlc.xgboost4j.java.example.util.DataLoader"
+      ],
+      "sorties": [
+        "public class EarlyStopping"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/DataLoader.java",
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+      "langage": "java",
+      "lignes": 70,
+      "taille_bytes": 2616,
+      "entrees": [
+        "java.util.HashMap",
+        "ml.dmlc.xgboost4j.java.Booster",
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.XGBoost",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "ml.dmlc.xgboost4j.java.example.util.CustomEval"
+      ],
+      "sorties": [
+        "public class GeneralizedLinearModel"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CustomObjective.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CustomObjective.java",
+      "langage": "java",
+      "lignes": 168,
+      "taille_bytes": 5122,
+      "entrees": [
+        "java.util.ArrayList",
+        "java.util.HashMap",
+        "java.util.List",
+        "ml.dmlc.xgboost4j.java.*",
+        "org.apache.commons.logging.Log",
+        "org.apache.commons.logging.LogFactory"
+      ],
+      "sorties": [
+        "public class CustomObjective"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/DataLoader.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/DataLoader.java",
+      "langage": "java",
+      "lignes": 123,
+      "taille_bytes": 3635,
+      "entrees": [
+        "java.io.*",
+        "java.util.ArrayList",
+        "java.util.List",
+        "org.apache.commons.lang3.ArrayUtils"
+      ],
+      "sorties": [
+        "public class DataLoader"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+        "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/BasicWalkThrough.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+      "langage": "java",
+      "lignes": 61,
+      "taille_bytes": 1634,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.IEvaluation",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "org.apache.commons.logging.Log",
+        "org.apache.commons.logging.LogFactory"
+      ],
+      "sorties": [
+        "public class CustomEval"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IEvaluation.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+        "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/GeneralizedLinearModel.scala",
+        "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/PredictFirstNTree.scala"
+      ],
+      "type_noeud": "central"
+    },
+    "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/flink/DistTrainWithFlinkExample.java": {
+      "fichier": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/flink/DistTrainWithFlinkExample.java",
+      "langage": "java",
+      "lignes": 107,
+      "taille_bytes": 4343,
+      "entrees": [
+        "java.nio.file.Path",
+        "java.util.Arrays",
+        "java.util.HashMap",
+        "java.util.List",
+        "ml.dmlc.xgboost4j.java.flink.XGBoost",
+        "ml.dmlc.xgboost4j.java.flink.XGBoostModel",
+        "org.apache.flink.api.common.typeinfo.TypeHint",
+        "org.apache.flink.api.common.typeinfo.TypeInformation",
+        "org.apache.flink.api.java.DataSet",
+        "org.apache.flink.api.java.ExecutionEnvironment",
+        "org.apache.flink.api.java.operators.MapOperator",
+        "org.apache.flink.api.java.tuple.Tuple13",
+        "org.apache.flink.api.java.tuple.Tuple2",
+        "org.apache.flink.api.java.utils.DataSetUtils",
+        "org.apache.flink.ml.linalg.DenseVector",
+        "org.apache.flink.ml.linalg.Vector",
+        "org.apache.flink.ml.linalg.Vectors"
+      ],
+      "sorties": [
+        "public class DistTrainWithFlinkExample"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-flink/pom.xml": {
+      "fichier": "jvm-packages/xgboost4j-flink/pom.xml",
+      "langage": "xml",
+      "lignes": 53,
+      "taille_bytes": 1859,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java": {
+      "fichier": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+      "langage": "java",
+      "lignes": 196,
+      "taille_bytes": 6851,
+      "entrees": [
+        "java.util.HashMap",
+        "java.util.Iterator",
+        "java.util.Map",
+        "java.util.Optional",
+        "java.util.function.Function",
+        "java.util.stream.Collectors",
+        "java.util.stream.StreamSupport",
+        "ml.dmlc.xgboost4j.LabeledPoint",
+        "ml.dmlc.xgboost4j.java.Booster",
+        "ml.dmlc.xgboost4j.java.Communicator",
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.RabitTracker",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "org.apache.flink.api.common.functions.RichMapPartitionFunction",
+        "org.apache.flink.api.java.DataSet",
+        "org.apache.flink.api.java.tuple.Tuple2",
+        "org.apache.flink.ml.linalg.SparseVector",
+        "org.apache.flink.ml.linalg.Vector",
+        "org.apache.flink.util.Collector",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs.FSDataInputStream",
+        "org.apache.hadoop.fs.FileSystem",
+        "org.apache.hadoop.fs.Path",
+        "org.slf4j.Logger",
+        "org.slf4j.LoggerFactory"
+      ],
+      "sorties": [
+        "public class XGBoost"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Communicator.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/RabitTracker.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java": {
+      "fichier": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+      "langage": "java",
+      "lignes": 136,
+      "taille_bytes": 4346,
+      "entrees": [
+        "java.io.IOException",
+        "java.io.Serializable",
+        "java.util.Arrays",
+        "java.util.Iterator",
+        "java.util.stream.StreamSupport",
+        "ml.dmlc.xgboost4j.LabeledPoint",
+        "ml.dmlc.xgboost4j.java.Booster",
+        "ml.dmlc.xgboost4j.java.DMatrix",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "org.apache.commons.lang3.ArrayUtils",
+        "org.apache.flink.api.common.functions.MapPartitionFunction",
+        "org.apache.flink.api.java.DataSet",
+        "org.apache.flink.ml.linalg.SparseVector",
+        "org.apache.flink.ml.linalg.Vector",
+        "org.apache.flink.util.Collector",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs.FileSystem",
+        "org.apache.hadoop.fs.Path"
+      ],
+      "sorties": [
+        "public class XGBoostModel"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/flink/DistTrainWithFlinkExample.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/pom.xml": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/pom.xml",
+      "langage": "xml",
+      "lignes": 135,
+      "taille_bytes": 5218,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/test/scala/org/apache/spark/GpuTestUtils.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/org/apache/spark/GpuTestUtils.scala",
+      "langage": "scala",
+      "lignes": 27,
+      "taille_bytes": 761,
+      "entrees": [
+        "org.apache.spark.sql.SparkSession"
+      ],
+      "sorties": [
+        "def cleanupAnyExistingSession"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/QuantileDMatrixSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/QuantileDMatrixSuite.scala",
+      "langage": "scala",
+      "lignes": 78,
+      "taille_bytes": 3537,
+      "entrees": [
+        "ai.rapids.cudf.Table",
+        "ml.dmlc.xgboost4j.java.CudfColumnBatch",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.withResource",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "scala.collection.mutable.ArrayBuffer"
+      ],
+      "sorties": [
+        "class QuantileDMatrixSuite"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/ExtMemQuantileDMatrixSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/ExtMemQuantileDMatrixSuite.scala",
+      "langage": "scala",
+      "lignes": 104,
+      "taille_bytes": 4711,
+      "entrees": [
+        "ai.rapids.cudf.Table",
+        "java.io.File",
+        "ml.dmlc.xgboost4j.java.",
+        "ml.dmlc.xgboost4j.scala.rapids.spark.TmpFolderSuite",
+        "ml.dmlc.xgboost4j.scala.spark.",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.withResource",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "scala.collection.mutable.ArrayBuffer"
+      ],
+      "sorties": [
+        "class ExtMemQuantileDMatrixSuite",
+        "def check"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/TrainTestData.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/TrainTestData.scala",
+      "langage": "scala",
+      "lignes": 86,
+      "taille_bytes": 2696,
+      "entrees": [
+        "scala.util.Random"
+      ],
+      "sorties": [
+        "trait TrainTestData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPluginSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPluginSuite.scala",
+      "langage": "scala",
+      "lignes": 719,
+      "taille_bytes": 26929,
+      "entrees": [
+        "ai.rapids.cudf.",
+        "java.io.File",
+        "ml.dmlc.xgboost4j.java.CudfColumnBatch",
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.rapids.spark.GpuTestSuite",
+        "ml.dmlc.xgboost4j.scala.rapids.spark.SparkSessionHolder.withSparkSession",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.withResource",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.ml.linalg.DenseVector",
+        "org.apache.spark.sql.",
+        "scala.collection.mutable.ArrayBuffer",
+        "spark.implicits._"
+      ],
+      "sorties": [
+        "class GpuXGBoostPluginSuite",
+        "def checkIsEnabled",
+        "def listFiles",
+        "def writeFile"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java",
+        "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuTestSuite.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuTestSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuTestSuite.scala",
+      "langage": "scala",
+      "lignes": 144,
+      "taille_bytes": 4559,
+      "entrees": [
+        "SparkSessionHolder.withSparkSession",
+        "java.nio.file.",
+        "java.util.",
+        "org.apache.spark.",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.network.util.JavaUtils",
+        "org.apache.spark.sql.SparkSession",
+        "org.scalatest.BeforeAndAfterAll",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "resource.startsWith"
+      ],
+      "sorties": [
+        "def enableCsvConf",
+        "def resetSparkSessionConf",
+        "def sparkSession",
+        "def withCpuSparkSession",
+        "def withGpuSparkSession",
+        "def withSparkSession",
+        "trait GpuTestSuite",
+        "trait TmpFolderSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/ExternalMemorySuite.scala",
+        "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPluginSuite.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/ExternalMemorySuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/ExternalMemorySuite.scala",
+      "langage": "scala",
+      "lignes": 101,
+      "taille_bytes": 3701,
+      "entrees": [
+        "ai.rapids.cudf.Table",
+        "ml.dmlc.xgboost4j.java.CudfColumnBatch",
+        "ml.dmlc.xgboost4j.scala.rapids.spark.GpuTestSuite",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.withResource",
+        "scala.collection.mutable.ArrayBuffer"
+      ],
+      "sorties": [
+        "class ExternalMemorySuite",
+        "def assertTwoTable",
+        "def runExternalMemoryTest"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java",
+        "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuTestSuite.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/test/java/ml/dmlc/xgboost4j/java/DMatrixTest.java": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/test/java/ml/dmlc/xgboost4j/java/DMatrixTest.java",
+      "langage": "java",
+      "lignes": 201,
+      "taille_bytes": 7658,
+      "entrees": [
+        "ai.rapids.cudf.Table",
+        "java.util.*",
+        "junit.framework.TestCase",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DMatrixTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/test/java/ml/dmlc/xgboost4j/java/BoosterTest.java": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/test/java/ml/dmlc/xgboost4j/java/BoosterTest.java",
+      "langage": "java",
+      "lignes": 118,
+      "taille_bytes": 3750,
+      "entrees": [
+        "ai.rapids.cudf.*",
+        "java.io.File",
+        "java.util.HashMap",
+        "java.util.LinkedList",
+        "java.util.List",
+        "java.util.Map",
+        "junit.framework.TestCase",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "public class BoosterTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/ExtMemQuantileDMatrix.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/ExtMemQuantileDMatrix.scala",
+      "langage": "scala",
+      "lignes": 50,
+      "taille_bytes": 1677,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.",
+        "scala.collection.JavaConverters._"
+      ],
+      "sorties": [
+        "class ExtMemQuantileDMatrix",
+        "def this"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/QuantileDMatrix.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/QuantileDMatrix.scala",
+      "langage": "scala",
+      "lignes": 133,
+      "taille_bytes": 4578,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.",
+        "scala.collection.JavaConverters._"
+      ],
+      "sorties": [
+        "class QuantileDMatrix",
+        "def this"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/spark/ExternalMemory.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/spark/ExternalMemory.scala",
+      "langage": "scala",
+      "lignes": 219,
+      "taille_bytes": 6085,
+      "entrees": [
+        "ai.rapids.cudf._",
+        "java.io.File",
+        "java.nio.file.",
+        "ml.dmlc.xgboost4j.java.",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.withResource",
+        "scala.collection.mutable.ArrayBuffer"
+      ],
+      "sorties": [
+        "def apply",
+        "def cacheTable",
+        "def convertTable",
+        "def loadTable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPlugin.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPlugin.scala",
+      "langage": "scala",
+      "lignes": 342,
+      "taille_bytes": 12307,
+      "entrees": [
+        "ai.rapids.cudf.Table",
+        "com.nvidia.spark.rapids.",
+        "estimator.getDevice",
+        "ml.dmlc.xgboost4j.java.CudfColumnBatch",
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.withResource",
+        "ml.dmlc.xgboost4j.scala.spark.params.HasGroupCol",
+        "org.apache.commons.logging.LogFactory",
+        "org.apache.spark.TaskContext",
+        "org.apache.spark.ml.param.Param",
+        "org.apache.spark.rdd.RDD",
+        "org.apache.spark.sql.",
+        "org.apache.spark.sql.catalyst.",
+        "org.apache.spark.sql.catalyst.expressions.UnsafeProjection",
+        "org.apache.spark.sql.types.",
+        "org.apache.spark.sql.vectorized.ColumnarBatch",
+        "scala.collection.mutable.ArrayBuffer",
+        "scala.jdk.CollectionConverters._",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "class GpuXGBoostPlugin",
+        "def buildQuantileDMatrix",
+        "def loadNextBatch",
+        "def select",
+        "def selectCol"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/ExtMemQuantileDMatrix.java": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/ExtMemQuantileDMatrix.java",
+      "langage": "java",
+      "lignes": 98,
+      "taille_bytes": 3331,
+      "entrees": [
+        "com.fasterxml.jackson.core.JsonProcessingException",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "com.fasterxml.jackson.databind.module.SimpleModule",
+        "java.util.Iterator",
+        "java.util.Map"
+      ],
+      "sorties": [
+        "public class ExtMemQuantileDMatrix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java",
+      "langage": "java",
+      "lignes": 148,
+      "taille_bytes": 4011,
+      "entrees": [
+        "ai.rapids.cudf.Table",
+        "com.fasterxml.jackson.annotation.JsonIgnore",
+        "com.fasterxml.jackson.annotation.JsonInclude",
+        "com.fasterxml.jackson.core.JsonProcessingException",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "java.util.List",
+        "java.util.stream.Collectors",
+        "java.util.stream.IntStream"
+      ],
+      "sorties": [
+        "public class CudfColumnBatch"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPlugin.scala",
+        "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/QuantileDMatrixSuite.scala",
+        "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/ExternalMemorySuite.scala",
+        "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPluginSuite.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/QuantileDMatrix.java": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/QuantileDMatrix.java",
+      "langage": "java",
+      "lignes": 171,
+      "taille_bytes": 5700,
+      "entrees": [
+        "com.fasterxml.jackson.core.JsonGenerator",
+        "com.fasterxml.jackson.core.JsonProcessingException",
+        "com.fasterxml.jackson.databind.JsonSerializer",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "com.fasterxml.jackson.databind.SerializerProvider",
+        "com.fasterxml.jackson.databind.module.SimpleModule",
+        "java.io.IOException",
+        "java.util.Iterator",
+        "java.util.Map"
+      ],
+      "sorties": [
+        "class F32NaNSerializer",
+        "class F64NaNSerializer",
+        "public class QuantileDMatrix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumn.java": {
+      "fichier": "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumn.java",
+      "langage": "java",
+      "lignes": 117,
+      "taille_bytes": 3525,
+      "entrees": [
+        "ai.rapids.cudf.BaseDeviceMemoryBuffer",
+        "ai.rapids.cudf.ColumnVector",
+        "ai.rapids.cudf.DType",
+        "com.fasterxml.jackson.annotation.JsonInclude",
+        "com.fasterxml.jackson.core.JsonProcessingException",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "java.util.ArrayList",
+        "java.util.List"
+      ],
+      "sorties": [
+        "public class CudfColumn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/pom.xml": {
+      "fichier": "jvm-packages/xgboost4j/pom.xml",
+      "langage": "xml",
+      "lignes": 142,
+      "taille_bytes": 5732,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/native/xgboost4j-gpu.cpp": {
+      "fichier": "jvm-packages/xgboost4j/src/native/xgboost4j-gpu.cpp",
+      "langage": "cpp",
+      "lignes": 18,
+      "taille_bytes": 415,
+      "entrees": [
+        "<jni.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/native/xgboost4j.h": {
+      "fichier": "jvm-packages/xgboost4j/src/native/xgboost4j.h",
+      "langage": "c",
+      "lignes": 477,
+      "taille_bytes": 15533,
+      "entrees": [
+        "<jni.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/native/jvm_utils.h": {
+      "fichier": "jvm-packages/xgboost4j/src/native/jvm_utils.h",
+      "langage": "c",
+      "lignes": 31,
+      "taille_bytes": 638,
+      "entrees": [
+        "<jni.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/native/xgboost4j.cpp": {
+      "fichier": "jvm-packages/xgboost4j/src/native/xgboost4j.cpp",
+      "langage": "cpp",
+      "lignes": 1605,
+      "taille_bytes": 63505,
+      "entrees": [
+        "<algorithm>",
+        "<cstddef>",
+        "<cstdint>",
+        "<cstring>",
+        "<memory>",
+        "<string>",
+        "<type_traits>",
+        "<vector>",
+        "<xgboost/base.h>",
+        "<xgboost/c_api.h>",
+        "<xgboost/json.h>",
+        "<xgboost/logging.h>",
+        "<xgboost/string_view.h>",
+        "CSTR",
+        "Deleter",
+        "IndPtrT",
+        "JavaIndT",
+        "namespace"
+      ],
+      "sorties": [
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/test/scala/ml/dmlc/xgboost4j/scala/ScalaBoosterImplSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j/src/test/scala/ml/dmlc/xgboost4j/scala/ScalaBoosterImplSuite.scala",
+      "langage": "scala",
+      "lignes": 219,
+      "taille_bytes": 8683,
+      "entrees": [
+        "java.io.",
+        "junit.framework.TestCase",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "org.apache.commons.logging.LogFactory",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class ScalaBoosterImplSuite"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/test/scala/ml/dmlc/xgboost4j/scala/DMatrixSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j/src/test/scala/ml/dmlc/xgboost4j/scala/DMatrixSuite.scala",
+      "langage": "scala",
+      "lignes": 177,
+      "taille_bytes": 5434,
+      "entrees": [
+        "java.util.Arrays",
+        "ml.dmlc.xgboost4j.java.",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "scala.util.Random"
+      ],
+      "sorties": [
+        "class DMatrixSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/DMatrixTest.java": {
+      "fichier": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/DMatrixTest.java",
+      "langage": "java",
+      "lignes": 524,
+      "taille_bytes": 16290,
+      "entrees": [
+        "java.io.File",
+        "java.io.FileOutputStream",
+        "java.io.IOException",
+        "java.io.InputStream",
+        "java.util.Arrays",
+        "java.util.HashMap",
+        "java.util.Map",
+        "java.util.Random",
+        "junit.framework.TestCase",
+        "ml.dmlc.xgboost4j.LabeledPoint",
+        "ml.dmlc.xgboost4j.java.util.BigDenseMatrix",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DMatrixTest"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/util/BigDenseMatrix.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/BoosterImplTest.java": {
+      "fichier": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/BoosterImplTest.java",
+      "langage": "java",
+      "lignes": 930,
+      "taille_bytes": 31729,
+      "entrees": [
+        "java.io.ByteArrayInputStream",
+        "java.io.ByteArrayOutputStream",
+        "java.io.File",
+        "java.io.IOException",
+        "java.util.*",
+        "java.util.concurrent.*",
+        "junit.framework.TestCase",
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class BoosterImplTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/XGBoostTest.java": {
+      "fichier": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/XGBoostTest.java",
+      "langage": "java",
+      "lignes": 121,
+      "taille_bytes": 4041,
+      "entrees": [
+        "java.util.HashMap",
+        "java.util.Map",
+        "java.util.Random",
+        "junit.framework.TestCase",
+        "ml.dmlc.xgboost4j.LabeledPoint",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "public class XGBoostTest"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/LibraryPathProviderTest.java": {
+      "fichier": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/LibraryPathProviderTest.java",
+      "langage": "java",
+      "lignes": 61,
+      "taille_bytes": 1987,
+      "entrees": [
+        "org.junit.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class LibraryPathProviderTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/ArchDetectionTest.java": {
+      "fichier": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/ArchDetectionTest.java",
+      "langage": "java",
+      "lignes": 98,
+      "taille_bytes": 2895,
+      "entrees": [
+        "java.util.Collection",
+        "org.junit.Test",
+        "org.junit.experimental.runners.Enclosed",
+        "org.junit.runner.RunWith",
+        "org.junit.runners.Parameterized",
+        "org.junit.runners.Parameterized.Parameters",
+        "static"
+      ],
+      "sorties": [
+        "public class ArchDetectionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/OsDetectionTest.java": {
+      "fichier": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/OsDetectionTest.java",
+      "langage": "java",
+      "lignes": 96,
+      "taille_bytes": 2623,
+      "entrees": [
+        "java.util.Collection",
+        "ml.dmlc.xgboost4j.java.NativeLibLoader.OS",
+        "org.junit.Test",
+        "org.junit.experimental.runners.Enclosed",
+        "org.junit.runner.RunWith",
+        "org.junit.runners.Parameterized",
+        "org.junit.runners.Parameterized.Parameters",
+        "static"
+      ],
+      "sorties": [
+        "public class OsDetectionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/ConfigContextTest.java": {
+      "fichier": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/ConfigContextTest.java",
+      "langage": "java",
+      "lignes": 57,
+      "taille_bytes": 1781,
+      "entrees": [
+        "java.util.HashMap",
+        "junit.framework.TestCase",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "public class ConfigContextTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/ExternalCheckpointManager.scala": {
+      "fichier": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/ExternalCheckpointManager.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1138,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.",
+        "org.apache.hadoop.fs.FileSystem"
+      ],
+      "sorties": [
+        "class ExternalCheckpointManager",
+        "def loadCheckpointAsScalaBooster",
+        "def updateCheckpoint"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/ObjectiveTrait.scala": {
+      "fichier": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/ObjectiveTrait.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1287,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.",
+        "ml.dmlc.xgboost4j.java.IObjective",
+        "scala.collection.JavaConverters._"
+      ],
+      "sorties": [
+        "def getGradient",
+        "trait ObjectiveTrait"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IObjective.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/Booster.scala": {
+      "fichier": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/Booster.scala",
+      "langage": "scala",
+      "lignes": 372,
+      "taille_bytes": 10681,
+      "entrees": [
+        "com.esotericsoftware.kryo.",
+        "com.esotericsoftware.kryo.io.",
+        "ml.dmlc.xgboost4j.java.",
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "scala.collection.JavaConverters._",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "class Booster",
+        "def boost",
+        "def dispose",
+        "def evalSet",
+        "def getAttr",
+        "def getAttrs",
+        "def getFeatureScore",
+        "def getModelDump",
+        "def getNumBoostedRound",
+        "def getNumFeature",
+        "def getScore",
+        "def predict",
+        "def predictContrib",
+        "def predictLeaf",
+        "def saveModel",
+        "def setAttr",
+        "def setAttrs",
+        "def setParam",
+        "def setParams",
+        "def toByteArray",
+        "def update"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/EvalTrait.scala": {
+      "fichier": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/EvalTrait.scala",
+      "langage": "scala",
+      "lignes": 45,
+      "taille_bytes": 1351,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java",
+        "ml.dmlc.xgboost4j.java.IEvaluation",
+        "predicts.length"
+      ],
+      "sorties": [
+        "def eval",
+        "def getMetric",
+        "trait EvalTrait"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IEvaluation.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/DMatrix.scala": {
+      "fichier": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/DMatrix.scala",
+      "langage": "scala",
+      "lignes": 359,
+      "taille_bytes": 9591,
+      "entrees": [
+        "ml.dmlc.xgboost4j.LabeledPoint",
+        "ml.dmlc.xgboost4j.java.",
+        "scala.collection.JavaConverters._"
+      ],
+      "sorties": [
+        "class DMatrix",
+        "def delete",
+        "def getBaseMargin",
+        "def getFeatureNames",
+        "def getFeatureTypes",
+        "def getGroup",
+        "def getHandle",
+        "def getLabel",
+        "def getWeight",
+        "def nonMissingNum",
+        "def rowNum",
+        "def saveBinary",
+        "def setBaseMargin",
+        "def setFeatureNames",
+        "def setFeatureTypes",
+        "def setGroup",
+        "def setLabel",
+        "def setQueryId",
+        "def setWeight",
+        "def slice",
+        "def this"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/XGBoost.scala": {
+      "fichier": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/XGBoost.scala",
+      "langage": "scala",
+      "lignes": 200,
+      "taille_bytes": 6819,
+      "entrees": [
+        "java.io.InputStream",
+        "ml.dmlc.xgboost4j.java.",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs.Path",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def crossValidation",
+        "def extractParams",
+        "def loadModel",
+        "def train"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+      "langage": "java",
+      "lignes": 133,
+      "taille_bytes": 4506,
+      "entrees": [
+        "java.io.Serializable",
+        "java.util.Arrays",
+        "java.util.Objects"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DataBatch.java",
+        "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/DMatrix.scala",
+        "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/DMatrixTest.java",
+        "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/XGBoostTest.java"
+      ],
+      "type_noeud": "feuille"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/ConfigContext.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/ConfigContext.java",
+      "langage": "java",
+      "lignes": 102,
+      "taille_bytes": 3350,
+      "entrees": [
+        "com.fasterxml.jackson.core.JsonProcessingException",
+        "com.fasterxml.jackson.core.type.TypeReference",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "java.util.HashMap",
+        "java.util.Map"
+      ],
+      "sorties": [
+        "public class ConfigContext"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/ExternalCheckpointManager.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/ExternalCheckpointManager.java",
+      "langage": "java",
+      "lignes": 191,
+      "taille_bytes": 7606,
+      "entrees": [
+        "java.io.IOException",
+        "java.io.InputStream",
+        "java.io.OutputStream",
+        "java.util.*",
+        "java.util.stream.Collectors",
+        "org.apache.commons.logging.Log",
+        "org.apache.commons.logging.LogFactory",
+        "org.apache.hadoop.fs.FileSystem",
+        "org.apache.hadoop.fs.Path"
+      ],
+      "sorties": [
+        "public class ExternalCheckpointManager"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoost.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoost.java",
+      "langage": "java",
+      "lignes": 643,
+      "taille_bytes": 20638,
+      "entrees": [
+        "java.io.*",
+        "java.util.*",
+        "java.util.regex.Matcher",
+        "java.util.regex.Pattern",
+        "org.apache.commons.logging.Log",
+        "org.apache.commons.logging.LogFactory",
+        "org.apache.hadoop.fs.FileSystem"
+      ],
+      "sorties": [
+        "public class XGBoost"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/NativeLibLoader.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/NativeLibLoader.java",
+      "langage": "java",
+      "lignes": 301,
+      "taille_bytes": 10293,
+      "entrees": [
+        "java.io.File",
+        "java.io.FileNotFoundException",
+        "java.io.FileOutputStream",
+        "java.io.IOException",
+        "java.io.InputStream",
+        "java.io.OutputStream",
+        "java.util.Locale",
+        "org.apache.commons.logging.Log",
+        "org.apache.commons.logging.LogFactory",
+        "static"
+      ],
+      "sorties": [
+        "class NativeLibLoader",
+        "enum Arch",
+        "enum OS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/ITracker.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/ITracker.java",
+      "langage": "java",
+      "lignes": 32,
+      "taille_bytes": 1086,
+      "entrees": [
+        "java.util.Map"
+      ],
+      "sorties": [
+        "public interface ITracker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Communicator.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Communicator.java",
+      "langage": "java",
+      "lignes": 144,
+      "taille_bytes": 3718,
+      "entrees": [
+        "com.fasterxml.jackson.core.JsonProcessingException",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "java.io.Serializable",
+        "java.nio.ByteBuffer",
+        "java.nio.ByteOrder",
+        "java.util.Map"
+      ],
+      "sorties": [
+        "public class Communicator"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Column.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Column.java",
+      "langage": "java",
+      "lignes": 33,
+      "taille_bytes": 982,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IEvaluation.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IEvaluation.java",
+      "langage": "java",
+      "lignes": 41,
+      "taille_bytes": 1067,
+      "entrees": [
+        "java.io.Serializable"
+      ],
+      "sorties": [
+        "public interface IEvaluation"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+        "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/EvalTrait.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "langage": "java",
+      "lignes": 946,
+      "taille_bytes": 33263,
+      "entrees": [
+        "com.esotericsoftware.kryo.Kryo",
+        "com.esotericsoftware.kryo.KryoSerializable",
+        "com.esotericsoftware.kryo.io.Input",
+        "com.esotericsoftware.kryo.io.Output",
+        "java.io.*",
+        "java.util.Arrays",
+        "java.util.HashMap",
+        "java.util.HashSet",
+        "java.util.List",
+        "java.util.Map",
+        "java.util.Set",
+        "org.apache.commons.logging.Log",
+        "org.apache.commons.logging.LogFactory"
+      ],
+      "sorties": [
+        "public class Booster"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java",
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostClassifier.scala",
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRanker.scala",
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRegressor.scala",
+        "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostSuite.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostJNI.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostJNI.java",
+      "langage": "java",
+      "lignes": 204,
+      "taille_bytes": 7818,
+      "entrees": [
+        "java.nio.ByteBuffer",
+        "org.apache.commons.logging.Log",
+        "org.apache.commons.logging.LogFactory"
+      ],
+      "sorties": [
+        "public class XGBoostJNI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/RabitTracker.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/RabitTracker.java",
+      "langage": "java",
+      "lignes": 106,
+      "taille_bytes": 3335,
+      "entrees": [
+        "com.fasterxml.jackson.core.JsonProcessingException",
+        "com.fasterxml.jackson.core.type.TypeReference",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "java.util.Map",
+        "org.apache.commons.logging.Log",
+        "org.apache.commons.logging.LogFactory"
+      ],
+      "sorties": [
+        "public class RabitTracker"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "langage": "java",
+      "lignes": 31,
+      "taille_bytes": 867,
+      "entrees": [],
+      "sorties": [
+        "public class XGBoostError"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CrossValidation.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+        "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/CustomObjective.scala",
+        "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/util/CustomEval.scala",
+        "jvm-packages/xgboost4j-example/src/test/java/ml/dmlc/xgboost4j/java/example/JavaExamplesTest.java",
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+        "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/CustomObj.scala",
+        "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/EvalError.scala",
+        "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/Booster.scala",
+        "jvm-packages/xgboost4j/src/test/scala/ml/dmlc/xgboost4j/scala/ScalaBoosterImplSuite.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IObjective.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IObjective.java",
+      "langage": "java",
+      "lignes": 35,
+      "taille_bytes": 1121,
+      "entrees": [
+        "java.io.Serializable",
+        "java.util.List"
+      ],
+      "sorties": [
+        "public interface IObjective"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/ObjectiveTrait.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/ColumnBatch.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/ColumnBatch.java",
+      "langage": "java",
+      "lignes": 27,
+      "taille_bytes": 866,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "langage": "java",
+      "lignes": 557,
+      "taille_bytes": 16009,
+      "entrees": [
+        "java.util.Iterator",
+        "ml.dmlc.xgboost4j.LabeledPoint",
+        "ml.dmlc.xgboost4j.java.util.BigDenseMatrix"
+      ],
+      "sorties": [
+        "public class DMatrix",
+        "public class QuantileCut"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/util/BigDenseMatrix.java"
+      ],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CrossValidation.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+        "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+        "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostEstimatorSuite.scala"
+      ],
+      "type_noeud": "central"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DataBatch.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DataBatch.java",
+      "langage": "java",
+      "lignes": 115,
+      "taille_bytes": 3700,
+      "entrees": [
+        "java.util.ArrayList",
+        "java.util.Iterator",
+        "java.util.List",
+        "ml.dmlc.xgboost4j.LabeledPoint",
+        "org.apache.commons.logging.Log",
+        "org.apache.commons.logging.LogFactory"
+      ],
+      "sorties": [
+        "class DataBatch"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/util/BigDenseMatrix.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/util/BigDenseMatrix.java",
+      "langage": "java",
+      "lignes": 76,
+      "taille_bytes": 2236,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+        "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/DMatrixTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/util/UtilUnsafe.java": {
+      "fichier": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/util/UtilUnsafe.java",
+      "langage": "java",
+      "lignes": 45,
+      "taille_bytes": 1329,
+      "entrees": [
+        "java.lang.reflect.Field",
+        "sun.misc.Unsafe"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/pom.xml": {
+      "fichier": "jvm-packages/xgboost4j-spark/pom.xml",
+      "langage": "xml",
+      "lignes": 71,
+      "taille_bytes": 2800,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/TrainTestData.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/TrainTestData.scala",
+      "langage": "scala",
+      "lignes": 139,
+      "taille_bytes": 5181,
+      "entrees": [
+        "ml.dmlc.xgboost4j.",
+        "resource.startsWith",
+        "scala.io.Source",
+        "scala.util.Random"
+      ],
+      "sorties": [
+        "trait TrainTestData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/CustomObj.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/CustomObj.scala",
+      "langage": "scala",
+      "lignes": 86,
+      "taille_bytes": 2482,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "ml.dmlc.xgboost4j.scala.",
+        "org.apache.commons.logging.LogFactory",
+        "scala.collection.mutable.ListBuffer"
+      ],
+      "sorties": [
+        "class CustomObj",
+        "def sigmoid",
+        "def transform"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostSuite.scala",
+      "langage": "scala",
+      "lignes": 131,
+      "taille_bytes": 4826,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.Booster",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.rdd.RDD",
+        "org.apache.spark.sql.SparkSession",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class XGBoostSuite"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/TmpFolderPerSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/TmpFolderPerSuite.scala",
+      "langage": "scala",
+      "lignes": 43,
+      "taille_bytes": 1231,
+      "entrees": [
+        "java.nio.file.",
+        "org.apache.spark.network.util.JavaUtils",
+        "org.scalatest.BeforeAndAfterAll",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "trait TmpFolderPerSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRankerSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRankerSuite.scala",
+      "langage": "scala",
+      "lignes": 358,
+      "taille_bytes": 12697,
+      "entrees": [
+        "java.io.File",
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.spark.Regression.Ranking",
+        "ml.dmlc.xgboost4j.scala.spark.params.LearningTaskParams.RANKER_OBJS",
+        "ml.dmlc.xgboost4j.scala.spark.params.XGBoostParams",
+        "org.apache.spark.ml.linalg.",
+        "org.apache.spark.ml.param.ParamMap",
+        "org.apache.spark.sql.",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "scala.collection.mutable.ArrayBuffer",
+        "spark.implicits._"
+      ],
+      "sorties": [
+        "class XGBoostRankerSuite",
+        "def check",
+        "def checkEqual"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/EvalError.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/EvalError.scala",
+      "langage": "scala",
+      "lignes": 66,
+      "taille_bytes": 1879,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.XGBoostError",
+        "ml.dmlc.xgboost4j.scala.",
+        "org.apache.commons.logging.LogFactory",
+        "predicts.length"
+      ],
+      "sorties": [
+        "class EvalError"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostParamsSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostParamsSuite.scala",
+      "langage": "scala",
+      "lignes": 61,
+      "taille_bytes": 1871,
+      "entrees": [
+        "org.scalatest.funsuite.AnyFunSuite",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "class XGBoostParamsSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/PerTest.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/PerTest.scala",
+      "langage": "scala",
+      "lignes": 151,
+      "taille_bytes": 5535,
+      "entrees": [
+        "java.io.",
+        "ml.dmlc.xgboost4j.",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.",
+        "org.apache.commons.io.IOUtils",
+        "org.apache.spark.SparkContext",
+        "org.apache.spark.ml.linalg.Vectors",
+        "org.apache.spark.sql._",
+        "org.scalatest.BeforeAndAfterEach",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "def smallBinaryClassificationArray",
+        "def smallBinaryClassificationColumnar",
+        "def smallBinaryClassificationVector",
+        "def smallGroupVector",
+        "def smallMultiClassificationVector",
+        "def ss",
+        "trait PerTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/CommunicatorRobustnessSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/CommunicatorRobustnessSuite.scala",
+      "langage": "scala",
+      "lignes": 119,
+      "taille_bytes": 4390,
+      "entrees": [
+        "ml.dmlc.xgboost4j.java.",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class CommunicatorRobustnessSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostClassifierSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostClassifierSuite.scala",
+      "langage": "scala",
+      "lignes": 308,
+      "taille_bytes": 11770,
+      "entrees": [
+        "java.io.File",
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.spark.params.LearningTaskParams.",
+        "ml.dmlc.xgboost4j.scala.spark.params.XGBoostParams",
+        "org.apache.spark.ml.linalg.DenseVector",
+        "org.apache.spark.ml.param.ParamMap",
+        "org.apache.spark.sql.DataFrame",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class XGBoostClassifierSuite",
+        "def check",
+        "def checkEqual",
+        "def checkEqualForBinary"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRegressorSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRegressorSuite.scala",
+      "langage": "scala",
+      "lignes": 185,
+      "taille_bytes": 6765,
+      "entrees": [
+        "java.io.File",
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.spark.params.LearningTaskParams.REGRESSION_OBJS",
+        "ml.dmlc.xgboost4j.scala.spark.params.XGBoostParams",
+        "org.apache.spark.ml.linalg.DenseVector",
+        "org.apache.spark.ml.param.ParamMap",
+        "org.apache.spark.sql.DataFrame",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class XGBoostRegressorSuite",
+        "def check",
+        "def checkEqual"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostEstimatorSuite.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostEstimatorSuite.scala",
+      "langage": "scala",
+      "lignes": 744,
+      "taille_bytes": 27298,
+      "entrees": [
+        "java.io.File",
+        "java.util.Arrays",
+        "ml.dmlc.xgboost4j.scala.DMatrix",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.TRAIN_NAME",
+        "org.apache.spark.SparkException",
+        "org.apache.spark.ml.linalg.",
+        "org.apache.spark.ml.param.ParamMap",
+        "org.apache.spark.ml.xgboost.SparkUtils",
+        "org.apache.spark.sql.functions.col",
+        "org.apache.spark.sql.types.",
+        "org.json4s.",
+        "org.json4s.jackson.parseJson",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "scala.collection.mutable.ArrayBuffer"
+      ],
+      "sorties": [
+        "class XGBoostEstimatorSuite",
+        "def toArray"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/org/apache/spark/ml/xgboost/SparkUtils.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/org/apache/spark/ml/xgboost/SparkUtils.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/org/apache/spark/ml/xgboost/SparkUtils.scala",
+      "langage": "scala",
+      "lignes": 140,
+      "taille_bytes": 5927,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.spark.params.NonXGBoostParams",
+        "numClasses",
+        "org.apache.spark.",
+        "org.apache.spark.ml.classification.ProbabilisticClassifierParams",
+        "org.apache.spark.ml.linalg.VectorUDT",
+        "org.apache.spark.ml.param.Params",
+        "org.apache.spark.ml.util.",
+        "org.apache.spark.ml.util.DefaultParamsReader.Metadata",
+        "org.apache.spark.sql.",
+        "org.apache.spark.sql.functions._",
+        "org.apache.spark.sql.types.",
+        "org.json4s."
+      ],
+      "sorties": [
+        "def appendColumn",
+        "def appendVectorUDTColumn",
+        "def checkNumericType",
+        "def getNumClasses",
+        "def isVectorType",
+        "def loadMetadata",
+        "def saveMetadata",
+        "trait XGBProbabilisticClassifierParams"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRanker.scala",
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRegressor.scala",
+        "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostEstimatorSuite.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRegressor.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRegressor.scala",
+      "langage": "scala",
+      "lignes": 106,
+      "taille_bytes": 3887,
+      "entrees": [
+        "REGRESSION_OBJS.contains",
+        "ml.dmlc.xgboost4j.scala.Booster",
+        "ml.dmlc.xgboost4j.scala.spark.XGBoostRegressor._uid",
+        "ml.dmlc.xgboost4j.scala.spark.params.LearningTaskParams.REGRESSION_OBJS",
+        "org.apache.spark.ml.",
+        "org.apache.spark.ml.linalg.Vector",
+        "org.apache.spark.ml.param.ParamMap",
+        "org.apache.spark.ml.util.",
+        "org.apache.spark.ml.xgboost.SparkUtils",
+        "org.apache.spark.sql.Dataset",
+        "org.apache.spark.sql.types."
+      ],
+      "sorties": [
+        "class XGBoostRegressionModel",
+        "class XGBoostRegressor",
+        "def this"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/org/apache/spark/ml/xgboost/SparkUtils.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostTrainingSummary.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostTrainingSummary.scala",
+      "langage": "scala",
+      "lignes": 41,
+      "taille_bytes": 1435,
+      "entrees": [],
+      "sorties": [
+        "class XGBoostTrainingSummary",
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostPlugin.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostPlugin.scala",
+      "langage": "scala",
+      "lignes": 49,
+      "taille_bytes": 1509,
+      "entrees": [
+        "java.io.Serializable",
+        "org.apache.spark.rdd.RDD",
+        "org.apache.spark.sql."
+      ],
+      "sorties": [
+        "def buildRddWatches",
+        "def isEnabled",
+        "def transform",
+        "trait XGBoostPlugin"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/Utils.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/Utils.scala",
+      "langage": "scala",
+      "lignes": 125,
+      "taille_bytes": 4080,
+      "entrees": [
+        "ml.dmlc.xgboost4j.",
+        "org.apache.spark.ml.feature.",
+        "org.apache.spark.ml.linalg.",
+        "org.json4s."
+      ],
+      "sorties": [
+        "def asXGB",
+        "def classForName",
+        "def features",
+        "def getContextOrSparkClassLoader",
+        "def getSparkClassLoader",
+        "def getTypeHintsFromClass",
+        "def getTypeHintsFromJsonClass",
+        "def withResource"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/params/CustomParams.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/package.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/package.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1505,
+      "entrees": [
+        "java.util.Properties",
+        "org.apache.spark.SparkException"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostEstimator.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostEstimator.scala",
+      "langage": "scala",
+      "lignes": 744,
+      "taille_bytes": 26610,
+      "entrees": [
+        "getDevice",
+        "getNthread",
+        "java.util.ServiceLoader",
+        "ml.dmlc.xgboost4j.",
+        "ml.dmlc.xgboost4j.java.",
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.MLVectorToXGBLabeledPoint",
+        "ml.dmlc.xgboost4j.scala.spark.params._",
+        "org.apache.commons.logging.LogFactory",
+        "org.apache.hadoop.fs.Path",
+        "org.apache.spark.ml.",
+        "org.apache.spark.ml.functions.array_to_vector",
+        "org.apache.spark.ml.linalg.",
+        "org.apache.spark.ml.param.",
+        "org.apache.spark.ml.util.",
+        "org.apache.spark.ml.xgboost.",
+        "org.apache.spark.rdd.RDD",
+        "org.apache.spark.sql._",
+        "org.apache.spark.sql.functions.",
+        "org.apache.spark.sql.types._",
+        "scala.collection.mutable",
+        "scala.collection.mutable.ArrayBuffer",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def addToSchema",
+        "def buildDMatrix",
+        "def columnId",
+        "def getEvalDataset",
+        "def getPlugin",
+        "def isPluginEnabled",
+        "def nativeBooster",
+        "def selectCol",
+        "def setEvalDataset",
+        "def summary"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRanker.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRanker.scala",
+      "langage": "scala",
+      "lignes": 142,
+      "taille_bytes": 4920,
+      "entrees": [
+        "RANKER_OBJS.contains",
+        "isDefinedNonEmpty",
+        "ml.dmlc.xgboost4j.scala.Booster",
+        "ml.dmlc.xgboost4j.scala.spark.XGBoostRanker._uid",
+        "ml.dmlc.xgboost4j.scala.spark.params.HasGroupCol",
+        "ml.dmlc.xgboost4j.scala.spark.params.LearningTaskParams.RANKER_OBJS",
+        "org.apache.spark.ml.",
+        "org.apache.spark.ml.linalg.Vector",
+        "org.apache.spark.ml.param.ParamMap",
+        "org.apache.spark.ml.util.",
+        "org.apache.spark.ml.xgboost.SparkUtils",
+        "org.apache.spark.sql.Dataset",
+        "org.apache.spark.sql.functions.col",
+        "org.apache.spark.sql.types."
+      ],
+      "sorties": [
+        "class XGBoostRanker",
+        "class XGBoostRankerModel",
+        "def setGroupCol",
+        "def this"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/org/apache/spark/ml/xgboost/SparkUtils.scala",
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+      "langage": "scala",
+      "lignes": 355,
+      "taille_bytes": 12801,
+      "entrees": [
+        "iter.hasNext",
+        "java.io.File",
+        "ml.dmlc.xgboost4j.java.",
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.spark.Utils.withResource",
+        "org.apache.commons.io.FileUtils",
+        "org.apache.commons.logging.LogFactory",
+        "org.apache.spark.",
+        "org.apache.spark.rdd.RDD",
+        "org.apache.spark.resource.",
+        "scala.jdk.CollectionConverters._",
+        "tracker.start"
+      ],
+      "sorties": [
+        "class Watches",
+        "def delete",
+        "def getGPUAddrFromResources",
+        "def size",
+        "def toMap",
+        "def train"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CrossValidation.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java",
+        "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/flink/DistTrainWithFlinkExample.java"
+      ],
+      "type_noeud": "feuille"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostClassifier.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostClassifier.scala",
+      "langage": "scala",
+      "lignes": 206,
+      "taille_bytes": 8038,
+      "entrees": [
+        "!isSet",
+        "ml.dmlc.xgboost4j.scala.Booster",
+        "ml.dmlc.xgboost4j.scala.spark.params.LearningTaskParams.",
+        "num",
+        "org.apache.spark.ml.classification.",
+        "org.apache.spark.ml.linalg.",
+        "org.apache.spark.ml.param.ParamMap",
+        "org.apache.spark.ml.util.",
+        "org.apache.spark.ml.xgboost.",
+        "org.apache.spark.sql.Dataset",
+        "org.apache.spark.sql.functions.",
+        "org.json4s.DefaultFormats",
+        "scala.collection.mutable",
+        "supportedObjs.contains"
+      ],
+      "sorties": [
+        "class XGBoostClassificationModel",
+        "class XGBoostClassifier",
+        "def inferNumClasses",
+        "def this"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java"
+      ],
+      "est_appele_par": [
+        "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/spark/SparkTraining.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/params/CustomParams.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/params/CustomParams.scala",
+      "langage": "scala",
+      "lignes": 59,
+      "taille_bytes": 2179,
+      "entrees": [
+        "ml.dmlc.xgboost4j.scala.",
+        "ml.dmlc.xgboost4j.scala.spark.Utils",
+        "org.apache.spark.ml.param.",
+        "org.json4s.",
+        "org.json4s.jackson.JsonMethods.",
+        "org.json4s.jackson.Serialization"
+      ],
+      "sorties": [
+        "class CustomEvalParam",
+        "class CustomGeneralParam",
+        "class CustomObjParam"
+      ],
+      "appelle": [
+        "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/Utils.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/params/LearningTaskParams.scala": {
+      "fichier": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/params/LearningTaskParams.scala",
+      "langage": "scala",
+      "lignes": 149,
+      "taille_bytes": 7071,
+      "entrees": [
+        "org.apache.spark.ml.param._",
+        "scala.collection.immutable.HashSet"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "jvm-packages/xgboost4j-example/src/test/java/ml/dmlc/xgboost4j/java/example/JavaExamplesTest.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/PredictFirstNTree.scala",
+      "vers": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/GeneralizedLinearModel.scala",
+      "vers": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/BasicWalkThrough.scala",
+      "vers": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/DataLoader.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/CustomObjective.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/util/CustomEval.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/scala/ml/dmlc/xgboost4j/scala/example/spark/SparkTraining.scala",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostClassifier.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+      "vers": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/DataLoader.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+      "vers": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CrossValidation.java",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CrossValidation.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CrossValidation.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+      "vers": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/DataLoader.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+      "vers": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IEvaluation.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/flink/DistTrainWithFlinkExample.java",
+      "vers": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/flink/DistTrainWithFlinkExample.java",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Communicator.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/RabitTracker.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoostModel.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/QuantileDMatrixSuite.scala",
+      "vers": "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPluginSuite.scala",
+      "vers": "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPluginSuite.scala",
+      "vers": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuTestSuite.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/ExternalMemorySuite.scala",
+      "vers": "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/ExternalMemorySuite.scala",
+      "vers": "jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuTestSuite.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark-gpu/src/main/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPlugin.scala",
+      "vers": "jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/test/scala/ml/dmlc/xgboost4j/scala/ScalaBoosterImplSuite.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/DMatrixTest.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/DMatrixTest.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/util/BigDenseMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/XGBoostTest.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/ObjectiveTrait.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IObjective.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/Booster.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/EvalTrait.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/IEvaluation.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/main/scala/ml/dmlc/xgboost4j/scala/DMatrix.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/util/BigDenseMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DataBatch.java",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/CustomObj.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostSuite.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/EvalError.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostEstimatorSuite.scala",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/org/apache/spark/ml/xgboost/SparkUtils.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostEstimatorSuite.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRegressor.scala",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/org/apache/spark/ml/xgboost/SparkUtils.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRegressor.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRanker.scala",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/org/apache/spark/ml/xgboost/SparkUtils.scala",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRanker.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostClassifier.scala",
+      "vers": "jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java",
+      "type": "interne"
+    },
+    {
+      "de": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/params/CustomParams.scala",
+      "vers": "jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/Utils.scala",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BasicWalkThrough.java'",
+    "point_entree → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictLeafIndices.java'",
+    "point_entree → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/PredictFirstNtree.java'",
+    "point_entree → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/CrossValidation.java'",
+    "point_entree → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/BoostFromPrediction.java'",
+    "point_entree → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/EarlyStopping.java'",
+    "point_entree → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/GeneralizedLinearModel.java'",
+    "feuille → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/DataLoader.java' (in=3)",
+    "central → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/util/CustomEval.java' (in=4, out=3)",
+    "point_entree → 'jvm-packages/xgboost4j-example/src/main/java/ml/dmlc/xgboost4j/java/example/flink/DistTrainWithFlinkExample.java'",
+    "point_entree → 'jvm-packages/xgboost4j-flink/src/main/java/ml/dmlc/xgboost4j/java/flink/XGBoost.java'",
+    "point_entree → 'jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/GpuXGBoostPluginSuite.scala'",
+    "point_entree → 'jvm-packages/xgboost4j-spark-gpu/src/test/scala/ml/dmlc/xgboost4j/scala/spark/ExternalMemorySuite.scala'",
+    "feuille → 'jvm-packages/xgboost4j-spark-gpu/src/main/java/ml/dmlc/xgboost4j/java/CudfColumnBatch.java' (in=4)",
+    "point_entree → 'jvm-packages/xgboost4j/src/test/java/ml/dmlc/xgboost4j/java/DMatrixTest.java'",
+    "feuille → 'jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/LabeledPoint.java' (in=7)",
+    "feuille → 'jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/Booster.java' (in=12)",
+    "feuille → 'jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/XGBoostError.java' (in=17)",
+    "central → 'jvm-packages/xgboost4j/src/main/java/ml/dmlc/xgboost4j/java/DMatrix.java' (in=11, out=2)",
+    "point_entree → 'jvm-packages/xgboost4j-spark/src/test/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostEstimatorSuite.scala'",
+    "feuille → 'jvm-packages/xgboost4j-spark/src/main/scala/org/apache/spark/ml/xgboost/SparkUtils.scala' (in=3)",
+    "point_entree → 'jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRegressor.scala'",
+    "point_entree → 'jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoostRanker.scala'",
+    "feuille → 'jvm-packages/xgboost4j-spark/src/main/scala/ml/dmlc/xgboost4j/scala/spark/XGBoost.scala' (in=8)"
+  ]
+}

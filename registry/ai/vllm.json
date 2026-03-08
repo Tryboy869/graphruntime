@@ -1,0 +1,2664 @@
+{
+  "meta": {
+    "projet": "vllm",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 7,
+      "toml": 1,
+      "python": 106,
+      "shell": 6
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 3,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "examples/offline_inference/rlhf_utils.py"
+  },
+  "noeuds": {
+    ".markdownlint.yaml": {
+      "fichier": ".markdownlint.yaml",
+      "langage": "yaml",
+      "lignes": 11,
+      "taille_bytes": 140,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pyproject.toml": {
+      "fichier": "pyproject.toml",
+      "langage": "toml",
+      "lignes": 178,
+      "taille_bytes": 4784,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".readthedocs.yaml": {
+      "fichier": ".readthedocs.yaml",
+      "langage": "yaml",
+      "lignes": 23,
+      "taille_bytes": 633,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setup.py": {
+      "fichier": "setup.py",
+      "langage": "python",
+      "lignes": 1077,
+      "taille_bytes": 39813,
+      "entrees": [
+        "ctypes",
+        "glob",
+        "grpc_tools",
+        "html.parser",
+        "importlib.util",
+        "json",
+        "logging",
+        "os",
+        "packaging.version",
+        "pathlib",
+        "platform",
+        "re",
+        "setuptools",
+        "setuptools.command.build_ext",
+        "setuptools.command.build_py",
+        "setuptools.command.develop",
+        "setuptools_scm",
+        "shutil",
+        "subprocess",
+        "sys",
+        "sysconfig",
+        "tempfile",
+        "torch",
+        "torch.utils.cpp_extension",
+        "urllib.parse",
+        "urllib.request",
+        "zipfile"
+      ],
+      "sorties": [
+        "class BuildPyAndGenerateGrpc",
+        "class CMakeExtension",
+        "class DevelopAndGenerateGrpc",
+        "class WheelLinkParser",
+        "class cmake_build_ext",
+        "class precompiled_build_ext",
+        "class precompiled_wheel_utils",
+        "def __init__",
+        "def _build_custom_ops",
+        "def _is_cpu",
+        "def _is_cuda",
+        "def _is_hip",
+        "def _is_tpu",
+        "def _is_xpu",
+        "def _no_device",
+        "def _read_requirements",
+        "def build_extensions",
+        "def compile_grpc_protos",
+        "def compute_num_jobs",
+        "def configure",
+        "def detect_system_cuda_variant",
+        "def determine_wheel_url",
+        "def determine_wheel_url_rocm",
+        "def extract_precompiled_and_patch_package",
+        "def fetch_metadata_for_variant",
+        "def fetch_wheel_from_pypi_index",
+        "def find_local_rocm_wheel",
+        "def get_base_commit_in_main_branch",
+        "def get_nvcc_cuda_version",
+        "def get_requirements",
+        "def get_rocm_version",
+        "def get_vllm_version",
+        "def handle_starttag",
+        "def is_ccache_available",
+        "def is_freethreaded",
+        "def is_ninja_available",
+        "def is_rocm_system",
+        "def is_sccache_available",
+        "def load_module_from_path",
+        "def run",
+        "def target_name"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "codecov.yml": {
+      "fichier": "codecov.yml",
+      "langage": "yaml",
+      "lignes": 12,
+      "taille_bytes": 441,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "mkdocs.yaml": {
+      "fichier": "mkdocs.yaml",
+      "langage": "yaml",
+      "lignes": 154,
+      "taille_bytes": 4502,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".pre-commit-config.yaml": {
+      "fichier": ".pre-commit-config.yaml",
+      "langage": "yaml",
+      "lignes": 165,
+      "taille_bytes": 6197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "use_existing_torch.py": {
+      "fichier": "use_existing_torch.py",
+      "langage": "python",
+      "lignes": 54,
+      "taille_bytes": 1475,
+      "entrees": [
+        "argparse",
+        "glob",
+        "sys"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/async_llm_streaming.py": {
+      "fichier": "examples/offline_inference/async_llm_streaming.py",
+      "langage": "python",
+      "lignes": 111,
+      "taille_bytes": 3635,
+      "entrees": [
+        "asyncio",
+        "vllm",
+        "vllm.engine.arg_utils",
+        "vllm.sampling_params",
+        "vllm.v1.engine.async_llm"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/automatic_prefix_caching.py": {
+      "fichier": "examples/offline_inference/automatic_prefix_caching.py",
+      "langage": "python",
+      "lignes": 103,
+      "taille_bytes": 6543,
+      "entrees": [
+        "time",
+        "vllm"
+      ],
+      "sorties": [
+        "def get_generation_time",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/torchrun_example.py": {
+      "fichier": "examples/offline_inference/torchrun_example.py",
+      "langage": "python",
+      "lignes": 76,
+      "taille_bytes": 2449,
+      "entrees": [
+        "torch.distributed",
+        "vllm",
+        "vllm.distributed.parallel_state"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/vision_language_multi_image.py": {
+      "fichier": "examples/offline_inference/vision_language_multi_image.py",
+      "langage": "python",
+      "lignes": 1636,
+      "taille_bytes": 49816,
+      "entrees": [
+        "PIL.Image",
+        "argparse",
+        "dataclasses",
+        "huggingface_hub",
+        "os",
+        "qwen_vl_utils",
+        "the",
+        "transformers",
+        "typing",
+        "vllm",
+        "vllm.lora.request",
+        "vllm.model_executor.models.deepseek_ocr",
+        "vllm.multimodal.utils",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "class ModelRequestData",
+        "def load_aria",
+        "def load_aya_vision",
+        "def load_bee",
+        "def load_command_a_vision",
+        "def load_deepseek_ocr",
+        "def load_deepseek_vl2",
+        "def load_gemma3",
+        "def load_glm4_1v",
+        "def load_glm4_5v",
+        "def load_glm4_5v_fp8",
+        "def load_h2ovl",
+        "def load_hunyuan_vl",
+        "def load_hyperclovax_seed_vision",
+        "def load_idefics3",
+        "def load_interns1",
+        "def load_internvl",
+        "def load_keye_vl",
+        "def load_keye_vl1_5",
+        "def load_kimi_vl",
+        "def load_llama4",
+        "def load_llava",
+        "def load_llava_next",
+        "def load_llava_onevision",
+        "def load_mistral3",
+        "def load_molmo2",
+        "def load_nvlm_d",
+        "def load_openpangu_vl",
+        "def load_ovis",
+        "def load_ovis2_5",
+        "def load_paddleocr_vl",
+        "def load_phi3v",
+        "def load_phi4mm",
+        "def load_pixtral_hf",
+        "def load_qwen2_5_vl",
+        "def load_qwen2_vl",
+        "def load_qwen_vl_chat",
+        "def load_r_vl",
+        "def load_smolvlm",
+        "def load_step3",
+        "def load_step_vl",
+        "def load_tarsier",
+        "def load_tarsier2",
+        "def main",
+        "def parse_args",
+        "def post_process_image",
+        "def run_chat",
+        "def run_generate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/run_one_batch.py": {
+      "fichier": "examples/offline_inference/run_one_batch.py",
+      "langage": "python",
+      "lignes": 112,
+      "taille_bytes": 3378,
+      "entrees": [
+        "__future__",
+        "vllm",
+        "vllm.config",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def _build_profiler_config",
+        "def _build_prompt",
+        "def create_parser",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/extract_hidden_states.py": {
+      "fichier": "examples/offline_inference/extract_hidden_states.py",
+      "langage": "python",
+      "lignes": 58,
+      "taille_bytes": 2133,
+      "entrees": [
+        "safetensors",
+        "tempfile",
+        "vllm"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/prefix_caching.py": {
+      "fichier": "examples/offline_inference/prefix_caching.py",
+      "langage": "python",
+      "lignes": 98,
+      "taille_bytes": 3383,
+      "entrees": [
+        "vllm",
+        "vllm.distributed"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/llm_engine_reset_kv.py": {
+      "fichier": "examples/offline_inference/llm_engine_reset_kv.py",
+      "langage": "python",
+      "lignes": 98,
+      "taille_bytes": 3036,
+      "entrees": [
+        "argparse",
+        "os",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def create_test_prompts",
+        "def initialize_engine",
+        "def main",
+        "def parse_args",
+        "def process_requests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/pause_resume.py": {
+      "fichier": "examples/offline_inference/pause_resume.py",
+      "langage": "python",
+      "lignes": 108,
+      "taille_bytes": 3729,
+      "entrees": [
+        "asyncio",
+        "time",
+        "vllm",
+        "vllm.engine.arg_utils",
+        "vllm.v1.engine.async_llm"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/multilora_inference.py": {
+      "fichier": "examples/offline_inference/multilora_inference.py",
+      "langage": "python",
+      "lignes": 106,
+      "taille_bytes": 4037,
+      "entrees": [
+        "huggingface_hub",
+        "vllm",
+        "vllm.lora.request"
+      ],
+      "sorties": [
+        "def create_test_prompts",
+        "def initialize_engine",
+        "def main",
+        "def process_requests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/encoder_decoder_multimodal.py": {
+      "fichier": "examples/offline_inference/encoder_decoder_multimodal.py",
+      "langage": "python",
+      "lignes": 133,
+      "taille_bytes": 3584,
+      "entrees": [
+        "collections.abc",
+        "dataclasses",
+        "os",
+        "time",
+        "typing",
+        "vllm",
+        "vllm.assets.audio",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "class ModelRequestData",
+        "def main",
+        "def parse_args",
+        "def run_whisper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/skip_loading_weights_in_engine_init.py": {
+      "fichier": "examples/offline_inference/skip_loading_weights_in_engine_init.py",
+      "langage": "python",
+      "lignes": 53,
+      "taille_bytes": 1526,
+      "entrees": [
+        "vllm"
+      ],
+      "sorties": [
+        "def main",
+        "def print_prompts_and_outputs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/prompt_embed_inference.py": {
+      "fichier": "examples/offline_inference/prompt_embed_inference.py",
+      "langage": "python",
+      "lignes": 97,
+      "taille_bytes": 2996,
+      "entrees": [
+        "torch",
+        "transformers",
+        "vllm"
+      ],
+      "sorties": [
+        "def batch_prompt_inference",
+        "def get_prompt_embeds",
+        "def init_tokenizer_and_llm",
+        "def main",
+        "def single_prompt_inference"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/mlpspeculator.py": {
+      "fichier": "examples/offline_inference/mlpspeculator.py",
+      "langage": "python",
+      "lignes": 72,
+      "taille_bytes": 2153,
+      "entrees": [
+        "gc",
+        "time",
+        "vllm"
+      ],
+      "sorties": [
+        "def main",
+        "def time_generation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/vision_language.py": {
+      "fichier": "examples/offline_inference/vision_language.py",
+      "langage": "python",
+      "lignes": 2549,
+      "taille_bytes": 72380,
+      "entrees": [
+        "contextlib",
+        "dataclasses",
+        "huggingface_hub",
+        "os",
+        "random",
+        "time",
+        "transformers",
+        "typing",
+        "vllm",
+        "vllm.assets.image",
+        "vllm.assets.video",
+        "vllm.lora.request",
+        "vllm.model_executor.models.deepseek_ocr",
+        "vllm.multimodal.image",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "class ModelRequestData",
+        "def apply_image_repeat",
+        "def get_multi_modal_input",
+        "def main",
+        "def parse_args",
+        "def run_aria",
+        "def run_aya_vision",
+        "def run_bagel",
+        "def run_bee",
+        "def run_blip2",
+        "def run_chameleon",
+        "def run_command_a_vision",
+        "def run_deepseek_ocr",
+        "def run_deepseek_ocr2",
+        "def run_deepseek_vl2",
+        "def run_dots_ocr",
+        "def run_eagle2_5",
+        "def run_ernie45_vl",
+        "def run_fuyu",
+        "def run_gemma3",
+        "def run_gemma3n",
+        "def run_glm4_1v",
+        "def run_glm4_5v",
+        "def run_glm4_5v_fp8",
+        "def run_glm4v",
+        "def run_glm_ocr",
+        "def run_h2ovl",
+        "def run_hunyuan_vl",
+        "def run_hyperclovax_seed_vision",
+        "def run_idefics3",
+        "def run_interns1",
+        "def run_interns1_pro",
+        "def run_internvl",
+        "def run_kanana_v",
+        "def run_keye_vl",
+        "def run_keye_vl1_5",
+        "def run_kimi_k25",
+        "def run_kimi_vl",
+        "def run_lfm2_vl",
+        "def run_lightonocr",
+        "def run_llama4",
+        "def run_llava",
+        "def run_llava_next",
+        "def run_llava_next_video",
+        "def run_llava_onevision",
+        "def run_mantis",
+        "def run_minicpmo",
+        "def run_minicpmv",
+        "def run_minicpmv_base",
+        "def run_minimax_vl_01",
+        "def run_mistral3",
+        "def run_molmo",
+        "def run_molmo2",
+        "def run_nemotron_vl",
+        "def run_nvlm_d",
+        "def run_openpangu_vl",
+        "def run_ovis",
+        "def run_ovis2_5",
+        "def run_paddleocr_vl",
+        "def run_paligemma",
+        "def run_paligemma2",
+        "def run_phi3v",
+        "def run_phi4mm",
+        "def run_pixtral_hf",
+        "def run_qwen2_5_omni",
+        "def run_qwen2_5_vl",
+        "def run_qwen2_vl",
+        "def run_qwen3_vl",
+        "def run_qwen3_vl_moe",
+        "def run_qwen_vl",
+        "def run_r_vl",
+        "def run_skyworkr1v",
+        "def run_smolvlm",
+        "def run_step3",
+        "def run_step_vl",
+        "def run_tarsier",
+        "def run_tarsier2",
+        "def time_counter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/reproducibility.py": {
+      "fichier": "examples/offline_inference/reproducibility.py",
+      "langage": "python",
+      "lignes": 46,
+      "taille_bytes": 1339,
+      "entrees": [
+        "os",
+        "random",
+        "vllm"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/qwen_1m.py": {
+      "fichier": "examples/offline_inference/qwen_1m.py",
+      "langage": "python",
+      "lignes": 70,
+      "taille_bytes": 2010,
+      "entrees": [
+        "os",
+        "urllib.request",
+        "vllm"
+      ],
+      "sorties": [
+        "def initialize_engine",
+        "def load_prompt",
+        "def main",
+        "def process_requests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/lora_with_quantization_inference.py": {
+      "fichier": "examples/offline_inference/lora_with_quantization_inference.py",
+      "langage": "python",
+      "lignes": 127,
+      "taille_bytes": 4052,
+      "entrees": [
+        "gc",
+        "huggingface_hub",
+        "torch",
+        "vllm",
+        "vllm.lora.request"
+      ],
+      "sorties": [
+        "def create_test_prompts",
+        "def initialize_engine",
+        "def main",
+        "def process_requests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/context_extension.py": {
+      "fichier": "examples/offline_inference/context_extension.py",
+      "langage": "python",
+      "lignes": 70,
+      "taille_bytes": 1932,
+      "entrees": [
+        "vllm"
+      ],
+      "sorties": [
+        "def create_llm",
+        "def main",
+        "def print_outputs",
+        "def run_llm_chat"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/torchrun_dp_example.py": {
+      "fichier": "examples/offline_inference/torchrun_dp_example.py",
+      "langage": "python",
+      "lignes": 151,
+      "taille_bytes": 4238,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.distributed.parallel_state"
+      ],
+      "sorties": [
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/rlhf.py": {
+      "fichier": "examples/offline_inference/rlhf.py",
+      "langage": "python",
+      "lignes": 147,
+      "taille_bytes": 5264,
+      "entrees": [
+        "os",
+        "ray",
+        "ray.util.placement_group",
+        "ray.util.scheduling_strategies",
+        "rlhf_utils",
+        "torch",
+        "transformers",
+        "vllm",
+        "vllm.utils.network_utils"
+      ],
+      "sorties": [
+        "class MyLLM",
+        "def __init__"
+      ],
+      "appelle": [
+        "examples/offline_inference/rlhf_utils.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/spec_decode.py": {
+      "fichier": "examples/offline_inference/spec_decode.py",
+      "langage": "python",
+      "lignes": 258,
+      "taille_bytes": 10692,
+      "entrees": [
+        "transformers",
+        "vllm",
+        "vllm.benchmarks.datasets",
+        "vllm.utils.argparse_utils",
+        "vllm.v1.metrics.reader"
+      ],
+      "sorties": [
+        "def get_custom_mm_prompts",
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/metrics.py": {
+      "fichier": "examples/offline_inference/metrics.py",
+      "langage": "python",
+      "lignes": 50,
+      "taille_bytes": 1623,
+      "entrees": [
+        "vllm",
+        "vllm.v1.metrics.reader"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/rlhf_utils.py": {
+      "fichier": "examples/offline_inference/rlhf_utils.py",
+      "langage": "python",
+      "lignes": 168,
+      "taille_bytes": 6067,
+      "entrees": [
+        "collections.abc",
+        "gc",
+        "torch",
+        "typing",
+        "vllm.distributed.device_communicators.pynccl",
+        "vllm.distributed.parallel_state",
+        "vllm.distributed.utils",
+        "vllm.model_executor.model_loader.utils",
+        "vllm.platforms",
+        "zmq"
+      ],
+      "sorties": [
+        "class ColocateWorkerExtension",
+        "class FlattenedTensorMetadata",
+        "class WorkerExtension",
+        "def check_weights_changed",
+        "def init_weight_update_group",
+        "def rebuild_ipc",
+        "def report_device_id",
+        "def stateless_init_process_group",
+        "def update_weight",
+        "def update_weights_from_ipc"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/offline_inference/rlhf.py",
+        "examples/offline_inference/rlhf_online_quant.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/disaggregated_prefill.py": {
+      "fichier": "examples/offline_inference/disaggregated_prefill.py",
+      "langage": "python",
+      "lignes": 127,
+      "taille_bytes": 4143,
+      "entrees": [
+        "multiprocessing",
+        "os",
+        "time",
+        "vllm",
+        "vllm.config"
+      ],
+      "sorties": [
+        "def main",
+        "def run_decode",
+        "def run_prefill"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/simple_profiling.py": {
+      "fichier": "examples/offline_inference/simple_profiling.py",
+      "langage": "python",
+      "lignes": 52,
+      "taille_bytes": 1356,
+      "entrees": [
+        "time",
+        "vllm"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/data_parallel.py": {
+      "fichier": "examples/offline_inference/data_parallel.py",
+      "langage": "python",
+      "lignes": 214,
+      "taille_bytes": 6475,
+      "entrees": [
+        "multiprocessing",
+        "os",
+        "time",
+        "vllm",
+        "vllm.platforms",
+        "vllm.utils.argparse_utils",
+        "vllm.utils.network_utils"
+      ],
+      "sorties": [
+        "def create_parser",
+        "def main",
+        "def start"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/mistral-small.py": {
+      "fichier": "examples/offline_inference/mistral-small.py",
+      "langage": "python",
+      "lignes": 189,
+      "taille_bytes": 5886,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.assets.image",
+        "vllm.multimodal.utils",
+        "vllm.sampling_params"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def run_advanced_demo",
+        "def run_simple_demo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/audio_language.py": {
+      "fichier": "examples/offline_inference/audio_language.py",
+      "langage": "python",
+      "lignes": 636,
+      "taille_bytes": 19308,
+      "entrees": [
+        "dataclasses",
+        "huggingface_hub",
+        "mistral_common.audio",
+        "mistral_common.protocol.instruct.chunk",
+        "mistral_common.protocol.instruct.messages",
+        "mistral_common.protocol.instruct.request",
+        "mistral_common.tokens.tokenizers.mistral",
+        "os",
+        "transformers",
+        "typing",
+        "vllm",
+        "vllm.assets.audio",
+        "vllm.lora.request",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "class ModelRequestData",
+        "def get_input",
+        "def main",
+        "def parse_args",
+        "def run_audioflamingo3",
+        "def run_funaudiochat",
+        "def run_gemma3n",
+        "def run_glmasr",
+        "def run_granite_speech",
+        "def run_midashenglm",
+        "def run_minicpmo",
+        "def run_musicflamingo",
+        "def run_phi4mm",
+        "def run_qwen2_5_omni",
+        "def run_qwen2_audio",
+        "def run_qwen3_asr",
+        "def run_ultravox",
+        "def run_voxtral",
+        "def run_whisper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/llm_engine_example.py": {
+      "fichier": "examples/offline_inference/llm_engine_example.py",
+      "langage": "python",
+      "lignes": 74,
+      "taille_bytes": 2353,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def create_test_prompts",
+        "def initialize_engine",
+        "def main",
+        "def parse_args",
+        "def process_requests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/rlhf_online_quant.py": {
+      "fichier": "examples/offline_inference/rlhf_online_quant.py",
+      "langage": "python",
+      "lignes": 162,
+      "taille_bytes": 5799,
+      "entrees": [
+        "json",
+        "os",
+        "ray",
+        "ray.util.placement_group",
+        "ray.util.scheduling_strategies",
+        "rlhf_utils",
+        "torch",
+        "torchao.core.config",
+        "torchao.quantization",
+        "transformers",
+        "vllm",
+        "vllm.utils.network_utils"
+      ],
+      "sorties": [
+        "class MyLLM",
+        "def __init__"
+      ],
+      "appelle": [
+        "examples/offline_inference/rlhf_utils.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/chat_with_tools.py": {
+      "fichier": "examples/offline_inference/chat_with_tools.py",
+      "langage": "python",
+      "lignes": 147,
+      "taille_bytes": 4529,
+      "entrees": [
+        "json",
+        "random",
+        "string",
+        "vllm",
+        "vllm.sampling_params"
+      ],
+      "sorties": [
+        "def generate_random_id",
+        "def get_current_weather"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/structured_outputs.py": {
+      "fichier": "examples/offline_inference/structured_outputs.py",
+      "langage": "python",
+      "lignes": 113,
+      "taille_bytes": 3467,
+      "entrees": [
+        "enum",
+        "pydantic",
+        "vllm",
+        "vllm.sampling_params"
+      ],
+      "sorties": [
+        "class CarDescription",
+        "class CarType",
+        "def format_output",
+        "def generate_output",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/load_sharded_state.py": {
+      "fichier": "examples/offline_inference/load_sharded_state.py",
+      "langage": "python",
+      "lignes": 92,
+      "taille_bytes": 2578,
+      "entrees": [
+        "dataclasses",
+        "save_sharded_state.py",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/rlhf_colocate.py": {
+      "fichier": "examples/offline_inference/rlhf_colocate.py",
+      "langage": "python",
+      "lignes": 256,
+      "taille_bytes": 9571,
+      "entrees": [
+        "gc",
+        "os",
+        "ray",
+        "ray.util.placement_group",
+        "ray.util.scheduling_strategies",
+        "sys",
+        "torch",
+        "torch.multiprocessing.reductions",
+        "transformers",
+        "vllm",
+        "vllm.platforms",
+        "zmq"
+      ],
+      "sorties": [
+        "class MyLLM",
+        "class RayTrainingActor",
+        "def __init__",
+        "def get_size",
+        "def get_zmq_handles",
+        "def report_device_id",
+        "def update_weights"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/save_sharded_state.py": {
+      "fichier": "examples/offline_inference/save_sharded_state.py",
+      "langage": "python",
+      "lignes": 85,
+      "taille_bytes": 2591,
+      "entrees": [
+        "dataclasses",
+        "os",
+        "pathlib",
+        "shutil",
+        "vllm",
+        "vllm.model_executor.model_loader",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/batch_llm_inference.py": {
+      "fichier": "examples/offline_inference/batch_llm_inference.py",
+      "langage": "python",
+      "lignes": 93,
+      "taille_bytes": 3157,
+      "entrees": [
+        "packaging.version",
+        "ray",
+        "ray.data.llm"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/basic/score.py": {
+      "fichier": "examples/offline_inference/basic/score.py",
+      "langage": "python",
+      "lignes": 47,
+      "taille_bytes": 1285,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/basic/chat.py": {
+      "fichier": "examples/offline_inference/basic/chat.py",
+      "langage": "python",
+      "lignes": 102,
+      "taille_bytes": 3396,
+      "entrees": [
+        "vllm",
+        "vllm.outputs",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def create_parser",
+        "def main",
+        "def print_outputs"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/pooling/embed/vision_embedding_online.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/basic/embed.py": {
+      "fichier": "examples/offline_inference/basic/embed.py",
+      "langage": "python",
+      "lignes": 51,
+      "taille_bytes": 1423,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/basic/reward.py": {
+      "fichier": "examples/offline_inference/basic/reward.py",
+      "langage": "python",
+      "lignes": 53,
+      "taille_bytes": 1487,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/basic/basic.py": {
+      "fichier": "examples/offline_inference/basic/basic.py",
+      "langage": "python",
+      "lignes": 35,
+      "taille_bytes": 1024,
+      "entrees": [
+        "vllm"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/basic/generate.py": {
+      "fichier": "examples/offline_inference/basic/generate.py",
+      "langage": "python",
+      "lignes": 65,
+      "taille_bytes": 2098,
+      "entrees": [
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def create_parser",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/basic/classify.py": {
+      "fichier": "examples/offline_inference/basic/classify.py",
+      "langage": "python",
+      "lignes": 52,
+      "taille_bytes": 1457,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/disaggregated-prefill-v1/run.sh": {
+      "fichier": "examples/offline_inference/disaggregated-prefill-v1/run.sh",
+      "langage": "shell",
+      "lignes": 11,
+      "taille_bytes": 346,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/disaggregated-prefill-v1/prefill_example.py": {
+      "fichier": "examples/offline_inference/disaggregated-prefill-v1/prefill_example.py",
+      "langage": "python",
+      "lignes": 58,
+      "taille_bytes": 1635,
+      "entrees": [
+        "vllm",
+        "vllm.config"
+      ],
+      "sorties": [
+        "def main",
+        "def read_prompts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/disaggregated-prefill-v1/decode_example.py": {
+      "fichier": "examples/offline_inference/disaggregated-prefill-v1/decode_example.py",
+      "langage": "python",
+      "lignes": 51,
+      "taille_bytes": 1509,
+      "entrees": [
+        "vllm",
+        "vllm.config"
+      ],
+      "sorties": [
+        "def main",
+        "def read_prompts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/qwen2_5_omni/only_thinker.py": {
+      "fichier": "examples/offline_inference/qwen2_5_omni/only_thinker.py",
+      "langage": "python",
+      "lignes": 196,
+      "taille_bytes": 5885,
+      "entrees": [
+        "typing",
+        "vllm",
+        "vllm.assets.audio",
+        "vllm.assets.image",
+        "vllm.assets.video",
+        "vllm.multimodal.image",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "class QueryResult",
+        "def get_mixed_modalities_query",
+        "def get_multi_audios_query",
+        "def get_multi_images_query",
+        "def get_use_audio_in_video_query",
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/qwen3_omni/only_thinker.py": {
+      "fichier": "examples/offline_inference/qwen3_omni/only_thinker.py",
+      "langage": "python",
+      "lignes": 223,
+      "taille_bytes": 6714,
+      "entrees": [
+        "typing",
+        "vllm",
+        "vllm.assets.audio",
+        "vllm.assets.image",
+        "vllm.assets.video",
+        "vllm.multimodal.image",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "class QueryResult",
+        "def get_mixed_modalities_query",
+        "def get_multi_audios_query",
+        "def get_multi_images_query",
+        "def get_use_audio_in_video_query",
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/new_weight_syncing/rlhf_ipc.py": {
+      "fichier": "examples/offline_inference/new_weight_syncing/rlhf_ipc.py",
+      "langage": "python",
+      "lignes": 149,
+      "taille_bytes": 4846,
+      "entrees": [
+        "os",
+        "ray",
+        "ray.util.placement_group",
+        "ray.util.scheduling_strategies",
+        "transformers",
+        "vllm",
+        "vllm.config",
+        "vllm.distributed.weight_transfer.ipc_engine"
+      ],
+      "sorties": [
+        "class MyLLM",
+        "class TrainModel",
+        "def __init__",
+        "def broadcast_weights",
+        "def init_weight_transfer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/new_weight_syncing/rlhf_async_new_apis.py": {
+      "fichier": "examples/offline_inference/new_weight_syncing/rlhf_async_new_apis.py",
+      "langage": "python",
+      "lignes": 415,
+      "taille_bytes": 14948,
+      "entrees": [
+        "asyncio",
+        "dataclasses",
+        "ray",
+        "torch",
+        "transformers",
+        "uuid",
+        "vllm",
+        "vllm.config",
+        "vllm.distributed.weight_transfer.base",
+        "vllm.distributed.weight_transfer.nccl_engine",
+        "vllm.model_executor.layers.batch_invariant",
+        "vllm.platforms",
+        "vllm.utils.network_utils",
+        "vllm.v1.attention.backends.registry",
+        "vllm.v1.executor"
+      ],
+      "sorties": [
+        "class MyLLM",
+        "class TrainModel",
+        "def __init__",
+        "def broadcast_weights",
+        "def generate",
+        "def get_master_address_and_port",
+        "def get_weight_metadata",
+        "def init_weight_transfer_group"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/new_weight_syncing/rlhf_nccl.py": {
+      "fichier": "examples/offline_inference/new_weight_syncing/rlhf_nccl.py",
+      "langage": "python",
+      "lignes": 216,
+      "taille_bytes": 7547,
+      "entrees": [
+        "os",
+        "ray",
+        "ray.util.placement_group",
+        "ray.util.scheduling_strategies",
+        "transformers",
+        "vllm",
+        "vllm.config",
+        "vllm.distributed.weight_transfer.nccl_engine",
+        "vllm.utils.network_utils"
+      ],
+      "sorties": [
+        "class MyLLM",
+        "class TrainModel",
+        "def __init__",
+        "def broadcast_weights",
+        "def get_master_address_and_port",
+        "def get_weight_metadata",
+        "def init_weight_transfer_group"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/kv_load_failure_recovery/load_recovery_example_connector.py": {
+      "fichier": "examples/offline_inference/kv_load_failure_recovery/load_recovery_example_connector.py",
+      "langage": "python",
+      "lignes": 145,
+      "taille_bytes": 5332,
+      "entrees": [
+        "dataclasses",
+        "logging",
+        "typing",
+        "vllm.config",
+        "vllm.distributed.kv_transfer.kv_connector.v1.base",
+        "vllm.distributed.kv_transfer.kv_connector.v1.example_connector",
+        "vllm.forward_context",
+        "vllm.v1.core.kv_cache_manager",
+        "vllm.v1.core.sched.output",
+        "vllm.v1.request"
+      ],
+      "sorties": [
+        "class LoadRecoveryExampleConnector",
+        "class LoadRecoveryExampleConnectorMetadata",
+        "def __init__",
+        "def bind_connector_metadata",
+        "def build_connector_meta",
+        "def clear_connector_metadata",
+        "def from_base",
+        "def get_block_ids_with_load_errors",
+        "def get_finished",
+        "def get_num_new_matched_tokens",
+        "def start_load_kv",
+        "def update_state_after_alloc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/kv_load_failure_recovery/run.sh": {
+      "fichier": "examples/offline_inference/kv_load_failure_recovery/run.sh",
+      "langage": "shell",
+      "lignes": 33,
+      "taille_bytes": 1273,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/kv_load_failure_recovery/prefill_example.py": {
+      "fichier": "examples/offline_inference/kv_load_failure_recovery/prefill_example.py",
+      "langage": "python",
+      "lignes": 58,
+      "taille_bytes": 1659,
+      "entrees": [
+        "vllm",
+        "vllm.config"
+      ],
+      "sorties": [
+        "def main",
+        "def read_prompts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/kv_load_failure_recovery/decode_example.py": {
+      "fichier": "examples/offline_inference/kv_load_failure_recovery/decode_example.py",
+      "langage": "python",
+      "lignes": 86,
+      "taille_bytes": 2617,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.config"
+      ],
+      "sorties": [
+        "def main",
+        "def read_prompts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/logits_processor/custom_req.py": {
+      "fichier": "examples/offline_inference/logits_processor/custom_req.py",
+      "langage": "python",
+      "lignes": 152,
+      "taille_bytes": 5459,
+      "entrees": [
+        "torch",
+        "typing",
+        "vllm",
+        "vllm.logger",
+        "vllm.v1.sample.logits_processor"
+      ],
+      "sorties": [
+        "class DummyPerReqLogitsProcessor",
+        "class WrappedPerReqLogitsProcessor",
+        "def __call__",
+        "def __init__",
+        "def is_argmax_invariant",
+        "def main",
+        "def new_req_logits_processor",
+        "def validate_params"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/logits_processor/custom_req_init.py": {
+      "fichier": "examples/offline_inference/logits_processor/custom_req_init.py",
+      "langage": "python",
+      "lignes": 164,
+      "taille_bytes": 6002,
+      "entrees": [
+        "torch",
+        "vllm",
+        "vllm.config",
+        "vllm.logger",
+        "vllm.v1.sample.logits_processor"
+      ],
+      "sorties": [
+        "class DummyPerReqLogitsProcessor",
+        "class WrappedPerReqLogitsProcessor",
+        "def __call__",
+        "def __init__",
+        "def is_argmax_invariant",
+        "def main",
+        "def new_req_logits_processor",
+        "def validate_params"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/offline_inference/logits_processor/custom.py": {
+      "fichier": "examples/offline_inference/logits_processor/custom.py",
+      "langage": "python",
+      "lignes": 142,
+      "taille_bytes": 4943,
+      "entrees": [
+        "torch",
+        "typing",
+        "vllm",
+        "vllm.config",
+        "vllm.v1.sample.logits_processor",
+        "vllm.v1.sample.logits_processor.builtin"
+      ],
+      "sorties": [
+        "class DummyLogitsProcessor",
+        "class object",
+        "def __init__",
+        "def apply",
+        "def extract_extra_arg",
+        "def is_argmax_invariant",
+        "def main",
+        "def update_state",
+        "def validate_params"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/vision_embedding_offline.py": {
+      "fichier": "examples/pooling/embed/vision_embedding_offline.py",
+      "langage": "python",
+      "lignes": 343,
+      "taille_bytes": 10861,
+      "entrees": [
+        "PIL.Image",
+        "argparse",
+        "dataclasses",
+        "huggingface_hub.constants",
+        "pathlib",
+        "peft",
+        "qwen_vl_utils",
+        "transformers",
+        "vllm",
+        "vllm.entrypoints.chat_utils",
+        "vllm.multimodal.utils",
+        "vllm.utils.print_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def post_process_image",
+        "def run_clip",
+        "def run_e5_v",
+        "def run_qwen3_vl",
+        "def run_siglip",
+        "def run_vlm2vec_phi3v",
+        "def run_vlm2vec_qwen2vl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/openai_embedding_matryoshka_fy_client.py": {
+      "fichier": "examples/pooling/embed/openai_embedding_matryoshka_fy_client.py",
+      "langage": "python",
+      "lignes": 37,
+      "taille_bytes": 992,
+      "entrees": [
+        "openai"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/openai_embedding_client.py": {
+      "fichier": "examples/pooling/embed/openai_embedding_client.py",
+      "langage": "python",
+      "lignes": 40,
+      "taille_bytes": 1046,
+      "entrees": [
+        "openai"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/embed_matryoshka_fy_offline.py": {
+      "fichier": "examples/pooling/embed/embed_matryoshka_fy_offline.py",
+      "langage": "python",
+      "lignes": 54,
+      "taille_bytes": 1640,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/embed_jina_embeddings_v3_offline.py": {
+      "fichier": "examples/pooling/embed/embed_jina_embeddings_v3_offline.py",
+      "langage": "python",
+      "lignes": 60,
+      "taille_bytes": 1785,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/embedding_requests_bytes_online.py": {
+      "fichier": "examples/pooling/embed/embedding_requests_bytes_online.py",
+      "langage": "python",
+      "lignes": 102,
+      "taille_bytes": 3505,
+      "entrees": [
+        "argparse",
+        "json",
+        "requests",
+        "torch",
+        "vllm.entrypoints.pooling.utils",
+        "vllm.utils.serial_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def post_http_request"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/vision_embedding_online.py": {
+      "fichier": "examples/pooling/embed/vision_embedding_online.py",
+      "langage": "python",
+      "lignes": 415,
+      "taille_bytes": 11144,
+      "entrees": [
+        "PIL",
+        "argparse",
+        "base64",
+        "io",
+        "openai",
+        "openai._types",
+        "openai.types.chat",
+        "openai.types.create_embedding_response",
+        "typing",
+        "vllm.utils.print_utils"
+      ],
+      "sorties": [
+        "def create_chat_embeddings",
+        "def main",
+        "def parse_args",
+        "def run_clip",
+        "def run_dse_qwen2_vl",
+        "def run_qwen3_vl",
+        "def run_siglip",
+        "def run_vlm2vec"
+      ],
+      "appelle": [
+        "examples/offline_inference/basic/chat.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/embedding_requests_base64_online.py": {
+      "fichier": "examples/pooling/embed/embedding_requests_base64_online.py",
+      "langage": "python",
+      "lignes": 66,
+      "taille_bytes": 2120,
+      "entrees": [
+        "argparse",
+        "base64",
+        "requests",
+        "torch",
+        "vllm.utils.serial_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def post_http_request"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/openai_embedding_long_text/client.py": {
+      "fichier": "examples/pooling/embed/openai_embedding_long_text/client.py",
+      "langage": "python",
+      "lignes": 366,
+      "taille_bytes": 13138,
+      "entrees": [
+        "numpy",
+        "openai",
+        "time"
+      ],
+      "sorties": [
+        "def generate_long_text",
+        "def main",
+        "def test_batch_embedding",
+        "def test_embedding_consistency",
+        "def test_embedding_with_different_lengths",
+        "def test_multiple_long_texts_batch"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/embed/openai_embedding_long_text/service.sh": {
+      "fichier": "examples/pooling/embed/openai_embedding_long_text/service.sh",
+      "langage": "shell",
+      "lignes": 136,
+      "taille_bytes": 4919,
+      "entrees": [],
+      "sorties": [
+        "export CUDA_VISIBLE_DEVICES",
+        "export VLLM_ENABLE_CHUNKED_PROCESSING",
+        "export VLLM_WORKER_MULTIPROC_METHOD"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/pooling/pooling_online.py": {
+      "fichier": "examples/pooling/pooling/pooling_online.py",
+      "langage": "python",
+      "lignes": 66,
+      "taille_bytes": 1753,
+      "entrees": [
+        "argparse",
+        "pprint",
+        "requests"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def post_http_request"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/classify/vision_classification_online.py": {
+      "fichier": "examples/pooling/classify/vision_classification_online.py",
+      "langage": "python",
+      "lignes": 110,
+      "taille_bytes": 3316,
+      "entrees": [
+        "argparse",
+        "pprint",
+        "requests",
+        "vllm.multimodal.utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/classify/classification_online.py": {
+      "fichier": "examples/pooling/classify/classification_online.py",
+      "langage": "python",
+      "lignes": 67,
+      "taille_bytes": 1846,
+      "entrees": [
+        "argparse",
+        "pprint",
+        "requests"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/token_embed/multi_vector_retrieval_online.py": {
+      "fichier": "examples/pooling/token_embed/multi_vector_retrieval_online.py",
+      "langage": "python",
+      "lignes": 54,
+      "taille_bytes": 1421,
+      "entrees": [
+        "argparse",
+        "requests",
+        "torch"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def post_http_request"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/token_embed/colqwen3_token_embed_online.py": {
+      "fichier": "examples/pooling/token_embed/colqwen3_token_embed_online.py",
+      "langage": "python",
+      "lignes": 198,
+      "taille_bytes": 7368,
+      "entrees": [
+        "PIL",
+        "argparse",
+        "base64",
+        "io",
+        "numpy",
+        "requests"
+      ],
+      "sorties": [
+        "def compute_maxsim",
+        "def encode_image_base64",
+        "def encode_images",
+        "def encode_queries",
+        "def load_image",
+        "def main",
+        "def parse_args",
+        "def post_http_request"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/token_embed/multi_vector_retrieval_offline.py": {
+      "fichier": "examples/pooling/token_embed/multi_vector_retrieval_offline.py",
+      "langage": "python",
+      "lignes": 56,
+      "taille_bytes": 1564,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/token_embed/jina_embeddings_v4_offline.py": {
+      "fichier": "examples/pooling/token_embed/jina_embeddings_v4_offline.py",
+      "langage": "python",
+      "lignes": 71,
+      "taille_bytes": 2260,
+      "entrees": [
+        "torch",
+        "vllm",
+        "vllm.inputs.data",
+        "vllm.multimodal.utils"
+      ],
+      "sorties": [
+        "def get_embeddings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/token_classify/ner_offline.py": {
+      "fichier": "examples/pooling/token_classify/ner_offline.py",
+      "langage": "python",
+      "lignes": 54,
+      "taille_bytes": 1574,
+      "entrees": [
+        "argparse",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/token_classify/ner_online.py": {
+      "fichier": "examples/pooling/token_classify/ner_online.py",
+      "langage": "python",
+      "lignes": 71,
+      "taille_bytes": 2102,
+      "entrees": [
+        "argparse",
+        "requests",
+        "torch",
+        "transformers"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def post_http_request"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/rerank_api_online.py": {
+      "fichier": "examples/pooling/score/rerank_api_online.py",
+      "langage": "python",
+      "lignes": 42,
+      "taille_bytes": 1057,
+      "entrees": [
+        "json",
+        "requests"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/vision_rerank_api_online.py": {
+      "fichier": "examples/pooling/score/vision_rerank_api_online.py",
+      "langage": "python",
+      "lignes": 132,
+      "taille_bytes": 4034,
+      "entrees": [
+        "argparse",
+        "pprint",
+        "requests",
+        "vllm.multimodal.utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/cohere_rerank_client.py": {
+      "fichier": "examples/pooling/score/cohere_rerank_client.py",
+      "langage": "python",
+      "lignes": 47,
+      "taille_bytes": 1370,
+      "entrees": [
+        "cohere"
+      ],
+      "sorties": [
+        "def cohere_rerank",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/colqwen3_rerank_online.py": {
+      "fichier": "examples/pooling/score/colqwen3_rerank_online.py",
+      "langage": "python",
+      "lignes": 258,
+      "taille_bytes": 8147,
+      "entrees": [
+        "PIL",
+        "base64",
+        "io",
+        "requests"
+      ],
+      "sorties": [
+        "def encode_image_base64",
+        "def load_image",
+        "def main",
+        "def make_image_content",
+        "def rerank_text",
+        "def rerank_text_vs_images",
+        "def score_text",
+        "def score_text_top_n",
+        "def score_text_vs_images"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/score_api_online.py": {
+      "fichier": "examples/pooling/score/score_api_online.py",
+      "langage": "python",
+      "lignes": 69,
+      "taille_bytes": 2345,
+      "entrees": [
+        "argparse",
+        "pprint",
+        "requests"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def post_http_request"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/qwen3_reranker_online.py": {
+      "fichier": "examples/pooling/score/qwen3_reranker_online.py",
+      "langage": "python",
+      "lignes": 80,
+      "taille_bytes": 3105,
+      "entrees": [
+        "json",
+        "requests"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/vision_reranker_offline.py": {
+      "fichier": "examples/pooling/score/vision_reranker_offline.py",
+      "langage": "python",
+      "lignes": 185,
+      "taille_bytes": 6148,
+      "entrees": [
+        "argparse",
+        "collections.abc",
+        "dataclasses",
+        "pathlib",
+        "typing",
+        "vllm",
+        "vllm.multimodal.utils",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "class RerankModelData",
+        "def main",
+        "def parse_args",
+        "def run_jinavl_reranker",
+        "def run_qwen3_vl_reranker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/colmodernvbert_rerank_online.py": {
+      "fichier": "examples/pooling/score/colmodernvbert_rerank_online.py",
+      "langage": "python",
+      "lignes": 166,
+      "taille_bytes": 5154,
+      "entrees": [
+        "requests"
+      ],
+      "sorties": [
+        "def main",
+        "def rerank_multimodal",
+        "def rerank_text",
+        "def score_text",
+        "def score_text_top_n"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/using_template_offline.py": {
+      "fichier": "examples/pooling/score/using_template_offline.py",
+      "langage": "python",
+      "lignes": 159,
+      "taille_bytes": 6708,
+      "entrees": [
+        "argparse",
+        "pathlib",
+        "typing",
+        "vllm",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def get_chat_template",
+        "def get_hf_overrides",
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/convert_model_to_seq_cls.py": {
+      "fichier": "examples/pooling/score/convert_model_to_seq_cls.py",
+      "langage": "python",
+      "lignes": 208,
+      "taille_bytes": 7454,
+      "entrees": [
+        "argparse",
+        "json",
+        "the",
+        "torch",
+        "transformers"
+      ],
+      "sorties": [
+        "def converting",
+        "def from_2_way_softmax",
+        "def no_post_processing",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/vision_score_api_online.py": {
+      "fichier": "examples/pooling/score/vision_score_api_online.py",
+      "langage": "python",
+      "lignes": 150,
+      "taille_bytes": 4371,
+      "entrees": [
+        "argparse",
+        "pprint",
+        "requests",
+        "vllm.multimodal.utils"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/using_template_online.py": {
+      "fichier": "examples/pooling/score/using_template_online.py",
+      "langage": "python",
+      "lignes": 75,
+      "taille_bytes": 3963,
+      "entrees": [
+        "json",
+        "requests"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/qwen3_reranker_offline.py": {
+      "fichier": "examples/pooling/score/qwen3_reranker_offline.py",
+      "langage": "python",
+      "lignes": 104,
+      "taille_bytes": 4010,
+      "entrees": [
+        "pathlib",
+        "vllm"
+      ],
+      "sorties": [
+        "def get_llm",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/score/colbert_rerank_online.py": {
+      "fichier": "examples/pooling/score/colbert_rerank_online.py",
+      "langage": "python",
+      "lignes": 92,
+      "taille_bytes": 2672,
+      "entrees": [
+        "json",
+        "requests"
+      ],
+      "sorties": [
+        "def main",
+        "def rerank_example",
+        "def score_example"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/plugin/prithvi_geospatial_mae_online.py": {
+      "fichier": "examples/pooling/plugin/prithvi_geospatial_mae_online.py",
+      "langage": "python",
+      "lignes": 54,
+      "taille_bytes": 1665,
+      "entrees": [
+        "base64",
+        "os",
+        "requests"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/plugin/prithvi_geospatial_mae_offline.py": {
+      "fichier": "examples/pooling/plugin/prithvi_geospatial_mae_offline.py",
+      "langage": "python",
+      "lignes": 421,
+      "taille_bytes": 12039,
+      "entrees": [
+        "albumentations",
+        "argparse",
+        "datetime",
+        "einops",
+        "numpy",
+        "os",
+        "rasterio",
+        "regex",
+        "terratorch.datamodules",
+        "torch",
+        "vllm"
+      ],
+      "sorties": [
+        "class PrithviMAE",
+        "def __init__",
+        "def _convert_np_uint8",
+        "def generate_datamodule",
+        "def load_example",
+        "def main",
+        "def process_channel_group",
+        "def read_geotiff",
+        "def run",
+        "def run_model",
+        "def save_geotiff"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pooling/plugin/prithvi_geospatial_mae_io_processor.py": {
+      "fichier": "examples/pooling/plugin/prithvi_geospatial_mae_io_processor.py",
+      "langage": "python",
+      "lignes": 60,
+      "taille_bytes": 1759,
+      "entrees": [
+        "base64",
+        "os",
+        "torch",
+        "vllm"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/others/tensorize_vllm_model.py": {
+      "fichier": "examples/others/tensorize_vllm_model.py",
+      "langage": "python",
+      "lignes": 392,
+      "taille_bytes": 13287,
+      "entrees": [
+        "`pip",
+        "json",
+        "logging",
+        "os",
+        "uuid",
+        "vllm",
+        "vllm.engine.arg_utils",
+        "vllm.lora.request",
+        "vllm.model_executor.model_loader.tensorizer",
+        "vllm.utils.argparse_utils"
+      ],
+      "sorties": [
+        "def deserialize",
+        "def get_parser",
+        "def main",
+        "def merge_extra_config_with_tensorizer_config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/others/lmcache/disagg_prefill_lmcache_v0.py": {
+      "fichier": "examples/others/lmcache/disagg_prefill_lmcache_v0.py",
+      "langage": "python",
+      "lignes": 144,
+      "taille_bytes": 4439,
+      "entrees": [
+        "lmcache.experimental.cache_engine",
+        "lmcache.integration.vllm.utils",
+        "multiprocessing",
+        "os",
+        "subprocess",
+        "time",
+        "vllm",
+        "vllm.config"
+      ],
+      "sorties": [
+        "def main",
+        "def run_decode",
+        "def run_lmcache_server",
+        "def run_prefill"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/others/lmcache/kv_cache_sharing_lmcache_v1.py": {
+      "fichier": "examples/others/lmcache/kv_cache_sharing_lmcache_v1.py",
+      "langage": "python",
+      "lignes": 133,
+      "taille_bytes": 4289,
+      "entrees": [
+        "lmcache.integration.vllm.utils",
+        "lmcache.v1.cache_engine",
+        "multiprocessing",
+        "os",
+        "subprocess",
+        "time",
+        "vllm",
+        "vllm.config"
+      ],
+      "sorties": [
+        "def main",
+        "def run_lmcache_server",
+        "def run_retrieve",
+        "def run_store"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/others/lmcache/cpu_offload_lmcache.py": {
+      "fichier": "examples/others/lmcache/cpu_offload_lmcache.py",
+      "langage": "python",
+      "lignes": 134,
+      "taille_bytes": 4095,
+      "entrees": [
+        "argparse",
+        "contextlib",
+        "dataclasses",
+        "lmcache.integration.vllm.utils",
+        "lmcache.v1.cache_engine",
+        "os",
+        "time",
+        "vllm",
+        "vllm.config",
+        "vllm.engine.arg_utils"
+      ],
+      "sorties": [
+        "def build_llm_with_lmcache",
+        "def main",
+        "def parse_args",
+        "def print_output",
+        "def setup_environment_variables"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/others/lmcache/disagg_prefill_lmcache_v1/disagg_example_nixl.sh": {
+      "fichier": "examples/others/lmcache/disagg_prefill_lmcache_v1/disagg_example_nixl.sh",
+      "langage": "shell",
+      "lignes": 140,
+      "taille_bytes": 3682,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/others/lmcache/disagg_prefill_lmcache_v1/disagg_vllm_launcher.sh": {
+      "fichier": "examples/others/lmcache/disagg_prefill_lmcache_v1/disagg_vllm_launcher.sh",
+      "langage": "shell",
+      "lignes": 65,
+      "taille_bytes": 2285,
+      "entrees": [],
+      "sorties": [
+        "export PYTHONHASHSEED"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/others/lmcache/disagg_prefill_lmcache_v1/disagg_proxy_server.py": {
+      "fichier": "examples/others/lmcache/disagg_prefill_lmcache_v1/disagg_proxy_server.py",
+      "langage": "python",
+      "lignes": 225,
+      "taille_bytes": 6435,
+      "entrees": [
+        "argparse",
+        "contextlib",
+        "fastapi",
+        "fastapi.responses",
+        "httpx",
+        "numpy",
+        "os",
+        "sys",
+        "time",
+        "traceback",
+        "uvicorn"
+      ],
+      "sorties": [
+        "class StatsCalculator",
+        "def __init__",
+        "def _log_stats",
+        "def add",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/others/lmcache/disagg_prefill_lmcache_v1/configs/lmcache-decoder-config.yaml": {
+      "fichier": "examples/others/lmcache/disagg_prefill_lmcache_v1/configs/lmcache-decoder-config.yaml",
+      "langage": "yaml",
+      "lignes": 13,
+      "taille_bytes": 269,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/others/lmcache/disagg_prefill_lmcache_v1/configs/lmcache-prefiller-config.yaml": {
+      "fichier": "examples/others/lmcache/disagg_prefill_lmcache_v1/configs/lmcache-prefiller-config.yaml",
+      "langage": "yaml",
+      "lignes": 13,
+      "taille_bytes": 267,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/online_serving/openai_completion_client.py": {
+      "fichier": "examples/online_serving/openai_completion_client.py",
+      "langage": "python",
+      "lignes": 53,
+      "taille_bytes": 1230,
+      "entrees": [
+        "argparse",
+        "openai"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/online_serving/ray_serve_deepseek.py": {
+      "fichier": "examples/online_serving/ray_serve_deepseek.py",
+      "langage": "python",
+      "lignes": 55,
+      "taille_bytes": 1817,
+      "entrees": [
+        "ray",
+        "ray.serve.llm"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/online_serving/retrieval_augmented_generation_with_langchain.py": {
+      "fichier": "examples/online_serving/retrieval_augmented_generation_with_langchain.py",
+      "langage": "python",
+      "lignes": 257,
+      "taille_bytes": 7451,
+      "entrees": [
+        "argparse",
+        "langchain_community.document_loaders",
+        "langchain_core.documents",
+        "langchain_core.output_parsers",
+        "langchain_core.prompts",
+        "langchain_core.runnables",
+        "langchain_milvus",
+        "langchain_openai",
+        "langchain_text_splitters",
+        "typing"
+      ],
+      "sorties": [
+        "def create_qa_chain",
+        "def format_docs",
+        "def get_parser",
+        "def get_qa_prompt",
+        "def init_config",
+        "def init_llm",
+        "def init_vectorstore",
+        "def load_and_split_documents",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/online_serving/openai_responses_client.py": {
+      "fichier": "examples/online_serving/openai_responses_client.py",
+      "langage": "python",
+      "lignes": 44,
+      "taille_bytes": 1413,
+      "entrees": [
+        "openai"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/online_serving/api_client.py": {
+      "fichier": "examples/online_serving/api_client.py",
+      "langage": "python",
+      "lignes": 93,
+      "taille_bytes": 2801,
+      "entrees": [
+        "argparse",
+        "collections.abc",
+        "json",
+        "requests"
+      ],
+      "sorties": [
+        "def clear_line",
+        "def get_response",
+        "def get_streaming_response",
+        "def main",
+        "def parse_args",
+        "def post_http_request"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/online_serving/openai_transcription_client.py": {
+      "fichier": "examples/online_serving/openai_transcription_client.py",
+      "langage": "python",
+      "lignes": 178,
+      "taille_bytes": 5409,
+      "entrees": [
+        "argparse",
+        "asyncio",
+        "json",
+        "openai",
+        "os",
+        "requests",
+        "vllm.assets.audio"
+      ],
+      "sorties": [
+        "def main",
+        "def stream_api_response",
+        "def sync_openai"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/online_serving/multi-node-serving.sh": {
+      "fichier": "examples/online_serving/multi-node-serving.sh",
+      "langage": "shell",
+      "lignes": 118,
+      "taille_bytes": 3763,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/online_serving/openai_chat_completion_with_reasoning_streaming.py": {
+      "fichier": "examples/online_serving/openai_chat_completion_with_reasoning_streaming.py",
+      "langage": "python",
+      "lignes": 73,
+      "taille_bytes": 2446,
+      "entrees": [
+        "openai"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "examples/offline_inference/rlhf.py",
+      "vers": "examples/offline_inference/rlhf_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/offline_inference/rlhf_online_quant.py",
+      "vers": "examples/offline_inference/rlhf_utils.py",
+      "type": "interne"
+    },
+    {
+      "de": "examples/pooling/embed/vision_embedding_online.py",
+      "vers": "examples/offline_inference/basic/chat.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

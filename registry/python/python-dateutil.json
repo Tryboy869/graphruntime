@@ -1,0 +1,741 @@
+{
+  "meta": {
+    "projet": "extracted",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 18
+    }
+  },
+  "stats": {
+    "fichiers_total": 18,
+    "edges_total": 12,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 1,
+    "points_entree": 1,
+    "fichier_plus_appele": "dateutil/tz/_common.py"
+  },
+  "noeuds": {
+    "dateutil/utils.py": {
+      "fichier": "dateutil/utils.py",
+      "langage": "python",
+      "lignes": 71,
+      "taille_bytes": 1965,
+      "entrees": [
+        "__future__",
+        "datetime"
+      ],
+      "sorties": [
+        "def default_tzinfo",
+        "def today",
+        "def within_delta"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dateutil/easter.py": {
+      "fichier": "dateutil/easter.py",
+      "langage": "python",
+      "lignes": 89,
+      "taille_bytes": 2678,
+      "entrees": [
+        "datetime"
+      ],
+      "sorties": [
+        "def easter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dateutil/_common.py": {
+      "fichier": "dateutil/_common.py",
+      "langage": "python",
+      "lignes": 43,
+      "taille_bytes": 932,
+      "entrees": [],
+      "sorties": [
+        "class weekday",
+        "def __call__",
+        "def __eq__",
+        "def __hash__",
+        "def __init__",
+        "def __ne__",
+        "def __repr__"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dateutil/_version.py": {
+      "fichier": "dateutil/_version.py",
+      "langage": "python",
+      "lignes": 4,
+      "taille_bytes": 166,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "dateutil/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "dateutil/rrule.py": {
+      "fichier": "dateutil/rrule.py",
+      "langage": "python",
+      "lignes": 1737,
+      "taille_bytes": 66557,
+      "entrees": [
+        "._common",
+        "an",
+        "calendar",
+        "calendar.firstweekday",
+        "datetime",
+        "dateutil",
+        "fractions",
+        "functools",
+        "heapq",
+        "itertools",
+        "math",
+        "re",
+        "six",
+        "six.moves",
+        "sys",
+        "warnings"
+      ],
+      "sorties": [
+        "class _genitem",
+        "class _iterinfo",
+        "class _rrulestr",
+        "class rrule",
+        "class rrulebase",
+        "class rruleset",
+        "class weekday",
+        "def __call__",
+        "def __construct_byset",
+        "def __contains__",
+        "def __eq__",
+        "def __getitem__",
+        "def __gt__",
+        "def __init__",
+        "def __iter__",
+        "def __lt__",
+        "def __mod_distance",
+        "def __ne__",
+        "def __next__",
+        "def __str__",
+        "def _handle_BYWEEKDAY",
+        "def _handle_FREQ",
+        "def _handle_UNTIL",
+        "def _handle_WKST",
+        "def _handle_int",
+        "def _handle_int_list",
+        "def _invalidate_cache",
+        "def _invalidates_cache",
+        "def _iter",
+        "def _iter_cached",
+        "def _parse_date_value",
+        "def _parse_rfc",
+        "def _parse_rfc_rrule",
+        "def after",
+        "def before",
+        "def between",
+        "def count",
+        "def ddayset",
+        "def exdate",
+        "def exrule",
+        "def htimeset",
+        "def inner_func",
+        "def mdayset",
+        "def mtimeset",
+        "def rdate",
+        "def rebuild",
+        "def replace",
+        "def rrule",
+        "def stimeset",
+        "def wdayset",
+        "def xafter",
+        "def ydayset"
+      ],
+      "appelle": [
+        "dateutil/tz/_common.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dateutil/tzwin.py": {
+      "fichier": "dateutil/tzwin.py",
+      "langage": "python",
+      "lignes": 2,
+      "taille_bytes": 59,
+      "entrees": [
+        ".tz.win"
+      ],
+      "sorties": [],
+      "appelle": [
+        "dateutil/tz/win.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dateutil/relativedelta.py": {
+      "fichier": "dateutil/relativedelta.py",
+      "langage": "python",
+      "lignes": 599,
+      "taille_bytes": 24903,
+      "entrees": [
+        "._common",
+        "calendar",
+        "datetime",
+        "math",
+        "operator",
+        "six",
+        "warnings"
+      ],
+      "sorties": [
+        "class relativedelta",
+        "def __abs__",
+        "def __add__",
+        "def __bool__",
+        "def __div__",
+        "def __eq__",
+        "def __hash__",
+        "def __init__",
+        "def __mul__",
+        "def __ne__",
+        "def __neg__",
+        "def __radd__",
+        "def __repr__",
+        "def __rsub__",
+        "def __sub__",
+        "def _fix",
+        "def _set_months",
+        "def _sign",
+        "def normalized",
+        "def weeks"
+      ],
+      "appelle": [
+        "dateutil/tz/_common.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dateutil/__init__.py": {
+      "fichier": "dateutil/__init__.py",
+      "langage": "python",
+      "lignes": 24,
+      "taille_bytes": 620,
+      "entrees": [
+        "._version",
+        "importlib",
+        "sys"
+      ],
+      "sorties": [
+        "def __dir__",
+        "def __getattr__"
+      ],
+      "appelle": [
+        "dateutil/_version.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dateutil/tz/_factories.py": {
+      "fichier": "dateutil/tz/_factories.py",
+      "langage": "python",
+      "lignes": 80,
+      "taille_bytes": 2569,
+      "entrees": [
+        "collections",
+        "datetime",
+        "six.moves",
+        "weakref"
+      ],
+      "sorties": [
+        "class _TzFactory",
+        "class _TzOffsetFactory",
+        "class _TzSingleton",
+        "class _TzStrFactory",
+        "def __call__",
+        "def __init__",
+        "def instance"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dateutil/tz/tz.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "dateutil/tz/_common.py": {
+      "fichier": "dateutil/tz/_common.py",
+      "langage": "python",
+      "lignes": 419,
+      "taille_bytes": 12977,
+      "entrees": [
+        "datetime",
+        "functools",
+        "six"
+      ],
+      "sorties": [
+        "class _DatetimeWithFold",
+        "class _tzinfo",
+        "class tzrangebase",
+        "def __init__",
+        "def __ne__",
+        "def __repr__",
+        "def _dst_base_offset",
+        "def _fold",
+        "def _fold_status",
+        "def _fromutc",
+        "def _isdst",
+        "def _naive_isdst",
+        "def _validate_fromutc_inputs",
+        "def adjust_encoding",
+        "def dst",
+        "def enfold",
+        "def fold",
+        "def fromutc",
+        "def is_ambiguous",
+        "def replace",
+        "def tzname",
+        "def tzname_in_python2",
+        "def utcoffset"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dateutil/relativedelta.py",
+        "dateutil/rrule.py",
+        "dateutil/tz/tz.py",
+        "dateutil/tz/win.py"
+      ],
+      "type_noeud": "hub"
+    },
+    "dateutil/tz/win.py": {
+      "fichier": "dateutil/tz/win.py",
+      "langage": "python",
+      "lignes": 370,
+      "taille_bytes": 12935,
+      "entrees": [
+        "._common",
+        "ctypes",
+        "datetime",
+        "six",
+        "six.moves",
+        "struct"
+      ],
+      "sorties": [
+        "class tzres",
+        "class tzwin",
+        "class tzwinbase",
+        "class tzwinlocal",
+        "def __eq__",
+        "def __init__",
+        "def __reduce__",
+        "def __repr__",
+        "def __str__",
+        "def _dst_base_offset",
+        "def _get_hasdst",
+        "def _settzkeyname",
+        "def display",
+        "def list",
+        "def load_name",
+        "def name_from_string",
+        "def picknthweekday",
+        "def transitions",
+        "def valuestodict",
+        "function returns"
+      ],
+      "appelle": [
+        "dateutil/tz/_common.py"
+      ],
+      "est_appele_par": [
+        "dateutil/tz/tz.py",
+        "dateutil/tzwin.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "dateutil/tz/tz.py": {
+      "fichier": "dateutil/tz/tz.py",
+      "langage": "python",
+      "lignes": 1849,
+      "taille_bytes": 62855,
+      "entrees": [
+        "._common",
+        "._factories",
+        ".win",
+        "bisect",
+        "collections",
+        "contextlib",
+        "datetime",
+        "dateutil",
+        "dateutil.parser",
+        "dateutil.tz",
+        "dateutil.zoneinfo",
+        "os",
+        "relative",
+        "six",
+        "six.moves",
+        "struct",
+        "sys",
+        "time",
+        "warnings",
+        "weakref"
+      ],
+      "sorties": [
+        "class GettzFunc",
+        "class _nullcontext",
+        "class _ttinfo",
+        "class _tzfile",
+        "class _tzicalvtz",
+        "class _tzicalvtzcomp",
+        "class tzfile",
+        "class tzical",
+        "class tzlocal",
+        "class tzoffset",
+        "class tzrange",
+        "class tzstr",
+        "class tzutc",
+        "def __call__",
+        "def __enter__",
+        "def __eq__",
+        "def __exit__",
+        "def __get_gettz",
+        "def __getstate__",
+        "def __init__",
+        "def __ne__",
+        "def __reduce__",
+        "def __reduce_ex__",
+        "def __repr__",
+        "def __setstate__",
+        "def _datetime_to_timestamp",
+        "def _delta",
+        "def _dst_base_offset",
+        "def _find_comp",
+        "def _find_compdt",
+        "def _find_last_transition",
+        "def _find_ttinfo",
+        "def _get_supported_offset",
+        "def _get_ttinfo",
+        "def _isdst",
+        "def _naive_is_dst",
+        "def _parse_offset",
+        "def _parse_rfc",
+        "def _read_tzfile",
+        "def _resolve_ambiguous_time",
+        "def _set_tzdata",
+        "def cache_clear",
+        "def datetime_ambiguous",
+        "def datetime_exists",
+        "def dst",
+        "def fromutc",
+        "def get",
+        "def is_ambiguous",
+        "def keys",
+        "def nocache",
+        "def resolve_imaginary",
+        "def set_cache_size",
+        "def transitions",
+        "def tzname",
+        "def utcoffset",
+        "function returns"
+      ],
+      "appelle": [
+        "dateutil/tz/_common.py",
+        "dateutil/tz/_factories.py",
+        "dateutil/tz/win.py"
+      ],
+      "est_appele_par": [
+        "dateutil/tz/__init__.py",
+        "dateutil/zoneinfo/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "dateutil/tz/__init__.py": {
+      "fichier": "dateutil/tz/__init__.py",
+      "langage": "python",
+      "lignes": 12,
+      "taille_bytes": 444,
+      "entrees": [
+        ".tz"
+      ],
+      "sorties": [
+        "class DeprecatedTzFormatWarning"
+      ],
+      "appelle": [
+        "dateutil/tz/tz.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dateutil/parser/_parser.py": {
+      "fichier": "dateutil/parser/_parser.py",
+      "langage": "python",
+      "lignes": 1613,
+      "taille_bytes": 58796,
+      "entrees": [
+        "..",
+        "__future__",
+        "calendar",
+        "datetime",
+        "decimal",
+        "io",
+        "re",
+        "six",
+        "string",
+        "those",
+        "time",
+        "warnings"
+      ],
+      "sorties": [
+        "class ParserError",
+        "class UnknownTimezoneWarning",
+        "class _attr",
+        "class _result",
+        "class _resultbase",
+        "class _timelex",
+        "class _tzparser",
+        "class _ymd",
+        "class parser",
+        "class parserinfo",
+        "def __init__",
+        "def __iter__",
+        "def __len__",
+        "def __next__",
+        "def __repr__",
+        "def __str__",
+        "def _adjust_ampm",
+        "def _ampm_valid",
+        "def _assign_hms",
+        "def _assign_tzname",
+        "def _build_naive",
+        "def _build_tzaware",
+        "def _build_tzinfo",
+        "def _convert",
+        "def _could_be_tzname",
+        "def _find_hms_idx",
+        "def _parse",
+        "def _parse_hms",
+        "def _parse_min_sec",
+        "def _parse_numeric_token",
+        "def _parsems",
+        "def _parsetz",
+        "def _recombine_skipped",
+        "def _repr",
+        "def _resolve_from_stridxs",
+        "def _to_decimal",
+        "def ampm",
+        "def append",
+        "def convertyear",
+        "def could_be_day",
+        "def get_token",
+        "def has_day",
+        "def has_month",
+        "def has_year",
+        "def hms",
+        "def isnum",
+        "def isspace",
+        "def isword",
+        "def jump",
+        "def month",
+        "def next",
+        "def parse",
+        "def pertain",
+        "def resolve_ymd",
+        "def split",
+        "def tzoffset",
+        "def utczone",
+        "def validate",
+        "def weekday",
+        "function maintains"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dateutil/parser/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "dateutil/parser/isoparser.py": {
+      "fichier": "dateutil/parser/isoparser.py",
+      "langage": "python",
+      "lignes": 416,
+      "taille_bytes": 13233,
+      "entrees": [
+        "calendar",
+        "datetime",
+        "dateutil",
+        "functools",
+        "re",
+        "six"
+      ],
+      "sorties": [
+        "class isoparser",
+        "def __init__",
+        "def _calculate_weekdate",
+        "def _parse_isodate",
+        "def _parse_isodate_common",
+        "def _parse_isodate_uncommon",
+        "def _parse_isotime",
+        "def _parse_tzstr",
+        "def _takes_ascii",
+        "def func",
+        "def isoparse",
+        "def parse_isodate",
+        "def parse_isotime",
+        "def parse_tzstr"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "dateutil/parser/__init__.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "dateutil/parser/__init__.py": {
+      "fichier": "dateutil/parser/__init__.py",
+      "langage": "python",
+      "lignes": 61,
+      "taille_bytes": 1766,
+      "entrees": [
+        "._parser",
+        ".isoparser",
+        "functools",
+        "warnings"
+      ],
+      "sorties": [
+        "class private_class",
+        "def __deprecate_private_class",
+        "def __deprecated_private_func",
+        "def __init__",
+        "def deprecated_func"
+      ],
+      "appelle": [
+        "dateutil/parser/_parser.py",
+        "dateutil/parser/isoparser.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "dateutil/zoneinfo/rebuild.py": {
+      "fichier": "dateutil/zoneinfo/rebuild.py",
+      "langage": "python",
+      "lignes": 75,
+      "taille_bytes": 2392,
+      "entrees": [
+        "dateutil.zoneinfo",
+        "json",
+        "logging",
+        "os",
+        "shutil",
+        "subprocess",
+        "tarfile",
+        "tempfile"
+      ],
+      "sorties": [
+        "def _print_on_nosuchfile",
+        "def _run_zic",
+        "def rebuild",
+        "function is"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dateutil/zoneinfo/__init__.py": {
+      "fichier": "dateutil/zoneinfo/__init__.py",
+      "langage": "python",
+      "lignes": 167,
+      "taille_bytes": 5889,
+      "entrees": [
+        "dateutil.tz",
+        "io",
+        "json",
+        "pkgutil",
+        "tarfile",
+        "warnings"
+      ],
+      "sorties": [
+        "class ZoneInfoFile",
+        "class tzfile",
+        "def __init__",
+        "def __reduce__",
+        "def get",
+        "def get_zonefile_instance",
+        "def gettz",
+        "def gettz_db_metadata",
+        "def getzoneinfofile_stream"
+      ],
+      "appelle": [
+        "dateutil/tz/tz.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "dateutil/rrule.py",
+      "vers": "dateutil/tz/_common.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/tzwin.py",
+      "vers": "dateutil/tz/win.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/relativedelta.py",
+      "vers": "dateutil/tz/_common.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/__init__.py",
+      "vers": "dateutil/_version.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/tz/win.py",
+      "vers": "dateutil/tz/_common.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/tz/tz.py",
+      "vers": "dateutil/tz/_common.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/tz/tz.py",
+      "vers": "dateutil/tz/_factories.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/tz/tz.py",
+      "vers": "dateutil/tz/win.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/tz/__init__.py",
+      "vers": "dateutil/tz/tz.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/parser/__init__.py",
+      "vers": "dateutil/parser/_parser.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/parser/__init__.py",
+      "vers": "dateutil/parser/isoparser.py",
+      "type": "interne"
+    },
+    {
+      "de": "dateutil/zoneinfo/__init__.py",
+      "vers": "dateutil/tz/tz.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 'dateutil/tz/_common.py' (in=4, 22% du projet)",
+    "point_entree → 'dateutil/parser/__init__.py'"
+  ]
+}

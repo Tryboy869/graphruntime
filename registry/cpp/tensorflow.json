@@ -1,0 +1,2425 @@
+{
+  "meta": {
+    "projet": "tensorflow",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 1,
+      "python": 44,
+      "shell": 26,
+      "cpp": 40,
+      "protobuf": 1,
+      "c": 8
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 19,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 3,
+    "noeuds_hubs": 0,
+    "points_entree": 5,
+    "fichier_plus_appele": "tensorflow/security/fuzzing/python_fuzzing.py"
+  },
+  "noeuds": {
+    ".zenodo.json": {
+      "fichier": ".zenodo.json",
+      "langage": "json",
+      "lignes": 13,
+      "taille_bytes": 741,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "configure.py": {
+      "fichier": "configure.py",
+      "langage": "python",
+      "lignes": 1370,
+      "taille_bytes": 49469,
+      "entrees": [
+        "argparse",
+        "errno",
+        "json",
+        "os",
+        "platform",
+        "re",
+        "shutil",
+        "subprocess",
+        "sys"
+      ],
+      "sorties": [
+        "class UserInputError",
+        "def choose_compiler",
+        "def choose_compiler_Win",
+        "def cleanup_makefile",
+        "def config_info_line",
+        "def configure_ios",
+        "def convert_version_to_int",
+        "def create_android_ndk_rule",
+        "def create_android_sdk_rule",
+        "def cygpath",
+        "def disable_clang_offsetof_extension",
+        "def get_from_env_or_user_or_default",
+        "def get_gcc_compiler",
+        "def get_input",
+        "def get_ndk_api_level",
+        "def get_python_major_version",
+        "def get_python_path",
+        "def get_var",
+        "def is_cygwin",
+        "def is_linux",
+        "def is_macos",
+        "def is_ppc64le",
+        "def is_s390x",
+        "def is_windows",
+        "def main",
+        "def prompt_loop_or_load_from_env",
+        "def reset_tf_configure_bazelrc",
+        "def retrieve_bazel_version",
+        "def retrieve_clang_version",
+        "def run_shell",
+        "def set_action_env_var",
+        "def set_cc_opt_flags",
+        "def set_clang_compiler_path",
+        "def set_clang_compiler_path_win",
+        "def set_clang_cuda_compiler_path",
+        "def set_cuda_local_path",
+        "def set_gcc_host_compiler_path",
+        "def set_hermetic_cuda_compute_capabilities",
+        "def set_hermetic_cuda_version",
+        "def set_hermetic_cudnn_version",
+        "def set_other_cuda_vars",
+        "def set_system_libs_flag",
+        "def set_tf_cuda_clang",
+        "def set_tf_download_clang",
+        "def set_windows_build_flags",
+        "def setup_python",
+        "def symlink_force",
+        "def system_specific_test_config",
+        "def valid_api_level",
+        "def valid_build_tools",
+        "def valid_ndk_path",
+        "def valid_sdk_path",
+        "def write_action_env_to_bazelrc",
+        "def write_repo_env_to_bazelrc",
+        "def write_to_bazelrc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/code_check_full.sh": {
+      "fichier": "ci/official/code_check_full.sh",
+      "langage": "shell",
+      "lignes": 18,
+      "taille_bytes": 840,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/bisect.sh": {
+      "fichier": "ci/official/bisect.sh",
+      "langage": "shell",
+      "lignes": 39,
+      "taille_bytes": 1800,
+      "entrees": [],
+      "sorties": [
+        "export TFCI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/libtensorflow.sh": {
+      "fichier": "ci/official/libtensorflow.sh",
+      "langage": "shell",
+      "lignes": 50,
+      "taille_bytes": 2086,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/any.sh": {
+      "fichier": "ci/official/any.sh",
+      "langage": "shell",
+      "lignes": 55,
+      "taille_bytes": 2184,
+      "entrees": [],
+      "sorties": [
+        "export TFCI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/upload.sh": {
+      "fichier": "ci/official/upload.sh",
+      "langage": "shell",
+      "lignes": 60,
+      "taille_bytes": 2868,
+      "entrees": [],
+      "sorties": [
+        "export TF_VER_FULL"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/wheel.sh": {
+      "fichier": "ci/official/wheel.sh",
+      "langage": "shell",
+      "lignes": 74,
+      "taille_bytes": 3885,
+      "entrees": [],
+      "sorties": [
+        "export TFCI_BUILD_PIP_PACKAGE_ADDITIONAL_WHEEL_NAMES",
+        "export TFCI_BUILD_PIP_PACKAGE_WHEEL_NAME_ARG"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/pycpp.sh": {
+      "fichier": "ci/official/pycpp.sh",
+      "langage": "shell",
+      "lignes": 39,
+      "taille_bytes": 2050,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/debug_tfci.sh": {
+      "fichier": "ci/official/debug_tfci.sh",
+      "langage": "shell",
+      "lignes": 24,
+      "taille_bytes": 1022,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/installer_wheel.sh": {
+      "fichier": "ci/official/installer_wheel.sh",
+      "langage": "shell",
+      "lignes": 80,
+      "taille_bytes": 3595,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/code_check_changed_files.sh": {
+      "fichier": "ci/official/code_check_changed_files.sh",
+      "langage": "shell",
+      "lignes": 18,
+      "taille_bytes": 850,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/repack_libtensorflow.sh": {
+      "fichier": "ci/official/utilities/repack_libtensorflow.sh",
+      "langage": "shell",
+      "lignes": 98,
+      "taille_bytes": 3773,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/cleanup_docker.sh": {
+      "fichier": "ci/official/utilities/cleanup_docker.sh",
+      "langage": "shell",
+      "lignes": 28,
+      "taille_bytes": 998,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/extract_resultstore_links.py": {
+      "fichier": "ci/official/utilities/extract_resultstore_links.py",
+      "langage": "python",
+      "lignes": 294,
+      "taille_bytes": 11184,
+      "entrees": [
+        "argparse",
+        "datetime",
+        "os",
+        "re",
+        "typing",
+        "xml.etree.ElementTree"
+      ],
+      "sorties": [
+        "class InvokeStatus",
+        "def create_xml_file",
+        "def indent_xml",
+        "def main",
+        "def parse_args",
+        "def parse_log",
+        "def print_invocation_results"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/setup_docker.sh": {
+      "fichier": "ci/official/utilities/setup_docker.sh",
+      "langage": "shell",
+      "lignes": 74,
+      "taille_bytes": 3002,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/setup_macos.sh": {
+      "fichier": "ci/official/utilities/setup_macos.sh",
+      "langage": "shell",
+      "lignes": 138,
+      "taille_bytes": 7006,
+      "entrees": [],
+      "sorties": [
+        "export CLOUDSDK_PYTHON",
+        "export TEST_TMPDIR"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/rename_and_verify_wheels.sh": {
+      "fichier": "ci/official/utilities/rename_and_verify_wheels.sh",
+      "langage": "shell",
+      "lignes": 99,
+      "taille_bytes": 4540,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/cleanup_summary.sh": {
+      "fichier": "ci/official/utilities/cleanup_summary.sh",
+      "langage": "shell",
+      "lignes": 49,
+      "taille_bytes": 1861,
+      "entrees": [],
+      "sorties": [
+        "function resultstore_extract",
+        "function resultstore_extract_fallback"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/generate_index_html.sh": {
+      "fichier": "ci/official/utilities/generate_index_html.sh",
+      "langage": "shell",
+      "lignes": 52,
+      "taille_bytes": 2318,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/windows.sh": {
+      "fichier": "ci/official/utilities/windows.sh",
+      "langage": "shell",
+      "lignes": 33,
+      "taille_bytes": 1251,
+      "entrees": [],
+      "sorties": [
+        "function replace_drive_letter_with_prefix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/setup.sh": {
+      "fichier": "ci/official/utilities/setup.sh",
+      "langage": "shell",
+      "lignes": 155,
+      "taille_bytes": 6301,
+      "entrees": [
+        "./ci/official/envs/ci_default",
+        "./ci/official/utilities/setup_docker.sh",
+        "./ci/official/utilities/setup_macos.sh",
+        "./ci/official/utilities/windows.sh"
+      ],
+      "sorties": [
+        "export TFCI_GIT_DIR",
+        "export TFCI_INSTALLER_WHL_PROJECT_NAME",
+        "export TFCI_OUTPUT_DIR",
+        "export collaborator_build",
+        "export project_name"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/utilities/convert_msys_paths_to_win_paths.py": {
+      "fichier": "ci/official/utilities/convert_msys_paths_to_win_paths.py",
+      "langage": "python",
+      "lignes": 76,
+      "taille_bytes": 2583,
+      "entrees": [
+        "argparse",
+        "os"
+      ],
+      "sorties": [
+        "def main",
+        "def should_convert"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/containers/ml_build/setup.sources.cudnn.sh": {
+      "fichier": "ci/official/containers/ml_build/setup.sources.cudnn.sh",
+      "langage": "shell",
+      "lignes": 31,
+      "taille_bytes": 1194,
+      "entrees": [],
+      "sorties": [
+        "export DEBIAN_FRONTEND"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/containers/ml_build/setup.python.sh": {
+      "fichier": "ci/official/containers/ml_build/setup.python.sh",
+      "langage": "shell",
+      "lignes": 72,
+      "taille_bytes": 2547,
+      "entrees": [
+        "~/.bashrc"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/containers/ml_build/setup.sources.sh": {
+      "fichier": "ci/official/containers/ml_build/setup.sources.sh",
+      "langage": "shell",
+      "lignes": 42,
+      "taille_bytes": 1624,
+      "entrees": [],
+      "sorties": [
+        "export DEBIAN_FRONTEND"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/containers/ml_build/setup.packages.sh": {
+      "fichier": "ci/official/containers/ml_build/setup.packages.sh",
+      "langage": "shell",
+      "lignes": 28,
+      "taille_bytes": 1135,
+      "entrees": [],
+      "sorties": [
+        "export DEBIAN_FRONTEND"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/containers/ml_build/builder.devtoolset/fixlinks.sh": {
+      "fichier": "ci/official/containers/ml_build/builder.devtoolset/fixlinks.sh",
+      "langage": "shell",
+      "lignes": 28,
+      "taille_bytes": 984,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/containers/ml_build/builder.devtoolset/rpm-patch.sh": {
+      "fichier": "ci/official/containers/ml_build/builder.devtoolset/rpm-patch.sh",
+      "langage": "shell",
+      "lignes": 28,
+      "taille_bytes": 1110,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ci/official/containers/ml_build/builder.devtoolset/build_devtoolset.sh": {
+      "fichier": "ci/official/containers/ml_build/builder.devtoolset/build_devtoolset.sh",
+      "langage": "shell",
+      "lignes": 198,
+      "taille_bytes": 8164,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/compat_template.__init__.py": {
+      "fichier": "tensorflow/compat_template.__init__.py",
+      "langage": "python",
+      "lignes": 64,
+      "taille_bytes": 2577,
+      "entrees": [
+        "os",
+        "sys",
+        "tensorflow.python.compat.v2_compat",
+        "tensorflow.python.tools",
+        "tensorflow.python.util.lazy_loader"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/virtual_root_template_v2.__init__.py": {
+      "fichier": "tensorflow/virtual_root_template_v2.__init__.py",
+      "langage": "python",
+      "lignes": 117,
+      "taille_bytes": 3424,
+      "entrees": [
+        "importlib",
+        "sys",
+        "tensorflow_core",
+        "types"
+      ],
+      "sorties": [
+        "class _LazyLoader",
+        "def __dir__",
+        "def __getattr__",
+        "def __init__",
+        "def __reduce__",
+        "def _forward_module",
+        "def _load"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/api_template.__init__.py": {
+      "fichier": "tensorflow/api_template.__init__.py",
+      "langage": "python",
+      "lignes": 185,
+      "taille_bytes": 6959,
+      "entrees": [
+        "importlib",
+        "inspect",
+        "os",
+        "site",
+        "sys",
+        "sysconfig",
+        "tensorflow.python",
+        "tensorflow.python.compat",
+        "tensorflow.python.framework",
+        "tensorflow.python.lib.io",
+        "tensorflow.python.tools",
+        "tensorflow.python.util.lazy_loader",
+        "tensorflow_io_gcs_filesystem"
+      ],
+      "sorties": [
+        "def _running_from_pip_package"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/api_template_v1.__init__.py": {
+      "fichier": "tensorflow/api_template_v1.__init__.py",
+      "langage": "python",
+      "lignes": 205,
+      "taille_bytes": 7655,
+      "entrees": [
+        "importlib",
+        "inspect",
+        "os",
+        "site",
+        "sys",
+        "sysconfig",
+        "tensorflow.python",
+        "tensorflow.python.framework",
+        "tensorflow.python.lib.io",
+        "tensorflow.python.platform",
+        "tensorflow.python.tools",
+        "tensorflow.python.util.lazy_loader",
+        "tensorflow_io_gcs_filesystem"
+      ],
+      "sorties": [
+        "def _running_from_pip_package"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/virtual_root_template_v1.__init__.py": {
+      "fichier": "tensorflow/virtual_root_template_v1.__init__.py",
+      "langage": "python",
+      "lignes": 124,
+      "taille_bytes": 3695,
+      "entrees": [
+        "importlib",
+        "sys",
+        "tensorflow.python.util",
+        "tensorflow_core",
+        "types"
+      ],
+      "sorties": [
+        "class _LazyLoader",
+        "def __dir__",
+        "def __getattr__",
+        "def __init__",
+        "def __reduce__",
+        "def _forward_module",
+        "def _load"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/compat_template_v1.__init__.py": {
+      "fichier": "tensorflow/compat_template_v1.__init__.py",
+      "langage": "python",
+      "lignes": 73,
+      "taille_bytes": 2826,
+      "entrees": [
+        "os",
+        "sys",
+        "tensorflow.python.platform",
+        "tensorflow.python.tools",
+        "tensorflow.python.util.lazy_loader"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/__init__.py": {
+      "fichier": "tensorflow/__init__.py",
+      "langage": "python",
+      "lignes": 33,
+      "taille_bytes": 1383,
+      "entrees": [
+        "tensorflow.python",
+        "tensorflow.python.platform"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/sparseCountSparseOutput_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/sparseCountSparseOutput_fuzz.py",
+      "langage": "python",
+      "lignes": 67,
+      "taille_bytes": 2390,
+      "entrees": [
+        "atheris",
+        "python_fuzzing",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [
+        "tensorflow/security/fuzzing/python_fuzzing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/dataFormatVecPermute_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/dataFormatVecPermute_fuzz.py",
+      "langage": "python",
+      "lignes": 52,
+      "taille_bytes": 1872,
+      "entrees": [
+        "atheris",
+        "python_fuzzing",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [
+        "tensorflow/security/fuzzing/python_fuzzing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/tf2migration_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/tf2migration_fuzz.py",
+      "langage": "python",
+      "lignes": 84,
+      "taille_bytes": 3213,
+      "entrees": [
+        "atheris",
+        "python_fuzzing",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [
+        "tensorflow/security/fuzzing/python_fuzzing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/constant_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/constant_fuzz.py",
+      "langage": "python",
+      "lignes": 32,
+      "taille_bytes": 1013,
+      "entrees": [
+        "atheris",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/add_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/add_fuzz.py",
+      "langage": "python",
+      "lignes": 46,
+      "taille_bytes": 1648,
+      "entrees": [
+        "atheris",
+        "python_fuzzing",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [
+        "tensorflow/security/fuzzing/python_fuzzing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/acos_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/acos_fuzz.py",
+      "langage": "python",
+      "lignes": 41,
+      "taille_bytes": 1465,
+      "entrees": [
+        "atheris",
+        "python_fuzzing",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [
+        "tensorflow/security/fuzzing/python_fuzzing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/abs_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/abs_fuzz.py",
+      "langage": "python",
+      "lignes": 41,
+      "taille_bytes": 1428,
+      "entrees": [
+        "atheris",
+        "python_fuzzing",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [
+        "tensorflow/security/fuzzing/python_fuzzing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/acosh_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/acosh_fuzz.py",
+      "langage": "python",
+      "lignes": 41,
+      "taille_bytes": 1512,
+      "entrees": [
+        "atheris",
+        "python_fuzzing",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [
+        "tensorflow/security/fuzzing/python_fuzzing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/immutableConst_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/immutableConst_fuzz.py",
+      "langage": "python",
+      "lignes": 48,
+      "taille_bytes": 1603,
+      "entrees": [
+        "atheris",
+        "python_fuzzing",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [
+        "tensorflow/security/fuzzing/python_fuzzing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/python_fuzzing.py": {
+      "fichier": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "langage": "python",
+      "lignes": 216,
+      "taille_bytes": 7142,
+      "entrees": [
+        "atheris",
+        "tensorflow"
+      ],
+      "sorties": [
+        "class FuzzingHelper",
+        "def __init__",
+        "def get_bool",
+        "def get_float",
+        "def get_float_list",
+        "def get_int",
+        "def get_int_list",
+        "def get_int_or_float_list",
+        "def get_random_numeric_tensor",
+        "def get_string",
+        "def get_tf_dtype"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tensorflow/security/fuzzing/abs_fuzz.py",
+        "tensorflow/security/fuzzing/acos_fuzz.py",
+        "tensorflow/security/fuzzing/acosh_fuzz.py",
+        "tensorflow/security/fuzzing/add_fuzz.py",
+        "tensorflow/security/fuzzing/dataFormatVecPermute_fuzz.py",
+        "tensorflow/security/fuzzing/immutableConst_fuzz.py",
+        "tensorflow/security/fuzzing/raggedCountSparseOutput_fuzz.py",
+        "tensorflow/security/fuzzing/sparseCountSparseOutput_fuzz.py",
+        "tensorflow/security/fuzzing/tf2migration_fuzz.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "tensorflow/security/fuzzing/raggedCountSparseOutput_fuzz.py": {
+      "fichier": "tensorflow/security/fuzzing/raggedCountSparseOutput_fuzz.py",
+      "langage": "python",
+      "lignes": 44,
+      "taille_bytes": 1499,
+      "entrees": [
+        "atheris",
+        "python_fuzzing",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def TestOneInput",
+        "def main"
+      ],
+      "appelle": [
+        "tensorflow/security/fuzzing/python_fuzzing.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/py/annotation_types.py": {
+      "fichier": "tensorflow/security/fuzzing/py/annotation_types.py",
+      "langage": "python",
+      "lignes": 66,
+      "taille_bytes": 3069,
+      "entrees": [
+        "tensorflow.python.framework"
+      ],
+      "sorties": [
+        "class DTypeAnnotation",
+        "def _create_dtype_wrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/parseURI_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/parseURI_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 46,
+      "taille_bytes": 1447,
+      "entrees": [
+        "<cassert>",
+        "<string_view>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/status_group_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/status_group_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 48,
+      "taille_bytes": 1701,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/AreAttrValuesEqual_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/AreAttrValuesEqual_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 68,
+      "taille_bytes": 2639,
+      "entrees": [
+        "<cassert>",
+        "<string>"
+      ],
+      "sorties": [
+        "const std",
+        "const tensorflow"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/joinpath_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/joinpath_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 36,
+      "taille_bytes": 1200,
+      "entrees": [
+        "<cassert>",
+        "<string>",
+        "<string_view>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/checkpoint_reader_fuzz_input.proto": {
+      "fichier": "tensorflow/security/fuzzing/cc/checkpoint_reader_fuzz_input.proto",
+      "langage": "protobuf",
+      "lignes": 26,
+      "taille_bytes": 924,
+      "entrees": [],
+      "sorties": [
+        "message CheckpointReaderFuzzInput"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/ParseAttrValue_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/ParseAttrValue_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 50,
+      "taille_bytes": 2039,
+      "entrees": [
+        "<string>",
+        "<string_view>",
+        "tensorflow::StringPiece"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/checkpoint_reader_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/checkpoint_reader_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 140,
+      "taille_bytes": 5803,
+      "entrees": [
+        "::tensorflow::checkpoint::EncodeTensorNameSlice",
+        "::tensorflow::checkpoint::kSavedTensorSlicesKey",
+        "<map>",
+        "<memory>",
+        "<string>"
+      ],
+      "sorties": [
+        "const std",
+        "const tensorflow"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/string_replace_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/string_replace_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 41,
+      "taille_bytes": 1552,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/bfloat16_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/bfloat16_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 49,
+      "taille_bytes": 1791,
+      "entrees": [
+        "<cassert>",
+        "<cmath>",
+        "<cstdint>",
+        "<vector>"
+      ],
+      "sorties": [
+        "const int32_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/fuzz_session.h": {
+      "fichier": "tensorflow/security/fuzzing/cc/fuzz_session.h",
+      "langage": "c",
+      "lignes": 174,
+      "taille_bytes": 7201,
+      "entrees": [
+        "<cstdint>",
+        "<cstdlib>",
+        "<memory>",
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class Fuzz",
+        "class FuzzSession",
+        "const Tensor",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/stringprintf_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/stringprintf_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 51,
+      "taille_bytes": 1678,
+      "entrees": [
+        "<cassert>",
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/tstring_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/tstring_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 39,
+      "taille_bytes": 1240,
+      "entrees": [
+        "<cassert>",
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/status_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/status_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 48,
+      "taille_bytes": 2036,
+      "entrees": [
+        "<cassert>",
+        "<cstddef>",
+        "<string>",
+        "<string_view>"
+      ],
+      "sorties": [
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/fuzz_domains.h": {
+      "fichier": "tensorflow/security/fuzzing/cc/fuzz_domains.h",
+      "langage": "c",
+      "lignes": 35,
+      "taille_bytes": 1350,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/base64_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/base64_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 42,
+      "taille_bytes": 1390,
+      "entrees": [
+        "<cassert>",
+        "<string>",
+        "<string_view>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/text_literal_reader_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/text_literal_reader_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 42,
+      "taille_bytes": 1368,
+      "entrees": [
+        "<fuzzer/FuzzedDataProvider.h>",
+        "<string>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/arg_def_case_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/arg_def_case_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 40,
+      "taille_bytes": 1311,
+      "entrees": [
+        "<cassert>",
+        "<string>",
+        "<string_view>"
+      ],
+      "sorties": [
+        "const bool"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/end_to_end_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/end_to_end_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 76,
+      "taille_bytes": 3259,
+      "entrees": [
+        "<memory>",
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "const RunOptions",
+        "const SavedModel",
+        "const SessionOptions",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/cleanpath_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/cleanpath_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 42,
+      "taille_bytes": 1474,
+      "entrees": [
+        "<cassert>",
+        "<regex>",
+        "<string>",
+        "<string_view>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/consume_leading_digits_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/consume_leading_digits_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 46,
+      "taille_bytes": 1518,
+      "entrees": [
+        "<cassert>",
+        "<cstdint>",
+        "<string>"
+      ],
+      "sorties": [
+        "const bool",
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/core/framework/tensor_shape_domains.h": {
+      "fichier": "tensorflow/security/fuzzing/cc/core/framework/tensor_shape_domains.h",
+      "langage": "c",
+      "lignes": 38,
+      "taille_bytes": 1532,
+      "entrees": [
+        "<limits>",
+        "<tuple>",
+        "<utility>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/core/framework/datatype_domains.h": {
+      "fichier": "tensorflow/security/fuzzing/cc/core/framework/datatype_domains.h",
+      "langage": "c",
+      "lignes": 29,
+      "taille_bytes": 1165,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/core/framework/tensor_shape_domains.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/core/framework/tensor_shape_domains.cc",
+      "langage": "cpp",
+      "lignes": 59,
+      "taille_bytes": 2066,
+      "entrees": [
+        "::fuzztest::Domain",
+        "::fuzztest::Filter",
+        "::fuzztest::InRange",
+        "::fuzztest::Map",
+        "::fuzztest::VectorOf",
+        "<cstddef>",
+        "<cstdint>",
+        "<limits>",
+        "<vector>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/core/framework/tensor_domains.h": {
+      "fichier": "tensorflow/security/fuzzing/cc/core/framework/tensor_domains.h",
+      "langage": "c",
+      "lignes": 55,
+      "taille_bytes": 2245,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "const TensorShape"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/core/framework/datatype_domains.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/core/framework/datatype_domains.cc",
+      "langage": "cpp",
+      "lignes": 34,
+      "taille_bytes": 1347,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/core/framework/tensor_domains.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/core/framework/tensor_domains.cc",
+      "langage": "cpp",
+      "lignes": 146,
+      "taille_bytes": 5454,
+      "entrees": [
+        "::fuzztest::Arbitrary",
+        "::fuzztest::Domain",
+        "::fuzztest::Filter",
+        "::fuzztest::FlatMap",
+        "::fuzztest::InRange",
+        "::fuzztest::Map",
+        "::fuzztest::VectorOf",
+        "<limits>",
+        "<string>"
+      ],
+      "sorties": [
+        "const TensorShape"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/core/function/runtime_client_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/core/function/runtime_client_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 111,
+      "taille_bytes": 4121,
+      "entrees": [
+        "<memory>",
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class FuzzRuntimeClient"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/ops/bincount_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/ops/bincount_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 70,
+      "taille_bytes": 2979,
+      "entrees": [
+        "<cstdint>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class FuzzBincount",
+        "const Tensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/ops/add_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/ops/add_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 37,
+      "taille_bytes": 1579,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/ops/matmul_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/ops/matmul_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 33,
+      "taille_bytes": 1283,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/ops/string_to_number_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/ops/string_to_number_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 49,
+      "taille_bytes": 1859,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "class FuzzStringToNumber"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/ops/string_ops_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/ops/string_ops_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 119,
+      "taille_bytes": 4515,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "class FuzzStringOpsStringSplit",
+        "class FuzzStringOpsStringSplitV2",
+        "class FuzzStringOpsStringUpper",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/ops/general_ops_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/ops/general_ops_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 100,
+      "taille_bytes": 4450,
+      "entrees": [],
+      "sorties": [
+        "class FuzzDecodeAndCropJpegArbitraryInput",
+        "class FuzzDecodeAndCropJpegValidInput",
+        "class FuzzDecodeBmpArbitraryInput",
+        "class FuzzDecodeBmpValidInput",
+        "class FuzzDecodeGifArbitraryInput",
+        "class FuzzDecodeGifValidInput",
+        "class FuzzDecodeImageArbitraryInput",
+        "class FuzzDecodeImageValidInput",
+        "class FuzzDecodeJpegArbitraryInput",
+        "class FuzzDecodeJpegValidInput",
+        "class FuzzDecodePngArbitraryInput",
+        "class FuzzDecodePngValidInput",
+        "class FuzzDecodeWavArbitraryInput",
+        "class FuzzDecodeWavValidInput"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/ops/identity_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/ops/identity_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 53,
+      "taille_bytes": 2087,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class FuzzIdentity"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/security/fuzzing/cc/ops/concat_fuzz.cc": {
+      "fichier": "tensorflow/security/fuzzing/cc/ops/concat_fuzz.cc",
+      "langage": "cpp",
+      "lignes": 72,
+      "taille_bytes": 3076,
+      "entrees": [
+        "<cstdint>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class FuzzConcat",
+        "const int32_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/js/ops/ts_op_gen.cc": {
+      "fichier": "tensorflow/js/ops/ts_op_gen.cc",
+      "langage": "cpp",
+      "lignes": 293,
+      "taille_bytes": 8990,
+      "entrees": [
+        "<memory>",
+        "<unordered_map>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class GenTypeScriptOp",
+        "const ApiDef",
+        "const OpDef",
+        "const auto",
+        "const std",
+        "struct ArgDefs",
+        "struct OpAttrs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/js/ops/ts_op_gen.h": {
+      "fichier": "tensorflow/js/ops/ts_op_gen.h",
+      "langage": "c",
+      "lignes": 31,
+      "taille_bytes": 1156,
+      "entrees": [],
+      "sorties": [
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/js/ops/ts_op_gen_test.cc": {
+      "fichier": "tensorflow/js/ops/ts_op_gen_test.cc",
+      "langage": "cpp",
+      "lignes": 240,
+      "taille_bytes": 5898,
+      "entrees": [],
+      "sorties": [
+        "const auto",
+        "const opAttrs",
+        "const std",
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/__init__.py": {
+      "fichier": "tensorflow/examples/__init__.py",
+      "langage": "python",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/input_data.py": {
+      "fichier": "tensorflow/examples/speech_commands/input_data.py",
+      "langage": "python",
+      "lignes": 679,
+      "taille_bytes": 30317,
+      "entrees": [
+        "hashlib",
+        "math",
+        "numpy",
+        "os.path",
+        "random",
+        "re",
+        "sys",
+        "tarfile",
+        "tensorflow",
+        "tensorflow.lite.experimental.microfrontend.python.ops",
+        "tensorflow.python.ops",
+        "tensorflow.python.platform",
+        "tensorflow.python.util",
+        "urllib"
+      ],
+      "sorties": [
+        "class AudioProcessor",
+        "def __init__",
+        "def _progress",
+        "def get_data",
+        "def get_features_for_wav",
+        "def get_features_range",
+        "def get_unprocessed_data",
+        "def load_wav_file",
+        "def maybe_download_and_extract_dataset",
+        "def prepare_background_data",
+        "def prepare_data_index",
+        "def prepare_processing_graph",
+        "def prepare_words_list",
+        "def save_wav_file",
+        "def set_size",
+        "def which_set"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tensorflow/examples/speech_commands/freeze.py",
+        "tensorflow/examples/speech_commands/generate_streaming_test_wav.py",
+        "tensorflow/examples/speech_commands/train.py",
+        "tensorflow/examples/speech_commands/wav_to_features.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "tensorflow/examples/speech_commands/test_streaming_accuracy.cc": {
+      "fichier": "tensorflow/examples/speech_commands/test_streaming_accuracy.cc",
+      "langage": "cpp",
+      "lignes": 323,
+      "taille_bytes": 13069,
+      "entrees": [
+        "::int64_t",
+        "<algorithm>",
+        "<cstdint>",
+        "<fstream>",
+        "<memory>",
+        "<string>",
+        "<utility>",
+        "<vector>",
+        "tensorflow::Flag",
+        "tensorflow::Status",
+        "tensorflow::Tensor",
+        "tensorflow::int32",
+        "tensorflow::string",
+        "tensorflow::uint16",
+        "tensorflow::uint32"
+      ],
+      "sorties": [
+        "const bool",
+        "const float",
+        "const int64_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/wav_to_features_test.py": {
+      "fichier": "tensorflow/examples/speech_commands/wav_to_features_test.py",
+      "langage": "python",
+      "lignes": 82,
+      "taille_bytes": 3102,
+      "entrees": [
+        "os",
+        "tensorflow",
+        "tensorflow.examples.speech_commands",
+        "tensorflow.python.framework",
+        "tensorflow.python.platform"
+      ],
+      "sorties": [
+        "class WavToFeaturesTest",
+        "def _getWavData",
+        "def _saveTestWavFile",
+        "def _saveWavFolders",
+        "def testWavToFeatures",
+        "def testWavToFeaturesMicro"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/wav_to_features.py": {
+      "fichier": "tensorflow/examples/speech_commands/wav_to_features.py",
+      "langage": "python",
+      "lignes": 182,
+      "taille_bytes": 6820,
+      "entrees": [
+        "argparse",
+        "input_data",
+        "models",
+        "os.path",
+        "sys",
+        "tensorflow",
+        "tensorflow.python.platform"
+      ],
+      "sorties": [
+        "def main",
+        "def wav_to_features"
+      ],
+      "appelle": [
+        "tensorflow/examples/speech_commands/input_data.py",
+        "tensorflow/examples/speech_commands/models.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "tensorflow/examples/speech_commands/label_wav_test.py": {
+      "fichier": "tensorflow/examples/speech_commands/label_wav_test.py",
+      "langage": "python",
+      "lignes": 59,
+      "taille_bytes": 2123,
+      "entrees": [
+        "os",
+        "tensorflow",
+        "tensorflow.examples.speech_commands",
+        "tensorflow.python.platform"
+      ],
+      "sorties": [
+        "class LabelWavTest",
+        "def _getWavData",
+        "def _saveTestWavFile",
+        "def testLabelWav"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/models_test.py": {
+      "fichier": "tensorflow/examples/speech_commands/models_test.py",
+      "langage": "python",
+      "lignes": 116,
+      "taille_bytes": 4756,
+      "entrees": [
+        "tensorflow",
+        "tensorflow.examples.speech_commands",
+        "tensorflow.python.framework",
+        "tensorflow.python.platform"
+      ],
+      "sorties": [
+        "class ModelsTest",
+        "def _modelSettings",
+        "def testCreateModelBadArchitecture",
+        "def testCreateModelConvInference",
+        "def testCreateModelConvTraining",
+        "def testCreateModelFullyConnectedTraining",
+        "def testCreateModelLowLatencyConvTraining",
+        "def testCreateModelTinyConvTraining",
+        "def testPrepareModelSettings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/accuracy_utils_test.cc": {
+      "fichier": "tensorflow/examples/speech_commands/accuracy_utils_test.cc",
+      "langage": "cpp",
+      "lignes": 63,
+      "taille_bytes": 2284,
+      "entrees": [
+        "<cstdint>",
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/label_wav.cc": {
+      "fichier": "tensorflow/examples/speech_commands/label_wav.cc",
+      "langage": "cpp",
+      "lignes": 194,
+      "taille_bytes": 6985,
+      "entrees": [
+        "<algorithm>",
+        "<cstdint>",
+        "<fstream>",
+        "<memory>",
+        "<string>",
+        "<utility>",
+        "<vector>",
+        "tensorflow::Flag",
+        "tensorflow::Status",
+        "tensorflow::Tensor",
+        "tensorflow::int32",
+        "tensorflow::string",
+        "tensorflow::tstring"
+      ],
+      "sorties": [
+        "const Tensor",
+        "const bool",
+        "const float",
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/recognize_commands.cc": {
+      "fichier": "tensorflow/examples/speech_commands/recognize_commands.cc",
+      "langage": "cpp",
+      "lignes": 138,
+      "taille_bytes": 5475,
+      "entrees": [
+        "<algorithm>",
+        "<cstdint>",
+        "<limits>",
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "const Tensor",
+        "const float",
+        "const int",
+        "const int64_t",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/train.py": {
+      "fichier": "tensorflow/examples/speech_commands/train.py",
+      "langage": "python",
+      "lignes": 507,
+      "taille_bytes": 19580,
+      "entrees": [
+        "argparse",
+        "input_data",
+        "models",
+        "numpy",
+        "os.path",
+        "sys",
+        "tensorflow",
+        "tensorflow.python.platform"
+      ],
+      "sorties": [
+        "def main",
+        "def verbosity_arg"
+      ],
+      "appelle": [
+        "tensorflow/examples/speech_commands/input_data.py",
+        "tensorflow/examples/speech_commands/models.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "tensorflow/examples/speech_commands/recognize_commands.py": {
+      "fichier": "tensorflow/examples/speech_commands/recognize_commands.py",
+      "langage": "python",
+      "lignes": 195,
+      "taille_bytes": 7879,
+      "entrees": [
+        "collections",
+        "numpy"
+      ],
+      "sorties": [
+        "class RecognizeCommands",
+        "class RecognizeResult",
+        "def __init__",
+        "def founded_command",
+        "def is_new_command",
+        "def process_latest_result",
+        "def score"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/accuracy_utils.py": {
+      "fichier": "tensorflow/examples/speech_commands/accuracy_utils.py",
+      "langage": "python",
+      "lignes": 148,
+      "taille_bytes": 6049,
+      "entrees": [
+        "numpy",
+        "tensorflow"
+      ],
+      "sorties": [
+        "class StreamingAccuracyStats",
+        "def __init__",
+        "def calculate_accuracy_stats",
+        "def delta",
+        "def print_accuracy_stats",
+        "def read_ground_truth_file"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/recognize_commands.h": {
+      "fichier": "tensorflow/examples/speech_commands/recognize_commands.h",
+      "langage": "c",
+      "lignes": 83,
+      "taille_bytes": 3651,
+      "entrees": [
+        "<cstdint>",
+        "<deque>",
+        "<unordered_set>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class RecognizeCommands",
+        "const int64_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tensorflow/examples/speech_commands/test_streaming_accuracy.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/freeze_test.py": {
+      "fichier": "tensorflow/examples/speech_commands/freeze_test.py",
+      "langage": "python",
+      "lignes": 129,
+      "taille_bytes": 4996,
+      "entrees": [
+        "os.path",
+        "tensorflow.examples.speech_commands",
+        "tensorflow.python.framework",
+        "tensorflow.python.ops.variables",
+        "tensorflow.python.platform"
+      ],
+      "sorties": [
+        "class FreezeTest",
+        "def testCreateInferenceGraphWithMfcc",
+        "def testCreateInferenceGraphWithMicro",
+        "def testCreateInferenceGraphWithoutMfcc",
+        "def testCreateSavedModel",
+        "def testFeatureBinCount"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/generate_streaming_test_wav.py": {
+      "fichier": "tensorflow/examples/speech_commands/generate_streaming_test_wav.py",
+      "langage": "python",
+      "lignes": 281,
+      "taille_bytes": 10964,
+      "entrees": [
+        "argparse",
+        "input_data",
+        "math",
+        "models",
+        "numpy",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def main",
+        "def mix_in_audio_sample"
+      ],
+      "appelle": [
+        "tensorflow/examples/speech_commands/input_data.py",
+        "tensorflow/examples/speech_commands/models.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "tensorflow/examples/speech_commands/recognize_commands_test.cc": {
+      "fichier": "tensorflow/examples/speech_commands/recognize_commands_test.cc",
+      "langage": "cpp",
+      "lignes": 119,
+      "taille_bytes": 3984,
+      "entrees": [
+        "<cstdint>",
+        "<string>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/accuracy_utils.cc": {
+      "fichier": "tensorflow/examples/speech_commands/accuracy_utils.cc",
+      "langage": "cpp",
+      "lignes": 153,
+      "taille_bytes": 5668,
+      "entrees": [
+        "<algorithm>",
+        "<cstdint>",
+        "<fstream>",
+        "<iomanip>",
+        "<ios>",
+        "<limits>",
+        "<string>",
+        "<unordered_set>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "const int64_t",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/generate_streaming_test_wav_test.py": {
+      "fichier": "tensorflow/examples/speech_commands/generate_streaming_test_wav_test.py",
+      "langage": "python",
+      "lignes": 35,
+      "taille_bytes": 1306,
+      "entrees": [
+        "numpy",
+        "tensorflow.examples.speech_commands",
+        "tensorflow.python.platform"
+      ],
+      "sorties": [
+        "class GenerateStreamingTestWavTest",
+        "def testMixInAudioSample"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/models.py": {
+      "fichier": "tensorflow/examples/speech_commands/models.py",
+      "langage": "python",
+      "lignes": 893,
+      "taille_bytes": 34509,
+      "entrees": [
+        "math",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def _next_power_of_two",
+        "def create_conv_model",
+        "def create_low_latency_conv_model",
+        "def create_low_latency_svdf_model",
+        "def create_model",
+        "def create_single_fc_model",
+        "def create_tiny_conv_model",
+        "def create_tiny_embedding_conv_model",
+        "def load_variables_from_checkpoint",
+        "def prepare_model_settings"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tensorflow/examples/speech_commands/freeze.py",
+        "tensorflow/examples/speech_commands/generate_streaming_test_wav.py",
+        "tensorflow/examples/speech_commands/train.py",
+        "tensorflow/examples/speech_commands/wav_to_features.py"
+      ],
+      "type_noeud": "feuille"
+    },
+    "tensorflow/examples/speech_commands/input_data_test.py": {
+      "fichier": "tensorflow/examples/speech_commands/input_data_test.py",
+      "langage": "python",
+      "lignes": 286,
+      "taille_bytes": 11024,
+      "entrees": [
+        "numpy",
+        "os",
+        "tensorflow",
+        "tensorflow.examples.speech_commands",
+        "tensorflow.python.framework",
+        "tensorflow.python.platform"
+      ],
+      "sorties": [
+        "class InputDataTest",
+        "def _getWavData",
+        "def _model_settings",
+        "def _runGetDataTest",
+        "def _saveTestWavFile",
+        "def _saveWavFolders",
+        "def testGetDataAverage",
+        "def testGetDataAverageLongWindow",
+        "def testGetDataMfcc",
+        "def testGetDataMicro",
+        "def testGetFeaturesForWav",
+        "def testGetFeaturesRange",
+        "def testGetMfccFeaturesRange",
+        "def testGetUnprocessedData",
+        "def testLoadWavFile",
+        "def testPrepareBackgroundData",
+        "def testPrepareDataIndex",
+        "def testPrepareDataIndexEmpty",
+        "def testPrepareDataIndexMissing",
+        "def testPrepareProcessingGraph",
+        "def testPrepareWordsList",
+        "def testSaveWavFile",
+        "def testWhichSet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/label_wav.py": {
+      "fichier": "tensorflow/examples/speech_commands/label_wav.py",
+      "langage": "python",
+      "lignes": 125,
+      "taille_bytes": 4504,
+      "entrees": [
+        "argparse",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def label_wav",
+        "def load_graph",
+        "def load_labels",
+        "def main",
+        "def run_graph"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/test_streaming_accuracy.py": {
+      "fichier": "tensorflow/examples/speech_commands/test_streaming_accuracy.py",
+      "langage": "python",
+      "lignes": 245,
+      "taille_bytes": 9862,
+      "entrees": [
+        "accuracy_utils",
+        "argparse",
+        "numpy",
+        "recognize_commands",
+        "sys",
+        "tensorflow",
+        "tensorflow.python.ops"
+      ],
+      "sorties": [
+        "def load_graph",
+        "def main",
+        "def read_label_file",
+        "def read_wav_file"
+      ],
+      "appelle": [
+        "tensorflow/examples/speech_commands/accuracy_utils.h",
+        "tensorflow/examples/speech_commands/recognize_commands.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "tensorflow/examples/speech_commands/train_test.py": {
+      "fichier": "tensorflow/examples/speech_commands/train_test.py",
+      "langage": "python",
+      "lignes": 134,
+      "taille_bytes": 4393,
+      "entrees": [
+        "os",
+        "tensorflow",
+        "tensorflow.examples.speech_commands",
+        "tensorflow.python.framework",
+        "tensorflow.python.platform",
+        "unittest"
+      ],
+      "sorties": [
+        "class DictStruct",
+        "class TrainTest",
+        "def __init__",
+        "def _getDefaultFlags",
+        "def _getWavData",
+        "def _prepareDummyTrainingData",
+        "def _saveTestWavFile",
+        "def _saveWavFolders",
+        "def requires_contrib",
+        "def testTrain"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/accuracy_utils.h": {
+      "fichier": "tensorflow/examples/speech_commands/accuracy_utils.h",
+      "langage": "c",
+      "lignes": 65,
+      "taille_bytes": 2502,
+      "entrees": [
+        "<cstdint>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "const std",
+        "struct StreamingAccuracyStats"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tensorflow/examples/speech_commands/test_streaming_accuracy.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/label_wav_dir.py": {
+      "fichier": "tensorflow/examples/speech_commands/label_wav_dir.py",
+      "langage": "python",
+      "lignes": 128,
+      "taille_bytes": 4663,
+      "entrees": [
+        "argparse",
+        "glob",
+        "sys",
+        "tensorflow"
+      ],
+      "sorties": [
+        "def label_wav",
+        "def load_graph",
+        "def load_labels",
+        "def main",
+        "def run_graph"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/speech_commands/freeze.py": {
+      "fichier": "tensorflow/examples/speech_commands/freeze.py",
+      "langage": "python",
+      "lignes": 307,
+      "taille_bytes": 11611,
+      "entrees": [
+        "argparse",
+        "input_data",
+        "models",
+        "os.path",
+        "sys",
+        "tensorflow",
+        "tensorflow.lite.experimental.microfrontend.python.ops",
+        "tensorflow.python.ops"
+      ],
+      "sorties": [
+        "def create_inference_graph",
+        "def main",
+        "def save_graph_def",
+        "def save_saved_model",
+        "output nodes"
+      ],
+      "appelle": [
+        "tensorflow/examples/speech_commands/input_data.py",
+        "tensorflow/examples/speech_commands/models.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "tensorflow/examples/multibox_detector/main.cc": {
+      "fichier": "tensorflow/examples/multibox_detector/main.cc",
+      "langage": "cpp",
+      "lignes": 454,
+      "taille_bytes": 17883,
+      "entrees": [
+        "<algorithm>",
+        "<cmath>",
+        "<cstdint>",
+        "<fstream>",
+        "<memory>",
+        "<stdio.h>",
+        "<string.h>",
+        "<string>",
+        "<vector>",
+        "namespace",
+        "tensorflow::Flag",
+        "tensorflow::Status",
+        "tensorflow::Tensor",
+        "tensorflow::int32",
+        "tensorflow::string",
+        "tensorflow::uint8"
+      ],
+      "sorties": [
+        "const Tensor",
+        "const bool",
+        "const float",
+        "const int",
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/custom_ops_doc/multiplex_4/multiplex_2_save.py": {
+      "fichier": "tensorflow/examples/custom_ops_doc/multiplex_4/multiplex_2_save.py",
+      "langage": "python",
+      "lignes": 41,
+      "taille_bytes": 1416,
+      "entrees": [
+        "absl",
+        "os",
+        "shutil",
+        "tensorflow.examples.custom_ops_doc.multiplex_2",
+        "tensorflow.examples.custom_ops_doc.multiplex_4"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/custom_ops_doc/multiplex_4/multiplex_4_test.py": {
+      "fichier": "tensorflow/examples/custom_ops_doc/multiplex_4/multiplex_4_test.py",
+      "langage": "python",
+      "lignes": 109,
+      "taille_bytes": 4917,
+      "entrees": [
+        "numpy",
+        "os",
+        "tensorflow",
+        "tensorflow.examples.custom_ops_doc.multiplex_4",
+        "tensorflow.python.framework"
+      ],
+      "sorties": [
+        "class MultiplexOpTest",
+        "def _both",
+        "def test_both_single_and_list",
+        "def test_inconsistent_inputs_error",
+        "def test_multiplex_int",
+        "def test_multiplex_saved_model",
+        "def test_multiplex_select"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/custom_ops_doc/multiplex_4/model_using_multiplex.py": {
+      "fichier": "tensorflow/examples/custom_ops_doc/multiplex_4/model_using_multiplex.py",
+      "langage": "python",
+      "lignes": 77,
+      "taille_bytes": 2687,
+      "entrees": [
+        "tensorflow"
+      ],
+      "sorties": [
+        "class UseMultiplex",
+        "def _get_example_tensors",
+        "def load_and_use",
+        "def save",
+        "def use_multiplex"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/custom_ops_doc/multiplex_4/multiplex_4_op.cc": {
+      "fichier": "tensorflow/examples/custom_ops_doc/multiplex_4/multiplex_4_op.cc",
+      "langage": "cpp",
+      "lignes": 79,
+      "taille_bytes": 3329,
+      "entrees": [
+        "::tensorflow::shape_inference::InferenceContext",
+        "<cstdint>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tensorflow/examples/custom_ops_doc/multiplex_4/multiplex_4_kernel.cc": {
+      "fichier": "tensorflow/examples/custom_ops_doc/multiplex_4/multiplex_4_kernel.cc",
+      "langage": "cpp",
+      "lignes": 137,
+      "taille_bytes": 5614,
+      "entrees": [
+        "::tensorflow::OpKernel",
+        "::tensorflow::OpKernelConstruction",
+        "::tensorflow::OpKernelContext",
+        "::tensorflow::Tensor",
+        "::tensorflow::errors::Internal",
+        "::tensorflow::errors::InvalidArgument",
+        "<cstdint>"
+      ],
+      "sorties": [
+        "class MultiplexDenseOp",
+        "const auto",
+        "const int64_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "tensorflow/security/fuzzing/sparseCountSparseOutput_fuzz.py",
+      "vers": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/security/fuzzing/dataFormatVecPermute_fuzz.py",
+      "vers": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/security/fuzzing/tf2migration_fuzz.py",
+      "vers": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/security/fuzzing/add_fuzz.py",
+      "vers": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/security/fuzzing/acos_fuzz.py",
+      "vers": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/security/fuzzing/abs_fuzz.py",
+      "vers": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/security/fuzzing/acosh_fuzz.py",
+      "vers": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/security/fuzzing/immutableConst_fuzz.py",
+      "vers": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/security/fuzzing/raggedCountSparseOutput_fuzz.py",
+      "vers": "tensorflow/security/fuzzing/python_fuzzing.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/wav_to_features.py",
+      "vers": "tensorflow/examples/speech_commands/input_data.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/wav_to_features.py",
+      "vers": "tensorflow/examples/speech_commands/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/train.py",
+      "vers": "tensorflow/examples/speech_commands/input_data.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/train.py",
+      "vers": "tensorflow/examples/speech_commands/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/generate_streaming_test_wav.py",
+      "vers": "tensorflow/examples/speech_commands/input_data.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/generate_streaming_test_wav.py",
+      "vers": "tensorflow/examples/speech_commands/models.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/test_streaming_accuracy.py",
+      "vers": "tensorflow/examples/speech_commands/accuracy_utils.h",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/test_streaming_accuracy.py",
+      "vers": "tensorflow/examples/speech_commands/recognize_commands.h",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/freeze.py",
+      "vers": "tensorflow/examples/speech_commands/input_data.py",
+      "type": "interne"
+    },
+    {
+      "de": "tensorflow/examples/speech_commands/freeze.py",
+      "vers": "tensorflow/examples/speech_commands/models.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'tensorflow/security/fuzzing/python_fuzzing.py' (in=9)",
+    "feuille → 'tensorflow/examples/speech_commands/input_data.py' (in=4)",
+    "point_entree → 'tensorflow/examples/speech_commands/wav_to_features.py'",
+    "point_entree → 'tensorflow/examples/speech_commands/train.py'",
+    "point_entree → 'tensorflow/examples/speech_commands/generate_streaming_test_wav.py'",
+    "feuille → 'tensorflow/examples/speech_commands/models.py' (in=4)",
+    "point_entree → 'tensorflow/examples/speech_commands/test_streaming_accuracy.py'",
+    "point_entree → 'tensorflow/examples/speech_commands/freeze.py'"
+  ]
+}

@@ -1,0 +1,2673 @@
+{
+  "meta": {
+    "projet": "hutool",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 1,
+      "xml": 5,
+      "shell": 1,
+      "javascript": 1,
+      "java": 112
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 51,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 2,
+    "noeuds_feuilles": 3,
+    "noeuds_hubs": 0,
+    "points_entree": 6,
+    "fichier_plus_appele": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java"
+  },
+  "noeuds": {
+    ".travis.yml": {
+      "fichier": ".travis.yml",
+      "langage": "yaml",
+      "lignes": 24,
+      "taille_bytes": 398,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pom.xml": {
+      "fichier": "pom.xml",
+      "langage": "xml",
+      "lignes": 245,
+      "taille_bytes": 7043,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool.sh": {
+      "fichier": "hutool.sh",
+      "langage": "shell",
+      "lignes": 32,
+      "taille_bytes": 650,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-script/pom.xml": {
+      "fichier": "hutool-script/pom.xml",
+      "langage": "xml",
+      "lignes": 59,
+      "taille_bytes": 1639,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-script/src/test/resources/filter1.js": {
+      "fichier": "hutool-script/src/test/resources/filter1.js",
+      "langage": "javascript",
+      "lignes": 6,
+      "taille_bytes": 89,
+      "entrees": [],
+      "sorties": [
+        "function filter1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-script/src/test/java/cn/hutool/script/test/NashornDeepTest.java": {
+      "fichier": "hutool-script/src/test/java/cn/hutool/script/test/NashornDeepTest.java",
+      "langage": "java",
+      "lignes": 22,
+      "taille_bytes": 644,
+      "entrees": [
+        "cn.hutool.core.io.resource.ResourceUtil",
+        "javax.script.Invocable",
+        "javax.script.ScriptEngine",
+        "javax.script.ScriptEngineManager",
+        "javax.script.ScriptException",
+        "static"
+      ],
+      "sorties": [
+        "public class NashornDeepTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-script/src/test/java/cn/hutool/script/test/ScriptUtilTest.java": {
+      "fichier": "hutool-script/src/test/java/cn/hutool/script/test/ScriptUtilTest.java",
+      "langage": "java",
+      "lignes": 59,
+      "taille_bytes": 1403,
+      "entrees": [
+        "cn.hutool.core.io.resource.ResourceUtil",
+        "cn.hutool.script.ScriptRuntimeException",
+        "cn.hutool.script.ScriptUtil",
+        "javax.script.CompiledScript",
+        "javax.script.ScriptEngine",
+        "javax.script.ScriptException",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class ScriptUtilTest"
+      ],
+      "appelle": [
+        "hutool-script/src/main/java/cn/hutool/script/ScriptRuntimeException.java",
+        "hutool-script/src/main/java/cn/hutool/script/ScriptUtil.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hutool-script/src/main/java/cn/hutool/script/FullSupportScriptEngine.java": {
+      "fichier": "hutool-script/src/main/java/cn/hutool/script/FullSupportScriptEngine.java",
+      "langage": "java",
+      "lignes": 159,
+      "taille_bytes": 4021,
+      "entrees": [
+        "cn.hutool.core.util.StrUtil",
+        "java.io.Reader",
+        "javax.script.Bindings",
+        "javax.script.Compilable",
+        "javax.script.CompiledScript",
+        "javax.script.Invocable",
+        "javax.script.ScriptContext",
+        "javax.script.ScriptEngine",
+        "javax.script.ScriptEngineFactory",
+        "javax.script.ScriptEngineManager",
+        "javax.script.ScriptException"
+      ],
+      "sorties": [
+        "public class FullSupportScriptEngine"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-script/src/main/java/cn/hutool/script/JavaScriptEngine.java": {
+      "fichier": "hutool-script/src/main/java/cn/hutool/script/JavaScriptEngine.java",
+      "langage": "java",
+      "lignes": 135,
+      "taille_bytes": 3272,
+      "entrees": [
+        "java.io.Reader",
+        "javax.script.Bindings",
+        "javax.script.Compilable",
+        "javax.script.CompiledScript",
+        "javax.script.Invocable",
+        "javax.script.ScriptContext",
+        "javax.script.ScriptEngineFactory",
+        "javax.script.ScriptException"
+      ],
+      "sorties": [
+        "public class JavaScriptEngine"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-script/src/main/java/cn/hutool/script/ScriptUtil.java": {
+      "fichier": "hutool-script/src/main/java/cn/hutool/script/ScriptUtil.java",
+      "langage": "java",
+      "lignes": 274,
+      "taille_bytes": 6589,
+      "entrees": [
+        "cn.hutool.core.map.reference.WeakKeyValueConcurrentMap",
+        "cn.hutool.core.util.StrUtil",
+        "javax.script.*"
+      ],
+      "sorties": [
+        "public class ScriptUtil"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-script/src/test/java/cn/hutool/script/test/ScriptUtilTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-script/src/main/java/cn/hutool/script/ScriptRuntimeException.java": {
+      "fichier": "hutool-script/src/main/java/cn/hutool/script/ScriptRuntimeException.java",
+      "langage": "java",
+      "lignes": 128,
+      "taille_bytes": 3781,
+      "entrees": [
+        "cn.hutool.core.exceptions.ExceptionUtil",
+        "cn.hutool.core.util.StrUtil",
+        "javax.script.ScriptException"
+      ],
+      "sorties": [
+        "public class ScriptRuntimeException"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-script/src/test/java/cn/hutool/script/test/ScriptUtilTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-script/src/main/java/cn/hutool/script/package-info.java": {
+      "fichier": "hutool-script/src/main/java/cn/hutool/script/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 144,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/pom.xml": {
+      "fichier": "hutool-socket/pom.xml",
+      "langage": "xml",
+      "lignes": 35,
+      "taille_bytes": 1027,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/test/java/cn/hutool/socket/nio/NioClientTest.java": {
+      "fichier": "hutool-socket/src/test/java/cn/hutool/socket/nio/NioClientTest.java",
+      "langage": "java",
+      "lignes": 50,
+      "taille_bytes": 1595,
+      "entrees": [
+        "cn.hutool.core.io.BufferUtil",
+        "cn.hutool.core.lang.Console",
+        "cn.hutool.core.util.StrUtil",
+        "java.nio.ByteBuffer",
+        "java.util.Scanner",
+        "lombok.SneakyThrows"
+      ],
+      "sorties": [
+        "public class NioClientTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/test/java/cn/hutool/socket/nio/NioServerTest.java": {
+      "fichier": "hutool-socket/src/test/java/cn/hutool/socket/nio/NioServerTest.java",
+      "langage": "java",
+      "lignes": 50,
+      "taille_bytes": 1595,
+      "entrees": [
+        "cn.hutool.core.io.BufferUtil",
+        "cn.hutool.core.io.IORuntimeException",
+        "cn.hutool.core.io.IoUtil",
+        "cn.hutool.core.lang.Console",
+        "cn.hutool.core.util.StrUtil",
+        "java.io.IOException",
+        "java.nio.ByteBuffer",
+        "java.nio.channels.SocketChannel"
+      ],
+      "sorties": [
+        "public class NioServerTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/test/java/cn/hutool/socket/aio/AioClientTest.java": {
+      "fichier": "hutool-socket/src/test/java/cn/hutool/socket/aio/AioClientTest.java",
+      "langage": "java",
+      "lignes": 37,
+      "taille_bytes": 1065,
+      "entrees": [
+        "cn.hutool.core.lang.Console",
+        "cn.hutool.core.thread.ThreadFactoryBuilder",
+        "cn.hutool.core.util.RuntimeUtil",
+        "cn.hutool.core.util.StrUtil",
+        "java.io.IOException",
+        "java.net.InetSocketAddress",
+        "java.nio.ByteBuffer",
+        "java.nio.channels.AsynchronousChannelGroup"
+      ],
+      "sorties": [
+        "public class AioClientTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/test/java/cn/hutool/socket/aio/AioServerTest.java": {
+      "fichier": "hutool-socket/src/test/java/cn/hutool/socket/aio/AioServerTest.java",
+      "langage": "java",
+      "lignes": 43,
+      "taille_bytes": 1257,
+      "entrees": [
+        "cn.hutool.core.date.DateUtil",
+        "cn.hutool.core.io.BufferUtil",
+        "cn.hutool.core.lang.Console",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.log.StaticLog",
+        "java.nio.ByteBuffer"
+      ],
+      "sorties": [
+        "public class AioServerTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/SocketRuntimeException.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/SocketRuntimeException.java",
+      "langage": "java",
+      "lignes": 37,
+      "taille_bytes": 1045,
+      "entrees": [
+        "cn.hutool.core.exceptions.ExceptionUtil",
+        "cn.hutool.core.util.StrUtil"
+      ],
+      "sorties": [
+        "public class SocketRuntimeException"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-socket/src/main/java/cn/hutool/socket/aio/ReadHandler.java",
+        "hutool-socket/src/main/java/cn/hutool/socket/nio/NioClient.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/SocketUtil.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/SocketUtil.java",
+      "langage": "java",
+      "lignes": 100,
+      "taille_bytes": 2889,
+      "entrees": [
+        "cn.hutool.core.io.IORuntimeException",
+        "java.io.IOException",
+        "java.net.InetSocketAddress",
+        "java.net.Socket",
+        "java.net.SocketAddress",
+        "java.nio.channels.AsynchronousSocketChannel",
+        "java.nio.channels.ClosedChannelException"
+      ],
+      "sorties": [
+        "public class SocketUtil"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/ChannelUtil.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/ChannelUtil.java",
+      "langage": "java",
+      "lignes": 62,
+      "taille_bytes": 1603,
+      "entrees": [
+        "cn.hutool.core.io.IORuntimeException",
+        "cn.hutool.core.io.IoUtil",
+        "cn.hutool.core.thread.ThreadFactoryBuilder",
+        "java.io.IOException",
+        "java.net.InetSocketAddress",
+        "java.nio.channels.AsynchronousChannelGroup",
+        "java.nio.channels.AsynchronousSocketChannel",
+        "java.util.concurrent.ExecutionException"
+      ],
+      "sorties": [
+        "public class ChannelUtil"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-socket/src/main/java/cn/hutool/socket/aio/AioClient.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/SocketConfig.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/SocketConfig.java",
+      "langage": "java",
+      "lignes": 118,
+      "taille_bytes": 2844,
+      "entrees": [
+        "cn.hutool.core.io.IoUtil",
+        "cn.hutool.core.util.RuntimeUtil",
+        "java.io.Serializable"
+      ],
+      "sorties": [
+        "public class SocketConfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-socket/src/main/java/cn/hutool/socket/aio/AioClient.java",
+        "hutool-socket/src/main/java/cn/hutool/socket/aio/AioServer.java",
+        "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java"
+      ],
+      "type_noeud": "feuille"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/package-info.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 97,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/nio/NioClient.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/nio/NioClient.java",
+      "langage": "java",
+      "lignes": 166,
+      "taille_bytes": 3437,
+      "entrees": [
+        "cn.hutool.core.io.IORuntimeException",
+        "cn.hutool.core.io.IoUtil",
+        "cn.hutool.core.thread.ThreadUtil",
+        "cn.hutool.log.Log",
+        "cn.hutool.socket.SocketRuntimeException",
+        "java.io.Closeable",
+        "java.io.IOException",
+        "java.net.InetSocketAddress",
+        "java.nio.ByteBuffer",
+        "java.nio.channels.SelectionKey",
+        "java.nio.channels.Selector",
+        "java.nio.channels.SocketChannel",
+        "java.util.Iterator"
+      ],
+      "sorties": [
+        "public class NioClient"
+      ],
+      "appelle": [
+        "hutool-socket/src/main/java/cn/hutool/socket/SocketRuntimeException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/nio/AcceptHandler.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/nio/AcceptHandler.java",
+      "langage": "java",
+      "lignes": 38,
+      "taille_bytes": 1057,
+      "entrees": [
+        "cn.hutool.core.io.IORuntimeException",
+        "cn.hutool.log.StaticLog",
+        "java.io.IOException",
+        "java.nio.channels.CompletionHandler",
+        "java.nio.channels.ServerSocketChannel",
+        "java.nio.channels.SocketChannel"
+      ],
+      "sorties": [
+        "public class AcceptHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/nio/NioServer.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/nio/NioServer.java",
+      "langage": "java",
+      "lignes": 153,
+      "taille_bytes": 3219,
+      "entrees": [
+        "cn.hutool.core.io.IORuntimeException",
+        "cn.hutool.core.io.IoUtil",
+        "cn.hutool.log.Log",
+        "java.io.Closeable",
+        "java.io.IOException",
+        "java.net.InetSocketAddress",
+        "java.nio.channels.SelectionKey",
+        "java.nio.channels.Selector",
+        "java.nio.channels.ServerSocketChannel",
+        "java.nio.channels.SocketChannel",
+        "java.util.Iterator"
+      ],
+      "sorties": [
+        "public class NioServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/nio/Operation.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/nio/Operation.java",
+      "langage": "java",
+      "lignes": 48,
+      "taille_bytes": 851,
+      "entrees": [
+        "java.nio.channels.SelectionKey"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/nio/ChannelHandler.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/nio/ChannelHandler.java",
+      "langage": "java",
+      "lignes": 19,
+      "taille_bytes": 423,
+      "entrees": [
+        "java.nio.channels.SocketChannel"
+      ],
+      "sorties": [
+        "public interface ChannelHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/nio/package-info.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/nio/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 80,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/nio/NioUtil.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/nio/NioUtil.java",
+      "langage": "java",
+      "lignes": 37,
+      "taille_bytes": 784,
+      "entrees": [
+        "cn.hutool.core.io.IORuntimeException",
+        "java.io.IOException",
+        "java.nio.channels.SelectableChannel",
+        "java.nio.channels.Selector"
+      ],
+      "sorties": [
+        "public class NioUtil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/aio/AioClient.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioClient.java",
+      "langage": "java",
+      "lignes": 121,
+      "taille_bytes": 2785,
+      "entrees": [
+        "cn.hutool.socket.ChannelUtil",
+        "cn.hutool.socket.SocketConfig",
+        "java.io.Closeable",
+        "java.io.IOException",
+        "java.net.InetSocketAddress",
+        "java.net.SocketOption",
+        "java.nio.ByteBuffer",
+        "java.nio.channels.AsynchronousSocketChannel"
+      ],
+      "sorties": [
+        "public class AioClient"
+      ],
+      "appelle": [
+        "hutool-socket/src/main/java/cn/hutool/socket/ChannelUtil.java",
+        "hutool-socket/src/main/java/cn/hutool/socket/SocketConfig.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/aio/AcceptHandler.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/aio/AcceptHandler.java",
+      "langage": "java",
+      "lignes": 37,
+      "taille_bytes": 898,
+      "entrees": [
+        "cn.hutool.log.StaticLog",
+        "java.nio.ByteBuffer",
+        "java.nio.channels.AsynchronousSocketChannel",
+        "java.nio.channels.CompletionHandler"
+      ],
+      "sorties": [
+        "public class AcceptHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/aio/SimpleIoAction.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/aio/SimpleIoAction.java",
+      "langage": "java",
+      "lignes": 24,
+      "taille_bytes": 423,
+      "entrees": [
+        "cn.hutool.log.StaticLog",
+        "java.nio.ByteBuffer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/aio/ReadHandler.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/aio/ReadHandler.java",
+      "langage": "java",
+      "lignes": 25,
+      "taille_bytes": 538,
+      "entrees": [
+        "cn.hutool.socket.SocketRuntimeException",
+        "java.nio.channels.CompletionHandler"
+      ],
+      "sorties": [
+        "public class ReadHandler"
+      ],
+      "appelle": [
+        "hutool-socket/src/main/java/cn/hutool/socket/SocketRuntimeException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/aio/AioServer.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioServer.java",
+      "langage": "java",
+      "lignes": 184,
+      "taille_bytes": 4010,
+      "entrees": [
+        "cn.hutool.core.io.IORuntimeException",
+        "cn.hutool.core.io.IoUtil",
+        "cn.hutool.core.thread.ThreadFactoryBuilder",
+        "cn.hutool.core.thread.ThreadUtil",
+        "cn.hutool.log.Log",
+        "cn.hutool.log.LogFactory",
+        "cn.hutool.socket.SocketConfig",
+        "java.io.Closeable",
+        "java.io.IOException",
+        "java.net.InetSocketAddress",
+        "java.net.SocketOption",
+        "java.nio.ByteBuffer",
+        "java.nio.channels.AsynchronousChannelGroup",
+        "java.nio.channels.AsynchronousServerSocketChannel"
+      ],
+      "sorties": [
+        "public class AioServer"
+      ],
+      "appelle": [
+        "hutool-socket/src/main/java/cn/hutool/socket/SocketConfig.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/aio/IoAction.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/aio/IoAction.java",
+      "langage": "java",
+      "lignes": 35,
+      "taille_bytes": 739,
+      "entrees": [],
+      "sorties": [
+        "public interface IoAction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java",
+      "langage": "java",
+      "lignes": 214,
+      "taille_bytes": 4575,
+      "entrees": [
+        "cn.hutool.core.io.IORuntimeException",
+        "cn.hutool.core.io.IoUtil",
+        "cn.hutool.socket.SocketConfig",
+        "cn.hutool.socket.SocketUtil",
+        "java.io.Closeable",
+        "java.io.IOException",
+        "java.net.SocketAddress",
+        "java.nio.ByteBuffer",
+        "java.nio.channels.AsynchronousSocketChannel",
+        "java.nio.channels.CompletionHandler",
+        "java.util.concurrent.Future",
+        "java.util.concurrent.TimeUnit"
+      ],
+      "sorties": [
+        "public class AioSession"
+      ],
+      "appelle": [
+        "hutool-socket/src/main/java/cn/hutool/socket/SocketConfig.java",
+        "hutool-socket/src/main/java/cn/hutool/socket/SocketUtil.java"
+      ],
+      "est_appele_par": [
+        "hutool-socket/src/main/java/cn/hutool/socket/protocol/MsgDecoder.java",
+        "hutool-socket/src/main/java/cn/hutool/socket/protocol/MsgEncoder.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/aio/package-info.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/aio/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 80,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/protocol/MsgEncoder.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/protocol/MsgEncoder.java",
+      "langage": "java",
+      "lignes": 23,
+      "taille_bytes": 468,
+      "entrees": [
+        "cn.hutool.socket.aio.AioSession",
+        "java.nio.ByteBuffer"
+      ],
+      "sorties": [
+        "public interface MsgEncoder"
+      ],
+      "appelle": [
+        "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/protocol/MsgDecoder.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/protocol/MsgDecoder.java",
+      "langage": "java",
+      "lignes": 24,
+      "taille_bytes": 591,
+      "entrees": [
+        "cn.hutool.socket.aio.AioSession",
+        "java.nio.ByteBuffer"
+      ],
+      "sorties": [
+        "public interface MsgDecoder"
+      ],
+      "appelle": [
+        "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/protocol/Protocol.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/protocol/Protocol.java",
+      "langage": "java",
+      "lignes": 23,
+      "taille_bytes": 501,
+      "entrees": [],
+      "sorties": [
+        "public interface Protocol"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-socket/src/main/java/cn/hutool/socket/protocol/package-info.java": {
+      "fichier": "hutool-socket/src/main/java/cn/hutool/socket/protocol/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 97,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/pom.xml": {
+      "fichier": "hutool-db/pom.xml",
+      "langage": "xml",
+      "lignes": 195,
+      "taille_bytes": 5516,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/resources/logback.xml": {
+      "fichier": "hutool-db/src/test/resources/logback.xml",
+      "langage": "xml",
+      "lignes": 17,
+      "taille_bytes": 433,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/DerbyTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/DerbyTest.java",
+      "langage": "java",
+      "lignes": 50,
+      "taille_bytes": 1184,
+      "entrees": [
+        "java.sql.SQLException",
+        "java.util.List",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DerbyTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/UpdateTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/UpdateTest.java",
+      "langage": "java",
+      "lignes": 36,
+      "taille_bytes": 781,
+      "entrees": [
+        "java.sql.SQLException",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class UpdateTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/DsTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/DsTest.java",
+      "langage": "java",
+      "lignes": 109,
+      "taille_bytes": 3128,
+      "entrees": [
+        "cn.hutool.core.collection.CollUtil",
+        "cn.hutool.db.ds.DSFactory",
+        "cn.hutool.db.ds.DataSourceWrapper",
+        "cn.hutool.db.ds.bee.BeeDSFactory",
+        "cn.hutool.db.ds.c3p0.C3p0DSFactory",
+        "cn.hutool.db.ds.dbcp.DbcpDSFactory",
+        "cn.hutool.db.ds.druid.DruidDSFactory",
+        "cn.hutool.db.ds.hikari.HikariDSFactory",
+        "cn.hutool.db.ds.pooled.PooledDSFactory",
+        "cn.hutool.db.ds.tomcat.TomcatDSFactory",
+        "com.mchange.v2.c3p0.ComboPooledDataSource",
+        "java.sql.SQLException",
+        "java.util.List",
+        "javax.sql.DataSource",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DsTest"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/DataSourceWrapper.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/bee/BeeDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/DbcpDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/druid/DruidDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/pooled/PooledDSFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/DbTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/DbTest.java",
+      "langage": "java",
+      "lignes": 141,
+      "taille_bytes": 3972,
+      "entrees": [
+        "cn.hutool.db.handler.EntityListHandler",
+        "cn.hutool.db.sql.Condition",
+        "cn.hutool.log.StaticLog",
+        "java.sql.PreparedStatement",
+        "java.sql.ResultSet",
+        "java.sql.SQLException",
+        "java.util.List",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DbTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/MySQLTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/MySQLTest.java",
+      "langage": "java",
+      "lignes": 84,
+      "taille_bytes": 2595,
+      "entrees": [
+        "cn.hutool.core.lang.Console",
+        "java.sql.SQLException",
+        "java.util.List",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class MySQLTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/SqlServerTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/SqlServerTest.java",
+      "langage": "java",
+      "lignes": 44,
+      "taille_bytes": 895,
+      "entrees": [
+        "cn.hutool.core.lang.Console",
+        "java.sql.SQLException",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "public class SqlServerTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/CRUDTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/CRUDTest.java",
+      "langage": "java",
+      "lignes": 200,
+      "taille_bytes": 5530,
+      "entrees": [
+        "cn.hutool.core.collection.CollUtil",
+        "cn.hutool.core.lang.Console",
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.db.handler.EntityListHandler",
+        "cn.hutool.db.pojo.User",
+        "cn.hutool.db.sql.Condition",
+        "cn.hutool.db.sql.Condition.LikeType",
+        "java.math.BigDecimal",
+        "java.math.BigInteger",
+        "java.sql.SQLException",
+        "java.util.List",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class CRUDTest"
+      ],
+      "appelle": [
+        "hutool-db/src/test/java/cn/hutool/db/pojo/User.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/ConcurentTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/ConcurentTest.java",
+      "langage": "java",
+      "lignes": 47,
+      "taille_bytes": 1019,
+      "entrees": [
+        "cn.hutool.core.collection.CollectionUtil",
+        "cn.hutool.core.lang.Console",
+        "cn.hutool.core.thread.ThreadUtil",
+        "cn.hutool.db.handler.EntityListHandler",
+        "java.sql.SQLException",
+        "java.util.List",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "public class ConcurentTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/PageTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/PageTest.java",
+      "langage": "java",
+      "lignes": 17,
+      "taille_bytes": 391,
+      "entrees": [
+        "cn.hutool.db.sql.Order",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class PageTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/PicTransferTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/PicTransferTest.java",
+      "langage": "java",
+      "lignes": 34,
+      "taille_bytes": 842,
+      "entrees": [
+        "cn.hutool.core.collection.ListUtil",
+        "cn.hutool.core.io.FileUtil",
+        "cn.hutool.core.util.StrUtil",
+        "java.sql.ResultSet",
+        "java.sql.SQLException",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "public class PicTransferTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/SessionTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/SessionTest.java",
+      "langage": "java",
+      "lignes": 33,
+      "taille_bytes": 747,
+      "entrees": [
+        "java.sql.SQLException",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "public class SessionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/EntityTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/EntityTest.java",
+      "langage": "java",
+      "lignes": 58,
+      "taille_bytes": 1359,
+      "entrees": [
+        "cn.hutool.db.pojo.User",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class EntityTest"
+      ],
+      "appelle": [
+        "hutool-db/src/test/java/cn/hutool/db/pojo/User.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/IssueI73770Test.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/IssueI73770Test.java",
+      "langage": "java",
+      "lignes": 40,
+      "taille_bytes": 1142,
+      "entrees": [
+        "java.sql.SQLException",
+        "lombok.Data",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class IssueI73770Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/NamedSqlTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/NamedSqlTest.java",
+      "langage": "java",
+      "lignes": 152,
+      "taille_bytes": 5286,
+      "entrees": [
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.db.sql.NamedSql",
+        "java.sql.SQLException",
+        "java.util.HashMap",
+        "java.util.LinkedHashMap",
+        "java.util.List",
+        "java.util.Map",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class NamedSqlTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/DmTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/DmTest.java",
+      "langage": "java",
+      "lignes": 38,
+      "taille_bytes": 993,
+      "entrees": [
+        "java.sql.SQLException",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DmTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/PostgreTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/PostgreTest.java",
+      "langage": "java",
+      "lignes": 63,
+      "taille_bytes": 2054,
+      "entrees": [
+        "cn.hutool.core.lang.Console",
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.db.sql.NamedSql",
+        "java.sql.SQLException",
+        "java.util.HashMap",
+        "java.util.List",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class PostgreTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/HanaTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/HanaTest.java",
+      "langage": "java",
+      "lignes": 89,
+      "taille_bytes": 2774,
+      "entrees": [
+        "cn.hutool.core.lang.Console",
+        "java.sql.SQLException",
+        "java.util.List",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class HanaTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/PageResultTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/PageResultTest.java",
+      "langage": "java",
+      "lignes": 14,
+      "taille_bytes": 355,
+      "entrees": [
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class PageResultTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/OracleTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/OracleTest.java",
+      "langage": "java",
+      "lignes": 64,
+      "taille_bytes": 1877,
+      "entrees": [
+        "cn.hutool.core.lang.Console",
+        "cn.hutool.db.sql.Query",
+        "cn.hutool.db.sql.SqlBuilder",
+        "cn.hutool.db.sql.SqlUtil",
+        "java.sql.SQLException",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class OracleTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/IssueI9BANETest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/IssueI9BANETest.java",
+      "langage": "java",
+      "lignes": 27,
+      "taille_bytes": 802,
+      "entrees": [
+        "cn.hutool.core.lang.Console",
+        "cn.hutool.db.ds.DSFactory",
+        "cn.hutool.db.meta.MetaUtil",
+        "cn.hutool.db.meta.Table",
+        "java.sql.SQLException",
+        "javax.sql.DataSource",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "public class IssueI9BANETest"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/GlobalDbConfigTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/GlobalDbConfigTest.java",
+      "langage": "java",
+      "lignes": 10,
+      "taille_bytes": 170,
+      "entrees": [
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "public class GlobalDbConfigTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/FindBeanTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/FindBeanTest.java",
+      "langage": "java",
+      "lignes": 69,
+      "taille_bytes": 1676,
+      "entrees": [
+        "cn.hutool.db.pojo.User",
+        "java.sql.SQLException",
+        "java.util.List",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class FindBeanTest"
+      ],
+      "appelle": [
+        "hutool-db/src/test/java/cn/hutool/db/pojo/User.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/WrapperTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/WrapperTest.java",
+      "langage": "java",
+      "lignes": 43,
+      "taille_bytes": 1037,
+      "entrees": [
+        "cn.hutool.db.sql.Wrapper",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class WrapperTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/H2Test.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/H2Test.java",
+      "langage": "java",
+      "lignes": 65,
+      "taille_bytes": 1791,
+      "entrees": [
+        "cn.hutool.core.map.CaseInsensitiveMap",
+        "cn.hutool.core.map.MapUtil",
+        "java.sql.SQLException",
+        "java.util.List",
+        "java.util.Map",
+        "org.junit.jupiter.api.BeforeAll",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class H2Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/HsqldbTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/HsqldbTest.java",
+      "langage": "java",
+      "lignes": 42,
+      "taille_bytes": 1087,
+      "entrees": [
+        "java.sql.SQLException",
+        "java.util.List",
+        "org.junit.jupiter.api.BeforeAll",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class HsqldbTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/ds/DataSourceWrapperTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/ds/DataSourceWrapperTest.java",
+      "langage": "java",
+      "lignes": 18,
+      "taille_bytes": 577,
+      "entrees": [
+        "cn.hutool.db.ds.simple.SimpleDataSource",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DataSourceWrapperTest"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDataSource.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/ds/IssueI70J95Test.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/ds/IssueI70J95Test.java",
+      "langage": "java",
+      "lignes": 40,
+      "taille_bytes": 1334,
+      "entrees": [
+        "cn.hutool.setting.Setting",
+        "javax.sql.DataSource",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class IssueI70J95Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/dialect/DialectFactoryTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/dialect/DialectFactoryTest.java",
+      "langage": "java",
+      "lignes": 52,
+      "taille_bytes": 1457,
+      "entrees": [
+        "cn.hutool.core.util.RandomUtil",
+        "java.util.HashMap",
+        "java.util.Map",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DialectFactoryTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/dialect/DriverUtilTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/dialect/DriverUtilTest.java",
+      "langage": "java",
+      "lignes": 14,
+      "taille_bytes": 412,
+      "entrees": [
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class DriverUtilTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/pojo/User.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/pojo/User.java",
+      "langage": "java",
+      "lignes": 60,
+      "taille_bytes": 958,
+      "entrees": [],
+      "sorties": [
+        "public class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-db/src/test/java/cn/hutool/db/CRUDTest.java",
+        "hutool-db/src/test/java/cn/hutool/db/EntityTest.java",
+        "hutool-db/src/test/java/cn/hutool/db/FindBeanTest.java"
+      ],
+      "type_noeud": "feuille"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/sql/SqlFormatterTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/sql/SqlFormatterTest.java",
+      "langage": "java",
+      "lignes": 31,
+      "taille_bytes": 1148,
+      "entrees": [
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "public class SqlFormatterTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/sql/SqlBuilderTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/sql/SqlBuilderTest.java",
+      "langage": "java",
+      "lignes": 47,
+      "taille_bytes": 1825,
+      "entrees": [
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class SqlBuilderTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/sql/Issue4200Test.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/sql/Issue4200Test.java",
+      "langage": "java",
+      "lignes": 69,
+      "taille_bytes": 1491,
+      "entrees": [
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class Issue4200Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/sql/ConditionGroupTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/sql/ConditionGroupTest.java",
+      "langage": "java",
+      "lignes": 28,
+      "taille_bytes": 947,
+      "entrees": [
+        "cn.hutool.core.collection.ListUtil",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class ConditionGroupTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/sql/ConditionTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/sql/ConditionTest.java",
+      "langage": "java",
+      "lignes": 80,
+      "taille_bytes": 2809,
+      "entrees": [
+        "java.math.BigDecimal",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class ConditionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/sql/ConditionBuilderTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/sql/ConditionBuilderTest.java",
+      "langage": "java",
+      "lignes": 21,
+      "taille_bytes": 671,
+      "entrees": [
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class ConditionBuilderTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/sql/Issue4066Test.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/sql/Issue4066Test.java",
+      "langage": "java",
+      "lignes": 42,
+      "taille_bytes": 1146,
+      "entrees": [
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class Issue4066Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/meta/MetaUtilTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/meta/MetaUtilTest.java",
+      "langage": "java",
+      "lignes": 57,
+      "taille_bytes": 1388,
+      "entrees": [
+        "cn.hutool.core.collection.CollectionUtil",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.DbRuntimeException",
+        "cn.hutool.db.ds.DSFactory",
+        "java.util.List",
+        "javax.sql.DataSource",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class MetaUtilTest"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/nosql/MongoDBTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/nosql/MongoDBTest.java",
+      "langage": "java",
+      "lignes": 20,
+      "taille_bytes": 456,
+      "entrees": [
+        "cn.hutool.db.nosql.mongo.MongoFactory",
+        "com.mongodb.client.MongoDatabase",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "static"
+      ],
+      "sorties": [
+        "public class MongoDBTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/test/java/cn/hutool/db/nosql/RedisDSTest.java": {
+      "fichier": "hutool-db/src/test/java/cn/hutool/db/nosql/RedisDSTest.java",
+      "langage": "java",
+      "lignes": 15,
+      "taille_bytes": 309,
+      "entrees": [
+        "cn.hutool.db.nosql.redis.RedisDS",
+        "org.junit.jupiter.api.Disabled",
+        "org.junit.jupiter.api.Test",
+        "redis.clients.jedis.Jedis"
+      ],
+      "sorties": [
+        "public class RedisDSTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/Session.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/Session.java",
+      "langage": "java",
+      "lignes": 307,
+      "taille_bytes": 7757,
+      "entrees": [
+        "cn.hutool.core.lang.func.VoidFunc1",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.dialect.Dialect",
+        "cn.hutool.db.dialect.DialectFactory",
+        "cn.hutool.db.ds.DSFactory",
+        "cn.hutool.db.sql.Wrapper",
+        "cn.hutool.log.Log",
+        "cn.hutool.log.LogFactory",
+        "java.io.Closeable",
+        "java.sql.Connection",
+        "java.sql.SQLException",
+        "java.sql.Savepoint",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class Session"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/SqlConnRunner.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/SqlConnRunner.java",
+      "langage": "java",
+      "lignes": 376,
+      "taille_bytes": 12384,
+      "entrees": [
+        "cn.hutool.core.collection.CollUtil",
+        "cn.hutool.db.dialect.Dialect",
+        "cn.hutool.db.dialect.DialectFactory",
+        "cn.hutool.db.handler.EntityListHandler",
+        "cn.hutool.db.handler.HandleHelper",
+        "cn.hutool.db.handler.PageResultHandler",
+        "cn.hutool.db.handler.RsHandler",
+        "cn.hutool.db.sql.Condition.LikeType",
+        "cn.hutool.db.sql.Query",
+        "cn.hutool.db.sql.SqlBuilder",
+        "cn.hutool.db.sql.SqlUtil",
+        "java.sql.Connection",
+        "java.sql.SQLException",
+        "java.util.Collection",
+        "java.util.List",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class SqlConnRunner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/DialectRunner.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/DialectRunner.java",
+      "langage": "java",
+      "lignes": 375,
+      "taille_bytes": 10821,
+      "entrees": [
+        "cn.hutool.core.lang.Assert",
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.core.util.ArrayUtil",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.dialect.Dialect",
+        "cn.hutool.db.dialect.DialectFactory",
+        "cn.hutool.db.handler.NumberHandler",
+        "cn.hutool.db.handler.RsHandler",
+        "cn.hutool.db.sql.*",
+        "java.io.Serializable",
+        "java.sql.Connection",
+        "java.sql.PreparedStatement",
+        "java.sql.SQLException"
+      ],
+      "sorties": [
+        "public class DialectRunner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/GlobalDbConfig.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/GlobalDbConfig.java",
+      "langage": "java",
+      "lignes": 136,
+      "taille_bytes": 4096,
+      "entrees": [
+        "cn.hutool.core.io.resource.NoResourceException",
+        "cn.hutool.core.util.ArrayUtil",
+        "cn.hutool.db.sql.SqlLog",
+        "cn.hutool.log.level.Level",
+        "cn.hutool.setting.Setting"
+      ],
+      "sorties": [
+        "public class GlobalDbConfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+      "langage": "java",
+      "lignes": 36,
+      "taille_bytes": 1012,
+      "entrees": [
+        "cn.hutool.core.exceptions.ExceptionUtil",
+        "cn.hutool.core.util.StrUtil"
+      ],
+      "sorties": [
+        "public class DbRuntimeException"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/jndi/JndiDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/pooled/DbSetting.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDataSource.java",
+        "hutool-db/src/test/java/cn/hutool/db/meta/MetaUtilTest.java"
+      ],
+      "type_noeud": "feuille"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/Db.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/Db.java",
+      "langage": "java",
+      "lignes": 239,
+      "taille_bytes": 5951,
+      "entrees": [
+        "cn.hutool.core.lang.func.VoidFunc1",
+        "cn.hutool.db.dialect.Dialect",
+        "cn.hutool.db.dialect.DialectFactory",
+        "cn.hutool.db.ds.DSFactory",
+        "cn.hutool.db.sql.Wrapper",
+        "cn.hutool.db.transaction.TransactionLevel",
+        "cn.hutool.log.StaticLog",
+        "java.sql.Connection",
+        "java.sql.SQLException",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class Db"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/DbUtil.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/DbUtil.java",
+      "langage": "java",
+      "lignes": 264,
+      "taille_bytes": 7004,
+      "entrees": [
+        "cn.hutool.core.convert.Convert",
+        "cn.hutool.core.io.IoUtil",
+        "cn.hutool.db.dialect.Dialect",
+        "cn.hutool.db.dialect.DialectFactory",
+        "cn.hutool.db.ds.DSFactory",
+        "cn.hutool.db.sql.SqlLog",
+        "cn.hutool.log.Log",
+        "cn.hutool.log.level.Level",
+        "cn.hutool.setting.Setting",
+        "java.sql.Connection",
+        "javax.naming.InitialContext",
+        "javax.naming.NamingException",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java"
+      ],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/jndi/JndiDSFactory.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ActiveEntity.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ActiveEntity.java",
+      "langage": "java",
+      "lignes": 243,
+      "taille_bytes": 5492,
+      "entrees": [
+        "cn.hutool.core.lang.func.Func0",
+        "cn.hutool.core.map.MapUtil",
+        "java.sql.SQLException",
+        "java.util.Collection"
+      ],
+      "sorties": [
+        "public class ActiveEntity"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/Entity.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/Entity.java",
+      "langage": "java",
+      "lignes": 426,
+      "taille_bytes": 10068,
+      "entrees": [
+        "cn.hutool.core.collection.CollectionUtil",
+        "cn.hutool.core.lang.Dict",
+        "cn.hutool.core.lang.func.Func0",
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.core.util.ArrayUtil",
+        "cn.hutool.core.util.CharsetUtil",
+        "cn.hutool.core.util.ReflectUtil",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.sql.Condition",
+        "cn.hutool.db.sql.SqlUtil",
+        "java.nio.charset.Charset",
+        "java.sql.*",
+        "java.util.Collection",
+        "java.util.Collections",
+        "java.util.Date",
+        "java.util.Set"
+      ],
+      "sorties": [
+        "public class Entity"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/AbstractDb.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/AbstractDb.java",
+      "langage": "java",
+      "lignes": 1096,
+      "taille_bytes": 34171,
+      "entrees": [
+        "cn.hutool.core.collection.CollUtil",
+        "cn.hutool.core.lang.func.Func1",
+        "cn.hutool.db.dialect.Dialect",
+        "cn.hutool.db.handler.*",
+        "cn.hutool.db.sql.Condition",
+        "cn.hutool.db.sql.Condition.LikeType",
+        "cn.hutool.db.sql.LogicalOperator",
+        "cn.hutool.db.sql.Query",
+        "cn.hutool.db.sql.SqlBuilder",
+        "cn.hutool.db.sql.SqlExecutor",
+        "cn.hutool.db.sql.SqlUtil",
+        "cn.hutool.db.sql.Wrapper",
+        "java.io.Serializable",
+        "java.sql.Connection",
+        "java.sql.PreparedStatement",
+        "java.sql.SQLException",
+        "java.util.Collection",
+        "java.util.List",
+        "java.util.Map",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/DaoTemplate.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/DaoTemplate.java",
+      "langage": "java",
+      "lignes": 388,
+      "taille_bytes": 10051,
+      "entrees": [
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.ds.DSFactory",
+        "java.sql.SQLException",
+        "java.util.Arrays",
+        "java.util.List",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class DaoTemplate"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ThreadLocalConnection.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ThreadLocalConnection.java",
+      "langage": "java",
+      "lignes": 115,
+      "taille_bytes": 2896,
+      "entrees": [
+        "java.sql.Connection",
+        "java.sql.SQLException",
+        "java.util.HashMap",
+        "java.util.Map",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/StatementUtil.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/StatementUtil.java",
+      "langage": "java",
+      "lignes": 409,
+      "taille_bytes": 13110,
+      "entrees": [
+        "cn.hutool.core.collection.ArrayIter",
+        "cn.hutool.core.collection.CollUtil",
+        "cn.hutool.core.convert.Convert",
+        "cn.hutool.core.lang.Assert",
+        "cn.hutool.core.util.ArrayUtil",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.handler.HandleHelper",
+        "cn.hutool.db.handler.RsHandler",
+        "cn.hutool.db.sql.NamedSql",
+        "cn.hutool.db.sql.SqlBuilder",
+        "cn.hutool.db.sql.SqlLog",
+        "cn.hutool.db.sql.SqlUtil",
+        "java.io.InputStream",
+        "java.math.BigDecimal",
+        "java.math.BigInteger",
+        "java.sql.*",
+        "java.util.Collection",
+        "java.util.HashMap",
+        "java.util.List",
+        "java.util.Map"
+      ],
+      "sorties": [
+        "public class StatementUtil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/Page.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/Page.java",
+      "langage": "java",
+      "lignes": 188,
+      "taille_bytes": 3807,
+      "entrees": [
+        "cn.hutool.core.lang.Segment",
+        "cn.hutool.core.util.ArrayUtil",
+        "cn.hutool.core.util.PageUtil",
+        "cn.hutool.db.sql.Order",
+        "java.io.Serializable",
+        "java.util.Arrays"
+      ],
+      "sorties": [
+        "public class Page"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/package-info.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/package-info.java",
+      "langage": "java",
+      "lignes": 8,
+      "taille_bytes": 359,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/PageResult.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/PageResult.java",
+      "langage": "java",
+      "lignes": 154,
+      "taille_bytes": 2772,
+      "entrees": [
+        "cn.hutool.core.util.PageUtil",
+        "java.util.ArrayList"
+      ],
+      "sorties": [
+        "public class PageResult"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/GlobalDSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/GlobalDSFactory.java",
+      "langage": "java",
+      "lignes": 80,
+      "taille_bytes": 2349,
+      "entrees": [
+        "cn.hutool.log.StaticLog"
+      ],
+      "sorties": [
+        "public class GlobalDSFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "langage": "java",
+      "lignes": 190,
+      "taille_bytes": 5572,
+      "entrees": [
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.ds.bee.BeeDSFactory",
+        "cn.hutool.db.ds.c3p0.C3p0DSFactory",
+        "cn.hutool.db.ds.dbcp.DbcpDSFactory",
+        "cn.hutool.db.ds.druid.DruidDSFactory",
+        "cn.hutool.db.ds.hikari.HikariDSFactory",
+        "cn.hutool.db.ds.pooled.PooledDSFactory",
+        "cn.hutool.db.ds.tomcat.TomcatDSFactory",
+        "cn.hutool.log.Log",
+        "cn.hutool.log.LogFactory",
+        "cn.hutool.setting.Setting",
+        "java.io.Closeable",
+        "java.io.Serializable",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/bee/BeeDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/DbcpDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/druid/DruidDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/pooled/PooledDSFactory.java"
+      ],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/DaoTemplate.java",
+        "hutool-db/src/main/java/cn/hutool/db/Db.java",
+        "hutool-db/src/main/java/cn/hutool/db/DbUtil.java",
+        "hutool-db/src/main/java/cn/hutool/db/Session.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/pooled/DbSetting.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDataSource.java",
+        "hutool-db/src/test/java/cn/hutool/db/DsTest.java",
+        "hutool-db/src/test/java/cn/hutool/db/IssueI9BANETest.java",
+        "hutool-db/src/test/java/cn/hutool/db/meta/MetaUtilTest.java"
+      ],
+      "type_noeud": "central"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/DataSourceWrapper.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/DataSourceWrapper.java",
+      "langage": "java",
+      "lignes": 129,
+      "taille_bytes": 2752,
+      "entrees": [
+        "cn.hutool.core.clone.CloneRuntimeException",
+        "cn.hutool.core.io.IoUtil",
+        "java.io.Closeable",
+        "java.io.PrintWriter",
+        "java.sql.Connection",
+        "java.sql.SQLException",
+        "java.sql.SQLFeatureNotSupportedException",
+        "java.util.logging.Logger",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class DataSourceWrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hutool-db/src/test/java/cn/hutool/db/DsTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/package-info.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 114,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "langage": "java",
+      "lignes": 195,
+      "taille_bytes": 5608,
+      "entrees": [
+        "cn.hutool.core.lang.Assert",
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.core.map.SafeConcurrentHashMap",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.DbRuntimeException",
+        "cn.hutool.db.DbUtil",
+        "cn.hutool.db.GlobalDbConfig",
+        "cn.hutool.db.dialect.DriverUtil",
+        "cn.hutool.setting.Setting",
+        "java.util.Collection",
+        "java.util.Map",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+        "hutool-db/src/main/java/cn/hutool/db/DbUtil.java",
+        "hutool-db/src/main/java/cn/hutool/db/GlobalDbConfig.java"
+      ],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/bee/BeeDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/DbcpDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/druid/DruidDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/jndi/JndiDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/pooled/PooledDSFactory.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDSFactory.java"
+      ],
+      "type_noeud": "central"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/druid/DruidDSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/druid/DruidDSFactory.java",
+      "langage": "java",
+      "lignes": 122,
+      "taille_bytes": 3984,
+      "entrees": [
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.ds.AbstractDSFactory",
+        "cn.hutool.setting.Setting",
+        "cn.hutool.setting.dialect.Props",
+        "com.alibaba.druid.pool.DruidDataSource",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class DruidDSFactory"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java"
+      ],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+        "hutool-db/src/test/java/cn/hutool/db/DsTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/druid/package-info.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/druid/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 77,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/simple/AbstractDataSource.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/simple/AbstractDataSource.java",
+      "langage": "java",
+      "lignes": 56,
+      "taille_bytes": 1288,
+      "entrees": [
+        "java.io.Closeable",
+        "java.io.PrintWriter",
+        "java.sql.DriverManager",
+        "java.sql.SQLException",
+        "java.sql.SQLFeatureNotSupportedException",
+        "java.util.logging.Logger",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDataSource.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDataSource.java",
+      "langage": "java",
+      "lignes": 233,
+      "taille_bytes": 5473,
+      "entrees": [
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.DbRuntimeException",
+        "cn.hutool.db.dialect.DriverUtil",
+        "cn.hutool.db.ds.DSFactory",
+        "cn.hutool.setting.Setting",
+        "cn.hutool.setting.dialect.Props",
+        "java.sql.Connection",
+        "java.sql.DriverManager",
+        "java.sql.SQLException",
+        "java.util.Properties"
+      ],
+      "sorties": [
+        "public class SimpleDataSource"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java"
+      ],
+      "est_appele_par": [
+        "hutool-db/src/test/java/cn/hutool/db/ds/DataSourceWrapperTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDSFactory.java",
+      "langage": "java",
+      "lignes": 38,
+      "taille_bytes": 858,
+      "entrees": [
+        "cn.hutool.db.ds.AbstractDSFactory",
+        "cn.hutool.setting.Setting",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class SimpleDSFactory"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/simple/package-info.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/simple/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 99,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java",
+      "langage": "java",
+      "lignes": 72,
+      "taille_bytes": 1645,
+      "entrees": [
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.DbRuntimeException",
+        "cn.hutool.db.ds.AbstractDSFactory",
+        "cn.hutool.setting.Setting",
+        "cn.hutool.setting.dialect.Props",
+        "com.mchange.v2.c3p0.ComboPooledDataSource",
+        "java.beans.PropertyVetoException",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class C3p0DSFactory"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java"
+      ],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+        "hutool-db/src/test/java/cn/hutool/db/DsTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/package-info.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 75,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/jndi/JndiDSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/jndi/JndiDSFactory.java",
+      "langage": "java",
+      "lignes": 43,
+      "taille_bytes": 1082,
+      "entrees": [
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.DbRuntimeException",
+        "cn.hutool.db.DbUtil",
+        "cn.hutool.db.ds.AbstractDSFactory",
+        "cn.hutool.setting.Setting",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class JndiDSFactory"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+        "hutool-db/src/main/java/cn/hutool/db/DbUtil.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/jndi/package-info.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/jndi/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 75,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/bee/BeeDSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/bee/BeeDSFactory.java",
+      "langage": "java",
+      "lignes": 47,
+      "taille_bytes": 1137,
+      "entrees": [
+        "cn.beecp.BeeDataSource",
+        "cn.beecp.BeeDataSourceConfig",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.ds.AbstractDSFactory",
+        "cn.hutool.setting.Setting",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class BeeDSFactory"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java"
+      ],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+        "hutool-db/src/test/java/cn/hutool/db/DsTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/bee/package-info.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/bee/package-info.java",
+      "langage": "java",
+      "lignes": 8,
+      "taille_bytes": 120,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/package-info.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/package-info.java",
+      "langage": "java",
+      "lignes": 7,
+      "taille_bytes": 75,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/DbcpDSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/DbcpDSFactory.java",
+      "langage": "java",
+      "lignes": 52,
+      "taille_bytes": 1199,
+      "entrees": [
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.ds.AbstractDSFactory",
+        "cn.hutool.setting.Setting",
+        "javax.sql.DataSource",
+        "org.apache.commons.dbcp2.BasicDataSource"
+      ],
+      "sorties": [
+        "public class DbcpDSFactory"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java"
+      ],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+        "hutool-db/src/test/java/cn/hutool/db/DsTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/pooled/PooledDSFactory.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/pooled/PooledDSFactory.java",
+      "langage": "java",
+      "lignes": 53,
+      "taille_bytes": 1427,
+      "entrees": [
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.ds.AbstractDSFactory",
+        "cn.hutool.setting.Setting",
+        "javax.sql.DataSource"
+      ],
+      "sorties": [
+        "public class PooledDSFactory"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java"
+      ],
+      "est_appele_par": [
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+        "hutool-db/src/test/java/cn/hutool/db/DsTest.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "hutool-db/src/main/java/cn/hutool/db/ds/pooled/DbSetting.java": {
+      "fichier": "hutool-db/src/main/java/cn/hutool/db/ds/pooled/DbSetting.java",
+      "langage": "java",
+      "lignes": 85,
+      "taille_bytes": 2268,
+      "entrees": [
+        "cn.hutool.core.map.MapUtil",
+        "cn.hutool.core.util.StrUtil",
+        "cn.hutool.db.DbRuntimeException",
+        "cn.hutool.db.dialect.DriverUtil",
+        "cn.hutool.db.ds.DSFactory",
+        "cn.hutool.setting.Setting"
+      ],
+      "sorties": [
+        "public class DbSetting"
+      ],
+      "appelle": [
+        "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+        "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    }
+  },
+  "edges": [
+    {
+      "de": "hutool-script/src/test/java/cn/hutool/script/test/ScriptUtilTest.java",
+      "vers": "hutool-script/src/main/java/cn/hutool/script/ScriptRuntimeException.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-script/src/test/java/cn/hutool/script/test/ScriptUtilTest.java",
+      "vers": "hutool-script/src/main/java/cn/hutool/script/ScriptUtil.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-socket/src/main/java/cn/hutool/socket/nio/NioClient.java",
+      "vers": "hutool-socket/src/main/java/cn/hutool/socket/SocketRuntimeException.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioClient.java",
+      "vers": "hutool-socket/src/main/java/cn/hutool/socket/ChannelUtil.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioClient.java",
+      "vers": "hutool-socket/src/main/java/cn/hutool/socket/SocketConfig.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-socket/src/main/java/cn/hutool/socket/aio/ReadHandler.java",
+      "vers": "hutool-socket/src/main/java/cn/hutool/socket/SocketRuntimeException.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioServer.java",
+      "vers": "hutool-socket/src/main/java/cn/hutool/socket/SocketConfig.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java",
+      "vers": "hutool-socket/src/main/java/cn/hutool/socket/SocketConfig.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java",
+      "vers": "hutool-socket/src/main/java/cn/hutool/socket/SocketUtil.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-socket/src/main/java/cn/hutool/socket/protocol/MsgEncoder.java",
+      "vers": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-socket/src/main/java/cn/hutool/socket/protocol/MsgDecoder.java",
+      "vers": "hutool-socket/src/main/java/cn/hutool/socket/aio/AioSession.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/DsTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/DsTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DataSourceWrapper.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/DsTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/bee/BeeDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/DsTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/DsTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/DbcpDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/DsTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/druid/DruidDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/DsTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/pooled/PooledDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/CRUDTest.java",
+      "vers": "hutool-db/src/test/java/cn/hutool/db/pojo/User.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/EntityTest.java",
+      "vers": "hutool-db/src/test/java/cn/hutool/db/pojo/User.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/IssueI9BANETest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/FindBeanTest.java",
+      "vers": "hutool-db/src/test/java/cn/hutool/db/pojo/User.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/ds/DataSourceWrapperTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDataSource.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/meta/MetaUtilTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/test/java/cn/hutool/db/meta/MetaUtilTest.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/Session.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/Db.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/DbUtil.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/DaoTemplate.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/bee/BeeDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/DbcpDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/druid/DruidDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/pooled/PooledDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/DbUtil.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/GlobalDbConfig.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/druid/DruidDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDataSource.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDataSource.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/simple/SimpleDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/c3p0/C3p0DSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/jndi/JndiDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/jndi/JndiDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/DbUtil.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/jndi/JndiDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/bee/BeeDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/dbcp/DbcpDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/pooled/PooledDSFactory.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/pooled/DbSetting.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java",
+      "type": "interne"
+    },
+    {
+      "de": "hutool-db/src/main/java/cn/hutool/db/ds/pooled/DbSetting.java",
+      "vers": "hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'hutool-script/src/test/java/cn/hutool/script/test/ScriptUtilTest.java'",
+    "feuille → 'hutool-socket/src/main/java/cn/hutool/socket/SocketConfig.java' (in=3)",
+    "point_entree → 'hutool-socket/src/main/java/cn/hutool/socket/aio/AioClient.java'",
+    "point_entree → 'hutool-db/src/test/java/cn/hutool/db/DsTest.java'",
+    "feuille → 'hutool-db/src/test/java/cn/hutool/db/pojo/User.java' (in=3)",
+    "point_entree → 'hutool-db/src/test/java/cn/hutool/db/meta/MetaUtilTest.java'",
+    "feuille → 'hutool-db/src/main/java/cn/hutool/db/DbRuntimeException.java' (in=6)",
+    "central → 'hutool-db/src/main/java/cn/hutool/db/ds/DSFactory.java' (in=9, out=5)",
+    "central → 'hutool-db/src/main/java/cn/hutool/db/ds/AbstractDSFactory.java' (in=7, out=3)",
+    "point_entree → 'hutool-db/src/main/java/cn/hutool/db/ds/jndi/JndiDSFactory.java'",
+    "point_entree → 'hutool-db/src/main/java/cn/hutool/db/ds/pooled/DbSetting.java'"
+  ]
+}

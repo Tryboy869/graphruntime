@@ -1,0 +1,1883 @@
+{
+  "meta": {
+    "projet": "ml-agents",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 6,
+      "unknown": 2,
+      "yaml": 5,
+      "python": 1,
+      "csharp": 104,
+      "c": 1,
+      "xml": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "pytest.ini"
+  },
+  "noeuds": {
+    "markdown-link-check.full.json": {
+      "fichier": "markdown-link-check.full.json",
+      "langage": "json",
+      "lignes": 32,
+      "taille_bytes": 1143,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setup.cfg": {
+      "fichier": "setup.cfg",
+      "langage": "unknown",
+      "lignes": 24,
+      "taille_bytes": 1028,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "markdown-link-check.fast.json": {
+      "fichier": "markdown-link-check.fast.json",
+      "langage": "json",
+      "lignes": 20,
+      "taille_bytes": 530,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "mkdocs.yml": {
+      "fichier": "mkdocs.yml",
+      "langage": "yaml",
+      "lignes": 61,
+      "taille_bytes": 2415,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "conftest.py": {
+      "fichier": "conftest.py",
+      "langage": "python",
+      "lignes": 83,
+      "taille_bytes": 2872,
+      "entrees": [
+        "filelock",
+        "mlagents.plugins.trainer_type",
+        "pathlib",
+        "pytest",
+        "tempfile"
+      ],
+      "sorties": [
+        "class PortAllocator",
+        "def __init__",
+        "def base_port",
+        "def pytest_testnodeready",
+        "def reserve_n_ports",
+        "def setup_once_per_node",
+        "def setup_plugin_trainers",
+        "def test_something"
+      ],
+      "appelle": [
+        "pytest.ini"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".pre-commit-search-and-replace.yaml": {
+      "fichier": ".pre-commit-search-and-replace.yaml",
+      "langage": "yaml",
+      "lignes": 8,
+      "taille_bytes": 246,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "catalog-info.yaml": {
+      "fichier": "catalog-info.yaml",
+      "langage": "yaml",
+      "lignes": 21,
+      "taille_bytes": 576,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pytest.ini": {
+      "fichier": "pytest.ini",
+      "langage": "unknown",
+      "lignes": 4,
+      "taille_bytes": 90,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "conftest.py"
+      ],
+      "type_noeud": "standard"
+    },
+    ".pre-commit-config.yaml": {
+      "fichier": ".pre-commit-config.yaml",
+      "langage": "yaml",
+      "lignes": 139,
+      "taille_bytes": 4558,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "PerformanceProject/Packages/packages-lock.json": {
+      "fichier": "PerformanceProject/Packages/packages-lock.json",
+      "langage": "json",
+      "lignes": 497,
+      "taille_bytes": 14766,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "PerformanceProject/Packages/manifest.json": {
+      "fichier": "PerformanceProject/Packages/manifest.json",
+      "langage": "json",
+      "lignes": 46,
+      "taille_bytes": 1992,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "PerformanceProject/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json": {
+      "fichier": "PerformanceProject/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json",
+      "langage": "json",
+      "lignes": 5,
+      "taille_bytes": 64,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "PerformanceProject/Assets/ML-Agents/Scripts/Tests/Editor/Performance/SensorPerformanceTests.cs": {
+      "fichier": "PerformanceProject/Assets/ML-Agents/Scripts/Tests/Editor/Performance/SensorPerformanceTests.cs",
+      "langage": "csharp",
+      "lignes": 196,
+      "taille_bytes": 6154,
+      "entrees": [
+        "NUnit.Framework",
+        "Unity.MLAgents",
+        "Unity.MLAgents.Actuators",
+        "Unity.MLAgents.Policies",
+        "Unity.MLAgents.Sensors",
+        "Unity.MLAgents.Sensors.Reflection",
+        "Unity.PerformanceTesting",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "class CollectObservationsAgent",
+        "class DummyAgent",
+        "class ObservableFieldAgent",
+        "class ObservablePropertyAgent",
+        "const int",
+        "public class SensorPerformanceTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/package.json": {
+      "fichier": "com.unity.ml-agents/package.json",
+      "langage": "json",
+      "lignes": 16,
+      "taille_bytes": 537,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Documentation~/filter.yml": {
+      "fichier": "com.unity.ml-agents/Documentation~/filter.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 291,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Plugins/IL2CPP.DL.Stubs.c": {
+      "fichier": "com.unity.ml-agents/Plugins/IL2CPP.DL.Stubs.c",
+      "langage": "c",
+      "lignes": 10,
+      "taille_bytes": 259,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Plugins/ProtoBuffer/link.xml": {
+      "fichier": "com.unity.ml-agents/Plugins/ProtoBuffer/link.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 392,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/EpisodeIdCounter.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/EpisodeIdCounter.cs",
+      "langage": "csharp",
+      "lignes": 20,
+      "taille_bytes": 428,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/UnityAgentsException.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/UnityAgentsException.cs",
+      "langage": "csharp",
+      "lignes": 32,
+      "taille_bytes": 1104,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [
+        "public class UnityAgentsException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Academy.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Academy.cs",
+      "langage": "csharp",
+      "lignes": 689,
+      "taille_bytes": 25419,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Actuators",
+        "Unity.MLAgents.Inference",
+        "Unity.MLAgents.Policies",
+        "Unity.MLAgents.SideChannels",
+        "UnityEditor",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "const int",
+        "const string",
+        "public class Academy"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/IMultiAgentGroup.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/IMultiAgentGroup.cs",
+      "langage": "csharp",
+      "lignes": 28,
+      "taille_bytes": 799,
+      "entrees": [],
+      "sorties": [
+        "public interface IMultiAgentGroup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/StatsRecorder.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/StatsRecorder.cs",
+      "langage": "csharp",
+      "lignes": 80,
+      "taille_bytes": 2807,
+      "entrees": [
+        "Unity.MLAgents.SideChannels"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sampler.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sampler.cs",
+      "langage": "csharp",
+      "lignes": 68,
+      "taille_bytes": 2597,
+      "entrees": [
+        "Random",
+        "System",
+        "System.Collections.Generic",
+        "Unity.MLAgents.Inference.Utils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/InplaceArray.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/InplaceArray.cs",
+      "langage": "csharp",
+      "lignes": 240,
+      "taille_bytes": 8338,
+      "entrees": [
+        "System",
+        "System.Collections.Generic"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/MLAgentsSettings.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/MLAgentsSettings.cs",
+      "langage": "csharp",
+      "lignes": 41,
+      "taille_bytes": 945,
+      "entrees": [
+        "System.Runtime.CompilerServices",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/MultiAgentGroupIdCounter.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/MultiAgentGroupIdCounter.cs",
+      "langage": "csharp",
+      "lignes": 13,
+      "taille_bytes": 263,
+      "entrees": [
+        "System.Threading"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SensorHelper.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SensorHelper.cs",
+      "langage": "csharp",
+      "lignes": 136,
+      "taille_bytes": 5493,
+      "entrees": [
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Inference"
+      ],
+      "sorties": [
+        "const float"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/DecisionRequester.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/DecisionRequester.cs",
+      "langage": "csharp",
+      "lignes": 135,
+      "taille_bytes": 5457,
+      "entrees": [
+        "System",
+        "UnityEngine",
+        "UnityEngine.Serialization"
+      ],
+      "sorties": [
+        "public class DecisionRequester"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Utilities.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Utilities.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 2046,
+      "entrees": [
+        "System",
+        "System.Diagnostics",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/MLAgentsSettingsManager.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/MLAgentsSettingsManager.cs",
+      "langage": "csharp",
+      "lignes": 101,
+      "taille_bytes": 2615,
+      "entrees": [
+        "System",
+        "System.Linq",
+        "UnityEditor",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Constants.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Constants.cs",
+      "langage": "csharp",
+      "lignes": 12,
+      "taille_bytes": 250,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SimpleMultiAgentGroup.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SimpleMultiAgentGroup.cs",
+      "langage": "csharp",
+      "lignes": 145,
+      "taille_bytes": 5503,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Linq"
+      ],
+      "sorties": [
+        "public class SimpleMultiAgentGroup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/EnvironmentParameters.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/EnvironmentParameters.cs",
+      "langage": "csharp",
+      "lignes": 70,
+      "taille_bytes": 2661,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "Unity.MLAgents.SideChannels"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/AssemblyInfo.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/AssemblyInfo.cs",
+      "langage": "csharp",
+      "lignes": 13,
+      "taille_bytes": 730,
+      "entrees": [
+        "System.Runtime.CompilerServices"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Agent.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Agent.cs",
+      "langage": "csharp",
+      "lignes": 1436,
+      "taille_bytes": 63336,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Collections.ObjectModel",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Actuators",
+        "Unity.MLAgents.Demonstrations",
+        "Unity.MLAgents.Policies",
+        "Unity.MLAgents.Sensors",
+        "Unity.MLAgents.Sensors.Reflection",
+        "UnityEngine",
+        "UnityEngine.Serialization"
+      ],
+      "sorties": [
+        "enum DoneReason"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/RecursionChecker.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/RecursionChecker.cs",
+      "langage": "csharp",
+      "lignes": 35,
+      "taille_bytes": 928,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Timer.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Timer.cs",
+      "langage": "csharp",
+      "lignes": 534,
+      "taille_bytes": 17366,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Runtime.Serialization",
+        "System.Runtime.Serialization.Json",
+        "UnityEngine",
+        "UnityEngine.Profiling",
+        "UnityEngine.SceneManagement"
+      ],
+      "sorties": [
+        "const double",
+        "const float",
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/FloatPropertiesChannel.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/FloatPropertiesChannel.cs",
+      "langage": "csharp",
+      "lignes": 97,
+      "taille_bytes": 3665,
+      "entrees": [
+        "System",
+        "System.Collections.Generic"
+      ],
+      "sorties": [
+        "const string",
+        "public class FloatPropertiesChannel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/EngineConfigurationChannel.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/EngineConfigurationChannel.cs",
+      "langage": "csharp",
+      "lignes": 75,
+      "taille_bytes": 2846,
+      "entrees": [
+        "System",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "const float",
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/SideChannel.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/SideChannel.cs",
+      "langage": "csharp",
+      "lignes": 69,
+      "taille_bytes": 2907,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/RawBytesChannel.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/RawBytesChannel.cs",
+      "langage": "csharp",
+      "lignes": 70,
+      "taille_bytes": 2456,
+      "entrees": [
+        "System",
+        "System.Collections.Generic"
+      ],
+      "sorties": [
+        "public class RawBytesChannel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/IncomingMessage.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/IncomingMessage.cs",
+      "langage": "csharp",
+      "lignes": 127,
+      "taille_bytes": 4382,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Runtime.CompilerServices",
+        "System.Text"
+      ],
+      "sorties": [
+        "public class IncomingMessage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/StatsSideChannel.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/StatsSideChannel.cs",
+      "langage": "csharp",
+      "lignes": 43,
+      "taille_bytes": 1485,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/EnvironmentParametersChannel.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/EnvironmentParametersChannel.cs",
+      "langage": "csharp",
+      "lignes": 142,
+      "taille_bytes": 5082,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/SideChannelManager.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/SideChannelManager.cs",
+      "langage": "csharp",
+      "lignes": 251,
+      "taille_bytes": 10848,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "struct CachedSideChannelMessage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/TrainingAnalyticsSideChannel.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/TrainingAnalyticsSideChannel.cs",
+      "langage": "csharp",
+      "lignes": 52,
+      "taille_bytes": 2131,
+      "entrees": [
+        "System",
+        "Unity.MLAgents.Analytics",
+        "Unity.MLAgents.CommunicatorObjects"
+      ],
+      "sorties": [
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/SideChannels/OutgoingMessage.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/SideChannels/OutgoingMessage.cs",
+      "langage": "csharp",
+      "lignes": 110,
+      "taille_bytes": 3218,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Text"
+      ],
+      "sorties": [
+        "public class OutgoingMessage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Communicator/ICommunicator.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Communicator/ICommunicator.cs",
+      "langage": "csharp",
+      "lignes": 181,
+      "taille_bytes": 6949,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "Unity.MLAgents.Actuators",
+        "Unity.MLAgents.Sensors"
+      ],
+      "sorties": [
+        "public interface ICommunicator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Communicator/GrpcExtensions.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Communicator/GrpcExtensions.cs",
+      "langage": "csharp",
+      "lignes": 550,
+      "taille_bytes": 24073,
+      "entrees": [
+        "Google.Protobuf",
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Runtime.CompilerServices",
+        "Unity.MLAgents.Actuators",
+        "Unity.MLAgents.Analytics",
+        "Unity.MLAgents.CommunicatorObjects",
+        "Unity.MLAgents.Demonstrations",
+        "Unity.MLAgents.Policies",
+        "Unity.MLAgents.Sensors",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Communicator/UnityRLCapabilities.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Communicator/UnityRLCapabilities.cs",
+      "langage": "csharp",
+      "lignes": 91,
+      "taille_bytes": 3488,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class UnityRLCapabilities"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Communicator/RpcCommunicator.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Communicator/RpcCommunicator.cs",
+      "langage": "csharp",
+      "lignes": 607,
+      "taille_bytes": 22388,
+      "entrees": [
+        "Google.Protobuf",
+        "Grpc.Core",
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Unity.MLAgents.Actuators",
+        "Unity.MLAgents.Analytics",
+        "Unity.MLAgents.CommunicatorObjects",
+        "Unity.MLAgents.Sensors",
+        "Unity.MLAgents.SideChannels",
+        "UnityEditor",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class RpcCommunicator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Communicator/CommunicatorFactory.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Communicator/CommunicatorFactory.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 2092,
+      "entrees": [
+        "System",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/RayPerceptionSensorComponent2D.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/RayPerceptionSensorComponent2D.cs",
+      "langage": "csharp",
+      "lignes": 17,
+      "taille_bytes": 472,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class RayPerceptionSensorComponent2D"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/ArticulationBodyJointExtractor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/ArticulationBodyJointExtractor.cs",
+      "langage": "csharp",
+      "lignes": 147,
+      "taille_bytes": 5167,
+      "entrees": [
+        "System.Collections.Generic",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class ArticulationBodyJointExtractor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/IGridPerception.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/IGridPerception.cs",
+      "langage": "csharp",
+      "lignes": 62,
+      "taille_bytes": 2218,
+      "entrees": [
+        "System",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/RigidBodyJointExtractor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/RigidBodyJointExtractor.cs",
+      "langage": "csharp",
+      "lignes": 87,
+      "taille_bytes": 3566,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class RigidBodyJointExtractor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/RayPerceptionSensorComponent3D.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/RayPerceptionSensorComponent3D.cs",
+      "langage": "csharp",
+      "lignes": 58,
+      "taille_bytes": 1761,
+      "entrees": [
+        "UnityEngine",
+        "UnityEngine.Serialization"
+      ],
+      "sorties": [
+        "public class RayPerceptionSensorComponent3D"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/RigidBodySensorComponent.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/RigidBodySensorComponent.cs",
+      "langage": "csharp",
+      "lignes": 112,
+      "taille_bytes": 3810,
+      "entrees": [
+        "System.Collections.Generic",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class RigidBodySensorComponent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/CameraSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/CameraSensor.cs",
+      "langage": "csharp",
+      "lignes": 185,
+      "taille_bytes": 6745,
+      "entrees": [
+        "System",
+        "UnityEngine",
+        "UnityEngine.Rendering"
+      ],
+      "sorties": [
+        "public class CameraSensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/PhysicsSensorSettings.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/PhysicsSensorSettings.cs",
+      "langage": "csharp",
+      "lignes": 152,
+      "taille_bytes": 5389,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/RenderTextureSensorComponent.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/RenderTextureSensorComponent.cs",
+      "langage": "csharp",
+      "lignes": 120,
+      "taille_bytes": 4065,
+      "entrees": [
+        "System",
+        "UnityEngine",
+        "UnityEngine.Serialization"
+      ],
+      "sorties": [
+        "public class RenderTextureSensorComponent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/GridSensorBase.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/GridSensorBase.cs",
+      "langage": "csharp",
+      "lignes": 350,
+      "taille_bytes": 12835,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "UnityEngine",
+        "UnityEngine.Profiling"
+      ],
+      "sorties": [
+        "public class GridSensorBase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/RenderTextureSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/RenderTextureSensor.cs",
+      "langage": "csharp",
+      "lignes": 130,
+      "taille_bytes": 4414,
+      "entrees": [
+        "System",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class RenderTextureSensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/PhysicsBodySensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/PhysicsBodySensor.cs",
+      "langage": "csharp",
+      "lignes": 131,
+      "taille_bytes": 4553,
+      "entrees": [
+        "System.Collections.Generic",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class PhysicsBodySensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/CompressionSpec.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/CompressionSpec.cs",
+      "langage": "csharp",
+      "lignes": 113,
+      "taille_bytes": 4350,
+      "entrees": [
+        "System.Linq"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/PoseExtractor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/PoseExtractor.cs",
+      "langage": "csharp",
+      "lignes": 481,
+      "taille_bytes": 17831,
+      "entrees": [
+        "Object",
+        "System",
+        "System.Collections.Generic",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/SensorComponent.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/SensorComponent.cs",
+      "langage": "csharp",
+      "lignes": 17,
+      "taille_bytes": 551,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/ObservationWriter.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/ObservationWriter.cs",
+      "langage": "csharp",
+      "lignes": 363,
+      "taille_bytes": 13563,
+      "entrees": [
+        "DeviceType",
+        "System",
+        "System.Collections.Generic",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Inference",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class ObservationWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/VectorSensorComponent.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/VectorSensorComponent.cs",
+      "langage": "csharp",
+      "lignes": 87,
+      "taille_bytes": 2765,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class VectorSensorComponent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/BoxOverlapChecker.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/BoxOverlapChecker.cs",
+      "langage": "csharp",
+      "lignes": 264,
+      "taille_bytes": 9676,
+      "entrees": [
+        "System",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/RayPerceptionSensorComponentBase.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/RayPerceptionSensorComponentBase.cs",
+      "langage": "csharp",
+      "lignes": 404,
+      "taille_bytes": 16001,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "UnityEngine",
+        "UnityEngine.Serialization"
+      ],
+      "sorties": [
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/BufferSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/BufferSensor.cs",
+      "langage": "csharp",
+      "lignes": 123,
+      "taille_bytes": 3781,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [
+        "public class BufferSensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/VectorSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/VectorSensor.cs",
+      "langage": "csharp",
+      "lignes": 218,
+      "taille_bytes": 7177,
+      "entrees": [
+        "System.Collections.Generic",
+        "System.Collections.ObjectModel",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class VectorSensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/BufferSensorComponent.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/BufferSensorComponent.cs",
+      "langage": "csharp",
+      "lignes": 68,
+      "taille_bytes": 2362,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class BufferSensorComponent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/SensorShapeValidator.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/SensorShapeValidator.cs",
+      "langage": "csharp",
+      "lignes": 58,
+      "taille_bytes": 2164,
+      "entrees": [
+        "System.Collections.Generic",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class SensorShapeValidator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/CameraSensorComponent.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/CameraSensorComponent.cs",
+      "langage": "csharp",
+      "lignes": 179,
+      "taille_bytes": 5710,
+      "entrees": [
+        "System",
+        "UnityEngine",
+        "UnityEngine.Serialization"
+      ],
+      "sorties": [
+        "public class CameraSensorComponent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/ObservationSpec.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/ObservationSpec.cs",
+      "langage": "csharp",
+      "lignes": 138,
+      "taille_bytes": 5569,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/StackingSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/StackingSensor.cs",
+      "langage": "csharp",
+      "lignes": 318,
+      "taille_bytes": 12515,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Collections.ObjectModel",
+        "System.Linq",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Inference",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class StackingSensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/ArticulationBodyPoseExtractor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/ArticulationBodyPoseExtractor.cs",
+      "langage": "csharp",
+      "lignes": 108,
+      "taille_bytes": 3253,
+      "entrees": [
+        "System.Collections.Generic",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class ArticulationBodyPoseExtractor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/RigidBodyPoseExtractor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/RigidBodyPoseExtractor.cs",
+      "langage": "csharp",
+      "lignes": 208,
+      "taille_bytes": 6957,
+      "entrees": [
+        "System.Collections.Generic",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class RigidBodyPoseExtractor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/RayPerceptionSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/RayPerceptionSensor.cs",
+      "langage": "csharp",
+      "lignes": 670,
+      "taille_bytes": 25823,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "Unity.Collections",
+        "Unity.Jobs",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class RayPerceptionOutput",
+        "public class RayPerceptionSensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/IJointExtractor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/IJointExtractor.cs",
+      "langage": "csharp",
+      "lignes": 26,
+      "taille_bytes": 1298,
+      "entrees": [],
+      "sorties": [
+        "public interface IJointExtractor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/IBuiltInSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/IBuiltInSensor.cs",
+      "langage": "csharp",
+      "lignes": 69,
+      "taille_bytes": 2392,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/CountingGridSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/CountingGridSensor.cs",
+      "langage": "csharp",
+      "lignes": 61,
+      "taille_bytes": 2349,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class CountingGridSensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/GridSensorComponent.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/GridSensorComponent.cs",
+      "langage": "csharp",
+      "lignes": 313,
+      "taille_bytes": 11800,
+      "entrees": [
+        "System.Collections.Generic",
+        "System.Linq",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class GridSensorComponent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/ArticulationBodySensorComponent.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/ArticulationBodySensorComponent.cs",
+      "langage": "csharp",
+      "lignes": 25,
+      "taille_bytes": 765,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class ArticulationBodySensorComponent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/OneHotGridSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/OneHotGridSensor.cs",
+      "langage": "csharp",
+      "lignes": 59,
+      "taille_bytes": 2185,
+      "entrees": [
+        "UnityEngine"
+      ],
+      "sorties": [
+        "public class OneHotGridSensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/ISensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/ISensor.cs",
+      "langage": "csharp",
+      "lignes": 139,
+      "taille_bytes": 4868,
+      "entrees": [
+        "System",
+        "System.Collections.Generic"
+      ],
+      "sorties": [
+        "public interface ISensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/FloatReflectionSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/FloatReflectionSensor.cs",
+      "langage": "csharp",
+      "lignes": 19,
+      "taille_bytes": 602,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/BoolReflectionSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/BoolReflectionSensor.cs",
+      "langage": "csharp",
+      "lignes": 19,
+      "taille_bytes": 615,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/ObservableAttribute.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/ObservableAttribute.cs",
+      "langage": "csharp",
+      "lignes": 287,
+      "taille_bytes": 11883,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Reflection",
+        "UnityEngine"
+      ],
+      "sorties": [
+        "const BindingFlags",
+        "public class ObservableAttribute"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/EnumReflectionSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/EnumReflectionSensor.cs",
+      "langage": "csharp",
+      "lignes": 61,
+      "taille_bytes": 1861,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/Vector4ReflectionSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/Vector4ReflectionSensor.cs",
+      "langage": "csharp",
+      "lignes": 19,
+      "taille_bytes": 610,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/Vector3ReflectionSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/Vector3ReflectionSensor.cs",
+      "langage": "csharp",
+      "lignes": 19,
+      "taille_bytes": 610,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/IntReflectionSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/IntReflectionSensor.cs",
+      "langage": "csharp",
+      "lignes": 19,
+      "taille_bytes": 596,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/Vector2ReflectionSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/Vector2ReflectionSensor.cs",
+      "langage": "csharp",
+      "lignes": 20,
+      "taille_bytes": 646,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/QuaternionReflectionSensor.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/QuaternionReflectionSensor.cs",
+      "langage": "csharp",
+      "lignes": 19,
+      "taille_bytes": 624,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Sensors/Reflection/ReflectionSensorBase.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Sensors/Reflection/ReflectionSensorBase.cs",
+      "langage": "csharp",
+      "lignes": 111,
+      "taille_bytes": 3323,
+      "entrees": [
+        "System",
+        "System.Reflection"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Demonstrations/DemonstrationWriter.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Demonstrations/DemonstrationWriter.cs",
+      "langage": "csharp",
+      "lignes": 160,
+      "taille_bytes": 5260,
+      "entrees": [
+        "Google.Protobuf",
+        "System.Collections.Generic",
+        "System.IO",
+        "Unity.MLAgents.Policies",
+        "Unity.MLAgents.Sensors"
+      ],
+      "sorties": [
+        "public class DemonstrationWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Demonstrations/DemonstrationSummary.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Demonstrations/DemonstrationSummary.cs",
+      "langage": "csharp",
+      "lignes": 37,
+      "taille_bytes": 1174,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "Unity.MLAgents.Policies",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Demonstrations/DemonstrationMetaData.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Demonstrations/DemonstrationMetaData.cs",
+      "langage": "csharp",
+      "lignes": 20,
+      "taille_bytes": 537,
+      "entrees": [
+        "System",
+        "UnityEngine.Serialization"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Demonstrations/DemonstrationRecorder.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Demonstrations/DemonstrationRecorder.cs",
+      "langage": "csharp",
+      "lignes": 228,
+      "taille_bytes": 8862,
+      "entrees": [
+        "System.IO",
+        "System.IO.Abstractions",
+        "System.Text.RegularExpressions",
+        "Unity.MLAgents.Policies",
+        "UnityEngine",
+        "UnityEngine.Serialization"
+      ],
+      "sorties": [
+        "const string",
+        "public class DemonstrationRecorder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/ApplierImpl.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/ApplierImpl.cs",
+      "langage": "csharp",
+      "lignes": 228,
+      "taille_bytes": 8100,
+      "entrees": [
+        "System.Collections.Generic",
+        "System.Linq",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Actuators",
+        "Unity.MLAgents.Inference.Utils",
+        "UnityEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/ModelRunner.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/ModelRunner.cs",
+      "langage": "csharp",
+      "lignes": 267,
+      "taille_bytes": 9571,
+      "entrees": [
+        "System.Collections.Generic",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Actuators",
+        "Unity.MLAgents.Policies",
+        "Unity.MLAgents.Sensors",
+        "UnityEngine.Profiling"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/GeneratorImpl.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/GeneratorImpl.cs",
+      "langage": "csharp",
+      "lignes": 273,
+      "taille_bytes": 10206,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Inference.Utils",
+        "Unity.MLAgents.Sensors",
+        "static"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/TensorExtensions.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/TensorExtensions.cs",
+      "langage": "csharp",
+      "lignes": 66,
+      "taille_bytes": 1749,
+      "entrees": [
+        "Unity.InferenceEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/TensorGenerator.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/TensorGenerator.cs",
+      "langage": "csharp",
+      "lignes": 179,
+      "taille_bytes": 8495,
+      "entrees": [
+        "System.Collections.Generic",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Sensors",
+        "var"
+      ],
+      "sorties": [
+        "public interface IGenerator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/SentisModelParamLoader.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/SentisModelParamLoader.cs",
+      "langage": "csharp",
+      "lignes": 911,
+      "taille_bytes": 41857,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Actuators",
+        "Unity.MLAgents.Policies",
+        "Unity.MLAgents.Sensors",
+        "var"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/DynamicTensorShapeExtensions.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/DynamicTensorShapeExtensions.cs",
+      "langage": "csharp",
+      "lignes": 33,
+      "taille_bytes": 928,
+      "entrees": [
+        "Unity.InferenceEngine",
+        "UnityEngine.Assertions"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/TensorProxy.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/TensorProxy.cs",
+      "langage": "csharp",
+      "lignes": 205,
+      "taille_bytes": 6647,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Inference.Utils",
+        "Unity.MLAgents.Policies"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/TensorNames.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/TensorNames.cs",
+      "langage": "csharp",
+      "lignes": 50,
+      "taille_bytes": 2458,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/TensorApplier.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/TensorApplier.cs",
+      "langage": "csharp",
+      "lignes": 112,
+      "taille_bytes": 5289,
+      "entrees": [
+        "System.Collections.Generic",
+        "Unity.InferenceEngine",
+        "Unity.MLAgents.Actuators",
+        "var"
+      ],
+      "sorties": [
+        "public interface IApplier"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/SentisModelInfo.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/SentisModelInfo.cs",
+      "langage": "csharp",
+      "lignes": 481,
+      "taille_bytes": 17830,
+      "entrees": [
+        "FailedCheck",
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Unity.InferenceEngine"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/Utils/Multinomial.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/Utils/Multinomial.cs",
+      "langage": "csharp",
+      "lignes": 59,
+      "taille_bytes": 2272,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Inference/Utils/RandomNormal.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Inference/Utils/RandomNormal.cs",
+      "langage": "csharp",
+      "lignes": 56,
+      "taille_bytes": 1651,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Grpc/AssemblyInfo.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Grpc/AssemblyInfo.cs",
+      "langage": "csharp",
+      "lignes": 7,
+      "taille_bytes": 351,
+      "entrees": [
+        "System.Runtime.CompilerServices"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Grpc/CommunicatorObjects/TrainingAnalytics.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Grpc/CommunicatorObjects/TrainingAnalytics.cs",
+      "langage": "csharp",
+      "lignes": 907,
+      "taille_bytes": 33905,
+      "entrees": [
+        "pb",
+        "pbc",
+        "pbr",
+        "scg"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Grpc/CommunicatorObjects/Command.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Grpc/CommunicatorObjects/Command.cs",
+      "langage": "csharp",
+      "lignes": 49,
+      "taille_bytes": 1823,
+      "entrees": [
+        "pb",
+        "pbc",
+        "pbr",
+        "scg"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Grpc/CommunicatorObjects/AgentInfo.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Grpc/CommunicatorObjects/AgentInfo.cs",
+      "langage": "csharp",
+      "lignes": 361,
+      "taille_bytes": 12989,
+      "entrees": [
+        "pb",
+        "pbc",
+        "pbr",
+        "scg"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "com.unity.ml-agents/Runtime/Grpc/CommunicatorObjects/AgentInfoActionPair.cs": {
+      "fichier": "com.unity.ml-agents/Runtime/Grpc/CommunicatorObjects/AgentInfoActionPair.cs",
+      "langage": "csharp",
+      "lignes": 219,
+      "taille_bytes": 8567,
+      "entrees": [
+        "pb",
+        "pbc",
+        "pbr",
+        "scg"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "conftest.py",
+      "vers": "pytest.ini",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

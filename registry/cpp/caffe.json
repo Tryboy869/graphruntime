@@ -1,0 +1,2040 @@
+{
+  "meta": {
+    "projet": "caffe",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 1,
+      "cpp": 109,
+      "c": 1,
+      "shell": 9
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".travis.yml"
+  },
+  "noeuds": {
+    ".travis.yml": {
+      "fichier": ".travis.yml",
+      "langage": "yaml",
+      "lignes": 67,
+      "taille_bytes": 1938,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "matlab/+caffe/private/caffe_.cpp": {
+      "fichier": "matlab/+caffe/private/caffe_.cpp",
+      "langage": "cpp",
+      "lignes": 605,
+      "taille_bytes": 21980,
+      "entrees": [
+        "<sstream>",
+        "<string>",
+        "<vector>",
+        "namespace"
+      ],
+      "sorties": [
+        "const char",
+        "const float",
+        "const int",
+        "const mwSize",
+        "const mxArray",
+        "enum WhichMemory",
+        "struct handler_registry"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layer.hpp": {
+      "fichier": "include/caffe/layer.hpp",
+      "langage": "cpp",
+      "lignes": 477,
+      "taille_bytes": 16935,
+      "entrees": [
+        "<algorithm>",
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class Layer",
+        "const Dtype",
+        "const LayerParameter",
+        "const int",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/solver_factory.hpp": {
+      "fichier": "include/caffe/solver_factory.hpp",
+      "langage": "cpp",
+      "lignes": 137,
+      "taille_bytes": 4421,
+      "entrees": [
+        "<map>",
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class Solver",
+        "class SolverRegisterer",
+        "class SolverRegistry",
+        "const SolverParameter",
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layer_factory.hpp": {
+      "fichier": "include/caffe/layer_factory.hpp",
+      "langage": "cpp",
+      "lignes": 141,
+      "taille_bytes": 4515,
+      "entrees": [
+        "<map>",
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class Layer",
+        "class LayerRegisterer",
+        "class LayerRegistry",
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/common.hpp": {
+      "fichier": "include/caffe/common.hpp",
+      "langage": "cpp",
+      "lignes": 193,
+      "taille_bytes": 6435,
+      "entrees": [
+        "<boost/shared_ptr.hpp>",
+        "<climits>",
+        "<cmath>",
+        "<fstream>",
+        "<gflags/gflags.h>",
+        "<glog/logging.h>",
+        "<iostream>",
+        "<map>",
+        "<set>",
+        "<sstream>",
+        "<string>",
+        "<utility>",
+        "<vector>",
+        "boost::shared_ptr",
+        "std::fstream",
+        "std::ios",
+        "std::isinf",
+        "std::isnan",
+        "std::iterator",
+        "std::make_pair",
+        "std::map",
+        "std::ostringstream",
+        "std::pair",
+        "std::set",
+        "std::string",
+        "std::stringstream",
+        "std::vector"
+      ],
+      "sorties": [
+        "class Caffe",
+        "class Generator",
+        "class RNG",
+        "const std",
+        "enum Brew"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/filler.hpp": {
+      "fichier": "include/caffe/filler.hpp",
+      "langage": "cpp",
+      "lignes": 301,
+      "taille_bytes": 11163,
+      "entrees": [
+        "<string>",
+        "the"
+      ],
+      "sorties": [
+        "class BilinearFiller",
+        "class ConstantFiller",
+        "class Filler",
+        "class GaussianFiller",
+        "class MSRAFiller",
+        "class PositiveUnitballFiller",
+        "class UniformFiller",
+        "class XavierFiller",
+        "const Dtype",
+        "const int",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/caffe.hpp": {
+      "fichier": "include/caffe/caffe.hpp",
+      "langage": "cpp",
+      "lignes": 21,
+      "taille_bytes": 634,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/blob.hpp": {
+      "fichier": "include/caffe/blob.hpp",
+      "langage": "cpp",
+      "lignes": 282,
+      "taille_bytes": 9412,
+      "entrees": [
+        "<algorithm>",
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class Blob",
+        "const Dtype",
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/solver.hpp": {
+      "fichier": "include/caffe/solver.hpp",
+      "langage": "cpp",
+      "lignes": 138,
+      "taille_bytes": 4738,
+      "entrees": [
+        "<boost/function.hpp>",
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class Callback",
+        "class Solver",
+        "const vector",
+        "enum Enum"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/syncedmem.hpp": {
+      "fichier": "include/caffe/syncedmem.hpp",
+      "langage": "cpp",
+      "lignes": 95,
+      "taille_bytes": 2150,
+      "entrees": [
+        "<cstdlib>"
+      ],
+      "sorties": [
+        "class SyncedMemory",
+        "const void",
+        "enum SyncedHead"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/internal_thread.hpp": {
+      "fichier": "include/caffe/internal_thread.hpp",
+      "langage": "cpp",
+      "lignes": 53,
+      "taille_bytes": 1400,
+      "entrees": [],
+      "sorties": [
+        "class InternalThread"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/data_transformer.hpp": {
+      "fichier": "include/caffe/data_transformer.hpp",
+      "langage": "cpp",
+      "lignes": 154,
+      "taille_bytes": 4904,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class DataTransformer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/net.hpp": {
+      "fichier": "include/caffe/net.hpp",
+      "langage": "cpp",
+      "lignes": 345,
+      "taille_bytes": 12555,
+      "entrees": [
+        "<map>",
+        "<set>",
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class Callback",
+        "class Net",
+        "const int",
+        "const map",
+        "const shared_ptr",
+        "const string",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/parallel.hpp": {
+      "fichier": "include/caffe/parallel.hpp",
+      "langage": "cpp",
+      "lignes": 123,
+      "taille_bytes": 2885,
+      "entrees": [
+        "<boost/thread.hpp>",
+        "<string>",
+        "<vector>",
+        "Params<Dtype>::data_",
+        "Params<Dtype>::diff_",
+        "Params<Dtype>::size_"
+      ],
+      "sorties": [
+        "class GPUParams",
+        "class NCCL",
+        "class Params",
+        "const size_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/sgd_solvers.hpp": {
+      "fichier": "include/caffe/sgd_solvers.hpp",
+      "langage": "cpp",
+      "lignes": 149,
+      "taille_bytes": 4996,
+      "entrees": [
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class AdaDeltaSolver",
+        "class AdaGradSolver",
+        "class AdamSolver",
+        "class NesterovSolver",
+        "class RMSPropSolver",
+        "class SGDSolver",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/rng.hpp": {
+      "fichier": "include/caffe/util/rng.hpp",
+      "langage": "cpp",
+      "lignes": 43,
+      "taille_bytes": 1159,
+      "entrees": [
+        "<algorithm>",
+        "<iterator>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/cudnn.hpp": {
+      "fichier": "include/caffe/util/cudnn.hpp",
+      "langage": "cpp",
+      "lignes": 169,
+      "taille_bytes": 5526,
+      "entrees": [
+        "<cudnn.h>"
+      ],
+      "sorties": [
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/device_alternate.hpp": {
+      "fichier": "include/caffe/util/device_alternate.hpp",
+      "langage": "cpp",
+      "lignes": 96,
+      "taille_bytes": 2848,
+      "entrees": [
+        "<cublas_v2.h>",
+        "<cuda.h>",
+        "<cuda_runtime.h>",
+        "<curand.h>",
+        "<driver_types.h>",
+        "<vector>"
+      ],
+      "sorties": [
+        "const char",
+        "const int",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/signal_handler.h": {
+      "fichier": "include/caffe/util/signal_handler.h",
+      "langage": "c",
+      "lignes": 24,
+      "taille_bytes": 641,
+      "entrees": [],
+      "sorties": [
+        "class SignalHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/db_leveldb.hpp": {
+      "fichier": "include/caffe/util/db_leveldb.hpp",
+      "langage": "cpp",
+      "lignes": 78,
+      "taille_bytes": 1942,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "class LevelDB",
+        "class LevelDBCursor",
+        "class LevelDBTransaction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/format.hpp": {
+      "fichier": "include/caffe/util/format.hpp",
+      "langage": "cpp",
+      "lignes": 18,
+      "taille_bytes": 416,
+      "entrees": [
+        "<iomanip>",
+        "<sstream>",
+        "<string>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/db.hpp": {
+      "fichier": "include/caffe/util/db.hpp",
+      "langage": "cpp",
+      "lignes": 54,
+      "taille_bytes": 1065,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "class Cursor",
+        "class DB",
+        "class Transaction",
+        "enum Mode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/db_lmdb.hpp": {
+      "fichier": "include/caffe/util/db_lmdb.hpp",
+      "langage": "cpp",
+      "lignes": 96,
+      "taille_bytes": 2208,
+      "entrees": [
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class LMDB",
+        "class LMDBCursor",
+        "class LMDBTransaction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/im2col.hpp": {
+      "fichier": "include/caffe/util/im2col.hpp",
+      "langage": "cpp",
+      "lignes": 60,
+      "taille_bytes": 2428,
+      "entrees": [],
+      "sorties": [
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/upgrade_proto.hpp": {
+      "fichier": "include/caffe/util/upgrade_proto.hpp",
+      "langage": "cpp",
+      "lignes": 88,
+      "taille_bytes": 3668,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/io.hpp": {
+      "fichier": "include/caffe/util/io.hpp",
+      "langage": "cpp",
+      "lignes": 152,
+      "taille_bytes": 4798,
+      "entrees": [
+        "::boost::filesystem::path",
+        "::google::protobuf::Message",
+        "<boost/filesystem.hpp>",
+        "<iomanip>",
+        "<iostream>",
+        "<string>"
+      ],
+      "sorties": [
+        "const Message",
+        "const bool",
+        "const int",
+        "const path",
+        "const std"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/blocking_queue.hpp": {
+      "fichier": "include/caffe/util/blocking_queue.hpp",
+      "langage": "cpp",
+      "lignes": 45,
+      "taille_bytes": 856,
+      "entrees": [
+        "<queue>",
+        "<string>"
+      ],
+      "sorties": [
+        "class BlockingQueue",
+        "class sync"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/mkl_alternate.hpp": {
+      "fichier": "include/caffe/util/mkl_alternate.hpp",
+      "langage": "cpp",
+      "lignes": 103,
+      "taille_bytes": 3494,
+      "entrees": [
+        "<Accelerate/Accelerate.h>",
+        "<cblas.h>",
+        "<math.h>",
+        "<mkl.h>"
+      ],
+      "sorties": [
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/nccl.hpp": {
+      "fichier": "include/caffe/util/nccl.hpp",
+      "langage": "cpp",
+      "lignes": 37,
+      "taille_bytes": 646,
+      "entrees": [
+        "<nccl.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/math_functions.hpp": {
+      "fichier": "include/caffe/util/math_functions.hpp",
+      "langage": "cpp",
+      "lignes": 284,
+      "taille_bytes": 9527,
+      "entrees": [
+        "<cmath>",
+        "<stdint.h>"
+      ],
+      "sorties": [
+        "const CBLAS_TRANSPOSE",
+        "const Dtype"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/insert_splits.hpp": {
+      "fichier": "include/caffe/util/insert_splits.hpp",
+      "langage": "cpp",
+      "lignes": 26,
+      "taille_bytes": 833,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/benchmark.hpp": {
+      "fichier": "include/caffe/util/benchmark.hpp",
+      "langage": "cpp",
+      "lignes": 52,
+      "taille_bytes": 1113,
+      "entrees": [
+        "<boost/date_time/posix_time/posix_time.hpp>"
+      ],
+      "sorties": [
+        "class CPUTimer",
+        "class Timer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/util/hdf5.hpp": {
+      "fichier": "include/caffe/util/hdf5.hpp",
+      "langage": "cpp",
+      "lignes": 41,
+      "taille_bytes": 1149,
+      "entrees": [
+        "<string>"
+      ],
+      "sorties": [
+        "const hid_t",
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/test/test_gradient_check_util.hpp": {
+      "fichier": "include/caffe/test/test_gradient_check_util.hpp",
+      "langage": "cpp",
+      "lignes": 266,
+      "taille_bytes": 11478,
+      "entrees": [
+        "<algorithm>",
+        "<cmath>",
+        "<glog/logging.h>",
+        "<gtest/gtest.h>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class GradientChecker",
+        "const Dtype",
+        "const Net",
+        "const bool",
+        "const int",
+        "const unsigned",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/test/test_caffe_main.hpp": {
+      "fichier": "include/caffe/test/test_caffe_main.hpp",
+      "langage": "cpp",
+      "lignes": 77,
+      "taille_bytes": 1736,
+      "entrees": [
+        "<cstdio>",
+        "<cstdlib>",
+        "<glog/logging.h>",
+        "<gtest/gtest.h>",
+        "std::cout",
+        "std::endl"
+      ],
+      "sorties": [
+        "class CPUDeviceTest",
+        "class GPUDeviceTest",
+        "class MultiDeviceTest",
+        "struct CPUDevice",
+        "struct GPUDevice"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/conv_layer.hpp": {
+      "fichier": "include/caffe/layers/conv_layer.hpp",
+      "langage": "cpp",
+      "lignes": 84,
+      "taille_bytes": 3930,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ConvolutionLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/absval_layer.hpp": {
+      "fichier": "include/caffe/layers/absval_layer.hpp",
+      "langage": "cpp",
+      "lignes": 68,
+      "taille_bytes": 2343,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class AbsValLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/dummy_data_layer.hpp": {
+      "fichier": "include/caffe/layers/dummy_data_layer.hpp",
+      "langage": "cpp",
+      "lignes": 47,
+      "taille_bytes": 1515,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class DummyDataLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/dropout_layer.hpp": {
+      "fichier": "include/caffe/layers/dropout_layer.hpp",
+      "langage": "cpp",
+      "lignes": 80,
+      "taille_bytes": 2878,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class DropoutLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/lrn_layer.hpp": {
+      "fichier": "include/caffe/layers/lrn_layer.hpp",
+      "langage": "cpp",
+      "lignes": 94,
+      "taille_bytes": 3349,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class LRNLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/cudnn_sigmoid_layer.hpp": {
+      "fichier": "include/caffe/layers/cudnn_sigmoid_layer.hpp",
+      "langage": "cpp",
+      "lignes": 46,
+      "taille_bytes": 1315,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class CuDNNSigmoidLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/spp_layer.hpp": {
+      "fichier": "include/caffe/layers/spp_layer.hpp",
+      "langage": "cpp",
+      "lignes": 76,
+      "taille_bytes": 2998,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class SPPLayer",
+        "const int",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/lstm_layer.hpp": {
+      "fichier": "include/caffe/layers/lstm_layer.hpp",
+      "langage": "cpp",
+      "lignes": 154,
+      "taille_bytes": 6038,
+      "entrees": [
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class LSTMLayer",
+        "class LSTMUnitLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/tile_layer.hpp": {
+      "fichier": "include/caffe/layers/tile_layer.hpp",
+      "langage": "cpp",
+      "lignes": 43,
+      "taille_bytes": 1300,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class TileLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/inner_product_layer.hpp": {
+      "fichier": "include/caffe/layers/inner_product_layer.hpp",
+      "langage": "cpp",
+      "lignes": 52,
+      "taille_bytes": 1718,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class InnerProductLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/silence_layer.hpp": {
+      "fichier": "include/caffe/layers/silence_layer.hpp",
+      "langage": "cpp",
+      "lignes": 43,
+      "taille_bytes": 1445,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class SilenceLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/input_layer.hpp": {
+      "fichier": "include/caffe/layers/input_layer.hpp",
+      "langage": "cpp",
+      "lignes": 42,
+      "taille_bytes": 1312,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class InputLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/multinomial_logistic_loss_layer.hpp": {
+      "fichier": "include/caffe/layers/multinomial_logistic_loss_layer.hpp",
+      "langage": "cpp",
+      "lignes": 92,
+      "taille_bytes": 3928,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class MultinomialLogisticLossLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/neuron_layer.hpp": {
+      "fichier": "include/caffe/layers/neuron_layer.hpp",
+      "langage": "cpp",
+      "lignes": 32,
+      "taille_bytes": 887,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class NeuronLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/cudnn_tanh_layer.hpp": {
+      "fichier": "include/caffe/layers/cudnn_tanh_layer.hpp",
+      "langage": "cpp",
+      "lignes": 46,
+      "taille_bytes": 1285,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class CuDNNTanHLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/hdf5_output_layer.hpp": {
+      "fichier": "include/caffe/layers/hdf5_output_layer.hpp",
+      "langage": "cpp",
+      "lignes": 62,
+      "taille_bytes": 1928,
+      "entrees": [
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class HDF5OutputLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/filter_layer.hpp": {
+      "fichier": "include/caffe/layers/filter_layer.hpp",
+      "langage": "cpp",
+      "lignes": 77,
+      "taille_bytes": 2700,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class FilterLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/loss_layer.hpp": {
+      "fichier": "include/caffe/layers/loss_layer.hpp",
+      "langage": "cpp",
+      "lignes": 53,
+      "taille_bytes": 1640,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class LossLayer",
+        "const float",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/tanh_layer.hpp": {
+      "fichier": "include/caffe/layers/tanh_layer.hpp",
+      "langage": "cpp",
+      "lignes": 73,
+      "taille_bytes": 2504,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class TanHLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/accuracy_layer.hpp": {
+      "fichier": "include/caffe/layers/accuracy_layer.hpp",
+      "langage": "cpp",
+      "lignes": 99,
+      "taille_bytes": 3595,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class AccuracyLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/base_data_layer.hpp": {
+      "fichier": "include/caffe/layers/base_data_layer.hpp",
+      "langage": "cpp",
+      "lignes": 82,
+      "taille_bytes": 2762,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class BaseDataLayer",
+        "class BasePrefetchingDataLayer",
+        "class Batch",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/softmax_loss_layer.hpp": {
+      "fichier": "include/caffe/layers/softmax_loss_layer.hpp",
+      "langage": "cpp",
+      "lignes": 130,
+      "taille_bytes": 5868,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class SoftmaxWithLossLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/cudnn_conv_layer.hpp": {
+      "fichier": "include/caffe/layers/cudnn_conv_layer.hpp",
+      "langage": "cpp",
+      "lignes": 72,
+      "taille_bytes": 2532,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class CuDNNConvolutionLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/data_layer.hpp": {
+      "fichier": "include/caffe/layers/data_layer.hpp",
+      "langage": "cpp",
+      "lignes": 40,
+      "taille_bytes": 1076,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class DataLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/softmax_layer.hpp": {
+      "fichier": "include/caffe/layers/softmax_layer.hpp",
+      "langage": "cpp",
+      "lignes": 50,
+      "taille_bytes": 1564,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class SoftmaxLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/rnn_layer.hpp": {
+      "fichier": "include/caffe/layers/rnn_layer.hpp",
+      "langage": "cpp",
+      "lignes": 47,
+      "taille_bytes": 1375,
+      "entrees": [
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class RNNLayer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/cudnn_pooling_layer.hpp": {
+      "fichier": "include/caffe/layers/cudnn_pooling_layer.hpp",
+      "langage": "cpp",
+      "lignes": 49,
+      "taille_bytes": 1507,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class CuDNNPoolingLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/im2col_layer.hpp": {
+      "fichier": "include/caffe/layers/im2col_layer.hpp",
+      "langage": "cpp",
+      "lignes": 65,
+      "taille_bytes": 2015,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class Im2colLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/batch_norm_layer.hpp": {
+      "fichier": "include/caffe/layers/batch_norm_layer.hpp",
+      "langage": "cpp",
+      "lignes": 78,
+      "taille_bytes": 3025,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class BatchNormLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/prelu_layer.hpp": {
+      "fichier": "include/caffe/layers/prelu_layer.hpp",
+      "langage": "cpp",
+      "lignes": 101,
+      "taille_bytes": 3805,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class PReLULayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/power_layer.hpp": {
+      "fichier": "include/caffe/layers/power_layer.hpp",
+      "langage": "cpp",
+      "lignes": 89,
+      "taille_bytes": 3120,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class PowerLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/cudnn_lrn_layer.hpp": {
+      "fichier": "include/caffe/layers/cudnn_lrn_layer.hpp",
+      "langage": "cpp",
+      "lignes": 44,
+      "taille_bytes": 1191,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class CuDNNLRNLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/mvn_layer.hpp": {
+      "fichier": "include/caffe/layers/mvn_layer.hpp",
+      "langage": "cpp",
+      "lignes": 48,
+      "taille_bytes": 1483,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class MVNLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/scale_layer.hpp": {
+      "fichier": "include/caffe/layers/scale_layer.hpp",
+      "langage": "cpp",
+      "lignes": 85,
+      "taille_bytes": 3106,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ScaleLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/cudnn_deconv_layer.hpp": {
+      "fichier": "include/caffe/layers/cudnn_deconv_layer.hpp",
+      "langage": "cpp",
+      "lignes": 68,
+      "taille_bytes": 2375,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class CuDNNDeconvolutionLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/deconv_layer.hpp": {
+      "fichier": "include/caffe/layers/deconv_layer.hpp",
+      "langage": "cpp",
+      "lignes": 51,
+      "taille_bytes": 1977,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class DeconvolutionLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/memory_data_layer.hpp": {
+      "fichier": "include/caffe/layers/memory_data_layer.hpp",
+      "langage": "cpp",
+      "lignes": 63,
+      "taille_bytes": 1807,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class MemoryDataLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/eltwise_layer.hpp": {
+      "fichier": "include/caffe/layers/eltwise_layer.hpp",
+      "langage": "cpp",
+      "lignes": 51,
+      "taille_bytes": 1604,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class EltwiseLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/euclidean_loss_layer.hpp": {
+      "fichier": "include/caffe/layers/euclidean_loss_layer.hpp",
+      "langage": "cpp",
+      "lignes": 107,
+      "taille_bytes": 4581,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class EuclideanLossLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/bias_layer.hpp": {
+      "fichier": "include/caffe/layers/bias_layer.hpp",
+      "langage": "cpp",
+      "lignes": 54,
+      "taille_bytes": 1875,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class BiasLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/embed_layer.hpp": {
+      "fichier": "include/caffe/layers/embed_layer.hpp",
+      "langage": "cpp",
+      "lignes": 52,
+      "taille_bytes": 1691,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class EmbedLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/relu_layer.hpp": {
+      "fichier": "include/caffe/layers/relu_layer.hpp",
+      "langage": "cpp",
+      "lignes": 85,
+      "taille_bytes": 3114,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ReLULayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/elu_layer.hpp": {
+      "fichier": "include/caffe/layers/elu_layer.hpp",
+      "langage": "cpp",
+      "lignes": 86,
+      "taille_bytes": 2860,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ELULayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/swish_layer.hpp": {
+      "fichier": "include/caffe/layers/swish_layer.hpp",
+      "langage": "cpp",
+      "lignes": 96,
+      "taille_bytes": 3544,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class SwishLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/cudnn_relu_layer.hpp": {
+      "fichier": "include/caffe/layers/cudnn_relu_layer.hpp",
+      "langage": "cpp",
+      "lignes": 46,
+      "taille_bytes": 1285,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class CuDNNReLULayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/cudnn_lcn_layer.hpp": {
+      "fichier": "include/caffe/layers/cudnn_lcn_layer.hpp",
+      "langage": "cpp",
+      "lignes": 49,
+      "taille_bytes": 1355,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class CuDNNLCNLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/pooling_layer.hpp": {
+      "fichier": "include/caffe/layers/pooling_layer.hpp",
+      "langage": "cpp",
+      "lignes": 61,
+      "taille_bytes": 2009,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class PoolingLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/slice_layer.hpp": {
+      "fichier": "include/caffe/layers/slice_layer.hpp",
+      "langage": "cpp",
+      "lignes": 51,
+      "taille_bytes": 1609,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class SliceLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/concat_layer.hpp": {
+      "fichier": "include/caffe/layers/concat_layer.hpp",
+      "langage": "cpp",
+      "lignes": 87,
+      "taille_bytes": 3130,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ConcatLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/parameter_layer.hpp": {
+      "fichier": "include/caffe/layers/parameter_layer.hpp",
+      "langage": "cpp",
+      "lignes": 45,
+      "taille_bytes": 1420,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ParameterLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/sigmoid_layer.hpp": {
+      "fichier": "include/caffe/layers/sigmoid_layer.hpp",
+      "langage": "cpp",
+      "lignes": 71,
+      "taille_bytes": 2365,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class SigmoidLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/crop_layer.hpp": {
+      "fichier": "include/caffe/layers/crop_layer.hpp",
+      "langage": "cpp",
+      "lignes": 78,
+      "taille_bytes": 2845,
+      "entrees": [
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class CropLayer",
+        "const Dtype",
+        "const int",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/cudnn_softmax_layer.hpp": {
+      "fichier": "include/caffe/layers/cudnn_softmax_layer.hpp",
+      "langage": "cpp",
+      "lignes": 45,
+      "taille_bytes": 1281,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class CuDNNSoftmaxLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/infogain_loss_layer.hpp": {
+      "fichier": "include/caffe/layers/infogain_loss_layer.hpp",
+      "langage": "cpp",
+      "lignes": 146,
+      "taille_bytes": 6566,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class InfogainLossLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/sigmoid_cross_entropy_loss_layer.hpp": {
+      "fichier": "include/caffe/layers/sigmoid_cross_entropy_loss_layer.hpp",
+      "langage": "cpp",
+      "lignes": 128,
+      "taille_bytes": 5420,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class SigmoidCrossEntropyLossLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/split_layer.hpp": {
+      "fichier": "include/caffe/layers/split_layer.hpp",
+      "langage": "cpp",
+      "lignes": 45,
+      "taille_bytes": 1442,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class SplitLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/base_conv_layer.hpp": {
+      "fichier": "include/caffe/layers/base_conv_layer.hpp",
+      "langage": "cpp",
+      "lignes": 174,
+      "taille_bytes": 6692,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class BaseConvolutionLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/bnll_layer.hpp": {
+      "fichier": "include/caffe/layers/bnll_layer.hpp",
+      "langage": "cpp",
+      "lignes": 70,
+      "taille_bytes": 2307,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class BNLLLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/exp_layer.hpp": {
+      "fichier": "include/caffe/layers/exp_layer.hpp",
+      "langage": "cpp",
+      "lignes": 80,
+      "taille_bytes": 2747,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ExpLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/hinge_loss_layer.hpp": {
+      "fichier": "include/caffe/layers/hinge_loss_layer.hpp",
+      "langage": "cpp",
+      "lignes": 104,
+      "taille_bytes": 4351,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class HingeLossLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/python_layer.hpp": {
+      "fichier": "include/caffe/layers/python_layer.hpp",
+      "langage": "cpp",
+      "lignes": 55,
+      "taille_bytes": 1648,
+      "entrees": [
+        "<boost/python.hpp>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class PythonLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/contrastive_loss_layer.hpp": {
+      "fichier": "include/caffe/layers/contrastive_loss_layer.hpp",
+      "langage": "cpp",
+      "lignes": 101,
+      "taille_bytes": 4076,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ContrastiveLossLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/argmax_layer.hpp": {
+      "fichier": "include/caffe/layers/argmax_layer.hpp",
+      "langage": "cpp",
+      "lignes": 77,
+      "taille_bytes": 2727,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ArgMaxLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/image_data_layer.hpp": {
+      "fichier": "include/caffe/layers/image_data_layer.hpp",
+      "langage": "cpp",
+      "lignes": 47,
+      "taille_bytes": 1280,
+      "entrees": [
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class ImageDataLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/window_data_layer.hpp": {
+      "fichier": "include/caffe/layers/window_data_layer.hpp",
+      "langage": "cpp",
+      "lignes": 56,
+      "taille_bytes": 1793,
+      "entrees": [
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class WindowDataLayer",
+        "const vector",
+        "enum WindowField"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/reshape_layer.hpp": {
+      "fichier": "include/caffe/layers/reshape_layer.hpp",
+      "langage": "cpp",
+      "lignes": 52,
+      "taille_bytes": 1811,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ReshapeLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/recurrent_layer.hpp": {
+      "fichier": "include/caffe/layers/recurrent_layer.hpp",
+      "langage": "cpp",
+      "lignes": 187,
+      "taille_bytes": 7342,
+      "entrees": [
+        "<string>",
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class RecurrentLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/clip_layer.hpp": {
+      "fichier": "include/caffe/layers/clip_layer.hpp",
+      "langage": "cpp",
+      "lignes": 75,
+      "taille_bytes": 2412,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ClipLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/log_layer.hpp": {
+      "fichier": "include/caffe/layers/log_layer.hpp",
+      "langage": "cpp",
+      "lignes": 82,
+      "taille_bytes": 2803,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class LogLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/threshold_layer.hpp": {
+      "fichier": "include/caffe/layers/threshold_layer.hpp",
+      "langage": "cpp",
+      "lignes": 64,
+      "taille_bytes": 1925,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ThresholdLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/hdf5_data_layer.hpp": {
+      "fichier": "include/caffe/layers/hdf5_data_layer.hpp",
+      "langage": "cpp",
+      "lignes": 64,
+      "taille_bytes": 2004,
+      "entrees": [
+        "<string>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class HDF5DataLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/batch_reindex_layer.hpp": {
+      "fichier": "include/caffe/layers/batch_reindex_layer.hpp",
+      "langage": "cpp",
+      "lignes": 83,
+      "taille_bytes": 2825,
+      "entrees": [
+        "<utility>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class BatchReindexLayer",
+        "const Dtype",
+        "const std",
+        "const vector",
+        "struct pair_sort_first"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/reduction_layer.hpp": {
+      "fichier": "include/caffe/layers/reduction_layer.hpp",
+      "langage": "cpp",
+      "lignes": 59,
+      "taille_bytes": 2043,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class ReductionLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "include/caffe/layers/flatten_layer.hpp": {
+      "fichier": "include/caffe/layers/flatten_layer.hpp",
+      "langage": "cpp",
+      "lignes": 61,
+      "taille_bytes": 2103,
+      "entrees": [
+        "<vector>"
+      ],
+      "sorties": [
+        "class FlattenLayer",
+        "const vector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/imagenet/resume_training.sh": {
+      "fichier": "examples/imagenet/resume_training.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 207,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/imagenet/make_imagenet_mean.sh": {
+      "fichier": "examples/imagenet/make_imagenet_mean.sh",
+      "langage": "shell",
+      "lignes": 12,
+      "taille_bytes": 287,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/imagenet/create_imagenet.sh": {
+      "fichier": "examples/imagenet/create_imagenet.sh",
+      "langage": "shell",
+      "lignes": 58,
+      "taille_bytes": 1503,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/imagenet/train_caffenet.sh": {
+      "fichier": "examples/imagenet/train_caffenet.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 117,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mnist/train_lenet.sh": {
+      "fichier": "examples/mnist/train_lenet.sh",
+      "langage": "shell",
+      "lignes": 4,
+      "taille_bytes": 101,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mnist/convert_mnist_data.cpp": {
+      "fichier": "examples/mnist/convert_mnist_data.cpp",
+      "langage": "cpp",
+      "lignes": 147,
+      "taille_bytes": 4520,
+      "entrees": [
+        "<fstream>",
+        "<gflags/gflags.h>",
+        "<glog/logging.h>",
+        "<google/protobuf/text_format.h>",
+        "<leveldb/db.h>",
+        "<leveldb/write_batch.h>",
+        "<lmdb.h>",
+        "<stdint.h>",
+        "<string>",
+        "<sys/stat.h>",
+        "boost::scoped_ptr",
+        "namespace",
+        "std::string"
+      ],
+      "sorties": [
+        "const char",
+        "const string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mnist/train_mnist_autoencoder_adadelta.sh": {
+      "fichier": "examples/mnist/train_mnist_autoencoder_adadelta.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 120,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mnist/train_mnist_autoencoder.sh": {
+      "fichier": "examples/mnist/train_mnist_autoencoder.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 117,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mnist/train_lenet_consolidated.sh": {
+      "fichier": "examples/mnist/train_lenet_consolidated.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 118,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mnist/train_lenet_rmsprop.sh": {
+      "fichier": "examples/mnist/train_lenet_rmsprop.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 115,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

@@ -1,0 +1,917 @@
+{
+  "meta": {
+    "projet": "colly",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "go": 50,
+      "yaml": 1,
+      "html": 4
+    }
+  },
+  "stats": {
+    "fichiers_total": 55,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "htmlelement.go"
+  },
+  "noeuds": {
+    "htmlelement.go": {
+      "fichier": "htmlelement.go",
+      "langage": "go",
+      "lignes": 131,
+      "taille_bytes": 4187,
+      "entrees": [],
+      "sorties": [
+        "func NewHTMLElementFromSelectionNode",
+        "type HTMLElement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "http_backend.go": {
+      "fichier": "http_backend.go",
+      "langage": "go",
+      "lignes": 245,
+      "taille_bytes": 6969,
+      "entrees": [],
+      "sorties": [
+        "type LimitRule",
+        "type checkRequestHeadersFunc",
+        "type checkResponseHeadersFunc",
+        "type httpBackend"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".codecov.yml": {
+      "fichier": ".codecov.yml",
+      "langage": "yaml",
+      "lignes": 1,
+      "taille_bytes": 15,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "xmlelement.go": {
+      "fichier": "xmlelement.go",
+      "langage": "go",
+      "lignes": 171,
+      "taille_bytes": 4850,
+      "entrees": [],
+      "sorties": [
+        "func NewXMLElementFromHTMLNode",
+        "func NewXMLElementFromXMLNode",
+        "type XMLElement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unmarshal.go": {
+      "fichier": "unmarshal.go",
+      "langage": "go",
+      "lignes": 223,
+      "taille_bytes": 6078,
+      "entrees": [],
+      "sorties": [
+        "func UnmarshalHTML",
+        "func getDOMValue",
+        "func unmarshalAttr",
+        "func unmarshalPtr",
+        "func unmarshalSelector",
+        "func unmarshalSlice",
+        "func unmarshalStruct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "response.go": {
+      "fichier": "response.go",
+      "langage": "go",
+      "lignes": 116,
+      "taille_bytes": 3220,
+      "entrees": [],
+      "sorties": [
+        "func encodeBytes",
+        "type Response"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unmarshal_test.go": {
+      "fichier": "unmarshal_test.go",
+      "langage": "go",
+      "lignes": 163,
+      "taille_bytes": 4785,
+      "entrees": [],
+      "sorties": [
+        "func TestBasicUnmarshal",
+        "func TestNestedUnmarshal",
+        "func TestNestedUnmarshalMap",
+        "func TestPointerSliceUnmarshall",
+        "func TestStructSliceUnmarshall",
+        "type info",
+        "type nested",
+        "type object"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "http_trace.go": {
+      "fichier": "http_trace.go",
+      "langage": "go",
+      "lignes": 37,
+      "taille_bytes": 1068,
+      "entrees": [],
+      "sorties": [
+        "type HTTPTrace"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "xmlelement_test.go": {
+      "fichier": "xmlelement_test.go",
+      "langage": "go",
+      "lignes": 123,
+      "taille_bytes": 4299,
+      "entrees": [],
+      "sorties": [
+        "const htmlPage",
+        "func TestAttr",
+        "func TestChildAttr",
+        "func TestChildAttrs",
+        "func TestChildText",
+        "func TestChildTexts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "context.go": {
+      "fichier": "context.go",
+      "langage": "go",
+      "lignes": 99,
+      "taille_bytes": 2459,
+      "entrees": [],
+      "sorties": [
+        "func NewContext",
+        "type Context"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "http_trace_test.go": {
+      "fichier": "http_trace_test.go",
+      "langage": "go",
+      "lignes": 73,
+      "taille_bytes": 1781,
+      "entrees": [],
+      "sorties": [
+        "const testDelay",
+        "func TestTraceWithDelay",
+        "func TestTraceWithNoDelay",
+        "func newTraceTestServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "request.go": {
+      "fichier": "request.go",
+      "langage": "go",
+      "lignes": 200,
+      "taille_bytes": 5908,
+      "entrees": [],
+      "sorties": [
+        "type Request",
+        "type serializableRequest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "colly.go": {
+      "fichier": "colly.go",
+      "langage": "go",
+      "lignes": 1657,
+      "taille_bytes": 48126,
+      "entrees": [],
+      "sorties": [
+        "const envVariablePrefix",
+        "func AllowURLRevisit",
+        "func AllowedDomains",
+        "func Async",
+        "func CacheDir",
+        "func CacheExpiration",
+        "func CheckHead",
+        "func Debugger",
+        "func DetectCharset",
+        "func DisallowedDomains",
+        "func DisallowedURLFilters",
+        "func Headers",
+        "func ID",
+        "func IgnoreRobotsTxt",
+        "func MaxBodySize",
+        "func MaxDepth",
+        "func MaxRequests",
+        "func NewCollector",
+        "func ParseHTTPErrorResponse",
+        "func SanitizeFileName",
+        "func StdlibContext",
+        "func TraceHTTP",
+        "func URLFilters",
+        "func UserAgent",
+        "func createEvent",
+        "func createFormReader",
+        "func createJar",
+        "func createMultipartReader",
+        "func isMatchingFilter",
+        "func isYesString",
+        "func normalizeURL",
+        "func randomBoundary",
+        "func requestHash",
+        "type AlreadyVisitedError",
+        "type Collector",
+        "type CollectorOption",
+        "type ErrorCallback",
+        "type HTMLCallback",
+        "type ProxyFunc",
+        "type RequestCallback",
+        "type ResponseCallback",
+        "type ResponseHeadersCallback",
+        "type ScrapedCallback",
+        "type XMLCallback",
+        "type cookieJarSerializer",
+        "type htmlCallbackContainer",
+        "type key",
+        "type xmlCallbackContainer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "colly_test.go": {
+      "fichier": "colly_test.go",
+      "langage": "go",
+      "lignes": 1970,
+      "taille_bytes": 45902,
+      "entrees": [],
+      "sorties": [
+        "const cookieName",
+        "const defaultUserAgent",
+        "const exampleHostHeader",
+        "const exampleTestHeader",
+        "const exampleUserAgent1",
+        "const exampleUserAgent2",
+        "const setCookiePath",
+        "func BenchmarkOnHTML",
+        "func BenchmarkOnResponse",
+        "func BenchmarkOnXML",
+        "func TestBaseTag",
+        "func TestBaseTagRelative",
+        "func TestCallbackDetachment",
+        "func TestCheckRequestHeadersFunc",
+        "func TestCollectorContentSniffing",
+        "func TestCollectorContext",
+        "func TestCollectorCookies",
+        "func TestCollectorDepth",
+        "func TestCollectorGetRetry",
+        "func TestCollectorOnHTML",
+        "func TestCollectorOnXMLWithHtml",
+        "func TestCollectorOnXMLWithXML",
+        "func TestCollectorPost",
+        "func TestCollectorPostRaw",
+        "func TestCollectorPostRawRevisit",
+        "func TestCollectorPostRetry",
+        "func TestCollectorPostRetryUnseekable",
+        "func TestCollectorPostRevisit",
+        "func TestCollectorPostURLRevisitCheck",
+        "func TestCollectorRequests",
+        "func TestCollectorURLRevisit",
+        "func TestCollectorURLRevisitCheck",
+        "func TestCollectorURLRevisitDomainDisallowed",
+        "func TestCollectorVisit",
+        "func TestCollectorVisitResponseHeaders",
+        "func TestCollectorVisitWithAllowedDomains",
+        "func TestCollectorVisitWithCheckHead",
+        "func TestCollectorVisitWithDisallowedDomains",
+        "func TestCollectorVisitWithTrace",
+        "func TestConnectionErrorOnRobotsTxtResultsInError",
+        "func TestEnvSettings",
+        "func TestHTMLElement",
+        "func TestHeaders",
+        "func TestIgnoreRobotsWhenDisallowed",
+        "func TestIssue594",
+        "func TestIssue745GzipURLWith404Response",
+        "func TestLonePercent",
+        "func TestNewCollector",
+        "func TestNoAcceptHeader",
+        "func TestParseHTTPErrorResponse",
+        "func TestRedirect",
+        "func TestRedirectErrorRetry",
+        "func TestRedirectWithDisallowedURLs",
+        "func TestRobotsWhenAllowed",
+        "func TestRobotsWhenDisallowed",
+        "func TestRobotsWhenDisallowedWithQueryParameter",
+        "func TestSetCookieRedirect",
+        "func TestTabsAndNewlines",
+        "func TestUserAgent",
+        "func newTestServer",
+        "func newUnstartedTestServer",
+        "func requireSessionCookieAuthPage",
+        "func requireSessionCookieSimple",
+        "type middleware"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "context_test.go": {
+      "fichier": "context_test.go",
+      "langage": "go",
+      "lignes": 60,
+      "taille_bytes": 1472,
+      "entrees": [],
+      "sorties": [
+        "func TestContextClone",
+        "func TestContextIteration"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/colly/colly.go": {
+      "fichier": "cmd/colly/colly.go",
+      "langage": "go",
+      "lignes": 121,
+      "taille_bytes": 2919,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "queue/queue_test.go": {
+      "fichier": "queue/queue_test.go",
+      "langage": "go",
+      "lignes": 112,
+      "taille_bytes": 2247,
+      "entrees": [],
+      "sorties": [
+        "func TestQueue",
+        "func serveDelay",
+        "func serverHandler",
+        "func serverRoute",
+        "func shutdown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "queue/queue.go": {
+      "fichier": "queue/queue.go",
+      "langage": "go",
+      "lignes": 267,
+      "taille_bytes": 5881,
+      "entrees": [],
+      "sorties": [
+        "const stop",
+        "func New",
+        "func independentRunner",
+        "type InMemoryQueueStorage",
+        "type Queue",
+        "type Storage",
+        "type inMemoryQueueItem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "proxy/proxy.go": {
+      "fichier": "proxy/proxy.go",
+      "langage": "go",
+      "lignes": 58,
+      "taille_bytes": 1677,
+      "entrees": [],
+      "sorties": [
+        "func RoundRobinProxySwitcher",
+        "type roundRobinSwitcher"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/url_length_filter.go": {
+      "fichier": "extensions/url_length_filter.go",
+      "langage": "go",
+      "lignes": 14,
+      "taille_bytes": 308,
+      "entrees": [],
+      "sorties": [
+        "func URLLengthFilter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/referer.go": {
+      "fichier": "extensions/referer.go",
+      "langage": "go",
+      "lignes": 19,
+      "taille_bytes": 482,
+      "entrees": [],
+      "sorties": [
+        "func Referer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/extensions.go": {
+      "fichier": "extensions/extensions.go",
+      "langage": "go",
+      "lignes": 2,
+      "taille_bytes": 84,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/random_user_agent.go": {
+      "fichier": "extensions/random_user_agent.go",
+      "langage": "go",
+      "lignes": 539,
+      "taille_bytes": 17936,
+      "entrees": [],
+      "sorties": [
+        "func RandomMobileUserAgent",
+        "func RandomUserAgent",
+        "func genChromeUA",
+        "func genEdgeUA",
+        "func genFirefoxUA",
+        "func genMobileNexus10UA",
+        "func genMobilePixel4UA",
+        "func genMobilePixel5UA",
+        "func genMobilePixel6UA",
+        "func genMobilePixel7UA",
+        "func genOperaUA"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "debug/debug.go": {
+      "fichier": "debug/debug.go",
+      "langage": "go",
+      "lignes": 36,
+      "taille_bytes": 1215,
+      "entrees": [],
+      "sorties": [
+        "type Debugger",
+        "type Event"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "debug/logdebugger.go": {
+      "fichier": "debug/logdebugger.go",
+      "langage": "go",
+      "lignes": 54,
+      "taille_bytes": 1587,
+      "entrees": [],
+      "sorties": [
+        "type LogDebugger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "debug/webdebugger.go": {
+      "fichier": "debug/webdebugger.go",
+      "langage": "go",
+      "lignes": 153,
+      "taille_bytes": 4594,
+      "entrees": [],
+      "sorties": [
+        "function curRequestTpl",
+        "function fetchStatus",
+        "function requestLogTpl",
+        "type WebDebugger",
+        "type requestInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "storage/storage.go": {
+      "fichier": "storage/storage.go",
+      "langage": "go",
+      "lignes": 128,
+      "taille_bytes": 3528,
+      "entrees": [],
+      "sorties": [
+        "func ContainsCookie",
+        "func StringifyCookies",
+        "func UnstringifyCookies",
+        "type InMemoryStorage",
+        "type Storage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/random_delay/random_delay.go": {
+      "fichier": "_examples/random_delay/random_delay.go",
+      "langage": "go",
+      "lignes": 37,
+      "taille_bytes": 805,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/openedx_courses/openedx_courses.go": {
+      "fichier": "_examples/openedx_courses/openedx_courses.go",
+      "langage": "go",
+      "lignes": 85,
+      "taille_bytes": 2176,
+      "entrees": [],
+      "sorties": [
+        "const DATE_FORMAT",
+        "func main",
+        "type Course"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/parallel/parallel.go": {
+      "fichier": "_examples/parallel/parallel.go",
+      "langage": "go",
+      "lignes": 39,
+      "taille_bytes": 965,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/basic/basic.go": {
+      "fichier": "_examples/basic/basic.go",
+      "langage": "go",
+      "lignes": 33,
+      "taille_bytes": 840,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/shopify_sitemap/shopify_sitemap.go": {
+      "fichier": "_examples/shopify_sitemap/shopify_sitemap.go",
+      "langage": "go",
+      "lignes": 29,
+      "taille_bytes": 657,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/error_handling/error_handling.go": {
+      "fichier": "_examples/error_handling/error_handling.go",
+      "langage": "go",
+      "lignes": 26,
+      "taille_bytes": 486,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/instagram/instagram.go": {
+      "fichier": "_examples/instagram/instagram.go",
+      "langage": "go",
+      "lignes": 189,
+      "taille_bytes": 4996,
+      "entrees": [],
+      "sorties": [
+        "const nextPagePayload",
+        "const nextPageURL",
+        "func main",
+        "type mainPageData",
+        "type nextPageData",
+        "type pageInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/scraper_server/scraper_server.go": {
+      "fichier": "_examples/scraper_server/scraper_server.go",
+      "langage": "go",
+      "lignes": 66,
+      "taille_bytes": 1283,
+      "entrees": [],
+      "sorties": [
+        "func handler",
+        "func main",
+        "type pageInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/hackernews_comments/hackernews_comments.go": {
+      "fichier": "_examples/hackernews_comments/hackernews_comments.go",
+      "langage": "go",
+      "lignes": 72,
+      "taille_bytes": 1544,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type comment"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/login/login.go": {
+      "fichier": "_examples/login/login.go",
+      "langage": "go",
+      "lignes": 26,
+      "taille_bytes": 474,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/reddit/reddit.go": {
+      "fichier": "_examples/reddit/reddit.go",
+      "langage": "go",
+      "lignes": 70,
+      "taille_bytes": 1554,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/queue/queue.go": {
+      "fichier": "_examples/queue/queue.go",
+      "langage": "go",
+      "lignes": 39,
+      "taille_bytes": 764,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/max_depth/max_depth.go": {
+      "fichier": "_examples/max_depth/max_depth.go",
+      "langage": "go",
+      "lignes": 28,
+      "taille_bytes": 592,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/multipart/multipart.go": {
+      "fichier": "_examples/multipart/multipart.go",
+      "langage": "go",
+      "lignes": 66,
+      "taille_bytes": 1504,
+      "entrees": [],
+      "sorties": [
+        "func generateFormData",
+        "func main",
+        "func setupServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/xkcd_store/xkcd_store.go": {
+      "fichier": "_examples/xkcd_store/xkcd_store.go",
+      "langage": "go",
+      "lignes": 51,
+      "taille_bytes": 1138,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/url_filter/url_filter.go": {
+      "fichier": "_examples/url_filter/url_filter.go",
+      "langage": "go",
+      "lignes": 37,
+      "taille_bytes": 935,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/proxy_switcher/proxy_switcher.go": {
+      "fichier": "_examples/proxy_switcher/proxy_switcher.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 688,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/rate_limit/rate_limit.go": {
+      "fichier": "_examples/rate_limit/rate_limit.go",
+      "langage": "go",
+      "lignes": 35,
+      "taille_bytes": 769,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/factba.se/factbase.go": {
+      "fichier": "_examples/factba.se/factbase.go",
+      "langage": "go",
+      "lignes": 77,
+      "taille_bytes": 1566,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type result",
+        "type results",
+        "type transcript"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/request_context/request_context.go": {
+      "fichier": "_examples/request_context/request_context.go",
+      "langage": "go",
+      "lignes": 27,
+      "taille_bytes": 554,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/local_files/local_files.go": {
+      "fichier": "_examples/local_files/local_files.go",
+      "langage": "go",
+      "lignes": 40,
+      "taille_bytes": 718,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/local_files/html/index.html": {
+      "fichier": "_examples/local_files/html/index.html",
+      "langage": "html",
+      "lignes": 17,
+      "taille_bytes": 462,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/local_files/html/child_page/one.html": {
+      "fichier": "_examples/local_files/html/child_page/one.html",
+      "langage": "html",
+      "lignes": 12,
+      "taille_bytes": 286,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/local_files/html/child_page/three.html": {
+      "fichier": "_examples/local_files/html/child_page/three.html",
+      "langage": "html",
+      "lignes": 12,
+      "taille_bytes": 288,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/local_files/html/child_page/two.html": {
+      "fichier": "_examples/local_files/html/child_page/two.html",
+      "langage": "html",
+      "lignes": 12,
+      "taille_bytes": 286,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/google_groups/google_groups.go": {
+      "fichier": "_examples/google_groups/google_groups.go",
+      "langage": "go",
+      "lignes": 92,
+      "taille_bytes": 2284,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type Mail"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/cryptocoinmarketcap/cryptocoinmarketcap.go": {
+      "fichier": "_examples/cryptocoinmarketcap/cryptocoinmarketcap.go",
+      "langage": "go",
+      "lignes": 45,
+      "taille_bytes": 1313,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_examples/coursera_courses/coursera_courses.go": {
+      "fichier": "_examples/coursera_courses/coursera_courses.go",
+      "langage": "go",
+      "lignes": 122,
+      "taille_bytes": 3713,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type Course"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

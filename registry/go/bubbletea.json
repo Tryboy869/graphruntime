@@ -1,0 +1,1820 @@
+{
+  "meta": {
+    "projet": "bubbletea",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "go": 109,
+      "yaml": 3
+    }
+  },
+  "stats": {
+    "fichiers_total": 112,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "options.go"
+  },
+  "noeuds": {
+    "options.go": {
+      "fichier": "options.go",
+      "langage": "go",
+      "lignes": 168,
+      "taille_bytes": 5285,
+      "entrees": [],
+      "sorties": [
+        "func WithColorProfile",
+        "func WithContext",
+        "func WithEnvironment",
+        "func WithFPS",
+        "func WithFilter",
+        "func WithInput",
+        "func WithOutput",
+        "func WithWindowSize",
+        "func WithoutCatchPanics",
+        "func WithoutRenderer",
+        "func WithoutSignalHandler",
+        "func WithoutSignals",
+        "type ProgramOption"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "termios_unix.go": {
+      "fichier": "termios_unix.go",
+      "langage": "go",
+      "lignes": 14,
+      "taille_bytes": 326,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "mouse.go": {
+      "fichier": "mouse.go",
+      "langage": "go",
+      "lignes": 144,
+      "taille_bytes": 3871,
+      "entrees": [],
+      "sorties": [
+        "type Mouse",
+        "type MouseButton",
+        "type MouseClickMsg",
+        "type MouseMotionMsg",
+        "type MouseMsg",
+        "type MouseReleaseMsg",
+        "type MouseWheelMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "screen_test.go": {
+      "fichier": "screen_test.go",
+      "langage": "go",
+      "lignes": 205,
+      "taille_bytes": 3986,
+      "entrees": [],
+      "sorties": [
+        "func TestClearMsg",
+        "func TestViewModel",
+        "func testViewOptsCmds",
+        "type test",
+        "type testViewModel",
+        "type testViewOpts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "commands.go": {
+      "fichier": "commands.go",
+      "langage": "go",
+      "lignes": 175,
+      "taille_bytes": 4967,
+      "entrees": [],
+      "sorties": [
+        "func Batch",
+        "func Every",
+        "func RequestWindowSize",
+        "func Sequence",
+        "func Tick",
+        "func compactCmds",
+        "type BatchMsg",
+        "type sequenceMsg",
+        "type windowSizeMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "profile.go": {
+      "fichier": "profile.go",
+      "langage": "go",
+      "lignes": 15,
+      "taille_bytes": 547,
+      "entrees": [],
+      "sorties": [
+        "type ColorProfileMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tea.go": {
+      "fichier": "tea.go",
+      "langage": "go",
+      "lignes": 1418,
+      "taille_bytes": 39829,
+      "entrees": [],
+      "sorties": [
+        "func Interrupt",
+        "func NewCursor",
+        "func NewProgram",
+        "func NewProgressBar",
+        "func NewView",
+        "func Quit",
+        "func Suspend",
+        "func shouldQuerySynchronizedOutput",
+        "output io",
+        "type Cmd",
+        "type Cursor",
+        "type InterruptMsg",
+        "type KeyboardEnhancements",
+        "type Model",
+        "type MouseMode",
+        "type Msg",
+        "type Program",
+        "type ProgressBar",
+        "type ProgressBarState",
+        "type QuitMsg",
+        "type ResumeMsg",
+        "type SuspendMsg",
+        "type View",
+        "type channelHandlers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "clipboard.go": {
+      "fichier": "clipboard.go",
+      "langage": "go",
+      "lignes": 70,
+      "taille_bytes": 2140,
+      "entrees": [],
+      "sorties": [
+        "func ReadClipboard",
+        "func ReadPrimaryClipboard",
+        "func SetClipboard",
+        "func SetPrimaryClipboard",
+        "type ClipboardMsg",
+        "type readClipboardMsg",
+        "type readPrimaryClipboardMsg",
+        "type setClipboardMsg",
+        "type setPrimaryClipboardMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "termios_windows.go": {
+      "fichier": "termios_windows.go",
+      "langage": "go",
+      "lignes": 11,
+      "taille_bytes": 197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "color.go": {
+      "fichier": "color.go",
+      "langage": "go",
+      "lignes": 91,
+      "taille_bytes": 2824,
+      "entrees": [],
+      "sorties": [
+        "func RequestBackgroundColor",
+        "func RequestCursorColor",
+        "func RequestForegroundColor",
+        "type BackgroundColorMsg",
+        "type CursorColorMsg",
+        "type ForegroundColorMsg",
+        "type backgroundColorMsg",
+        "type cursorColorMsg",
+        "type foregroundColorMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tty_unix.go": {
+      "fichier": "tty_unix.go",
+      "langage": "go",
+      "lignes": 46,
+      "taille_bytes": 1143,
+      "entrees": [],
+      "sorties": [
+        "const suspendSupported",
+        "func suspendProcess"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "exec.go": {
+      "fichier": "exec.go",
+      "langage": "go",
+      "lignes": 129,
+      "taille_bytes": 3553,
+      "entrees": [],
+      "sorties": [
+        "fn ExecCallback",
+        "func Exec",
+        "func ExecProcess",
+        "func wrapExecCommand",
+        "type ExecCallback",
+        "type ExecCommand",
+        "type execMsg",
+        "type osExecCommand"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "input.go": {
+      "fichier": "input.go",
+      "langage": "go",
+      "lignes": 54,
+      "taille_bytes": 1351,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "keyboard.go": {
+      "fichier": "keyboard.go",
+      "langage": "go",
+      "lignes": 41,
+      "taille_bytes": 1238,
+      "entrees": [],
+      "sorties": [
+        "type KeyboardEnhancementsMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "focus.go": {
+      "fichier": "focus.go",
+      "langage": "go",
+      "lignes": 9,
+      "taille_bytes": 247,
+      "entrees": [],
+      "sorties": [
+        "type BlurMsg",
+        "type FocusMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "paste.go": {
+      "fichier": "paste.go",
+      "langage": "go",
+      "lignes": 20,
+      "taille_bytes": 520,
+      "entrees": [],
+      "sorties": [
+        "type PasteEndMsg",
+        "type PasteMsg",
+        "type PasteStartMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "termios_bsd.go": {
+      "fichier": "termios_bsd.go",
+      "langage": "go",
+      "lignes": 13,
+      "taille_bytes": 257,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "mod.go": {
+      "fichier": "mod.go",
+      "langage": "go",
+      "lignes": 27,
+      "taille_bytes": 652,
+      "entrees": [
+        "uv"
+      ],
+      "sorties": [
+        "type KeyMod"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cursor.go": {
+      "fichier": "cursor.go",
+      "langage": "go",
+      "lignes": 28,
+      "taille_bytes": 701,
+      "entrees": [],
+      "sorties": [
+        "func RequestCursorPosition",
+        "type CursorPositionMsg",
+        "type CursorShape",
+        "type Position",
+        "type requestCursorPosMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "termios_other.go": {
+      "fichier": "termios_other.go",
+      "langage": "go",
+      "lignes": 8,
+      "taille_bytes": 267,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tty_windows.go": {
+      "fichier": "tty_windows.go",
+      "langage": "go",
+      "lignes": 64,
+      "taille_bytes": 1802,
+      "entrees": [],
+      "sorties": [
+        "const suspendSupported",
+        "func suspendProcess"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tea_test.go": {
+      "fichier": "tea_test.go",
+      "langage": "go",
+      "lignes": 651,
+      "taille_bytes": 11363,
+      "entrees": [],
+      "sorties": [
+        "func BenchmarkTeaRun",
+        "func TestTeaBatchMsg",
+        "func TestTeaContext",
+        "func TestTeaContextBatchDeadlock",
+        "func TestTeaContextImplodeDeadlock",
+        "func TestTeaGoroutinePanic",
+        "func TestTeaKill",
+        "func TestTeaModel",
+        "func TestTeaNestedSequenceMsg",
+        "func TestTeaNoRun",
+        "func TestTeaPanic",
+        "func TestTeaQuit",
+        "func TestTeaSend",
+        "func TestTeaSequenceMsg",
+        "func TestTeaSequenceMsgWithBatchMsg",
+        "func TestTeaWaitKill",
+        "func TestTeaWaitQuit",
+        "func TestTeaWithFilter",
+        "func panicCmd",
+        "func testTeaWithFilter",
+        "type benchModel",
+        "type ctxImplodeMsg",
+        "type incrementMsg",
+        "type panicMsg",
+        "type testModel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "key.go": {
+      "fichier": "key.go",
+      "langage": "go",
+      "lignes": 371,
+      "taille_bytes": 10262,
+      "entrees": [],
+      "sorties": [
+        "type Key",
+        "type KeyMsg",
+        "type KeyPressMsg",
+        "type KeyReleaseMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "screen.go": {
+      "fichier": "screen.go",
+      "langage": "go",
+      "lignes": 68,
+      "taille_bytes": 2072,
+      "entrees": [],
+      "sorties": [
+        "func ClearScreen",
+        "type ModeReportMsg",
+        "type WindowSizeMsg",
+        "type clearScreenMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".golangci.yml": {
+      "fichier": ".golangci.yml",
+      "langage": "yaml",
+      "lignes": 44,
+      "taille_bytes": 695,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cursed_renderer.go": {
+      "fichier": "cursed_renderer.go",
+      "langage": "go",
+      "lignes": 830,
+      "taille_bytes": 25785,
+      "entrees": [],
+      "sorties": [
+        "func enableAltScreen",
+        "func enableTextCursor",
+        "func enterAltScreen",
+        "func exitAltScreen",
+        "func newCursedRenderer",
+        "func reset",
+        "func setProgressBar",
+        "func viewEquals",
+        "type cursedRenderer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "environ.go": {
+      "fichier": "environ.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 1223,
+      "entrees": [
+        "uv"
+      ],
+      "sorties": [
+        "type EnvMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "logging.go": {
+      "fichier": "logging.go",
+      "langage": "go",
+      "lignes": 53,
+      "taille_bytes": 1389,
+      "entrees": [],
+      "sorties": [
+        "func LogToFile",
+        "func LogToFileWith",
+        "type LogOptionsSetter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "signals_windows.go": {
+      "fichier": "signals_windows.go",
+      "langage": "go",
+      "lignes": 10,
+      "taille_bytes": 225,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "raw.go": {
+      "fichier": "raw.go",
+      "langage": "go",
+      "lignes": 37,
+      "taille_bytes": 967,
+      "entrees": [],
+      "sorties": [
+        "func Raw",
+        "type RawMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "logging_test.go": {
+      "fichier": "logging_test.go",
+      "langage": "go",
+      "lignes": 29,
+      "taille_bytes": 532,
+      "entrees": [],
+      "sorties": [
+        "func TestLogToFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Taskfile.yaml": {
+      "fichier": "Taskfile.yaml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 183,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "termcap.go": {
+      "fichier": "termcap.go",
+      "langage": "go",
+      "lignes": 48,
+      "taille_bytes": 1543,
+      "entrees": [],
+      "sorties": [
+        "func RequestCapability",
+        "type CapabilityMsg",
+        "type requestCapabilityMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".goreleaser.yml": {
+      "fichier": ".goreleaser.yml",
+      "langage": "yaml",
+      "lignes": 5,
+      "taille_bytes": 168,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "commands_test.go": {
+      "fichier": "commands_test.go",
+      "langage": "go",
+      "lignes": 59,
+      "taille_bytes": 1312,
+      "entrees": [],
+      "sorties": [
+        "func TestBatch",
+        "func TestEvery",
+        "func TestSequence",
+        "func TestTick",
+        "func testMultipleCommands"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "signals_unix.go": {
+      "fichier": "signals_unix.go",
+      "langage": "go",
+      "lignes": 33,
+      "taille_bytes": 662,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tty.go": {
+      "fichier": "tty.go",
+      "langage": "go",
+      "lignes": 136,
+      "taille_bytes": 3125,
+      "entrees": [],
+      "sorties": [
+        "func OpenTTY"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "options_test.go": {
+      "fichier": "options_test.go",
+      "langage": "go",
+      "lignes": 97,
+      "taille_bytes": 2412,
+      "entrees": [],
+      "sorties": [
+        "func TestOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "renderer.go": {
+      "fichier": "renderer.go",
+      "langage": "go",
+      "lignes": 104,
+      "taille_bytes": 2653,
+      "entrees": [],
+      "sorties": [
+        "func Printf",
+        "func Println",
+        "func encodeCursorStyle",
+        "type printLineMessage",
+        "type renderer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "exec_test.go": {
+      "fichier": "exec_test.go",
+      "langage": "go",
+      "lignes": 103,
+      "taille_bytes": 1751,
+      "entrees": [],
+      "sorties": [
+        "func TestTeaExec",
+        "type execFinishedMsg",
+        "type spyRenderer",
+        "type test",
+        "type testExecModel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "xterm.go": {
+      "fichier": "xterm.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 606,
+      "entrees": [],
+      "sorties": [
+        "func RequestTerminalVersion",
+        "type TerminalVersionMsg",
+        "type terminalVersion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nil_renderer.go": {
+      "fichier": "nil_renderer.go",
+      "langage": "go",
+      "lignes": 53,
+      "taille_bytes": 1473,
+      "entrees": [],
+      "sorties": [
+        "type nilRenderer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/exec/main.go": {
+      "fichier": "examples/exec/main.go",
+      "langage": "go",
+      "lignes": 69,
+      "taille_bytes": 1310,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func openEditor",
+        "type editorFinishedMsg",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/help/main.go": {
+      "fichier": "examples/help/main.go",
+      "langage": "go",
+      "lignes": 147,
+      "taille_bytes": 3286,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func newModel",
+        "type keyMap",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/progress-static/main.go": {
+      "fichier": "examples/progress-static/main.go",
+      "langage": "go",
+      "lignes": 97,
+      "taille_bytes": 2133,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func tickCmd",
+        "type model",
+        "type tickMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/result/main.go": {
+      "fichier": "examples/result/main.go",
+      "langage": "go",
+      "lignes": 86,
+      "taille_bytes": 1572,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/paginator/main.go": {
+      "fichier": "examples/paginator/main.go",
+      "langage": "go",
+      "lignes": 99,
+      "taille_bytes": 2156,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func newModel",
+        "func newStyles",
+        "type model",
+        "type styles"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/send-msg/main.go": {
+      "fichier": "examples/send-msg/main.go",
+      "langage": "go",
+      "lignes": 133,
+      "taille_bytes": 2815,
+      "entrees": [],
+      "sorties": [
+        "const numLastResults",
+        "func main",
+        "func newModel",
+        "func randomFood",
+        "type model",
+        "type resultMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/space/main.go": {
+      "fichier": "examples/space/main.go",
+      "langage": "go",
+      "lignes": 134,
+      "taille_bytes": 2674,
+      "entrees": [],
+      "sorties": [
+        "func clamp",
+        "func main",
+        "func tickCmd",
+        "type model",
+        "type tickMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/split-editors/main.go": {
+      "fichier": "examples/split-editors/main.go",
+      "langage": "go",
+      "lignes": 235,
+      "taille_bytes": 5143,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func newModel",
+        "func newTextarea",
+        "type keymap",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/doom-fire/main.go": {
+      "fichier": "examples/doom-fire/main.go",
+      "langage": "go",
+      "lignes": 133,
+      "taille_bytes": 2835,
+      "entrees": [],
+      "sorties": [
+        "func initialModel",
+        "func main",
+        "func tick",
+        "type model",
+        "type tickMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/window-size/main.go": {
+      "fichier": "examples/window-size/main.go",
+      "langage": "go",
+      "lignes": 41,
+      "taille_bytes": 801,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/progress-bar/main.go": {
+      "fichier": "examples/progress-bar/main.go",
+      "langage": "go",
+      "lignes": 65,
+      "taille_bytes": 1381,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/keyboard-enhancements/main.go": {
+      "fichier": "examples/keyboard-enhancements/main.go",
+      "langage": "go",
+      "lignes": 109,
+      "taille_bytes": 3191,
+      "entrees": [],
+      "sorties": [
+        "func initialModel",
+        "func main",
+        "type model",
+        "type styles"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/focus-blur/main.go": {
+      "fichier": "examples/focus-blur/main.go",
+      "langage": "go",
+      "lignes": 67,
+      "taille_bytes": 1126,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pipe/main.go": {
+      "fichier": "examples/pipe/main.go",
+      "langage": "go",
+      "lignes": 97,
+      "taille_bytes": 1795,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func newModel",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/list-simple/main.go": {
+      "fichier": "examples/list-simple/main.go",
+      "langage": "go",
+      "lignes": 151,
+      "taille_bytes": 3396,
+      "entrees": [],
+      "sorties": [
+        "const defaultWidth",
+        "const listHeight",
+        "func initialModel",
+        "func main",
+        "func newStyles",
+        "type item",
+        "type itemDelegate",
+        "type model",
+        "type styles"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/textinput/main.go": {
+      "fichier": "examples/textinput/main.go",
+      "langage": "go",
+      "lignes": 80,
+      "taille_bytes": 1474,
+      "entrees": [],
+      "sorties": [
+        "func initialModel",
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/sequence/main.go": {
+      "fichier": "examples/sequence/main.go",
+      "langage": "go",
+      "lignes": 71,
+      "taille_bytes": 1412,
+      "entrees": [],
+      "sorties": [
+        "func SleepPrintln",
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/simple/main_test.go": {
+      "fichier": "examples/simple/main_test.go",
+      "langage": "go",
+      "lignes": 88,
+      "taille_bytes": 2239,
+      "entrees": [],
+      "sorties": [
+        "func TestApp",
+        "func TestAppInteractive",
+        "func readBts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/simple/main.go": {
+      "fichier": "examples/simple/main.go",
+      "langage": "go",
+      "lignes": 78,
+      "taille_bytes": 1947,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func tick",
+        "type model",
+        "type tickMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/views/main.go": {
+      "fichier": "examples/views/main.go",
+      "langage": "go",
+      "lignes": 275,
+      "taille_bytes": 6689,
+      "entrees": [],
+      "sorties": [
+        "func checkbox",
+        "func choicesView",
+        "func chosenView",
+        "func colorFloatToHex",
+        "func colorToHex",
+        "func frame",
+        "func main",
+        "func makeRampStyles",
+        "func progressbar",
+        "func tick",
+        "func updateChoices",
+        "func updateChosen",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/textinputs/main.go": {
+      "fichier": "examples/textinputs/main.go",
+      "langage": "go",
+      "lignes": 196,
+      "taille_bytes": 4255,
+      "entrees": [],
+      "sorties": [
+        "func initialModel",
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/suspend/main.go": {
+      "fichier": "examples/suspend/main.go",
+      "langage": "go",
+      "lignes": 57,
+      "taille_bytes": 981,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/chat/main.go": {
+      "fichier": "examples/chat/main.go",
+      "langage": "go",
+      "lignes": 123,
+      "taille_bytes": 2852,
+      "entrees": [],
+      "sorties": [
+        "func initialModel",
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/print-key/main.go": {
+      "fichier": "examples/print-key/main.go",
+      "langage": "go",
+      "lignes": 51,
+      "taille_bytes": 1063,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/tui-daemon-combo/main.go": {
+      "fichier": "examples/tui-daemon-combo/main.go",
+      "langage": "go",
+      "lignes": 139,
+      "taille_bytes": 2947,
+      "entrees": [],
+      "sorties": [
+        "const showLastResults",
+        "func main",
+        "func newModel",
+        "func randomEmoji",
+        "func runPretendProcess",
+        "type model",
+        "type processFinishedMsg",
+        "type result"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/spinner/main.go": {
+      "fichier": "examples/spinner/main.go",
+      "langage": "go",
+      "lignes": 73,
+      "taille_bytes": 1307,
+      "entrees": [],
+      "sorties": [
+        "func initialModel",
+        "func main",
+        "type errMsg",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/pager/main.go": {
+      "fichier": "examples/pager/main.go",
+      "langage": "go",
+      "lignes": 134,
+      "taille_bytes": 3770,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/debounce/main.go": {
+      "fichier": "examples/debounce/main.go",
+      "langage": "go",
+      "lignes": 66,
+      "taille_bytes": 1677,
+      "entrees": [],
+      "sorties": [
+        "const debounceDuration",
+        "func main",
+        "type exitMsg",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/file-picker/main.go": {
+      "fichier": "examples/file-picker/main.go",
+      "langage": "go",
+      "lignes": 94,
+      "taille_bytes": 2150,
+      "entrees": [],
+      "sorties": [
+        "func clearErrorAfter",
+        "func main",
+        "type clearErrorMsg",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/query-term/main.go": {
+      "fichier": "examples/query-term/main.go",
+      "langage": "go",
+      "lignes": 102,
+      "taille_bytes": 2011,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func newModel",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/tabs/main.go": {
+      "fichier": "examples/tabs/main.go",
+      "langage": "go",
+      "lignes": 129,
+      "taille_bytes": 3178,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func newStyles",
+        "func tabBorderWithBottom",
+        "type model",
+        "type styles"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/colorprofile/main.go": {
+      "fichier": "examples/colorprofile/main.go",
+      "langage": "go",
+      "lignes": 53,
+      "taille_bytes": 1135,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/capability/main.go": {
+      "fichier": "examples/capability/main.go",
+      "langage": "go",
+      "lignes": 76,
+      "taille_bytes": 1558,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func min",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/package-manager/main.go": {
+      "fichier": "examples/package-manager/main.go",
+      "langage": "go",
+      "lignes": 131,
+      "taille_bytes": 3337,
+      "entrees": [],
+      "sorties": [
+        "func downloadAndInstall",
+        "func main",
+        "func newModel",
+        "type installedPkgMsg",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/package-manager/packages.go": {
+      "fichier": "examples/package-manager/packages.go",
+      "langage": "go",
+      "lignes": 52,
+      "taille_bytes": 836,
+      "entrees": [],
+      "sorties": [
+        "func getPackages"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/progress-download/tui.go": {
+      "fichier": "examples/progress-download/tui.go",
+      "langage": "go",
+      "lignes": 85,
+      "taille_bytes": 1624,
+      "entrees": [],
+      "sorties": [
+        "func finalPause",
+        "type model",
+        "type progressErrMsg",
+        "type progressMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/progress-download/main.go": {
+      "fichier": "examples/progress-download/main.go",
+      "langage": "go",
+      "lignes": 107,
+      "taille_bytes": 2157,
+      "entrees": [],
+      "sorties": [
+        "func getResponse",
+        "func main",
+        "type progressWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/fullscreen/main.go": {
+      "fichier": "examples/fullscreen/main.go",
+      "langage": "go",
+      "lignes": 58,
+      "taille_bytes": 938,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func tick",
+        "type model",
+        "type tickMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/isbn-form/main.go": {
+      "fichier": "examples/isbn-form/main.go",
+      "langage": "go",
+      "lignes": 245,
+      "taille_bytes": 4914,
+      "entrees": [],
+      "sorties": [
+        "func bookTitleValidator",
+        "func initialModel",
+        "func isbn13Validator",
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/clickable/main.go": {
+      "fichier": "examples/clickable/main.go",
+      "langage": "go",
+      "lignes": 369,
+      "taille_bytes": 7841,
+      "entrees": [],
+      "sorties": [
+        "const hGap",
+        "const label",
+        "const maxDialogs",
+        "func clamp",
+        "func main",
+        "type LayerHitMsg",
+        "type dialog",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/clickable/words.go": {
+      "fichier": "examples/clickable/words.go",
+      "langage": "go",
+      "lignes": 77,
+      "taille_bytes": 2222,
+      "entrees": [],
+      "sorties": [
+        "const uncapitalized",
+        "func capitalize",
+        "func cycle",
+        "func nextRandomWord",
+        "func shuffleWords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/composable-views/main.go": {
+      "fichier": "examples/composable-views/main.go",
+      "langage": "go",
+      "lignes": 163,
+      "taille_bytes": 3871,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func newModel",
+        "type mainModel",
+        "type sessionState"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/altscreen-toggle/main.go": {
+      "fichier": "examples/altscreen-toggle/main.go",
+      "langage": "go",
+      "lignes": 84,
+      "taille_bytes": 1562,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/table-resize/main.go": {
+      "fichier": "examples/table-resize/main.go",
+      "langage": "go",
+      "lignes": 163,
+      "taille_bytes": 4853,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/set-terminal-color/main.go": {
+      "fichier": "examples/set-terminal-color/main.go",
+      "langage": "go",
+      "lignes": 201,
+      "taille_bytes": 3541,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type colorType",
+        "type model",
+        "type state"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cellbuffer/main.go": {
+      "fichier": "examples/cellbuffer/main.go",
+      "langage": "go",
+      "lignes": 204,
+      "taille_bytes": 3888,
+      "entrees": [],
+      "sorties": [
+        "func animate",
+        "func drawEllipse",
+        "func main",
+        "type cellbuffer",
+        "type frameMsg",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/timer/main.go": {
+      "fichier": "examples/timer/main.go",
+      "langage": "go",
+      "lignes": 122,
+      "taille_bytes": 2374,
+      "entrees": [],
+      "sorties": [
+        "const timeout",
+        "func main",
+        "type keymap",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/spinners/main.go": {
+      "fichier": "examples/spinners/main.go",
+      "langage": "go",
+      "lignes": 101,
+      "taille_bytes": 1904,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/vanish/main.go": {
+      "fichier": "examples/vanish/main.go",
+      "langage": "go",
+      "lignes": 36,
+      "taille_bytes": 596,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/progress-animated/main.go": {
+      "fichier": "examples/progress-animated/main.go",
+      "langage": "go",
+      "lignes": 93,
+      "taille_bytes": 1989,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func tickCmd",
+        "type model",
+        "type tickMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/textarea/main.go": {
+      "fichier": "examples/textarea/main.go",
+      "langage": "go",
+      "lignes": 110,
+      "taille_bytes": 2047,
+      "entrees": [],
+      "sorties": [
+        "func initialModel",
+        "func main",
+        "type errMsg",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/list-default/main.go": {
+      "fichier": "examples/list-default/main.go",
+      "langage": "go",
+      "lignes": 88,
+      "taille_bytes": 2718,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type item",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/list-fancy/delegate.go": {
+      "fichier": "examples/list-fancy/delegate.go",
+      "langage": "go",
+      "lignes": 89,
+      "taille_bytes": 1821,
+      "entrees": [],
+      "sorties": [
+        "func newDelegateKeyMap",
+        "func newItemDelegate",
+        "type delegateKeyMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/list-fancy/main.go": {
+      "fichier": "examples/list-fancy/main.go",
+      "langage": "go",
+      "lignes": 223,
+      "taille_bytes": 5215,
+      "entrees": [],
+      "sorties": [
+        "const numItems",
+        "func initialModel",
+        "func main",
+        "func newListKeyMap",
+        "func newStyles",
+        "type item",
+        "type listKeyMap",
+        "type model",
+        "type styles"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/list-fancy/randomitems.go": {
+      "fichier": "examples/list-fancy/randomitems.go",
+      "langage": "go",
+      "lignes": 164,
+      "taille_bytes": 2433,
+      "entrees": [],
+      "sorties": [
+        "type randomItemGenerator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/realtime/main.go": {
+      "fichier": "examples/realtime/main.go",
+      "langage": "go",
+      "lignes": 90,
+      "taille_bytes": 2182,
+      "entrees": [],
+      "sorties": [
+        "func listenForActivity",
+        "func main",
+        "func waitForActivity",
+        "type model",
+        "type responseMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/http/main.go": {
+      "fichier": "examples/http/main.go",
+      "langage": "go",
+      "lignes": 82,
+      "taille_bytes": 1374,
+      "entrees": [],
+      "sorties": [
+        "const url",
+        "func checkServer",
+        "func main",
+        "type errMsg",
+        "type model",
+        "type statusMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/table/main.go": {
+      "fichier": "examples/table/main.go",
+      "langage": "go",
+      "lignes": 185,
+      "taille_bytes": 6253,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/set-window-title/main.go": {
+      "fichier": "examples/set-window-title/main.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 791,
+      "entrees": [],
+      "sorties": [
+        "const windowTitle",
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/canvas/main.go": {
+      "fichier": "examples/canvas/main.go",
+      "langage": "go",
+      "lignes": 95,
+      "taille_bytes": 1662,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "func newCard",
+        "func reverse",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/prevent-quit/main.go": {
+      "fichier": "examples/prevent-quit/main.go",
+      "langage": "go",
+      "lignes": 154,
+      "taille_bytes": 3232,
+      "entrees": [],
+      "sorties": [
+        "func filter",
+        "func initialModel",
+        "func main",
+        "type keymap",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/stopwatch/main.go": {
+      "fichier": "examples/stopwatch/main.go",
+      "langage": "go",
+      "lignes": 103,
+      "taille_bytes": 2148,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type keymap",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/glamour/main.go": {
+      "fichier": "examples/glamour/main.go",
+      "langage": "go",
+      "lignes": 148,
+      "taille_bytes": 3504,
+      "entrees": [],
+      "sorties": [
+        "const content",
+        "const glamourGutter",
+        "func main",
+        "func newExample",
+        "type example"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/splash/main.go": {
+      "fichier": "examples/splash/main.go",
+      "langage": "go",
+      "lignes": 178,
+      "taille_bytes": 3934,
+      "entrees": [],
+      "sorties": [
+        "func getGradientColor",
+        "func interpolateColors",
+        "func main",
+        "func tick",
+        "type model",
+        "type tickMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mouse/main.go": {
+      "fichier": "examples/mouse/main.go",
+      "langage": "go",
+      "lignes": 44,
+      "taille_bytes": 834,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/eyes/main.go": {
+      "fichier": "examples/eyes/main.go",
+      "langage": "go",
+      "lignes": 197,
+      "taille_bytes": 4419,
+      "entrees": [],
+      "sorties": [
+        "func drawEllipse",
+        "func initialModel",
+        "func main",
+        "func tickCmd",
+        "type model",
+        "type tickMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/autocomplete/main.go": {
+      "fichier": "examples/autocomplete/main.go",
+      "langage": "go",
+      "lignes": 182,
+      "taille_bytes": 3893,
+      "entrees": [],
+      "sorties": [
+        "const reposURL",
+        "func getRepos",
+        "func initialModel",
+        "func main",
+        "type keymap",
+        "type model",
+        "type repo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cursor-style/main.go": {
+      "fichier": "examples/cursor-style/main.go",
+      "langage": "go",
+      "lignes": 79,
+      "taille_bytes": 1404,
+      "entrees": [],
+      "sorties": [
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tutorials/basics/main.go": {
+      "fichier": "tutorials/basics/main.go",
+      "langage": "go",
+      "lignes": 90,
+      "taille_bytes": 1624,
+      "entrees": [],
+      "sorties": [
+        "func initialModel",
+        "func main",
+        "type model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tutorials/commands/main.go": {
+      "fichier": "tutorials/commands/main.go",
+      "langage": "go",
+      "lignes": 78,
+      "taille_bytes": 1432,
+      "entrees": [],
+      "sorties": [
+        "const url",
+        "func checkServer",
+        "func main",
+        "type errMsg",
+        "type model",
+        "type statusMsg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

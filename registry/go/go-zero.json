@@ -1,0 +1,2067 @@
+{
+  "meta": {
+    "projet": "go-zero",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "go": 119,
+      "protobuf": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "zrpc/client.go"
+  },
+  "noeuds": {
+    "zrpc/client.go": {
+      "fichier": "zrpc/client.go",
+      "langage": "go",
+      "lignes": 142,
+      "taille_bytes": 4174,
+      "entrees": [],
+      "sorties": [
+        "func DontLogClientContentForMethod",
+        "func MustNewClient",
+        "func NewClient",
+        "func NewClientWithTarget",
+        "func SetClientSlowThreshold",
+        "func SetHashKey",
+        "func WithCallTimeout",
+        "func makeLBServiceConfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/config_test.go": {
+      "fichier": "zrpc/config_test.go",
+      "langage": "go",
+      "lignes": 76,
+      "taille_bytes": 1973,
+      "entrees": [],
+      "sorties": [
+        "func TestRpcClientConf",
+        "func TestRpcServerConf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/client_test.go": {
+      "fichier": "zrpc/client_test.go",
+      "langage": "go",
+      "lignes": 288,
+      "taille_bytes": 7889,
+      "entrees": [],
+      "sorties": [
+        "func TestDepositServer_Deposit",
+        "func TestMakeLBServiceConfig",
+        "func TestNewClientWithError",
+        "func TestNewClientWithTarget",
+        "func TestSetHashKey",
+        "func dialer",
+        "func init"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/proxy_test.go": {
+      "fichier": "zrpc/proxy_test.go",
+      "langage": "go",
+      "lignes": 74,
+      "taille_bytes": 1958,
+      "entrees": [],
+      "sorties": [
+        "func TestProxy",
+        "func TestRpcProxy_TakeConnNewClientFailed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/proxy.go": {
+      "fichier": "zrpc/proxy.go",
+      "langage": "go",
+      "lignes": 63,
+      "taille_bytes": 1418,
+      "entrees": [],
+      "sorties": [
+        "func NewProxy",
+        "type RpcProxy"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/config.go": {
+      "fichier": "zrpc/config.go",
+      "langage": "go",
+      "lignes": 119,
+      "taille_bytes": 3582,
+      "entrees": [],
+      "sorties": [
+        "func NewDirectClientConf",
+        "func NewEtcdClientConf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/server.go": {
+      "fichier": "zrpc/server.go",
+      "langage": "go",
+      "lignes": 168,
+      "taille_bytes": 4860,
+      "entrees": [],
+      "sorties": [
+        "func DontLogContentForMethod",
+        "func MustNewServer",
+        "func NewServer",
+        "func SetServerSlowThreshold",
+        "func setupAuthInterceptors",
+        "func setupStreamInterceptors",
+        "func setupUnaryInterceptors",
+        "type RpcServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/server_test.go": {
+      "fichier": "zrpc/server_test.go",
+      "langage": "go",
+      "lignes": 310,
+      "taille_bytes": 7029,
+      "entrees": [],
+      "sorties": [
+        "func TestServer",
+        "func TestServerError",
+        "func TestServer_HasEtcd",
+        "func TestServer_StartFailed",
+        "func Test_setupAuthInterceptors",
+        "func Test_setupStreamInterceptors",
+        "func Test_setupUnaryInterceptors",
+        "type mockedServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/rpcserver_test.go": {
+      "fichier": "zrpc/internal/rpcserver_test.go",
+      "langage": "go",
+      "lignes": 54,
+      "taille_bytes": 1130,
+      "entrees": [],
+      "sorties": [
+        "func TestRpcServer",
+        "func TestRpcServer_WithBadAddress"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/rpcpubserver.go": {
+      "fichier": "zrpc/internal/rpcpubserver.go",
+      "langage": "go",
+      "lignes": 76,
+      "taille_bytes": 1631,
+      "entrees": [],
+      "sorties": [
+        "func NewRpcPubServer",
+        "func figureOutListenOn",
+        "type keepAliveServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/client.go": {
+      "fichier": "zrpc/internal/client.go",
+      "langage": "go",
+      "lignes": 196,
+      "taille_bytes": 5394,
+      "entrees": [],
+      "sorties": [
+        "func NewClient",
+        "func WithBlock",
+        "func WithDialOption",
+        "func WithNonBlock",
+        "func WithStreamClientInterceptor",
+        "func WithTimeout",
+        "func WithTransportCredentials",
+        "func WithUnaryClientInterceptor",
+        "func init"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/rpclogger_test.go": {
+      "fichier": "zrpc/internal/rpclogger_test.go",
+      "langage": "go",
+      "lignes": 102,
+      "taille_bytes": 2154,
+      "entrees": [],
+      "sorties": [
+        "const content",
+        "func TestLoggerError",
+        "func TestLoggerErrorf",
+        "func TestLoggerErrorln",
+        "func TestLoggerFatal",
+        "func TestLoggerFatalf",
+        "func TestLoggerFatalln",
+        "func TestLoggerInfo",
+        "func TestLoggerInfof",
+        "func TestLoggerInfoln",
+        "func TestLoggerWarning",
+        "func TestLoggerWarningf",
+        "func TestLoggerWarningln",
+        "func TestLogger_V"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/rpclogger.go": {
+      "fichier": "zrpc/internal/rpclogger.go",
+      "langage": "go",
+      "lignes": 81,
+      "taille_bytes": 1823,
+      "entrees": [],
+      "sorties": [
+        "const errorLevel",
+        "func init",
+        "type Logger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/rpcpubserver_test.go": {
+      "fichier": "zrpc/internal/rpcpubserver_test.go",
+      "langage": "go",
+      "lignes": 50,
+      "taille_bytes": 863,
+      "entrees": [],
+      "sorties": [
+        "func TestFigureOutListenOn",
+        "func TestNewRpcPubServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/client_test.go": {
+      "fichier": "zrpc/internal/client_test.go",
+      "langage": "go",
+      "lignes": 135,
+      "taille_bytes": 3091,
+      "entrees": [],
+      "sorties": [
+        "func TestBuildDialOptions",
+        "func TestClientDial",
+        "func TestClientDialFail",
+        "func TestWithBlock",
+        "func TestWithDialOption",
+        "func TestWithNonBlock",
+        "func TestWithStreamClientInterceptor",
+        "func TestWithTimeout",
+        "func TestWithTransportCredentials",
+        "func TestWithUnaryClientInterceptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/rpcserver.go": {
+      "fichier": "zrpc/internal/rpcserver.go",
+      "langage": "go",
+      "lignes": 86,
+      "taille_bytes": 2031,
+      "entrees": [],
+      "sorties": [
+        "const probeNamePrefix",
+        "func NewRpcServer",
+        "func WithRpcHealth"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/config.go": {
+      "fichier": "zrpc/internal/config.go",
+      "langage": "go",
+      "lignes": 30,
+      "taille_bytes": 983,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/server.go": {
+      "fichier": "zrpc/internal/server.go",
+      "langage": "go",
+      "lignes": 59,
+      "taille_bytes": 1637,
+      "entrees": [],
+      "sorties": [
+        "const defaultConnectionIdleDuration",
+        "func newBaseRpcServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/server_test.go": {
+      "fichier": "zrpc/internal/server_test.go",
+      "langage": "go",
+      "lignes": 46,
+      "taille_bytes": 1267,
+      "entrees": [],
+      "sorties": [
+        "func TestBaseRpcServer_AddOptions",
+        "func TestBaseRpcServer_AddStreamInterceptors",
+        "func TestBaseRpcServer_AddUnaryInterceptors"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/breakerinterceptor_test.go": {
+      "fichier": "zrpc/internal/serverinterceptors/breakerinterceptor_test.go",
+      "langage": "go",
+      "lignes": 81,
+      "taille_bytes": 2250,
+      "entrees": [],
+      "sorties": [
+        "func TestStreamBreakerInterceptor",
+        "func TestUnaryBreakerInterceptor",
+        "func TestUnaryBreakerInterceptorOK",
+        "func TestUnaryBreakerInterceptor_Deadline",
+        "func TestUnaryBreakerInterceptor_Unavailable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/timeoutinterceptor_test.go": {
+      "fichier": "zrpc/internal/serverinterceptors/timeoutinterceptor_test.go",
+      "langage": "go",
+      "lignes": 245,
+      "taille_bytes": 6402,
+      "entrees": [],
+      "sorties": [
+        "const timeout",
+        "func TestUnaryTimeoutInterceptor",
+        "func TestUnaryTimeoutInterceptor_SpecifiedTimeout",
+        "func TestUnaryTimeoutInterceptor_TimeoutStrategy",
+        "func TestUnaryTimeoutInterceptor_cancel",
+        "func TestUnaryTimeoutInterceptor_panic",
+        "func TestUnaryTimeoutInterceptor_timeout",
+        "func TestUnaryTimeoutInterceptor_timeoutExpire",
+        "type args",
+        "type tempServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/authinterceptor.go": {
+      "fichier": "zrpc/internal/serverinterceptors/authinterceptor.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 1003,
+      "entrees": [],
+      "sorties": [
+        "func StreamAuthorizeInterceptor",
+        "func UnaryAuthorizeInterceptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/timeoutinterceptor.go": {
+      "fichier": "zrpc/internal/serverinterceptors/timeoutinterceptor.go",
+      "langage": "go",
+      "lignes": 94,
+      "taille_bytes": 2241,
+      "entrees": [],
+      "sorties": [
+        "func UnaryTimeoutInterceptor",
+        "func buildMethodTimeouts",
+        "func getTimeoutByUnaryServerInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/tracinginterceptor.go": {
+      "fichier": "zrpc/internal/serverinterceptors/tracinginterceptor.go",
+      "langage": "go",
+      "lignes": 115,
+      "taille_bytes": 3214,
+      "entrees": [],
+      "sorties": [
+        "func StreamTracingInterceptor",
+        "func UnaryTracingInterceptor",
+        "func startSpan",
+        "func wrapServerStream",
+        "type serverStream"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/authinterceptor_test.go": {
+      "fichier": "zrpc/internal/serverinterceptors/authinterceptor_test.go",
+      "langage": "go",
+      "lignes": 193,
+      "taille_bytes": 4143,
+      "entrees": [],
+      "sorties": [
+        "func TestStreamAuthorizeInterceptor",
+        "func TestUnaryAuthorizeInterceptor",
+        "type mockedStream"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/tracinginterceptor_test.go": {
+      "fichier": "zrpc/internal/serverinterceptors/tracinginterceptor_test.go",
+      "langage": "go",
+      "lignes": 339,
+      "taille_bytes": 8126,
+      "entrees": [],
+      "sorties": [
+        "func TestClientStream_RecvMsg",
+        "func TestServerStream_SendMsg",
+        "func TestStreamTracingInterceptor_FinishWithGrpcError",
+        "func TestStreamTracingInterceptor_GrpcFormat",
+        "func TestStreamTracingInterceptor_WithError",
+        "func TestUnaryOpenTracingInterceptor_Disable",
+        "func TestUnaryOpenTracingInterceptor_Enabled",
+        "func TestUnaryTracingInterceptor",
+        "func TestUnaryTracingInterceptor_WithError",
+        "type mockedServerStream"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/recoverinterceptor.go": {
+      "fichier": "zrpc/internal/serverinterceptors/recoverinterceptor.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 1103,
+      "entrees": [],
+      "sorties": [
+        "func StreamRecoverInterceptor",
+        "func UnaryRecoverInterceptor",
+        "func handleCrash",
+        "func toPanicError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/recoverinterceptor_test.go": {
+      "fichier": "zrpc/internal/serverinterceptors/recoverinterceptor_test.go",
+      "langage": "go",
+      "lignes": 30,
+      "taille_bytes": 620,
+      "entrees": [],
+      "sorties": [
+        "func TestStreamCrashInterceptor",
+        "func TestUnaryCrashInterceptor",
+        "func init"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/statinterceptor.go": {
+      "fichier": "zrpc/internal/serverinterceptors/statinterceptor.go",
+      "langage": "go",
+      "lignes": 102,
+      "taille_bytes": 3068,
+      "entrees": [],
+      "sorties": [
+        "const defaultSlowThreshold",
+        "func DontLogContentForMethod",
+        "func SetSlowThreshold",
+        "func UnaryStatInterceptor",
+        "func isSlow",
+        "func logDuration",
+        "func shouldLogContent",
+        "type StatConf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/sheddinginterceptor.go": {
+      "fichier": "zrpc/internal/serverinterceptors/sheddinginterceptor.go",
+      "langage": "go",
+      "lignes": 57,
+      "taille_bytes": 1257,
+      "entrees": [],
+      "sorties": [
+        "const serviceType",
+        "func UnarySheddingInterceptor",
+        "func ensureSheddingStat"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/prometheusinterceptor.go": {
+      "fichier": "zrpc/internal/serverinterceptors/prometheusinterceptor.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 1282,
+      "entrees": [],
+      "sorties": [
+        "const serverNamespace",
+        "func UnaryPrometheusInterceptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/breakerinterceptor.go": {
+      "fichier": "zrpc/internal/serverinterceptors/breakerinterceptor.go",
+      "langage": "go",
+      "lignes": 58,
+      "taille_bytes": 1619,
+      "entrees": [],
+      "sorties": [
+        "func StreamBreakerInterceptor",
+        "func UnaryBreakerInterceptor",
+        "func convertError",
+        "func serverSideAcceptable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/sheddinginterceptor_test.go": {
+      "fichier": "zrpc/internal/serverinterceptors/sheddinginterceptor_test.go",
+      "langage": "go",
+      "lignes": 78,
+      "taille_bytes": 1581,
+      "entrees": [],
+      "sorties": [
+        "func TestUnarySheddingInterceptor",
+        "type mockedPromise",
+        "type mockedShedder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/prometheusinterceptor_test.go": {
+      "fichier": "zrpc/internal/serverinterceptors/prometheusinterceptor_test.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 787,
+      "entrees": [],
+      "sorties": [
+        "func TestUnaryPromMetricInterceptor_Disabled",
+        "func TestUnaryPromMetricInterceptor_Enabled"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/serverinterceptors/statinterceptor_test.go": {
+      "fichier": "zrpc/internal/serverinterceptors/statinterceptor_test.go",
+      "langage": "go",
+      "lignes": 278,
+      "taille_bytes": 5805,
+      "entrees": [],
+      "sorties": [
+        "func TestLogDuration",
+        "func TestLogDurationWithoutContent",
+        "func TestSetSlowThreshold",
+        "func TestUnaryStatInterceptor",
+        "func Test_isSlow",
+        "func Test_shouldLogContent",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/auth/credential.go": {
+      "fichier": "zrpc/internal/auth/credential.go",
+      "langage": "go",
+      "lignes": 51,
+      "taille_bytes": 1005,
+      "entrees": [],
+      "sorties": [
+        "func ParseCredential",
+        "type Credential"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/auth/vars.go": {
+      "fichier": "zrpc/internal/auth/vars.go",
+      "langage": "go",
+      "lignes": 9,
+      "taille_bytes": 138,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/auth/auth_test.go": {
+      "fichier": "zrpc/internal/auth/auth_test.go",
+      "langage": "go",
+      "lignes": 80,
+      "taille_bytes": 1793,
+      "entrees": [],
+      "sorties": [
+        "func TestAuthenticator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/auth/auth.go": {
+      "fichier": "zrpc/internal/auth/auth.go",
+      "langage": "go",
+      "lignes": 76,
+      "taille_bytes": 1703,
+      "entrees": [],
+      "sorties": [
+        "const defaultExpiration",
+        "func NewAuthenticator",
+        "type Authenticator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/auth/credential_test.go": {
+      "fichier": "zrpc/internal/auth/credential_test.go",
+      "langage": "go",
+      "lignes": 62,
+      "taille_bytes": 1214,
+      "entrees": [],
+      "sorties": [
+        "func TestParseCredential"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/codes/accept.go": {
+      "fichier": "zrpc/internal/codes/accept.go",
+      "langage": "go",
+      "lignes": 17,
+      "taille_bytes": 377,
+      "entrees": [],
+      "sorties": [
+        "func Acceptable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/codes/accept_test.go": {
+      "fichier": "zrpc/internal/codes/accept_test.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 565,
+      "entrees": [],
+      "sorties": [
+        "func TestAccept"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/breakerinterceptor_test.go": {
+      "fichier": "zrpc/internal/clientinterceptors/breakerinterceptor_test.go",
+      "langage": "go",
+      "lignes": 81,
+      "taille_bytes": 1792,
+      "entrees": [],
+      "sorties": [
+        "func TestBreakerInterceptor",
+        "func TestBreakerInterceptorDeadlineExceeded",
+        "func TestBreakerInterceptorNotFound",
+        "func init",
+        "type mockError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/timeoutinterceptor_test.go": {
+      "fichier": "zrpc/internal/clientinterceptors/timeoutinterceptor_test.go",
+      "langage": "go",
+      "lignes": 139,
+      "taille_bytes": 3534,
+      "entrees": [],
+      "sorties": [
+        "const timeout",
+        "func TestTimeoutInterceptor",
+        "func TestTimeoutInterceptor_TimeoutCallOption",
+        "func TestTimeoutInterceptor_panic",
+        "func TestTimeoutInterceptor_timeout",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/durationinterceptor.go": {
+      "fichier": "zrpc/internal/clientinterceptors/durationinterceptor.go",
+      "langage": "go",
+      "lignes": 61,
+      "taille_bytes": 1760,
+      "entrees": [],
+      "sorties": [
+        "const defaultSlowThreshold",
+        "func DontLogContentForMethod",
+        "func DurationInterceptor",
+        "func SetSlowThreshold"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/timeoutinterceptor.go": {
+      "fichier": "zrpc/internal/clientinterceptors/timeoutinterceptor.go",
+      "langage": "go",
+      "lignes": 47,
+      "taille_bytes": 1179,
+      "entrees": [],
+      "sorties": [
+        "func TimeoutInterceptor",
+        "func WithCallTimeout",
+        "func getTimeoutFromCallOptions",
+        "type TimeoutCallOption"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/tracinginterceptor.go": {
+      "fichier": "zrpc/internal/clientinterceptors/tracinginterceptor.go",
+      "langage": "go",
+      "lignes": 205,
+      "taille_bytes": 4893,
+      "entrees": [],
+      "sorties": [
+        "func StreamTracingInterceptor",
+        "func UnaryTracingInterceptor",
+        "func startSpan",
+        "func wrapClientStream"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/tracinginterceptor_test.go": {
+      "fichier": "zrpc/internal/clientinterceptors/tracinginterceptor_test.go",
+      "langage": "go",
+      "lignes": 430,
+      "taille_bytes": 10971,
+      "entrees": [],
+      "sorties": [
+        "func TestClientStream_Header",
+        "func TestClientStream_RecvMsg",
+        "func TestClientStream_SendMsg",
+        "func TestOpenTracingInterceptor",
+        "func TestStreamTracingInterceptor",
+        "func TestStreamTracingInterceptor_FinishWithGrpcError",
+        "func TestStreamTracingInterceptor_FinishWithNormalError",
+        "func TestStreamTracingInterceptor_GrpcFormat",
+        "func TestStreamTracingInterceptor_WithError",
+        "func TestUnaryTracingInterceptor",
+        "func TestUnaryTracingInterceptor_GrpcFormat",
+        "func TestUnaryTracingInterceptor_WithError",
+        "func TestUnaryTracingInterceptor_WithStatusError",
+        "type mockedClientStream"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/prometheusinterceptor.go": {
+      "fichier": "zrpc/internal/clientinterceptors/prometheusinterceptor.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 1307,
+      "entrees": [],
+      "sorties": [
+        "const clientNamespace",
+        "func PrometheusInterceptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/breakerinterceptor.go": {
+      "fichier": "zrpc/internal/clientinterceptors/breakerinterceptor.go",
+      "langage": "go",
+      "lignes": 19,
+      "taille_bytes": 608,
+      "entrees": [],
+      "sorties": [
+        "func BreakerInterceptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/prometheusinterceptor_test.go": {
+      "fichier": "zrpc/internal/clientinterceptors/prometheusinterceptor_test.go",
+      "langage": "go",
+      "lignes": 50,
+      "taille_bytes": 962,
+      "entrees": [],
+      "sorties": [
+        "func TestPromMetricInterceptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/clientinterceptors/durationinterceptor_test.go": {
+      "fichier": "zrpc/internal/clientinterceptors/durationinterceptor_test.go",
+      "langage": "go",
+      "lignes": 114,
+      "taille_bytes": 2596,
+      "entrees": [],
+      "sorties": [
+        "func TestDurationInterceptor",
+        "func TestDurationInterceptorWithSlowThreshold",
+        "func TestSetSlowThreshold"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/balancer/p2c/p2c_test.go": {
+      "fichier": "zrpc/internal/balancer/p2c/p2c_test.go",
+      "langage": "go",
+      "lignes": 152,
+      "taille_bytes": 3128,
+      "entrees": [],
+      "sorties": [
+        "const total",
+        "func TestP2cPicker_Pick",
+        "func TestP2cPicker_PickNil",
+        "func TestPickerWithEmptyConns",
+        "func init",
+        "type mockClientConn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/balancer/p2c/p2c.go": {
+      "fichier": "zrpc/internal/balancer/p2c/p2c.go",
+      "langage": "go",
+      "lignes": 226,
+      "taille_bytes": 5364,
+      "entrees": [],
+      "sorties": [
+        "func init",
+        "func newBuilder",
+        "type p2cPicker",
+        "type p2cPickerBuilder",
+        "type subConn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/balancer/consistenthash/consistenthash.go": {
+      "fichier": "zrpc/internal/balancer/consistenthash/consistenthash.go",
+      "langage": "go",
+      "lignes": 97,
+      "taille_bytes": 2453,
+      "entrees": [],
+      "sorties": [
+        "func GetHashKey",
+        "func SetHashKey",
+        "func init",
+        "func newBuilder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/internal/balancer/consistenthash/consistenthash_test.go": {
+      "fichier": "zrpc/internal/balancer/consistenthash/consistenthash_test.go",
+      "langage": "go",
+      "lignes": 175,
+      "taille_bytes": 4847,
+      "entrees": [],
+      "sorties": [
+        "func BenchmarkPicker_HashConsistency",
+        "func TestPickerBuilder_BuildAndRing",
+        "func TestPickerBuilder_EmptyReadySCs",
+        "func TestPicker_HashConsistency",
+        "func TestPicker_InvalidAddrType",
+        "func TestPicker_MissingKey",
+        "func TestPicker_NoMatchingConn",
+        "func TestPicker_NoSubConnForAddr",
+        "func TestSetAndGetHashKey",
+        "func newCustomRingForTest",
+        "type fakeSubConn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/register_test.go": {
+      "fichier": "zrpc/resolver/register_test.go",
+      "langage": "go",
+      "lignes": 13,
+      "taille_bytes": 163,
+      "entrees": [],
+      "sorties": [
+        "func TestRegister"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/target.go": {
+      "fichier": "zrpc/resolver/target.go",
+      "langage": "go",
+      "lignes": 20,
+      "taille_bytes": 626,
+      "entrees": [],
+      "sorties": [
+        "func BuildDirectTarget",
+        "func BuildDiscovTarget"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/target_test.go": {
+      "fichier": "zrpc/resolver/target_test.go",
+      "langage": "go",
+      "lignes": 17,
+      "taille_bytes": 457,
+      "entrees": [],
+      "sorties": [
+        "func TestBuildDirectTarget",
+        "func TestBuildDiscovTarget"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/register.go": {
+      "fichier": "zrpc/resolver/register.go",
+      "langage": "go",
+      "lignes": 9,
+      "taille_bytes": 245,
+      "entrees": [],
+      "sorties": [
+        "func Register"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/discovbuilder_test.go": {
+      "fichier": "zrpc/resolver/internal/discovbuilder_test.go",
+      "langage": "go",
+      "lignes": 58,
+      "taille_bytes": 1226,
+      "entrees": [],
+      "sorties": [
+        "func TestDiscovBuilder_Build",
+        "func TestDiscovBuilder_Scheme",
+        "type mockClientConn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/discovbuilder.go": {
+      "fichier": "zrpc/resolver/internal/discovbuilder.go",
+      "langage": "go",
+      "lignes": 61,
+      "taille_bytes": 1296,
+      "entrees": [],
+      "sorties": [
+        "type discovBuilder",
+        "type discovResolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/resolver_test.go": {
+      "fichier": "zrpc/resolver/internal/resolver_test.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 821,
+      "entrees": [],
+      "sorties": [
+        "func TestNopResolver",
+        "type mockedClientConn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/subset.go": {
+      "fichier": "zrpc/resolver/internal/subset.go",
+      "langage": "go",
+      "lignes": 14,
+      "taille_bytes": 222,
+      "entrees": [],
+      "sorties": [
+        "func subset"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/register_k8s.go": {
+      "fichier": "zrpc/resolver/internal/register_k8s.go",
+      "langage": "go",
+      "lignes": 13,
+      "taille_bytes": 284,
+      "entrees": [],
+      "sorties": [
+        "func RegisterResolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/directbuilder_test.go": {
+      "fichier": "zrpc/resolver/internal/directbuilder_test.go",
+      "langage": "go",
+      "lignes": 63,
+      "taille_bytes": 1385,
+      "entrees": [],
+      "sorties": [
+        "func TestDirectBuilder_Build",
+        "func TestDirectBuilder_Scheme"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/etcdbuilder_test.go": {
+      "fichier": "zrpc/resolver/internal/etcdbuilder_test.go",
+      "langage": "go",
+      "lignes": 11,
+      "taille_bytes": 182,
+      "entrees": [],
+      "sorties": [
+        "func TestEtcdBuilder_Scheme"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/etcdbuilder.go": {
+      "fichier": "zrpc/resolver/internal/etcdbuilder.go",
+      "langage": "go",
+      "lignes": 9,
+      "taille_bytes": 123,
+      "entrees": [],
+      "sorties": [
+        "type etcdBuilder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/kubebuilder_test.go": {
+      "fichier": "zrpc/resolver/internal/kubebuilder_test.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 719,
+      "entrees": [],
+      "sorties": [
+        "func TestKubeBuilder_Build",
+        "func TestKubeBuilder_Scheme"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/directbuilder.go": {
+      "fichier": "zrpc/resolver/internal/directbuilder.go",
+      "langage": "go",
+      "lignes": 36,
+      "taille_bytes": 819,
+      "entrees": [],
+      "sorties": [
+        "type directBuilder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/kubebuilder.go": {
+      "fichier": "zrpc/resolver/internal/kubebuilder.go",
+      "langage": "go",
+      "lignes": 146,
+      "taille_bytes": 3676,
+      "entrees": [],
+      "sorties": [
+        "type kubeBuilder",
+        "type kubeResolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/register.go": {
+      "fichier": "zrpc/resolver/internal/register.go",
+      "langage": "go",
+      "lignes": 8,
+      "taille_bytes": 160,
+      "entrees": [],
+      "sorties": [
+        "func RegisterResolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/resolver.go": {
+      "fichier": "zrpc/resolver/internal/resolver.go",
+      "langage": "go",
+      "lignes": 47,
+      "taille_bytes": 972,
+      "entrees": [],
+      "sorties": [
+        "func register",
+        "type nopResolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/subset_test.go": {
+      "fichier": "zrpc/resolver/internal/subset_test.go",
+      "langage": "go",
+      "lignes": 54,
+      "taille_bytes": 917,
+      "entrees": [],
+      "sorties": [
+        "func TestSubset"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/kube/targetparser_test.go": {
+      "fichier": "zrpc/resolver/internal/kube/targetparser_test.go",
+      "langage": "go",
+      "lignes": 75,
+      "taille_bytes": 1315,
+      "entrees": [],
+      "sorties": [
+        "func TestParseTarget"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/kube/targetparser.go": {
+      "fichier": "zrpc/resolver/internal/kube/targetparser.go",
+      "langage": "go",
+      "lignes": 48,
+      "taille_bytes": 957,
+      "entrees": [],
+      "sorties": [
+        "func ParseTarget",
+        "type Service"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/kube/eventhandler_test.go": {
+      "fichier": "zrpc/resolver/internal/kube/eventhandler_test.go",
+      "langage": "go",
+      "lignes": 230,
+      "taille_bytes": 4619,
+      "entrees": [],
+      "sorties": [
+        "func TestAdd",
+        "func TestDelete",
+        "func TestUpdate",
+        "func TestUpdateChangeWithDifferentVersion",
+        "func TestUpdateNoChange",
+        "func TestUpdateNoChangeWithDifferentVersion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/kube/eventhandler.go": {
+      "fichier": "zrpc/resolver/internal/kube/eventhandler.go",
+      "langage": "go",
+      "lignes": 142,
+      "taille_bytes": 2923,
+      "entrees": [],
+      "sorties": [
+        "func NewEventHandler",
+        "func diff",
+        "type EventHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/targets/endpoints_test.go": {
+      "fichier": "zrpc/resolver/internal/targets/endpoints_test.go",
+      "langage": "go",
+      "lignes": 89,
+      "taille_bytes": 1827,
+      "entrees": [],
+      "sorties": [
+        "func TestGetAuthority",
+        "func TestGetEndpoints"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zrpc/resolver/internal/targets/endpoints.go": {
+      "fichier": "zrpc/resolver/internal/targets/endpoints.go",
+      "langage": "go",
+      "lignes": 19,
+      "taille_bytes": 403,
+      "entrees": [],
+      "sorties": [
+        "const slashSeparator",
+        "func GetAuthority",
+        "func GetEndpoints"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/health/health.go": {
+      "fichier": "internal/health/health.go",
+      "langage": "go",
+      "lignes": 149,
+      "taille_bytes": 3301,
+      "entrees": [],
+      "sorties": [
+        "func AddProbe",
+        "func CreateHttpHandler",
+        "func NewHealthManager",
+        "func newComboHealthManager"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/health/health_test.go": {
+      "fichier": "internal/health/health_test.go",
+      "langage": "go",
+      "lignes": 153,
+      "taille_bytes": 3218,
+      "entrees": [],
+      "sorties": [
+        "const probeName",
+        "func TestAddGlobalProbes",
+        "func TestComboHealthManager",
+        "func TestCreateHttpHandler",
+        "func TestHealthManager",
+        "func cleanupForTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/encoding/encoding_test.go": {
+      "fichier": "internal/encoding/encoding_test.go",
+      "langage": "go",
+      "lignes": 118,
+      "taille_bytes": 3221,
+      "entrees": [],
+      "sorties": [
+        "func TestTomlToJson",
+        "func TestTomlToJsonError",
+        "func TestYamlToJson",
+        "func TestYamlToJsonError",
+        "func TestYamlToJsonSlice"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/encoding/encoding.go": {
+      "fichier": "internal/encoding/encoding.go",
+      "langage": "go",
+      "lignes": 79,
+      "taille_bytes": 1941,
+      "entrees": [],
+      "sorties": [
+        "func TomlToJson",
+        "func YamlToJson",
+        "func convertKeyToString",
+        "func convertNumberToJsonNumber",
+        "func convertSlice",
+        "func encodeToJSON",
+        "func toStringKeyMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/profiling/profiling.go": {
+      "fichier": "internal/profiling/profiling.go",
+      "langage": "go",
+      "lignes": 263,
+      "taille_bytes": 6911,
+      "entrees": [],
+      "sorties": [
+        "func Start",
+        "func genPyroscopeConf",
+        "func isCpuOverloaded",
+        "func newPyroscopeProfiler",
+        "func resetFraction",
+        "func setFraction",
+        "func startPyroscope"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/profiling/profiling_test.go": {
+      "fichier": "internal/profiling/profiling_test.go",
+      "langage": "go",
+      "lignes": 177,
+      "taille_bytes": 4237,
+      "entrees": [],
+      "sorties": [
+        "func TestGenPyroscopeConf",
+        "func TestNewPyroscopeProfiler",
+        "func TestStart",
+        "type mockProfiler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/mock/depositserver.go": {
+      "fichier": "internal/mock/depositserver.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 541,
+      "entrees": [],
+      "sorties": [
+        "type DepositServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/mock/deposit.proto": {
+      "fichier": "internal/mock/deposit.proto",
+      "langage": "protobuf",
+      "lignes": 17,
+      "taille_bytes": 242,
+      "entrees": [],
+      "sorties": [
+        "message DepositRequest",
+        "message DepositResponse",
+        "rpc Deposit",
+        "service DepositService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/mock/deposit.pb.go": {
+      "fichier": "internal/mock/deposit.pb.go",
+      "langage": "go",
+      "lignes": 299,
+      "taille_bytes": 9174,
+      "entrees": [],
+      "sorties": [
+        "func NewDepositServiceClient",
+        "func RegisterDepositServiceServer",
+        "func _DepositService_Deposit_Handler",
+        "func file_deposit_proto_init",
+        "func file_deposit_proto_rawDescGZIP",
+        "func init",
+        "type DepositRequest",
+        "type DepositResponse",
+        "type DepositServiceClient",
+        "type DepositServiceServer",
+        "type UnimplementedDepositServiceServer",
+        "type depositServiceClient"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/trace/trace_test.go": {
+      "fichier": "internal/trace/trace_test.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 878,
+      "entrees": [],
+      "sorties": [
+        "func TestSpanIDFromContext",
+        "func TestSpanIDFromContextEmpty"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/trace/trace.go": {
+      "fichier": "internal/trace/trace.go",
+      "langage": "go",
+      "lignes": 25,
+      "taille_bytes": 431,
+      "entrees": [],
+      "sorties": [
+        "func SpanIDFromContext",
+        "func TraceIDFromContext"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/devserver/config.go": {
+      "fichier": "internal/devserver/config.go",
+      "langage": "go",
+      "lignes": 13,
+      "taille_bytes": 455,
+      "entrees": [],
+      "sorties": [
+        "type Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "internal/devserver/server.go": {
+      "fichier": "internal/devserver/server.go",
+      "langage": "go",
+      "lignes": 88,
+      "taille_bytes": 2131,
+      "entrees": [],
+      "sorties": [
+        "func NewServer",
+        "func StartAgent",
+        "type Server"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/validation/validator.go": {
+      "fichier": "core/validation/validator.go",
+      "langage": "go",
+      "lignes": 7,
+      "taille_bytes": 138,
+      "entrees": [],
+      "sorties": [
+        "type Validator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/logwriter.go": {
+      "fichier": "core/logx/logwriter.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 329,
+      "entrees": [],
+      "sorties": [
+        "func newLogWriter",
+        "type logWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/fs.go": {
+      "fichier": "core/logx/fs.go",
+      "langage": "go",
+      "lignes": 40,
+      "taille_bytes": 785,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/lesslogger_test.go": {
+      "fichier": "core/logx/lesslogger_test.go",
+      "langage": "go",
+      "lignes": 34,
+      "taille_bytes": 578,
+      "entrees": [],
+      "sorties": [
+        "func TestLessLogger_Error",
+        "func TestLessLogger_Errorf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/logs_test.go": {
+      "fichier": "core/logx/logs_test.go",
+      "langage": "go",
+      "lignes": 1218,
+      "taille_bytes": 25448,
+      "entrees": [],
+      "sorties": [
+        "const message",
+        "fn func",
+        "func BenchmarkCacheByteSlice",
+        "func BenchmarkCopyByteSlice",
+        "func BenchmarkCopyByteSliceAllocExactly",
+        "func BenchmarkCopyByteSliceAppend",
+        "func BenchmarkCopyOnWriteByteSlice",
+        "func BenchmarkLogs",
+        "func TestAddWriter",
+        "func TestDisable",
+        "func TestDisableStat",
+        "func TestErrorfWithWrappedError",
+        "func TestField",
+        "func TestFileLineConsoleMode",
+        "func TestFileLineFileMode",
+        "func TestInfofnWithErrorLevel",
+        "func TestLogKey",
+        "func TestMust",
+        "func TestMustNil",
+        "func TestSetLevel",
+        "func TestSetLevelTwiceWithMode",
+        "func TestSetLevelWithDuration",
+        "func TestSetWriter",
+        "func TestSetup",
+        "func TestStructedInfofn",
+        "func TestStructedLogAlert",
+        "func TestStructedLogDebug",
+        "func TestStructedLogDebugf",
+        "func TestStructedLogDebugfn",
+        "func TestStructedLogDebugv",
+        "func TestStructedLogDebugw",
+        "func TestStructedLogError",
+        "func TestStructedLogErrorf",
+        "func TestStructedLogErrorfn",
+        "func TestStructedLogErrorv",
+        "func TestStructedLogErrorw",
+        "func TestStructedLogFieldNil",
+        "func TestStructedLogInfo",
+        "func TestStructedLogInfoConsoleAny",
+        "func TestStructedLogInfoConsoleAnyError",
+        "func TestStructedLogInfoConsoleAnyString",
+        "func TestStructedLogInfoConsoleAnyStringer",
+        "func TestStructedLogInfoConsoleText",
+        "func TestStructedLogInfof",
+        "func TestStructedLogInfov",
+        "func TestStructedLogInfow",
+        "func TestStructedLogSevere",
+        "func TestStructedLogSeveref",
+        "func TestStructedLogSlow",
+        "func TestStructedLogSlowf",
+        "func TestStructedLogSlowfn",
+        "func TestStructedLogSlowv",
+        "func TestStructedLogSloww",
+        "func TestStructedLogStat",
+        "func TestStructedLogStatf",
+        "func TestStructedLogWithDuration",
+        "func TestWithField_LogLevel",
+        "func TestWithField_LogLevelWithContext",
+        "func TestWithGzip",
+        "func TestWithKeepDays",
+        "func doTestStructedLog",
+        "func doTestStructedLogConsole",
+        "func doTestStructedLogEmpty",
+        "func fetch",
+        "func getFileLine",
+        "func init",
+        "func put",
+        "func testSetLevelTwiceWithMode",
+        "func validateFields",
+        "type ValStringer",
+        "type countingStringer",
+        "type innerPanicStringer",
+        "type mockWriter",
+        "type nilError",
+        "type nilStringer",
+        "type panicStringer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/color.go": {
+      "fichier": "core/logx/color.go",
+      "langage": "go",
+      "lignes": 26,
+      "taille_bytes": 653,
+      "entrees": [],
+      "sorties": [
+        "func WithColor",
+        "func WithColorPadding"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/color_test.go": {
+      "fichier": "core/logx/color_test.go",
+      "langage": "go",
+      "lignes": 33,
+      "taille_bytes": 840,
+      "entrees": [],
+      "sorties": [
+        "func TestWithColor",
+        "func TestWithColorPadding"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/sensitive_test.go": {
+      "fichier": "core/logx/sensitive_test.go",
+      "langage": "go",
+      "lignes": 50,
+      "taille_bytes": 833,
+      "entrees": [],
+      "sorties": [
+        "const maskedContent",
+        "func TestMaskSensitive",
+        "type NonSensitiveUser",
+        "type User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/fields_test.go": {
+      "fichier": "core/logx/fields_test.go",
+      "langage": "go",
+      "lignes": 121,
+      "taille_bytes": 2707,
+      "entrees": [],
+      "sorties": [
+        "const count",
+        "func BenchmarkAtomicValue",
+        "func BenchmarkRWMutex",
+        "func TestAddGlobalFields",
+        "func TestContextWithFields",
+        "func TestWithFields",
+        "func TestWithFieldsAppend",
+        "func TestWithFieldsAppendCopy"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/rotatelogger_test.go": {
+      "fichier": "core/logx/rotatelogger_test.go",
+      "langage": "go",
+      "lignes": 635,
+      "taille_bytes": 16690,
+      "entrees": [],
+      "sorties": [
+        "const body",
+        "func BenchmarkRotateLogger",
+        "func TestDailyRotateRuleMarkRotated",
+        "func TestDailyRotateRuleOutdatedFiles",
+        "func TestDailyRotateRuleShallRotate",
+        "func TestGzipFile",
+        "func TestLogWriterClose",
+        "func TestRotateLoggerClose",
+        "func TestRotateLoggerGetBackupFilename",
+        "func TestRotateLoggerGetBackupWithSizeLimitRotateRuleFilename",
+        "func TestRotateLoggerMayCompressFile",
+        "func TestRotateLoggerMayCompressFileTrue",
+        "func TestRotateLoggerRotate",
+        "func TestRotateLoggerWithSizeLimitRotateRuleClose",
+        "func TestRotateLoggerWithSizeLimitRotateRuleMayCompressFile",
+        "func TestRotateLoggerWithSizeLimitRotateRuleMayCompressFileFailed",
+        "func TestRotateLoggerWithSizeLimitRotateRuleMayCompressFileTrue",
+        "func TestRotateLoggerWithSizeLimitRotateRuleRotate",
+        "func TestRotateLoggerWithSizeLimitRotateRuleWrite",
+        "func TestRotateLoggerWrite",
+        "func TestRotateLogger_WithExistingFile",
+        "func TestSizeLimitRotateRuleMarkRotated",
+        "func TestSizeLimitRotateRuleOutdatedFiles",
+        "func TestSizeLimitRotateRuleShallRotate",
+        "type fakeFileSystem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/vars.go": {
+      "fichier": "core/logx/vars.go",
+      "langage": "go",
+      "lignes": 86,
+      "taille_bytes": 2012,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/limitedexecutor.go": {
+      "fichier": "core/logx/limitedexecutor.go",
+      "langage": "go",
+      "lignes": 42,
+      "taille_bytes": 840,
+      "entrees": [],
+      "sorties": [
+        "func newLimitedExecutor",
+        "type limitedExecutor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/fields.go": {
+      "fichier": "core/logx/fields.go",
+      "langage": "go",
+      "lignes": 47,
+      "taille_bytes": 1192,
+      "entrees": [],
+      "sorties": [
+        "func AddGlobalFields",
+        "func ContextWithFields",
+        "func WithFields",
+        "type fieldsKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/logs.go": {
+      "fichier": "core/logx/logs.go",
+      "langage": "go",
+      "lignes": 609,
+      "taille_bytes": 14559,
+      "entrees": [],
+      "sorties": [
+        "const callerDepth",
+        "func AddWriter",
+        "func Alert",
+        "func Close",
+        "func Debug",
+        "func Debugf",
+        "func Debugfn",
+        "func Debugv",
+        "func Debugw",
+        "func Disable",
+        "func DisableStat",
+        "func Error",
+        "func ErrorStack",
+        "func ErrorStackf",
+        "func Errorf",
+        "func Errorfn",
+        "func Errorv",
+        "func Errorw",
+        "func Field",
+        "func Info",
+        "func Infof",
+        "func Infofn",
+        "func Infov",
+        "func Infow",
+        "func Must",
+        "func MustSetup",
+        "func Reset",
+        "func SetLevel",
+        "func SetUp",
+        "func SetWriter",
+        "func Severe",
+        "func Severef",
+        "func Slow",
+        "func Slowf",
+        "func Slowfn",
+        "func Slowv",
+        "func Sloww",
+        "func Stat",
+        "func Statf",
+        "func WithCooldownMillis",
+        "func WithGzip",
+        "func WithKeepDays",
+        "func WithMaxBackups",
+        "func WithMaxSize",
+        "func WithRotation",
+        "func addCaller",
+        "func createOutput",
+        "func encodeError",
+        "func encodeStringer",
+        "func encodeWithRecover",
+        "func getWriter",
+        "func handleOptions",
+        "func setupFieldKeys",
+        "func setupLogLevel",
+        "func setupWithConsole",
+        "func setupWithFiles",
+        "func setupWithVolume",
+        "func shallLog",
+        "func shallLogStat",
+        "func writeDebug",
+        "func writeError",
+        "func writeInfo",
+        "func writeSevere",
+        "func writeSlow",
+        "func writeStack",
+        "func writeStat"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/syslog_test.go": {
+      "fichier": "core/logx/syslog_test.go",
+      "langage": "go",
+      "lignes": 61,
+      "taille_bytes": 1021,
+      "entrees": [],
+      "sorties": [
+        "const testlog",
+        "func TestCollectSysLog",
+        "func TestRedirector",
+        "func captureOutput",
+        "func getContent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/limitedexecutor_test.go": {
+      "fichier": "core/logx/limitedexecutor_test.go",
+      "langage": "go",
+      "lignes": 62,
+      "taille_bytes": 1215,
+      "entrees": [],
+      "sorties": [
+        "func TestLimitedExecutor_logOrDiscard"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/logger.go": {
+      "fichier": "core/logx/logger.go",
+      "langage": "go",
+      "lignes": 58,
+      "taille_bytes": 1724,
+      "entrees": [],
+      "sorties": [
+        "type Logger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/sensitive.go": {
+      "fichier": "core/logx/sensitive.go",
+      "langage": "go",
+      "lignes": 21,
+      "taille_bytes": 736,
+      "entrees": [],
+      "sorties": [
+        "func maskSensitive",
+        "type Sensitive"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/rotatelogger.go": {
+      "fichier": "core/logx/rotatelogger.go",
+      "langage": "go",
+      "lignes": 467,
+      "taille_bytes": 10220,
+      "entrees": [],
+      "sorties": [
+        "func DefaultRotateRule",
+        "func NewLogger",
+        "func NewSizeLimitRotateRule",
+        "func compressLogFile",
+        "func getNowDate",
+        "func getNowDateInRFC3339Format",
+        "func gzipFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/util.go": {
+      "fichier": "core/logx/util.go",
+      "langage": "go",
+      "lignes": 35,
+      "taille_bytes": 590,
+      "entrees": [],
+      "sorties": [
+        "func getCaller",
+        "func getTimestamp",
+        "func prettyCaller"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/richlogger.go": {
+      "fichier": "core/logx/richlogger.go",
+      "langage": "go",
+      "lignes": 259,
+      "taille_bytes": 4917,
+      "entrees": [],
+      "sorties": [
+        "func WithCallerSkip",
+        "func WithContext",
+        "func WithDuration",
+        "type richLogger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/lesswriter_test.go": {
+      "fichier": "core/logx/lesswriter_test.go",
+      "langage": "go",
+      "lignes": 19,
+      "taille_bytes": 323,
+      "entrees": [],
+      "sorties": [
+        "func TestLessWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/util_test.go": {
+      "fichier": "core/logx/util_test.go",
+      "langage": "go",
+      "lignes": 72,
+      "taille_bytes": 1328,
+      "entrees": [],
+      "sorties": [
+        "func BenchmarkGetCaller",
+        "func TestGetCaller",
+        "func TestGetTimestamp",
+        "func TestPrettyCaller"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/richlogger_test.go": {
+      "fichier": "core/logx/richlogger_test.go",
+      "langage": "go",
+      "lignes": 471,
+      "taille_bytes": 12085,
+      "entrees": [],
+      "sorties": [
+        "func TestLogWithCallerSkip",
+        "func TestLogWithCallerSkipCopy",
+        "func TestLogWithContextCopy",
+        "func TestLogWithDurationCopy",
+        "func TestLogWithFields",
+        "func TestLogWithFieldsCopy",
+        "func TestLogWithJson",
+        "func TestLoggerWithFields",
+        "func TestTraceDebug",
+        "func TestTraceError",
+        "func TestTraceInfo",
+        "func TestTraceInfoConsole",
+        "func TestTraceLog",
+        "func TestTraceSlow",
+        "func TestTraceWithoutContext",
+        "func validate",
+        "func validateContentType",
+        "type mockValue",
+        "type mockValue2",
+        "type testJson",
+        "type testJsonImpl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/writer.go": {
+      "fichier": "core/logx/writer.go",
+      "langage": "go",
+      "lignes": 541,
+      "taille_bytes": 11656,
+      "entrees": [],
+      "sorties": [
+        "func NewWriter",
+        "func buildPlainFields",
+        "func marshalJson",
+        "func mergeGlobalFields",
+        "func newConsoleWriter",
+        "func newFileWriter",
+        "func output",
+        "func processFieldValue",
+        "func wrapLevelWithColor",
+        "func writeJson",
+        "func writePlainAny",
+        "func writePlainText",
+        "func writePlainValue",
+        "type nopWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/syslog.go": {
+      "fichier": "core/logx/syslog.go",
+      "langage": "go",
+      "lignes": 15,
+      "taille_bytes": 262,
+      "entrees": [],
+      "sorties": [
+        "func CollectSysLog",
+        "type redirector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "core/logx/lesswriter.go": {
+      "fichier": "core/logx/lesswriter.go",
+      "langage": "go",
+      "lignes": 22,
+      "taille_bytes": 396,
+      "entrees": [],
+      "sorties": [
+        "func newLessWriter",
+        "type lessWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

@@ -1,0 +1,1937 @@
+{
+  "meta": {
+    "projet": "PHP_CodeSniffer",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 1,
+      "php": 100,
+      "xml": 19
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "composer.json"
+  },
+  "noeuds": {
+    "composer.json": {
+      "fichier": "composer.json",
+      "langage": "json",
+      "lignes": 41,
+      "taille_bytes": 1110,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "autoload.php": {
+      "fichier": "autoload.php",
+      "langage": "php",
+      "lignes": 342,
+      "taille_bytes": 11887,
+      "entrees": [
+        "$path"
+      ],
+      "sorties": [
+        "class Autoload"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/TestSuite7.php": {
+      "fichier": "tests/TestSuite7.php",
+      "langage": "php",
+      "lignes": 35,
+      "taille_bytes": 857,
+      "entrees": [
+        "PHPUnit\\Framework\\TestResult",
+        "PHPUnit\\Framework\\TestSuite"
+      ],
+      "sorties": [
+        "class TestSuite",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/FileList.php": {
+      "fichier": "tests/FileList.php",
+      "langage": "php",
+      "lignes": 94,
+      "taille_bytes": 2339,
+      "entrees": [],
+      "sorties": [
+        "class FileList",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/bootstrap.php": {
+      "fichier": "tests/bootstrap.php",
+      "langage": "php",
+      "lignes": 91,
+      "taille_bytes": 2842,
+      "entrees": [
+        "__DIR__."
+      ],
+      "sorties": [
+        "function printPHPCodeSnifferTestOutput"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/AllTests.php": {
+      "fichier": "tests/AllTests.php",
+      "langage": "php",
+      "lignes": 64,
+      "taille_bytes": 1713,
+      "entrees": [],
+      "sorties": [
+        "class PHP_CodeSniffer_AllTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/TestSuite.php": {
+      "fichier": "tests/TestSuite.php",
+      "langage": "php",
+      "lignes": 35,
+      "taille_bytes": 845,
+      "entrees": [
+        "PHPUnit\\Framework\\TestResult",
+        "PHPUnit\\Framework\\TestSuite"
+      ],
+      "sorties": [
+        "class TestSuite",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Standards/AllSniffs.php": {
+      "fichier": "tests/Standards/AllSniffs.php",
+      "langage": "php",
+      "lignes": 123,
+      "taille_bytes": 3870,
+      "entrees": [
+        "PHPUnit\\Framework\\TestSuite",
+        "PHPUnit\\TextUI\\TestRunner",
+        "PHP_CodeSniffer\\Autoload",
+        "PHP_CodeSniffer\\Util\\Standards"
+      ],
+      "sorties": [
+        "class AllSniffs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Standards/AbstractSniffUnitTest.php": {
+      "fichier": "tests/Standards/AbstractSniffUnitTest.php",
+      "langage": "php",
+      "lignes": 461,
+      "taille_bytes": 16266,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Exceptions\\RuntimeException",
+        "PHP_CodeSniffer\\Files\\LocalFile",
+        "PHP_CodeSniffer\\Ruleset",
+        "PHP_CodeSniffer\\Util\\Common"
+      ],
+      "sorties": [
+        "abstract class AbstractSniffUnitTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/IsCamelCapsTest.php": {
+      "fichier": "tests/Core/IsCamelCapsTest.php",
+      "langage": "php",
+      "lignes": 135,
+      "taille_bytes": 4738,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Util\\Common"
+      ],
+      "sorties": [
+        "class IsCamelCapsTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/AllTests.php": {
+      "fichier": "tests/Core/AllTests.php",
+      "langage": "php",
+      "lignes": 63,
+      "taille_bytes": 1490,
+      "entrees": [
+        "$file",
+        "PHPUnit\\Framework\\TestSuite",
+        "PHPUnit\\TextUI\\TestRunner",
+        "PHP_CodeSniffer\\Tests\\FileList"
+      ],
+      "sorties": [
+        "class AllTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/AbstractMethodUnitTest.php": {
+      "fichier": "tests/Core/AbstractMethodUnitTest.php",
+      "langage": "php",
+      "lignes": 140,
+      "taille_bytes": 4274,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Files\\DummyFile",
+        "PHP_CodeSniffer\\Ruleset"
+      ],
+      "sorties": [
+        "abstract class AbstractMethodUnitTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/ErrorSuppressionTest.php": {
+      "fichier": "tests/Core/ErrorSuppressionTest.php",
+      "langage": "php",
+      "lignes": 1247,
+      "taille_bytes": 46491,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Files\\DummyFile",
+        "PHP_CodeSniffer\\Ruleset"
+      ],
+      "sorties": [
+        "class ErrorSuppressionTest",
+        "class MyClass",
+        "function myFunction",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Autoloader/DetermineLoadedClassTest.php": {
+      "fichier": "tests/Core/Autoloader/DetermineLoadedClassTest.php",
+      "langage": "php",
+      "lignes": 119,
+      "taille_bytes": 3560,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Autoload",
+        "__DIR__."
+      ],
+      "sorties": [
+        "class DetermineLoadedClassTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/File/FindStartOfStatementTest.php": {
+      "fichier": "tests/Core/File/FindStartOfStatementTest.php",
+      "langage": "php",
+      "lignes": 503,
+      "taille_bytes": 13177,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class FindStartOfStatementTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/File/IsReferenceTest.php": {
+      "fichier": "tests/Core/File/IsReferenceTest.php",
+      "langage": "php",
+      "lignes": 248,
+      "taille_bytes": 6180,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class IsReferenceTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/File/FindExtendedClassNameTest.php": {
+      "fichier": "tests/Core/File/FindExtendedClassNameTest.php",
+      "langage": "php",
+      "lignes": 93,
+      "taille_bytes": 2570,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class FindExtendedClassNameTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/File/FindImplementedInterfaceNamesTest.php": {
+      "fichier": "tests/Core/File/FindImplementedInterfaceNamesTest.php",
+      "langage": "php",
+      "lignes": 104,
+      "taille_bytes": 2899,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class FindImplementedInterfaceNamesTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/File/GetMethodParametersTest.php": {
+      "fichier": "tests/Core/File/GetMethodParametersTest.php",
+      "langage": "php",
+      "lignes": 1182,
+      "taille_bytes": 38408,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class GetMethodParametersTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/File/FindEndOfStatementTest.php": {
+      "fichier": "tests/Core/File/FindEndOfStatementTest.php",
+      "langage": "php",
+      "lignes": 415,
+      "taille_bytes": 10971,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class FindEndOfStatementTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/File/GetMethodPropertiesTest.php": {
+      "fichier": "tests/Core/File/GetMethodPropertiesTest.php",
+      "langage": "php",
+      "lignes": 910,
+      "taille_bytes": 27269,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class GetMethodPropertiesTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/File/GetMemberPropertiesTest.php": {
+      "fichier": "tests/Core/File/GetMemberPropertiesTest.php",
+      "langage": "php",
+      "lignes": 864,
+      "taille_bytes": 30967,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class GetMemberPropertiesTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/File/GetClassPropertiesTest.php": {
+      "fichier": "tests/Core/File/GetClassPropertiesTest.php",
+      "langage": "php",
+      "lignes": 188,
+      "taille_bytes": 5730,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class GetClassPropertiesTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/SetPropertyAllowedViaStdClassTest.xml": {
+      "fichier": "tests/Core/Ruleset/SetPropertyAllowedViaStdClassTest.xml",
+      "langage": "xml",
+      "lignes": 16,
+      "taille_bytes": 745,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/SetPropertyAllowedAsDeclaredTest.xml": {
+      "fichier": "tests/Core/Ruleset/SetPropertyAllowedAsDeclaredTest.xml",
+      "langage": "xml",
+      "lignes": 16,
+      "taille_bytes": 744,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/SetPropertyDoesNotThrowErrorOnInvalidPropertyWhenSetForStandardTest.xml": {
+      "fichier": "tests/Core/Ruleset/SetPropertyDoesNotThrowErrorOnInvalidPropertyWhenSetForStandardTest.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 357,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/SetPropertyThrowsErrorOnInvalidPropertyTest.xml": {
+      "fichier": "tests/Core/Ruleset/SetPropertyThrowsErrorOnInvalidPropertyTest.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 375,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/SetPropertyAllowedViaMagicMethodTest.xml": {
+      "fichier": "tests/Core/Ruleset/SetPropertyAllowedViaMagicMethodTest.xml",
+      "langage": "xml",
+      "lignes": 16,
+      "taille_bytes": 748,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/RuleInclusionTest-include.xml": {
+      "fichier": "tests/Core/Ruleset/RuleInclusionTest-include.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 397,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/RuleInclusionTest.php": {
+      "fichier": "tests/Core/Ruleset/RuleInclusionTest.php",
+      "langage": "php",
+      "lignes": 487,
+      "taille_bytes": 18378,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Ruleset"
+      ],
+      "sorties": [
+        "class RuleInclusionTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/RuleInclusionTest.xml": {
+      "fichier": "tests/Core/Ruleset/RuleInclusionTest.xml",
+      "langage": "xml",
+      "lignes": 49,
+      "taille_bytes": 1633,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/SetPropertyDoesNotThrowErrorOnInvalidPropertyWhenSetForCategoryTest.xml": {
+      "fichier": "tests/Core/Ruleset/SetPropertyDoesNotThrowErrorOnInvalidPropertyWhenSetForCategoryTest.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 364,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/RuleInclusionAbsoluteLinuxTest.xml": {
+      "fichier": "tests/Core/Ruleset/RuleInclusionAbsoluteLinuxTest.xml",
+      "langage": "xml",
+      "lignes": 11,
+      "taille_bytes": 515,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/SetPropertyNotAllowedViaAttributeTest.xml": {
+      "fichier": "tests/Core/Ruleset/SetPropertyNotAllowedViaAttributeTest.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 455,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/RuleInclusionAbsoluteWindowsTest.xml": {
+      "fichier": "tests/Core/Ruleset/RuleInclusionAbsoluteWindowsTest.xml",
+      "langage": "xml",
+      "lignes": 11,
+      "taille_bytes": 512,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/RuleInclusionAbsoluteWindowsTest.php": {
+      "fichier": "tests/Core/Ruleset/RuleInclusionAbsoluteWindowsTest.php",
+      "langage": "php",
+      "lignes": 119,
+      "taille_bytes": 3521,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Ruleset"
+      ],
+      "sorties": [
+        "class RuleInclusionAbsoluteWindowsTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/SetSniffPropertyTest.php": {
+      "fichier": "tests/Core/Ruleset/SetSniffPropertyTest.php",
+      "langage": "php",
+      "lignes": 413,
+      "taille_bytes": 16485,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Ruleset"
+      ],
+      "sorties": [
+        "class SetSniffPropertyTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/SetPropertyAppliesPropertyToMultipleSniffsInCategoryTest.xml": {
+      "fichier": "tests/Core/Ruleset/SetPropertyAppliesPropertyToMultipleSniffsInCategoryTest.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 359,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/RuleInclusionAbsoluteLinuxTest.php": {
+      "fichier": "tests/Core/Ruleset/RuleInclusionAbsoluteLinuxTest.php",
+      "langage": "php",
+      "lignes": 118,
+      "taille_bytes": 3486,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Ruleset"
+      ],
+      "sorties": [
+        "class RuleInclusionAbsoluteLinuxTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/Fixtures/Sniffs/Category/SetPropertyNotAllowedViaAttributeSniff.php": {
+      "fichier": "tests/Core/Ruleset/Fixtures/Sniffs/Category/SetPropertyNotAllowedViaAttributeSniff.php",
+      "langage": "php",
+      "lignes": 27,
+      "taille_bytes": 493,
+      "entrees": [
+        "AllowDynamicProperties",
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class SetPropertyNotAllowedViaAttributeSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/Fixtures/Sniffs/Category/SetPropertyAllowedAsDeclaredSniff.php": {
+      "fichier": "tests/Core/Ruleset/Fixtures/Sniffs/Category/SetPropertyAllowedAsDeclaredSniff.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 492,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class SetPropertyAllowedAsDeclaredSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/Fixtures/Sniffs/Category/SetPropertyAllowedViaMagicMethodSniff.php": {
+      "fichier": "tests/Core/Ruleset/Fixtures/Sniffs/Category/SetPropertyAllowedViaMagicMethodSniff.php",
+      "langage": "php",
+      "lignes": 40,
+      "taille_bytes": 715,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class SetPropertyAllowedViaMagicMethodSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Ruleset/Fixtures/Sniffs/Category/SetPropertyAllowedViaStdClassSniff.php": {
+      "fichier": "tests/Core/Ruleset/Fixtures/Sniffs/Category/SetPropertyAllowedViaStdClassSniff.php",
+      "langage": "php",
+      "lignes": 26,
+      "taille_bytes": 466,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff",
+        "stdClass"
+      ],
+      "sorties": [
+        "class SetPropertyAllowedViaStdClassSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Filters/Filter/AcceptTest.php": {
+      "fichier": "tests/Core/Filters/Filter/AcceptTest.php",
+      "langage": "php",
+      "lignes": 154,
+      "taille_bytes": 4328,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Filters\\Filter",
+        "PHP_CodeSniffer\\Ruleset"
+      ],
+      "sorties": [
+        "class AcceptTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Filters/Filter/AcceptTest.xml": {
+      "fichier": "tests/Core/Filters/Filter/AcceptTest.xml",
+      "langage": "xml",
+      "lignes": 16,
+      "taille_bytes": 677,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Sniffs/AbstractArraySniffTestable.php": {
+      "fichier": "tests/Core/Sniffs/AbstractArraySniffTestable.php",
+      "langage": "php",
+      "lignes": 65,
+      "taille_bytes": 2430,
+      "entrees": [
+        "PHP_CodeSniffer\\Sniffs\\AbstractArraySniff"
+      ],
+      "sorties": [
+        "class AbstractArraySniffTestable",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Sniffs/AbstractArraySniffTest.php": {
+      "fichier": "tests/Core/Sniffs/AbstractArraySniffTest.php",
+      "langage": "php",
+      "lignes": 290,
+      "taille_bytes": 8252,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class AbstractArraySniffTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Config/ReportWidthTest.php": {
+      "fichier": "tests/Core/Config/ReportWidthTest.php",
+      "langage": "php",
+      "lignes": 304,
+      "taille_bytes": 9261,
+      "entrees": [
+        "PHPUnit\\Framework\\TestCase",
+        "PHP_CodeSniffer\\Config",
+        "ReflectionProperty"
+      ],
+      "sorties": [
+        "class ReportWidthTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/BackfillNumericSeparatorTest.php": {
+      "fichier": "tests/Core/Tokenizer/BackfillNumericSeparatorTest.php",
+      "langage": "php",
+      "lignes": 420,
+      "taille_bytes": 12435,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class BackfillNumericSeparatorTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/BitwiseOrTest.php": {
+      "fichier": "tests/Core/Tokenizer/BitwiseOrTest.php",
+      "langage": "php",
+      "lignes": 138,
+      "taille_bytes": 4920,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class BitwiseOrTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/UndoNamespacedNameSingleTokenTest.php": {
+      "fichier": "tests/Core/Tokenizer/UndoNamespacedNameSingleTokenTest.php",
+      "langage": "php",
+      "lignes": 1295,
+      "taille_bytes": 42560,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class UndoNamespacedNameSingleTokenTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/HeredocNowdocCloserTest.php": {
+      "fichier": "tests/Core/Tokenizer/HeredocNowdocCloserTest.php",
+      "langage": "php",
+      "lignes": 150,
+      "taille_bytes": 5026,
+      "entrees": [
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Files\\DummyFile",
+        "PHP_CodeSniffer\\Ruleset",
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class HeredocNowdocCloserTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/NullsafeObjectOperatorTest.php": {
+      "fichier": "tests/Core/Tokenizer/NullsafeObjectOperatorTest.php",
+      "langage": "php",
+      "lignes": 140,
+      "taille_bytes": 4396,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class NullsafeObjectOperatorTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/ScopeSettingWithNamespaceOperatorTest.php": {
+      "fichier": "tests/Core/Tokenizer/ScopeSettingWithNamespaceOperatorTest.php",
+      "langage": "php",
+      "lignes": 98,
+      "taille_bytes": 3688,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class ScopeSettingWithNamespaceOperatorTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/DoubleQuotedStringTest.php": {
+      "fichier": "tests/Core/Tokenizer/DoubleQuotedStringTest.php",
+      "langage": "php",
+      "lignes": 136,
+      "taille_bytes": 4375,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class DoubleQuotedStringTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/StableCommentWhitespaceTest.php": {
+      "fichier": "tests/Core/Tokenizer/StableCommentWhitespaceTest.php",
+      "langage": "php",
+      "lignes": 1056,
+      "taille_bytes": 33972,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class StableCommentWhitespaceTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/TypeIntersectionTest.php": {
+      "fichier": "tests/Core/Tokenizer/TypeIntersectionTest.php",
+      "langage": "php",
+      "lignes": 138,
+      "taille_bytes": 5160,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class TypeIntersectionTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/ShortArrayTest.php": {
+      "fichier": "tests/Core/Tokenizer/ShortArrayTest.php",
+      "langage": "php",
+      "lignes": 135,
+      "taille_bytes": 6514,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class ShortArrayTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/BackfillMatchTokenTest.php": {
+      "fichier": "tests/Core/Tokenizer/BackfillMatchTokenTest.php",
+      "langage": "php",
+      "lignes": 529,
+      "taille_bytes": 21404,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class BackfillMatchTokenTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/ContextSensitiveKeywordsTest.php": {
+      "fichier": "tests/Core/Tokenizer/ContextSensitiveKeywordsTest.php",
+      "langage": "php",
+      "lignes": 587,
+      "taille_bytes": 16321,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class ContextSensitiveKeywordsTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/BackfillReadonlyTest.php": {
+      "fichier": "tests/Core/Tokenizer/BackfillReadonlyTest.php",
+      "langage": "php",
+      "lignes": 236,
+      "taille_bytes": 6663,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class BackfillReadonlyTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/AttributesTest.php": {
+      "fichier": "tests/Core/Tokenizer/AttributesTest.php",
+      "langage": "php",
+      "lignes": 658,
+      "taille_bytes": 22154,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class AttributesTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/EnumCaseTest.php": {
+      "fichier": "tests/Core/Tokenizer/EnumCaseTest.php",
+      "langage": "php",
+      "lignes": 157,
+      "taille_bytes": 5056,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class EnumCaseTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/DoubleArrowTest.php": {
+      "fichier": "tests/Core/Tokenizer/DoubleArrowTest.php",
+      "langage": "php",
+      "lignes": 237,
+      "taille_bytes": 12623,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class DoubleArrowTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/AnonClassParenthesisOwnerTest.php": {
+      "fichier": "tests/Core/Tokenizer/AnonClassParenthesisOwnerTest.php",
+      "langage": "php",
+      "lignes": 144,
+      "taille_bytes": 5590,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class AnonClassParenthesisOwnerTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/NamedFunctionCallArgumentsTest.php": {
+      "fichier": "tests/Core/Tokenizer/NamedFunctionCallArgumentsTest.php",
+      "langage": "php",
+      "lignes": 885,
+      "taille_bytes": 27048,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class NamedFunctionCallArgumentsTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/BackfillEnumTest.php": {
+      "fichier": "tests/Core/Tokenizer/BackfillEnumTest.php",
+      "langage": "php",
+      "lignes": 229,
+      "taille_bytes": 6737,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class BackfillEnumTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/FinallyTest.php": {
+      "fichier": "tests/Core/Tokenizer/FinallyTest.php",
+      "langage": "php",
+      "lignes": 96,
+      "taille_bytes": 2550,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class FinallyTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/BackfillExplicitOctalNotationTest.php": {
+      "fichier": "tests/Core/Tokenizer/BackfillExplicitOctalNotationTest.php",
+      "langage": "php",
+      "lignes": 120,
+      "taille_bytes": 4078,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class BackfillExplicitOctalNotationTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/StableCommentWhitespaceWinTest.php": {
+      "fichier": "tests/Core/Tokenizer/StableCommentWhitespaceWinTest.php",
+      "langage": "php",
+      "lignes": 367,
+      "taille_bytes": 10951,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class StableCommentWhitespaceWinTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/BackfillFnTokenTest.php": {
+      "fichier": "tests/Core/Tokenizer/BackfillFnTokenTest.php",
+      "langage": "php",
+      "lignes": 802,
+      "taille_bytes": 29411,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class BackfillFnTokenTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/ArrayKeywordTest.php": {
+      "fichier": "tests/Core/Tokenizer/ArrayKeywordTest.php",
+      "langage": "php",
+      "lignes": 170,
+      "taille_bytes": 6098,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class ArrayKeywordTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/GotoLabelTest.php": {
+      "fichier": "tests/Core/Tokenizer/GotoLabelTest.php",
+      "langage": "php",
+      "lignes": 175,
+      "taille_bytes": 4611,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class GotoLabelTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/DefaultKeywordTest.php": {
+      "fichier": "tests/Core/Tokenizer/DefaultKeywordTest.php",
+      "langage": "php",
+      "lignes": 302,
+      "taille_bytes": 14339,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class DefaultKeywordTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Core/Tokenizer/HeredocStringTest.php": {
+      "fichier": "tests/Core/Tokenizer/HeredocStringTest.php",
+      "langage": "php",
+      "lignes": 153,
+      "taille_bytes": 4984,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Core\\AbstractMethodUnitTest"
+      ],
+      "sorties": [
+        "class HeredocStringTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Ruleset.php": {
+      "fichier": "src/Ruleset.php",
+      "langage": "php",
+      "lignes": 1458,
+      "taille_bytes": 53974,
+      "entrees": [
+        "$autoloadPath",
+        "PHP_CodeSniffer\\Exceptions\\RuntimeException",
+        "PHP_CodeSniffer\\Util",
+        "stdClass"
+      ],
+      "sorties": [
+        "class Ruleset",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Config.php": {
+      "fichier": "src/Config.php",
+      "langage": "php",
+      "lignes": 1718,
+      "taille_bytes": 66573,
+      "entrees": [
+        "$configFile",
+        "PHP_CodeSniffer\\Exceptions\\DeepExitException",
+        "PHP_CodeSniffer\\Exceptions\\RuntimeException",
+        "PHP_CodeSniffer\\Util\\Common"
+      ],
+      "sorties": [
+        "class Config",
+        "const DEFAULT_REPORT_WIDTH",
+        "const STABILITY",
+        "const VERSION",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Runner.php": {
+      "fichier": "src/Runner.php",
+      "langage": "php",
+      "lignes": 969,
+      "taille_bytes": 34630,
+      "entrees": [
+        "$bootstrap",
+        "$out",
+        "PHP_CodeSniffer\\Exceptions\\DeepExitException",
+        "PHP_CodeSniffer\\Exceptions\\RuntimeException",
+        "PHP_CodeSniffer\\Files\\DummyFile",
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Files\\FileList",
+        "PHP_CodeSniffer\\Util\\Cache",
+        "PHP_CodeSniffer\\Util\\Common",
+        "PHP_CodeSniffer\\Util\\Standards"
+      ],
+      "sorties": [
+        "class Runner",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Fixer.php": {
+      "fichier": "src/Fixer.php",
+      "langage": "php",
+      "lignes": 806,
+      "taille_bytes": 23868,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Util\\Common"
+      ],
+      "sorties": [
+        "class Fixer",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Reporter.php": {
+      "fichier": "src/Reporter.php",
+      "langage": "php",
+      "lignes": 423,
+      "taille_bytes": 13445,
+      "entrees": [
+        "PHP_CodeSniffer\\Exceptions\\DeepExitException",
+        "PHP_CodeSniffer\\Exceptions\\RuntimeException",
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Reports\\Report",
+        "PHP_CodeSniffer\\Util\\Common"
+      ],
+      "sorties": [
+        "class Reporter",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Timing.php": {
+      "fichier": "src/Util/Timing.php",
+      "langage": "php",
+      "lignes": 86,
+      "taille_bytes": 1963,
+      "entrees": [],
+      "sorties": [
+        "class Timing"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Common.php": {
+      "fichier": "src/Util/Common.php",
+      "langage": "php",
+      "lignes": 570,
+      "taille_bytes": 16294,
+      "entrees": [],
+      "sorties": [
+        "class Common"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Cache.php": {
+      "fichier": "src/Util/Cache.php",
+      "langage": "php",
+      "lignes": 351,
+      "taille_bytes": 11325,
+      "entrees": [
+        "PHP_CodeSniffer\\Autoload",
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Ruleset"
+      ],
+      "sorties": [
+        "class Cache"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Standards.php": {
+      "fichier": "src/Util/Standards.php",
+      "langage": "php",
+      "lignes": 339,
+      "taille_bytes": 11308,
+      "entrees": [
+        "PHP_CodeSniffer\\Config"
+      ],
+      "sorties": [
+        "class Standards"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Tokens.php": {
+      "fichier": "src/Util/Tokens.php",
+      "langage": "php",
+      "lignes": 810,
+      "taille_bytes": 25933,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tokenizers/JS.php": {
+      "fichier": "src/Tokenizers/JS.php",
+      "langage": "php",
+      "lignes": 1256,
+      "taille_bytes": 50179,
+      "entrees": [
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Exceptions\\TokenizerException",
+        "PHP_CodeSniffer\\Util"
+      ],
+      "sorties": [
+        "class JS",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tokenizers/CSS.php": {
+      "fichier": "src/Tokenizers/CSS.php",
+      "langage": "php",
+      "lignes": 541,
+      "taille_bytes": 22352,
+      "entrees": [
+        "PHP_CodeSniffer\\Config",
+        "PHP_CodeSniffer\\Exceptions\\TokenizerException",
+        "PHP_CodeSniffer\\Util"
+      ],
+      "sorties": [
+        "class CSS",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tokenizers/PHP.php": {
+      "fichier": "src/Tokenizers/PHP.php",
+      "langage": "php",
+      "lignes": 3543,
+      "taille_bytes": 147521,
+      "entrees": [
+        "PHP_CodeSniffer\\Util"
+      ],
+      "sorties": [
+        "class PHP"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tokenizers/Tokenizer.php": {
+      "fichier": "src/Tokenizers/Tokenizer.php",
+      "langage": "php",
+      "lignes": 1734,
+      "taille_bytes": 79805,
+      "entrees": [
+        "PHP_CodeSniffer\\Exceptions\\TokenizerException",
+        "PHP_CodeSniffer\\Util"
+      ],
+      "sorties": [
+        "abstract class Tokenizer",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tokenizers/Comment.php": {
+      "fichier": "src/Tokenizers/Comment.php",
+      "langage": "php",
+      "lignes": 277,
+      "taille_bytes": 8795,
+      "entrees": [
+        "PHP_CodeSniffer\\Util"
+      ],
+      "sorties": [
+        "class Comment",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Generators/Text.php": {
+      "fichier": "src/Generators/Text.php",
+      "langage": "php",
+      "lignes": 253,
+      "taille_bytes": 8247,
+      "entrees": [],
+      "sorties": [
+        "class Text",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Generators/Generator.php": {
+      "fichier": "src/Generators/Generator.php",
+      "langage": "php",
+      "lignes": 117,
+      "taille_bytes": 3154,
+      "entrees": [
+        "PHP_CodeSniffer\\Autoload",
+        "PHP_CodeSniffer\\Ruleset"
+      ],
+      "sorties": [
+        "abstract class Generator",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Generators/HTML.php": {
+      "fichier": "src/Generators/HTML.php",
+      "langage": "php",
+      "lignes": 270,
+      "taille_bytes": 8530,
+      "entrees": [
+        "PHP_CodeSniffer\\Config"
+      ],
+      "sorties": [
+        "class HTML",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Generators/Markdown.php": {
+      "fichier": "src/Generators/Markdown.php",
+      "langage": "php",
+      "lignes": 161,
+      "taille_bytes": 4409,
+      "entrees": [
+        "PHP_CodeSniffer\\Config"
+      ],
+      "sorties": [
+        "class Markdown",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/ruleset.xml": {
+      "fichier": "src/Standards/PSR12/ruleset.xml",
+      "langage": "xml",
+      "lignes": 347,
+      "taille_bytes": 21743,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Docs/Classes/ClassInstantiationStandard.xml": {
+      "fichier": "src/Standards/PSR12/Docs/Classes/ClassInstantiationStandard.xml",
+      "langage": "xml",
+      "lignes": 19,
+      "taille_bytes": 504,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Docs/Operators/OperatorSpacingStandard.xml": {
+      "fichier": "src/Standards/PSR12/Docs/Operators/OperatorSpacingStandard.xml",
+      "langage": "xml",
+      "lignes": 27,
+      "taille_bytes": 901,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Docs/Functions/NullableTypeDeclarationStandard.xml": {
+      "fichier": "src/Standards/PSR12/Docs/Functions/NullableTypeDeclarationStandard.xml",
+      "langage": "xml",
+      "lignes": 45,
+      "taille_bytes": 1046,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Docs/Keywords/ShortFormTypeKeywordsStandard.xml": {
+      "fichier": "src/Standards/PSR12/Docs/Keywords/ShortFormTypeKeywordsStandard.xml",
+      "langage": "xml",
+      "lignes": 19,
+      "taille_bytes": 529,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Docs/Namespaces/CompoundNamespaceDepthStandard.xml": {
+      "fichier": "src/Standards/PSR12/Docs/Namespaces/CompoundNamespaceDepthStandard.xml",
+      "langage": "xml",
+      "lignes": 28,
+      "taille_bytes": 688,
+      "entrees": [
+        "Vendor\\Package\\SomeNamespace\\"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Classes/AnonClassDeclarationSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Classes/AnonClassDeclarationSniff.php",
+      "langage": "php",
+      "lignes": 242,
+      "taille_bytes": 9608,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Standards\\Generic\\Sniffs\\Functions\\FunctionCallArgumentSpacingSniff",
+        "PHP_CodeSniffer\\Standards\\PSR2\\Sniffs\\Classes\\ClassDeclarationSniff",
+        "PHP_CodeSniffer\\Standards\\Squiz\\Sniffs\\Functions\\MultiLineFunctionDeclarationSniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class AnonClassDeclarationSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Classes/OpeningBraceSpaceSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Classes/OpeningBraceSpaceSniff.php",
+      "langage": "php",
+      "lignes": 80,
+      "taille_bytes": 2212,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class OpeningBraceSpaceSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Classes/ClosingBraceSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Classes/ClosingBraceSniff.php",
+      "langage": "php",
+      "lignes": 67,
+      "taille_bytes": 1811,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class ClosingBraceSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Classes/ClassInstantiationSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Classes/ClassInstantiationSniff.php",
+      "langage": "php",
+      "lignes": 115,
+      "taille_bytes": 3487,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class ClassInstantiationSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/ControlStructures/ControlStructureSpacingSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/ControlStructures/ControlStructureSpacingSniff.php",
+      "langage": "php",
+      "lignes": 192,
+      "taille_bytes": 7154,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff",
+        "PHP_CodeSniffer\\Standards\\PSR2\\Sniffs\\ControlStructures\\ControlStructureSpacingSniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class ControlStructureSpacingSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/ControlStructures/BooleanOperatorPlacementSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/ControlStructures/BooleanOperatorPlacementSniff.php",
+      "langage": "php",
+      "lignes": 229,
+      "taille_bytes": 8053,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class BooleanOperatorPlacementSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Traits/UseDeclarationSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Traits/UseDeclarationSniff.php",
+      "langage": "php",
+      "lignes": 700,
+      "taille_bytes": 32229,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class UseDeclarationSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Operators/OperatorSpacingSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Operators/OperatorSpacingSniff.php",
+      "langage": "php",
+      "lignes": 112,
+      "taille_bytes": 3532,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Standards\\Squiz\\Sniffs\\WhiteSpace\\OperatorSpacingSniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class OperatorSpacingSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Functions/NullableTypeDeclarationSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Functions/NullableTypeDeclarationSniff.php",
+      "langage": "php",
+      "lignes": 91,
+      "taille_bytes": 2724,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class NullableTypeDeclarationSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Functions/ReturnTypeDeclarationSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Functions/ReturnTypeDeclarationSniff.php",
+      "langage": "php",
+      "lignes": 110,
+      "taille_bytes": 3973,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class ReturnTypeDeclarationSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Files/ImportStatementSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Files/ImportStatementSniff.php",
+      "langage": "php",
+      "lignes": 77,
+      "taille_bytes": 2233,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class ImportStatementSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Files/DeclareStatementSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Files/DeclareStatementSniff.php",
+      "langage": "php",
+      "lignes": 256,
+      "taille_bytes": 12055,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class DeclareStatementSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Files/FileHeaderSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Files/FileHeaderSniff.php",
+      "langage": "php",
+      "lignes": 429,
+      "taille_bytes": 16516,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class FileHeaderSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Files/OpenTagSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Files/OpenTagSniff.php",
+      "langage": "php",
+      "lignes": 73,
+      "taille_bytes": 2038,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class OpenTagSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Keywords/ShortFormTypeKeywordsSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Keywords/ShortFormTypeKeywordsSniff.php",
+      "langage": "php",
+      "lignes": 75,
+      "taille_bytes": 2293,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class ShortFormTypeKeywordsSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Namespaces/CompoundNamespaceDepthSniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Namespaces/CompoundNamespaceDepthSniff.php",
+      "langage": "php",
+      "lignes": 80,
+      "taille_bytes": 2113,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff"
+      ],
+      "sorties": [
+        "class CompoundNamespaceDepthSniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Sniffs/Properties/ConstantVisibilitySniff.php": {
+      "fichier": "src/Standards/PSR12/Sniffs/Properties/ConstantVisibilitySniff.php",
+      "langage": "php",
+      "lignes": 64,
+      "taille_bytes": 1800,
+      "entrees": [
+        "PHP_CodeSniffer\\Files\\File",
+        "PHP_CodeSniffer\\Sniffs\\Sniff",
+        "PHP_CodeSniffer\\Util\\Tokens"
+      ],
+      "sorties": [
+        "class ConstantVisibilitySniff",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Tests/Classes/OpeningBraceSpaceUnitTest.php": {
+      "fichier": "src/Standards/PSR12/Tests/Classes/OpeningBraceSpaceUnitTest.php",
+      "langage": "php",
+      "lignes": 55,
+      "taille_bytes": 1322,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Standards\\AbstractSniffUnitTest"
+      ],
+      "sorties": [
+        "class OpeningBraceSpaceUnitTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Tests/Classes/ClassInstantiationUnitTest.php": {
+      "fichier": "src/Standards/PSR12/Tests/Classes/ClassInstantiationUnitTest.php",
+      "langage": "php",
+      "lignes": 67,
+      "taille_bytes": 1576,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Standards\\AbstractSniffUnitTest"
+      ],
+      "sorties": [
+        "class ClassInstantiationUnitTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Standards/PSR12/Tests/Classes/ClosingBraceUnitTest.php": {
+      "fichier": "src/Standards/PSR12/Tests/Classes/ClosingBraceUnitTest.php",
+      "langage": "php",
+      "lignes": 55,
+      "taille_bytes": 1312,
+      "entrees": [
+        "PHP_CodeSniffer\\Tests\\Standards\\AbstractSniffUnitTest"
+      ],
+      "sorties": [
+        "class ClosingBraceUnitTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

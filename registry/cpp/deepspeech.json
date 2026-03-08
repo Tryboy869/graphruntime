@@ -1,0 +1,1480 @@
+{
+  "meta": {
+    "projet": "DeepSpeech",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 7,
+      "shell": 25,
+      "yaml": 87,
+      "unknown": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "evaluate.py"
+  },
+  "noeuds": {
+    "stats.py": {
+      "fichier": "stats.py",
+      "langage": "python",
+      "lignes": 48,
+      "taille_bytes": 1787,
+      "entrees": [
+        "argparse",
+        "deepspeech_training.util.helpers",
+        "functools",
+        "pandas",
+        "pathlib"
+      ],
+      "sorties": [
+        "def absolutify",
+        "def main",
+        "def read_csvs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "transcribe.py": {
+      "fichier": "transcribe.py",
+      "langage": "python",
+      "lignes": 168,
+      "taille_bytes": 8845,
+      "entrees": [
+        "__future__",
+        "deepspeech_training.train",
+        "deepspeech_training.util.audio",
+        "deepspeech_training.util.checkpoints",
+        "deepspeech_training.util.config",
+        "deepspeech_training.util.feeding",
+        "deepspeech_training.util.flags",
+        "deepspeech_training.util.logging",
+        "ds_ctcdecoder",
+        "glob",
+        "json",
+        "logging",
+        "multiprocessing",
+        "os",
+        "sys",
+        "tensorflow",
+        "tensorflow.compat.v1.logging"
+      ],
+      "sorties": [
+        "def fail",
+        "def main",
+        "def resolve",
+        "def transcribe_file",
+        "def transcribe_many",
+        "def transcribe_one"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "parse_valgrind_suppressions.sh": {
+      "fichier": "parse_valgrind_suppressions.sh",
+      "langage": "shell",
+      "lignes": 57,
+      "taille_bytes": 2632,
+      "entrees": [],
+      "sorties": [
+        "function OutputSuppression",
+        "function ProcessInput"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "DeepSpeech.py": {
+      "fichier": "DeepSpeech.py",
+      "langage": "python",
+      "lignes": 12,
+      "taille_bytes": 351,
+      "entrees": [
+        "__future__",
+        "deepspeech_training"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".cardboardlint.yml": {
+      "fichier": ".cardboardlint.yml",
+      "langage": "yaml",
+      "lignes": 3,
+      "taille_bytes": 60,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "setup.py": {
+      "fichier": "setup.py",
+      "langage": "python",
+      "lignes": 106,
+      "taille_bytes": 3248,
+      "entrees": [
+        "os",
+        "pathlib",
+        "pkg_resources",
+        "platform",
+        "setuptools",
+        "sys"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm_optimizer.py": {
+      "fichier": "lm_optimizer.py",
+      "langage": "python",
+      "lignes": 70,
+      "taille_bytes": 2461,
+      "entrees": [
+        "__future__",
+        "absl.app",
+        "deepspeech_training.evaluate",
+        "deepspeech_training.train",
+        "deepspeech_training.util.config",
+        "deepspeech_training.util.evaluate_tools",
+        "deepspeech_training.util.flags",
+        "deepspeech_training.util.logging",
+        "ds_ctcdecoder",
+        "optuna",
+        "sys",
+        "tensorflow.compat.v1"
+      ],
+      "sorties": [
+        "def character_based",
+        "def main",
+        "def objective"
+      ],
+      "appelle": [
+        "evaluate.py"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "evaluate_tflite.py": {
+      "fichier": "evaluate_tflite.py",
+      "langage": "python",
+      "lignes": 126,
+      "taille_bytes": 4831,
+      "entrees": [
+        "__future__",
+        "absl.app",
+        "argparse",
+        "csv",
+        "deepspeech",
+        "deepspeech_training.util.evaluate_tools",
+        "deepspeech_training.util.flags",
+        "functools",
+        "multiprocessing",
+        "numpy",
+        "os",
+        "six.moves",
+        "sys",
+        "wave"
+      ],
+      "sorties": [
+        "def main",
+        "def parse_args",
+        "def tflite_worker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster.disabled.yml": {
+      "fichier": "taskcluster.disabled.yml",
+      "langage": "yaml",
+      "lignes": 102,
+      "taille_bytes": 3962,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".isort.cfg": {
+      "fichier": ".isort.cfg",
+      "langage": "unknown",
+      "lignes": 4,
+      "taille_bytes": 72,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".readthedocs.yml": {
+      "fichier": ".readthedocs.yml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 436,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "evaluate.py": {
+      "fichier": "evaluate.py",
+      "langage": "python",
+      "lignes": 12,
+      "taille_bytes": 360,
+      "entrees": [
+        "__future__",
+        "deepspeech_training"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lm_optimizer.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "taskcluster/examples-vad_transcriber-py38.yml": {
+      "fichier": "taskcluster/examples-vad_transcriber-py38.yml",
+      "langage": "yaml",
+      "lignes": 11,
+      "taille_bytes": 398,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-apk-android-24-x86_64-opt.yml": {
+      "fichier": "taskcluster/test-apk-android-24-x86_64-opt.yml",
+      "langage": "yaml",
+      "lignes": 24,
+      "taille_bytes": 942,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tc-python_tflite-tests.sh": {
+      "fichier": "taskcluster/tc-python_tflite-tests.sh",
+      "langage": "shell",
+      "lignes": 33,
+      "taille_bytes": 851,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_35_tflite_16k-win-amd64-prod-opt.yml": {
+      "fichier": "taskcluster/test-python_35_tflite_16k-win-amd64-prod-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 574,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/gradle-package.sh": {
+      "fichier": "taskcluster/gradle-package.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 154,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_11x-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_11x-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 544,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/host-build.sh": {
+      "fichier": "taskcluster/host-build.sh",
+      "langage": "shell",
+      "lignes": 35,
+      "taille_bytes": 648,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/kenlm_tc-build.sh": {
+      "fichier": "taskcluster/kenlm_tc-build.sh",
+      "langage": "shell",
+      "lignes": 93,
+      "taille_bytes": 4646,
+      "entrees": [],
+      "sorties": [
+        "export Boost_DIR",
+        "export CMAKE_GENERATOR",
+        "export EIGEN3_ROOT",
+        "export KENLM_BREW",
+        "export PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_10x_16k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_10x_16k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 737,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/node-package.sh": {
+      "fichier": "taskcluster/node-package.sh",
+      "langage": "shell",
+      "lignes": 10,
+      "taille_bytes": 225,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tc-node-tests.sh": {
+      "fichier": "taskcluster/tc-node-tests.sh",
+      "langage": "shell",
+      "lignes": 41,
+      "taille_bytes": 747,
+      "entrees": [],
+      "sorties": [
+        "export NODE_PATH",
+        "export PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_15x_8k_multiarchpkg-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_15x_8k_multiarchpkg-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 765,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/kenlm_darwin-amd64-cpu-opt.yml": {
+      "fichier": "taskcluster/kenlm_darwin-amd64-cpu-opt.yml",
+      "langage": "yaml",
+      "lignes": 13,
+      "taille_bytes": 523,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_36_tflite_16k-win-amd64-prod-opt.yml": {
+      "fichier": "taskcluster/test-python_36_tflite_16k-win-amd64-prod-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 574,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tc-android-ds-tests.sh": {
+      "fichier": "taskcluster/tc-android-ds-tests.sh",
+      "langage": "shell",
+      "lignes": 27,
+      "taille_bytes": 485,
+      "entrees": [],
+      "sorties": [
+        "export DATA_TMP_DIR"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/kenlm_android-x86_64-cpu-opt.yml": {
+      "fichier": "taskcluster/kenlm_android-x86_64-cpu-opt.yml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 631,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/examples-vad_transcriber-py37.yml": {
+      "fichier": "taskcluster/examples-vad_transcriber-py37.yml",
+      "langage": "yaml",
+      "lignes": 11,
+      "taille_bytes": 399,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/android-build.sh": {
+      "fichier": "taskcluster/android-build.sh",
+      "langage": "shell",
+      "lignes": 35,
+      "taille_bytes": 807,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/pyenv-package.sh": {
+      "fichier": "taskcluster/pyenv-package.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 133,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_12x_8k-linux-amd64-prod_pbmodel-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_12x_8k-linux-amd64-prod_pbmodel-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 649,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tc-netframework-ds-tests.sh": {
+      "fichier": "taskcluster/tc-netframework-ds-tests.sh",
+      "langage": "shell",
+      "lignes": 33,
+      "taille_bytes": 655,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/scriptworker-task-nuget.yml": {
+      "fichier": "taskcluster/scriptworker-task-nuget.yml",
+      "langage": "yaml",
+      "lignes": 24,
+      "taille_bytes": 565,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tf_ios-arm64-opt.yml": {
+      "fichier": "taskcluster/tf_ios-arm64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 521,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tf_tc-setup.sh": {
+      "fichier": "taskcluster/tf_tc-setup.sh",
+      "langage": "shell",
+      "lignes": 112,
+      "taille_bytes": 3369,
+      "entrees": [],
+      "sorties": [
+        "export LD_LIBRARY_PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-transcribe_16k-linux-amd64-py37m-opt.yml": {
+      "fichier": "taskcluster/test-transcribe_16k-linux-amd64-py37m-opt.yml",
+      "langage": "yaml",
+      "lignes": 13,
+      "taille_bytes": 589,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tc-valgrind-cpp.sh": {
+      "fichier": "taskcluster/tc-valgrind-cpp.sh",
+      "langage": "shell",
+      "lignes": 25,
+      "taille_bytes": 418,
+      "entrees": [],
+      "sorties": [
+        "export PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v7.1_8k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v7.1_8k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 783,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tf_linux-rpi3-cpu-dbg.yml": {
+      "fichier": "taskcluster/tf_linux-rpi3-cpu-dbg.yml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 648,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-training_16k-linux-amd64-py36m-opt.yml": {
+      "fichier": "taskcluster/test-training_16k-linux-amd64-py36m-opt.yml",
+      "langage": "yaml",
+      "lignes": 13,
+      "taille_bytes": 537,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/linux-amd64-ctc-opt.yml": {
+      "fichier": "taskcluster/linux-amd64-ctc-opt.yml",
+      "langage": "yaml",
+      "lignes": 24,
+      "taille_bytes": 1020,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/cuda-build-dbg.sh": {
+      "fichier": "taskcluster/cuda-build-dbg.sh",
+      "langage": "shell",
+      "lignes": 22,
+      "taille_bytes": 535,
+      "entrees": [],
+      "sorties": [
+        "export EXTRA_LOCAL_CFLAGS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tf_tc-pip.sh": {
+      "fichier": "taskcluster/tf_tc-pip.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 191,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_39-win-cuda-opt.yml": {
+      "fichier": "taskcluster/test-python_39-win-cuda-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 529,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_14x_8k-linux-amd64-prod_pbmodel-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_14x_8k-linux-amd64-prod_pbmodel-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 649,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/android-arm64-cpu-dbg.yml": {
+      "fichier": "taskcluster/android-arm64-cpu-dbg.yml",
+      "langage": "yaml",
+      "lignes": 21,
+      "taille_bytes": 928,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_15x_16k-linux-amd64-prod_pbmodel-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_15x_16k-linux-amd64-prod_pbmodel-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 652,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/android-cache-x86_64-android-24.yml": {
+      "fichier": "taskcluster/android-cache-x86_64-android-24.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 623,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_38_16k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-python_38_16k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 12,
+      "taille_bytes": 528,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/arm64-build-dbg.sh": {
+      "fichier": "taskcluster/arm64-build-dbg.sh",
+      "langage": "shell",
+      "lignes": 23,
+      "taille_bytes": 427,
+      "entrees": [],
+      "sorties": [
+        "export EXTRA_LOCAL_CFLAGS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v7.0_16k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v7.0_16k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 788,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/android-cache-sdk-android-27.yml": {
+      "fichier": "taskcluster/android-cache-sdk-android-27.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 608,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v11.0-darwin-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v11.0-darwin-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 578,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v10.0_multiarchpkg-win-cuda-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v10.0_multiarchpkg-win-cuda-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 606,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/kenlm_tc-setup.sh": {
+      "fichier": "taskcluster/kenlm_tc-setup.sh",
+      "langage": "shell",
+      "lignes": 109,
+      "taille_bytes": 6187,
+      "entrees": [],
+      "sorties": [
+        "export EIGEN3_ROOT",
+        "export KENLM_BREW"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tc-cppwin-ds-tests.sh": {
+      "fichier": "taskcluster/tc-cppwin-ds-tests.sh",
+      "langage": "shell",
+      "lignes": 18,
+      "taille_bytes": 272,
+      "entrees": [],
+      "sorties": [
+        "export PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tc-cpp_tflite-ds-tests.sh": {
+      "fichier": "taskcluster/tc-cpp_tflite-ds-tests.sh",
+      "langage": "shell",
+      "lignes": 27,
+      "taille_bytes": 504,
+      "entrees": [],
+      "sorties": [
+        "export DATA_TMP_DIR",
+        "export PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_38_tflite_16k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-python_38_tflite_16k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 12,
+      "taille_bytes": 538,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-cpp_16k_bytes-darwin-amd64-opt.yml": {
+      "fichier": "taskcluster/test-cpp_16k_bytes-darwin-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 12,
+      "taille_bytes": 558,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_13x-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_13x-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 544,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_37_8k-linux-amd64-prod_pbmodel-opt.yml": {
+      "fichier": "taskcluster/test-python_37_8k-linux-amd64-prod_pbmodel-opt.yml",
+      "langage": "yaml",
+      "lignes": 10,
+      "taille_bytes": 441,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_13x_multiarchpkg-raspbian-rpi3-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_13x_multiarchpkg-raspbian-rpi3-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 715,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/linux-amd64-cpu-opt.yml": {
+      "fichier": "taskcluster/linux-amd64-cpu-opt.yml",
+      "langage": "yaml",
+      "lignes": 25,
+      "taille_bytes": 1029,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v9.1_multiarchpkg-win-cuda-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v9.1_multiarchpkg-win-cuda-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 603,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/examples-ffmpeg_vad_streaming-node12.yml": {
+      "fichier": "taskcluster/examples-ffmpeg_vad_streaming-node12.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 460,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_13x-darwin-amd64-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_13x-darwin-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 558,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tc-train-extra-tests.sh": {
+      "fichier": "taskcluster/tc-train-extra-tests.sh",
+      "langage": "shell",
+      "lignes": 83,
+      "taille_bytes": 2727,
+      "entrees": [],
+      "sorties": [
+        "export DECODER_ARTIFACTS_ROOT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v12.0_multiarchpkg-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v12.0_multiarchpkg-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 599,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v11.0-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v11.0-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 564,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_15x_multiarchpkg-win-tflite-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_15x_multiarchpkg-win-tflite-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 595,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_35_16k-linux-amd64-prod_pbmodel-opt.yml": {
+      "fichier": "taskcluster/test-python_35_16k-linux-amd64-prod_pbmodel-opt.yml",
+      "langage": "yaml",
+      "lignes": 10,
+      "taille_bytes": 444,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/gradle-build.sh": {
+      "fichier": "taskcluster/gradle-build.sh",
+      "langage": "shell",
+      "lignes": 27,
+      "taille_bytes": 615,
+      "entrees": [],
+      "sorties": [
+        "export ANDROID_HOME"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-generate_scorer-android-25-x86_64-opt.yml": {
+      "fichier": "taskcluster/test-generate_scorer-android-25-x86_64-opt.yml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 685,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/examples-vad_transcriber-py35.yml": {
+      "fichier": "taskcluster/examples-vad_transcriber-py35.yml",
+      "langage": "yaml",
+      "lignes": 11,
+      "taille_bytes": 399,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_35-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-python_35-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 523,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/docs.yml": {
+      "fichier": "taskcluster/docs.yml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 797,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v5.0-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v5.0-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 561,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-transcribe_16k-linux-amd64-py36m-opt.yml": {
+      "fichier": "taskcluster/test-transcribe_16k-linux-amd64-py36m-opt.yml",
+      "langage": "yaml",
+      "lignes": 13,
+      "taille_bytes": 590,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/swig-linux-amd64.yml": {
+      "fichier": "taskcluster/swig-linux-amd64.yml",
+      "langage": "yaml",
+      "lignes": 21,
+      "taille_bytes": 648,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-cpp_16k_bytes-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-cpp_16k_bytes-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 12,
+      "taille_bytes": 560,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_36_16k-linux-amd64-prod_pbmodel-opt.yml": {
+      "fichier": "taskcluster/test-python_36_16k-linux-amd64-prod_pbmodel-opt.yml",
+      "langage": "yaml",
+      "lignes": 10,
+      "taille_bytes": 445,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/android-cache-x86_64-android-30.yml": {
+      "fichier": "taskcluster/android-cache-x86_64-android-30.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 623,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_39_16k-linux-amd64-prod_pbmodel-opt.yml": {
+      "fichier": "taskcluster/test-python_39_16k-linux-amd64-prod_pbmodel-opt.yml",
+      "langage": "yaml",
+      "lignes": 10,
+      "taille_bytes": 443,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v9.1_multiarchpkg-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v9.1_multiarchpkg-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 596,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_15x_8k_tflite-linux-amd64-prod-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_15x_8k_tflite-linux-amd64-prod-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 660,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/ios-arm64-tflite-opt.yml": {
+      "fichier": "taskcluster/ios-arm64-tflite-opt.yml",
+      "langage": "yaml",
+      "lignes": 21,
+      "taille_bytes": 887,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-cpp-linux-amd64-prod_pbmodel-opt.yml": {
+      "fichier": "taskcluster/test-cpp-linux-amd64-prod_pbmodel-opt.yml",
+      "langage": "yaml",
+      "lignes": 10,
+      "taille_bytes": 401,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_15x_multiarchpkg-darwin-amd64-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_15x_multiarchpkg-darwin-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 590,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/android_cache-build.sh": {
+      "fichier": "taskcluster/android_cache-build.sh",
+      "langage": "shell",
+      "lignes": 22,
+      "taille_bytes": 381,
+      "entrees": [],
+      "sorties": [
+        "export ANDROID_HOME"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_14x-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_14x-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 544,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v9.0_multiarchpkg-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v9.0_multiarchpkg-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 596,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_11x_16k-linux-amd64-prod_pbmodel-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_11x_16k-linux-amd64-prod_pbmodel-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 652,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_13x_8k_tflite-linux-amd64-prod-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_13x_8k_tflite-linux-amd64-prod-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 660,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/ios-build.sh": {
+      "fichier": "taskcluster/ios-build.sh",
+      "langage": "shell",
+      "lignes": 25,
+      "taille_bytes": 398,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v6.0_8k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v6.0_8k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 784,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-cpp_16k-win-cuda-opt.yml": {
+      "fichier": "taskcluster/test-cpp_16k-win-cuda-opt.yml",
+      "langage": "yaml",
+      "lignes": 11,
+      "taille_bytes": 476,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v6.0_16k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v6.0_16k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 789,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/scriptworker-task-readthedocs.yml": {
+      "fichier": "taskcluster/scriptworker-task-readthedocs.yml",
+      "langage": "yaml",
+      "lignes": 19,
+      "taille_bytes": 476,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/homebrew-package.sh": {
+      "fichier": "taskcluster/homebrew-package.sh",
+      "langage": "shell",
+      "lignes": 26,
+      "taille_bytes": 519,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-apk-android-28-x86_64-opt.yml": {
+      "fichier": "taskcluster/test-apk-android-28-x86_64-opt.yml",
+      "langage": "yaml",
+      "lignes": 24,
+      "taille_bytes": 938,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_37_16k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-python_37_16k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 12,
+      "taille_bytes": 529,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_13x_multiarchpkg-darwin-tflite-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_13x_multiarchpkg-darwin-tflite-opt.yml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 606,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_12x-darwin-amd64-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_12x-darwin-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 558,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v9.0-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v9.0-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 561,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v10.0_8k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v10.0_8k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 786,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-nodejs_11x_16k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-nodejs_11x_16k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 737,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_36_tflite_8k-linux-amd64-prod-opt.yml": {
+      "fichier": "taskcluster/test-python_36_tflite_8k-linux-amd64-prod-opt.yml",
+      "langage": "yaml",
+      "lignes": 10,
+      "taille_bytes": 453,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/pyenv-darwin-amd64.yml": {
+      "fichier": "taskcluster/pyenv-darwin-amd64.yml",
+      "langage": "yaml",
+      "lignes": 13,
+      "taille_bytes": 436,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-apk-android-25-x86_64-opt.yml": {
+      "fichier": "taskcluster/test-apk-android-25-x86_64-opt.yml",
+      "langage": "yaml",
+      "lignes": 24,
+      "taille_bytes": 942,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v9.2_multiarchpkg-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v9.2_multiarchpkg-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 596,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v9.1_16k-linux-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v9.1_16k-linux-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 788,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-cpp-android-25-armv7-opt.yml": {
+      "fichier": "taskcluster/test-cpp-android-25-armv7-opt.yml",
+      "langage": "yaml",
+      "lignes": 16,
+      "taille_bytes": 734,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-electronjs_v6.1-darwin-amd64-opt.yml": {
+      "fichier": "taskcluster/test-electronjs_v6.1-darwin-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 575,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/node-gyp-cache.yml": {
+      "fichier": "taskcluster/node-gyp-cache.yml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 556,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_37_tflite_16k-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-python_37_tflite_16k-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 549,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-python_37-win-amd64-opt.yml": {
+      "fichier": "taskcluster/test-python_37-win-amd64-opt.yml",
+      "langage": "yaml",
+      "lignes": 14,
+      "taille_bytes": 523,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/tc-build-utils.sh": {
+      "fichier": "taskcluster/tc-build-utils.sh",
+      "langage": "shell",
+      "lignes": 356,
+      "taille_bytes": 10084,
+      "entrees": [],
+      "sorties": [
+        "export PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/test-generate_scorer-android-28-x86_64-opt.yml": {
+      "fichier": "taskcluster/test-generate_scorer-android-28-x86_64-opt.yml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 685,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "taskcluster/darwin-amd64-tflite-opt.yml": {
+      "fichier": "taskcluster/darwin-amd64-tflite-opt.yml",
+      "langage": "yaml",
+      "lignes": 21,
+      "taille_bytes": 863,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "lm_optimizer.py",
+      "vers": "evaluate.py",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

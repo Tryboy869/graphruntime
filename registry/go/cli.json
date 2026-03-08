@@ -1,0 +1,2263 @@
+{
+  "meta": {
+    "projet": "cli",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 2,
+      "go": 111,
+      "shell": 7
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".golangci.yml"
+  },
+  "noeuds": {
+    ".golangci.yml": {
+      "fichier": ".golangci.yml",
+      "langage": "yaml",
+      "lignes": 71,
+      "taille_bytes": 2403,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".goreleaser.yml": {
+      "fichier": ".goreleaser.yml",
+      "langage": "yaml",
+      "lignes": 108,
+      "taille_bytes": 3546,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_branch_issue_reference.go": {
+      "fichier": "api/queries_branch_issue_reference.go",
+      "langage": "go",
+      "lignes": 148,
+      "taille_bytes": 3519,
+      "entrees": [],
+      "sorties": [
+        "func CheckLinkedBranchFeature",
+        "func CreateLinkedBranch",
+        "func FindRepoBranchID",
+        "func ListLinkedBranches",
+        "type LinkedBranch"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/http_client.go": {
+      "fichier": "api/http_client.go",
+      "langage": "go",
+      "lignes": 143,
+      "taille_bytes": 4185,
+      "entrees": [],
+      "sorties": [
+        "func AddAuthTokenHeader",
+        "func AddCacheTTLHeader",
+        "func ExtractHeader",
+        "func NewCachedHTTPClient",
+        "func NewHTTPClient",
+        "func getHost",
+        "type HTTPClientOptions",
+        "type funcTripper",
+        "type tokenGetter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/http_client_test.go": {
+      "fichier": "api/http_client_test.go",
+      "langage": "go",
+      "lignes": 323,
+      "taille_bytes": 10677,
+      "entrees": [],
+      "sorties": [
+        "func TestHTTPClientRedirectAuthenticationHeaderHandling",
+        "func TestHTTPClientSanitizeControlCharactersC1",
+        "func TestHTTPClientSanitizeJSONControlCharactersC0",
+        "func TestNewHTTPClient",
+        "func normalizeVerboseLog",
+        "type args",
+        "type tinyConfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/client.go": {
+      "fichier": "api/client.go",
+      "langage": "go",
+      "lignes": 315,
+      "taille_bytes": 9579,
+      "entrees": [],
+      "sorties": [
+        "func EndpointNeedsScopes",
+        "func GenerateScopeErrorForGQL",
+        "func HandleHTTPError",
+        "func NewClientFromHTTP",
+        "func ScopesSuggestion",
+        "func clientOptions",
+        "func generateScopesSuggestion",
+        "func handleResponse",
+        "func requiredScopesFromServerMessage",
+        "type Client",
+        "type GraphQLError",
+        "type HTTPError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_projects_v2.go": {
+      "fichier": "api/queries_projects_v2.go",
+      "langage": "go",
+      "lignes": 339,
+      "taille_bytes": 10960,
+      "entrees": [],
+      "sorties": [
+        "func CurrentUserProjectsV2",
+        "func OrganizationProjectsV2",
+        "func ProjectsV2IgnorableError",
+        "func ProjectsV2ItemsForIssue",
+        "func ProjectsV2ItemsForPullRequest",
+        "func RepoProjectsV2",
+        "func UpdateProjectV2Items",
+        "type ProjectV2",
+        "type projectV2Item",
+        "type projectV2ItemStatus",
+        "type response",
+        "type responseData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_projects_v2_test.go": {
+      "fichier": "api/queries_projects_v2_test.go",
+      "langage": "go",
+      "lignes": 344,
+      "taille_bytes": 10573,
+      "entrees": [],
+      "sorties": [
+        "func TestProjectsV2IgnorableError",
+        "func TestProjectsV2ItemsForIssue",
+        "func TestProjectsV2ItemsForPullRequest",
+        "func TestUpdateProjectV2Items",
+        "func stripSpace"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/export_repo.go": {
+      "fichier": "api/export_repo.go",
+      "langage": "go",
+      "lignes": 53,
+      "taille_bytes": 1154,
+      "entrees": [],
+      "sorties": [
+        "func miniRepoExport"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/export_pr.go": {
+      "fichier": "api/export_pr.go",
+      "langage": "go",
+      "lignes": 191,
+      "taille_bytes": 5396,
+      "entrees": [],
+      "sorties": [
+        "func fieldByName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/client_test.go": {
+      "fichier": "api/client_test.go",
+      "langage": "go",
+      "lignes": 335,
+      "taille_bytes": 8836,
+      "entrees": [],
+      "sorties": [
+        "func TestGenerateScopeErrorForGQL",
+        "func TestGraphQL",
+        "func TestGraphQLError",
+        "func TestHTTPError_ScopesSuggestion",
+        "func TestHTTPHeaders",
+        "func TestHandleHTTPError_GraphQL502",
+        "func TestRESTError",
+        "func TestRESTGetDelete",
+        "func TestRESTWithFullURL",
+        "func TestRequiredScopesFromServerMessage",
+        "func newTestClient"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/reaction_groups_test.go": {
+      "fichier": "api/reaction_groups_test.go",
+      "langage": "go",
+      "lignes": 100,
+      "taille_bytes": 1982,
+      "entrees": [],
+      "sorties": [
+        "func Test_String"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/pull_request_test.go": {
+      "fichier": "api/pull_request_test.go",
+      "langage": "go",
+      "lignes": 413,
+      "taille_bytes": 10880,
+      "entrees": [],
+      "sorties": [
+        "func TestChecksStatus_NoCheckRunsOrStatusContexts",
+        "func TestChecksStatus_SummarisingCheckRunAndStatusContextCountsByState",
+        "func TestChecksStatus_SummarisingCheckRuns",
+        "func TestChecksStatus_SummarisingCheckRunsAndStatusContexts",
+        "func TestChecksStatus_SummarisingStatusContexts",
+        "func completedCheckRunNode",
+        "func singleCheckRunWithStatus",
+        "func singleCompletedCheckRunWithConclusion",
+        "func singleStatusContextWithState",
+        "func statusContextNode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_repo_test.go": {
+      "fichier": "api/queries_repo_test.go",
+      "langage": "go",
+      "lignes": 1098,
+      "taille_bytes": 35070,
+      "entrees": [],
+      "sorties": [
+        "func TestActorDisplayName",
+        "func TestDisplayName",
+        "func TestForkRepoReturnsErrorWhenForkIsNotPossible",
+        "func TestGitHubRepo_notFound",
+        "func TestGitIgnoreTemplateReturnsErrorWhenGitIgnoreTemplateNotFound",
+        "func TestGitIgnoreTemplateReturnsGitIgnoreTemplate",
+        "func TestLicenseTemplateReturnsErrorWhenLicenseTemplateNotFound",
+        "func TestLicenseTemplateReturnsLicense",
+        "func TestListGitIgnoreTemplatesReturnsGitIgnoreTemplates",
+        "func TestListLicenseTemplatesReturnsLicenses",
+        "func TestMembersToIDs",
+        "func TestRepoExists",
+        "func Test_ProjectNamesToPaths",
+        "func Test_RepoMetadata",
+        "func Test_RepoMetadata_TeamsAreConditionallyFetched",
+        "func Test_RepoMilestones"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/query_builder_test.go": {
+      "fichier": "api/query_builder_test.go",
+      "langage": "go",
+      "lignes": 90,
+      "taille_bytes": 2361,
+      "entrees": [],
+      "sorties": [
+        "func TestIssueGraphQL",
+        "func TestPullRequestGraphQL"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_pr_test.go": {
+      "fichier": "api/queries_pr_test.go",
+      "langage": "go",
+      "lignes": 568,
+      "taille_bytes": 18447,
+      "entrees": [],
+      "sorties": [
+        "func TestBranchDeleteRemote",
+        "func TestSuggestedReviewerActors",
+        "func TestSuggestedReviewerActorsForRepo",
+        "func Test_Logins",
+        "func mockReviewerResponse",
+        "func mockReviewerResponseForRepo",
+        "func mockReviewerResponseForRepoWithCopilot"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_org.go": {
+      "fichier": "api/queries_org.go",
+      "langage": "go",
+      "lignes": 111,
+      "taille_bytes": 2982,
+      "entrees": [],
+      "sorties": [
+        "func OrganizationProjects",
+        "func OrganizationTeam",
+        "func OrganizationTeams",
+        "type OrgTeam",
+        "type responseData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_comments.go": {
+      "fichier": "api/queries_comments.go",
+      "langage": "go",
+      "lignes": 169,
+      "taille_bytes": 3584,
+      "entrees": [],
+      "sorties": [
+        "func CommentCreate",
+        "func CommentDelete",
+        "func CommentUpdate",
+        "type Comment",
+        "type CommentCreateInput",
+        "type CommentDeleteInput",
+        "type CommentUpdateInput",
+        "type Comments"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/reaction_groups.go": {
+      "fichier": "api/reaction_groups.go",
+      "langage": "go",
+      "lignes": 59,
+      "taille_bytes": 1140,
+      "entrees": [],
+      "sorties": [
+        "type ReactionGroup",
+        "type ReactionGroupUsers",
+        "type ReactionGroups"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_repo.go": {
+      "fichier": "api/queries_repo.go",
+      "langage": "go",
+      "lignes": 1630,
+      "taille_bytes": 42583,
+      "entrees": [],
+      "sorties": [
+        "const CopilotActorName",
+        "const CopilotAssigneeLogin",
+        "const CopilotReviewerLogin",
+        "func CanPushToRepo",
+        "func CreateRepoTransformToV4",
+        "func FetchRepository",
+        "func ForkRepo",
+        "func GetRepoIDs",
+        "func GitHubRepo",
+        "func InitRepoHostname",
+        "func LastCommit",
+        "func NewAssignableBot",
+        "func NewAssignableUser",
+        "func ProjectTitlesToPaths",
+        "func RenameRepo",
+        "func RepoAssignableActors",
+        "func RepoAssignableUsers",
+        "func RepoDefaultBranch",
+        "func RepoExists",
+        "func RepoFindForks",
+        "func RepoGitIgnoreTemplate",
+        "func RepoGitIgnoreTemplates",
+        "func RepoLabels",
+        "func RepoLicense",
+        "func RepoLicenses",
+        "func RepoMetadata",
+        "func RepoMilestones",
+        "func RepoNetwork",
+        "func RepoParent",
+        "func RepoProjects",
+        "func actorDisplayName",
+        "func v1Projects",
+        "func v2Projects",
+        "type Actor",
+        "type AssignableActor",
+        "type AssignableBot",
+        "type AssignableUser",
+        "type BranchRef",
+        "type CodeOfConduct",
+        "type CodingLanguage",
+        "type ContactLink",
+        "type FundingLink",
+        "type GitHubUser",
+        "type GitIgnore",
+        "type IssueLabel",
+        "type IssueTemplate",
+        "type License",
+        "type PullRequestTemplate",
+        "type RepoLabel",
+        "type RepoMetadataInput",
+        "type RepoMetadataResult",
+        "type RepoMilestone",
+        "type RepoNetworkResult",
+        "type RepoProject",
+        "type Repository",
+        "type RepositoryLicense",
+        "type RepositoryOwner",
+        "type RepositoryRelease",
+        "type RepositoryTopic",
+        "type repositoryV3",
+        "type responseData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/export_pr_test.go": {
+      "fichier": "api/export_pr_test.go",
+      "langage": "go",
+      "lignes": 458,
+      "taille_bytes": 9492,
+      "entrees": [],
+      "sorties": [
+        "func TestIssue_ExportData",
+        "func TestPullRequest_ExportData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/query_builder.go": {
+      "fichier": "api/query_builder.go",
+      "langage": "go",
+      "lignes": 589,
+      "taille_bytes": 12795,
+      "entrees": [],
+      "sorties": [
+        "func IssueGraphQL",
+        "func PullRequestGraphQL",
+        "func RepositoryGraphQL",
+        "func RequiredStatusCheckRollupGraphQL",
+        "func StatusCheckRollupGraphQLWithCountByState",
+        "func StatusCheckRollupGraphQLWithoutCountByState",
+        "func shortenQuery",
+        "func squeeze"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_pr.go": {
+      "fichier": "api/queries_pr.go",
+      "langage": "go",
+      "lignes": 848,
+      "taille_bytes": 23768,
+      "entrees": [],
+      "sorties": [
+        "func BranchDeleteRemote",
+        "func ComparePullRequestBaseBranchWith",
+        "func ConvertPullRequestToDraft",
+        "func CreatePullRequest",
+        "func PullRequestClose",
+        "func PullRequestReady",
+        "func PullRequestReopen",
+        "func PullRequestRevert",
+        "func SuggestedAssignableActors",
+        "func UpdatePullRequestBranch",
+        "func isBlank",
+        "func parseCheckStatusFromCheckConclusionState",
+        "func parseCheckStatusFromCheckRunState",
+        "func parseCheckStatusFromStatusState",
+        "type AutoMergeRequest",
+        "type CheckConclusionState",
+        "type CheckContext",
+        "type CheckContexts",
+        "type CheckRunCountByState",
+        "type CheckRunState",
+        "type CheckStatusState",
+        "type CheckSuite",
+        "type ClosingIssuesReferences",
+        "type Commit",
+        "type CommitStatusCheckRollup",
+        "type PRRepository",
+        "type PullRequest",
+        "type PullRequestAndTotalCount",
+        "type PullRequestChecksStatus",
+        "type PullRequestCommit",
+        "type PullRequestCommitCommit",
+        "type PullRequestFile",
+        "type PullRequestMergeable",
+        "type RefComparison",
+        "type StatusCheckRollupCommit",
+        "type StatusCheckRollupNode",
+        "type StatusContextCountByState",
+        "type StatusState",
+        "type Workflow",
+        "type WorkflowRun",
+        "type checkStatus",
+        "type responseData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_issue.go": {
+      "fichier": "api/queries_issue.go",
+      "langage": "go",
+      "lignes": 424,
+      "taille_bytes": 10176,
+      "entrees": [],
+      "sorties": [
+        "func IssueCreate",
+        "func IssueStatus",
+        "type AssignedActors",
+        "type Assignees",
+        "type Author",
+        "type ClosedByPullRequestsReferences",
+        "type CommentAuthor",
+        "type Issue",
+        "type IssueStatusOptions",
+        "type IssuesAndTotalCount",
+        "type IssuesDisabledError",
+        "type IssuesPayload",
+        "type Labels",
+        "type Milestone",
+        "type Owner",
+        "type ProjectCards",
+        "type ProjectInfo",
+        "type ProjectItems",
+        "type ProjectV2Item",
+        "type ProjectV2ItemProject",
+        "type ProjectV2ItemStatus",
+        "type response"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_pr_review.go": {
+      "fichier": "api/queries_pr_review.go",
+      "langage": "go",
+      "lignes": 700,
+      "taille_bytes": 20818,
+      "entrees": [],
+      "sorties": [
+        "const baseQuota",
+        "const botTypeName",
+        "const teamTypeName",
+        "const userTypeName",
+        "func AddPullRequestReviews",
+        "func AddReview",
+        "func NewReviewerBot",
+        "func NewReviewerTeam",
+        "func NewReviewerUser",
+        "func RemovePullRequestReviews",
+        "func RequestReviewsByLogin",
+        "func SuggestedReviewerActors",
+        "func SuggestedReviewerActorsForRepo",
+        "func extractTeamSlugs",
+        "func toGitHubV4Strings",
+        "type PullRequestReview",
+        "type PullRequestReviewInput",
+        "type PullRequestReviewState",
+        "type PullRequestReviewStatus",
+        "type PullRequestReviews",
+        "type RequestReviewsByLoginInput",
+        "type RequestedReviewer",
+        "type ReviewRequests",
+        "type ReviewerBot",
+        "type ReviewerCandidate",
+        "type ReviewerTeam",
+        "type ReviewerUser",
+        "type responseData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "api/queries_user.go": {
+      "fichier": "api/queries_user.go",
+      "langage": "go",
+      "lignes": 45,
+      "taille_bytes": 1026,
+      "entrees": [],
+      "sorties": [
+        "func CurrentLoginName",
+        "func CurrentLoginNameAndOrgs",
+        "func CurrentUserID",
+        "type Organization"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/gh/main.go": {
+      "fichier": "cmd/gh/main.go",
+      "langage": "go",
+      "lignes": 12,
+      "taille_bytes": 131,
+      "entrees": [],
+      "sorties": [
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/gen-docs/main_test.go": {
+      "fichier": "cmd/gen-docs/main_test.go",
+      "langage": "go",
+      "lignes": 32,
+      "taille_bytes": 724,
+      "entrees": [],
+      "sorties": [
+        "func Test_run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "cmd/gen-docs/main.go": {
+      "fichier": "cmd/gen-docs/main.go",
+      "langage": "go",
+      "lignes": 133,
+      "taille_bytes": 2733,
+      "entrees": [],
+      "sorties": [
+        "func filePrepender",
+        "func linkHandler",
+        "func main",
+        "func run",
+        "type browser",
+        "type em"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "context/remote.go": {
+      "fichier": "context/remote.go",
+      "langage": "go",
+      "lignes": 123,
+      "taille_bytes": 2879,
+      "entrees": [],
+      "sorties": [
+        "func TranslateRemotes",
+        "func remoteNameSortScore",
+        "type Remote",
+        "type Remotes",
+        "type Translator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "context/context.go": {
+      "fichier": "context/context.go",
+      "langage": "go",
+      "lignes": 172,
+      "taille_bytes": 3981,
+      "entrees": [],
+      "sorties": [
+        "const defaultRemotesForLookup",
+        "func ResolveRemotesToRepos",
+        "func resolveNetwork",
+        "type ResolvedRemotes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "context/remote_test.go": {
+      "fichier": "context/remote_test.go",
+      "langage": "go",
+      "lignes": 139,
+      "taille_bytes": 3701,
+      "entrees": [],
+      "sorties": [
+        "func Test_FilterByHosts",
+        "func Test_Remotes_FindByName",
+        "func Test_Remotes_FindByRepo",
+        "func Test_translateRemotes",
+        "type identityTranslator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "git/errors.go": {
+      "fichier": "git/errors.go",
+      "langage": "go",
+      "lignes": 39,
+      "taille_bytes": 657,
+      "entrees": [],
+      "sorties": [
+        "message string",
+        "type GitError",
+        "type NotInstalled"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "git/client.go": {
+      "fichier": "git/client.go",
+      "langage": "go",
+      "lignes": 979,
+      "taille_bytes": 28229,
+      "entrees": [],
+      "sorties": [
+        "const MergeBaseConfig",
+        "func CredentialPatternFromGitURL",
+        "func CredentialPatternFromHost",
+        "func ParsePushDefault",
+        "func ParseRemoteTrackingRef",
+        "func escapeGlob",
+        "func firstLine",
+        "func isFilesystemPath",
+        "func outputLines",
+        "func parseBranchConfig",
+        "func parseCloneArgs",
+        "func parseRemoteURLOrName",
+        "func parseRemotes",
+        "func populateResolvedRemotes",
+        "func resolveGitPath",
+        "type Client",
+        "type CredentialPattern",
+        "type PushDefault",
+        "type RemoteTrackingRef",
+        "type errWithExitCode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "git/command_test.go": {
+      "fichier": "git/command_test.go",
+      "langage": "go",
+      "lignes": 104,
+      "taille_bytes": 2294,
+      "entrees": [
+        ":="
+      ],
+      "sorties": [
+        "func TestOutput",
+        "func buildCommandSourceCode",
+        "func createMockExecutable",
+        "func main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "git/client_test.go": {
+      "fichier": "git/client_test.go",
+      "langage": "go",
+      "lignes": 2166,
+      "taille_bytes": 61570,
+      "entrees": [],
+      "sorties": [
+        "func TestClientAddRemote",
+        "func TestClientAuthenticatedCommand",
+        "func TestClientCheckoutBranch",
+        "func TestClientCheckoutNewBranch",
+        "func TestClientClone",
+        "func TestClientCommand",
+        "func TestClientCommitBody",
+        "func TestClientCommits",
+        "func TestClientConfig",
+        "func TestClientCurrentBranch",
+        "func TestClientDeleteLocalBranch",
+        "func TestClientDeleteLocalTag",
+        "func TestClientFetch",
+        "func TestClientGitDir",
+        "func TestClientHasLocalBranch",
+        "func TestClientLastCommit",
+        "func TestClientParsePushRevision",
+        "func TestClientPathFromRoot",
+        "func TestClientPull",
+        "func TestClientPush",
+        "func TestClientPushDefault",
+        "func TestClientReadBranchConfig",
+        "func TestClientRemotePushDefault",
+        "func TestClientRemotes",
+        "func TestClientRemotes_no_resolved_remote",
+        "func TestClientSetRemoteBranches",
+        "func TestClientSetRemoteResolution",
+        "func TestClientShowRefs",
+        "func TestClientToplevelDir",
+        "func TestClientUncommittedChangeCount",
+        "func TestClientUnsetRemoteResolution",
+        "func TestClientUpdateRemoteURL",
+        "func TestCommandMocking",
+        "func TestCommitsHelperProcess",
+        "func TestCredentialPatternFromGitURL",
+        "func TestCredentialPatternFromHost",
+        "func TestHelperProcess",
+        "func TestParseCloneArgs",
+        "func TestParseRemotes",
+        "func TestPushDefault",
+        "func TestRemoteTrackingRef",
+        "func Test_parseBranchConfig",
+        "func Test_parseRemoteURLOrName",
+        "func createCommandContext",
+        "func createCommitsCommandContext",
+        "func createMockedCommandContext",
+        "func initRepo",
+        "type args",
+        "type commandResult",
+        "type mockedCommands",
+        "type stubbedCommit",
+        "type stubbedCommitsCommandData",
+        "type wanted"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "git/url_test.go": {
+      "fichier": "git/url_test.go",
+      "langage": "go",
+      "lignes": 242,
+      "taille_bytes": 4462,
+      "entrees": [],
+      "sorties": [
+        "func TestIsURL",
+        "func TestParseURL",
+        "type url"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "git/command.go": {
+      "fichier": "git/command.go",
+      "langage": "go",
+      "lignes": 111,
+      "taille_bytes": 2607,
+      "entrees": [],
+      "sorties": [
+        "func WithRepoDir",
+        "func WithStderr",
+        "func WithStdin",
+        "func WithStdout",
+        "type Command",
+        "type CommandModifier",
+        "type commandCtx"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "git/objects.go": {
+      "fichier": "git/objects.go",
+      "langage": "go",
+      "lignes": 73,
+      "taille_bytes": 1439,
+      "entrees": [],
+      "sorties": [
+        "func NewRemote",
+        "func remoteNameSortScore",
+        "type BranchConfig",
+        "type Commit",
+        "type Ref",
+        "type Remote",
+        "type RemoteSet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "git/url.go": {
+      "fichier": "git/url.go",
+      "langage": "go",
+      "lignes": 61,
+      "taille_bytes": 1285,
+      "entrees": [],
+      "sorties": [
+        "func IsURL",
+        "func ParseURL",
+        "func isPossibleProtocol",
+        "func isSupportedProtocol"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "acceptance/acceptance_test.go": {
+      "fichier": "acceptance/acceptance_test.go",
+      "langage": "go",
+      "lignes": 421,
+      "taille_bytes": 10036,
+      "entrees": [],
+      "sorties": [
+        "func TestAPI",
+        "func TestAuth",
+        "func TestExtensions",
+        "func TestGPGKeys",
+        "func TestIssues",
+        "func TestLabels",
+        "func TestMain",
+        "func TestOrg",
+        "func TestProject",
+        "func TestPullRequests",
+        "func TestReleases",
+        "func TestRepo",
+        "func TestRulesets",
+        "func TestSSHKeys",
+        "func TestSearches",
+        "func TestSecrets",
+        "func TestVariables",
+        "func TestWorkflows",
+        "func extractScriptName",
+        "func ghMain",
+        "func randomString",
+        "func sharedCmds",
+        "func sharedSetup",
+        "func testScriptParamsFor",
+        "type missingEnvError",
+        "type testScriptEnv"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/helpers.go": {
+      "fichier": "test/helpers.go",
+      "langage": "go",
+      "lignes": 59,
+      "taille_bytes": 1004,
+      "entrees": [],
+      "sorties": [
+        "func ExpectLines",
+        "type CmdOut",
+        "type OutputStub"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/integration/attestation-cmd/run-all-tests.sh": {
+      "fichier": "test/integration/attestation-cmd/run-all-tests.sh",
+      "langage": "shell",
+      "lignes": 30,
+      "taille_bytes": 710,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/integration/attestation-cmd/download/download.sh": {
+      "fichier": "test/integration/attestation-cmd/download/download.sh",
+      "langage": "shell",
+      "lignes": 47,
+      "taille_bytes": 1166,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/integration/attestation-cmd/verify/verify-sigstore-bundle-versions.sh": {
+      "fichier": "test/integration/attestation-cmd/verify/verify-sigstore-bundle-versions.sh",
+      "langage": "shell",
+      "lignes": 24,
+      "taille_bytes": 1015,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/integration/attestation-cmd/verify/verify-with-custom-trusted-root.sh": {
+      "fichier": "test/integration/attestation-cmd/verify/verify-with-custom-trusted-root.sh",
+      "langage": "shell",
+      "lignes": 22,
+      "taille_bytes": 761,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/integration/attestation-cmd/verify/download-and-verify-package-attestation.sh": {
+      "fichier": "test/integration/attestation-cmd/verify/download-and-verify-package-attestation.sh",
+      "langage": "shell",
+      "lignes": 38,
+      "taille_bytes": 1425,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/integration/attestation-cmd/verify/verify-with-internal-github-sigstore.sh": {
+      "fichier": "test/integration/attestation-cmd/verify/verify-with-internal-github-sigstore.sh",
+      "langage": "shell",
+      "lignes": 22,
+      "taille_bytes": 722,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/integration/attestation-cmd/verify/verify-oci-bundle.sh": {
+      "fichier": "test/integration/attestation-cmd/verify/verify-oci-bundle.sh",
+      "langage": "shell",
+      "lignes": 14,
+      "taille_bytes": 708,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/markdown/markdown.go": {
+      "fichier": "pkg/markdown/markdown.go",
+      "langage": "go",
+      "lignes": 40,
+      "taille_bytes": 999,
+      "entrees": [],
+      "sorties": [
+        "func Render",
+        "func WithBaseURL",
+        "func WithTheme",
+        "func WithWrap",
+        "func WithoutIndentation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/set/string_set_test.go": {
+      "fichier": "pkg/set/string_set_test.go",
+      "langage": "go",
+      "lignes": 27,
+      "taille_bytes": 516,
+      "entrees": [],
+      "sorties": [
+        "func Test_StringSlice_Remove",
+        "func Test_StringSlice_ToSlice"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/set/string_set.go": {
+      "fichier": "pkg/set/string_set.go",
+      "langage": "go",
+      "lignes": 84,
+      "taille_bytes": 1276,
+      "entrees": [],
+      "sorties": [
+        "func NewStringSet",
+        "func sliceWithout",
+        "type stringSet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/surveyext/editor_manual.go": {
+      "fichier": "pkg/surveyext/editor_manual.go",
+      "langage": "go",
+      "lignes": 110,
+      "taille_bytes": 2676,
+      "entrees": [],
+      "sorties": [
+        "func Edit",
+        "func defaultLookPath",
+        "func edit",
+        "func needsBom",
+        "type showable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/surveyext/editor.go": {
+      "fichier": "pkg/surveyext/editor.go",
+      "langage": "go",
+      "lignes": 170,
+      "taille_bytes": 4496,
+      "entrees": [],
+      "sorties": [
+        "func EditorName",
+        "func init",
+        "type EditorTemplateData",
+        "type GhEditor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/surveyext/editor_test.go": {
+      "fichier": "pkg/surveyext/editor_test.go",
+      "langage": "go",
+      "lignes": 284,
+      "taille_bytes": 6493,
+      "entrees": [],
+      "sorties": [
+        "func TestHelperProcess",
+        "func Test_GhEditor_Prompt_editorAppend",
+        "func Test_GhEditor_Prompt_editorTruncate",
+        "func Test_GhEditor_Prompt_skip",
+        "func defaultPromptConfig",
+        "func newTerminal",
+        "func normalizeANSI",
+        "func testLookPath",
+        "type teeWriter",
+        "type testTerminal"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/githubtemplate/github_template_test.go": {
+      "fichier": "pkg/githubtemplate/github_template_test.go",
+      "langage": "go",
+      "lignes": 445,
+      "taille_bytes": 8796,
+      "entrees": [],
+      "sorties": [
+        "func TestExtractContents",
+        "func TestExtractName",
+        "func TestExtractTitle",
+        "func TestFindLegacy",
+        "func TestFindNonLegacy",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/githubtemplate/github_template.go": {
+      "fichier": "pkg/githubtemplate/github_template.go",
+      "langage": "go",
+      "lignes": 135,
+      "taille_bytes": 3609,
+      "entrees": [],
+      "sorties": [
+        "func ExtractContents",
+        "func ExtractName",
+        "func ExtractTitle",
+        "func FindLegacy",
+        "func FindNonLegacy",
+        "func detectFrontmatter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/jsoncolor/jsoncolor_test.go": {
+      "fichier": "pkg/jsoncolor/jsoncolor_test.go",
+      "langage": "go",
+      "lignes": 83,
+      "taille_bytes": 1824,
+      "entrees": [],
+      "sorties": [
+        "func TestWrite",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/jsoncolor/jsoncolor.go": {
+      "fichier": "pkg/jsoncolor/jsoncolor.go",
+      "langage": "go",
+      "lignes": 135,
+      "taille_bytes": 2802,
+      "entrees": [],
+      "sorties": [
+        "func Write",
+        "func WriteDelims",
+        "func marshalJSON",
+        "type JsonWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/iostreams/epipe_other.go": {
+      "fichier": "pkg/iostreams/epipe_other.go",
+      "langage": "go",
+      "lignes": 12,
+      "taille_bytes": 149,
+      "entrees": [],
+      "sorties": [
+        "func isEpipeError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/iostreams/console_windows.go": {
+      "fichier": "pkg/iostreams/console_windows.go",
+      "langage": "go",
+      "lignes": 9,
+      "taille_bytes": 269,
+      "entrees": [],
+      "sorties": [
+        "func hasAlternateScreenBuffer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/iostreams/color.go": {
+      "fichier": "pkg/iostreams/color.go",
+      "langage": "go",
+      "lignes": 291,
+      "taille_bytes": 6608,
+      "entrees": [],
+      "sorties": [
+        "type ColorScheme"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/iostreams/color_test.go": {
+      "fichier": "pkg/iostreams/color_test.go",
+      "langage": "go",
+      "lignes": 296,
+      "taille_bytes": 8329,
+      "entrees": [],
+      "sorties": [
+        "func TestLabel",
+        "func TestMuted",
+        "func TestTableHeader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/iostreams/iostreams_progress_indicator_test.go": {
+      "fichier": "pkg/iostreams/iostreams_progress_indicator_test.go",
+      "langage": "go",
+      "lignes": 254,
+      "taille_bytes": 6976,
+      "entrees": [],
+      "sorties": [
+        "func TestStartProgressIndicatorWithLabel",
+        "func failOnExpectError",
+        "func failOnSendError",
+        "func newTestIOStreams",
+        "func newTestVirtualTerminal",
+        "func testCloser"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/iostreams/iostreams_test.go": {
+      "fichier": "pkg/iostreams/iostreams_test.go",
+      "langage": "go",
+      "lignes": 62,
+      "taille_bytes": 1564,
+      "entrees": [],
+      "sorties": [
+        "const want",
+        "func TestHelperProcess",
+        "func TestIOStreams_pager",
+        "func TestStopAlternateScreenBuffer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/iostreams/iostreams.go": {
+      "fichier": "pkg/iostreams/iostreams.go",
+      "langage": "go",
+      "lignes": 610,
+      "taille_bytes": 13333,
+      "entrees": [],
+      "sorties": [
+        "const DefaultWidth",
+        "func System",
+        "func Test",
+        "func isCygwinTerminal",
+        "func isTerminal",
+        "type ErrClosedPagerPipe",
+        "type IOStreams",
+        "type fakeTerm",
+        "type fdReader",
+        "type fdWriteCloser",
+        "type fdWriter",
+        "type fileReader",
+        "type fileWriter",
+        "type pagerWriter",
+        "type term"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/iostreams/console.go": {
+      "fichier": "pkg/iostreams/console.go",
+      "langage": "go",
+      "lignes": 10,
+      "taille_bytes": 227,
+      "entrees": [],
+      "sorties": [
+        "func hasAlternateScreenBuffer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/iostreams/epipe_windows.go": {
+      "fichier": "pkg/iostreams/epipe_windows.go",
+      "langage": "go",
+      "lignes": 11,
+      "taille_bytes": 206,
+      "entrees": [],
+      "sorties": [
+        "func isEpipeError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/api/pagination.go": {
+      "fichier": "pkg/cmd/api/pagination.go",
+      "langage": "go",
+      "lignes": 241,
+      "taille_bytes": 4540,
+      "entrees": [],
+      "sorties": [
+        "func addPerPage",
+        "func findEndCursor",
+        "func findNextPage",
+        "func startPage",
+        "type jsonArrayWriter",
+        "type paginatedArrayReader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/api/fields_test.go": {
+      "fichier": "pkg/cmd/api/fields_test.go",
+      "langage": "go",
+      "lignes": 329,
+      "taille_bytes": 6375,
+      "entrees": [],
+      "sorties": [
+        "func Test_magicFieldValue",
+        "func Test_parseFields",
+        "func Test_parseFields_errors",
+        "func Test_parseFields_nested",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/api/pagination_test.go": {
+      "fichier": "pkg/cmd/api/pagination_test.go",
+      "langage": "go",
+      "lignes": 276,
+      "taille_bytes": 5151,
+      "entrees": [],
+      "sorties": [
+        "func TestJsonArrayWriter",
+        "func TestJsonArrayWriter_Copy",
+        "func Test_addPerPage",
+        "func Test_findEndCursor",
+        "func Test_findNextPage",
+        "type args",
+        "type noWriteToReader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/api/fields.go": {
+      "fichier": "pkg/cmd/api/fields.go",
+      "langage": "go",
+      "lignes": 183,
+      "taille_bytes": 4136,
+      "entrees": [],
+      "sorties": [
+        "func addParamsMap",
+        "func addParamsSlice",
+        "func magicFieldValue",
+        "func parseFields"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/api/api_test.go": {
+      "fichier": "pkg/cmd/api/api_test.go",
+      "langage": "go",
+      "lignes": 1799,
+      "taille_bytes": 48711,
+      "entrees": [],
+      "sorties": [
+        "func Test_NewCmdApi",
+        "func Test_NewCmdApi_WindowsAbsPath",
+        "func Test_apiRun",
+        "func Test_apiRun_DELETE",
+        "func Test_apiRun_HEAD",
+        "func Test_apiRun_acceptHeader",
+        "func Test_apiRun_arrayPaginationREST",
+        "func Test_apiRun_arrayPaginationREST_with_headers",
+        "func Test_apiRun_cache",
+        "func Test_apiRun_inputFile",
+        "func Test_apiRun_paginated_template",
+        "func Test_apiRun_paginationGraphQL",
+        "func Test_apiRun_paginationGraphQL_slurp",
+        "func Test_apiRun_paginationREST",
+        "func Test_fillPlaceholders",
+        "func Test_openUserFile",
+        "func Test_parseErrorResponse",
+        "func Test_previewNamesToMIMETypes",
+        "func Test_processResponse_template",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/api/api.go": {
+      "fichier": "pkg/cmd/api/api.go",
+      "langage": "go",
+      "lignes": 705,
+      "taille_bytes": 21801,
+      "entrees": [
+        "file",
+        "the"
+      ],
+      "sorties": [
+        "func NewCmdApi",
+        "func apiRun",
+        "func fillPlaceholders",
+        "func openUserFile",
+        "func parseErrorResponse",
+        "func previewNamesToMIMETypes",
+        "func printHeaders",
+        "func processResponse",
+        "type ApiOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/api/http.go": {
+      "fichier": "pkg/cmd/api/http.go",
+      "langage": "go",
+      "lignes": 149,
+      "taille_bytes": 3364,
+      "entrees": [],
+      "sorties": [
+        "func addQuery",
+        "func addQueryParam",
+        "func groupGraphQLVariables",
+        "func httpRequest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/api/http_test.go": {
+      "fichier": "pkg/cmd/api/http_test.go",
+      "langage": "go",
+      "lignes": 425,
+      "taille_bytes": 9166,
+      "entrees": [],
+      "sorties": [
+        "func Test_addQuery",
+        "func Test_groupGraphQLVariables",
+        "func Test_httpRequest",
+        "type args",
+        "type expects",
+        "type roundTripper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/gist.go": {
+      "fichier": "pkg/cmd/gist/gist.go",
+      "langage": "go",
+      "lignes": 40,
+      "taille_bytes": 1366,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdGist"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/list/list.go": {
+      "fichier": "pkg/cmd/gist/list/list.go",
+      "langage": "go",
+      "lignes": 309,
+      "taille_bytes": 8148,
+      "entrees": [],
+      "sorties": [
+        "const tab",
+        "func NewCmdList",
+        "func highlightMatch",
+        "func listRun",
+        "func normal",
+        "func printContent",
+        "func printTable",
+        "type ListOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/list/list_test.go": {
+      "fichier": "pkg/cmd/gist/list/list_test.go",
+      "langage": "go",
+      "lignes": 713,
+      "taille_bytes": 18343,
+      "entrees": [],
+      "sorties": [
+        "const query",
+        "func TestNewCmdList",
+        "func Test_highlightMatch",
+        "func Test_listRun"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/rename/rename.go": {
+      "fichier": "pkg/cmd/gist/rename/rename.go",
+      "langage": "go",
+      "lignes": 140,
+      "taille_bytes": 2906,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdRename",
+        "func renameRun",
+        "func updateGist",
+        "type RenameOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/rename/rename_test.go": {
+      "fichier": "pkg/cmd/gist/rename/rename_test.go",
+      "langage": "go",
+      "lignes": 186,
+      "taille_bytes": 4282,
+      "entrees": [],
+      "sorties": [
+        "func TestNewCmdRename",
+        "func TestRenameRun",
+        "output RenameOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/delete/delete_test.go": {
+      "fichier": "pkg/cmd/gist/delete/delete_test.go",
+      "langage": "go",
+      "lignes": 398,
+      "taille_bytes": 10117,
+      "entrees": [],
+      "sorties": [
+        "func TestNewCmdDelete",
+        "func Test_deleteRun",
+        "func Test_gistDelete"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/delete/delete.go": {
+      "fichier": "pkg/cmd/gist/delete/delete.go",
+      "langage": "go",
+      "lignes": 155,
+      "taille_bytes": 3535,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdDelete",
+        "func deleteGist",
+        "func deleteRun",
+        "type DeleteOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/create/create.go": {
+      "fichier": "pkg/cmd/gist/create/create.go",
+      "langage": "go",
+      "lignes": 309,
+      "taille_bytes": 7721,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdCreate",
+        "func createGist",
+        "func createRun",
+        "func detectEmptyFiles",
+        "func guessGistName",
+        "func processFiles",
+        "type CreateOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/create/create_test.go": {
+      "fichier": "pkg/cmd/gist/create/create_test.go",
+      "langage": "go",
+      "lignes": 417,
+      "taille_bytes": 10689,
+      "entrees": [],
+      "sorties": [
+        "func TestNewCmdCreate",
+        "func Test_createRun",
+        "func Test_detectEmptyFiles",
+        "func Test_guessGistName_stdin",
+        "func Test_guessGistName_userFiles",
+        "func Test_processFiles"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/shared/shared_test.go": {
+      "fichier": "pkg/cmd/gist/shared/shared_test.go",
+      "langage": "go",
+      "lignes": 316,
+      "taille_bytes": 8538,
+      "entrees": [],
+      "sorties": [
+        "const query",
+        "func TestGetRawGistFile",
+        "func TestIsBinaryContents",
+        "func TestPromptGists",
+        "func Test_GetGistIDFromURL"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/shared/shared.go": {
+      "fichier": "pkg/cmd/gist/shared/shared.go",
+      "langage": "go",
+      "lignes": 275,
+      "taille_bytes": 6146,
+      "entrees": [],
+      "sorties": [
+        "const maxPerPage",
+        "func GetGist",
+        "func GetRawGistFile",
+        "func GistIDFromURL",
+        "func IsBinaryContents",
+        "func IsBinaryFile",
+        "func ListGists",
+        "func PromptGists",
+        "type Gist",
+        "type GistFile",
+        "type GistOwner",
+        "type response"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/edit/edit.go": {
+      "fichier": "pkg/cmd/gist/edit/edit.go",
+      "langage": "go",
+      "lignes": 441,
+      "taille_bytes": 10526,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdEdit",
+        "func editRun",
+        "func getFilesToAdd",
+        "func getFilesToRemove",
+        "func updateGist",
+        "type EditOptions",
+        "type gistFileToUpdate",
+        "type gistToUpdate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/edit/edit_test.go": {
+      "fichier": "pkg/cmd/gist/edit/edit_test.go",
+      "langage": "go",
+      "lignes": 842,
+      "taille_bytes": 23174,
+      "entrees": [],
+      "sorties": [
+        "func TestNewCmdEdit",
+        "func Test_editRun",
+        "func Test_getFilesToAdd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/clone/clone.go": {
+      "fichier": "pkg/cmd/gist/clone/clone.go",
+      "langage": "go",
+      "lignes": 108,
+      "taille_bytes": 2633,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdClone",
+        "func cloneRun",
+        "func formatRemoteURL",
+        "type CloneOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/clone/clone_test.go": {
+      "fichier": "pkg/cmd/gist/clone/clone_test.go",
+      "langage": "go",
+      "lignes": 178,
+      "taille_bytes": 3922,
+      "entrees": [],
+      "sorties": [
+        "func Test_GistClone",
+        "func Test_GistClone_flagError",
+        "func Test_formatRemoteURL",
+        "func runCloneCommand",
+        "type args"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/view/view.go": {
+      "fichier": "pkg/cmd/gist/view/view.go",
+      "langage": "go",
+      "lignes": 221,
+      "taille_bytes": 5028,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdView",
+        "func viewRun",
+        "type ViewOptions",
+        "type browser"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/gist/view/view_test.go": {
+      "fichier": "pkg/cmd/gist/view/view_test.go",
+      "langage": "go",
+      "lignes": 519,
+      "taille_bytes": 12465,
+      "entrees": [],
+      "sorties": [
+        "func TestNewCmdView",
+        "func Test_viewRun"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/release.go": {
+      "fichier": "pkg/cmd/release/release.go",
+      "langage": "go",
+      "lignes": 44,
+      "taille_bytes": 1353,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdRelease"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/list/list.go": {
+      "fichier": "pkg/cmd/release/list/list.go",
+      "langage": "go",
+      "lignes": 144,
+      "taille_bytes": 3697,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdList",
+        "func listRun",
+        "type ListOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/list/http.go": {
+      "fichier": "pkg/cmd/release/list/http.go",
+      "langage": "go",
+      "lignes": 204,
+      "taille_bytes": 5631,
+      "entrees": [],
+      "sorties": [
+        "func fetchReleases",
+        "func fetchReleasesWithoutImmutableReleases",
+        "type Release",
+        "type releaseOld",
+        "type responseData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/list/list_test.go": {
+      "fichier": "pkg/cmd/release/list/list_test.go",
+      "langage": "go",
+      "lignes": 406,
+      "taille_bytes": 11510,
+      "entrees": [],
+      "sorties": [
+        "func TestExportReleases",
+        "func Test_NewCmdList",
+        "func Test_listRun"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/download/download.go": {
+      "fichier": "pkg/cmd/release/download/download.go",
+      "langage": "go",
+      "lignes": 436,
+      "taille_bytes": 12283,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdDownload",
+        "func checkArchiveTypeOption",
+        "func downloadAsset",
+        "func downloadAssets",
+        "func downloadRun",
+        "func isWindowsReservedFilename",
+        "func matchAny",
+        "func removeLegacyFromCodeloadPath",
+        "type DownloadOptions",
+        "type destinationWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/download/download_test.go": {
+      "fichier": "pkg/cmd/release/download/download_test.go",
+      "langage": "go",
+      "lignes": 826,
+      "taille_bytes": 23276,
+      "entrees": [],
+      "sorties": [
+        "func TestIsWindowsReservedFilename",
+        "func Test_NewCmdDownload",
+        "func Test_downloadRun",
+        "func Test_downloadRun_cloberAndSkip",
+        "func Test_downloadRun_windowsReservedFilename",
+        "func listFiles"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/delete/delete_test.go": {
+      "fichier": "pkg/cmd/release/delete/delete_test.go",
+      "langage": "go",
+      "lignes": 243,
+      "taille_bytes": 5684,
+      "entrees": [],
+      "sorties": [
+        "func Test_NewCmdDelete",
+        "func Test_deleteRun"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/delete/delete.go": {
+      "fichier": "pkg/cmd/release/delete/delete.go",
+      "langage": "go",
+      "lignes": 161,
+      "taille_bytes": 3781,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdDelete",
+        "func deleteRelease",
+        "func deleteRun",
+        "func deleteTag",
+        "type DeleteOptions",
+        "type iprompter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/delete-asset/delete_asset_test.go": {
+      "fichier": "pkg/cmd/release/delete-asset/delete_asset_test.go",
+      "langage": "go",
+      "lignes": 201,
+      "taille_bytes": 4729,
+      "entrees": [],
+      "sorties": [
+        "func Test_NewCmdDeleteAsset",
+        "func Test_deleteAssetRun"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/delete-asset/delete_asset.go": {
+      "fichier": "pkg/cmd/release/delete-asset/delete_asset.go",
+      "langage": "go",
+      "lignes": 130,
+      "taille_bytes": 2839,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdDeleteAsset",
+        "func deleteAsset",
+        "func deleteAssetRun",
+        "type DeleteAssetOptions",
+        "type iprompter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/upload/upload.go": {
+      "fichier": "pkg/cmd/release/upload/upload.go",
+      "langage": "go",
+      "lignes": 156,
+      "taille_bytes": 3979,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdUpload",
+        "func sanitizeFileName",
+        "func uploadRun",
+        "type UploadOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/upload/upload_test.go": {
+      "fichier": "pkg/cmd/release/upload/upload_test.go",
+      "langage": "go",
+      "lignes": 52,
+      "taille_bytes": 861,
+      "entrees": [],
+      "sorties": [
+        "func Test_SanitizeFileName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/create/create.go": {
+      "fichier": "pkg/cmd/release/create/create.go",
+      "langage": "go",
+      "lignes": 661,
+      "taille_bytes": 21302,
+      "entrees": [
+        "the"
+      ],
+      "sorties": [
+        "func NewCmdCreate",
+        "func changelogForRange",
+        "func createRun",
+        "func detectPreviousTag",
+        "func generateChangelog",
+        "func gitTagInfo",
+        "type CreateOptions",
+        "type iprompter",
+        "type logEntry"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/create/create_test.go": {
+      "fichier": "pkg/cmd/release/create/create_test.go",
+      "langage": "go",
+      "lignes": 2013,
+      "taille_bytes": 66363,
+      "entrees": [],
+      "sorties": [
+        "const contentCmd",
+        "const signatureCmd",
+        "const tagName",
+        "func Test_NewCmdCreate",
+        "func Test_createRun",
+        "func Test_createRun_interactive",
+        "func Test_gitTagInfo",
+        "func boolPtr"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/create/http.go": {
+      "fichier": "pkg/cmd/release/create/http.go",
+      "langage": "go",
+      "lignes": 330,
+      "taille_bytes": 8655,
+      "entrees": [],
+      "sorties": [
+        "func createRelease",
+        "func deleteRelease",
+        "func generateReleaseNotes",
+        "func getTags",
+        "func isNewRelease",
+        "func publishRelease",
+        "func publishedReleaseExists",
+        "func remoteTagExists",
+        "func tokenHasWorkflowScope",
+        "type errMissingRequiredWorkflowScope",
+        "type releaseNotes",
+        "type tag"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/shared/upload.go": {
+      "fichier": "pkg/cmd/release/shared/upload.go",
+      "langage": "go",
+      "lignes": 223,
+      "taille_bytes": 4714,
+      "entrees": [],
+      "sorties": [
+        "func AssetsFromArgs",
+        "func ConcurrentUpload",
+        "func deleteAsset",
+        "func fileExt",
+        "func shouldRetry",
+        "func typeForFilename",
+        "func uploadAsset",
+        "func uploadWithDelete",
+        "type AssetForUpload",
+        "type errNetwork",
+        "type httpDoer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/shared/upload_test.go": {
+      "fichier": "pkg/cmd/release/shared/upload_test.go",
+      "langage": "go",
+      "lignes": 121,
+      "taille_bytes": 2342,
+      "entrees": [],
+      "sorties": [
+        "func Test_typeForFilename",
+        "func Test_uploadWithDelete_retry",
+        "type funcClient"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/shared/fetch.go": {
+      "fichier": "pkg/cmd/release/shared/fetch.go",
+      "langage": "go",
+      "lignes": 295,
+      "taille_bytes": 8383,
+      "entrees": [],
+      "sorties": [
+        "func FetchLatestRelease",
+        "func FetchRefSHA",
+        "func FetchRelease",
+        "func StubFetchRefSHA",
+        "func StubFetchRelease",
+        "func fetchDraftRelease",
+        "func fetchReleasePath",
+        "type Release",
+        "type ReleaseAsset",
+        "type fetchResult"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/shared/attestation.go": {
+      "fichier": "pkg/cmd/release/shared/attestation.go",
+      "langage": "go",
+      "lignes": 132,
+      "taille_bytes": 4294,
+      "entrees": [],
+      "sorties": [
+        "func FilterAttestationsByFileDigest",
+        "func FilterAttestationsByTag",
+        "func NewMockVerifier",
+        "func buildVerificationPolicy",
+        "type AttestationVerifier",
+        "type MockVerifier",
+        "type Verifier"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/shared/fetch_test.go": {
+      "fichier": "pkg/cmd/release/shared/fetch_test.go",
+      "langage": "go",
+      "lignes": 94,
+      "taille_bytes": 2431,
+      "entrees": [],
+      "sorties": [
+        "func TestFetchRefSHA"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/edit/http.go": {
+      "fichier": "pkg/cmd/release/edit/http.go",
+      "langage": "go",
+      "lignes": 70,
+      "taille_bytes": 1884,
+      "entrees": [],
+      "sorties": [
+        "func editRelease",
+        "func remoteTagExists"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/edit/edit.go": {
+      "fichier": "pkg/cmd/release/edit/edit.go",
+      "langage": "go",
+      "lignes": 173,
+      "taille_bytes": 4602,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdEdit",
+        "func editRun",
+        "func getParams",
+        "type EditOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/edit/edit_test.go": {
+      "fichier": "pkg/cmd/release/edit/edit_test.go",
+      "langage": "go",
+      "lignes": 489,
+      "taille_bytes": 12297,
+      "entrees": [],
+      "sorties": [
+        "func Test_NewCmdEdit",
+        "func Test_editRun",
+        "func boolPtr",
+        "func mockSuccessfulEditResponse",
+        "func stringPtr"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/verify/verify_test.go": {
+      "fichier": "pkg/cmd/release/verify/verify_test.go",
+      "langage": "go",
+      "lignes": 165,
+      "taille_bytes": 4053,
+      "entrees": [],
+      "sorties": [
+        "func TestNewCmdVerify_Args",
+        "func Test_verifyRun_FailedNoAttestations",
+        "func Test_verifyRun_FailedTagNotInAttestation",
+        "func Test_verifyRun_Success"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/verify/verify.go": {
+      "fichier": "pkg/cmd/release/verify/verify.go",
+      "langage": "go",
+      "lignes": 233,
+      "taille_bytes": 6567,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdVerify",
+        "func printVerifiedSubjects",
+        "func verifyRun",
+        "type VerifyConfig",
+        "type VerifyOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/verify-asset/verify_asset.go": {
+      "fichier": "pkg/cmd/release/verify-asset/verify_asset.go",
+      "langage": "go",
+      "lignes": 209,
+      "taille_bytes": 6642,
+      "entrees": [],
+      "sorties": [
+        "func NewCmdVerifyAsset",
+        "func getFileName",
+        "func verifyAssetRun",
+        "type VerifyAssetConfig",
+        "type VerifyAssetOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pkg/cmd/release/verify-asset/verify_asset_test.go": {
+      "fichier": "pkg/cmd/release/verify-asset/verify_asset_test.go",
+      "langage": "go",
+      "lignes": 310,
+      "taille_bytes": 8549,
+      "entrees": [],
+      "sorties": [
+        "func TestNewCmdVerifyAsset_Args",
+        "func Test_getFileName",
+        "func Test_verifyAssetRun_FailedInvalidAsset",
+        "func Test_verifyAssetRun_FailedNoAttestations",
+        "func Test_verifyAssetRun_FailedTagNotInAttestation",
+        "func Test_verifyAssetRun_NoSuchAsset",
+        "func Test_verifyAssetRun_Success",
+        "func Test_verifyAssetRun_SuccessNoTagArg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}
