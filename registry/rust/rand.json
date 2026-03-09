@@ -1,0 +1,1357 @@
+{
+  "meta": {
+    "projet": "rand",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "toml": 4,
+      "rust": 45,
+      "html": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 50,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "src/rngs/std.rs"
+  },
+  "noeuds": {
+    "Cargo.toml": {
+      "fichier": "Cargo.toml",
+      "langage": "toml",
+      "lignes": 76,
+      "taille_bytes": 2462,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "clippy.toml": {
+      "fichier": "clippy.toml",
+      "langage": "toml",
+      "lignes": 2,
+      "taille_bytes": 139,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/print-next.rs": {
+      "fichier": "examples/print-next.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 187,
+      "entrees": [
+        "rand::Rng"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/monty-hall.rs": {
+      "fichier": "examples/monty-hall.rs",
+      "langage": "rust",
+      "lignes": 121,
+      "taille_bytes": 3986,
+      "entrees": [
+        "rand::RngExt",
+        "rand::distr::",
+        "rand::seq::IndexedRandom"
+      ],
+      "sorties": [
+        "fn free_doors",
+        "fn game_host_open",
+        "fn main",
+        "fn simulate",
+        "fn switch_door",
+        "struct SimulationResult"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/monte-carlo.rs": {
+      "fichier": "examples/monte-carlo.rs",
+      "langage": "rust",
+      "lignes": 48,
+      "taille_bytes": 1578,
+      "entrees": [
+        "rand::distr::"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/rayon-monte-carlo.rs": {
+      "fichier": "examples/rayon-monte-carlo.rs",
+      "langage": "rust",
+      "lignes": 81,
+      "taille_bytes": 3075,
+      "entrees": [
+        "chacha20::ChaCha8Rng",
+        "rand::distr::",
+        "rand_core::SeedableRng",
+        "rayon::prelude::*"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/Cargo.toml": {
+      "fichier": "benches/Cargo.toml",
+      "langage": "toml",
+      "lignes": 58,
+      "taille_bytes": 839,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/rustfmt.toml": {
+      "fichier": "benches/rustfmt.toml",
+      "langage": "toml",
+      "lignes": 2,
+      "taille_bytes": 36,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/bool.rs": {
+      "fichier": "benches/benches/bool.rs",
+      "langage": "rust",
+      "lignes": 69,
+      "taille_bytes": 2112,
+      "entrees": [
+        "criterion::",
+        "rand::distr::Bernoulli",
+        "rand::prelude::*",
+        "rand_pcg::Pcg32"
+      ],
+      "sorties": [
+        "pub fn bench"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/array.rs": {
+      "fichier": "benches/benches/array.rs",
+      "langage": "rust",
+      "lignes": 94,
+      "taille_bytes": 2656,
+      "entrees": [
+        "core::iter",
+        "criterion::",
+        "rand::distr::StandardUniform",
+        "rand::prelude::*",
+        "rand_pcg::Pcg64Mcg"
+      ],
+      "sorties": [
+        "pub fn bench"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/simd.rs": {
+      "fichier": "benches/benches/simd.rs",
+      "langage": "rust",
+      "lignes": 76,
+      "taille_bytes": 2246,
+      "entrees": [
+        "criterion::",
+        "rand::prelude::*",
+        "rand_pcg::Pcg64Mcg"
+      ],
+      "sorties": [
+        "pub fn simd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/shuffle.rs": {
+      "fichier": "benches/benches/shuffle.rs",
+      "langage": "rust",
+      "lignes": 61,
+      "taille_bytes": 1977,
+      "entrees": [
+        "criterion::",
+        "rand::SeedableRng",
+        "rand::prelude::*",
+        "rand_pcg::Pcg32"
+      ],
+      "sorties": [
+        "fn bench_rng",
+        "pub fn bench"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/generators.rs": {
+      "fichier": "benches/benches/generators.rs",
+      "langage": "rust",
+      "lignes": 190,
+      "taille_bytes": 6885,
+      "entrees": [
+        "chacha20::",
+        "chacha20::rand_core::UnwrapErr",
+        "core::time::Duration",
+        "criterion::",
+        "criterion::measurement::WallTime",
+        "rand::prelude::*",
+        "rand::rngs::SysRng",
+        "rand_pcg::"
+      ],
+      "sorties": [
+        "fn bench",
+        "pub fn init_from_seed",
+        "pub fn init_from_u64",
+        "pub fn init_gen",
+        "pub fn random_bytes",
+        "pub fn random_u32",
+        "pub fn random_u64"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/uniform_float.rs": {
+      "fichier": "benches/benches/uniform_float.rs",
+      "langage": "rust",
+      "lignes": 103,
+      "taille_bytes": 3298,
+      "entrees": [
+        "chacha20::ChaCha8Rng",
+        "core::time::Duration",
+        "criterion::",
+        "rand::distr::uniform::",
+        "rand::prelude::*",
+        "rand_pcg::"
+      ],
+      "sorties": [
+        "const MEASUREMENT_TIME",
+        "const N_RESAMPLES",
+        "const SAMPLE_SIZE",
+        "const WARM_UP_TIME",
+        "fn distr_random",
+        "fn single_random"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/weighted.rs": {
+      "fichier": "benches/benches/weighted.rs",
+      "langage": "rust",
+      "lignes": 60,
+      "taille_bytes": 2069,
+      "entrees": [
+        "criterion::",
+        "rand::distr::weighted::WeightedIndex",
+        "rand::prelude::*",
+        "rand::seq::index::sample_weighted"
+      ],
+      "sorties": [
+        "pub fn bench"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/seq_choose.rs": {
+      "fichier": "benches/benches/seq_choose.rs",
+      "langage": "rust",
+      "lignes": 180,
+      "taille_bytes": 5971,
+      "entrees": [
+        "criterion::",
+        "rand::SeedableRng",
+        "rand::prelude::*",
+        "rand_pcg::Pcg32"
+      ],
+      "sorties": [
+        "fn bench_rng",
+        "fn choose_size_hinted",
+        "fn choose_stable",
+        "fn choose_unhinted",
+        "fn choose_windowed",
+        "fn next",
+        "fn size_hint",
+        "pub fn bench",
+        "struct UnhintedIterator",
+        "struct WindowHintedIterator",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/standard.rs": {
+      "fichier": "benches/benches/standard.rs",
+      "langage": "rust",
+      "lignes": 64,
+      "taille_bytes": 1972,
+      "entrees": [
+        "core::time::Duration",
+        "criterion::",
+        "criterion::measurement::WallTime",
+        "rand::distr::",
+        "rand::prelude::*",
+        "rand_pcg::Pcg64Mcg"
+      ],
+      "sorties": [
+        "fn bench_ty",
+        "pub fn bench"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/benches/uniform.rs": {
+      "fichier": "benches/benches/uniform.rs",
+      "langage": "rust",
+      "lignes": 126,
+      "taille_bytes": 4146,
+      "entrees": [
+        "chacha20::ChaCha8Rng",
+        "core::time::Duration",
+        "criterion::",
+        "rand::distr::uniform::",
+        "rand::prelude::*",
+        "rand_pcg::",
+        "std::simd::"
+      ],
+      "sorties": [
+        "const MEASUREMENT_TIME",
+        "const N_RESAMPLES",
+        "const SAMPLE_SIZE",
+        "const WARM_UP_TIME",
+        "fn sample"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/fill.rs": {
+      "fichier": "tests/fill.rs",
+      "langage": "rust",
+      "lignes": 19,
+      "taille_bytes": 607,
+      "entrees": [
+        "rand::"
+      ],
+      "sorties": [
+        "fn fill_slice",
+        "struct MyInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/prelude.rs": {
+      "fichier": "src/prelude.rs",
+      "langage": "rust",
+      "lignes": 34,
+      "taille_bytes": 1142,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/lib.rs": {
+      "fichier": "src/lib.rs",
+      "langage": "rust",
+      "lignes": 409,
+      "taille_bytes": 11190,
+      "entrees": [
+        "alloc",
+        "core::convert::Infallible",
+        "crate::distr::",
+        "std",
+        "std::io::Read",
+        "super::*"
+      ],
+      "sorties": [
+        "const INC",
+        "fn fmt",
+        "fn read",
+        "fn rng_reader",
+        "fn test_random",
+        "fn test_range",
+        "fn try_fill_bytes",
+        "fn try_next_u32",
+        "fn try_next_u64",
+        "pub fn const_rng",
+        "pub fn fill",
+        "pub fn make_rng",
+        "pub fn random",
+        "pub fn random_bool",
+        "pub fn random_iter",
+        "pub fn random_range",
+        "pub fn random_ratio",
+        "pub fn rng",
+        "pub fn step_rng",
+        "pub struct RngReader",
+        "pub struct StepRng",
+        "type Error"
+      ],
+      "appelle": [
+        "src/rngs/std.rs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/log_macros.rs": {
+      "fichier": "src/log_macros.rs",
+      "langage": "rust",
+      "lignes": 41,
+      "taille_bytes": 913,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/rng.rs": {
+      "fichier": "src/rng.rs",
+      "langage": "rust",
+      "lignes": 575,
+      "taille_bytes": 18108,
+      "entrees": [
+        "alloc::boxed::Box",
+        "core::",
+        "core::num::Wrapping",
+        "crate::distr::",
+        "crate::distr::uniform::",
+        "crate::test::",
+        "rand_core::Rng",
+        "super::*"
+      ],
+      "sorties": [
+        "const DENOM",
+        "const NUM",
+        "const unsafe",
+        "fn fill",
+        "fn fill_slice",
+        "fn random",
+        "fn random_bool",
+        "fn random_iter",
+        "fn random_range",
+        "fn random_ratio",
+        "fn sample",
+        "fn sample_iter",
+        "fn test_fill",
+        "fn test_fill_bytes_default",
+        "fn test_fill_empty",
+        "fn test_gen_ratio_average",
+        "fn test_random_bool",
+        "fn test_random_range_float",
+        "fn test_random_range_int",
+        "fn test_random_range_panic_int",
+        "fn test_random_range_panic_usize",
+        "fn test_rng_boxed_trait",
+        "fn test_rng_mut_ref",
+        "fn test_rng_trait_object",
+        "fn use_rng",
+        "pub trait Fill",
+        "pub trait RngExt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/rngs/xoshiro128plusplus.rs": {
+      "fichier": "src/rngs/xoshiro128plusplus.rs",
+      "langage": "rust",
+      "lignes": 138,
+      "taille_bytes": 4699,
+      "entrees": [
+        "core::convert::Infallible",
+        "rand_core::",
+        "serde::",
+        "super::Xoshiro128PlusPlus"
+      ],
+      "sorties": [
+        "const PHI",
+        "fn from_seed",
+        "fn reference",
+        "fn seed_from_u64",
+        "fn stable_seed_from_u64_and_from_seed",
+        "fn try_fill_bytes",
+        "fn try_next_u32",
+        "fn try_next_u64",
+        "pub struct Xoshiro128PlusPlus",
+        "type Error",
+        "type Seed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/rngs/xoshiro256plusplus.rs": {
+      "fichier": "src/rngs/xoshiro256plusplus.rs",
+      "langage": "rust",
+      "lignes": 157,
+      "taille_bytes": 5203,
+      "entrees": [
+        "core::convert::Infallible",
+        "rand_core::",
+        "serde::",
+        "super::Xoshiro256PlusPlus"
+      ],
+      "sorties": [
+        "const PHI",
+        "fn from_seed",
+        "fn reference",
+        "fn seed_from_u64",
+        "fn stable_seed_from_u64_and_from_seed",
+        "fn try_fill_bytes",
+        "fn try_next_u32",
+        "fn try_next_u64",
+        "pub struct Xoshiro256PlusPlus",
+        "type Error",
+        "type Seed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/rngs/std.rs": {
+      "fichier": "src/rngs/std.rs",
+      "langage": "rust",
+      "lignes": 289,
+      "taille_bytes": 10557,
+      "entrees": [
+        "chacha20::ChaCha12Rng",
+        "core::convert::Infallible",
+        "crate::",
+        "crate::rngs::StdRng",
+        "rand_core::"
+      ],
+      "sorties": [
+        "fn from_seed",
+        "fn test_chacha_counter",
+        "fn test_chacha_true_values_1",
+        "fn test_chacha_true_values_2",
+        "fn test_chacha_true_values_3",
+        "fn test_chacha_true_values_8",
+        "fn test_stdrng_construction",
+        "fn try_fill_bytes",
+        "fn try_next_u32",
+        "fn try_next_u64",
+        "pub struct StdRng",
+        "type Error",
+        "type Seed"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/lib.rs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/rngs/thread.rs": {
+      "fichier": "src/rngs/thread.rs",
+      "langage": "rust",
+      "lignes": 251,
+      "taille_bytes": 8469,
+      "entrees": [
+        "core::",
+        "crate::RngExt",
+        "rand_core::",
+        "rand_core::SeedableRng",
+        "rand_core::block::",
+        "std::fmt",
+        "std::rc::Rc",
+        "std::thread_local",
+        "super::"
+      ],
+      "sorties": [
+        "const RESEED_BLOCK_THRESHOLD",
+        "fn fmt",
+        "fn generate",
+        "fn reseed",
+        "fn test_debug_output",
+        "fn test_thread_rng",
+        "fn try_fill_bytes",
+        "fn try_next_u32",
+        "fn try_next_u64",
+        "fn try_to_reseed",
+        "pub fn reseed",
+        "pub fn rng",
+        "pub struct ThreadRng",
+        "struct ReseedingCore",
+        "type Core",
+        "type Error",
+        "type Output",
+        "type Results"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/rngs/mod.rs": {
+      "fichier": "src/rngs/mod.rs",
+      "langage": "rust",
+      "lignes": 119,
+      "taille_bytes": 5202,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/rngs/small.rs": {
+      "fichier": "src/rngs/small.rs",
+      "langage": "rust",
+      "lignes": 116,
+      "taille_bytes": 4353,
+      "entrees": [
+        "core::convert::Infallible",
+        "rand_core::"
+      ],
+      "sorties": [
+        "const LEN",
+        "fn from_seed",
+        "fn seed_from_u64",
+        "fn try_fill_bytes",
+        "fn try_next_u32",
+        "fn try_next_u64",
+        "pub struct SmallRng",
+        "type Error",
+        "type Rng",
+        "type Seed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/float.rs": {
+      "fichier": "src/distr/float.rs",
+      "langage": "rust",
+      "lignes": 344,
+      "taille_bytes": 13592,
+      "entrees": [
+        "core::mem",
+        "core::simd::prelude::*",
+        "crate::",
+        "crate::distr::",
+        "crate::distr::utils::",
+        "crate::test::const_rng",
+        "serde::",
+        "super::*"
+      ],
+      "sorties": [
+        "const EPSILON32",
+        "const EPSILON64",
+        "fn into_float_with_exponent",
+        "fn sample",
+        "fn test_samples",
+        "fn value_stability",
+        "pub struct Open01",
+        "pub struct OpenClosed01",
+        "pub trait IntoFloat"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/utils.rs": {
+      "fichier": "src/distr/utils.rs",
+      "langage": "rust",
+      "lignes": 403,
+      "taille_bytes": 12488,
+      "entrees": [
+        "core::arch::x86::*",
+        "core::arch::x86_64::*",
+        "core::simd::SimdElement",
+        "core::simd::prelude::*",
+        "super::*"
+      ],
+      "sorties": [
+        "const LEN",
+        "const LOWER_MASK",
+        "fn all_finite",
+        "fn all_le",
+        "fn all_lt",
+        "fn any",
+        "fn cast_from_int",
+        "fn decrease_masked",
+        "fn extract_lane",
+        "fn gt_mask",
+        "fn replace",
+        "fn splat",
+        "fn wmul",
+        "type Mask",
+        "type Output",
+        "type Scalar",
+        "type UInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/slice.rs": {
+      "fichier": "src/distr/slice.rs",
+      "langage": "rust",
+      "lignes": 167,
+      "taille_bytes": 5244,
+      "entrees": [
+        "alloc::string::String",
+        "core::iter",
+        "core::num::NonZeroUsize",
+        "crate::Rng",
+        "crate::distr::Distribution",
+        "crate::distr::uniform::",
+        "super::*"
+      ],
+      "sorties": [
+        "fn append_string",
+        "fn fmt",
+        "fn sample",
+        "fn value_stability",
+        "pub fn new",
+        "pub fn num_choices",
+        "pub struct Choose",
+        "pub struct Empty"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/uniform_float.rs": {
+      "fichier": "src/distr/uniform_float.rs",
+      "langage": "rust",
+      "lignes": 452,
+      "taille_bytes": 18464,
+      "entrees": [
+        "core::simd::prelude::*",
+        "crate::",
+        "crate::distr::",
+        "crate::distr::float::IntoFloat",
+        "crate::distr::utils::",
+        "crate::test::",
+        "serde::",
+        "super::",
+        "super::*",
+        "super::SampleUniform"
+      ],
+      "sorties": [
+        "fn new",
+        "fn new_bounded",
+        "fn new_inclusive",
+        "fn range",
+        "fn sample",
+        "fn sample_single",
+        "fn sample_single_inclusive",
+        "fn test_float_assertions",
+        "fn test_float_overflow",
+        "fn test_float_overflow_single",
+        "fn test_floats",
+        "fn test_uniform_from_std_range",
+        "fn test_uniform_from_std_range_bad_limits",
+        "fn test_uniform_from_std_range_inclusive",
+        "fn test_uniform_from_std_range_inclusive_bad_limits",
+        "pub struct UniformFloat",
+        "type Sampler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/uniform_int.rs": {
+      "fichier": "src/distr/uniform_int.rs",
+      "langage": "rust",
+      "lignes": 899,
+      "taille_bytes": 33647,
+      "entrees": [
+        "core::fmt::Debug",
+        "core::ops::Add",
+        "core::simd::",
+        "crate::",
+        "crate::distr::",
+        "crate::distr::utils::WideningMultiply",
+        "serde::",
+        "serde_json",
+        "super::",
+        "super::*"
+      ],
+      "sorties": [
+        "fn new",
+        "fn new_inclusive",
+        "fn sample",
+        "fn sample_single",
+        "fn sample_single_inclusive",
+        "fn test_integers",
+        "fn test_samples",
+        "fn test_uniform_bad_limits_equal_int",
+        "fn test_uniform_bad_limits_flipped_int",
+        "fn test_uniform_from_std_range",
+        "fn test_uniform_from_std_range_bad_limits",
+        "fn test_uniform_from_std_range_inclusive",
+        "fn test_uniform_from_std_range_inclusive_bad_limits",
+        "fn test_uniform_good_limits_equal_int",
+        "fn test_uniform_usize_constructors",
+        "fn test_uniform_usize_deserialization",
+        "fn test_uniform_usize_deserialization_64bit",
+        "fn test_uniform_usize_deserialization_from_32bit",
+        "fn test_uniform_usize_empty_range",
+        "fn value_stability",
+        "pub struct UniformInt",
+        "pub struct UniformUsize",
+        "type Sampler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/integer.rs": {
+      "fichier": "src/distr/integer.rs",
+      "langage": "rust",
+      "lignes": 303,
+      "taille_bytes": 9855,
+      "entrees": [
+        "core::arch::x86::",
+        "core::arch::x86::__m512i",
+        "core::arch::x86_64::",
+        "core::arch::x86_64::__m512i",
+        "core::num::",
+        "core::simd::*",
+        "crate::",
+        "crate::distr::",
+        "super::*"
+      ],
+      "sorties": [
+        "fn sample",
+        "fn test_integers",
+        "fn test_samples",
+        "fn value_stability",
+        "fn x86_integers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/distribution.rs": {
+      "fichier": "src/distr/distribution.rs",
+      "langage": "rust",
+      "lignes": 272,
+      "taille_bytes": 8538,
+      "entrees": [
+        "alloc::string::String",
+        "core::iter",
+        "core::str",
+        "crate::Rng",
+        "crate::RngExt",
+        "crate::distr::",
+        "crate::distr::Open01"
+      ],
+      "sorties": [
+        "fn append_string",
+        "fn map",
+        "fn next",
+        "fn sample",
+        "fn sample_iter",
+        "fn sample_string",
+        "fn size_hint",
+        "fn ten_dice_rolls_other_than_five",
+        "fn test_dist_string",
+        "fn test_distributions_iter",
+        "fn test_distributions_map",
+        "fn test_make_an_iter",
+        "pub struct Iter",
+        "pub struct Map",
+        "pub trait Distribution",
+        "pub trait SampleString",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/mod.rs": {
+      "fichier": "src/distr/mod.rs",
+      "langage": "rust",
+      "lignes": 214,
+      "taille_bytes": 9203,
+      "entrees": [
+        "crate::RngExt"
+      ],
+      "sorties": [
+        "pub struct StandardUniform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/other.rs": {
+      "fichier": "src/distr/other.rs",
+      "langage": "rust",
+      "lignes": 443,
+      "taille_bytes": 14340,
+      "entrees": [
+        "alloc::string::String",
+        "core::array",
+        "core::char",
+        "core::iter",
+        "core::num::Wrapping",
+        "core::simd::MaskElement",
+        "core::simd::prelude::*",
+        "crate::",
+        "crate::Rng",
+        "crate::distr::",
+        "crate::distr::SampleString",
+        "serde::",
+        "super::*"
+      ],
+      "sorties": [
+        "const GAP_SIZE",
+        "const GEN_ASCII_STR_CHARSET",
+        "const RANGE",
+        "fn append_string",
+        "fn sample",
+        "fn test_alphabetic",
+        "fn test_alphanumeric",
+        "fn test_chars",
+        "fn test_misc",
+        "fn test_samples",
+        "fn value_stability",
+        "pub struct Alphabetic",
+        "pub struct Alphanumeric"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/bernoulli.rs": {
+      "fichier": "src/distr/bernoulli.rs",
+      "langage": "rust",
+      "lignes": 244,
+      "taille_bytes": 8355,
+      "entrees": [
+        "core::fmt",
+        "crate::",
+        "crate::RngExt",
+        "crate::distr::Distribution",
+        "serde::",
+        "super::Bernoulli"
+      ],
+      "sorties": [
+        "const ALWAYS_TRUE",
+        "const DENOM",
+        "const NUM",
+        "const SCALE",
+        "fn bernoulli_distributions_can_be_compared",
+        "fn fmt",
+        "fn sample",
+        "fn test_average",
+        "fn test_serializing_deserializing_bernoulli",
+        "fn test_trivial",
+        "fn value_stability",
+        "pub enum BernoulliError",
+        "pub fn from_ratio",
+        "pub fn new",
+        "pub struct Bernoulli"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/uniform_other.rs": {
+      "fichier": "src/distr/uniform_other.rs",
+      "langage": "rust",
+      "lignes": 320,
+      "taille_bytes": 10582,
+      "entrees": [
+        "core::time::Duration",
+        "crate::Rng",
+        "crate::RngExt",
+        "crate::distr::Distribution",
+        "crate::distr::SampleString",
+        "serde::",
+        "super::",
+        "super::*"
+      ],
+      "sorties": [
+        "const CHAR_SURROGATE_LEN",
+        "const CHAR_SURROGATE_START",
+        "enum UniformDurationMode",
+        "fn append_string",
+        "fn char_to_comp_u32",
+        "fn new",
+        "fn new_inclusive",
+        "fn sample",
+        "fn test_char",
+        "fn test_durations",
+        "fn test_serialization_uniform_duration",
+        "pub struct UniformChar",
+        "pub struct UniformDuration",
+        "type Sampler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/uniform.rs": {
+      "fichier": "src/distr/uniform.rs",
+      "langage": "rust",
+      "lignes": 625,
+      "taille_bytes": 21630,
+      "entrees": [
+        "core::fmt",
+        "core::ops::",
+        "core::time::Duration",
+        "crate::Rng",
+        "crate::RngExt",
+        "crate::distr::Distribution",
+        "crate::distr::uniform::",
+        "serde::",
+        "super::*"
+      ],
+      "sorties": [
+        "fn borrow",
+        "fn fmt",
+        "fn is_empty",
+        "fn new",
+        "fn new_inclusive",
+        "fn sample",
+        "fn sample_single",
+        "fn sample_single_inclusive",
+        "fn test_custom_uniform",
+        "fn test_samples",
+        "fn test_uniform_serialization",
+        "fn try_from",
+        "fn uniform_distributions_can_be_compared",
+        "fn value_stability",
+        "pub enum Error",
+        "pub fn new",
+        "pub fn new_inclusive",
+        "pub struct Uniform",
+        "pub trait SampleBorrow",
+        "pub trait SampleRange",
+        "pub trait SampleUniform",
+        "pub trait UniformSampler",
+        "struct MyF32",
+        "struct UniformMyF32",
+        "type Error",
+        "type Sampler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/weighted/weighted_index.rs": {
+      "fichier": "src/distr/weighted/weighted_index.rs",
+      "langage": "rust",
+      "lignes": 632,
+      "taille_bytes": 21512,
+      "entrees": [
+        "alloc::vec::Vec",
+        "core::cmp::Ordering::*",
+        "core::fmt::",
+        "crate::Rng",
+        "crate::RngExt",
+        "crate::distr::Distribution",
+        "crate::distr::uniform::",
+        "serde::",
+        "super::",
+        "super::*"
+      ],
+      "sorties": [
+        "const N_REPS",
+        "fn clone",
+        "fn fmt",
+        "fn next",
+        "fn overflow",
+        "fn sample",
+        "fn test_accepting_nan",
+        "fn test_samples",
+        "fn test_update_weights",
+        "fn test_update_weights_errors",
+        "fn test_weight_at",
+        "fn test_weightedindex",
+        "fn test_weightedindex_serde",
+        "fn test_weights",
+        "fn value_stability",
+        "fn weighted_index_distributions_can_be_compared",
+        "pub fn new",
+        "pub fn total_weight",
+        "pub fn update_weights",
+        "pub fn weight",
+        "pub fn weights",
+        "pub struct WeightedIndex",
+        "pub struct WeightedIndexIter",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/distr/weighted/mod.rs": {
+      "fichier": "src/distr/weighted/mod.rs",
+      "langage": "rust",
+      "lignes": 114,
+      "taille_bytes": 3752,
+      "entrees": [
+        "core::fmt"
+      ],
+      "sorties": [
+        "const ZERO",
+        "fn checked_add_assign",
+        "fn fmt",
+        "pub enum Error",
+        "pub trait Weight"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/seq/slice.rs": {
+      "fichier": "src/seq/slice.rs",
+      "langage": "rust",
+      "lignes": 858,
+      "taille_bytes": 29088,
+      "entrees": [
+        "alloc::vec::Vec",
+        "core::ops::",
+        "crate::",
+        "crate::distr::",
+        "crate::distr::uniform::",
+        "crate::distr::weighted::",
+        "crate::distr::weighted::WeightedIndex",
+        "super::*",
+        "super::increasing_uniform::IncreasingUniform",
+        "super::index"
+      ],
+      "sorties": [
+        "const N_REPS",
+        "fn choose",
+        "fn choose_iter",
+        "fn choose_multiple",
+        "fn choose_multiple_array",
+        "fn choose_multiple_weighted",
+        "fn choose_mut",
+        "fn choose_weighted",
+        "fn choose_weighted_iter",
+        "fn choose_weighted_mut",
+        "fn get_weight",
+        "fn is_empty",
+        "fn len",
+        "fn move_last",
+        "fn next",
+        "fn partial_shuffle",
+        "fn sample",
+        "fn sample_array",
+        "fn sample_weighted",
+        "fn shuffle",
+        "fn size_hint",
+        "fn test_multiple_weighted_distributions",
+        "fn test_multiple_weighted_edge_cases",
+        "fn test_partial_shuffle",
+        "fn test_shuffle",
+        "fn test_slice_choose",
+        "fn test_weighted",
+        "fn value_stability_slice",
+        "pub struct IndexedSamples",
+        "pub trait IndexedMutRandom",
+        "pub trait IndexedRandom",
+        "pub trait SliceRandom",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/seq/increasing_uniform.rs": {
+      "fichier": "src/seq/increasing_uniform.rs",
+      "langage": "rust",
+      "lignes": 108,
+      "taille_bytes": 3742,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [
+        "const RESULT2",
+        "const fn",
+        "fn calculate_bound_u32",
+        "pub fn new",
+        "pub fn next_index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/seq/iterator.rs": {
+      "fichier": "src/seq/iterator.rs",
+      "langage": "rust",
+      "lignes": 685,
+      "taille_bytes": 22602,
+      "entrees": [
+        "alloc::vec::Vec",
+        "crate::",
+        "super::*",
+        "super::IndexedRandom",
+        "super::coin_flipper::CoinFlipper"
+      ],
+      "sorties": [
+        "fn choose",
+        "fn choose_multiple",
+        "fn choose_multiple_fill",
+        "fn choose_stable",
+        "fn do_test",
+        "fn next",
+        "fn sample",
+        "fn sample_fill",
+        "fn size_hint",
+        "fn test_iter",
+        "fn test_iterator_choose",
+        "fn test_iterator_choose_stable",
+        "fn test_iterator_choose_stable_stability",
+        "fn test_sample_iter",
+        "fn value_stability_choose",
+        "fn value_stability_choose_stable",
+        "fn value_stability_sample",
+        "pub trait IteratorRandom",
+        "struct ChunkHintedIterator",
+        "struct UnhintedIterator",
+        "struct WindowHintedIterator",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/seq/mod.rs": {
+      "fichier": "src/seq/mod.rs",
+      "langage": "rust",
+      "lignes": 83,
+      "taille_bytes": 2587,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [
+        "pub fn sample_array"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/seq/coin_flipper.rs": {
+      "fichier": "src/seq/coin_flipper.rs",
+      "langage": "rust",
+      "lignes": 160,
+      "taille_bytes": 6722,
+      "entrees": [
+        "crate::Rng"
+      ],
+      "sorties": [
+        "fn flip_c_heads",
+        "fn random_ratio",
+        "pub fn new",
+        "pub fn random_ratio_one_over"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/seq/index.rs": {
+      "fichier": "src/seq/index.rs",
+      "langage": "rust",
+      "lignes": 696,
+      "taille_bytes": 22492,
+      "entrees": [
+        "alloc::collections::BTreeSet",
+        "alloc::vec",
+        "alloc::vec::",
+        "core::",
+        "core::slice",
+        "crate::",
+        "crate::distr::",
+        "crate::distr::uniform::SampleUniform",
+        "self::IndexVec::*",
+        "self::IndexVecIntoIter::*",
+        "self::IndexVecIter::*",
+        "serde::",
+        "std::",
+        "std::collections::HashSet",
+        "super::*",
+        "super::WeightError"
+      ],
+      "sorties": [
+        "fn as_usize",
+        "fn cmp",
+        "fn eq",
+        "fn into_iter",
+        "fn next",
+        "fn one",
+        "fn partial_cmp",
+        "fn sample_efraimidis_spirakis",
+        "fn sample_floyd",
+        "fn sample_inplace",
+        "fn sample_rejection",
+        "fn size_hint",
+        "fn test_sample_alg",
+        "fn test_sample_boundaries",
+        "fn test_sample_weighted",
+        "fn test_serialization_index_vec",
+        "fn value_stability_sample",
+        "fn zero",
+        "pub enum IndexVec",
+        "pub enum IndexVecIntoIter",
+        "pub enum IndexVecIter",
+        "pub fn index",
+        "pub fn into_vec",
+        "pub fn is_empty",
+        "pub fn iter",
+        "pub fn len",
+        "pub fn sample",
+        "pub fn sample_weighted",
+        "struct Element",
+        "trait UInt",
+        "type IntoIter",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "utils/redirect.html": {
+      "fichier": "utils/redirect.html",
+      "langage": "html",
+      "lignes": 1,
+      "taille_bytes": 62,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "src/lib.rs",
+      "vers": "src/rngs/std.rs",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

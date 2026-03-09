@@ -1,0 +1,2347 @@
+{
+  "meta": {
+    "projet": "SwiftUIX",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "swift": 120
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "Package.swift"
+  },
+  "noeuds": {
+    "Package.swift": {
+      "fichier": "Package.swift",
+      "langage": "swift",
+      "lignes": 39,
+      "taille_bytes": 756,
+      "entrees": [
+        "PackageDescription"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/module.swift": {
+      "fichier": "Tests/module.swift",
+      "langage": "swift",
+      "lignes": 11,
+      "taille_bytes": 202,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/Intramodular/UserStorageTests.swift": {
+      "fichier": "Tests/Intramodular/UserStorageTests.swift",
+      "langage": "swift",
+      "lignes": 84,
+      "taille_bytes": 2319,
+      "entrees": [
+        "SwiftUIX",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testComplexValue",
+        "func testSimpleValue",
+        "struct Bar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/module.swift": {
+      "fichier": "Sources/SwiftUIX/module.swift",
+      "langage": "swift",
+      "lignes": 8,
+      "taille_bytes": 143,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Haptic Feedback/FeedbackGenerator.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Haptic Feedback/FeedbackGenerator.swift",
+      "langage": "swift",
+      "lignes": 129,
+      "taille_bytes": 3779,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func generate",
+        "public func prepare"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Search Bar/SearchToken.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Search Bar/SearchToken.swift",
+      "langage": "swift",
+      "lignes": 27,
+      "taille_bytes": 540,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Search Bar/SearchBar.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Search Bar/SearchBar.swift",
+      "langage": "swift",
+      "lignes": 509,
+      "taille_bytes": 16985,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func _updateUISearchBar",
+        "public class Coordinator",
+        "public func controlTextDidBeginEditing",
+        "public func controlTextDidChange",
+        "public func controlTextDidEndEditing",
+        "public func customAppKitOrUIKitClass",
+        "public func enablesReturnKeyAutomatically",
+        "public func focusRingType",
+        "public func focused",
+        "public func font",
+        "public func foregroundColor",
+        "public func iconImage",
+        "public func isBezeled",
+        "public func isInitialFirstResponder",
+        "public func isSecureTextEntry",
+        "public func keyboardType",
+        "public func makeCoordinator",
+        "public func makeNSView",
+        "public func makeUIView",
+        "public func onCancel",
+        "public func placeholder",
+        "public func returnKeyType",
+        "public func searchBar",
+        "public func searchBarCancelButtonClicked",
+        "public func searchBarSearchButtonClicked",
+        "public func searchBarShouldEndEditing",
+        "public func searchBarStyle",
+        "public func searchBarTextDidBeginEditing",
+        "public func searchBarTextDidEndEditing",
+        "public func searchTokens",
+        "public func showsCancelButton",
+        "public func textContentType",
+        "public func textFieldBackgroundColor",
+        "public func updateNSView",
+        "public func updateUIView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Search Bar/SearchBar+NavigationView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Search Bar/SearchBar+NavigationView.swift",
+      "langage": "swift",
+      "lignes": 301,
+      "taille_bytes": 10574,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class Coordinator",
+        "class UIViewControllerType",
+        "func didDismissSearchController",
+        "func didPresentSearchController",
+        "func makeCoordinator",
+        "func makeUIViewController",
+        "func sizeToFitSearchBar",
+        "func updateSearchResults",
+        "func updateUIViewController",
+        "func willDismissSearchController",
+        "func willPresentSearchController",
+        "public func navigationSearchBar",
+        "public func navigationSearchBarHiddenWhenScrolling",
+        "public func searchBar",
+        "public func searchBarCancelButtonClicked",
+        "public func searchBarSearchButtonClicked",
+        "public func searchBarTextDidBeginEditing",
+        "public func searchBarTextDidEndEditing"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Environment/EnvironmentInsertions.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Environment/EnvironmentInsertions.swift",
+      "langage": "swift",
+      "lignes": 240,
+      "taille_bytes": 7011,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func _apply",
+        "func _opaque_assign",
+        "public func environment",
+        "struct EnvironmentInsertionsKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Environment/EnvironmentPropagator.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Environment/EnvironmentPropagator.swift",
+      "langage": "swift",
+      "lignes": 40,
+      "taille_bytes": 1178,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func insert",
+        "public func insertEnvironmentObject",
+        "public func insertWeakEnvironmentObject"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Navigation/Navigator.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Navigation/Navigator.swift",
+      "langage": "swift",
+      "lignes": 107,
+      "taille_bytes": 3504,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func pop",
+        "func popToRoot",
+        "func push",
+        "public func pop",
+        "public func popToRoot",
+        "public func push",
+        "struct _UINavigationControllerNavigatorAdaptorBox"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Navigation/PopNavigationButton.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Navigation/PopNavigationButton.swift",
+      "langage": "swift",
+      "lignes": 34,
+      "taille_bytes": 858,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Navigation/SelectionNavigator.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Navigation/SelectionNavigator.swift",
+      "langage": "swift",
+      "lignes": 210,
+      "taille_bytes": 6385,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func body",
+        "public func body",
+        "public func navigate",
+        "public func onPress"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Navigation/NavigationBarConfigurator.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Navigation/NavigationBarConfigurator.swift",
+      "langage": "swift",
+      "lignes": 437,
+      "taille_bytes": 17169,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class UIViewControllerType",
+        "func makeUIViewController",
+        "func updateNavigationBar",
+        "func updateUIViewController",
+        "public func navigationBarItems",
+        "public func navigationBarLargeTitle",
+        "public func navigationBarLargeTitleItems",
+        "public func navigationBarTitleView",
+        "struct NavigationBarConfigurator",
+        "struct _NavigationBarLargeTitleViewConfigurator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Navigation/StackNavigationView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Navigation/StackNavigationView.swift",
+      "langage": "swift",
+      "lignes": 25,
+      "taille_bytes": 635,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Navigation/_NestedNavigationView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Navigation/_NestedNavigationView.swift",
+      "langage": "swift",
+      "lignes": 49,
+      "taille_bytes": 1281,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Navigation/CocoaNavigationView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Navigation/CocoaNavigationView.swift",
+      "langage": "swift",
+      "lignes": 253,
+      "taille_bytes": 7996,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class UIViewControllerType",
+        "func makeUIViewController",
+        "func updateUIViewController",
+        "public func navigationBarHidden",
+        "struct Configuration",
+        "struct _Body",
+        "struct _ChildContainer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Navigation/NavigationBarVisibilityModifier.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Navigation/NavigationBarVisibilityModifier.swift",
+      "langage": "swift",
+      "lignes": 66,
+      "taille_bytes": 2011,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func body",
+        "public func hideNavigationBar",
+        "public func hideNavigationBarIfAvailable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Pagination/PageControl.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Pagination/PageControl.swift",
+      "langage": "swift",
+      "lignes": 180,
+      "taille_bytes": 4998,
+      "entrees": [
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "public class Coordinator",
+        "public func currentPageIndicatorTintColor",
+        "public func defersCurrentPageDisplay",
+        "public func hidesForSinglePage",
+        "public func makeCoordinator",
+        "public func makeUIView",
+        "public func pageControlBackgroundStyle",
+        "public func pageIndicatorTintColor",
+        "public func updateUIView",
+        "struct BackgroundStyleEnvironmentKey",
+        "struct CurrentTintColorEnvironmentKey",
+        "struct TintColorEnvironmentKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Pagination/ProgressionController.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Pagination/ProgressionController.swift",
+      "langage": "swift",
+      "lignes": 104,
+      "taille_bytes": 2545,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func moveToNext",
+        "func moveToPrevious",
+        "func scrollTo",
+        "public func transformAction",
+        "struct ProgressionControllerEnvironmentKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Pagination/_PaginationView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Pagination/_PaginationView.swift",
+      "langage": "swift",
+      "lignes": 426,
+      "taille_bytes": 16452,
+      "entrees": [
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "class Coordinator",
+        "class _Coordinator_Default_UIPageControl",
+        "class _Coordinator_No_UIPageControl",
+        "func makeCoordinator",
+        "func makeUIViewController",
+        "func moveToNext",
+        "func moveToPrevious",
+        "func pageViewController",
+        "func scrollTo",
+        "func scrollViewDidScroll",
+        "func updateUIViewController",
+        "struct Configuration",
+        "struct _PaginationView",
+        "struct _ProgressionController"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Pagination/PaginationView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Pagination/PaginationView.swift",
+      "langage": "swift",
+      "lignes": 485,
+      "taille_bytes": 16037,
+      "entrees": [
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "public func currentPageIndex",
+        "public func cyclesPages",
+        "public func initialPageIndex",
+        "public func interPageSpacing",
+        "public func onOffsetChange",
+        "public func pageIndicatorAlignment",
+        "public func paginationState"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Pagination/PaginationViewReader.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Pagination/PaginationViewReader.swift",
+      "langage": "swift",
+      "lignes": 96,
+      "taille_bytes": 2869,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func hash",
+        "public func moveToNext",
+        "public func moveToPrevious",
+        "public func scrollTo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/AnyPresentationView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/AnyPresentationView.swift",
+      "langage": "swift",
+      "lignes": 119,
+      "taille_bytes": 3724,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "enum Base",
+        "public func _opaque_getViewName",
+        "public func _toAppKitOrUIKitViewController",
+        "public func environment",
+        "public func hidesBottomBarWhenPushed",
+        "public func modalPresentationStyle",
+        "public func name",
+        "public func popoverAttachmentAnchorBounds",
+        "public func preferredSourceViewName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/AnyModalPresentation.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/AnyModalPresentation.swift",
+      "langage": "swift",
+      "lignes": 119,
+      "taille_bytes": 3446,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func body",
+        "public func dismissDisabled",
+        "public func environment",
+        "public func isModalInPresentation",
+        "public func popoverAttachmentAnchorBounds",
+        "struct PreferenceKeyValue",
+        "struct _DismissDisabled",
+        "struct _SetDismissDisabled"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/CocoaPresentationHostingController.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/CocoaPresentationHostingController.swift",
+      "langage": "swift",
+      "lignes": 113,
+      "taille_bytes": 4286,
+      "entrees": [
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "class",
+        "func",
+        "override"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/CocoaPresentationCoordinator.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/CocoaPresentationCoordinator.swift",
+      "langage": "swift",
+      "lignes": 390,
+      "taille_bytes": 14695,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func body",
+        "func setIsDismissDisabled",
+        "func setViewController",
+        "func update",
+        "public func adaptivePresentationStyle",
+        "public func dismiss",
+        "public func dismissSelf",
+        "public func popoverPresentationController",
+        "public func present",
+        "public func presentationControllerDidAttemptToDismiss",
+        "public func presentationControllerDidDismiss",
+        "public func presentationControllerShouldDismiss",
+        "public func presentationControllerWillDismiss",
+        "struct CocoaPresentationCoordinatorBoxKey",
+        "struct _UseCocoaPresentationCoordinator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/PresentationTransitionPhase.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/PresentationTransitionPhase.swift",
+      "langage": "swift",
+      "lignes": 24,
+      "taille_bytes": 531,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/ModalPresentationStyle.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/ModalPresentationStyle.swift",
+      "langage": "swift",
+      "lignes": 226,
+      "taille_bytes": 6666,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func modalPresentationStyle",
+        "public func toTransitioningDelegate",
+        "struct EnvironmentKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/PresentationManager.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/PresentationManager.swift",
+      "langage": "swift",
+      "lignes": 140,
+      "taille_bytes": 3841,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func dismiss",
+        "public func dismiss",
+        "public func perform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/DynamicViewPresenter.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/DynamicViewPresenter.swift",
+      "langage": "swift",
+      "lignes": 406,
+      "taille_bytes": 13346,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func dismiss",
+        "func dismissSelf",
+        "func present",
+        "public func dismiss",
+        "public func dismissSelf",
+        "public func dismissTopmost",
+        "public func dismissView",
+        "public func present",
+        "public func presentOnTop"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/AlertPresentationLink.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/AlertPresentationLink.swift",
+      "langage": "swift",
+      "lignes": 104,
+      "taille_bytes": 2634,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/PresentationView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/PresentationView.swift",
+      "langage": "swift",
+      "lignes": 32,
+      "taille_bytes": 835,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/_PopoverPresentationPreferences.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/_PopoverPresentationPreferences.swift",
+      "langage": "swift",
+      "lignes": 12,
+      "taille_bytes": 215,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/CocoaPresentationCoordinator.Context.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/CocoaPresentationCoordinator.Context.swift",
+      "langage": "swift",
+      "lignes": 34,
+      "taille_bytes": 931,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct EnvironmentKey",
+        "struct PresentationContext"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/CocoaPresentationMode.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/CocoaPresentationMode.swift",
+      "langage": "swift",
+      "lignes": 40,
+      "taille_bytes": 1016,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func dismiss"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/DynamicViewPresentable.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/DynamicViewPresentable.swift",
+      "langage": "swift",
+      "lignes": 71,
+      "taille_bytes": 1510,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/Popover/Popover.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/Popover/Popover.swift",
+      "langage": "swift",
+      "lignes": 207,
+      "taille_bytes": 5344,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func attachmentAnchor",
+        "public func permittedArrowDirections"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/Popover/CocoaPopover.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/Popover/CocoaPopover.swift",
+      "langage": "swift",
+      "lignes": 153,
+      "taille_bytes": 4515,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class Coordinator",
+        "func adaptivePresentationStyle",
+        "func body",
+        "func makeCoordinator",
+        "func makeUIViewController",
+        "func presentationControllerWillDismiss",
+        "func updateUIViewController",
+        "public func cocoaPopover"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/Link/NavigationPresentationLink.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/Link/NavigationPresentationLink.swift",
+      "langage": "swift",
+      "lignes": 49,
+      "taille_bytes": 1233,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func dismiss"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/Link/PresentationLinkView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/Link/PresentationLinkView.swift",
+      "langage": "swift",
+      "lignes": 64,
+      "taille_bytes": 1698,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/Link/PopoverPresentationLink.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/Link/PopoverPresentationLink.swift",
+      "langage": "swift",
+      "lignes": 100,
+      "taille_bytes": 2837,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/Link/PresentationLink.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/Link/PresentationLink.swift",
+      "langage": "swift",
+      "lignes": 482,
+      "taille_bytes": 15756,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func body",
+        "func reset",
+        "public func onPress",
+        "public func presentationStyle",
+        "struct _AdHocPresenter",
+        "struct _PresentOnPressViewModifier"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/Link/FullScreenCoverLink.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/Link/FullScreenCoverLink.swift",
+      "langage": "swift",
+      "lignes": 47,
+      "taille_bytes": 1219,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/Dismissal/DismissPresentationButton.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/Dismissal/DismissPresentationButton.swift",
+      "langage": "swift",
+      "lignes": 80,
+      "taille_bytes": 2246,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func dismiss"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Presentation/Dismissal/DismissPresentationUnderlay.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Presentation/Dismissal/DismissPresentationUnderlay.swift",
+      "langage": "swift",
+      "lignes": 35,
+      "taille_bytes": 794,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/OptionalDimensions.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/OptionalDimensions.swift",
+      "langage": "swift",
+      "lignes": 316,
+      "taille_bytes": 8816,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func _toOptionalDimensions",
+        "public func _toOptionalDimensions",
+        "public func clamped",
+        "public func drop",
+        "public func frame",
+        "public func preferredMaximumLayoutDimensions",
+        "public func preferredMaximumLayoutHeight",
+        "public func preferredMaximumLayoutWidth",
+        "public func rounded",
+        "public func toAppKitOrUIKitIntrinsicContentSize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/RoundedRhombus.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/RoundedRhombus.swift",
+      "langage": "swift",
+      "lignes": 89,
+      "taille_bytes": 2206,
+      "entrees": [
+        "Swift",
+        "SwiftUI",
+        "point1:"
+      ],
+      "sorties": [
+        "public func path"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/IntrinsicSizeReader.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/IntrinsicSizeReader.swift",
+      "langage": "swift",
+      "lignes": 115,
+      "taille_bytes": 3361,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/RectangleCorner.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/RectangleCorner.swift",
+      "langage": "swift",
+      "lignes": 115,
+      "taille_bytes": 3086,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func flip"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/PartlyRoundedRectangle.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/PartlyRoundedRectangle.swift",
+      "langage": "swift",
+      "lignes": 67,
+      "taille_bytes": 1799,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func cornerRadius",
+        "public func path"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/Axis3D.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/Axis3D.swift",
+      "langage": "swift",
+      "lignes": 86,
+      "taille_bytes": 2606,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func mirror3D",
+        "public func rotation3DEffect"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/FrameReader.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/FrameReader.swift",
+      "langage": "swift",
+      "lignes": 339,
+      "taille_bytes": 11255,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func body",
+        "public func _measureAndRecordSize",
+        "public func frame",
+        "public func intersectionSize",
+        "public func percentageIntersection",
+        "public func size",
+        "struct FrameReaderProxyKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/RoundedHexagon.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/RoundedHexagon.swift",
+      "langage": "swift",
+      "lignes": 62,
+      "taille_bytes": 1784,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func path",
+        "struct Segment"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/Square.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/Square.swift",
+      "langage": "swift",
+      "lignes": 44,
+      "taille_bytes": 1170,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func inset",
+        "public func path"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/_AnchorSourceValue.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/_AnchorSourceValue.swift",
+      "langage": "swift",
+      "lignes": 34,
+      "taille_bytes": 887,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/InitialContentAlignment.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/InitialContentAlignment.swift",
+      "langage": "swift",
+      "lignes": 28,
+      "taille_bytes": 612,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func initialContentAlignment"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/RelativeFrame.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/RelativeFrame.swift",
+      "langage": "swift",
+      "lignes": 251,
+      "taille_bytes": 7019,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func dimensionsThatFit",
+        "func resolve",
+        "func sizeThatFits",
+        "public func _padding",
+        "public func body",
+        "public func dimensionsThatFit",
+        "public func group",
+        "public func id",
+        "public func relativeFrame",
+        "public func value",
+        "struct PreferenceKey",
+        "struct RelativeFrameModifier",
+        "struct ResolvedValuesEnvironmentKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/IntrinsicGeometryReader.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/IntrinsicGeometryReader.swift",
+      "langage": "swift",
+      "lignes": 201,
+      "taille_bytes": 6215,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func _frame",
+        "public func frame"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/HorizontalLine.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/HorizontalLine.swift",
+      "langage": "swift",
+      "lignes": 41,
+      "taille_bytes": 920,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func path"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Geometry/Flip3D.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Geometry/Flip3D.swift",
+      "langage": "swift",
+      "lignes": 39,
+      "taille_bytes": 806,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func body",
+        "public func flip3D"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/App Delegate/_CocoaApplicationDelegateAdaptor.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/App Delegate/_CocoaApplicationDelegateAdaptor.swift",
+      "langage": "swift",
+      "lignes": 135,
+      "taille_bytes": 3897,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func applicationDidFinishLaunching",
+        "public func applicationShouldHandleReopen",
+        "public func applicationWillFinishLaunching",
+        "public func applicationWillHide"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Edit Menu/EditMenuPresenter.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Edit Menu/EditMenuPresenter.swift",
+      "langage": "swift",
+      "lignes": 216,
+      "taille_bytes": 7034,
+      "entrees": [
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "class AppKitOrUIKitViewType",
+        "func body",
+        "func makeAppKitOrUIKitView",
+        "func updateAppKitOrUIKitView",
+        "public func editMenu",
+        "struct _BackgroundPresenterView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Window/WindowOverlay.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Window/WindowOverlay.swift",
+      "langage": "swift",
+      "lignes": 142,
+      "taille_bytes": 4653,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class AppKitOrUIKitViewControllerType",
+        "func makeAppKitOrUIKitViewController",
+        "func updateAppKitOrUIKitViewController",
+        "public func windowOverlay",
+        "struct WindowOverlay"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Window/PresentWindow.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Window/PresentWindow.swift",
+      "langage": "swift",
+      "lignes": 66,
+      "taille_bytes": 1694,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Window/WindowReader.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Window/WindowReader.swift",
+      "langage": "swift",
+      "lignes": 141,
+      "taille_bytes": 3809,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func _macOS_setMaximumLevel",
+        "public func bringToFront",
+        "public func dismiss",
+        "public func moveToBack",
+        "public func orderFrontRegardless",
+        "struct _WindowProxyKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Window/_WindowStyle.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Window/_WindowStyle.swift",
+      "langage": "swift",
+      "lignes": 37,
+      "taille_bytes": 908,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Window/HideTitleBar.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Window/HideTitleBar.swift",
+      "langage": "swift",
+      "lignes": 66,
+      "taille_bytes": 2167,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func body",
+        "public func titleBarHidden"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Window/_WindowPresentationController.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Window/_WindowPresentationController.swift",
+      "langage": "swift",
+      "lignes": 510,
+      "taille_bytes": 14532,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func _update",
+        "public class _AnyWindowPresentationController",
+        "public func _setNeedsUpdate",
+        "public func addWindowController",
+        "public func hide",
+        "public func setPosition",
+        "public func show"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Window/Titlebar/TitlebarConfigurationView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Window/Titlebar/TitlebarConfigurationView.swift",
+      "langage": "swift",
+      "lignes": 155,
+      "taille_bytes": 4493,
+      "entrees": [
+        "AppKit",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func updateToolbar",
+        "public class Coordinator",
+        "public func makeAppKitOrUIKitView",
+        "public func makeCoordinator",
+        "public func toolbar",
+        "public func toolbarAllowedItemIdentifiers",
+        "public func toolbarDefaultItemIdentifiers",
+        "public func toolbarDidRemoveItem",
+        "public func toolbarSelectableItemIdentifiers",
+        "public func toolbarWillAddItem",
+        "public func updateAppKitOrUIKitView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Window/Titlebar/TitlebarItem.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Window/Titlebar/TitlebarItem.swift",
+      "langage": "swift",
+      "lignes": 227,
+      "taille_bytes": 5404,
+      "entrees": [
+        "AppKit",
+        "ObjectiveC",
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "class _ActionTarget",
+        "func toNSToolbarItem",
+        "public func action",
+        "public func bordered",
+        "public func content",
+        "public func label",
+        "public func title",
+        "public func titlebar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Path Control/PathControl.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Path Control/PathControl.swift",
+      "langage": "swift",
+      "lignes": 195,
+      "taille_bytes": 5149,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func toFileURL",
+        "public func makeCoordinator",
+        "public func makeNSView",
+        "public func pathControlStyle",
+        "public func updateNSView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Activity Indicator/ActivityIndicator.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Activity Indicator/ActivityIndicator.swift",
+      "langage": "swift",
+      "lignes": 194,
+      "taille_bytes": 4939,
+      "entrees": [
+        "AppKit",
+        "Cocoa",
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "public func animated",
+        "public func controlSize",
+        "public func makeNSView",
+        "public func makeUIView",
+        "public func style",
+        "public func tintColor",
+        "public func updateNSView",
+        "public func updateUIView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Layout/XStack.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Layout/XStack.swift",
+      "langage": "swift",
+      "lignes": 73,
+      "taille_bytes": 1690,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Layout/AxisStack.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Layout/AxisStack.swift",
+      "langage": "swift",
+      "lignes": 69,
+      "taille_bytes": 1686,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Layout/AutomaticAxisStack.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Layout/AutomaticAxisStack.swift",
+      "langage": "swift",
+      "lignes": 141,
+      "taille_bytes": 4333,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_TextView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_TextView.swift",
+      "langage": "swift",
+      "lignes": 402,
+      "taille_bytes": 13145,
+      "entrees": [
+        "AppKit",
+        "Swift",
+        "SwiftUI",
+        "UIKit",
+        "_SwiftUIX"
+      ],
+      "sorties": [
+        "class Coordinator",
+        "func makeAppKitOrUIKitView",
+        "func makeCoordinator",
+        "func textDidBeginEditing",
+        "func textDidChange",
+        "func textDidEndEditing",
+        "func textView",
+        "func textViewDidBeginEditing",
+        "func textViewDidChange",
+        "func textViewDidEndEditing",
+        "func updateAppKitOrUIKitView",
+        "public func paragraphSpacing",
+        "public func textView",
+        "struct _ParagraphSpacingKey",
+        "struct _TextView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_TextViewConfiguration.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_TextViewConfiguration.swift",
+      "langage": "swift",
+      "lignes": 275,
+      "taille_bytes": 9055,
+      "entrees": [
+        "Swift",
+        "SwiftUI",
+        "_SwiftUIX"
+      ],
+      "sorties": [
+        "public func _currentTextViewData",
+        "public func adjustsFontSizeToFitWidth",
+        "public func lineBreakMode",
+        "public func setDataValue"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_TextViewReader.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_TextViewReader.swift",
+      "langage": "swift",
+      "lignes": 133,
+      "taille_bytes": 3723,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func _withResolveBase",
+        "public func hash"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/TextView-Modifiers.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/TextView-Modifiers.swift",
+      "langage": "swift",
+      "lignes": 242,
+      "taille_bytes": 7131,
+      "entrees": [
+        "AppKit",
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "public func _customAppKitOrUIKitClass",
+        "public func _fixedSize",
+        "public func autocapitalization",
+        "public func automaticQuoteSubstitutionDisabled",
+        "public func dismissKeyboardOnReturn",
+        "public func editable",
+        "public func enablesReturnKeyAutomatically",
+        "public func focused",
+        "public func font",
+        "public func foregroundColor",
+        "public func isInitialFirstResponder",
+        "public func isSelectable",
+        "public func kerning",
+        "public func keyboardType",
+        "public func linkForegroundColor",
+        "public func onDeleteBackward",
+        "public func placeholderColor",
+        "public func returnKeyType",
+        "public func textContainerInset",
+        "public func textContentType",
+        "public func tint"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/TextView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/TextView.swift",
+      "langage": "swift",
+      "lignes": 224,
+      "taille_bytes": 6494,
+      "entrees": [
+        "AppKit",
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "public func isEditable",
+        "public func isFirstResponder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_PlatformTextView-UIKit.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_PlatformTextView-UIKit.swift",
+      "langage": "swift",
+      "lignes": 226,
+      "taille_bytes": 8988,
+      "entrees": [
+        "Foundation",
+        "SwiftUI",
+        "UIKit",
+        "_SwiftUIX"
+      ],
+      "sorties": [
+        "func _sizeThatFits",
+        "func attributedStringAttributes",
+        "func verticallyCenterTextIfNecessary"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_TextField_KeyboardType.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_TextField_KeyboardType.swift",
+      "langage": "swift",
+      "lignes": 91,
+      "taille_bytes": 2263,
+      "entrees": [
+        "AppKit",
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "public func keyboardType",
+        "struct _TextField_KeyboardTypeKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_PlatformTextView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_PlatformTextView.swift",
+      "langage": "swift",
+      "lignes": 843,
+      "taille_bytes": 26940,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI",
+        "_SwiftUIX",
+        "availableTypes:",
+        "class",
+        "func",
+        "override",
+        "var"
+      ],
+      "sorties": [
+        "func _SwiftUIX_makeLayoutManager",
+        "func _ensureLayoutForTextContainer",
+        "func _publishTextEditorEvent",
+        "func _setUpAnyPlatformTextView",
+        "func representableDidUpdate",
+        "func representableWillAssemble",
+        "public func conversationContext"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_TextView-Sizing.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_TextView-Sizing.swift",
+      "langage": "swift",
+      "lignes": 276,
+      "taille_bytes": 9545,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI",
+        "_SwiftUIX"
+      ],
+      "sorties": [
+        "func _sizeThatFits",
+        "func _sizeThatFitsWidth",
+        "public func sizeThatFits"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/CocoaTextField.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/CocoaTextField.swift",
+      "langage": "swift",
+      "lignes": 662,
+      "taille_bytes": 23179,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class Coordinator",
+        "func makeCoordinator",
+        "func makeUIView",
+        "func textField",
+        "func textFieldDidBeginEditing",
+        "func textFieldDidChangeSelection",
+        "func textFieldDidEndEditing",
+        "func textFieldShouldReturn",
+        "func updateUIView",
+        "public func autocapitalization",
+        "public func borderStyle",
+        "public func clearButtonImage",
+        "public func clearButtonMode",
+        "public func dismissKeyboardOnReturn",
+        "public func enablesReturnKeyAutomatically",
+        "public func focusRingType",
+        "public func focused",
+        "public func font",
+        "public func foregroundColor",
+        "public func inputAccessoryView",
+        "public func inputAssistantDisabled",
+        "public func inputView",
+        "public func isFirstResponder",
+        "public func isInitialFirstResponder",
+        "public func kerning",
+        "public func keyboardType",
+        "public func onCharactersChange",
+        "public func onDeleteBackward",
+        "public func placeholder",
+        "public func returnKeyType",
+        "public func secureTextEntry",
+        "public func smartDashesType",
+        "public func smartQuotesType",
+        "public func spellCheckingType",
+        "public func textColor",
+        "public func textContentType",
+        "struct _Configuration"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_ObservableTextCursor.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_ObservableTextCursor.swift",
+      "langage": "swift",
+      "lignes": 263,
+      "taille_bytes": 7919,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func _lineIndexForCharacterAt",
+        "public func update"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/TextViewDataBinding.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/TextViewDataBinding.swift",
+      "langage": "swift",
+      "lignes": 200,
+      "taille_bytes": 7075,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func toAttributedString"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_PlatformTextView+Auxiliary.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_PlatformTextView+Auxiliary.swift",
+      "langage": "swift",
+      "lignes": 110,
+      "taille_bytes": 3059,
+      "entrees": [
+        "SwiftUI",
+        "_SwiftUIX"
+      ],
+      "sorties": [
+        "func _SwiftUIX_replaceTextStorage",
+        "public func _ensureLayoutForTextContainer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/EditableText.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/EditableText.swift",
+      "langage": "swift",
+      "lignes": 341,
+      "taille_bytes": 9236,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func lineLimit",
+        "public func onSubmit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/AttributedText.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/AttributedText.swift",
+      "langage": "swift",
+      "lignes": 134,
+      "taille_bytes": 4819,
+      "entrees": [
+        "Dispatch",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func configure",
+        "public func font",
+        "public func foregroundColor",
+        "public func makeAppKitOrUIKitView",
+        "public func updateAppKitOrUIKitView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_AnyTextView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_AnyTextView.swift",
+      "langage": "swift",
+      "lignes": 79,
+      "taille_bytes": 2281,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI",
+        "_SwiftUIX"
+      ],
+      "sorties": [
+        "func provideClass",
+        "struct _ConstantCustomAppKitOrUIKitClassProvider"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Text/_PlatformTextView-AppKit.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Text/_PlatformTextView-AppKit.swift",
+      "langage": "swift",
+      "lignes": 239,
+      "taille_bytes": 9234,
+      "entrees": [
+        "AppKit",
+        "SwiftUI",
+        "_SwiftUIX"
+      ],
+      "sorties": [
+        "func setLineSpacing"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Scroll View/CocoaScrollViewReader.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Scroll View/CocoaScrollViewReader.swift",
+      "langage": "swift",
+      "lignes": 75,
+      "taille_bytes": 2161,
+      "entrees": [
+        "Foundation",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func scrollTo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Scroll View/CocoaScrollViewConfiguration.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Scroll View/CocoaScrollViewConfiguration.swift",
+      "langage": "swift",
+      "lignes": 119,
+      "taille_bytes": 4024,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct _ScrollViewConfiguration"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Scroll View/CocoaScrollView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Scroll View/CocoaScrollView.swift",
+      "langage": "swift",
+      "lignes": 159,
+      "taille_bytes": 5065,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func populateScrollViewProxy",
+        "public func alwaysBounceHorizontal",
+        "public func alwaysBounceVertical",
+        "public func contentInsets",
+        "public func contentOffset",
+        "public func decelerationRate",
+        "public func isPagingEnabled",
+        "public func isRefreshing",
+        "public func makeUIView",
+        "public func onDragEnd",
+        "public func onOffsetChange",
+        "public func onRefresh",
+        "public func refreshControlTintColor",
+        "public func scrollBounceDisabled",
+        "public func scrollContentOffsetBehavior",
+        "public func updateUIView",
+        "struct _CocoaScrollViewPage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Scroll View/ScrollIndicatorStyle.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Scroll View/ScrollIndicatorStyle.swift",
+      "langage": "swift",
+      "lignes": 81,
+      "taille_bytes": 2584,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func hash",
+        "public func scrollIndicatorStyle"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Scroll View/EnvironmentValues+ScrollView.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Scroll View/EnvironmentValues+ScrollView.swift",
+      "langage": "swift",
+      "lignes": 101,
+      "taille_bytes": 3260,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func contentInsetAdjustmentBehavior",
+        "public func isScrollEnabled",
+        "public func keyboardDismissMode",
+        "public func scrollDisabled"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Scroll View/ScrollView.ContentOffset.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Scroll View/ScrollView.ContentOffset.swift",
+      "langage": "swift",
+      "lignes": 197,
+      "taille_bytes": 5958,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func contentOffset",
+        "func setContentAlignment",
+        "func setContentOffset",
+        "public func fractionalValue",
+        "public func hash",
+        "public func value"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Scroll View/Internal/AppKit+CocoaScrollView.Configuration.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Scroll View/Internal/AppKit+CocoaScrollView.Configuration.swift",
+      "langage": "swift",
+      "lignes": 22,
+      "taille_bytes": 622,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func configure"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Scroll View/Internal/UIKit+CocoaScrollView.Configuration.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Scroll View/Internal/UIKit+CocoaScrollView.Configuration.swift",
+      "langage": "swift",
+      "lignes": 225,
+      "taille_bytes": 8054,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func beginRefreshingWithoutUserInput",
+        "func configure",
+        "func performEnforcingScrollOffsetBehavior"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Scroll View/Internal/_AppKitOrUIKitHostingScrollViewType.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Scroll View/Internal/_AppKitOrUIKitHostingScrollViewType.swift",
+      "langage": "swift",
+      "lignes": 126,
+      "taille_bytes": 3707,
+      "entrees": [
+        "Foundation",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func scrollTo",
+        "public func scrollTo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Menu Bar/MenuBarItem.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Menu Bar/MenuBarItem.swift",
+      "langage": "swift",
+      "lignes": 204,
+      "taille_bytes": 5308,
+      "entrees": [
+        "AppKit",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func hash",
+        "public func menuBarItem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Menu Bar/NSStatusItem+_CocoaMenuBarExtraCoordinator.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Menu Bar/NSStatusItem+_CocoaMenuBarExtraCoordinator.swift",
+      "langage": "swift",
+      "lignes": 99,
+      "taille_bytes": 3447,
+      "entrees": [
+        "AppKit",
+        "SwiftUI",
+        "item:"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Menu Bar/_AppPhaseMonitor.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Menu Bar/_AppPhaseMonitor.swift",
+      "langage": "swift",
+      "lignes": 89,
+      "taille_bytes": 2390,
+      "entrees": [
+        "SwiftUI",
+        "override"
+      ],
+      "sorties": [
+        "public class _AppPhaseMonitor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Menu Bar/_CocoaMenuBarExtraCoordinator.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Menu Bar/_CocoaMenuBarExtraCoordinator.swift",
+      "langage": "swift",
+      "lignes": 315,
+      "taille_bytes": 8588,
+      "entrees": [
+        "AppKit",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func _update",
+        "func body",
+        "public class _AnyCocoaMenuBarExtraCoordinator",
+        "public class _CocoaMenuBarExtraCoordinator",
+        "struct InsertMenuBarPopover"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Images/ImagePicker.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Images/ImagePicker.swift",
+      "langage": "swift",
+      "lignes": 253,
+      "taille_bytes": 8448,
+      "entrees": [
+        "SwiftUI",
+        "encoding:"
+      ],
+      "sorties": [
+        "func _fixOrientation",
+        "public class Coordinator",
+        "public func allowsEditing",
+        "public func cameraDevice",
+        "public func data",
+        "public func imagePickerController",
+        "public func imagePickerControllerDidCancel",
+        "public func makeCoordinator",
+        "public func makeUIViewController",
+        "public func mediaTypes",
+        "public func sourceType",
+        "public func updateUIViewController"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Images/_SwiftUI_ImageProvider.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Images/_SwiftUI_ImageProvider.swift",
+      "langage": "swift",
+      "lignes": 144,
+      "taille_bytes": 5443,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func resolved",
+        "public func _toAppKitOrUIKitImage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Images/_AnyImage.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Images/_AnyImage.swift",
+      "langage": "swift",
+      "lignes": 370,
+      "taille_bytes": 10633,
+      "entrees": [
+        "CoreImage",
+        "Foundation",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "enum ImageNameType",
+        "public func _preferredSize",
+        "public func encode",
+        "public func resizable",
+        "struct _CodableRepresentation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Screen/UserInterfaceOrientation.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Screen/UserInterfaceOrientation.swift",
+      "langage": "swift",
+      "lignes": 116,
+      "taille_bytes": 2988,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Screen/_CoordinateSpaceRelative.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Screen/_CoordinateSpaceRelative.swift",
+      "langage": "swift",
+      "lignes": 184,
+      "taille_bytes": 4852,
+      "entrees": [
+        "AppKit",
+        "Combine",
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "public func first",
+        "public func hash",
+        "public func offset"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Screen/UserInterfaceIdiom.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Screen/UserInterfaceIdiom.swift",
+      "langage": "swift",
+      "lignes": 93,
+      "taille_bytes": 2271,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func hidden",
+        "public func remove"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Screen/OrientationLock.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Screen/OrientationLock.swift",
+      "langage": "swift",
+      "lignes": 76,
+      "taille_bytes": 2376,
+      "entrees": [
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class UIViewControllerType",
+        "func makeUIViewController",
+        "func updateUIViewController",
+        "public func supportedInterfaceOrientations"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Screen/PopoverAttachmentTarget.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Screen/PopoverAttachmentTarget.swift",
+      "langage": "swift",
+      "lignes": 82,
+      "taille_bytes": 1945,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Screen/Screen.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Screen/Screen.swift",
+      "langage": "swift",
+      "lignes": 164,
+      "taille_bytes": 3834,
+      "entrees": [
+        "AppKit",
+        "Combine",
+        "Swift",
+        "SwiftUI",
+        "UIKit"
+      ],
+      "sorties": [
+        "public class Screen",
+        "public func hash"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Screen/_ScreenOrCoordinateSpace.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Screen/_ScreenOrCoordinateSpace.swift",
+      "langage": "swift",
+      "lignes": 44,
+      "taille_bytes": 974,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Dynamic Properties/ObservedObject.Optional.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Dynamic Properties/ObservedObject.Optional.swift",
+      "langage": "swift",
+      "lignes": 40,
+      "taille_bytes": 1243,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Dynamic Properties/StateOrBinding.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Dynamic Properties/StateOrBinding.swift",
+      "langage": "swift",
+      "lignes": 131,
+      "taille_bytes": 3675,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "enum Storage",
+        "public class _DetachedValueBox",
+        "public func hash"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Dynamic Properties/_SwiftUIX_RenderIgnored.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Dynamic Properties/_SwiftUIX_RenderIgnored.swift",
+      "langage": "swift",
+      "lignes": 50,
+      "taille_bytes": 1255,
+      "entrees": [
+        "Combine",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "public func hash"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftUIX/Intramodular/Dynamic Properties/ObservedPublisher.swift": {
+      "fichier": "Sources/SwiftUIX/Intramodular/Dynamic Properties/ObservedPublisher.swift",
+      "langage": "swift",
+      "lignes": 43,
+      "taille_bytes": 1325,
+      "entrees": [
+        "Combine",
+        "Swift",
+        "SwiftUI"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

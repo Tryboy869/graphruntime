@@ -1,0 +1,1561 @@
+{
+  "meta": {
+    "projet": "grape",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 5,
+      "ruby": 114,
+      "json": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".rubocop_todo.yml"
+  },
+  "noeuds": {
+    ".rubocop_todo.yml": {
+      "fichier": ".rubocop_todo.yml",
+      "langage": "yaml",
+      "lignes": 160,
+      "taille_bytes": 5182,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docker-compose.yml": {
+      "fichier": "docker-compose.yml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 257,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".rubocop.yml": {
+      "fichier": ".rubocop.yml",
+      "langage": "yaml",
+      "lignes": 89,
+      "taille_bytes": 1312,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".coveralls.yml": {
+      "fichier": ".coveralls.yml",
+      "langage": "yaml",
+      "lignes": 1,
+      "taille_bytes": 21,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/nested_params.rb": {
+      "fichier": "benchmark/nested_params.rb",
+      "langage": "ruby",
+      "lignes": 44,
+      "taille_bytes": 779,
+      "entrees": [],
+      "sorties": [
+        "class API"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/remounting.rb": {
+      "fichier": "benchmark/remounting.rb",
+      "langage": "ruby",
+      "lignes": 49,
+      "taille_bytes": 958,
+      "entrees": [],
+      "sorties": [
+        "class CommentAPI",
+        "class PostApi",
+        "class VotingApi",
+        "def logger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/compile_many_routes.rb": {
+      "fichier": "benchmark/compile_many_routes.rb",
+      "langage": "ruby",
+      "lignes": 22,
+      "taille_bytes": 382,
+      "entrees": [],
+      "sorties": [
+        "class API"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/issue_mounting.rb": {
+      "fichier": "benchmark/issue_mounting.rb",
+      "langage": "ruby",
+      "lignes": 36,
+      "taille_bytes": 658,
+      "entrees": [
+        "Rack::Test::Methods"
+      ],
+      "sorties": [
+        "class GrapeAPIBugTest",
+        "def test_v1_users_via_api"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/large_model.rb": {
+      "fichier": "benchmark/large_model.rb",
+      "langage": "ruby",
+      "lignes": 249,
+      "taille_bytes": 8906,
+      "entrees": [],
+      "sorties": [
+        "class API"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/simple.rb": {
+      "fichier": "benchmark/simple.rb",
+      "langage": "ruby",
+      "lignes": 29,
+      "taille_bytes": 459,
+      "entrees": [],
+      "sorties": [
+        "class API"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/resource/vrp_example.json": {
+      "fichier": "benchmark/resource/vrp_example.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 499023,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/spec_helper.rb": {
+      "fichier": "spec/spec_helper.rb",
+      "langage": "ruby",
+      "lignes": 34,
+      "taille_bytes": 998,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/content_types_spec.rb": {
+      "fichier": "spec/grape/content_types_spec.rb",
+      "langage": "ruby",
+      "lignes": 78,
+      "taille_bytes": 1928,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations_spec.rb": {
+      "fichier": "spec/grape/validations_spec.rb",
+      "langage": "ruby",
+      "lignes": 2124,
+      "taille_bytes": 72897,
+      "entrees": [
+        ":order",
+        ":pagination",
+        ":shared_params"
+      ],
+      "sorties": [
+        "def define_optional_using",
+        "def define_requires_all",
+        "def define_requires_none",
+        "def validate_param"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/router_spec.rb": {
+      "fichier": "spec/grape/router_spec.rb",
+      "langage": "ruby",
+      "lignes": 57,
+      "taille_bytes": 1279,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/request_spec.rb": {
+      "fichier": "spec/grape/request_spec.rb",
+      "langage": "ruby",
+      "lignes": 186,
+      "taille_bytes": 5511,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/parser_spec.rb": {
+      "fichier": "spec/grape/parser_spec.rb",
+      "langage": "ruby",
+      "lignes": 29,
+      "taille_bytes": 696,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/path_spec.rb": {
+      "fichier": "spec/grape/path_spec.rb",
+      "langage": "ruby",
+      "lignes": 90,
+      "taille_bytes": 2574,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/endpoint_spec.rb": {
+      "fichier": "spec/grape/endpoint_spec.rb",
+      "langage": "ruby",
+      "lignes": 1132,
+      "taille_bytes": 36695,
+      "entrees": [],
+      "sorties": [
+        "def app",
+        "def handle_argument_error",
+        "def memoized"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api_remount_spec.rb": {
+      "fichier": "spec/grape/api_remount_spec.rb",
+      "langage": "ruby",
+      "lignes": 569,
+      "taille_bytes": 18089,
+      "entrees": [],
+      "sorties": [
+        "def printed_response"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api_spec.rb": {
+      "fichier": "spec/grape/api_spec.rb",
+      "langage": "ruby",
+      "lignes": 4730,
+      "taille_bytes": 131076,
+      "entrees": [
+        ":unique_id",
+        "example.phony_middleware",
+        "module_to_include",
+        "shared"
+      ],
+      "sorties": [
+        "def authorize",
+        "def before",
+        "def call",
+        "def custom_error",
+        "def foo",
+        "def generic",
+        "def hello",
+        "def inherited",
+        "def initialize",
+        "def my_method",
+        "def one",
+        "def rescue_all_errors",
+        "def rescue_arg_error",
+        "def rescue_no_method_error",
+        "def secret",
+        "def serializable_hash",
+        "def some_helper",
+        "def subject",
+        "def three",
+        "def to_json",
+        "def to_txt",
+        "def two",
+        "def uniqe_id_route"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/loading_spec.rb": {
+      "fichier": "spec/grape/loading_spec.rb",
+      "langage": "ruby",
+      "lignes": 47,
+      "taille_bytes": 823,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/named_api_spec.rb": {
+      "fichier": "spec/grape/named_api_spec.rb",
+      "langage": "ruby",
+      "lignes": 21,
+      "taille_bytes": 379,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/deeply_included_options_spec.rb": {
+      "fichier": "spec/grape/api/deeply_included_options_spec.rb",
+      "langage": "ruby",
+      "lignes": 58,
+      "taille_bytes": 1164,
+      "entrees": [
+        "deep_included_options_default",
+        "deeply_included_options"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/required_parameters_with_invalid_method_spec.rb": {
+      "fichier": "spec/grape/api/required_parameters_with_invalid_method_spec.rb",
+      "langage": "ruby",
+      "lignes": 26,
+      "taille_bytes": 397,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/recognize_path_spec.rb": {
+      "fichier": "spec/grape/api/recognize_path_spec.rb",
+      "langage": "ruby",
+      "lignes": 76,
+      "taille_bytes": 2424,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/inherited_helpers_spec.rb": {
+      "fichier": "spec/grape/api/inherited_helpers_spec.rb",
+      "langage": "ruby",
+      "lignes": 112,
+      "taille_bytes": 2497,
+      "entrees": [],
+      "sorties": [
+        "def app",
+        "def current_user"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/mount_and_helpers_order_spec.rb": {
+      "fichier": "spec/grape/api/mount_and_helpers_order_spec.rb",
+      "langage": "ruby",
+      "lignes": 210,
+      "taille_bytes": 4863,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/optional_parameters_in_route_spec.rb": {
+      "fichier": "spec/grape/api/optional_parameters_in_route_spec.rb",
+      "langage": "ruby",
+      "lignes": 43,
+      "taille_bytes": 827,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/shared_helpers_exactly_one_of_spec.rb": {
+      "fichier": "spec/grape/api/shared_helpers_exactly_one_of_spec.rb",
+      "langage": "ruby",
+      "lignes": 41,
+      "taille_bytes": 1075,
+      "entrees": [
+        ":drink"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/documentation_spec.rb": {
+      "fichier": "spec/grape/api/documentation_spec.rb",
+      "langage": "ruby",
+      "lignes": 57,
+      "taille_bytes": 1487,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/namespace_parameters_in_route_spec.rb": {
+      "fichier": "spec/grape/api/namespace_parameters_in_route_spec.rb",
+      "langage": "ruby",
+      "lignes": 38,
+      "taille_bytes": 670,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/parameters_modification_spec.rb": {
+      "fichier": "spec/grape/api/parameters_modification_spec.rb",
+      "langage": "ruby",
+      "lignes": 41,
+      "taille_bytes": 895,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/nested_helpers_spec.rb": {
+      "fichier": "spec/grape/api/nested_helpers_spec.rb",
+      "langage": "ruby",
+      "lignes": 53,
+      "taille_bytes": 998,
+      "entrees": [],
+      "sorties": [
+        "def app",
+        "def current_user"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/required_parameters_in_route_spec.rb": {
+      "fichier": "spec/grape/api/required_parameters_in_route_spec.rb",
+      "langage": "ruby",
+      "lignes": 37,
+      "taille_bytes": 670,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/routes_with_requirements_spec.rb": {
+      "fichier": "spec/grape/api/routes_with_requirements_spec.rb",
+      "langage": "ruby",
+      "lignes": 59,
+      "taille_bytes": 2080,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/mount_and_rescue_from_spec.rb": {
+      "fichier": "spec/grape/api/mount_and_rescue_from_spec.rb",
+      "langage": "ruby",
+      "lignes": 91,
+      "taille_bytes": 2406,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/custom_validations_spec.rb": {
+      "fichier": "spec/grape/api/custom_validations_spec.rb",
+      "langage": "ruby",
+      "lignes": 254,
+      "taille_bytes": 7495,
+      "entrees": [],
+      "sorties": [
+        "def access_header",
+        "def validate",
+        "def validate_param"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/patch_method_helpers_spec.rb": {
+      "fichier": "spec/grape/api/patch_method_helpers_spec.rb",
+      "langage": "ruby",
+      "lignes": 86,
+      "taille_bytes": 1850,
+      "entrees": [],
+      "sorties": [
+        "def app",
+        "def authenticate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/mounted_helpers_inheritance_spec.rb": {
+      "fichier": "spec/grape/api/mounted_helpers_inheritance_spec.rb",
+      "langage": "ruby",
+      "lignes": 36,
+      "taille_bytes": 748,
+      "entrees": [],
+      "sorties": [
+        "def app",
+        "def parent_helper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/instance_spec.rb": {
+      "fichier": "spec/grape/api/instance_spec.rb",
+      "langage": "ruby",
+      "lignes": 97,
+      "taille_bytes": 2288,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/shared_helpers_spec.rb": {
+      "fichier": "spec/grape/api/shared_helpers_spec.rb",
+      "langage": "ruby",
+      "lignes": 36,
+      "taille_bytes": 674,
+      "entrees": [
+        ":pagination"
+      ],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/invalid_format_spec.rb": {
+      "fichier": "spec/grape/api/invalid_format_spec.rb",
+      "langage": "ruby",
+      "lignes": 45,
+      "taille_bytes": 998,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/api/defines_boolean_in_params_spec.rb": {
+      "fichier": "spec/grape/api/defines_boolean_in_params_spec.rb",
+      "langage": "ruby",
+      "lignes": 26,
+      "taille_bytes": 624,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/invalid_formatter_spec.rb": {
+      "fichier": "spec/grape/exceptions/invalid_formatter_spec.rb",
+      "langage": "ruby",
+      "lignes": 15,
+      "taille_bytes": 326,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/validation_errors_spec.rb": {
+      "fichier": "spec/grape/exceptions/validation_errors_spec.rb",
+      "langage": "ruby",
+      "lignes": 90,
+      "taille_bytes": 2670,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/body_parse_errors_spec.rb": {
+      "fichier": "spec/grape/exceptions/body_parse_errors_spec.rb",
+      "langage": "ruby",
+      "lignes": 185,
+      "taille_bytes": 5475,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/invalid_versioner_option_spec.rb": {
+      "fichier": "spec/grape/exceptions/invalid_versioner_option_spec.rb",
+      "langage": "ruby",
+      "lignes": 15,
+      "taille_bytes": 337,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/unsupported_group_type_spec.rb": {
+      "fichier": "spec/grape/exceptions/unsupported_group_type_spec.rb",
+      "langage": "ruby",
+      "lignes": 11,
+      "taille_bytes": 292,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/invalid_response_spec.rb": {
+      "fichier": "spec/grape/exceptions/invalid_response_spec.rb",
+      "langage": "ruby",
+      "lignes": 11,
+      "taille_bytes": 269,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/invalid_accept_header_spec.rb": {
+      "fichier": "spec/grape/exceptions/invalid_accept_header_spec.rb",
+      "langage": "ruby",
+      "lignes": 358,
+      "taille_bytes": 10543,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/missing_mime_type_spec.rb": {
+      "fichier": "spec/grape/exceptions/missing_mime_type_spec.rb",
+      "langage": "ruby",
+      "lignes": 17,
+      "taille_bytes": 477,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/validation_spec.rb": {
+      "fichier": "spec/grape/exceptions/validation_spec.rb",
+      "langage": "ruby",
+      "lignes": 19,
+      "taille_bytes": 614,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/base_spec.rb": {
+      "fichier": "spec/grape/exceptions/base_spec.rb",
+      "langage": "ruby",
+      "lignes": 81,
+      "taille_bytes": 2179,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/unknown_validator_spec.rb": {
+      "fichier": "spec/grape/exceptions/unknown_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 15,
+      "taille_bytes": 316,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/exceptions/missing_group_type_spec.rb": {
+      "fichier": "spec/grape/exceptions/missing_group_type_spec.rb",
+      "langage": "ruby",
+      "lignes": 9,
+      "taille_bytes": 224,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/formatter_spec.rb": {
+      "fichier": "spec/grape/middleware/formatter_spec.rb",
+      "langage": "ruby",
+      "lignes": 491,
+      "taille_bytes": 18005,
+      "entrees": [],
+      "sorties": [
+        "def to_json",
+        "def to_xml"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/exception_spec.rb": {
+      "fichier": "spec/grape/middleware/exception_spec.rb",
+      "langage": "ruby",
+      "lignes": 275,
+      "taille_bytes": 7337,
+      "entrees": [
+        "Grape::Middleware::Error",
+        "Rack::Lint",
+        "Spec::Support::EndpointFaker"
+      ],
+      "sorties": [
+        "def call",
+        "def error"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/error_spec.rb": {
+      "fichier": "spec/grape/middleware/error_spec.rb",
+      "langage": "ruby",
+      "lignes": 77,
+      "taille_bytes": 1736,
+      "entrees": [
+        "Grape::Middleware::Error",
+        "Spec::Support::EndpointFaker"
+      ],
+      "sorties": [
+        "def call",
+        "def static"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/versioner_spec.rb": {
+      "fichier": "spec/grape/middleware/versioner_spec.rb",
+      "langage": "ruby",
+      "lignes": 37,
+      "taille_bytes": 943,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/globals_spec.rb": {
+      "fichier": "spec/grape/middleware/globals_spec.rb",
+      "langage": "ruby",
+      "lignes": 30,
+      "taille_bytes": 918,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/base_spec.rb": {
+      "fichier": "spec/grape/middleware/base_spec.rb",
+      "langage": "ruby",
+      "lignes": 256,
+      "taille_bytes": 6345,
+      "entrees": [
+        "context.dummy_middleware",
+        "context.example_ware"
+      ],
+      "sorties": [
+        "def after",
+        "def before"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/stack_spec.rb": {
+      "fichier": "spec/grape/middleware/stack_spec.rb",
+      "langage": "ruby",
+      "lignes": 154,
+      "taille_bytes": 5145,
+      "entrees": [],
+      "sorties": [
+        "def initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/auth/dsl_spec.rb": {
+      "fichier": "spec/grape/middleware/auth/dsl_spec.rb",
+      "langage": "ruby",
+      "lignes": 60,
+      "taille_bytes": 2105,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/auth/strategies_spec.rb": {
+      "fichier": "spec/grape/middleware/auth/strategies_spec.rb",
+      "langage": "ruby",
+      "lignes": 45,
+      "taille_bytes": 1371,
+      "entrees": [
+        "Grape::Middleware::Auth::Base",
+        "Grape::Middleware::Error"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/auth/base_spec.rb": {
+      "fichier": "spec/grape/middleware/auth/base_spec.rb",
+      "langage": "ruby",
+      "lignes": 27,
+      "taille_bytes": 732,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/versioner/header_spec.rb": {
+      "fichier": "spec/grape/middleware/versioner/header_spec.rb",
+      "langage": "ruby",
+      "lignes": 345,
+      "taille_bytes": 11949,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/versioner/path_spec.rb": {
+      "fichier": "spec/grape/middleware/versioner/path_spec.rb",
+      "langage": "ruby",
+      "lignes": 62,
+      "taille_bytes": 1997,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/versioner/accept_version_header_spec.rb": {
+      "fichier": "spec/grape/middleware/versioner/accept_version_header_spec.rb",
+      "langage": "ruby",
+      "lignes": 134,
+      "taille_bytes": 3603,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/middleware/versioner/param_spec.rb": {
+      "fichier": "spec/grape/middleware/versioner/param_spec.rb",
+      "langage": "ruby",
+      "lignes": 171,
+      "taille_bytes": 5370,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/presenters/presenter_spec.rb": {
+      "fichier": "spec/grape/presenters/presenter_spec.rb",
+      "langage": "ruby",
+      "lignes": 67,
+      "taille_bytes": 1427,
+      "entrees": [
+        "Grape::DSL::InsideRoute"
+      ],
+      "sorties": [
+        "def initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/util/inheritable_values_spec.rb": {
+      "fichier": "spec/grape/util/inheritable_values_spec.rb",
+      "langage": "ruby",
+      "lignes": 75,
+      "taille_bytes": 1970,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/util/media_type_spec.rb": {
+      "fichier": "spec/grape/util/media_type_spec.rb",
+      "langage": "ruby",
+      "lignes": 118,
+      "taille_bytes": 3198,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/util/inheritable_setting_spec.rb": {
+      "fichier": "spec/grape/util/inheritable_setting_spec.rb",
+      "langage": "ruby",
+      "lignes": 236,
+      "taille_bytes": 9258,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/util/registry_spec.rb": {
+      "fichier": "spec/grape/util/registry_spec.rb",
+      "langage": "ruby",
+      "lignes": 186,
+      "taille_bytes": 5254,
+      "entrees": [
+        "Grape::Util::Registry"
+      ],
+      "sorties": [
+        "def registry_empty",
+        "def registry_get"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/util/stackable_values_spec.rb": {
+      "fichier": "spec/grape/util/stackable_values_spec.rb",
+      "langage": "ruby",
+      "lignes": 124,
+      "taille_bytes": 3508,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/util/reverse_stackable_values_spec.rb": {
+      "fichier": "spec/grape/util/reverse_stackable_values_spec.rb",
+      "langage": "ruby",
+      "lignes": 130,
+      "taille_bytes": 3578,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/param_scope_tracker_spec.rb": {
+      "fichier": "spec/grape/validations/param_scope_tracker_spec.rb",
+      "langage": "ruby",
+      "lignes": 121,
+      "taille_bytes": 3940,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/types_spec.rb": {
+      "fichier": "spec/grape/validations/types_spec.rb",
+      "langage": "ruby",
+      "lignes": 101,
+      "taille_bytes": 2549,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/params_documentation_spec.rb": {
+      "fichier": "spec/grape/validations/params_documentation_spec.rb",
+      "langage": "ruby",
+      "lignes": 126,
+      "taille_bytes": 3649,
+      "entrees": [
+        "Grape::DSL::Settings",
+        "Grape::Validations::ParamsDocumentation"
+      ],
+      "sorties": [
+        "def full_name",
+        "def initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/single_attribute_iterator_spec.rb": {
+      "fichier": "spec/grape/validations/single_attribute_iterator_spec.rb",
+      "langage": "ruby",
+      "lignes": 56,
+      "taille_bytes": 1914,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/multiple_attributes_iterator_spec.rb": {
+      "fichier": "spec/grape/validations/multiple_attributes_iterator_spec.rb",
+      "langage": "ruby",
+      "lignes": 38,
+      "taille_bytes": 1206,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/params_scope_spec.rb": {
+      "fichier": "spec/grape/validations/params_scope_spec.rb",
+      "langage": "ruby",
+      "lignes": 1698,
+      "taille_bytes": 51740,
+      "entrees": [],
+      "sorties": [
+        "def app",
+        "def initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/types/set_coercer_spec.rb": {
+      "fichier": "spec/grape/validations/types/set_coercer_spec.rb",
+      "langage": "ruby",
+      "lignes": 32,
+      "taille_bytes": 871,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/types/array_coercer_spec.rb": {
+      "fichier": "spec/grape/validations/types/array_coercer_spec.rb",
+      "langage": "ruby",
+      "lignes": 33,
+      "taille_bytes": 907,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/types/primitive_coercer_spec.rb": {
+      "fichier": "spec/grape/validations/types/primitive_coercer_spec.rb",
+      "langage": "ruby",
+      "lignes": 150,
+      "taille_bytes": 3715,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/zh-CN.yml": {
+      "fichier": "spec/grape/validations/validators/zh-CN.yml",
+      "langage": "yaml",
+      "lignes": 10,
+      "taille_bytes": 222,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/regexp_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/regexp_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 180,
+      "taille_bytes": 5203,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/mutually_exclusive_spec.rb": {
+      "fichier": "spec/grape/validations/validators/mutually_exclusive_spec.rb",
+      "langage": "ruby",
+      "lignes": 214,
+      "taille_bytes": 6331,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/except_values_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/except_values_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 194,
+      "taille_bytes": 7758,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/contract_scope_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/contract_scope_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 9,
+      "taille_bytes": 235,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/values_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/values_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 628,
+      "taille_bytes": 19333,
+      "entrees": [],
+      "sorties": [
+        "def add_except",
+        "def add_value",
+        "def app",
+        "def default_excepts",
+        "def default_values",
+        "def even",
+        "def excepts",
+        "def include",
+        "def values"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/at_least_one_of_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/at_least_one_of_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 205,
+      "taille_bytes": 6051,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/presence_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/presence_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 313,
+      "taille_bytes": 9077,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/coerce_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/coerce_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 1189,
+      "taille_bytes": 36963,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/default_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/default_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 489,
+      "taille_bytes": 15820,
+      "entrees": [],
+      "sorties": [
+        "def app"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/length_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/length_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 369,
+      "taille_bytes": 9794,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/allow_blank_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/allow_blank_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 594,
+      "taille_bytes": 18421,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/same_as_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/same_as_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 57,
+      "taille_bytes": 1559,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/exactly_one_of_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/exactly_one_of_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 233,
+      "taille_bytes": 6640,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/validations/validators/all_or_none_validator_spec.rb": {
+      "fichier": "spec/grape/validations/validators/all_or_none_validator_spec.rb",
+      "langage": "ruby",
+      "lignes": 162,
+      "taille_bytes": 4645,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/endpoint/declared_spec.rb": {
+      "fichier": "spec/grape/endpoint/declared_spec.rb",
+      "langage": "ruby",
+      "lignes": 882,
+      "taille_bytes": 26941,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/integration/global_namespace_function_spec.rb": {
+      "fichier": "spec/grape/integration/global_namespace_function_spec.rb",
+      "langage": "ruby",
+      "lignes": 29,
+      "taille_bytes": 428,
+      "entrees": [],
+      "sorties": [
+        "def app",
+        "def namespace"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/integration/rack_spec.rb": {
+      "fichier": "spec/grape/integration/rack_spec.rb",
+      "langage": "ruby",
+      "lignes": 118,
+      "taille_bytes": 2623,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/integration/rack_sendfile_spec.rb": {
+      "fichier": "spec/grape/integration/rack_sendfile_spec.rb",
+      "langage": "ruby",
+      "lignes": 47,
+      "taille_bytes": 1049,
+      "entrees": [
+        "Rack::Sendfile"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/params_builder/hash_with_indifferent_access_spec.rb": {
+      "fichier": "spec/grape/params_builder/hash_with_indifferent_access_spec.rb",
+      "langage": "ruby",
+      "lignes": 134,
+      "taille_bytes": 3431,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/params_builder/hash_spec.rb": {
+      "fichier": "spec/grape/params_builder/hash_spec.rb",
+      "langage": "ruby",
+      "lignes": 112,
+      "taille_bytes": 2520,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/logger_spec.rb": {
+      "fichier": "spec/grape/dsl/logger_spec.rb",
+      "langage": "ruby",
+      "lignes": 36,
+      "taille_bytes": 822,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/inside_route_spec.rb": {
+      "fichier": "spec/grape/dsl/inside_route_spec.rb",
+      "langage": "ruby",
+      "lignes": 425,
+      "taille_bytes": 11277,
+      "entrees": [
+        "Grape::DSL::Declared",
+        "Grape::DSL::InsideRoute",
+        "Grape::DSL::Settings"
+      ],
+      "sorties": [
+        "def header",
+        "def initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/validations_spec.rb": {
+      "fichier": "spec/grape/dsl/validations_spec.rb",
+      "langage": "ruby",
+      "lignes": 77,
+      "taille_bytes": 2549,
+      "entrees": [],
+      "sorties": [
+        "def schema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/headers_spec.rb": {
+      "fichier": "spec/grape/dsl/headers_spec.rb",
+      "langage": "ruby",
+      "lignes": 59,
+      "taille_bytes": 1493,
+      "entrees": [
+        "Grape::DSL::Headers"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/settings_spec.rb": {
+      "fichier": "spec/grape/dsl/settings_spec.rb",
+      "langage": "ruby",
+      "lignes": 134,
+      "taille_bytes": 4985,
+      "entrees": [
+        "Grape::DSL::Settings"
+      ],
+      "sorties": [
+        "def reset_validations",
+        "def with_namespace"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/parameters_spec.rb": {
+      "fichier": "spec/grape/dsl/parameters_spec.rb",
+      "langage": "ruby",
+      "lignes": 288,
+      "taille_bytes": 9448,
+      "entrees": [
+        "Grape::DSL::Parameters"
+      ],
+      "sorties": [
+        "def extract_message_option",
+        "def initialize",
+        "def new_group_scope",
+        "def new_scope",
+        "def push_declared_params",
+        "def push_declared_params_reader",
+        "def validate_attributes",
+        "def validate_attributes_reader",
+        "def validates",
+        "def validates_reader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/routing_spec.rb": {
+      "fichier": "spec/grape/dsl/routing_spec.rb",
+      "langage": "ruby",
+      "lignes": 308,
+      "taille_bytes": 8697,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/middleware_spec.rb": {
+      "fichier": "spec/grape/dsl/middleware_spec.rb",
+      "langage": "ruby",
+      "lignes": 53,
+      "taille_bytes": 1705,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/request_response_spec.rb": {
+      "fichier": "spec/grape/dsl/request_response_spec.rb",
+      "langage": "ruby",
+      "lignes": 244,
+      "taille_bytes": 8968,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/desc_spec.rb": {
+      "fichier": "spec/grape/dsl/desc_spec.rb",
+      "langage": "ruby",
+      "lignes": 86,
+      "taille_bytes": 2523,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/callbacks_spec.rb": {
+      "fichier": "spec/grape/dsl/callbacks_spec.rb",
+      "langage": "ruby",
+      "lignes": 42,
+      "taille_bytes": 1083,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/dsl/helpers_spec.rb": {
+      "fichier": "spec/grape/dsl/helpers_spec.rb",
+      "langage": "ruby",
+      "lignes": 97,
+      "taille_bytes": 2142,
+      "entrees": [
+        ":requires_toggle_prm"
+      ],
+      "sorties": [
+        "def test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/grape/router/greedy_route_spec.rb": {
+      "fichier": "spec/grape/router/greedy_route_spec.rb",
+      "langage": "ruby",
+      "lignes": 38,
+      "taille_bytes": 837,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

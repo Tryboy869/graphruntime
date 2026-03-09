@@ -1,0 +1,3012 @@
+{
+  "meta": {
+    "projet": "regex",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "toml": 7,
+      "rust": 110,
+      "c": 3
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "Cargo.toml"
+  },
+  "noeuds": {
+    "Cargo.toml": {
+      "fichier": "Cargo.toml",
+      "langage": "toml",
+      "lignes": 287,
+      "taille_bytes": 9060,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Cross.toml": {
+      "fichier": "Cross.toml",
+      "langage": "toml",
+      "lignes": 7,
+      "taille_bytes": 112,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "rustfmt.toml": {
+      "fichier": "rustfmt.toml",
+      "langage": "toml",
+      "lignes": 2,
+      "taille_bytes": 44,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/util.rs": {
+      "fichier": "regex-cli/util.rs",
+      "langage": "rust",
+      "lignes": 73,
+      "taille_bytes": 1920,
+      "entrees": [
+        "std::"
+      ],
+      "sorties": [
+        "pub fn add",
+        "pub fn empty",
+        "pub fn print",
+        "pub fn rustfmt",
+        "pub fn timeit",
+        "pub fn timeitr",
+        "pub struct Table"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/logger.rs": {
+      "fichier": "regex-cli/logger.rs",
+      "langage": "rust",
+      "lignes": 68,
+      "taille_bytes": 2015,
+      "entrees": [
+        "log::Log"
+      ],
+      "sorties": [
+        "const LOGGER",
+        "fn enabled",
+        "fn flush",
+        "fn log",
+        "pub fn init",
+        "pub struct Logger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/Cargo.toml": {
+      "fichier": "regex-cli/Cargo.toml",
+      "langage": "toml",
+      "lignes": 37,
+      "taille_bytes": 1239,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/main.rs": {
+      "fichier": "regex-cli/main.rs",
+      "langage": "rust",
+      "lignes": 31,
+      "taille_bytes": 953,
+      "entrees": [
+        "std::"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/compile_test.rs": {
+      "fichier": "regex-cli/cmd/compile_test.rs",
+      "langage": "rust",
+      "lignes": 864,
+      "taille_bytes": 25572,
+      "entrees": [
+        "-h",
+        "crate::args::",
+        "regex::",
+        "regex_automata::dfa::",
+        "regex_automata::dfa::onepass",
+        "regex_automata::hybrid",
+        "regex_automata::meta",
+        "regex_automata::nfa::thompson::backtrack::BoundedBacktracker",
+        "regex_automata::nfa::thompson::pikevm::PikeVM",
+        "regex_lite::",
+        "std::",
+        "std::fmt::Write"
+      ],
+      "sorties": [
+        "const REGEX_AUTOMATA_COMBOS",
+        "const REGEX_COMBOS",
+        "const REGEX_LITE_COMBOS",
+        "const USAGE",
+        "const USAGES",
+        "enum Profile",
+        "fn as_str",
+        "fn as_str_for_target_path",
+        "fn baseline_cargo_toml",
+        "fn baseline_size",
+        "fn cargo_build",
+        "fn cargo_clean",
+        "fn cargo_fetch",
+        "fn cargo_toml",
+        "fn cargo_toml_regex",
+        "fn cargo_toml_regex_automata",
+        "fn cargo_toml_regex_lite",
+        "fn configure",
+        "fn contains",
+        "fn git_revision_hash",
+        "fn main",
+        "fn main_rs",
+        "fn main_rs_regex",
+        "fn main_rs_regex_automata",
+        "fn main_rs_regex_lite",
+        "fn name",
+        "fn new",
+        "fn outdir",
+        "fn regexdir",
+        "fn tests",
+        "fn usage",
+        "fn write_cargo_toml",
+        "fn write_main_rs",
+        "pub fn run",
+        "struct Config",
+        "struct Measurement",
+        "struct Test",
+        "struct TestDir"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/mod.rs": {
+      "fichier": "regex-cli/cmd/mod.rs",
+      "langage": "rust",
+      "lignes": 28,
+      "taille_bytes": 860,
+      "entrees": [],
+      "sorties": [
+        "const USAGE",
+        "pub fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/generate/unicode.rs": {
+      "fichier": "regex-cli/cmd/generate/unicode.rs",
+      "langage": "rust",
+      "lignes": 206,
+      "taille_bytes": 6574,
+      "entrees": [
+        "crate::",
+        "std::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "const USAGES",
+        "fn configure",
+        "fn gen",
+        "fn outdir",
+        "fn ucddir",
+        "fn ucdgen",
+        "fn ucdgen_to",
+        "fn usage",
+        "pub fn run",
+        "struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/generate/mod.rs": {
+      "fichier": "regex-cli/cmd/generate/mod.rs",
+      "langage": "rust",
+      "lignes": 28,
+      "taille_bytes": 841,
+      "entrees": [
+        "crate::args"
+      ],
+      "sorties": [
+        "const USAGE",
+        "pub fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/generate/fowler.rs": {
+      "fichier": "regex-cli/cmd/generate/fowler.rs",
+      "langage": "rust",
+      "lignes": 421,
+      "taille_bytes": 14210,
+      "entrees": [
+        "crate::args::",
+        "regex_syntax::ast::Ast",
+        "std::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "const USAGES",
+        "fn configure",
+        "fn convert",
+        "fn count_capturing_groups",
+        "fn count_capturing_groups_ast",
+        "fn datfiles",
+        "fn fmt",
+        "fn from_dat_test",
+        "fn outdir",
+        "fn parse",
+        "fn usage",
+        "pub fn run",
+        "struct Config",
+        "struct DatTest",
+        "struct TomlTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/generate/serialize/dfa.rs": {
+      "fichier": "regex-cli/cmd/generate/serialize/dfa.rs",
+      "langage": "rust",
+      "lignes": 864,
+      "taille_bytes": 24903,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::",
+        "regex_automata::dfa::",
+        "regex_automata::dfa::sparse::DFA",
+        "std::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "const USAGES",
+        "enum RustKind",
+        "fn auto_gen_message",
+        "fn big_name",
+        "fn configure",
+        "fn from_str",
+        "fn lil_name",
+        "fn name",
+        "fn outdir",
+        "fn run_dense_dfa",
+        "fn run_dense_regex",
+        "fn run_sparse_dfa",
+        "fn run_sparse_regex",
+        "fn rust_module_name",
+        "fn usage",
+        "fn write_dfa_dense_bytes",
+        "fn write_dfa_dense_rust",
+        "fn write_dfa_sparse_bytes",
+        "fn write_dfa_sparse_rust",
+        "fn write_regex_dense_rust",
+        "fn write_regex_sparse_rust",
+        "fn writer",
+        "pub fn run_dense",
+        "pub fn run_sparse",
+        "struct Config",
+        "struct Writer",
+        "type Err"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/generate/serialize/mod.rs": {
+      "fichier": "regex-cli/cmd/generate/serialize/mod.rs",
+      "langage": "rust",
+      "lignes": 22,
+      "taille_bytes": 673,
+      "entrees": [
+        "code",
+        "crate::args"
+      ],
+      "sorties": [
+        "const USAGE",
+        "pub fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/debug/dfa.rs": {
+      "fichier": "regex-cli/cmd/debug/dfa.rs",
+      "langage": "rust",
+      "lignes": 326,
+      "taille_bytes": 9940,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::dfa::Automaton",
+        "std::io::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "fn run_dense_dfa",
+        "fn run_dense_regex",
+        "fn run_sparse_dfa",
+        "fn run_sparse_regex",
+        "pub fn run_dense",
+        "pub fn run_sparse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/debug/literal.rs": {
+      "fichier": "regex-cli/cmd/debug/literal.rs",
+      "langage": "rust",
+      "lignes": 232,
+      "taille_bytes": 8192,
+      "entrees": [
+        "-h",
+        "crate::",
+        "std::io::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn run",
+        "struct Literal"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/debug/mod.rs": {
+      "fichier": "regex-cli/cmd/debug/mod.rs",
+      "langage": "rust",
+      "lignes": 244,
+      "taille_bytes": 7122,
+      "entrees": [
+        "-h",
+        "crate::",
+        "std::io::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "fn run_ast",
+        "fn run_hir",
+        "fn run_onepass",
+        "fn run_thompson",
+        "pub fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/mod.rs": {
+      "fichier": "regex-cli/cmd/find/mod.rs",
+      "langage": "rust",
+      "lignes": 94,
+      "taille_bytes": 2646,
+      "entrees": [
+        "crate::args::",
+        "lexopt::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "const USAGES",
+        "fn configure",
+        "fn repeat",
+        "fn usage",
+        "pub fn run",
+        "struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/match/nfa.rs": {
+      "fichier": "regex-cli/cmd/find/match/nfa.rs",
+      "langage": "rust",
+      "lignes": 156,
+      "taille_bytes": 4730,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::Input"
+      ],
+      "sorties": [
+        "const USAGE",
+        "pub fn run_backtrack",
+        "pub fn run_pikevm"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/match/dfa.rs": {
+      "fichier": "regex-cli/cmd/find/match/dfa.rs",
+      "langage": "rust",
+      "lignes": 319,
+      "taille_bytes": 10059,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::Input"
+      ],
+      "sorties": [
+        "const USAGE",
+        "pub fn run_dense",
+        "pub fn run_hybrid",
+        "pub fn run_onepass",
+        "pub fn run_sparse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/match/mod.rs": {
+      "fichier": "regex-cli/cmd/find/match/mod.rs",
+      "langage": "rust",
+      "lignes": 322,
+      "taille_bytes": 9946,
+      "entrees": [
+        "-h",
+        "crate::",
+        "std::io::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "fn run_counts",
+        "fn run_lite",
+        "fn run_meta",
+        "fn run_regex",
+        "fn run_search",
+        "pub fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/which/nfa.rs": {
+      "fichier": "regex-cli/cmd/find/which/nfa.rs",
+      "langage": "rust",
+      "lignes": 77,
+      "taille_bytes": 2240,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "pub fn run_pikevm"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/which/dfa.rs": {
+      "fichier": "regex-cli/cmd/find/which/dfa.rs",
+      "langage": "rust",
+      "lignes": 212,
+      "taille_bytes": 6351,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "pub fn run_dense",
+        "pub fn run_hybrid",
+        "pub fn run_sparse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/which/mod.rs": {
+      "fichier": "regex-cli/cmd/find/which/mod.rs",
+      "langage": "rust",
+      "lignes": 241,
+      "taille_bytes": 7214,
+      "entrees": [
+        "-h",
+        "crate::",
+        "std::io::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "fn run_meta",
+        "fn run_regex",
+        "fn run_search",
+        "pub fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/capture/nfa.rs": {
+      "fichier": "regex-cli/cmd/find/capture/nfa.rs",
+      "langage": "rust",
+      "lignes": 162,
+      "taille_bytes": 4731,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "pub fn run_backtrack",
+        "pub fn run_pikevm"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/capture/dfa.rs": {
+      "fichier": "regex-cli/cmd/find/capture/dfa.rs",
+      "langage": "rust",
+      "lignes": 84,
+      "taille_bytes": 2414,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "pub fn run_onepass"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/capture/mod.rs": {
+      "fichier": "regex-cli/cmd/find/capture/mod.rs",
+      "langage": "rust",
+      "lignes": 464,
+      "taille_bytes": 14820,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::util::primitives::NonMaxUsize",
+        "std::io::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "fn run_counts",
+        "fn run_lite",
+        "fn run_meta",
+        "fn run_regex",
+        "fn run_search",
+        "pub fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/half/dfa.rs": {
+      "fichier": "regex-cli/cmd/find/half/dfa.rs",
+      "langage": "rust",
+      "lignes": 314,
+      "taille_bytes": 9557,
+      "entrees": [
+        "-h",
+        "crate::",
+        "regex_automata::",
+        "regex_automata::dfa::OverlappingState",
+        "regex_automata::hybrid::dfa::OverlappingState"
+      ],
+      "sorties": [
+        "const USAGE",
+        "pub fn run_dense",
+        "pub fn run_hybrid",
+        "pub fn run_sparse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/cmd/find/half/mod.rs": {
+      "fichier": "regex-cli/cmd/find/half/mod.rs",
+      "langage": "rust",
+      "lignes": 335,
+      "taille_bytes": 10785,
+      "entrees": [
+        "-h",
+        "crate::",
+        "std::io::"
+      ],
+      "sorties": [
+        "const USAGE",
+        "fn run_counts",
+        "fn run_counts_overlapping",
+        "fn run_meta",
+        "fn run_regex",
+        "fn run_search",
+        "fn run_search_overlapping",
+        "pub fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/onepass.rs": {
+      "fichier": "regex-cli/args/onepass.rs",
+      "langage": "rust",
+      "lignes": 99,
+      "taille_bytes": 3368,
+      "entrees": [
+        "crate::args::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn from_nfa",
+        "pub fn onepass",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/dfa.rs": {
+      "fichier": "regex-cli/args/dfa.rs",
+      "langage": "rust",
+      "lignes": 242,
+      "taille_bytes": 9328,
+      "entrees": [
+        "crate::args::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn dense",
+        "pub fn from_nfa",
+        "pub fn from_nfa_sparse",
+        "pub fn reversed",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/overlapping.rs": {
+      "fichier": "regex-cli/args/overlapping.rs",
+      "langage": "rust",
+      "lignes": 46,
+      "taille_bytes": 1347,
+      "entrees": [
+        "crate::args::",
+        "lexopt::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/hybrid.rs": {
+      "fichier": "regex-cli/args/hybrid.rs",
+      "langage": "rust",
+      "lignes": 231,
+      "taille_bytes": 9285,
+      "entrees": [
+        "crate::args::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn from_nfa",
+        "pub fn hybrid",
+        "pub fn reversed",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/thompson.rs": {
+      "fichier": "regex-cli/args/thompson.rs",
+      "langage": "rust",
+      "lignes": 156,
+      "taille_bytes": 5763,
+      "entrees": [
+        "crate::args::",
+        "std::borrow::Borrow"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn from_hirs",
+        "pub fn reversed",
+        "pub fn thompson",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/input.rs": {
+      "fichier": "regex-cli/args/input.rs",
+      "langage": "rust",
+      "lignes": 160,
+      "taille_bytes": 5495,
+      "entrees": [
+        "crate::args::",
+        "lexopt::",
+        "regex_automata::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn input",
+        "pub fn with",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/api.rs": {
+      "fichier": "regex-cli/args/api.rs",
+      "langage": "rust",
+      "lignes": 136,
+      "taille_bytes": 4921,
+      "entrees": [
+        "crate::args::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn from_patterns",
+        "pub fn from_patterns_set",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/patterns.rs": {
+      "fichier": "regex-cli/args/patterns.rs",
+      "langage": "rust",
+      "lignes": 188,
+      "taille_bytes": 6856,
+      "entrees": [
+        "crate::args::",
+        "std::path::PathBuf"
+      ],
+      "sorties": [
+        "const USAGES",
+        "enum Mode",
+        "fn configure",
+        "fn usage",
+        "pub fn get",
+        "pub fn only_flags",
+        "pub fn positional",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/haystack.rs": {
+      "fichier": "regex-cli/args/haystack.rs",
+      "langage": "rust",
+      "lignes": 140,
+      "taille_bytes": 5097,
+      "entrees": [
+        "crate::args::",
+        "std::path::PathBuf"
+      ],
+      "sorties": [
+        "const USAGES",
+        "enum Kind",
+        "fn configure",
+        "fn usage",
+        "pub fn get",
+        "pub fn with",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/pikevm.rs": {
+      "fichier": "regex-cli/args/pikevm.rs",
+      "langage": "rust",
+      "lignes": 51,
+      "taille_bytes": 1394,
+      "entrees": [
+        "crate::args::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn from_nfa",
+        "pub fn pikevm",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/flags.rs": {
+      "fichier": "regex-cli/args/flags.rs",
+      "langage": "rust",
+      "lignes": 204,
+      "taille_bytes": 6818,
+      "entrees": [
+        "bstr::ByteVec",
+        "crate::args::Usage",
+        "leftmost-first"
+      ],
+      "sorties": [
+        "fn from_str",
+        "pub struct ByteSet",
+        "pub struct MatchKind",
+        "pub struct OneByte",
+        "pub struct StartKind",
+        "pub struct WhichCaptures",
+        "type Err"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/syntax.rs": {
+      "fichier": "regex-cli/args/syntax.rs",
+      "langage": "rust",
+      "lignes": 269,
+      "taille_bytes": 10008,
+      "entrees": [
+        "crate::args::",
+        "std::borrow::Borrow"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn ast",
+        "fn configure",
+        "fn usage",
+        "pub fn asts",
+        "pub fn hir",
+        "pub fn hirs",
+        "pub fn syntax",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/mod.rs": {
+      "fichier": "regex-cli/args/mod.rs",
+      "langage": "rust",
+      "lignes": 287,
+      "taille_bytes": 9179,
+      "entrees": [
+        "std::"
+      ],
+      "sorties": [
+        "const MIN_SPACE",
+        "fn configure",
+        "fn fmt",
+        "fn usage",
+        "pub fn configure",
+        "pub fn long",
+        "pub fn new",
+        "pub fn next_as_command",
+        "pub fn parse",
+        "pub fn parse_maybe",
+        "pub fn short",
+        "pub struct AdHoc",
+        "pub struct Usage",
+        "pub trait Configurable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/meta.rs": {
+      "fichier": "regex-cli/args/meta.rs",
+      "langage": "rust",
+      "lignes": 283,
+      "taille_bytes": 10506,
+      "entrees": [
+        "crate::args::",
+        "std::borrow::Borrow",
+        "the"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn build_from_patterns",
+        "pub fn from_hirs",
+        "pub fn from_patterns",
+        "pub fn meta",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/backtrack.rs": {
+      "fichier": "regex-cli/args/backtrack.rs",
+      "langage": "rust",
+      "lignes": 71,
+      "taille_bytes": 2238,
+      "entrees": [
+        "crate::args::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn backtrack",
+        "pub fn from_nfa",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/lite.rs": {
+      "fichier": "regex-cli/args/lite.rs",
+      "langage": "rust",
+      "lignes": 84,
+      "taille_bytes": 2563,
+      "entrees": [
+        "crate::args::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "pub fn from_patterns",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-cli/args/common.rs": {
+      "fichier": "regex-cli/args/common.rs",
+      "langage": "rust",
+      "lignes": 75,
+      "taille_bytes": 2162,
+      "entrees": [
+        "crate::args::",
+        "lexopt::"
+      ],
+      "sorties": [
+        "const USAGES",
+        "fn configure",
+        "fn usage",
+        "output is",
+        "pub fn table",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/Cargo.toml": {
+      "fichier": "regex-lite/Cargo.toml",
+      "langage": "toml",
+      "lignes": 38,
+      "taille_bytes": 1062,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/tests/lib.rs": {
+      "fichier": "regex-lite/tests/lib.rs",
+      "langage": "rust",
+      "lignes": 50,
+      "taille_bytes": 1220,
+      "entrees": [],
+      "sorties": [
+        "const BLACKLIST",
+        "const DATA",
+        "fn suite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/tests/string.rs": {
+      "fichier": "regex-lite/tests/string.rs",
+      "langage": "rust",
+      "lignes": 149,
+      "taille_bytes": 5465,
+      "entrees": [],
+      "sorties": [
+        "fn compiler",
+        "fn run_test",
+        "fn skip_or_get_pattern",
+        "fn testify_captures"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/tests/fuzz/mod.rs": {
+      "fichier": "regex-lite/tests/fuzz/mod.rs",
+      "langage": "rust",
+      "lignes": 51,
+      "taille_bytes": 1773,
+      "entrees": [],
+      "sorties": [
+        "fn captures_wrong_order",
+        "fn captures_wrong_order_min",
+        "fn many_zero_to_many_reps",
+        "fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/nfa.rs": {
+      "fichier": "regex-lite/src/nfa.rs",
+      "langage": "rust",
+      "lignes": 713,
+      "taille_bytes": 26605,
+      "entrees": [
+        "alloc::",
+        "core::",
+        "crate::"
+      ],
+      "sorties": [
+        "fn add",
+        "fn add_empty",
+        "fn c_alternation",
+        "fn c_at_least",
+        "fn c_bounded",
+        "fn c_capture",
+        "fn c_char",
+        "fn c_class",
+        "fn c_concat",
+        "fn c_empty",
+        "fn c_exactly",
+        "fn c_fail",
+        "fn c_look",
+        "fn c_repetition",
+        "fn c_zero_or_one",
+        "fn check_size_limit",
+        "fn compile",
+        "fn fmt",
+        "fn memory_usage",
+        "fn new",
+        "fn next",
+        "fn patch",
+        "struct Compiler",
+        "struct ThompsonRef",
+        "type CaptureNameMap",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/error.rs": {
+      "fichier": "regex-lite/src/error.rs",
+      "langage": "rust",
+      "lignes": 28,
+      "taille_bytes": 904,
+      "entrees": [],
+      "sorties": [
+        "fn fmt",
+        "pub struct Error"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/utf8.rs": {
+      "fichier": "regex-lite/src/utf8.rs",
+      "langage": "rust",
+      "lignes": 240,
+      "taille_bytes": 7964,
+      "entrees": [
+        "alloc::",
+        "super::*"
+      ],
+      "sorties": [
+        "const ACCEPT",
+        "const CLASSES",
+        "const REJECT",
+        "const STATES_FORWARD",
+        "const WORD",
+        "const fn",
+        "fn decode_invalid",
+        "fn decode_lossily",
+        "fn decode_step",
+        "fn decode_valid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/lib.rs": {
+      "fichier": "regex-lite/src/lib.rs",
+      "langage": "rust",
+      "lignes": 885,
+      "taille_bytes": 36169,
+      "entrees": [
+        "algorithms",
+        "alloc",
+        "raw",
+        "regex_lite::Regex",
+        "std"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/pool.rs": {
+      "fichier": "regex-lite/src/pool.rs",
+      "langage": "rust",
+      "lignes": 119,
+      "taille_bytes": 4213,
+      "entrees": [
+        "alloc::",
+        "core::panic::",
+        "crate::pikevm",
+        "std::sync::Mutex"
+      ],
+      "sorties": [
+        "fn deref",
+        "fn deref_mut",
+        "fn drop",
+        "fn fmt",
+        "fn put_value",
+        "type Target"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/interpolate.rs": {
+      "fichier": "regex-lite/src/interpolate.rs",
+      "langage": "rust",
+      "lignes": 536,
+      "taille_bytes": 16446,
+      "entrees": [
+        "alloc::",
+        "alloc::string::String",
+        "super::"
+      ],
+      "sorties": [
+        "enum Ref",
+        "fn find_cap_ref",
+        "fn find_cap_ref_braced",
+        "fn interpolate_bytes",
+        "fn interpolate_string",
+        "fn is_valid_cap_letter",
+        "pub fn bytes",
+        "pub fn string",
+        "struct CaptureRef"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/int.rs": {
+      "fichier": "regex-lite/src/int.rs",
+      "langage": "rust",
+      "lignes": 56,
+      "taille_bytes": 2039,
+      "entrees": [
+        "core::num::NonZeroUsize"
+      ],
+      "sorties": [
+        "fn as_usize",
+        "fn fmt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/string.rs": {
+      "fichier": "regex-lite/src/string.rs",
+      "langage": "rust",
+      "lignes": 2976,
+      "taille_bytes": 107555,
+      "entrees": [
+        "alloc::",
+        "crate::"
+      ],
+      "sorties": [
+        "fn by_ref",
+        "fn clone",
+        "fn count",
+        "fn fmt",
+        "fn from_str",
+        "fn index",
+        "fn new",
+        "fn next",
+        "fn no_expansion",
+        "fn replace_append",
+        "fn size_hint",
+        "fn try_from",
+        "pub fn as_str",
+        "pub fn build",
+        "pub fn capture_locations",
+        "pub fn capture_names",
+        "pub fn captures",
+        "pub fn captures_at",
+        "pub fn captures_iter",
+        "pub fn captures_len",
+        "pub fn captures_read",
+        "pub fn captures_read_at",
+        "pub fn case_insensitive",
+        "pub fn crlf",
+        "pub fn dot_matches_new_line",
+        "pub fn end",
+        "pub fn expand",
+        "pub fn extract",
+        "pub fn find",
+        "pub fn find_at",
+        "pub fn find_iter",
+        "pub fn get",
+        "pub fn ignore_whitespace",
+        "pub fn is_empty",
+        "pub fn is_match",
+        "pub fn is_match_at",
+        "pub fn iter",
+        "pub fn len",
+        "pub fn multi_line",
+        "pub fn name",
+        "pub fn nest_limit",
+        "pub fn new",
+        "pub fn range",
+        "pub fn replace",
+        "pub fn replace_all",
+        "pub fn replacen",
+        "pub fn shortest_match",
+        "pub fn shortest_match_at",
+        "pub fn size_limit",
+        "pub fn split",
+        "pub fn splitn",
+        "pub fn start",
+        "pub fn static_captures_len",
+        "pub fn swap_greed",
+        "pub struct CaptureLocations",
+        "pub struct CaptureMatches",
+        "pub struct CaptureNames",
+        "pub struct Captures",
+        "pub struct Match",
+        "pub struct Matches",
+        "pub struct NoExpand",
+        "pub struct Regex",
+        "pub struct RegexBuilder",
+        "pub struct ReplacerRef",
+        "pub struct Split",
+        "pub struct SplitN",
+        "pub struct SubCaptureMatches",
+        "pub trait Replacer",
+        "struct CapturesDebugMap",
+        "struct Key",
+        "struct Value",
+        "type Err",
+        "type Error",
+        "type Item",
+        "type Output"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/pikevm.rs": {
+      "fichier": "regex-lite/src/pikevm.rs",
+      "langage": "rust",
+      "lignes": 916,
+      "taille_bytes": 37826,
+      "entrees": [
+        "alloc::",
+        "crate::"
+      ],
+      "sorties": [
+        "enum FollowEpsilon",
+        "fn all_absent",
+        "fn capacity",
+        "fn clear",
+        "fn contains",
+        "fn epsilon_closure",
+        "fn epsilon_closure_explore",
+        "fn fmt",
+        "fn for_state",
+        "fn handle_overlapping_empty_match",
+        "fn insert",
+        "fn is_empty",
+        "fn iter",
+        "fn len",
+        "fn new",
+        "fn next",
+        "fn nexts",
+        "fn reset",
+        "fn resize",
+        "fn setup_search",
+        "struct ActiveStates",
+        "struct SlotTable",
+        "struct SparseSet",
+        "struct SparseSetIter",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/hir/parse.rs": {
+      "fichier": "regex-lite/src/hir/parse.rs",
+      "langage": "rust",
+      "lignes": 2240,
+      "taille_bytes": 82581,
+      "entrees": [
+        "alloc::",
+        "core::cell::",
+        "crate::",
+        "super::*"
+      ],
+      "sorties": [
+        "const ERR_BACKREF_UNSUPPORTED",
+        "const ERR_CLASS_DIFFERENCE_UNSUPPORTED",
+        "const ERR_CLASS_INTERSECTION_UNSUPPORTED",
+        "const ERR_CLASS_INVALID_ITEM",
+        "const ERR_CLASS_INVALID_RANGE",
+        "const ERR_CLASS_INVALID_RANGE_ITEM",
+        "const ERR_CLASS_NEST_UNSUPPORTED",
+        "const ERR_CLASS_SYMDIFFERENCE_UNSUPPORTED",
+        "const ERR_CLASS_UNCLOSED",
+        "const ERR_CLASS_UNCLOSED_AFTER_CLOSING",
+        "const ERR_CLASS_UNCLOSED_AFTER_DASH",
+        "const ERR_CLASS_UNCLOSED_AFTER_ITEM",
+        "const ERR_CLASS_UNCLOSED_AFTER_NEGATION",
+        "const ERR_COUNTED_REP_COMMA_UNCLOSED",
+        "const ERR_COUNTED_REP_INVALID",
+        "const ERR_COUNTED_REP_INVALID_RANGE",
+        "const ERR_COUNTED_REP_MIN_MAX_UNCLOSED",
+        "const ERR_COUNTED_REP_MIN_UNCLOSED",
+        "const ERR_COUNTED_REP_SUB_MISSING",
+        "const ERR_COUNTED_REP_UNCLOSED",
+        "const ERR_DECIMAL_INVALID",
+        "const ERR_DECIMAL_NO_DIGITS",
+        "const ERR_DUPLICATE_CAPTURE_NAME",
+        "const ERR_EMPTY_FLAGS",
+        "const ERR_EMPTY_GROUP_NAME",
+        "const ERR_ESCAPE_UNEXPECTED_EOF",
+        "const ERR_ESCAPE_UNRECOGNIZED",
+        "const ERR_FLAG_DANGLING_NEGATION",
+        "const ERR_FLAG_DUPLICATE",
+        "const ERR_FLAG_REPEATED_NEGATION",
+        "const ERR_FLAG_UNEXPECTED_EOF",
+        "const ERR_FLAG_UNRECOGNIZED",
+        "const ERR_HEX_BRACE_EMPTY",
+        "const ERR_HEX_BRACE_INVALID",
+        "const ERR_HEX_BRACE_INVALID_DIGIT",
+        "const ERR_HEX_BRACE_UNEXPECTED_EOF",
+        "const ERR_HEX_FIXED_INVALID",
+        "const ERR_HEX_FIXED_INVALID_DIGIT",
+        "const ERR_HEX_FIXED_UNEXPECTED_EOF",
+        "const ERR_HEX_UNEXPECTED_EOF",
+        "const ERR_INVALID_GROUP_NAME",
+        "const ERR_LOOK_UNSUPPORTED",
+        "const ERR_MISSING_GROUP_NAME",
+        "const ERR_POSIX_CLASS_UNRECOGNIZED",
+        "const ERR_SPECIAL_WORD_BOUNDARY_UNCLOSED",
+        "const ERR_SPECIAL_WORD_BOUNDARY_UNRECOGNIZED",
+        "const ERR_SPECIAL_WORD_OR_REP_UNEXPECTED_EOF",
+        "const ERR_TOO_MANY_CAPTURES",
+        "const ERR_TOO_MUCH_NESTING",
+        "const ERR_UNCLOSED_GROUP",
+        "const ERR_UNCLOSED_GROUP_NAME",
+        "const ERR_UNCLOSED_GROUP_QUESTION",
+        "const ERR_UNCOUNTED_REP_SUB_MISSING",
+        "const ERR_UNICODE_CLASS_UNSUPPORTED",
+        "const ERR_UNOPENED_GROUP",
+        "fn add_capture_name",
+        "fn bump",
+        "fn bump_and_bump_space",
+        "fn bump_if",
+        "fn bump_space",
+        "fn cap",
+        "fn char",
+        "fn check_hir_nesting",
+        "fn class",
+        "fn decrement_depth",
+        "fn err_standard",
+        "fn err_verbatim",
+        "fn flags",
+        "fn hir_anchor_end",
+        "fn hir_anchor_start",
+        "fn hir_char",
+        "fn hir_dot",
+        "fn increment_depth",
+        "fn into_class_item_range",
+        "fn into_class_item_ranges",
+        "fn is_capture_char",
+        "fn is_done",
+        "fn is_hex",
+        "fn is_lookaround_prefix",
+        "fn maybe_parse_posix_class",
+        "fn maybe_parse_special_word_boundary",
+        "fn named_cap",
+        "fn next_capture_index",
+        "fn ok_alternate",
+        "fn ok_class",
+        "fn ok_comments",
+        "fn ok_counted_repetition",
+        "fn ok_flag_directive",
+        "fn ok_flag_group",
+        "fn ok_flags_and_primitives",
+        "fn ok_group_named",
+        "fn ok_group_unnamed",
+        "fn ok_hex",
+        "fn ok_literal",
+        "fn ok_meta_escapes",
+        "fn ok_perl",
+        "fn ok_special_escapes",
+        "fn ok_uncounted_repetition",
+        "fn ok_verbatim",
+        "fn parse_capture_name",
+        "fn parse_class",
+        "fn parse_class_item",
+        "fn parse_class_range",
+        "fn parse_counted_repetition",
+        "fn parse_decimal",
+        "fn parse_escape",
+        "fn parse_flag",
+        "fn parse_flags",
+        "fn parse_group",
+        "fn parse_hex",
+        "fn parse_hex_brace",
+        "fn parse_hex_digits",
+        "fn parse_inner",
+        "fn parse_perl_class",
+        "fn parse_primitive",
+        "fn parse_uncounted_repetition",
+        "fn pattern",
+        "fn peek",
+        "fn peek_space",
+        "fn perr",
+        "fn pos",
+        "fn posix",
+        "fn posix_class",
+        "fn recurse",
+        "fn regression_454_nest_too_big",
+        "fn regression_455_trailing_dash_ignore_whitespace",
+        "fn regression_capture_indices",
+        "fn singles"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-lite/src/hir/mod.rs": {
+      "fichier": "regex-lite/src/hir/mod.rs",
+      "langage": "rust",
+      "lignes": 809,
+      "taille_bytes": 31158,
+      "entrees": [
+        "alloc::",
+        "core::mem",
+        "core::slice::from_ref",
+        "crate::",
+        "self::Look::*"
+      ],
+      "sorties": [
+        "const MAX",
+        "const MIN",
+        "fn alternation",
+        "fn ascii_case_fold",
+        "fn canonicalize",
+        "fn capture",
+        "fn char",
+        "fn class",
+        "fn concat",
+        "fn drop",
+        "fn empty",
+        "fn fail",
+        "fn is_canonical",
+        "fn is_contiguous",
+        "fn is_escapable_character",
+        "fn is_intersection_empty",
+        "fn is_meta_character",
+        "fn look",
+        "fn negate",
+        "fn new",
+        "fn next_char",
+        "fn prev_char",
+        "fn repetition",
+        "fn subs",
+        "fn union",
+        "pub fn escape"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-capi/Cargo.toml": {
+      "fichier": "regex-capi/Cargo.toml",
+      "langage": "toml",
+      "lignes": 36,
+      "taille_bytes": 829,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-capi/include/rure.h": {
+      "fichier": "regex-capi/include/rure.h",
+      "langage": "c",
+      "lignes": 585,
+      "taille_bytes": 22052,
+      "entrees": [
+        "<stdbool.h>",
+        "<stdint.h>",
+        "<stdlib.h>"
+      ],
+      "sorties": [
+        "const char",
+        "const size_t",
+        "const uint8_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-capi/examples/iter.c": {
+      "fichier": "regex-capi/examples/iter.c",
+      "langage": "c",
+      "lignes": 99,
+      "taille_bytes": 3212,
+      "entrees": [
+        "<fcntl.h>",
+        "<stdio.h>",
+        "<stdlib.h>",
+        "<string.h>",
+        "<sys/mman.h>",
+        "<sys/stat.h>",
+        "<sys/types.h>",
+        "<unistd.h>"
+      ],
+      "sorties": [
+        "const char",
+        "const uint8_t",
+        "struct stat"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-capi/src/error.rs": {
+      "fichier": "regex-capi/src/error.rs",
+      "langage": "rust",
+      "lignes": 78,
+      "taille_bytes": 1908,
+      "entrees": [
+        "libc::c_char",
+        "std::ffi",
+        "std::ffi::CString",
+        "std::fmt",
+        "std::str"
+      ],
+      "sorties": [
+        "fn fmt",
+        "fn rure_error_free",
+        "fn rure_error_message",
+        "fn rure_error_new",
+        "pub enum ErrorKind",
+        "pub fn is_err",
+        "pub fn new",
+        "pub struct Error"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-capi/src/rure.rs": {
+      "fichier": "regex-capi/src/rure.rs",
+      "langage": "rust",
+      "lignes": 629,
+      "taille_bytes": 17466,
+      "entrees": [
+        "crate::error::",
+        "libc::",
+        "regex::bytes",
+        "std::collections::HashMap",
+        "std::ffi::",
+        "std::ops::Deref",
+        "std::ptr",
+        "std::slice",
+        "std::str"
+      ],
+      "sorties": [
+        "const RURE_DEFAULT_FLAGS",
+        "const RURE_FLAG_CASEI",
+        "const RURE_FLAG_DOTNL",
+        "const RURE_FLAG_MULTI",
+        "const RURE_FLAG_SPACE",
+        "const RURE_FLAG_SWAP_GREED",
+        "const RURE_FLAG_UNICODE",
+        "fn deref",
+        "fn rure_capture_name_index",
+        "fn rure_captures_at",
+        "fn rure_captures_free",
+        "fn rure_captures_len",
+        "fn rure_captures_new",
+        "fn rure_compile",
+        "fn rure_compile_must",
+        "fn rure_compile_set",
+        "fn rure_cstring_free",
+        "fn rure_escape",
+        "fn rure_escape_must",
+        "fn rure_find",
+        "fn rure_find_captures",
+        "fn rure_free",
+        "fn rure_is_match",
+        "fn rure_iter_capture_names_free",
+        "fn rure_iter_capture_names_new",
+        "fn rure_iter_capture_names_next",
+        "fn rure_iter_free",
+        "fn rure_iter_new",
+        "fn rure_iter_next",
+        "fn rure_iter_next_captures",
+        "fn rure_options_dfa_size_limit",
+        "fn rure_options_free",
+        "fn rure_options_new",
+        "fn rure_options_size_limit",
+        "fn rure_set_free",
+        "fn rure_set_is_match",
+        "fn rure_set_len",
+        "fn rure_set_matches",
+        "fn rure_shortest_match",
+        "pub struct Captures",
+        "pub struct Iter",
+        "pub struct IterCaptureNames",
+        "pub struct Options",
+        "pub struct Regex",
+        "pub struct RegexSet",
+        "pub struct rure_match",
+        "type Target"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-capi/src/macros.rs": {
+      "fichier": "regex-capi/src/macros.rs",
+      "langage": "rust",
+      "lignes": 36,
+      "taille_bytes": 1459,
+      "entrees": [
+        "::libc::abort",
+        "::std::io::",
+        "::std::panic::"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-capi/src/lib.rs": {
+      "fichier": "regex-capi/src/lib.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 96,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-capi/ctest/test.c": {
+      "fichier": "regex-capi/ctest/test.c",
+      "langage": "c",
+      "lignes": 591,
+      "taille_bytes": 16603,
+      "entrees": [
+        "<assert.h>",
+        "<stdint.h>",
+        "<stdio.h>",
+        "<stdlib.h>",
+        "<string.h>"
+      ],
+      "sorties": [
+        "const bool",
+        "const char",
+        "const size_t",
+        "const uint8_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/Cargo.toml": {
+      "fichier": "regex-automata/Cargo.toml",
+      "langage": "toml",
+      "lignes": 135,
+      "taille_bytes": 5217,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/lib.rs": {
+      "fichier": "regex-automata/tests/lib.rs",
+      "langage": "rust",
+      "lignes": 115,
+      "taille_bytes": 3590,
+      "entrees": [
+        "regex_automata::Anchored"
+      ],
+      "sorties": [
+        "const DATA",
+        "fn create_input",
+        "fn suite",
+        "fn testify_captures",
+        "fn untestify_kind"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/gen/mod.rs": {
+      "fichier": "regex-automata/tests/gen/mod.rs",
+      "langage": "rust",
+      "lignes": 2,
+      "taille_bytes": 23,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/gen/dense/multi_pattern_v2.rs": {
+      "fichier": "regex-automata/tests/gen/dense/multi_pattern_v2.rs",
+      "langage": "rust",
+      "lignes": 43,
+      "taille_bytes": 1721,
+      "entrees": [
+        "regex_automata::"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/gen/dense/mod.rs": {
+      "fichier": "regex-automata/tests/gen/dense/mod.rs",
+      "langage": "rust",
+      "lignes": 22,
+      "taille_bytes": 902,
+      "entrees": [
+        "multi_pattern_v2::MULTI_PATTERN_V2",
+        "regex_automata::"
+      ],
+      "sorties": [
+        "fn multi_pattern_v2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/gen/sparse/multi_pattern_v2.rs": {
+      "fichier": "regex-automata/tests/gen/sparse/multi_pattern_v2.rs",
+      "langage": "rust",
+      "lignes": 37,
+      "taille_bytes": 1539,
+      "entrees": [
+        "regex_automata::"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/gen/sparse/mod.rs": {
+      "fichier": "regex-automata/tests/gen/sparse/mod.rs",
+      "langage": "rust",
+      "lignes": 22,
+      "taille_bytes": 902,
+      "entrees": [
+        "multi_pattern_v2::MULTI_PATTERN_V2",
+        "regex_automata::"
+      ],
+      "sorties": [
+        "fn multi_pattern_v2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/dfa/regression.rs": {
+      "fichier": "regex-automata/tests/dfa/regression.rs",
+      "langage": "rust",
+      "lignes": 48,
+      "taille_bytes": 1627,
+      "entrees": [
+        "regex_automata::"
+      ],
+      "sorties": [
+        "fn minimize_sets_correct_match_states"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/dfa/api.rs": {
+      "fichier": "regex-automata/tests/dfa/api.rs",
+      "langage": "rust",
+      "lignes": 162,
+      "taille_bytes": 5440,
+      "entrees": [
+        "regex_automata::",
+        "std::error::Error"
+      ],
+      "sorties": [
+        "fn check",
+        "fn check_impl",
+        "fn find",
+        "fn quit_fwd",
+        "fn quit_panics",
+        "fn quit_rev",
+        "fn unicode_word_implicitly_works",
+        "fn universal_start_search"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/dfa/mod.rs": {
+      "fichier": "regex-automata/tests/dfa/mod.rs",
+      "langage": "rust",
+      "lignes": 8,
+      "taille_bytes": 269,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/dfa/suite.rs": {
+      "fichier": "regex-automata/tests/dfa/suite.rs",
+      "langage": "rust",
+      "lignes": 443,
+      "taille_bytes": 16178,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [
+        "const EXPANSIONS",
+        "fn compiler",
+        "fn config_syntax",
+        "fn config_thompson",
+        "fn configure_regex_builder",
+        "fn dense_compiler",
+        "fn minimized_default",
+        "fn minimized_no_byte_class",
+        "fn run_test",
+        "fn serialization_unminimized_default",
+        "fn sparse_compiler",
+        "fn sparse_serialization_unminimized_default",
+        "fn sparse_unminimized_default",
+        "fn sparse_unminimized_prefilter",
+        "fn try_search_overlapping",
+        "fn unminimized_default",
+        "fn unminimized_nfa_shrink",
+        "fn unminimized_no_byte_class",
+        "fn unminimized_prefilter",
+        "fn unminimized_specialized_start_states"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/dfa/onepass/regression.rs": {
+      "fichier": "regex-automata/tests/dfa/onepass/regression.rs",
+      "langage": "rust",
+      "lignes": 61,
+      "taille_bytes": 2596,
+      "entrees": [
+        "regex_automata::"
+      ],
+      "sorties": [
+        "fn too_many_slots_normal_pattern",
+        "fn zero_repetition_capture_group"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/dfa/onepass/mod.rs": {
+      "fichier": "regex-automata/tests/dfa/onepass/mod.rs",
+      "langage": "rust",
+      "lignes": 3,
+      "taille_bytes": 45,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/dfa/onepass/suite.rs": {
+      "fichier": "regex-automata/tests/dfa/onepass/suite.rs",
+      "langage": "rust",
+      "lignes": 197,
+      "taille_bytes": 7309,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [
+        "const EXPANSIONS",
+        "fn compiler",
+        "fn config_syntax",
+        "fn config_thompson",
+        "fn configure_onepass_builder",
+        "fn no_byte_classes",
+        "fn run_test",
+        "fn starts_for_each_pattern"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/hybrid/api.rs": {
+      "fichier": "regex-automata/tests/hybrid/api.rs",
+      "langage": "rust",
+      "lignes": 171,
+      "taille_bytes": 6139,
+      "entrees": [
+        "regex_automata::",
+        "std::error::Error"
+      ],
+      "sorties": [
+        "fn quit_fwd",
+        "fn quit_panics",
+        "fn quit_rev",
+        "fn too_many_cache_resets_cause_quit",
+        "fn unicode_word_implicitly_works"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/hybrid/mod.rs": {
+      "fichier": "regex-automata/tests/hybrid/mod.rs",
+      "langage": "rust",
+      "lignes": 3,
+      "taille_bytes": 38,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/hybrid/suite.rs": {
+      "fichier": "regex-automata/tests/hybrid/suite.rs",
+      "langage": "rust",
+      "lignes": 347,
+      "taille_bytes": 13237,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [
+        "const EXPANSIONS",
+        "fn compiler",
+        "fn config_syntax",
+        "fn config_thompson",
+        "fn configure_regex_builder",
+        "fn min_cache_capacity",
+        "fn nfa_shrink",
+        "fn no_byte_classes",
+        "fn no_cache_clearing",
+        "fn prefilter",
+        "fn run_test",
+        "fn specialize_start_states",
+        "fn starts_for_each_pattern",
+        "fn try_search_overlapping"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/meta/mod.rs": {
+      "fichier": "regex-automata/tests/meta/mod.rs",
+      "langage": "rust",
+      "lignes": 2,
+      "taille_bytes": 29,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/meta/suite.rs": {
+      "fichier": "regex-automata/tests/meta/suite.rs",
+      "langage": "rust",
+      "lignes": 200,
+      "taille_bytes": 7146,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [
+        "const BLACKLIST",
+        "fn compiler",
+        "fn config_syntax",
+        "fn configure_meta_builder",
+        "fn no_dfa",
+        "fn no_dfa_hybrid",
+        "fn no_dfa_hybrid_onepass",
+        "fn no_dfa_hybrid_onepass_backtrack",
+        "fn run_test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/fuzz/sparse.rs": {
+      "fichier": "regex-automata/tests/fuzz/sparse.rs",
+      "langage": "rust",
+      "lignes": 132,
+      "taille_bytes": 5785,
+      "entrees": [
+        "regex_automata::dfa::Automaton"
+      ],
+      "sorties": [
+        "fn eoi_transition_to_quit_state",
+        "fn fuzz_run",
+        "fn invalid_accelerators",
+        "fn invalid_special_state",
+        "fn match_state_inconsistency",
+        "fn start_state_has_valid_transitions",
+        "fn start_state_is_not_match_state",
+        "fn transition_to_invalid_but_valid_state"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/fuzz/dense.rs": {
+      "fichier": "regex-automata/tests/fuzz/dense.rs",
+      "langage": "rust",
+      "lignes": 52,
+      "taille_bytes": 2132,
+      "entrees": [
+        "regex_automata::dfa::Automaton"
+      ],
+      "sorties": [
+        "fn fuzz_run",
+        "fn invalid_byte_classes",
+        "fn invalid_byte_classes_min"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/fuzz/mod.rs": {
+      "fichier": "regex-automata/tests/fuzz/mod.rs",
+      "langage": "rust",
+      "lignes": 2,
+      "taille_bytes": 23,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/nfa/mod.rs": {
+      "fichier": "regex-automata/tests/nfa/mod.rs",
+      "langage": "rust",
+      "lignes": 1,
+      "taille_bytes": 14,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/nfa/thompson/mod.rs": {
+      "fichier": "regex-automata/tests/nfa/thompson/mod.rs",
+      "langage": "rust",
+      "lignes": 4,
+      "taille_bytes": 92,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/nfa/thompson/backtrack/regression.rs": {
+      "fichier": "regex-automata/tests/nfa/thompson/backtrack/regression.rs",
+      "langage": "rust",
+      "lignes": 20,
+      "taille_bytes": 808,
+      "entrees": [
+        "regex_automata::"
+      ],
+      "sorties": [
+        "fn too_many_slots_normal_pattern"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/nfa/thompson/backtrack/mod.rs": {
+      "fichier": "regex-automata/tests/nfa/thompson/backtrack/mod.rs",
+      "langage": "rust",
+      "lignes": 3,
+      "taille_bytes": 45,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/nfa/thompson/backtrack/suite.rs": {
+      "fichier": "regex-automata/tests/nfa/thompson/backtrack/suite.rs",
+      "langage": "rust",
+      "lignes": 213,
+      "taille_bytes": 8441,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [
+        "fn compiler",
+        "fn config_syntax",
+        "fn config_thompson",
+        "fn configure_backtrack_builder",
+        "fn min_visited_capacity",
+        "fn prefilter",
+        "fn run_test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/nfa/thompson/pikevm/regression.rs": {
+      "fichier": "regex-automata/tests/nfa/thompson/pikevm/regression.rs",
+      "langage": "rust",
+      "lignes": 20,
+      "taille_bytes": 763,
+      "entrees": [
+        "regex_automata::"
+      ],
+      "sorties": [
+        "fn too_many_slots_normal_pattern"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/nfa/thompson/pikevm/mod.rs": {
+      "fichier": "regex-automata/tests/nfa/thompson/pikevm/mod.rs",
+      "langage": "rust",
+      "lignes": 3,
+      "taille_bytes": 45,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/tests/nfa/thompson/pikevm/suite.rs": {
+      "fichier": "regex-automata/tests/nfa/thompson/pikevm/suite.rs",
+      "langage": "rust",
+      "lignes": 162,
+      "taille_bytes": 5781,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [
+        "fn compiler",
+        "fn config_syntax",
+        "fn config_thompson",
+        "fn configure_pikevm_builder",
+        "fn prefilter",
+        "fn run_test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/macros.rs": {
+      "fichier": "regex-automata/src/macros.rs",
+      "langage": "rust",
+      "lignes": 20,
+      "taille_bytes": 423,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/lib.rs": {
+      "fichier": "regex-automata/src/lib.rs",
+      "langage": "rust",
+      "lignes": 651,
+      "taille_bytes": 30727,
+      "entrees": [
+        "alloc",
+        "regex_automata::",
+        "std",
+        "the",
+        "them"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/look.rs": {
+      "fichier": "regex-automata/src/util/look.rs",
+      "langage": "rust",
+      "lignes": 2547,
+      "taille_bytes": 97413,
+      "entrees": [
+        "alloc::vec::Vec",
+        "core::cmp::Ordering",
+        "crate::",
+        "crate::util::",
+        "crate::util::utf8",
+        "regex_syntax::try_is_word_character",
+        "super::*"
+      ],
+      "sorties": [
+        "fn fmt",
+        "fn is_word_character",
+        "fn look_matches_end_line",
+        "fn look_matches_end_text",
+        "fn look_matches_start_line",
+        "fn look_matches_start_text",
+        "fn look_matches_word_ascii",
+        "fn look_matches_word_ascii_negate",
+        "fn look_matches_word_end_ascii",
+        "fn look_matches_word_end_half_ascii",
+        "fn look_matches_word_end_half_unicode",
+        "fn look_matches_word_end_unicode",
+        "fn look_matches_word_start_ascii",
+        "fn look_matches_word_start_half_ascii",
+        "fn look_matches_word_start_half_unicode",
+        "fn look_matches_word_start_unicode",
+        "fn look_matches_word_unicode",
+        "fn look_matches_word_unicode_negate",
+        "fn look_set",
+        "fn look_set_debug",
+        "fn look_set_iter",
+        "fn next",
+        "pub enum Look",
+        "pub fn available",
+        "pub fn check",
+        "pub fn contains",
+        "pub fn contains_anchor",
+        "pub fn contains_anchor_crlf",
+        "pub fn contains_anchor_haystack",
+        "pub fn contains_anchor_lf",
+        "pub fn contains_anchor_line",
+        "pub fn contains_word",
+        "pub fn contains_word_ascii",
+        "pub fn contains_word_unicode",
+        "pub fn empty",
+        "pub fn full",
+        "pub fn get_line_terminator",
+        "pub fn insert",
+        "pub fn intersect",
+        "pub fn is_empty",
+        "pub fn is_end",
+        "pub fn is_end_crlf",
+        "pub fn is_end_lf",
+        "pub fn is_start",
+        "pub fn is_start_crlf",
+        "pub fn is_start_lf",
+        "pub fn is_word_ascii",
+        "pub fn is_word_ascii_negate",
+        "pub fn is_word_end_ascii",
+        "pub fn is_word_end_half_ascii",
+        "pub fn is_word_end_half_unicode",
+        "pub fn is_word_end_unicode",
+        "pub fn is_word_start_ascii",
+        "pub fn is_word_start_half_ascii",
+        "pub fn is_word_start_half_unicode",
+        "pub fn is_word_start_unicode",
+        "pub fn is_word_unicode",
+        "pub fn is_word_unicode_negate",
+        "pub fn iter",
+        "pub fn len",
+        "pub fn matches",
+        "pub fn matches_set",
+        "pub fn new",
+        "pub fn read_repr",
+        "pub fn remove",
+        "pub fn set_insert",
+        "pub fn set_intersect",
+        "pub fn set_line_terminator",
+        "pub fn set_remove",
+        "pub fn set_subtract",
+        "pub fn set_union",
+        "pub fn singleton",
+        "pub fn subtract",
+        "pub fn union",
+        "pub fn write_repr",
+        "pub struct LookMatcher",
+        "pub struct LookSet",
+        "pub struct LookSetIter",
+        "pub struct UnicodeWordBoundaryError",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/primitives.rs": {
+      "fichier": "regex-automata/src/util/primitives.rs",
+      "langage": "rust",
+      "lignes": 776,
+      "taille_bytes": 27691,
+      "entrees": [
+        "alloc::vec::Vec",
+        "core::cmp::max",
+        "core::num::NonZeroUsize",
+        "crate::util::int::"
+      ],
+      "sorties": [
+        "fn arbitrary",
+        "fn fmt",
+        "fn index",
+        "fn index_mut",
+        "fn new",
+        "fn next",
+        "fn try_from",
+        "fn with_pattern_ids",
+        "fn with_state_ids",
+        "pub fn attempted",
+        "pub fn from_ne_bytes",
+        "pub fn from_ne_bytes_unchecked",
+        "pub fn get",
+        "pub fn must",
+        "pub fn new",
+        "pub fn one_more",
+        "pub fn to_ne_bytes",
+        "pub struct NonMaxUsize",
+        "pub struct PatternID",
+        "pub struct SmallIndex",
+        "pub struct SmallIndexError",
+        "pub struct StateID",
+        "type Error",
+        "type Item",
+        "type Output"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/alphabet.rs": {
+      "fichier": "regex-automata/src/util/alphabet.rs",
+      "langage": "rust",
+      "lignes": 1139,
+      "taille_bytes": 40717,
+      "entrees": [
+        "alloc::",
+        "core::mem::size_of",
+        "core::ops::Bound",
+        "crate::util::",
+        "super::*"
+      ],
+      "sorties": [
+        "enum UnitKind",
+        "fn byte_classes",
+        "fn element_ranges",
+        "fn elements_empty",
+        "fn elements_singletons",
+        "fn elements_typical",
+        "fn fmt",
+        "fn full_byte_classes",
+        "fn next",
+        "fn representatives",
+        "pub fn alphabet_len",
+        "pub fn as_eoi",
+        "pub fn as_u8",
+        "pub fn as_usize",
+        "pub fn elements",
+        "pub fn empty",
+        "pub fn eoi",
+        "pub fn get",
+        "pub fn get_by_unit",
+        "pub fn is_byte",
+        "pub fn is_eoi",
+        "pub fn is_singleton",
+        "pub fn is_word_byte",
+        "pub fn iter",
+        "pub fn representatives",
+        "pub fn set",
+        "pub fn singletons",
+        "pub fn stride2",
+        "pub fn u8",
+        "pub struct ByteClassElements",
+        "pub struct ByteClassIter",
+        "pub struct ByteClassRepresentatives",
+        "pub struct ByteClasses",
+        "pub struct Unit",
+        "struct BitSet",
+        "struct ByteClassElementRanges",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/memchr.rs": {
+      "fichier": "regex-automata/src/util/memchr.rs",
+      "langage": "rust",
+      "lignes": 93,
+      "taille_bytes": 2868,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/lazy.rs": {
+      "fichier": "regex-automata/src/util/lazy.rs",
+      "langage": "rust",
+      "lignes": 461,
+      "taille_bytes": 18931,
+      "entrees": [
+        "alloc::boxed::Box",
+        "core::",
+        "core::fmt",
+        "super::*"
+      ],
+      "sorties": [
+        "const LAZY_STATE_BUSY",
+        "const LAZY_STATE_DONE",
+        "const LAZY_STATE_INIT",
+        "fn assert_refunwind",
+        "fn assert_send",
+        "fn assert_sync",
+        "fn assert_unwind",
+        "fn deref",
+        "fn drop",
+        "fn fmt",
+        "fn inner",
+        "fn oibits",
+        "fn poll",
+        "fn sync_not_send",
+        "pub fn get",
+        "pub struct Lazy",
+        "struct Guard",
+        "type Target"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/wire.rs": {
+      "fichier": "regex-automata/src/util/wire.rs",
+      "langage": "rust",
+      "lignes": 947,
+      "taille_bytes": 35568,
+      "entrees": [
+        "alloc::",
+        "core::",
+        "crate::util::",
+        "self::DeserializeErrorKind::*",
+        "super::*"
+      ],
+      "sorties": [
+        "enum DeserializeErrorKind",
+        "fn alignment_mismatch",
+        "fn arithmetic_overflow",
+        "fn bad_label_almost_too_long",
+        "fn bad_label_interior_nul",
+        "fn bad_label_too_long",
+        "fn endian_mismatch",
+        "fn fmt",
+        "fn invalid_usize",
+        "fn label_mismatch",
+        "fn labels",
+        "fn padding",
+        "fn pattern_id_error",
+        "fn version_mismatch",
+        "fn write_u128",
+        "fn write_u16",
+        "fn write_u32",
+        "pub struct AlignAs",
+        "pub struct DeserializeError",
+        "pub struct SerializeError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/iter.rs": {
+      "fichier": "regex-automata/src/util/iter.rs",
+      "langage": "rust",
+      "lignes": 1022,
+      "taille_bytes": 37683,
+      "entrees": [
+        "crate::util::captures::Captures",
+        "crate::util::search::"
+      ],
+      "sorties": [
+        "fn fmt",
+        "fn handle_overlapping_empty_half_match",
+        "fn handle_overlapping_empty_match",
+        "fn next",
+        "pub fn advance",
+        "pub fn advance_half",
+        "pub fn infallible",
+        "pub fn input",
+        "pub fn into_captures_iter",
+        "pub fn into_half_matches_iter",
+        "pub fn into_matches_iter",
+        "pub fn new",
+        "pub fn try_advance",
+        "pub fn try_advance_half",
+        "pub struct CapturesIter",
+        "pub struct HalfMatchesIter",
+        "pub struct MatchesIter",
+        "pub struct Searcher",
+        "pub struct TryCapturesIter",
+        "pub struct TryHalfMatchesIter",
+        "pub struct TryMatchesIter",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/utf8.rs": {
+      "fichier": "regex-automata/src/util/utf8.rs",
+      "langage": "rust",
+      "lignes": 191,
+      "taille_bytes": 7254,
+      "entrees": [],
+      "sorties": [
+        "const WORD",
+        "const fn",
+        "fn is_leading_or_invalid_byte",
+        "fn len"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/search.rs": {
+      "fichier": "regex-automata/src/util/search.rs",
+      "langage": "rust",
+      "lignes": 1988,
+      "taille_bytes": 73816,
+      "entrees": [
+        "core::ops::",
+        "core::ops::Bound",
+        "crate::util::",
+        "crate::util::escape::DebugHaystack",
+        "super::*"
+      ],
+      "sorties": [
+        "fn as_ref",
+        "fn eq",
+        "fn fmt",
+        "fn incorrect_asref_guard",
+        "fn index",
+        "fn index_mut",
+        "fn match_error_kind_size",
+        "fn match_error_size",
+        "fn next",
+        "fn next_back",
+        "fn size_hint",
+        "pub enum Anchored",
+        "pub enum MatchErrorKind",
+        "pub enum MatchKind",
+        "pub fn anchored",
+        "pub fn capacity",
+        "pub fn clear",
+        "pub fn contains",
+        "pub fn earliest",
+        "pub fn end",
+        "pub fn gave_up",
+        "pub fn get_anchored",
+        "pub fn get_earliest",
+        "pub fn get_range",
+        "pub fn get_span",
+        "pub fn haystack",
+        "pub fn haystack_too_long",
+        "pub fn insert",
+        "pub fn is_anchored",
+        "pub fn is_char_boundary",
+        "pub fn is_done",
+        "pub fn is_empty",
+        "pub fn is_full",
+        "pub fn iter",
+        "pub fn kind",
+        "pub fn len",
+        "pub fn must",
+        "pub fn new",
+        "pub fn offset",
+        "pub fn pattern",
+        "pub fn quit",
+        "pub fn range",
+        "pub fn remove",
+        "pub fn set_anchored",
+        "pub fn set_earliest",
+        "pub fn set_end",
+        "pub fn set_range",
+        "pub fn set_span",
+        "pub fn set_start",
+        "pub fn span",
+        "pub fn start",
+        "pub fn try_insert",
+        "pub fn unsupported_anchored",
+        "pub struct HalfMatch",
+        "pub struct Input",
+        "pub struct Match",
+        "pub struct MatchError",
+        "pub struct PatternSet",
+        "pub struct PatternSetInsertError",
+        "pub struct PatternSetIter",
+        "pub struct Span",
+        "struct Bad",
+        "type Item",
+        "type Output"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/pool.rs": {
+      "fichier": "regex-automata/src/util/pool.rs",
+      "langage": "rust",
+      "lignes": 1199,
+      "taille_bytes": 54295,
+      "entrees": [
+        "alloc::",
+        "core::",
+        "core::panic::",
+        "std::",
+        "super::*"
+      ],
+      "sorties": [
+        "const MAX_POOL_STACKS",
+        "const fn",
+        "fn assert_oitbits",
+        "fn deref",
+        "fn deref_mut",
+        "fn drop",
+        "fn fmt",
+        "fn get_slow",
+        "fn guard_owned",
+        "fn guard_stack",
+        "fn guard_stack_transient",
+        "fn lock",
+        "fn oibits",
+        "fn put",
+        "fn put_imp",
+        "fn put_value",
+        "fn thread_owner_distinct",
+        "fn thread_owner_optimization",
+        "fn thread_owner_send_drop",
+        "fn thread_owner_sync",
+        "pub fn get",
+        "pub fn new",
+        "pub fn put",
+        "pub struct Pool",
+        "pub struct PoolGuard",
+        "struct CacheLine",
+        "struct Mutex",
+        "struct MutexGuard",
+        "type Target"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/sparse_set.rs": {
+      "fichier": "regex-automata/src/util/sparse_set.rs",
+      "langage": "rust",
+      "lignes": 239,
+      "taille_bytes": 8012,
+      "entrees": [
+        "alloc::",
+        "crate::util::primitives::StateID"
+      ],
+      "sorties": [
+        "fn fmt",
+        "fn next",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/captures.rs": {
+      "fichier": "regex-automata/src/util/captures.rs",
+      "langage": "rust",
+      "lignes": 2551,
+      "taille_bytes": 101513,
+      "entrees": [
+        "alloc::",
+        "core::mem::size_of",
+        "crate::util::",
+        "crate::util::primitives::IteratorIndexExt",
+        "self::GroupInfoErrorKind::*"
+      ],
+      "sorties": [
+        "enum GroupInfoErrorKind",
+        "fn add_explicit_group",
+        "fn add_first_group",
+        "fn count",
+        "fn duplicate",
+        "fn empty",
+        "fn first_must_be_unnamed",
+        "fn fixup_slot_ranges",
+        "fn fmt",
+        "fn group_len",
+        "fn missing_groups",
+        "fn next",
+        "fn pattern_len",
+        "fn size_hint",
+        "fn small_slot_len",
+        "fn source",
+        "fn too_many_groups",
+        "fn too_many_patterns",
+        "pub fn all",
+        "pub fn all_group_len",
+        "pub fn all_names",
+        "pub fn clear",
+        "pub fn empty",
+        "pub fn explicit_slot_len",
+        "pub fn extract",
+        "pub fn extract_bytes",
+        "pub fn get_group",
+        "pub fn get_group_by_name",
+        "pub fn get_match",
+        "pub fn group_info",
+        "pub fn group_len",
+        "pub fn implicit_slot_len",
+        "pub fn interpolate_bytes",
+        "pub fn interpolate_bytes_into",
+        "pub fn interpolate_string",
+        "pub fn interpolate_string_into",
+        "pub fn is_match",
+        "pub fn iter",
+        "pub fn matches",
+        "pub fn memory_usage",
+        "pub fn new",
+        "pub fn pattern",
+        "pub fn pattern_len",
+        "pub fn pattern_names",
+        "pub fn set_pattern",
+        "pub fn slot",
+        "pub fn slot_len",
+        "pub fn slots",
+        "pub fn slots_mut",
+        "pub fn to_index",
+        "pub fn to_name",
+        "pub struct Captures",
+        "pub struct CapturesPatternIter",
+        "pub struct GroupInfo",
+        "pub struct GroupInfoAllNames",
+        "pub struct GroupInfoError",
+        "pub struct GroupInfoPatternNames",
+        "struct CapturesDebugMap",
+        "struct GroupInfoInner",
+        "struct Key",
+        "type CaptureNameMap",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/interpolate.rs": {
+      "fichier": "regex-automata/src/util/interpolate.rs",
+      "langage": "rust",
+      "lignes": 576,
+      "taille_bytes": 17269,
+      "entrees": [
+        "alloc::",
+        "crate::util::memchr::memchr",
+        "super::"
+      ],
+      "sorties": [
+        "enum Ref",
+        "fn find_cap_ref",
+        "fn find_cap_ref_braced",
+        "fn interpolate_bytes",
+        "fn interpolate_string",
+        "fn is_valid_cap_letter",
+        "pub fn bytes",
+        "pub fn string",
+        "struct CaptureRef"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/int.rs": {
+      "fichier": "regex-automata/src/util/int.rs",
+      "langage": "rust",
+      "lignes": 246,
+      "taille_bytes": 6514,
+      "entrees": [],
+      "sorties": [
+        "fn as_u16",
+        "fn as_u32",
+        "fn as_u64",
+        "fn as_u8",
+        "fn as_usize",
+        "fn from_bits",
+        "fn high_u16",
+        "fn high_u32",
+        "fn high_u8",
+        "fn low_u16",
+        "fn low_u32",
+        "fn low_u8",
+        "fn to_bits"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/syntax.rs": {
+      "fichier": "regex-automata/src/util/syntax.rs",
+      "langage": "rust",
+      "lignes": 482,
+      "taille_bytes": 17707,
+      "entrees": [
+        "alloc::",
+        "regex_syntax::"
+      ],
+      "sorties": [
+        "pub fn case_insensitive",
+        "pub fn crlf",
+        "pub fn dot_matches_new_line",
+        "pub fn get_case_insensitive",
+        "pub fn get_crlf",
+        "pub fn get_dot_matches_new_line",
+        "pub fn get_ignore_whitespace",
+        "pub fn get_line_terminator",
+        "pub fn get_multi_line",
+        "pub fn get_nest_limit",
+        "pub fn get_octal",
+        "pub fn get_swap_greed",
+        "pub fn get_unicode",
+        "pub fn get_utf8",
+        "pub fn ignore_whitespace",
+        "pub fn line_terminator",
+        "pub fn multi_line",
+        "pub fn nest_limit",
+        "pub fn new",
+        "pub fn octal",
+        "pub fn parse",
+        "pub fn parse_many",
+        "pub fn parse_many_with",
+        "pub fn parse_with",
+        "pub fn swap_greed",
+        "pub fn unicode",
+        "pub fn utf8",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/mod.rs": {
+      "fichier": "regex-automata/src/util/mod.rs",
+      "langage": "rust",
+      "lignes": 57,
+      "taille_bytes": 1963,
+      "entrees": [
+        "cases:"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/start.rs": {
+      "fichier": "regex-automata/src/util/start.rs",
+      "langage": "rust",
+      "lignes": 479,
+      "taille_bytes": 17914,
+      "entrees": [
+        "crate::util::",
+        "crate::util::escape::DebugByte",
+        "super::*"
+      ],
+      "sorties": [
+        "fn fmt",
+        "fn start_fwd",
+        "fn start_fwd_done_range",
+        "fn start_rev",
+        "fn start_rev_done_range",
+        "pub fn anchored",
+        "pub fn from_input_forward",
+        "pub fn from_input_reverse",
+        "pub fn get_anchored",
+        "pub fn get_look_behind",
+        "pub fn look_behind",
+        "pub fn new",
+        "pub struct Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/escape.rs": {
+      "fichier": "regex-automata/src/util/escape.rs",
+      "langage": "rust",
+      "lignes": 84,
+      "taille_bytes": 2994,
+      "entrees": [
+        "crate::util::utf8"
+      ],
+      "sorties": [
+        "fn fmt",
+        "pub struct DebugByte",
+        "pub struct DebugHaystack"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "regex-automata/src/util/empty.rs": {
+      "fichier": "regex-automata/src/util/empty.rs",
+      "langage": "rust",
+      "lignes": 265,
+      "taille_bytes": 13516,
+      "entrees": [
+        "crate::util::search::"
+      ],
+      "sorties": [
+        "fn skip_splits"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

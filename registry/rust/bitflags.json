@@ -1,0 +1,1947 @@
+{
+  "meta": {
+    "projet": "bitflags",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "toml": 2,
+      "rust": 98
+    }
+  },
+  "stats": {
+    "fichiers_total": 100,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "Cargo.toml"
+  },
+  "noeuds": {
+    "Cargo.toml": {
+      "fichier": "Cargo.toml",
+      "langage": "toml",
+      "lignes": 41,
+      "taille_bytes": 1260,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/custom_bits_type.rs": {
+      "fichier": "examples/custom_bits_type.rs",
+      "langage": "rust",
+      "lignes": 97,
+      "taille_bytes": 2176,
+      "entrees": [
+        "bitflags::",
+        "std::ops::"
+      ],
+      "sorties": [
+        "const ALL",
+        "const EMPTY",
+        "const FLAGS",
+        "fn bitand",
+        "fn bitor",
+        "fn bits",
+        "fn bitxor",
+        "fn eq",
+        "fn from_bits_retain",
+        "fn main",
+        "fn not",
+        "pub struct CustomBits",
+        "pub struct CustomFlags",
+        "type Bits",
+        "type Output"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/fmt.rs": {
+      "fichier": "examples/fmt.rs",
+      "langage": "rust",
+      "lignes": 49,
+      "taille_bytes": 1175,
+      "entrees": [
+        "core::"
+      ],
+      "sorties": [
+        "fn fmt",
+        "fn from_str",
+        "fn main",
+        "pub struct Flags",
+        "type Err"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/serde.rs": {
+      "fichier": "examples/serde.rs",
+      "langage": "rust",
+      "lignes": 39,
+      "taille_bytes": 1116,
+      "entrees": [
+        "serde_lib::*"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/macro_free.rs": {
+      "fichier": "examples/macro_free.rs",
+      "langage": "rust",
+      "lignes": 61,
+      "taille_bytes": 1534,
+      "entrees": [
+        "bitflags::",
+        "std::"
+      ],
+      "sorties": [
+        "const FLAGS",
+        "fn bits",
+        "fn fmt",
+        "fn from_bits_retain",
+        "fn from_str",
+        "fn main",
+        "pub struct ManualFlags",
+        "type Bits",
+        "type Err"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/custom_derive.rs": {
+      "fichier": "examples/custom_derive.rs",
+      "langage": "rust",
+      "lignes": 23,
+      "taille_bytes": 691,
+      "entrees": [
+        "bitflags::bitflags",
+        "std::str"
+      ],
+      "sorties": [
+        "const ABC",
+        "fn main",
+        "pub struct ManualFlags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benches/parse.rs": {
+      "fichier": "benches/parse.rs",
+      "langage": "rust",
+      "lignes": 96,
+      "taille_bytes": 2122,
+      "entrees": [
+        "std::",
+        "test"
+      ],
+      "sorties": [
+        "fn fmt",
+        "fn format_flags_10_present",
+        "fn format_flags_1_present",
+        "fn format_flags_5_present",
+        "fn from_str",
+        "fn parse_flags_10_10",
+        "fn parse_flags_1_10",
+        "fn parse_flags_1_10_hex",
+        "fn parse_flags_5_10",
+        "struct Flags10",
+        "type Err"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile.rs": {
+      "fichier": "tests/compile.rs",
+      "langage": "rust",
+      "lignes": 18,
+      "taille_bytes": 613,
+      "entrees": [],
+      "sorties": [
+        "fn fail"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/basic.rs": {
+      "fichier": "tests/basic.rs",
+      "langage": "rust",
+      "lignes": 79,
+      "taille_bytes": 1548,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "pub struct I128",
+        "pub struct I16",
+        "pub struct I32",
+        "pub struct I64",
+        "pub struct I8",
+        "pub struct Isize",
+        "pub struct U128",
+        "pub struct U16",
+        "pub struct U32",
+        "pub struct U64",
+        "pub struct U8",
+        "pub struct Usize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/bitflags_redefined.rs": {
+      "fichier": "tests/compile-fail/bitflags_redefined.rs",
+      "langage": "rust",
+      "lignes": 14,
+      "taille_bytes": 178,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "pub struct Flags1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/bitflags_missing_type.rs": {
+      "fichier": "tests/compile-fail/bitflags_missing_type.rs",
+      "langage": "rust",
+      "lignes": 8,
+      "taille_bytes": 102,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "pub struct Flags1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/bitflags_match_missing_default.rs": {
+      "fichier": "tests/compile-fail/bitflags_match_missing_default.rs",
+      "langage": "rust",
+      "lignes": 22,
+      "taille_bytes": 448,
+      "entrees": [],
+      "sorties": [
+        "const ABC",
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/bitflags_pub_const.rs": {
+      "fichier": "tests/compile-fail/bitflags_pub_const.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 127,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct Flags1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/bitflags_trait_deprecated.rs": {
+      "fichier": "tests/compile-fail/bitflags_trait_deprecated.rs",
+      "langage": "rust",
+      "lignes": 5,
+      "taille_bytes": 62,
+      "entrees": [],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/access_outside_visibility.rs": {
+      "fichier": "tests/compile-fail/access_outside_visibility.rs",
+      "langage": "rust",
+      "lignes": 18,
+      "taille_bytes": 317,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "const FLAG_A",
+        "const FLAG_B",
+        "fn main",
+        "pub struct Flags1",
+        "struct Flags2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/bitflags_missing_value.rs": {
+      "fichier": "tests/compile-fail/bitflags_missing_value.rs",
+      "langage": "rust",
+      "lignes": 8,
+      "taille_bytes": 103,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "pub struct Flags1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/bitflags_custom_bits.rs": {
+      "fichier": "tests/compile-fail/bitflags_custom_bits.rs",
+      "langage": "rust",
+      "lignes": 140,
+      "taille_bytes": 2800,
+      "entrees": [
+        "bitflags::",
+        "std::"
+      ],
+      "sorties": [
+        "const ALL",
+        "const EMPTY",
+        "fn bitand",
+        "fn bitand_assign",
+        "fn bitor",
+        "fn bitor_assign",
+        "fn bitxor",
+        "fn bitxor_assign",
+        "fn fmt",
+        "fn main",
+        "fn not",
+        "fn parse_hex",
+        "fn write_hex",
+        "struct Flags128",
+        "struct MyInt",
+        "type Output"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/unnamed_const.rs": {
+      "fichier": "tests/compile-fail/unnamed_const.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 144,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct Unnamed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-fail/bitflags_trait_custom.rs": {
+      "fichier": "tests/compile-fail/bitflags_trait_custom.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 126,
+      "entrees": [
+        "bitflags::BitFlags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct BootlegFlags",
+        "type Bits"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/smoke-test/Cargo.toml": {
+      "fichier": "tests/smoke-test/Cargo.toml",
+      "langage": "toml",
+      "lignes": 9,
+      "taille_bytes": 151,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/smoke-test/src/main.rs": {
+      "fichier": "tests/smoke-test/src/main.rs",
+      "langage": "rust",
+      "lignes": 69,
+      "taille_bytes": 1542,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "const ABC",
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/missing_docs.rs": {
+      "fichier": "tests/compile-pass/missing_docs.rs",
+      "langage": "rust",
+      "lignes": 19,
+      "taille_bytes": 268,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct MyFlags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_trait_generic_iter.rs": {
+      "fichier": "tests/compile-pass/bitflags_trait_generic_iter.rs",
+      "langage": "rust",
+      "lignes": 18,
+      "taille_bytes": 313,
+      "entrees": [
+        "bitflags::"
+      ],
+      "sorties": [
+        "fn count_flags",
+        "fn main",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/parser_strict_non_hex_bits.rs": {
+      "fichier": "tests/compile-pass/parser_strict_non_hex_bits.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 290,
+      "entrees": [],
+      "sorties": [
+        "fn main",
+        "pub fn format",
+        "pub fn parse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/impl_copy.rs": {
+      "fichier": "tests/compile-pass/impl_copy.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 140,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_trait_bound_flags.rs": {
+      "fichier": "tests/compile-pass/bitflags_trait_bound_flags.rs",
+      "langage": "rust",
+      "lignes": 19,
+      "taille_bytes": 265,
+      "entrees": [
+        "bitflags::"
+      ],
+      "sorties": [
+        "fn main",
+        "fn uses_flags",
+        "pub struct MyCustomFlags",
+        "pub trait MyCustomFlagsTrait"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/no_prelude.rs": {
+      "fichier": "tests/compile-pass/no_prelude.rs",
+      "langage": "rust",
+      "lignes": 14,
+      "taille_bytes": 284,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "const ABC",
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_impl_attrs.rs": {
+      "fichier": "tests/compile-pass/bitflags_impl_attrs.rs",
+      "langage": "rust",
+      "lignes": 13,
+      "taille_bytes": 199,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "const flag",
+        "fn main",
+        "struct Example"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/flags_trait_generic_iter.rs": {
+      "fichier": "tests/compile-pass/flags_trait_generic_iter.rs",
+      "langage": "rust",
+      "lignes": 16,
+      "taille_bytes": 290,
+      "entrees": [
+        "bitflags::"
+      ],
+      "sorties": [
+        "fn count_flags",
+        "fn main",
+        "struct MyFlags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/non_snake_case.rs": {
+      "fichier": "tests/compile-pass/non_snake_case.rs",
+      "langage": "rust",
+      "lignes": 13,
+      "taille_bytes": 187,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "const CamelCase",
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_visibility.rs": {
+      "fichier": "tests/compile-pass/bitflags_visibility.rs",
+      "langage": "rust",
+      "lignes": 19,
+      "taille_bytes": 319,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "const FLAG_A",
+        "fn main",
+        "pub fn flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/flags_trait_precedence.rs": {
+      "fichier": "tests/compile-pass/flags_trait_precedence.rs",
+      "langage": "rust",
+      "lignes": 16,
+      "taille_bytes": 243,
+      "entrees": [
+        "bitflags::"
+      ],
+      "sorties": [
+        "fn all_from_trait",
+        "fn main",
+        "struct MyFlags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/impl_eq.rs": {
+      "fichier": "tests/compile-pass/impl_eq.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 142,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_trait_precedence.rs": {
+      "fichier": "tests/compile-pass/bitflags_trait_precedence.rs",
+      "langage": "rust",
+      "lignes": 24,
+      "taille_bytes": 370,
+      "entrees": [
+        "bitflags::"
+      ],
+      "sorties": [
+        "fn all_from_trait",
+        "fn main",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/path_based_bits.rs": {
+      "fichier": "tests/compile-pass/path_based_bits.rs",
+      "langage": "rust",
+      "lignes": 14,
+      "taille_bytes": 171,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct Flags1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/shadow_result.rs": {
+      "fichier": "tests/compile-pass/shadow_result.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 289,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "const FOO",
+        "fn main",
+        "pub struct Flags",
+        "pub struct Ok"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_impl_repr_packed.rs": {
+      "fichier": "tests/compile-pass/bitflags_impl_repr_packed.rs",
+      "langage": "rust",
+      "lignes": 13,
+      "taille_bytes": 188,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "const FLAG_1",
+        "const FLAG_2",
+        "fn main",
+        "struct Example"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/shadow_macros.rs": {
+      "fichier": "tests/compile-pass/shadow_macros.rs",
+      "langage": "rust",
+      "lignes": 25,
+      "taille_bytes": 533,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/impl_convert_from_bits.rs": {
+      "fichier": "tests/compile-pass/impl_convert_from_bits.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 217,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_trait_supertrait.rs": {
+      "fichier": "tests/compile-pass/bitflags_trait_supertrait.rs",
+      "langage": "rust",
+      "lignes": 80,
+      "taille_bytes": 1904,
+      "entrees": [
+        "bitflags::",
+        "core::"
+      ],
+      "sorties": [
+        "fn complement_retain",
+        "fn has_uncorresponding_bits",
+        "fn main",
+        "pub trait BitFlagsExt",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/shadow_core.rs": {
+      "fichier": "tests/compile-pass/shadow_core.rs",
+      "langage": "rust",
+      "lignes": 14,
+      "taille_bytes": 218,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/impl_default.rs": {
+      "fichier": "tests/compile-pass/impl_default.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 136,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/impl_fmt.rs": {
+      "fichier": "tests/compile-pass/impl_fmt.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 372,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "const TWO",
+        "fn main",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/item_positions.rs": {
+      "fichier": "tests/compile-pass/item_positions.rs",
+      "langage": "rust",
+      "lignes": 54,
+      "taille_bytes": 765,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct Flags1",
+        "pub struct Flags2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/repr_c.rs": {
+      "fichier": "tests/compile-pass/repr_c.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 128,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/flags_trait_supertrait.rs": {
+      "fichier": "tests/compile-pass/flags_trait_supertrait.rs",
+      "langage": "rust",
+      "lignes": 80,
+      "taille_bytes": 1893,
+      "entrees": [
+        "bitflags::",
+        "core::"
+      ],
+      "sorties": [
+        "fn complement_retain",
+        "fn has_uncorresponding_bits",
+        "fn main",
+        "pub trait FlagsExt",
+        "struct MyFlags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/large.rs": {
+      "fichier": "tests/compile-pass/large.rs",
+      "langage": "rust",
+      "lignes": 311,
+      "taille_bytes": 12054,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "const CLIENT_CAN_HANDLE_EXPIRED_PASSWORDS",
+        "const CLIENT_COMPRESS",
+        "const CLIENT_CONNECT_ATTRS",
+        "const CLIENT_CONNECT_WITH_DB",
+        "const CLIENT_DEPRECATE_EOF",
+        "const CLIENT_FOUND_ROWS",
+        "const CLIENT_IGNORE_SIGPIPE",
+        "const CLIENT_IGNORE_SPACE",
+        "const CLIENT_INTERACTIVE",
+        "const CLIENT_LOCAL_FILES",
+        "const CLIENT_LONG_FLAG",
+        "const CLIENT_LONG_PASSWORD",
+        "const CLIENT_MULTI_RESULTS",
+        "const CLIENT_MULTI_STATEMENTS",
+        "const CLIENT_NO_SCHEMA",
+        "const CLIENT_ODBC",
+        "const CLIENT_OPTIONAL_RESULTSET_METADATA",
+        "const CLIENT_PLUGIN_AUTH",
+        "const CLIENT_PLUGIN_AUTH_LENENC_CLIENT_DATA",
+        "const CLIENT_PROGRESS_OBSOLETE",
+        "const CLIENT_PROTOCOL_41",
+        "const CLIENT_PS_MULTI_RESULTS",
+        "const CLIENT_QUERY_ATTRIBUTES",
+        "const CLIENT_REMEMBER_OPTIONS",
+        "const CLIENT_RESERVED",
+        "const CLIENT_SECURE_CONNECTION",
+        "const CLIENT_SESSION_TRACK",
+        "const CLIENT_SSL",
+        "const CLIENT_SSL_VERIFY_SERVER_CERT",
+        "const CLIENT_TRANSACTIONS",
+        "const CLIENT_ZSTD_COMPRESSION_ALGORITHM",
+        "const MULTI_FACTOR_AUTHENTICATION",
+        "fn main",
+        "pub struct CapabilityFlags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_nested_value.rs": {
+      "fichier": "tests/compile-pass/bitflags_nested_value.rs",
+      "langage": "rust",
+      "lignes": 23,
+      "taille_bytes": 408,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "const FOO",
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/deprecated.rs": {
+      "fichier": "tests/compile-pass/deprecated.rs",
+      "langage": "rust",
+      "lignes": 14,
+      "taille_bytes": 224,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/into_iter_trait_wrapped.rs": {
+      "fichier": "tests/compile-pass/into_iter_trait_wrapped.rs",
+      "langage": "rust",
+      "lignes": 22,
+      "taille_bytes": 404,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "fn next",
+        "pub struct WrappedIter",
+        "struct Flags",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/unnamed.rs": {
+      "fichier": "tests/compile-pass/unnamed.rs",
+      "langage": "rust",
+      "lignes": 23,
+      "taille_bytes": 350,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct External",
+        "pub struct Overlapping",
+        "pub struct Unnamed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_trait_to_flags.rs": {
+      "fichier": "tests/compile-pass/bitflags_trait_to_flags.rs",
+      "langage": "rust",
+      "lignes": 31,
+      "taille_bytes": 592,
+      "entrees": [
+        "bitflags::"
+      ],
+      "sorties": [
+        "fn main",
+        "fn uses_bitflags1",
+        "fn uses_bitflags2",
+        "fn uses_flags1",
+        "fn uses_flags2",
+        "pub struct MyFlags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_self_in_value.rs": {
+      "fichier": "tests/compile-pass/bitflags_self_in_value.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 199,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "const SOME_FLAG",
+        "const SOME_FLAG_SHIFT",
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/bitflags_redefined_value.rs": {
+      "fichier": "tests/compile-pass/bitflags_redefined_value.rs",
+      "langage": "rust",
+      "lignes": 24,
+      "taille_bytes": 402,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "const FOO",
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/flags_trait_bound_bitflags.rs": {
+      "fichier": "tests/compile-pass/flags_trait_bound_bitflags.rs",
+      "langage": "rust",
+      "lignes": 19,
+      "taille_bytes": 265,
+      "entrees": [
+        "bitflags::"
+      ],
+      "sorties": [
+        "fn main",
+        "fn uses_flags",
+        "pub struct MyCustomFlags",
+        "pub trait MyCustomFlagsTrait"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/repr_transparent.rs": {
+      "fichier": "tests/compile-pass/repr_transparent.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 138,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/doc_alias.rs": {
+      "fichier": "tests/compile-pass/doc_alias.rs",
+      "langage": "rust",
+      "lignes": 14,
+      "taille_bytes": 185,
+      "entrees": [
+        "bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/compile-pass/impl_new.rs": {
+      "fichier": "tests/compile-pass/impl_new.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 180,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "fn main",
+        "pub fn new",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/iter.rs": {
+      "fichier": "src/iter.rs",
+      "langage": "rust",
+      "lignes": 182,
+      "taille_bytes": 5051,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [
+        "fn next",
+        "pub fn remaining",
+        "pub struct Iter",
+        "pub struct IterDefinedNames",
+        "pub struct IterNames",
+        "type Item"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/public.rs": {
+      "fichier": "src/public.rs",
+      "langage": "rust",
+      "lignes": 580,
+      "taille_bytes": 19664,
+      "entrees": [
+        "$crate::__private::core::iter::Extend"
+      ],
+      "sorties": [
+        "const FLAGS",
+        "fn all",
+        "fn bitand",
+        "fn bitand_assign",
+        "fn bitor",
+        "fn bitor_assign",
+        "fn bits",
+        "fn bitxor",
+        "fn bitxor_assign",
+        "fn complement",
+        "fn contains",
+        "fn difference",
+        "fn empty",
+        "fn extend",
+        "fn fmt",
+        "fn from_bits",
+        "fn from_bits_retain",
+        "fn from_bits_truncate",
+        "fn from_iter",
+        "fn from_name",
+        "fn insert",
+        "fn intersection",
+        "fn intersects",
+        "fn into_iter",
+        "fn is_all",
+        "fn is_empty",
+        "fn not",
+        "fn remove",
+        "fn set",
+        "fn sub",
+        "fn sub_assign",
+        "fn symmetric_difference",
+        "fn toggle",
+        "fn union",
+        "type Bits",
+        "type IntoIter",
+        "type Item",
+        "type Output"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/lib.rs": {
+      "fichier": "src/lib.rs",
+      "langage": "rust",
+      "lignes": 997,
+      "taille_bytes": 29456,
+      "entrees": [
+        "bitflags::bitflags"
+      ],
+      "sorties": [
+        "const AB",
+        "fn all",
+        "fn bits",
+        "fn complement",
+        "fn contains",
+        "fn difference",
+        "fn empty",
+        "fn from_bits",
+        "fn from_bits_retain",
+        "fn from_bits_truncate",
+        "fn from_name",
+        "fn insert",
+        "fn intersection",
+        "fn intersects",
+        "fn is_all",
+        "fn is_empty",
+        "fn remove",
+        "fn set",
+        "fn symmetric_difference",
+        "fn toggle",
+        "fn union",
+        "pub fn as_u64",
+        "pub fn from_name",
+        "pub fn insert",
+        "pub fn remove",
+        "pub fn set",
+        "pub fn toggle",
+        "pub struct Flags",
+        "pub struct MyFlags",
+        "pub struct MyInternalBitFlags",
+        "struct Flags",
+        "struct Flags1",
+        "struct Flags2",
+        "struct FlagsType",
+        "type Internal"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/parser.rs": {
+      "fichier": "src/parser.rs",
+      "langage": "rust",
+      "lignes": 332,
+      "taille_bytes": 8340,
+      "entrees": [
+        "core::fmt::",
+        "crate::"
+      ],
+      "sorties": [
+        "enum ParseErrorKind",
+        "fn fmt",
+        "fn parse_hex",
+        "fn write_hex",
+        "pub fn from_str",
+        "pub fn from_str_strict",
+        "pub fn from_str_truncate",
+        "pub fn invalid_hex_flag",
+        "pub fn invalid_named_flag",
+        "pub fn to_writer",
+        "pub fn to_writer_strict",
+        "pub fn to_writer_truncate",
+        "pub struct ParseError",
+        "pub trait ParseHex",
+        "pub trait WriteHex"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests.rs": {
+      "fichier": "src/tests.rs",
+      "langage": "rust",
+      "lignes": 137,
+      "taille_bytes": 2773,
+      "entrees": [],
+      "sorties": [
+        "const AB",
+        "const ABC",
+        "const BC",
+        "const ONE",
+        "const ZERO",
+        "pub struct TestEmpty",
+        "pub struct TestExternal",
+        "pub struct TestExternalFull",
+        "pub struct TestFlags",
+        "pub struct TestFlagsInvert",
+        "pub struct TestOverlapping",
+        "pub struct TestOverlappingFull",
+        "pub struct TestUnicode",
+        "pub struct TestZero",
+        "pub struct TestZeroOne"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/example_generated.rs": {
+      "fichier": "src/example_generated.rs",
+      "langage": "rust",
+      "lignes": 65,
+      "taille_bytes": 1843,
+      "entrees": [],
+      "sorties": [
+        "const ABC",
+        "pub struct Field0",
+        "pub struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/internal.rs": {
+      "fichier": "src/internal.rs",
+      "langage": "rust",
+      "lignes": 125,
+      "taille_bytes": 4779,
+      "entrees": [],
+      "sorties": [
+        "fn as_ref",
+        "fn fmt",
+        "fn from_str",
+        "pub fn bits_mut",
+        "type Err",
+        "type Internal",
+        "type Primitive"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/traits.rs": {
+      "fichier": "src/traits.rs",
+      "langage": "rust",
+      "lignes": 467,
+      "taille_bytes": 12332,
+      "entrees": [
+        "bitflags::",
+        "bitflags::bitflags",
+        "core::",
+        "crate::"
+      ],
+      "sorties": [
+        "const ALL",
+        "const EMPTY",
+        "const FLAGS",
+        "fn all",
+        "fn bits",
+        "fn clear",
+        "fn complement",
+        "fn contains",
+        "fn contains_unknown_bits",
+        "fn defined_flags",
+        "fn difference",
+        "fn empty",
+        "fn from_bits",
+        "fn from_bits_retain",
+        "fn from_bits_truncate",
+        "fn from_name",
+        "fn insert",
+        "fn intersection",
+        "fn intersects",
+        "fn is_all",
+        "fn is_empty",
+        "fn iter",
+        "fn iter_defined_names",
+        "fn iter_names",
+        "fn known_bits",
+        "fn parse_hex",
+        "fn remove",
+        "fn set",
+        "fn symmetric_difference",
+        "fn toggle",
+        "fn truncate",
+        "fn union",
+        "fn unknown_bits",
+        "fn write_hex",
+        "pub struct Flag",
+        "pub trait BitFlags",
+        "pub trait Bits",
+        "pub trait Flags",
+        "pub trait ImplementedByBitFlagsMacro",
+        "pub trait Primitive",
+        "pub trait PublicFlags",
+        "struct MyFlags",
+        "type Bits",
+        "type Internal",
+        "type Iter",
+        "type IterNames",
+        "type Primitive"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/external.rs": {
+      "fichier": "src/external.rs",
+      "langage": "rust",
+      "lignes": 262,
+      "taille_bytes": 7417,
+      "entrees": [],
+      "sorties": [
+        "fn arbitrary",
+        "fn deserialize",
+        "fn serialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/from_bits.rs": {
+      "fichier": "src/tests/from_bits.rs",
+      "langage": "rust",
+      "lignes": 45,
+      "taille_bytes": 1006,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/intersects.rs": {
+      "fichier": "src/tests/intersects.rs",
+      "langage": "rust",
+      "lignes": 91,
+      "taille_bytes": 2201,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/known_bits.rs": {
+      "fichier": "src/tests/known_bits.rs",
+      "langage": "rust",
+      "lignes": 47,
+      "taille_bytes": 1032,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/intersection.rs": {
+      "fichier": "src/tests/intersection.rs",
+      "langage": "rust",
+      "lignes": 79,
+      "taille_bytes": 1804,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/is_all.rs": {
+      "fichier": "src/tests/is_all.rs",
+      "langage": "rust",
+      "lignes": 32,
+      "taille_bytes": 749,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/complement.rs": {
+      "fichier": "src/tests/complement.rs",
+      "langage": "rust",
+      "lignes": 53,
+      "taille_bytes": 1324,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/unknown_bits.rs": {
+      "fichier": "src/tests/unknown_bits.rs",
+      "langage": "rust",
+      "lignes": 53,
+      "taille_bytes": 1143,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/symmetric_difference.rs": {
+      "fichier": "src/tests/symmetric_difference.rs",
+      "langage": "rust",
+      "lignes": 110,
+      "taille_bytes": 2638,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/contains.rs": {
+      "fichier": "src/tests/contains.rs",
+      "langage": "rust",
+      "lignes": 108,
+      "taille_bytes": 2570,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/iter.rs": {
+      "fichier": "src/tests/iter.rs",
+      "langage": "rust",
+      "lignes": 299,
+      "taille_bytes": 8582,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "const AB",
+        "const ABC",
+        "const AC",
+        "const CB",
+        "const CC",
+        "const ZERO",
+        "fn case",
+        "fn cases",
+        "fn roundtrip",
+        "fn test_defined_names",
+        "struct TestFlags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/from_bits_truncate.rs": {
+      "fichier": "src/tests/from_bits_truncate.rs",
+      "langage": "rust",
+      "lignes": 42,
+      "taille_bytes": 1010,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/parser.rs": {
+      "fichier": "src/tests/parser.rs",
+      "langage": "rust",
+      "lignes": 332,
+      "taille_bytes": 9004,
+      "entrees": [
+        "crate::",
+        "super::*"
+      ],
+      "sorties": [
+        "fn cases",
+        "fn invalid",
+        "fn roundtrip",
+        "fn roundtrip_strict",
+        "fn roundtrip_truncate",
+        "fn valid",
+        "fn write"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/difference.rs": {
+      "fichier": "src/tests/difference.rs",
+      "langage": "rust",
+      "lignes": 92,
+      "taille_bytes": 2144,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/extend.rs": {
+      "fichier": "src/tests/extend.rs",
+      "langage": "rust",
+      "lignes": 42,
+      "taille_bytes": 898,
+      "entrees": [
+        "super::*"
+      ],
+      "sorties": [
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/from_name.rs": {
+      "fichier": "src/tests/from_name.rs",
+      "langage": "rust",
+      "lignes": 42,
+      "taille_bytes": 1035,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/union.rs": {
+      "fichier": "src/tests/union.rs",
+      "langage": "rust",
+      "lignes": 71,
+      "taille_bytes": 1605,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/remove.rs": {
+      "fichier": "src/tests/remove.rs",
+      "langage": "rust",
+      "lignes": 100,
+      "taille_bytes": 2205,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/fmt.rs": {
+      "fichier": "src/tests/fmt.rs",
+      "langage": "rust",
+      "lignes": 97,
+      "taille_bytes": 1971,
+      "entrees": [
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/from_bits_retain.rs": {
+      "fichier": "src/tests/from_bits_retain.rs",
+      "langage": "rust",
+      "lignes": 38,
+      "taille_bytes": 871,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/insert.rs": {
+      "fichier": "src/tests/insert.rs",
+      "langage": "rust",
+      "lignes": 91,
+      "taille_bytes": 2059,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/clear.rs": {
+      "fichier": "src/tests/clear.rs",
+      "langage": "rust",
+      "lignes": 27,
+      "taille_bytes": 534,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/unknown.rs": {
+      "fichier": "src/tests/unknown.rs",
+      "langage": "rust",
+      "lignes": 40,
+      "taille_bytes": 994,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/flags.rs": {
+      "fichier": "src/tests/flags.rs",
+      "langage": "rust",
+      "lignes": 46,
+      "taille_bytes": 901,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/truncate.rs": {
+      "fichier": "src/tests/truncate.rs",
+      "langage": "rust",
+      "lignes": 29,
+      "taille_bytes": 574,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/is_empty.rs": {
+      "fichier": "src/tests/is_empty.rs",
+      "langage": "rust",
+      "lignes": 31,
+      "taille_bytes": 750,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/eq.rs": {
+      "fichier": "src/tests/eq.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 303,
+      "entrees": [
+        "super::*"
+      ],
+      "sorties": [
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/all.rs": {
+      "fichier": "src/tests/all.rs",
+      "langage": "rust",
+      "lignes": 23,
+      "taille_bytes": 460,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/bits.rs": {
+      "fichier": "src/tests/bits.rs",
+      "langage": "rust",
+      "lignes": 36,
+      "taille_bytes": 958,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/bitflags_match.rs": {
+      "fichier": "src/tests/bitflags_match.rs",
+      "langage": "rust",
+      "lignes": 93,
+      "taille_bytes": 2996,
+      "entrees": [],
+      "sorties": [
+        "fn flag_to_string",
+        "fn test_and_operations",
+        "fn test_complex_operations",
+        "fn test_empty_and_full_flags",
+        "fn test_or_operations",
+        "fn test_single_flags",
+        "fn test_xor_operations",
+        "struct Flags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests/empty.rs": {
+      "fichier": "src/tests/empty.rs",
+      "langage": "rust",
+      "lignes": 23,
+      "taille_bytes": 455,
+      "entrees": [
+        "crate::Flags",
+        "super::*"
+      ],
+      "sorties": [
+        "fn case",
+        "fn cases"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/external/arbitrary.rs": {
+      "fichier": "src/external/arbitrary.rs",
+      "langage": "rust",
+      "lignes": 33,
+      "taille_bytes": 779,
+      "entrees": [
+        "arbitrary::Arbitrary",
+        "crate::Flags"
+      ],
+      "sorties": [
+        "const BLUE",
+        "const GREEN",
+        "const RED",
+        "fn test_arbitrary",
+        "pub fn arbitrary",
+        "struct Color"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/external/bytemuck.rs": {
+      "fichier": "src/external/bytemuck.rs",
+      "langage": "rust",
+      "lignes": 19,
+      "taille_bytes": 399,
+      "entrees": [
+        "bytemuck::"
+      ],
+      "sorties": [
+        "const BLUE",
+        "const GREEN",
+        "const RED",
+        "fn test_bytemuck",
+        "struct Color"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/external/serde.rs": {
+      "fichier": "src/external/serde.rs",
+      "langage": "rust",
+      "lignes": 94,
+      "taille_bytes": 2797,
+      "entrees": [
+        "core::",
+        "crate::",
+        "serde_core::",
+        "serde_test::"
+      ],
+      "sorties": [
+        "fn expecting",
+        "fn test_serde_bitflags_default",
+        "fn visit_str",
+        "pub fn deserialize",
+        "pub fn serialize",
+        "struct FlagsVisitor",
+        "struct SerdeFlags",
+        "type Value"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

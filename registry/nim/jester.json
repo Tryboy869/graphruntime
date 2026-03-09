@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "projet": "jester",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "nim": 17,
+      "html": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 18,
+    "edges_total": 11,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 1,
+    "points_entree": 1,
+    "fichier_plus_appele": "jester.nim"
+  },
+  "noeuds": {
+    "jester.nim": {
+      "fichier": "jester.nim",
+      "langage": "nim",
+      "lignes": 1456,
+      "taille_bytes": 45319,
+      "entrees": [
+        "asynchttpserver",
+        "cgi",
+        "httpbeast",
+        "jester/[request",
+        "jester/private/[errorpages",
+        "nativesockets",
+        "net",
+        "options"
+      ],
+      "sorties": [
+        "const definedRoutes",
+        "const jesterVer",
+        "export HttpMethod",
+        "export MultiData",
+        "export SameSite",
+        "export asyncdispatch",
+        "export httpcore",
+        "export options",
+        "export request",
+        "export strtabs",
+        "export tables"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tests/alltest.nim",
+        "tests/alltest_router2.nim",
+        "tests/benchmark.nim",
+        "tests/closures.nim",
+        "tests/customRouter.nim",
+        "tests/example.nim",
+        "tests/example2.nim",
+        "tests/issue150.nim",
+        "tests/issue296.nim",
+        "tests/techempower/techempower.nim"
+      ],
+      "type_noeud": "hub"
+    },
+    "tests/tester.nim": {
+      "fichier": "tests/tester.nim",
+      "langage": "nim",
+      "lignes": 295,
+      "taille_bytes": 10592,
+      "entrees": [
+        "asynctools",
+        "osproc",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/alltest.nim": {
+      "fichier": "tests/alltest.nim",
+      "langage": "nim",
+      "lignes": 230,
+      "taille_bytes": 5171,
+      "entrees": [
+        "alltest_router2",
+        "jester",
+        "json"
+      ],
+      "sorties": [],
+      "appelle": [
+        "jester.nim",
+        "tests/alltest_router2.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "tests/issue296.nim": {
+      "fichier": "tests/issue296.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 279,
+      "entrees": [
+        "jester"
+      ],
+      "sorties": [],
+      "appelle": [
+        "jester.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/example.nim": {
+      "fichier": "tests/example.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 99,
+      "entrees": [
+        "jester"
+      ],
+      "sorties": [],
+      "appelle": [
+        "jester.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/issue150.nim": {
+      "fichier": "tests/issue150.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 353,
+      "entrees": [
+        "jester",
+        "net"
+      ],
+      "sorties": [],
+      "appelle": [
+        "jester.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/benchmark.nim": {
+      "fichier": "tests/benchmark.nim",
+      "langage": "nim",
+      "lignes": 22,
+      "taille_bytes": 637,
+      "entrees": [
+        "jester"
+      ],
+      "sorties": [],
+      "appelle": [
+        "jester.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/alltest_router2.nim": {
+      "fichier": "tests/alltest_router2.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 174,
+      "entrees": [
+        "jester",
+        "re"
+      ],
+      "sorties": [],
+      "appelle": [
+        "jester.nim"
+      ],
+      "est_appele_par": [
+        "tests/alltest.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/closures.nim": {
+      "fichier": "tests/closures.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 233,
+      "entrees": [
+        "jester"
+      ],
+      "sorties": [],
+      "appelle": [
+        "jester.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/example2.nim": {
+      "fichier": "tests/example2.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 271,
+      "entrees": [
+        "jester"
+      ],
+      "sorties": [],
+      "appelle": [
+        "jester.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/fileupload.nim": {
+      "fichier": "tests/fileupload.nim",
+      "langage": "nim",
+      "lignes": 19,
+      "taille_bytes": 601,
+      "entrees": [
+        "os"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/customRouter.nim": {
+      "fichier": "tests/customRouter.nim",
+      "langage": "nim",
+      "lignes": 25,
+      "taille_bytes": 432,
+      "entrees": [
+        "jester"
+      ],
+      "sorties": [],
+      "appelle": [
+        "jester.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/techempower/techempower.nim": {
+      "fichier": "tests/techempower/techempower.nim",
+      "langage": "nim",
+      "lignes": 55,
+      "taille_bytes": 1714,
+      "entrees": [
+        "jester",
+        "json"
+      ],
+      "sorties": [
+        "const data"
+      ],
+      "appelle": [
+        "jester.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/public/root/index.html": {
+      "fichier": "tests/public/root/index.html",
+      "langage": "html",
+      "lignes": 1,
+      "taille_bytes": 36,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jester/request.nim": {
+      "fichier": "jester/request.nim",
+      "langage": "nim",
+      "lignes": 198,
+      "taille_bytes": 5262,
+      "entrees": [
+        "asynchttpserver",
+        "httpbeast",
+        "jester/private/utils",
+        "options",
+        "uri"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jester/patterns.nim": {
+      "fichier": "jester/patterns.nim",
+      "langage": "nim",
+      "lignes": 141,
+      "taille_bytes": 4312,
+      "entrees": [
+        "parseutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jester/private/utils.nim": {
+      "fichier": "jester/private/utils.nim",
+      "langage": "nim",
+      "lignes": 196,
+      "taille_bytes": 6050,
+      "entrees": [
+        "cgi",
+        "parseutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "jester/private/errorpages.nim": {
+      "fichier": "jester/private/errorpages.nim",
+      "langage": "nim",
+      "lignes": 19,
+      "taille_bytes": 719,
+      "entrees": [
+        "htmlgen"
+      ],
+      "sorties": [
+        "func error",
+        "func routeException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "tests/alltest.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/alltest.nim",
+      "vers": "tests/alltest_router2.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/issue296.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/example.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/issue150.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/benchmark.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/alltest_router2.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/closures.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/example2.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/customRouter.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/techempower/techempower.nim",
+      "vers": "jester.nim",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 'jester.nim' (in=10, 56% du projet)",
+    "point_entree → 'tests/alltest.nim'"
+  ]
+}

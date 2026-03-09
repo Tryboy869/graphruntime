@@ -1,0 +1,5296 @@
+{
+  "meta": {
+    "projet": "ihp",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "haskell": 112,
+      "shell": 1,
+      "sql": 1,
+      "html": 1,
+      "json": 2,
+      "javascript": 3
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 353,
+    "edges_circulaires": 8,
+    "noeuds_centraux": 14,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 3,
+    "points_entree": 51,
+    "fichier_plus_appele": "ihp/IHP/Prelude.hs"
+  },
+  "noeuds": {
+    "Main.hs": {
+      "fichier": "Main.hs",
+      "langage": "haskell",
+      "lignes": 40,
+      "taille_bytes": 966,
+      "entrees": [
+        "IHP.ControllerPrelude",
+        "IHP.Environment",
+        "IHP.FrameworkConfig",
+        "IHP.Mail",
+        "IHP.Prelude",
+        "IHP.RouterSupport",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RouterSupport.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "update-nix-from-cabal.sh": {
+      "fichier": "update-nix-from-cabal.sh",
+      "langage": "shell",
+      "lignes": 21,
+      "taille_bytes": 852,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "wai-request-params/Test/Spec.hs": {
+      "fichier": "wai-request-params/Test/Spec.hs",
+      "langage": "haskell",
+      "lignes": 1,
+      "taille_bytes": 44,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "wai-request-params/Test/Wai/Request/ParamsSpec.hs": {
+      "fichier": "wai-request-params/Test/Wai/Request/ParamsSpec.hs",
+      "langage": "haskell",
+      "lignes": 363,
+      "taille_bytes": 19033,
+      "entrees": [
+        "Data.ByteString",
+        "Data.Maybe",
+        "Data.Scientific",
+        "Data.String.Conversions",
+        "Data.Text",
+        "Data.Time.Calendar",
+        "Data.Time.Clock",
+        "Data.Time.LocalTime",
+        "Data.UUID",
+        "Prelude",
+        "Test.Hspec",
+        "Wai.Request.Params",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs": {
+      "fichier": "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+      "langage": "haskell",
+      "lignes": 156,
+      "taille_bytes": 8369,
+      "entrees": [
+        "Data.ByteString",
+        "Data.String.Conversions",
+        "Network.HTTP.Types",
+        "Network.Wai",
+        "Network.Wai.Test",
+        "Prelude",
+        "Test.Hspec",
+        "Wai.Request.Params",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "wai-request-params/Wai/Request/Params.hs": {
+      "fichier": "wai-request-params/Wai/Request/Params.hs",
+      "langage": "haskell",
+      "lignes": 479,
+      "taille_bytes": 19884,
+      "entrees": [
+        "Data.ByteString",
+        "Data.Char",
+        "Data.Maybe",
+        "Data.String.Conversions",
+        "Data.Text",
+        "Data.Time.Calendar",
+        "Data.Time.Clock",
+        "Data.Time.Format",
+        "Data.Time.LocalTime",
+        "Data.UUID",
+        "GHC.TypeLits",
+        "Prelude",
+        "Text.Read",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [
+        "class ParamReader"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [
+        "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+        "wai-request-params/Test/Wai/Request/ParamsSpec.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "wai-request-params/Wai/Request/Params/Middleware.hs": {
+      "fichier": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "langage": "haskell",
+      "lignes": 98,
+      "taille_bytes": 4517,
+      "entrees": [
+        "Data.IORef",
+        "Network.HTTP.Types.Header",
+        "Network.HTTP.Types.Method",
+        "Network.Wai",
+        "Network.Wai.Parse",
+        "Prelude",
+        "System.IO.Unsafe",
+        "qualified"
+      ],
+      "sorties": [
+        "type Respond"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/ErrorController.hs",
+        "ihp/IHP/Server.hs",
+        "ihp/Test/Test/Controller/ContextSpec.hs",
+        "ihp/Test/Test/Controller/CookieSpec.hs",
+        "ihp/Test/Test/Controller/ParamSpec.hs",
+        "ihp/Test/Test/ControllerSupportSpec.hs",
+        "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+        "ihp/Test/Test/View/FormSpec.hs",
+        "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+        "wai-request-params/Wai/Request/Params.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-migrate/Migrate.hs": {
+      "fichier": "ihp-migrate/Migrate.hs",
+      "langage": "haskell",
+      "lignes": 26,
+      "taille_bytes": 1024,
+      "entrees": [
+        "Control.Exception",
+        "Data.String.Conversions",
+        "IHP.SchemaMigration",
+        "Main.Utf8",
+        "Prelude",
+        "System.Environment",
+        "System.Exit",
+        "Text.Read",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-migrate/IHP/SchemaMigration.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-migrate/Test/SchemaMigrationSpec.hs": {
+      "fichier": "ihp-migrate/Test/SchemaMigrationSpec.hs",
+      "langage": "haskell",
+      "lignes": 46,
+      "taille_bytes": 1495,
+      "entrees": [
+        "IHP.SchemaMigration",
+        "Prelude",
+        "System.FilePath",
+        "System.IO.Temp",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-migrate/IHP/SchemaMigration.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-migrate/IHP/SchemaMigration.hs": {
+      "fichier": "ihp-migrate/IHP/SchemaMigration.hs",
+      "langage": "haskell",
+      "lignes": 170,
+      "taille_bytes": 7083,
+      "entrees": [
+        "Control.Monad",
+        "Data.Function",
+        "Data.Int",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Ord",
+        "Data.String.Conversions",
+        "Data.Text",
+        "Prelude",
+        "System.Environment",
+        "System.Exit",
+        "System.OsPath",
+        "Text.Read",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-migrate/Migrate.hs",
+        "ihp-migrate/Test/SchemaMigrationSpec.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "wai-asset-path/Network/Wai/Middleware/AssetPath.hs": {
+      "fichier": "wai-asset-path/Network/Wai/Middleware/AssetPath.hs",
+      "langage": "haskell",
+      "lignes": 63,
+      "taille_bytes": 2295,
+      "entrees": [
+        "Data.Text",
+        "Network.Wai",
+        "Prelude",
+        "System.Environment",
+        "System.IO.Unsafe",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-hspec/IHP/Hspec.hs": {
+      "fichier": "ihp-hspec/IHP/Hspec.hs",
+      "langage": "haskell",
+      "lignes": 109,
+      "taille_bytes": 4722,
+      "entrees": [
+        "IHP.ControllerSupport",
+        "IHP.FrameworkConfig",
+        "IHP.IDE.CodeGen.MigrationGenerator",
+        "IHP.Log.Types",
+        "IHP.Prelude",
+        "IHP.Test.Mocking",
+        "Network.Wai",
+        "Network.Wai.Internal",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-datasync-typescript/Test/Spec.hs",
+        "ihp-graphql/Test/GraphQL/CompilerSpec.hs",
+        "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+        "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs",
+        "ihp-graphql/Test/Spec.hs",
+        "ihp-migrate/Test/SchemaMigrationSpec.hs",
+        "ihp-openai/Test/IHP/OpenAISpec.hs",
+        "ihp-pglistener/Test/Main.hs",
+        "ihp-pglistener/Test/PGListenerSpec.hs",
+        "ihp-sitemap/Test/SEO/Sitemap.hs",
+        "ihp-typed-sql/Test/Test/Main.hs",
+        "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+        "ihp/Test/Test/AutoRefreshSpec.hs",
+        "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+        "ihp/Test/Test/Controller/ContextSpec.hs",
+        "ihp/Test/Test/Controller/CookieSpec.hs",
+        "ihp/Test/Test/Controller/NotFoundSpec.hs",
+        "ihp/Test/Test/Controller/ParamSpec.hs",
+        "ihp/Test/Test/ControllerSupportSpec.hs",
+        "ihp/Test/Test/FetchPipelinedSpec.hs",
+        "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/HaskellSupportSpec.hs",
+        "ihp/Test/Test/HasqlEncoderSpec.hs",
+        "ihp/Test/Test/JobQueueSpec.hs",
+        "ihp/Test/Test/Main.hs",
+        "ihp/Test/Test/MockingSpec.hs",
+        "ihp/Test/Test/ModelSupportSpec.hs",
+        "ihp/Test/Test/NameSupportSpec.hs",
+        "ihp/Test/Test/PGListenerSpec.hs",
+        "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/QueryBuilderSpec.hs",
+        "ihp/Test/Test/RouterSupportSpec.hs",
+        "ihp/Test/Test/ValidationSupport/ValidateFieldSpec.hs",
+        "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+        "ihp/Test/Test/View/FormSpec.hs",
+        "ihp/Test/Test/ViewSupportSpec.hs",
+        "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+        "wai-request-params/Test/Wai/Request/ParamsSpec.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "ihp-log/IHP/Log.hs": {
+      "fichier": "ihp-log/IHP/Log.hs",
+      "langage": "haskell",
+      "lignes": 120,
+      "taille_bytes": 4151,
+      "entrees": [
+        "Control.Monad",
+        "Data.Default",
+        "IHP.Log.Types",
+        "Network.Wai",
+        "Network.Wai.Middleware.RequestLogger",
+        "Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/FrameworkConfig.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-log/IHP/Log/Types.hs": {
+      "fichier": "ihp-log/IHP/Log/Types.hs",
+      "langage": "haskell",
+      "lignes": 261,
+      "taille_bytes": 9007,
+      "entrees": [
+        "Data.ByteString",
+        "Data.Default",
+        "Data.Text",
+        "GHC.Records",
+        "Prelude",
+        "System.Log.FastLogger",
+        "System.OsPath",
+        "qualified"
+      ],
+      "sorties": [
+        "type FormattedTime",
+        "type LogFormatter",
+        "type LoggingProvider"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-typed-sql/Test/Test/TypedSqlSpec.hs": {
+      "fichier": "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+      "langage": "haskell",
+      "lignes": 1224,
+      "taille_bytes": 60574,
+      "entrees": [
+        "IHP.Log.Types",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "IHP.TypedSql.ParamHints",
+        "System.Directory",
+        "System.Environment",
+        "System.FilePath",
+        "System.IO.Temp",
+        "System.Process",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-typed-sql/Test/Test/Main.hs": {
+      "fichier": "ihp-typed-sql/Test/Test/Main.hs",
+      "langage": "haskell",
+      "lignes": 10,
+      "taille_bytes": 151,
+      "entrees": [
+        "IHP.Prelude",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-typed-sql/IHP/TypedSql.hs": {
+      "fichier": "ihp-typed-sql/IHP/TypedSql.hs",
+      "langage": "haskell",
+      "lignes": 38,
+      "taille_bytes": 1645,
+      "entrees": [
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "IHP.TypedSql.Quoter",
+        "IHP.TypedSql.Types",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-typed-sql/IHP/TypedSql/Placeholders.hs": {
+      "fichier": "ihp-typed-sql/IHP/TypedSql/Placeholders.hs",
+      "langage": "haskell",
+      "lignes": 60,
+      "taille_bytes": 2816,
+      "entrees": [
+        "IHP.Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-typed-sql/IHP/TypedSql/Quoter.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs": {
+      "fichier": "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+      "langage": "haskell",
+      "lignes": 136,
+      "taille_bytes": 7359,
+      "entrees": [
+        "Control.Monad",
+        "Data.Scientific",
+        "IHP.ModelSupport.Types",
+        "IHP.Prelude",
+        "IHP.TypedSql.Metadata",
+        "PostgresqlTypes.Inet",
+        "PostgresqlTypes.Interval",
+        "PostgresqlTypes.Point",
+        "PostgresqlTypes.Polygon",
+        "PostgresqlTypes.Tsvector",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+        "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+        "ihp-typed-sql/IHP/TypedSql/Quoter.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp-typed-sql/IHP/TypedSql/Decoders.hs": {
+      "fichier": "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+      "langage": "haskell",
+      "lignes": 216,
+      "taille_bytes": 11390,
+      "entrees": [
+        "IHP.Hasql.FromRow",
+        "IHP.ModelSupport.Types",
+        "IHP.Prelude",
+        "IHP.TypedSql.Metadata",
+        "IHP.TypedSql.TypeMapping",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+        "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-typed-sql/IHP/TypedSql/Quoter.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-typed-sql/IHP/TypedSql/Quoter.hs": {
+      "fichier": "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+      "langage": "haskell",
+      "lignes": 127,
+      "taille_bytes": 5795,
+      "entrees": [
+        "Data.Coerce",
+        "IHP.Hasql.Encoders",
+        "IHP.Prelude",
+        "IHP.TypedSql.Decoders",
+        "IHP.TypedSql.Metadata",
+        "IHP.TypedSql.ParamHints",
+        "IHP.TypedSql.Placeholders",
+        "IHP.TypedSql.TypeMapping",
+        "IHP.TypedSql.Types",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+        "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+        "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+        "ihp-typed-sql/IHP/TypedSql/Placeholders.hs",
+        "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-typed-sql/IHP/TypedSql.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-typed-sql/IHP/TypedSql/Metadata.hs": {
+      "fichier": "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+      "langage": "haskell",
+      "lignes": 362,
+      "taille_bytes": 16118,
+      "entrees": [
+        "Control.Exception",
+        "IHP.FrameworkConfig",
+        "IHP.Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+        "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+        "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+        "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp-typed-sql/IHP/TypedSql/ParamHints.hs": {
+      "fichier": "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+      "langage": "haskell",
+      "lignes": 445,
+      "taille_bytes": 21339,
+      "entrees": [
+        "Data.Foldable",
+        "IHP.Prelude",
+        "IHP.TypedSql.Metadata",
+        "IHP.TypedSql.TypeMapping",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+        "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+        "ihp-typed-sql/Test/Test/TypedSqlSpec.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-typed-sql/IHP/TypedSql/Types.hs": {
+      "fichier": "ihp-typed-sql/IHP/TypedSql/Types.hs",
+      "langage": "haskell",
+      "lignes": 13,
+      "taille_bytes": 449,
+      "entrees": [
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-welcome/IHP/Welcome/Controller.hs": {
+      "fichier": "ihp-welcome/IHP/Welcome/Controller.hs",
+      "langage": "haskell",
+      "lignes": 65,
+      "taille_bytes": 11913,
+      "entrees": [
+        "IHP.ControllerPrelude",
+        "IHP.RouterPrelude",
+        "IHP.ViewPrelude"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/RouterPrelude.hs",
+        "ihp/IHP/ViewPrelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerPrelude.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-modal/IHP/Modal/ControllerFunctions.hs": {
+      "fichier": "ihp-modal/IHP/Modal/ControllerFunctions.hs",
+      "langage": "haskell",
+      "lignes": 21,
+      "taille_bytes": 660,
+      "entrees": [
+        "Data.IORef",
+        "IHP.Modal.Types",
+        "Network.Wai",
+        "Prelude",
+        "Text.Blaze.Html5"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-modal/IHP/Modal/ViewFunctions.hs": {
+      "fichier": "ihp-modal/IHP/Modal/ViewFunctions.hs",
+      "langage": "haskell",
+      "lignes": 62,
+      "taille_bytes": 2383,
+      "entrees": [
+        "Data.IORef",
+        "Data.Text",
+        "IHP.HSX.QQ",
+        "IHP.Modal.Types",
+        "Network.Wai",
+        "Prelude",
+        "System.IO.Unsafe",
+        "Text.Blaze.Html5"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-modal/IHP/Modal/Types.hs": {
+      "fichier": "ihp-modal/IHP/Modal/Types.hs",
+      "langage": "haskell",
+      "lignes": 40,
+      "taille_bytes": 1197,
+      "entrees": [
+        "Data.IORef",
+        "Data.Proxy",
+        "Data.Text",
+        "Data.Typeable",
+        "Network.Wai",
+        "Prelude",
+        "System.IO.Unsafe",
+        "Text.Blaze.Html5",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "dev/Paths_ihp.hs": {
+      "fichier": "dev/Paths_ihp.hs",
+      "langage": "haskell",
+      "lignes": 11,
+      "taille_bytes": 248,
+      "entrees": [
+        "Data.Version",
+        "Prelude"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/Server.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "dev/Paths_ihp_ide.hs": {
+      "fichier": "dev/Paths_ihp_ide.hs",
+      "langage": "haskell",
+      "lignes": 9,
+      "taille_bytes": 202,
+      "entrees": [
+        "Data.Version",
+        "Prelude"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-datasync-typescript/Test/Spec.hs": {
+      "fichier": "ihp-datasync-typescript/Test/Spec.hs",
+      "langage": "haskell",
+      "lignes": 454,
+      "taille_bytes": 27820,
+      "entrees": [
+        "IHP.DataSync.TypeScript.Compiler",
+        "IHP.Postgres.Types",
+        "IHP.Prelude",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [
+        "CREATE TABLE tasks",
+        "CREATE TABLE users",
+        "class ConditionBuildable",
+        "class ConditionBuilder",
+        "class DataSubscription",
+        "class QueryBuilder",
+        "class Transaction",
+        "const enum",
+        "function ThinBackend",
+        "function and",
+        "function createRecord",
+        "function createRecords",
+        "function deleteRecord",
+        "function deleteRecords",
+        "function ensureIsUser",
+        "function eq",
+        "function filterWhere",
+        "function getCurrentUser",
+        "function getCurrentUserId",
+        "function greaterThan",
+        "function greaterThanOrEqual",
+        "function initAuth",
+        "function initThinBackend",
+        "function lessThan",
+        "function lessThanOrEqual",
+        "function loginWithRedirect",
+        "function logout",
+        "function notEq",
+        "function or",
+        "function query",
+        "function updateRecord",
+        "function updateRecords",
+        "function useCount",
+        "function useCurrentUser",
+        "function useIsConnected",
+        "function useIsLoggedIn",
+        "function useQuery",
+        "function useQuerySingleResult",
+        "function where",
+        "function withTransaction",
+        "interface DataSubscriptionOptions",
+        "interface LogoutOptions",
+        "interface NewTask",
+        "interface NewUser",
+        "interface Query",
+        "interface Task",
+        "interface ThinBackendProps",
+        "interface User",
+        "type Color",
+        "type IHPRecord",
+        "type NewRecord",
+        "type TableName",
+        "type UUID"
+      ],
+      "appelle": [
+        "ihp-graphql/IHP/GraphQL/Compiler.hs",
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-datasync-typescript/exe/GenerateDataSyncTypes.hs": {
+      "fichier": "ihp-datasync-typescript/exe/GenerateDataSyncTypes.hs",
+      "langage": "haskell",
+      "lignes": 27,
+      "taille_bytes": 793,
+      "entrees": [
+        "IHP.Prelude",
+        "Main.Utf8",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-datasync-typescript/IHP/DataSync/TypeScript/Compiler.hs": {
+      "fichier": "ihp-datasync-typescript/IHP/DataSync/TypeScript/Compiler.hs",
+      "langage": "haskell",
+      "lignes": 451,
+      "taille_bytes": 19658,
+      "entrees": [
+        "IHP.Postgres.Types",
+        "IHP.Prelude"
+      ],
+      "sorties": [
+        "class ConditionBuildable",
+        "class ConditionBuilder",
+        "class DataSubscription",
+        "class QueryBuilder",
+        "class Transaction",
+        "const enum",
+        "function ThinBackend",
+        "function and",
+        "function createRecord",
+        "function createRecords",
+        "function deleteRecord",
+        "function deleteRecords",
+        "function ensureIsUser",
+        "function eq",
+        "function filterWhere",
+        "function getCurrentUser",
+        "function getCurrentUserId",
+        "function greaterThan",
+        "function greaterThanOrEqual",
+        "function initAuth",
+        "function initThinBackend",
+        "function lessThan",
+        "function lessThanOrEqual",
+        "function loginWithRedirect",
+        "function logout",
+        "function notEq",
+        "function or",
+        "function query",
+        "function updateRecord",
+        "function updateRecords",
+        "function useCount",
+        "function useCurrentUser",
+        "function useIsConnected",
+        "function useIsLoggedIn",
+        "function useQuery",
+        "function useQuerySingleResult",
+        "function where",
+        "function withTransaction",
+        "interface DataSubscriptionOptions",
+        "interface LogoutOptions",
+        "interface New",
+        "interface Query",
+        "interface ThinBackendProps",
+        "type IHPRecord",
+        "type NewRecord",
+        "type UUID"
+      ],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-pglistener/Test/Main.hs": {
+      "fichier": "ihp-pglistener/Test/Main.hs",
+      "langage": "haskell",
+      "lignes": 8,
+      "taille_bytes": 135,
+      "entrees": [
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-pglistener/Test/PGListenerSpec.hs": {
+      "fichier": "ihp-pglistener/Test/PGListenerSpec.hs",
+      "langage": "haskell",
+      "lignes": 169,
+      "taille_bytes": 7802,
+      "entrees": [
+        "Control.Concurrent",
+        "Control.Monad",
+        "Data.ByteString",
+        "Data.Function",
+        "Data.HashMap.Strict",
+        "Data.IORef",
+        "Data.String.Conversions",
+        "IHP.Log.Types",
+        "Prelude",
+        "System.Environment",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-pglistener/IHP/PGListener.hs": {
+      "fichier": "ihp-pglistener/IHP/PGListener.hs",
+      "langage": "haskell",
+      "lignes": 356,
+      "taille_bytes": 16259,
+      "entrees": [
+        "Control.Concurrent.Async",
+        "Control.Concurrent.MVar",
+        "Control.Exception",
+        "Control.Monad",
+        "Data.ByteString",
+        "Data.Function",
+        "Data.HashMap.Strict",
+        "Data.IORef",
+        "Data.Maybe",
+        "Data.Set",
+        "Data.String.Conversions",
+        "Data.Text",
+        "Data.UUID",
+        "IHP.Log.Types",
+        "Prelude",
+        "qualified"
+      ],
+      "sorties": [
+        "type Callback",
+        "type Channel"
+      ],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/RequestVault.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "wai-flash-messages/Network/Wai/Middleware/FlashMessages.hs": {
+      "fichier": "wai-flash-messages/Network/Wai/Middleware/FlashMessages.hs",
+      "langage": "haskell",
+      "lignes": 131,
+      "taille_bytes": 5304,
+      "entrees": [
+        "Data.ByteString",
+        "Data.Serialize.Text",
+        "Data.Text",
+        "Network.Wai",
+        "Prelude",
+        "qualified"
+      ],
+      "sorties": [
+        "type FlashVaultKey",
+        "type SessionVaultKey"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-graphql/Test/Spec.hs": {
+      "fichier": "ihp-graphql/Test/Spec.hs",
+      "langage": "haskell",
+      "lignes": 14,
+      "taille_bytes": 328,
+      "entrees": [
+        "Prelude",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-graphql/Test/GraphQL/CompilerSpec.hs": {
+      "fichier": "ihp-graphql/Test/GraphQL/CompilerSpec.hs",
+      "langage": "haskell",
+      "lignes": 145,
+      "taille_bytes": 8136,
+      "entrees": [
+        "IHP.GraphQL.Types",
+        "IHP.Prelude",
+        "Test.GraphQL.ParserSpec",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs": {
+      "fichier": "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs",
+      "langage": "haskell",
+      "lignes": 115,
+      "taille_bytes": 4548,
+      "entrees": [
+        "IHP.GraphQL.Types",
+        "IHP.Postgres.Types",
+        "IHP.Prelude",
+        "Test.GraphQL.ParserSpec",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [
+        "CREATE TABLE tasks",
+        "CREATE TABLE users",
+        "type Mutation",
+        "type Query",
+        "type Task",
+        "type User"
+      ],
+      "appelle": [
+        "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-graphql/Test/GraphQL/ParserSpec.hs": {
+      "fichier": "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+      "langage": "haskell",
+      "lignes": 253,
+      "taille_bytes": 11560,
+      "entrees": [
+        "Data.HashMap.Strict",
+        "IHP.GraphQL.Types",
+        "IHP.Prelude",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-graphql/Test/GraphQL/CompilerSpec.hs",
+        "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-graphql/IHP/GraphQL/Parser.hs": {
+      "fichier": "ihp-graphql/IHP/GraphQL/Parser.hs",
+      "langage": "haskell",
+      "lignes": 170,
+      "taille_bytes": 4893,
+      "entrees": [
+        "Data.Attoparsec.Text",
+        "IHP.GraphQL.Types",
+        "IHP.Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-graphql/IHP/GraphQL/ToText.hs": {
+      "fichier": "ihp-graphql/IHP/GraphQL/ToText.hs",
+      "langage": "haskell",
+      "lignes": 82,
+      "taille_bytes": 2704,
+      "entrees": [
+        "IHP.GraphQL.Types",
+        "IHP.Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-graphql/IHP/GraphQL/SchemaCompiler.hs": {
+      "fichier": "ihp-graphql/IHP/GraphQL/SchemaCompiler.hs",
+      "langage": "haskell",
+      "lignes": 217,
+      "taille_bytes": 9612,
+      "entrees": [
+        "IHP.GraphQL.Types",
+        "IHP.Postgres.Types",
+        "IHP.Prelude"
+      ],
+      "sorties": [
+        "type GraphQLSchema",
+        "type SqlSchema"
+      ],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-graphql/IHP/GraphQL/Compiler.hs": {
+      "fichier": "ihp-graphql/IHP/GraphQL/Compiler.hs",
+      "langage": "haskell",
+      "lignes": 334,
+      "taille_bytes": 15308,
+      "entrees": [
+        "IHP.GraphQL.Types",
+        "IHP.Prelude",
+        "Prelude",
+        "Text.Countable",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-datasync-typescript/Test/Spec.hs",
+        "ihp/IHP/QueryBuilder.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-graphql/IHP/GraphQL/Types.hs": {
+      "fichier": "ihp-graphql/IHP/GraphQL/Types.hs",
+      "langage": "haskell",
+      "lignes": 125,
+      "taille_bytes": 3013,
+      "entrees": [
+        "IHP.Prelude",
+        "qualified"
+      ],
+      "sorties": [
+        "type Directives"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-graphql/IHP/GraphQL/JSON.hs": {
+      "fichier": "ihp-graphql/IHP/GraphQL/JSON.hs",
+      "langage": "haskell",
+      "lignes": 37,
+      "taille_bytes": 1784,
+      "entrees": [
+        "Data.Aeson",
+        "IHP.Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-schema-compiler/exe/IHP/CLI/BuildGeneratedCode.hs": {
+      "fichier": "ihp-schema-compiler/exe/IHP/CLI/BuildGeneratedCode.hs",
+      "langage": "haskell",
+      "lignes": 14,
+      "taille_bytes": 325,
+      "entrees": [
+        "IHP.Prelude",
+        "IHP.SchemaCompiler",
+        "Main.Utf8"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-schema-compiler/IHP/SchemaCompiler.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-schema-compiler/data/IHPSchema.sql": {
+      "fichier": "ihp-schema-compiler/data/IHPSchema.sql",
+      "langage": "sql",
+      "lignes": 10,
+      "taille_bytes": 466,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-schema-compiler/IHP/SchemaCompiler.hs": {
+      "fichier": "ihp-schema-compiler/IHP/SchemaCompiler.hs",
+      "langage": "haskell",
+      "lignes": 1567,
+      "taille_bytes": 80317,
+      "entrees": [
+        "ClassyPrelude",
+        "Control.Monad",
+        "CorePrelude",
+        "Data.Bits",
+        "Data.Data",
+        "Data.Default",
+        "Data.Maybe",
+        "Data.Scientific",
+        "Data.String.Conversions",
+        "Data.Time.Clock",
+        "Data.Time.LocalTime",
+        "Data.UUID",
+        "Database.PostgreSQL.Simple",
+        "Database.PostgreSQL.Simple.FromField",
+        "Database.PostgreSQL.Simple.FromRow",
+        "Database.PostgreSQL.Simple.ToField",
+        "Database.PostgreSQL.Simple.Types",
+        "GHC.Records",
+        "GHC.TypeLits",
+        "Generated.ActualTypes",
+        "Generated.ActualTypes.PrimaryKeys",
+        "Generated.Enums",
+        "Hasql.PostgresqlTypes",
+        "IHP.HaskellSupport",
+        "IHP.Hasql.Encoders",
+        "IHP.Hasql.FromRow",
+        "IHP.Job.Queue",
+        "IHP.Job.Types",
+        "IHP.ModelSupport",
+        "IHP.NameSupport",
+        "IHP.Postgres.Types",
+        "NeatInterpolation",
+        "System.OsPath",
+        "Text.Countable",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/HaskellSupport.hs",
+        "ihp/IHP/NameSupport.hs"
+      ],
+      "est_appele_par": [
+        "ihp-schema-compiler/exe/IHP/CLI/BuildGeneratedCode.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-schema-compiler/IHP/SchemaCompiler/Parser.hs": {
+      "fichier": "ihp-schema-compiler/IHP/SchemaCompiler/Parser.hs",
+      "langage": "haskell",
+      "lignes": 21,
+      "taille_bytes": 567,
+      "entrees": [
+        "IHP.Postgres.Parser",
+        "IHP.Postgres.Types",
+        "IHP.Prelude"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-openai/IHP/OpenAI.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-openai/Test/IHP/OpenAISpec.hs": {
+      "fichier": "ihp-openai/Test/IHP/OpenAISpec.hs",
+      "langage": "haskell",
+      "lignes": 703,
+      "taille_bytes": 42831,
+      "entrees": [
+        "Data.Aeson",
+        "IHP.OpenAI",
+        "NeatInterpolation",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-openai/IHP/OpenAI.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-openai/IHP/OpenAI.hs": {
+      "fichier": "ihp-openai/IHP/OpenAI.hs",
+      "langage": "haskell",
+      "lignes": 522,
+      "taille_bytes": 20708,
+      "entrees": [
+        "Control.Applicative",
+        "Control.Exception",
+        "Control.Monad",
+        "Data.Aeson",
+        "Data.Aeson.Parser",
+        "Data.ByteString",
+        "Data.IORef",
+        "Data.Text",
+        "Network.Http.Client",
+        "OpenSSL",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-schema-compiler/IHP/SchemaCompiler/Parser.hs"
+      ],
+      "est_appele_par": [
+        "ihp-openai/Test/IHP/OpenAISpec.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-pagehead/IHP/PageHead/ControllerFunctions.hs": {
+      "fichier": "ihp-pagehead/IHP/PageHead/ControllerFunctions.hs",
+      "langage": "haskell",
+      "lignes": 59,
+      "taille_bytes": 2146,
+      "entrees": [
+        "Data.IORef",
+        "Data.Text",
+        "IHP.PageHead.Types",
+        "Network.Wai",
+        "Prelude"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-pagehead/IHP/PageHead/ViewFunctions.hs": {
+      "fichier": "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+      "langage": "haskell",
+      "lignes": 264,
+      "taille_bytes": 8831,
+      "entrees": [
+        "Data.IORef",
+        "Data.Maybe",
+        "Data.Text",
+        "IHP.HSX.QQ",
+        "IHP.PageHead.ControllerFunctions",
+        "IHP.PageHead.Types",
+        "Network.Wai",
+        "Prelude",
+        "System.IO.Unsafe",
+        "Text.Blaze.Html5"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ViewPrelude.hs",
+        "ihp/Test/Test/View/CSSFrameworkSpec.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-pagehead/IHP/PageHead/Types.hs": {
+      "fichier": "ihp-pagehead/IHP/PageHead/Types.hs",
+      "langage": "haskell",
+      "lignes": 56,
+      "taille_bytes": 1643,
+      "entrees": [
+        "Data.Function",
+        "Data.IORef",
+        "Data.Maybe",
+        "Data.Proxy",
+        "Data.Semigroup",
+        "Data.Text",
+        "Data.Typeable",
+        "GHC.Err",
+        "GHC.Show",
+        "Network.Wai",
+        "System.IO.Unsafe",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp-imagemagick/IHP/FileStorage/Preprocessor/ImageMagick.hs": {
+      "fichier": "ihp-imagemagick/IHP/FileStorage/Preprocessor/ImageMagick.hs",
+      "langage": "haskell",
+      "lignes": 65,
+      "taille_bytes": 2485,
+      "entrees": [
+        "Data.Text",
+        "Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerPrelude.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-sitemap/Test/SEO/Sitemap.hs": {
+      "fichier": "ihp-sitemap/Test/SEO/Sitemap.hs",
+      "langage": "haskell",
+      "lignes": 80,
+      "taille_bytes": 2589,
+      "entrees": [
+        "IHP.ControllerPrelude",
+        "IHP.Environment",
+        "IHP.SEO.Sitemap.ControllerFunctions",
+        "IHP.SEO.Sitemap.Routes",
+        "IHP.SEO.Sitemap.Types",
+        "IHP.Test.Mocking",
+        "IHP.ViewPrelude",
+        "Network.HTTP.Types",
+        "Network.Wai.Test",
+        "Test.Hspec"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/ViewPrelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs": {
+      "fichier": "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+      "langage": "haskell",
+      "lignes": 27,
+      "taille_bytes": 1400,
+      "entrees": [
+        "IHP.ControllerPrelude",
+        "IHP.Prelude",
+        "IHP.SEO.Sitemap.Types",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+        "ihp-sitemap/Test/SEO/Sitemap.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs": {
+      "fichier": "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs",
+      "langage": "haskell",
+      "lignes": 14,
+      "taille_bytes": 334,
+      "entrees": [
+        "IHP.Prelude",
+        "IHP.RouterPrelude",
+        "IHP.SEO.Sitemap.Types"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RouterPrelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-sitemap/Test/SEO/Sitemap.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp-sitemap/IHP/SEO/Sitemap/Types.hs": {
+      "fichier": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "langage": "haskell",
+      "lignes": 41,
+      "taille_bytes": 863,
+      "entrees": [
+        "IHP.Prelude",
+        "Prelude"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-datasync-typescript/IHP/DataSync/TypeScript/Compiler.hs",
+        "ihp-datasync-typescript/Test/Spec.hs",
+        "ihp-graphql/IHP/GraphQL/Compiler.hs",
+        "ihp-graphql/IHP/GraphQL/Parser.hs",
+        "ihp-graphql/IHP/GraphQL/SchemaCompiler.hs",
+        "ihp-graphql/IHP/GraphQL/ToText.hs",
+        "ihp-graphql/Test/GraphQL/CompilerSpec.hs",
+        "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+        "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs",
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-log/IHP/Log.hs",
+        "ihp-modal/IHP/Modal/ControllerFunctions.hs",
+        "ihp-modal/IHP/Modal/ViewFunctions.hs",
+        "ihp-pagehead/IHP/PageHead/ControllerFunctions.hs",
+        "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+        "ihp-pglistener/IHP/PGListener.hs",
+        "ihp-pglistener/Test/PGListenerSpec.hs",
+        "ihp-schema-compiler/IHP/SchemaCompiler.hs",
+        "ihp-schema-compiler/IHP/SchemaCompiler/Parser.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs",
+        "ihp-sitemap/Test/SEO/Sitemap.hs",
+        "ihp-typed-sql/IHP/TypedSql.hs",
+        "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+        "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+        "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+        "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+        "ihp/IHP/AutoRefresh.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/ErrorController.hs",
+        "ihp/IHP/FlashMessages.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/PGSimpleCompat.hs",
+        "ihp/IHP/QueryBuilder.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/Server.hs",
+        "ihp/IHP/ValidationSupport.hs",
+        "ihp/IHP/ViewPrelude.hs",
+        "ihp/Test/Test/AutoRefreshSpec.hs",
+        "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+        "ihp/Test/Test/Controller/NotFoundSpec.hs",
+        "ihp/Test/Test/ControllerSupportSpec.hs",
+        "ihp/Test/Test/FetchPipelinedSpec.hs",
+        "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/HasqlEncoderSpec.hs",
+        "ihp/Test/Test/JobQueueSpec.hs",
+        "ihp/Test/Test/MockingSpec.hs",
+        "ihp/Test/Test/ModelFixtures.hs",
+        "ihp/Test/Test/PGListenerSpec.hs",
+        "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/QueryBuilderSpec.hs",
+        "ihp/Test/Test/RouterSupportSpec.hs",
+        "ihp/Test/Test/ValidationSupport/ValidateFieldSpec.hs",
+        "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+        "ihp/Test/Test/ViewSupportSpec.hs",
+        "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "Guide/layout.html": {
+      "fichier": "Guide/layout.html",
+      "langage": "html",
+      "lignes": 366,
+      "taille_bytes": 14217,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Guide/package.json": {
+      "fichier": "Guide/package.json",
+      "langage": "json",
+      "lignes": 19,
+      "taille_bytes": 436,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Guide/package-lock.json": {
+      "fichier": "Guide/package-lock.json",
+      "langage": "json",
+      "lignes": 1161,
+      "taille_bytes": 45907,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp/Test/Test/AutoRefreshSpec.hs": {
+      "fichier": "ihp/Test/Test/AutoRefreshSpec.hs",
+      "langage": "haskell",
+      "lignes": 160,
+      "taille_bytes": 6597,
+      "entrees": [
+        "IHP.AutoRefresh",
+        "IHP.AutoRefresh.Types",
+        "IHP.Controller.Response",
+        "IHP.ControllerPrelude",
+        "IHP.Environment",
+        "IHP.FrameworkConfig",
+        "IHP.Log.Types",
+        "IHP.Prelude",
+        "IHP.Server",
+        "IHP.Test.Mocking",
+        "Network.HTTP.Types",
+        "Network.Wai",
+        "Network.Wai.Internal",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/AutoRefresh.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/Server.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/HaskellSupportSpec.hs": {
+      "fichier": "ihp/Test/Test/HaskellSupportSpec.hs",
+      "langage": "haskell",
+      "lignes": 59,
+      "taille_bytes": 2007,
+      "entrees": [
+        "IHP.Prelude",
+        "Test.Hspec"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/FetchPipelinedSpec.hs": {
+      "fichier": "ihp/Test/Test/FetchPipelinedSpec.hs",
+      "langage": "haskell",
+      "lignes": 147,
+      "taille_bytes": 6387,
+      "entrees": [
+        "IHP.FetchPipelined",
+        "IHP.Hasql.FromRow",
+        "IHP.Log.Types",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "IHP.QueryBuilder",
+        "System.Environment",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/FetchPipelined.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/QueryBuilder.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/Main.hs": {
+      "fichier": "ihp/Test/Test/Main.hs",
+      "langage": "haskell",
+      "lignes": 54,
+      "taille_bytes": 1895,
+      "entrees": [
+        "IHP.Prelude",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/ModelSupportSpec.hs": {
+      "fichier": "ihp/Test/Test/ModelSupportSpec.hs",
+      "langage": "haskell",
+      "lignes": 141,
+      "taille_bytes": 6465,
+      "entrees": [
+        "Data.Bits",
+        "Data.Scientific",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "Test.Hspec",
+        "Text.Read",
+        "qualified"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/MockingSpec.hs": {
+      "fichier": "ihp/Test/Test/MockingSpec.hs",
+      "langage": "haskell",
+      "lignes": 70,
+      "taille_bytes": 2230,
+      "entrees": [
+        "ClassyPrelude",
+        "IHP.ControllerPrelude",
+        "IHP.Environment",
+        "IHP.FrameworkConfig",
+        "IHP.Prelude",
+        "IHP.Test.Mocking",
+        "Network.HTTP.Types",
+        "Network.Wai",
+        "Test.Hspec",
+        "Text.Blaze.Html"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/PGListenerSpec.hs": {
+      "fichier": "ihp/Test/Test/PGListenerSpec.hs",
+      "langage": "haskell",
+      "lignes": 45,
+      "taille_bytes": 1782,
+      "entrees": [
+        "Data.HashMap.Strict",
+        "IHP.Log.Types",
+        "IHP.Prelude",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/ControllerSupportSpec.hs": {
+      "fichier": "ihp/Test/Test/ControllerSupportSpec.hs",
+      "langage": "haskell",
+      "lignes": 118,
+      "taille_bytes": 6009,
+      "entrees": [
+        "Data.ByteString.Builder",
+        "IHP.Controller.Response",
+        "IHP.ControllerSupport",
+        "IHP.Environment",
+        "IHP.Prelude",
+        "Network.HTTP.Types",
+        "System.IO.Unsafe",
+        "Test.Hspec",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/RouterSupportSpec.hs": {
+      "fichier": "ihp/Test/Test/RouterSupportSpec.hs",
+      "langage": "haskell",
+      "lignes": 251,
+      "taille_bytes": 15414,
+      "entrees": [
+        "ClassyPrelude",
+        "Data.Attoparsec.ByteString.Char8",
+        "IHP.ControllerPrelude",
+        "IHP.Environment",
+        "IHP.FrameworkConfig",
+        "IHP.Prelude",
+        "IHP.RouterSupport",
+        "IHP.Test.Mocking",
+        "IHP.ViewPrelude",
+        "Network.HTTP.Types",
+        "Network.Wai.Test",
+        "Test.Hspec"
+      ],
+      "sorties": [
+        "type Band",
+        "type Performance",
+        "type TextModel",
+        "type instance"
+      ],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/ViewPrelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/ModelFixtures.hs": {
+      "fichier": "ihp/Test/Test/ModelFixtures.hs",
+      "langage": "haskell",
+      "lignes": 136,
+      "taille_bytes": 3700,
+      "entrees": [
+        "IHP.Hasql.FromRow",
+        "IHP.Job.Queue",
+        "IHP.Job.Types",
+        "IHP.ModelSupport",
+        "IHP.Prelude"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/Test/Test/QueryBuilderSpec.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/Test/Test/HasqlEncoderSpec.hs": {
+      "fichier": "ihp/Test/Test/HasqlEncoderSpec.hs",
+      "langage": "haskell",
+      "lignes": 112,
+      "taille_bytes": 5810,
+      "entrees": [
+        "Database.PostgreSQL.Simple",
+        "Hasql.DynamicStatements.Snippet",
+        "Hasql.Implicits.Encoders",
+        "IHP.Hasql.Encoders",
+        "IHP.ModelSupport.Types",
+        "IHP.Prelude",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/NameSupportSpec.hs": {
+      "fichier": "ihp/Test/Test/NameSupportSpec.hs",
+      "langage": "haskell",
+      "lignes": 115,
+      "taille_bytes": 5366,
+      "entrees": [
+        "IHP.Prelude",
+        "Test.Hspec"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/QueryBuilderSpec.hs": {
+      "fichier": "ihp/Test/Test/QueryBuilderSpec.hs",
+      "langage": "haskell",
+      "lignes": 526,
+      "taille_bytes": 28282,
+      "entrees": [
+        "IHP.Job.Queue",
+        "IHP.Job.Types",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "IHP.QueryBuilder",
+        "Test.Hspec",
+        "Test.ModelFixtures"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/QueryBuilder.hs",
+        "ihp/Test/Test/ModelFixtures.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/JobQueueSpec.hs": {
+      "fichier": "ihp/Test/Test/JobQueueSpec.hs",
+      "langage": "haskell",
+      "lignes": 148,
+      "taille_bytes": 6489,
+      "entrees": [
+        "Control.Concurrent.STM",
+        "Control.Monad.Trans.Resource",
+        "IHP.Log.Types",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "System.Environment",
+        "Test.Hspec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/ViewSupportSpec.hs": {
+      "fichier": "ihp/Test/Test/ViewSupportSpec.hs",
+      "langage": "haskell",
+      "lignes": 111,
+      "taille_bytes": 4425,
+      "entrees": [
+        "ClassyPrelude",
+        "Data.Text",
+        "IHP.ControllerPrelude",
+        "IHP.Environment",
+        "IHP.FrameworkConfig",
+        "IHP.Prelude",
+        "IHP.RouterSupport",
+        "IHP.Test.Mocking",
+        "IHP.ViewPrelude",
+        "Network.HTTP.Types",
+        "Network.Wai.Test",
+        "Test.Hspec"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/ViewPrelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs": {
+      "fichier": "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+      "langage": "haskell",
+      "lignes": 160,
+      "taille_bytes": 7191,
+      "entrees": [
+        "IHP.Controller.Context",
+        "IHP.Log.Types",
+        "IHP.ModelSupport",
+        "IHP.Pagination.ControllerFunctions",
+        "IHP.Pagination.Types",
+        "IHP.Prelude",
+        "System.Environment",
+        "Test.Hspec",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/Controller/CookieSpec.hs": {
+      "fichier": "ihp/Test/Test/Controller/CookieSpec.hs",
+      "langage": "haskell",
+      "lignes": 47,
+      "taille_bytes": 1740,
+      "entrees": [
+        "IHP.Controller.Context",
+        "IHP.Controller.Cookie",
+        "IHP.Controller.Response",
+        "IHP.Prelude",
+        "Network.HTTP.Types.Status",
+        "Test.Hspec",
+        "Wai.Request.Params.Middleware",
+        "Web.Cookie",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/Controller/AccessDeniedSpec.hs": {
+      "fichier": "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+      "langage": "haskell",
+      "lignes": 70,
+      "taille_bytes": 2191,
+      "entrees": [
+        "ClassyPrelude",
+        "IHP.ControllerPrelude",
+        "IHP.Environment",
+        "IHP.FrameworkConfig",
+        "IHP.Prelude",
+        "IHP.RouterSupport",
+        "IHP.Test.Mocking",
+        "IHP.ViewPrelude",
+        "Network.HTTP.Types",
+        "Network.Wai.Test",
+        "Test.Hspec"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/ViewPrelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/Controller/ParamSpec.hs": {
+      "fichier": "ihp/Test/Test/Controller/ParamSpec.hs",
+      "langage": "haskell",
+      "lignes": 506,
+      "taille_bytes": 26500,
+      "entrees": [
+        "Data.Bits",
+        "Data.Either",
+        "Data.Scientific",
+        "IHP.Controller.Context",
+        "IHP.Controller.Param",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "Test.Hspec",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/Controller/ContextSpec.hs": {
+      "fichier": "ihp/Test/Test/Controller/ContextSpec.hs",
+      "langage": "haskell",
+      "lignes": 112,
+      "taille_bytes": 4282,
+      "entrees": [
+        "Control.Exception",
+        "IHP.Controller.Context",
+        "IHP.Prelude",
+        "IHP.RequestVault",
+        "Network.Wai",
+        "Network.Wai.Internal",
+        "Network.Wai.Test",
+        "Test.Hspec",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RequestVault.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/Controller/NotFoundSpec.hs": {
+      "fichier": "ihp/Test/Test/Controller/NotFoundSpec.hs",
+      "langage": "haskell",
+      "lignes": 70,
+      "taille_bytes": 2121,
+      "entrees": [
+        "ClassyPrelude",
+        "IHP.ControllerPrelude",
+        "IHP.Environment",
+        "IHP.FrameworkConfig",
+        "IHP.Prelude",
+        "IHP.RouterSupport",
+        "IHP.Test.Mocking",
+        "IHP.ViewPrelude",
+        "Network.HTTP.Types",
+        "Network.Wai.Test",
+        "Test.Hspec"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/ViewPrelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/ValidationSupport/ValidateFieldSpec.hs": {
+      "fichier": "ihp/Test/Test/ValidationSupport/ValidateFieldSpec.hs",
+      "langage": "haskell",
+      "lignes": 212,
+      "taille_bytes": 8549,
+      "entrees": [
+        "IHP.Prelude",
+        "IHP.ValidationSupport.Types",
+        "IHP.ValidationSupport.ValidateField",
+        "Test.Hspec"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/View/CSSFrameworkSpec.hs": {
+      "fichier": "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+      "langage": "haskell",
+      "lignes": 729,
+      "taille_bytes": 55753,
+      "entrees": [
+        "IHP.Breadcrumb.ViewFunctions",
+        "IHP.Controller.Context",
+        "IHP.FrameworkConfig",
+        "IHP.ModelSupport",
+        "IHP.Pagination.Types",
+        "IHP.Pagination.ViewFunctions",
+        "IHP.Prelude",
+        "IHP.View.CSSFramework",
+        "IHP.View.Types",
+        "Network.Wai.Middleware.FlashMessages",
+        "Test.Hspec",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/FlashMessages.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/View/FormSpec.hs": {
+      "fichier": "ihp/Test/Test/View/FormSpec.hs",
+      "langage": "haskell",
+      "lignes": 194,
+      "taille_bytes": 9401,
+      "entrees": [
+        "Data.Bits",
+        "IHP.FrameworkConfig",
+        "IHP.ModelSupport",
+        "IHP.ViewPrelude",
+        "Test.Hspec",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [
+        "type Event",
+        "type Project",
+        "type instance"
+      ],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/ViewPrelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs": {
+      "fichier": "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+      "langage": "haskell",
+      "lignes": 101,
+      "taille_bytes": 4992,
+      "entrees": [
+        "IHP.Controller.Context",
+        "IHP.FileStorage.Config",
+        "IHP.FileStorage.ControllerFunctions",
+        "IHP.FileStorage.Types",
+        "IHP.FrameworkConfig",
+        "IHP.Prelude",
+        "Network.Wai",
+        "Network.Wai.Parse",
+        "Test.Hspec",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/data/static/ihp-auto-refresh.js": {
+      "fichier": "ihp/data/static/ihp-auto-refresh.js",
+      "langage": "javascript",
+      "lignes": 89,
+      "taille_bytes": 2752,
+      "entrees": [],
+      "sorties": [
+        "function autoRefreshView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp/data/static/helpers.js": {
+      "fichier": "ihp/data/static/helpers.js",
+      "langage": "javascript",
+      "lignes": 531,
+      "taille_bytes": 16843,
+      "entrees": [],
+      "sorties": [
+        "function handleClick",
+        "function handler",
+        "function initBack",
+        "function initDatePicker",
+        "function initDelete",
+        "function initDisableButtonsOnSubmit",
+        "function initFileUploadPreview",
+        "function initTime",
+        "function initToggle",
+        "function validTargetElement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp/data/static/livereload.js": {
+      "fichier": "ihp/data/static/livereload.js",
+      "langage": "javascript",
+      "lignes": 105,
+      "taille_bytes": 3655,
+      "entrees": [],
+      "sorties": [
+        "function delay",
+        "function fetchWithRetries",
+        "function getLiveReloadWSUrl",
+        "function refresh",
+        "function refreshAssets",
+        "function startReloadListener"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/ActionType.hs": {
+      "fichier": "ihp/IHP/ActionType.hs",
+      "langage": "haskell",
+      "lignes": 60,
+      "taille_bytes": 2012,
+      "entrees": [
+        "Data.Proxy",
+        "Data.Typeable",
+        "GHC.Records",
+        "Network.Wai",
+        "Prelude",
+        "System.IO.Unsafe",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerSupport.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/Prelude.hs": {
+      "fichier": "ihp/IHP/Prelude.hs",
+      "langage": "haskell",
+      "lignes": 145,
+      "taille_bytes": 3979,
+      "entrees": [
+        "ClassyPrelude",
+        "Control.Concurrent.Async",
+        "Control.Exception.Safe",
+        "Control.Monad",
+        "Control.Monad.Fail",
+        "CorePrelude",
+        "Data.Data",
+        "Data.Default",
+        "Data.IORef",
+        "Data.Kind",
+        "Data.List",
+        "Data.Proxy",
+        "Data.String.Conversions",
+        "Data.TMap",
+        "Data.Text",
+        "Data.Text.IO",
+        "Data.Time.Calendar",
+        "Data.Time.Clock",
+        "Data.Time.Format",
+        "Data.Time.LocalTime",
+        "Data.Type.Equality",
+        "Data.UUID",
+        "GHC.OverloadedLabels",
+        "GHC.Records",
+        "GHC.Stack",
+        "GHC.TypeLits",
+        "IHP.HaskellSupport",
+        "IHP.ModelSupport",
+        "IHP.NameSupport",
+        "NeatInterpolation",
+        "System.IO.Unsafe",
+        "System.OsPath",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/HaskellSupport.hs",
+        "ihp/IHP/NameSupport.hs"
+      ],
+      "est_appele_par": [
+        "Main.hs",
+        "dev/Paths_ihp.hs",
+        "dev/Paths_ihp_ide.hs",
+        "ihp-datasync-typescript/IHP/DataSync/TypeScript/Compiler.hs",
+        "ihp-datasync-typescript/Test/Spec.hs",
+        "ihp-datasync-typescript/exe/GenerateDataSyncTypes.hs",
+        "ihp-graphql/IHP/GraphQL/Compiler.hs",
+        "ihp-graphql/IHP/GraphQL/JSON.hs",
+        "ihp-graphql/IHP/GraphQL/Parser.hs",
+        "ihp-graphql/IHP/GraphQL/SchemaCompiler.hs",
+        "ihp-graphql/IHP/GraphQL/ToText.hs",
+        "ihp-graphql/IHP/GraphQL/Types.hs",
+        "ihp-graphql/Test/GraphQL/CompilerSpec.hs",
+        "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+        "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs",
+        "ihp-graphql/Test/Spec.hs",
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-imagemagick/IHP/FileStorage/Preprocessor/ImageMagick.hs",
+        "ihp-log/IHP/Log.hs",
+        "ihp-log/IHP/Log/Types.hs",
+        "ihp-migrate/IHP/SchemaMigration.hs",
+        "ihp-migrate/Migrate.hs",
+        "ihp-migrate/Test/SchemaMigrationSpec.hs",
+        "ihp-modal/IHP/Modal/ControllerFunctions.hs",
+        "ihp-modal/IHP/Modal/Types.hs",
+        "ihp-modal/IHP/Modal/ViewFunctions.hs",
+        "ihp-pagehead/IHP/PageHead/ControllerFunctions.hs",
+        "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+        "ihp-pglistener/IHP/PGListener.hs",
+        "ihp-pglistener/Test/PGListenerSpec.hs",
+        "ihp-schema-compiler/IHP/SchemaCompiler/Parser.hs",
+        "ihp-schema-compiler/exe/IHP/CLI/BuildGeneratedCode.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp-typed-sql/IHP/TypedSql.hs",
+        "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+        "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+        "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+        "ihp-typed-sql/IHP/TypedSql/Placeholders.hs",
+        "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+        "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+        "ihp-typed-sql/Test/Test/Main.hs",
+        "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+        "ihp/IHP/ActionType.hs",
+        "ihp/IHP/AutoRefresh.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/ErrorController.hs",
+        "ihp/IHP/Fetch.hs",
+        "ihp/IHP/FetchPipelined.hs",
+        "ihp/IHP/FetchRelated.hs",
+        "ihp/IHP/FlashMessages.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/HaskellSupport.hs",
+        "ihp/IHP/InputValue.hs",
+        "ihp/IHP/NameSupport.hs",
+        "ihp/IHP/PGSimpleCompat.hs",
+        "ihp/IHP/PGVersion.hs",
+        "ihp/IHP/Record.hs",
+        "ihp/IHP/RequestVault.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/ScriptSupport.hs",
+        "ihp/IHP/Server.hs",
+        "ihp/IHP/ViewPrelude.hs",
+        "ihp/IHP/WebSocket.hs",
+        "ihp/Test/Test/AutoRefreshSpec.hs",
+        "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+        "ihp/Test/Test/Controller/ContextSpec.hs",
+        "ihp/Test/Test/Controller/CookieSpec.hs",
+        "ihp/Test/Test/Controller/NotFoundSpec.hs",
+        "ihp/Test/Test/Controller/ParamSpec.hs",
+        "ihp/Test/Test/ControllerSupportSpec.hs",
+        "ihp/Test/Test/FetchPipelinedSpec.hs",
+        "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/HaskellSupportSpec.hs",
+        "ihp/Test/Test/HasqlEncoderSpec.hs",
+        "ihp/Test/Test/JobQueueSpec.hs",
+        "ihp/Test/Test/Main.hs",
+        "ihp/Test/Test/MockingSpec.hs",
+        "ihp/Test/Test/ModelFixtures.hs",
+        "ihp/Test/Test/ModelSupportSpec.hs",
+        "ihp/Test/Test/NameSupportSpec.hs",
+        "ihp/Test/Test/PGListenerSpec.hs",
+        "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/QueryBuilderSpec.hs",
+        "ihp/Test/Test/RouterSupportSpec.hs",
+        "ihp/Test/Test/ValidationSupport/ValidateFieldSpec.hs",
+        "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+        "ihp/Test/Test/ViewSupportSpec.hs",
+        "wai-asset-path/Network/Wai/Middleware/AssetPath.hs",
+        "wai-flash-messages/Network/Wai/Middleware/FlashMessages.hs",
+        "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+        "wai-request-params/Test/Wai/Request/ParamsSpec.hs",
+        "wai-request-params/Wai/Request/Params.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "ihp/IHP/NameSupport.hs": {
+      "fichier": "ihp/IHP/NameSupport.hs",
+      "langage": "haskell",
+      "lignes": 281,
+      "taille_bytes": 7712,
+      "entrees": [
+        "Control.Monad",
+        "Data.String.Conversions",
+        "Data.Text",
+        "IHP.HaskellSupport",
+        "Prelude",
+        "Text.Countable",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/HaskellSupport.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp-schema-compiler/IHP/SchemaCompiler.hs",
+        "ihp/IHP/PGSimpleCompat.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/RouterSupport.hs": {
+      "fichier": "ihp/IHP/RouterSupport.hs",
+      "langage": "haskell",
+      "lignes": 1016,
+      "taille_bytes": 43286,
+      "entrees": [
+        "Control.Applicative",
+        "Control.Exception",
+        "Control.Exception.Safe",
+        "Control.Monad",
+        "Data.Attoparsec.ByteString.Char8",
+        "Data.ByteString",
+        "Data.Data",
+        "Data.Dynamic",
+        "Data.Kind",
+        "Data.List",
+        "Data.Maybe",
+        "Data.String.Conversions",
+        "Data.Text",
+        "Data.UUID",
+        "GHC.TypeLits",
+        "IHP.Controller.Context",
+        "IHP.Controller.Param",
+        "IHP.Controller.Response",
+        "IHP.ControllerSupport",
+        "IHP.FrameworkConfig",
+        "IHP.HaskellSupport",
+        "IHP.Router.Types",
+        "IHP.Router.UrlGenerator",
+        "IHP.WebSocket",
+        "Network.HTTP.Types.Header",
+        "Network.HTTP.Types.Method",
+        "Network.HTTP.Types.Status",
+        "Network.HTTP.Types.URI",
+        "Network.Wai",
+        "Prelude",
+        "Text.Read",
+        "Unsafe.Coerce",
+        "qualified"
+      ],
+      "sorties": [
+        "class Data",
+        "class FrontController",
+        "class HasPath"
+      ],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/HaskellSupport.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/WebSocket.hs"
+      ],
+      "est_appele_par": [
+        "Main.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/RouterPrelude.hs",
+        "ihp/IHP/Server.hs",
+        "ihp/IHP/ViewPrelude.hs",
+        "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+        "ihp/Test/Test/Controller/NotFoundSpec.hs",
+        "ihp/Test/Test/RouterSupportSpec.hs",
+        "ihp/Test/Test/ViewSupportSpec.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/ScriptSupport.hs": {
+      "fichier": "ihp/IHP/ScriptSupport.hs",
+      "langage": "haskell",
+      "lignes": 24,
+      "taille_bytes": 1025,
+      "entrees": [
+        "IHP.FrameworkConfig",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "Main.Utf8"
+      ],
+      "sorties": [
+        "type Script"
+      ],
+      "appelle": [
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/IHP/QueryBuilder.hs": {
+      "fichier": "ihp/IHP/QueryBuilder.hs",
+      "langage": "haskell",
+      "lignes": 108,
+      "taille_bytes": 2442,
+      "entrees": [
+        "IHP.QueryBuilder.Compiler",
+        "IHP.QueryBuilder.Filter",
+        "IHP.QueryBuilder.HasqlCompiler",
+        "IHP.QueryBuilder.Join",
+        "IHP.QueryBuilder.Order",
+        "IHP.QueryBuilder.Types",
+        "IHP.QueryBuilder.Union"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-graphql/IHP/GraphQL/Compiler.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Fetch.hs",
+        "ihp/IHP/FetchPipelined.hs",
+        "ihp/IHP/FetchRelated.hs",
+        "ihp/Test/Test/FetchPipelinedSpec.hs",
+        "ihp/Test/Test/QueryBuilderSpec.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/Record.hs": {
+      "fichier": "ihp/IHP/Record.hs",
+      "langage": "haskell",
+      "lignes": 99,
+      "taille_bytes": 4345,
+      "entrees": [
+        "Data.Proxy",
+        "GHC.TypeLits",
+        "Prelude",
+        "qualified"
+      ],
+      "sorties": [
+        "class CopyFields",
+        "class Record",
+        "class SetField"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/HaskellSupport.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/AutoRefresh.hs": {
+      "fichier": "ihp/IHP/AutoRefresh.hs",
+      "langage": "haskell",
+      "lignes": 314,
+      "taille_bytes": 16654,
+      "entrees": [
+        "IHP.AutoRefresh.Types",
+        "IHP.Controller.Context",
+        "IHP.Controller.Response",
+        "IHP.Controller.Session",
+        "IHP.ControllerSupport",
+        "IHP.Environment",
+        "IHP.FrameworkConfig.Types",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "IHP.RequestVault",
+        "IHP.WebSocket",
+        "Network.Wai",
+        "System.IO.Unsafe",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RequestVault.hs",
+        "ihp/IHP/WebSocket.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/Server.hs",
+        "ihp/Test/Test/AutoRefreshSpec.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/InputValue.hs": {
+      "fichier": "ihp/IHP/InputValue.hs",
+      "langage": "haskell",
+      "lignes": 92,
+      "taille_bytes": 2461,
+      "entrees": [
+        "Data.Aeson",
+        "Data.Scientific",
+        "Data.String.Conversions",
+        "Data.Text",
+        "Data.Time.Calendar",
+        "Data.Time.Clock",
+        "Data.Time.Format.ISO8601",
+        "Data.Time.LocalTime",
+        "Data.UUID",
+        "PostgresqlTypes.Inet",
+        "PostgresqlTypes.Interval",
+        "Prelude",
+        "qualified"
+      ],
+      "sorties": [
+        "class InputValue"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/Static.hs": {
+      "fichier": "ihp/IHP/Static.hs",
+      "langage": "haskell",
+      "lignes": 21,
+      "taille_bytes": 914,
+      "entrees": [
+        "Network.Wai",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "ihp/IHP/Server.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/FrameworkConfig.hs": {
+      "fichier": "ihp/IHP/FrameworkConfig.hs",
+      "langage": "haskell",
+      "lignes": 293,
+      "taille_bytes": 11565,
+      "entrees": [
+        "IHP.EnvVar",
+        "IHP.Environment",
+        "IHP.FrameworkConfig.Types",
+        "IHP.Log",
+        "IHP.Log.Types",
+        "IHP.Prelude",
+        "IHP.View.CSSFramework.Bootstrap",
+        "IHP.View.Types",
+        "System.OsPath",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-log/IHP/Log.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Environment.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "Main.hs",
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/ErrorController.hs",
+        "ihp/IHP/RequestVault.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/ScriptSupport.hs",
+        "ihp/IHP/Server.hs",
+        "ihp/IHP/ViewPrelude.hs",
+        "ihp/Test/Test/AutoRefreshSpec.hs",
+        "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+        "ihp/Test/Test/Controller/NotFoundSpec.hs",
+        "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/MockingSpec.hs",
+        "ihp/Test/Test/RouterSupportSpec.hs",
+        "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+        "ihp/Test/Test/View/FormSpec.hs",
+        "ihp/Test/Test/ViewSupportSpec.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/ErrorController.hs": {
+      "fichier": "ihp/IHP/ErrorController.hs",
+      "langage": "haskell",
+      "lignes": 519,
+      "taille_bytes": 27632,
+      "entrees": [
+        "Control.Exception.Safe",
+        "Control.Monad",
+        "Data.ByteString",
+        "Data.Maybe",
+        "Data.String.Conversions",
+        "Data.Text",
+        "IHP.Controller.Context",
+        "IHP.Controller.NotFound",
+        "IHP.FrameworkConfig",
+        "IHP.HSX.QQ",
+        "IHP.HaskellSupport",
+        "Network.HTTP.Types",
+        "Network.HTTP.Types.Header",
+        "Network.Wai",
+        "Prelude",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/HaskellSupport.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/IHP/PGVersion.hs": {
+      "fichier": "ihp/IHP/PGVersion.hs",
+      "langage": "haskell",
+      "lignes": 14,
+      "taille_bytes": 641,
+      "entrees": [
+        "IHP.Prelude",
+        "Text.Read",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/Server.hs": {
+      "fichier": "ihp/IHP/Server.hs",
+      "langage": "haskell",
+      "lignes": 236,
+      "taille_bytes": 11464,
+      "entrees": [
+        "IHP.AutoRefresh",
+        "IHP.Controller.Layout",
+        "IHP.Controller.NotFound",
+        "IHP.Controller.Response",
+        "IHP.Controller.Session",
+        "IHP.ControllerSupport",
+        "IHP.FrameworkConfig",
+        "IHP.Modal.Types",
+        "IHP.ModelSupport",
+        "IHP.PageHead.Types",
+        "IHP.Prelude",
+        "IHP.RequestVault",
+        "IHP.RouterSupport",
+        "IHP.Static",
+        "Network.Wai",
+        "Network.Wai.Middleware.MethodOverridePost",
+        "Network.Wai.Session",
+        "Network.Wai.Session.ClientSession",
+        "Paths_ihp",
+        "System.Posix.Types",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "dev/Paths_ihp.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/AutoRefresh.hs",
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RequestVault.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/Static.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [
+        "ihp/Test/Test/AutoRefreshSpec.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/FetchRelated.hs": {
+      "fichier": "ihp/IHP/FetchRelated.hs",
+      "langage": "haskell",
+      "lignes": 249,
+      "taille_bytes": 12453,
+      "entrees": [
+        "Hasql.Implicits.Encoders",
+        "IHP.Fetch",
+        "IHP.Hasql.FromRow",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "IHP.QueryBuilder"
+      ],
+      "sorties": [
+        "class CollectionFetchRelated",
+        "class CollectionFetchRelatedOrNothing"
+      ],
+      "appelle": [
+        "ihp/IHP/Fetch.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/QueryBuilder.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerPrelude.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/Environment.hs": {
+      "fichier": "ihp/IHP/Environment.hs",
+      "langage": "haskell",
+      "lignes": 17,
+      "taille_bytes": 1628,
+      "entrees": [
+        "Prelude"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "Main.hs",
+        "ihp-migrate/IHP/SchemaMigration.hs",
+        "ihp-migrate/Migrate.hs",
+        "ihp-pglistener/Test/PGListenerSpec.hs",
+        "ihp-sitemap/Test/SEO/Sitemap.hs",
+        "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+        "ihp/IHP/AutoRefresh.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/Test/Test/AutoRefreshSpec.hs",
+        "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+        "ihp/Test/Test/Controller/NotFoundSpec.hs",
+        "ihp/Test/Test/ControllerSupportSpec.hs",
+        "ihp/Test/Test/FetchPipelinedSpec.hs",
+        "ihp/Test/Test/JobQueueSpec.hs",
+        "ihp/Test/Test/MockingSpec.hs",
+        "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+        "ihp/Test/Test/RouterSupportSpec.hs",
+        "ihp/Test/Test/ViewSupportSpec.hs",
+        "wai-asset-path/Network/Wai/Middleware/AssetPath.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/PGSimpleCompat.hs": {
+      "fichier": "ihp/IHP/PGSimpleCompat.hs",
+      "langage": "haskell",
+      "lignes": 66,
+      "taille_bytes": 2662,
+      "entrees": [
+        "Data.Data",
+        "Data.String",
+        "Data.String.Conversions",
+        "Database.PostgreSQL.Simple.FromField",
+        "Database.PostgreSQL.Simple.PostgresqlTypes",
+        "Database.PostgreSQL.Simple.ToField",
+        "GHC.TypeLits",
+        "IHP.ModelSupport.Types",
+        "IHP.NameSupport",
+        "Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/NameSupport.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "ihp/IHP/RouterPrelude.hs": {
+      "fichier": "ihp/IHP/RouterPrelude.hs",
+      "langage": "haskell",
+      "lignes": 22,
+      "taille_bytes": 671,
+      "entrees": [
+        "ClassyPrelude",
+        "Data.Attoparsec.ByteString.Char8",
+        "Data.String.Conversions",
+        "IHP.ModelSupport",
+        "IHP.RouterSupport",
+        "Network.HTTP.Types.Method"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/RouterSupport.hs"
+      ],
+      "est_appele_par": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs",
+        "ihp-welcome/IHP/Welcome/Controller.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/FlashMessages.hs": {
+      "fichier": "ihp/IHP/FlashMessages.hs",
+      "langage": "haskell",
+      "lignes": 95,
+      "taille_bytes": 3745,
+      "entrees": [
+        "Data.Maybe",
+        "Data.Text",
+        "IHP.Controller.Session",
+        "IHP.View.Types",
+        "IHP.ViewSupport",
+        "Network.Wai",
+        "Network.Wai.Middleware.FlashMessages",
+        "Prelude",
+        "System.IO.Unsafe",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/ViewPrelude.hs",
+        "ihp/Test/Test/View/CSSFrameworkSpec.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/WebSocket.hs": {
+      "fichier": "ihp/IHP/WebSocket.hs",
+      "langage": "haskell",
+      "lignes": 111,
+      "taille_bytes": 4390,
+      "entrees": [
+        "IHP.Controller.Context",
+        "IHP.Prelude",
+        "Network.Wai",
+        "Network.WebSockets.Connection.PingPong",
+        "qualified"
+      ],
+      "sorties": [
+        "class WSApp"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/AutoRefresh.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/RouterSupport.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/ControllerPrelude.hs": {
+      "fichier": "ihp/IHP/ControllerPrelude.hs",
+      "langage": "haskell",
+      "lignes": 95,
+      "taille_bytes": 2957,
+      "entrees": [
+        "Data.Aeson",
+        "Database.PostgreSQL.Simple.Types",
+        "IHP.AutoRefresh",
+        "IHP.Controller.AccessDenied",
+        "IHP.Controller.BasicAuth",
+        "IHP.Controller.Context",
+        "IHP.Controller.Cookie",
+        "IHP.Controller.FileUpload",
+        "IHP.Controller.Layout",
+        "IHP.Controller.NotFound",
+        "IHP.Controller.Param",
+        "IHP.Controller.Redirect",
+        "IHP.Controller.Render",
+        "IHP.Controller.Session",
+        "IHP.ControllerSupport",
+        "IHP.Fetch",
+        "IHP.FetchPipelined",
+        "IHP.FetchRelated",
+        "IHP.FileStorage.ControllerFunctions",
+        "IHP.FileStorage.Preprocessor.ImageMagick",
+        "IHP.FileStorage.Types",
+        "IHP.FlashMessages",
+        "IHP.FrameworkConfig",
+        "IHP.HSX.QQ",
+        "IHP.HSX.ToHtml",
+        "IHP.HaskellSupport",
+        "IHP.Job.Types",
+        "IHP.LoginSupport.Helper.Controller",
+        "IHP.Modal.Types",
+        "IHP.ModelSupport",
+        "IHP.PageHead.ControllerFunctions",
+        "IHP.Pagination.ControllerFunctions",
+        "IHP.Prelude",
+        "IHP.QueryBuilder",
+        "IHP.RouterSupport",
+        "IHP.ValidationSupport",
+        "IHP.ViewSupport",
+        "IHP.WebSocket",
+        "Network.Wai.Parse",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-imagemagick/IHP/FileStorage/Preprocessor/ImageMagick.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp-welcome/IHP/Welcome/Controller.hs",
+        "ihp/IHP/AutoRefresh.hs",
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/Fetch.hs",
+        "ihp/IHP/FetchPipelined.hs",
+        "ihp/IHP/FetchRelated.hs",
+        "ihp/IHP/FlashMessages.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/HaskellSupport.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/QueryBuilder.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/ValidationSupport.hs",
+        "ihp/IHP/WebSocket.hs"
+      ],
+      "est_appele_par": [
+        "Main.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+        "ihp-sitemap/Test/SEO/Sitemap.hs",
+        "ihp-welcome/IHP/Welcome/Controller.hs",
+        "ihp/Test/Test/AutoRefreshSpec.hs",
+        "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+        "ihp/Test/Test/Controller/NotFoundSpec.hs",
+        "ihp/Test/Test/MockingSpec.hs",
+        "ihp/Test/Test/RouterSupportSpec.hs",
+        "ihp/Test/Test/ViewSupportSpec.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/FetchPipelined.hs": {
+      "fichier": "ihp/IHP/FetchPipelined.hs",
+      "langage": "haskell",
+      "lignes": 174,
+      "taille_bytes": 8250,
+      "entrees": [
+        "Data.Functor.Contravariant",
+        "Data.Functor.Contravariant.Divisible",
+        "IHP.Fetch.Statement",
+        "IHP.Hasql.FromRow",
+        "IHP.Hasql.Pool",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "IHP.QueryBuilder",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/QueryBuilder.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/Test/Test/FetchPipelinedSpec.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/HaskellSupport.hs": {
+      "fichier": "ihp/IHP/HaskellSupport.hs",
+      "langage": "haskell",
+      "lignes": 298,
+      "taille_bytes": 8529,
+      "entrees": [
+        "Control.Monad",
+        "Data.ByteString",
+        "Data.Functor",
+        "Data.Map",
+        "Data.MonoTraversable",
+        "Data.Proxy",
+        "Data.String",
+        "Data.String.Conversions",
+        "Data.Text",
+        "Data.Time.Calendar",
+        "Data.Time.Clock",
+        "GHC.OverloadedLabels",
+        "GHC.TypeLits",
+        "IHP.Record",
+        "Prelude",
+        "qualified"
+      ],
+      "sorties": [
+        "class IsEmpty"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/Record.hs"
+      ],
+      "est_appele_par": [
+        "ihp-schema-compiler/IHP/SchemaCompiler.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/ControllerSupport.hs",
+        "ihp/IHP/ErrorController.hs",
+        "ihp/IHP/NameSupport.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RouterSupport.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/ValidationSupport.hs": {
+      "fichier": "ihp/IHP/ValidationSupport.hs",
+      "langage": "haskell",
+      "lignes": 14,
+      "taille_bytes": 410,
+      "entrees": [
+        "IHP.ValidationSupport.Types",
+        "IHP.ValidationSupport.ValidateField",
+        "IHP.ValidationSupport.ValidateIsUnique"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/ViewPrelude.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/ViewPrelude.hs": {
+      "fichier": "ihp/IHP/ViewPrelude.hs",
+      "langage": "haskell",
+      "lignes": 76,
+      "taille_bytes": 2003,
+      "entrees": [
+        "Data.Aeson",
+        "Data.Data",
+        "IHP.AutoRefresh.View",
+        "IHP.Breadcrumb.ViewFunctions",
+        "IHP.Controller.Context",
+        "IHP.Controller.Layout",
+        "IHP.FlashMessages",
+        "IHP.FrameworkConfig",
+        "IHP.HSX.QQ",
+        "IHP.HSX.ToHtml",
+        "IHP.Job.Types",
+        "IHP.LoginSupport.Helper.View",
+        "IHP.Modal.Types",
+        "IHP.Modal.ViewFunctions",
+        "IHP.ModelSupport",
+        "IHP.PageHead.ViewFunctions",
+        "IHP.Pagination.ViewFunctions",
+        "IHP.Prelude",
+        "IHP.RouterSupport",
+        "IHP.ValidationSupport",
+        "IHP.View.Classes",
+        "IHP.View.Form",
+        "IHP.View.TimeAgo",
+        "IHP.View.Types",
+        "IHP.ViewSupport",
+        "Network.Wai",
+        "Text.Blaze",
+        "Text.Blaze.Html5"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/FlashMessages.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/ValidationSupport.hs"
+      ],
+      "est_appele_par": [
+        "ihp-sitemap/Test/SEO/Sitemap.hs",
+        "ihp-welcome/IHP/Welcome/Controller.hs",
+        "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+        "ihp/Test/Test/Controller/NotFoundSpec.hs",
+        "ihp/Test/Test/RouterSupportSpec.hs",
+        "ihp/Test/Test/View/FormSpec.hs",
+        "ihp/Test/Test/ViewSupportSpec.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/Fetch.hs": {
+      "fichier": "ihp/IHP/Fetch.hs",
+      "langage": "haskell",
+      "lignes": 302,
+      "taille_bytes": 15839,
+      "entrees": [
+        "Hasql.Implicits.Encoders",
+        "IHP.Fetch.Statement",
+        "IHP.Hasql.FromRow",
+        "IHP.ModelSupport",
+        "IHP.Prelude",
+        "IHP.QueryBuilder",
+        "IHP.QueryBuilder.HasqlCompiler",
+        "qualified"
+      ],
+      "sorties": [
+        "class Fetchable",
+        "type FetchResult",
+        "type instance"
+      ],
+      "appelle": [
+        "ihp/IHP/Prelude.hs",
+        "ihp/IHP/QueryBuilder.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/FetchRelated.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "ihp/IHP/ControllerSupport.hs": {
+      "fichier": "ihp/IHP/ControllerSupport.hs",
+      "langage": "haskell",
+      "lignes": 329,
+      "taille_bytes": 14111,
+      "entrees": [
+        "Control.Exception.Safe",
+        "Data.ByteString",
+        "Data.IORef",
+        "Data.Maybe",
+        "Data.Typeable",
+        "IHP.ActionType",
+        "IHP.Controller.Response",
+        "IHP.FrameworkConfig.Types",
+        "IHP.HaskellSupport",
+        "IHP.ModelSupport",
+        "IHP.RequestVault.Helper",
+        "IHP.RequestVault.ModelContext",
+        "Network.HTTP.Types.Header",
+        "Network.Wai",
+        "Network.Wai.Parse",
+        "Prelude",
+        "System.IO.Unsafe",
+        "Wai.Request.Params.Middleware",
+        "qualified"
+      ],
+      "sorties": [
+        "class InitControllerContext",
+        "type Action"
+      ],
+      "appelle": [
+        "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+        "ihp/IHP/ActionType.hs",
+        "ihp/IHP/HaskellSupport.hs",
+        "ihp/IHP/Prelude.hs",
+        "wai-request-params/Wai/Request/Params/Middleware.hs"
+      ],
+      "est_appele_par": [
+        "ihp-hspec/IHP/Hspec.hs",
+        "ihp/IHP/AutoRefresh.hs",
+        "ihp/IHP/ControllerPrelude.hs",
+        "ihp/IHP/RouterSupport.hs",
+        "ihp/IHP/Server.hs",
+        "ihp/Test/Test/ControllerSupportSpec.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "ihp/IHP/RequestVault.hs": {
+      "fichier": "ihp/IHP/RequestVault.hs",
+      "langage": "haskell",
+      "lignes": 57,
+      "taille_bytes": 1889,
+      "entrees": [
+        "IHP.FrameworkConfig",
+        "IHP.PGListener",
+        "IHP.Prelude",
+        "IHP.RequestVault.Helper",
+        "IHP.RequestVault.ModelContext",
+        "Network.Wai",
+        "System.IO.Unsafe",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "ihp-pglistener/IHP/PGListener.hs",
+        "ihp/IHP/FrameworkConfig.hs",
+        "ihp/IHP/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "ihp/IHP/AutoRefresh.hs",
+        "ihp/IHP/Server.hs",
+        "ihp/Test/Test/Controller/ContextSpec.hs"
+      ],
+      "type_noeud": "central"
+    }
+  },
+  "edges": [
+    {
+      "de": "Main.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "Main.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "Main.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "Main.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "Main.hs",
+      "vers": "ihp/IHP/RouterSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Test/Wai/Request/ParamsSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Test/Wai/Request/ParamsSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Test/Wai/Request/ParamsSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Wai/Request/Params.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Wai/Request/Params.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-migrate/Migrate.hs",
+      "vers": "ihp-migrate/IHP/SchemaMigration.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-migrate/Migrate.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-migrate/Migrate.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-migrate/Test/SchemaMigrationSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-migrate/Test/SchemaMigrationSpec.hs",
+      "vers": "ihp-migrate/IHP/SchemaMigration.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-migrate/Test/SchemaMigrationSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-migrate/IHP/SchemaMigration.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-migrate/IHP/SchemaMigration.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-asset-path/Network/Wai/Middleware/AssetPath.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-asset-path/Network/Wai/Middleware/AssetPath.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-hspec/IHP/Hspec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-hspec/IHP/Hspec.hs",
+      "vers": "ihp/IHP/ControllerSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-hspec/IHP/Hspec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-hspec/IHP/Hspec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-log/IHP/Log.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-log/IHP/Log.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-log/IHP/Log/Types.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/Test/Test/TypedSqlSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/Test/Test/Main.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/Test/Test/Main.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Placeholders.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/Decoders.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/Placeholders.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Quoter.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/Metadata.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+      "vers": "ihp-typed-sql/IHP/TypedSql/TypeMapping.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-typed-sql/IHP/TypedSql/ParamHints.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-welcome/IHP/Welcome/Controller.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "ihp-welcome/IHP/Welcome/Controller.hs",
+      "vers": "ihp/IHP/RouterPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-welcome/IHP/Welcome/Controller.hs",
+      "vers": "ihp/IHP/ViewPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-modal/IHP/Modal/ControllerFunctions.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-modal/IHP/Modal/ControllerFunctions.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-modal/IHP/Modal/ViewFunctions.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-modal/IHP/Modal/ViewFunctions.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-modal/IHP/Modal/Types.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "dev/Paths_ihp.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "dev/Paths_ihp_ide.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-datasync-typescript/Test/Spec.hs",
+      "vers": "ihp-graphql/IHP/GraphQL/Compiler.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-datasync-typescript/Test/Spec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-datasync-typescript/Test/Spec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-datasync-typescript/Test/Spec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-datasync-typescript/exe/GenerateDataSyncTypes.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-datasync-typescript/IHP/DataSync/TypeScript/Compiler.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-datasync-typescript/IHP/DataSync/TypeScript/Compiler.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pglistener/Test/Main.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pglistener/Test/PGListenerSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pglistener/Test/PGListenerSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pglistener/Test/PGListenerSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pglistener/Test/PGListenerSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pglistener/IHP/PGListener.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pglistener/IHP/PGListener.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "wai-flash-messages/Network/Wai/Middleware/FlashMessages.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/Spec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/Spec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/CompilerSpec.hs",
+      "vers": "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/CompilerSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/CompilerSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/CompilerSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs",
+      "vers": "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/Test/GraphQL/ParserSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/Parser.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/Parser.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/ToText.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/ToText.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/SchemaCompiler.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/SchemaCompiler.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/Compiler.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/Compiler.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/Types.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-graphql/IHP/GraphQL/JSON.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-schema-compiler/exe/IHP/CLI/BuildGeneratedCode.hs",
+      "vers": "ihp-schema-compiler/IHP/SchemaCompiler.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-schema-compiler/exe/IHP/CLI/BuildGeneratedCode.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-schema-compiler/IHP/SchemaCompiler.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-schema-compiler/IHP/SchemaCompiler.hs",
+      "vers": "ihp/IHP/HaskellSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-schema-compiler/IHP/SchemaCompiler.hs",
+      "vers": "ihp/IHP/NameSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-schema-compiler/IHP/SchemaCompiler/Parser.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-schema-compiler/IHP/SchemaCompiler/Parser.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-openai/Test/IHP/OpenAISpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-openai/Test/IHP/OpenAISpec.hs",
+      "vers": "ihp-openai/IHP/OpenAI.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-openai/IHP/OpenAI.hs",
+      "vers": "ihp-schema-compiler/IHP/SchemaCompiler/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pagehead/IHP/PageHead/ControllerFunctions.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pagehead/IHP/PageHead/ControllerFunctions.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-imagemagick/IHP/FileStorage/Preprocessor/ImageMagick.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/Test/SEO/Sitemap.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/Test/SEO/Sitemap.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/Test/SEO/Sitemap.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/Test/SEO/Sitemap.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/Test/SEO/Sitemap.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/Test/SEO/Sitemap.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/Test/SEO/Sitemap.hs",
+      "vers": "ihp/IHP/ViewPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/IHP/SEO/Sitemap/Routes.hs",
+      "vers": "ihp/IHP/RouterPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/AutoRefreshSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/AutoRefreshSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/AutoRefreshSpec.hs",
+      "vers": "ihp/IHP/AutoRefresh.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/AutoRefreshSpec.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/AutoRefreshSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/AutoRefreshSpec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/AutoRefreshSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/AutoRefreshSpec.hs",
+      "vers": "ihp/IHP/Server.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/HaskellSupportSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/HaskellSupportSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FetchPipelinedSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FetchPipelinedSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FetchPipelinedSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FetchPipelinedSpec.hs",
+      "vers": "ihp/IHP/FetchPipelined.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FetchPipelinedSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FetchPipelinedSpec.hs",
+      "vers": "ihp/IHP/QueryBuilder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Main.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Main.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ModelSupportSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ModelSupportSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/MockingSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/MockingSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/MockingSpec.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/MockingSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/MockingSpec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/MockingSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/PGListenerSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/PGListenerSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/PGListenerSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ControllerSupportSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ControllerSupportSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ControllerSupportSpec.hs",
+      "vers": "ihp/IHP/ControllerSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ControllerSupportSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ControllerSupportSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ControllerSupportSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/RouterSupportSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/RouterSupportSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/RouterSupportSpec.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/RouterSupportSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/RouterSupportSpec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/RouterSupportSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/RouterSupportSpec.hs",
+      "vers": "ihp/IHP/RouterSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/RouterSupportSpec.hs",
+      "vers": "ihp/IHP/ViewPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ModelFixtures.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ModelFixtures.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/HasqlEncoderSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/HasqlEncoderSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/HasqlEncoderSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/NameSupportSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/NameSupportSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/QueryBuilderSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/QueryBuilderSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/QueryBuilderSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/QueryBuilderSpec.hs",
+      "vers": "ihp/IHP/QueryBuilder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/QueryBuilderSpec.hs",
+      "vers": "ihp/Test/Test/ModelFixtures.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/JobQueueSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/JobQueueSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/JobQueueSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/JobQueueSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ViewSupportSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ViewSupportSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ViewSupportSpec.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ViewSupportSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ViewSupportSpec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ViewSupportSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ViewSupportSpec.hs",
+      "vers": "ihp/IHP/RouterSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ViewSupportSpec.hs",
+      "vers": "ihp/IHP/ViewPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/CookieSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/CookieSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/CookieSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+      "vers": "ihp/IHP/RouterSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/AccessDeniedSpec.hs",
+      "vers": "ihp/IHP/ViewPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/ParamSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/ParamSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/ParamSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/ContextSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/ContextSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/ContextSpec.hs",
+      "vers": "ihp/IHP/RequestVault.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/ContextSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/NotFoundSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/NotFoundSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/NotFoundSpec.hs",
+      "vers": "ihp/IHP/ControllerPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/NotFoundSpec.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/NotFoundSpec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/NotFoundSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/NotFoundSpec.hs",
+      "vers": "ihp/IHP/RouterSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/Controller/NotFoundSpec.hs",
+      "vers": "ihp/IHP/ViewPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ValidationSupport/ValidateFieldSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ValidationSupport/ValidateFieldSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/ValidationSupport/ValidateFieldSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+      "vers": "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+      "vers": "ihp/IHP/FlashMessages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/CSSFrameworkSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/FormSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/FormSpec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/FormSpec.hs",
+      "vers": "ihp/IHP/ViewPrelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/View/FormSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+      "vers": "ihp-hspec/IHP/Hspec.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ActionType.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Prelude.hs",
+      "vers": "ihp/IHP/HaskellSupport.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "ihp/IHP/Prelude.hs",
+      "vers": "ihp/IHP/NameSupport.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "ihp/IHP/NameSupport.hs",
+      "vers": "ihp/IHP/HaskellSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/NameSupport.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "ihp/IHP/RouterSupport.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/RouterSupport.hs",
+      "vers": "ihp/IHP/ControllerSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/RouterSupport.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/RouterSupport.hs",
+      "vers": "ihp/IHP/HaskellSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/RouterSupport.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/RouterSupport.hs",
+      "vers": "ihp/IHP/WebSocket.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ScriptSupport.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ScriptSupport.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/QueryBuilder.hs",
+      "vers": "ihp-graphql/IHP/GraphQL/Compiler.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/QueryBuilder.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Record.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/AutoRefresh.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/AutoRefresh.hs",
+      "vers": "ihp/IHP/ControllerSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/AutoRefresh.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/AutoRefresh.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/AutoRefresh.hs",
+      "vers": "ihp/IHP/RequestVault.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/AutoRefresh.hs",
+      "vers": "ihp/IHP/WebSocket.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/InputValue.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FrameworkConfig.hs",
+      "vers": "ihp-log/IHP/Log.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FrameworkConfig.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FrameworkConfig.hs",
+      "vers": "ihp/IHP/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FrameworkConfig.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ErrorController.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ErrorController.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ErrorController.hs",
+      "vers": "ihp/IHP/HaskellSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ErrorController.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ErrorController.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/PGVersion.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "dev/Paths_ihp.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "ihp/IHP/AutoRefresh.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "ihp/IHP/ControllerSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "ihp/IHP/RequestVault.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "ihp/IHP/RouterSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "ihp/IHP/Static.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Server.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FetchRelated.hs",
+      "vers": "ihp/IHP/Fetch.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FetchRelated.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FetchRelated.hs",
+      "vers": "ihp/IHP/QueryBuilder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Environment.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/PGSimpleCompat.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/PGSimpleCompat.hs",
+      "vers": "ihp/IHP/NameSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/PGSimpleCompat.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/RouterPrelude.hs",
+      "vers": "ihp/IHP/RouterSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FlashMessages.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FlashMessages.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/WebSocket.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp-imagemagick/IHP/FileStorage/Preprocessor/ImageMagick.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp-welcome/IHP/Welcome/Controller.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/AutoRefresh.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/ControllerSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/Fetch.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/FetchPipelined.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/FetchRelated.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/FlashMessages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/HaskellSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/QueryBuilder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/RouterSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/ValidationSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerPrelude.hs",
+      "vers": "ihp/IHP/WebSocket.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FetchPipelined.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/FetchPipelined.hs",
+      "vers": "ihp/IHP/QueryBuilder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/HaskellSupport.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "ihp/IHP/HaskellSupport.hs",
+      "vers": "ihp/IHP/Record.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ValidationSupport.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ViewPrelude.hs",
+      "vers": "ihp-pagehead/IHP/PageHead/ViewFunctions.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ViewPrelude.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ViewPrelude.hs",
+      "vers": "ihp/IHP/FlashMessages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ViewPrelude.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ViewPrelude.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ViewPrelude.hs",
+      "vers": "ihp/IHP/RouterSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ViewPrelude.hs",
+      "vers": "ihp/IHP/ValidationSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Fetch.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/Fetch.hs",
+      "vers": "ihp/IHP/QueryBuilder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerSupport.hs",
+      "vers": "ihp-sitemap/IHP/SEO/Sitemap/Types.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerSupport.hs",
+      "vers": "ihp/IHP/ActionType.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerSupport.hs",
+      "vers": "ihp/IHP/HaskellSupport.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerSupport.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/ControllerSupport.hs",
+      "vers": "wai-request-params/Wai/Request/Params/Middleware.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/RequestVault.hs",
+      "vers": "ihp-pglistener/IHP/PGListener.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/RequestVault.hs",
+      "vers": "ihp/IHP/FrameworkConfig.hs",
+      "type": "interne"
+    },
+    {
+      "de": "ihp/IHP/RequestVault.hs",
+      "vers": "ihp/IHP/Prelude.hs",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'Main.hs'",
+    "point_entree → 'wai-request-params/Test/Wai/Request/ParamsSpec.hs'",
+    "point_entree → 'wai-request-params/Test/Wai/Request/Params/MiddlewareSpec.hs'",
+    "point_entree → 'ihp-migrate/Migrate.hs'",
+    "point_entree → 'ihp-migrate/Test/SchemaMigrationSpec.hs'",
+    "point_entree → 'wai-asset-path/Network/Wai/Middleware/AssetPath.hs'",
+    "hub → 'ihp-hspec/IHP/Hspec.hs' (in=38, 32% du projet)",
+    "point_entree → 'ihp-typed-sql/Test/Test/TypedSqlSpec.hs'",
+    "point_entree → 'ihp-typed-sql/Test/Test/Main.hs'",
+    "point_entree → 'ihp-typed-sql/IHP/TypedSql.hs'",
+    "central → 'ihp-typed-sql/IHP/TypedSql/TypeMapping.hs' (in=3, out=3)",
+    "central → 'ihp-typed-sql/IHP/TypedSql/Metadata.hs' (in=4, out=2)",
+    "point_entree → 'ihp-modal/IHP/Modal/ControllerFunctions.hs'",
+    "point_entree → 'ihp-modal/IHP/Modal/ViewFunctions.hs'",
+    "point_entree → 'ihp-datasync-typescript/Test/Spec.hs'",
+    "point_entree → 'ihp-datasync-typescript/IHP/DataSync/TypeScript/Compiler.hs'",
+    "point_entree → 'ihp-pglistener/Test/PGListenerSpec.hs'",
+    "point_entree → 'ihp-graphql/Test/Spec.hs'",
+    "point_entree → 'ihp-graphql/Test/GraphQL/CompilerSpec.hs'",
+    "point_entree → 'ihp-graphql/Test/GraphQL/SchemaCompilerSpec.hs'",
+    "point_entree → 'ihp-graphql/IHP/GraphQL/Parser.hs'",
+    "point_entree → 'ihp-graphql/IHP/GraphQL/ToText.hs'",
+    "point_entree → 'ihp-graphql/IHP/GraphQL/SchemaCompiler.hs'",
+    "point_entree → 'ihp-schema-compiler/exe/IHP/CLI/BuildGeneratedCode.hs'",
+    "point_entree → 'ihp-openai/Test/IHP/OpenAISpec.hs'",
+    "point_entree → 'ihp-pagehead/IHP/PageHead/ControllerFunctions.hs'",
+    "point_entree → 'ihp-sitemap/Test/SEO/Sitemap.hs'",
+    "central → 'ihp-sitemap/IHP/SEO/Sitemap/ControllerFunctions.hs' (in=5, out=3)",
+    "hub → 'ihp-sitemap/IHP/SEO/Sitemap/Types.hs' (in=57, 48% du projet)",
+    "point_entree → 'ihp/Test/Test/AutoRefreshSpec.hs'",
+    "point_entree → 'ihp/Test/Test/HaskellSupportSpec.hs'",
+    "point_entree → 'ihp/Test/Test/FetchPipelinedSpec.hs'",
+    "point_entree → 'ihp/Test/Test/Main.hs'",
+    "point_entree → 'ihp/Test/Test/ModelSupportSpec.hs'",
+    "point_entree → 'ihp/Test/Test/MockingSpec.hs'",
+    "point_entree → 'ihp/Test/Test/PGListenerSpec.hs'",
+    "point_entree → 'ihp/Test/Test/ControllerSupportSpec.hs'",
+    "point_entree → 'ihp/Test/Test/RouterSupportSpec.hs'",
+    "point_entree → 'ihp/Test/Test/HasqlEncoderSpec.hs'",
+    "point_entree → 'ihp/Test/Test/NameSupportSpec.hs'",
+    "point_entree → 'ihp/Test/Test/QueryBuilderSpec.hs'",
+    "point_entree → 'ihp/Test/Test/JobQueueSpec.hs'",
+    "point_entree → 'ihp/Test/Test/ViewSupportSpec.hs'",
+    "point_entree → 'ihp/Test/Test/Pagination/ControllerFunctionsSpec.hs'",
+    "point_entree → 'ihp/Test/Test/Controller/CookieSpec.hs'",
+    "point_entree → 'ihp/Test/Test/Controller/AccessDeniedSpec.hs'",
+    "point_entree → 'ihp/Test/Test/Controller/ParamSpec.hs'",
+    "point_entree → 'ihp/Test/Test/Controller/ContextSpec.hs'",
+    "point_entree → 'ihp/Test/Test/Controller/NotFoundSpec.hs'",
+    "point_entree → 'ihp/Test/Test/ValidationSupport/ValidateFieldSpec.hs'",
+    "point_entree → 'ihp/Test/Test/View/CSSFrameworkSpec.hs'",
+    "point_entree → 'ihp/Test/Test/View/FormSpec.hs'",
+    "point_entree → 'ihp/Test/Test/FileStorage/ControllerFunctionsSpec.hs'",
+    "hub → 'ihp/IHP/Prelude.hs' (in=97, 81% du projet)",
+    "central → 'ihp/IHP/NameSupport.hs' (in=3, out=2)",
+    "central → 'ihp/IHP/RouterSupport.hs' (in=9, out=6)",
+    "point_entree → 'ihp/IHP/ScriptSupport.hs'",
+    "central → 'ihp/IHP/QueryBuilder.hs' (in=6, out=2)",
+    "central → 'ihp/IHP/AutoRefresh.hs' (in=3, out=6)",
+    "central → 'ihp/IHP/FrameworkConfig.hs' (in=19, out=4)",
+    "point_entree → 'ihp/IHP/ErrorController.hs'",
+    "point_entree → 'ihp/IHP/PGSimpleCompat.hs'",
+    "central → 'ihp/IHP/FlashMessages.hs' (in=3, out=2)",
+    "central → 'ihp/IHP/ControllerPrelude.hs' (in=10, out=17)",
+    "central → 'ihp/IHP/HaskellSupport.hs' (in=7, out=2)",
+    "central → 'ihp/IHP/ViewPrelude.hs' (in=7, out=7)",
+    "central → 'ihp/IHP/ControllerSupport.hs' (in=6, out=5)",
+    "central → 'ihp/IHP/RequestVault.hs' (in=3, out=3)",
+    "circulaire → 8 cycles détectés"
+  ]
+}

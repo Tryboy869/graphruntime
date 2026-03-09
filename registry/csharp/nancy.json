@@ -1,0 +1,2360 @@
+{
+  "meta": {
+    "projet": "Nancy",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "csharp": 108,
+      "yaml": 2,
+      "shell": 1,
+      "json": 1,
+      "powershell": 1,
+      "unknown": 6,
+      "html": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 11,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "test/Nancy.Tests/Nancy.Tests.csproj"
+  },
+  "noeuds": {
+    "SharedAssemblyInfo.cs": {
+      "fichier": "SharedAssemblyInfo.cs",
+      "langage": "csharp",
+      "lignes": 10,
+      "taille_bytes": 464,
+      "entrees": [
+        "System.Reflection",
+        "System.Runtime.InteropServices"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".travis.yml": {
+      "fichier": ".travis.yml",
+      "langage": "yaml",
+      "lignes": 19,
+      "taille_bytes": 212,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "appveyor.yml": {
+      "fichier": "appveyor.yml",
+      "langage": "yaml",
+      "lignes": 32,
+      "taille_bytes": 646,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.sh": {
+      "fichier": "build.sh",
+      "langage": "shell",
+      "lignes": 57,
+      "taille_bytes": 1988,
+      "entrees": [],
+      "sorties": [
+        "export DOTNET_CLI_TELEMETRY_OPTOUT",
+        "export DOTNET_SKIP_FIRST_TIME_EXPERIENCE",
+        "export FrameworkPathOverride",
+        "export PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "global.json": {
+      "fichier": "global.json",
+      "langage": "json",
+      "lignes": 5,
+      "taille_bytes": 55,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.ps1": {
+      "fichier": "build.ps1",
+      "langage": "powershell",
+      "lignes": 85,
+      "taille_bytes": 3244,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Authentication.Basic.Tests/BasicAuthenticationFixture.cs": {
+      "fichier": "test/Nancy.Authentication.Basic.Tests/BasicAuthenticationFixture.cs",
+      "langage": "csharp",
+      "lignes": 341,
+      "taille_bytes": 12257,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Bootstrapper",
+        "Nancy.Tests",
+        "Nancy.Tests.Fakes",
+        "System",
+        "System.Collections.Generic",
+        "System.Security.Claims",
+        "System.Text",
+        "System.Threading",
+        "Xunit"
+      ],
+      "sorties": [
+        "class FakeModule",
+        "const string",
+        "public class BasicAuthenticationFixture"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Authentication.Basic.Tests/BasicAuthenticationConfigurationFixture.cs": {
+      "fichier": "test/Nancy.Authentication.Basic.Tests/BasicAuthenticationConfigurationFixture.cs",
+      "langage": "csharp",
+      "lignes": 31,
+      "taille_bytes": 679,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Tests",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class BasicAuthenticationConfigurationFixture"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Authentication.Basic.Tests/Nancy.Authentication.Basic.Tests.csproj": {
+      "fichier": "test/Nancy.Authentication.Basic.Tests/Nancy.Authentication.Basic.Tests.csproj",
+      "langage": "unknown",
+      "lignes": 5,
+      "taille_bytes": 147,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Validation.DataAnnotations.Tests/DefaultValidatableObjectAdapterFixture.cs": {
+      "fichier": "test/Nancy.Validation.DataAnnotations.Tests/DefaultValidatableObjectAdapterFixture.cs",
+      "langage": "csharp",
+      "lignes": 100,
+      "taille_bytes": 3000,
+      "entrees": [
+        "Nancy.Tests",
+        "System.Collections.Generic",
+        "System.ComponentModel.DataAnnotations",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultValidatableObjectAdapterFixture",
+        "public class ModelNotImplementingIValidatableObject",
+        "public class ModelUnderTest"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Validation.DataAnnotations.Tests/PropertyValidatorFixture.cs": {
+      "fichier": "test/Nancy.Validation.DataAnnotations.Tests/PropertyValidatorFixture.cs",
+      "langage": "csharp",
+      "lignes": 142,
+      "taille_bytes": 5061,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Tests",
+        "System.Collections.Generic",
+        "System.ComponentModel",
+        "System.ComponentModel.DataAnnotations",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PropertyValidatorFixture"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Validation.DataAnnotations.Tests/DataAnnotationsValidatorFixture.cs": {
+      "fichier": "test/Nancy.Validation.DataAnnotations.Tests/DataAnnotationsValidatorFixture.cs",
+      "langage": "csharp",
+      "lignes": 425,
+      "taille_bytes": 15179,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Tests",
+        "System",
+        "System.Collections.Generic",
+        "System.ComponentModel",
+        "System.ComponentModel.DataAnnotations",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DataAnnotationsValidatorFixture",
+        "public class DerivedRangeAttribute",
+        "public class DerivedRegularExpressionAttribute",
+        "public class DerivedRequiredAttribute",
+        "public class DerivedStringLengthAttribute",
+        "public class ModelUnderTest"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Validation.DataAnnotations.Tests/DataAnnotationsValidatorFactoryFixture.cs": {
+      "fichier": "test/Nancy.Validation.DataAnnotations.Tests/DataAnnotationsValidatorFactoryFixture.cs",
+      "langage": "csharp",
+      "lignes": 35,
+      "taille_bytes": 876,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Tests",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DataAnnotationsValidatorFactoryFixture"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Validation.DataAnnotations.Tests/Nancy.Validation.DataAnnotations.Tests.csproj": {
+      "fichier": "test/Nancy.Validation.DataAnnotations.Tests/Nancy.Validation.DataAnnotations.Tests.csproj",
+      "langage": "unknown",
+      "lignes": 9,
+      "taille_bytes": 227,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Validation.FluentValidation.Tests/EmailAdapterFixture.cs": {
+      "fichier": "test/Nancy.Validation.FluentValidation.Tests/EmailAdapterFixture.cs",
+      "langage": "csharp",
+      "lignes": 22,
+      "taille_bytes": 543,
+      "entrees": [
+        "global::FluentValidation.Internal",
+        "global::FluentValidation.Validators"
+      ],
+      "sorties": [
+        "public class EmailAdapterFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Validation.FluentValidation.Tests/Nancy.Validation.FluentValidation.Tests.csproj": {
+      "fichier": "test/Nancy.Validation.FluentValidation.Tests/Nancy.Validation.FluentValidation.Tests.csproj",
+      "langage": "unknown",
+      "lignes": 5,
+      "taille_bytes": 147,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Validation.FluentValidation.Tests/DefaultFluentAdapterFactoryFixture.cs": {
+      "fichier": "test/Nancy.Validation.FluentValidation.Tests/DefaultFluentAdapterFactoryFixture.cs",
+      "langage": "csharp",
+      "lignes": 75,
+      "taille_bytes": 2289,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Tests",
+        "Xunit",
+        "global::FluentValidation.Validators"
+      ],
+      "sorties": [
+        "public class DefaultFluentAdapterFactoryFixture"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Validation.FluentValidation.Tests/FluentValidationValidatorFactoryFixture.cs": {
+      "fichier": "test/Nancy.Validation.FluentValidation.Tests/FluentValidationValidatorFactoryFixture.cs",
+      "langage": "csharp",
+      "lignes": 61,
+      "taille_bytes": 1572,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Tests",
+        "Xunit",
+        "global::FluentValidation"
+      ],
+      "sorties": [
+        "public class ClassUnderTest",
+        "public class ClassUnderTestValidator",
+        "public class FluentValidationValidatorFactoryFixture",
+        "public class NeverBeUsedTestValidator"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.ViewEngines.Markdown.Tests/MarkdownViewengineRenderFixture.cs": {
+      "fichier": "test/Nancy.ViewEngines.Markdown.Tests/MarkdownViewengineRenderFixture.cs",
+      "langage": "csharp",
+      "lignes": 39,
+      "taille_bytes": 1342,
+      "entrees": [
+        "Nancy.Tests",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class MarkdownViewengineRenderFixture"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.ViewEngines.Markdown.Tests/UserModel.cs": {
+      "fichier": "test/Nancy.ViewEngines.Markdown.Tests/UserModel.cs",
+      "langage": "csharp",
+      "lignes": 20,
+      "taille_bytes": 581,
+      "entrees": [],
+      "sorties": [
+        "public class UserModel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.ViewEngines.Markdown.Tests/Nancy.ViewEngines.Markdown.Tests.csproj": {
+      "fichier": "test/Nancy.ViewEngines.Markdown.Tests/Nancy.ViewEngines.Markdown.Tests.csproj",
+      "langage": "unknown",
+      "lignes": 15,
+      "taille_bytes": 371,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.ViewEngines.Markdown.Tests/MarkdownViewEngineFixture.cs": {
+      "fichier": "test/Nancy.ViewEngines.Markdown.Tests/MarkdownViewEngineFixture.cs",
+      "langage": "csharp",
+      "lignes": 228,
+      "taille_bytes": 7349,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Tests",
+        "Nancy.ViewEngines.SuperSimpleViewEngine",
+        "System",
+        "System.IO",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "const string",
+        "public class MarkdownViewEngineFixture"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.ViewEngines.Markdown.Tests/Markdown/htmlmaster.html": {
+      "fichier": "test/Nancy.ViewEngines.Markdown.Tests/Markdown/htmlmaster.html",
+      "langage": "html",
+      "lignes": 11,
+      "taille_bytes": 195,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.ViewEngines.Razor.Tests.Models/Nancy.ViewEngines.Razor.Tests.Models.csproj": {
+      "fichier": "test/Nancy.ViewEngines.Razor.Tests.Models/Nancy.ViewEngines.Razor.Tests.Models.csproj",
+      "langage": "unknown",
+      "lignes": 5,
+      "taille_bytes": 131,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.ViewEngines.Razor.Tests.Models/Person.cs": {
+      "fichier": "test/Nancy.ViewEngines.Razor.Tests.Models/Person.cs",
+      "langage": "csharp",
+      "lignes": 7,
+      "taille_bytes": 138,
+      "entrees": [],
+      "sorties": [
+        "public class Person"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.ViewEngines.Razor.Tests.Models/Hobby.cs": {
+      "fichier": "test/Nancy.ViewEngines.Razor.Tests.Models/Hobby.cs",
+      "langage": "csharp",
+      "lignes": 7,
+      "taille_bytes": 137,
+      "entrees": [],
+      "sorties": [
+        "public class Hobby"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Nancy.Tests.csproj": {
+      "fichier": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "langage": "unknown",
+      "lignes": 28,
+      "taille_bytes": 1127,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "test/Nancy.Authentication.Basic.Tests/BasicAuthenticationConfigurationFixture.cs",
+        "test/Nancy.Authentication.Basic.Tests/BasicAuthenticationFixture.cs",
+        "test/Nancy.Tests/Unit/Sessions/CookieBasedSessionsConfigurationFixture.cs",
+        "test/Nancy.Validation.DataAnnotations.Tests/DataAnnotationsValidatorFactoryFixture.cs",
+        "test/Nancy.Validation.DataAnnotations.Tests/DataAnnotationsValidatorFixture.cs",
+        "test/Nancy.Validation.DataAnnotations.Tests/DefaultValidatableObjectAdapterFixture.cs",
+        "test/Nancy.Validation.DataAnnotations.Tests/PropertyValidatorFixture.cs",
+        "test/Nancy.Validation.FluentValidation.Tests/DefaultFluentAdapterFactoryFixture.cs",
+        "test/Nancy.Validation.FluentValidation.Tests/FluentValidationValidatorFactoryFixture.cs",
+        "test/Nancy.ViewEngines.Markdown.Tests/MarkdownViewEngineFixture.cs",
+        "test/Nancy.ViewEngines.Markdown.Tests/MarkdownViewengineRenderFixture.cs"
+      ],
+      "type_noeud": "feuille"
+    },
+    "test/Nancy.Tests/ShouldExtensions.cs": {
+      "fichier": "test/Nancy.Tests/ShouldExtensions.cs",
+      "langage": "csharp",
+      "lignes": 205,
+      "taille_bytes": 6535,
+      "entrees": [
+        "System",
+        "System.Collections",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Reflection",
+        "Xunit"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/NoAppStartupsFixture.cs": {
+      "fichier": "test/Nancy.Tests/NoAppStartupsFixture.cs",
+      "langage": "csharp",
+      "lignes": 117,
+      "taille_bytes": 3412,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "Nancy.Testing",
+        "Nancy.Tests.xUnitExtensions",
+        "System",
+        "System.Collections.Generic",
+        "System.Diagnostics",
+        "System.Linq",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class AutoDependency",
+        "public class AutoThingsRegistrations",
+        "public class NoAppStartupsFixture",
+        "public class NoAppStartupsModule",
+        "public interface INoAppStartupsTestDependency"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Extensions/ResponseExtensions.cs": {
+      "fichier": "test/Nancy.Tests/Extensions/ResponseExtensions.cs",
+      "langage": "csharp",
+      "lignes": 18,
+      "taille_bytes": 486,
+      "entrees": [
+        "System.IO"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/xUnitExtensions/SkipException.cs": {
+      "fichier": "test/Nancy.Tests/xUnitExtensions/SkipException.cs",
+      "langage": "csharp",
+      "lignes": 22,
+      "taille_bytes": 592,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [
+        "public class SkipException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/xUnitExtensions/UsingCultureAttribute.cs": {
+      "fichier": "test/Nancy.Tests/xUnitExtensions/UsingCultureAttribute.cs",
+      "langage": "csharp",
+      "lignes": 76,
+      "taille_bytes": 3192,
+      "entrees": [
+        "System",
+        "System.Globalization",
+        "System.Reflection",
+        "System.Threading",
+        "Xunit.Sdk"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/xUnitExtensions/RecordAsync.cs": {
+      "fichier": "test/Nancy.Tests/xUnitExtensions/RecordAsync.cs",
+      "langage": "csharp",
+      "lignes": 39,
+      "taille_bytes": 916,
+      "entrees": [
+        "System",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/xUnitExtensions/SkippableFactAttribute.cs": {
+      "fichier": "test/Nancy.Tests/xUnitExtensions/SkippableFactAttribute.cs",
+      "langage": "csharp",
+      "lignes": 21,
+      "taille_bytes": 747,
+      "entrees": [
+        "System",
+        "Xunit",
+        "Xunit.Sdk"
+      ],
+      "sorties": [
+        "public class SkippableFactAttribute"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/xUnitExtensions/Skip.cs": {
+      "fichier": "test/Nancy.Tests/xUnitExtensions/Skip.cs",
+      "langage": "csharp",
+      "lignes": 35,
+      "taille_bytes": 1331,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/StaticContentConventionBuilderFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/StaticContentConventionBuilderFixture.cs",
+      "langage": "csharp",
+      "lignes": 317,
+      "taille_bytes": 11659,
+      "entrees": [
+        "Nancy.Configuration",
+        "Nancy.Conventions",
+        "Nancy.Diagnostics",
+        "Nancy.Extensions",
+        "Nancy.Responses",
+        "System",
+        "System.Collections.Generic",
+        "System.Globalization",
+        "System.IO",
+        "System.Text",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class StaticContentConventionBuilderFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/DefaultResponseFormatterFactoryFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/DefaultResponseFormatterFactoryFixture.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 1965,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Configuration",
+        "Nancy.Responses.Negotiation",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultResponseFormatterFactoryFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/NancyCookieFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/NancyCookieFixture.cs",
+      "langage": "csharp",
+      "lignes": 176,
+      "taille_bytes": 5272,
+      "entrees": [
+        "Nancy.Cookies",
+        "Nancy.Tests.xUnitExtensions",
+        "System",
+        "System.Globalization",
+        "System.Threading",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NancyCookieFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/BeforePipelineFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/BeforePipelineFixture.cs",
+      "langage": "csharp",
+      "lignes": 206,
+      "taille_bytes": 7520,
+      "entrees": [
+        "Nancy.Tests.xUnitExtensions",
+        "System",
+        "System.Linq",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class BeforePipelineFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/RequestFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/RequestFixture.cs",
+      "langage": "csharp",
+      "lignes": 991,
+      "taille_bytes": 36444,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Helpers",
+        "Nancy.IO",
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Text",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit",
+        "Xunit.Extensions"
+      ],
+      "sorties": [
+        "const string",
+        "public class RequestFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/DynamicDictionaryValueFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/DynamicDictionaryValueFixture.cs",
+      "langage": "csharp",
+      "lignes": 1683,
+      "taille_bytes": 48412,
+      "entrees": [
+        "FakeItEasy",
+        "System",
+        "System.Dynamic",
+        "System.Globalization",
+        "Xunit"
+      ],
+      "sorties": [
+        "const bool",
+        "const byte",
+        "const char",
+        "const decimal",
+        "const double",
+        "const float",
+        "const int",
+        "const long",
+        "const sbyte",
+        "const short",
+        "const string",
+        "const uint",
+        "const ulong",
+        "const ushort",
+        "public class DynamicDictionaryValueFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/HttpLinkRelationFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/HttpLinkRelationFixture.cs",
+      "langage": "csharp",
+      "lignes": 193,
+      "taille_bytes": 6083,
+      "entrees": [
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "const string",
+        "public class HttpLinkRelationFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/DefaultSerializerFactoryFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/DefaultSerializerFactoryFixture.cs",
+      "langage": "csharp",
+      "lignes": 218,
+      "taille_bytes": 6800,
+      "entrees": [
+        "Nancy.Configuration",
+        "Nancy.Json",
+        "Nancy.Responses",
+        "Nancy.Responses.Negotiation",
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Threading",
+        "Xunit",
+        "Xunit.Extensions"
+      ],
+      "sorties": [
+        "const string",
+        "public class DefaultSerializerFactoryFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/ResponseExtensionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/ResponseExtensionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 196,
+      "taille_bytes": 6368,
+      "entrees": [
+        "Nancy.Configuration",
+        "Nancy.Responses",
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class ResponseExtensionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/NancyOptionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/NancyOptionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 58,
+      "taille_bytes": 1742,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "Nancy.Owin",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NancyOptionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/HttpLinkFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/HttpLinkFixture.cs",
+      "langage": "csharp",
+      "lignes": 264,
+      "taille_bytes": 8041,
+      "entrees": [
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class HttpLinkFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/AppDomainAssemblyCatalogFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/AppDomainAssemblyCatalogFixture.cs",
+      "langage": "csharp",
+      "lignes": 73,
+      "taille_bytes": 2782,
+      "entrees": [
+        "System",
+        "System.CodeDom.Compiler",
+        "System.Linq",
+        "System.Reflection",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class AppDomainAssemblyCatalogFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/DefaultNancyBootstrapperModuleCatalogFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/DefaultNancyBootstrapperModuleCatalogFixture.cs",
+      "langage": "csharp",
+      "lignes": 42,
+      "taille_bytes": 1335,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "Nancy.Tests.Unit.Bootstrapper.Base",
+        "System.Collections.Generic"
+      ],
+      "sorties": [
+        "public class DefaultNancyBootstrapperModuleCatalogFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/FormatterExtensionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/FormatterExtensionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 58,
+      "taille_bytes": 1714,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Configuration",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class FormatterExtensionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/NancyMiddlewareFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/NancyMiddlewareFixture.cs",
+      "langage": "csharp",
+      "lignes": 261,
+      "taille_bytes": 10417,
+      "entrees": [
+        "AppFunc",
+        "FakeItEasy",
+        "MidFunc",
+        "Nancy.Bootstrapper",
+        "Nancy.Helpers",
+        "Nancy.Owin",
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Security.Claims",
+        "System.Security.Principal",
+        "System.Text",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "const string",
+        "public class NancyMiddlewareFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/AfterPipelineFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/AfterPipelineFixture.cs",
+      "langage": "csharp",
+      "lignes": 107,
+      "taille_bytes": 3783,
+      "entrees": [
+        "Nancy.Tests.xUnitExtensions",
+        "System",
+        "System.Linq",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class AfterPipelineFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/HttpLinkBuilderFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/HttpLinkBuilderFixture.cs",
+      "langage": "csharp",
+      "lignes": 57,
+      "taille_bytes": 2137,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class HttpLinkBuilderFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/ResponseFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/ResponseFixture.cs",
+      "langage": "csharp",
+      "lignes": 224,
+      "taille_bytes": 6280,
+      "entrees": [
+        "Nancy.Cookies",
+        "Nancy.Tests.Extensions",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "const string",
+        "public class ResponseFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/UrlFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/UrlFixture.cs",
+      "langage": "csharp",
+      "lignes": 372,
+      "taille_bytes": 11318,
+      "entrees": [
+        "System",
+        "Xunit",
+        "Xunit.Extensions"
+      ],
+      "sorties": [
+        "public class UrlFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/DefaultResponseFormatterFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/DefaultResponseFormatterFixture.cs",
+      "langage": "csharp",
+      "lignes": 37,
+      "taille_bytes": 1157,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Configuration",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultResponseFormatterFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/HttpMultipartFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/HttpMultipartFixture.cs",
+      "langage": "csharp",
+      "lignes": 321,
+      "taille_bytes": 12422,
+      "entrees": [
+        "Nancy.IO",
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Text",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class HttpMultipartFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/RequestHeadersFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/RequestHeadersFixture.cs",
+      "langage": "csharp",
+      "lignes": 2048,
+      "taille_bytes": 70057,
+      "entrees": [
+        "Nancy.Cookies",
+        "Nancy.Responses.Negotiation",
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Extensions"
+      ],
+      "sorties": [
+        "const int",
+        "const string",
+        "public class RequestHeadersFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/JsonSerializerFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/JsonSerializerFixture.cs",
+      "langage": "csharp",
+      "lignes": 55,
+      "taille_bytes": 1648,
+      "entrees": [
+        "Nancy.Json",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class JsonSerializerFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/TextFormatterFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/TextFormatterFixture.cs",
+      "langage": "csharp",
+      "lignes": 55,
+      "taille_bytes": 1557,
+      "entrees": [
+        "FakeItEasy",
+        "System.IO",
+        "System.Text",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class TextFormatterFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/JsonFormatterExtensionsFixtures.cs": {
+      "fichier": "test/Nancy.Tests/Unit/JsonFormatterExtensionsFixtures.cs",
+      "langage": "csharp",
+      "lignes": 100,
+      "taille_bytes": 3352,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Configuration",
+        "Nancy.Json",
+        "Nancy.Responses",
+        "Nancy.Tests.Fakes",
+        "System.IO",
+        "System.Text",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class JsonFormatterExtensionsFixtures"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/NancyOptionsExtensionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/NancyOptionsExtensionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 24,
+      "taille_bytes": 693,
+      "entrees": [
+        "Nancy.Owin",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NancyOptionsExtensionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/NancyContextFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/NancyContextFixture.cs",
+      "langage": "csharp",
+      "lignes": 111,
+      "taille_bytes": 2882,
+      "entrees": [
+        "FakeItEasy",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NancyContextFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/NamedPipelineBaseFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/NamedPipelineBaseFixture.cs",
+      "langage": "csharp",
+      "lignes": 256,
+      "taille_bytes": 10272,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NamedPipelineBaseFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/DefaultNancyBootstrapperFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/DefaultNancyBootstrapperFixture.cs",
+      "langage": "csharp",
+      "lignes": 170,
+      "taille_bytes": 6160,
+      "entrees": [
+        "Microsoft.CodeAnalysis",
+        "Microsoft.CodeAnalysis.CSharp",
+        "Nancy.Bootstrapper",
+        "Nancy.Extensions",
+        "Nancy.Tests.Fakes",
+        "Nancy.Tests.Helpers",
+        "Nancy.TinyIoc",
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Reflection",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultNancyBootstrapperFixture",
+        "public class FakeRegistrations",
+        "public class MultiInstance",
+        "public interface IMultiInstance"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/HttpMultipartBoundaryFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/HttpMultipartBoundaryFixture.cs",
+      "langage": "csharp",
+      "lignes": 262,
+      "taille_bytes": 7983,
+      "entrees": [
+        "System.IO",
+        "System.Text",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class HttpMultipartBoundaryFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/NancyEngineFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/NancyEngineFixture.cs",
+      "langage": "csharp",
+      "lignes": 663,
+      "taille_bytes": 24967,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Bootstrapper",
+        "Nancy.Configuration",
+        "Nancy.Diagnostics",
+        "Nancy.ErrorHandling",
+        "Nancy.Extensions",
+        "Nancy.Helpers",
+        "Nancy.Responses.Negotiation",
+        "Nancy.Routing",
+        "Nancy.Tests.Fakes",
+        "Nancy.Tests.xUnitExtensions",
+        "System",
+        "System.Collections.Generic",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NancyEngineFixture",
+        "public class PreExecuteFailureResponse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/NancyModuleFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/NancyModuleFixture.cs",
+      "langage": "csharp",
+      "lignes": 235,
+      "taille_bytes": 7039,
+      "entrees": [
+        "Nancy.Tests.Fakes",
+        "System",
+        "System.Linq",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NancyModuleFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/ModuleNameFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/ModuleNameFixture.cs",
+      "langage": "csharp",
+      "lignes": 82,
+      "taille_bytes": 1756,
+      "entrees": [
+        "Nancy.Extensions",
+        "Xunit"
+      ],
+      "sorties": [
+        "class FakeModule",
+        "class ModuleForNancy",
+        "class SuperDuperHappyModule",
+        "class ThisIsNoJoke",
+        "public class ModuleNameFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/ErrorPipelineFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/ErrorPipelineFixture.cs",
+      "langage": "csharp",
+      "lignes": 117,
+      "taille_bytes": 4156,
+      "entrees": [
+        "System",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class ErrorPipelineFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/XmlFormatterExtensionsFixtures.cs": {
+      "fichier": "test/Nancy.Tests/Unit/XmlFormatterExtensionsFixtures.cs",
+      "langage": "csharp",
+      "lignes": 88,
+      "taille_bytes": 2932,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Configuration",
+        "Nancy.Responses",
+        "Nancy.Tests.Fakes",
+        "Nancy.Xml",
+        "System.IO",
+        "System.Xml",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class XmlFormatterExtensionsFixtures"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/HttpMultipartBufferFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/HttpMultipartBufferFixture.cs",
+      "langage": "csharp",
+      "lignes": 104,
+      "taille_bytes": 2822,
+      "entrees": [
+        "System.Text",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class HttpMultipartBufferFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/HeadResponseFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/HeadResponseFixture.cs",
+      "langage": "csharp",
+      "lignes": 99,
+      "taille_bytes": 2823,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Tests.Extensions",
+        "System.Collections.Generic",
+        "System.IO",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class HeadResponseFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/DefaultNancyBootstrapperBootstrapperBaseFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/DefaultNancyBootstrapperBootstrapperBaseFixture.cs",
+      "langage": "csharp",
+      "lignes": 49,
+      "taille_bytes": 1492,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "Nancy.Tests.Unit.Bootstrapper.Base",
+        "Nancy.TinyIoc",
+        "System",
+        "System.Collections.Generic"
+      ],
+      "sorties": [
+        "public class DefaultNancyBootstrapperBootstrapperBaseFixture",
+        "public class FakeBootstrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/DynamicDictionaryFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/DynamicDictionaryFixture.cs",
+      "langage": "csharp",
+      "lignes": 1165,
+      "taille_bytes": 32050,
+      "entrees": [
+        "Nancy.Json",
+        "System",
+        "System.Collections.Generic",
+        "System.Globalization",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Extensions"
+      ],
+      "sorties": [
+        "public class DynamicDictionaryFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/MimeTypesFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/MimeTypesFixture.cs",
+      "langage": "csharp",
+      "lignes": 57,
+      "taille_bytes": 1910,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class MimeTypesFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Extensions/StringExtensionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Extensions/StringExtensionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 27,
+      "taille_bytes": 687,
+      "entrees": [
+        "Nancy.Extensions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class StringExtensionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Extensions/ContextExtensionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Extensions/ContextExtensionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 231,
+      "taille_bytes": 6559,
+      "entrees": [
+        "Nancy.Extensions",
+        "Nancy.Tests.Fakes",
+        "System.Collections.Generic",
+        "Xunit",
+        "Xunit.Extensions"
+      ],
+      "sorties": [
+        "const string",
+        "public class ContextExtensionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Extensions/StreamExtensionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Extensions/StreamExtensionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 50,
+      "taille_bytes": 1553,
+      "entrees": [
+        "Nancy.Extensions",
+        "Nancy.IO",
+        "System.IO",
+        "System.Text",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class StreamExtensionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Extensions/TypeExtensionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Extensions/TypeExtensionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 166,
+      "taille_bytes": 6488,
+      "entrees": [
+        "Nancy.Extensions",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class TypeExtensionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Extensions/RequestExtensionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Extensions/RequestExtensionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 88,
+      "taille_bytes": 2477,
+      "entrees": [
+        "Nancy.Extensions",
+        "Nancy.Tests.Fakes",
+        "System.Collections.Generic",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class RequestExtensionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Json/TestPrimitiveConverter.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Json/TestPrimitiveConverter.cs",
+      "langage": "csharp",
+      "lignes": 37,
+      "taille_bytes": 855,
+      "entrees": [
+        "Nancy.Json",
+        "System",
+        "System.Collections.Generic"
+      ],
+      "sorties": [
+        "public class TestPrimitiveConverter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Json/SimpleJsonFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Json/SimpleJsonFixture.cs",
+      "langage": "csharp",
+      "lignes": 197,
+      "taille_bytes": 5241,
+      "entrees": [
+        "Nancy.Json.Simple",
+        "System.Globalization",
+        "Xunit"
+      ],
+      "sorties": [
+        "const string",
+        "public class ModelTest",
+        "public class NumberModel",
+        "public class SimpleJsonFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Json/TypeWithTuple.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Json/TypeWithTuple.cs",
+      "langage": "csharp",
+      "lignes": 9,
+      "taille_bytes": 156,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [
+        "public class TypeWithTuple"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Json/TestData.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Json/TestData.cs",
+      "langage": "csharp",
+      "lignes": 36,
+      "taille_bytes": 1024,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [
+        "public class TestData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Json/TestConverterType.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Json/TestConverterType.cs",
+      "langage": "csharp",
+      "lignes": 27,
+      "taille_bytes": 490,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [
+        "public class TestConverterType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Json/JavaScriptSerializerFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Json/JavaScriptSerializerFixture.cs",
+      "langage": "csharp",
+      "lignes": 171,
+      "taille_bytes": 6070,
+      "entrees": [
+        "Nancy.Configuration",
+        "Nancy.Json",
+        "Nancy.Json.Converters",
+        "System",
+        "System.Globalization",
+        "System.Text",
+        "Xunit",
+        "Xunit.Sdk"
+      ],
+      "sorties": [
+        "const string",
+        "public class JavaScriptSerializerFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Json/TestConverter.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Json/TestConverter.cs",
+      "langage": "csharp",
+      "lignes": 41,
+      "taille_bytes": 1115,
+      "entrees": [
+        "Nancy.Json",
+        "System",
+        "System.Collections.Generic"
+      ],
+      "sorties": [
+        "public class TestConverter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Json/TestPrimitiveConverterType.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Json/TestPrimitiveConverterType.cs",
+      "langage": "csharp",
+      "lignes": 27,
+      "taille_bytes": 526,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [
+        "public class TestPrimitiveConverterType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Json/Simple/NancySerializationStrategyFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Json/Simple/NancySerializationStrategyFixture.cs",
+      "langage": "csharp",
+      "lignes": 213,
+      "taille_bytes": 7782,
+      "entrees": [
+        "Nancy.Extensions",
+        "Nancy.Json",
+        "Nancy.Json.Simple",
+        "System",
+        "System.Collections.Generic",
+        "System.Globalization",
+        "Xunit"
+      ],
+      "sorties": [
+        "const string",
+        "public class DateTimeJavaScriptConverter",
+        "public class NancySerializationStrategyFixture",
+        "public class NancySerializationStrategyTestWrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Sessions/CookieBasedSessionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Sessions/CookieBasedSessionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 586,
+      "taille_bytes": 24133,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Bootstrapper",
+        "Nancy.Cryptography",
+        "Nancy.Helpers",
+        "Nancy.IO",
+        "Nancy.Session",
+        "Nancy.Tests.Fakes",
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Reflection",
+        "System.Text",
+        "System.Threading",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class CookieBasedSessionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Sessions/DefaultSessionObjectFormatterFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Sessions/DefaultSessionObjectFormatterFixture.cs",
+      "langage": "csharp",
+      "lignes": 150,
+      "taille_bytes": 4253,
+      "entrees": [
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultSessionObjectFormatterFixture",
+        "public class Payload"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Sessions/NullSessionProviderFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Sessions/NullSessionProviderFixture.cs",
+      "langage": "csharp",
+      "lignes": 66,
+      "taille_bytes": 1776,
+      "entrees": [
+        "Nancy.Session",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NullSessionProviderFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Sessions/CookieBasedSessionsConfigurationFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Sessions/CookieBasedSessionsConfigurationFixture.cs",
+      "langage": "csharp",
+      "lignes": 86,
+      "taille_bytes": 2560,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Cryptography",
+        "Nancy.Session",
+        "Nancy.Tests",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class CookieBasesSessionsConfigurationFixture"
+      ],
+      "appelle": [
+        "test/Nancy.Tests/Nancy.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Sessions/SessionFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Sessions/SessionFixture.cs",
+      "langage": "csharp",
+      "lignes": 102,
+      "taille_bytes": 2618,
+      "entrees": [
+        "Nancy.Session",
+        "System.Collections.Generic",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class SessionFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/DefaultRouteInvokerFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/DefaultRouteInvokerFixture.cs",
+      "langage": "csharp",
+      "lignes": 129,
+      "taille_bytes": 4268,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Diagnostics",
+        "Nancy.ErrorHandling",
+        "Nancy.Responses.Negotiation",
+        "Nancy.Routing",
+        "Nancy.Tests.Fakes",
+        "System.Threading",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultRouteInvokerFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/DefaultRouteResolverFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/DefaultRouteResolverFixture.cs",
+      "langage": "csharp",
+      "lignes": 481,
+      "taille_bytes": 17074,
+      "entrees": [
+        "Nancy.Testing",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultRouteResolverFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/NotFoundRouteFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/NotFoundRouteFixture.cs",
+      "langage": "csharp",
+      "lignes": 34,
+      "taille_bytes": 913,
+      "entrees": [
+        "Nancy.Routing",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NotFoundRouteFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/RouteFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/RouteFixture.cs",
+      "langage": "csharp",
+      "lignes": 108,
+      "taille_bytes": 3354,
+      "entrees": [
+        "Nancy.Routing",
+        "System",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class RouteFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/ConstraintNodeRouteScoringFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/ConstraintNodeRouteScoringFixture.cs",
+      "langage": "csharp",
+      "lignes": 42,
+      "taille_bytes": 1147,
+      "entrees": [
+        "Nancy.Testing",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class ConstraintNodeRouteScoringFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/DefaultRequestDispatcherFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/DefaultRequestDispatcherFixture.cs",
+      "langage": "csharp",
+      "lignes": 982,
+      "taille_bytes": 34314,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Helpers",
+        "Nancy.Responses.Negotiation",
+        "Nancy.Routing",
+        "Nancy.Tests.Fakes",
+        "Nancy.Tests.xUnitExtensions",
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "const string",
+        "public class DefaultRequestDispatcherFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/RouteDescriptionFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/RouteDescriptionFixture.cs",
+      "langage": "csharp",
+      "lignes": 67,
+      "taille_bytes": 2123,
+      "entrees": [
+        "Nancy.Routing",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class RouteDescriptionFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/DefaultNancyModuleBuilderFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/DefaultNancyModuleBuilderFixture.cs",
+      "langage": "csharp",
+      "lignes": 116,
+      "taille_bytes": 3668,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.ModelBinding",
+        "Nancy.Routing",
+        "Nancy.Tests.Fakes",
+        "Nancy.Validation",
+        "Nancy.ViewEngines",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultNancyModuleBuilderFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/ConstraintNodeRouteResolverFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/ConstraintNodeRouteResolverFixture.cs",
+      "langage": "csharp",
+      "lignes": 422,
+      "taille_bytes": 13234,
+      "entrees": [
+        "Nancy.Helpers",
+        "Nancy.Testing",
+        "System",
+        "System.Globalization",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class ConstraintNodeRouteResolverFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/DefaultRouteSegmentExtractorFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/DefaultRouteSegmentExtractorFixture.cs",
+      "langage": "csharp",
+      "lignes": 67,
+      "taille_bytes": 1908,
+      "entrees": [
+        "Nancy.Routing",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "const string",
+        "public class DefaultRouteSegmentExtractorFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/DefaultRouteCacheProviderFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/DefaultRouteCacheProviderFixture.cs",
+      "langage": "csharp",
+      "lignes": 31,
+      "taille_bytes": 809,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Routing",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultRouteCacheProviderFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Routing/RouteCacheFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Routing/RouteCacheFixture.cs",
+      "langage": "csharp",
+      "lignes": 243,
+      "taille_bytes": 8357,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Culture",
+        "Nancy.Routing",
+        "Nancy.Tests.Fakes",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Xunit",
+        "route"
+      ],
+      "sorties": [
+        "const string",
+        "public class RouteCacheFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/NancyBootstrapperWithRequestContainerBaseFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/NancyBootstrapperWithRequestContainerBaseFixture.cs",
+      "langage": "csharp",
+      "lignes": 444,
+      "taille_bytes": 18791,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Bootstrapper",
+        "Nancy.Configuration",
+        "Nancy.Diagnostics",
+        "Nancy.Tests.Fakes",
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NancyBootstrapperWithRequestContainerBaseFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/CollectionTypeRegistrationFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/CollectionTypeRegistrationFixture.cs",
+      "langage": "csharp",
+      "lignes": 52,
+      "taille_bytes": 1710,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "Nancy.Responses.Negotiation",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class CollectionTypeRegistrationFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/InstanceRegistrationFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/InstanceRegistrationFixture.cs",
+      "langage": "csharp",
+      "lignes": 51,
+      "taille_bytes": 1545,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class InstanceRegistrationFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/NancyBootstrapperBaseFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/NancyBootstrapperBaseFixture.cs",
+      "langage": "csharp",
+      "lignes": 607,
+      "taille_bytes": 23292,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Bootstrapper",
+        "Nancy.Configuration",
+        "Nancy.Diagnostics",
+        "Nancy.Tests.Fakes",
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NancyBootstrapperBaseFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/TypeRegistrationFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/TypeRegistrationFixture.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 1976,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "Nancy.Diagnostics",
+        "System",
+        "System.Collections.Generic",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class TypeRegistrationFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/PipelinesFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/PipelinesFixture.cs",
+      "langage": "csharp",
+      "lignes": 90,
+      "taille_bytes": 2568,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "System",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PipelinesFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/NancyInternalConfigurationFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/NancyInternalConfigurationFixture.cs",
+      "langage": "csharp",
+      "lignes": 91,
+      "taille_bytes": 2657,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Bootstrapper",
+        "Nancy.ModelBinding",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NancyInternalConfigurationFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/BootstrapperLocatorFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/BootstrapperLocatorFixture.cs",
+      "langage": "csharp",
+      "lignes": 203,
+      "taille_bytes": 5872,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "System",
+        "System.Collections.Generic",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class AnotherFirstBootstwapper",
+        "public class BootstrapperLocatorFixture",
+        "public class DefaultBootstwapper",
+        "public class MyFirstBootstwapper",
+        "public class MyFourthBootstwapper",
+        "public class MyOwnDefaultBootstwapper",
+        "public class MySecondBootstwapper",
+        "public class MyThirdBootstwapper",
+        "public class TestTypeCatalog",
+        "public interface IBootstwapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/Base/BootstrapperBaseFixtureBase.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/Base/BootstrapperBaseFixtureBase.cs",
+      "langage": "csharp",
+      "lignes": 226,
+      "taille_bytes": 7493,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "Nancy.Routing",
+        "System",
+        "System.Collections.Generic",
+        "System.Threading",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class FakeEngine",
+        "public class Singleton",
+        "public class TestDependencyModule",
+        "public class TestRegistrations",
+        "public class Transient"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Bootstrapper/Base/ModuleCatalogFixtureBase.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Bootstrapper/Base/ModuleCatalogFixtureBase.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1876,
+      "entrees": [
+        "Nancy.Bootstrapper",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class FakeModule"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Security/ModuleSecurityFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Security/ModuleSecurityFixture.cs",
+      "langage": "csharp",
+      "lignes": 404,
+      "taille_bytes": 14173,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Responses",
+        "Nancy.Security",
+        "Nancy.Tests.Fakes",
+        "System",
+        "System.Linq",
+        "System.Security.Claims",
+        "System.Threading",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class ModuleSecurityFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Security/DefaultCsrfTokenValidatorFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Security/DefaultCsrfTokenValidatorFixture.cs",
+      "langage": "csharp",
+      "lignes": 138,
+      "taille_bytes": 5607,
+      "entrees": [
+        "Nancy.Cryptography",
+        "Nancy.Security",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DefaultCsrfTokenValidatorFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Security/CsrfFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Security/CsrfFixture.cs",
+      "langage": "csharp",
+      "lignes": 227,
+      "taille_bytes": 9196,
+      "entrees": [
+        "FakeItEasy",
+        "Nancy.Bootstrapper",
+        "Nancy.Cryptography",
+        "Nancy.Security",
+        "Nancy.Tests.Fakes",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Threading",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class CsrfFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/Nancy.Tests/Unit/Security/ClaimsPrincipalExtensionsFixture.cs": {
+      "fichier": "test/Nancy.Tests/Unit/Security/ClaimsPrincipalExtensionsFixture.cs",
+      "langage": "csharp",
+      "lignes": 465,
+      "taille_bytes": 14961,
+      "entrees": [
+        "Nancy.Security",
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Security.Claims",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class ClaimsPrincipalExtensionsFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "test/Nancy.Authentication.Basic.Tests/BasicAuthenticationFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.Authentication.Basic.Tests/BasicAuthenticationConfigurationFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.Validation.DataAnnotations.Tests/DefaultValidatableObjectAdapterFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.Validation.DataAnnotations.Tests/PropertyValidatorFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.Validation.DataAnnotations.Tests/DataAnnotationsValidatorFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.Validation.DataAnnotations.Tests/DataAnnotationsValidatorFactoryFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.Validation.FluentValidation.Tests/DefaultFluentAdapterFactoryFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.Validation.FluentValidation.Tests/FluentValidationValidatorFactoryFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.ViewEngines.Markdown.Tests/MarkdownViewengineRenderFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.ViewEngines.Markdown.Tests/MarkdownViewEngineFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "test/Nancy.Tests/Unit/Sessions/CookieBasedSessionsConfigurationFixture.cs",
+      "vers": "test/Nancy.Tests/Nancy.Tests.csproj",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'test/Nancy.Tests/Nancy.Tests.csproj' (in=11)"
+  ]
+}

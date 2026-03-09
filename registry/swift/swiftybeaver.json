@@ -1,0 +1,603 @@
+{
+  "meta": {
+    "projet": "SwiftyBeaver",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "swift": 18,
+      "yaml": 1,
+      "shell": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 20,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "Sources/SwiftyBeaver.swift"
+  },
+  "noeuds": {
+    "Package.swift": {
+      "fichier": "Package.swift",
+      "langage": "swift",
+      "lignes": 16,
+      "taille_bytes": 483,
+      "entrees": [
+        "PackageDescription"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".swiftlint.yml": {
+      "fichier": ".swiftlint.yml",
+      "langage": "yaml",
+      "lignes": 38,
+      "taille_bytes": 816,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_in_docker.sh": {
+      "fichier": "test_in_docker.sh",
+      "langage": "shell",
+      "lignes": 15,
+      "taille_bytes": 532,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/LinuxMain.swift": {
+      "fichier": "Tests/LinuxMain.swift",
+      "langage": "swift",
+      "lignes": 8,
+      "taille_bytes": 198,
+      "entrees": [
+        "XCTest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/SwiftyBeaverTests/BaseDestinationTests.swift": {
+      "fichier": "Tests/SwiftyBeaverTests/BaseDestinationTests.swift",
+      "langage": "swift",
+      "lignes": 699,
+      "taille_bytes": 38237,
+      "entrees": [
+        "Foundation",
+        "XCTest"
+      ],
+      "sorties": [
+        "class BaseDestinationTests",
+        "func jsonStringFromDict",
+        "func testColorForLevel",
+        "func testFileNameOfFile",
+        "func testFileNameOfFileWithoutSuffix",
+        "func testFormatDate",
+        "func testFormatMessage",
+        "func testInit",
+        "func testLevelWord",
+        "func testMessageToJSON",
+        "func test_init_minLevelSet",
+        "func test_init_noMinLevelSet",
+        "func test_shouldLevelBeLogged_excludeFilter_True",
+        "func test_shouldLevelBeLogged_hasLevelFilterARequiredPathFilterAndTwoRequiredMessageFiltersAndDoesNotPass_False",
+        "func test_shouldLevelBeLogged_hasLevelFilterARequiredPathFilterAndTwoRequiredMessageFiltersAndPasses_True",
+        "func test_shouldLevelBeLogged_hasLevelFilterAndTwoRequiredPathFiltersAndDoesNotPass_False",
+        "func test_shouldLevelBeLogged_hasLevelFilterAndTwoRequiredPathFiltersAndPasses_True",
+        "func test_shouldLevelBeLogged_hasLevelFilterCombinationOfAllOtherFiltersAndDoesNotPass_False",
+        "func test_shouldLevelBeLogged_hasLevelFilterCombinationOfAllOtherFiltersAndPasses_True",
+        "func test_shouldLevelBeLogged_hasLevelFilterCombinationOfOtherFiltersIncludingNonRequiredAndPasses_True",
+        "func test_shouldLevelBeLogged_hasLevelFilterCombinationOfOtherFiltersIncludingNonRequired_False",
+        "func test_shouldLevelBeLogged_hasLevelFilterCombinationOfOtherFiltersIncludingNonRequired_True",
+        "func test_shouldLevelBeLogged_hasMatchingNonRequiredFilter_True",
+        "func test_shouldLevelBeLogged_hasMinLevelAndMatchingLevelAndEqualPath_True",
+        "func test_shouldLevelBeLogged_hasMinLevelAndNoMatchingLevelButEqualPath_False",
+        "func test_shouldLevelBeLogged_hasMinLevelAndOneEqualsPathFilterAndDoesNotPass_False",
+        "func test_shouldLevelBeLogged_hasMinLevelAndOneRequiredMessageFilterAndDoesNotPass_False",
+        "func test_shouldLevelBeLogged_hasMinLevelAndOneRequiredMessageFilterAndDoesPass_True",
+        "func test_shouldLevelBeLogged_hasMinLevel_False",
+        "func test_shouldLevelBeLogged_hasMinLevel_True",
+        "func test_shouldLevelBeLogged_hasMultipleNonMatchingNonRequiredFilterAndMinLevel_False",
+        "func test_shouldLevelBeLogged_hasMultipleNonMatchingNonRequiredFilterAndMinLevel_True",
+        "func test_shouldLevelBeLogged_hasNoMatchingNonRequiredFilterAndMinLevel_False",
+        "func test_shouldLevelBeLogged_hasNoMatchingNonRequiredFilterAndMinLevel_True",
+        "func test_shouldLevelBeLogged_hasNoMatchingNonRequiredFilter_False",
+        "func test_shouldLevelBeLogged_multipleNonRequiredFiltersAndGlobal_True",
+        "func test_shouldLevelBeLogged_noFilters_True"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/SwiftyBeaverTests/SwiftyBeaverTests.swift": {
+      "fichier": "Tests/SwiftyBeaverTests/SwiftyBeaverTests.swift",
+      "langage": "swift",
+      "lignes": 447,
+      "taille_bytes": 15484,
+      "entrees": [
+        "Foundation",
+        "XCTest"
+      ],
+      "sorties": [
+        "class SwiftyBeaverTests",
+        "func longRunningTask",
+        "func testAddDestination",
+        "func testAutoClosure",
+        "func testColors",
+        "func testDestinationIntegration",
+        "func testDifferentMessageTypes",
+        "func testGetCorrectThread",
+        "func testLogCallsAllDestinations",
+        "func testLogVerifiesIfShouldLogOnAllDestinations",
+        "func testLoggingWithoutDestination",
+        "func testLongRunningTaskIsNotExecutedWhenLoggingUnderMinLevel",
+        "func testModifiedColors",
+        "func testRemoveDestination",
+        "func testStripParams",
+        "func testUptime",
+        "func testVersionAndBuild"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/SwiftyBeaverTests/GoogleCloudDestinationTests.swift": {
+      "fichier": "Tests/SwiftyBeaverTests/GoogleCloudDestinationTests.swift",
+      "langage": "swift",
+      "lignes": 84,
+      "taille_bytes": 3034,
+      "entrees": [
+        "Foundation",
+        "XCTest"
+      ],
+      "sorties": [
+        "class GoogleCloudDestinationTests",
+        "func testContextMessage",
+        "func testSend",
+        "func testUseGoogleCloudPDestination"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/SwiftyBeaverTests/FileDestinationTests.swift": {
+      "fichier": "Tests/SwiftyBeaverTests/FileDestinationTests.swift",
+      "langage": "swift",
+      "lignes": 180,
+      "taille_bytes": 5924,
+      "entrees": [
+        "Foundation",
+        "XCTest"
+      ],
+      "sorties": [
+        "class FileDestinationTests",
+        "func createFolder",
+        "func deleteFile",
+        "func linesOfFile",
+        "func testFileIsWritten",
+        "func testFileIsWrittenToDeletedFolder",
+        "func testFileIsWrittenToFolderWithSpaces"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/SwiftyBeaverTests/FilterTests.swift": {
+      "fichier": "Tests/SwiftyBeaverTests/FilterTests.swift",
+      "langage": "swift",
+      "lignes": 944,
+      "taille_bytes": 39827,
+      "entrees": [
+        "Foundation",
+        "XCTest"
+      ],
+      "sorties": [
+        "class FilterTests",
+        "func test_functionContains_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionContains_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionContains_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_functionContains_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionContains_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionContains_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_functionCustomComplexMatches_answersFalse",
+        "func test_functionCustomComplexMatches_answersTrue",
+        "func test_functionCustomSimple_answersTrue",
+        "func test_functionEndsWith_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionEndsWith_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionEndsWith_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_functionEndsWith_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionEndsWith_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionEndsWith_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_functionEquals_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionEquals_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionEquals_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_functionEquals_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionEquals_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionEquals_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_functionExcludes_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionExcludes_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionExcludes_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_functionExcludes_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionExcludes_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionExcludes_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_functionStartsWith_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionStartsWith_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionStartsWith_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_functionStartsWith_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_functionStartsWith_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_functionStartsWith_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_function_containsAndIsCaseSensitive_isCaseSensitive",
+        "func test_function_containsAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_function_containsAndIsNotRequired_isNotRequiredFilter",
+        "func test_function_containsAndIsRequired_isRequiredFilter",
+        "func test_function_endsWithAndIsCaseSensitive_isCaseSensitive",
+        "func test_function_endsWithAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_function_endsWithAndIsNotRequired_isNotRequiredFilter",
+        "func test_function_endsWithAndIsRequired_isRequiredFilter",
+        "func test_function_equalsAndIsNotRequired_isNotRequiredFilter",
+        "func test_function_equalsAndIsRequired_isRequiredFilter",
+        "func test_function_excludesAndIsCaseSensitive_isCaseSensitive",
+        "func test_function_excludesAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_function_excludesAndIsNotRequired_isNotRequiredFilter",
+        "func test_function_excludesAndIsRequired_isRequiredFilter",
+        "func test_function_getTarget_isFunctionFilter",
+        "func test_function_startsWithAndIsCaseSensitive_isCaseSensitive",
+        "func test_function_startsWithAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_function_startsWithAndIsNotRequired_isNotRequiredFilter",
+        "func test_function_startsWithAndIsRequired_isRequiredFilter",
+        "func test_messageContains_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageContains_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageContains_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_messageContains_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageContains_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageContains_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_messageCustomComplexMatches_answersFalse",
+        "func test_messageCustomComplexMatches_answersTrue",
+        "func test_messageCustomSimple_answersTrue",
+        "func test_messageEndsWith_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageEndsWith_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageEndsWith_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_messageEndsWith_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageEndsWith_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageEndsWith_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_messageEquals_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageEquals_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageEquals_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_messageEquals_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageEquals_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageEquals_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_messageExcludes_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageExcludes_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageExcludes_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_messageExcludes_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageExcludes_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageExcludes_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_messageStartsWith_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageStartsWith_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageStartsWith_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_messageStartsWith_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_messageStartsWith_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_messageStartsWith_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_message_containsAndIsCaseSensitive_isCaseSensitive",
+        "func test_message_containsAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_message_containsAndIsNotRequired_isNotRequiredFilter",
+        "func test_message_containsAndIsRequired_isRequiredFilter",
+        "func test_message_endsWithAndIsCaseSensitive_isCaseSensitive",
+        "func test_message_endsWithAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_message_endsWithAndIsNotRequired_isNotRequiredFilter",
+        "func test_message_endsWithAndIsRequired_isRequiredFilter",
+        "func test_message_equalsAndIsCaseSensitive_isCaseSensitive",
+        "func test_message_equalsAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_message_equalsAndIsNotRequired_isNotRequiredFilter",
+        "func test_message_equalsAndIsRequired_isRequiredFilter",
+        "func test_message_excludesAndIsCaseSensitive_isCaseSensitive",
+        "func test_message_excludesAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_message_excludesAndIsNotRequired_isNotRequiredFilter",
+        "func test_message_excludesAndIsRequired_isRequiredFilter",
+        "func test_message_getTarget_isMessageFilter",
+        "func test_message_startsWithAndIsCaseSensitive_isCaseSensitive",
+        "func test_message_startsWithAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_message_startsWithAndIsNotRequired_isNotRequiredFilter",
+        "func test_message_startsWithAndIsRequired_isRequiredFilter",
+        "func test_pathContains_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathContains_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathContains_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_pathContains_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathContains_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathContains_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_pathCustomComplexMatches_answersFalse",
+        "func test_pathCustomComplexMatches_answersTrue",
+        "func test_pathCustomSimple_answersTrue",
+        "func test_pathEndsWith_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathEndsWith_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathEndsWith_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_pathEndsWith_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathEndsWith_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathEndsWith_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_pathEquals_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathEquals_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathEquals_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_pathEquals_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathEquals_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathEquals_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_pathExcludes_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathExcludes_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathExcludes_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_pathExcludes_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathExcludes_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathExcludes_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_pathStartsWith_hasMultipleValuesAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathStartsWith_hasMultipleValuesAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathStartsWith_hasMultipleValuesAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_pathStartsWith_hasOneValueAndIsCaseSensitiveAndDoesNotMatch_answersFalse",
+        "func test_pathStartsWith_hasOneValueAndIsCaseSensitiveAndMatches_answersTrue",
+        "func test_pathStartsWith_hasOneValueAndIsNotCaseSensitiveAndMatches_answersTrue",
+        "func test_path_containsAndIsCaseSensitive_isCaseSensitive",
+        "func test_path_containsAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_path_containsAndIsNotRequired_isNotRequiredFilter",
+        "func test_path_containsAndIsRequired_isRequiredFilter",
+        "func test_path_endsWithAndIsCaseSensitive_isCaseSensitive",
+        "func test_path_endsWithAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_path_endsWithAndIsNotRequired_isNotRequiredFilter",
+        "func test_path_endsWithAndIsRequired_isRequiredFilter",
+        "func test_path_equalsAndIsCaseSensitive_isCaseSensitive",
+        "func test_path_equalsAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_path_equalsAndIsNotRequired_isNotRequiredFilter",
+        "func test_path_equalsAndIsRequired_isRequiredFilter",
+        "func test_path_excludesAndIsCaseSensitive_isCaseSensitive",
+        "func test_path_excludesAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_path_excludesAndIsNotRequired_isNotRequiredFilter",
+        "func test_path_excludesAndIsRequired_isRequiredFilter",
+        "func test_path_getTarget_isPathFilter",
+        "func test_path_startsWithAndIsCaseSensitive_isCaseSensitive",
+        "func test_path_startsWithAndIsNotCaseSensitive_isNotCaseSensitive",
+        "func test_path_startsWithAndIsNotRequired_isNotRequiredFilter",
+        "func test_path_startsWithAndIsRequired_isRequiredFilter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/SwiftyBeaverTests/DestinationSetTests.swift": {
+      "fichier": "Tests/SwiftyBeaverTests/DestinationSetTests.swift",
+      "langage": "swift",
+      "lignes": 143,
+      "taille_bytes": 4726,
+      "entrees": [
+        "SwiftyBeaver",
+        "XCTest"
+      ],
+      "sorties": [
+        "class DestinationSetTests",
+        "func testChangeDestinationsMinLogLevels",
+        "func testModifyingDestinationsWhileLoggingFromDifferentThread",
+        "func testRemoveConsoleDestinations"
+      ],
+      "appelle": [
+        "Sources/SwiftyBeaver.swift"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/SwiftyBeaverTests/ConsoleDestinationTests.swift": {
+      "fichier": "Tests/SwiftyBeaverTests/ConsoleDestinationTests.swift",
+      "langage": "swift",
+      "lignes": 50,
+      "taille_bytes": 1366,
+      "entrees": [
+        "Foundation",
+        "XCTest"
+      ],
+      "sorties": [
+        "class ConsoleDestinationTests",
+        "func testUseTerminalColors"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/GoogleCloudDestination.swift": {
+      "fichier": "Sources/GoogleCloudDestination.swift",
+      "langage": "swift",
+      "lignes": 99,
+      "taille_bytes": 3093,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/SwiftyBeaver.swift": {
+      "fichier": "Sources/SwiftyBeaver.swift",
+      "langage": "swift",
+      "lignes": 251,
+      "taille_bytes": 10113,
+      "entrees": [
+        "Foundation",
+        "class"
+      ],
+      "sorties": [
+        "class func",
+        "public class func"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "Tests/SwiftyBeaverTests/DestinationSetTests.swift"
+      ],
+      "type_noeud": "standard"
+    },
+    "Sources/ConsoleDestination.swift": {
+      "fichier": "Sources/ConsoleDestination.swift",
+      "langage": "swift",
+      "lignes": 130,
+      "taille_bytes": 4551,
+      "entrees": [
+        "Foundation",
+        "OSLog",
+        "class"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Extensions.swift": {
+      "fichier": "Sources/Extensions.swift",
+      "langage": "swift",
+      "lignes": 35,
+      "taille_bytes": 755,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func find"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/FilterValidator.swift": {
+      "fichier": "Sources/FilterValidator.swift",
+      "langage": "swift",
+      "lignes": 129,
+      "taille_bytes": 5278,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "enum Result",
+        "enum ValidationType",
+        "func apply",
+        "struct FilterValidator",
+        "struct Input",
+        "struct PartialMatchData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Base64.swift": {
+      "fichier": "Sources/Base64.swift",
+      "langage": "swift",
+      "lignes": 165,
+      "taille_bytes": 5487,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func appendCharacterFromBase",
+        "func byte",
+        "struct Base64",
+        "struct InvalidBase64"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Filter.swift": {
+      "fichier": "Sources/Filter.swift",
+      "langage": "swift",
+      "lignes": 283,
+      "taille_bytes": 11743,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func apply",
+        "func getTarget",
+        "func isExcluded",
+        "func isRequired",
+        "func reachedMinLevel",
+        "public class CompareFilter",
+        "public class Filter",
+        "public class Filters",
+        "public class FunctionFilterFactory",
+        "public class MessageFilterFactory",
+        "public class PathFilterFactory",
+        "public func apply",
+        "public func getTarget",
+        "public func isExcluded",
+        "public func isRequired",
+        "public func reachedMinLevel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/BaseDestination.swift": {
+      "fichier": "Sources/BaseDestination.swift",
+      "langage": "swift",
+      "lignes": 529,
+      "taille_bytes": 18729,
+      "entrees": [
+        "Dispatch",
+        "Foundation",
+        "class",
+        "func",
+        "var"
+      ],
+      "sorties": [
+        "func colorForLevel",
+        "func fileNameOfFile",
+        "func fileNameWithoutSuffix",
+        "func flush",
+        "func formatDate",
+        "func formatMessage",
+        "func getFiltersTargeting",
+        "func hasMessageFilters",
+        "func jsonStringFromDict",
+        "func jsonStringValue",
+        "func levelWord",
+        "func messageToJSON",
+        "func shouldLevelBeLogged",
+        "func uptime",
+        "public func addFilter",
+        "public func execute",
+        "public func executeSynchronously",
+        "public func hash",
+        "public func removeFilter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/FileDestination.swift": {
+      "fichier": "Sources/FileDestination.swift",
+      "langage": "swift",
+      "lignes": 240,
+      "taille_bytes": 9264,
+      "entrees": [
+        "Foundation",
+        "class"
+      ],
+      "sorties": [
+        "func saveToFile",
+        "func validateSaveFile",
+        "public func deleteLogFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "Tests/SwiftyBeaverTests/DestinationSetTests.swift",
+      "vers": "Sources/SwiftyBeaver.swift",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

@@ -1,0 +1,2670 @@
+{
+  "meta": {
+    "projet": "serde",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "toml": 3,
+      "rust": 117
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "Cargo.toml"
+  },
+  "noeuds": {
+    "Cargo.toml": {
+      "fichier": "Cargo.toml",
+      "langage": "toml",
+      "lignes": 19,
+      "taille_bytes": 465,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/Cargo.toml": {
+      "fichier": "test_suite/Cargo.toml",
+      "langage": "toml",
+      "lignes": 21,
+      "taille_bytes": 553,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/no_std/Cargo.toml": {
+      "fichier": "test_suite/no_std/Cargo.toml",
+      "langage": "toml",
+      "lignes": 19,
+      "taille_bytes": 397,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/no_std/src/main.rs": {
+      "fichier": "test_suite/no_std/src/main.rs",
+      "langage": "rust",
+      "lignes": 42,
+      "taille_bytes": 733,
+      "entrees": [
+        "core::ffi::c_int",
+        "serde_derive::"
+      ],
+      "sorties": [
+        "fn panic",
+        "pub enum Enum",
+        "pub struct Newtype",
+        "pub struct Struct",
+        "pub struct Tuple",
+        "pub struct Unit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_roundtrip.rs": {
+      "fichier": "test_suite/tests/test_roundtrip.rs",
+      "langage": "rust",
+      "lignes": 41,
+      "taille_bytes": 990,
+      "entrees": [
+        "serde_test::",
+        "std::net"
+      ],
+      "sorties": [
+        "fn ip_addr_roundtrip",
+        "fn socket_addr_roundtrip"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_identifier.rs": {
+      "fichier": "test_suite/tests/test_identifier.rs",
+      "langage": "rust",
+      "lignes": 188,
+      "taille_bytes": 6078,
+      "entrees": [
+        "serde_derive::Deserialize",
+        "serde_test::",
+        "super::*"
+      ],
+      "sorties": [
+        "fn aliases",
+        "fn field1",
+        "fn newtype_fallthrough",
+        "fn newtype_fallthrough_generic",
+        "fn unit_fallthrough",
+        "fn unknown",
+        "fn variant1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_gen.rs": {
+      "fichier": "test_suite/tests/test_gen.rs",
+      "langage": "rust",
+      "lignes": 960,
+      "taille_bytes": 24331,
+      "entrees": [
+        "serde::de::",
+        "serde::ser::",
+        "serde_derive::",
+        "std::borrow::Cow",
+        "std::marker::PhantomData",
+        "std::option::Option",
+        "std::result::Result"
+      ],
+      "sorties": [
+        "enum AdjacentlyTaggedVariantWith",
+        "enum EmptyAdjacentlyTagged",
+        "enum EmptyEnumVariant",
+        "enum EnumWith",
+        "enum ExternallyTaggedVariantWith",
+        "enum InternallyTaggedVariantWith",
+        "enum RecursiveB",
+        "enum RecursiveGenericB",
+        "enum SkippedVariant",
+        "enum TreeNode",
+        "enum UntaggedVariantWith",
+        "enum VariantWithTraits1",
+        "enum VariantWithTraits2",
+        "fn assert",
+        "fn assert_ser",
+        "fn deserialize_generic",
+        "fn deserialize_with",
+        "fn drop",
+        "fn serialize_with",
+        "fn test_gen",
+        "fn vec_first_element",
+        "pub enum AdjacentlyTaggedVoid",
+        "pub enum BorrowVariant",
+        "pub enum EmptyEnum",
+        "pub enum EmptyEnumDenyUnknown",
+        "pub enum EmptyVariants",
+        "pub enum EmptyVariantsDenyUnknown",
+        "pub enum EnumSkipAll",
+        "pub enum Inner",
+        "pub enum InternallyTagged",
+        "pub enum Message",
+        "pub enum Or",
+        "pub enum OrDef",
+        "pub enum StaticStrEnum",
+        "pub enum UntaggedNewtypeVariantWith",
+        "pub enum UntaggedWithBorrow",
+        "pub fn de_x",
+        "pub fn deserialize_some_other_variant",
+        "pub fn deserialize_some_unit_variant",
+        "pub fn is_zero",
+        "pub fn ser_x",
+        "pub fn serialize_some_other_variant",
+        "pub fn serialize_some_unit_variant",
+        "pub struct BorrowLifetimeInsideMacro",
+        "pub struct BracedSkipAll",
+        "pub struct BracedSkipAllDenyUnknown",
+        "pub struct EmptyArray",
+        "pub struct EmptyBraced",
+        "pub struct EmptyBracedDenyUnknown",
+        "pub struct EmptyTuple",
+        "pub struct EmptyTupleDenyUnknown",
+        "pub struct Flatten",
+        "pub struct FlattenDenyUnknown",
+        "pub struct FlattenSkipDeserializing",
+        "pub struct FlattenSkipSerializing",
+        "pub struct FlattenSkipSerializingIf",
+        "pub struct GenericUnitStruct",
+        "pub struct ImplicitlyBorrowedOption",
+        "pub struct MacroRules",
+        "pub struct NonAsciiIdents",
+        "pub struct RelObject",
+        "pub struct Remote",
+        "pub struct RemotePacked",
+        "pub struct RemotePackedDef",
+        "pub struct RemotePackedNonCopy",
+        "pub struct RemotePackedNonCopyDef",
+        "pub struct RemoteSelf",
+        "pub struct RemoteVisibility",
+        "pub struct SDef",
+        "pub struct SkipDeserializing",
+        "pub struct SkipDeserializingDenyUnknown",
+        "pub struct StaticStrNewtypeStruct",
+        "pub struct StaticStrStruct",
+        "pub struct StaticStrTupleStruct",
+        "pub struct Struct",
+        "pub struct TransparentWith",
+        "pub struct TupleSkipAll",
+        "pub struct TupleSkipAllDenyUnknown",
+        "pub struct UnitDenyUnknown",
+        "struct AssocDerive",
+        "struct AssocDeriveMulti",
+        "struct BigArray",
+        "struct CowStr",
+        "struct CowT",
+        "struct EmptyStruct",
+        "struct Err",
+        "struct FlattenWith",
+        "struct ListNode",
+        "struct MultipleRef",
+        "struct Newtype",
+        "struct NoBounds",
+        "struct NoSerdeImpl",
+        "struct Ok",
+        "struct Option",
+        "struct OptionStatic",
+        "struct Packed",
+        "struct PhantomDataWrapper",
+        "struct PhantomT",
+        "struct PhantomX",
+        "struct RecursiveA",
+        "struct RecursiveGenericA",
+        "struct Restricted",
+        "struct Result",
+        "struct SkippedStaticStr",
+        "struct Some",
+        "struct Str",
+        "struct StrDef",
+        "struct Tuple",
+        "struct TypeMacro",
+        "struct With",
+        "struct WithRef",
+        "struct WithTogether",
+        "struct WithTraits1",
+        "struct WithTraits2",
+        "trait AssocSerde",
+        "trait DeserializeWith",
+        "trait SerializeWith",
+        "type Assoc",
+        "type PhantomDataAlias"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_de_error.rs": {
+      "fichier": "test_suite/tests/test_de_error.rs",
+      "langage": "rust",
+      "lignes": 1568,
+      "taille_bytes": 37622,
+      "entrees": [
+        "serde::de::",
+        "serde_derive::Deserialize",
+        "serde_test::",
+        "std::collections::",
+        "std::ffi::",
+        "std::num::",
+        "std::time::"
+      ],
+      "sorties": [
+        "enum Enum",
+        "enum EnumSkipAll",
+        "fn test_bool_from_string",
+        "fn test_btreemap_from_unit",
+        "fn test_btreemap_from_unit_struct",
+        "fn test_btreeset_from_unit",
+        "fn test_btreeset_from_unit_struct",
+        "fn test_cstr_internal_null",
+        "fn test_cstr_internal_null_end",
+        "fn test_cstring_internal_null",
+        "fn test_cstring_internal_null_end",
+        "fn test_duplicate_field_enum",
+        "fn test_duplicate_field_struct",
+        "fn test_duration_overflow_seq",
+        "fn test_duration_overflow_struct",
+        "fn test_enum_out_of_range",
+        "fn test_enum_skip_all",
+        "fn test_enum_skipped_variant",
+        "fn test_hashmap_from_unit",
+        "fn test_hashmap_from_unit_struct",
+        "fn test_hashset_from_unit",
+        "fn test_hashset_from_unit_struct",
+        "fn test_i128",
+        "fn test_i16",
+        "fn test_i32",
+        "fn test_i64",
+        "fn test_i8",
+        "fn test_integer_from_float",
+        "fn test_nan_no_decimal_point",
+        "fn test_never_type",
+        "fn test_nonzero_i128",
+        "fn test_nonzero_i16",
+        "fn test_nonzero_i32",
+        "fn test_nonzero_i64",
+        "fn test_nonzero_i8",
+        "fn test_nonzero_isize",
+        "fn test_nonzero_u128",
+        "fn test_nonzero_u16",
+        "fn test_nonzero_u32",
+        "fn test_nonzero_u64",
+        "fn test_nonzero_u8",
+        "fn test_nonzero_usize",
+        "fn test_number_from_string",
+        "fn test_short_array",
+        "fn test_short_tuple",
+        "fn test_skip_all_deny_unknown",
+        "fn test_skipped_field_is_unknown",
+        "fn test_string_from_unit",
+        "fn test_systemtime_overflow",
+        "fn test_systemtime_overflow_seq",
+        "fn test_systemtime_overflow_struct",
+        "fn test_u128",
+        "fn test_u16",
+        "fn test_u32",
+        "fn test_u64",
+        "fn test_u8",
+        "fn test_unit_from_empty_seq",
+        "fn test_unit_from_empty_seq_without_len",
+        "fn test_unit_from_tuple_struct",
+        "fn test_unit_struct_from_seq",
+        "fn test_unknown_field",
+        "fn test_unknown_variant",
+        "fn test_usize",
+        "fn test_vec_from_unit",
+        "fn test_vec_from_unit_struct",
+        "fn test_wrapping_overflow",
+        "fn test_zero_array_from_unit",
+        "fn test_zero_array_from_unit_struct",
+        "struct NotDeserializable",
+        "struct Struct",
+        "struct StructDenyUnknown",
+        "struct StructSkipAllDenyUnknown",
+        "struct UnitStruct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_ser.rs": {
+      "fichier": "test_suite/tests/test_ser.rs",
+      "langage": "rust",
+      "lignes": 919,
+      "taille_bytes": 21086,
+      "entrees": [
+        "serde_derive::Serialize",
+        "serde_test::",
+        "std::cell::RefCell",
+        "std::collections::",
+        "std::ffi::CString",
+        "std::ffi::OsStr",
+        "std::net",
+        "std::num::",
+        "std::ops::Bound",
+        "std::os::unix::ffi::OsStrExt",
+        "std::path::",
+        "std::rc::",
+        "std::str",
+        "std::sync::",
+        "std::sync::atomic::",
+        "std::time::"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn test_arc",
+        "fn test_arc_dst",
+        "fn test_arc_weak_none",
+        "fn test_arc_weak_some",
+        "fn test_array",
+        "fn test_atomic",
+        "fn test_atomic64",
+        "fn test_bool",
+        "fn test_bound",
+        "fn test_box",
+        "fn test_boxed_slice",
+        "fn test_btreemap",
+        "fn test_btreeset",
+        "fn test_cannot_serialize_mutably_borrowed_ref_cell",
+        "fn test_cannot_serialize_paths",
+        "fn test_char",
+        "fn test_cstr",
+        "fn test_cstring",
+        "fn test_duration",
+        "fn test_enum",
+        "fn test_enum_skipped",
+        "fn test_floats",
+        "fn test_fmt_arguments",
+        "fn test_hashmap",
+        "fn test_hashset",
+        "fn test_integer128",
+        "fn test_isizes",
+        "fn test_mutex_dst",
+        "fn test_net_ipaddr_compact",
+        "fn test_net_ipaddr_readable",
+        "fn test_net_ipv4addr_compact",
+        "fn test_net_ipv4addr_readable",
+        "fn test_net_ipv6addr_compact",
+        "fn test_net_ipv6addr_readable",
+        "fn test_net_socketaddr_compact",
+        "fn test_net_socketaddr_readable",
+        "fn test_never_result",
+        "fn test_option",
+        "fn test_path",
+        "fn test_path_buf",
+        "fn test_range",
+        "fn test_range_from",
+        "fn test_range_inclusive",
+        "fn test_range_to",
+        "fn test_rc",
+        "fn test_rc_dst",
+        "fn test_rc_weak_none",
+        "fn test_rc_weak_some",
+        "fn test_refcell_dst",
+        "fn test_result",
+        "fn test_rwlock_dst",
+        "fn test_saturating",
+        "fn test_slice",
+        "fn test_str",
+        "fn test_struct",
+        "fn test_system_time",
+        "fn test_tuple",
+        "fn test_tuple_struct",
+        "fn test_unit",
+        "fn test_unit_struct",
+        "fn test_usizes",
+        "fn test_vec",
+        "fn test_wrapping",
+        "struct NotSerializable",
+        "struct Struct",
+        "struct TupleStruct",
+        "struct UnitStruct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_deprecated.rs": {
+      "fichier": "test_suite/tests/test_deprecated.rs",
+      "langage": "rust",
+      "lignes": 30,
+      "taille_bytes": 451,
+      "entrees": [
+        "serde_derive::"
+      ],
+      "sorties": [
+        "enum DeprecatedEnum",
+        "enum DeprecatedVariant",
+        "struct DeprecatedField",
+        "struct DeprecatedStruct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/regression.rs": {
+      "fichier": "test_suite/tests/regression.rs",
+      "langage": "rust",
+      "lignes": 3,
+      "taille_bytes": 58,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_unstable.rs": {
+      "fichier": "test_suite/tests/test_unstable.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 458,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_annotations.rs": {
+      "fichier": "test_suite/tests/test_annotations.rs",
+      "langage": "rust",
+      "lignes": 3576,
+      "taille_bytes": 97197,
+      "entrees": [
+        "E::*",
+        "Exp::*",
+        "Test::*",
+        "desugared::Test",
+        "serde::de::",
+        "serde::ser::",
+        "serde_derive::",
+        "serde_test::",
+        "std::collections::",
+        "std::convert::TryFrom",
+        "std::fmt",
+        "std::iter::FromIterator",
+        "std::marker::PhantomData",
+        "super::*"
+      ],
+      "sorties": [
+        "enum AliasEnum",
+        "enum Data",
+        "enum DefaultStructVariant",
+        "enum DefaultTupleVariant",
+        "enum DeserializeWithEnum",
+        "enum Enum",
+        "enum EnumToU32",
+        "enum Exp",
+        "enum FieldEnum",
+        "enum InvalidLengthEnum",
+        "enum NotDeserializeEnum",
+        "enum NotSerializeEnum",
+        "enum Outer",
+        "enum RenameEnum",
+        "enum RenameEnumSerializeDeserialize",
+        "enum SerializeWithEnum",
+        "enum SkipSerializingEnum",
+        "enum Test",
+        "enum TestUntagged",
+        "enum TryFromU32",
+        "enum VariantEnum",
+        "enum WithVariant",
+        "fn alias",
+        "fn assert_tokens_desugared",
+        "fn complex",
+        "fn deserialize",
+        "fn deserialize_i8_as_unit_variant",
+        "fn deserialize_string_as_variant",
+        "fn deserialize_with",
+        "fn enum_tuple_and_struct",
+        "fn expecting",
+        "fn flatten_any_after_flatten_struct",
+        "fn ignored_any",
+        "fn into",
+        "fn lifetime_propagation",
+        "fn map_twice",
+        "fn my_default",
+        "fn newtype",
+        "fn non_string_keys",
+        "fn option",
+        "fn serialize_unit_variant_as_i8",
+        "fn serialize_variant_as_string",
+        "fn serialize_with",
+        "fn should_skip",
+        "fn straightforward",
+        "fn struct_",
+        "fn struct_from_map",
+        "fn struct_from_seq",
+        "fn structs",
+        "fn test_collect_other",
+        "fn test_default_struct",
+        "fn test_default_struct_variant",
+        "fn test_default_tuple",
+        "fn test_default_tuple_variant",
+        "fn test_deserialize_with_enum",
+        "fn test_deserialize_with_struct",
+        "fn test_deserialize_with_variant",
+        "fn test_elt_not_deserialize",
+        "fn test_elt_not_serialize",
+        "fn test_expecting_message",
+        "fn test_expecting_message_externally_tagged_enum",
+        "fn test_expecting_message_identifier_enum",
+        "fn test_from_into_traits",
+        "fn test_ignore_unknown",
+        "fn test_invalid_length_enum",
+        "fn test_missing_renamed_field_enum",
+        "fn test_missing_renamed_field_struct",
+        "fn test_no_std_default",
+        "fn test_partially_untagged_enum",
+        "fn test_partially_untagged_enum_desugared",
+        "fn test_partially_untagged_enum_generic",
+        "fn test_partially_untagged_internally_tagged_enum",
+        "fn test_rename_enum",
+        "fn test_rename_struct",
+        "fn test_serialize_with_enum",
+        "fn test_serialize_with_struct",
+        "fn test_serialize_with_variant",
+        "fn test_skip_serializing_enum",
+        "fn test_skip_serializing_struct",
+        "fn test_skip_serializing_tuple_struct",
+        "fn test_skip_struct",
+        "fn test_transparent_struct",
+        "fn test_transparent_tuple_struct",
+        "fn test_unknown_field_rename_enum",
+        "fn test_unknown_field_rename_struct",
+        "fn try_from",
+        "fn tuple",
+        "fn unit",
+        "fn unit_enum_with_unknown_fields",
+        "fn unit_struct",
+        "fn unknown_field",
+        "fn unsupported_type",
+        "fn visit_map",
+        "struct AliasStruct",
+        "struct Any",
+        "struct AnyVisitor",
+        "struct CollectOther",
+        "struct ContainsNoStdDefault",
+        "struct ContainsNotDeserialize",
+        "struct ContainsNotSerialize",
+        "struct DefaultStruct",
+        "struct DefaultTupleStruct",
+        "struct DenyUnknown",
+        "struct DeserializeWithStruct",
+        "struct First",
+        "struct Flat",
+        "struct Flatten",
+        "struct Inner",
+        "struct Inner1",
+        "struct Inner2",
+        "struct Nested",
+        "struct Newtype",
+        "struct NewtypeVariant",
+        "struct NewtypeWrapper",
+        "struct NoStdDefault",
+        "struct NotDeserializeStruct",
+        "struct NotSerializeStruct",
+        "struct Outer",
+        "struct RenameStruct",
+        "struct RenameStructSerializeDeserialize",
+        "struct Response",
+        "struct Second",
+        "struct SerializeWithStruct",
+        "struct SkipSerializingStruct",
+        "struct SkipSerializingTupleStruct",
+        "struct SkipStruct",
+        "struct Struct",
+        "struct StructFromEnum",
+        "struct TestStruct",
+        "struct Transparent",
+        "struct Tuple",
+        "struct Unit",
+        "trait DeserializeWith",
+        "trait MyDefault",
+        "trait SerializeWith",
+        "trait ShouldSkip",
+        "trait Trait",
+        "type Assoc",
+        "type Assoc2",
+        "type Error",
+        "type MyE",
+        "type Value"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_value.rs": {
+      "fichier": "test_suite/tests/test_value.rs",
+      "langage": "rust",
+      "lignes": 95,
+      "taille_bytes": 2611,
+      "entrees": [
+        "serde::de::",
+        "serde::de::value::",
+        "serde_derive::Deserialize",
+        "serde_test::",
+        "std::fmt"
+      ],
+      "sorties": [
+        "enum PotentialKind",
+        "fn deserialize",
+        "fn expecting",
+        "fn test_integer128",
+        "fn test_map_access_to_enum",
+        "fn test_u32_to_enum",
+        "fn visit_map",
+        "struct Airebo",
+        "struct Potential",
+        "struct PotentialVisitor",
+        "type Value"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_borrow.rs": {
+      "fichier": "test_suite/tests/test_borrow.rs",
+      "langage": "rust",
+      "lignes": 196,
+      "taille_bytes": 4825,
+      "entrees": [
+        "serde::de::",
+        "serde::de::value::",
+        "serde_derive::Deserialize",
+        "serde_test::",
+        "std::borrow::Cow"
+      ],
+      "sorties": [
+        "enum FieldBytes",
+        "enum FieldStr",
+        "fn _cows_lifetimes",
+        "fn _wrap_lifetimes",
+        "fn into_deserializer",
+        "fn test_borrowed_bytes",
+        "fn test_borrowed_bytes_from_bytebuf",
+        "fn test_borrowed_bytes_from_bytes",
+        "fn test_borrowed_str",
+        "fn test_borrowed_str_from_str",
+        "fn test_borrowed_str_from_string",
+        "fn test_cow",
+        "fn test_field_identifier",
+        "fn test_lifetimes",
+        "fn test_string_from_borrowed_str",
+        "fn test_struct",
+        "fn test_tuple",
+        "pub struct Cows",
+        "pub struct Wrap",
+        "struct BorrowedStr",
+        "struct Borrowing",
+        "struct Cows",
+        "type Deserializer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_self.rs": {
+      "fichier": "test_suite/tests/test_self.rs",
+      "langage": "rust",
+      "lignes": 88,
+      "taille_bytes": 1771,
+      "entrees": [
+        "serde_derive::"
+      ],
+      "sorties": [
+        "const ASSOC",
+        "const fn",
+        "fn test_self",
+        "pub enum Enum",
+        "pub struct Generics",
+        "pub struct Struct",
+        "pub struct Tuple",
+        "pub trait Trait",
+        "type Assoc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_enum_untagged.rs": {
+      "fichier": "test_suite/tests/test_enum_untagged.rs",
+      "langage": "rust",
+      "lignes": 583,
+      "taille_bytes": 13734,
+      "entrees": [
+        "serde_derive::",
+        "serde_test::",
+        "std::collections::BTreeMap",
+        "super::*"
+      ],
+      "sorties": [
+        "enum Data",
+        "enum Enum",
+        "enum Inner",
+        "enum Message",
+        "enum Outer",
+        "enum Untagged",
+        "fn complex",
+        "fn contains_flatten",
+        "fn contains_flatten_with_integer_key",
+        "fn empty_struct_from_map",
+        "fn empty_struct_from_seq",
+        "fn expecting_message",
+        "fn newtype",
+        "fn newtype_struct",
+        "fn newtype_unit_and_empty_map",
+        "fn none",
+        "fn some",
+        "fn some_without_marker",
+        "fn string_and_bytes",
+        "fn struct_from_map",
+        "fn struct_from_seq",
+        "fn tuple0",
+        "fn tuple2",
+        "fn unit",
+        "pub enum Untagged",
+        "struct Flat",
+        "struct NewtypeStruct",
+        "struct Unit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_enum_adjacently_tagged.rs": {
+      "fichier": "test_suite/tests/test_enum_adjacently_tagged.rs",
+      "langage": "rust",
+      "lignes": 799,
+      "taille_bytes": 20764,
+      "entrees": [
+        "serde_derive::",
+        "serde_test::",
+        "super::*"
+      ],
+      "sorties": [
+        "enum AdjacentlyTagged",
+        "enum Data",
+        "enum Enum",
+        "fn deny_unknown_fields",
+        "fn expecting_message",
+        "fn map",
+        "fn map_bytes_tag_content",
+        "fn map_bytes_tag_only",
+        "fn map_int_tag_content",
+        "fn map_int_tag_only",
+        "fn map_str_tag_content",
+        "fn map_str_tag_only",
+        "fn map_tag_content",
+        "fn map_tag_only",
+        "fn newtype_with_newtype",
+        "fn partially_untagged",
+        "fn seq",
+        "fn seq_tag_content",
+        "fn struct_with_flatten",
+        "struct Flat",
+        "struct NewtypeStruct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_remote.rs": {
+      "fichier": "test_suite/tests/test_remote.rs",
+      "langage": "rust",
+      "lignes": 263,
+      "taille_bytes": 5809,
+      "entrees": [
+        "serde_derive::"
+      ],
+      "sorties": [
+        "enum EnumConcrete",
+        "enum ErrorKind",
+        "enum ErrorKindDef",
+        "pub enum EnumGeneric",
+        "pub fn first",
+        "pub fn get",
+        "pub fn get_value",
+        "pub fn new",
+        "pub fn second",
+        "pub struct NewtypePriv",
+        "pub struct NewtypePub",
+        "pub struct PrimitivePriv",
+        "pub struct PrimitivePub",
+        "pub struct StructGeneric",
+        "pub struct StructPriv",
+        "pub struct StructPub",
+        "pub struct TuplePriv",
+        "pub struct TuplePub",
+        "pub struct Unit",
+        "struct NewtypePrivDef",
+        "struct NewtypePubDef",
+        "struct PrimitivePrivDef",
+        "struct PrimitivePubDef",
+        "struct StructConcrete",
+        "struct StructGenericWithGetterDef",
+        "struct StructPrivDef",
+        "struct StructPubDef",
+        "struct Test",
+        "struct TuplePrivDef",
+        "struct TuplePubDef",
+        "struct UnitDef"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/compiletest.rs": {
+      "fichier": "test_suite/tests/compiletest.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 318,
+      "entrees": [],
+      "sorties": [
+        "fn ui"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_de.rs": {
+      "fichier": "test_suite/tests/test_de.rs",
+      "langage": "rust",
+      "lignes": 2387,
+      "taille_bytes": 57353,
+      "entrees": [
+        "serde::de::",
+        "serde::de::value::",
+        "serde_derive::Deserialize",
+        "serde_test::",
+        "std::collections::",
+        "std::default::Default",
+        "std::ffi::",
+        "std::fmt::Debug",
+        "std::iter",
+        "std::net",
+        "std::num::",
+        "std::ops::Bound",
+        "std::os::unix::ffi::OsStringExt",
+        "std::os::windows::ffi::OsStringExt",
+        "std::path::",
+        "std::rc::",
+        "std::sync::",
+        "std::sync::atomic::",
+        "std::time::"
+      ],
+      "sorties": [
+        "enum Enum",
+        "enum EnumOther",
+        "fn assert_de_tokens_ignore",
+        "fn deserialize",
+        "fn eq",
+        "fn test",
+        "fn test_arc",
+        "fn test_arc_dst",
+        "fn test_arc_weak_none",
+        "fn test_arc_weak_some",
+        "fn test_array",
+        "fn test_atomics",
+        "fn test_bool",
+        "fn test_bound",
+        "fn test_box",
+        "fn test_boxed_path",
+        "fn test_boxed_slice",
+        "fn test_btreemap",
+        "fn test_btreeset",
+        "fn test_char",
+        "fn test_cstr",
+        "fn test_cstring",
+        "fn test_duration",
+        "fn test_enum_map",
+        "fn test_enum_other",
+        "fn test_enum_other_unit",
+        "fn test_enum_seq",
+        "fn test_enum_simple",
+        "fn test_enum_simple_with_skipped",
+        "fn test_enum_unit",
+        "fn test_enum_unit_bytes",
+        "fn test_enum_unit_usize",
+        "fn test_f32",
+        "fn test_f64",
+        "fn test_generic_unit_struct",
+        "fn test_hashmap",
+        "fn test_hashset",
+        "fn test_i128",
+        "fn test_i16",
+        "fn test_i32",
+        "fn test_i64",
+        "fn test_i8",
+        "fn test_ignored_any",
+        "fn test_isize",
+        "fn test_nan",
+        "fn test_net_ipaddr_compact",
+        "fn test_net_ipaddr_readable",
+        "fn test_net_ipv4addr_compact",
+        "fn test_net_ipv4addr_readable",
+        "fn test_net_ipv6addr_compact",
+        "fn test_net_ipv6addr_readable",
+        "fn test_net_socketaddr_compact",
+        "fn test_net_socketaddr_readable",
+        "fn test_never_result",
+        "fn test_newtype_struct",
+        "fn test_nonzero_i128",
+        "fn test_nonzero_i16",
+        "fn test_nonzero_i32",
+        "fn test_nonzero_i64",
+        "fn test_nonzero_i8",
+        "fn test_nonzero_isize",
+        "fn test_nonzero_u128",
+        "fn test_nonzero_u16",
+        "fn test_nonzero_u32",
+        "fn test_nonzero_u64",
+        "fn test_nonzero_u8",
+        "fn test_nonzero_usize",
+        "fn test_option",
+        "fn test_osstring",
+        "fn test_path",
+        "fn test_path_buf",
+        "fn test_range",
+        "fn test_range_from",
+        "fn test_range_inclusive",
+        "fn test_range_to",
+        "fn test_rc",
+        "fn test_rc_dst",
+        "fn test_rc_weak_none",
+        "fn test_rc_weak_some",
+        "fn test_result",
+        "fn test_saturating",
+        "fn test_string",
+        "fn test_struct",
+        "fn test_struct_borrowed_keys",
+        "fn test_struct_default",
+        "fn test_struct_owned_keys",
+        "fn test_struct_skip_all",
+        "fn test_struct_skip_all_deny_unknown",
+        "fn test_struct_skip_default",
+        "fn test_struct_with_skip",
+        "fn test_system_time",
+        "fn test_tuple",
+        "fn test_tuple_struct",
+        "fn test_u128",
+        "fn test_u16",
+        "fn test_u32",
+        "fn test_u64",
+        "fn test_u8",
+        "fn test_unit",
+        "fn test_unit_struct",
+        "fn test_usize",
+        "fn test_vec",
+        "fn test_wrapping",
+        "pub struct StructSkipDefaultGeneric",
+        "struct GenericUnitStruct",
+        "struct IgnoreBase",
+        "struct IgnoredAny",
+        "struct NewtypeStruct",
+        "struct NotDeserializable",
+        "struct SkipPartialEq",
+        "struct Struct",
+        "struct StructDefault",
+        "struct StructSkipAll",
+        "struct StructSkipAllDenyUnknown",
+        "struct StructSkipDefault",
+        "struct TupleStruct",
+        "struct UnitStruct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_enum_internally_tagged.rs": {
+      "fichier": "test_suite/tests/test_enum_internally_tagged.rs",
+      "langage": "rust",
+      "lignes": 1478,
+      "taille_bytes": 37961,
+      "entrees": [
+        "serde_derive::",
+        "serde_test::",
+        "std::collections::BTreeMap",
+        "std::iter::FromIterator",
+        "super::*"
+      ],
+      "sorties": [
+        "enum Data",
+        "enum Enum",
+        "enum Input",
+        "enum InternallyTagged",
+        "fn borrow",
+        "fn bytes_from_bytes",
+        "fn bytes_from_seq",
+        "fn bytes_from_string",
+        "fn containing_flatten",
+        "fn expecting_message",
+        "fn newtype",
+        "fn newtype_map",
+        "fn newtype_newtype",
+        "fn newtype_struct",
+        "fn newtype_unit",
+        "fn newtype_unit_struct",
+        "fn string_from_bytes",
+        "fn string_from_string",
+        "fn struct_",
+        "fn tuple",
+        "fn unit",
+        "fn unit_variant_with_unknown_fields",
+        "fn untagged_variant",
+        "fn with_skipped_conflict",
+        "fn wrong_tag",
+        "struct Flat",
+        "struct Newtype",
+        "struct Struct",
+        "struct Unit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_macros.rs": {
+      "fichier": "test_suite/tests/test_macros.rs",
+      "langage": "rust",
+      "lignes": 866,
+      "taille_bytes": 18923,
+      "entrees": [
+        "serde_derive::",
+        "serde_test::",
+        "std::marker::PhantomData"
+      ],
+      "sorties": [
+        "enum DeEnum",
+        "enum Lifetimes",
+        "enum SerEnum",
+        "enum SomeEnum",
+        "enum Void",
+        "fn test_de_enum_map",
+        "fn test_de_enum_seq",
+        "fn test_de_enum_unit",
+        "fn test_de_named_map",
+        "fn test_de_named_tuple",
+        "fn test_default_ty_param",
+        "fn test_enum_state_field",
+        "fn test_generic_enum_map",
+        "fn test_generic_enum_newtype",
+        "fn test_generic_enum_seq",
+        "fn test_generic_enum_unit",
+        "fn test_generic_newtype_struct",
+        "fn test_generic_struct",
+        "fn test_generic_tuple_struct",
+        "fn test_internally_tagged_braced_struct_with_zero_fields",
+        "fn test_internally_tagged_struct",
+        "fn test_internally_tagged_struct_with_flattened_field",
+        "fn test_lifetimes",
+        "fn test_named_unit",
+        "fn test_packed_struct_can_derive_serialize",
+        "fn test_rename_all",
+        "fn test_rename_all_fields",
+        "fn test_ser_enum_map",
+        "fn test_ser_enum_seq",
+        "fn test_ser_enum_unit",
+        "fn test_ser_named_map",
+        "fn test_ser_named_tuple",
+        "pub enum Enum",
+        "pub enum GenericEnum",
+        "pub struct GenericNewTypeStruct",
+        "pub struct GenericStruct",
+        "pub struct GenericTupleStruct",
+        "pub struct Struct",
+        "struct CPacked",
+        "struct CPacked2",
+        "struct DeNamedMap",
+        "struct DeNamedTuple",
+        "struct DefaultTyParam",
+        "struct NamedUnit",
+        "struct Packed2C",
+        "struct PackedC",
+        "struct ScreamingKebab",
+        "struct SerNamedMap",
+        "struct SerNamedTuple",
+        "trait AssociatedType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_ignored_any.rs": {
+      "fichier": "test_suite/tests/test_ignored_any.rs",
+      "langage": "rust",
+      "lignes": 108,
+      "taille_bytes": 2860,
+      "entrees": [
+        "serde::de::",
+        "serde::de::value::",
+        "serde::forward_to_deserialize_any",
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "enum Target",
+        "fn deserialize_any",
+        "fn newtype_variant_seed",
+        "fn struct_variant",
+        "fn test_deserialize_enum",
+        "fn tuple_variant",
+        "fn unit_variant",
+        "fn variant_seed",
+        "struct Enum",
+        "type Error",
+        "type Variant"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/test_serde_path.rs": {
+      "fichier": "test_suite/tests/test_serde_path.rs",
+      "langage": "rust",
+      "lignes": 49,
+      "taille_bytes": 1249,
+      "entrees": [],
+      "sorties": [
+        "fn deserialize",
+        "fn serialize",
+        "fn test_gen_custom_serde",
+        "pub fn assert",
+        "pub trait AssertNotSerdeDeserialize",
+        "pub trait AssertNotSerdeSerialize",
+        "pub trait Deserialize",
+        "pub trait Serialize",
+        "struct Foo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/enum_getter.rs": {
+      "fichier": "test_suite/tests/ui/remote/enum_getter.rs",
+      "langage": "rust",
+      "lignes": 18,
+      "taille_bytes": 236,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/bad_getter.rs": {
+      "fichier": "test_suite/tests/ui/remote/bad_getter.rs",
+      "langage": "rust",
+      "lignes": 16,
+      "taille_bytes": 205,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/wrong_ser.rs": {
+      "fichier": "test_suite/tests/ui/remote/wrong_ser.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 181,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/double_generic.rs": {
+      "fichier": "test_suite/tests/ui/remote/double_generic.rs",
+      "langage": "rust",
+      "lignes": 17,
+      "taille_bytes": 273,
+      "entrees": [
+        "serde_derive::"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct Struct",
+        "struct StructDef"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/nonremote_getter.rs": {
+      "fichier": "test_suite/tests/ui/remote/nonremote_getter.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 180,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn get",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/unknown_field.rs": {
+      "fichier": "test_suite/tests/ui/remote/unknown_field.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 208,
+      "entrees": [
+        "serde_derive::"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/wrong_getter.rs": {
+      "fichier": "test_suite/tests/ui/remote/wrong_getter.rs",
+      "langage": "rust",
+      "lignes": 22,
+      "taille_bytes": 307,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main",
+        "pub fn get"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/wrong_de.rs": {
+      "fichier": "test_suite/tests/ui/remote/wrong_de.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 157,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/bad_remote.rs": {
+      "fichier": "test_suite/tests/ui/remote/bad_remote.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 170,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/remote/missing_field.rs": {
+      "fichier": "test_suite/tests/ui/remote/missing_field.rs",
+      "langage": "rust",
+      "lignes": 16,
+      "taille_bytes": 227,
+      "entrees": [
+        "serde_derive::"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unsupported/union_de.rs": {
+      "fichier": "test_suite/tests/ui/unsupported/union_de.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 107,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unsupported/union_ser.rs": {
+      "fichier": "test_suite/tests/ui/unsupported/union_ser.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 107,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/transparent/enum.rs": {
+      "fichier": "test_suite/tests/ui/transparent/enum.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 97,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/transparent/at_most_one.rs": {
+      "fichier": "test_suite/tests/ui/transparent/at_most_one.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 122,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/transparent/with_from.rs": {
+      "fichier": "test_suite/tests/ui/transparent/with_from.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 125,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/transparent/with_try_from.rs": {
+      "fichier": "test_suite/tests/ui/transparent/with_try_from.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 129,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/transparent/ser_at_least_one.rs": {
+      "fichier": "test_suite/tests/ui/transparent/ser_at_least_one.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 130,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/transparent/unit_struct.rs": {
+      "fichier": "test_suite/tests/ui/transparent/unit_struct.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 97,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/transparent/de_at_least_one.rs": {
+      "fichier": "test_suite/tests/ui/transparent/de_at_least_one.rs",
+      "langage": "rust",
+      "lignes": 12,
+      "taille_bytes": 167,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/transparent/with_into.rs": {
+      "fichier": "test_suite/tests/ui/transparent/with_into.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 125,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/rename/container_unknown_rename_rule.rs": {
+      "fichier": "test_suite/tests/ui/rename/container_unknown_rename_rule.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 164,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/rename/variant_unknown_rename_rule.rs": {
+      "fichier": "test_suite/tests/ui/rename/variant_unknown_rename_rule.rs",
+      "langage": "rust",
+      "lignes": 13,
+      "taille_bytes": 193,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/enum-representation/untagged-and-content.rs": {
+      "fichier": "test_suite/tests/ui/enum-representation/untagged-and-content.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 145,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/enum-representation/partially_tagged_wrong_order.rs": {
+      "fichier": "test_suite/tests/ui/enum-representation/partially_tagged_wrong_order.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 125,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/enum-representation/untagged-struct.rs": {
+      "fichier": "test_suite/tests/ui/enum-representation/untagged-struct.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 94,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/enum-representation/content-no-tag.rs": {
+      "fichier": "test_suite/tests/ui/enum-representation/content-no-tag.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 126,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/enum-representation/internal-tuple-variant.rs": {
+      "fichier": "test_suite/tests/ui/enum-representation/internal-tuple-variant.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 118,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/enum-representation/untagged-and-internal.rs": {
+      "fichier": "test_suite/tests/ui/enum-representation/untagged-and-internal.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 144,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/enum-representation/untagged-and-adjacent.rs": {
+      "fichier": "test_suite/tests/ui/enum-representation/untagged-and-adjacent.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 156,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/deprecated/deprecated_ser_with.rs": {
+      "fichier": "test_suite/tests/ui/deprecated/deprecated_ser_with.rs",
+      "langage": "rust",
+      "lignes": 20,
+      "taille_bytes": 345,
+      "entrees": [
+        "serde::Serializer",
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn deprecated_with",
+        "fn main",
+        "pub struct Struct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/deprecated/deprecated_de_with.rs": {
+      "fichier": "test_suite/tests/ui/deprecated/deprecated_de_with.rs",
+      "langage": "rust",
+      "lignes": 20,
+      "taille_bytes": 351,
+      "entrees": [
+        "serde::Deserializer",
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn deprecated_with",
+        "fn main",
+        "pub struct Struct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unexpected-literal/container.rs": {
+      "fichier": "test_suite/tests/ui/unexpected-literal/container.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 95,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unexpected-literal/variant.rs": {
+      "fichier": "test_suite/tests/ui/unexpected-literal/variant.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 107,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unexpected-literal/field.rs": {
+      "fichier": "test_suite/tests/ui/unexpected-literal/field.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 113,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unimplemented/required_by_dependency.rs": {
+      "fichier": "test_suite/tests/ui/unimplemented/required_by_dependency.rs",
+      "langage": "rust",
+      "lignes": 6,
+      "taille_bytes": 133,
+      "entrees": [],
+      "sorties": [
+        "fn main",
+        "struct MyStruct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unimplemented/required_locally.rs": {
+      "fichier": "test_suite/tests/ui/unimplemented/required_locally.rs",
+      "langage": "rust",
+      "lignes": 23,
+      "taille_bytes": 328,
+      "entrees": [
+        "serde::de::Deserialize",
+        "serde::ser::Serialize"
+      ],
+      "sorties": [
+        "fn from_str",
+        "fn main",
+        "fn to_string",
+        "struct MyStruct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/borrow/struct_variant.rs": {
+      "fichier": "test_suite/tests/ui/borrow/struct_variant.rs",
+      "langage": "rust",
+      "lignes": 12,
+      "taille_bytes": 179,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "enum Test",
+        "fn main",
+        "struct Str"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/borrow/bad_lifetimes.rs": {
+      "fichier": "test_suite/tests/ui/borrow/bad_lifetimes.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 134,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/borrow/empty_lifetimes.rs": {
+      "fichier": "test_suite/tests/ui/borrow/empty_lifetimes.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 175,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/borrow/duplicate_lifetime.rs": {
+      "fichier": "test_suite/tests/ui/borrow/duplicate_lifetime.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 138,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/borrow/duplicate_variant.rs": {
+      "fichier": "test_suite/tests/ui/borrow/duplicate_variant.rs",
+      "langage": "rust",
+      "lignes": 12,
+      "taille_bytes": 190,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "enum Test",
+        "fn main",
+        "struct Str"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/borrow/wrong_lifetime.rs": {
+      "fichier": "test_suite/tests/ui/borrow/wrong_lifetime.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 133,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/borrow/no_lifetimes.rs": {
+      "fichier": "test_suite/tests/ui/borrow/no_lifetimes.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 121,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/precondition/serialize_variant_identifier.rs": {
+      "fichier": "test_suite/tests/ui/precondition/serialize_variant_identifier.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 119,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/precondition/deserialize_dst.rs": {
+      "fichier": "test_suite/tests/ui/precondition/deserialize_dst.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 119,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/precondition/deserialize_de_lifetime.rs": {
+      "fichier": "test_suite/tests/ui/precondition/deserialize_de_lifetime.rs",
+      "langage": "rust",
+      "lignes": 8,
+      "taille_bytes": 104,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/precondition/serialize_field_identifier.rs": {
+      "fichier": "test_suite/tests/ui/precondition/serialize_field_identifier.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 117,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with/incorrect_type.rs": {
+      "fichier": "test_suite/tests/ui/with/incorrect_type.rs",
+      "langage": "rust",
+      "lignes": 23,
+      "taille_bytes": 599,
+      "entrees": [
+        "serde::",
+        "serde_derive::"
+      ],
+      "sorties": [
+        "fn main",
+        "pub fn deserialize",
+        "pub fn serialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/duplicate-attribute/with-and-serialize-with.rs": {
+      "fichier": "test_suite/tests/ui/duplicate-attribute/with-and-serialize-with.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 136,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/duplicate-attribute/rename-and-ser.rs": {
+      "fichier": "test_suite/tests/ui/duplicate-attribute/rename-and-ser.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 133,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/duplicate-attribute/rename-ser-rename-ser.rs": {
+      "fichier": "test_suite/tests/ui/duplicate-attribute/rename-ser-rename-ser.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 152,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/duplicate-attribute/rename-ser-rename.rs": {
+      "fichier": "test_suite/tests/ui/duplicate-attribute/rename-ser-rename.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 154,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/duplicate-attribute/two-rename-ser.rs": {
+      "fichier": "test_suite/tests/ui/duplicate-attribute/two-rename-ser.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 165,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/duplicate-attribute/rename-ser-ser.rs": {
+      "fichier": "test_suite/tests/ui/duplicate-attribute/rename-ser-ser.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 144,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/type-attribute/into.rs": {
+      "fichier": "test_suite/tests/ui/type-attribute/into.rs",
+      "langage": "rust",
+      "lignes": 12,
+      "taille_bytes": 152,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "enum TestOne",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/type-attribute/try_from.rs": {
+      "fichier": "test_suite/tests/ui/type-attribute/try_from.rs",
+      "langage": "rust",
+      "lignes": 12,
+      "taille_bytes": 160,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "enum TestOne",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/type-attribute/from.rs": {
+      "fichier": "test_suite/tests/ui/type-attribute/from.rs",
+      "langage": "rust",
+      "lignes": 12,
+      "taille_bytes": 156,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "enum TestOne",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_de_tuple_field.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_de_tuple_field.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 201,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_de_whole_variant.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_de_whole_variant.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 191,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_ser_newtype_field_if.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_ser_newtype_field_if.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 205,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_ser_struct_field.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_ser_struct_field.rs",
+      "langage": "rust",
+      "lignes": 13,
+      "taille_bytes": 232,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_ser_newtype_field.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_ser_newtype_field.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 191,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_ser_whole_variant.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_ser_whole_variant.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 181,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_ser_tuple_field_if.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_ser_tuple_field_if.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 205,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_de_struct_field.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_de_struct_field.rs",
+      "langage": "rust",
+      "lignes": 13,
+      "taille_bytes": 242,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_de_newtype_field.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_de_newtype_field.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 201,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_ser_struct_field_if.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_ser_struct_field_if.rs",
+      "langage": "rust",
+      "lignes": 13,
+      "taille_bytes": 248,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/with-variant/skip_ser_tuple_field.rs": {
+      "fichier": "test_suite/tests/ui/with-variant/skip_ser_tuple_field.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 191,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "enum Enum",
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/other_variant.rs": {
+      "fichier": "test_suite/tests/ui/identifier/other_variant.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 140,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/newtype_not_last.rs": {
+      "fichier": "test_suite/tests/ui/identifier/newtype_not_last.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 140,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/other_not_last.rs": {
+      "fichier": "test_suite/tests/ui/identifier/other_not_last.rs",
+      "langage": "rust",
+      "lignes": 12,
+      "taille_bytes": 152,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/field_struct.rs": {
+      "fichier": "test_suite/tests/ui/identifier/field_struct.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 106,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/field_tuple.rs": {
+      "fichier": "test_suite/tests/ui/identifier/field_tuple.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 129,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/variant_struct.rs": {
+      "fichier": "test_suite/tests/ui/identifier/variant_struct.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 108,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/other_untagged.rs": {
+      "fichier": "test_suite/tests/ui/identifier/other_untagged.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 130,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/not_unit.rs": {
+      "fichier": "test_suite/tests/ui/identifier/not_unit.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 153,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/variant_tuple.rs": {
+      "fichier": "test_suite/tests/ui/identifier/variant_tuple.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 131,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/identifier/both.rs": {
+      "fichier": "test_suite/tests/ui/identifier/both.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 141,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/expected-string/float.rs": {
+      "fichier": "test_suite/tests/ui/expected-string/float.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 121,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/expected-string/byte_character.rs": {
+      "fichier": "test_suite/tests/ui/expected-string/byte_character.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 130,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/expected-string/byte_string.rs": {
+      "fichier": "test_suite/tests/ui/expected-string/byte_string.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 137,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/expected-string/boolean.rs": {
+      "fichier": "test_suite/tests/ui/expected-string/boolean.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 123,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/expected-string/integer.rs": {
+      "fichier": "test_suite/tests/ui/expected-string/integer.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 122,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/expected-string/character.rs": {
+      "fichier": "test_suite/tests/ui/expected-string/character.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 124,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unknown-attribute/container.rs": {
+      "fichier": "test_suite/tests/ui/unknown-attribute/container.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 112,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unknown-attribute/variant.rs": {
+      "fichier": "test_suite/tests/ui/unknown-attribute/variant.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 109,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/unknown-attribute/field.rs": {
+      "fichier": "test_suite/tests/ui/unknown-attribute/field.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 116,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/malformed/trailing_expr.rs": {
+      "fichier": "test_suite/tests/ui/malformed/trailing_expr.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 142,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/malformed/cut_off.rs": {
+      "fichier": "test_suite/tests/ui/malformed/cut_off.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 94,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/malformed/str_suffix.rs": {
+      "fichier": "test_suite/tests/ui/malformed/str_suffix.rs",
+      "langage": "rust",
+      "lignes": 10,
+      "taille_bytes": 161,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main",
+        "pub struct Struct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/malformed/rename.rs": {
+      "fichier": "test_suite/tests/ui/malformed/rename.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 119,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/malformed/bound.rs": {
+      "fichier": "test_suite/tests/ui/malformed/bound.rs",
+      "langage": "rust",
+      "lignes": 9,
+      "taille_bytes": 118,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/malformed/not_list.rs": {
+      "fichier": "test_suite/tests/ui/malformed/not_list.rs",
+      "langage": "rust",
+      "lignes": 8,
+      "taille_bytes": 99,
+      "entrees": [
+        "serde_derive::Serialize"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/conflict/alias.rs": {
+      "fichier": "test_suite/tests/ui/conflict/alias.rs",
+      "langage": "rust",
+      "lignes": 39,
+      "taille_bytes": 656,
+      "entrees": [
+        "serde_derive::Deserialize"
+      ],
+      "sorties": [
+        "fn main",
+        "struct S1",
+        "struct S2",
+        "struct S3"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_suite/tests/ui/conflict/flatten-newtype-struct.rs": {
+      "fichier": "test_suite/tests/ui/conflict/flatten-newtype-struct.rs",
+      "langage": "rust",
+      "lignes": 7,
+      "taille_bytes": 151,
+      "entrees": [
+        "serde_derive::Serialize",
+        "std::collections::HashMap"
+      ],
+      "sorties": [
+        "fn main",
+        "struct Foo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

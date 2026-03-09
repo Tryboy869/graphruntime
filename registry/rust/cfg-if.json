@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "projet": "cfg-if",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "toml": 1,
+      "rust": 2
+    }
+  },
+  "stats": {
+    "fichiers_total": 3,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "Cargo.toml"
+  },
+  "noeuds": {
+    "Cargo.toml": {
+      "fichier": "Cargo.toml",
+      "langage": "toml",
+      "lignes": 20,
+      "taille_bytes": 580,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/xcrate.rs": {
+      "fichier": "tests/xcrate.rs",
+      "langage": "rust",
+      "lignes": 16,
+      "taille_bytes": 296,
+      "entrees": [],
+      "sorties": [
+        "fn smoke",
+        "fn works"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/lib.rs": {
+      "fichier": "src/lib.rs",
+      "langage": "rust",
+      "lignes": 212,
+      "taille_bytes": 6368,
+      "entrees": [
+        "core::option::Option"
+      ],
+      "sorties": [
+        "fn blah",
+        "fn it_works",
+        "fn test_usage_within_a_function",
+        "fn works1",
+        "fn works2",
+        "fn works3",
+        "fn works4",
+        "fn works5",
+        "fn works6",
+        "struct Struct",
+        "trait Trait",
+        "type _A",
+        "type _B"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

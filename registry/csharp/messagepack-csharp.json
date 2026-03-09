@@ -1,0 +1,1977 @@
+{
+  "meta": {
+    "projet": "MessagePack-CSharp",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "powershell": 2,
+      "json": 3,
+      "csharp": 104,
+      "unknown": 11
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 4,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 1,
+    "fichier_plus_appele": "sandbox/SharedData/SharedData.csproj"
+  },
+  "noeuds": {
+    "init.ps1": {
+      "fichier": "init.ps1",
+      "langage": "powershell",
+      "lignes": 108,
+      "taille_bytes": 4659,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stylecop.json": {
+      "fichier": "stylecop.json",
+      "langage": "json",
+      "lignes": 21,
+      "taille_bytes": 763,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "global.json": {
+      "fichier": "global.json",
+      "langage": "json",
+      "lignes": 7,
+      "taille_bytes": 102,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "settings.VisualStudio.json": {
+      "fichier": "settings.VisualStudio.json",
+      "langage": "json",
+      "lignes": 3,
+      "taille_bytes": 51,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "installcredprovider.ps1": {
+      "fichier": "installcredprovider.ps1",
+      "langage": "powershell",
+      "lignes": 140,
+      "taille_bytes": 5906,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData.InvalidSyntax/Class1.cs": {
+      "fichier": "sandbox/TestData.InvalidSyntax/Class1.cs",
+      "langage": "csharp",
+      "lignes": 37,
+      "taille_bytes": 905,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Text",
+        "System.Threading.Tasks"
+      ],
+      "sorties": [
+        "public class PropNameCheck1",
+        "public class PropNameCheck2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData.InvalidSyntax/TestData.InvalidSyntax.csproj": {
+      "fichier": "sandbox/TestData.InvalidSyntax/TestData.InvalidSyntax.csproj",
+      "langage": "unknown",
+      "lignes": 10,
+      "taille_bytes": 329,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/DynamicCodeDumper/Program.cs": {
+      "fichier": "sandbox/DynamicCodeDumper/Program.cs",
+      "langage": "csharp",
+      "lignes": 479,
+      "taille_bytes": 15324,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Formatters",
+        "MessagePack.Internal",
+        "MessagePack.Resolvers",
+        "Nerdbank.Streams",
+        "SharedData",
+        "System",
+        "System.Buffers",
+        "System.Collections.Generic",
+        "System.Diagnostics",
+        "System.IO",
+        "System.Linq",
+        "System.Reflection.Emit",
+        "System.Text",
+        "System.Threading.Tasks"
+      ],
+      "sorties": [
+        "public class Contractless2",
+        "public class Dup",
+        "public class EmptyContractless",
+        "public class Event",
+        "public class HogeMoge1",
+        "public class HogeMoge2",
+        "public class Holder",
+        "public class Int_x10Formatter",
+        "public class LongestString",
+        "public class MyClass",
+        "public class Program",
+        "public class SimpleStringKeyData2",
+        "public class StringKeySerializerTarget",
+        "public class StringKeySerializerTargetBinary",
+        "public class String_x2Formatter",
+        "public interface IEntity",
+        "public interface IHogeMoge"
+      ],
+      "appelle": [
+        "sandbox/MessagePack.Internal/MessagePack.Internal.csproj",
+        "sandbox/SharedData/SharedData.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "sandbox/DynamicCodeDumper/DynamicCodeDumper.csproj": {
+      "fichier": "sandbox/DynamicCodeDumper/DynamicCodeDumper.csproj",
+      "langage": "unknown",
+      "lignes": 178,
+      "taille_bytes": 7825,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/A.cs": {
+      "fichier": "sandbox/TestData2/A.cs",
+      "langage": "csharp",
+      "lignes": 14,
+      "taille_bytes": 446,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/PropNameCheck2.cs": {
+      "fichier": "sandbox/TestData2/PropNameCheck2.cs",
+      "langage": "csharp",
+      "lignes": 25,
+      "taille_bytes": 706,
+      "entrees": [
+        "MessagePack",
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Text",
+        "System.Threading.Tasks"
+      ],
+      "sorties": [
+        "public class PropNameCheck2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/PropNameCheck1.cs": {
+      "fichier": "sandbox/TestData2/PropNameCheck1.cs",
+      "langage": "csharp",
+      "lignes": 18,
+      "taille_bytes": 533,
+      "entrees": [
+        "MessagePack"
+      ],
+      "sorties": [
+        "public class PropNameCheck1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/Record.cs": {
+      "fichier": "sandbox/TestData2/Record.cs",
+      "langage": "csharp",
+      "lignes": 10,
+      "taille_bytes": 309,
+      "entrees": [
+        "MessagePack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/UnionInterface.cs": {
+      "fichier": "sandbox/TestData2/UnionInterface.cs",
+      "langage": "csharp",
+      "lignes": 22,
+      "taille_bytes": 756,
+      "entrees": [],
+      "sorties": [
+        "public class UnionInterfaceImplementation",
+        "public interface IUnionInterface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/TestData2.csproj": {
+      "fichier": "sandbox/TestData2/TestData2.csproj",
+      "langage": "unknown",
+      "lignes": 15,
+      "taille_bytes": 431,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/C.cs": {
+      "fichier": "sandbox/TestData2/C.cs",
+      "langage": "csharp",
+      "lignes": 14,
+      "taille_bytes": 422,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/NestedGenerics.cs": {
+      "fichier": "sandbox/TestData2/NestedGenerics.cs",
+      "langage": "csharp",
+      "lignes": 28,
+      "taille_bytes": 878,
+      "entrees": [],
+      "sorties": [
+        "public class NestedGenericTestA",
+        "public class NestedGenericTestB",
+        "public class NestedGenericTestC"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/NullableTest.cs": {
+      "fichier": "sandbox/TestData2/NullableTest.cs",
+      "langage": "csharp",
+      "lignes": 17,
+      "taille_bytes": 536,
+      "entrees": [],
+      "sorties": [
+        "public class NullableTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/B.cs": {
+      "fichier": "sandbox/TestData2/B.cs",
+      "langage": "csharp",
+      "lignes": 14,
+      "taille_bytes": 444,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData2/NestedTypeCheck.cs": {
+      "fichier": "sandbox/TestData2/NestedTypeCheck.cs",
+      "langage": "csharp",
+      "lignes": 48,
+      "taille_bytes": 1080,
+      "entrees": [
+        "MessagePack"
+      ],
+      "sorties": [
+        "public class IdType",
+        "public class Nest1",
+        "public class Nest2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/SharedData/SharedData.csproj": {
+      "fichier": "sandbox/SharedData/SharedData.csproj",
+      "langage": "unknown",
+      "lignes": 11,
+      "taille_bytes": 391,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "sandbox/DynamicCodeDumper/Program.cs"
+      ],
+      "type_noeud": "standard"
+    },
+    "sandbox/SharedData/GeneratedMessagePackResolver.cs": {
+      "fichier": "sandbox/SharedData/GeneratedMessagePackResolver.cs",
+      "langage": "csharp",
+      "lignes": 11,
+      "taille_bytes": 290,
+      "entrees": [
+        "MessagePack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/SharedData/Class1.cs": {
+      "fichier": "sandbox/SharedData/Class1.cs",
+      "langage": "csharp",
+      "lignes": 1186,
+      "taille_bytes": 29205,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Formatters",
+        "System",
+        "System.Buffers",
+        "System.Collections.Generic"
+      ],
+      "sorties": [
+        "public class ArrayOptimizeClass",
+        "public class ArrayTestTest",
+        "public class BarClass",
+        "public class Callback1",
+        "public class Callback1_2",
+        "public class ContractlessConstructorCheck",
+        "public class DefaultValueIntKeyClassWithExplicitConstructor",
+        "public class DefaultValueIntKeyClassWithoutExplicitConstructor",
+        "public class DefaultValueStringKeyClassWithExplicitConstructor",
+        "public class DefaultValueStringKeyClassWithoutExplicitConstructor",
+        "public class DynamicArgumentTupleFormatter",
+        "public class Empty1",
+        "public class Empty2",
+        "public class EmptyClass",
+        "public class FindingConstructorCheck",
+        "public class FirstSimpleData",
+        "public class FooClass",
+        "public class GenericClass",
+        "public class GenericConstrainedClassIntKey",
+        "public class GenericConstrainedClassStringKey",
+        "public class GlobalMan",
+        "public class HolderV0",
+        "public class HolderV1",
+        "public class HolderV2",
+        "public class Message",
+        "public class MessagePackFormatterFieldUser",
+        "public class MyClass",
+        "public class MySubUnion1",
+        "public class MySubUnion3",
+        "public class NestContract",
+        "public class NestContractless",
+        "public class NestParent",
+        "public class NonEmpty1",
+        "public class NonEmpty2",
+        "public class OreOreFormatter",
+        "public class OreOreFormatter2",
+        "public class QuestMessageBody",
+        "public class SimpleIntKeyData",
+        "public class SimpleModel",
+        "public class SimpleStringKeyData",
+        "public class StampMessageBody",
+        "public class StringKeySerializerTarget",
+        "public class SubUnionType1",
+        "public class SubUnionType2",
+        "public class TextMessageBody",
+        "public class TnonodsfarnoiuAtatqaga",
+        "public class UnVersionBlockTest",
+        "public class Version0",
+        "public class Version1",
+        "public class Version2",
+        "public class VersionBlockTest",
+        "public class VersioningUnion",
+        "public class WithIndexer",
+        "public class WithIndexerContractless",
+        "public interface IIVersioningUnion",
+        "public interface IMessageBody",
+        "public interface IUnionChecker",
+        "public interface IUnionChecker2",
+        "public interface IUnionSample"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/TypelessSerializeBenchmark.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/TypelessSerializeBenchmark.cs",
+      "langage": "csharp",
+      "lignes": 74,
+      "taille_bytes": 3655,
+      "entrees": [
+        "BenchmarkDotNet.Attributes"
+      ],
+      "sorties": [
+        "public class TypelessSerializeBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/SerializeBenchmark.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/SerializeBenchmark.cs",
+      "langage": "csharp",
+      "lignes": 157,
+      "taille_bytes": 5125,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "GeneratedFormatter.MessagePack.Formatters",
+        "MsgPack.Serialization",
+        "Newtonsoft.Json",
+        "System.IO",
+        "System.Text",
+        "ZeroFormatter"
+      ],
+      "sorties": [
+        "public class SerializeBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj",
+      "langage": "unknown",
+      "lignes": 51,
+      "taille_bytes": 2914,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "sandbox/PerfBenchmarkDotNet/GeneratedFormatter.cs"
+      ],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/Program.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/Program.cs",
+      "langage": "csharp",
+      "lignes": 42,
+      "taille_bytes": 1438,
+      "entrees": [
+        "BenchmarkDotNet.Configs",
+        "BenchmarkDotNet.Running"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/NewVsOld.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/NewVsOld.cs",
+      "langage": "csharp",
+      "lignes": 40,
+      "taille_bytes": 1435,
+      "entrees": [
+        "BenchmarkDotNet.Attributes"
+      ],
+      "sorties": [
+        "public class NewVsOld"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/BenchmarkConfig.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/BenchmarkConfig.cs",
+      "langage": "csharp",
+      "lignes": 34,
+      "taille_bytes": 1304,
+      "entrees": [
+        "BenchmarkDotNet.Configs",
+        "BenchmarkDotNet.Diagnosers",
+        "BenchmarkDotNet.Exporters",
+        "BenchmarkDotNet.Jobs"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/ContractType.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/ContractType.cs",
+      "langage": "csharp",
+      "lignes": 34,
+      "taille_bytes": 1100,
+      "entrees": [],
+      "sorties": [
+        "public class ContractType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/DictionaryLookupCompare.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/DictionaryLookupCompare.cs",
+      "langage": "csharp",
+      "lignes": 59,
+      "taille_bytes": 2056,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "System",
+        "System.Linq",
+        "System.Text"
+      ],
+      "sorties": [
+        "public class DictionaryLookupCompare"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/IntKeySerializerTarget.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/IntKeySerializerTarget.cs",
+      "langage": "csharp",
+      "lignes": 69,
+      "taille_bytes": 2000,
+      "entrees": [
+        "ProtoBuf",
+        "ZeroFormatter"
+      ],
+      "sorties": [
+        "public class IntKeySerializerTarget"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/ImproveStringKeySerializeBenchmark.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/ImproveStringKeySerializeBenchmark.cs",
+      "langage": "csharp",
+      "lignes": 35,
+      "taille_bytes": 1204,
+      "entrees": [
+        "BenchmarkDotNet.Attributes"
+      ],
+      "sorties": [
+        "public class ImproveStringKeySerializeBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/StringKeySerializerTarget2.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/StringKeySerializerTarget2.cs",
+      "langage": "csharp",
+      "lignes": 38,
+      "taille_bytes": 1165,
+      "entrees": [],
+      "sorties": [
+        "public class StringKeySerializerTarget2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/StringKeyDeserializeCompare.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/StringKeyDeserializeCompare.cs",
+      "langage": "csharp",
+      "lignes": 64,
+      "taille_bytes": 2901,
+      "entrees": [
+        "BenchmarkDotNet.Attributes"
+      ],
+      "sorties": [
+        "public class StringKeyDeserializeCompare"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/SpanBenchmarks.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/SpanBenchmarks.cs",
+      "langage": "csharp",
+      "lignes": 86,
+      "taille_bytes": 2034,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "System",
+        "System.Runtime.InteropServices"
+      ],
+      "sorties": [
+        "public class SpanBenchmarks"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/MessagePackReaderBenchmark.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/MessagePackReaderBenchmark.cs",
+      "langage": "csharp",
+      "lignes": 65,
+      "taille_bytes": 2078,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "BenchmarkDotNet.Configs",
+        "System"
+      ],
+      "sorties": [
+        "public class MessagePackReaderBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/Lz4PrimitiveBenchmark.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/Lz4PrimitiveBenchmark.cs",
+      "langage": "csharp",
+      "lignes": 52,
+      "taille_bytes": 2119,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "newmsgpack::MessagePack"
+      ],
+      "sorties": [
+        "public class Lz4PrimitiveBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/Resolver.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/Resolver.cs",
+      "langage": "csharp",
+      "lignes": 30,
+      "taille_bytes": 1000,
+      "entrees": [],
+      "sorties": [
+        "public class Resolver"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/MessagePackWriterBenchmark.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/MessagePackWriterBenchmark.cs",
+      "langage": "csharp",
+      "lignes": 167,
+      "taille_bytes": 5483,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "BenchmarkDotNet.Configs",
+        "Nerdbank.Streams",
+        "System"
+      ],
+      "sorties": [
+        "public class MessagePackWriterBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/GeneratedFormatter.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/GeneratedFormatter.cs",
+      "langage": "csharp",
+      "lignes": 599,
+      "taille_bytes": 25003,
+      "entrees": [
+        "PerfBenchmarkDotNet",
+        "System",
+        "System.Buffers",
+        "System.Text",
+        "newmsgpack::MessagePack",
+        "newmsgpack::MessagePack.Formatters",
+        "newmsgpack::MessagePack.Internal"
+      ],
+      "sorties": [],
+      "appelle": [
+        "sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/GuidImprov.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/GuidImprov.cs",
+      "langage": "csharp",
+      "lignes": 55,
+      "taille_bytes": 1603,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "System"
+      ],
+      "sorties": [
+        "public class GuidImprov"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/ContractlessType.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/ContractlessType.cs",
+      "langage": "csharp",
+      "lignes": 28,
+      "taille_bytes": 856,
+      "entrees": [],
+      "sorties": [
+        "public class ContractlessType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/Lz4Benchmark.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/Lz4Benchmark.cs",
+      "langage": "csharp",
+      "lignes": 55,
+      "taille_bytes": 2442,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "newmsgpack::MessagePack"
+      ],
+      "sorties": [
+        "public class Lz4Benchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/TypelessPrimitiveType.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/TypelessPrimitiveType.cs",
+      "langage": "csharp",
+      "lignes": 28,
+      "taille_bytes": 846,
+      "entrees": [],
+      "sorties": [
+        "public class TypelessPrimitiveType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/DeserializeBenchmark.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/DeserializeBenchmark.cs",
+      "langage": "csharp",
+      "lignes": 172,
+      "taille_bytes": 7209,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "GeneratedFormatter.MessagePack.Formatters",
+        "MsgPack.Serialization",
+        "Newtonsoft.Json",
+        "System.IO",
+        "System.Text"
+      ],
+      "sorties": [
+        "public class DeserializeBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/StringKeySerializerTarget.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/StringKeySerializerTarget.cs",
+      "langage": "csharp",
+      "lignes": 38,
+      "taille_bytes": 1146,
+      "entrees": [],
+      "sorties": [
+        "public class StringKeySerializerTarget"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfBenchmarkDotNet/TypelessDeserializeBenchmark.cs": {
+      "fichier": "sandbox/PerfBenchmarkDotNet/TypelessDeserializeBenchmark.cs",
+      "langage": "csharp",
+      "lignes": 75,
+      "taille_bytes": 5475,
+      "entrees": [
+        "BenchmarkDotNet.Attributes"
+      ],
+      "sorties": [
+        "public class TypelessDeserializeBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData.InvalidProject/TestData.InvalidProject.csproj": {
+      "fichier": "sandbox/TestData.InvalidProject/TestData.InvalidProject.csproj",
+      "langage": "unknown",
+      "lignes": 12,
+      "taille_bytes": 423,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/TestData.InvalidProject/Class1.cs": {
+      "fichier": "sandbox/TestData.InvalidProject/Class1.cs",
+      "langage": "csharp",
+      "lignes": 35,
+      "taille_bytes": 851,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Text",
+        "System.Threading.Tasks"
+      ],
+      "sorties": [
+        "public class PropNameCheck1",
+        "public class PropNameCheck2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfNetFramework/Sex.cs": {
+      "fichier": "sandbox/PerfNetFramework/Sex.cs",
+      "langage": "csharp",
+      "lignes": 12,
+      "taille_bytes": 280,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfNetFramework/PerfNetFramework.csproj": {
+      "fichier": "sandbox/PerfNetFramework/PerfNetFramework.csproj",
+      "langage": "unknown",
+      "lignes": 17,
+      "taille_bytes": 624,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfNetFramework/Program.cs": {
+      "fichier": "sandbox/PerfNetFramework/Program.cs",
+      "langage": "csharp",
+      "lignes": 342,
+      "taille_bytes": 11362,
+      "entrees": [
+        "MessagePack",
+        "Newtonsoft.Json",
+        "System",
+        "System.IO",
+        "System.IO.Compression",
+        "System.Linq",
+        "System.Text",
+        "ZeroFormatter"
+      ],
+      "sorties": [
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfNetFramework/Person.cs": {
+      "fichier": "sandbox/PerfNetFramework/Person.cs",
+      "langage": "csharp",
+      "lignes": 45,
+      "taille_bytes": 1253,
+      "entrees": [
+        "MessagePack",
+        "ProtoBuf",
+        "System",
+        "ZeroFormatter"
+      ],
+      "sorties": [
+        "public class Person"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfNetFramework/BenchmarkEventSource.cs": {
+      "fichier": "sandbox/PerfNetFramework/BenchmarkEventSource.cs",
+      "langage": "csharp",
+      "lignes": 80,
+      "taille_bytes": 2940,
+      "entrees": [
+        "System",
+        "System.Collections.Generic",
+        "System.Diagnostics.Tracing",
+        "System.Linq",
+        "System.Text",
+        "System.Threading.Tasks"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/PerfNetFramework/Measure.cs": {
+      "fichier": "sandbox/PerfNetFramework/Measure.cs",
+      "langage": "csharp",
+      "lignes": 47,
+      "taille_bytes": 1295,
+      "entrees": [
+        "System",
+        "System.Diagnostics"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/Sandbox/Program.cs": {
+      "fichier": "sandbox/Sandbox/Program.cs",
+      "langage": "csharp",
+      "lignes": 34,
+      "taille_bytes": 708,
+      "entrees": [
+        "MessagePack",
+        "System",
+        "System.Collections.Generic",
+        "System.Collections.ObjectModel"
+      ],
+      "sorties": [
+        "public class ClassA",
+        "public class ClassB"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/Sandbox/GeneratedMessagePackResolver.cs": {
+      "fichier": "sandbox/Sandbox/GeneratedMessagePackResolver.cs",
+      "langage": "csharp",
+      "lignes": 11,
+      "taille_bytes": 287,
+      "entrees": [
+        "MessagePack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/Sandbox/Sandbox.csproj": {
+      "fichier": "sandbox/Sandbox/Sandbox.csproj",
+      "langage": "unknown",
+      "lignes": 32,
+      "taille_bytes": 1220,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/MessagePack.Internal/MessagePack.Internal.csproj": {
+      "fichier": "sandbox/MessagePack.Internal/MessagePack.Internal.csproj",
+      "langage": "unknown",
+      "lignes": 42,
+      "taille_bytes": 2263,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "sandbox/DynamicCodeDumper/Program.cs"
+      ],
+      "type_noeud": "standard"
+    },
+    "sandbox/MessagePack.Internal/AssemblyInfo.cs": {
+      "fichier": "sandbox/MessagePack.Internal/AssemblyInfo.cs",
+      "langage": "csharp",
+      "lignes": 6,
+      "taille_bytes": 260,
+      "entrees": [
+        "System.Runtime.CompilerServices"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.Internal.Tests/MessagePackInternalTest.cs": {
+      "fichier": "tests/MessagePack.Internal.Tests/MessagePackInternalTest.cs",
+      "langage": "csharp",
+      "lignes": 25,
+      "taille_bytes": 699,
+      "entrees": [
+        "System",
+        "System.Collections.Concurrent",
+        "System.Collections.Generic",
+        "System.Collections.ObjectModel",
+        "System.Linq",
+        "System.Text",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class MessagePackInternalTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.Internal.Tests/MessagePack.Internal.Tests.csproj": {
+      "fichier": "tests/MessagePack.Internal.Tests/MessagePack.Internal.Tests.csproj",
+      "langage": "unknown",
+      "lignes": 25,
+      "taille_bytes": 982,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MsgPack002UseConstantOptionsAnalyzerTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MsgPack002UseConstantOptionsAnalyzerTests.cs",
+      "langage": "csharp",
+      "lignes": 126,
+      "taille_bytes": 3826,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Analyzers",
+        "Microsoft.CodeAnalysis",
+        "System",
+        "System.Threading.Tasks",
+        "VerifyCS",
+        "VerifyVB",
+        "Xunit"
+      ],
+      "sorties": [
+        "class Test",
+        "public class MsgPack002UseConstantOptionsAnalyzerTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/ImplicitResolverForCustomFormattersTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/ImplicitResolverForCustomFormattersTests.cs",
+      "langage": "csharp",
+      "lignes": 196,
+      "taille_bytes": 8491,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Formatters",
+        "MessagePack.Resolvers",
+        "MessagePack.SourceGenerator.Analyzers",
+        "Microsoft.CodeAnalysis.Testing",
+        "System",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class ImplicitResolverForCustomFormattersTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MsgPack011PartialTypeRequiredTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MsgPack011PartialTypeRequiredTests.cs",
+      "langage": "csharp",
+      "lignes": 137,
+      "taille_bytes": 3903,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.SourceGenerator.Analyzers",
+        "Microsoft.CodeAnalysis.Testing",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class MsgPack011PartialTypeRequiredTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MsgPack00xAnalyzerTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MsgPack00xAnalyzerTests.cs",
+      "langage": "csharp",
+      "lignes": 1112,
+      "taille_bytes": 30727,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Analyzers.CodeFixes",
+        "MessagePack.Formatters",
+        "MessagePack.SourceGenerator.Analyzers",
+        "Microsoft.CodeAnalysis.CSharp",
+        "Microsoft.CodeAnalysis.Testing",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class Bar",
+        "public class Base",
+        "public class CompositeKeyAttribute",
+        "public class Derived",
+        "public class Foo",
+        "public class FooFormatter",
+        "public class InvalidMessageFormatter",
+        "public class MsgPack00xAnalyzerTests",
+        "public class SomeClass",
+        "public interface IUnionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/FormatterCodeFixProviderTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/FormatterCodeFixProviderTests.cs",
+      "langage": "csharp",
+      "lignes": 101,
+      "taille_bytes": 4188,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Formatters",
+        "MessagePack.SourceGenerator.Analyzers",
+        "Microsoft.CodeAnalysis.Testing",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class FormatterCodeFixProviderTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/GenericsFormatterTests.cs",
+      "langage": "csharp",
+      "lignes": 516,
+      "taille_bytes": 11478,
+      "entrees": [
+        "MessagePack",
+        "Microsoft.CodeAnalysis.CSharp",
+        "System",
+        "System.Collections.Generic",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class GenericsFormatterTests",
+        "public class MyClass",
+        "public class MyGenericClass",
+        "public class MyGenericObject",
+        "public class MyInnerGenericObject",
+        "public class MyObject",
+        "public class MyObject2",
+        "public class MyObjectNested",
+        "public class Wrapper",
+        "public interface IMyInterface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MsgPack015AllowPrivateRequiredTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MsgPack015AllowPrivateRequiredTests.cs",
+      "langage": "csharp",
+      "lignes": 158,
+      "taille_bytes": 3201,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Analyzers.CodeFixes",
+        "Microsoft.CodeAnalysis.CSharp",
+        "Microsoft.CodeAnalysis.Testing",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "class Foo",
+        "class Outer",
+        "public class Foo",
+        "public class MsgPack015AllowPrivateRequiredTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MessagePackFormatterAttributeTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MessagePackFormatterAttributeTests.cs",
+      "langage": "csharp",
+      "lignes": 55,
+      "taille_bytes": 1609,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Formatters",
+        "System",
+        "System.Collections.Generic",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class Bar",
+        "public class MessagePackFormatterAttributeTests",
+        "public class MyFormatter",
+        "public class MyMessagePackObject"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/GenerationTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/GenerationTests.cs",
+      "langage": "csharp",
+      "lignes": 1150,
+      "taille_bytes": 31588,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Formatters",
+        "MessagePack.SourceGenerator.Tests",
+        "Microsoft.CodeAnalysis",
+        "Microsoft.CodeAnalysis.CSharp",
+        "Microsoft.CodeAnalysis.Testing",
+        "System",
+        "System.Buffers",
+        "System.Collections.Generic",
+        "System.Collections.Immutable",
+        "System.Collections.ObjectModel",
+        "System.Linq",
+        "System.Numerics",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "class ListAFormatter",
+        "class MyCustomTypeFormatter",
+        "class UnserializableRecordFormatter",
+        "public class ContainerObject",
+        "public class Derived1",
+        "public class Derived2",
+        "public class GenerationTests",
+        "public class GenericClass",
+        "public class GenericConstrainedClassIntKey",
+        "public class MyCustomType",
+        "public class MyCustomTypeFormatter",
+        "public class MyGenericObject",
+        "public class MyGenericType",
+        "public class MyMessagePackObject",
+        "public class MyType",
+        "public class SubObject",
+        "public class Test",
+        "public class Test3",
+        "public class TypeWithAutoGeneratedFormatter",
+        "public class UnionContainer",
+        "public interface IMyType"
+      ],
+      "appelle": [
+        "tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Usings.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Usings.cs",
+      "langage": "csharp",
+      "lignes": 7,
+      "taille_bytes": 313,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/PrivateMemberAccessTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/PrivateMemberAccessTests.cs",
+      "langage": "csharp",
+      "lignes": 125,
+      "taille_bytes": 4545,
+      "entrees": [
+        "MessagePack",
+        "Microsoft.CodeAnalysis.CSharp",
+        "System",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class PrivateMemberAccessTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MsgPack001SpecifyOptionsAnalyzerTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MsgPack001SpecifyOptionsAnalyzerTests.cs",
+      "langage": "csharp",
+      "lignes": 78,
+      "taille_bytes": 1867,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Analyzers",
+        "Microsoft.CodeAnalysis",
+        "System",
+        "System.Threading.Tasks",
+        "VerifyCS",
+        "VerifyVB",
+        "Xunit"
+      ],
+      "sorties": [
+        "class Test",
+        "public class MsgPack001SpecifyOptionsAnalyzerTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/StringKeyedFormatterTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/StringKeyedFormatterTests.cs",
+      "langage": "csharp",
+      "lignes": 322,
+      "taille_bytes": 7062,
+      "entrees": [
+        "MessagePack",
+        "System",
+        "System.Collections.Generic",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class MyMessagePackObject",
+        "public class StringKeyedFormatterTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/ContainerKind.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/ContainerKind.cs",
+      "langage": "csharp",
+      "lignes": 20,
+      "taille_bytes": 570,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MsgPack014NullableRefTypeFormatterTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MsgPack014NullableRefTypeFormatterTests.cs",
+      "langage": "csharp",
+      "lignes": 106,
+      "taille_bytes": 3792,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Formatters",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class AFormatter",
+        "public class MsgPack014NullableRefTypeFormatterTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/TestUtilities.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/TestUtilities.cs",
+      "langage": "csharp",
+      "lignes": 33,
+      "taille_bytes": 974,
+      "entrees": [
+        "System.Text"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj",
+      "langage": "unknown",
+      "lignes": 35,
+      "taille_bytes": 1553,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "tests/MessagePack.SourceGenerator.Tests/GenerationTests.cs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MsgPack012InaccessibleDataTypeTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MsgPack012InaccessibleDataTypeTests.cs",
+      "langage": "csharp",
+      "lignes": 50,
+      "taille_bytes": 1448,
+      "entrees": [
+        "MessagePack",
+        "System",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "class Outer",
+        "public class MsgPack012InaccessibleDataTypeTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/CompositeResolverGeneratorTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/CompositeResolverGeneratorTests.cs",
+      "langage": "csharp",
+      "lignes": 53,
+      "taille_bytes": 1722,
+      "entrees": [
+        "MessagePack",
+        "MessagePack.Formatters",
+        "MessagePack.Resolvers",
+        "System",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "class ResolverWithCtor",
+        "class Test",
+        "public class CompositeResolverGeneratorTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/CustomStringKeyFormatterTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/CustomStringKeyFormatterTests.cs",
+      "langage": "csharp",
+      "lignes": 62,
+      "taille_bytes": 1645,
+      "entrees": [
+        "MessagePack",
+        "Microsoft.CodeAnalysis.CSharp",
+        "System",
+        "System.Collections.Generic",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class CustomStringKeyFormatterTests",
+        "public class MyMessagePackObject"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/MultipleTypesTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/MultipleTypesTests.cs",
+      "langage": "csharp",
+      "lignes": 42,
+      "taille_bytes": 1132,
+      "entrees": [
+        "MessagePack",
+        "VerifyCS"
+      ],
+      "sorties": [
+        "public class MultipleTypesTests",
+        "public class Object1",
+        "public class Object2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/CodeAnalysis/MemberSerializationInfoTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/CodeAnalysis/MemberSerializationInfoTests.cs",
+      "langage": "csharp",
+      "lignes": 61,
+      "taille_bytes": 1290,
+      "entrees": [
+        "System.Reflection"
+      ],
+      "sorties": [
+        "public class MemberSerializationInfoTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/CodeAnalysis/FullModelTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/CodeAnalysis/FullModelTests.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 3181,
+      "entrees": [
+        "Microsoft.CodeAnalysis"
+      ],
+      "sorties": [
+        "public class FullModelTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/CodeAnalysis/UnionSerializationInfoTests.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/CodeAnalysis/UnionSerializationInfoTests.cs",
+      "langage": "csharp",
+      "lignes": 34,
+      "taille_bytes": 1152,
+      "entrees": [
+        "Microsoft.CodeAnalysis"
+      ],
+      "sorties": [
+        "public class UnionSerializationInfoTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/TestProject.Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyGenericObjectFormatter`1.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/TestProject.Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyGenericObjectFormatter`1.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1788,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/DefiningProject.TempProject.MyResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/DefiningProject.TempProject.MyResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 1980,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/DefiningProject.Formatters.TempProject.MyResolver.TempProject.MyGenericObjectFormatter`1.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/DefiningProject.Formatters.TempProject.MyResolver.TempProject.MyGenericObjectFormatter`1.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1770,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/TestProject.Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/TestProject.Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1812,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/TestProject.MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/TestProject.MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 81,
+      "taille_bytes": 3226,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/TestProject.Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectNestedFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/Generics_Defined_In_ReferencedProject/TestProject.Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectNestedFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1916,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/DeserializingConstructorParameterMemberTypeAssignability_Incompatible/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/DeserializingConstructorParameterMemberTypeAssignability_Incompatible/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 1945,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/CustomFormatterForGenericWithConstraints/Formatters.MessagePack.GeneratedMessagePackResolver.SampleObjectFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/CustomFormatterForGenericWithConstraints/Formatters.MessagePack.GeneratedMessagePackResolver.SampleObjectFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 58,
+      "taille_bytes": 1734,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/CustomFormatterForGenericWithConstraints/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/CustomFormatterForGenericWithConstraints/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 75,
+      "taille_bytes": 2543,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/PropertiesGetterOnlyWithParameterizedConstructorPartially/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyMessagePackObjectFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/PropertiesGetterOnlyWithParameterizedConstructorPartially/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyMessagePackObjectFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 77,
+      "taille_bytes": 2452,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/PropertiesGetterOnlyWithParameterizedConstructorPartially/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/PropertiesGetterOnlyWithParameterizedConstructorPartially/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 1989,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/FormatterForClassWithPrivateMembers_MapMode/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/FormatterForClassWithPrivateMembers_MapMode/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 1911,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/FormatterForClassWithPrivateMembers_MapMode/Formatters.MyObject.MyObjectFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/FormatterForClassWithPrivateMembers_MapMode/Formatters.MyObject.MyObjectFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1652,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects/Formatters.MessagePack.GeneratedMessagePackResolver.A.BFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects/Formatters.MessagePack.GeneratedMessagePackResolver.A.BFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 40,
+      "taille_bytes": 962,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 65,
+      "taille_bytes": 2059,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects/Formatters.MessagePack.GeneratedMessagePackResolver.A.B.CFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects/Formatters.MessagePack.GeneratedMessagePackResolver.A.B.CFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 42,
+      "taille_bytes": 1001,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/EmbeddedTypes/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/EmbeddedTypes/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 1929,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/EmbeddedTypes/Formatters.MessagePack.GeneratedMessagePackResolver.AFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/EmbeddedTypes/Formatters.MessagePack.GeneratedMessagePackResolver.AFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 214,
+      "taille_bytes": 16497,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfT1T2Formatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfT1T2Formatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1837,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfT1T2Formatter/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfT1T2Formatter/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 81,
+      "taille_bytes": 3360,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfT1T2Formatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyGenericObjectFormatter`2.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfT1T2Formatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyGenericObjectFormatter`2.g.cs",
+      "langage": "csharp",
+      "lignes": 64,
+      "taille_bytes": 2127,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfT1T2Formatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectNestedFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfT1T2Formatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectNestedFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 2041,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsUnionFormatter/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsUnionFormatter/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 81,
+      "taille_bytes": 3268,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsUnionFormatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.WrapperFormatter`1.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsUnionFormatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.WrapperFormatter`1.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1757,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfTFormatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfTFormatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1821,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfTFormatter/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfTFormatter/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 81,
+      "taille_bytes": 3226,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfTFormatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectNestedFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfTFormatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyObjectNestedFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1925,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfTFormatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyGenericObjectFormatter`1.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/GenericsOfTFormatter/Formatters.MessagePack.GeneratedMessagePackResolver.TempProject.MyGenericObjectFormatter`1.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1797,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/TwoTypes(False)/Formatters.MessagePack.GeneratedMessagePackResolver.Object1Formatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/TwoTypes(False)/Formatters.MessagePack.GeneratedMessagePackResolver.Object1Formatter.g.cs",
+      "langage": "csharp",
+      "lignes": 38,
+      "taille_bytes": 953,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/TwoTypes(False)/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/TwoTypes(False)/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 65,
+      "taille_bytes": 2071,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/TwoTypes(False)/Formatters.MessagePack.GeneratedMessagePackResolver.Object2Formatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/TwoTypes(False)/Formatters.MessagePack.GeneratedMessagePackResolver.Object2Formatter.g.cs",
+      "langage": "csharp",
+      "lignes": 38,
+      "taille_bytes": 953,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects_Array/Formatters.MessagePack.GeneratedMessagePackResolver.A.BFormatter.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects_Array/Formatters.MessagePack.GeneratedMessagePackResolver.A.BFormatter.g.cs",
+      "langage": "csharp",
+      "lignes": 60,
+      "taille_bytes": 1686,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects_Array/MessagePack.GeneratedMessagePackResolver.g.cs": {
+      "fichier": "tests/MessagePack.SourceGenerator.Tests/Resources/NestedMessagePackObjects_Array/MessagePack.GeneratedMessagePackResolver.g.cs",
+      "langage": "csharp",
+      "lignes": 67,
+      "taille_bytes": 2173,
+      "entrees": [
+        "MsgPack"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "sandbox/DynamicCodeDumper/Program.cs",
+      "vers": "sandbox/MessagePack.Internal/MessagePack.Internal.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "sandbox/DynamicCodeDumper/Program.cs",
+      "vers": "sandbox/SharedData/SharedData.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "sandbox/PerfBenchmarkDotNet/GeneratedFormatter.cs",
+      "vers": "sandbox/PerfBenchmarkDotNet/PerfBenchmarkDotNet.csproj",
+      "type": "interne"
+    },
+    {
+      "de": "tests/MessagePack.SourceGenerator.Tests/GenerationTests.cs",
+      "vers": "tests/MessagePack.SourceGenerator.Tests/MessagePack.SourceGenerator.Tests.csproj",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'sandbox/DynamicCodeDumper/Program.cs'"
+  ]
+}

@@ -1,0 +1,2180 @@
+{
+  "meta": {
+    "projet": "console",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "php": 117,
+      "json": 1,
+      "shell": 2
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 2,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "Tester/TesterTrait.php"
+  },
+  "noeuds": {
+    "Terminal.php": {
+      "fichier": "Terminal.php",
+      "langage": "php",
+      "lignes": 267,
+      "taille_bytes": 7980,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\AnsiColorMode"
+      ],
+      "sorties": [
+        "class Terminal",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "composer.json": {
+      "fichier": "composer.json",
+      "langage": "json",
+      "lignes": 52,
+      "taille_bytes": 1662,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Color.php": {
+      "fichier": "Color.php",
+      "langage": "php",
+      "lignes": 133,
+      "taille_bytes": 3785,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Cursor.php": {
+      "fichier": "Cursor.php",
+      "langage": "php",
+      "lignes": 204,
+      "taille_bytes": 3975,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ConsoleEvents.php": {
+      "fichier": "ConsoleEvents.php",
+      "langage": "php",
+      "lignes": 82,
+      "taille_bytes": 2572,
+      "entrees": [
+        "Symfony\\Component\\Console\\Event\\ConsoleCommandEvent",
+        "Symfony\\Component\\Console\\Event\\ConsoleErrorEvent",
+        "Symfony\\Component\\Console\\Event\\ConsoleSignalEvent",
+        "Symfony\\Component\\Console\\Event\\ConsoleTerminateEvent",
+        "Symfony\\Component\\Console\\Event\\QuestionAnsweredEvent"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "SingleCommandApplication.php": {
+      "fichier": "SingleCommandApplication.php",
+      "langage": "php",
+      "lignes": 72,
+      "taille_bytes": 1798,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class SingleCommandApplication",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Application.php": {
+      "fichier": "Application.php",
+      "langage": "php",
+      "lignes": 1370,
+      "taille_bytes": 49515,
+      "entrees": [
+        "Symfony\\Component\\Console\\ArgumentResolver\\ArgumentResolverInterface",
+        "Symfony\\Component\\Console\\CommandLoader\\CommandLoaderInterface",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Command\\CompleteCommand",
+        "Symfony\\Component\\Console\\Command\\DumpCompletionCommand",
+        "Symfony\\Component\\Console\\Command\\HelpCommand",
+        "Symfony\\Component\\Console\\Command\\LazyCommand",
+        "Symfony\\Component\\Console\\Command\\ListCommand",
+        "Symfony\\Component\\Console\\Completion\\CompletionInput",
+        "Symfony\\Component\\Console\\Completion\\CompletionSuggestions",
+        "Symfony\\Component\\Console\\Completion\\Suggestion",
+        "Symfony\\Component\\Console\\Event\\ConsoleAlarmEvent",
+        "Symfony\\Component\\Console\\Event\\ConsoleCommandEvent",
+        "Symfony\\Component\\Console\\Event\\ConsoleErrorEvent",
+        "Symfony\\Component\\Console\\Event\\ConsoleSignalEvent",
+        "Symfony\\Component\\Console\\Event\\ConsoleTerminateEvent",
+        "Symfony\\Component\\Console\\Exception\\CommandNotFoundException",
+        "Symfony\\Component\\Console\\Exception\\ExceptionInterface",
+        "Symfony\\Component\\Console\\Exception\\LogicException",
+        "Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException",
+        "Symfony\\Component\\Console\\Exception\\RuntimeException",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\Console\\Helper\\DebugFormatterHelper",
+        "Symfony\\Component\\Console\\Helper\\DescriptorHelper",
+        "Symfony\\Component\\Console\\Helper\\FormatterHelper",
+        "Symfony\\Component\\Console\\Helper\\Helper",
+        "Symfony\\Component\\Console\\Helper\\HelperSet",
+        "Symfony\\Component\\Console\\Helper\\ProcessHelper",
+        "Symfony\\Component\\Console\\Helper\\QuestionHelper",
+        "Symfony\\Component\\Console\\Input\\ArgvInput",
+        "Symfony\\Component\\Console\\Input\\ArrayInput",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputAwareInterface",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutput",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\SignalRegistry\\SignalRegistry",
+        "Symfony\\Component\\Console\\Style\\SymfonyStyle",
+        "Symfony\\Component\\ErrorHandler\\ErrorHandler",
+        "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+        "Symfony\\Contracts\\Service\\ResetInterface"
+      ],
+      "sorties": [
+        "class Application",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Messenger/RunCommandMessage.php": {
+      "fichier": "Messenger/RunCommandMessage.php",
+      "langage": "php",
+      "lignes": 36,
+      "taille_bytes": 941,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\RunCommandFailedException"
+      ],
+      "sorties": [
+        "class RunCommandMessage",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Messenger/RunCommandMessageHandler.php": {
+      "fichier": "Messenger/RunCommandMessageHandler.php",
+      "langage": "php",
+      "lignes": 53,
+      "taille_bytes": 1846,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Exception\\RunCommandFailedException",
+        "Symfony\\Component\\Console\\Input\\StringInput",
+        "Symfony\\Component\\Console\\Output\\BufferedOutput",
+        "Symfony\\Component\\Messenger\\Exception\\RecoverableExceptionInterface",
+        "Symfony\\Component\\Messenger\\Exception\\UnrecoverableExceptionInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Messenger/RunCommandContext.php": {
+      "fichier": "Messenger/RunCommandContext.php",
+      "langage": "php",
+      "lignes": 25,
+      "taille_bytes": 550,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/FormatterHelper.php": {
+      "fichier": "Helper/FormatterHelper.php",
+      "langage": "php",
+      "lignes": 81,
+      "taille_bytes": 2238,
+      "entrees": [
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter"
+      ],
+      "sorties": [
+        "class FormatterHelper",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/SymfonyQuestionHelper.php": {
+      "fichier": "Helper/SymfonyQuestionHelper.php",
+      "langage": "php",
+      "lignes": 103,
+      "taille_bytes": 3281,
+      "entrees": [
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Question\\ChoiceQuestion",
+        "Symfony\\Component\\Console\\Question\\ConfirmationQuestion",
+        "Symfony\\Component\\Console\\Question\\Question",
+        "Symfony\\Component\\Console\\Style\\SymfonyStyle"
+      ],
+      "sorties": [
+        "class SymfonyQuestionHelper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/HelperInterface.php": {
+      "fichier": "Helper/HelperInterface.php",
+      "langage": "php",
+      "lignes": 35,
+      "taille_bytes": 799,
+      "entrees": [],
+      "sorties": [
+        "interface HelperInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/ProcessHelper.php": {
+      "fichier": "Helper/ProcessHelper.php",
+      "langage": "php",
+      "lignes": 137,
+      "taille_bytes": 4829,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Process\\Exception\\ProcessFailedException",
+        "Symfony\\Component\\Process\\Process"
+      ],
+      "sorties": [
+        "class ProcessHelper",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/DebugFormatterHelper.php": {
+      "fichier": "Helper/DebugFormatterHelper.php",
+      "langage": "php",
+      "lignes": 98,
+      "taille_bytes": 3328,
+      "entrees": [],
+      "sorties": [
+        "class DebugFormatterHelper",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/Helper.php": {
+      "fichier": "Helper/Helper.php",
+      "langage": "php",
+      "lignes": 167,
+      "taille_bytes": 4679,
+      "entrees": [
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatterInterface",
+        "Symfony\\Component\\String\\UnicodeString"
+      ],
+      "sorties": [
+        "abstract class Helper",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/ProgressBar.php": {
+      "fichier": "Helper/ProgressBar.php",
+      "langage": "php",
+      "lignes": 654,
+      "taille_bytes": 20881,
+      "entrees": [
+        "Symfony\\Component\\Console\\Cursor",
+        "Symfony\\Component\\Console\\Exception\\LogicException",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+        "Symfony\\Component\\Console\\Output\\ConsoleSectionOutput",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Terminal"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/FileInputHelper.php": {
+      "fichier": "Helper/FileInputHelper.php",
+      "langage": "php",
+      "lignes": 217,
+      "taille_bytes": 6914,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidFileException",
+        "Symfony\\Component\\Console\\Exception\\MissingInputException",
+        "Symfony\\Component\\Console\\Input\\File\\InputFile",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Question\\FileQuestion",
+        "Symfony\\Component\\Console\\Terminal",
+        "Symfony\\Component\\Console\\Terminal\\Image\\ITerm2Protocol",
+        "Symfony\\Component\\Console\\Terminal\\Image\\ImageProtocolInterface",
+        "Symfony\\Component\\Console\\Terminal\\Image\\KittyGraphicsProtocol"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/Table.php": {
+      "fichier": "Helper/Table.php",
+      "langage": "php",
+      "lignes": 971,
+      "taille_bytes": 34582,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Exception\\RuntimeException",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\Console\\Formatter\\WrappableOutputFormatterInterface",
+        "Symfony\\Component\\Console\\Output\\ConsoleSectionOutput",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class Table",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/ProgressIndicator.php": {
+      "fichier": "Helper/ProgressIndicator.php",
+      "langage": "php",
+      "lignes": 240,
+      "taille_bytes": 7552,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Exception\\LogicException",
+        "Symfony\\Component\\Console\\Output\\ConsoleSectionOutput",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class ProgressIndicator",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/TerminalInputHelper.php": {
+      "fichier": "Helper/TerminalInputHelper.php",
+      "langage": "php",
+      "lignes": 156,
+      "taille_bytes": 4468,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/TreeHelper.php": {
+      "fichier": "Helper/TreeHelper.php",
+      "langage": "php",
+      "lignes": 111,
+      "taille_bytes": 2910,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/TableCell.php": {
+      "fichier": "Helper/TableCell.php",
+      "langage": "php",
+      "lignes": 71,
+      "taille_bytes": 1728,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException"
+      ],
+      "sorties": [
+        "class TableCell",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/TreeNode.php": {
+      "fichier": "Helper/TreeNode.php",
+      "langage": "php",
+      "lignes": 105,
+      "taille_bytes": 2367,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/QuestionHelper.php": {
+      "fichier": "Helper/QuestionHelper.php",
+      "langage": "php",
+      "lignes": 674,
+      "taille_bytes": 22427,
+      "entrees": [
+        "Symfony\\Component\\Console\\ConsoleEvents",
+        "Symfony\\Component\\Console\\Cursor",
+        "Symfony\\Component\\Console\\Event\\QuestionAnsweredEvent",
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Exception\\MissingInputException",
+        "Symfony\\Component\\Console\\Exception\\RuntimeException",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatterStyle",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\StreamableInputInterface",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+        "Symfony\\Component\\Console\\Output\\ConsoleSectionOutput",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Question\\ChoiceQuestion",
+        "Symfony\\Component\\Console\\Question\\FileQuestion",
+        "Symfony\\Component\\Console\\Question\\Question",
+        "Symfony\\Component\\Console\\Terminal",
+        "Symfony\\Component\\Validator\\Validation",
+        "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface",
+        "function"
+      ],
+      "sorties": [
+        "class QuestionHelper",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/TreeStyle.php": {
+      "fichier": "Helper/TreeStyle.php",
+      "langage": "php",
+      "lignes": 78,
+      "taille_bytes": 2314,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/TableCellStyle.php": {
+      "fichier": "Helper/TableCellStyle.php",
+      "langage": "php",
+      "lignes": 84,
+      "taille_bytes": 2221,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException"
+      ],
+      "sorties": [
+        "class TableCellStyle",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/Dumper.php": {
+      "fichier": "Helper/Dumper.php",
+      "langage": "php",
+      "lignes": 53,
+      "taille_bytes": 1681,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\VarDumper\\Cloner\\ClonerInterface",
+        "Symfony\\Component\\VarDumper\\Cloner\\VarCloner",
+        "Symfony\\Component\\VarDumper\\Dumper\\CliDumper"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/TableSeparator.php": {
+      "fichier": "Helper/TableSeparator.php",
+      "langage": "php",
+      "lignes": 25,
+      "taille_bytes": 531,
+      "entrees": [],
+      "sorties": [
+        "class TableSeparator",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/TableStyle.php": {
+      "fichier": "Helper/TableStyle.php",
+      "langage": "php",
+      "lignes": 375,
+      "taille_bytes": 13085,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Exception\\LogicException"
+      ],
+      "sorties": [
+        "class TableStyle",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/DescriptorHelper.php": {
+      "fichier": "Helper/DescriptorHelper.php",
+      "langage": "php",
+      "lignes": 91,
+      "taille_bytes": 2617,
+      "entrees": [
+        "Symfony\\Component\\Console\\Descriptor\\DescriptorInterface",
+        "Symfony\\Component\\Console\\Descriptor\\JsonDescriptor",
+        "Symfony\\Component\\Console\\Descriptor\\MarkdownDescriptor",
+        "Symfony\\Component\\Console\\Descriptor\\ReStructuredTextDescriptor",
+        "Symfony\\Component\\Console\\Descriptor\\TextDescriptor",
+        "Symfony\\Component\\Console\\Descriptor\\XmlDescriptor",
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class DescriptorHelper",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/TableRows.php": {
+      "fichier": "Helper/TableRows.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 536,
+      "entrees": [],
+      "sorties": [
+        "class TableRows",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/InputAwareHelper.php": {
+      "fichier": "Helper/InputAwareHelper.php",
+      "langage": "php",
+      "lignes": 30,
+      "taille_bytes": 731,
+      "entrees": [
+        "Symfony\\Component\\Console\\Input\\InputAwareInterface",
+        "Symfony\\Component\\Console\\Input\\InputInterface"
+      ],
+      "sorties": [
+        "abstract class InputAwareHelper",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/OutputWrapper.php": {
+      "fichier": "Helper/OutputWrapper.php",
+      "langage": "php",
+      "lignes": 76,
+      "taille_bytes": 3011,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Helper/HelperSet.php": {
+      "fichier": "Helper/HelperSet.php",
+      "langage": "php",
+      "lignes": 74,
+      "taille_bytes": 1837,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException"
+      ],
+      "sorties": [
+        "class HelperSet",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "DataCollector/CommandDataCollector.php": {
+      "fichier": "DataCollector/CommandDataCollector.php",
+      "langage": "php",
+      "lignes": 239,
+      "taille_bytes": 6829,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Debug\\CliRequest",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\SignalRegistry\\SignalMap",
+        "Symfony\\Component\\HttpFoundation\\Request",
+        "Symfony\\Component\\HttpFoundation\\Response",
+        "Symfony\\Component\\HttpKernel\\DataCollector\\DataCollector",
+        "Symfony\\Component\\VarDumper\\Cloner\\Data"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "SignalRegistry/SignalRegistry.php": {
+      "fichier": "SignalRegistry/SignalRegistry.php",
+      "langage": "php",
+      "lignes": 116,
+      "taille_bytes": 3044,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "SignalRegistry/SignalMap.php": {
+      "fichier": "SignalRegistry/SignalMap.php",
+      "langage": "php",
+      "lignes": 36,
+      "taille_bytes": 933,
+      "entrees": [],
+      "sorties": [
+        "class SignalMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "EventListener/ErrorListener.php": {
+      "fichier": "EventListener/ErrorListener.php",
+      "langage": "php",
+      "lignes": 89,
+      "taille_bytes": 2673,
+      "entrees": [
+        "Psr\\Log\\LoggerInterface",
+        "Symfony\\Component\\Console\\ConsoleEvents",
+        "Symfony\\Component\\Console\\Event\\ConsoleErrorEvent",
+        "Symfony\\Component\\Console\\Event\\ConsoleEvent",
+        "Symfony\\Component\\Console\\Event\\ConsoleTerminateEvent",
+        "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface"
+      ],
+      "sorties": [
+        "class ErrorListener",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "EventListener/ValidateQuestionInputListener.php": {
+      "fichier": "EventListener/ValidateQuestionInputListener.php",
+      "langage": "php",
+      "lignes": 44,
+      "taille_bytes": 1275,
+      "entrees": [
+        "Symfony\\Component\\Console\\ConsoleEvents",
+        "Symfony\\Component\\Console\\Event\\QuestionAnsweredEvent",
+        "Symfony\\Component\\EventDispatcher\\EventSubscriberInterface",
+        "Symfony\\Component\\Validator\\Validator\\ValidatorInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "CommandLoader/ContainerCommandLoader.php": {
+      "fichier": "CommandLoader/ContainerCommandLoader.php",
+      "langage": "php",
+      "lignes": 52,
+      "taille_bytes": 1370,
+      "entrees": [
+        "Psr\\Container\\ContainerInterface",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Exception\\CommandNotFoundException"
+      ],
+      "sorties": [
+        "class ContainerCommandLoader",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "CommandLoader/CommandLoaderInterface.php": {
+      "fichier": "CommandLoader/CommandLoaderInterface.php",
+      "langage": "php",
+      "lignes": 38,
+      "taille_bytes": 810,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Exception\\CommandNotFoundException"
+      ],
+      "sorties": [
+        "interface CommandLoaderInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "CommandLoader/FactoryCommandLoader.php": {
+      "fichier": "CommandLoader/FactoryCommandLoader.php",
+      "langage": "php",
+      "lignes": 52,
+      "taille_bytes": 1263,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Exception\\CommandNotFoundException"
+      ],
+      "sorties": [
+        "class FactoryCommandLoader",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Formatter/OutputFormatter.php": {
+      "fichier": "Formatter/OutputFormatter.php",
+      "langage": "php",
+      "lignes": 280,
+      "taille_bytes": 8682,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Helper\\Helper",
+        "function"
+      ],
+      "sorties": [
+        "class OutputFormatter",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Formatter/WrappableOutputFormatterInterface.php": {
+      "fichier": "Formatter/WrappableOutputFormatterInterface.php",
+      "langage": "php",
+      "lignes": 25,
+      "taille_bytes": 693,
+      "entrees": [],
+      "sorties": [
+        "interface WrappableOutputFormatterInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Formatter/NullOutputFormatter.php": {
+      "fichier": "Formatter/NullOutputFormatter.php",
+      "langage": "php",
+      "lignes": 51,
+      "taille_bytes": 1158,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Formatter/OutputFormatterStyle.php": {
+      "fichier": "Formatter/OutputFormatterStyle.php",
+      "langage": "php",
+      "lignes": 89,
+      "taille_bytes": 2737,
+      "entrees": [
+        "Symfony\\Component\\Console\\Color"
+      ],
+      "sorties": [
+        "class OutputFormatterStyle",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Formatter/NullOutputFormatterStyle.php": {
+      "fichier": "Formatter/NullOutputFormatterStyle.php",
+      "langage": "php",
+      "lignes": 48,
+      "taille_bytes": 953,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Formatter/OutputFormatterStyleInterface.php": {
+      "fichier": "Formatter/OutputFormatterStyleInterface.php",
+      "langage": "php",
+      "lignes": 50,
+      "taille_bytes": 1111,
+      "entrees": [],
+      "sorties": [
+        "interface OutputFormatterStyleInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Formatter/OutputFormatterStyleStack.php": {
+      "fichier": "Formatter/OutputFormatterStyleStack.php",
+      "langage": "php",
+      "lignes": 103,
+      "taille_bytes": 2545,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Contracts\\Service\\ResetInterface"
+      ],
+      "sorties": [
+        "class OutputFormatterStyleStack",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Formatter/OutputFormatterInterface.php": {
+      "fichier": "Formatter/OutputFormatterInterface.php",
+      "langage": "php",
+      "lignes": 52,
+      "taille_bytes": 1259,
+      "entrees": [],
+      "sorties": [
+        "interface OutputFormatterInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Logger/ConsoleLogger.php": {
+      "fichier": "Logger/ConsoleLogger.php",
+      "langage": "php",
+      "lignes": 120,
+      "taille_bytes": 4199,
+      "entrees": [
+        "Psr\\Log\\AbstractLogger",
+        "Psr\\Log\\InvalidArgumentException",
+        "Psr\\Log\\LogLevel",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class ConsoleLogger",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tester/TesterTrait.php": {
+      "fichier": "Tester/TesterTrait.php",
+      "langage": "php",
+      "lignes": 200,
+      "taille_bytes": 6332,
+      "entrees": [
+        "PHPUnit\\Framework\\Assert",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutput",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Output\\StreamOutput",
+        "Symfony\\Component\\Console\\Tester\\Constraint\\CommandFailed",
+        "Symfony\\Component\\Console\\Tester\\Constraint\\CommandIsInvalid",
+        "Symfony\\Component\\Console\\Tester\\Constraint\\CommandIsSuccessful"
+      ],
+      "sorties": [
+        "public func tion",
+        "trait TesterTrait"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "Tester/ApplicationTester.php",
+        "Tester/CommandTester.php"
+      ],
+      "type_noeud": "standard"
+    },
+    "Tester/ApplicationTester.php": {
+      "fichier": "Tester/ApplicationTester.php",
+      "langage": "php",
+      "lignes": 85,
+      "taille_bytes": 2679,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Input\\ArrayInput",
+        "TesterTrait"
+      ],
+      "sorties": [
+        "class ApplicationTester",
+        "public func tion"
+      ],
+      "appelle": [
+        "Tester/TesterTrait.php"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tester/CommandTester.php": {
+      "fichier": "Tester/CommandTester.php",
+      "langage": "php",
+      "lignes": 145,
+      "taille_bytes": 5434,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatterInterface",
+        "Symfony\\Component\\Console\\Input\\ArrayInput",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Output\\TestOutput",
+        "TesterTrait"
+      ],
+      "sorties": [
+        "class CommandTester",
+        "public func tion"
+      ],
+      "appelle": [
+        "Tester/TesterTrait.php"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tester/ConsoleAssertionsTrait.php": {
+      "fichier": "Tester/ConsoleAssertionsTrait.php",
+      "langage": "php",
+      "lignes": 64,
+      "taille_bytes": 2217,
+      "entrees": [
+        "Symfony\\Component\\Console\\Tester\\Constraint\\CommandFailed",
+        "Symfony\\Component\\Console\\Tester\\Constraint\\CommandIsInvalid",
+        "Symfony\\Component\\Console\\Tester\\Constraint\\CommandIsSuccessful"
+      ],
+      "sorties": [
+        "public func tion",
+        "trait ConsoleAssertionsTrait"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tester/ExecutionResult.php": {
+      "fichier": "Tester/ExecutionResult.php",
+      "langage": "php",
+      "lignes": 99,
+      "taille_bytes": 2648,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\TestOutput"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tester/CommandCompletionTester.php": {
+      "fichier": "Tester/CommandCompletionTester.php",
+      "langage": "php",
+      "lignes": 54,
+      "taille_bytes": 1497,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Completion\\CompletionInput",
+        "Symfony\\Component\\Console\\Completion\\CompletionSuggestions"
+      ],
+      "sorties": [
+        "class CommandCompletionTester",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tester/Constraint/CommandIsInvalid.php": {
+      "fichier": "Tester/Constraint/CommandIsInvalid.php",
+      "langage": "php",
+      "lignes": 43,
+      "taille_bytes": 1054,
+      "entrees": [
+        "PHPUnit\\Framework\\Constraint\\Constraint",
+        "Symfony\\Component\\Console\\Command\\Command"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tester/Constraint/CommandFailed.php": {
+      "fichier": "Tester/Constraint/CommandFailed.php",
+      "langage": "php",
+      "lignes": 43,
+      "taille_bytes": 1052,
+      "entrees": [
+        "PHPUnit\\Framework\\Constraint\\Constraint",
+        "Symfony\\Component\\Console\\Command\\Command"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tester/Constraint/CommandIsSuccessful.php": {
+      "fichier": "Tester/Constraint/CommandIsSuccessful.php",
+      "langage": "php",
+      "lignes": 43,
+      "taille_bytes": 1057,
+      "entrees": [
+        "PHPUnit\\Framework\\Constraint\\Constraint",
+        "Symfony\\Component\\Console\\Command\\Command"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "CI/GithubActionReporter.php": {
+      "fichier": "CI/GithubActionReporter.php",
+      "langage": "php",
+      "lignes": 97,
+      "taille_bytes": 3113,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class GithubActionReporter",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Event/ConsoleAlarmEvent.php": {
+      "fichier": "Event/ConsoleAlarmEvent.php",
+      "langage": "php",
+      "lignes": 47,
+      "taille_bytes": 1150,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Event/QuestionAnsweredEvent.php": {
+      "fichier": "Event/QuestionAnsweredEvent.php",
+      "langage": "php",
+      "lignes": 45,
+      "taille_bytes": 968,
+      "entrees": [
+        "Symfony\\Contracts\\EventDispatcher\\Event"
+      ],
+      "sorties": [
+        "class QuestionAnsweredEvent",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Event/ConsoleSignalEvent.php": {
+      "fichier": "Event/ConsoleSignalEvent.php",
+      "langage": "php",
+      "lignes": 56,
+      "taille_bytes": 1342,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Event/ConsoleTerminateEvent.php": {
+      "fichier": "Event/ConsoleTerminateEvent.php",
+      "langage": "php",
+      "lignes": 50,
+      "taille_bytes": 1245,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Event/ConsoleCommandEvent.php": {
+      "fichier": "Event/ConsoleCommandEvent.php",
+      "langage": "php",
+      "lignes": 54,
+      "taille_bytes": 1326,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Event/ConsoleErrorEvent.php": {
+      "fichier": "Event/ConsoleErrorEvent.php",
+      "langage": "php",
+      "lignes": 58,
+      "taille_bytes": 1460,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Event/ConsoleEvent.php": {
+      "fichier": "Event/ConsoleEvent.php",
+      "langage": "php",
+      "lignes": 56,
+      "taille_bytes": 1216,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Contracts\\EventDispatcher\\Event"
+      ],
+      "sorties": [
+        "class ConsoleEvent",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Resources/completion.zsh": {
+      "fichier": "Resources/completion.zsh",
+      "langage": "shell",
+      "lignes": 82,
+      "taille_bytes": 2827,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Resources/completion.bash": {
+      "fichier": "Resources/completion.bash",
+      "langage": "shell",
+      "lignes": 94,
+      "taille_bytes": 3061,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Style/SymfonyStyle.php": {
+      "fichier": "Style/SymfonyStyle.php",
+      "langage": "php",
+      "lignes": 595,
+      "taille_bytes": 19807,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Exception\\RuntimeException",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\Console\\Helper\\Helper",
+        "Symfony\\Component\\Console\\Helper\\OutputWrapper",
+        "Symfony\\Component\\Console\\Helper\\ProgressBar",
+        "Symfony\\Component\\Console\\Helper\\SymfonyQuestionHelper",
+        "Symfony\\Component\\Console\\Helper\\Table",
+        "Symfony\\Component\\Console\\Helper\\TableCell",
+        "Symfony\\Component\\Console\\Helper\\TableSeparator",
+        "Symfony\\Component\\Console\\Helper\\TreeHelper",
+        "Symfony\\Component\\Console\\Helper\\TreeNode",
+        "Symfony\\Component\\Console\\Helper\\TreeStyle",
+        "Symfony\\Component\\Console\\Input\\File\\InputFile",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+        "Symfony\\Component\\Console\\Output\\ConsoleSectionOutput",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Output\\TrimmedBufferOutput",
+        "Symfony\\Component\\Console\\Question\\ChoiceQuestion",
+        "Symfony\\Component\\Console\\Question\\ConfirmationQuestion",
+        "Symfony\\Component\\Console\\Question\\FileQuestion",
+        "Symfony\\Component\\Console\\Question\\Question",
+        "Symfony\\Component\\Console\\Terminal",
+        "Symfony\\Contracts\\EventDispatcher\\EventDispatcherInterface"
+      ],
+      "sorties": [
+        "class SymfonyStyle",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Style/StyleInterface.php": {
+      "fichier": "Style/StyleInterface.php",
+      "langage": "php",
+      "lignes": 114,
+      "taille_bytes": 2542,
+      "entrees": [],
+      "sorties": [
+        "interface StyleInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Style/OutputStyle.php": {
+      "fichier": "Style/OutputStyle.php",
+      "langage": "php",
+      "lignes": 114,
+      "taille_bytes": 2761,
+      "entrees": [
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatterInterface",
+        "Symfony\\Component\\Console\\Helper\\ProgressBar",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "abstract class OutputStyle",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Terminal/Image/ITerm2Protocol.php": {
+      "fichier": "Terminal/Image/ITerm2Protocol.php",
+      "langage": "php",
+      "lignes": 103,
+      "taille_bytes": 2988,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Terminal/Image/ImageProtocolInterface.php": {
+      "fichier": "Terminal/Image/ImageProtocolInterface.php",
+      "langage": "php",
+      "lignes": 33,
+      "taille_bytes": 754,
+      "entrees": [],
+      "sorties": [
+        "interface ImageProtocolInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Terminal/Image/KittyGraphicsProtocol.php": {
+      "fichier": "Terminal/Image/KittyGraphicsProtocol.php",
+      "langage": "php",
+      "lignes": 136,
+      "taille_bytes": 4059,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/InvalidArgumentException.php": {
+      "fichier": "Exception/InvalidArgumentException.php",
+      "langage": "php",
+      "lignes": 32,
+      "taille_bytes": 882,
+      "entrees": [],
+      "sorties": [
+        "class InvalidArgumentException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/RunCommandFailedException.php": {
+      "fichier": "Exception/RunCommandFailedException.php",
+      "langage": "php",
+      "lignes": 29,
+      "taille_bytes": 883,
+      "entrees": [
+        "Symfony\\Component\\Console\\Messenger\\RunCommandContext"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/MissingInputException.php": {
+      "fichier": "Exception/MissingInputException.php",
+      "langage": "php",
+      "lignes": 21,
+      "taille_bytes": 494,
+      "entrees": [],
+      "sorties": [
+        "class MissingInputException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/LogicException.php": {
+      "fichier": "Exception/LogicException.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 426,
+      "entrees": [],
+      "sorties": [
+        "class LogicException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/CommandNotFoundException.php": {
+      "fichier": "Exception/CommandNotFoundException.php",
+      "langage": "php",
+      "lignes": 43,
+      "taille_bytes": 1192,
+      "entrees": [],
+      "sorties": [
+        "class CommandNotFoundException",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/ExceptionInterface.php": {
+      "fichier": "Exception/ExceptionInterface.php",
+      "langage": "php",
+      "lignes": 21,
+      "taille_bytes": 425,
+      "entrees": [],
+      "sorties": [
+        "interface ExceptionInterface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/InvalidOptionException.php": {
+      "fichier": "Exception/InvalidOptionException.php",
+      "langage": "php",
+      "lignes": 34,
+      "taille_bytes": 951,
+      "entrees": [],
+      "sorties": [
+        "class InvalidOptionException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/NamespaceNotFoundException.php": {
+      "fichier": "Exception/NamespaceNotFoundException.php",
+      "langage": "php",
+      "lignes": 21,
+      "taille_bytes": 474,
+      "entrees": [],
+      "sorties": [
+        "class NamespaceNotFoundException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/InvalidFileException.php": {
+      "fichier": "Exception/InvalidFileException.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 430,
+      "entrees": [],
+      "sorties": [
+        "class InvalidFileException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Exception/RuntimeException.php": {
+      "fichier": "Exception/RuntimeException.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 430,
+      "entrees": [],
+      "sorties": [
+        "class RuntimeException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Descriptor/DescriptorInterface.php": {
+      "fichier": "Descriptor/DescriptorInterface.php",
+      "langage": "php",
+      "lignes": 24,
+      "taille_bytes": 563,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "interface DescriptorInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Descriptor/JsonDescriptor.php": {
+      "fichier": "Descriptor/JsonDescriptor.php",
+      "langage": "php",
+      "lignes": 166,
+      "taille_bytes": 5745,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputOption"
+      ],
+      "sorties": [
+        "class JsonDescriptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Descriptor/ReStructuredTextDescriptor.php": {
+      "fichier": "Descriptor/ReStructuredTextDescriptor.php",
+      "langage": "php",
+      "lignes": 273,
+      "taille_bytes": 10668,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Helper\\Helper",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\String\\UnicodeString"
+      ],
+      "sorties": [
+        "class ReStructuredTextDescriptor",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Descriptor/MarkdownDescriptor.php": {
+      "fichier": "Descriptor/MarkdownDescriptor.php",
+      "langage": "php",
+      "lignes": 173,
+      "taille_bytes": 6408,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Helper\\Helper",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class MarkdownDescriptor",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Descriptor/TextDescriptor.php": {
+      "fichier": "Descriptor/TextDescriptor.php",
+      "langage": "php",
+      "lignes": 317,
+      "taille_bytes": 12302,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\Console\\Helper\\Helper",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputOption"
+      ],
+      "sorties": [
+        "class TextDescriptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Descriptor/ApplicationDescription.php": {
+      "fichier": "Descriptor/ApplicationDescription.php",
+      "langage": "php",
+      "lignes": 138,
+      "taille_bytes": 3690,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Exception\\CommandNotFoundException"
+      ],
+      "sorties": [
+        "class ApplicationDescription",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Descriptor/Descriptor.php": {
+      "fichier": "Descriptor/Descriptor.php",
+      "langage": "php",
+      "lignes": 74,
+      "taille_bytes": 2656,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "abstract class Descriptor",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Descriptor/XmlDescriptor.php": {
+      "fichier": "Descriptor/XmlDescriptor.php",
+      "langage": "php",
+      "lignes": 230,
+      "taille_bytes": 9709,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputOption"
+      ],
+      "sorties": [
+        "class XmlDescriptor",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Question/ConfirmationQuestion.php": {
+      "fichier": "Question/ConfirmationQuestion.php",
+      "langage": "php",
+      "lignes": 57,
+      "taille_bytes": 1522,
+      "entrees": [],
+      "sorties": [
+        "class ConfirmationQuestion",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Question/Question.php": {
+      "fichier": "Question/Question.php",
+      "langage": "php",
+      "lignes": 344,
+      "taille_bytes": 8163,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Exception\\LogicException",
+        "Symfony\\Component\\Validator\\Constraint"
+      ],
+      "sorties": [
+        "class Question",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Question/ChoiceQuestion.php": {
+      "fichier": "Question/ChoiceQuestion.php",
+      "langage": "php",
+      "lignes": 178,
+      "taille_bytes": 5185,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException"
+      ],
+      "sorties": [
+        "class ChoiceQuestion",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Question/FileQuestion.php": {
+      "fichier": "Question/FileQuestion.php",
+      "langage": "php",
+      "lignes": 46,
+      "taille_bytes": 1086,
+      "entrees": [
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException"
+      ],
+      "sorties": [
+        "class FileQuestion",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Debug/CliRequest.php": {
+      "fichier": "Debug/CliRequest.php",
+      "langage": "php",
+      "lignes": 70,
+      "taille_bytes": 1872,
+      "entrees": [
+        "Symfony\\Component\\Console\\Command\\TraceableCommand",
+        "Symfony\\Component\\HttpFoundation\\Request",
+        "Symfony\\Component\\HttpFoundation\\Response"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Interaction/Interaction.php": {
+      "fichier": "Interaction/Interaction.php",
+      "langage": "php",
+      "lignes": 51,
+      "taille_bytes": 1692,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\InteractiveAttributeInterface",
+        "Symfony\\Component\\Console\\Attribute\\MapInput",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/DumpCompletionCommand.php": {
+      "fichier": "Command/DumpCompletionCommand.php",
+      "langage": "php",
+      "lignes": 151,
+      "taille_bytes": 5483,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\AsCommand",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Process\\Process"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/TraceableCommand.php": {
+      "fichier": "Command/TraceableCommand.php",
+      "langage": "php",
+      "lignes": 368,
+      "taille_bytes": 10947,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Completion\\CompletionInput",
+        "Symfony\\Component\\Console\\Completion\\CompletionSuggestions",
+        "Symfony\\Component\\Console\\Helper\\HelperInterface",
+        "Symfony\\Component\\Console\\Helper\\HelperSet",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Stopwatch\\Stopwatch"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/LazyCommand.php": {
+      "fichier": "Command/LazyCommand.php",
+      "langage": "php",
+      "lignes": 206,
+      "taille_bytes": 5724,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Completion\\CompletionInput",
+        "Symfony\\Component\\Console\\Completion\\CompletionSuggestions",
+        "Symfony\\Component\\Console\\Completion\\Suggestion",
+        "Symfony\\Component\\Console\\Helper\\HelperInterface",
+        "Symfony\\Component\\Console\\Helper\\HelperSet",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/InvokableCommand.php": {
+      "fichier": "Command/InvokableCommand.php",
+      "langage": "php",
+      "lignes": 251,
+      "taille_bytes": 8610,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\ArgumentResolver\\ArgumentResolver",
+        "Symfony\\Component\\Console\\ArgumentResolver\\ArgumentResolverInterface",
+        "Symfony\\Component\\Console\\Attribute\\Argument",
+        "Symfony\\Component\\Console\\Attribute\\Interact",
+        "Symfony\\Component\\Console\\Attribute\\MapInput",
+        "Symfony\\Component\\Console\\Attribute\\Option",
+        "Symfony\\Component\\Console\\Cursor",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Interaction\\Interaction",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Style\\SymfonyStyle"
+      ],
+      "sorties": [
+        "class InvokableCommand",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/SignalableCommandInterface.php": {
+      "fichier": "Command/SignalableCommandInterface.php",
+      "langage": "php",
+      "lignes": 36,
+      "taille_bytes": 915,
+      "entrees": [],
+      "sorties": [
+        "interface SignalableCommandInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/CompleteCommand.php": {
+      "fichier": "Command/CompleteCommand.php",
+      "langage": "php",
+      "lignes": 217,
+      "taille_bytes": 9091,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\AsCommand",
+        "Symfony\\Component\\Console\\Completion\\CompletionInput",
+        "Symfony\\Component\\Console\\Completion\\CompletionSuggestions",
+        "Symfony\\Component\\Console\\Completion\\Output\\BashCompletionOutput",
+        "Symfony\\Component\\Console\\Completion\\Output\\CompletionOutputInterface",
+        "Symfony\\Component\\Console\\Completion\\Output\\FishCompletionOutput",
+        "Symfony\\Component\\Console\\Completion\\Output\\ZshCompletionOutput",
+        "Symfony\\Component\\Console\\Exception\\CommandNotFoundException",
+        "Symfony\\Component\\Console\\Exception\\ExceptionInterface",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/ListCommand.php": {
+      "fichier": "Command/ListCommand.php",
+      "langage": "php",
+      "lignes": 72,
+      "taille_bytes": 2699,
+      "entrees": [
+        "Symfony\\Component\\Console\\Descriptor\\ApplicationDescription",
+        "Symfony\\Component\\Console\\Helper\\DescriptorHelper",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class ListCommand"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/HelpCommand.php": {
+      "fichier": "Command/HelpCommand.php",
+      "langage": "php",
+      "lignes": 76,
+      "taille_bytes": 2579,
+      "entrees": [
+        "Symfony\\Component\\Console\\Descriptor\\ApplicationDescription",
+        "Symfony\\Component\\Console\\Helper\\DescriptorHelper",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class HelpCommand",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/LockableTrait.php": {
+      "fichier": "Command/LockableTrait.php",
+      "langage": "php",
+      "lignes": 85,
+      "taille_bytes": 2445,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\AsCommand",
+        "Symfony\\Component\\Console\\Exception\\LogicException",
+        "Symfony\\Component\\Lock\\LockFactory",
+        "Symfony\\Component\\Lock\\LockInterface",
+        "Symfony\\Component\\Lock\\Store\\FlockStore",
+        "Symfony\\Component\\Lock\\Store\\SemaphoreStore"
+      ],
+      "sorties": [
+        "trait LockableTrait"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Command/Command.php": {
+      "fichier": "Command/Command.php",
+      "langage": "php",
+      "lignes": 706,
+      "taille_bytes": 22563,
+      "entrees": [
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Attribute\\AsCommand",
+        "Symfony\\Component\\Console\\Completion\\CompletionInput",
+        "Symfony\\Component\\Console\\Completion\\CompletionSuggestions",
+        "Symfony\\Component\\Console\\Completion\\Suggestion",
+        "Symfony\\Component\\Console\\Exception\\ExceptionInterface",
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Exception\\LogicException",
+        "Symfony\\Component\\Console\\Helper\\HelperInterface",
+        "Symfony\\Component\\Console\\Helper\\HelperSet",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class Command",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ArgumentResolver/ArgumentResolver.php": {
+      "fichier": "ArgumentResolver/ArgumentResolver.php",
+      "langage": "php",
+      "lignes": 161,
+      "taille_bytes": 6680,
+      "entrees": [
+        "Psr\\Container\\ContainerInterface",
+        "Symfony\\Component\\Console\\ArgumentResolver\\Exception\\NearMissValueResolverException",
+        "Symfony\\Component\\Console\\ArgumentResolver\\Exception\\ResolverNotFoundException",
+        "Symfony\\Component\\Console\\ArgumentResolver\\ValueResolver",
+        "Symfony\\Component\\Console\\ArgumentResolver\\ValueResolver\\ValueResolverInterface",
+        "Symfony\\Component\\Console\\Attribute\\Argument",
+        "Symfony\\Component\\Console\\Attribute\\Option",
+        "Symfony\\Component\\Console\\Attribute\\Reflection\\ReflectionMember",
+        "Symfony\\Component\\Console\\Attribute\\ValueResolver",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Cursor",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Style\\SymfonyStyle",
+        "Symfony\\Contracts\\Service\\ServiceProviderInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ArgumentResolver/TraceableArgumentResolver.php": {
+      "fichier": "ArgumentResolver/TraceableArgumentResolver.php",
+      "langage": "php",
+      "lignes": 38,
+      "taille_bytes": 1012,
+      "entrees": [
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Stopwatch\\Stopwatch"
+      ],
+      "sorties": [
+        "class TraceableArgumentResolver",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ArgumentResolver/ArgumentResolverInterface.php": {
+      "fichier": "ArgumentResolver/ArgumentResolverInterface.php",
+      "langage": "php",
+      "lignes": 33,
+      "taille_bytes": 1051,
+      "entrees": [
+        "Symfony\\Component\\Console\\ArgumentResolver\\Exception\\ResolverNotFoundException",
+        "Symfony\\Component\\Console\\Input\\InputInterface"
+      ],
+      "sorties": [
+        "interface ArgumentResolverInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ArgumentResolver/ValueResolver/TraceableValueResolver.php": {
+      "fichier": "ArgumentResolver/ValueResolver/TraceableValueResolver.php",
+      "langage": "php",
+      "lignes": 38,
+      "taille_bytes": 1107,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\Reflection\\ReflectionMember",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Stopwatch\\Stopwatch"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ArgumentResolver/ValueResolver/UidValueResolver.php": {
+      "fichier": "ArgumentResolver/ValueResolver/UidValueResolver.php",
+      "langage": "php",
+      "lignes": 87,
+      "taille_bytes": 2692,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\Argument",
+        "Symfony\\Component\\Console\\Attribute\\Option",
+        "Symfony\\Component\\Console\\Attribute\\Reflection\\ReflectionMember",
+        "Symfony\\Component\\Console\\Exception\\InvalidArgumentException",
+        "Symfony\\Component\\Console\\Exception\\InvalidOptionException",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Uid\\AbstractUid"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ArgumentResolver/ValueResolver/ValueResolverInterface.php": {
+      "fichier": "ArgumentResolver/ValueResolver/ValueResolverInterface.php",
+      "langage": "php",
+      "lignes": 30,
+      "taille_bytes": 871,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\Reflection\\ReflectionMember",
+        "Symfony\\Component\\Console\\Input\\InputInterface"
+      ],
+      "sorties": [
+        "interface ValueResolverInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ArgumentResolver/ValueResolver/MapInputValueResolver.php": {
+      "fichier": "ArgumentResolver/ValueResolver/MapInputValueResolver.php",
+      "langage": "php",
+      "lignes": 89,
+      "taille_bytes": 3782,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\Argument",
+        "Symfony\\Component\\Console\\Attribute\\MapInput",
+        "Symfony\\Component\\Console\\Attribute\\Option",
+        "Symfony\\Component\\Console\\Attribute\\Reflection\\ReflectionMember",
+        "Symfony\\Component\\Console\\Input\\InputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ArgumentResolver/ValueResolver/VariadicValueResolver.php": {
+      "fichier": "ArgumentResolver/ValueResolver/VariadicValueResolver.php",
+      "langage": "php",
+      "lignes": 54,
+      "taille_bytes": 1814,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\Argument",
+        "Symfony\\Component\\Console\\Attribute\\Option",
+        "Symfony\\Component\\Console\\Attribute\\Reflection\\ReflectionMember",
+        "Symfony\\Component\\Console\\Input\\InputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "ArgumentResolver/ValueResolver/BuiltinTypeValueResolver.php": {
+      "fichier": "ArgumentResolver/ValueResolver/BuiltinTypeValueResolver.php",
+      "langage": "php",
+      "lignes": 75,
+      "taille_bytes": 2133,
+      "entrees": [
+        "Symfony\\Component\\Console\\Attribute\\Argument",
+        "Symfony\\Component\\Console\\Attribute\\Option",
+        "Symfony\\Component\\Console\\Attribute\\Reflection\\ReflectionMember",
+        "Symfony\\Component\\Console\\Input\\InputInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "Tester/ApplicationTester.php",
+      "vers": "Tester/TesterTrait.php",
+      "type": "interne"
+    },
+    {
+      "de": "Tester/CommandTester.php",
+      "vers": "Tester/TesterTrait.php",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

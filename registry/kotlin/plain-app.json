@@ -1,0 +1,2886 @@
+{
+  "meta": {
+    "projet": "plain-app",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "html": 2,
+      "shell": 3,
+      "kotlin": 86,
+      "toml": 1,
+      "json": 3,
+      "javascript": 3,
+      "xml": 1,
+      "unknown": 2,
+      "java": 19
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 52,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 4,
+    "noeuds_hubs": 0,
+    "points_entree": 10,
+    "fichier_plus_appele": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt"
+  },
+  "noeuds": {
+    "policy.html": {
+      "fichier": "policy.html",
+      "langage": "html",
+      "lignes": 110,
+      "taille_bytes": 7622,
+      "entrees": [
+        "information",
+        "my"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "terms.html": {
+      "fichier": "terms.html",
+      "langage": "html",
+      "lignes": 35,
+      "taille_bytes": 2861,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build-apk.sh": {
+      "fichier": "build-apk.sh",
+      "langage": "shell",
+      "lignes": 47,
+      "taille_bytes": 1331,
+      "entrees": [],
+      "sorties": [
+        "function err_and_exit",
+        "function getVersionName",
+        "function try_print_missing_rules"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "remove_string_key_all.sh": {
+      "fichier": "remove_string_key_all.sh",
+      "langage": "shell",
+      "lignes": 34,
+      "taille_bytes": 704,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build-aab.sh": {
+      "fichier": "build-aab.sh",
+      "langage": "shell",
+      "lignes": 41,
+      "taille_bytes": 1247,
+      "entrees": [],
+      "sorties": [
+        "function err_and_exit",
+        "function getVersionName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "settings.gradle.kts": {
+      "fichier": "settings.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 6,
+      "taille_bytes": 149,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.gradle.kts": {
+      "fichier": "build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 31,
+      "taille_bytes": 736,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gradle/libs.versions.toml": {
+      "fichier": "gradle/libs.versions.toml",
+      "langage": "toml",
+      "lignes": 173,
+      "taille_bytes": 10357,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/i18n-todo.json": {
+      "fichier": "scripts/i18n-todo.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/i18n-find-untranslated.mjs": {
+      "fichier": "scripts/i18n-find-untranslated.mjs",
+      "langage": "javascript",
+      "lignes": 125,
+      "taille_bytes": 4485,
+      "entrees": [
+        "fs",
+        "path"
+      ],
+      "sorties": [
+        "const baseFile",
+        "const baseMap",
+        "const english",
+        "const langMap",
+        "const locFile",
+        "const locMap",
+        "const locVal",
+        "const map",
+        "const missing",
+        "const outFile",
+        "const re",
+        "const resDir",
+        "const stable",
+        "const stableFile",
+        "const stableKeys",
+        "const todo",
+        "const xml",
+        "function decode",
+        "function looksLikeUntranslatedEnglish",
+        "function parseStrings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/i18n-stable.json": {
+      "fichier": "scripts/i18n-stable.json",
+      "langage": "json",
+      "lignes": 205,
+      "taille_bytes": 3177,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/i18n-translated.json": {
+      "fichier": "scripts/i18n-translated.json",
+      "langage": "json",
+      "lignes": 1324,
+      "taille_bytes": 28206,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/i18n-translate-todo.mjs": {
+      "fichier": "scripts/i18n-translate-todo.mjs",
+      "langage": "javascript",
+      "lignes": 135,
+      "taille_bytes": 4917,
+      "entrees": [
+        "fs",
+        "path"
+      ],
+      "sorties": [
+        "const BATCH_SIZE",
+        "const DELAY_MS",
+        "const SEP",
+        "const allItems",
+        "const batch",
+        "const data",
+        "const enTexts",
+        "const joined",
+        "const parts",
+        "const placeholderMap",
+        "const protected_",
+        "const raw",
+        "const res",
+        "const results",
+        "const stable",
+        "const stableFile",
+        "const todo",
+        "const todoFile",
+        "const translated",
+        "const url",
+        "function protect",
+        "function restore",
+        "function sleep"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/i18n-apply-todo.mjs": {
+      "fichier": "scripts/i18n-apply-todo.mjs",
+      "langage": "javascript",
+      "lignes": 89,
+      "taille_bytes": 3282,
+      "entrees": [
+        "fs",
+        "path"
+      ],
+      "sorties": [
+        "const applied",
+        "const escaped",
+        "const filePath",
+        "const insertLines",
+        "const re",
+        "const resDir",
+        "const toInsert",
+        "const toReplace",
+        "const translated",
+        "const translatedFile",
+        "const updated",
+        "function applyToFile",
+        "function escapeAndroid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/build.gradle.kts": {
+      "fichier": "lib/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 96,
+      "taille_bytes": 2501,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/test/java/com/ismartcoding/lib/helpers/SearchHelperTest.kt": {
+      "fichier": "lib/src/test/java/com/ismartcoding/lib/helpers/SearchHelperTest.kt",
+      "langage": "kotlin",
+      "lignes": 70,
+      "taille_bytes": 2214,
+      "entrees": [
+        "org.junit.Assert.assertEquals",
+        "org.junit.Assert.assertTrue",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class SearchHelperTest",
+        "fun parse_duration_ge_opIsKept",
+        "fun parse_fileSize_bytes_opIsKept",
+        "fun parse_fileSize_humanUnit_opIsKept",
+        "fun parse_fileSize_opIsNeverBlank",
+        "fun parse_not_doesNotBlankOutOp",
+        "fun parse_plainField_defaultsToEquals",
+        "fun parse_textGroup_hasEmptyOp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/AndroidManifest.xml": {
+      "fichier": "lib/src/main/AndroidManifest.xml",
+      "langage": "xml",
+      "lignes": 5,
+      "taille_bytes": 200,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/resources/r_styles.ini": {
+      "fichier": "lib/src/main/resources/r_styles.ini",
+      "langage": "unknown",
+      "lignes": 720,
+      "taille_bytes": 32286,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/resources/r_values.ini": {
+      "fichier": "lib/src/main/resources/r_values.ini",
+      "langage": "unknown",
+      "lignes": 1207,
+      "taille_bytes": 31101,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/Constants.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/Constants.kt",
+      "langage": "kotlin",
+      "lignes": 10,
+      "taille_bytes": 634,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PDFView.kt",
+        "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PagesLoader.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/Version.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/Version.kt",
+      "langage": "kotlin",
+      "lignes": 33,
+      "taille_bytes": 1221,
+      "entrees": [
+        "android.os.Build",
+        "androidx.annotation.ChecksSdkIntAtLeast"
+      ],
+      "sorties": [
+        "fun isBPlus",
+        "fun isP",
+        "fun isQPlus",
+        "fun isRPlus",
+        "fun isSPlus",
+        "fun isSV2Plus",
+        "fun isTPlus",
+        "fun isUPlus",
+        "fun isVPlus"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/ReadabilityOptions.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/ReadabilityOptions.kt",
+      "langage": "kotlin",
+      "lignes": 12,
+      "taille_bytes": 458,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/RegExUtil.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/RegExUtil.kt",
+      "langage": "kotlin",
+      "lignes": 95,
+      "taille_bytes": 4367,
+      "entrees": [
+        "java.util.regex.Pattern"
+      ],
+      "sorties": [
+        "fun hasContent",
+        "fun isByline",
+        "fun isNegative",
+        "fun isPositive",
+        "fun isUnlikelyCandidate",
+        "fun isVideo",
+        "fun isWhitespace",
+        "fun keepImage",
+        "fun normalize",
+        "fun okMaybeItsACandidate"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ProcessorHelper.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/Article.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/Article.kt",
+      "langage": "kotlin",
+      "lignes": 87,
+      "taille_bytes": 2527,
+      "entrees": [
+        "org.jsoup.nodes.Element"
+      ],
+      "sorties": [
+        "class Article"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleMetadata.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleMetadata.kt",
+      "langage": "kotlin",
+      "lignes": 4,
+      "taille_bytes": 210,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/MetadataParser.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/ReadabilityObject.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/ReadabilityObject.kt",
+      "langage": "kotlin",
+      "lignes": 4,
+      "taille_bytes": 103,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt",
+      "langage": "kotlin",
+      "lignes": 59,
+      "taille_bytes": 2350,
+      "entrees": [
+        "com.ismartcoding.lib.logcat.LogCat",
+        "com.ismartcoding.lib.readability4j.processor.ArticleGrabber",
+        "com.ismartcoding.lib.readability4j.processor.MetadataParser",
+        "com.ismartcoding.lib.readability4j.processor.Postprocessor",
+        "com.ismartcoding.lib.readability4j.processor.Preprocessor",
+        "org.jsoup.Jsoup"
+      ],
+      "sorties": [
+        "fun parse"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/MetadataParser.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Postprocessor.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Preprocessor.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleGrabberOptions.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleGrabberOptions.kt",
+      "langage": "kotlin",
+      "lignes": 8,
+      "taille_bytes": 216,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/MetadataParser.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/MetadataParser.kt",
+      "langage": "kotlin",
+      "lignes": 141,
+      "taille_bytes": 5687,
+      "entrees": [
+        "com.ismartcoding.lib.readability4j.ArticleMetadata",
+        "java.util.regex.Pattern",
+        "org.jsoup.nodes.Document"
+      ],
+      "sorties": [
+        "fun getArticleMetadata"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleMetadata.kt"
+      ],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+      "langage": "kotlin",
+      "lignes": 1136,
+      "taille_bytes": 43956,
+      "entrees": [
+        "com.ismartcoding.lib.logcat.LogCat",
+        "com.ismartcoding.lib.readability4j.ArticleGrabberOptions",
+        "com.ismartcoding.lib.readability4j.ArticleMetadata",
+        "com.ismartcoding.lib.readability4j.ReadabilityObject",
+        "com.ismartcoding.lib.readability4j.ReadabilityOptions",
+        "com.ismartcoding.lib.readability4j.RegExUtil",
+        "java.util.*",
+        "kotlin.collections.ArrayList",
+        "kotlin.collections.HashMap",
+        "kotlin.math.abs",
+        "kotlin.math.floor",
+        "org.jsoup.nodes.Document",
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.TextNode",
+        "org.jsoup.select.Elements"
+      ],
+      "sorties": [
+        "fun getLinkDensity",
+        "fun grabArticle",
+        "fun prepareNodes"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleGrabberOptions.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleMetadata.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/ReadabilityObject.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/ReadabilityOptions.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/RegExUtil.kt"
+      ],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Postprocessor.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Postprocessor.kt",
+      "langage": "kotlin",
+      "lignes": 190,
+      "taille_bytes": 6462,
+      "entrees": [
+        "com.ismartcoding.lib.logcat.LogCat",
+        "java.net.URI",
+        "java.util.Arrays",
+        "java.util.regex.Pattern",
+        "org.jsoup.nodes.Attributes",
+        "org.jsoup.nodes.Document",
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.TextNode",
+        "org.jsoup.parser.Tag"
+      ],
+      "sorties": [
+        "class Postprocessor",
+        "fun fixRelativeImageUri",
+        "fun fixRelativeImageUris",
+        "fun postProcessContent",
+        "fun toAbsoluteURI"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt"
+      ],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Preprocessor.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Preprocessor.kt",
+      "langage": "kotlin",
+      "lignes": 143,
+      "taille_bytes": 4891,
+      "entrees": [
+        "com.ismartcoding.lib.logcat.LogCat",
+        "org.jsoup.nodes.Document",
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.Node"
+      ],
+      "sorties": [
+        "class Preprocessor",
+        "fun prepareDocument"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt"
+      ],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ProcessorHelper.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ProcessorHelper.kt",
+      "langage": "kotlin",
+      "lignes": 68,
+      "taille_bytes": 2124,
+      "entrees": [
+        "com.ismartcoding.lib.logcat.LogCat",
+        "com.ismartcoding.lib.readability4j.RegExUtil",
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.Node",
+        "org.jsoup.nodes.TextNode"
+      ],
+      "sorties": [
+        "fun getInnerText",
+        "fun nextElement",
+        "fun printAndRemove",
+        "fun removeNodes",
+        "fun replaceNodes"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/RegExUtil.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/channel/Channel.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/channel/Channel.kt",
+      "langage": "kotlin",
+      "lignes": 63,
+      "taille_bytes": 1806,
+      "entrees": [
+        "androidx.lifecycle.Lifecycle",
+        "androidx.lifecycle.LifecycleOwner",
+        "androidx.lifecycle.flowWithLifecycle",
+        "androidx.lifecycle.lifecycleScope",
+        "com.ismartcoding.lib.channel.Channel.internalScope",
+        "com.ismartcoding.lib.channel.Channel.sharedFlow",
+        "kotlinx.coroutines.CoroutineScope",
+        "kotlinx.coroutines.Job",
+        "kotlinx.coroutines.flow.*",
+        "kotlinx.coroutines.launch"
+      ],
+      "sorties": [
+        "fun sendEvent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/channel/ChannelScope.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/channel/ChannelScope.kt",
+      "langage": "kotlin",
+      "lignes": 32,
+      "taille_bytes": 1040,
+      "entrees": [
+        "androidx.lifecycle.Lifecycle",
+        "androidx.lifecycle.LifecycleEventObserver",
+        "androidx.lifecycle.LifecycleOwner",
+        "class",
+        "kotlin.coroutines.CoroutineContext",
+        "kotlinx.coroutines.CoroutineScope",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.SupervisorJob",
+        "kotlinx.coroutines.cancel"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/channel/ChannelEvent.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/channel/ChannelEvent.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 66,
+      "entrees": [],
+      "sorties": [
+        "abstract class ChannelEvent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageSchemeHandler.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageSchemeHandler.kt",
+      "langage": "kotlin",
+      "lignes": 23,
+      "taille_bytes": 741,
+      "entrees": [
+        "android.content.Context",
+        "android.net.Uri",
+        "com.ismartcoding.lib.extensions.getFinalPath",
+        "com.ismartcoding.lib.extensions.getMimeType",
+        "com.ismartcoding.lib.markdown.image.ImageItem",
+        "com.ismartcoding.lib.markdown.image.SchemeHandler",
+        "java.io.FileInputStream",
+        "java.util.*"
+      ],
+      "sorties": [
+        "class AppImageSchemeHandler"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/FontTagHandler.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/FontTagHandler.kt",
+      "langage": "kotlin",
+      "lignes": 33,
+      "taille_bytes": 934,
+      "entrees": [
+        "android.graphics.Color",
+        "android.text.style.ForegroundColorSpan",
+        "io.noties.markwon.MarkwonConfiguration",
+        "io.noties.markwon.RenderProps",
+        "io.noties.markwon.html.HtmlTag",
+        "io.noties.markwon.html.tag.SimpleTagHandler",
+        "java.util.*"
+      ],
+      "sorties": [
+        "class FontTagHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageSizeParserImpl.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageSizeParserImpl.kt",
+      "langage": "kotlin",
+      "lignes": 79,
+      "taille_bytes": 2645,
+      "entrees": [
+        "android.text.TextUtils",
+        "androidx.annotation.VisibleForTesting",
+        "io.noties.markwon.html.CssInlineStyleParser",
+        "io.noties.markwon.image.ImageSize"
+      ],
+      "sorties": [
+        "class AppImageSizeParserImpl",
+        "fun dimension"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/NetworkSchemeHandler.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/NetworkSchemeHandler.kt",
+      "langage": "kotlin",
+      "lignes": 64,
+      "taille_bytes": 2181,
+      "entrees": [
+        "android.net.Uri",
+        "com.ismartcoding.lib.markdown.image.ImageItem",
+        "com.ismartcoding.lib.markdown.image.SchemeHandler",
+        "java.io.BufferedInputStream",
+        "java.io.IOException",
+        "java.net.HttpURLConnection",
+        "java.net.URL"
+      ],
+      "sorties": [
+        "class NetworkSchemeHandler",
+        "const val"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageHandler.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageHandler.kt",
+      "langage": "kotlin",
+      "lignes": 58,
+      "taille_bytes": 2046,
+      "entrees": [
+        "android.text.TextUtils",
+        "io.noties.markwon.MarkwonConfiguration",
+        "io.noties.markwon.RenderProps",
+        "io.noties.markwon.html.CssInlineStyleParser",
+        "io.noties.markwon.html.HtmlTag",
+        "io.noties.markwon.html.tag.SimpleTagHandler",
+        "io.noties.markwon.image.ImageProps",
+        "io.noties.markwon.image.ImageSize",
+        "org.commonmark.node.Image"
+      ],
+      "sorties": [
+        "class AppImageHandler",
+        "fun create",
+        "fun parse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+      "langage": "java",
+      "lignes": 155,
+      "taille_bytes": 3355,
+      "entrees": [
+        "android.graphics.drawable.Drawable",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "java.io.InputStream"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageSchemeHandler.kt",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/NetworkSchemeHandler.kt",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriSchemeHandler.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/file/FileSchemeHandler.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/NetworkSchemeHandler.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/OkHttpNetworkSchemeHandler.java"
+      ],
+      "type_noeud": "feuille"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java",
+      "langage": "java",
+      "lignes": 31,
+      "taille_bytes": 663,
+      "entrees": [
+        "android.net.Uri",
+        "androidx.annotation.NonNull",
+        "java.util.Collection"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageSchemeHandler.kt",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/NetworkSchemeHandler.kt",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriSchemeHandler.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/file/FileSchemeHandler.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/NetworkSchemeHandler.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/OkHttpNetworkSchemeHandler.java"
+      ],
+      "type_noeud": "feuille"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java",
+      "langage": "java",
+      "lignes": 113,
+      "taille_bytes": 3398,
+      "entrees": [
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "com.ismartcoding.lib.markdown.image.data.DataUriSchemeHandler",
+        "com.ismartcoding.lib.markdown.image.gif.GifMediaDecoder",
+        "com.ismartcoding.lib.markdown.image.network.NetworkSchemeHandler",
+        "com.ismartcoding.lib.markdown.image.svg.SvgMediaDecoder",
+        "io.noties.markwon.image.AsyncDrawableLoader",
+        "java.util.HashMap",
+        "java.util.Map",
+        "java.util.concurrent.ExecutorService",
+        "java.util.concurrent.Executors"
+      ],
+      "sorties": [
+        "class AsyncDrawableLoaderBuilder"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriSchemeHandler.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/gif/GifMediaDecoder.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/NetworkSchemeHandler.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgMediaDecoder.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageAsyncDrawableSpan.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageAsyncDrawableSpan.kt",
+      "langage": "kotlin",
+      "lignes": 53,
+      "taille_bytes": 1812,
+      "entrees": [
+        "android.graphics.Paint",
+        "android.graphics.Paint.FontMetricsInt",
+        "androidx.annotation.IntRange",
+        "io.noties.markwon.core.MarkwonTheme",
+        "io.noties.markwon.image.AsyncDrawable",
+        "io.noties.markwon.image.AsyncDrawableSpan"
+      ],
+      "sorties": [
+        "class ImageAsyncDrawableSpan"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageSpanFactory.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageSpanFactory.java",
+      "langage": "java",
+      "lignes": 30,
+      "taille_bytes": 1082,
+      "entrees": [
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "io.noties.markwon.MarkwonConfiguration",
+        "io.noties.markwon.RenderProps",
+        "io.noties.markwon.SpanFactory",
+        "io.noties.markwon.image.AsyncDrawable",
+        "io.noties.markwon.image.AsyncDrawableSpan",
+        "io.noties.markwon.image.ImageProps"
+      ],
+      "sorties": [
+        "public class ImageSpanFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderImpl.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderImpl.java",
+      "langage": "java",
+      "lignes": 183,
+      "taille_bytes": 7163,
+      "entrees": [
+        "android.graphics.Rect",
+        "android.graphics.drawable.Drawable",
+        "android.net.Uri",
+        "android.os.Handler",
+        "android.os.Looper",
+        "android.os.SystemClock",
+        "android.util.Log",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "androidx.annotation.VisibleForTesting",
+        "io.noties.markwon.image.AsyncDrawable",
+        "io.noties.markwon.image.AsyncDrawableLoader",
+        "io.noties.markwon.image.DrawableUtils",
+        "java.io.IOException",
+        "java.util.HashMap",
+        "java.util.Map",
+        "java.util.concurrent.ExecutorService",
+        "java.util.concurrent.Future"
+      ],
+      "sorties": [
+        "class AsyncDrawableLoaderImpl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/DefaultMediaDecoder.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/DefaultMediaDecoder.java",
+      "langage": "java",
+      "lignes": 65,
+      "taille_bytes": 1928,
+      "entrees": [
+        "android.content.res.Resources",
+        "android.graphics.Bitmap",
+        "android.graphics.BitmapFactory",
+        "android.graphics.drawable.BitmapDrawable",
+        "android.graphics.drawable.Drawable",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "java.io.InputStream",
+        "java.util.Collection",
+        "java.util.Collections"
+      ],
+      "sorties": [
+        "public class DefaultMediaDecoder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/DefaultDownScalingMediaDecoder.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/DefaultDownScalingMediaDecoder.java",
+      "langage": "java",
+      "lignes": 188,
+      "taille_bytes": 6129,
+      "entrees": [
+        "android.content.res.Resources",
+        "android.graphics.Bitmap",
+        "android.graphics.BitmapFactory",
+        "android.graphics.drawable.BitmapDrawable",
+        "android.graphics.drawable.Drawable",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "java.io.BufferedInputStream",
+        "java.io.BufferedOutputStream",
+        "java.io.File",
+        "java.io.FileInputStream",
+        "java.io.FileNotFoundException",
+        "java.io.FileOutputStream",
+        "java.io.IOException",
+        "java.io.InputStream",
+        "java.io.OutputStream",
+        "java.util.Collection",
+        "java.util.Collections"
+      ],
+      "sorties": [
+        "public class DefaultDownScalingMediaDecoder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/MediaDecoder.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/MediaDecoder.java",
+      "langage": "java",
+      "lignes": 34,
+      "taille_bytes": 703,
+      "entrees": [
+        "android.graphics.drawable.Drawable",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "java.io.InputStream",
+        "java.util.Collection"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/gif/GifMediaDecoder.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgMediaDecoder.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgPictureMediaDecoder.java"
+      ],
+      "type_noeud": "feuille"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImagesPlugin.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImagesPlugin.java",
+      "langage": "java",
+      "lignes": 169,
+      "taille_bytes": 4474,
+      "entrees": [
+        "android.graphics.drawable.Drawable",
+        "android.text.Spanned",
+        "android.widget.TextView",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "androidx.annotation.VisibleForTesting",
+        "io.noties.markwon.AbstractMarkwonPlugin",
+        "io.noties.markwon.MarkwonConfiguration",
+        "io.noties.markwon.MarkwonSpansFactory",
+        "io.noties.markwon.image.AsyncDrawable",
+        "io.noties.markwon.image.AsyncDrawableScheduler",
+        "java.util.concurrent.ExecutorService",
+        "org.commonmark.node.Image"
+      ],
+      "sorties": [
+        "public class ImagesPlugin",
+        "public interface ErrorHandler",
+        "public interface ImagesConfigure",
+        "public interface PlaceholderProvider"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/gif/GifMediaDecoder.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/gif/GifMediaDecoder.java",
+      "langage": "java",
+      "lignes": 100,
+      "taille_bytes": 2558,
+      "entrees": [
+        "android.graphics.drawable.Drawable",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "com.ismartcoding.lib.markdown.image.MediaDecoder",
+        "java.io.ByteArrayOutputStream",
+        "java.io.IOException",
+        "java.io.InputStream",
+        "java.util.Collection",
+        "java.util.Collections",
+        "pl.droidsonroids.gif.GifDrawable"
+      ],
+      "sorties": [
+        "public class GifMediaDecoder"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/MediaDecoder.java"
+      ],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriParser.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriParser.java",
+      "langage": "java",
+      "lignes": 79,
+      "taille_bytes": 2454,
+      "entrees": [
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriDecoder.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriDecoder.java",
+      "langage": "java",
+      "lignes": 39,
+      "taille_bytes": 1014,
+      "entrees": [
+        "android.text.TextUtils",
+        "android.util.Base64",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriSchemeHandler.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriSchemeHandler.java",
+      "langage": "java",
+      "lignes": 72,
+      "taille_bytes": 2027,
+      "entrees": [
+        "android.net.Uri",
+        "androidx.annotation.NonNull",
+        "com.ismartcoding.lib.markdown.image.ImageItem",
+        "com.ismartcoding.lib.markdown.image.SchemeHandler",
+        "java.io.ByteArrayInputStream",
+        "java.util.Collection",
+        "java.util.Collections"
+      ],
+      "sorties": [
+        "public class DataUriSchemeHandler"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java"
+      ],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUri.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUri.java",
+      "langage": "java",
+      "lignes": 60,
+      "taille_bytes": 1589,
+      "entrees": [
+        "androidx.annotation.Nullable"
+      ],
+      "sorties": [
+        "public class DataUri"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/file/FileSchemeHandler.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/file/FileSchemeHandler.java",
+      "langage": "java",
+      "lignes": 134,
+      "taille_bytes": 4341,
+      "entrees": [
+        "android.content.Context",
+        "android.content.res.AssetManager",
+        "android.net.Uri",
+        "android.text.TextUtils",
+        "android.webkit.MimeTypeMap",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "com.ismartcoding.lib.markdown.image.ImageItem",
+        "com.ismartcoding.lib.markdown.image.SchemeHandler",
+        "java.io.BufferedInputStream",
+        "java.io.File",
+        "java.io.FileInputStream",
+        "java.io.FileNotFoundException",
+        "java.io.IOException",
+        "java.io.InputStream",
+        "java.util.Collection",
+        "java.util.Collections",
+        "java.util.List"
+      ],
+      "sorties": [
+        "public class FileSchemeHandler"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgMediaDecoder.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgMediaDecoder.java",
+      "langage": "java",
+      "lignes": 82,
+      "taille_bytes": 2283,
+      "entrees": [
+        "android.content.res.Resources",
+        "android.graphics.Bitmap",
+        "android.graphics.Canvas",
+        "android.graphics.drawable.BitmapDrawable",
+        "android.graphics.drawable.Drawable",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "com.ismartcoding.lib.androidsvg.SVG",
+        "com.ismartcoding.lib.androidsvg.SVGParseException",
+        "com.ismartcoding.lib.markdown.image.MediaDecoder",
+        "java.io.InputStream",
+        "java.util.Collection",
+        "java.util.Collections"
+      ],
+      "sorties": [
+        "public class SvgMediaDecoder"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/MediaDecoder.java"
+      ],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgPictureMediaDecoder.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgPictureMediaDecoder.java",
+      "langage": "java",
+      "lignes": 50,
+      "taille_bytes": 1345,
+      "entrees": [
+        "android.graphics.Picture",
+        "android.graphics.drawable.Drawable",
+        "android.graphics.drawable.PictureDrawable",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "com.ismartcoding.lib.androidsvg.SVG",
+        "com.ismartcoding.lib.androidsvg.SVGParseException",
+        "com.ismartcoding.lib.markdown.image.MediaDecoder",
+        "java.io.InputStream",
+        "java.util.Collection",
+        "java.util.Collections"
+      ],
+      "sorties": [
+        "public class SvgPictureMediaDecoder"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/MediaDecoder.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/NetworkSchemeHandler.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/NetworkSchemeHandler.java",
+      "langage": "java",
+      "lignes": 86,
+      "taille_bytes": 2453,
+      "entrees": [
+        "android.net.Uri",
+        "androidx.annotation.NonNull",
+        "androidx.annotation.Nullable",
+        "com.ismartcoding.lib.markdown.image.ImageItem",
+        "com.ismartcoding.lib.markdown.image.SchemeHandler",
+        "java.io.BufferedInputStream",
+        "java.io.IOException",
+        "java.io.InputStream",
+        "java.net.HttpURLConnection",
+        "java.net.URL",
+        "java.util.Arrays",
+        "java.util.Collection"
+      ],
+      "sorties": [
+        "public class NetworkSchemeHandler"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java"
+      ],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/OkHttpNetworkSchemeHandler.java": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/OkHttpNetworkSchemeHandler.java",
+      "langage": "java",
+      "lignes": 99,
+      "taille_bytes": 2831,
+      "entrees": [
+        "android.net.Uri",
+        "androidx.annotation.NonNull",
+        "com.ismartcoding.lib.markdown.image.ImageItem",
+        "com.ismartcoding.lib.markdown.image.SchemeHandler",
+        "java.io.InputStream",
+        "java.util.Arrays",
+        "java.util.Collection",
+        "okhttp3.Call",
+        "okhttp3.OkHttpClient",
+        "okhttp3.Request",
+        "okhttp3.Response",
+        "okhttp3.ResponseBody"
+      ],
+      "sorties": [
+        "public class OkHttpNetworkSchemeHandler"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java",
+        "lib/src/main/java/com/ismartcoding/lib/upnp/Response.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/Printer.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/Printer.kt",
+      "langage": "kotlin",
+      "lignes": 68,
+      "taille_bytes": 1130,
+      "entrees": [],
+      "sorties": [
+        "fun addAdapter",
+        "fun clearLogAdapters",
+        "fun json",
+        "fun log",
+        "fun wtf",
+        "fun xml",
+        "interface Printer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/LogAdapter.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/LogAdapter.kt",
+      "langage": "kotlin",
+      "lignes": 30,
+      "taille_bytes": 815,
+      "entrees": [],
+      "sorties": [
+        "fun isLoggable",
+        "fun log",
+        "interface LogAdapter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/LogStrategy.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/LogStrategy.kt",
+      "langage": "kotlin",
+      "lignes": 17,
+      "taille_bytes": 505,
+      "entrees": [],
+      "sorties": [
+        "fun log",
+        "interface LogStrategy"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/DiskLogStrategy.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/DiskLogStrategy.kt",
+      "langage": "kotlin",
+      "lignes": 51,
+      "taille_bytes": 1529,
+      "entrees": [
+        "android.os.Handler",
+        "android.os.Looper",
+        "android.os.Message",
+        "java.io.File",
+        "java.io.FileWriter",
+        "java.io.IOException"
+      ],
+      "sorties": [
+        "class DiskLogStrategy",
+        "class WriteHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/PrettyFormatStrategy.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/PrettyFormatStrategy.kt",
+      "langage": "kotlin",
+      "lignes": 265,
+      "taille_bytes": 8577,
+      "entrees": [
+        "java.lang.StringBuilder"
+      ],
+      "sorties": [
+        "class Builder",
+        "class PrettyFormatStrategy",
+        "fun build",
+        "fun logStrategy",
+        "fun methodCount",
+        "fun methodOffset",
+        "fun newBuilder",
+        "fun showThreadInfo",
+        "fun tag"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/Utils.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/Utils.kt",
+      "langage": "kotlin",
+      "lignes": 139,
+      "taille_bytes": 4142,
+      "entrees": [
+        "com.ismartcoding.lib.logcat.LogCat.ASSERT",
+        "com.ismartcoding.lib.logcat.LogCat.DEBUG",
+        "com.ismartcoding.lib.logcat.LogCat.ERROR",
+        "com.ismartcoding.lib.logcat.LogCat.INFO",
+        "com.ismartcoding.lib.logcat.LogCat.VERBOSE",
+        "com.ismartcoding.lib.logcat.LogCat.WARN",
+        "java.io.PrintWriter",
+        "java.io.StringWriter",
+        "java.net.UnknownHostException",
+        "java.util.*"
+      ],
+      "sorties": [
+        "fun equals",
+        "fun getStackTraceString",
+        "fun isEmpty",
+        "fun logLevel",
+        "fun toString"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/AndroidLogAdapter.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/AndroidLogAdapter.kt",
+      "langage": "kotlin",
+      "lignes": 41,
+      "taille_bytes": 1043,
+      "entrees": [],
+      "sorties": [
+        "class AndroidLogAdapter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/DiskLogAdapter.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/DiskLogAdapter.kt",
+      "langage": "kotlin",
+      "lignes": 18,
+      "taille_bytes": 394,
+      "entrees": [],
+      "sorties": [
+        "class DiskLogAdapter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/LoggerPrinter.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/LoggerPrinter.kt",
+      "langage": "kotlin",
+      "lignes": 205,
+      "taille_bytes": 5497,
+      "entrees": [
+        "com.ismartcoding.lib.logcat.LogCat.ASSERT",
+        "com.ismartcoding.lib.logcat.LogCat.DEBUG",
+        "com.ismartcoding.lib.logcat.LogCat.ERROR",
+        "com.ismartcoding.lib.logcat.LogCat.INFO",
+        "com.ismartcoding.lib.logcat.LogCat.VERBOSE",
+        "com.ismartcoding.lib.logcat.LogCat.WARN",
+        "java.io.StringReader",
+        "java.io.StringWriter",
+        "java.util.ArrayList",
+        "javax.xml.transform.OutputKeys",
+        "javax.xml.transform.Source",
+        "javax.xml.transform.TransformerException",
+        "javax.xml.transform.TransformerFactory",
+        "javax.xml.transform.stream.StreamResult",
+        "javax.xml.transform.stream.StreamSource",
+        "org.json.JSONArray",
+        "org.json.JSONException",
+        "org.json.JSONObject"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/DiskLogFormatStrategy.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/DiskLogFormatStrategy.kt",
+      "langage": "kotlin",
+      "lignes": 67,
+      "taille_bytes": 2086,
+      "entrees": [
+        "android.content.Context",
+        "android.os.HandlerThread",
+        "java.time.LocalDateTime",
+        "java.time.format.DateTimeFormatter"
+      ],
+      "sorties": [
+        "class DiskLogFormatStrategy",
+        "fun getInstance",
+        "fun getLogFolder",
+        "fun logLevel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/FormatStrategy.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/FormatStrategy.kt",
+      "langage": "kotlin",
+      "lignes": 9,
+      "taille_bytes": 155,
+      "entrees": [],
+      "sorties": [
+        "fun log",
+        "interface FormatStrategy"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "langage": "kotlin",
+      "lignes": 177,
+      "taille_bytes": 4041,
+      "entrees": [],
+      "sorties": [
+        "const val",
+        "fun addLogAdapter",
+        "fun clearLogAdapters",
+        "fun json",
+        "fun log",
+        "fun wtf",
+        "fun xml"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PDFView.kt",
+        "lib/src/main/java/com/ismartcoding/lib/pdfviewer/RenderingHandler.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Postprocessor.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Preprocessor.kt",
+        "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ProcessorHelper.kt",
+        "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPController.kt",
+        "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPDiscovery.kt",
+        "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPEventManager.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/logcat/LogcatLogStrategy.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/logcat/LogcatLogStrategy.kt",
+      "langage": "kotlin",
+      "lignes": 26,
+      "taille_bytes": 556,
+      "entrees": [
+        "android.util.Log"
+      ],
+      "sorties": [
+        "class LogcatLogStrategy",
+        "const val"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/html2md/Options.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/html2md/Options.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 508,
+      "entrees": [],
+      "sorties": [
+        "class Options"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/html2md/ProcessNode.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/html2md/ProcessNode.kt",
+      "langage": "kotlin",
+      "lignes": 171,
+      "taille_bytes": 6190,
+      "entrees": [
+        "com.ismartcoding.lib.html2md.NodeUtils.isNodeType1",
+        "com.ismartcoding.lib.html2md.NodeUtils.isNodeType3",
+        "java.util.regex.Pattern",
+        "org.jsoup.Jsoup",
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.Node"
+      ],
+      "sorties": [
+        "fun flankingWhitespace",
+        "fun isBlank",
+        "fun isBlock",
+        "fun isVoid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/html2md/Table.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/html2md/Table.kt",
+      "langage": "kotlin",
+      "lignes": 116,
+      "taille_bytes": 3400,
+      "entrees": [
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.Node"
+      ],
+      "sorties": [
+        "fun table",
+        "fun tableCaption",
+        "fun tableCell",
+        "fun tableRow",
+        "fun tableSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/html2md/WhitespaceCollapser.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/html2md/WhitespaceCollapser.kt",
+      "langage": "kotlin",
+      "lignes": 111,
+      "taille_bytes": 3653,
+      "entrees": [
+        "com.ismartcoding.lib.html2md.NodeUtils.isNodeType1",
+        "com.ismartcoding.lib.html2md.NodeUtils.isNodeType3",
+        "java.util.regex.Pattern",
+        "org.jsoup.nodes.Node",
+        "org.jsoup.nodes.TextNode"
+      ],
+      "sorties": [
+        "fun collapse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/html2md/MDConverter.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/html2md/MDConverter.kt",
+      "langage": "kotlin",
+      "lignes": 111,
+      "taille_bytes": 3823,
+      "entrees": [
+        "com.ismartcoding.lib.html2md.NodeUtils.isNodeType1",
+        "com.ismartcoding.lib.html2md.NodeUtils.isNodeType3",
+        "java.util.*",
+        "java.util.regex.Pattern",
+        "org.jsoup.nodes.TextNode"
+      ],
+      "sorties": [
+        "class MDConverter",
+        "fun convert"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/html2md/Rules.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/html2md/Rules.kt",
+      "langage": "kotlin",
+      "lignes": 330,
+      "taille_bytes": 12670,
+      "entrees": [
+        "java.util.*",
+        "java.util.regex.Pattern",
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.Node"
+      ],
+      "sorties": [
+        "fun findRule"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/html2md/Rule.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/html2md/Rule.kt",
+      "langage": "kotlin",
+      "lignes": 39,
+      "taille_bytes": 1320,
+      "entrees": [
+        "java.util.*",
+        "java.util.function.BiFunction",
+        "java.util.function.Predicate",
+        "java.util.function.Supplier",
+        "org.jsoup.nodes.Node"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/html2md/Styles.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/html2md/Styles.kt",
+      "langage": "kotlin",
+      "lignes": 22,
+      "taille_bytes": 276,
+      "entrees": [],
+      "sorties": [
+        "enum class"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/html2md/NodeUtils.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/html2md/NodeUtils.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 344,
+      "entrees": [
+        "org.jsoup.nodes.Element",
+        "org.jsoup.nodes.Node"
+      ],
+      "sorties": [
+        "fun isNodeType1",
+        "fun isNodeType3"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/content/ContentSort.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/content/ContentSort.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 102,
+      "entrees": [],
+      "sorties": [
+        "data class ContentSort"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/content/ContentWhere.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/content/ContentWhere.kt",
+      "langage": "kotlin",
+      "lignes": 77,
+      "taille_bytes": 1670,
+      "entrees": [],
+      "sorties": [
+        "data class ContentWhere",
+        "fun add",
+        "fun addEqual",
+        "fun addGt",
+        "fun addIn",
+        "fun addLike",
+        "fun addLikes",
+        "fun addNotEqual",
+        "fun addNotStartsWith",
+        "fun toSelection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/gsonxml/GsonXmlBuilder.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/gsonxml/GsonXmlBuilder.kt",
+      "langage": "kotlin",
+      "lignes": 21,
+      "taille_bytes": 631,
+      "entrees": [
+        "com.google.gson.GsonBuilder"
+      ],
+      "sorties": [
+        "class GsonXmlBuilder",
+        "fun create"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/gsonxml/Stack.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/gsonxml/Stack.kt",
+      "langage": "kotlin",
+      "lignes": 96,
+      "taille_bytes": 1998,
+      "entrees": [],
+      "sorties": [
+        "fun cleanup",
+        "fun drop",
+        "fun fix",
+        "fun peek",
+        "fun push",
+        "fun pushAt",
+        "fun size"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/gsonxml/XmlReader.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/gsonxml/XmlReader.kt",
+      "langage": "kotlin",
+      "lignes": 898,
+      "taille_bytes": 27761,
+      "entrees": [
+        "com.google.gson.JsonSyntaxException",
+        "com.google.gson.stream.JsonReader",
+        "com.google.gson.stream.JsonToken",
+        "java.io.IOException",
+        "java.io.Reader",
+        "org.xmlpull.v1.XmlPullParser",
+        "org.xmlpull.v1.XmlPullParserException",
+        "org.xmlpull.v1.XmlPullParserFactory"
+      ],
+      "sorties": [
+        "class Options",
+        "class XmlReader",
+        "fun clear",
+        "fun create",
+        "fun fill",
+        "fun get",
+        "fun getName",
+        "fun nameWithNs",
+        "fun release"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/gsonxml/GsonXml.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/gsonxml/GsonXml.kt",
+      "langage": "kotlin",
+      "lignes": 85,
+      "taille_bytes": 2690,
+      "entrees": [
+        "com.google.gson.Gson",
+        "com.google.gson.JsonIOException",
+        "com.google.gson.JsonSyntaxException",
+        "com.google.gson.internal.Primitives",
+        "com.google.gson.stream.JsonReader",
+        "com.google.gson.stream.JsonToken",
+        "com.google.gson.stream.MalformedJsonException",
+        "java.io.IOException",
+        "java.io.Reader",
+        "java.io.StringReader",
+        "java.lang.reflect.Type"
+      ],
+      "sorties": [
+        "class GsonXml"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPDevice.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPDevice.kt",
+      "langage": "kotlin",
+      "lignes": 89,
+      "taille_bytes": 2548,
+      "entrees": [
+        "com.ismartcoding.lib.helpers.JsonHelper.jsonEncode",
+        "com.ismartcoding.lib.helpers.XmlHelper",
+        "java.net.URL",
+        "kotlinx.serialization.Serializable"
+      ],
+      "sorties": [
+        "class Device",
+        "class UPnPDevice",
+        "data class DescriptionModel",
+        "data class DeviceService",
+        "fun getAVTransportService",
+        "fun getBaseUrl",
+        "fun isAVTransport",
+        "fun update"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/upnp/Response.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/upnp/Response.kt",
+      "langage": "kotlin",
+      "lignes": 42,
+      "taille_bytes": 909,
+      "entrees": [
+        "com.google.gson.annotations.SerializedName"
+      ],
+      "sorties": [
+        "class GetPositionInfoResponse",
+        "class GetTransportInfoResponse",
+        "class SetAVTransportURIResponse"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/OkHttpNetworkSchemeHandler.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPDiscovery.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPDiscovery.kt",
+      "langage": "kotlin",
+      "lignes": 85,
+      "taille_bytes": 3137,
+      "entrees": [
+        "android.content.Context",
+        "android.net.wifi.WifiManager",
+        "com.ismartcoding.lib.logcat.LogCat",
+        "java.net.DatagramPacket",
+        "java.net.InetAddress",
+        "java.net.MulticastSocket",
+        "java.util.*",
+        "kotlinx.coroutines.channels.awaitClose",
+        "kotlinx.coroutines.flow.Flow",
+        "kotlinx.coroutines.flow.callbackFlow",
+        "kotlinx.coroutines.isActive"
+      ],
+      "sorties": [
+        "fun search"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPEventManager.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPEventManager.kt",
+      "langage": "kotlin",
+      "lignes": 142,
+      "taille_bytes": 4249,
+      "entrees": [
+        "com.ismartcoding.lib.helpers.CoroutinesHelper.withIO",
+        "com.ismartcoding.lib.logcat.LogCat",
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.call.body",
+        "io.ktor.client.engine.cio.CIO",
+        "io.ktor.client.request.HttpRequestBuilder",
+        "io.ktor.client.request.headers",
+        "io.ktor.client.request.request",
+        "io.ktor.client.request.url",
+        "io.ktor.client.statement.HttpResponse",
+        "io.ktor.http.HttpMethod",
+        "io.ktor.http.HttpStatusCode"
+      ],
+      "sorties": [],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPController.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPController.kt",
+      "langage": "kotlin",
+      "lignes": 236,
+      "taille_bytes": 7055,
+      "entrees": [
+        "com.ismartcoding.lib.helpers.CoroutinesHelper.withIO",
+        "com.ismartcoding.lib.helpers.XmlHelper",
+        "com.ismartcoding.lib.logcat.LogCat",
+        "io.ktor.client.HttpClient",
+        "io.ktor.client.call.body",
+        "io.ktor.client.engine.cio.CIO",
+        "io.ktor.client.request.headers",
+        "io.ktor.client.request.post",
+        "io.ktor.client.request.setBody",
+        "io.ktor.http.HttpStatusCode"
+      ],
+      "sorties": [],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/OpmlParseException.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlParseException.kt",
+      "langage": "kotlin",
+      "lignes": 6,
+      "taille_bytes": 175,
+      "entrees": [],
+      "sorties": [
+        "class OpmlParseException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/OpmlBodyHandler.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlBodyHandler.kt",
+      "langage": "kotlin",
+      "lignes": 74,
+      "taille_bytes": 2661,
+      "entrees": [
+        "com.ismartcoding.lib.opml.entity.Body",
+        "com.ismartcoding.lib.opml.entity.Outline",
+        "java.util.ArrayDeque",
+        "java.util.Deque",
+        "org.xmlpull.v1.XmlPullParser"
+      ],
+      "sorties": [],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/opml/entity/Body.kt",
+        "lib/src/main/java/com/ismartcoding/lib/opml/entity/Outline.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt",
+      "langage": "kotlin",
+      "lignes": 176,
+      "taille_bytes": 6583,
+      "entrees": [
+        "com.ismartcoding.lib.opml.entity.Body",
+        "com.ismartcoding.lib.opml.entity.Head",
+        "com.ismartcoding.lib.opml.entity.Opml",
+        "com.ismartcoding.lib.opml.entity.Outline",
+        "java.io.StringWriter",
+        "java.nio.charset.StandardCharsets",
+        "org.xmlpull.v1.XmlPullParserFactory",
+        "org.xmlpull.v1.XmlSerializer"
+      ],
+      "sorties": [
+        "class OpmlWriter",
+        "fun write"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/opml/entity/Body.kt",
+        "lib/src/main/java/com/ismartcoding/lib/opml/entity/Head.kt",
+        "lib/src/main/java/com/ismartcoding/lib/opml/entity/Opml.kt",
+        "lib/src/main/java/com/ismartcoding/lib/opml/entity/Outline.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/ValidityCheck.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/ValidityCheck.kt",
+      "langage": "kotlin",
+      "lignes": 64,
+      "taille_bytes": 1897,
+      "entrees": [
+        "org.xmlpull.v1.XmlPullParser",
+        "org.xmlpull.v1.XmlPullParserException"
+      ],
+      "sorties": [
+        "fun require",
+        "fun requireName",
+        "fun requireNoText",
+        "fun requirePosition",
+        "fun translate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/OpmlParser.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlParser.kt",
+      "langage": "kotlin",
+      "lignes": 109,
+      "taille_bytes": 3919,
+      "entrees": [
+        "com.ismartcoding.lib.opml.entity.Opml",
+        "java.io.IOException",
+        "java.io.Reader",
+        "java.util.ArrayDeque",
+        "java.util.Deque",
+        "org.xmlpull.v1.XmlPullParser",
+        "org.xmlpull.v1.XmlPullParserException",
+        "org.xmlpull.v1.XmlPullParserFactory"
+      ],
+      "sorties": [
+        "class OpmlParser",
+        "fun parse"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/opml/entity/Opml.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/OpmlSectionHandler.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlSectionHandler.kt",
+      "langage": "kotlin",
+      "lignes": 13,
+      "taille_bytes": 242,
+      "entrees": [
+        "org.xmlpull.v1.XmlPullParser"
+      ],
+      "sorties": [
+        "fun endTag",
+        "fun get",
+        "fun startTag",
+        "fun text"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/OpmlHeadHandler.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlHeadHandler.kt",
+      "langage": "kotlin",
+      "lignes": 149,
+      "taille_bytes": 5542,
+      "entrees": [
+        "com.ismartcoding.lib.opml.entity.Head",
+        "java.util.ArrayDeque",
+        "java.util.Deque",
+        "org.xmlpull.v1.XmlPullParser"
+      ],
+      "sorties": [],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/opml/entity/Head.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/OpmlInitHandler.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlInitHandler.kt",
+      "langage": "kotlin",
+      "lignes": 29,
+      "taille_bytes": 800,
+      "entrees": [
+        "org.xmlpull.v1.XmlPullParser"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/entity/Opml.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Opml.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 106,
+      "entrees": [],
+      "sorties": [
+        "class Opml"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/opml/OpmlParser.kt",
+        "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/entity/Outline.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Outline.kt",
+      "langage": "kotlin",
+      "lignes": 11,
+      "taille_bytes": 313,
+      "entrees": [],
+      "sorties": [
+        "class Outline",
+        "fun getName",
+        "fun getUrl"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/opml/OpmlBodyHandler.kt",
+        "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/entity/Body.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Body.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 82,
+      "entrees": [],
+      "sorties": [
+        "class Body"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/opml/OpmlBodyHandler.kt",
+        "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/opml/entity/Head.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Head.kt",
+      "langage": "kotlin",
+      "lignes": 22,
+      "taille_bytes": 608,
+      "entrees": [],
+      "sorties": [
+        "class Head"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/opml/OpmlHeadHandler.kt",
+        "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/data/OpenableFile.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/data/OpenableFile.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 99,
+      "entrees": [],
+      "sorties": [
+        "data class OpenableFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/data/SortBy.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/data/SortBy.kt",
+      "langage": "kotlin",
+      "lignes": 5,
+      "taille_bytes": 156,
+      "entrees": [
+        "com.ismartcoding.lib.data.enums.SortDirection"
+      ],
+      "sorties": [
+        "data class SortBy"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/data/enums/SortDirection.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/data/enums/SortDirection.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/data/enums/SortDirection.kt",
+      "langage": "kotlin",
+      "lignes": 6,
+      "taille_bytes": 89,
+      "entrees": [],
+      "sorties": [
+        "enum class"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/src/main/java/com/ismartcoding/lib/data/SortBy.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PagesLoader.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PagesLoader.kt",
+      "langage": "kotlin",
+      "lignes": 292,
+      "taille_bytes": 11830,
+      "entrees": [
+        "android.graphics.RectF",
+        "com.ismartcoding.lib.extensions.dp2px",
+        "com.ismartcoding.lib.pdfviewer.util.Constants",
+        "com.ismartcoding.lib.pdfviewer.util.Constants.CACHE_SIZE",
+        "com.ismartcoding.lib.pdfviewer.util.Constants.PRELOAD_OFFSET",
+        "com.ismartcoding.lib.pdfviewer.util.MathUtils.ceil",
+        "com.ismartcoding.lib.pdfviewer.util.MathUtils.floor",
+        "com.ismartcoding.lib.pdfviewer.util.MathUtils.max",
+        "com.ismartcoding.lib.pdfviewer.util.MathUtils.min",
+        "java.util.*"
+      ],
+      "sorties": [
+        "fun loadPages"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/Constants.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/DecodingAsyncTask.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/DecodingAsyncTask.kt",
+      "langage": "kotlin",
+      "lignes": 60,
+      "taille_bytes": 1929,
+      "entrees": [
+        "android.os.AsyncTask",
+        "com.ismartcoding.lib.pdfviewer.source.DocumentSource",
+        "com.shockwave.pdfium.PdfiumCore",
+        "com.shockwave.pdfium.util.Size",
+        "java.lang.NullPointerException",
+        "java.lang.ref.WeakReference"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PDFView.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PDFView.kt",
+      "langage": "kotlin",
+      "lignes": 1336,
+      "taille_bytes": 44118,
+      "entrees": [
+        "android.content.Context",
+        "android.graphics.*",
+        "android.net.Uri",
+        "android.os.AsyncTask",
+        "android.os.HandlerThread",
+        "android.util.AttributeSet",
+        "android.widget.RelativeLayout",
+        "com.ismartcoding.lib.extensions.dp2px",
+        "com.ismartcoding.lib.logcat.LogCat",
+        "com.ismartcoding.lib.pdfviewer.exception.PageRenderingException",
+        "com.ismartcoding.lib.pdfviewer.link.DefaultLinkHandler",
+        "com.ismartcoding.lib.pdfviewer.link.LinkHandler",
+        "com.ismartcoding.lib.pdfviewer.listener.*",
+        "com.ismartcoding.lib.pdfviewer.model.PagePart",
+        "com.ismartcoding.lib.pdfviewer.scroll.ScrollHandle",
+        "com.ismartcoding.lib.pdfviewer.source.*",
+        "com.ismartcoding.lib.pdfviewer.util.Constants",
+        "com.ismartcoding.lib.pdfviewer.util.FitPolicy",
+        "com.ismartcoding.lib.pdfviewer.util.MathUtils",
+        "com.ismartcoding.lib.pdfviewer.util.SnapEdge",
+        "com.shockwave.pdfium.PdfDocument",
+        "com.shockwave.pdfium.PdfDocument.Bookmark",
+        "com.shockwave.pdfium.PdfDocument.Meta",
+        "com.shockwave.pdfium.PdfiumCore",
+        "com.shockwave.pdfium.util.Size",
+        "com.shockwave.pdfium.util.SizeF",
+        "docSource",
+        "java.io.File",
+        "java.io.InputStream",
+        "java.lang.ref.WeakReference"
+      ],
+      "sorties": [
+        "class PDFView",
+        "const val",
+        "fun autoSpacing",
+        "fun defaultPage",
+        "fun disableLongpress",
+        "fun doRenderDuringScale",
+        "fun documentFitsView",
+        "fun enableAnnotationRendering",
+        "fun enableAntialiasing",
+        "fun enableDoubletap",
+        "fun enableRenderDuringScale",
+        "fun enableSwipe",
+        "fun findFocusPage",
+        "fun findSnapEdge",
+        "fun fitEachPage",
+        "fun fitToWidth",
+        "fun fromAsset",
+        "fun fromBytes",
+        "fun fromFile",
+        "fun fromSource",
+        "fun fromStream",
+        "fun fromUri",
+        "fun getLinks",
+        "fun getPageAtPositionOffset",
+        "fun getPageSize",
+        "fun jumpTo",
+        "fun linkHandler",
+        "fun load",
+        "fun loadComplete",
+        "fun loadError",
+        "fun loadPageByOffset",
+        "fun loadPages",
+        "fun moveRelativeTo",
+        "fun moveTo",
+        "fun nightMode",
+        "fun onBitmapRendered",
+        "fun onDraw",
+        "fun onDrawAll",
+        "fun onError",
+        "fun onLoad",
+        "fun onLongPress",
+        "fun onPageChange",
+        "fun onPageError",
+        "fun onPageScroll",
+        "fun onRender",
+        "fun onTap",
+        "fun pageFillsScreen",
+        "fun pageFitPolicy",
+        "fun pageFling",
+        "fun pageSnap",
+        "fun pages",
+        "fun password",
+        "fun performPageSnap",
+        "fun recycle",
+        "fun redraw",
+        "fun resetZoom",
+        "fun resetZoomWithAnimation",
+        "fun scrollHandle",
+        "fun setNightMode",
+        "fun setPageFling",
+        "fun setPositionOffset",
+        "fun showPage",
+        "fun snapOffsetForPage",
+        "fun spacing",
+        "fun stopFling",
+        "fun swipeHorizontal",
+        "fun toCurrentScale",
+        "fun toRealScale",
+        "fun useBestQuality",
+        "fun zoomCenteredRelativeTo",
+        "fun zoomCenteredTo",
+        "fun zoomTo",
+        "fun zoomWithAnimation"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/Constants.kt",
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/RenderingHandler.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/RenderingHandler.kt",
+      "langage": "kotlin",
+      "lignes": 118,
+      "taille_bytes": 3853,
+      "entrees": [
+        "android.graphics.*",
+        "android.os.*",
+        "com.ismartcoding.lib.logcat.LogCat",
+        "com.ismartcoding.lib.pdfviewer.RenderingHandler.RenderingTask",
+        "com.ismartcoding.lib.pdfviewer.exception.PageRenderingException",
+        "com.ismartcoding.lib.pdfviewer.model.PagePart",
+        "kotlin.math.roundToInt"
+      ],
+      "sorties": [
+        "class RenderingHandler",
+        "const val",
+        "fun addRenderingTask",
+        "fun start",
+        "fun stop"
+      ],
+      "appelle": [
+        "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/DragPinchManager.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/DragPinchManager.kt",
+      "langage": "kotlin",
+      "lignes": 296,
+      "taille_bytes": 9820,
+      "entrees": [
+        "android.graphics.PointF",
+        "android.view.*",
+        "android.view.ScaleGestureDetector.OnScaleGestureListener",
+        "android.view.View.OnTouchListener",
+        "com.ismartcoding.lib.pdfviewer.model.LinkTapEvent",
+        "com.ismartcoding.lib.pdfviewer.scroll.ScrollHandle",
+        "com.ismartcoding.lib.pdfviewer.util.Constants.PINCH_MAXIMUM_ZOOM",
+        "com.ismartcoding.lib.pdfviewer.util.Constants.PINCH_MINIMUM_ZOOM",
+        "java.lang.Integer.max",
+        "kotlin.math.abs",
+        "kotlin.math.min"
+      ],
+      "sorties": [
+        "fun disableLongPress"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PdfFile.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PdfFile.kt",
+      "langage": "kotlin",
+      "lignes": 395,
+      "taille_bytes": 11953,
+      "entrees": [
+        "android.graphics.*",
+        "android.util.SparseBooleanArray",
+        "com.ismartcoding.lib.pdfviewer.exception.PageRenderingException",
+        "com.ismartcoding.lib.pdfviewer.util.FitPolicy",
+        "com.ismartcoding.lib.pdfviewer.util.PageSizeCalculator",
+        "com.shockwave.pdfium.PdfDocument",
+        "com.shockwave.pdfium.PdfDocument.Bookmark",
+        "com.shockwave.pdfium.PdfDocument.Meta",
+        "com.shockwave.pdfium.PdfiumCore",
+        "com.shockwave.pdfium.util.Size",
+        "com.shockwave.pdfium.util.SizeF",
+        "kotlin.math.max"
+      ],
+      "sorties": [
+        "class PdfFile",
+        "fun determineValidPageNumberFrom",
+        "fun dispose",
+        "fun documentPage",
+        "fun getDocLen",
+        "fun getPageAtOffset",
+        "fun getPageLength",
+        "fun getPageLinks",
+        "fun getPageOffset",
+        "fun getPageSize",
+        "fun getPageSpacing",
+        "fun getScaledPageSize",
+        "fun getSecondaryPageOffset",
+        "fun mapRectToDevice",
+        "fun openPage",
+        "fun pageHasError",
+        "fun recalculatePageSizes",
+        "fun renderPageBitmap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/AnimationManager.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/AnimationManager.kt",
+      "langage": "kotlin",
+      "lignes": 189,
+      "taille_bytes": 5602,
+      "entrees": [
+        "android.animation.Animator",
+        "android.animation.AnimatorListenerAdapter",
+        "android.animation.ValueAnimator",
+        "android.animation.ValueAnimator.AnimatorUpdateListener",
+        "android.graphics.PointF",
+        "android.view.animation.DecelerateInterpolator",
+        "android.widget.OverScroller"
+      ],
+      "sorties": [
+        "fun computeFling",
+        "fun isFlinging",
+        "fun startFlingAnimation",
+        "fun startPageFlingAnimation",
+        "fun startXAnimation",
+        "fun startYAnimation",
+        "fun startZoomAnimation",
+        "fun stopAll",
+        "fun stopFling"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/CacheManager.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/CacheManager.kt",
+      "langage": "kotlin",
+      "lignes": 169,
+      "taille_bytes": 4911,
+      "entrees": [
+        "android.graphics.RectF",
+        "com.ismartcoding.lib.pdfviewer.model.PagePart",
+        "com.ismartcoding.lib.pdfviewer.util.Constants.CACHE_SIZE",
+        "com.ismartcoding.lib.pdfviewer.util.Constants.THUMBNAILS_CACHE_SIZE",
+        "java.util.*"
+      ],
+      "sorties": [
+        "class CacheManager",
+        "fun cachePart",
+        "fun cacheThumbnail",
+        "fun containsThumbnail",
+        "fun getThumbnails",
+        "fun makeANewSet",
+        "fun recycle",
+        "fun upPartIfContained"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/listener/OnTapListener.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/listener/OnTapListener.kt",
+      "langage": "kotlin",
+      "lignes": 17,
+      "taille_bytes": 508,
+      "entrees": [
+        "android.view.MotionEvent"
+      ],
+      "sorties": [
+        "fun onTap",
+        "interface OnTapListener"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/listener/Callbacks.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/listener/Callbacks.kt",
+      "langage": "kotlin",
+      "lignes": 103,
+      "taille_bytes": 2517,
+      "entrees": [
+        "android.view.MotionEvent",
+        "com.ismartcoding.lib.pdfviewer.link.LinkHandler",
+        "com.ismartcoding.lib.pdfviewer.model.LinkTapEvent"
+      ],
+      "sorties": [
+        "class Callbacks",
+        "fun callLinkHandler",
+        "fun callOnLoadComplete",
+        "fun callOnLongPress",
+        "fun callOnPageChange",
+        "fun callOnPageError",
+        "fun callOnPageScroll",
+        "fun callOnRender",
+        "fun callOnTap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/src/main/java/com/ismartcoding/lib/pdfviewer/listener/OnRenderListener.kt": {
+      "fichier": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/listener/OnRenderListener.kt",
+      "langage": "kotlin",
+      "lignes": 9,
+      "taille_bytes": 227,
+      "entrees": [],
+      "sorties": [
+        "fun onInitiallyRendered",
+        "interface OnRenderListener"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/MetadataParser.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Postprocessor.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Preprocessor.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/MetadataParser.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleMetadata.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleGrabberOptions.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/ArticleMetadata.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/ReadabilityObject.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/ReadabilityOptions.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ArticleGrabber.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/RegExUtil.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Postprocessor.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/Preprocessor.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ProcessorHelper.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ProcessorHelper.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/readability4j/RegExUtil.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageSchemeHandler.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/AppImageSchemeHandler.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/NetworkSchemeHandler.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/NetworkSchemeHandler.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriSchemeHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/gif/GifMediaDecoder.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/NetworkSchemeHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgMediaDecoder.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/gif/GifMediaDecoder.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/MediaDecoder.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriSchemeHandler.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/data/DataUriSchemeHandler.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/file/FileSchemeHandler.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/file/FileSchemeHandler.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgMediaDecoder.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/MediaDecoder.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/svg/SvgPictureMediaDecoder.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/MediaDecoder.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/NetworkSchemeHandler.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/NetworkSchemeHandler.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/OkHttpNetworkSchemeHandler.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/OkHttpNetworkSchemeHandler.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/markdown/image/network/OkHttpNetworkSchemeHandler.java",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/upnp/Response.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPDiscovery.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPEventManager.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/upnp/UPnPController.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlBodyHandler.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Body.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlBodyHandler.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Outline.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Body.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Head.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Opml.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Outline.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlParser.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Opml.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/opml/OpmlHeadHandler.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/opml/entity/Head.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/data/SortBy.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/data/enums/SortDirection.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PagesLoader.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/Constants.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PDFView.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/Constants.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/PDFView.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "lib/src/main/java/com/ismartcoding/lib/pdfviewer/RenderingHandler.kt",
+      "vers": "lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/readability4j/Readability4J.kt'",
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/readability4j/processor/ProcessorHelper.kt'",
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/markdown/AppImageSchemeHandler.kt'",
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/markdown/NetworkSchemeHandler.kt'",
+    "feuille → 'lib/src/main/java/com/ismartcoding/lib/markdown/image/ImageItem.java' (in=6)",
+    "feuille → 'lib/src/main/java/com/ismartcoding/lib/markdown/image/SchemeHandler.java' (in=6)",
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/markdown/image/AsyncDrawableLoaderBuilder.java'",
+    "feuille → 'lib/src/main/java/com/ismartcoding/lib/markdown/image/MediaDecoder.java' (in=3)",
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/markdown/image/file/FileSchemeHandler.java'",
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/markdown/image/network/OkHttpNetworkSchemeHandler.java'",
+    "feuille → 'lib/src/main/java/com/ismartcoding/lib/logcat/LogCat.kt' (in=10)",
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/opml/OpmlBodyHandler.kt'",
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/opml/OpmlWriter.kt'",
+    "point_entree → 'lib/src/main/java/com/ismartcoding/lib/pdfviewer/PDFView.kt'"
+  ]
+}

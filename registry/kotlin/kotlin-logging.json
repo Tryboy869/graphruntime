@@ -1,0 +1,2458 @@
+{
+  "meta": {
+    "projet": "kotlin-logging",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "kotlin": 102,
+      "yaml": 1,
+      "json": 1,
+      "html": 1,
+      "javascript": 1,
+      "xml": 2,
+      "java": 1,
+      "toml": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 110,
+    "edges_total": 88,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 1,
+    "noeuds_feuilles": 7,
+    "noeuds_hubs": 0,
+    "points_entree": 15,
+    "fichier_plus_appele": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt"
+  },
+  "noeuds": {
+    "settings.gradle.kts": {
+      "fichier": "settings.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 11,
+      "taille_bytes": 204,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "_config.yml": {
+      "fichier": "_config.yml",
+      "langage": "yaml",
+      "lignes": 1,
+      "taille_bytes": 26,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.gradle.kts": {
+      "fichier": "build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 421,
+      "taille_bytes": 13334,
+      "entrees": [
+        "org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL",
+        "org.gradle.jvm.tasks.Jar",
+        "org.jetbrains.kotlin.gradle.dsl.JvmTarget",
+        "org.jetbrains.kotlin.gradle.dsl.KotlinVersion",
+        "org.jetbrains.kotlin.gradle.tasks.KotlinCompile"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/params.json": {
+      "fichier": "docs/params.json",
+      "langage": "json",
+      "lignes": 6,
+      "taille_bytes": 2009,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/index.html": {
+      "fichier": "docs/index.html",
+      "langage": "html",
+      "lignes": 64,
+      "taille_bytes": 4460,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/javascripts/scale.fix.js": {
+      "fichier": "docs/javascripts/scale.fix.js",
+      "langage": "javascript",
+      "lignes": 17,
+      "taille_bytes": 536,
+      "entrees": [],
+      "sorties": [
+        "function gestureStart"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/DarwinKLogger.kt": {
+      "fichier": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/DarwinKLogger.kt",
+      "langage": "kotlin",
+      "lignes": 54,
+      "taille_bytes": 1950,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.cinterop.kotlin_logging_os_log",
+        "io.github.oshai.kotlinlogging.internal.DarwinFormatter",
+        "kotlinx.cinterop.ExperimentalForeignApi",
+        "platform.darwin.OS_LOG_TYPE_DEBUG",
+        "platform.darwin.OS_LOG_TYPE_DEFAULT",
+        "platform.darwin.OS_LOG_TYPE_ERROR",
+        "platform.darwin.OS_LOG_TYPE_INFO",
+        "platform.darwin.os_log_t",
+        "platform.darwin.os_log_type_enabled",
+        "platform.darwin.os_log_type_t"
+      ],
+      "sorties": [
+        "public class DarwinKLogger"
+      ],
+      "appelle": [
+        "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatter.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/DefaultAppender.kt": {
+      "fichier": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/DefaultAppender.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 100,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt": {
+      "fichier": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "langage": "kotlin",
+      "lignes": 66,
+      "taille_bytes": 2156,
+      "entrees": [
+        "kotlin.concurrent.AtomicReference"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt": {
+      "fichier": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt",
+      "langage": "kotlin",
+      "lignes": 17,
+      "taille_bytes": 502,
+      "entrees": [
+        "kotlinx.cinterop.ExperimentalForeignApi",
+        "platform.posix.fprintf",
+        "platform.posix.stderr"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/DarwinLoggerFactory.kt": {
+      "fichier": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/DarwinLoggerFactory.kt",
+      "langage": "kotlin",
+      "lignes": 39,
+      "taille_bytes": 1404,
+      "entrees": [
+        "kotlin.concurrent.AtomicReference",
+        "platform.darwin.OS_LOG_DEFAULT",
+        "platform.darwin.os_log_create"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt": {
+      "fichier": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt",
+      "langage": "kotlin",
+      "lignes": 6,
+      "taille_bytes": 183,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt": {
+      "fichier": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt",
+      "langage": "kotlin",
+      "lignes": 5,
+      "taille_bytes": 168,
+      "entrees": [
+        "kotlin.system.getTimeMillis"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatter.kt": {
+      "fichier": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatter.kt",
+      "langage": "kotlin",
+      "lignes": 21,
+      "taille_bytes": 521,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder",
+        "io.github.oshai.kotlinlogging.Marker"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt"
+      ],
+      "est_appele_par": [
+        "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/DarwinKLogger.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt": {
+      "fichier": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 125,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonTest/kotlin/io/github/oshai/kotlinlogging/SimpleTest.kt": {
+      "fichier": "src/commonTest/kotlin/io/github/oshai/kotlinlogging/SimpleTest.kt",
+      "langage": "kotlin",
+      "lignes": 25,
+      "taille_bytes": 549,
+      "entrees": [
+        "kotlin.test.Test"
+      ],
+      "sorties": [
+        "class SimpleTest",
+        "fun shouldSupportMarkers",
+        "fun simpleTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonTest/kotlin/io/github/oshai/kotlinlogging/KLoggingEventTest.kt": {
+      "fichier": "src/commonTest/kotlin/io/github/oshai/kotlinlogging/KLoggingEventTest.kt",
+      "langage": "kotlin",
+      "lignes": 20,
+      "taille_bytes": 679,
+      "entrees": [
+        "kotlin.test.Test",
+        "kotlin.test.assertTrue"
+      ],
+      "sorties": [
+        "class KLoggingEventTest",
+        "fun testTimestampIsRecent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonTest/kotlin/io/github/oshai/kotlinlogging/internal/MessageInvokerTest.kt": {
+      "fichier": "src/commonTest/kotlin/io/github/oshai/kotlinlogging/internal/MessageInvokerTest.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 327,
+      "entrees": [
+        "kotlin.test.Test",
+        "kotlin.test.assertEquals"
+      ],
+      "sorties": [
+        "class MessageInvokerTest",
+        "fun toStringSafeChecks"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinTest/kotlin/io/github/oshai/kotlinlogging/Issue588Test.kt": {
+      "fichier": "src/darwinTest/kotlin/io/github/oshai/kotlinlogging/Issue588Test.kt",
+      "langage": "kotlin",
+      "lignes": 15,
+      "taille_bytes": 358,
+      "entrees": [
+        "kotlin.test.Test",
+        "platform.Foundation.NSUUID"
+      ],
+      "sorties": [
+        "class Issue588Test",
+        "fun testHistoricalLogging"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/darwinTest/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatterTest.kt": {
+      "fichier": "src/darwinTest/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatterTest.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 338,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder",
+        "kotlin.test.*"
+      ],
+      "sorties": [
+        "class DarwinFormatterTest",
+        "fun simpleTest"
+      ],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt": {
+      "fichier": "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "langage": "kotlin",
+      "lignes": 40,
+      "taille_bytes": 1253,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt": {
+      "fichier": "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt",
+      "langage": "kotlin",
+      "lignes": 22,
+      "taille_bytes": 876,
+      "entrees": [],
+      "sorties": [
+        "public class ConsoleOutputAppender"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt": {
+      "fichier": "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt",
+      "langage": "kotlin",
+      "lignes": 25,
+      "taille_bytes": 960,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt": {
+      "fichier": "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt",
+      "langage": "kotlin",
+      "lignes": 9,
+      "taille_bytes": 191,
+      "entrees": [],
+      "sorties": [
+        "fun now"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt": {
+      "fichier": "src/wasmJsMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 125,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/resources/log4j2.xml": {
+      "fichier": "src/jvmTest/resources/log4j2.xml",
+      "langage": "xml",
+      "lignes": 15,
+      "taille_bytes": 509,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/StartupMessageTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/StartupMessageTest.kt",
+      "langage": "kotlin",
+      "lignes": 17,
+      "taille_bytes": 471,
+      "entrees": [
+        "kotlin.test.Test",
+        "kotlin.test.assertTrue"
+      ],
+      "sorties": [
+        "class StartupMessageTest",
+        "fun testApiExistence"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/ClassWithLoggingForLocationTesting.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/ClassWithLoggingForLocationTesting.kt",
+      "langage": "kotlin",
+      "lignes": 37,
+      "taille_bytes": 662,
+      "entrees": [],
+      "sorties": [
+        "class ClassWithLoggingForLocationTesting",
+        "fun log",
+        "fun logEntry",
+        "fun logExitOpt",
+        "fun logFluentWithPayload",
+        "fun logLazy",
+        "fun logNull"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingMDCTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingMDCTest.kt",
+      "langage": "kotlin",
+      "lignes": 206,
+      "taille_bytes": 5893,
+      "entrees": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.core.config.Configurator",
+        "org.junit.jupiter.api.Assertions.assertEquals",
+        "org.junit.jupiter.api.Assertions.assertNull",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.api.TestInstance",
+        "org.junit.jupiter.api.assertAll",
+        "org.junit.jupiter.params.ParameterizedTest",
+        "org.junit.jupiter.params.provider.ValueSource",
+        "org.slf4j.MDC"
+      ],
+      "sorties": [
+        "class KotlinLoggingMDCTest",
+        "fun setUp"
+      ],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingTest.kt",
+      "langage": "kotlin",
+      "lignes": 51,
+      "taille_bytes": 1510,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.slf4j.logger",
+        "io.github.oshai.kotlinlogging.slf4j.toKLogger",
+        "org.junit.jupiter.api.Assertions.assertEquals",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.api.assertAll",
+        "org.slf4j.LoggerFactory"
+      ],
+      "sorties": [
+        "class ForKotlinLoggingTest",
+        "class KotlinLoggingTest",
+        "fun testLoggerName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/LoggingWithLocationTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/LoggingWithLocationTest.kt",
+      "langage": "kotlin",
+      "lignes": 91,
+      "taille_bytes": 2742,
+      "entrees": [
+        "org.apache.logging.log4j.Level",
+        "org.apache.logging.log4j.core.config.Configurator",
+        "org.junit.jupiter.api.AfterEach",
+        "org.junit.jupiter.api.Assertions.assertEquals",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "class LoggingWithLocationTest",
+        "fun removeAppender",
+        "fun setupAppender",
+        "fun testFluentLoggingWithLocation",
+        "fun testLazyLoggingWithLocation",
+        "fun testLoggingWithLocation",
+        "fun testNullLoggingWithLocation",
+        "fun testNullLoggingWithLocationEntryExit",
+        "fun testNullLoggingWithLocationEntryExitOpt"
+      ],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/CustomFlowTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/CustomFlowTest.kt",
+      "langage": "kotlin",
+      "lignes": 103,
+      "taille_bytes": 3620,
+      "entrees": [
+        "org.junit.jupiter.api.AfterEach",
+        "org.junit.jupiter.api.Assertions.assertEquals",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "class CustomFlowTest",
+        "class TestLogger",
+        "fun setup",
+        "fun tearDown",
+        "fun testCustomAppenderAndFormatterWithDirectLogging",
+        "fun testCustomFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/AppenderWithWriter.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/AppenderWithWriter.kt",
+      "langage": "kotlin",
+      "lignes": 29,
+      "taille_bytes": 1084,
+      "entrees": [
+        "java.io.StringWriter",
+        "org.apache.logging.log4j.LogManager",
+        "org.apache.logging.log4j.core.Appender",
+        "org.apache.logging.log4j.core.appender.WriterAppender",
+        "org.apache.logging.log4j.core.layout.PatternLayout"
+      ],
+      "sorties": [
+        "data class AppenderWithWriter",
+        "fun addAppender",
+        "fun newPatternLayout",
+        "fun removeAppender"
+      ],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Appender.kt"
+      ],
+      "est_appele_par": [
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jMarkerTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jMarkerTest.kt",
+      "langage": "kotlin",
+      "lignes": 75,
+      "taille_bytes": 2237,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.KotlinLogging",
+        "io.github.oshai.kotlinlogging.addAppender",
+        "io.github.oshai.kotlinlogging.removeAppender",
+        "kotlin.test.assertEquals",
+        "org.apache.logging.log4j.core.Appender",
+        "org.apache.logging.log4j.core.LogEvent",
+        "org.apache.logging.log4j.core.appender.NullAppender",
+        "org.apache.logging.slf4j.Log4jMarker",
+        "org.junit.jupiter.api.AfterEach",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [
+        "class Slf4jMarkerTest",
+        "fun removeAppender",
+        "fun setupAppender"
+      ],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Appender.kt",
+        "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/internal/MessageInvokerJavaTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/internal/MessageInvokerJavaTest.kt",
+      "langage": "kotlin",
+      "lignes": 33,
+      "taille_bytes": 803,
+      "entrees": [
+        "kotlin.test.assertEquals",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.api.assertThrows"
+      ],
+      "sorties": [
+        "class MessageInvokerJavaTest",
+        "fun toStringSafeChecks",
+        "fun toStringSafeChecksThrowException",
+        "fun toStringSafeChecksThrowExceptionWithSystemProperty"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolverTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolverTest.kt",
+      "langage": "kotlin",
+      "lignes": 89,
+      "taille_bytes": 2587,
+      "entrees": [
+        "class",
+        "java.util.stream.Stream",
+        "kotlin.reflect.KClass",
+        "org.junit.jupiter.api.Assertions.assertEquals",
+        "org.junit.jupiter.api.TestInstance",
+        "org.junit.jupiter.params.ParameterizedTest",
+        "org.junit.jupiter.params.provider.Arguments",
+        "org.junit.jupiter.params.provider.MethodSource"
+      ],
+      "sorties": [
+        "class ChildClass",
+        "class Foo",
+        "class InnerClass",
+        "class KLoggerNameResolverTest",
+        "class PrivateCompanion",
+        "fun testNames",
+        "interface MyInterface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt",
+      "langage": "kotlin",
+      "lignes": 75,
+      "taille_bytes": 2713,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.AppenderWithWriter",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KotlinLogging",
+        "io.github.oshai.kotlinlogging.KotlinLoggingConfiguration",
+        "io.github.oshai.kotlinlogging.addAppender",
+        "io.github.oshai.kotlinlogging.removeAppender",
+        "io.github.oshai.kotlinlogging.slf4j.internal.Slf4jLoggerFactory",
+        "java.util.logging.Level",
+        "java.util.logging.Logger",
+        "org.junit.jupiter.api.AfterAll",
+        "org.junit.jupiter.api.Assertions.*",
+        "org.junit.jupiter.api.BeforeAll",
+        "org.junit.jupiter.api.Test",
+        "org.slf4j.bridge.SLF4JBridgeHandler"
+      ],
+      "sorties": [
+        "class JulLoggerWrapperTest",
+        "fun init",
+        "fun teardown",
+        "fun testJulLogger"
+      ],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+        "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt",
+        "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/AppenderWithWriter.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/coroutines/KotlinLoggingAsyncMDCTest.kt": {
+      "fichier": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/coroutines/KotlinLoggingAsyncMDCTest.kt",
+      "langage": "kotlin",
+      "lignes": 161,
+      "taille_bytes": 4429,
+      "entrees": [
+        "kotlin.test.*",
+        "kotlinx.coroutines.ExperimentalCoroutinesApi",
+        "kotlinx.coroutines.test.runTest",
+        "org.apache.logging.log4j.*",
+        "org.apache.logging.log4j.core.config.*",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.slf4j.*"
+      ],
+      "sorties": [
+        "class KotlinLoggingAsyncMDCTest",
+        "fun beforeEach"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmWasiTest/kotlin/io/github/oshai/kotlinlogging/SimpleWasmWasiTest.kt": {
+      "fichier": "src/wasmWasiTest/kotlin/io/github/oshai/kotlinlogging/SimpleWasmWasiTest.kt",
+      "langage": "kotlin",
+      "lignes": 97,
+      "taille_bytes": 2982,
+      "entrees": [
+        "kotlin.test.*"
+      ],
+      "sorties": [
+        "class SimpleAppender",
+        "class SimpleWasmWasiTest",
+        "fun anonymousClassPropWasiTest",
+        "fun anonymousFilePropWasiTest",
+        "fun anonymousFunctionWasiTest_stacktraceFallback",
+        "fun cleanup",
+        "fun offLevelWasiTest",
+        "fun setup",
+        "fun simpleWasiTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "langage": "kotlin",
+      "lignes": 57,
+      "taille_bytes": 1916,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.jul.internal.JulLoggerFactory",
+        "io.github.oshai.kotlinlogging.logback.internal.LogbackLoggerFactory",
+        "io.github.oshai.kotlinlogging.slf4j.internal.Slf4jLoggerFactory"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerFactory.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingMDC.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingMDC.kt",
+      "langage": "kotlin",
+      "lignes": 106,
+      "taille_bytes": 2306,
+      "entrees": [
+        "org.slf4j.MDC"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KLogging.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KLogging.kt",
+      "langage": "kotlin",
+      "lignes": 43,
+      "taille_bytes": 1390,
+      "entrees": [],
+      "sorties": [
+        "public interface KLoggable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/Target_io_github_oshai_kotlinlogging_internal_KLoggerFactory.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/Target_io_github_oshai_kotlinlogging_internal_KLoggerFactory.kt",
+      "langage": "kotlin",
+      "lignes": 47,
+      "taille_bytes": 1761,
+      "entrees": [
+        "com.oracle.svm.core.annotate.Substitute",
+        "com.oracle.svm.core.annotate.TargetClass",
+        "com.oracle.svm.core.annotate.TargetElement",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.jul.internal.JulLoggerFactory",
+        "io.github.oshai.kotlinlogging.slf4j.internal.Slf4jLoggerFactory",
+        "java.util.function.BooleanSupplier"
+      ],
+      "sorties": [
+        "fun logger"
+      ],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt",
+      "langage": "kotlin",
+      "lignes": 11,
+      "taille_bytes": 315,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/JulExtensions.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/JulExtensions.kt",
+      "langage": "kotlin",
+      "lignes": 1,
+      "taille_bytes": 42,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt",
+      "langage": "kotlin",
+      "lignes": 16,
+      "taille_bytes": 553,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggerFactory",
+        "java.util.logging.Logger"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt"
+      ],
+      "est_appele_par": [
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/Target_io_github_oshai_kotlinlogging_internal_KLoggerFactory.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+      "langage": "kotlin",
+      "lignes": 47,
+      "taille_bytes": 1392,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.DelegatingKLogger",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder",
+        "io.github.oshai.kotlinlogging.Level.*",
+        "io.github.oshai.kotlinlogging.Marker",
+        "java.util.logging.Level",
+        "java.util.logging.Logger"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/coroutines/KotlinLoggingAsyncMDC.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/coroutines/KotlinLoggingAsyncMDC.kt",
+      "langage": "kotlin",
+      "lignes": 66,
+      "taille_bytes": 1686,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.*",
+        "kotlinx.coroutines.*",
+        "kotlinx.coroutines.slf4j.*"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/LogbackExtensions.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/LogbackExtensions.kt",
+      "langage": "kotlin",
+      "lignes": 31,
+      "taille_bytes": 963,
+      "entrees": [
+        "ch.qos.logback.classic.Level",
+        "io.github.oshai.kotlinlogging.Level.DEBUG",
+        "io.github.oshai.kotlinlogging.Level.ERROR",
+        "io.github.oshai.kotlinlogging.Level.INFO",
+        "io.github.oshai.kotlinlogging.Level.OFF",
+        "io.github.oshai.kotlinlogging.Level.TRACE",
+        "io.github.oshai.kotlinlogging.Level.WARN",
+        "io.github.oshai.kotlinlogging.Marker",
+        "io.github.oshai.kotlinlogging.slf4j.internal.Slf4jMarker",
+        "org.slf4j.MarkerFactory"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jMarker.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerFactory.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerFactory.kt",
+      "langage": "kotlin",
+      "lignes": 24,
+      "taille_bytes": 824,
+      "entrees": [
+        "ch.qos.logback.classic.LoggerContext",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggerFactory",
+        "org.slf4j.LoggerFactory"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt"
+      ],
+      "est_appele_par": [
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLogEvent.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLogEvent.kt",
+      "langage": "kotlin",
+      "lignes": 106,
+      "taille_bytes": 3525,
+      "entrees": [
+        "ch.qos.logback.classic.Level",
+        "ch.qos.logback.classic.Logger",
+        "ch.qos.logback.classic.spi.CallerData",
+        "ch.qos.logback.classic.spi.ILoggingEvent",
+        "ch.qos.logback.classic.spi.IThrowableProxy",
+        "ch.qos.logback.classic.spi.LoggerContextVO",
+        "ch.qos.logback.classic.spi.ThrowableProxy",
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder",
+        "io.github.oshai.kotlinlogging.logback.toLogbackLevel",
+        "java.time.Instant",
+        "java.util.concurrent.atomic.AtomicLong",
+        "org.slf4j.MDC",
+        "org.slf4j.Marker",
+        "org.slf4j.event.KeyValuePair"
+      ],
+      "sorties": [
+        "fun addKeyValuePair",
+        "fun addMarker"
+      ],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt": {
+      "fichier": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt",
+      "langage": "kotlin",
+      "lignes": 41,
+      "taille_bytes": 1572,
+      "entrees": [
+        "ch.qos.logback.classic.Logger",
+        "io.github.oshai.kotlinlogging.DelegatingKLogger",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder",
+        "io.github.oshai.kotlinlogging.Level",
+        "io.github.oshai.kotlinlogging.Marker",
+        "io.github.oshai.kotlinlogging.logback.toLogback",
+        "io.github.oshai.kotlinlogging.logback.toLogbackLevel",
+        "io.github.oshai.kotlinlogging.slf4j.internal.LocationAwareKLogger",
+        "org.slf4j.event.KeyValuePair"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/jvmMain/java/module-info.java": {
+      "fichier": "src/jvmMain/java/module-info.java",
+      "langage": "java",
+      "lignes": 15,
+      "taille_bytes": 532,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/nativeTest/kotlin/io/github/oshai/kotlinlogging/SimpleNativeTest.kt": {
+      "fichier": "src/nativeTest/kotlin/io/github/oshai/kotlinlogging/SimpleNativeTest.kt",
+      "langage": "kotlin",
+      "lignes": 93,
+      "taille_bytes": 3176,
+      "entrees": [
+        "kotlin.test.*"
+      ],
+      "sorties": [
+        "class SimpleAppender",
+        "class SimpleNativeTest",
+        "fun cleanup",
+        "fun offLevelNativeTest",
+        "fun setup",
+        "fun simpleNativeTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/nativeTest/kotlin/io/github/oshai/kotlinlogging/ClassLoggerNativeTest.kt": {
+      "fichier": "src/nativeTest/kotlin/io/github/oshai/kotlinlogging/ClassLoggerNativeTest.kt",
+      "langage": "kotlin",
+      "lignes": 17,
+      "taille_bytes": 469,
+      "entrees": [
+        "kotlin.test.Test",
+        "kotlin.test.assertEquals"
+      ],
+      "sorties": [
+        "class ClassLoggerNativeTest",
+        "fun loggerNameIsCorrectlyInferredFromClass"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jsTest/kotlin/io/github/oshai/kotlinlogging/SimpleJsTest.kt": {
+      "fichier": "src/jsTest/kotlin/io/github/oshai/kotlinlogging/SimpleJsTest.kt",
+      "langage": "kotlin",
+      "lignes": 73,
+      "taille_bytes": 1979,
+      "entrees": [
+        "kotlin.test.*"
+      ],
+      "sorties": [
+        "class MyClass",
+        "class SimpleAppender",
+        "class SimpleJsTest",
+        "fun cleanup",
+        "fun logThrowableTest",
+        "fun loggerNameTest",
+        "fun offLevelJsTest",
+        "fun setup",
+        "fun simpleJsTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Formatter.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Formatter.kt",
+      "langage": "kotlin",
+      "lignes": 41,
+      "taille_bytes": 1084,
+      "entrees": [],
+      "sorties": [
+        "public class DefaultMessageFormatter",
+        "public interface Formatter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KMarkerFactory.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KMarkerFactory.kt",
+      "langage": "kotlin",
+      "lignes": 7,
+      "taille_bytes": 196,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "langage": "kotlin",
+      "lignes": 11,
+      "taille_bytes": 280,
+      "entrees": [],
+      "sorties": [
+        "public interface Marker"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+        "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatter.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jMarker.kt",
+        "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/LogbackExtensions.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLogEvent.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "langage": "kotlin",
+      "lignes": 37,
+      "taille_bytes": 1333,
+      "entrees": [],
+      "sorties": [
+        "public interface DirectLoggingConfiguration"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+      "langage": "kotlin",
+      "lignes": 6,
+      "taille_bytes": 159,
+      "entrees": [],
+      "sorties": [
+        "public interface DelegatingKLogger"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "langage": "kotlin",
+      "lignes": 45,
+      "taille_bytes": 1228,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt",
+        "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/LogbackExtensions.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLogEvent.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingMDCTest.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/LoggingWithLocationTest.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "langage": "kotlin",
+      "lignes": 23,
+      "taille_bytes": 842,
+      "entrees": [],
+      "sorties": [
+        "public class InternalCompilerData",
+        "public class KLoggingEventBuilder"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerHiddenExtensions.kt",
+        "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatter.kt",
+        "src/darwinTest/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatterTest.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLogEvent.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt",
+      "langage": "kotlin",
+      "lignes": 31,
+      "taille_bytes": 1024,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.internal.KLoggerNameResolver"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/jsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Appender.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Appender.kt",
+      "langage": "kotlin",
+      "lignes": 15,
+      "taille_bytes": 454,
+      "entrees": [],
+      "sorties": [
+        "public interface Appender"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/AppenderWithWriter.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jMarkerTest.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEvent.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEvent.kt",
+      "langage": "kotlin",
+      "lignes": 27,
+      "taille_bytes": 661,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.internal.getCurrentTime"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt",
+      "langage": "kotlin",
+      "lignes": 7,
+      "taille_bytes": 228,
+      "entrees": [],
+      "sorties": [
+        "public interface KLoggerFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/AndroidNativeLoggerFactory.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerFactory.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "langage": "kotlin",
+      "lignes": 422,
+      "taille_bytes": 12903,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.internal.toStringSafe"
+      ],
+      "sorties": [
+        "public interface KLogger"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/AndroidNativeLoggerFactory.kt",
+        "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerHiddenExtensions.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+        "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/Target_io_github_oshai_kotlinlogging_internal_KLoggerFactory.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerFactory.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DirectLoggerFactory.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DirectLoggerFactory.kt",
+      "langage": "kotlin",
+      "lignes": 22,
+      "taille_bytes": 819,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.internal.KLoggerDirect"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt",
+      "langage": "kotlin",
+      "lignes": 6,
+      "taille_bytes": 142,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/MessageInvoker.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/MessageInvoker.kt",
+      "langage": "kotlin",
+      "lignes": 17,
+      "taille_bytes": 427,
+      "entrees": [],
+      "sorties": [
+        "fun getErrorLog"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 89,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+      "langage": "kotlin",
+      "lignes": 28,
+      "taille_bytes": 967,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggingEvent",
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder",
+        "io.github.oshai.kotlinlogging.KotlinLoggingConfiguration",
+        "io.github.oshai.kotlinlogging.Level",
+        "io.github.oshai.kotlinlogging.Level.OFF",
+        "io.github.oshai.kotlinlogging.Marker"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEvent.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+        "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt"
+      ],
+      "est_appele_par": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DirectLoggerFactory.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerHiddenExtensions.kt": {
+      "fichier": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerHiddenExtensions.kt",
+      "langage": "kotlin",
+      "lignes": 109,
+      "taille_bytes": 2971,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt": {
+      "fichier": "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+      "langage": "kotlin",
+      "lignes": 257,
+      "taille_bytes": 8919,
+      "entrees": [
+        "ch.qos.logback.classic.Level",
+        "ch.qos.logback.classic.Logger",
+        "ch.qos.logback.classic.encoder.PatternLayoutEncoder",
+        "ch.qos.logback.classic.spi.ILoggingEvent",
+        "ch.qos.logback.core.OutputStreamAppender",
+        "com.fasterxml.jackson.module.kotlin.jacksonObjectMapper",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KMarkerFactory",
+        "io.github.oshai.kotlinlogging.KotlinLogging",
+        "io.github.oshai.kotlinlogging.Marker",
+        "java.io.ByteArrayOutputStream",
+        "kotlin.test.assertTrue",
+        "kotlin.test.fail",
+        "net.logstash.logback.argument.StructuredArguments",
+        "net.logstash.logback.composite.loggingevent.ArgumentsJsonProvider",
+        "net.logstash.logback.composite.loggingevent.LoggingEventPatternJsonProvider",
+        "net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder",
+        "org.junit.jupiter.api.AfterAll",
+        "org.junit.jupiter.api.Assertions.*",
+        "org.junit.jupiter.api.BeforeAll",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.params.ParameterizedTest",
+        "org.junit.jupiter.params.provider.EnumSource"
+      ],
+      "sorties": [
+        "class LogbackLoggerWrapperTest",
+        "data class ExpectedLogEvent",
+        "data class GivenLogStatement",
+        "enum class",
+        "fun KLogger",
+        "fun init",
+        "fun markerLambda",
+        "fun resetTest",
+        "fun simpleLambda",
+        "fun teardown",
+        "fun testLogbackLogger",
+        "fun testLogbackLoggerWithArguments"
+      ],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KMarkerFactory.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+        "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt": {
+      "fichier": "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "langage": "kotlin",
+      "lignes": 40,
+      "taille_bytes": 1251,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt": {
+      "fichier": "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt",
+      "langage": "kotlin",
+      "lignes": 15,
+      "taille_bytes": 440,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt": {
+      "fichier": "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt",
+      "langage": "kotlin",
+      "lignes": 50,
+      "taille_bytes": 1961,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt": {
+      "fichier": "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt",
+      "langage": "kotlin",
+      "lignes": 23,
+      "taille_bytes": 759,
+      "entrees": [
+        "kotlin.wasm.WasmImport",
+        "kotlin.wasm.unsafe.UnsafeWasmMemoryApi",
+        "kotlin.wasm.unsafe.withScopedMemoryAllocator"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt": {
+      "fichier": "src/wasmWasiMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 125,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/DefaultAppender.kt": {
+      "fichier": "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/DefaultAppender.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 100,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt": {
+      "fichier": "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "langage": "kotlin",
+      "lignes": 53,
+      "taille_bytes": 1667,
+      "entrees": [
+        "kotlin.concurrent.AtomicReference"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt": {
+      "fichier": "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt",
+      "langage": "kotlin",
+      "lignes": 17,
+      "taille_bytes": 502,
+      "entrees": [
+        "kotlinx.cinterop.ExperimentalForeignApi",
+        "platform.posix.fprintf",
+        "platform.posix.stderr"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt": {
+      "fichier": "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt",
+      "langage": "kotlin",
+      "lignes": 52,
+      "taille_bytes": 1911,
+      "entrees": [
+        "kotlin.experimental.ExperimentalNativeApi"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt": {
+      "fichier": "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt",
+      "langage": "kotlin",
+      "lignes": 5,
+      "taille_bytes": 168,
+      "entrees": [
+        "kotlin.system.getTimeMillis"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt": {
+      "fichier": "src/nativeMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 125,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmJsTest/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppenderTest.kt": {
+      "fichier": "src/wasmJsTest/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppenderTest.kt",
+      "langage": "kotlin",
+      "lignes": 180,
+      "taille_bytes": 4914,
+      "entrees": [
+        "kotlin.test.AfterTest",
+        "kotlin.test.BeforeTest",
+        "kotlin.test.Test",
+        "kotlin.test.assertEquals"
+      ],
+      "sorties": [
+        "class ConsoleOutputAppenderTest",
+        "class TestFormatter",
+        "fun cleanup",
+        "fun logDebugTest",
+        "fun logErrorTest",
+        "fun logInfoTest",
+        "fun logOffTest",
+        "fun logTraceTest",
+        "fun logWarnTest",
+        "fun setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wasmJsTest/kotlin/io/github/oshai/kotlinlogging/SimpleWasmJsTest.kt": {
+      "fichier": "src/wasmJsTest/kotlin/io/github/oshai/kotlinlogging/SimpleWasmJsTest.kt",
+      "langage": "kotlin",
+      "lignes": 66,
+      "taille_bytes": 2016,
+      "entrees": [
+        "kotlin.test.*"
+      ],
+      "sorties": [
+        "class SimpleAppender",
+        "class SimpleWasmJsTest",
+        "fun anonymousClassPropWasmJsTest",
+        "fun anonymousFilePropWasmJsTest",
+        "fun cleanup",
+        "fun offLevelWasmJsTest",
+        "fun setup",
+        "fun simpleWasmJsTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/androidMain/AndroidManifest.xml": {
+      "fichier": "src/androidMain/AndroidManifest.xml",
+      "langage": "xml",
+      "lignes": 2,
+      "taille_bytes": 52,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/androidMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt": {
+      "fichier": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "langage": "kotlin",
+      "lignes": 48,
+      "taille_bytes": 1464,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.internal.AndroidNativeLoggerFactory",
+        "io.github.oshai.kotlinlogging.slf4j.internal.Slf4jLoggerFactory"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/AndroidNativeLoggerFactory.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/AndroidNativeLoggerFactory.kt": {
+      "fichier": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/AndroidNativeLoggerFactory.kt",
+      "langage": "kotlin",
+      "lignes": 8,
+      "taille_bytes": 278,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggerFactory"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt"
+      ],
+      "est_appele_par": [
+        "src/androidMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt": {
+      "fichier": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt",
+      "langage": "kotlin",
+      "lignes": 35,
+      "taille_bytes": 1313,
+      "entrees": [
+        "android.util.Log",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder",
+        "io.github.oshai.kotlinlogging.Level",
+        "io.github.oshai.kotlinlogging.Marker"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt": {
+      "fichier": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 125,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/DefaultAppender.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/DefaultAppender.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 102,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt",
+      "langage": "kotlin",
+      "lignes": 7,
+      "taille_bytes": 228,
+      "entrees": [],
+      "sorties": [
+        "public class ConsoleOutputAppender"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+      "langage": "kotlin",
+      "lignes": 34,
+      "taille_bytes": 1247,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KotlinLogging",
+        "io.github.oshai.kotlinlogging.Level",
+        "io.github.oshai.kotlinlogging.Marker",
+        "io.github.oshai.kotlinlogging.slf4j.internal.Slf4jLoggerFactory",
+        "io.github.oshai.kotlinlogging.slf4j.internal.Slf4jMarker",
+        "org.slf4j.Logger",
+        "org.slf4j.MarkerFactory"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jMarker.kt",
+        "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+      "langage": "kotlin",
+      "lignes": 69,
+      "taille_bytes": 2479,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.DelegatingKLogger",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder",
+        "io.github.oshai.kotlinlogging.Level",
+        "io.github.oshai.kotlinlogging.Marker",
+        "io.github.oshai.kotlinlogging.slf4j.toSlf4j",
+        "org.slf4j.Logger"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+      "langage": "kotlin",
+      "lignes": 298,
+      "taille_bytes": 12093,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.DelegatingKLogger",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggingEventBuilder",
+        "io.github.oshai.kotlinlogging.Level",
+        "io.github.oshai.kotlinlogging.Marker",
+        "io.github.oshai.kotlinlogging.internal.toStringSafe",
+        "io.github.oshai.kotlinlogging.slf4j.toSlf4j",
+        "org.slf4j.event.EventConstants",
+        "org.slf4j.helpers.MessageFormatter",
+        "org.slf4j.spi.CallerBoundaryAware",
+        "org.slf4j.spi.LocationAwareLogger"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt"
+      ],
+      "est_appele_par": [
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jMarker.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jMarker.kt",
+      "langage": "kotlin",
+      "lignes": 5,
+      "taille_bytes": 193,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.Marker"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt"
+      ],
+      "est_appele_par": [
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/LogbackExtensions.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt",
+      "langage": "kotlin",
+      "lignes": 30,
+      "taille_bytes": 1130,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.DelegatingKLogger",
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.Level",
+        "io.github.oshai.kotlinlogging.Marker",
+        "io.github.oshai.kotlinlogging.slf4j.toSlf4j",
+        "org.slf4j.Logger"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+      "langage": "kotlin",
+      "lignes": 20,
+      "taille_bytes": 714,
+      "entrees": [
+        "io.github.oshai.kotlinlogging.KLogger",
+        "io.github.oshai.kotlinlogging.KLoggerFactory",
+        "org.slf4j.Logger",
+        "org.slf4j.LoggerFactory",
+        "org.slf4j.spi.LocationAwareLogger"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt"
+      ],
+      "est_appele_par": [
+        "src/androidMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+        "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/Target_io_github_oshai_kotlinlogging_internal_KLoggerFactory.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt"
+      ],
+      "type_noeud": "central"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt",
+      "langage": "kotlin",
+      "lignes": 28,
+      "taille_bytes": 725,
+      "entrees": [
+        "kotlin.reflect.KClass"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/javaMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt": {
+      "fichier": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 118,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt": {
+      "fichier": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "langage": "kotlin",
+      "lignes": 54,
+      "taille_bytes": 1633,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt": {
+      "fichier": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt",
+      "langage": "kotlin",
+      "lignes": 29,
+      "taille_bytes": 776,
+      "entrees": [
+        "kotlin.properties.ReadOnlyProperty",
+        "kotlin.reflect.KProperty"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+        "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt",
+        "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jMarkerTest.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/jsMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt": {
+      "fichier": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/ConsoleOutputAppender.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 514,
+      "entrees": [],
+      "sorties": [
+        "public class ConsoleOutputAppender"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt": {
+      "fichier": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt",
+      "langage": "kotlin",
+      "lignes": 18,
+      "taille_bytes": 486,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/jsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt": {
+      "fichier": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggingClock.kt",
+      "langage": "kotlin",
+      "lignes": 5,
+      "taille_bytes": 134,
+      "entrees": [
+        "kotlin.js.Date"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jsMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt": {
+      "fichier": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/internal/ErrorMessageProducer.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 125,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gradle/libs.versions.toml": {
+      "fichier": "gradle/libs.versions.toml",
+      "langage": "toml",
+      "lignes": 53,
+      "taille_bytes": 2561,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/DarwinKLogger.kt",
+      "vers": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatter.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatter.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/darwinMain/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatter.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/darwinTest/kotlin/io/github/oshai/kotlinlogging/internal/DarwinFormatterTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingMDCTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/LoggingWithLocationTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/AppenderWithWriter.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Appender.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jMarkerTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Appender.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jMarkerTest.kt",
+      "vers": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt",
+      "vers": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt",
+      "vers": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt",
+      "vers": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt",
+      "vers": "src/jvmTest/kotlin/io/github/oshai/kotlinlogging/AppenderWithWriter.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "vers": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "vers": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "vers": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/Target_io_github_oshai_kotlinlogging_internal_KLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/Target_io_github_oshai_kotlinlogging_internal_KLoggerFactory.kt",
+      "vers": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/Target_io_github_oshai_kotlinlogging_internal_KLoggerFactory.kt",
+      "vers": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/LogbackExtensions.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/LogbackExtensions.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/LogbackExtensions.kt",
+      "vers": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jMarker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLogEvent.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLogEvent.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLogEvent.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt",
+      "vers": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt",
+      "vers": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerNameResolver.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DirectLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEvent.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerDirect.kt",
+      "vers": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerHiddenExtensions.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerHiddenExtensions.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KMarkerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt",
+      "vers": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "vers": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/AndroidNativeLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt",
+      "vers": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/AndroidNativeLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/AndroidNativeLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+      "vers": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+      "vers": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jMarker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt",
+      "vers": "src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationAwareKLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jMarker.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt",
+      "type": "interne"
+    },
+    {
+      "de": "src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt",
+      "vers": "src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'src/jvmTest/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jMarkerTest.kt'",
+    "point_entree → 'src/jvmTest/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapperTest.kt'",
+    "point_entree → 'src/jvmMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt'",
+    "point_entree → 'src/jvmMain/kotlin/io/github/oshai/kotlinlogging/internal/Target_io_github_oshai_kotlinlogging_internal_KLoggerFactory.kt'",
+    "point_entree → 'src/jvmMain/kotlin/io/github/oshai/kotlinlogging/jul/internal/JulLoggerWrapper.kt'",
+    "point_entree → 'src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/LogbackExtensions.kt'",
+    "point_entree → 'src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLogEvent.kt'",
+    "point_entree → 'src/jvmMain/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapper.kt'",
+    "feuille → 'src/commonMain/kotlin/io/github/oshai/kotlinlogging/Marker.kt' (in=13)",
+    "feuille → 'src/commonMain/kotlin/io/github/oshai/kotlinlogging/DelegatingKLogger.kt' (in=5)",
+    "feuille → 'src/commonMain/kotlin/io/github/oshai/kotlinlogging/Level.kt' (in=14)",
+    "feuille → 'src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggingEventBuilder.kt' (in=10)",
+    "feuille → 'src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLoggerFactory.kt' (in=4)",
+    "feuille → 'src/commonMain/kotlin/io/github/oshai/kotlinlogging/KLogger.kt' (in=16)",
+    "point_entree → 'src/commonMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerHiddenExtensions.kt'",
+    "point_entree → 'src/jvmLogbackTest/kotlin/io/github/oshai/kotlinlogging/logback/internal/LogbackLoggerWrapperTest.kt'",
+    "point_entree → 'src/androidMain/kotlin/io/github/oshai/kotlinlogging/KotlinLoggingConfiguration.kt'",
+    "point_entree → 'src/androidMain/kotlin/io/github/oshai/kotlinlogging/internal/KLoggerAndroid.kt'",
+    "point_entree → 'src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/Slf4jExtensions.kt'",
+    "point_entree → 'src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/LocationIgnorantKLogger.kt'",
+    "point_entree → 'src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLogger.kt'",
+    "central → 'src/javaMain/kotlin/io/github/oshai/kotlinlogging/slf4j/internal/Slf4jLoggerFactory.kt' (in=5, out=2)",
+    "feuille → 'src/jsMain/kotlin/io/github/oshai/kotlinlogging/KotlinLogging.kt' (in=4)"
+  ]
+}

@@ -1,0 +1,1782 @@
+{
+  "meta": {
+    "projet": "snabb",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "shell": 35,
+      "c": 11,
+      "lua": 74
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "generate-version-lua.sh"
+  },
+  "noeuds": {
+    "generate-version-lua.sh": {
+      "fichier": "generate-version-lua.sh",
+      "langage": "shell",
+      "lignes": 25,
+      "taille_bytes": 515,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gcc-preinclude.h": {
+      "fichier": "gcc-preinclude.h",
+      "langage": "c",
+      "lignes": 13,
+      "taille_bytes": 360,
+      "entrees": [
+        "<features.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/dasm_x64.lua": {
+      "fichier": "src/dasm_x64.lua",
+      "langage": "lua",
+      "lignes": 22,
+      "taille_bytes": 835,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/dasm_x86.c": {
+      "fichier": "src/dasm_x86.c",
+      "langage": "c",
+      "lignes": 5,
+      "taille_bytes": 92,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/dasm.lua": {
+      "fichier": "src/dasm.lua",
+      "langage": "lua",
+      "lignes": 274,
+      "taille_bytes": 7281,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/dasm_extern.h": {
+      "fichier": "src/dasm_extern.h",
+      "langage": "c",
+      "lignes": 5,
+      "taille_bytes": 302,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/dasm_x86.h": {
+      "fichier": "src/dasm_x86.h",
+      "langage": "c",
+      "lignes": 498,
+      "taille_bytes": 15944,
+      "entrees": [
+        "<stdarg.h>",
+        "<stddef.h>",
+        "<stdlib.h>",
+        "<string.h>"
+      ],
+      "sorties": [
+        "struct dasm_State"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/dasm_mm.lua": {
+      "fichier": "src/dasm_mm.lua",
+      "langage": "lua",
+      "lignes": 144,
+      "taille_bytes": 3988,
+      "entrees": [],
+      "sorties": [
+        "function free",
+        "function new",
+        "function protect"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/dynasm.lua": {
+      "fichier": "src/dynasm.lua",
+      "langage": "lua",
+      "lignes": 1321,
+      "taille_bytes": 37543,
+      "entrees": [],
+      "sorties": [
+        "function opt_map",
+        "function require"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/dasm_proto.h": {
+      "fichier": "src/dasm_proto.h",
+      "langage": "c",
+      "lignes": 83,
+      "taille_bytes": 2062,
+      "entrees": [
+        "<stdarg.h>",
+        "<stddef.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/dasm_x86.lua": {
+      "fichier": "src/dasm_x86.lua",
+      "langage": "lua",
+      "lignes": 2470,
+      "taille_bytes": 77467,
+      "entrees": [],
+      "sorties": [
+        "function _M",
+        "function map_op"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/selftest.sh": {
+      "fichier": "src/selftest.sh",
+      "langage": "shell",
+      "lignes": 11,
+      "taille_bytes": 357,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jit/bc.lua": {
+      "fichier": "src/jit/bc.lua",
+      "langage": "lua",
+      "lignes": 1,
+      "taille_bytes": 31,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/jit/bcsave.lua": {
+      "fichier": "src/jit/bcsave.lua",
+      "langage": "lua",
+      "lignes": 1,
+      "taille_bytes": 35,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/csv.lua": {
+      "fichier": "src/apps/csv.lua",
+      "langage": "lua",
+      "lignes": 53,
+      "taille_bytes": 1667,
+      "entrees": [],
+      "sorties": [
+        "function CSV"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/ctable_wrapper.lua": {
+      "fichier": "src/apps/lwaftr/ctable_wrapper.lua",
+      "langage": "lua",
+      "lignes": 86,
+      "taille_bytes": 2646,
+      "entrees": [],
+      "sorties": [
+        "function new",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/binding_table.lua": {
+      "fichier": "src/apps/lwaftr/binding_table.lua",
+      "langage": "lua",
+      "lignes": 373,
+      "taille_bytes": 14879,
+      "entrees": [],
+      "sorties": [
+        "function BTLookupQueue",
+        "function BindingTable",
+        "function inter_psid_map",
+        "function load",
+        "function pack_psid_map_entry",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/ndp.lua": {
+      "fichier": "src/apps/lwaftr/ndp.lua",
+      "langage": "lua",
+      "lignes": 547,
+      "taille_bytes": 20135,
+      "entrees": [],
+      "sorties": [
+        "function NDP",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/lwaftr.lua": {
+      "fichier": "src/apps/lwaftr/lwaftr.lua",
+      "langage": "lua",
+      "lignes": 1102,
+      "taille_bytes": 46830,
+      "entrees": [],
+      "sorties": [
+        "function LwAftr",
+        "function new_icmpv4_packet",
+        "function new_icmpv6_packet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/loadgen.lua": {
+      "fichier": "src/apps/lwaftr/loadgen.lua",
+      "langage": "lua",
+      "lignes": 76,
+      "taille_bytes": 2163,
+      "entrees": [],
+      "sorties": [
+        "function RateLimitedRepeater"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/lwutil.lua": {
+      "fichier": "src/apps/lwaftr/lwutil.lua",
+      "langage": "lua",
+      "lignes": 195,
+      "taille_bytes": 5689,
+      "entrees": [],
+      "sorties": [
+        "function dir_exists",
+        "function fatal",
+        "function file_exists",
+        "function get_ihl_from_offset",
+        "function ipv6_equals",
+        "function is_ipv4",
+        "function is_ipv4_fragment",
+        "function is_ipv6",
+        "function is_ipv6_fragment",
+        "function is_lowest_queue",
+        "function is_on_a_stick",
+        "function keys",
+        "function merge_instance",
+        "function nic_exists",
+        "function num_queues",
+        "function parse_instance",
+        "function rd16",
+        "function rd32",
+        "function select_instance",
+        "function wr16",
+        "function wr32",
+        "function write_to_file"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/lwdebug.lua": {
+      "fichier": "src/apps/lwaftr/lwdebug.lua",
+      "langage": "lua",
+      "lignes": 74,
+      "taille_bytes": 1898,
+      "entrees": [],
+      "sorties": [
+        "function format_ipv4",
+        "function pp",
+        "function print_ethernet",
+        "function print_hex",
+        "function print_ipv6",
+        "function print_pkt",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/V4V6.lua": {
+      "fichier": "src/apps/lwaftr/V4V6.lua",
+      "langage": "lua",
+      "lignes": 216,
+      "taille_bytes": 6542,
+      "entrees": [],
+      "sorties": [
+        "function V4V6",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/nh_fwd.lua": {
+      "fichier": "src/apps/lwaftr/nh_fwd.lua",
+      "langage": "lua",
+      "lignes": 687,
+      "taille_bytes": 24300,
+      "entrees": [],
+      "sorties": [
+        "function nh_fwd4",
+        "function nh_fwd6",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/constants.lua": {
+      "fichier": "src/apps/lwaftr/constants.lua",
+      "langage": "lua",
+      "lignes": 105,
+      "taille_bytes": 2283,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/lwaftr/rangemap.lua": {
+      "fichier": "src/apps/lwaftr/rangemap.lua",
+      "langage": "lua",
+      "lignes": 310,
+      "taille_bytes": 9596,
+      "entrees": [],
+      "sorties": [
+        "function RangeMap",
+        "function RangeMapBuilder",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/snmp/iftable.lua": {
+      "fichier": "src/apps/snmp/iftable.lua",
+      "langage": "lua",
+      "lignes": 51,
+      "taille_bytes": 1377,
+      "entrees": [],
+      "sorties": [
+        "function MIB"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/pcap/tap.lua": {
+      "fichier": "src/apps/pcap/tap.lua",
+      "langage": "lua",
+      "lignes": 87,
+      "taille_bytes": 2550,
+      "entrees": [],
+      "sorties": [
+        "function Tap",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/pcap/pcap.lua": {
+      "fichier": "src/apps/pcap/pcap.lua",
+      "langage": "lua",
+      "lignes": 58,
+      "taille_bytes": 1523,
+      "entrees": [],
+      "sorties": [
+        "function PcapReader",
+        "function PcapWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipv6/nd_light.lua": {
+      "fichier": "src/apps/ipv6/nd_light.lua",
+      "langage": "lua",
+      "lignes": 415,
+      "taille_bytes": 14860,
+      "entrees": [],
+      "sorties": [
+        "function _new",
+        "function nd_light",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipv6/fragment.lua": {
+      "fichier": "src/apps/ipv6/fragment.lua",
+      "langage": "lua",
+      "lignes": 441,
+      "taille_bytes": 15603,
+      "entrees": [],
+      "sorties": [
+        "function Fragmenter",
+        "function selftest",
+        "function use_deterministic_first_fragment_id"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipv6/reassemble.lua": {
+      "fichier": "src/apps/ipv6/reassemble.lua",
+      "langage": "lua",
+      "lignes": 497,
+      "taille_bytes": 18233,
+      "entrees": [],
+      "sorties": [
+        "function Reassembler",
+        "function selftest",
+        "struct packet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipv6/ns_responder.lua": {
+      "fichier": "src/apps/ipv6/ns_responder.lua",
+      "langage": "lua",
+      "lignes": 113,
+      "taille_bytes": 3509,
+      "entrees": [],
+      "sorties": [
+        "function ns_responder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipv6/echo.lua": {
+      "fichier": "src/apps/ipv6/echo.lua",
+      "langage": "lua",
+      "lignes": 168,
+      "taille_bytes": 5127,
+      "entrees": [],
+      "sorties": [
+        "function ICMPEcho"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/basic/basic_apps.lua": {
+      "fichier": "src/apps/basic/basic_apps.lua",
+      "langage": "lua",
+      "lignes": 178,
+      "taille_bytes": 4055,
+      "entrees": [],
+      "sorties": [
+        "function Join",
+        "function Repeater",
+        "function Sample",
+        "function Sink",
+        "function Source",
+        "function Split",
+        "function Tee",
+        "function Truncate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_2q_blast.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_2q_blast.sh",
+      "langage": "shell",
+      "lignes": 11,
+      "taille_bytes": 386,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/loadgen.lua": {
+      "fichier": "src/apps/intel_mp/loadgen.lua",
+      "langage": "lua",
+      "lignes": 96,
+      "taille_bytes": 2858,
+      "entrees": [],
+      "sorties": [
+        "function LoadGen",
+        "function disable_tx_descriptor_writeback",
+        "function zero_descriptors"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_1q_blast_vmdq.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_1q_blast_vmdq.sh",
+      "langage": "shell",
+      "lignes": 9,
+      "taille_bytes": 315,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_1g_2q_blast_vmdq.sh": {
+      "fichier": "src/apps/intel_mp/test_1g_2q_blast_vmdq.sh",
+      "langage": "shell",
+      "lignes": 20,
+      "taille_bytes": 713,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_1g_2q_blast.sh": {
+      "fichier": "src/apps/intel_mp/test_1g_2q_blast.sh",
+      "langage": "shell",
+      "lignes": 11,
+      "taille_bytes": 417,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_1g_vmdq_tx.sh": {
+      "fichier": "src/apps/intel_mp/test_1g_vmdq_tx.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 151,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_vlan.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_vlan.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 148,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_2q_blast_vmdq.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_2q_blast_vmdq.sh",
+      "langage": "shell",
+      "lignes": 20,
+      "taille_bytes": 684,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_counters.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_counters.sh",
+      "langage": "shell",
+      "lignes": 80,
+      "taille_bytes": 2686,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_come_and_go.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_come_and_go.sh",
+      "langage": "shell",
+      "lignes": 15,
+      "taille_bytes": 427,
+      "entrees": [],
+      "sorties": [
+        "export SNABB_RECV_DURATION"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/intel_mp.lua": {
+      "fichier": "src/apps/intel_mp/intel_mp.lua",
+      "langage": "lua",
+      "lignes": 2079,
+      "taille_bytes": 72186,
+      "entrees": [],
+      "sorties": [
+        "function Intel",
+        "function Intel1g",
+        "function Intel82599",
+        "function mod"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/bench.sh": {
+      "fichier": "src/apps/intel_mp/bench.sh",
+      "langage": "shell",
+      "lignes": 25,
+      "taille_bytes": 817,
+      "entrees": [],
+      "sorties": [
+        "export SNABB_RECV_DURATION",
+        "export SNABB_RECV_MASTER_STATS",
+        "export SNABB_RECV_SPINUP"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_1g_1q_blast_vmdq.sh": {
+      "fichier": "src/apps/intel_mp/test_1g_1q_blast_vmdq.sh",
+      "langage": "shell",
+      "lignes": 9,
+      "taille_bytes": 317,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_1g_come_and_go.sh": {
+      "fichier": "src/apps/intel_mp/test_1g_come_and_go.sh",
+      "langage": "shell",
+      "lignes": 13,
+      "taille_bytes": 412,
+      "entrees": [],
+      "sorties": [
+        "export SNABB_RECV_DURATION"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/testrecv.lua": {
+      "fichier": "src/apps/intel_mp/testrecv.lua",
+      "langage": "lua",
+      "lignes": 90,
+      "taille_bytes": 2675,
+      "entrees": [],
+      "sorties": [
+        "function test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_1g_2q_blast_vmdq_auto.sh": {
+      "fichier": "src/apps/intel_mp/test_1g_2q_blast_vmdq_auto.sh",
+      "langage": "shell",
+      "lignes": 24,
+      "taille_bytes": 898,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_1g_1q_blast.sh": {
+      "fichier": "src/apps/intel_mp/test_1g_1q_blast.sh",
+      "langage": "shell",
+      "lignes": 9,
+      "taille_bytes": 288,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_linkup.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_linkup.sh",
+      "langage": "shell",
+      "lignes": 21,
+      "taille_bytes": 637,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_1g_linkup.sh": {
+      "fichier": "src/apps/intel_mp/test_1g_linkup.sh",
+      "langage": "shell",
+      "lignes": 19,
+      "taille_bytes": 555,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_2q_blast_vlan.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_2q_blast_vlan.sh",
+      "langage": "shell",
+      "lignes": 19,
+      "taille_bytes": 683,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_2q_blast_vmdq_auto.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_2q_blast_vmdq_auto.sh",
+      "langage": "shell",
+      "lignes": 20,
+      "taille_bytes": 677,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_1g_2q_blast_vlan.sh": {
+      "fichier": "src/apps/intel_mp/test_1g_2q_blast_vlan.sh",
+      "langage": "shell",
+      "lignes": 19,
+      "taille_bytes": 713,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_1q_blast.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_1q_blast.sh",
+      "langage": "shell",
+      "lignes": 9,
+      "taille_bytes": 285,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/selftest.sh": {
+      "fichier": "src/apps/intel_mp/selftest.sh",
+      "langage": "shell",
+      "lignes": 37,
+      "taille_bytes": 880,
+      "entrees": [],
+      "sorties": [
+        "export SNABB_RANDOM_SEED",
+        "export SNABB_RECV_DEBUG",
+        "export SNABB_RECV_MASTER_STATS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_mp/test_10g_vmdq_tx.sh": {
+      "fichier": "src/apps/intel_mp/test_10g_vmdq_tx.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 147,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/keyed_ipv6_tunnel/tunnel.lua": {
+      "fichier": "src/apps/keyed_ipv6_tunnel/tunnel.lua",
+      "langage": "lua",
+      "lignes": 311,
+      "taille_bytes": 10103,
+      "entrees": [],
+      "sorties": [
+        "function SimpleKeyedTunnel",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/packet_filter/conntrack.lua": {
+      "fichier": "src/apps/packet_filter/conntrack.lua",
+      "langage": "lua",
+      "lignes": 265,
+      "taille_bytes": 6887,
+      "entrees": [],
+      "sorties": [
+        "function check",
+        "function clear",
+        "function define",
+        "function genspec",
+        "function ipv4",
+        "function ipv6",
+        "function track"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/packet_filter/pcap_filter.lua": {
+      "fichier": "src/apps/packet_filter/pcap_filter.lua",
+      "langage": "lua",
+      "lignes": 152,
+      "taille_bytes": 5536,
+      "entrees": [],
+      "sorties": [
+        "function PcapFilter",
+        "function selftest",
+        "function selftest_run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/mellanox/benchmark-macs-vlans.sh": {
+      "fichier": "src/apps/mellanox/benchmark-macs-vlans.sh",
+      "langage": "shell",
+      "lignes": 18,
+      "taille_bytes": 910,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/mellanox/connectx.lua": {
+      "fichier": "src/apps/mellanox/connectx.lua",
+      "langage": "lua",
+      "lignes": 2774,
+      "taille_bytes": 104775,
+      "entrees": [],
+      "sorties": [
+        "function ConnectX",
+        "function HCA",
+        "function HCA_factory",
+        "function IO",
+        "function InitializationSegment",
+        "function RQ",
+        "function SQ",
+        "function check_pow2",
+        "function eq",
+        "function free_cxq",
+        "function getbits",
+        "function getint",
+        "function hexdump",
+        "function log2size",
+        "function ptrbits",
+        "function rq",
+        "function selftest",
+        "function setbits",
+        "function setint",
+        "function shutdown",
+        "function sq",
+        "struct event_cq_error",
+        "struct event_page_req",
+        "struct event_port_change",
+        "struct packet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/mellanox/benchmark-tx-only-queues-sizes.sh": {
+      "fichier": "src/apps/mellanox/benchmark-tx-only-queues-sizes.sh",
+      "langage": "shell",
+      "lignes": 53,
+      "taille_bytes": 868,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/mellanox/benchmark-tx-fwd-queues-sizes.sh": {
+      "fichier": "src/apps/mellanox/benchmark-tx-fwd-queues-sizes.sh",
+      "langage": "shell",
+      "lignes": 59,
+      "taille_bytes": 1466,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/mellanox/benchmark.lua": {
+      "fichier": "src/apps/mellanox/benchmark.lua",
+      "langage": "lua",
+      "lignes": 433,
+      "taille_bytes": 14170,
+      "entrees": [],
+      "sorties": [
+        "function Forward",
+        "function Source",
+        "function cpu_set",
+        "function fwd",
+        "function fwd_worker",
+        "function give",
+        "function make_set",
+        "function mlxconf",
+        "function sink",
+        "function sink_worker",
+        "function source",
+        "function source_linger",
+        "function source_worker",
+        "function take"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/mellanox/connectx_test.lua": {
+      "fichier": "src/apps/mellanox/connectx_test.lua",
+      "langage": "lua",
+      "lignes": 417,
+      "taille_bytes": 14873,
+      "entrees": [],
+      "sorties": [
+        "function basic_match",
+        "function between",
+        "function drop",
+        "function mean",
+        "function selftest",
+        "function stdev",
+        "function sum",
+        "function switch"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/mellanox/benchmark-tx-only-numa.sh": {
+      "fichier": "src/apps/mellanox/benchmark-tx-only-numa.sh",
+      "langage": "shell",
+      "lignes": 13,
+      "taille_bytes": 434,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/mellanox/benchmark-tx-rx-queues-sizes.sh": {
+      "fichier": "src/apps/mellanox/benchmark-tx-rx-queues-sizes.sh",
+      "langage": "shell",
+      "lignes": 56,
+      "taille_bytes": 1178,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/test/synth.lua": {
+      "fichier": "src/apps/test/synth.lua",
+      "langage": "lua",
+      "lignes": 90,
+      "taille_bytes": 2930,
+      "entrees": [],
+      "sorties": [
+        "function Synth",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/test/delayed_start.lua": {
+      "fichier": "src/apps/test/delayed_start.lua",
+      "langage": "lua",
+      "lignes": 22,
+      "taille_bytes": 674,
+      "entrees": [],
+      "sorties": [
+        "function Delayed_start"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/test/match.lua": {
+      "fichier": "src/apps/test/match.lua",
+      "langage": "lua",
+      "lignes": 100,
+      "taille_bytes": 2919,
+      "entrees": [],
+      "sorties": [
+        "function Match",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/test/npackets.lua": {
+      "fichier": "src/apps/test/npackets.lua",
+      "langage": "lua",
+      "lignes": 41,
+      "taille_bytes": 1188,
+      "entrees": [],
+      "sorties": [
+        "function Npackets",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipfix/maps.lua": {
+      "fichier": "src/apps/ipfix/maps.lua",
+      "langage": "lua",
+      "lignes": 169,
+      "taille_bytes": 5677,
+      "entrees": [],
+      "sorties": [
+        "function mk_map",
+        "function table"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipfix/dns.lua": {
+      "fichier": "src/apps/ipfix/dns.lua",
+      "langage": "lua",
+      "lignes": 307,
+      "taille_bytes": 10798,
+      "entrees": [],
+      "sorties": [
+        "function extract"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipfix/ipfix.lua": {
+      "fichier": "src/apps/ipfix/ipfix.lua",
+      "langage": "lua",
+      "lignes": 1071,
+      "taille_bytes": 40362,
+      "entrees": [],
+      "sorties": [
+        "function FlowSet",
+        "function IPFIX",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipfix/template.lua": {
+      "fichier": "src/apps/ipfix/template.lua",
+      "langage": "lua",
+      "lignes": 1068,
+      "taille_bytes": 36118,
+      "entrees": [],
+      "sorties": [
+        "function make_template_info",
+        "function ret",
+        "function selftest",
+        "function templatesMarkdown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipfix/http.lua": {
+      "fichier": "src/apps/ipfix/http.lua",
+      "langage": "lua",
+      "lignes": 212,
+      "taille_bytes": 6391,
+      "entrees": [],
+      "sorties": [
+        "function accumulate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipfix/tls.lua": {
+      "fichier": "src/apps/ipfix/tls.lua",
+      "langage": "lua",
+      "lignes": 171,
+      "taille_bytes": 5503,
+      "entrees": [],
+      "sorties": [
+        "function accumulate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel/intel.h": {
+      "fichier": "src/apps/intel/intel.h",
+      "langage": "c",
+      "lignes": 50,
+      "taille_bytes": 1194,
+      "entrees": [],
+      "sorties": [
+        "struct rx_desc",
+        "struct rx_desc_wb",
+        "struct tx_context_desc",
+        "struct tx_desc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel/loadgen.lua": {
+      "fichier": "src/apps/intel/loadgen.lua",
+      "langage": "lua",
+      "lignes": 85,
+      "taille_bytes": 2678,
+      "entrees": [],
+      "sorties": [
+        "function LoadGen",
+        "function disable_tx_descriptor_writeback",
+        "function zero_descriptors"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel/intel10g.lua": {
+      "fichier": "src/apps/intel/intel10g.lua",
+      "langage": "lua",
+      "lignes": 1247,
+      "taille_bytes": 46479,
+      "entrees": [],
+      "sorties": [
+        "function M_pf",
+        "function M_sf",
+        "function M_vf",
+        "function negotiated_autoc",
+        "function new_pf",
+        "function new_sf",
+        "function ring_buffer_size",
+        "function set_SFI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel/intel_app.lua": {
+      "fichier": "src/apps/intel/intel_app.lua",
+      "langage": "lua",
+      "lignes": 512,
+      "taille_bytes": 18343,
+      "entrees": [],
+      "sorties": [
+        "function Intel82599",
+        "function manyreconf",
+        "function mq_sq",
+        "function mq_sw",
+        "function selftest",
+        "function sq_sq"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/vlan/vlan.lua": {
+      "fichier": "src/apps/vlan/vlan.lua",
+      "langage": "lua",
+      "lignes": 270,
+      "taille_bytes": 7843,
+      "entrees": [],
+      "sorties": [
+        "function Tagger",
+        "function Untagger",
+        "function VlanMux",
+        "function check_tag",
+        "function extract_tci",
+        "function new_aux",
+        "function pop_tag",
+        "function push_tag",
+        "function selftest",
+        "function tci_to_vid",
+        "function test_tag_untag"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/xdp/test_filter.lua": {
+      "fichier": "src/apps/xdp/test_filter.lua",
+      "langage": "lua",
+      "lignes": 14,
+      "taille_bytes": 420,
+      "entrees": [],
+      "sorties": [
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/xdp/bpf.lua": {
+      "fichier": "src/apps/xdp/bpf.lua",
+      "langage": "lua",
+      "lignes": 300,
+      "taille_bytes": 7416,
+      "entrees": [],
+      "sorties": [
+        "function asm",
+        "function dis",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/xdp/test_share.lua": {
+      "fichier": "src/apps/xdp/test_share.lua",
+      "langage": "lua",
+      "lignes": 14,
+      "taille_bytes": 425,
+      "entrees": [],
+      "sorties": [
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/xdp/pf_ebpf_codegen.lua": {
+      "fichier": "src/apps/xdp/pf_ebpf_codegen.lua",
+      "langage": "lua",
+      "lignes": 373,
+      "taille_bytes": 12696,
+      "entrees": [],
+      "sorties": [
+        "function codegen",
+        "function compile",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/xdp/test_rxtx.lua": {
+      "fichier": "src/apps/xdp/test_rxtx.lua",
+      "langage": "lua",
+      "lignes": 13,
+      "taille_bytes": 423,
+      "entrees": [],
+      "sorties": [
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/xdp/test_filter_pass.lua": {
+      "fichier": "src/apps/xdp/test_filter_pass.lua",
+      "langage": "lua",
+      "lignes": 14,
+      "taille_bytes": 435,
+      "entrees": [],
+      "sorties": [
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/xdp/xdp.lua": {
+      "fichier": "src/apps/xdp/xdp.lua",
+      "langage": "lua",
+      "lignes": 1000,
+      "taille_bytes": 38135,
+      "entrees": [],
+      "sorties": [
+        "function XDP",
+        "function empty",
+        "function fill",
+        "function full",
+        "function needs_wakeup",
+        "function pull",
+        "function push",
+        "function receive",
+        "function reclaim",
+        "function rewind_fill",
+        "function rewind_transmit",
+        "function selftest",
+        "function selftest_duplex",
+        "function selftest_init",
+        "function selftest_rxtx",
+        "function selftest_rxtx_match",
+        "function selftest_rxtx_match_filter",
+        "function selftest_rxtx_match_filter_pass",
+        "function selftest_share_interface",
+        "function selftest_share_interface_worker",
+        "function snabb_enable_xdp",
+        "function transmit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipsec/esp.lua": {
+      "fichier": "src/apps/ipsec/esp.lua",
+      "langage": "lua",
+      "lignes": 207,
+      "taille_bytes": 6497,
+      "entrees": [],
+      "sorties": [
+        "function Transport6",
+        "function Tunnel6",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipsec/test-linux-compat.sh": {
+      "fichier": "src/apps/ipsec/test-linux-compat.sh",
+      "langage": "shell",
+      "lignes": 76,
+      "taille_bytes": 2044,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipsec/selftest.sh": {
+      "fichier": "src/apps/ipsec/selftest.sh",
+      "langage": "shell",
+      "lignes": 23,
+      "taille_bytes": 798,
+      "entrees": [],
+      "sorties": [
+        "export SNABB_TELNET0"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/tap/tap.lua": {
+      "fichier": "src/apps/tap/tap.lua",
+      "langage": "lua",
+      "lignes": 282,
+      "taille_bytes": 9583,
+      "entrees": [],
+      "sorties": [
+        "function Tap",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/tap/selftest.sh": {
+      "fichier": "src/apps/tap/selftest.sh",
+      "langage": "shell",
+      "lignes": 15,
+      "taille_bytes": 618,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_avf/intel_avf.lua": {
+      "fichier": "src/apps/intel_avf/intel_avf.lua",
+      "langage": "lua",
+      "lignes": 1222,
+      "taille_bytes": 39346,
+      "entrees": [],
+      "sorties": [
+        "function IO",
+        "function Intel_avf",
+        "function shutdown",
+        "struct packet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_avf/selftest.sh": {
+      "fichier": "src/apps/intel_avf/selftest.sh",
+      "langage": "shell",
+      "lignes": 20,
+      "taille_bytes": 363,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/intel_avf/tests/setup.sh": {
+      "fichier": "src/apps/intel_avf/tests/setup.sh",
+      "langage": "shell",
+      "lignes": 49,
+      "taille_bytes": 1229,
+      "entrees": [],
+      "sorties": [
+        "function setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/virtio_net/virtio_net.lua": {
+      "fichier": "src/apps/virtio_net/virtio_net.lua",
+      "langage": "lua",
+      "lignes": 79,
+      "taille_bytes": 2140,
+      "entrees": [],
+      "sorties": [
+        "function VirtioNet",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/vhost/vhost_user.lua": {
+      "fichier": "src/apps/vhost/vhost_user.lua",
+      "langage": "lua",
+      "lignes": 474,
+      "taille_bytes": 15452,
+      "entrees": [],
+      "sorties": [
+        "function VhostUser",
+        "function debug",
+        "function ptr",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/vhost/vhost_user.h": {
+      "fichier": "src/apps/vhost/vhost_user.h",
+      "langage": "c",
+      "lignes": 72,
+      "taille_bytes": 2061,
+      "entrees": [],
+      "sorties": [
+        "struct vhost_user_memory",
+        "struct vhost_user_memory_region",
+        "struct vhost_user_msg",
+        "struct vhostu_vring_addr",
+        "struct vhostu_vring_state"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/vhost/vhost.h": {
+      "fichier": "src/apps/vhost/vhost.h",
+      "langage": "c",
+      "lignes": 70,
+      "taille_bytes": 2374,
+      "entrees": [],
+      "sorties": [
+        "struct vhost",
+        "struct vhost_memory",
+        "struct vhost_vring",
+        "struct vhostu_memory_region",
+        "struct vhostu_vring_addr",
+        "struct vhostu_vring_state",
+        "struct vring_avail",
+        "struct vring_desc",
+        "struct vring_used"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/vhost/vhost_user.c": {
+      "fichier": "src/apps/vhost/vhost_user.c",
+      "langage": "c",
+      "lignes": 180,
+      "taille_bytes": 4391,
+      "entrees": [
+        "<assert.h>",
+        "<errno.h>",
+        "<fcntl.h>",
+        "<stdint.h>",
+        "<stdio.h>",
+        "<string.h>",
+        "<sys/mman.h>",
+        "<sys/socket.h>",
+        "<sys/un.h>",
+        "<unistd.h>"
+      ],
+      "sorties": [
+        "struct cmsghdr",
+        "struct iovec",
+        "struct msghdr",
+        "struct sockaddr_un"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/rss/rss.lua": {
+      "fichier": "src/apps/rss/rss.lua",
+      "langage": "lua",
+      "lignes": 638,
+      "taille_bytes": 19720,
+      "entrees": [],
+      "sorties": [
+        "function Sink",
+        "function Source",
+        "function etht_demux",
+        "function rss",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/rss/metadata.lua": {
+      "fichier": "src/apps/rss/metadata.lua",
+      "langage": "lua",
+      "lignes": 307,
+      "taille_bytes": 9562,
+      "entrees": [],
+      "sorties": [
+        "function add",
+        "function copy",
+        "function get"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/socket/raw.lua": {
+      "fichier": "src/apps/socket/raw.lua",
+      "langage": "lua",
+      "lignes": 163,
+      "taille_bytes": 4965,
+      "entrees": [],
+      "sorties": [
+        "function RawSocket",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/socket/unix.lua": {
+      "fichier": "src/apps/socket/unix.lua",
+      "langage": "lua",
+      "lignes": 201,
+      "taille_bytes": 4938,
+      "entrees": [],
+      "sorties": [
+        "function UnixSocket",
+        "function checkapp",
+        "function close",
+        "function echoapp",
+        "function open",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/rate_limiter/rate_limiter.lua": {
+      "fichier": "src/apps/rate_limiter/rate_limiter.lua",
+      "langage": "lua",
+      "lignes": 226,
+      "taille_bytes": 6499,
+      "entrees": [],
+      "sorties": [
+        "function RateLimiter",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/solarflare/poll.c": {
+      "fichier": "src/apps/solarflare/poll.c",
+      "langage": "c",
+      "lignes": 78,
+      "taille_bytes": 1905,
+      "entrees": [
+        "<assert.h>",
+        "<stdint.h>",
+        "<stdio.h>",
+        "<stdlib.h>"
+      ],
+      "sorties": [
+        "struct device"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/solarflare/ef_vi.h": {
+      "fichier": "src/apps/solarflare/ef_vi.h",
+      "langage": "c",
+      "lignes": 501,
+      "taille_bytes": 14842,
+      "entrees": [
+        "<time.h>"
+      ],
+      "sorties": [
+        "const char",
+        "const ef_filter_spec",
+        "const ef_vi_layout_entry",
+        "const ef_vi_stats_layout",
+        "const void",
+        "enum ef_filter_flags",
+        "enum ef_pd_flags",
+        "enum ef_vi_arch",
+        "enum ef_vi_flags",
+        "enum ef_vi_layout_type",
+        "struct device",
+        "struct ef_pd",
+        "struct ef_pio",
+        "struct ef_vi",
+        "struct ef_vi_nic_type",
+        "struct ops",
+        "struct timespec",
+        "struct unbundled_tx_request_ids"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/solarflare/solarflare.lua": {
+      "fichier": "src/apps/solarflare/solarflare.lua",
+      "langage": "lua",
+      "lignes": 338,
+      "taille_bytes": 10971,
+      "entrees": [],
+      "sorties": [
+        "function SolarFlareNic",
+        "function spairs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/solarflare/selftest.sh": {
+      "fichier": "src/apps/solarflare/selftest.sh",
+      "langage": "shell",
+      "lignes": 3,
+      "taille_bytes": 62,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipv4/fragment.lua": {
+      "fichier": "src/apps/ipv4/fragment.lua",
+      "langage": "lua",
+      "lignes": 288,
+      "taille_bytes": 10468,
+      "entrees": [],
+      "sorties": [
+        "function Fragmenter",
+        "function selftest",
+        "function use_deterministic_first_fragment_id"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipv4/reassemble.lua": {
+      "fichier": "src/apps/ipv4/reassemble.lua",
+      "langage": "lua",
+      "lignes": 535,
+      "taille_bytes": 20202,
+      "entrees": [],
+      "sorties": [
+        "function Reassembler",
+        "function selftest",
+        "struct packet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipv4/arp.lua": {
+      "fichier": "src/apps/ipv4/arp.lua",
+      "langage": "lua",
+      "lignes": 356,
+      "taille_bytes": 13132,
+      "entrees": [],
+      "sorties": [
+        "function ARP",
+        "function selftest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/ipv4/echo.lua": {
+      "fichier": "src/apps/ipv4/echo.lua",
+      "langage": "lua",
+      "lignes": 176,
+      "taille_bytes": 5600,
+      "entrees": [],
+      "sorties": [
+        "function ICMPEcho"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/apps/interlink/test_sink.lua": {
+      "fichier": "src/apps/interlink/test_sink.lua",
+      "langage": "lua",
+      "lignes": 22,
+      "taille_bytes": 605,
+      "entrees": [],
+      "sorties": [
+        "function configure",
+        "function start"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

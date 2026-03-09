@@ -1,0 +1,1765 @@
+{
+  "meta": {
+    "projet": "Arraymancer",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "unknown": 2,
+      "nim": 102,
+      "python": 14,
+      "ruby": 1,
+      "json": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "docs/nimDocTemplates.nim"
+  },
+  "noeuds": {
+    "nimdoc.cfg": {
+      "fichier": "nimdoc.cfg",
+      "langage": "unknown",
+      "lignes": 355,
+      "taille_bytes": 19442,
+      "entrees": [],
+      "sorties": [
+        "const currentTheme",
+        "const toggleSwitch",
+        "function main",
+        "function switchTheme"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nim.cfg": {
+      "fichier": "nim.cfg",
+      "langage": "unknown",
+      "lignes": 88,
+      "taille_bytes": 2895,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/ex03_simple_two_layers.nim": {
+      "fichier": "examples/ex03_simple_two_layers.nim",
+      "langage": "nim",
+      "lignes": 50,
+      "taille_bytes": 1370,
+      "entrees": [
+        "../src/arraymancer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/ex05_sequence_classification_GRU.nim": {
+      "fichier": "examples/ex05_sequence_classification_GRU.nim",
+      "langage": "nim",
+      "lignes": 196,
+      "taille_bytes": 6417,
+      "entrees": [],
+      "sorties": [
+        "const DataSize",
+        "func classify",
+        "type SeqKind"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/ex04_fizzbuzz_interview_cheatsheet.nim": {
+      "fichier": "examples/ex04_fizzbuzz_interview_cheatsheet.nim",
+      "langage": "nim",
+      "lignes": 139,
+      "taille_bytes": 4838,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [
+        "const BatchSize",
+        "const Epochs",
+        "const NumDigits",
+        "const NumHidden",
+        "func fizz_buzz",
+        "func fizz_buzz_encode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/ex02_handwritten_digits_recognition.nim": {
+      "fichier": "examples/ex02_handwritten_digits_recognition.nim",
+      "langage": "nim",
+      "lignes": 175,
+      "taille_bytes": 5303,
+      "entrees": [
+        "../src/arraymancer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/ex01_xor_perceptron_from_scratch.nim": {
+      "fichier": "examples/ex01_xor_perceptron_from_scratch.nim",
+      "langage": "nim",
+      "lignes": 59,
+      "taille_bytes": 1638,
+      "entrees": [
+        "../src/arraymancer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/ex07_save_load_model.nim": {
+      "fichier": "examples/ex07_save_load_model.nim",
+      "langage": "nim",
+      "lignes": 95,
+      "taille_bytes": 3691,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/ex06_shakespeare_generator.nim": {
+      "fichier": "examples/ex06_shakespeare_generator.nim",
+      "langage": "nim",
+      "lignes": 714,
+      "taille_bytes": 24258,
+      "entrees": [
+        "../src/arraymancer"
+      ],
+      "sorties": [
+        "const IxToChar",
+        "const UnkCharIx",
+        "func genCharToIx",
+        "type PrintableIdx"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/ex03_pytorch_simple_two_layers.py": {
+      "fichier": "examples/ex03_pytorch_simple_two_layers.py",
+      "langage": "python",
+      "lignes": 67,
+      "taille_bytes": 2852,
+      "entrees": [
+        "torch",
+        "torch.autograd"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/nimDocTemplates.nim": {
+      "fichier": "docs/nimDocTemplates.nim",
+      "langage": "nim",
+      "lignes": 208,
+      "taille_bytes": 9536,
+      "entrees": [],
+      "sorties": [
+        "const currentTheme",
+        "const docFileTmpl",
+        "const docItemSeeSrc",
+        "const gitUrl",
+        "const headerTmpl",
+        "const toggleSwitch",
+        "function main",
+        "function switchTheme"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "docs/docs.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "docs/docs.nim": {
+      "fichier": "docs/docs.nim",
+      "langage": "nim",
+      "lignes": 316,
+      "taille_bytes": 12850,
+      "entrees": [
+        "nimDocTemplates",
+        "std"
+      ],
+      "sorties": [
+        "const excludeFiles",
+        "const tmpl"
+      ],
+      "appelle": [
+        "docs/nimDocTemplates.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/euler_tensor_optim.nim": {
+      "fichier": "benchmarks/euler_tensor_optim.nim",
+      "langage": "nim",
+      "lignes": 69,
+      "taille_bytes": 1864,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/xtime.rb": {
+      "fichier": "benchmarks/xtime.rb",
+      "langage": "ruby",
+      "lignes": 24,
+      "taille_bytes": 414,
+      "entrees": [],
+      "sorties": [
+        "def mem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/kostya_matmul.nim": {
+      "fichier": "benchmarks/kostya_matmul.nim",
+      "langage": "nim",
+      "lignes": 23,
+      "taille_bytes": 513,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/ex01_xor_dsl.nim": {
+      "fichier": "benchmarks/ex01_xor_dsl.nim",
+      "langage": "nim",
+      "lignes": 49,
+      "taille_bytes": 1378,
+      "entrees": [
+        "../src/arraymancer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/ex01_xor.nim": {
+      "fichier": "benchmarks/ex01_xor.nim",
+      "langage": "nim",
+      "lignes": 50,
+      "taille_bytes": 1544,
+      "entrees": [
+        "../src/arraymancer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/integer_matmul.py": {
+      "fichier": "benchmarks/integer_matmul.py",
+      "langage": "python",
+      "lignes": 30,
+      "taille_bytes": 668,
+      "entrees": [
+        "numpy",
+        "sys"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/randomized_svd.nim": {
+      "fichier": "benchmarks/randomized_svd.nim",
+      "langage": "nim",
+      "lignes": 80,
+      "taille_bytes": 2672,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/ex02_mnist.nim": {
+      "fichier": "benchmarks/ex02_mnist.nim",
+      "langage": "nim",
+      "lignes": 62,
+      "taille_bytes": 2033,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/integer_matmul.nim": {
+      "fichier": "benchmarks/integer_matmul.nim",
+      "langage": "nim",
+      "lignes": 33,
+      "taille_bytes": 762,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/kostya_matmul_mitems.nim": {
+      "fichier": "benchmarks/kostya_matmul_mitems.nim",
+      "langage": "nim",
+      "lignes": 29,
+      "taille_bytes": 682,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/euler_numpy.py": {
+      "fichier": "benchmarks/euler_numpy.py",
+      "langage": "python",
+      "lignes": 68,
+      "taille_bytes": 1667,
+      "entrees": [
+        "numpy",
+        "sys",
+        "time"
+      ],
+      "sorties": [
+        "def euler_solve"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/euler_nativearray.nim": {
+      "fichier": "benchmarks/euler_nativearray.nim",
+      "langage": "nim",
+      "lignes": 59,
+      "taille_bytes": 1322,
+      "entrees": [
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/randomized_svd_fbpca.py": {
+      "fichier": "benchmarks/randomized_svd_fbpca.py",
+      "langage": "python",
+      "lignes": 75,
+      "taille_bytes": 2341,
+      "entrees": [
+        "fbpca",
+        "numpy",
+        "scipy.linalg",
+        "time"
+      ],
+      "sorties": [
+        "def bench"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/kostya_matmul_higher_order_template.nim": {
+      "fichier": "benchmarks/kostya_matmul_higher_order_template.nim",
+      "langage": "nim",
+      "lignes": 23,
+      "taille_bytes": 549,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/randomized_svd_sklearn.py": {
+      "fichier": "benchmarks/randomized_svd_sklearn.py",
+      "langage": "python",
+      "lignes": 76,
+      "taille_bytes": 2442,
+      "entrees": [
+        "numpy",
+        "scipy.linalg",
+        "sklearn.utils.extmath",
+        "time"
+      ],
+      "sorties": [
+        "def bench"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/euler_tensor.nim": {
+      "fichier": "benchmarks/euler_tensor.nim",
+      "langage": "nim",
+      "lignes": 74,
+      "taille_bytes": 2154,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/kostya_matmul_list_comprehension.nim": {
+      "fichier": "benchmarks/kostya_matmul_list_comprehension.nim",
+      "langage": "nim",
+      "lignes": 22,
+      "taille_bytes": 521,
+      "entrees": [
+        "../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/implementation/softmax_cross_entropy_bench_batch_last.nim": {
+      "fichier": "benchmarks/implementation/softmax_cross_entropy_bench_batch_last.nim",
+      "langage": "nim",
+      "lignes": 453,
+      "taille_bytes": 15212,
+      "entrees": [
+        "../../src/tensor/tensor"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/implementation/iteration.nim": {
+      "fichier": "benchmarks/implementation/iteration.nim",
+      "langage": "nim",
+      "lignes": 158,
+      "taille_bytes": 4945,
+      "entrees": [
+        "../../src/arraymancer",
+        "../../src/tensor/backend/[openmp",
+        "std"
+      ],
+      "sorties": [
+        "type outType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/implementation/pca.nim": {
+      "fichier": "benchmarks/implementation/pca.nim",
+      "langage": "nim",
+      "lignes": 1229,
+      "taille_bytes": 57064,
+      "entrees": [],
+      "sorties": [
+        "const Display",
+        "const Sizes",
+        "const Tile",
+        "type FloatType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/implementation/triot.nim": {
+      "fichier": "benchmarks/implementation/triot.nim",
+      "langage": "nim",
+      "lignes": 288,
+      "taille_bytes": 8234,
+      "entrees": [
+        "../../src/tensor/backend/memory_optimization_hints",
+        "../../src/tensor/backend/metadataArray",
+        "std"
+      ],
+      "sorties": [
+        "const MAXRANK",
+        "type TestTensor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/implementation/softmax_cross_entropy_bench_batch_first.nim": {
+      "fichier": "benchmarks/implementation/softmax_cross_entropy_bench_batch_first.nim",
+      "langage": "nim",
+      "lignes": 370,
+      "taille_bytes": 11495,
+      "entrees": [
+        "../../src/tensor/tensor"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/implementation/proc_method_closure_bench.nim": {
+      "fichier": "benchmarks/implementation/proc_method_closure_bench.nim",
+      "langage": "nim",
+      "lignes": 46,
+      "taille_bytes": 1018,
+      "entrees": [
+        "std"
+      ],
+      "sorties": [
+        "type Foo",
+        "type FooBase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/implementation/svd.nim": {
+      "fichier": "benchmarks/implementation/svd.nim",
+      "langage": "nim",
+      "lignes": 547,
+      "taille_bytes": 18331,
+      "entrees": [],
+      "sorties": [
+        "const Display",
+        "const Sizes",
+        "type FloatType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/implementation/logsumexp.nim": {
+      "fichier": "benchmarks/implementation/logsumexp.nim",
+      "langage": "nim",
+      "lignes": 247,
+      "taille_bytes": 8346,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [
+        "const nb_iter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/implementation/stable_sigmoid_bench.nim": {
+      "fichier": "benchmarks/implementation/stable_sigmoid_bench.nim",
+      "langage": "nim",
+      "lignes": 95,
+      "taille_bytes": 2917,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tests_opencl.nim": {
+      "fichier": "tests/tests_opencl.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 793,
+      "entrees": [
+        "./tensor/test_init_opencl"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tests_cpu.nim": {
+      "fichier": "tests/tests_cpu.nim",
+      "langage": "nim",
+      "lignes": 79,
+      "taille_bytes": 3036,
+      "entrees": [
+        "../src/arraymancer",
+        "./io/test_image",
+        "./linear_algebra/test_linear_algebra",
+        "./stability_tests/test_stability_openmp"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_indep_import.nim": {
+      "fichier": "tests/test_indep_import.nim",
+      "langage": "nim",
+      "lignes": 11,
+      "taille_bytes": 252,
+      "entrees": [
+        "../src/arraymancer/stats/kde",
+        "../src/arraymancer/tensor"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/full_test_suite.nim": {
+      "fichier": "tests/full_test_suite.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 658,
+      "entrees": [
+        "./tests_cpu"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_bugtracker.nim": {
+      "fichier": "tests/test_bugtracker.nim",
+      "langage": "nim",
+      "lignes": 114,
+      "taille_bytes": 4524,
+      "entrees": [
+        "../src/arraymancer",
+        "unittest"
+      ],
+      "sorties": [
+        "const exp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tests_cuda.nim": {
+      "fichier": "tests/tests_cuda.nim",
+      "langage": "nim",
+      "lignes": 29,
+      "taille_bytes": 1129,
+      "entrees": [
+        "../src/arraymancer",
+        "./nn_primitives/test_nnp_convolution_cudnn"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/testutils.nim": {
+      "fichier": "tests/testutils.nim",
+      "langage": "nim",
+      "lignes": 22,
+      "taille_bytes": 760,
+      "entrees": [
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/spatial/test_distances.nim": {
+      "fichier": "tests/spatial/test_distances.nim",
+      "langage": "nim",
+      "lignes": 120,
+      "taille_bytes": 4751,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/spatial/test_kdtree.nim": {
+      "fichier": "tests/spatial/test_kdtree.nim",
+      "langage": "nim",
+      "lignes": 179,
+      "taille_bytes": 8382,
+      "entrees": [
+        "../../src/arraymancer",
+        "nimpy",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/stability_tests/test_stability_openmp.nim": {
+      "fichier": "tests/stability_tests/test_stability_openmp.nim",
+      "langage": "nim",
+      "lignes": 56,
+      "taille_bytes": 1975,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/datasets/test_mnist.nim": {
+      "fichier": "tests/datasets/test_mnist.nim",
+      "langage": "nim",
+      "lignes": 28,
+      "taille_bytes": 993,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/datasets/test_imdb.nim": {
+      "fichier": "tests/datasets/test_imdb.nim",
+      "langage": "nim",
+      "lignes": 72,
+      "taille_bytes": 2094,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/linear_algebra/test_linear_algebra.nim": {
+      "fichier": "tests/linear_algebra/test_linear_algebra.nim",
+      "langage": "nim",
+      "lignes": 585,
+      "taille_bytes": 24506,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/linear_algebra/test_special_matrices.nim": {
+      "fichier": "tests/linear_algebra/test_special_matrices.nim",
+      "langage": "nim",
+      "lignes": 250,
+      "taille_bytes": 10206,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/stats/test_kde.nim": {
+      "fichier": "tests/stats/test_kde.nim",
+      "langage": "nim",
+      "lignes": 83,
+      "taille_bytes": 4443,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/stats/test_stats.nim": {
+      "fichier": "tests/stats/test_stats.nim",
+      "langage": "nim",
+      "lignes": 72,
+      "taille_bytes": 2413,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/stats/test_distributions.nim": {
+      "fichier": "tests/stats/test_distributions.nim",
+      "langage": "nim",
+      "lignes": 98,
+      "taille_bytes": 3034,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/end_to_end/examples_compile.nim": {
+      "fichier": "tests/end_to_end/examples_compile.nim",
+      "langage": "nim",
+      "lignes": 25,
+      "taille_bytes": 1149,
+      "entrees": [
+        "../testutils",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/end_to_end/gcn.nim": {
+      "fichier": "tests/end_to_end/gcn.nim",
+      "langage": "nim",
+      "lignes": 41,
+      "taille_bytes": 1128,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/end_to_end/examples_run.nim": {
+      "fichier": "tests/end_to_end/examples_run.nim",
+      "langage": "nim",
+      "lignes": 113,
+      "taille_bytes": 3582,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nn_primitives/test_nnp_numerical_gradient.nim": {
+      "fichier": "tests/nn_primitives/test_nnp_numerical_gradient.nim",
+      "langage": "nim",
+      "lignes": 33,
+      "taille_bytes": 1147,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nn_primitives/test_nnp_loss.nim": {
+      "fichier": "tests/nn_primitives/test_nnp_loss.nim",
+      "langage": "nim",
+      "lignes": 107,
+      "taille_bytes": 4000,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nn_primitives/test_nnp_convolution_cudnn.nim": {
+      "fichier": "tests/nn_primitives/test_nnp_convolution_cudnn.nim",
+      "langage": "nim",
+      "lignes": 102,
+      "taille_bytes": 3664,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nn_primitives/test_nnp_convolution.nim": {
+      "fichier": "tests/nn_primitives/test_nnp_convolution.nim",
+      "langage": "nim",
+      "lignes": 181,
+      "taille_bytes": 5673,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nn_primitives/test_nnp_embedding.nim": {
+      "fichier": "tests/nn_primitives/test_nnp_embedding.nim",
+      "langage": "nim",
+      "lignes": 178,
+      "taille_bytes": 6361,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nn_primitives/test_nnp_maxpool.nim": {
+      "fichier": "tests/nn_primitives/test_nnp_maxpool.nim",
+      "langage": "nim",
+      "lignes": 46,
+      "taille_bytes": 1468,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nn_primitives/test_nnp_gru.nim": {
+      "fichier": "tests/nn_primitives/test_nnp_gru.nim",
+      "langage": "nim",
+      "lignes": 510,
+      "taille_bytes": 17822,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [
+        "type GradKind"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nn_primitives/references/test_nnp_gru.py": {
+      "fichier": "tests/nn_primitives/references/test_nnp_gru.py",
+      "langage": "python",
+      "lignes": 119,
+      "taille_bytes": 3219,
+      "entrees": [
+        "torch",
+        "torch.nn"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nn_primitives/references/test_nnp_gru_cell.py": {
+      "fichier": "tests/nn_primitives/references/test_nnp_gru_cell.py",
+      "langage": "python",
+      "lignes": 55,
+      "taille_bytes": 1173,
+      "entrees": [
+        "torch",
+        "torch.nn"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/autograd/test_gate_basic.nim": {
+      "fichier": "tests/autograd/test_gate_basic.nim",
+      "langage": "nim",
+      "lignes": 93,
+      "taille_bytes": 2599,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/autograd/test_gate_hadamard.nim": {
+      "fichier": "tests/autograd/test_gate_hadamard.nim",
+      "langage": "nim",
+      "lignes": 50,
+      "taille_bytes": 1629,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/autograd/test_gate_blas.nim": {
+      "fichier": "tests/autograd/test_gate_blas.nim",
+      "langage": "nim",
+      "lignes": 52,
+      "taille_bytes": 1832,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/autograd/test_gate_shapeshifting.nim": {
+      "fichier": "tests/autograd/test_gate_shapeshifting.nim",
+      "langage": "nim",
+      "lignes": 219,
+      "taille_bytes": 7070,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/load_csv.nim": {
+      "fichier": "tests/manual_checks/load_csv.nim",
+      "langage": "nim",
+      "lignes": 5,
+      "taille_bytes": 111,
+      "entrees": [
+        "../../src/arraymancer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/least_squares.nim": {
+      "fichier": "tests/manual_checks/least_squares.nim",
+      "langage": "nim",
+      "lignes": 33,
+      "taille_bytes": 630,
+      "entrees": [
+        "../../src/arraymancer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/least_squares.py": {
+      "fichier": "tests/manual_checks/least_squares.py",
+      "langage": "python",
+      "lignes": 30,
+      "taille_bytes": 581,
+      "entrees": [
+        "numpy"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/empty_tensors.py": {
+      "fichier": "tests/manual_checks/empty_tensors.py",
+      "langage": "python",
+      "lignes": 54,
+      "taille_bytes": 1205,
+      "entrees": [
+        "numpy"
+      ],
+      "sorties": [
+        "def empty_create1",
+        "def empty_create2",
+        "def empty_default",
+        "def indexing"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/pca_detailed.py": {
+      "fichier": "tests/manual_checks/pca_detailed.py",
+      "langage": "python",
+      "lignes": 154,
+      "taille_bytes": 3030,
+      "entrees": [
+        "numpy",
+        "sklearn.decomposition"
+      ],
+      "sorties": [
+        "def test"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/autograd_mean_arraymancer.nim": {
+      "fichier": "tests/manual_checks/autograd_mean_arraymancer.nim",
+      "langage": "nim",
+      "lignes": 44,
+      "taille_bytes": 813,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/allocator_regression_178_1st_part.nim": {
+      "fichier": "tests/manual_checks/allocator_regression_178_1st_part.nim",
+      "langage": "nim",
+      "lignes": 83,
+      "taille_bytes": 2631,
+      "entrees": [
+        "../../src/arraymancer/tensor",
+        "times"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/autograd_sum_stack_pytorch.py": {
+      "fichier": "tests/manual_checks/autograd_sum_stack_pytorch.py",
+      "langage": "python",
+      "lignes": 40,
+      "taille_bytes": 894,
+      "entrees": [
+        "torch",
+        "torch.autograd"
+      ],
+      "sorties": [
+        "def foo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/autograd_sum_stack_arraymancer.nim": {
+      "fichier": "tests/manual_checks/autograd_sum_stack_arraymancer.nim",
+      "langage": "nim",
+      "lignes": 34,
+      "taille_bytes": 699,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/fancy_indexing.py": {
+      "fichier": "tests/manual_checks/fancy_indexing.py",
+      "langage": "python",
+      "lignes": 190,
+      "taille_bytes": 5553,
+      "entrees": [
+        "numpy"
+      ],
+      "sorties": [
+        "def index_fill",
+        "def index_select",
+        "def masked_axis_fill_tensor_invalid_1",
+        "def masked_axis_fill_tensor_valid_1",
+        "def masked_axis_fill_tensor_valid_2",
+        "def masked_axis_fill_value",
+        "def masked_axis_select",
+        "def masked_fill",
+        "def masked_select"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/softmax_cross_entropy.nim": {
+      "fichier": "tests/manual_checks/softmax_cross_entropy.nim",
+      "langage": "nim",
+      "lignes": 51,
+      "taille_bytes": 1420,
+      "entrees": [
+        "../../src/arraymancer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/randomized_svd.py": {
+      "fichier": "tests/manual_checks/randomized_svd.py",
+      "langage": "python",
+      "lignes": 63,
+      "taille_bytes": 2771,
+      "entrees": [
+        "numpy",
+        "scipy.linalg",
+        "sklearn.utils.extmath"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/autograd_mean_pytorch.py": {
+      "fichier": "tests/manual_checks/autograd_mean_pytorch.py",
+      "langage": "python",
+      "lignes": 66,
+      "taille_bytes": 1412,
+      "entrees": [
+        "torch",
+        "torch.autograd"
+      ],
+      "sorties": [
+        "def forwardNeuron"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/optimizers/lua_torch.json": {
+      "fichier": "tests/manual_checks/optimizers/lua_torch.json",
+      "langage": "json",
+      "lignes": 102,
+      "taille_bytes": 2901,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/manual_checks/optimizers/test_optimizers.nim": {
+      "fichier": "tests/manual_checks/optimizers/test_optimizers.nim",
+      "langage": "nim",
+      "lignes": 114,
+      "taille_bytes": 3699,
+      "entrees": [],
+      "sorties": [
+        "func drosenbrock",
+        "func rosenbrock",
+        "type Model"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/_split_tests/tests_tensor_part02.nim": {
+      "fichier": "tests/_split_tests/tests_tensor_part02.nim",
+      "langage": "nim",
+      "lignes": 19,
+      "taille_bytes": 777,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/_split_tests/tests_tensor_part05.nim": {
+      "fichier": "tests/_split_tests/tests_tensor_part05.nim",
+      "langage": "nim",
+      "lignes": 22,
+      "taille_bytes": 858,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/_split_tests/tests_tensor_part04.nim": {
+      "fichier": "tests/_split_tests/tests_tensor_part04.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 807,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/_split_tests/tests_tensor_part01.nim": {
+      "fichier": "tests/_split_tests/tests_tensor_part01.nim",
+      "langage": "nim",
+      "lignes": 25,
+      "taille_bytes": 956,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/_split_tests/tests_cpu_remainder.nim": {
+      "fichier": "tests/_split_tests/tests_cpu_remainder.nim",
+      "langage": "nim",
+      "lignes": 46,
+      "taille_bytes": 1756,
+      "entrees": [
+        "../io/test_csv",
+        "../io/test_image",
+        "../linear_algebra/test_linear_algebra",
+        "../stability_tests/test_stability_openmp"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/_split_tests/tests_tensor_part03.nim": {
+      "fichier": "tests/_split_tests/tests_tensor_part03.nim",
+      "langage": "nim",
+      "lignes": 22,
+      "taille_bytes": 860,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nlp/test_tokenizers.nim": {
+      "fichier": "tests/nlp/test_tokenizers.nim",
+      "langage": "nim",
+      "lignes": 46,
+      "taille_bytes": 1384,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_ufunc.nim": {
+      "fichier": "tests/tensor/test_ufunc.nim",
+      "langage": "nim",
+      "lignes": 104,
+      "taille_bytes": 4055,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_accessors.nim": {
+      "fichier": "tests/tensor/test_accessors.nim",
+      "langage": "nim",
+      "lignes": 183,
+      "taille_bytes": 4986,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [
+        "type Foo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_algorithms.nim": {
+      "fichier": "tests/tensor/test_algorithms.nim",
+      "langage": "nim",
+      "lignes": 106,
+      "taille_bytes": 3635,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_display.nim": {
+      "fichier": "tests/tensor/test_display.nim",
+      "langage": "nim",
+      "lignes": 550,
+      "taille_bytes": 31061,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_broadcasting.nim": {
+      "fichier": "tests/tensor/test_broadcasting.nim",
+      "langage": "nim",
+      "lignes": 406,
+      "taille_bytes": 15374,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_einsum_failed.nim": {
+      "fichier": "tests/tensor/test_einsum_failed.nim",
+      "langage": "nim",
+      "lignes": 39,
+      "taille_bytes": 1141,
+      "entrees": [
+        "../../src/arraymancer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_accessors_slicer_cuda.nim": {
+      "fichier": "tests/tensor/test_accessors_slicer_cuda.nim",
+      "langage": "nim",
+      "lignes": 148,
+      "taille_bytes": 5529,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_complex.nim": {
+      "fichier": "tests/tensor/test_complex.nim",
+      "langage": "nim",
+      "lignes": 140,
+      "taille_bytes": 4288,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_operators_blas_cuda.nim": {
+      "fichier": "tests/tensor/test_operators_blas_cuda.nim",
+      "langage": "nim",
+      "lignes": 237,
+      "taille_bytes": 8993,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_math_functions.nim": {
+      "fichier": "tests/tensor/test_math_functions.nim",
+      "langage": "nim",
+      "lignes": 413,
+      "taille_bytes": 18920,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_accessors_slicer.nim": {
+      "fichier": "tests/tensor/test_accessors_slicer.nim",
+      "langage": "nim",
+      "lignes": 313,
+      "taille_bytes": 11045,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_broadcasting_cuda.nim": {
+      "fichier": "tests/tensor/test_broadcasting_cuda.nim",
+      "langage": "nim",
+      "lignes": 189,
+      "taille_bytes": 7436,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_operators_blas_opencl.nim": {
+      "fichier": "tests/tensor/test_operators_blas_opencl.nim",
+      "langage": "nim",
+      "lignes": 263,
+      "taille_bytes": 10087,
+      "entrees": [
+        "../../src/arraymancer",
+        "../testutils",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_init.nim": {
+      "fichier": "tests/tensor/test_init.nim",
+      "langage": "nim",
+      "lignes": 227,
+      "taille_bytes": 6364,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [
+        "type TestObject"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_empty_tensors.nim": {
+      "fichier": "tests/tensor/test_empty_tensors.nim",
+      "langage": "nim",
+      "lignes": 29,
+      "taille_bytes": 1011,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_broadcasting_opencl.nim": {
+      "fichier": "tests/tensor/test_broadcasting_opencl.nim",
+      "langage": "nim",
+      "lignes": 74,
+      "taille_bytes": 3114,
+      "entrees": [
+        "../../src/arraymancer",
+        "../testutils",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_higherorder.nim": {
+      "fichier": "tests/tensor/test_higherorder.nim",
+      "langage": "nim",
+      "lignes": 159,
+      "taille_bytes": 5177,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_init_cuda.nim": {
+      "fichier": "tests/tensor/test_init_cuda.nim",
+      "langage": "nim",
+      "lignes": 33,
+      "taille_bytes": 1151,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_fancy_indexing.nim": {
+      "fichier": "tests/tensor/test_fancy_indexing.nim",
+      "langage": "nim",
+      "lignes": 245,
+      "taille_bytes": 7330,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_operators_blas.nim": {
+      "fichier": "tests/tensor/test_operators_blas.nim",
+      "langage": "nim",
+      "lignes": 461,
+      "taille_bytes": 19740,
+      "entrees": [
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_init_opencl.nim": {
+      "fichier": "tests/tensor/test_init_opencl.nim",
+      "langage": "nim",
+      "lignes": 37,
+      "taille_bytes": 1122,
+      "entrees": [
+        "../../src/arraymancer",
+        "../testutils",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_aggregate.nim": {
+      "fichier": "tests/tensor/test_aggregate.nim",
+      "langage": "nim",
+      "lignes": 371,
+      "taille_bytes": 13787,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_einsum.nim": {
+      "fichier": "tests/tensor/test_einsum.nim",
+      "langage": "nim",
+      "lignes": 218,
+      "taille_bytes": 8028,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_exporting.nim": {
+      "fichier": "tests/tensor/test_exporting.nim",
+      "langage": "nim",
+      "lignes": 53,
+      "taille_bytes": 1907,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_operators_comparison.nim": {
+      "fichier": "tests/tensor/test_operators_comparison.nim",
+      "langage": "nim",
+      "lignes": 79,
+      "taille_bytes": 2708,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_selectors.nim": {
+      "fichier": "tests/tensor/test_selectors.nim",
+      "langage": "nim",
+      "lignes": 448,
+      "taille_bytes": 14015,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tensor/test_optimization.nim": {
+      "fichier": "tests/tensor/test_optimization.nim",
+      "langage": "nim",
+      "lignes": 28,
+      "taille_bytes": 893,
+      "entrees": [
+        "../../src/arraymancer",
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "docs/docs.nim",
+      "vers": "docs/nimDocTemplates.nim",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

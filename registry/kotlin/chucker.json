@@ -1,0 +1,3147 @@
+{
+  "meta": {
+    "projet": "chucker",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 2,
+      "yaml": 1,
+      "kotlin": 99,
+      "shell": 2,
+      "xml": 12,
+      "graphql": 2,
+      "protobuf": 1,
+      "toml": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 70,
+    "edges_circulaires": 2,
+    "noeuds_centraux": 1,
+    "noeuds_feuilles": 7,
+    "noeuds_hubs": 0,
+    "points_entree": 12,
+    "fichier_plus_appele": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt"
+  },
+  "noeuds": {
+    "renovate.json": {
+      "fichier": "renovate.json",
+      "langage": "json",
+      "lignes": 19,
+      "taille_bytes": 480,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "detekt-config.yml": {
+      "fichier": "detekt-config.yml",
+      "langage": "yaml",
+      "lignes": 55,
+      "taille_bytes": 1200,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "settings.gradle.kts": {
+      "fichier": "settings.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 21,
+      "taille_bytes": 534,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.gradle.kts": {
+      "fichier": "build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 71,
+      "taille_bytes": 1965,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "downloadApolloSchema.sh": {
+      "fichier": "downloadApolloSchema.sh",
+      "langage": "shell",
+      "lignes": 11,
+      "taille_bytes": 541,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library-no-op/build.gradle.kts": {
+      "fichier": "library-no-op/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 59,
+      "taille_bytes": 1357,
+      "entrees": [
+        "org.gradle.kotlin.dsl.withType",
+        "org.jetbrains.kotlin.gradle.tasks.KotlinCompile"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/RetentionManager.kt": {
+      "fichier": "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/RetentionManager.kt",
+      "langage": "kotlin",
+      "lignes": 26,
+      "taille_bytes": 558,
+      "entrees": [
+        "android.content.Context"
+      ],
+      "sorties": [
+        "public class RetentionManager"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt": {
+      "fichier": "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt",
+      "langage": "kotlin",
+      "lignes": 23,
+      "taille_bytes": 456,
+      "entrees": [
+        "okhttp3.Request",
+        "okhttp3.Response",
+        "okio.ByteString",
+        "okio.IOException"
+      ],
+      "sorties": [
+        "public interface BodyDecoder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptor.kt": {
+      "fichier": "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptor.kt",
+      "langage": "kotlin",
+      "lignes": 58,
+      "taille_bytes": 1670,
+      "entrees": [
+        "android.content.Context",
+        "java.io.IOException",
+        "okhttp3.Interceptor",
+        "okhttp3.Response"
+      ],
+      "sorties": [
+        "public class Builder",
+        "public class ChuckerInterceptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt": {
+      "fichier": "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt",
+      "langage": "kotlin",
+      "lignes": 21,
+      "taille_bytes": 567,
+      "entrees": [
+        "android.content.Context",
+        "android.content.Intent"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/ExportFormat.kt": {
+      "fichier": "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/ExportFormat.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 294,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt": {
+      "fichier": "library-no-op/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+      "langage": "kotlin",
+      "lignes": 23,
+      "taille_bytes": 657,
+      "entrees": [
+        "android.content.Context",
+        "android.net.Uri"
+      ],
+      "sorties": [
+        "public class ChuckerCollector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "assets/generate_gif.sh": {
+      "fichier": "assets/generate_gif.sh",
+      "langage": "shell",
+      "lignes": 14,
+      "taille_bytes": 799,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/build.gradle.kts": {
+      "fichier": "sample/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 115,
+      "taille_bytes": 3575,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/androidTest/java/com/chuckerteam/chucker/sample/MainActivityTest.kt": {
+      "fichier": "sample/src/androidTest/java/com/chuckerteam/chucker/sample/MainActivityTest.kt",
+      "langage": "kotlin",
+      "lignes": 104,
+      "taille_bytes": 3265,
+      "entrees": [
+        "androidx.compose.ui.test.assertHasClickAction",
+        "androidx.compose.ui.test.assertIsDisplayed",
+        "androidx.compose.ui.test.junit4.createAndroidComposeRule",
+        "androidx.compose.ui.test.onNodeWithTag",
+        "androidx.compose.ui.test.performClick",
+        "androidx.test.ext.junit.runners.AndroidJUnit4",
+        "com.chuckerteam.chucker.sample.compose.testtags.ChuckerTestTags",
+        "org.junit.Rule",
+        "org.junit.Test",
+        "org.junit.runner.RunWith"
+      ],
+      "sorties": [
+        "class MainActivityTest",
+        "fun appBarTitle_shouldBeVisible",
+        "fun doGraphQLButton_shouldBeClickable",
+        "fun doHttpButton_shouldBeClickable",
+        "fun exportButtons_shouldBeVisibleAndClickable",
+        "fun interceptorRadioButtons_shouldBeDisplayed",
+        "fun interceptorRadioButtons_shouldBeSelectable",
+        "fun interceptorTypeLabel_shouldBeVisible_andClickable",
+        "fun introText_shouldBeVisible_inCompactLayout",
+        "fun launchChuckerButton_shouldBeVisibleAndClickable"
+      ],
+      "appelle": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/debug/AndroidManifest.xml": {
+      "fichier": "sample/src/debug/AndroidManifest.xml",
+      "langage": "xml",
+      "lignes": 8,
+      "taille_bytes": 290,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/debug/res/xml/network_security_config.xml": {
+      "fichier": "sample/src/debug/res/xml/network_security_config.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 258,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/AndroidManifest.xml": {
+      "fichier": "sample/src/main/AndroidManifest.xml",
+      "langage": "xml",
+      "lignes": 23,
+      "taille_bytes": 854,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/graphql/com/chuckerteam/chucker/sample/Search.graphql": {
+      "fichier": "sample/src/main/graphql/com/chuckerteam/chucker/sample/Search.graphql",
+      "langage": "graphql",
+      "lignes": 18,
+      "taille_bytes": 294,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/graphql/com/chuckerteam/chucker/sample/schema.json": {
+      "fichier": "sample/src/main/graphql/com/chuckerteam/chucker/sample/schema.json",
+      "langage": "json",
+      "lignes": 1437,
+      "taille_bytes": 40747,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/graphql/com/chuckerteam/chucker/sample/schema.json.graphql": {
+      "fichier": "sample/src/main/graphql/com/chuckerteam/chucker/sample/schema.json.graphql",
+      "langage": "graphql",
+      "lignes": 138,
+      "taille_bytes": 3342,
+      "entrees": [],
+      "sorties": [
+        "enum CacheControlScope",
+        "type Character",
+        "type Characters",
+        "type Episode",
+        "type Episodes",
+        "type Info",
+        "type Location",
+        "type Locations",
+        "type Query"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/proto/com/chuckerteam/chucker/sample/pokemon.proto": {
+      "fichier": "sample/src/main/proto/com/chuckerteam/chucker/sample/pokemon.proto",
+      "langage": "protobuf",
+      "lignes": 10,
+      "taille_bytes": 176,
+      "entrees": [],
+      "sorties": [
+        "message Pokemon"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/InterceptorType.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/InterceptorType.kt",
+      "langage": "kotlin",
+      "lignes": 24,
+      "taille_bytes": 467,
+      "entrees": [
+        "okhttp3.Interceptor"
+      ],
+      "sorties": [
+        "enum class",
+        "fun Interceptor",
+        "interface Provider"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleControls.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/DummyImageHttpTask.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/DummyImageHttpTask.kt",
+      "langage": "kotlin",
+      "lignes": 23,
+      "taille_bytes": 583,
+      "entrees": [
+        "okhttp3.OkHttpClient",
+        "okhttp3.Request"
+      ],
+      "sorties": [
+        "class DummyImageHttpTask"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/OkHttpUtils.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/OkHttpUtils.kt",
+      "langage": "kotlin",
+      "lignes": 81,
+      "taille_bytes": 2669,
+      "entrees": [
+        "android.content.Context",
+        "com.chuckerteam.chucker.api.ChuckerCollector",
+        "com.chuckerteam.chucker.api.ChuckerInterceptor",
+        "com.chuckerteam.chucker.api.RetentionManager",
+        "okhttp3.Call",
+        "okhttp3.Callback",
+        "okhttp3.OkHttpClient",
+        "okhttp3.Response",
+        "okhttp3.logging.HttpLoggingInterceptor",
+        "okio.IOException"
+      ],
+      "sorties": [
+        "class ReadBytesCallback",
+        "const val",
+        "fun createOkHttpClient"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptor.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/RetentionManager.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/InterceptorTypeSelector.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/InterceptorTypeSelector.kt",
+      "langage": "kotlin",
+      "lignes": 5,
+      "taille_bytes": 154,
+      "entrees": [],
+      "sorties": [
+        "class InterceptorTypeSelector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/HttpTask.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/HttpTask.kt",
+      "langage": "kotlin",
+      "lignes": 5,
+      "taille_bytes": 77,
+      "entrees": [],
+      "sorties": [
+        "fun run",
+        "interface HttpTask"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/HttpBinHttpTask.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/HttpBinHttpTask.kt",
+      "langage": "kotlin",
+      "lignes": 254,
+      "taille_bytes": 7203,
+      "entrees": [
+        "com.chuckerteam.chucker.sample.HttpBinHttpTask.Api.Data",
+        "okhttp3.MediaType.Companion.toMediaType",
+        "okhttp3.OkHttpClient",
+        "okhttp3.RequestBody",
+        "okio.Buffer",
+        "okio.BufferedSink",
+        "retrofit2.Call",
+        "retrofit2.Callback",
+        "retrofit2.Response",
+        "retrofit2.Retrofit",
+        "retrofit2.converter.gson.GsonConverterFactory",
+        "retrofit2.create",
+        "retrofit2.http.Body",
+        "retrofit2.http.DELETE",
+        "retrofit2.http.Field",
+        "retrofit2.http.FormUrlEncoded",
+        "retrofit2.http.GET",
+        "retrofit2.http.Header",
+        "retrofit2.http.Headers",
+        "retrofit2.http.PATCH",
+        "retrofit2.http.POST",
+        "retrofit2.http.PUT",
+        "retrofit2.http.Path",
+        "retrofit2.http.Query"
+      ],
+      "sorties": [
+        "class Data",
+        "class HttpBinHttpTask",
+        "fun anything",
+        "fun basicAuth",
+        "fun bearer",
+        "fun brotliResponse",
+        "fun cache",
+        "fun cookieSet",
+        "fun deflate",
+        "fun delay",
+        "fun delete",
+        "fun deny",
+        "fun drip",
+        "fun get",
+        "fun gzipRequest",
+        "fun gzipResponse",
+        "fun image",
+        "fun patch",
+        "fun post",
+        "fun postForm",
+        "fun postRawRequestBody",
+        "fun put",
+        "fun redirect",
+        "fun redirectAbsolute",
+        "fun redirectRelative",
+        "fun redirectTo",
+        "fun status",
+        "fun stream",
+        "fun streamBytes",
+        "fun utf8",
+        "fun xml"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/PostmanEchoHttpTask.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/PostmanEchoHttpTask.kt",
+      "langage": "kotlin",
+      "lignes": 50,
+      "taille_bytes": 1568,
+      "entrees": [
+        "okhttp3.MediaType.Companion.toMediaType",
+        "okhttp3.OkHttpClient",
+        "okhttp3.Request",
+        "okhttp3.RequestBody.Companion.toRequestBody"
+      ],
+      "sorties": [
+        "class PostmanEchoHttpTask"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/LargeJson.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/LargeJson.kt",
+      "langage": "kotlin",
+      "lignes": 919,
+      "taille_bytes": 380259,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/GraphQlTask.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/GraphQlTask.kt",
+      "langage": "kotlin",
+      "lignes": 89,
+      "taille_bytes": 2609,
+      "entrees": [
+        "android.util.Log",
+        "com.apollographql.apollo.ApolloClient",
+        "com.apollographql.apollo.api.Optional",
+        "com.apollographql.apollo.network.okHttpClient",
+        "kotlinx.coroutines.CoroutineExceptionHandler",
+        "kotlinx.coroutines.CoroutineScope",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.SupervisorJob",
+        "kotlinx.coroutines.async",
+        "kotlinx.coroutines.launch",
+        "kotlinx.coroutines.supervisorScope",
+        "okhttp3.OkHttpClient",
+        "okhttp3.ResponseBody",
+        "retrofit2.Call",
+        "retrofit2.Retrofit",
+        "retrofit2.create",
+        "retrofit2.http.GET",
+        "retrofit2.http.Query"
+      ],
+      "sorties": [
+        "class GraphQlTask",
+        "const val",
+        "fun getCharacterById"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt",
+      "langage": "kotlin",
+      "lignes": 142,
+      "taille_bytes": 5164,
+      "entrees": [
+        "android.content.ActivityNotFoundException",
+        "android.content.Intent",
+        "android.os.Bundle",
+        "android.os.StrictMode",
+        "android.util.Log",
+        "android.widget.Toast",
+        "androidx.activity.ComponentActivity",
+        "androidx.activity.compose.setContent",
+        "androidx.activity.enableEdgeToEdge",
+        "androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi",
+        "androidx.compose.material3.windowsizeclass.calculateWindowSizeClass",
+        "androidx.compose.runtime.getValue",
+        "androidx.compose.runtime.mutableStateOf",
+        "androidx.compose.runtime.remember",
+        "androidx.compose.runtime.setValue",
+        "androidx.core.net.toUri",
+        "androidx.lifecycle.lifecycleScope",
+        "com.chuckerteam.chucker.api.Chucker",
+        "com.chuckerteam.chucker.api.ChuckerCollector",
+        "com.chuckerteam.chucker.api.ExportFormat",
+        "com.chuckerteam.chucker.sample.compose.ChuckerSampleMainScreen",
+        "com.chuckerteam.chucker.sample.compose.theme.ChuckerTheme",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.launch",
+        "kotlinx.coroutines.withContext"
+      ],
+      "sorties": [
+        "class MainActivity"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/ExportFormat.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/PokemonProtoBodyDecoder.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/PokemonProtoBodyDecoder.kt",
+      "langage": "kotlin",
+      "lignes": 22,
+      "taille_bytes": 577,
+      "entrees": [
+        "com.chuckerteam.chucker.api.BodyDecoder",
+        "okhttp3.Request",
+        "okio.ByteString"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/CronetHttpTask.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/CronetHttpTask.kt",
+      "langage": "kotlin",
+      "lignes": 72,
+      "taille_bytes": 2387,
+      "entrees": [
+        "android.content.Context",
+        "com.google.android.gms.net.CronetProviderInstaller",
+        "com.google.net.cronet.okhttptransport.CronetInterceptor",
+        "java.net.URI",
+        "kotlinx.coroutines.CoroutineScope",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.launch",
+        "kotlinx.coroutines.tasks.await",
+        "okhttp3.OkHttpClient",
+        "okhttp3.Request",
+        "org.chromium.net.CronetEngine"
+      ],
+      "sorties": [
+        "class CronetHttpTask"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleControls.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleControls.kt",
+      "langage": "kotlin",
+      "lignes": 283,
+      "taille_bytes": 9439,
+      "entrees": [
+        "android.content.res.Configuration",
+        "androidx.compose.foundation.clickable",
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.width",
+        "androidx.compose.foundation.layout.widthIn",
+        "androidx.compose.foundation.shape.RoundedCornerShape",
+        "androidx.compose.material3.Button",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Text",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.platform.testTag",
+        "androidx.compose.ui.res.stringResource",
+        "androidx.compose.ui.semantics.clearAndSetSemantics",
+        "androidx.compose.ui.semantics.contentDescription",
+        "androidx.compose.ui.text.style.TextDecoration",
+        "androidx.compose.ui.tooling.preview.Devices",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.dp",
+        "com.chuckerteam.chucker.sample.InterceptorType",
+        "com.chuckerteam.chucker.sample.R",
+        "com.chuckerteam.chucker.sample.compose.testtags.ChuckerTestTags",
+        "com.chuckerteam.chucker.sample.compose.theme.AppAccentColor",
+        "com.chuckerteam.chucker.sample.compose.theme.ChuckerTheme"
+      ],
+      "sorties": [],
+      "appelle": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/InterceptorType.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/LabeledRadioButton.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/LabeledRadioButton.kt",
+      "langage": "kotlin",
+      "lignes": 110,
+      "taille_bytes": 4183,
+      "entrees": [
+        "android.content.res.Configuration",
+        "androidx.compose.foundation.clickable",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.width",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.RadioButton",
+        "androidx.compose.material3.RadioButtonDefaults",
+        "androidx.compose.material3.Text",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.platform.testTag",
+        "androidx.compose.ui.semantics.Role",
+        "androidx.compose.ui.semantics.clearAndSetSemantics",
+        "androidx.compose.ui.semantics.contentDescription",
+        "androidx.compose.ui.semantics.semantics",
+        "androidx.compose.ui.tooling.preview.Devices",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.dp",
+        "com.chuckerteam.chucker.sample.compose.testtags.ChuckerTestTags",
+        "com.chuckerteam.chucker.sample.compose.theme.AppAccentColor",
+        "com.chuckerteam.chucker.sample.compose.theme.ChuckerTheme"
+      ],
+      "sorties": [],
+      "appelle": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleTopBar.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleTopBar.kt",
+      "langage": "kotlin",
+      "lignes": 77,
+      "taille_bytes": 2516,
+      "entrees": [
+        "android.content.res.Configuration",
+        "androidx.compose.foundation.isSystemInDarkTheme",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.material3.ExperimentalMaterial3Api",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Text",
+        "androidx.compose.material3.TopAppBar",
+        "androidx.compose.material3.TopAppBarDefaults",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.graphics.Color",
+        "androidx.compose.ui.platform.testTag",
+        "androidx.compose.ui.res.stringResource",
+        "androidx.compose.ui.tooling.preview.Devices",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.dp",
+        "com.chuckerteam.chucker.sample.R",
+        "com.chuckerteam.chucker.sample.compose.testtags.ChuckerTestTags",
+        "com.chuckerteam.chucker.sample.compose.theme.ChuckerTheme",
+        "com.chuckerteam.chucker.sample.compose.theme.DarkTopAppBarBackground"
+      ],
+      "sorties": [],
+      "appelle": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/Color.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt",
+      "langage": "kotlin",
+      "lignes": 279,
+      "taille_bytes": 10682,
+      "entrees": [
+        "android.content.res.Configuration",
+        "androidx.compose.foundation.layout.Arrangement",
+        "androidx.compose.foundation.layout.Box",
+        "androidx.compose.foundation.layout.Column",
+        "androidx.compose.foundation.layout.Row",
+        "androidx.compose.foundation.layout.Spacer",
+        "androidx.compose.foundation.layout.fillMaxSize",
+        "androidx.compose.foundation.layout.fillMaxWidth",
+        "androidx.compose.foundation.layout.height",
+        "androidx.compose.foundation.layout.padding",
+        "androidx.compose.foundation.layout.width",
+        "androidx.compose.foundation.layout.widthIn",
+        "androidx.compose.foundation.rememberScrollState",
+        "androidx.compose.foundation.verticalScroll",
+        "androidx.compose.material3.ExperimentalMaterial3Api",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.Scaffold",
+        "androidx.compose.material3.Text",
+        "androidx.compose.material3.windowsizeclass.WindowWidthSizeClass",
+        "androidx.compose.runtime.Composable",
+        "androidx.compose.ui.Alignment",
+        "androidx.compose.ui.Modifier",
+        "androidx.compose.ui.platform.testTag",
+        "androidx.compose.ui.res.stringResource",
+        "androidx.compose.ui.text.font.FontWeight",
+        "androidx.compose.ui.text.style.TextAlign",
+        "androidx.compose.ui.tooling.preview.Devices",
+        "androidx.compose.ui.tooling.preview.Preview",
+        "androidx.compose.ui.unit.dp",
+        "com.chuckerteam.chucker.sample.InterceptorType",
+        "com.chuckerteam.chucker.sample.R",
+        "com.chuckerteam.chucker.sample.compose.testtags.ChuckerTestTags",
+        "com.chuckerteam.chucker.sample.compose.theme.ChuckerTheme"
+      ],
+      "sorties": [],
+      "appelle": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/InterceptorType.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt"
+      ],
+      "est_appele_par": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 798,
+      "entrees": [],
+      "sorties": [
+        "const val"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "sample/src/androidTest/java/com/chuckerteam/chucker/sample/MainActivityTest.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleControls.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleTopBar.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/LabeledRadioButton.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt",
+      "langage": "kotlin",
+      "lignes": 59,
+      "taille_bytes": 1794,
+      "entrees": [
+        "androidx.compose.foundation.isSystemInDarkTheme",
+        "androidx.compose.material3.MaterialTheme",
+        "androidx.compose.material3.darkColorScheme",
+        "androidx.compose.material3.lightColorScheme",
+        "androidx.compose.runtime.Composable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleControls.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleTopBar.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/LabeledRadioButton.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/Color.kt": {
+      "fichier": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/Color.kt",
+      "langage": "kotlin",
+      "lignes": 43,
+      "taille_bytes": 1550,
+      "entrees": [
+        "androidx.compose.ui.graphics.Color"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionPayloadFragment.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleTopBar.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/res/values/colors.xml": {
+      "fichier": "sample/src/main/res/values/colors.xml",
+      "langage": "xml",
+      "lignes": 5,
+      "taille_bytes": 197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/res/values/ic_launcher_background.xml": {
+      "fichier": "sample/src/main/res/values/ic_launcher_background.xml",
+      "langage": "xml",
+      "lignes": 4,
+      "taille_bytes": 120,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/res/values/strings.xml": {
+      "fichier": "sample/src/main/res/values/strings.xml",
+      "langage": "xml",
+      "lignes": 18,
+      "taille_bytes": 1123,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/res/values/styles.xml": {
+      "fichier": "sample/src/main/res/values/styles.xml",
+      "langage": "xml",
+      "lignes": 7,
+      "taille_bytes": 288,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/res/drawable/ic_launcher_foreground.xml": {
+      "fichier": "sample/src/main/res/drawable/ic_launcher_foreground.xml",
+      "langage": "xml",
+      "lignes": 12,
+      "taille_bytes": 553,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/res/values-night/colors.xml": {
+      "fichier": "sample/src/main/res/values-night/colors.xml",
+      "langage": "xml",
+      "lignes": 5,
+      "taille_bytes": 197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": {
+      "fichier": "sample/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "langage": "xml",
+      "lignes": 5,
+      "taille_bytes": 267,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sample/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml": {
+      "fichier": "sample/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "langage": "xml",
+      "lignes": 5,
+      "taille_bytes": 267,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gradle/libs.versions.toml": {
+      "fichier": "gradle/libs.versions.toml",
+      "langage": "toml",
+      "lignes": 143,
+      "taille_bytes": 7543,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/build.gradle.kts": {
+      "fichier": "library/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 123,
+      "taille_bytes": 3422,
+      "entrees": [
+        "org.jetbrains.kotlin.gradle.tasks.KotlinCompile"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTimestampTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTimestampTest.kt",
+      "langage": "kotlin",
+      "lignes": 203,
+      "taille_bytes": 7622,
+      "entrees": [
+        "com.chuckerteam.chucker.util.ChuckerInterceptorDelegate",
+        "com.chuckerteam.chucker.util.NoLoggerRule",
+        "com.google.common.truth.Truth.assertThat",
+        "java.io.File",
+        "okhttp3.Interceptor",
+        "okhttp3.OkHttpClient",
+        "okhttp3.Request",
+        "okhttp3.Response",
+        "okhttp3.mockwebserver.MockResponse",
+        "okhttp3.mockwebserver.MockWebServer",
+        "org.junit.Rule",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.api.extension.ExtendWith",
+        "org.junit.jupiter.api.io.TempDir"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorSkipRequestTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorSkipRequestTest.kt",
+      "langage": "kotlin",
+      "lignes": 410,
+      "taille_bytes": 16902,
+      "entrees": [
+        "com.chuckerteam.chucker.internal.support.addNonBlankPathSegments",
+        "com.chuckerteam.chucker.util.ChuckerInterceptorDelegate",
+        "com.chuckerteam.chucker.util.ClientFactory",
+        "com.chuckerteam.chucker.util.NoLoggerRule",
+        "com.chuckerteam.chucker.util.readByteStringBody",
+        "com.google.common.truth.Truth.assertThat",
+        "io.mockk.every",
+        "io.mockk.mockk",
+        "java.io.File",
+        "okhttp3.Headers",
+        "okhttp3.HttpUrl",
+        "okhttp3.Interceptor",
+        "okhttp3.OkHttpClient",
+        "okhttp3.Request",
+        "okhttp3.ResponseBody",
+        "okhttp3.mockwebserver.MockResponse",
+        "okhttp3.mockwebserver.MockWebServer",
+        "org.junit.Rule",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.api.extension.ExtendWith",
+        "org.junit.jupiter.api.io.TempDir",
+        "org.junit.jupiter.params.ParameterizedTest",
+        "org.junit.jupiter.params.provider.EnumSource"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ClientFactory.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorDecodingTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorDecodingTest.kt",
+      "langage": "kotlin",
+      "lignes": 262,
+      "taille_bytes": 8840,
+      "entrees": [
+        "com.chuckerteam.chucker.util.ChuckerInterceptorDelegate",
+        "com.chuckerteam.chucker.util.ClientFactory",
+        "com.chuckerteam.chucker.util.NoLoggerRule",
+        "com.chuckerteam.chucker.util.readByteStringBody",
+        "com.chuckerteam.chucker.util.toServerRequest",
+        "com.google.common.truth.Truth.assertThat",
+        "java.io.File",
+        "okhttp3.Request",
+        "okhttp3.RequestBody.Companion.toRequestBody",
+        "okhttp3.Response",
+        "okhttp3.mockwebserver.MockResponse",
+        "okhttp3.mockwebserver.MockWebServer",
+        "okio.Buffer",
+        "okio.ByteString",
+        "okio.IOException",
+        "org.junit.Rule",
+        "org.junit.jupiter.api.extension.ExtendWith",
+        "org.junit.jupiter.api.io.TempDir",
+        "org.junit.jupiter.params.ParameterizedTest",
+        "org.junit.jupiter.params.provider.EnumSource"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ClientFactory.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTest.kt",
+      "langage": "kotlin",
+      "lignes": 706,
+      "taille_bytes": 28058,
+      "entrees": [
+        "android.annotation.SuppressLint",
+        "com.chuckerteam.chucker.util.ChuckerInterceptorDelegate",
+        "com.chuckerteam.chucker.util.ClientFactory",
+        "com.chuckerteam.chucker.util.NoLoggerRule",
+        "com.chuckerteam.chucker.util.SEGMENT_SIZE",
+        "com.chuckerteam.chucker.util.getResourceFile",
+        "com.chuckerteam.chucker.util.readByteStringBody",
+        "com.chuckerteam.chucker.util.toServerRequest",
+        "com.google.common.collect.Range",
+        "com.google.common.truth.Truth.assertThat",
+        "com.google.gson.Gson",
+        "com.google.gson.JsonParseException",
+        "com.google.gson.stream.JsonReader",
+        "java.io.File",
+        "java.net.HttpURLConnection.HTTP_NO_CONTENT",
+        "okhttp3.MediaType.Companion.toMediaType",
+        "okhttp3.Request",
+        "okhttp3.RequestBody",
+        "okhttp3.RequestBody.Companion.toRequestBody",
+        "okhttp3.mockwebserver.MockResponse",
+        "okhttp3.mockwebserver.MockWebServer",
+        "okhttp3.mockwebserver.SocketPolicy",
+        "okio.Buffer",
+        "okio.BufferedSink",
+        "okio.ByteString",
+        "okio.ByteString.Companion.decodeHex",
+        "okio.ByteString.Companion.encodeUtf8",
+        "okio.GzipSink",
+        "okio.buffer",
+        "org.junit.Rule",
+        "org.junit.jupiter.api.assertThrows",
+        "org.junit.jupiter.api.extension.ExtendWith",
+        "org.junit.jupiter.api.io.TempDir",
+        "org.junit.jupiter.params.ParameterizedTest",
+        "org.junit.jupiter.params.provider.EnumSource"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ClientFactory.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/util/TestTransactionFactory.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/util/TestTransactionFactory.kt",
+      "langage": "kotlin",
+      "lignes": 96,
+      "taille_bytes": 2548,
+      "entrees": [
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "java.util.Date"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionCurlCommandSharableTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionDetailsSharableTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionListDetailsSharableTest.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/util/ClientFactory.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/util/ClientFactory.kt",
+      "langage": "kotlin",
+      "lignes": 23,
+      "taille_bytes": 636,
+      "entrees": [
+        "okhttp3.Interceptor",
+        "okhttp3.OkHttpClient"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorDecodingTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorSkipRequestTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTest.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+      "langage": "kotlin",
+      "lignes": 74,
+      "taille_bytes": 2903,
+      "entrees": [
+        "android.content.Context",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.api.BodyDecoder",
+        "com.chuckerteam.chucker.api.ChuckerCollector",
+        "com.chuckerteam.chucker.api.ChuckerInterceptor",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.support.CacheDirectoryProvider",
+        "io.mockk.every",
+        "io.mockk.mockk",
+        "java.util.concurrent.CopyOnWriteArrayList",
+        "java.util.concurrent.atomic.AtomicLong",
+        "okhttp3.Interceptor",
+        "okhttp3.Response"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptor.kt"
+      ],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorDecodingTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorSkipRequestTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTimestampTest.kt"
+      ],
+      "type_noeud": "central"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/util/TestUtils.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/util/TestUtils.kt",
+      "langage": "kotlin",
+      "lignes": 75,
+      "taille_bytes": 1950,
+      "entrees": [
+        "androidx.lifecycle.LiveData",
+        "androidx.lifecycle.Observer",
+        "com.chuckerteam.chucker.internal.support.hasBody",
+        "java.io.File",
+        "okhttp3.HttpUrl",
+        "okhttp3.Request",
+        "okhttp3.RequestBody",
+        "okhttp3.Response",
+        "okio.Buffer",
+        "okio.ByteString",
+        "okio.buffer",
+        "okio.source"
+      ],
+      "sorties": [
+        "fun expectData",
+        "fun expectNoData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt",
+      "langage": "kotlin",
+      "lignes": 88,
+      "taille_bytes": 3484,
+      "entrees": [
+        "android.content.Context",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.har.Har",
+        "com.chuckerteam.chucker.internal.data.har.log.Creator",
+        "com.chuckerteam.chucker.internal.data.har.log.Entry",
+        "com.chuckerteam.chucker.internal.data.har.log.entry.Request",
+        "com.chuckerteam.chucker.internal.data.har.log.entry.Response",
+        "com.chuckerteam.chucker.internal.data.har.log.entry.request.PostData",
+        "com.chuckerteam.chucker.internal.data.har.log.entry.response.Content",
+        "com.chuckerteam.chucker.internal.support.HarUtils",
+        "java.util.Date",
+        "kotlinx.coroutines.runBlocking"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/ContentTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/EntryTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/PostDataTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/RequestTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/ResponseTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/HarUtilsTest.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt",
+      "langage": "kotlin",
+      "lignes": 37,
+      "taille_bytes": 1087,
+      "entrees": [
+        "com.chuckerteam.chucker.api.Chucker",
+        "com.chuckerteam.chucker.internal.support.Logger",
+        "org.junit.jupiter.api.extension.AfterAllCallback",
+        "org.junit.jupiter.api.extension.BeforeAllCallback",
+        "org.junit.jupiter.api.extension.ExtensionContext"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt"
+      ],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorDecodingTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorSkipRequestTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTimestampTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/DepletingSourceTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FileSaverTest.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/InstantExecutorExtension.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/InstantExecutorExtension.kt",
+      "langage": "kotlin",
+      "lignes": 27,
+      "taille_bytes": 931,
+      "entrees": [
+        "androidx.arch.core.executor.ArchTaskExecutor",
+        "androidx.arch.core.executor.TaskExecutor",
+        "org.junit.jupiter.api.extension.AfterEachCallback",
+        "org.junit.jupiter.api.extension.BeforeEachCallback",
+        "org.junit.jupiter.api.extension.ExtensionContext"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModelTest.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModelTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModelTest.kt",
+      "langage": "kotlin",
+      "lignes": 238,
+      "taille_bytes": 8480,
+      "entrees": [
+        "android.text.TextUtils",
+        "androidx.arch.core.executor.testing.InstantTaskExecutorRule",
+        "androidx.lifecycle.MutableLiveData",
+        "androidx.lifecycle.Observer",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransactionTuple",
+        "com.chuckerteam.chucker.internal.data.repository.HttpTransactionRepository",
+        "com.chuckerteam.chucker.internal.data.repository.RepositoryProvider",
+        "com.chuckerteam.chucker.internal.support.NotificationHelper",
+        "io.mockk.MockKAnnotations",
+        "io.mockk.coEvery",
+        "io.mockk.coVerify",
+        "io.mockk.every",
+        "io.mockk.impl.annotations.MockK",
+        "io.mockk.just",
+        "io.mockk.mockk",
+        "io.mockk.mockkObject",
+        "io.mockk.mockkStatic",
+        "io.mockk.runs",
+        "io.mockk.unmockkAll",
+        "io.mockk.verify",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.ExperimentalCoroutinesApi",
+        "kotlinx.coroutines.test.StandardTestDispatcher",
+        "kotlinx.coroutines.test.resetMain",
+        "kotlinx.coroutines.test.runTest",
+        "kotlinx.coroutines.test.setMain",
+        "org.junit.After",
+        "org.junit.Before",
+        "org.junit.Rule",
+        "org.junit.Test",
+        "org.junit.jupiter.api.Assertions.assertEquals"
+      ],
+      "sorties": [
+        "fun setup",
+        "fun tearDown"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionRepository.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModelTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModelTest.kt",
+      "langage": "kotlin",
+      "lignes": 224,
+      "taille_bytes": 8382,
+      "entrees": [
+        "androidx.lifecycle.MutableLiveData",
+        "androidx.lifecycle.Observer",
+        "com.chuckerteam.chucker.internal.InstantExecutorExtension",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransactionTuple",
+        "com.chuckerteam.chucker.internal.data.repository.HttpTransactionRepository",
+        "com.chuckerteam.chucker.internal.data.repository.RepositoryProvider",
+        "io.mockk.MockKAnnotations",
+        "io.mockk.every",
+        "io.mockk.impl.annotations.MockK",
+        "io.mockk.just",
+        "io.mockk.mockk",
+        "io.mockk.mockkObject",
+        "io.mockk.runs",
+        "io.mockk.unmockkAll",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.ExperimentalCoroutinesApi",
+        "kotlinx.coroutines.test.StandardTestDispatcher",
+        "kotlinx.coroutines.test.resetMain",
+        "kotlinx.coroutines.test.setMain",
+        "org.junit.jupiter.api.AfterEach",
+        "org.junit.jupiter.api.Assertions.assertEquals",
+        "org.junit.jupiter.api.Assertions.assertFalse",
+        "org.junit.jupiter.api.Assertions.assertSame",
+        "org.junit.jupiter.api.Assertions.assertTrue",
+        "org.junit.jupiter.api.BeforeEach",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.api.extension.ExtendWith"
+      ],
+      "sorties": [
+        "fun setup",
+        "fun tearDown"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionRepository.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/InstantExecutorExtension.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionDatabaseRepositoryTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionDatabaseRepositoryTest.kt",
+      "langage": "kotlin",
+      "lignes": 318,
+      "taille_bytes": 12239,
+      "entrees": [
+        "android.content.Context",
+        "androidx.arch.core.executor.testing.InstantTaskExecutorRule",
+        "androidx.room.Room",
+        "androidx.test.core.app.ApplicationProvider",
+        "com.chuckerteam.chucker.internal.data.entity.assertTuples",
+        "com.chuckerteam.chucker.internal.data.entity.createRequest",
+        "com.chuckerteam.chucker.internal.data.entity.randomString",
+        "com.chuckerteam.chucker.internal.data.entity.withResponseData",
+        "com.chuckerteam.chucker.internal.data.room.ChuckerDatabase",
+        "com.google.common.truth.Truth.assertThat",
+        "kotlinx.coroutines.runBlocking",
+        "org.junit.After",
+        "org.junit.Before",
+        "org.junit.Rule",
+        "org.junit.Test",
+        "org.junit.runner.RunWith",
+        "org.robolectric.RobolectricTestRunner"
+      ],
+      "sorties": [
+        "fun setUp",
+        "fun tearDown"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProviderTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProviderTest.kt",
+      "langage": "kotlin",
+      "lignes": 56,
+      "taille_bytes": 1643,
+      "entrees": [
+        "android.content.Context",
+        "androidx.room.Room",
+        "androidx.test.core.app.ApplicationProvider",
+        "com.chuckerteam.chucker.internal.data.room.ChuckerDatabase",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.After",
+        "org.junit.Before",
+        "org.junit.Test",
+        "org.junit.jupiter.api.assertThrows",
+        "org.junit.runner.RunWith",
+        "org.robolectric.RobolectricTestRunner"
+      ],
+      "sorties": [
+        "fun setUp",
+        "fun tearDown"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/room/HttpTransactionDaoTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/room/HttpTransactionDaoTest.kt",
+      "langage": "kotlin",
+      "lignes": 299,
+      "taille_bytes": 11174,
+      "entrees": [
+        "android.content.Context",
+        "android.database.Cursor",
+        "androidx.arch.core.executor.testing.InstantTaskExecutorRule",
+        "androidx.room.Room",
+        "androidx.test.core.app.ApplicationProvider",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.entity.assertTransaction",
+        "com.chuckerteam.chucker.internal.data.entity.assertTuples",
+        "com.chuckerteam.chucker.internal.data.entity.createRequest",
+        "com.chuckerteam.chucker.internal.data.entity.withResponseData",
+        "com.google.common.truth.Truth.assertThat",
+        "kotlinx.coroutines.runBlocking",
+        "org.junit.After",
+        "org.junit.Before",
+        "org.junit.Rule",
+        "org.junit.Test",
+        "org.junit.runner.RunWith",
+        "org.robolectric.RobolectricTestRunner"
+      ],
+      "sorties": [
+        "fun setUp",
+        "fun tearDown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/RequestTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/RequestTest.kt",
+      "langage": "kotlin",
+      "lignes": 44,
+      "taille_bytes": 1304,
+      "entrees": [
+        "com.chuckerteam.chucker.internal.data.har.log.entry.request.PostData",
+        "com.chuckerteam.chucker.util.HarTestUtils",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/PostDataTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/PostDataTest.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 408,
+      "entrees": [
+        "com.chuckerteam.chucker.util.HarTestUtils",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/ResponseTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/ResponseTest.kt",
+      "langage": "kotlin",
+      "lignes": 51,
+      "taille_bytes": 1466,
+      "entrees": [
+        "com.chuckerteam.chucker.internal.data.har.log.entry.response.Content",
+        "com.chuckerteam.chucker.util.HarTestUtils",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/EntryTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/EntryTest.kt",
+      "langage": "kotlin",
+      "lignes": 85,
+      "taille_bytes": 2889,
+      "entrees": [
+        "com.chuckerteam.chucker.internal.data.har.log.Entry",
+        "com.chuckerteam.chucker.internal.data.har.log.entry.Request",
+        "com.chuckerteam.chucker.internal.data.har.log.entry.Response",
+        "com.chuckerteam.chucker.internal.data.har.log.entry.Timings",
+        "com.chuckerteam.chucker.internal.data.har.log.entry.request.PostData",
+        "com.chuckerteam.chucker.internal.data.har.log.entry.response.Content",
+        "com.chuckerteam.chucker.util.HarTestUtils",
+        "com.google.common.truth.Truth.assertThat",
+        "java.util.Date",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/QueryStringTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/QueryStringTest.kt",
+      "langage": "kotlin",
+      "lignes": 24,
+      "taille_bytes": 1020,
+      "entrees": [
+        "com.chuckerteam.chucker.internal.data.har.log.entry.request.QueryString",
+        "com.google.common.truth.Truth.assertThat",
+        "okhttp3.HttpUrl.Companion.toHttpUrl",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/ContentTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/ContentTest.kt",
+      "langage": "kotlin",
+      "lignes": 28,
+      "taille_bytes": 785,
+      "entrees": [
+        "com.chuckerteam.chucker.util.HarTestUtils",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/HarTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/HarTest.kt",
+      "langage": "kotlin",
+      "lignes": 48,
+      "taille_bytes": 1432,
+      "entrees": [
+        "android.content.Context",
+        "androidx.test.core.app.ApplicationProvider",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.internal.data.har.log.Creator",
+        "com.chuckerteam.chucker.util.HarTestUtils.createSingleTransactionHar",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Before",
+        "org.junit.Test",
+        "org.junit.runner.RunWith",
+        "org.robolectric.RobolectricTestRunner"
+      ],
+      "sorties": [
+        "public class HarTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/entity/HttpTransactionTupleTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/entity/HttpTransactionTupleTest.kt",
+      "langage": "kotlin",
+      "lignes": 140,
+      "taille_bytes": 3982,
+      "entrees": [
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/entity/TransactionTestUtils.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/entity/TransactionTestUtils.kt",
+      "langage": "kotlin",
+      "lignes": 101,
+      "taille_bytes": 4236,
+      "entrees": [
+        "com.google.common.truth.Truth.assertThat",
+        "java.util.UUID",
+        "okhttp3.Headers",
+        "okhttp3.HttpUrl.Companion.toHttpUrlOrNull"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/OkioUtilsTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/OkioUtilsTest.kt",
+      "langage": "kotlin",
+      "lignes": 56,
+      "taille_bytes": 1537,
+      "entrees": [
+        "com.google.common.truth.Truth.assertThat",
+        "java.nio.charset.Charset",
+        "okio.Buffer",
+        "okio.ByteString.Companion.encodeUtf8",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionListDetailsSharableTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionListDetailsSharableTest.kt",
+      "langage": "kotlin",
+      "lignes": 39,
+      "taille_bytes": 1466,
+      "entrees": [
+        "android.content.Context",
+        "androidx.test.core.app.ApplicationProvider",
+        "com.chuckerteam.chucker.util.TestTransactionFactory",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Test",
+        "org.junit.runner.RunWith",
+        "org.robolectric.RobolectricTestRunner"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/TestTransactionFactory.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TeeSourceTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TeeSourceTest.kt",
+      "langage": "kotlin",
+      "lignes": 123,
+      "taille_bytes": 3901,
+      "entrees": [
+        "com.chuckerteam.chucker.util.SEGMENT_SIZE",
+        "com.google.common.truth.Truth.assertThat",
+        "java.io.IOException",
+        "kotlin.random.Random",
+        "okio.Buffer",
+        "okio.BufferedSource",
+        "okio.ByteString",
+        "okio.Sink",
+        "okio.Source",
+        "okio.Timeout",
+        "okio.buffer",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/DepletingSourceTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/DepletingSourceTest.kt",
+      "langage": "kotlin",
+      "lignes": 107,
+      "taille_bytes": 3395,
+      "entrees": [
+        "com.chuckerteam.chucker.util.NoLoggerRule",
+        "com.google.common.truth.Truth.assertThat",
+        "java.io.IOException",
+        "okio.Buffer",
+        "okio.BufferedSource",
+        "okio.ByteString",
+        "okio.Source",
+        "okio.Timeout",
+        "okio.buffer",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.api.assertDoesNotThrow",
+        "org.junit.jupiter.api.assertThrows",
+        "org.junit.jupiter.api.extension.ExtendWith"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/LiveDataCombineLatestTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/LiveDataCombineLatestTest.kt",
+      "langage": "kotlin",
+      "lignes": 72,
+      "taille_bytes": 1892,
+      "entrees": [
+        "androidx.arch.core.executor.testing.InstantTaskExecutorRule",
+        "androidx.lifecycle.MutableLiveData",
+        "com.chuckerteam.chucker.util.test",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Rule",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/LiveDataDistinctUntilChangedTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/LiveDataDistinctUntilChangedTest.kt",
+      "langage": "kotlin",
+      "lignes": 88,
+      "taille_bytes": 2429,
+      "entrees": [
+        "androidx.arch.core.executor.testing.InstantTaskExecutorRule",
+        "androidx.lifecycle.MutableLiveData",
+        "androidx.lifecycle.distinctUntilChanged",
+        "com.chuckerteam.chucker.util.test",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Rule",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/SpannableStringExtensionTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/SpannableStringExtensionTest.kt",
+      "langage": "kotlin",
+      "lignes": 127,
+      "taille_bytes": 4722,
+      "entrees": [
+        "android.text.SpannableStringBuilder",
+        "androidx.core.text.getSpans",
+        "com.chuckerteam.chucker.internal.support.SpanTextUtil.ChuckerForegroundColorSpan",
+        "org.junit.Test",
+        "org.junit.jupiter.api.Assertions.assertEquals",
+        "org.junit.jupiter.api.Assertions.assertTrue",
+        "org.junit.runner.RunWith",
+        "org.robolectric.RobolectricTestRunner"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/LimitingSourceTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/LimitingSourceTest.kt",
+      "langage": "kotlin",
+      "lignes": 65,
+      "taille_bytes": 2343,
+      "entrees": [
+        "com.chuckerteam.chucker.util.SEGMENT_SIZE",
+        "com.google.common.truth.Truth.assertThat",
+        "okio.Buffer",
+        "okio.buffer",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/ReportingSinkTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/ReportingSinkTest.kt",
+      "langage": "kotlin",
+      "lignes": 119,
+      "taille_bytes": 3719,
+      "entrees": [
+        "com.chuckerteam.chucker.util.SEGMENT_SIZE",
+        "com.google.common.truth.Truth.assertThat",
+        "java.io.File",
+        "java.io.FileNotFoundException",
+        "java.io.IOException",
+        "kotlin.random.Random",
+        "okio.Buffer",
+        "okio.ByteString",
+        "okio.Source",
+        "okio.Timeout",
+        "okio.buffer",
+        "okio.source",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.api.io.TempDir"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionCurlCommandSharableTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionCurlCommandSharableTest.kt",
+      "langage": "kotlin",
+      "lignes": 153,
+      "taille_bytes": 5938,
+      "entrees": [
+        "android.content.Context",
+        "androidx.test.core.app.ApplicationProvider",
+        "com.chuckerteam.chucker.internal.data.entity.HttpHeader",
+        "com.chuckerteam.chucker.util.TestTransactionFactory",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Test",
+        "org.junit.runner.RunWith",
+        "org.robolectric.RobolectricTestRunner"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/TestTransactionFactory.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/OkHttpUtilsTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/OkHttpUtilsTest.kt",
+      "langage": "kotlin",
+      "lignes": 124,
+      "taille_bytes": 4110,
+      "entrees": [
+        "com.google.common.truth.Truth.assertThat",
+        "io.mockk.every",
+        "io.mockk.mockk",
+        "java.util.stream.Stream",
+        "okhttp3.Headers",
+        "okhttp3.Headers.Companion.headersOf",
+        "okhttp3.Response",
+        "okio.Buffer",
+        "okio.BufferedSource",
+        "okio.ByteString.Companion.decodeHex",
+        "okio.GzipSink",
+        "okio.buffer",
+        "org.junit.jupiter.api.DisplayName",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.params.ParameterizedTest",
+        "org.junit.jupiter.params.provider.Arguments",
+        "org.junit.jupiter.params.provider.MethodSource"
+      ],
+      "sorties": [
+        "fun supportedEncodingSource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/RequestProcessorTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/RequestProcessorTest.kt",
+      "langage": "kotlin",
+      "lignes": 84,
+      "taille_bytes": 3028,
+      "entrees": [
+        "android.content.Context",
+        "com.chuckerteam.chucker.api.BodyDecoder",
+        "com.chuckerteam.chucker.api.ChuckerCollector",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "io.mockk.every",
+        "io.mockk.mockk",
+        "okhttp3.Headers",
+        "okhttp3.HttpUrl.Companion.toHttpUrl",
+        "okhttp3.Request",
+        "org.junit.Assert.assertEquals",
+        "org.junit.Assert.assertFalse",
+        "org.junit.Assert.assertTrue",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FormattedUrlTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FormattedUrlTest.kt",
+      "langage": "kotlin",
+      "lignes": 144,
+      "taille_bytes": 6807,
+      "entrees": [
+        "com.google.common.truth.Truth.assertThat",
+        "okhttp3.HttpUrl.Companion.toHttpUrl",
+        "org.junit.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FileFactoryTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FileFactoryTest.kt",
+      "langage": "kotlin",
+      "lignes": 17,
+      "taille_bytes": 464,
+      "entrees": [
+        "com.google.common.truth.Truth.assertThat",
+        "java.io.File",
+        "org.junit.jupiter.api.Test",
+        "org.junit.jupiter.api.io.TempDir"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionDetailsSharableTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionDetailsSharableTest.kt",
+      "langage": "kotlin",
+      "lignes": 34,
+      "taille_bytes": 1345,
+      "entrees": [
+        "android.content.Context",
+        "androidx.test.core.app.ApplicationProvider",
+        "com.chuckerteam.chucker.util.TestTransactionFactory",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.Test",
+        "org.junit.runner.RunWith",
+        "org.robolectric.RobolectricTestRunner"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/TestTransactionFactory.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/JsonConverterTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/JsonConverterTest.kt",
+      "langage": "kotlin",
+      "lignes": 30,
+      "taille_bytes": 732,
+      "entrees": [
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/HarUtilsTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/HarUtilsTest.kt",
+      "langage": "kotlin",
+      "lignes": 109,
+      "taille_bytes": 3969,
+      "entrees": [
+        "android.content.Context",
+        "androidx.test.core.app.ApplicationProvider",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.internal.data.har.log.Entry",
+        "com.chuckerteam.chucker.util.HarTestUtils",
+        "com.chuckerteam.chucker.util.HarTestUtils.createHarString",
+        "com.chuckerteam.chucker.util.HarTestUtils.createListTransactionHar",
+        "com.google.common.truth.Truth.assertThat",
+        "java.util.Date",
+        "kotlinx.coroutines.runBlocking",
+        "org.junit.Before",
+        "org.junit.Test",
+        "org.junit.runner.RunWith",
+        "org.robolectric.RobolectricTestRunner"
+      ],
+      "sorties": [
+        "fun setUp"
+      ],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FileSaverTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FileSaverTest.kt",
+      "langage": "kotlin",
+      "lignes": 67,
+      "taille_bytes": 2012,
+      "entrees": [
+        "android.content.ContentResolver",
+        "android.net.Uri",
+        "androidx.core.net.toFile",
+        "com.chuckerteam.chucker.util.NoLoggerRule",
+        "com.google.common.truth.Truth.assertThat",
+        "io.mockk.every",
+        "io.mockk.mockk",
+        "kotlinx.coroutines.test.runTest",
+        "okio.source",
+        "org.junit.Rule",
+        "org.junit.Test",
+        "org.junit.jupiter.api.extension.ExtendWith",
+        "org.junit.rules.TemporaryFolder"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FormatUtilsTest.kt": {
+      "fichier": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FormatUtilsTest.kt",
+      "langage": "kotlin",
+      "lignes": 228,
+      "taille_bytes": 6330,
+      "entrees": [
+        "com.chuckerteam.chucker.internal.data.entity.HttpHeader",
+        "com.google.common.truth.Truth.assertThat",
+        "org.junit.jupiter.api.Test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/androidTest/kotlin/com/chuckerteam/chucker/SpanUtilTest.kt": {
+      "fichier": "library/src/androidTest/kotlin/com/chuckerteam/chucker/SpanUtilTest.kt",
+      "langage": "kotlin",
+      "lignes": 121,
+      "taille_bytes": 222824,
+      "entrees": [
+        "android.annotation.SuppressLint",
+        "android.content.Context",
+        "androidx.test.ext.junit.runners.AndroidJUnit4",
+        "androidx.test.platform.app.InstrumentationRegistry",
+        "com.chuckerteam.chucker.internal.support.SpanTextUtil",
+        "com.google.common.truth.Truth",
+        "org.junit.Assert",
+        "org.junit.Before",
+        "org.junit.Test",
+        "org.junit.runner.RunWith"
+      ],
+      "sorties": [
+        "public class SpanUtilTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/AndroidManifest.xml": {
+      "fichier": "library/src/main/AndroidManifest.xml",
+      "langage": "xml",
+      "lignes": 45,
+      "taille_bytes": 1814,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/api/RetentionManager.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/api/RetentionManager.kt",
+      "langage": "kotlin",
+      "lignes": 108,
+      "taille_bytes": 3744,
+      "entrees": [
+        "android.content.Context",
+        "android.content.SharedPreferences",
+        "androidx.core.content.edit",
+        "com.chuckerteam.chucker.api.RetentionManager.Period",
+        "com.chuckerteam.chucker.internal.data.repository.RepositoryProvider",
+        "com.chuckerteam.chucker.internal.support.Logger",
+        "java.util.concurrent.TimeUnit",
+        "kotlinx.coroutines.sync.Mutex",
+        "kotlinx.coroutines.sync.withLock"
+      ],
+      "sorties": [
+        "public class RetentionManager"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt"
+      ],
+      "est_appele_par": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/OkHttpUtils.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt",
+      "langage": "kotlin",
+      "lignes": 35,
+      "taille_bytes": 1242,
+      "entrees": [
+        "okhttp3.Request",
+        "okhttp3.Response",
+        "okio.ByteString",
+        "okio.IOException"
+      ],
+      "sorties": [
+        "public interface BodyDecoder"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/RequestProcessorTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/PokemonProtoBodyDecoder.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptor.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptor.kt",
+      "langage": "kotlin",
+      "lignes": 283,
+      "taille_bytes": 10338,
+      "entrees": [
+        "android.content.Context",
+        "androidx.annotation.VisibleForTesting",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.support.CacheDirectoryProvider",
+        "com.chuckerteam.chucker.internal.support.PlainTextDecoder",
+        "com.chuckerteam.chucker.internal.support.RequestProcessor",
+        "com.chuckerteam.chucker.internal.support.ResponseProcessor",
+        "com.chuckerteam.chucker.internal.support.addNonBlankPathSegments",
+        "java.io.IOException",
+        "okhttp3.HttpUrl",
+        "okhttp3.Interceptor",
+        "okhttp3.Response"
+      ],
+      "sorties": [
+        "public class Builder",
+        "public class ChuckerInterceptor"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/OkHttpUtils.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt",
+      "langage": "kotlin",
+      "lignes": 108,
+      "taille_bytes": 3585,
+      "entrees": [
+        "android.content.Context",
+        "android.content.Intent",
+        "android.content.pm.ShortcutInfo",
+        "android.content.pm.ShortcutManager",
+        "android.graphics.drawable.Icon",
+        "android.os.Build",
+        "android.util.Log",
+        "androidx.core.content.getSystemService",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.internal.support.Logger",
+        "com.chuckerteam.chucker.internal.support.NotificationHelper",
+        "com.chuckerteam.chucker.internal.ui.MainActivity"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt"
+      ],
+      "est_appele_par": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/api/ExportFormat.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/api/ExportFormat.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 294,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+      "langage": "kotlin",
+      "lignes": 129,
+      "taille_bytes": 5405,
+      "entrees": [
+        "android.content.Context",
+        "android.net.Uri",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.har.log.Creator",
+        "com.chuckerteam.chucker.internal.data.repository.RepositoryProvider",
+        "com.chuckerteam.chucker.internal.support.HarUtils",
+        "com.chuckerteam.chucker.internal.support.JsonConverter",
+        "com.chuckerteam.chucker.internal.support.NotificationHelper",
+        "com.chuckerteam.chucker.internal.support.TransactionDetailsHarSharable",
+        "com.chuckerteam.chucker.internal.support.TransactionListDetailsSharable",
+        "com.chuckerteam.chucker.internal.support.writeToFile",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.MainScope",
+        "kotlinx.coroutines.launch",
+        "kotlinx.coroutines.withContext"
+      ],
+      "sorties": [
+        "public class ChuckerCollector"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt"
+      ],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/RequestProcessorTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt",
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/OkHttpUtils.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModel.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModel.kt",
+      "langage": "kotlin",
+      "lignes": 147,
+      "taille_bytes": 5668,
+      "entrees": [
+        "androidx.core.text.isDigitsOnly",
+        "androidx.lifecycle.LiveData",
+        "androidx.lifecycle.MutableLiveData",
+        "androidx.lifecycle.ViewModel",
+        "androidx.lifecycle.distinctUntilChanged",
+        "androidx.lifecycle.switchMap",
+        "androidx.lifecycle.viewModelScope",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransactionTuple",
+        "com.chuckerteam.chucker.internal.data.repository.RepositoryProvider",
+        "com.chuckerteam.chucker.internal.support.NotificationHelper",
+        "kotlinx.coroutines.launch"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/BaseChuckerActivity.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/BaseChuckerActivity.kt",
+      "langage": "kotlin",
+      "lignes": 35,
+      "taille_bytes": 924,
+      "entrees": [
+        "android.os.Bundle",
+        "android.widget.Toast",
+        "androidx.appcompat.app.AppCompatActivity",
+        "com.chuckerteam.chucker.internal.data.repository.RepositoryProvider"
+      ],
+      "sorties": [
+        "fun showToast"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt"
+      ],
+      "est_appele_par": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionActivity.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt",
+      "langage": "kotlin",
+      "lignes": 453,
+      "taille_bytes": 17066,
+      "entrees": [
+        "android.Manifest",
+        "android.content.Intent",
+        "android.content.pm.PackageManager",
+        "android.net.Uri",
+        "android.os.Build",
+        "android.os.Bundle",
+        "android.provider.Settings",
+        "android.text.method.LinkMovementMethod",
+        "android.view.Menu",
+        "android.view.MenuItem",
+        "android.widget.Toast",
+        "androidx.activity.result.contract.ActivityResultContracts",
+        "androidx.activity.viewModels",
+        "androidx.annotation.RequiresApi",
+        "androidx.annotation.StringRes",
+        "androidx.appcompat.widget.SearchView",
+        "androidx.core.content.ContextCompat",
+        "androidx.core.view.MenuCompat",
+        "androidx.core.view.ViewCompat",
+        "androidx.core.view.WindowCompat",
+        "androidx.core.view.WindowInsetsCompat",
+        "androidx.core.view.isVisible",
+        "androidx.core.view.updatePadding",
+        "androidx.lifecycle.lifecycleScope",
+        "androidx.recyclerview.widget.DividerItemDecoration",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.api.Chucker",
+        "com.chuckerteam.chucker.databinding.ChuckerActivityMainBinding",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.model.DialogData",
+        "com.chuckerteam.chucker.internal.support.FileSaver",
+        "com.chuckerteam.chucker.internal.support.HarUtils",
+        "com.chuckerteam.chucker.internal.support.Logger",
+        "com.chuckerteam.chucker.internal.support.Sharable",
+        "com.chuckerteam.chucker.internal.support.TransactionDetailsHarSharable",
+        "com.chuckerteam.chucker.internal.support.TransactionListDetailsSharable",
+        "com.chuckerteam.chucker.internal.support.shareAsFile",
+        "com.chuckerteam.chucker.internal.support.showDialog",
+        "com.chuckerteam.chucker.internal.ui.MainActivity.ExportType.HAR",
+        "com.chuckerteam.chucker.internal.ui.MainActivity.ExportType.TEXT",
+        "com.chuckerteam.chucker.internal.ui.transaction.TransactionActivity",
+        "com.chuckerteam.chucker.internal.ui.transaction.TransactionAdapter",
+        "com.google.android.material.snackbar.Snackbar",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.launch",
+        "kotlinx.coroutines.withContext",
+        "okio.Source",
+        "okio.buffer",
+        "okio.source"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/model/DialogData.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionActivity.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionAdapter.kt"
+      ],
+      "est_appele_par": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionActivity.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionActivity.kt",
+      "langage": "kotlin",
+      "lignes": 204,
+      "taille_bytes": 8051,
+      "entrees": [
+        "android.content.Context",
+        "android.content.Intent",
+        "android.os.Bundle",
+        "android.view.Menu",
+        "android.view.MenuItem",
+        "android.widget.Toast",
+        "androidx.activity.viewModels",
+        "androidx.core.view.ViewCompat",
+        "androidx.core.view.WindowCompat",
+        "androidx.core.view.WindowInsetsCompat",
+        "androidx.core.view.updatePadding",
+        "androidx.lifecycle.Observer",
+        "androidx.lifecycle.lifecycleScope",
+        "androidx.viewpager.widget.ViewPager",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.databinding.ChuckerActivityTransactionBinding",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.support.HarUtils",
+        "com.chuckerteam.chucker.internal.support.Sharable",
+        "com.chuckerteam.chucker.internal.support.TransactionCurlCommandSharable",
+        "com.chuckerteam.chucker.internal.support.TransactionDetailsHarSharable",
+        "com.chuckerteam.chucker.internal.support.TransactionDetailsSharable",
+        "com.chuckerteam.chucker.internal.support.shareAsFile",
+        "com.chuckerteam.chucker.internal.support.shareAsUtf8Text",
+        "com.chuckerteam.chucker.internal.ui.BaseChuckerActivity",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.launch",
+        "kotlinx.coroutines.withContext"
+      ],
+      "sorties": [
+        "fun start"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/BaseChuckerActivity.kt"
+      ],
+      "est_appele_par": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionAdapter.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionAdapter.kt",
+      "langage": "kotlin",
+      "lignes": 251,
+      "taille_bytes": 10411,
+      "entrees": [
+        "android.annotation.SuppressLint",
+        "android.content.Context",
+        "android.content.res.ColorStateList",
+        "android.util.TypedValue",
+        "android.view.LayoutInflater",
+        "android.view.ViewGroup",
+        "androidx.appcompat.content.res.AppCompatResources",
+        "androidx.core.content.ContextCompat",
+        "androidx.core.view.isVisible",
+        "androidx.core.widget.ImageViewCompat",
+        "androidx.recyclerview.widget.ListAdapter",
+        "androidx.recyclerview.widget.RecyclerView",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.databinding.ChuckerListItemTransactionBinding",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransactionTuple",
+        "com.chuckerteam.chucker.internal.support.TransactionDiffCallback",
+        "java.text.DateFormat",
+        "javax.net.ssl.HttpsURLConnection"
+      ],
+      "sorties": [
+        "fun bind"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionOverviewFragment.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionOverviewFragment.kt",
+      "langage": "kotlin",
+      "lignes": 100,
+      "taille_bytes": 3682,
+      "entrees": [
+        "android.os.Bundle",
+        "android.view.LayoutInflater",
+        "android.view.Menu",
+        "android.view.MenuInflater",
+        "android.view.View",
+        "android.view.ViewGroup",
+        "androidx.fragment.app.Fragment",
+        "androidx.fragment.app.activityViewModels",
+        "androidx.lifecycle.Observer",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.databinding.ChuckerFragmentTransactionOverviewBinding",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.support.combineLatest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionPayloadFragment.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionPayloadFragment.kt",
+      "langage": "kotlin",
+      "lignes": 545,
+      "taille_bytes": 20200,
+      "entrees": [
+        "android.annotation.SuppressLint",
+        "android.app.Activity",
+        "android.content.ClipData",
+        "android.content.ClipboardManager",
+        "android.content.Context",
+        "android.graphics.Color",
+        "android.os.Bundle",
+        "android.text.SpannableStringBuilder",
+        "android.view.LayoutInflater",
+        "android.view.Menu",
+        "android.view.MenuInflater",
+        "android.view.View",
+        "android.view.ViewGroup",
+        "android.view.inputmethod.InputMethodManager",
+        "android.widget.Toast",
+        "androidx.activity.result.contract.ActivityResultContracts",
+        "androidx.appcompat.widget.SearchView",
+        "androidx.core.content.ContextCompat",
+        "androidx.core.text.HtmlCompat",
+        "androidx.core.text.bold",
+        "androidx.core.view.isVisible",
+        "androidx.fragment.app.Fragment",
+        "androidx.fragment.app.activityViewModels",
+        "androidx.lifecycle.Observer",
+        "androidx.lifecycle.lifecycleScope",
+        "androidx.lifecycle.withResumed",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.databinding.ChuckerFragmentTransactionPayloadBinding",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.support.FileSaver",
+        "com.chuckerteam.chucker.internal.support.Logger",
+        "com.chuckerteam.chucker.internal.support.calculateLuminance",
+        "com.chuckerteam.chucker.internal.support.combineLatest",
+        "com.chuckerteam.chucker.internal.support.spannableChunked",
+        "java.io.IOException",
+        "kotlin.math.abs",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.delay",
+        "kotlinx.coroutines.launch",
+        "kotlinx.coroutines.withContext",
+        "okio.Source",
+        "okio.source"
+      ],
+      "sorties": [
+        "const val",
+        "fun newInstance"
+      ],
+      "appelle": [
+        "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/Color.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModel.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModel.kt",
+      "langage": "kotlin",
+      "lignes": 74,
+      "taille_bytes": 2698,
+      "entrees": [
+        "androidx.lifecycle.LiveData",
+        "androidx.lifecycle.MutableLiveData",
+        "androidx.lifecycle.ViewModel",
+        "androidx.lifecycle.ViewModelProvider",
+        "androidx.lifecycle.map",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.repository.RepositoryProvider",
+        "com.chuckerteam.chucker.internal.support.combineLatest",
+        "modelClass"
+      ],
+      "sorties": [
+        "fun encodeUrl",
+        "fun switchUrlEncoding"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionPagerAdapter.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionPagerAdapter.kt",
+      "langage": "kotlin",
+      "lignes": 31,
+      "taille_bytes": 1129,
+      "entrees": [
+        "android.content.Context",
+        "androidx.fragment.app.Fragment",
+        "androidx.fragment.app.FragmentManager",
+        "androidx.fragment.app.FragmentStatePagerAdapter",
+        "com.chuckerteam.chucker.R"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/ProtocolResources.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/ProtocolResources.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 464,
+      "entrees": [
+        "androidx.annotation.ColorRes",
+        "androidx.annotation.DrawableRes",
+        "com.chuckerteam.chucker.R"
+      ],
+      "sorties": [
+        "class Http",
+        "class Https"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionPayloadAdapter.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionPayloadAdapter.kt",
+      "langage": "kotlin",
+      "lignes": 283,
+      "taille_bytes": 10416,
+      "entrees": [
+        "android.graphics.Bitmap",
+        "android.graphics.drawable.Drawable",
+        "android.text.SpannableStringBuilder",
+        "android.text.Spanned",
+        "android.view.LayoutInflater",
+        "android.view.View",
+        "android.view.ViewGroup",
+        "androidx.core.text.getSpans",
+        "androidx.recyclerview.widget.RecyclerView",
+        "com.chuckerteam.chucker.R",
+        "com.chuckerteam.chucker.databinding.ChuckerTransactionItemBodyLineBinding",
+        "com.chuckerteam.chucker.databinding.ChuckerTransactionItemCopyBinding",
+        "com.chuckerteam.chucker.databinding.ChuckerTransactionItemHeadersBinding",
+        "com.chuckerteam.chucker.databinding.ChuckerTransactionItemImageBinding",
+        "com.chuckerteam.chucker.internal.support.ChessboardDrawable",
+        "com.chuckerteam.chucker.internal.support.SpanTextUtil",
+        "com.chuckerteam.chucker.internal.support.highlightWithDefinedColors",
+        "com.chuckerteam.chucker.internal.support.highlightWithDefinedColorsSubstring",
+        "com.chuckerteam.chucker.internal.support.indicesOf"
+      ],
+      "sorties": [
+        "const val",
+        "fun setItems"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/PayloadType.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/PayloadType.kt",
+      "langage": "kotlin",
+      "lignes": 6,
+      "taille_bytes": 120,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+      "langage": "kotlin",
+      "lignes": 37,
+      "taille_bytes": 1222,
+      "entrees": [
+        "android.content.Context",
+        "androidx.annotation.VisibleForTesting",
+        "com.chuckerteam.chucker.internal.data.repository.RepositoryProvider.initialize",
+        "com.chuckerteam.chucker.internal.data.room.ChuckerDatabase"
+      ],
+      "sorties": [
+        "fun close",
+        "fun initialize",
+        "fun transaction"
+      ],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt"
+      ],
+      "est_appele_par": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/api/RetentionManager.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/BaseChuckerActivity.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModel.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModel.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModelTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModelTest.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionDatabaseRepository.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionDatabaseRepository.kt",
+      "langage": "kotlin",
+      "lignes": 65,
+      "taille_bytes": 2568,
+      "entrees": [
+        "androidx.lifecycle.LiveData",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransactionTuple",
+        "com.chuckerteam.chucker.internal.data.room.ChuckerDatabase",
+        "com.chuckerteam.chucker.internal.support.distinctUntilChanged"
+      ],
+      "sorties": [],
+      "appelle": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionRepository.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionRepository.kt",
+      "langage": "kotlin",
+      "lignes": 49,
+      "taille_bytes": 1819,
+      "entrees": [
+        "androidx.lifecycle.LiveData",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransactionTuple"
+      ],
+      "sorties": [
+        "fun getFilteredTransactionTuples",
+        "fun getSortedTransactionTuples",
+        "fun getTransaction",
+        "fun getTransactionsInTimeRange"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModelTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModelTest.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/model/DialogData.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/model/DialogData.kt",
+      "langage": "kotlin",
+      "lignes": 8,
+      "taille_bytes": 209,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt": {
+      "fichier": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt",
+      "langage": "kotlin",
+      "lignes": 22,
+      "taille_bytes": 790,
+      "entrees": [
+        "android.content.Context",
+        "androidx.room.Database",
+        "androidx.room.Room",
+        "androidx.room.RoomDatabase",
+        "com.chuckerteam.chucker.internal.data.entity.HttpTransaction"
+      ],
+      "sorties": [
+        "fun create"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionDatabaseRepository.kt",
+        "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionDatabaseRepositoryTest.kt",
+        "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProviderTest.kt"
+      ],
+      "type_noeud": "feuille"
+    }
+  },
+  "edges": [
+    {
+      "de": "sample/src/androidTest/java/com/chuckerteam/chucker/sample/MainActivityTest.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/OkHttpUtils.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/OkHttpUtils.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptor.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/OkHttpUtils.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/RetentionManager.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/ExportFormat.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/PokemonProtoBodyDecoder.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleControls.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/InterceptorType.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleControls.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleControls.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/LabeledRadioButton.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/LabeledRadioButton.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleTopBar.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleTopBar.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleTopBar.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/Color.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/InterceptorType.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt",
+      "type": "interne"
+    },
+    {
+      "de": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleMainScreen.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTimestampTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTimestampTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorSkipRequestTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorSkipRequestTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/ClientFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorSkipRequestTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorDecodingTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorDecodingTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/ClientFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorDecodingTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/ClientFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptor.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModelTest.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionRepository.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModelTest.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModelTest.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionRepository.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModelTest.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModelTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/internal/InstantExecutorExtension.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionDatabaseRepositoryTest.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProviderTest.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/RequestTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/PostDataTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/ResponseTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/EntryTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/data/har/ContentTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionListDetailsSharableTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/TestTransactionFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/DepletingSourceTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionCurlCommandSharableTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/TestTransactionFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/RequestProcessorTest.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/RequestProcessorTest.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/TransactionDetailsSharableTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/TestTransactionFactory.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/HarUtilsTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/test/kotlin/com/chuckerteam/chucker/internal/support/FileSaverTest.kt",
+      "vers": "library/src/test/kotlin/com/chuckerteam/chucker/util/NoLoggerRule.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/api/RetentionManager.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt",
+      "type": "circulaire"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/api/ChuckerCollector.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModel.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/BaseChuckerActivity.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/api/Chucker.kt",
+      "type": "circulaire"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/model/DialogData.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionActivity.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/MainActivity.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionAdapter.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionActivity.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/BaseChuckerActivity.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionPayloadFragment.kt",
+      "vers": "sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/Color.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModel.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/RepositoryProvider.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt",
+      "type": "interne"
+    },
+    {
+      "de": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/repository/HttpTransactionDatabaseRepository.kt",
+      "vers": "library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'sample/src/main/kotlin/com/chuckerteam/chucker/sample/OkHttpUtils.kt'",
+    "point_entree → 'sample/src/main/kotlin/com/chuckerteam/chucker/sample/MainActivity.kt'",
+    "point_entree → 'sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleControls.kt'",
+    "point_entree → 'sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/LabeledRadioButton.kt'",
+    "point_entree → 'sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/ChuckerSampleTopBar.kt'",
+    "feuille → 'sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/testtags/ChuckerTestTags.kt' (in=5)",
+    "feuille → 'sample/src/main/kotlin/com/chuckerteam/chucker/sample/compose/theme/ChuckerTheme.kt' (in=5)",
+    "point_entree → 'library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTimestampTest.kt'",
+    "point_entree → 'library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorSkipRequestTest.kt'",
+    "point_entree → 'library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorDecodingTest.kt'",
+    "point_entree → 'library/src/test/kotlin/com/chuckerteam/chucker/api/ChuckerInterceptorTest.kt'",
+    "feuille → 'library/src/test/kotlin/com/chuckerteam/chucker/util/TestTransactionFactory.kt' (in=3)",
+    "feuille → 'library/src/test/kotlin/com/chuckerteam/chucker/util/ClientFactory.kt' (in=3)",
+    "central → 'library/src/test/kotlin/com/chuckerteam/chucker/util/ChuckerInterceptorDelegate.kt' (in=4, out=3)",
+    "feuille → 'library/src/test/kotlin/com/chuckerteam/chucker/util/HarTestUtils.kt' (in=6)",
+    "point_entree → 'library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/MainViewModelTest.kt'",
+    "point_entree → 'library/src/test/kotlin/com/chuckerteam/chucker/internal/ui/transaction/TransactionViewModelTest.kt'",
+    "point_entree → 'library/src/test/kotlin/com/chuckerteam/chucker/internal/support/RequestProcessorTest.kt'",
+    "feuille → 'library/src/main/kotlin/com/chuckerteam/chucker/api/BodyDecoder.kt' (in=3)",
+    "feuille → 'library/src/main/kotlin/com/chuckerteam/chucker/internal/data/room/ChuckerDatabase.kt' (in=4)",
+    "circulaire → 2 cycles détectés"
+  ]
+}

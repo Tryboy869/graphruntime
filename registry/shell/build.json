@@ -1,0 +1,1620 @@
+{
+  "meta": {
+    "projet": "build",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 6,
+      "shell": 109,
+      "unknown": 5
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "action.yml"
+  },
+  "noeuds": {
+    "action.yml": {
+      "fichier": "action.yml",
+      "langage": "yaml",
+      "lignes": 244,
+      "taille_bytes": 6590,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "compile.sh": {
+      "fichier": "compile.sh",
+      "langage": "shell",
+      "lignes": 53,
+      "taille_bytes": 1860,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".coderabbit.yaml": {
+      "fichier": ".coderabbit.yaml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 441,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/nicod-armbian-gaming.sh": {
+      "fichier": "extensions/nicod-armbian-gaming.sh",
+      "langage": "shell",
+      "lignes": 34,
+      "taille_bytes": 1230,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__800_nicod_launcher",
+        "function pre_customize_image__add_nicod_launcher"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/rkbin-tools.sh": {
+      "fichier": "extensions/rkbin-tools.sh",
+      "langage": "shell",
+      "lignes": 17,
+      "taille_bytes": 807,
+      "entrees": [],
+      "sorties": [
+        "function build_host_tools__install_rkbin_tools",
+        "function fetch_sources_tools__rkbin_tools"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/bcmdhd.sh": {
+      "fichier": "extensions/bcmdhd.sh",
+      "langage": "shell",
+      "lignes": 47,
+      "taille_bytes": 2286,
+      "entrees": [],
+      "sorties": [
+        "function extension_finish_config__install_kernel_headers_for_bcmdhd_dkms",
+        "function post_install_kernel_debs__install_bcmdhd_dkms_package"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/v4l2loopback-dkms.sh": {
+      "fichier": "extensions/v4l2loopback-dkms.sh",
+      "langage": "shell",
+      "lignes": 25,
+      "taille_bytes": 1373,
+      "entrees": [],
+      "sorties": [
+        "function extension_finish_config__build_v4l2loopback_dkms_kernel_module",
+        "function post_install_kernel_debs__build_v4l2loopback_dkms_kernel_module"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/image-output-vhd-azure.sh": {
+      "fichier": "extensions/image-output-vhd-azure.sh",
+      "langage": "shell",
+      "lignes": 44,
+      "taille_bytes": 1826,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__vhd_host_deps",
+        "function post_build_image__900_convert_to_vhd_img"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/armbian-config.sh": {
+      "fichier": "extensions/armbian-config.sh",
+      "langage": "shell",
+      "lignes": 18,
+      "taille_bytes": 541,
+      "entrees": [],
+      "sorties": [
+        "function custom_apt_repo__add_armbian",
+        "function post_armbian_repo_customize_image__install_armbian"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/uwe5622-allwinner.sh": {
+      "fichier": "extensions/uwe5622-allwinner.sh",
+      "langage": "shell",
+      "lignes": 23,
+      "taille_bytes": 1075,
+      "entrees": [],
+      "sorties": [
+        "function post_family_config__add_uwe5622_modules",
+        "function post_family_tweaks__enable_uwe5622_services",
+        "function post_family_tweaks_bsp__add_uwe5622_services"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/xorg-lima-serverflags.sh": {
+      "fichier": "extensions/xorg-lima-serverflags.sh",
+      "langage": "shell",
+      "lignes": 33,
+      "taille_bytes": 1000,
+      "entrees": [],
+      "sorties": [
+        "function post_family_tweaks_bsp__install_lima_serverflags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/kernel-rust.sh": {
+      "fichier": "extensions/kernel-rust.sh",
+      "langage": "shell",
+      "lignes": 219,
+      "taille_bytes": 8758,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__add_rust_compiler",
+        "function artifact_kernel_version_parts__add_rust_version",
+        "function custom_kernel_config__add_rust_compiler",
+        "function custom_kernel_make_params__add_rust_compiler",
+        "function host_dependencies_ready__add_rust_compiler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/uboot-btrfs.sh": {
+      "fichier": "extensions/uboot-btrfs.sh",
+      "langage": "shell",
+      "lignes": 6,
+      "taille_bytes": 264,
+      "entrees": [],
+      "sorties": [
+        "function post_config_uboot_target__enable_uboot_btrfs_support"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/allwinner-kernel-bump.sh": {
+      "fichier": "extensions/allwinner-kernel-bump.sh",
+      "langage": "shell",
+      "lignes": 96,
+      "taille_bytes": 4683,
+      "entrees": [],
+      "sorties": [
+        "function extension_finish_config__prepare_megous_patches",
+        "function extension_prepare_config__prepare_kernel_patches"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/image-output-qcow2.sh": {
+      "fichier": "extensions/image-output-qcow2.sh",
+      "langage": "shell",
+      "lignes": 22,
+      "taille_bytes": 1061,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__qcow2_host_deps",
+        "function post_build_image__900_convert_to_qcow2_img"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/vmware-vm.sh": {
+      "fichier": "extensions/vmware-vm.sh",
+      "langage": "shell",
+      "lignes": 13,
+      "taille_bytes": 521,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__prepare_vmware_config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/sunxi-tools.sh": {
+      "fichier": "extensions/sunxi-tools.sh",
+      "langage": "shell",
+      "lignes": 32,
+      "taille_bytes": 1531,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__sunxi_add_32_bit_c_compiler",
+        "function add_host_dependencies__sunxi_add_or1k_c_compiler",
+        "function build_host_tools__compile_sunxi_tools",
+        "function fetch_sources_tools__sunxi_tools"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/grub-with-dtb.sh": {
+      "fichier": "extensions/grub-with-dtb.sh",
+      "langage": "shell",
+      "lignes": 95,
+      "taille_bytes": 4917,
+      "entrees": [
+        "/etc/armbian-grub-with-dtb"
+      ],
+      "sorties": [
+        "function extension_prepare_config__prepare_grub_with_dtb",
+        "function grub_early_config__deploy_dtb_for_grub",
+        "function grub_late_config__check_dtb_in_grub_cfg",
+        "function grub_pre_install__force_run_kernel_hook_for_armbian_dtb",
+        "function post_family_tweaks_bsp__add_grub_with_dtb_config_file",
+        "function post_family_tweaks_bsp__add_grub_with_dtb_kernel_hook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/arm64-compat-vdso.sh": {
+      "fichier": "extensions/arm64-compat-vdso.sh",
+      "langage": "shell",
+      "lignes": 54,
+      "taille_bytes": 1983,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__arm64_compat_vdso",
+        "function custom_kernel_config__arm64_compat_vdso",
+        "function custom_kernel_make_params__arm64_compat_vdso",
+        "function extension_prepare_config__arm64_compat_vdso",
+        "function host_dependencies_ready__arm64_compat_vdso"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/detect-unused-extensions.sh": {
+      "fichier": "extensions/detect-unused-extensions.sh",
+      "langage": "shell",
+      "lignes": 44,
+      "taille_bytes": 2244,
+      "entrees": [],
+      "sorties": [
+        "function extension_metadata_ready__999_detect_wishful_hooking",
+        "function wishful_hooking_example__this_will_never_run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/fs-cryptroot-support.sh": {
+      "fichier": "extensions/fs-cryptroot-support.sh",
+      "langage": "shell",
+      "lignes": 102,
+      "taille_bytes": 5017,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__add_cryptroot_tooling",
+        "function cleanup_cryptroot",
+        "function extension_prepare_config__prepare_cryptroot",
+        "function post_umount_final_image__750_cryptroot_cleanup",
+        "function post_umount_final_image__export_private_key",
+        "function pre_install_kernel_debs__adjust_dropbear_configuration",
+        "function prepare_root_device__250_encrypt_root_device"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/image-output-oowow.sh": {
+      "fichier": "extensions/image-output-oowow.sh",
+      "langage": "shell",
+      "lignes": 81,
+      "taille_bytes": 3393,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__prepare_oowow_config",
+        "function post_build_image__900_convert_to_oowow"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/apa.sh": {
+      "fichier": "extensions/apa.sh",
+      "langage": "shell",
+      "lignes": 25,
+      "taille_bytes": 1182,
+      "entrees": [],
+      "sorties": [
+        "export APA_IS_ACTIVE",
+        "function custom_apt_repo__add_apa",
+        "function extension_prepare_config__apa",
+        "function post_armbian_repo_customize_image__install_from_apa"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/bcmdhd-spacemit.sh": {
+      "fichier": "extensions/bcmdhd-spacemit.sh",
+      "langage": "shell",
+      "lignes": 46,
+      "taille_bytes": 2160,
+      "entrees": [],
+      "sorties": [
+        "function extension_finish_config__install_kernel_headers_for_bcmdhd_spacemit_dkms",
+        "function post_install_kernel_debs__install_bcmdhd_spacemit_dkms_package"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/uefi-edk2-rk3588.sh": {
+      "fichier": "extensions/uefi-edk2-rk3588.sh",
+      "langage": "shell",
+      "lignes": 76,
+      "taille_bytes": 3605,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__config_uefi_edk2_rk3588",
+        "function post_umount_final_image__write_edk2_to_image"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/nomod.sh": {
+      "fichier": "extensions/nomod.sh",
+      "langage": "shell",
+      "lignes": 10,
+      "taille_bytes": 432,
+      "entrees": [],
+      "sorties": [
+        "function custom_kernel_config__apply_mod2noconfig",
+        "function extension_prepare_config__prepare_localmodconfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/fs-btrfs-support.sh": {
+      "fichier": "extensions/fs-btrfs-support.sh",
+      "langage": "shell",
+      "lignes": 13,
+      "taille_bytes": 665,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__add_btrfs_tooling",
+        "function extension_prepare_config__add_to_image_btrfs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/image-output-utm.sh": {
+      "fichier": "extensions/image-output-utm.sh",
+      "langage": "shell",
+      "lignes": 184,
+      "taille_bytes": 8264,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__prepare_utm_config",
+        "function post_build_image__920_create_utm_plist",
+        "function user_config__metadata_cloud_config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/c-plus-plus-compiler.sh": {
+      "fichier": "extensions/c-plus-plus-compiler.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 423,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__add_arm64_c_plus_plus_compiler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/image-output-vhdx.sh": {
+      "fichier": "extensions/image-output-vhdx.sh",
+      "langage": "shell",
+      "lignes": 58,
+      "taille_bytes": 4331,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__vhdx_host_deps",
+        "function extension_prepare_config__prepare_vhdx_config",
+        "function post_build_image__920_create_vhdx"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/gen-sample-extension-docs.sh": {
+      "fichier": "extensions/gen-sample-extension-docs.sh",
+      "langage": "shell",
+      "lignes": 127,
+      "taille_bytes": 4702,
+      "entrees": [],
+      "sorties": [
+        "function extension_metadata_ready__499_display_docs_generation_start_info",
+        "function extension_metadata_ready__docs_markdown",
+        "function extension_metadata_ready__docs_sample_extension",
+        "function generate_markdown_docs_to_stdout",
+        "function generate_markdown_one_hook_point_to_stdout",
+        "function loop_over_hook_points_and_call",
+        "function read_common_data"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/odin2-preset-firstrun.sh": {
+      "fichier": "extensions/odin2-preset-firstrun.sh",
+      "langage": "shell",
+      "lignes": 79,
+      "taille_bytes": 3430,
+      "entrees": [],
+      "sorties": [
+        "function post_family_tweaks__preset_configs",
+        "function pre_customize_image__add_odin2_scripts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/cleanup-space-final-image.sh": {
+      "fichier": "extensions/cleanup-space-final-image.sh",
+      "langage": "shell",
+      "lignes": 36,
+      "taille_bytes": 1503,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__cleanup_space_final_image_zerofree",
+        "function post_customize_image__998_cleanup_apt_stuff",
+        "function post_umount_final_image__200_zerofree",
+        "function pre_umount_final_image__999_show_space_usage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/image-output-abl.sh": {
+      "fichier": "extensions/image-output-abl.sh",
+      "langage": "shell",
+      "lignes": 77,
+      "taille_bytes": 3552,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__abl_host_deps",
+        "function post_build_image__900_convert_to_abl_img"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/preset-firstrun.sh": {
+      "fichier": "extensions/preset-firstrun.sh",
+      "langage": "shell",
+      "lignes": 52,
+      "taille_bytes": 2577,
+      "entrees": [],
+      "sorties": [
+        "function post_family_tweaks__preset_configs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/mesa-vpu.sh": {
+      "fichier": "extensions/mesa-vpu.sh",
+      "langage": "shell",
+      "lignes": 133,
+      "taille_bytes": 5376,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__3d",
+        "function post_armbian_repo_customize_image__browser",
+        "function post_install_kernel_debs__3d"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/lvm.sh": {
+      "fichier": "extensions/lvm.sh",
+      "langage": "shell",
+      "lignes": 84,
+      "taille_bytes": 3077,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__lvm_host_deps",
+        "function cleanup_lvm",
+        "function extension_prepare_config__lvm_image_suffix",
+        "function extension_prepare_config__prepare_lvm",
+        "function format_partitions__format_lvm",
+        "function post_create_partitions__setup_lvm",
+        "function post_umount_final_image__cleanup_lvm",
+        "function prepare_root_device__create_volume_group"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/rkdevflash.sh": {
+      "fichier": "extensions/rkdevflash.sh",
+      "langage": "shell",
+      "lignes": 185,
+      "taille_bytes": 8891,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__rkdevflash",
+        "function build_rkdeveloptool",
+        "function check_rkdeveloptool",
+        "function extension_finish_config__900_rkdevflash",
+        "function flash_image_rkdeveloptool",
+        "function host_dependencies_ready__rkdevflash",
+        "function list_devices_rkdeveloptool",
+        "function post_build_image_write__rkdevflash",
+        "function wait_for_connected_device_rkdeveloptool"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/gxlimg.sh": {
+      "fichier": "extensions/gxlimg.sh",
+      "langage": "shell",
+      "lignes": 107,
+      "taille_bytes": 3426,
+      "entrees": [],
+      "sorties": [
+        "function build_host_tools__compile_gxlimg",
+        "function fetch_sources_tools__gxlimg",
+        "function gxlimg_repack_fip_with_new_uboot"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/lsmod.sh": {
+      "fichier": "extensions/lsmod.sh",
+      "langage": "shell",
+      "lignes": 26,
+      "taille_bytes": 1359,
+      "entrees": [],
+      "sorties": [
+        "function custom_kernel_config__apply_localmodconfig",
+        "function extension_prepare_config__prepare_localmodconfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/kernel-version-toolchain.sh": {
+      "fichier": "extensions/kernel-version-toolchain.sh",
+      "langage": "shell",
+      "lignes": 35,
+      "taille_bytes": 1261,
+      "entrees": [],
+      "sorties": [
+        "function artifact_kernel_version_parts__add_toolchain"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/ufs.sh": {
+      "fichier": "extensions/ufs.sh",
+      "langage": "shell",
+      "lignes": 24,
+      "taille_bytes": 1304,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__ufs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/ti-debpkgs.sh": {
+      "fichier": "extensions/ti-debpkgs.sh",
+      "langage": "shell",
+      "lignes": 38,
+      "taille_bytes": 1556,
+      "entrees": [],
+      "sorties": [
+        "function post_repo_customize_image__install_ti_packages"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/wayland-sessions-mask.sh": {
+      "fichier": "extensions/wayland-sessions-mask.sh",
+      "langage": "shell",
+      "lignes": 41,
+      "taille_bytes": 1413,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/mtkflash.sh": {
+      "fichier": "extensions/mtkflash.sh",
+      "langage": "shell",
+      "lignes": 142,
+      "taille_bytes": 6968,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__mtkflash",
+        "function build_mtkflash",
+        "function check_mtkflash",
+        "function extension_finish_config__900_mtkflash",
+        "function host_dependencies_ready__mtkflash",
+        "function post_build_image_write__mtkflash"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/jethub-burn.sh": {
+      "fichier": "extensions/jethub-burn.sh",
+      "langage": "shell",
+      "lignes": 148,
+      "taille_bytes": 6034,
+      "entrees": [],
+      "sorties": [
+        "function bootstrap_tools",
+        "function cleanup_burn_tmpdir",
+        "function cleanup_uboot_tmpdir",
+        "function make_burn__run",
+        "function post_build_image__900_jethub_burn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/grub.sh": {
+      "fichier": "extensions/grub.sh",
+      "langage": "shell",
+      "lignes": 309,
+      "taille_bytes": 16484,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__prepare_grub_standard",
+        "function post_family_tweaks_bsp__remove_uboot_grub",
+        "function pre_umount_final_image__remove_uboot_initramfs_hook_grub"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/fake-vcgencmd.sh": {
+      "fichier": "extensions/fake-vcgencmd.sh",
+      "langage": "shell",
+      "lignes": 16,
+      "taille_bytes": 951,
+      "entrees": [],
+      "sorties": [
+        "function pre_umount_final_image__install_fake_vcgencmd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/watchdog.sh": {
+      "fichier": "extensions/watchdog.sh",
+      "langage": "shell",
+      "lignes": 12,
+      "taille_bytes": 561,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__add_to_image_watchdog",
+        "function post_customize_image__enable_watchdog_device_config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/lowmem.sh": {
+      "fichier": "extensions/lowmem.sh",
+      "langage": "shell",
+      "lignes": 74,
+      "taille_bytes": 2886,
+      "entrees": [],
+      "sorties": [
+        "function post_family_tweaks__enable_lowmem_mkswap",
+        "function post_family_tweaks_bsp__copy_lowmem_config",
+        "function post_family_tweaks_bsp__copy_lowmem_mkswap",
+        "function post_family_tweaks_bsp__initramfs",
+        "function pre_umount_final_image__memory_optimize_defaults"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/image-output-ovf.sh": {
+      "fichier": "extensions/image-output-ovf.sh",
+      "langage": "shell",
+      "lignes": 117,
+      "taille_bytes": 5980,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__ovf_host_deps",
+        "function extension_prepare_config__prepare_ovf_config",
+        "function post_build_image__920_create_ovf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/marvell-tools.sh": {
+      "fichier": "extensions/marvell-tools.sh",
+      "langage": "shell",
+      "lignes": 8,
+      "taille_bytes": 627,
+      "entrees": [],
+      "sorties": [
+        "function fetch_sources_tools__marvell_tools"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/bluetooth-hciattach.sh": {
+      "fichier": "extensions/bluetooth-hciattach.sh",
+      "langage": "shell",
+      "lignes": 69,
+      "taille_bytes": 2652,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__bluetooth_hciattach",
+        "function post_family_config__bluetooth_hciattach_add_bluetooth_packages",
+        "function post_family_tweaks__bluetooth_hciattach_enable_bt_service_in_image",
+        "function post_family_tweaks_bsp__bluetooth_hciattach_add_systemd_service"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/fs-f2fs-support.sh": {
+      "fichier": "extensions/fs-f2fs-support.sh",
+      "langage": "shell",
+      "lignes": 8,
+      "taille_bytes": 465,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__add_f2fs_tooling"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/armbian-live-patch.sh": {
+      "fichier": "extensions/armbian-live-patch.sh",
+      "langage": "shell",
+      "lignes": 97,
+      "taille_bytes": 3331,
+      "entrees": [],
+      "sorties": [
+        "export GNUPGHOME",
+        "function post_family_tweaks_bsp__armbian"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/amlogic-fip-blobs.sh": {
+      "fichier": "extensions/amlogic-fip-blobs.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 212,
+      "entrees": [],
+      "sorties": [
+        "function fetch_sources_tools__amlogic"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/fs-xfs-support.sh": {
+      "fichier": "extensions/fs-xfs-support.sh",
+      "langage": "shell",
+      "lignes": 13,
+      "taille_bytes": 645,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__add_xfs_tooling",
+        "function extension_prepare_config__add_to_image_xfsprogs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/syterkit-allwinner.sh": {
+      "fichier": "extensions/syterkit-allwinner.sh",
+      "langage": "shell",
+      "lignes": 40,
+      "taille_bytes": 2177,
+      "entrees": [],
+      "sorties": [
+        "function post_umount_final_image__write_syterkit_to_image"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/zfs.sh": {
+      "fichier": "extensions/zfs.sh",
+      "langage": "shell",
+      "lignes": 16,
+      "taille_bytes": 886,
+      "entrees": [],
+      "sorties": [
+        "function extension_finish_config__build_zfs_kernel_module",
+        "function post_install_kernel_debs__build_zfs_kernel_module"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/radxa-aic8800.sh": {
+      "fichier": "extensions/radxa-aic8800.sh",
+      "langage": "shell",
+      "lignes": 63,
+      "taille_bytes": 3101,
+      "entrees": [],
+      "sorties": [
+        "function extension_finish_config__install_kernel_headers_for_aic8800_dkms",
+        "function post_install_kernel_debs__install_aic8800_dkms_package"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/grub-riscv64.sh": {
+      "fichier": "extensions/grub-riscv64.sh",
+      "langage": "shell",
+      "lignes": 154,
+      "taille_bytes": 9243,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__prepare_grub"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/yt6801.sh": {
+      "fichier": "extensions/yt6801.sh",
+      "langage": "shell",
+      "lignes": 27,
+      "taille_bytes": 1473,
+      "entrees": [],
+      "sorties": [
+        "function extension_finish_config__install_kernel_headers_for_yt6801_dkms",
+        "function post_install_kernel_debs__install_yt6801_dkms_package"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/fs-nilfs2-support.sh": {
+      "fichier": "extensions/fs-nilfs2-support.sh",
+      "langage": "shell",
+      "lignes": 17,
+      "taille_bytes": 730,
+      "entrees": [],
+      "sorties": [
+        "function add_host_dependencies__add_nilfs_tools",
+        "function extension_prepare_config__add_to_image_nilfs",
+        "function pre_update_initramfs__add_module_into_initramfs_config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/u-boot-menu.sh": {
+      "fichier": "extensions/u-boot-menu.sh",
+      "langage": "shell",
+      "lignes": 60,
+      "taille_bytes": 2396,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__add_uboot_menu_pkg",
+        "function pre_umount_final_image__995_run_uboot_update",
+        "function pre_umount_final_image__configure_uboot_menu"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/nvidia.sh": {
+      "fichier": "extensions/nvidia.sh",
+      "langage": "shell",
+      "lignes": 27,
+      "taille_bytes": 1530,
+      "entrees": [],
+      "sorties": [
+        "function extension_finish_config__build_nvidia_kernel_module",
+        "function post_install_kernel_debs__build_nvidia_kernel_module"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/ccache-remote/ccache-remote.sh": {
+      "fichier": "extensions/ccache-remote/ccache-remote.sh",
+      "langage": "shell",
+      "lignes": 492,
+      "taille_bytes": 20716,
+      "entrees": [],
+      "sorties": [
+        "export CCACHE_REMOTE_STORAGE",
+        "function ccache_discover_remote_storage",
+        "function ccache_extract_url_host",
+        "function ccache_format_host_port",
+        "function ccache_get_http_stats",
+        "function ccache_get_redis_stats",
+        "function ccache_get_remote_stats",
+        "function ccache_inject_envs",
+        "function ccache_mask_storage_url",
+        "function ccache_post_compilation__show_remote_stats",
+        "function ccache_validate_storage_url",
+        "function extension_prepare_config__setup_remote_ccache",
+        "function host_pre_docker_launch__setup_remote_ccache",
+        "function kernel_make_config__add_ccache_remote_storage",
+        "function uboot_make_config__add_ccache_remote_storage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/initramfs-usb-gadget-ums/initramfs-usb-gadget-ums.sh": {
+      "fichier": "extensions/initramfs-usb-gadget-ums/initramfs-usb-gadget-ums.sh",
+      "langage": "shell",
+      "lignes": 29,
+      "taille_bytes": 1604,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__check_sanity_usb_gadget_ums",
+        "function pre_customize_image__inject_initramfs_usb_gadget_ums"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/initramfs-usb-gadget-ums/init-premount/usb-gadget-ums.sh": {
+      "fichier": "extensions/initramfs-usb-gadget-ums/init-premount/usb-gadget-ums.sh",
+      "langage": "shell",
+      "lignes": 173,
+      "taille_bytes": 5880,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/cloud-init/cloud-init.sh": {
+      "fichier": "extensions/cloud-init/cloud-init.sh",
+      "langage": "shell",
+      "lignes": 72,
+      "taille_bytes": 3045,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__ci_compatibility_check",
+        "function extension_prepare_config__ci_image_suffix",
+        "function extension_prepare_config__prepare_ci",
+        "function pre_customize_image__disable_armbian_first_run",
+        "function pre_customize_image__inject_cloud_init_config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/cloud-init/config/99-fake_cloud.cfg": {
+      "fichier": "extensions/cloud-init/config/99-fake_cloud.cfg",
+      "langage": "unknown",
+      "lignes": 5,
+      "taille_bytes": 118,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/network/net-chrony.sh": {
+      "fichier": "extensions/network/net-chrony.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 241,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__install_chrony"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/network/net-systemd-timesyncd.sh": {
+      "fichier": "extensions/network/net-systemd-timesyncd.sh",
+      "langage": "shell",
+      "lignes": 13,
+      "taille_bytes": 512,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__install_systemd",
+        "function pre_install_kernel_debs__configure_systemd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/network/net-systemd-networkd.sh": {
+      "fichier": "extensions/network/net-systemd-networkd.sh",
+      "langage": "shell",
+      "lignes": 56,
+      "taille_bytes": 3392,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__install_systemd_networkd",
+        "function pre_install_kernel_debs__configure_systemd_networkd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/network/net-network-manager.sh": {
+      "fichier": "extensions/network/net-network-manager.sh",
+      "langage": "shell",
+      "lignes": 52,
+      "taille_bytes": 2826,
+      "entrees": [],
+      "sorties": [
+        "function extension_prepare_config__install_network_manager",
+        "function pre_install_kernel_debs__configure_network_manager"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/network/config-nm/netplan/00-default-use-network-manager.yaml": {
+      "fichier": "extensions/network/config-nm/netplan/00-default-use-network-manager.yaml",
+      "langage": "yaml",
+      "lignes": 11,
+      "taille_bytes": 341,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "extensions/network/config-networkd/netplan/10-dhcp-all-interfaces.yaml": {
+      "fichier": "extensions/network/config-networkd/netplan/10-dhcp-all-interfaces.yaml",
+      "langage": "yaml",
+      "lignes": 28,
+      "taille_bytes": 1229,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/sources/mainline-kernel.conf.sh": {
+      "fichier": "config/sources/mainline-kernel.conf.sh",
+      "langage": "shell",
+      "lignes": 42,
+      "taille_bytes": 2789,
+      "entrees": [],
+      "sorties": [
+        "function mainline_kernel_decide_version__900_defaults",
+        "function mainline_kernel_decide_version__upstream_release_candidate_number"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/sources/vendors/mekotronics/mekotronics-rk3588.conf.sh": {
+      "fichier": "config/sources/vendors/mekotronics/mekotronics-rk3588.conf.sh",
+      "langage": "shell",
+      "lignes": 26,
+      "taille_bytes": 1442,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/sources/vendors/mekotronics/mekotronics-rk3588.hooks.sh": {
+      "fichier": "config/sources/vendors/mekotronics/mekotronics-rk3588.hooks.sh",
+      "langage": "shell",
+      "lignes": 55,
+      "taille_bytes": 2578,
+      "entrees": [],
+      "sorties": [
+        "function post_config_uboot_target__extra_configs_for_meko_mainline_uboot",
+        "function post_family_config__meko_use_mainline_uboot",
+        "function post_family_config__vendor_uboot_mekotronics",
+        "function write_uboot_platform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/optional/boards/aml-c400-plus/_packages/bsp-cli/root/install-aml.sh": {
+      "fichier": "config/optional/boards/aml-c400-plus/_packages/bsp-cli/root/install-aml.sh",
+      "langage": "shell",
+      "lignes": 198,
+      "taille_bytes": 4572,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/optional/boards/aml-s9xx-box/_packages/bsp-cli/root/install-aml.sh": {
+      "fichier": "config/optional/boards/aml-s9xx-box/_packages/bsp-cli/root/install-aml.sh",
+      "langage": "shell",
+      "lignes": 198,
+      "taille_bytes": 4575,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/bootscripts/boot-odroid-xu4.ini": {
+      "fichier": "config/bootscripts/boot-odroid-xu4.ini",
+      "langage": "unknown",
+      "lignes": 297,
+      "taille_bytes": 13397,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/bootscripts/boot-odroid-n2.ini": {
+      "fichier": "config/bootscripts/boot-odroid-n2.ini",
+      "langage": "unknown",
+      "lignes": 135,
+      "taille_bytes": 5579,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/bootscripts/boot-odroid-c2.ini": {
+      "fichier": "config/bootscripts/boot-odroid-c2.ini",
+      "langage": "unknown",
+      "lignes": 187,
+      "taille_bytes": 7155,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/bootscripts/boot-odroid-c1.ini": {
+      "fichier": "config/bootscripts/boot-odroid-c1.ini",
+      "langage": "unknown",
+      "lignes": 29,
+      "taille_bytes": 1041,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/templates/targets-all-kernels.yaml": {
+      "fichier": "config/templates/targets-all-kernels.yaml",
+      "langage": "yaml",
+      "lignes": 12,
+      "taille_bytes": 300,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/templates/targets-default.yaml": {
+      "fichier": "config/templates/targets-default.yaml",
+      "langage": "yaml",
+      "lignes": 26,
+      "taille_bytes": 882,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/bookworm/appgroups/browsers/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/bookworm/appgroups/browsers/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 4,
+      "taille_bytes": 275,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/bookworm/environments/xfce/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/bookworm/environments/xfce/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 22,
+      "taille_bytes": 995,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/bookworm/environments/cinnamon/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/bookworm/environments/cinnamon/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6182,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/bookworm/environments/kde-plasma/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/bookworm/environments/kde-plasma/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 35,
+      "taille_bytes": 1647,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/bookworm/environments/budgie/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/bookworm/environments/budgie/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6165,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/bookworm/environments/mate/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/bookworm/environments/mate/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6149,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/bookworm/environments/xmonad/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/bookworm/environments/xmonad/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 14,
+      "taille_bytes": 618,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/bookworm/environments/gnome/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/bookworm/environments/gnome/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6156,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/plucky/appgroups/browsers/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/plucky/appgroups/browsers/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 4,
+      "taille_bytes": 275,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/plucky/environments/i3-wm/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/plucky/environments/i3-wm/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 14,
+      "taille_bytes": 618,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/plucky/environments/cinnamon/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/plucky/environments/cinnamon/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6182,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/appgroups/browsers/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/appgroups/browsers/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 4,
+      "taille_bytes": 275,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/i3-wm/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/i3-wm/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 14,
+      "taille_bytes": 618,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/xfce/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/xfce/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 22,
+      "taille_bytes": 995,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/xfce/debian/armbian-bsp-desktop/prepare.sh": {
+      "fichier": "config/desktop/common/environments/xfce/debian/armbian-bsp-desktop/prepare.sh",
+      "langage": "shell",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/cinnamon/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/cinnamon/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6182,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/kde-plasma/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/kde-plasma/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 28,
+      "taille_bytes": 1353,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/budgie/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/budgie/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6165,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/mate/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/mate/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6153,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/xmonad/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/xmonad/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 14,
+      "taille_bytes": 618,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/enlightenment/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/enlightenment/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6180,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/deepin/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/deepin/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6159,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/common/environments/gnome/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/common/environments/gnome/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6156,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/trixie/appgroups/browsers/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/trixie/appgroups/browsers/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 4,
+      "taille_bytes": 275,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/trixie/environments/xfce/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/trixie/environments/xfce/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 22,
+      "taille_bytes": 995,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/trixie/environments/cinnamon/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/trixie/environments/cinnamon/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6182,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/trixie/environments/kde-plasma/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/trixie/environments/kde-plasma/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 35,
+      "taille_bytes": 1647,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/trixie/environments/budgie/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/trixie/environments/budgie/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6165,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/trixie/environments/mate/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/trixie/environments/mate/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6149,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/trixie/environments/xmonad/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/trixie/environments/xmonad/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 14,
+      "taille_bytes": 618,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/trixie/environments/kde-plasma-mobile/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/trixie/environments/kde-plasma-mobile/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 28,
+      "taille_bytes": 1353,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/trixie/environments/gnome/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/trixie/environments/gnome/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 164,
+      "taille_bytes": 6156,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/desktop/sid/environments/xfce/armbian/create_desktop_package.sh": {
+      "fichier": "config/desktop/sid/environments/xfce/armbian/create_desktop_package.sh",
+      "langage": "shell",
+      "lignes": 22,
+      "taille_bytes": 995,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

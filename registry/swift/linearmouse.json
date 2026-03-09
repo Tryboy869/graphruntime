@@ -1,0 +1,1939 @@
+{
+  "meta": {
+    "projet": "linearmouse",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 2,
+      "json": 16,
+      "c": 1,
+      "swift": 101
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "crowdin.yml"
+  },
+  "noeuds": {
+    "crowdin.yml": {
+      "fichier": "crowdin.yml",
+      "langage": "yaml",
+      "lignes": 7,
+      "taille_bytes": 239,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package.json": {
+      "fichier": "package.json",
+      "langage": "json",
+      "lignes": 10,
+      "taille_bytes": 289,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".swiftlint.yml": {
+      "fichier": ".swiftlint.yml",
+      "langage": "yaml",
+      "lignes": 176,
+      "taille_bytes": 4567,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package-lock.json": {
+      "fichier": "package-lock.json",
+      "langage": "json",
+      "lignes": 318,
+      "taille_bytes": 12061,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/LinearMouse-Bridging-Header.h": {
+      "fichier": "LinearMouse/LinearMouse-Bridging-Header.h",
+      "langage": "c",
+      "lignes": 42,
+      "taille_bytes": 1249,
+      "entrees": [
+        "<CoreGraphics/CoreGraphics.h>",
+        "<IOKit/hidsystem/IOHIDEventSystemClient.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/AppDelegate.swift": {
+      "fichier": "LinearMouse/AppDelegate.swift",
+      "langage": "swift",
+      "lignes": 108,
+      "taille_bytes": 2758,
+      "entrees": [
+        "AppMover",
+        "Combine",
+        "LaunchAtLogin",
+        "SwiftUI",
+        "os.log"
+      ],
+      "sorties": [
+        "class AppDelegate",
+        "func applicationDidFinishLaunching",
+        "func applicationShouldHandleReopen",
+        "func applicationWillTerminate",
+        "func setup",
+        "func setupConfiguration",
+        "func setupNotifications",
+        "func start",
+        "func stop"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/AutoUpdateManager.swift": {
+      "fichier": "LinearMouse/AutoUpdateManager.swift",
+      "langage": "swift",
+      "lignes": 53,
+      "taille_bytes": 1365,
+      "entrees": [
+        "Defaults",
+        "Foundation",
+        "Sparkle",
+        "Version"
+      ],
+      "sorties": [
+        "class AutoUpdateManager",
+        "class SemanticVersioningComparator",
+        "func allowedChannels",
+        "func compareVersion",
+        "func versionComparator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/LinearMouse.swift": {
+      "fichier": "LinearMouse/LinearMouse.swift",
+      "langage": "swift",
+      "lignes": 18,
+      "taille_bytes": 520,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "enum LinearMouse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/DefaultsKeys.swift": {
+      "fichier": "LinearMouse/DefaultsKeys.swift",
+      "langage": "swift",
+      "lignes": 16,
+      "taille_bytes": 496,
+      "entrees": [
+        "Defaults"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/ModifierKeys.swift": {
+      "fichier": "LinearMouse/ModifierKeys.swift",
+      "langage": "swift",
+      "lignes": 28,
+      "taille_bytes": 702,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "enum ModifierKeyActionType",
+        "struct ModifierKeyAction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/AccessibilityPermission.swift": {
+      "fichier": "LinearMouse/AccessibilityPermission.swift",
+      "langage": "swift",
+      "lignes": 37,
+      "taille_bytes": 1039,
+      "entrees": [
+        "Foundation",
+        "SwiftUI",
+        "os.log"
+      ],
+      "sorties": [
+        "enum AccessibilityPermission",
+        "enum AccessibilityPermissionError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/AccessibilityPermissionWindow.swift": {
+      "fichier": "LinearMouse/UI/AccessibilityPermissionWindow.swift",
+      "langage": "swift",
+      "lignes": 53,
+      "taille_bytes": 1332,
+      "entrees": [
+        "Foundation",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class AccessibilityPermissionWindow",
+        "func moveAside",
+        "func windowWillClose"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/AccessibilityPermissionView.swift": {
+      "fichier": "LinearMouse/UI/AccessibilityPermissionView.swift",
+      "langage": "swift",
+      "lignes": 52,
+      "taille_bytes": 1442,
+      "entrees": [
+        "SwiftUI",
+        "os.log"
+      ],
+      "sorties": [
+        "func openAccessibility",
+        "struct AccessibilityPermissionView",
+        "struct AccessibilityPermissionView_Previews"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/VisualEffectView.swift": {
+      "fichier": "LinearMouse/UI/VisualEffectView.swift",
+      "langage": "swift",
+      "lignes": 22,
+      "taille_bytes": 727,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func makeNSView",
+        "func updateNSView",
+        "struct VisualEffectView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/SettingsWindowController.swift": {
+      "fichier": "LinearMouse/UI/SettingsWindowController.swift",
+      "langage": "swift",
+      "lignes": 61,
+      "taille_bytes": 1407,
+      "entrees": [
+        "Foundation",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class SettingsWindowController",
+        "func bringToFront",
+        "func windowWillClose"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/StatusItem.swift": {
+      "fichier": "LinearMouse/UI/StatusItem.swift",
+      "langage": "swift",
+      "lignes": 181,
+      "taille_bytes": 5550,
+      "entrees": [
+        "Combine",
+        "Defaults",
+        "LaunchAtLogin",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class StatusItem",
+        "func updateOpenSettingsForFrontmostApplicationItem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/CheckForUpdatesView.swift": {
+      "fichier": "LinearMouse/UI/CheckForUpdatesView.swift",
+      "langage": "swift",
+      "lignes": 96,
+      "taille_bytes": 2949,
+      "entrees": [
+        "Combine",
+        "Defaults",
+        "Sparkle",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func checkForUpdates",
+        "struct CheckForUpdatesView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/HyperLink.swift": {
+      "fichier": "LinearMouse/UI/HyperLink.swift",
+      "langage": "swift",
+      "lignes": 34,
+      "taille_bytes": 714,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct HyperLink"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Settings.swift": {
+      "fichier": "LinearMouse/UI/Settings.swift",
+      "langage": "swift",
+      "lignes": 57,
+      "taille_bytes": 1806,
+      "entrees": [
+        "Combine",
+        "Defaults",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct Settings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Extensions/View.swift": {
+      "fichier": "LinearMouse/UI/Extensions/View.swift",
+      "langage": "swift",
+      "lignes": 48,
+      "taille_bytes": 1393,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func asCancelAction",
+        "func asDefaultAction",
+        "func formLabel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Extensions/NSWindow.swift": {
+      "fichier": "LinearMouse/UI/Extensions/NSWindow.swift",
+      "langage": "swift",
+      "lignes": 11,
+      "taille_bytes": 223,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func bringToFront"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ClickDebouncingSection.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ClickDebouncingSection.swift",
+      "langage": "swift",
+      "lignes": 66,
+      "taille_bytes": 2523,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ClickDebouncingSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonsSettingsState.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonsSettingsState.swift",
+      "langage": "swift",
+      "lignes": 195,
+      "taille_bytes": 5554,
+      "entrees": [
+        "Combine",
+        "Foundation",
+        "PublishedObject",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class ButtonsSettingsState",
+        "func appendMapping",
+        "func clickDebouncingButtonEnabledBinding"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/UniversalBackForwardSection.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/UniversalBackForwardSection.swift",
+      "langage": "swift",
+      "lignes": 22,
+      "taille_bytes": 651,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct UniversalBackForwardSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonsSettings.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonsSettings.swift",
+      "langage": "swift",
+      "lignes": 23,
+      "taille_bytes": 470,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ButtonsSettings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/SwitchPrimaryAndSecondaryButtonsSection.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/SwitchPrimaryAndSecondaryButtonsSection.swift",
+      "langage": "swift",
+      "lignes": 17,
+      "taille_bytes": 435,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct SwitchPrimaryAndSecondaryButtonsSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingEditSheet.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingEditSheet.swift",
+      "langage": "swift",
+      "lignes": 102,
+      "taille_bytes": 2974,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "enum Mode",
+        "struct ButtonMappingEditSheet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingsSection.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingsSection.swift",
+      "langage": "swift",
+      "lignes": 67,
+      "taille_bytes": 2234,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ButtonMappingsSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingButtonRecorder.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingButtonRecorder.swift",
+      "langage": "swift",
+      "lignes": 115,
+      "taille_bytes": 3356,
+      "entrees": [
+        "ObservationToken",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ButtonMappingButtonRecorder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMapping.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMapping.swift",
+      "langage": "swift",
+      "lignes": 113,
+      "taille_bytes": 3101,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ButtonMappingActionDescription",
+        "struct ButtonMappingButtonDescription",
+        "struct ButtonMappingListItem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingActionPicker.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingActionPicker.swift",
+      "langage": "swift",
+      "lignes": 138,
+      "taille_bytes": 4624,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "enum ActionType",
+        "struct ActionTypeTreeView",
+        "struct ButtonMappingActionPicker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingAction.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingAction.swift",
+      "langage": "swift",
+      "lignes": 67,
+      "taille_bytes": 2221,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ButtonMappingAction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingActionKeyPress.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingActionKeyPress.swift",
+      "langage": "swift",
+      "lignes": 140,
+      "taille_bytes": 3939,
+      "entrees": [
+        "KeyKit",
+        "ObservationToken",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ButtonMappingActionKeyPress",
+        "struct KeyboardShortcutRecorder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingActionScroll.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingActionScroll.swift",
+      "langage": "swift",
+      "lignes": 151,
+      "taille_bytes": 4596,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "enum Mode",
+        "struct ButtonMappingActionScroll",
+        "struct DistanceInput"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingActionRun.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/ButtonMappingsSection/ButtonMappingAction/ButtonMappingActionRun.swift",
+      "langage": "swift",
+      "lignes": 27,
+      "taille_bytes": 612,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ButtonMappingActionRun"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/GestureButtonSection/GestureButtonSection.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/GestureButtonSection/GestureButtonSection.swift",
+      "langage": "swift",
+      "lignes": 79,
+      "taille_bytes": 2743,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct GestureButtonSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonsSettings/GestureButtonSection/GestureActionPicker.swift": {
+      "fichier": "LinearMouse/UI/ButtonsSettings/GestureButtonSection/GestureActionPicker.swift",
+      "langage": "swift",
+      "lignes": 24,
+      "taille_bytes": 809,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct GestureActionPicker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/GeneralSettings/ConfigurationSection.swift": {
+      "fichier": "LinearMouse/UI/GeneralSettings/ConfigurationSection.swift",
+      "langage": "swift",
+      "lignes": 24,
+      "taille_bytes": 607,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ConfigurationSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/GeneralSettings/GeneralSettings.swift": {
+      "fichier": "LinearMouse/UI/GeneralSettings/GeneralSettings.swift",
+      "langage": "swift",
+      "lignes": 125,
+      "taille_bytes": 4462,
+      "entrees": [
+        "Defaults",
+        "LaunchAtLogin",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "enum URLs",
+        "struct GeneralSettings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/GeneralSettings/LoggingSection.swift": {
+      "fichier": "LinearMouse/UI/GeneralSettings/LoggingSection.swift",
+      "langage": "swift",
+      "lignes": 98,
+      "taille_bytes": 3387,
+      "entrees": [
+        "Defaults",
+        "OSLog",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func exportLogs",
+        "struct LoggingSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/DetailView/DetailView.swift": {
+      "fichier": "LinearMouse/UI/DetailView/DetailView.swift",
+      "langage": "swift",
+      "lignes": 37,
+      "taille_bytes": 1010,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DetailView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ViewModifiers/FormViewModifier.swift": {
+      "fichier": "LinearMouse/UI/ViewModifiers/FormViewModifier.swift",
+      "langage": "swift",
+      "lignes": 85,
+      "taille_bytes": 2026,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func body",
+        "func labelWithDescription",
+        "func withDescription",
+        "struct FormViewModifier",
+        "struct PickerViewModifier",
+        "struct SectionViewModifier"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ButtonStyle/SecondaryButtonStyle.swift": {
+      "fichier": "LinearMouse/UI/ButtonStyle/SecondaryButtonStyle.swift",
+      "langage": "swift",
+      "lignes": 14,
+      "taille_bytes": 407,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func makeBody",
+        "struct SecondaryButtonStyle"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Sidebar/SidebarItem.swift": {
+      "fichier": "LinearMouse/UI/Sidebar/SidebarItem.swift",
+      "langage": "swift",
+      "lignes": 44,
+      "taille_bytes": 1292,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct SidebarItem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Sidebar/Sidebar.swift": {
+      "fichier": "LinearMouse/UI/Sidebar/Sidebar.swift",
+      "langage": "swift",
+      "lignes": 34,
+      "taille_bytes": 732,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct Sidebar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/SchemeIndicator.swift": {
+      "fichier": "LinearMouse/UI/Header/SchemeIndicator.swift",
+      "langage": "swift",
+      "lignes": 16,
+      "taille_bytes": 333,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct SchemeIndicator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/AppIndicator/AppIndicator.swift": {
+      "fichier": "LinearMouse/UI/Header/AppIndicator/AppIndicator.swift",
+      "langage": "swift",
+      "lignes": 26,
+      "taille_bytes": 722,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct AppIndicator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/AppIndicator/AppPickerSheet/AppPicker.swift": {
+      "fichier": "LinearMouse/UI/Header/AppIndicator/AppPickerSheet/AppPicker.swift",
+      "langage": "swift",
+      "lignes": 160,
+      "taille_bytes": 5218,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "enum PickerSelection",
+        "struct AppPicker",
+        "struct AppPickerItem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/AppIndicator/AppPickerSheet/AppPickerState.swift": {
+      "fichier": "LinearMouse/UI/Header/AppIndicator/AppPickerSheet/AppPickerState.swift",
+      "langage": "swift",
+      "lignes": 101,
+      "taille_bytes": 3331,
+      "entrees": [
+        "AppKit",
+        "Combine",
+        "Foundation"
+      ],
+      "sorties": [
+        "class AppPickerState",
+        "func refreshInstalledApps"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/AppIndicator/AppPickerSheet/AppPickerSheet.swift": {
+      "fichier": "LinearMouse/UI/Header/AppIndicator/AppPickerSheet/AppPickerSheet.swift",
+      "langage": "swift",
+      "lignes": 76,
+      "taille_bytes": 2317,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct AppPickerSheet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DisplayIndicator/DisplayIndicator.swift": {
+      "fichier": "LinearMouse/UI/Header/DisplayIndicator/DisplayIndicator.swift",
+      "langage": "swift",
+      "lignes": 26,
+      "taille_bytes": 750,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DisplayIndicator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DisplayIndicator/DisplayPickerSheet/DisplayPickerState.swift": {
+      "fichier": "LinearMouse/UI/Header/DisplayIndicator/DisplayPickerSheet/DisplayPickerState.swift",
+      "langage": "swift",
+      "lignes": 19,
+      "taille_bytes": 457,
+      "entrees": [
+        "AppKit",
+        "Combine",
+        "Foundation"
+      ],
+      "sorties": [
+        "class DisplayPickerState"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DisplayIndicator/DisplayPickerSheet/DisplayPicker.swift": {
+      "fichier": "LinearMouse/UI/Header/DisplayIndicator/DisplayPickerSheet/DisplayPicker.swift",
+      "langage": "swift",
+      "lignes": 18,
+      "taille_bytes": 492,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DisplayPicker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DisplayIndicator/DisplayPickerSheet/DisplayPickerSheet.swift": {
+      "fichier": "LinearMouse/UI/Header/DisplayIndicator/DisplayPickerSheet/DisplayPickerSheet.swift",
+      "langage": "swift",
+      "lignes": 73,
+      "taille_bytes": 2310,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DisplayPickerSheet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DeviceIndicator/DeviceIndicator.swift": {
+      "fichier": "LinearMouse/UI/Header/DeviceIndicator/DeviceIndicator.swift",
+      "langage": "swift",
+      "lignes": 25,
+      "taille_bytes": 703,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DeviceIndicator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DeviceIndicator/DeviceIndicatorState.swift": {
+      "fichier": "LinearMouse/UI/Header/DeviceIndicator/DeviceIndicatorState.swift",
+      "langage": "swift",
+      "lignes": 30,
+      "taille_bytes": 722,
+      "entrees": [
+        "Combine",
+        "PointerKit",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class DeviceIndicatorState"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerSectionState.swift": {
+      "fichier": "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerSectionState.swift",
+      "langage": "swift",
+      "lignes": 15,
+      "taille_bytes": 350,
+      "entrees": [
+        "Combine",
+        "Defaults"
+      ],
+      "sorties": [
+        "class DevicePickerSectionState",
+        "func setDevice"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerState.swift": {
+      "fichier": "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerState.swift",
+      "langage": "swift",
+      "lignes": 29,
+      "taille_bytes": 702,
+      "entrees": [
+        "Combine",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class DevicePickerState"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerSheet.swift": {
+      "fichier": "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerSheet.swift",
+      "langage": "swift",
+      "lignes": 66,
+      "taille_bytes": 1913,
+      "entrees": [
+        "Defaults",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DevicePickerSheet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerSection.swift": {
+      "fichier": "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerSection.swift",
+      "langage": "swift",
+      "lignes": 24,
+      "taille_bytes": 591,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DevicePickerSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerSectionItem.swift": {
+      "fichier": "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePickerSectionItem.swift",
+      "langage": "swift",
+      "lignes": 26,
+      "taille_bytes": 755,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DevicePickerSectionItem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DeviceButtonStyle.swift": {
+      "fichier": "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DeviceButtonStyle.swift",
+      "langage": "swift",
+      "lignes": 31,
+      "taille_bytes": 867,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "func makeBody",
+        "struct DeviceButtonStyle"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePicker.swift": {
+      "fichier": "LinearMouse/UI/Header/DeviceIndicator/DevicePickerSheet/DevicePicker.swift",
+      "langage": "swift",
+      "lignes": 25,
+      "taille_bytes": 630,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DevicePicker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/HelpButton/HelpButton.swift": {
+      "fichier": "LinearMouse/UI/HelpButton/HelpButton.swift",
+      "langage": "swift",
+      "lignes": 32,
+      "taille_bytes": 782,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class Delegate",
+        "func makeCoordinator",
+        "func makeNSView",
+        "func updateNSView",
+        "struct HelpButton"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/PointerSettings/PointerSettings.swift": {
+      "fichier": "LinearMouse/UI/PointerSettings/PointerSettings.swift",
+      "langage": "swift",
+      "lignes": 131,
+      "taille_bytes": 5596,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct PointerSettings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/PointerSettings/PointerSettingsState.swift": {
+      "fichier": "LinearMouse/UI/PointerSettings/PointerSettingsState.swift",
+      "langage": "swift",
+      "lignes": 106,
+      "taille_bytes": 3031,
+      "entrees": [
+        "Combine",
+        "Foundation",
+        "PublishedObject"
+      ],
+      "sorties": [
+        "class PointerSettingsState",
+        "func revertPointerSpeed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ScrollingSettings/Header.swift": {
+      "fichier": "LinearMouse/UI/ScrollingSettings/Header.swift",
+      "langage": "swift",
+      "lignes": 31,
+      "taille_bytes": 811,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct DirectionPicker",
+        "struct Header"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ScrollingSettings/ReverseScrollingSection.swift": {
+      "fichier": "LinearMouse/UI/ScrollingSettings/ReverseScrollingSection.swift",
+      "langage": "swift",
+      "lignes": 24,
+      "taille_bytes": 721,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ReverseScrollingSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ScrollingSettings/ScrollingModeSection.swift": {
+      "fichier": "LinearMouse/UI/ScrollingSettings/ScrollingModeSection.swift",
+      "langage": "swift",
+      "lignes": 126,
+      "taille_bytes": 5145,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ScrollingModeSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ScrollingSettings/ScrollingSettingsState.swift": {
+      "fichier": "LinearMouse/UI/ScrollingSettings/ScrollingSettingsState.swift",
+      "langage": "swift",
+      "lignes": 140,
+      "taille_bytes": 4168,
+      "entrees": [
+        "Combine",
+        "Foundation",
+        "PublishedObject"
+      ],
+      "sorties": [
+        "class ScrollingSettingsState",
+        "enum ScrollingMode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ScrollingSettings/ScrollingSettings.swift": {
+      "fichier": "LinearMouse/UI/ScrollingSettings/ScrollingSettings.swift",
+      "langage": "swift",
+      "lignes": 23,
+      "taille_bytes": 471,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ScrollingSettings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ScrollingSettings/ModifierKeysSection/ModifierKeysSection.swift": {
+      "fichier": "LinearMouse/UI/ScrollingSettings/ModifierKeysSection/ModifierKeysSection.swift",
+      "langage": "swift",
+      "lignes": 20,
+      "taille_bytes": 761,
+      "entrees": [
+        "SwiftUI"
+      ],
+      "sorties": [
+        "struct ModifierKeysSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/UI/ScrollingSettings/ModifierKeysSection/ModifierKeyActionPicker.swift": {
+      "fichier": "LinearMouse/UI/ScrollingSettings/ModifierKeysSection/ModifierKeyActionPicker.swift",
+      "langage": "swift",
+      "lignes": 126,
+      "taille_bytes": 3985,
+      "entrees": [
+        "Foundation",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "enum ActionType",
+        "struct ModifierKeyActionPicker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/ScrollingAccelerationSpeedAdjustmentTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/ScrollingAccelerationSpeedAdjustmentTransformer.swift",
+      "langage": "swift",
+      "lignes": 68,
+      "taille_bytes": 2756,
+      "entrees": [
+        "Foundation",
+        "os.log"
+      ],
+      "sorties": [
+        "class ScrollingAccelerationSpeedAdjustmentTransformer",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/EventTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/EventTransformer.swift",
+      "langage": "swift",
+      "lignes": 50,
+      "taille_bytes": 1098,
+      "entrees": [
+        "Foundation",
+        "LRUCache",
+        "os.log"
+      ],
+      "sorties": [
+        "func deactivate",
+        "func reactivate",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/EventTransformerManager.swift": {
+      "fichier": "LinearMouse/EventTransformer/EventTransformerManager.swift",
+      "langage": "swift",
+      "lignes": 193,
+      "taille_bytes": 7051,
+      "entrees": [
+        "Combine",
+        "Defaults",
+        "Foundation",
+        "LRUCache",
+        "os.log"
+      ],
+      "sorties": [
+        "class EventTransformerManager",
+        "func get",
+        "struct CacheKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/ModifierActionsTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/ModifierActionsTransformer.swift",
+      "langage": "swift",
+      "lignes": 131,
+      "taille_bytes": 4470,
+      "entrees": [
+        "Foundation",
+        "GestureKit",
+        "KeyKit",
+        "os.log"
+      ],
+      "sorties": [
+        "class ModifierActionsTransformer",
+        "func deactivate",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/ButtonActionsTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/ButtonActionsTransformer.swift",
+      "langage": "swift",
+      "lignes": 528,
+      "taille_bytes": 16130,
+      "entrees": [
+        "AppKit",
+        "DockKit",
+        "Foundation",
+        "GestureKit",
+        "KeyKit",
+        "os.log"
+      ],
+      "sorties": [
+        "class ButtonActionsTransformer",
+        "func deactivate",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/LinearScrollingVerticalTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/LinearScrollingVerticalTransformer.swift",
+      "langage": "swift",
+      "lignes": 66,
+      "taille_bytes": 1783,
+      "entrees": [
+        "Foundation",
+        "os.log"
+      ],
+      "sorties": [
+        "class LinearScrollingVerticalTransformer",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/SwitchPrimaryAndSecondaryButtonsTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/SwitchPrimaryAndSecondaryButtonsTransformer.swift",
+      "langage": "swift",
+      "lignes": 44,
+      "taille_bytes": 1105,
+      "entrees": [
+        "Foundation",
+        "os.log"
+      ],
+      "sorties": [
+        "class SwitchPrimaryAndSecondaryButtonsTransformer",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/GestureButtonTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/GestureButtonTransformer.swift",
+      "langage": "swift",
+      "lignes": 275,
+      "taille_bytes": 8540,
+      "entrees": [
+        "AppKit",
+        "DockKit",
+        "Foundation",
+        "KeyKit",
+        "os.log"
+      ],
+      "sorties": [
+        "class GestureButtonTransformer",
+        "func deactivate",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/ClickDebouncingTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/ClickDebouncingTransformer.swift",
+      "langage": "swift",
+      "lignes": 74,
+      "taille_bytes": 2270,
+      "entrees": [
+        "Foundation",
+        "os.log"
+      ],
+      "sorties": [
+        "class ClickDebouncingTransformer",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/ReverseScrollingTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/ReverseScrollingTransformer.swift",
+      "langage": "swift",
+      "lignes": 24,
+      "taille_bytes": 630,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "class ReverseScrollingTransformer",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/UniversalBackForwardTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/UniversalBackForwardTransformer.swift",
+      "langage": "swift",
+      "lignes": 88,
+      "taille_bytes": 2622,
+      "entrees": [
+        "Foundation",
+        "GestureKit",
+        "os.log"
+      ],
+      "sorties": [
+        "class UniversalBackForwardTransformer",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/PointerRedirectsToScrollTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/PointerRedirectsToScrollTransformer.swift",
+      "langage": "swift",
+      "lignes": 44,
+      "taille_bytes": 1372,
+      "entrees": [
+        "AppKit",
+        "Foundation"
+      ],
+      "sorties": [
+        "class PointerRedirectsToScrollTransformer",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTransformer/LinearScrollingHorizontalTransformer.swift": {
+      "fichier": "LinearMouse/EventTransformer/LinearScrollingHorizontalTransformer.swift",
+      "langage": "swift",
+      "lignes": 66,
+      "taille_bytes": 1787,
+      "entrees": [
+        "Foundation",
+        "os.log"
+      ],
+      "sorties": [
+        "class LinearScrollingHorizontalTransformer",
+        "func transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/Contents.json",
+      "langage": "json",
+      "lignes": 6,
+      "taille_bytes": 63,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/AccentColor.colorset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/AccentColor.colorset/Contents.json",
+      "langage": "json",
+      "lignes": 20,
+      "taille_bytes": 326,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "langage": "json",
+      "lignes": 67,
+      "taille_bytes": 1217,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/Plus.imageset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/Plus.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 24,
+      "taille_bytes": 371,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/Sidebar/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/Sidebar/Contents.json",
+      "langage": "json",
+      "lignes": 6,
+      "taille_bytes": 63,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/Sidebar/Scrolling.imageset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/Sidebar/Scrolling.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 24,
+      "taille_bytes": 387,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/Sidebar/General.imageset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/Sidebar/General.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 24,
+      "taille_bytes": 384,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/Sidebar/Buttons.imageset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/Sidebar/Buttons.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 24,
+      "taille_bytes": 389,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/Sidebar/Pointer.imageset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/Sidebar/Pointer.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 24,
+      "taille_bytes": 381,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/Sidebar/Modifier Keys.imageset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/Sidebar/Modifier Keys.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 24,
+      "taille_bytes": 377,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/Minus.imageset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/Minus.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 24,
+      "taille_bytes": 372,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/MenuIcon.imageset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/MenuIcon.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 26,
+      "taille_bytes": 451,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/AccessibilityIcon.imageset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/AccessibilityIcon.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 21,
+      "taille_bytes": 320,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Assets.xcassets/AppIconDev.appiconset/Contents.json": {
+      "fichier": "LinearMouse/Assets.xcassets/AppIconDev.appiconset/Contents.json",
+      "langage": "json",
+      "lignes": 59,
+      "taille_bytes": 939,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/DeviceModel.swift": {
+      "fichier": "LinearMouse/Model/DeviceModel.swift",
+      "langage": "swift",
+      "lignes": 55,
+      "taille_bytes": 1375,
+      "entrees": [
+        "Combine",
+        "Foundation",
+        "SwiftUI"
+      ],
+      "sorties": [
+        "class DeviceModel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/AppTarget.swift": {
+      "fichier": "LinearMouse/Model/AppTarget.swift",
+      "langage": "swift",
+      "lignes": 9,
+      "taille_bytes": 155,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "enum AppTarget"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/DeviceMatcher.swift": {
+      "fichier": "LinearMouse/Model/Configuration/DeviceMatcher.swift",
+      "langage": "swift",
+      "lignes": 74,
+      "taille_bytes": 1983,
+      "entrees": [
+        "Defaults"
+      ],
+      "sorties": [
+        "enum Category",
+        "func match",
+        "func matchValue",
+        "struct DeviceMatcher"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Configuration.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Configuration.swift",
+      "langage": "swift",
+      "lignes": 157,
+      "taille_bytes": 5239,
+      "entrees": [
+        "AppKit",
+        "Defaults",
+        "Foundation",
+        "JSONPatcher"
+      ],
+      "sorties": [
+        "enum CodingKeys",
+        "enum ConfigurationError",
+        "func dump",
+        "func matchScheme",
+        "struct Configuration"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Pointer.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Pointer.swift",
+      "langage": "swift",
+      "lignes": 81,
+      "taille_bytes": 2001,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func merge",
+        "struct Acceleration",
+        "struct Pointer",
+        "struct Speed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Scheme.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Scheme.swift",
+      "langage": "swift",
+      "lignes": 187,
+      "taille_bytes": 5513,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "enum SchemeIndex",
+        "func allDeviceSpecficSchemes",
+        "func isActive",
+        "func merge",
+        "func schemeIndex",
+        "struct Scheme"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Buttons/Buttons.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Buttons/Buttons.swift",
+      "langage": "swift",
+      "lignes": 107,
+      "taille_bytes": 2804,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "enum UniversalBackForward",
+        "enum ValueError",
+        "func encode",
+        "func merge",
+        "struct Buttons"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Buttons/Mapping/Action.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Buttons/Mapping/Action.swift",
+      "langage": "swift",
+      "lignes": 72,
+      "taille_bytes": 2277,
+      "entrees": [
+        "Foundation",
+        "KeyKit"
+      ],
+      "sorties": [
+        "enum Action",
+        "enum Arg0",
+        "enum Arg1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Buttons/Mapping/Action+Codable.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Buttons/Mapping/Action+Codable.swift",
+      "langage": "swift",
+      "lignes": 115,
+      "taille_bytes": 3709,
+      "entrees": [
+        "Foundation",
+        "KeyKit"
+      ],
+      "sorties": [
+        "enum CodingKeys",
+        "enum DecodingError",
+        "func encode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Buttons/Mapping/Action+CustomStringConvertible.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Buttons/Mapping/Action+CustomStringConvertible.swift",
+      "langage": "swift",
+      "lignes": 108,
+      "taille_bytes": 4788,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Buttons/Mapping/Mapping.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Buttons/Mapping/Mapping.swift",
+      "langage": "swift",
+      "lignes": 145,
+      "taille_bytes": 3911,
+      "entrees": [],
+      "sorties": [
+        "enum ScrollDirection",
+        "func conflicted",
+        "func match",
+        "func score",
+        "struct Mapping"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Buttons/Gesture/Gesture.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Buttons/Gesture/Gesture.swift",
+      "langage": "swift",
+      "lignes": 37,
+      "taille_bytes": 993,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "enum GestureAction",
+        "struct Actions",
+        "struct Gesture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Buttons/ClickDebouncing/ClickDebouncing.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Buttons/ClickDebouncing/ClickDebouncing.swift",
+      "langage": "swift",
+      "lignes": 10,
+      "taille_bytes": 260,
+      "entrees": [],
+      "sorties": [
+        "struct ClickDebouncing"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Scrolling/Modifiers.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Scrolling/Modifiers.swift",
+      "langage": "swift",
+      "lignes": 116,
+      "taille_bytes": 3071,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "enum Action",
+        "enum ActionType",
+        "enum CodingKeys",
+        "func encode",
+        "func merge",
+        "struct Modifiers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Scrolling/Distance.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Scrolling/Distance.swift",
+      "langage": "swift",
+      "lignes": 114,
+      "taille_bytes": 3610,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "enum Distance",
+        "enum ValueError",
+        "func encode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Scrolling/Scrolling.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Scrolling/Scrolling.swift",
+      "langage": "swift",
+      "lignes": 48,
+      "taille_bytes": 1469,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func merge",
+        "struct Scrolling"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/Scrolling/Bidirectional.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/Scrolling/Bidirectional.swift",
+      "langage": "swift",
+      "lignes": 106,
+      "taille_bytes": 3013,
+      "entrees": [],
+      "sorties": [
+        "enum BidirectionalDirection",
+        "enum CodingKeys",
+        "func encode",
+        "func merge",
+        "struct Bidirectional"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/Model/Configuration/Scheme/If/If.swift": {
+      "fichier": "LinearMouse/Model/Configuration/Scheme/If/If.swift",
+      "langage": "swift",
+      "lignes": 85,
+      "taille_bytes": 1965,
+      "entrees": [
+        "AppKit",
+        "Foundation"
+      ],
+      "sorties": [
+        "func isSatisfied",
+        "struct If"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/ScreenManager/ScreenManager.swift": {
+      "fichier": "LinearMouse/ScreenManager/ScreenManager.swift",
+      "langage": "swift",
+      "lignes": 166,
+      "taille_bytes": 4849,
+      "entrees": [
+        "AppKit",
+        "Combine",
+        "CoreGraphics",
+        "os.log"
+      ],
+      "sorties": [
+        "class ScreenManager"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "LinearMouse/EventTap/EventType.swift": {
+      "fichier": "LinearMouse/EventTap/EventType.swift",
+      "langage": "swift",
+      "lignes": 22,
+      "taille_bytes": 476,
+      "entrees": [],
+      "sorties": [
+        "class EventType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

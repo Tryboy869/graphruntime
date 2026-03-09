@@ -1,0 +1,1508 @@
+{
+  "meta": {
+    "projet": "kotlinconf-app",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "shell": 1,
+      "json": 8,
+      "kotlin": 22,
+      "swift": 2,
+      "xml": 85,
+      "javascript": 1,
+      "html": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/utils/Notification.kt"
+  },
+  "noeuds": {
+    "cleanup.sh": {
+      "fichier": "cleanup.sh",
+      "langage": "shell",
+      "lignes": 9,
+      "taille_bytes": 207,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app.json": {
+      "fichier": "app.json",
+      "langage": "json",
+      "lignes": 10,
+      "taille_bytes": 285,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "settings.gradle.kts": {
+      "fichier": "settings.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 41,
+      "taille_bytes": 981,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.gradle.kts": {
+      "fichier": "build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 15,
+      "taille_bytes": 623,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "iosApp/iosApp/iOSApp.swift": {
+      "fichier": "iosApp/iosApp/iOSApp.swift",
+      "langage": "swift",
+      "lignes": 65,
+      "taille_bytes": 2113,
+      "entrees": [
+        "FirebaseCore",
+        "FirebaseMessaging",
+        "SwiftUI",
+        "shared"
+      ],
+      "sorties": [
+        "class AppDelegate",
+        "func application",
+        "func userNotificationCenter",
+        "struct iOSApp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "iosApp/iosApp/ContentView.swift": {
+      "fichier": "iosApp/iosApp/ContentView.swift",
+      "langage": "swift",
+      "lignes": 23,
+      "taille_bytes": 526,
+      "entrees": [
+        "SwiftUI",
+        "shared"
+      ],
+      "sorties": [
+        "func makeUIViewController",
+        "func updateUIViewController",
+        "struct ComposeView",
+        "struct ContentView",
+        "struct ContentView_Previews"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "iosApp/iosApp/Assets.xcassets/Contents.json": {
+      "fichier": "iosApp/iosApp/Assets.xcassets/Contents.json",
+      "langage": "json",
+      "lignes": 6,
+      "taille_bytes": 63,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/Contents.json": {
+      "fichier": "iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "langage": "json",
+      "lignes": 134,
+      "taille_bytes": 2630,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "iosApp/iosApp/Assets.xcassets/KotlinConf 2025 icon.imageset/Contents.json": {
+      "fichier": "iosApp/iosApp/Assets.xcassets/KotlinConf 2025 icon.imageset/Contents.json",
+      "langage": "json",
+      "lignes": 21,
+      "taille_bytes": 318,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "iosApp/iosApp/Preview Content/Preview Assets.xcassets/Contents.json": {
+      "fichier": "iosApp/iosApp/Preview Content/Preview Assets.xcassets/Contents.json",
+      "langage": "json",
+      "lignes": 6,
+      "taille_bytes": 62,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "iosApp/iosApp/AppIcon.icon/icon.json": {
+      "fichier": "iosApp/iosApp/AppIcon.icon/icon.json",
+      "langage": "json",
+      "lignes": 36,
+      "taille_bytes": 626,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/google-services.json": {
+      "fichier": "androidApp/google-services.json",
+      "langage": "json",
+      "lignes": 29,
+      "taille_bytes": 676,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/build.gradle.kts": {
+      "fichier": "androidApp/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 67,
+      "taille_bytes": 1751,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/AndroidManifest.xml": {
+      "fichier": "androidApp/src/androidMain/AndroidManifest.xml",
+      "langage": "xml",
+      "lignes": 37,
+      "taille_bytes": 1711,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/kotlin/org/jetbrains/kotlinconf/android/KotlinConfApplication.kt": {
+      "fichier": "androidApp/src/androidMain/kotlin/org/jetbrains/kotlinconf/android/KotlinConfApplication.kt",
+      "langage": "kotlin",
+      "lignes": 26,
+      "taille_bytes": 925,
+      "entrees": [
+        "android.app.Application",
+        "com.jetbrains.kotlinconf.R",
+        "com.mmk.kmpnotifier.notification.configuration.NotificationPlatformConfiguration",
+        "org.jetbrains.kotlinconf.initApp",
+        "org.jetbrains.kotlinconf.platformModule",
+        "org.jetbrains.kotlinconf.utils.AndroidLogger"
+      ],
+      "sorties": [
+        "class KotlinConfApplication"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/kotlin/org/jetbrains/kotlinconf/android/MainActivity.kt": {
+      "fichier": "androidApp/src/androidMain/kotlin/org/jetbrains/kotlinconf/android/MainActivity.kt",
+      "langage": "kotlin",
+      "lignes": 72,
+      "taille_bytes": 2533,
+      "entrees": [
+        "android.content.Intent",
+        "android.graphics.Color",
+        "android.os.Build",
+        "android.os.Bundle",
+        "androidx.activity.ComponentActivity",
+        "androidx.activity.SystemBarStyle",
+        "androidx.activity.compose.setContent",
+        "androidx.activity.enableEdgeToEdge",
+        "androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen",
+        "com.mmk.kmpnotifier.extensions.onCreateOrOnNewIntent",
+        "com.mmk.kmpnotifier.notification.NotifierManager",
+        "org.jetbrains.kotlinconf.App",
+        "org.jetbrains.kotlinconf.EXTRA_LOCAL_NOTIFICATION_ID",
+        "org.jetbrains.kotlinconf.PermissionHandler",
+        "org.jetbrains.kotlinconf.navigation.navigateByLocalNotificationId",
+        "org.koin.mp.KoinPlatform"
+      ],
+      "sorties": [
+        "class MainActivity"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/values/colors.xml": {
+      "fichier": "androidApp/src/androidMain/res/values/colors.xml",
+      "langage": "xml",
+      "lignes": 4,
+      "taille_bytes": 115,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/values/splash_screen_theme.xml": {
+      "fichier": "androidApp/src/androidMain/res/values/splash_screen_theme.xml",
+      "langage": "xml",
+      "lignes": 14,
+      "taille_bytes": 456,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/values/ic_launcher_background.xml": {
+      "fichier": "androidApp/src/androidMain/res/values/ic_launcher_background.xml",
+      "langage": "xml",
+      "lignes": 4,
+      "taille_bytes": 120,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/values/strings.xml": {
+      "fichier": "androidApp/src/androidMain/res/values/strings.xml",
+      "langage": "xml",
+      "lignes": 4,
+      "taille_bytes": 112,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/drawable/ic_launcher.xml": {
+      "fichier": "androidApp/src/androidMain/res/drawable/ic_launcher.xml",
+      "langage": "xml",
+      "lignes": 6,
+      "taille_bytes": 332,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/drawable/kodee_error_loading.xml": {
+      "fichier": "androidApp/src/androidMain/res/drawable/kodee_error_loading.xml",
+      "langage": "xml",
+      "lignes": 59,
+      "taille_bytes": 4218,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/drawable/ic_launcher_mono.xml": {
+      "fichier": "androidApp/src/androidMain/res/drawable/ic_launcher_mono.xml",
+      "langage": "xml",
+      "lignes": 55,
+      "taille_bytes": 2922,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/drawable/kotlinconf_notification_icon.xml": {
+      "fichier": "androidApp/src/androidMain/res/drawable/kotlinconf_notification_icon.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 912,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/drawable/splash.xml": {
+      "fichier": "androidApp/src/androidMain/res/drawable/splash.xml",
+      "langage": "xml",
+      "lignes": 46,
+      "taille_bytes": 2612,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/drawable/ic_launcher_foreground.xml": {
+      "fichier": "androidApp/src/androidMain/res/drawable/ic_launcher_foreground.xml",
+      "langage": "xml",
+      "lignes": 51,
+      "taille_bytes": 2825,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/values-night/colors.xml": {
+      "fichier": "androidApp/src/androidMain/res/values-night/colors.xml",
+      "langage": "xml",
+      "lignes": 4,
+      "taille_bytes": 115,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/xml/backup_rules.xml": {
+      "fichier": "androidApp/src/androidMain/res/xml/backup_rules.xml",
+      "langage": "xml",
+      "lignes": 13,
+      "taille_bytes": 478,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "androidApp/src/androidMain/res/xml/data_extraction_rules.xml": {
+      "fichier": "androidApp/src/androidMain/res/xml/data_extraction_rules.xml",
+      "langage": "xml",
+      "lignes": 19,
+      "taille_bytes": 551,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/build.gradle.kts": {
+      "fichier": "shared/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 178,
+      "taille_bytes": 5054,
+      "entrees": [
+        "com.mikepenz.aboutlibraries.plugin.DuplicateMode",
+        "com.mikepenz.aboutlibraries.plugin.DuplicateRule",
+        "org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonTest/kotlin/org/jetbrains/kotlinconf/storage/MultiplatformSettingsStorageMigrationTest.kt": {
+      "fichier": "shared/src/commonTest/kotlin/org/jetbrains/kotlinconf/storage/MultiplatformSettingsStorageMigrationTest.kt",
+      "langage": "kotlin",
+      "lignes": 108,
+      "taille_bytes": 4054,
+      "entrees": [
+        "com.russhwolf.settings.ExperimentalSettingsApi",
+        "com.russhwolf.settings.MapSettings",
+        "com.russhwolf.settings.ObservableSettings",
+        "com.russhwolf.settings.observable.makeObservable",
+        "com.russhwolf.settings.set",
+        "kotlin.test.Test",
+        "kotlin.test.assertEquals",
+        "kotlin.test.assertNull",
+        "kotlin.test.assertTrue",
+        "kotlinx.coroutines.flow.first",
+        "kotlinx.coroutines.test.runTest",
+        "org.jetbrains.kotlinconf.utils.Logger"
+      ],
+      "sorties": [
+        "class MultiplatformSettingsStorageMigrationTest",
+        "fun migration_2025_to_2026_updates_version",
+        "fun migration_2026_to_2026_migrates_notification_settings",
+        "fun migration_2026_to_2026_removes_news_cache",
+        "fun unknown_migration_path_triggers_destructive_upgrade",
+        "fun unknown_storage_version_triggers_destructive_upgrade_and_clears_all_keys"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/wasmJsMain/kotlin/org/jetbrains/kotlinconf/Platform.wasm.kt": {
+      "fichier": "shared/src/wasmJsMain/kotlin/org/jetbrains/kotlinconf/Platform.wasm.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 82,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/wasmJsMain/kotlin/org/jetbrains/kotlinconf/main.wasm.kt": {
+      "fichier": "shared/src/wasmJsMain/kotlin/org/jetbrains/kotlinconf/main.wasm.kt",
+      "langage": "kotlin",
+      "lignes": 30,
+      "taille_bytes": 834,
+      "entrees": [
+        "androidx.compose.ui.ExperimentalComposeUiApi",
+        "androidx.compose.ui.window.ComposeViewport",
+        "kotlinx.browser.window",
+        "org.jetbrains.kotlinconf.ui.initCoil",
+        "org.jetbrains.kotlinconf.utils.Logger",
+        "org.w3c.dom.get"
+      ],
+      "sorties": [
+        "fun main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/resources/service-worker.js": {
+      "fichier": "shared/src/webMain/resources/service-worker.js",
+      "langage": "javascript",
+      "lignes": 80,
+      "taille_bytes": 2784,
+      "entrees": [],
+      "sorties": [
+        "const id",
+        "const map"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/resources/index.html": {
+      "fichier": "shared/src/webMain/resources/index.html",
+      "langage": "html",
+      "lignes": 106,
+      "taille_bytes": 4240,
+      "entrees": [],
+      "sorties": [
+        "const array",
+        "const start",
+        "const unhandledError",
+        "const webpackOverlay"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/resources/manifest.json": {
+      "fichier": "shared/src/webMain/resources/manifest.json",
+      "langage": "json",
+      "lignes": 13,
+      "taille_bytes": 240,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/ServiceWorkerLocalNotificationService.kt": {
+      "fichier": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/ServiceWorkerLocalNotificationService.kt",
+      "langage": "kotlin",
+      "lignes": 76,
+      "taille_bytes": 2419,
+      "entrees": [
+        "kotlin.coroutines.resume",
+        "kotlinx.coroutines.suspendCancellableCoroutine",
+        "kotlinx.datetime.LocalDateTime",
+        "org.jetbrains.kotlinconf.utils.GRANTED_PERMISSION",
+        "org.jetbrains.kotlinconf.utils.Notification"
+      ],
+      "sorties": [
+        "class ServiceWorkerLocalNotificationService"
+      ],
+      "appelle": [
+        "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/utils/Notification.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/JsJodaTimeZone.web.kt": {
+      "fichier": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/JsJodaTimeZone.web.kt",
+      "langage": "kotlin",
+      "lignes": 8,
+      "taille_bytes": 173,
+      "entrees": [
+        "kotlin.js.JsModule"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/ScrollToTopHandler.kt": {
+      "fichier": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/ScrollToTopHandler.kt",
+      "langage": "kotlin",
+      "lignes": 15,
+      "taille_bytes": 453,
+      "entrees": [
+        "androidx.compose.foundation.ScrollState",
+        "androidx.compose.foundation.lazy.LazyListState",
+        "androidx.compose.foundation.lazy.grid.LazyGridState",
+        "androidx.compose.runtime.Composable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/PlatformModule.kt": {
+      "fichier": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/PlatformModule.kt",
+      "langage": "kotlin",
+      "lignes": 19,
+      "taille_bytes": 715,
+      "entrees": [
+        "com.mmk.kmpnotifier.notification.configuration.NotificationPlatformConfiguration",
+        "com.russhwolf.settings.ExperimentalSettingsApi",
+        "com.russhwolf.settings.ObservableSettings",
+        "com.russhwolf.settings.StorageSettings",
+        "com.russhwolf.settings.observable.makeObservable",
+        "org.koin.dsl.module"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/utils/Notification.kt": {
+      "fichier": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/utils/Notification.kt",
+      "langage": "kotlin",
+      "lignes": 8,
+      "taille_bytes": 207,
+      "entrees": [],
+      "sorties": [
+        "fun requestPermission"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/ServiceWorkerLocalNotificationService.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/utils/StoreUrl.web.kt": {
+      "fichier": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/utils/StoreUrl.web.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 81,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/utils/WebLogger.kt": {
+      "fichier": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/utils/WebLogger.kt",
+      "langage": "kotlin",
+      "lignes": 7,
+      "taille_bytes": 181,
+      "entrees": [],
+      "sorties": [
+        "class WebLogger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/jvmMain/composeResources/values/strings.xml": {
+      "fichier": "shared/src/jvmMain/composeResources/values/strings.xml",
+      "langage": "xml",
+      "lignes": 3,
+      "taille_bytes": 73,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/Platform.jvm.kt": {
+      "fichier": "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/Platform.jvm.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 81,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/ScrollToTopHandler.kt": {
+      "fichier": "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/ScrollToTopHandler.kt",
+      "langage": "kotlin",
+      "lignes": 15,
+      "taille_bytes": 453,
+      "entrees": [
+        "androidx.compose.foundation.ScrollState",
+        "androidx.compose.foundation.lazy.LazyListState",
+        "androidx.compose.foundation.lazy.grid.LazyGridState",
+        "androidx.compose.runtime.Composable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/EmptyLocalNotificationService.kt": {
+      "fichier": "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/EmptyLocalNotificationService.kt",
+      "langage": "kotlin",
+      "lignes": 9,
+      "taille_bytes": 392,
+      "entrees": [
+        "kotlinx.datetime.LocalDateTime"
+      ],
+      "sorties": [
+        "class EmptyLocalNotificationService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/main.kt": {
+      "fichier": "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/main.kt",
+      "langage": "kotlin",
+      "lignes": 48,
+      "taille_bytes": 1608,
+      "entrees": [
+        "androidx.compose.ui.unit.dp",
+        "androidx.compose.ui.window.Window",
+        "androidx.compose.ui.window.application",
+        "androidx.compose.ui.window.rememberWindowState",
+        "com.mmk.kmpnotifier.notification.configuration.NotificationPlatformConfiguration",
+        "com.russhwolf.settings.ObservableSettings",
+        "org.jetbrains.compose.resources.stringResource",
+        "org.jetbrains.kotlinconf.generated.resources.Res",
+        "org.jetbrains.kotlinconf.generated.resources.app_name",
+        "org.jetbrains.kotlinconf.storage.createSettings",
+        "org.jetbrains.kotlinconf.utils.Logger",
+        "org.koin.dsl.module"
+      ],
+      "sorties": [
+        "class JvmLogger",
+        "fun main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/storage/MultiplatformSettingsStorage.jvm.kt": {
+      "fichier": "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/storage/MultiplatformSettingsStorage.jvm.kt",
+      "langage": "kotlin",
+      "lignes": 31,
+      "taille_bytes": 921,
+      "entrees": [
+        "com.russhwolf.settings.ExperimentalSettingsApi",
+        "com.russhwolf.settings.ObservableSettings",
+        "com.russhwolf.settings.PropertiesSettings",
+        "com.russhwolf.settings.observable.makeObservable",
+        "java.io.File",
+        "java.nio.charset.StandardCharsets",
+        "java.util.Properties"
+      ],
+      "sorties": [
+        "fun createSettings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/utils/StoreUrl.jvm.kt": {
+      "fichier": "shared/src/jvmMain/kotlin/org/jetbrains/kotlinconf/utils/StoreUrl.jvm.kt",
+      "langage": "kotlin",
+      "lignes": 3,
+      "taille_bytes": 81,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/values/version.xml": {
+      "fichier": "shared/src/commonMain/composeResources/values/version.xml",
+      "langage": "xml",
+      "lignes": 3,
+      "taille_bytes": 77,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/values/strings.xml": {
+      "fichier": "shared/src/commonMain/composeResources/values/strings.xml",
+      "langage": "xml",
+      "lignes": 158,
+      "taille_bytes": 8760,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/lightning_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/lightning_28.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 592,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_kotlin_foundation.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_kotlin_foundation.xml",
+      "langage": "xml",
+      "lignes": 69,
+      "taille_bytes": 10188,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/kodee_code_of_conduct.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/kodee_code_of_conduct.xml",
+      "langage": "xml",
+      "lignes": 36,
+      "taille_bytes": 5119,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/bookmark_16.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/bookmark_16.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 541,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/search_24_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/search_24_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 657,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/bookmark_16_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/bookmark_16_fill.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 419,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/location_24_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/location_24_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 590,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_up_right_28_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_up_right_28_fill.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 711,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_right_24.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_right_24.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 726,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/down_24_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/down_24_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 552,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/info_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/info_28.xml",
+      "langage": "xml",
+      "lignes": 16,
+      "taille_bytes": 875,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_kotlin_weekly.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_kotlin_weekly.xml",
+      "langage": "xml",
+      "lignes": 66,
+      "taille_bytes": 4565,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/theme_dark.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/theme_dark.xml",
+      "langage": "xml",
+      "lignes": 46,
+      "taille_bytes": 2007,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/twitter.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/twitter.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 492,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/team_24_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/team_24_fill.xml",
+      "langage": "xml",
+      "lignes": 18,
+      "taille_bytes": 1580,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/team_24.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/team_24.xml",
+      "langage": "xml",
+      "lignes": 20,
+      "taille_bytes": 1987,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/search_28_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/search_28_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 676,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/down_16_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/down_16_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 526,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_gitar.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_gitar.xml",
+      "langage": "xml",
+      "lignes": 32,
+      "taille_bytes": 6121,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/lightning_24.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/lightning_24.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 584,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_right_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_right_28.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 654,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/down_28_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/down_28_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 556,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/close_24.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/close_24.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 712,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/kodee_privacy.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/kodee_privacy.xml",
+      "langage": "xml",
+      "lignes": 47,
+      "taille_bytes": 5364,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_left_16.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_left_16.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 665,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/mytalks.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/mytalks.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 566,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/down_16.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/down_16.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 542,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/info_16_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/info_16_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 592,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/search_16_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/search_16_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 806,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_typealias.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_typealias.xml",
+      "langage": "xml",
+      "lignes": 106,
+      "taille_bytes": 16268,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/clock_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/clock_28.xml",
+      "langage": "xml",
+      "lignes": 13,
+      "taille_bytes": 797,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_kotzilla.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_kotzilla.xml",
+      "langage": "xml",
+      "lignes": 14,
+      "taille_bytes": 4605,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/bookmark_24.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/bookmark_24.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 546,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/up_16_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/up_16_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 530,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/close_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/close_28.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 712,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_uber.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_uber.xml",
+      "langage": "xml",
+      "lignes": 18,
+      "taille_bytes": 1475,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/minus_24.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/minus_24.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 372,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_down_28_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_down_28_fill.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 673,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_left_24_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_left_24_fill.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 741,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/close_24_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/close_24_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 710,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/notifications_bird.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/notifications_bird.xml",
+      "langage": "xml",
+      "lignes": 34,
+      "taille_bytes": 1598,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/up_28_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/up_28_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 560,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_worldline.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_worldline.xml",
+      "langage": "xml",
+      "lignes": 54,
+      "taille_bytes": 4626,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/mytalks_active.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/mytalks_active.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 450,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_android_weekly.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_android_weekly.xml",
+      "langage": "xml",
+      "lignes": 14,
+      "taille_bytes": 6213,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/clock_16.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/clock_16.xml",
+      "langage": "xml",
+      "lignes": 13,
+      "taille_bytes": 755,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_left_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_left_28.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 647,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/location_16_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/location_16_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 589,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/made_with_junie.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/made_with_junie.xml",
+      "langage": "xml",
+      "lignes": 33,
+      "taille_bytes": 6848,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/theme_system.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/theme_system.xml",
+      "langage": "xml",
+      "lignes": 86,
+      "taille_bytes": 3741,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/team_28_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/team_28_fill.xml",
+      "langage": "xml",
+      "lignes": 18,
+      "taille_bytes": 1725,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_up_28_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_up_28_fill.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 666,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_revenuecat.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_revenuecat.xml",
+      "langage": "xml",
+      "lignes": 36,
+      "taille_bytes": 5456,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/close_16_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/close_16_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 678,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/down_24.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/down_24.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 550,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/up_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/up_28.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 560,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/clock_24.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/clock_24.xml",
+      "langage": "xml",
+      "lignes": 13,
+      "taille_bytes": 790,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/clock_28_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/clock_28_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 626,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/info_16.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/info_16.xml",
+      "langage": "xml",
+      "lignes": 16,
+      "taille_bytes": 828,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_down_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_down_28.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 652,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/partner_american_express.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/partner_american_express.xml",
+      "langage": "xml",
+      "lignes": 18,
+      "taille_bytes": 3606,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_up_24_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_up_24_fill.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 743,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/arrow_up_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/arrow_up_28.xml",
+      "langage": "xml",
+      "lignes": 9,
+      "taille_bytes": 649,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/lightning_24_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/lightning_24_fill.xml",
+      "langage": "xml",
+      "lignes": 14,
+      "taille_bytes": 905,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/slack.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/slack.xml",
+      "langage": "xml",
+      "lignes": 22,
+      "taille_bytes": 1967,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/clock_16_fill.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/clock_16_fill.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 589,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/bookmark_28.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/bookmark_28.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 540,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "shared/src/commonMain/composeResources/drawable/menu_active.xml": {
+      "fichier": "shared/src/commonMain/composeResources/drawable/menu_active.xml",
+      "langage": "xml",
+      "lignes": 10,
+      "taille_bytes": 345,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/ServiceWorkerLocalNotificationService.kt",
+      "vers": "shared/src/webMain/kotlin/org/jetbrains/kotlinconf/utils/Notification.kt",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

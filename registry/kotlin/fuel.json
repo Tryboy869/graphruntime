@@ -1,0 +1,1142 @@
+{
+  "meta": {
+    "projet": "fuel",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 1,
+      "kotlin": 55,
+      "html": 1,
+      "toml": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 58,
+    "edges_total": 13,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 2,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "fuel/src/commonMain/kotlin/fuel/Fuel.kt"
+  },
+  "noeuds": {
+    "renovate.json": {
+      "fichier": "renovate.json",
+      "langage": "json",
+      "lignes": 4,
+      "taille_bytes": 104,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "settings.gradle.kts": {
+      "fichier": "settings.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 292,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.gradle.kts": {
+      "fichier": "build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 17,
+      "taille_bytes": 443,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-jackson-jvm/build.gradle.kts": {
+      "fichier": "fuel-jackson-jvm/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 33,
+      "taille_bytes": 622,
+      "entrees": [
+        "org.jetbrains.kotlin.gradle.dsl.JvmTarget"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-jackson-jvm/src/test/kotlin/fuel/jackson/FuelJacksonTest.kt": {
+      "fichier": "fuel-jackson-jvm/src/test/kotlin/fuel/jackson/FuelJacksonTest.kt",
+      "langage": "kotlin",
+      "lignes": 72,
+      "taille_bytes": 2345,
+      "entrees": [
+        "com.fasterxml.jackson.databind.DeserializationFeature",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "com.fasterxml.jackson.databind.PropertyNamingStrategies",
+        "com.fasterxml.jackson.module.kotlin.registerKotlinModule",
+        "fuel.Fuel",
+        "fuel.get",
+        "kotlinx.coroutines.runBlocking",
+        "mockwebserver3.MockResponse",
+        "mockwebserver3.MockWebServer",
+        "okhttp3.ExperimentalOkHttpApi",
+        "org.junit.Assert.assertEquals",
+        "org.junit.Assert.fail",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class FuelJacksonTest",
+        "data class HttpBinUserAgentModel",
+        "fun jacksonTestResponseObject",
+        "fun jacksonTestResponseObjectWithCustomMapper"
+      ],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/Fuel.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-jackson-jvm/src/main/kotlin/fuel/jackson/ResponseExtension.kt": {
+      "fichier": "fuel-jackson-jvm/src/main/kotlin/fuel/jackson/ResponseExtension.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 533,
+      "entrees": [
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "com.fasterxml.jackson.module.kotlin.jacksonObjectMapper",
+        "com.fasterxml.jackson.module.kotlin.readValue",
+        "com.github.kittinunf.result.Result",
+        "com.github.kittinunf.result.runCatching",
+        "fuel.HttpResponse",
+        "kotlinx.io.readString"
+      ],
+      "sorties": [],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/build.gradle.kts": {
+      "fichier": "fuel/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 91,
+      "taille_bytes": 1793,
+      "entrees": [
+        "org.jetbrains.kotlin.gradle.dsl.JvmTarget"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/appleMain/kotlin/fuel/AppleHttpLoader.kt": {
+      "fichier": "fuel/src/appleMain/kotlin/fuel/AppleHttpLoader.kt",
+      "langage": "kotlin",
+      "lignes": 58,
+      "taille_bytes": 2501,
+      "entrees": [
+        "kotlinx.coroutines.flow.Flow",
+        "platform.Foundation.NSURLSessionConfiguration"
+      ],
+      "sorties": [
+        "public class AppleHttpLoader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/appleMain/kotlin/fuel/FuelBuilder.kt": {
+      "fichier": "fuel/src/appleMain/kotlin/fuel/FuelBuilder.kt",
+      "langage": "kotlin",
+      "lignes": 16,
+      "taille_bytes": 575,
+      "entrees": [
+        "platform.Foundation.NSURLSessionConfiguration"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/appleMain/kotlin/fuel/HttpUrlFetcher.kt": {
+      "fichier": "fuel/src/appleMain/kotlin/fuel/HttpUrlFetcher.kt",
+      "langage": "kotlin",
+      "lignes": 124,
+      "taille_bytes": 4910,
+      "entrees": [
+        "kotlin.collections.forEach",
+        "kotlin.coroutines.resume",
+        "kotlinx.cinterop.BetaInteropApi",
+        "kotlinx.coroutines.channels.awaitClose",
+        "kotlinx.coroutines.flow.Flow",
+        "kotlinx.coroutines.flow.callbackFlow",
+        "kotlinx.coroutines.suspendCancellableCoroutine",
+        "kotlinx.io.Buffer",
+        "platform.Foundation.NSData",
+        "platform.Foundation.NSHTTPURLResponse",
+        "platform.Foundation.NSMutableURLRequest",
+        "platform.Foundation.NSURL",
+        "platform.Foundation.NSURLRequestReloadIgnoringCacheData",
+        "platform.Foundation.NSURLSession",
+        "platform.Foundation.NSURLSessionConfiguration",
+        "platform.Foundation.dataTaskWithRequest",
+        "platform.Foundation.setHTTPBody",
+        "platform.Foundation.setHTTPMethod",
+        "platform.Foundation.setValue"
+      ],
+      "sorties": [
+        "fun fetchSSE"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/appleMain/kotlin/fuel/NSURLUtils.kt": {
+      "fichier": "fuel/src/appleMain/kotlin/fuel/NSURLUtils.kt",
+      "langage": "kotlin",
+      "lignes": 31,
+      "taille_bytes": 954,
+      "entrees": [
+        "kotlinx.cinterop.BetaInteropApi",
+        "kotlinx.cinterop.ExperimentalForeignApi",
+        "kotlinx.cinterop.refTo",
+        "platform.Foundation.NSData",
+        "platform.Foundation.NSHTTPURLResponse",
+        "platform.Foundation.NSString",
+        "platform.Foundation.NSUTF8StringEncoding",
+        "platform.Foundation.create",
+        "platform.Foundation.dataUsingEncoding",
+        "platform.posix.memcpy"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonTest/kotlin/fuel/RequestTest.kt": {
+      "fichier": "fuel/src/commonTest/kotlin/fuel/RequestTest.kt",
+      "langage": "kotlin",
+      "lignes": 43,
+      "taille_bytes": 1076,
+      "entrees": [
+        "kotlin.test.Test",
+        "kotlin.test.assertEquals"
+      ],
+      "sorties": [
+        "class RequestTest",
+        "fun testAdd_headers",
+        "fun test_errorsWhenDataIsEmpty"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonTest/kotlin/fuel/UriCodecTests.kt": {
+      "fichier": "fuel/src/commonTest/kotlin/fuel/UriCodecTests.kt",
+      "langage": "kotlin",
+      "lignes": 132,
+      "taille_bytes": 3674,
+      "entrees": [
+        "kotlin.test.Test",
+        "kotlin.test.assertEquals",
+        "kotlin.test.fail"
+      ],
+      "sorties": [
+        "class UriCodecTests",
+        "fun testDecode_convertPlus",
+        "fun testDecode_dontThrowException_appendsUnknownCharacter",
+        "fun testDecode_emptyString_returnsEmptyString",
+        "fun testDecode_endsWithPercent_fails",
+        "fun testDecode_lastCharacter",
+        "fun testDecode_secondHexDigitWrong_fails",
+        "fun testDecode_secondRowOfEncoded",
+        "fun testDecode_wrongHexDigit_fails"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonTest/kotlin/fuel/ParametersTest.kt": {
+      "fichier": "fuel/src/commonTest/kotlin/fuel/ParametersTest.kt",
+      "langage": "kotlin",
+      "lignes": 30,
+      "taille_bytes": 895,
+      "entrees": [
+        "kotlin.test.Test",
+        "kotlin.test.assertEquals"
+      ],
+      "sorties": [
+        "class ParametersTest",
+        "fun parametersWithEmptyParameter",
+        "fun parametersWithQuestionMarkAndEmptyParameter",
+        "fun parametersWithQuestionMarkOnParameter",
+        "fun parametersWithQuestionMarkOnURL"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/wasmJsMain/kotlin/fuel/Object.kt": {
+      "fichier": "fuel/src/wasmJsMain/kotlin/fuel/Object.kt",
+      "langage": "kotlin",
+      "lignes": 23,
+      "taille_bytes": 505,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/wasmJsMain/kotlin/fuel/FuelBuilder.wasmJs.kt": {
+      "fichier": "fuel/src/wasmJsMain/kotlin/fuel/FuelBuilder.wasmJs.kt",
+      "langage": "kotlin",
+      "lignes": 5,
+      "taille_bytes": 132,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/wasmJsMain/kotlin/fuel/HttpUrlFetcher.kt": {
+      "fichier": "fuel/src/wasmJsMain/kotlin/fuel/HttpUrlFetcher.kt",
+      "langage": "kotlin",
+      "lignes": 78,
+      "taille_bytes": 2755,
+      "entrees": [
+        "kotlin.coroutines.resume",
+        "kotlin.coroutines.resumeWithException",
+        "kotlinx.browser.window",
+        "kotlinx.coroutines.suspendCancellableCoroutine",
+        "kotlinx.io.Buffer",
+        "org.khronos.webgl.ArrayBuffer",
+        "org.khronos.webgl.Uint8Array",
+        "org.khronos.webgl.get",
+        "org.w3c.fetch.Headers",
+        "org.w3c.fetch.RequestInit"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/wasmJsMain/kotlin/fuel/WasmHttpLoader.kt": {
+      "fichier": "fuel/src/wasmJsMain/kotlin/fuel/WasmHttpLoader.kt",
+      "langage": "kotlin",
+      "lignes": 44,
+      "taille_bytes": 2101,
+      "entrees": [],
+      "sorties": [
+        "public class WasmHttpLoader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/jvmTest/kotlin/fuel/RoutingTest.kt": {
+      "fichier": "fuel/src/jvmTest/kotlin/fuel/RoutingTest.kt",
+      "langage": "kotlin",
+      "lignes": 97,
+      "taille_bytes": 2649,
+      "entrees": [
+        "kotlinx.coroutines.runBlocking",
+        "kotlinx.io.readString",
+        "mockwebserver3.MockResponse",
+        "mockwebserver3.MockWebServer",
+        "okhttp3.ExperimentalOkHttpApi",
+        "org.junit.After",
+        "org.junit.Assert.assertEquals",
+        "org.junit.Before",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class GetParamsTest",
+        "class GetTest",
+        "class RoutingTest",
+        "fun httpRouterGet",
+        "fun httpRouterGetParams",
+        "fun setUp",
+        "fun tearDown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/jvmTest/kotlin/fuel/HttpLoaderTest.kt": {
+      "fichier": "fuel/src/jvmTest/kotlin/fuel/HttpLoaderTest.kt",
+      "langage": "kotlin",
+      "lignes": 255,
+      "taille_bytes": 7086,
+      "entrees": [
+        "kotlinx.coroutines.runBlocking",
+        "kotlinx.io.readString",
+        "mockwebserver3.MockResponse",
+        "mockwebserver3.MockWebServer",
+        "okhttp3.ExperimentalOkHttpApi",
+        "okhttp3.OkHttpClient",
+        "org.junit.After",
+        "org.junit.Assert.assertEquals",
+        "org.junit.Before",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class HttpLoaderTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/jvmTest/kotlin/fuel/HttpLoaderFactoryTest.kt": {
+      "fichier": "fuel/src/jvmTest/kotlin/fuel/HttpLoaderFactoryTest.kt",
+      "langage": "kotlin",
+      "lignes": 20,
+      "taille_bytes": 515,
+      "entrees": [
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "kotlin.test.Test",
+        "org.junit.Assert.assertFalse"
+      ],
+      "sorties": [
+        "class HttpLoaderFactoryTest",
+        "fun test_checkHttpLoaderInvokedOnce"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/jvmTest/kotlin/fuel/HttpLoaderBuilderTest.kt": {
+      "fichier": "fuel/src/jvmTest/kotlin/fuel/HttpLoaderBuilderTest.kt",
+      "langage": "kotlin",
+      "lignes": 125,
+      "taille_bytes": 3931,
+      "entrees": [
+        "java.net.SocketTimeoutException",
+        "java.util.concurrent.TimeUnit",
+        "kotlin.test.assertNotNull",
+        "kotlinx.coroutines.runBlocking",
+        "kotlinx.io.readString",
+        "mockwebserver3.MockResponse",
+        "mockwebserver3.MockWebServer",
+        "mockwebserver3.SocketPolicy",
+        "okhttp3.ExperimentalOkHttpApi",
+        "okhttp3.OkHttpClient",
+        "org.junit.After",
+        "org.junit.Assert.assertEquals",
+        "org.junit.Before",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class HttpLoaderBuilderTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/jvmTest/kotlin/fuel/StringsTest.kt": {
+      "fichier": "fuel/src/jvmTest/kotlin/fuel/StringsTest.kt",
+      "langage": "kotlin",
+      "lignes": 158,
+      "taille_bytes": 4545,
+      "entrees": [
+        "kotlinx.coroutines.runBlocking",
+        "kotlinx.io.readString",
+        "mockwebserver3.MockResponse",
+        "mockwebserver3.MockWebServer",
+        "okhttp3.ExperimentalOkHttpApi",
+        "okhttp3.OkHttpClient",
+        "org.junit.After",
+        "org.junit.Assert.assertEquals",
+        "org.junit.Before",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class StringsTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/jvmMain/kotlin/fuel/OkHttpUtils.kt": {
+      "fichier": "fuel/src/jvmMain/kotlin/fuel/OkHttpUtils.kt",
+      "langage": "kotlin",
+      "lignes": 60,
+      "taille_bytes": 1927,
+      "entrees": [
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.ExperimentalCoroutinesApi",
+        "kotlinx.coroutines.channels.awaitClose",
+        "kotlinx.coroutines.channels.trySendBlocking",
+        "kotlinx.coroutines.flow.Flow",
+        "kotlinx.coroutines.flow.callbackFlow",
+        "kotlinx.coroutines.withContext",
+        "kotlinx.io.Buffer",
+        "okhttp3.Call",
+        "okhttp3.Response",
+        "okhttp3.coroutines.executeAsync"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/jvmMain/kotlin/fuel/FuelBuilder.kt": {
+      "fichier": "fuel/src/jvmMain/kotlin/fuel/FuelBuilder.kt",
+      "langage": "kotlin",
+      "lignes": 20,
+      "taille_bytes": 560,
+      "entrees": [
+        "okhttp3.Call",
+        "okhttp3.OkHttpClient"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/jvmMain/kotlin/fuel/JVMHttpLoader.kt": {
+      "fichier": "fuel/src/jvmMain/kotlin/fuel/JVMHttpLoader.kt",
+      "langage": "kotlin",
+      "lignes": 96,
+      "taille_bytes": 3726,
+      "entrees": [
+        "kotlinx.coroutines.flow.Flow",
+        "okhttp3.Call",
+        "okhttp3.Request.Builder",
+        "okhttp3.RequestBody.Companion.toRequestBody",
+        "okhttp3.internal.http.HttpMethod"
+      ],
+      "sorties": [
+        "public class JVMHttpLoader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/jvmMain/kotlin/fuel/HttpUrlFetcher.kt": {
+      "fichier": "fuel/src/jvmMain/kotlin/fuel/HttpUrlFetcher.kt",
+      "langage": "kotlin",
+      "lignes": 22,
+      "taille_bytes": 597,
+      "entrees": [
+        "okhttp3.Call",
+        "okhttp3.Request"
+      ],
+      "sorties": [
+        "fun fetch"
+      ],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/Request.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/FuelRouting.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/FuelRouting.kt",
+      "langage": "kotlin",
+      "lignes": 44,
+      "taille_bytes": 915,
+      "entrees": [],
+      "sorties": [
+        "public interface FuelRouting"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/HttpLoaderFactory.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/HttpLoaderFactory.kt",
+      "langage": "kotlin",
+      "lignes": 8,
+      "taille_bytes": 149,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/FuelBuilder.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/FuelBuilder.kt",
+      "langage": "kotlin",
+      "lignes": 5,
+      "taille_bytes": 87,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "samples/mockbin-native/src/commonMain/kotlin/Main.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/UriSyntaxException.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/UriSyntaxException.kt",
+      "langage": "kotlin",
+      "lignes": 56,
+      "taille_bytes": 1643,
+      "entrees": [
+        "index"
+      ],
+      "sorties": [
+        "public class UriSyntaxException"
+      ],
+      "appelle": [
+        "samples/httpbin-wasm/src/wasmJsMain/resources/index.html"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/Fuels.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/Fuels.kt",
+      "langage": "kotlin",
+      "lignes": 112,
+      "taille_bytes": 2713,
+      "entrees": [
+        "kotlinx.coroutines.flow.Flow"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/RequestConvertible.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/RequestConvertible.kt",
+      "langage": "kotlin",
+      "lignes": 8,
+      "taille_bytes": 160,
+      "entrees": [],
+      "sorties": [
+        "public interface RequestConvertible"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/Fuel.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/Fuel.kt",
+      "langage": "kotlin",
+      "lignes": 29,
+      "taille_bytes": 809,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "fuel-forge-jvm/src/test/kotlin/fuel/forge/FuelForgeTest.kt",
+        "fuel-jackson-jvm/src/test/kotlin/fuel/jackson/FuelJacksonTest.kt",
+        "fuel-kotlinx-serialization/src/jvmTest/kotlin/fuel/serialization/FuelKotlinxSerializationTest.kt",
+        "fuel-moshi-jvm/src/test/kotlin/fuel/moshi/FuelMoshiTest.kt",
+        "samples/httpbin-wasm/src/wasmJsMain/kotlin/Main.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "fuel/src/commonMain/kotlin/fuel/Request.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/Request.kt",
+      "langage": "kotlin",
+      "lignes": 32,
+      "taille_bytes": 870,
+      "entrees": [],
+      "sorties": [
+        "public class Builder",
+        "public class Request"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "fuel/src/jvmMain/kotlin/fuel/HttpUrlFetcher.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/HttpLoader.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/HttpLoader.kt",
+      "langage": "kotlin",
+      "lignes": 21,
+      "taille_bytes": 724,
+      "entrees": [
+        "kotlinx.coroutines.flow.Flow"
+      ],
+      "sorties": [
+        "public interface HttpLoader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/Parameters.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/Parameters.kt",
+      "langage": "kotlin",
+      "lignes": 26,
+      "taille_bytes": 743,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/Strings.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/Strings.kt",
+      "langage": "kotlin",
+      "lignes": 46,
+      "taille_bytes": 1572,
+      "entrees": [
+        "kotlinx.coroutines.flow.Flow"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/UriCodec.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/UriCodec.kt",
+      "langage": "kotlin",
+      "lignes": 360,
+      "taille_bytes": 13365,
+      "entrees": [],
+      "sorties": [
+        "fun decodeToStringAndReset",
+        "fun writeByte"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt": {
+      "fichier": "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt",
+      "langage": "kotlin",
+      "lignes": 9,
+      "taille_bytes": 202,
+      "entrees": [
+        "kotlinx.io.Source"
+      ],
+      "sorties": [
+        "public class HttpResponse"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "fuel-forge-jvm/src/main/kotlin/fuel/forge/ResponseExtension.kt",
+        "fuel-jackson-jvm/src/main/kotlin/fuel/jackson/ResponseExtension.kt",
+        "fuel-kotlinx-serialization/src/appleTest/kotlin/fuel/serialization/FuelKotlinxSerializationTest.kt",
+        "fuel-kotlinx-serialization/src/commonMain/kotlin/fuel/serialization/ResponseExtensions.kt",
+        "fuel-moshi-jvm/src/main/kotlin/fuel/moshi/ResponseExtension.kt"
+      ],
+      "type_noeud": "feuille"
+    },
+    "fuel-forge-jvm/build.gradle.kts": {
+      "fichier": "fuel-forge-jvm/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 33,
+      "taille_bytes": 606,
+      "entrees": [
+        "org.jetbrains.kotlin.gradle.dsl.JvmTarget"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-forge-jvm/src/test/kotlin/fuel/forge/FuelForgeTest.kt": {
+      "fichier": "fuel-forge-jvm/src/test/kotlin/fuel/forge/FuelForgeTest.kt",
+      "langage": "kotlin",
+      "lignes": 50,
+      "taille_bytes": 1630,
+      "entrees": [
+        "com.github.kittinunf.forge.core.JSON",
+        "com.github.kittinunf.forge.core.apply",
+        "com.github.kittinunf.forge.core.at",
+        "com.github.kittinunf.forge.core.map",
+        "com.github.kittinunf.forge.util.create",
+        "com.github.kittinunf.result.Result",
+        "fuel.Fuel",
+        "fuel.get",
+        "kotlinx.coroutines.runBlocking",
+        "mockwebserver3.MockResponse",
+        "mockwebserver3.MockWebServer",
+        "okhttp3.ExperimentalOkHttpApi",
+        "org.junit.Assert.assertEquals",
+        "org.junit.Assert.fail",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class FuelForgeTest",
+        "data class HttpBinUserAgentModel",
+        "fun testForgeResponse"
+      ],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/Fuel.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-forge-jvm/src/main/kotlin/fuel/forge/ResponseExtension.kt": {
+      "fichier": "fuel-forge-jvm/src/main/kotlin/fuel/forge/ResponseExtension.kt",
+      "langage": "kotlin",
+      "lignes": 10,
+      "taille_bytes": 391,
+      "entrees": [
+        "com.github.kittinunf.forge.Forge",
+        "com.github.kittinunf.forge.core.DeserializedResult",
+        "com.github.kittinunf.forge.core.JSON",
+        "fuel.HttpResponse",
+        "kotlinx.io.readString"
+      ],
+      "sorties": [],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-moshi-jvm/build.gradle.kts": {
+      "fichier": "fuel-moshi-jvm/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 36,
+      "taille_bytes": 674,
+      "entrees": [
+        "org.jetbrains.kotlin.gradle.dsl.JvmTarget"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-moshi-jvm/src/test/kotlin/fuel/moshi/FuelMoshiTest.kt": {
+      "fichier": "fuel-moshi-jvm/src/test/kotlin/fuel/moshi/FuelMoshiTest.kt",
+      "langage": "kotlin",
+      "lignes": 128,
+      "taille_bytes": 4189,
+      "entrees": [
+        "com.squareup.moshi.JsonClass",
+        "com.squareup.moshi.Types",
+        "fuel.Fuel",
+        "fuel.get",
+        "kotlinx.coroutines.runBlocking",
+        "mockwebserver3.MockResponse",
+        "mockwebserver3.MockWebServer",
+        "okhttp3.ExperimentalOkHttpApi",
+        "org.junit.Assert.assertEquals",
+        "org.junit.Assert.fail",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class FuelMoshiTest",
+        "data class Card",
+        "data class HttpBinUserAgentModel",
+        "fun customMoshiAdapterWithGenericList",
+        "fun testMoshiGenericList",
+        "fun testMoshiResponse",
+        "fun testReifiedTypeMoshiResponse"
+      ],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/Fuel.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-moshi-jvm/src/main/kotlin/fuel/moshi/ResponseExtension.kt": {
+      "fichier": "fuel-moshi-jvm/src/main/kotlin/fuel/moshi/ResponseExtension.kt",
+      "langage": "kotlin",
+      "lignes": 25,
+      "taille_bytes": 938,
+      "entrees": [
+        "com.github.kittinunf.result.Result",
+        "com.github.kittinunf.result.runCatching",
+        "com.squareup.moshi.JsonAdapter",
+        "com.squareup.moshi.Moshi",
+        "fuel.HttpResponse",
+        "java.lang.reflect.Type",
+        "kotlinx.io.readByteArray",
+        "okio.Buffer"
+      ],
+      "sorties": [],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "samples/httpbin-wasm/build.gradle.kts": {
+      "fichier": "samples/httpbin-wasm/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 34,
+      "taille_bytes": 888,
+      "entrees": [
+        "org.jetbrains.kotlin.gradle.targets.js.dsl.ExperimentalWasmDsl",
+        "org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpackConfig"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "samples/httpbin-wasm/src/wasmJsMain/resources/index.html": {
+      "fichier": "samples/httpbin-wasm/src/wasmJsMain/resources/index.html",
+      "langage": "html",
+      "lignes": 116,
+      "taille_bytes": 3825,
+      "entrees": [],
+      "sorties": [
+        "const unhandledError",
+        "const webpackOverlay"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "fuel/src/commonMain/kotlin/fuel/UriSyntaxException.kt"
+      ],
+      "type_noeud": "standard"
+    },
+    "samples/httpbin-wasm/src/wasmJsMain/kotlin/Main.kt": {
+      "fichier": "samples/httpbin-wasm/src/wasmJsMain/kotlin/Main.kt",
+      "langage": "kotlin",
+      "lignes": 18,
+      "taille_bytes": 504,
+      "entrees": [
+        "fuel.Fuel",
+        "fuel.get",
+        "kotlinx.browser.document",
+        "kotlinx.coroutines.CoroutineScope",
+        "kotlinx.coroutines.Dispatchers",
+        "kotlinx.coroutines.launch",
+        "kotlinx.dom.appendElement",
+        "kotlinx.dom.appendText",
+        "kotlinx.io.readString"
+      ],
+      "sorties": [
+        "fun main"
+      ],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/Fuel.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "samples/mockbin-native/build.gradle.kts": {
+      "fichier": "samples/mockbin-native/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 24,
+      "taille_bytes": 349,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "samples/mockbin-native/src/commonMain/kotlin/Main.kt": {
+      "fichier": "samples/mockbin-native/src/commonMain/kotlin/Main.kt",
+      "langage": "kotlin",
+      "lignes": 14,
+      "taille_bytes": 399,
+      "entrees": [
+        "fuel.FuelBuilder",
+        "kotlinx.coroutines.runBlocking",
+        "kotlinx.io.readString"
+      ],
+      "sorties": [
+        "fun main"
+      ],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/FuelBuilder.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-kotlinx-serialization/build.gradle.kts": {
+      "fichier": "fuel-kotlinx-serialization/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 76,
+      "taille_bytes": 1550,
+      "entrees": [
+        "org.jetbrains.kotlin.gradle.dsl.JvmTarget"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-kotlinx-serialization/src/jvmTest/kotlin/fuel/serialization/FuelKotlinxSerializationTest.kt": {
+      "fichier": "fuel-kotlinx-serialization/src/jvmTest/kotlin/fuel/serialization/FuelKotlinxSerializationTest.kt",
+      "langage": "kotlin",
+      "lignes": 61,
+      "taille_bytes": 1825,
+      "entrees": [
+        "fuel.Fuel",
+        "fuel.get",
+        "kotlin.test.fail",
+        "kotlinx.coroutines.runBlocking",
+        "kotlinx.serialization.Serializable",
+        "kotlinx.serialization.json.Json",
+        "mockwebserver3.MockResponse",
+        "mockwebserver3.MockWebServer",
+        "okhttp3.ExperimentalOkHttpApi",
+        "org.junit.Assert.assertEquals",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class FuelKotlinxSerializationTest",
+        "data class HttpBinUserAgentModel",
+        "fun testSerializableResponse",
+        "fun testSerializableResponseWithDefaultJson"
+      ],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/Fuel.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-kotlinx-serialization/src/commonMain/kotlin/fuel/serialization/ResponseExtensions.kt": {
+      "fichier": "fuel-kotlinx-serialization/src/commonMain/kotlin/fuel/serialization/ResponseExtensions.kt",
+      "langage": "kotlin",
+      "lignes": 18,
+      "taille_bytes": 651,
+      "entrees": [
+        "com.github.kittinunf.result.Result",
+        "com.github.kittinunf.result.runCatching",
+        "fuel.HttpResponse",
+        "kotlinx.serialization.DeserializationStrategy",
+        "kotlinx.serialization.ExperimentalSerializationApi",
+        "kotlinx.serialization.json.Json",
+        "kotlinx.serialization.json.io.decodeFromSource"
+      ],
+      "sorties": [],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuel-kotlinx-serialization/src/appleTest/kotlin/fuel/serialization/FuelKotlinxSerializationTest.kt": {
+      "fichier": "fuel-kotlinx-serialization/src/appleTest/kotlin/fuel/serialization/FuelKotlinxSerializationTest.kt",
+      "langage": "kotlin",
+      "lignes": 64,
+      "taille_bytes": 2284,
+      "entrees": [
+        "fuel.HttpResponse",
+        "kotlin.test.Test",
+        "kotlin.test.assertEquals",
+        "kotlin.test.fail",
+        "kotlinx.io.Buffer",
+        "kotlinx.io.writeString",
+        "kotlinx.serialization.Serializable",
+        "kotlinx.serialization.json.Json"
+      ],
+      "sorties": [
+        "class FuelKotlinxSerializationTest",
+        "data class HttpBinUserAgentModel",
+        "data class RocketLaunch",
+        "fun testSerializableResponse",
+        "fun testSpaceXDetail"
+      ],
+      "appelle": [
+        "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "plugins/build.gradle.kts": {
+      "fichier": "plugins/build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 12,
+      "taille_bytes": 180,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "plugins/src/main/kotlin/publication.gradle.kts": {
+      "fichier": "plugins/src/main/kotlin/publication.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 124,
+      "taille_bytes": 3576,
+      "entrees": [
+        "java.util.Properties"
+      ],
+      "sorties": [
+        "fun getExtraString"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gradle/libs.versions.toml": {
+      "fichier": "gradle/libs.versions.toml",
+      "langage": "toml",
+      "lignes": 33,
+      "taille_bytes": 1810,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "fuel-jackson-jvm/src/test/kotlin/fuel/jackson/FuelJacksonTest.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/Fuel.kt",
+      "type": "interne"
+    },
+    {
+      "de": "fuel-jackson-jvm/src/main/kotlin/fuel/jackson/ResponseExtension.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt",
+      "type": "interne"
+    },
+    {
+      "de": "fuel/src/jvmMain/kotlin/fuel/HttpUrlFetcher.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/Request.kt",
+      "type": "interne"
+    },
+    {
+      "de": "fuel/src/commonMain/kotlin/fuel/UriSyntaxException.kt",
+      "vers": "samples/httpbin-wasm/src/wasmJsMain/resources/index.html",
+      "type": "interne"
+    },
+    {
+      "de": "fuel-forge-jvm/src/test/kotlin/fuel/forge/FuelForgeTest.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/Fuel.kt",
+      "type": "interne"
+    },
+    {
+      "de": "fuel-forge-jvm/src/main/kotlin/fuel/forge/ResponseExtension.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt",
+      "type": "interne"
+    },
+    {
+      "de": "fuel-moshi-jvm/src/test/kotlin/fuel/moshi/FuelMoshiTest.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/Fuel.kt",
+      "type": "interne"
+    },
+    {
+      "de": "fuel-moshi-jvm/src/main/kotlin/fuel/moshi/ResponseExtension.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt",
+      "type": "interne"
+    },
+    {
+      "de": "samples/httpbin-wasm/src/wasmJsMain/kotlin/Main.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/Fuel.kt",
+      "type": "interne"
+    },
+    {
+      "de": "samples/mockbin-native/src/commonMain/kotlin/Main.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/FuelBuilder.kt",
+      "type": "interne"
+    },
+    {
+      "de": "fuel-kotlinx-serialization/src/jvmTest/kotlin/fuel/serialization/FuelKotlinxSerializationTest.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/Fuel.kt",
+      "type": "interne"
+    },
+    {
+      "de": "fuel-kotlinx-serialization/src/commonMain/kotlin/fuel/serialization/ResponseExtensions.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt",
+      "type": "interne"
+    },
+    {
+      "de": "fuel-kotlinx-serialization/src/appleTest/kotlin/fuel/serialization/FuelKotlinxSerializationTest.kt",
+      "vers": "fuel/src/commonMain/kotlin/fuel/HttpResponse.kt",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'fuel/src/commonMain/kotlin/fuel/Fuel.kt' (in=5)",
+    "feuille → 'fuel/src/commonMain/kotlin/fuel/HttpResponse.kt' (in=5)"
+  ]
+}

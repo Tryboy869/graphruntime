@@ -1,0 +1,218 @@
+{
+  "meta": {
+    "projet": "httpoison",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "elixir": 10
+    }
+  },
+  "stats": {
+    "fichiers_total": 10,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "mix.exs"
+  },
+  "noeuds": {
+    "mix.exs": {
+      "fichier": "mix.exs",
+      "langage": "elixir",
+      "lignes": 64,
+      "taille_bytes": 1407,
+      "entrees": [
+        "Mix.Project"
+      ],
+      "sorties": [
+        "def application",
+        "def project",
+        "defmodule HTTPoison"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".formatter.exs": {
+      "fichier": ".formatter.exs",
+      "langage": "elixir",
+      "lignes": 4,
+      "taille_bytes": 84,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/test_helper.exs": {
+      "fichier": "test/test_helper.exs",
+      "langage": "elixir",
+      "lignes": 12,
+      "taille_bytes": 212,
+      "entrees": [],
+      "sorties": [
+        "def fixture_path",
+        "defmodule PathHelpers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/httpoison_base_test.exs": {
+      "fichier": "test/httpoison_base_test.exs",
+      "langage": "elixir",
+      "lignes": 773,
+      "taille_bytes": 25645,
+      "entrees": [
+        "ExUnit.Case",
+        "HTTPoison.Base",
+        "Mimic"
+      ],
+      "sorties": [
+        "def expect_hackney_post",
+        "def process_headers",
+        "def process_request_body",
+        "def process_request_headers",
+        "def process_request_options",
+        "def process_request_url",
+        "def process_response",
+        "def process_response_body",
+        "def process_response_headers",
+        "def process_response_status_code",
+        "def process_status_code",
+        "def process_url",
+        "defmodule DeprecatedExample",
+        "defmodule Example",
+        "defmodule ExampleParamsOptions",
+        "defmodule ExampleRequest",
+        "defmodule HTTPoisonBaseTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/httpoison_test.exs": {
+      "fichier": "test/httpoison_test.exs",
+      "langage": "elixir",
+      "lignes": 502,
+      "taille_bytes": 17228,
+      "entrees": [
+        "ExUnit.Case",
+        "PathHelpers"
+      ],
+      "sorties": [
+        "defmodule HTTPoisonTest",
+        "fn response"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/httpoison_handlers_multipart_test.exs": {
+      "fichier": "test/httpoison_handlers_multipart_test.exs",
+      "langage": "elixir",
+      "lignes": 31,
+      "taille_bytes": 1063,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule HTTPoison"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/config.exs": {
+      "fichier": "config/config.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 125,
+      "entrees": [
+        "Config"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/httpoison.ex": {
+      "fichier": "lib/httpoison.ex",
+      "langage": "elixir",
+      "lignes": 262,
+      "taille_bytes": 9375,
+      "entrees": [
+        "HTTPoison.Base"
+      ],
+      "sorties": [
+        "def message",
+        "def to_curl",
+        "defmodule HTTPoison"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/httpoison/base.ex": {
+      "fichier": "lib/httpoison/base.ex",
+      "langage": "elixir",
+      "lignes": 1060,
+      "taille_bytes": 37034,
+      "entrees": [
+        "HTTPoison.Base"
+      ],
+      "sorties": [
+        "def build_request_url",
+        "def default_process_request_url",
+        "def delete",
+        "def get",
+        "def head",
+        "def maybe_process_form",
+        "def merge_params",
+        "def options",
+        "def patch",
+        "def post",
+        "def process_headers",
+        "def process_request_body",
+        "def process_request_headers",
+        "def process_request_options",
+        "def process_request_params",
+        "def process_request_url",
+        "def process_response",
+        "def process_response_body",
+        "def process_response_chunk",
+        "def process_response_headers",
+        "def process_response_status_code",
+        "def process_status_code",
+        "def process_url",
+        "def put",
+        "def request",
+        "def start",
+        "def stream_next",
+        "def transformer",
+        "defmodule GitHub",
+        "defmodule HTTPoison"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/httpoison/handlers/multipart.ex": {
+      "fichier": "lib/httpoison/handlers/multipart.ex",
+      "langage": "elixir",
+      "lignes": 64,
+      "taille_bytes": 1901,
+      "entrees": [],
+      "sorties": [
+        "def decode_body",
+        "defmodule HTTPoison"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

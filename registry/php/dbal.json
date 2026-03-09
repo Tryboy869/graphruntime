@@ -1,0 +1,2315 @@
+{
+  "meta": {
+    "projet": "dbal",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 1,
+      "php": 119
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 6,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "src/Exception/InvalidArgumentException.php"
+  },
+  "noeuds": {
+    "composer.json": {
+      "fichier": "composer.json",
+      "langage": "json",
+      "lignes": 71,
+      "taille_bytes": 2223,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ParameterType.php": {
+      "fichier": "src/ParameterType.php",
+      "langage": "php",
+      "lignes": 46,
+      "taille_bytes": 694,
+      "entrees": [],
+      "sorties": [
+        "enum ParameterType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/LockMode.php": {
+      "fichier": "src/LockMode.php",
+      "langage": "php",
+      "lignes": 16,
+      "taille_bytes": 214,
+      "entrees": [],
+      "sorties": [
+        "enum LockMode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ExpandArrayParameters.php": {
+      "fichier": "src/ExpandArrayParameters.php",
+      "langage": "php",
+      "lignes": 128,
+      "taille_bytes": 3323,
+      "entrees": [
+        "Doctrine\\DBAL\\ArrayParameters\\Exception\\MissingNamedParameter",
+        "Doctrine\\DBAL\\ArrayParameters\\Exception\\MissingPositionalParameter",
+        "Doctrine\\DBAL\\SQL\\Parser\\Visitor",
+        "Doctrine\\DBAL\\Types\\Type",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ConnectionException.php": {
+      "fichier": "src/ConnectionException.php",
+      "langage": "php",
+      "lignes": 9,
+      "taille_bytes": 129,
+      "entrees": [],
+      "sorties": [
+        "class ConnectionException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Driver.php": {
+      "fichier": "src/Driver.php",
+      "langage": "php",
+      "lignes": 51,
+      "taille_bytes": 1434,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver\\API\\ExceptionConverter",
+        "Doctrine\\DBAL\\Driver\\Connection",
+        "Doctrine\\DBAL\\Driver\\Exception",
+        "Doctrine\\DBAL\\Platforms\\AbstractPlatform",
+        "Doctrine\\DBAL\\Platforms\\Exception\\PlatformException",
+        "SensitiveParameter"
+      ],
+      "sorties": [
+        "interface Driver",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception.php": {
+      "fichier": "src/Exception.php",
+      "langage": "php",
+      "lignes": 11,
+      "taille_bytes": 117,
+      "entrees": [
+        "Throwable"
+      ],
+      "sorties": [
+        "interface Exception"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ColumnCase.php": {
+      "fichier": "src/ColumnCase.php",
+      "langage": "php",
+      "lignes": 21,
+      "taille_bytes": 284,
+      "entrees": [],
+      "sorties": [
+        "enum ColumnCase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Query.php": {
+      "fichier": "src/Query.php",
+      "langage": "php",
+      "lignes": 41,
+      "taille_bytes": 803,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TransactionIsolationLevel.php": {
+      "fichier": "src/TransactionIsolationLevel.php",
+      "langage": "php",
+      "lignes": 13,
+      "taille_bytes": 195,
+      "entrees": [],
+      "sorties": [
+        "enum TransactionIsolationLevel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/DriverManager.php": {
+      "fichier": "src/DriverManager.php",
+      "langage": "php",
+      "lignes": 191,
+      "taille_bytes": 5892,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver\\IBMDB2",
+        "Doctrine\\DBAL\\Driver\\Mysqli",
+        "Doctrine\\DBAL\\Driver\\OCI8",
+        "Doctrine\\DBAL\\Driver\\PDO",
+        "Doctrine\\DBAL\\Driver\\PgSQL",
+        "Doctrine\\DBAL\\Driver\\SQLSrv",
+        "Doctrine\\DBAL\\Driver\\SQLite3",
+        "Doctrine\\DBAL\\Exception\\DriverRequired",
+        "Doctrine\\DBAL\\Exception\\InvalidDriverClass",
+        "Doctrine\\DBAL\\Exception\\InvalidWrapperClass",
+        "Doctrine\\DBAL\\Exception\\UnknownDriver",
+        "SensitiveParameter",
+        "function"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ServerVersionProvider.php": {
+      "fichier": "src/ServerVersionProvider.php",
+      "langage": "php",
+      "lignes": 13,
+      "taille_bytes": 202,
+      "entrees": [],
+      "sorties": [
+        "interface ServerVersionProvider",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Result.php": {
+      "fichier": "src/Result.php",
+      "langage": "php",
+      "lignes": 297,
+      "taille_bytes": 7777,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver\\Exception",
+        "Doctrine\\DBAL\\Driver\\Result",
+        "Doctrine\\DBAL\\Exception\\NoKeyValue",
+        "LogicException",
+        "Traversable",
+        "function"
+      ],
+      "sorties": [
+        "class Result",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Statement.php": {
+      "fichier": "src/Statement.php",
+      "langage": "php",
+      "lignes": 143,
+      "taille_bytes": 4243,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\AbstractPlatform",
+        "Doctrine\\DBAL\\Types\\Type",
+        "function"
+      ],
+      "sorties": [
+        "class Statement",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Configuration.php": {
+      "fichier": "src/Configuration.php",
+      "langage": "php",
+      "lignes": 151,
+      "taille_bytes": 3848,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver\\Middleware",
+        "Doctrine\\DBAL\\Exception\\InvalidArgumentException",
+        "Doctrine\\DBAL\\Schema\\SchemaManagerFactory",
+        "Psr\\Cache\\CacheItemPoolInterface"
+      ],
+      "sorties": [
+        "class Configuration",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Connection.php": {
+      "fichier": "src/Connection.php",
+      "langage": "php",
+      "lignes": 1468,
+      "taille_bytes": 45581,
+      "entrees": [
+        "Closure",
+        "Doctrine\\DBAL\\Cache\\ArrayResult",
+        "Doctrine\\DBAL\\Cache\\CacheException",
+        "Doctrine\\DBAL\\Cache\\Exception\\NoResultDriverConfigured",
+        "Doctrine\\DBAL\\Cache\\QueryCacheProfile",
+        "Doctrine\\DBAL\\Connection\\StaticServerVersionProvider",
+        "Doctrine\\DBAL\\Driver\\API\\ExceptionConverter",
+        "Doctrine\\DBAL\\Driver\\Connection",
+        "Doctrine\\DBAL\\Driver\\Exception",
+        "Doctrine\\DBAL\\Driver\\Statement",
+        "Doctrine\\DBAL\\Exception\\CommitFailedRollbackOnly",
+        "Doctrine\\DBAL\\Exception\\ConnectionLost",
+        "Doctrine\\DBAL\\Exception\\DeadlockException",
+        "Doctrine\\DBAL\\Exception\\DriverException",
+        "Doctrine\\DBAL\\Exception\\ForeignKeyConstraintViolationException",
+        "Doctrine\\DBAL\\Exception\\NoActiveTransaction",
+        "Doctrine\\DBAL\\Exception\\ParseError",
+        "Doctrine\\DBAL\\Exception\\SavepointsNotSupported",
+        "Doctrine\\DBAL\\Exception\\TransactionRolledBack",
+        "Doctrine\\DBAL\\Exception\\UniqueConstraintViolationException",
+        "Doctrine\\DBAL\\Platforms\\AbstractPlatform",
+        "Doctrine\\DBAL\\Query\\Expression\\ExpressionBuilder",
+        "Doctrine\\DBAL\\Query\\QueryBuilder",
+        "Doctrine\\DBAL\\SQL\\Parser",
+        "Doctrine\\DBAL\\Schema\\AbstractSchemaManager",
+        "Doctrine\\DBAL\\Schema\\DefaultSchemaManagerFactory",
+        "Doctrine\\DBAL\\Schema\\SchemaManagerFactory",
+        "Doctrine\\DBAL\\Types\\Type",
+        "Doctrine\\Deprecations\\Deprecation",
+        "InvalidArgumentException",
+        "SensitiveParameter",
+        "Throwable",
+        "Traversable",
+        "function"
+      ],
+      "sorties": [
+        "class Connection",
+        "public func tion"
+      ],
+      "appelle": [
+        "src/Exception/InvalidArgumentException.php"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ArrayParameterType.php": {
+      "fichier": "src/ArrayParameterType.php",
+      "langage": "php",
+      "lignes": 39,
+      "taille_bytes": 900,
+      "entrees": [],
+      "sorties": [
+        "enum ArrayParameterType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ArrayParameters/Exception.php": {
+      "fichier": "src/ArrayParameters/Exception.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 150,
+      "entrees": [
+        "Throwable"
+      ],
+      "sorties": [
+        "interface Exception"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ArrayParameters/Exception/MissingNamedParameter.php": {
+      "fichier": "src/ArrayParameters/Exception/MissingNamedParameter.php",
+      "langage": "php",
+      "lignes": 20,
+      "taille_bytes": 430,
+      "entrees": [
+        "Doctrine\\DBAL\\ArrayParameters\\Exception",
+        "LogicException",
+        "function"
+      ],
+      "sorties": [
+        "class MissingNamedParameter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ArrayParameters/Exception/MissingPositionalParameter.php": {
+      "fichier": "src/ArrayParameters/Exception/MissingPositionalParameter.php",
+      "langage": "php",
+      "lignes": 21,
+      "taille_bytes": 463,
+      "entrees": [
+        "Doctrine\\DBAL\\ArrayParameters\\Exception",
+        "LogicException",
+        "function"
+      ],
+      "sorties": [
+        "class MissingPositionalParameter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Cache/CacheException.php": {
+      "fichier": "src/Cache/CacheException.php",
+      "langage": "php",
+      "lignes": 11,
+      "taille_bytes": 160,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception"
+      ],
+      "sorties": [
+        "class CacheException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Cache/ArrayResult.php": {
+      "fichier": "src/Cache/ArrayResult.php",
+      "langage": "php",
+      "lignes": 136,
+      "taille_bytes": 3174,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver\\FetchUtils",
+        "Doctrine\\DBAL\\Driver\\Result",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnIndex",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Cache/QueryCacheProfile.php": {
+      "fichier": "src/Cache/QueryCacheProfile.php",
+      "langage": "php",
+      "lignes": 92,
+      "taille_bytes": 2617,
+      "entrees": [
+        "Doctrine\\DBAL\\Cache\\Exception\\NoCacheKey",
+        "Doctrine\\DBAL\\Connection",
+        "Psr\\Cache\\CacheItemPoolInterface",
+        "function"
+      ],
+      "sorties": [
+        "class QueryCacheProfile",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Cache/Exception/NoCacheKey.php": {
+      "fichier": "src/Cache/Exception/NoCacheKey.php",
+      "langage": "php",
+      "lignes": 15,
+      "taille_bytes": 267,
+      "entrees": [
+        "Doctrine\\DBAL\\Cache\\CacheException"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Cache/Exception/NoResultDriverConfigured.php": {
+      "fichier": "src/Cache/Exception/NoResultDriverConfigured.php",
+      "langage": "php",
+      "lignes": 15,
+      "taille_bytes": 319,
+      "entrees": [
+        "Doctrine\\DBAL\\Cache\\CacheException"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Logging/Middleware.php": {
+      "fichier": "src/Logging/Middleware.php",
+      "langage": "php",
+      "lignes": 21,
+      "taille_bytes": 477,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver",
+        "Doctrine\\DBAL\\Driver\\Middleware",
+        "Psr\\Log\\LoggerInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Logging/Driver.php": {
+      "fichier": "src/Logging/Driver.php",
+      "langage": "php",
+      "lignes": 50,
+      "taille_bytes": 1233,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver",
+        "Doctrine\\DBAL\\Driver\\Middleware\\AbstractDriverMiddleware",
+        "Psr\\Log\\LoggerInterface",
+        "SensitiveParameter"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Logging/Statement.php": {
+      "fichier": "src/Logging/Statement.php",
+      "langage": "php",
+      "lignes": 48,
+      "taille_bytes": 1402,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver\\Middleware\\AbstractStatementMiddleware",
+        "Doctrine\\DBAL\\Driver\\Result",
+        "Doctrine\\DBAL\\Driver\\Statement",
+        "Doctrine\\DBAL\\ParameterType",
+        "Psr\\Log\\LoggerInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Logging/Connection.php": {
+      "fichier": "src/Logging/Connection.php",
+      "langage": "php",
+      "lignes": 69,
+      "taille_bytes": 1661,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver\\Connection",
+        "Doctrine\\DBAL\\Driver\\Middleware\\AbstractConnectionMiddleware",
+        "Doctrine\\DBAL\\Driver\\Result",
+        "Doctrine\\DBAL\\Driver\\Statement",
+        "Psr\\Log\\LoggerInterface"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Connections/PrimaryReadReplicaConnection.php": {
+      "fichier": "src/Connections/PrimaryReadReplicaConnection.php",
+      "langage": "php",
+      "lignes": 332,
+      "taille_bytes": 10472,
+      "entrees": [
+        "Doctrine\\DBAL\\Configuration",
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Driver",
+        "Doctrine\\DBAL\\DriverManager",
+        "Doctrine\\DBAL\\Driver\\Connection",
+        "Doctrine\\DBAL\\Driver\\Exception",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Statement",
+        "InvalidArgumentException",
+        "SensitiveParameter",
+        "function"
+      ],
+      "sorties": [
+        "class PrimaryReadReplicaConnection",
+        "public func tion"
+      ],
+      "appelle": [
+        "src/Exception/InvalidArgumentException.php"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Parser.php": {
+      "fichier": "src/SQL/Parser.php",
+      "langage": "php",
+      "lignes": 116,
+      "taille_bytes": 3894,
+      "entrees": [
+        "Doctrine\\DBAL\\SQL\\Parser\\Exception",
+        "Doctrine\\DBAL\\SQL\\Parser\\Exception\\RegularExpressionError",
+        "Doctrine\\DBAL\\SQL\\Parser\\Visitor",
+        "const",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Parser/Exception.php": {
+      "fichier": "src/SQL/Parser/Exception.php",
+      "langage": "php",
+      "lignes": 11,
+      "taille_bytes": 128,
+      "entrees": [
+        "Throwable"
+      ],
+      "sorties": [
+        "interface Exception"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/Platforms/Exception/InvalidPlatformVersion.php"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Parser/Visitor.php": {
+      "fichier": "src/SQL/Parser/Visitor.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 527,
+      "entrees": [],
+      "sorties": [
+        "interface Visitor",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Parser/Exception/RegularExpressionError.php": {
+      "fichier": "src/SQL/Parser/Exception/RegularExpressionError.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 405,
+      "entrees": [
+        "Doctrine\\DBAL\\SQL\\Parser\\Exception",
+        "RuntimeException",
+        "function"
+      ],
+      "sorties": [
+        "class RegularExpressionError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Builder/DefaultUnionSQLBuilder.php": {
+      "fichier": "src/SQL/Builder/DefaultUnionSQLBuilder.php",
+      "langage": "php",
+      "lignes": 48,
+      "taille_bytes": 1277,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\AbstractPlatform",
+        "Doctrine\\DBAL\\Query\\UnionQuery",
+        "Doctrine\\DBAL\\Query\\UnionType",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Builder/SelectSQLBuilder.php": {
+      "fichier": "src/SQL/Builder/SelectSQLBuilder.php",
+      "langage": "php",
+      "lignes": 14,
+      "taille_bytes": 256,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Query\\SelectQuery"
+      ],
+      "sorties": [
+        "interface SelectSQLBuilder",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Builder/CreateSchemaObjectsSQLBuilder.php": {
+      "fichier": "src/SQL/Builder/CreateSchemaObjectsSQLBuilder.php",
+      "langage": "php",
+      "lignes": 73,
+      "taille_bytes": 1728,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\AbstractPlatform",
+        "Doctrine\\DBAL\\Schema\\Schema",
+        "Doctrine\\DBAL\\Schema\\Sequence",
+        "Doctrine\\DBAL\\Schema\\Table",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Builder/UnionSQLBuilder.php": {
+      "fichier": "src/SQL/Builder/UnionSQLBuilder.php",
+      "langage": "php",
+      "lignes": 14,
+      "taille_bytes": 253,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Query\\UnionQuery"
+      ],
+      "sorties": [
+        "interface UnionSQLBuilder",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Builder/WithSQLBuilder.php": {
+      "fichier": "src/SQL/Builder/WithSQLBuilder.php",
+      "langage": "php",
+      "lignes": 31,
+      "taille_bytes": 822,
+      "entrees": [
+        "Doctrine\\DBAL\\Query\\CommonTableExpression",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Builder/DropSchemaObjectsSQLBuilder.php": {
+      "fichier": "src/SQL/Builder/DropSchemaObjectsSQLBuilder.php",
+      "langage": "php",
+      "lignes": 54,
+      "taille_bytes": 1259,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\AbstractPlatform",
+        "Doctrine\\DBAL\\Schema\\Schema",
+        "Doctrine\\DBAL\\Schema\\Sequence",
+        "Doctrine\\DBAL\\Schema\\Table",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SQL/Builder/DefaultSelectSQLBuilder.php": {
+      "fichier": "src/SQL/Builder/DefaultSelectSQLBuilder.php",
+      "langage": "php",
+      "lignes": 94,
+      "taille_bytes": 2451,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Platforms\\AbstractPlatform",
+        "Doctrine\\DBAL\\Platforms\\Exception\\NotSupported",
+        "Doctrine\\DBAL\\Query\\ForUpdate\\ConflictResolutionMode",
+        "Doctrine\\DBAL\\Query\\SelectQuery",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/TrimMode.php": {
+      "fichier": "src/Platforms/TrimMode.php",
+      "langage": "php",
+      "lignes": 13,
+      "taille_bytes": 161,
+      "entrees": [],
+      "sorties": [
+        "enum TrimMode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/AbstractPlatform.php": {
+      "fichier": "src/Platforms/AbstractPlatform.php",
+      "langage": "php",
+      "lignes": 2487,
+      "taille_bytes": 80753,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Exception\\InvalidArgumentException",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnDeclaration",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnType",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnType\\ColumnLengthRequired",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnType\\ColumnPrecisionRequired",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnType\\ColumnScaleRequired",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnType\\ColumnValuesRequired",
+        "Doctrine\\DBAL\\LockMode",
+        "Doctrine\\DBAL\\Platforms\\Exception\\NoColumnsSpecifiedForTable",
+        "Doctrine\\DBAL\\Platforms\\Exception\\NotSupported",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\SQL\\Builder\\DefaultSelectSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Builder\\DefaultUnionSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Builder\\SelectSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Builder\\UnionSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Builder\\WithSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Parser",
+        "Doctrine\\DBAL\\Schema\\AbstractSchemaManager",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\DefaultExpression",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint",
+        "Doctrine\\DBAL\\Schema\\Identifier",
+        "Doctrine\\DBAL\\Schema\\Index",
+        "Doctrine\\DBAL\\Schema\\Metadata\\MetadataProvider",
+        "Doctrine\\DBAL\\Schema\\Name\\UnquotedIdentifierFolding",
+        "Doctrine\\DBAL\\Schema\\SchemaDiff",
+        "Doctrine\\DBAL\\Schema\\Sequence",
+        "Doctrine\\DBAL\\Schema\\Table",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "Doctrine\\DBAL\\Schema\\UniqueConstraint",
+        "Doctrine\\DBAL\\TransactionIsolationLevel",
+        "Doctrine\\DBAL\\Types",
+        "Doctrine\\DBAL\\Types\\Exception\\TypeNotFound",
+        "Doctrine\\DBAL\\Types\\Exception\\TypesException",
+        "Doctrine\\DBAL\\Types\\Type",
+        "Doctrine\\Deprecations\\Deprecation",
+        "function"
+      ],
+      "sorties": [
+        "abstract class AbstractPlatform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/AbstractMySQLPlatform.php": {
+      "fichier": "src/Platforms/AbstractMySQLPlatform.php",
+      "langage": "php",
+      "lignes": 935,
+      "taille_bytes": 28488,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnType\\ColumnValuesRequired",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\MySQLKeywords",
+        "Doctrine\\DBAL\\Platforms\\MySQL\\MySQLMetadataProvider",
+        "Doctrine\\DBAL\\SQL\\Builder\\DefaultSelectSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Builder\\SelectSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Parser",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint",
+        "Doctrine\\DBAL\\Schema\\Index",
+        "Doctrine\\DBAL\\Schema\\MySQLSchemaManager",
+        "Doctrine\\DBAL\\Schema\\Name\\UnquotedIdentifierFolding",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "Doctrine\\DBAL\\TransactionIsolationLevel",
+        "Doctrine\\DBAL\\Types\\Types",
+        "Doctrine\\Deprecations\\Deprecation",
+        "function",
+        "information_schema.TABLES"
+      ],
+      "sorties": [
+        "abstract class AbstractMySQLPlatform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/SQLitePlatform.php": {
+      "fichier": "src/Platforms/SQLitePlatform.php",
+      "langage": "php",
+      "lignes": 990,
+      "taille_bytes": 30255,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Platforms\\Exception\\NotSupported",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\SQLiteKeywords",
+        "Doctrine\\DBAL\\Platforms\\SQLite\\SQLiteMetadataProvider",
+        "Doctrine\\DBAL\\SQL\\Builder\\DefaultSelectSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Builder\\SelectSQLBuilder",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\Exception\\ColumnDoesNotExist",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint",
+        "Doctrine\\DBAL\\Schema\\Identifier",
+        "Doctrine\\DBAL\\Schema\\Index",
+        "Doctrine\\DBAL\\Schema\\Name\\UnquotedIdentifierFolding",
+        "Doctrine\\DBAL\\Schema\\SQLiteSchemaManager",
+        "Doctrine\\DBAL\\Schema\\Table",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "Doctrine\\DBAL\\TransactionIsolationLevel",
+        "Doctrine\\DBAL\\Types",
+        "Doctrine\\Deprecations\\Deprecation",
+        "InvalidArgumentException",
+        "function"
+      ],
+      "sorties": [
+        "class SQLitePlatform",
+        "public func tion"
+      ],
+      "appelle": [
+        "src/Exception/InvalidArgumentException.php"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/PostgreSQL120Platform.php": {
+      "fichier": "src/Platforms/PostgreSQL120Platform.php",
+      "langage": "php",
+      "lignes": 32,
+      "taille_bytes": 1087,
+      "entrees": [
+        "pg_attrdef"
+      ],
+      "sorties": [
+        "class PostgreSQL120Platform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/DateIntervalUnit.php": {
+      "fichier": "src/Platforms/DateIntervalUnit.php",
+      "langage": "php",
+      "lignes": 17,
+      "taille_bytes": 326,
+      "entrees": [],
+      "sorties": [
+        "enum DateIntervalUnit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MariaDB1010Platform.php": {
+      "fichier": "src/Platforms/MariaDB1010Platform.php",
+      "langage": "php",
+      "lignes": 50,
+      "taille_bytes": 1611,
+      "entrees": [
+        "Doctrine\\DBAL\\SQL\\Builder\\SelectSQLBuilder",
+        "function",
+        "information_schema.TABLES"
+      ],
+      "sorties": [
+        "class MariaDB1010Platform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL80Platform.php": {
+      "fichier": "src/Platforms/MySQL80Platform.php",
+      "langage": "php",
+      "lignes": 41,
+      "taille_bytes": 1118,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\MySQL80Keywords",
+        "Doctrine\\DBAL\\SQL\\Builder\\SelectSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Builder\\WithSQLBuilder",
+        "Doctrine\\Deprecations\\Deprecation"
+      ],
+      "sorties": [
+        "class MySQL80Platform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MariaDB1052Platform.php": {
+      "fichier": "src/Platforms/MariaDB1052Platform.php",
+      "langage": "php",
+      "lignes": 40,
+      "taille_bytes": 1083,
+      "entrees": [
+        "Doctrine\\DBAL\\Schema\\Index",
+        "Doctrine\\DBAL\\Schema\\TableDiff"
+      ],
+      "sorties": [
+        "class MariaDB1052Platform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MariaDBPlatform.php": {
+      "fichier": "src/Platforms/MariaDBPlatform.php",
+      "langage": "php",
+      "lignes": 176,
+      "taille_bytes": 5850,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\MariaDBKeywords",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "Doctrine\\DBAL\\Types\\JsonType",
+        "Doctrine\\Deprecations\\Deprecation",
+        "function"
+      ],
+      "sorties": [
+        "class MariaDBPlatform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MariaDB110700Platform.php": {
+      "fichier": "src/Platforms/MariaDB110700Platform.php",
+      "langage": "php",
+      "lignes": 30,
+      "taille_bytes": 789,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\MariaDB117Keywords",
+        "Doctrine\\Deprecations\\Deprecation"
+      ],
+      "sorties": [
+        "class MariaDB110700Platform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/SQLServerPlatform.php": {
+      "fichier": "src/Platforms/SQLServerPlatform.php",
+      "langage": "php",
+      "lignes": 1345,
+      "taille_bytes": 47099,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnType\\ColumnLengthRequired",
+        "Doctrine\\DBAL\\LockMode",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\SQLServerKeywords",
+        "Doctrine\\DBAL\\Platforms\\SQLServer\\SQLServerMetadataProvider",
+        "Doctrine\\DBAL\\Platforms\\SQLServer\\SQL\\Builder\\SQLServerSelectSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Builder\\SelectSQLBuilder",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\ColumnDiff",
+        "Doctrine\\DBAL\\Schema\\Identifier",
+        "Doctrine\\DBAL\\Schema\\Index",
+        "Doctrine\\DBAL\\Schema\\Name\\UnquotedIdentifierFolding",
+        "Doctrine\\DBAL\\Schema\\SQLServerSchemaManager",
+        "Doctrine\\DBAL\\Schema\\Sequence",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "Doctrine\\DBAL\\TransactionIsolationLevel",
+        "Doctrine\\DBAL\\Types\\Types",
+        "Doctrine\\Deprecations\\Deprecation",
+        "InvalidArgumentException",
+        "const",
+        "function",
+        "sys.sequences"
+      ],
+      "sorties": [
+        "class SQLServerPlatform",
+        "public func tion"
+      ],
+      "appelle": [
+        "src/Exception/InvalidArgumentException.php"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL84Platform.php": {
+      "fichier": "src/Platforms/MySQL84Platform.php",
+      "langage": "php",
+      "lignes": 30,
+      "taille_bytes": 761,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\MySQL84Keywords",
+        "Doctrine\\Deprecations\\Deprecation"
+      ],
+      "sorties": [
+        "class MySQL84Platform"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/OraclePlatform.php": {
+      "fichier": "src/Platforms/OraclePlatform.php",
+      "langage": "php",
+      "lignes": 867,
+      "taille_bytes": 27235,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception\\InvalidColumnType\\ColumnLengthRequired",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\OracleKeywords",
+        "Doctrine\\DBAL\\Platforms\\Oracle\\OracleMetadataProvider",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint",
+        "Doctrine\\DBAL\\Schema\\Identifier",
+        "Doctrine\\DBAL\\Schema\\Index",
+        "Doctrine\\DBAL\\Schema\\Name\\UnquotedIdentifierFolding",
+        "Doctrine\\DBAL\\Schema\\OracleSchemaManager",
+        "Doctrine\\DBAL\\Schema\\Sequence",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "Doctrine\\DBAL\\TransactionIsolationLevel",
+        "Doctrine\\DBAL\\Types\\BinaryType",
+        "Doctrine\\DBAL\\Types\\Types",
+        "Doctrine\\Deprecations\\Deprecation",
+        "InvalidArgumentException",
+        "USER_CONSTRAINTS",
+        "USER_SEQUENCES",
+        "function"
+      ],
+      "sorties": [
+        "class OraclePlatform",
+        "public func tion"
+      ],
+      "appelle": [
+        "src/Exception/InvalidArgumentException.php"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQLPlatform.php": {
+      "fichier": "src/Platforms/MySQLPlatform.php",
+      "langage": "php",
+      "lignes": 65,
+      "taille_bytes": 1970,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\Exception\\NotSupported",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\MySQLKeywords",
+        "Doctrine\\DBAL\\SQL\\Builder\\WithSQLBuilder",
+        "Doctrine\\DBAL\\Schema\\Index",
+        "Doctrine\\DBAL\\Types\\BlobType",
+        "Doctrine\\DBAL\\Types\\TextType",
+        "Doctrine\\Deprecations\\Deprecation"
+      ],
+      "sorties": [
+        "class MySQLPlatform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MariaDB1060Platform.php": {
+      "fichier": "src/Platforms/MariaDB1060Platform.php",
+      "langage": "php",
+      "lignes": 20,
+      "taille_bytes": 495,
+      "entrees": [
+        "Doctrine\\DBAL\\SQL\\Builder\\SelectSQLBuilder"
+      ],
+      "sorties": [
+        "class MariaDB1060Platform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/DB2Platform.php": {
+      "fichier": "src/Platforms/DB2Platform.php",
+      "langage": "php",
+      "lignes": 602,
+      "taille_bytes": 18117,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Platforms\\Db2\\Db2MetadataProvider",
+        "Doctrine\\DBAL\\Platforms\\Exception\\NotSupported",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\DB2Keywords",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\SQL\\Builder\\DefaultSelectSQLBuilder",
+        "Doctrine\\DBAL\\SQL\\Builder\\SelectSQLBuilder",
+        "Doctrine\\DBAL\\Schema\\ColumnDiff",
+        "Doctrine\\DBAL\\Schema\\DB2SchemaManager",
+        "Doctrine\\DBAL\\Schema\\Identifier",
+        "Doctrine\\DBAL\\Schema\\Index",
+        "Doctrine\\DBAL\\Schema\\Name\\UnquotedIdentifierFolding",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "Doctrine\\DBAL\\TransactionIsolationLevel",
+        "Doctrine\\DBAL\\Types\\DateTimeType",
+        "Doctrine\\DBAL\\Types\\Types",
+        "Doctrine\\Deprecations\\Deprecation",
+        "function"
+      ],
+      "sorties": [
+        "class DB2Platform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/PostgreSQLPlatform.php": {
+      "fichier": "src/Platforms/PostgreSQLPlatform.php",
+      "langage": "php",
+      "lignes": 837,
+      "taille_bytes": 25647,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\KeywordList",
+        "Doctrine\\DBAL\\Platforms\\Keywords\\PostgreSQLKeywords",
+        "Doctrine\\DBAL\\Platforms\\PostgreSQL\\PostgreSQLMetadataProvider",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint",
+        "Doctrine\\DBAL\\Schema\\Identifier",
+        "Doctrine\\DBAL\\Schema\\Index",
+        "Doctrine\\DBAL\\Schema\\Name\\UnquotedIdentifierFolding",
+        "Doctrine\\DBAL\\Schema\\PostgreSQLSchemaManager",
+        "Doctrine\\DBAL\\Schema\\Sequence",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "Doctrine\\DBAL\\TransactionIsolationLevel",
+        "Doctrine\\DBAL\\Types\\Types",
+        "Doctrine\\Deprecations\\Deprecation",
+        "UnexpectedValueException",
+        "function",
+        "information_schema.sequences",
+        "information_schema.views",
+        "pg_attrdef"
+      ],
+      "sorties": [
+        "class PostgreSQLPlatform",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/SQLite/SQLiteMetadataProvider.php": {
+      "fichier": "src/Platforms/SQLite/SQLiteMetadataProvider.php",
+      "langage": "php",
+      "lignes": 710,
+      "taille_bytes": 21171,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Platforms\\Exception\\NotSupported",
+        "Doctrine\\DBAL\\Platforms\\SQLitePlatform",
+        "Doctrine\\DBAL\\Platforms\\SQLite\\SQLiteMetadataProvider\\ForeignKeyConstraintDetails",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\Exception\\UnsupportedName",
+        "Doctrine\\DBAL\\Schema\\Exception\\UnsupportedSchema",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\MatchType",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\ReferentialAction",
+        "Doctrine\\DBAL\\Schema\\Index\\IndexType",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ForeignKeyConstraintColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\IndexColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\MetadataProvider",
+        "Doctrine\\DBAL\\Schema\\Metadata\\PrimaryKeyConstraintColumnRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ViewMetadataRow",
+        "Doctrine\\DBAL\\Types\\Exception\\TypesException",
+        "Doctrine\\DBAL\\Types\\Types",
+        "function",
+        "sqlite_master"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/SQLite/Comparator.php": {
+      "fichier": "src/Platforms/SQLite/Comparator.php",
+      "langage": "php",
+      "lignes": 53,
+      "taille_bytes": 1483,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\SQLitePlatform",
+        "Doctrine\\DBAL\\Schema\\Comparator",
+        "Doctrine\\DBAL\\Schema\\ComparatorConfig",
+        "Doctrine\\DBAL\\Schema\\Table",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "function"
+      ],
+      "sorties": [
+        "class Comparator",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/SQLite/SQLiteMetadataProvider/ForeignKeyConstraintDetails.php": {
+      "fichier": "src/Platforms/SQLite/SQLiteMetadataProvider/ForeignKeyConstraintDetails.php",
+      "langage": "php",
+      "lignes": 38,
+      "taille_bytes": 884,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Oracle/OracleMetadataProvider.php": {
+      "fichier": "src/Platforms/Oracle/OracleMetadataProvider.php",
+      "langage": "php",
+      "lignes": 581,
+      "taille_bytes": 18059,
+      "entrees": [
+        "ALL_TAB_COMMENTS",
+        "ALL_USERS",
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Platforms\\Exception\\NotSupported",
+        "Doctrine\\DBAL\\Platforms\\OraclePlatform",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\Exception\\UnsupportedName",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\MatchType",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\ReferentialAction",
+        "Doctrine\\DBAL\\Schema\\Index\\IndexType",
+        "Doctrine\\DBAL\\Schema\\Metadata\\DatabaseMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ForeignKeyConstraintColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\IndexColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\MetadataProvider",
+        "Doctrine\\DBAL\\Schema\\Metadata\\PrimaryKeyConstraintColumnRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\SequenceMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ViewMetadataRow",
+        "Doctrine\\DBAL\\Types\\Exception\\TypesException",
+        "USER_CONSTRAINTS",
+        "USER_INDEXES",
+        "USER_SEQUENCES",
+        "USER_TABLES",
+        "USER_TAB_COLUMNS",
+        "USER_VIEWS",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Exception/NoColumnsSpecifiedForTable.php": {
+      "fichier": "src/Platforms/Exception/NoColumnsSpecifiedForTable.php",
+      "langage": "php",
+      "lignes": 17,
+      "taille_bytes": 372,
+      "entrees": [
+        "LogicException",
+        "function"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Exception/InvalidPlatformVersion.php": {
+      "fichier": "src/Platforms/Exception/InvalidPlatformVersion.php",
+      "langage": "php",
+      "lignes": 27,
+      "taille_bytes": 752,
+      "entrees": [
+        "Exception",
+        "function"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/SQL/Parser/Exception.php"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Exception/PlatformException.php": {
+      "fichier": "src/Platforms/Exception/PlatformException.php",
+      "langage": "php",
+      "lignes": 11,
+      "taille_bytes": 159,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception"
+      ],
+      "sorties": [
+        "interface PlatformException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Exception/NotSupported.php": {
+      "fichier": "src/Platforms/Exception/NotSupported.php",
+      "langage": "php",
+      "lignes": 17,
+      "taille_bytes": 360,
+      "entrees": [
+        "LogicException",
+        "function"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Db2/Db2MetadataProvider.php": {
+      "fichier": "src/Platforms/Db2/Db2MetadataProvider.php",
+      "langage": "php",
+      "lignes": 518,
+      "taille_bytes": 16062,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Platforms\\DB2Platform",
+        "Doctrine\\DBAL\\Platforms\\Exception\\NotSupported",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\Exception\\UnsupportedName",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\MatchType",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\ReferentialAction",
+        "Doctrine\\DBAL\\Schema\\Index\\IndexType",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ForeignKeyConstraintColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\IndexColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\MetadataProvider",
+        "Doctrine\\DBAL\\Schema\\Metadata\\PrimaryKeyConstraintColumnRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ViewMetadataRow",
+        "Doctrine\\DBAL\\Types\\Exception\\TypesException",
+        "Doctrine\\DBAL\\Types\\Types",
+        "SYSCAT.COLUMNS",
+        "SYSCAT.INDEXES",
+        "SYSCAT.REFERENCES",
+        "SYSCAT.TABCONST",
+        "SYSCAT.TABLES",
+        "SYSCAT.VIEWS",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL/Comparator.php": {
+      "fichier": "src/Platforms/MySQL/Comparator.php",
+      "langage": "php",
+      "lignes": 99,
+      "taille_bytes": 3466,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\AbstractMySQLPlatform",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\Comparator",
+        "Doctrine\\DBAL\\Schema\\ComparatorConfig",
+        "Doctrine\\DBAL\\Schema\\Table",
+        "Doctrine\\DBAL\\Schema\\TableDiff",
+        "function"
+      ],
+      "sorties": [
+        "class Comparator",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL/MySQLMetadataProvider.php": {
+      "fichier": "src/Platforms/MySQL/MySQLMetadataProvider.php",
+      "langage": "php",
+      "lignes": 677,
+      "taille_bytes": 22154,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Exception\\DatabaseRequired",
+        "Doctrine\\DBAL\\Platforms\\AbstractMySQLPlatform",
+        "Doctrine\\DBAL\\Platforms\\Exception\\NotSupported",
+        "Doctrine\\DBAL\\Platforms\\MariaDBPlatform",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\Exception\\UnsupportedName",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\MatchType",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\ReferentialAction",
+        "Doctrine\\DBAL\\Schema\\Index\\IndexType",
+        "Doctrine\\DBAL\\Schema\\Metadata\\DatabaseMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ForeignKeyConstraintColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\IndexColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\MetadataProvider",
+        "Doctrine\\DBAL\\Schema\\Metadata\\PrimaryKeyConstraintColumnRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ViewMetadataRow",
+        "Doctrine\\DBAL\\Types\\Exception\\TypesException",
+        "function",
+        "information_schema.COLUMNS",
+        "information_schema.KEY_COLUMN_USAGE",
+        "information_schema.SCHEMATA",
+        "information_schema.STATISTICS",
+        "information_schema.TABLES",
+        "information_schema.TABLE_CONSTRAINTS",
+        "information_schema.VIEWS"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL/CharsetMetadataProvider.php": {
+      "fichier": "src/Platforms/MySQL/CharsetMetadataProvider.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 241,
+      "entrees": [],
+      "sorties": [
+        "interface CharsetMetadataProvider",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL/CollationMetadataProvider.php": {
+      "fichier": "src/Platforms/MySQL/CollationMetadataProvider.php",
+      "langage": "php",
+      "lignes": 16,
+      "taille_bytes": 299,
+      "entrees": [],
+      "sorties": [
+        "interface CollationMetadataProvider",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL/DefaultTableOptions.php": {
+      "fichier": "src/Platforms/MySQL/DefaultTableOptions.php",
+      "langage": "php",
+      "lignes": 23,
+      "taille_bytes": 407,
+      "entrees": [],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL/CollationMetadataProvider/ConnectionCollationMetadataProvider.php": {
+      "fichier": "src/Platforms/MySQL/CollationMetadataProvider/ConnectionCollationMetadataProvider.php",
+      "langage": "php",
+      "lignes": 37,
+      "taille_bytes": 830,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Platforms\\MySQL\\CollationMetadataProvider",
+        "information_schema.COLLATIONS"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL/CollationMetadataProvider/CachingCollationMetadataProvider.php": {
+      "fichier": "src/Platforms/MySQL/CollationMetadataProvider/CachingCollationMetadataProvider.php",
+      "langage": "php",
+      "lignes": 29,
+      "taille_bytes": 807,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\MySQL\\CollationMetadataProvider",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL/CharsetMetadataProvider/ConnectionCharsetMetadataProvider.php": {
+      "fichier": "src/Platforms/MySQL/CharsetMetadataProvider/ConnectionCharsetMetadataProvider.php",
+      "langage": "php",
+      "lignes": 37,
+      "taille_bytes": 889,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Platforms\\MySQL\\CharsetMetadataProvider",
+        "information_schema.CHARACTER_SETS"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/MySQL/CharsetMetadataProvider/CachingCharsetMetadataProvider.php": {
+      "fichier": "src/Platforms/MySQL/CharsetMetadataProvider/CachingCharsetMetadataProvider.php",
+      "langage": "php",
+      "lignes": 29,
+      "taille_bytes": 787,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\MySQL\\CharsetMetadataProvider",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/MySQLKeywords.php": {
+      "fichier": "src/Platforms/Keywords/MySQLKeywords.php",
+      "langage": "php",
+      "lignes": 259,
+      "taille_bytes": 5787,
+      "entrees": [],
+      "sorties": [
+        "class MySQLKeywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/MariaDB117Keywords.php": {
+      "fichier": "src/Platforms/Keywords/MariaDB117Keywords.php",
+      "langage": "php",
+      "lignes": 26,
+      "taille_bytes": 554,
+      "entrees": [
+        "function"
+      ],
+      "sorties": [
+        "class MariaDB117Keywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/MySQL80Keywords.php": {
+      "fichier": "src/Platforms/Keywords/MySQL80Keywords.php",
+      "langage": "php",
+      "lignes": 61,
+      "taille_bytes": 1217,
+      "entrees": [
+        "function"
+      ],
+      "sorties": [
+        "class MySQL80Keywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/MariaDBKeywords.php": {
+      "fichier": "src/Platforms/Keywords/MariaDBKeywords.php",
+      "langage": "php",
+      "lignes": 265,
+      "taille_bytes": 5966,
+      "entrees": [],
+      "sorties": [
+        "class MariaDBKeywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/SQLServerKeywords.php": {
+      "fichier": "src/Platforms/Keywords/SQLServerKeywords.php",
+      "langage": "php",
+      "lignes": 209,
+      "taille_bytes": 4687,
+      "entrees": [],
+      "sorties": [
+        "class SQLServerKeywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/SQLiteKeywords.php": {
+      "fichier": "src/Platforms/Keywords/SQLiteKeywords.php",
+      "langage": "php",
+      "lignes": 143,
+      "taille_bytes": 2919,
+      "entrees": [],
+      "sorties": [
+        "class SQLiteKeywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/KeywordList.php": {
+      "fichier": "src/Platforms/Keywords/KeywordList.php",
+      "langage": "php",
+      "lignes": 56,
+      "taille_bytes": 1226,
+      "entrees": [
+        "Doctrine\\Deprecations\\Deprecation",
+        "function"
+      ],
+      "sorties": [
+        "abstract class KeywordList",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/MySQL84Keywords.php": {
+      "fichier": "src/Platforms/Keywords/MySQL84Keywords.php",
+      "langage": "php",
+      "lignes": 48,
+      "taille_bytes": 982,
+      "entrees": [
+        "function"
+      ],
+      "sorties": [
+        "class MySQL84Keywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/PostgreSQLKeywords.php": {
+      "fichier": "src/Platforms/Keywords/PostgreSQLKeywords.php",
+      "langage": "php",
+      "lignes": 121,
+      "taille_bytes": 2591,
+      "entrees": [],
+      "sorties": [
+        "class PostgreSQLKeywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/OracleKeywords.php": {
+      "fichier": "src/Platforms/Keywords/OracleKeywords.php",
+      "langage": "php",
+      "lignes": 135,
+      "taille_bytes": 2727,
+      "entrees": [],
+      "sorties": [
+        "class OracleKeywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/Keywords/DB2Keywords.php": {
+      "fichier": "src/Platforms/Keywords/DB2Keywords.php",
+      "langage": "php",
+      "lignes": 416,
+      "taille_bytes": 9309,
+      "entrees": [],
+      "sorties": [
+        "class DB2Keywords"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/PostgreSQL/PostgreSQLMetadataProvider.php": {
+      "fichier": "src/Platforms/PostgreSQL/PostgreSQLMetadataProvider.php",
+      "langage": "php",
+      "lignes": 729,
+      "taille_bytes": 24300,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Platforms\\PostgreSQLPlatform",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\Exception\\UnsupportedName",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\MatchType",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\ReferentialAction",
+        "Doctrine\\DBAL\\Schema\\Index\\IndexType",
+        "Doctrine\\DBAL\\Schema\\Metadata\\DatabaseMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ForeignKeyConstraintColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\IndexColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\MetadataProvider",
+        "Doctrine\\DBAL\\Schema\\Metadata\\PrimaryKeyConstraintColumnRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\SchemaMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\SequenceMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ViewMetadataRow",
+        "Doctrine\\DBAL\\Types\\Exception\\TypesException",
+        "function",
+        "information_schema.sequences",
+        "pg_attribute",
+        "pg_class",
+        "pg_constraint",
+        "pg_database",
+        "pg_index",
+        "pg_namespace",
+        "pg_views"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/SQLServer/Comparator.php": {
+      "fichier": "src/Platforms/SQLServer/Comparator.php",
+      "langage": "php",
+      "lignes": 54,
+      "taille_bytes": 1549,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\SQLServerPlatform",
+        "Doctrine\\DBAL\\Schema\\Comparator",
+        "Doctrine\\DBAL\\Schema\\ComparatorConfig",
+        "Doctrine\\DBAL\\Schema\\Table",
+        "Doctrine\\DBAL\\Schema\\TableDiff"
+      ],
+      "sorties": [
+        "class Comparator",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/SQLServer/SQLServerMetadataProvider.php": {
+      "fichier": "src/Platforms/SQLServer/SQLServerMetadataProvider.php",
+      "langage": "php",
+      "lignes": 658,
+      "taille_bytes": 21187,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Platforms\\SQLServerPlatform",
+        "Doctrine\\DBAL\\Schema\\Column",
+        "Doctrine\\DBAL\\Schema\\Exception\\UnsupportedName",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\MatchType",
+        "Doctrine\\DBAL\\Schema\\ForeignKeyConstraint\\ReferentialAction",
+        "Doctrine\\DBAL\\Schema\\Index\\IndexType",
+        "Doctrine\\DBAL\\Schema\\Metadata\\DatabaseMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ForeignKeyConstraintColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\IndexColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\MetadataProvider",
+        "Doctrine\\DBAL\\Schema\\Metadata\\PrimaryKeyConstraintColumnRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\SchemaMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\SequenceMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableColumnMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\TableMetadataRow",
+        "Doctrine\\DBAL\\Schema\\Metadata\\ViewMetadataRow",
+        "Doctrine\\DBAL\\Types\\Exception\\TypesException",
+        "function",
+        "sys.columns",
+        "sys.databases",
+        "sys.foreign_keys",
+        "sys.schemas",
+        "sys.sequences",
+        "sys.tables",
+        "sys.views"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Platforms/SQLServer/SQL/Builder/SQLServerSelectSQLBuilder.php": {
+      "fichier": "src/Platforms/SQLServer/SQL/Builder/SQLServerSelectSQLBuilder.php",
+      "langage": "php",
+      "lignes": 84,
+      "taille_bytes": 2112,
+      "entrees": [
+        "Doctrine\\DBAL\\Platforms\\SQLServerPlatform",
+        "Doctrine\\DBAL\\Query\\ForUpdate\\ConflictResolutionMode",
+        "Doctrine\\DBAL\\Query\\SelectQuery",
+        "Doctrine\\DBAL\\SQL\\Builder\\SelectSQLBuilder",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Connection/StaticServerVersionProvider.php": {
+      "fichier": "src/Connection/StaticServerVersionProvider.php",
+      "langage": "php",
+      "lignes": 20,
+      "taille_bytes": 366,
+      "entrees": [
+        "Doctrine\\DBAL\\ServerVersionProvider"
+      ],
+      "sorties": [
+        "class StaticServerVersionProvider",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tools/DsnParser.php": {
+      "fichier": "src/Tools/DsnParser.php",
+      "langage": "php",
+      "lignes": 223,
+      "taille_bytes": 6884,
+      "entrees": [
+        "Doctrine\\DBAL\\Driver",
+        "Doctrine\\DBAL\\DriverManager",
+        "Doctrine\\DBAL\\Exception\\MalformedDsnException",
+        "SensitiveParameter",
+        "function"
+      ],
+      "sorties": [
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tools/Console/ConnectionNotFound.php": {
+      "fichier": "src/Tools/Console/ConnectionNotFound.php",
+      "langage": "php",
+      "lignes": 11,
+      "taille_bytes": 164,
+      "entrees": [
+        "OutOfBoundsException"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tools/Console/ConnectionProvider.php": {
+      "fichier": "src/Tools/Console/ConnectionProvider.php",
+      "langage": "php",
+      "lignes": 15,
+      "taille_bytes": 350,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection"
+      ],
+      "sorties": [
+        "interface ConnectionProvider",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tools/Console/ConnectionProvider/SingleConnectionProvider.php": {
+      "fichier": "src/Tools/Console/ConnectionProvider/SingleConnectionProvider.php",
+      "langage": "php",
+      "lignes": 34,
+      "taille_bytes": 856,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Tools\\Console\\ConnectionNotFound",
+        "Doctrine\\DBAL\\Tools\\Console\\ConnectionProvider",
+        "function"
+      ],
+      "sorties": [
+        "class SingleConnectionProvider",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Tools/Console/Command/RunSqlCommand.php": {
+      "fichier": "src/Tools/Console/Command/RunSqlCommand.php",
+      "langage": "php",
+      "lignes": 119,
+      "taille_bytes": 3718,
+      "entrees": [
+        "Doctrine\\DBAL\\Connection",
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\Tools\\Console\\ConnectionProvider",
+        "RuntimeException",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Style\\SymfonyStyle",
+        "function"
+      ],
+      "sorties": [
+        "class RunSqlCommand",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/DriverRequired.php": {
+      "fichier": "src/Exception/DriverRequired.php",
+      "langage": "php",
+      "lignes": 29,
+      "taille_bytes": 866,
+      "entrees": [
+        "function"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/NotNullConstraintViolationException.php": {
+      "fichier": "src/Exception/NotNullConstraintViolationException.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 233,
+      "entrees": [],
+      "sorties": [
+        "class NotNullConstraintViolationException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/ConstraintViolationException.php": {
+      "fichier": "src/Exception/ConstraintViolationException.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 222,
+      "entrees": [],
+      "sorties": [
+        "class ConstraintViolationException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/DatabaseRequired.php": {
+      "fichier": "src/Exception/DatabaseRequired.php",
+      "langage": "php",
+      "lignes": 22,
+      "taille_bytes": 421,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception",
+        "function"
+      ],
+      "sorties": [
+        "class DatabaseRequired"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/ForeignKeyConstraintViolationException.php": {
+      "fichier": "src/Exception/ForeignKeyConstraintViolationException.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 239,
+      "entrees": [],
+      "sorties": [
+        "class ForeignKeyConstraintViolationException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/LockWaitTimeoutException.php": {
+      "fichier": "src/Exception/LockWaitTimeoutException.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 250,
+      "entrees": [],
+      "sorties": [
+        "class LockWaitTimeoutException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/DeadlockException.php": {
+      "fichier": "src/Exception/DeadlockException.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 234,
+      "entrees": [],
+      "sorties": [
+        "class DeadlockException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/InvalidArgumentException.php": {
+      "fichier": "src/Exception/InvalidArgumentException.php",
+      "langage": "php",
+      "lignes": 14,
+      "taille_bytes": 273,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception"
+      ],
+      "sorties": [
+        "class InvalidArgumentException"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/Connection.php",
+        "src/Connections/PrimaryReadReplicaConnection.php",
+        "src/Platforms/OraclePlatform.php",
+        "src/Platforms/SQLServerPlatform.php",
+        "src/Platforms/SQLitePlatform.php"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/Exception/ConnectionLost.php": {
+      "fichier": "src/Exception/ConnectionLost.php",
+      "langage": "php",
+      "lignes": 9,
+      "taille_bytes": 128,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/SyntaxErrorException.php": {
+      "fichier": "src/Exception/SyntaxErrorException.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 203,
+      "entrees": [],
+      "sorties": [
+        "class SyntaxErrorException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/ParseError.php": {
+      "fichier": "src/Exception/ParseError.php",
+      "langage": "php",
+      "lignes": 17,
+      "taille_bytes": 373,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception",
+        "Doctrine\\DBAL\\SQL\\Parser"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/MalformedDsnException.php": {
+      "fichier": "src/Exception/MalformedDsnException.php",
+      "langage": "php",
+      "lignes": 13,
+      "taille_bytes": 247,
+      "entrees": [],
+      "sorties": [
+        "class MalformedDsnException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/ConnectionException.php": {
+      "fichier": "src/Exception/ConnectionException.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 203,
+      "entrees": [],
+      "sorties": [
+        "class ConnectionException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/TransactionRolledBack.php": {
+      "fichier": "src/Exception/TransactionRolledBack.php",
+      "langage": "php",
+      "lignes": 9,
+      "taille_bytes": 125,
+      "entrees": [],
+      "sorties": [
+        "class TransactionRolledBack"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/NoActiveTransaction.php": {
+      "fichier": "src/Exception/NoActiveTransaction.php",
+      "langage": "php",
+      "lignes": 15,
+      "taille_bytes": 284,
+      "entrees": [
+        "Doctrine\\DBAL\\ConnectionException"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/InvalidColumnIndex.php": {
+      "fichier": "src/Exception/InvalidColumnIndex.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 419,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception",
+        "LogicException",
+        "Throwable",
+        "function"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/InvalidFieldNameException.php": {
+      "fichier": "src/Exception/InvalidFieldNameException.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 225,
+      "entrees": [],
+      "sorties": [
+        "class InvalidFieldNameException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/RetryableException.php": {
+      "fichier": "src/Exception/RetryableException.php",
+      "langage": "php",
+      "lignes": 14,
+      "taille_bytes": 227,
+      "entrees": [
+        "Throwable"
+      ],
+      "sorties": [
+        "interface RetryableException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/UnknownDriver.php": {
+      "fichier": "src/Exception/UnknownDriver.php",
+      "langage": "php",
+      "lignes": 23,
+      "taille_bytes": 581,
+      "entrees": [
+        "function"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/NonUniqueFieldNameException.php": {
+      "fichier": "src/Exception/NonUniqueFieldNameException.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 239,
+      "entrees": [],
+      "sorties": [
+        "class NonUniqueFieldNameException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/DatabaseObjectExistsException.php": {
+      "fichier": "src/Exception/DatabaseObjectExistsException.php",
+      "langage": "php",
+      "lignes": 16,
+      "taille_bytes": 433,
+      "entrees": [],
+      "sorties": [
+        "class DatabaseObjectExistsException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Exception/InvalidColumnType.php": {
+      "fichier": "src/Exception/InvalidColumnType.php",
+      "langage": "php",
+      "lignes": 12,
+      "taille_bytes": 200,
+      "entrees": [
+        "Doctrine\\DBAL\\Exception",
+        "LogicException"
+      ],
+      "sorties": [
+        "abstract class InvalidColumnType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "src/Connection.php",
+      "vers": "src/Exception/InvalidArgumentException.php",
+      "type": "interne"
+    },
+    {
+      "de": "src/Connections/PrimaryReadReplicaConnection.php",
+      "vers": "src/Exception/InvalidArgumentException.php",
+      "type": "interne"
+    },
+    {
+      "de": "src/Platforms/SQLitePlatform.php",
+      "vers": "src/Exception/InvalidArgumentException.php",
+      "type": "interne"
+    },
+    {
+      "de": "src/Platforms/SQLServerPlatform.php",
+      "vers": "src/Exception/InvalidArgumentException.php",
+      "type": "interne"
+    },
+    {
+      "de": "src/Platforms/OraclePlatform.php",
+      "vers": "src/Exception/InvalidArgumentException.php",
+      "type": "interne"
+    },
+    {
+      "de": "src/Platforms/Exception/InvalidPlatformVersion.php",
+      "vers": "src/SQL/Parser/Exception.php",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'src/Exception/InvalidArgumentException.php' (in=5)"
+  ]
+}

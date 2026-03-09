@@ -1,0 +1,1892 @@
+{
+  "meta": {
+    "projet": "komga",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 1,
+      "json": 41,
+      "kotlin": 1,
+      "javascript": 7,
+      "typescript": 55,
+      "vue": 15
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 13,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 2,
+    "noeuds_hubs": 0,
+    "points_entree": 1,
+    "fichier_plus_appele": "komga-webui/src/functions/urls.ts"
+  },
+  "noeuds": {
+    ".svu.yml": {
+      "fichier": ".svu.yml",
+      "langage": "yaml",
+      "lignes": 3,
+      "taille_bytes": 37,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "conventionalcommit.json": {
+      "fichier": "conventionalcommit.json",
+      "langage": "json",
+      "lignes": 69,
+      "taille_bytes": 2024,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.gradle.kts": {
+      "fichier": "build.gradle.kts",
+      "langage": "kotlin",
+      "lignes": 193,
+      "taille_bytes": 5962,
+      "entrees": [
+        "com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask",
+        "kotlin.io.path.Path",
+        "kotlin.io.path.exists",
+        "org.jreleaser.model.Active",
+        "org.jreleaser.model.Distribution.DistributionType.SINGLE_JAR",
+        "org.jreleaser.model.api.common.Apply"
+      ],
+      "sorties": [
+        "fun isNonStable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/.eslintrc.js": {
+      "fichier": "komga-webui/.eslintrc.js",
+      "langage": "javascript",
+      "lignes": 34,
+      "taille_bytes": 815,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/package.json": {
+      "fichier": "komga-webui/package.json",
+      "langage": "json",
+      "lignes": 79,
+      "taille_bytes": 2444,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/babel.config.js": {
+      "fichier": "komga-webui/babel.config.js",
+      "langage": "javascript",
+      "lignes": 5,
+      "taille_bytes": 75,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/jest.config.js": {
+      "fichier": "komga-webui/jest.config.js",
+      "langage": "javascript",
+      "lignes": 3,
+      "taille_bytes": 89,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/tsconfig.json": {
+      "fichier": "komga-webui/tsconfig.json",
+      "langage": "json",
+      "lignes": 42,
+      "taille_bytes": 736,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/postcss.config.js": {
+      "fichier": "komga-webui/postcss.config.js",
+      "langage": "javascript",
+      "lignes": 5,
+      "taille_bytes": 61,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/fork-ts-checker.config.js": {
+      "fichier": "komga-webui/fork-ts-checker.config.js",
+      "langage": "javascript",
+      "lignes": 5,
+      "taille_bytes": 65,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/vue.config.js": {
+      "fichier": "komga-webui/vue.config.js",
+      "langage": "javascript",
+      "lignes": 40,
+      "taille_bytes": 969,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/tests/unit/functions/book-spreads.spec.ts": {
+      "fichier": "komga-webui/tests/unit/functions/book-spreads.spec.ts",
+      "langage": "typescript",
+      "lignes": 143,
+      "taille_bytes": 4176,
+      "entrees": [],
+      "sorties": [
+        "const pageLayout",
+        "const pages",
+        "const spreads"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/tests/unit/functions/toc.spec.ts": {
+      "fichier": "komga-webui/tests/unit/functions/toc.spec.ts",
+      "langage": "typescript",
+      "lignes": 78,
+      "taille_bytes": 2449,
+      "entrees": [],
+      "sorties": [
+        "const flattened",
+        "const initial"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/tests/unit/types/pageLoader.spec.ts": {
+      "fichier": "komga-webui/tests/unit/types/pageLoader.spec.ts",
+      "langage": "typescript",
+      "lignes": 49,
+      "taille_bytes": 1824,
+      "entrees": [],
+      "sorties": [
+        "const loader",
+        "const pageLoader",
+        "const pageRequest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/App.vue": {
+      "fichier": "komga-webui/src/App.vue",
+      "langage": "vue",
+      "lignes": 84,
+      "taille_bytes": 2432,
+      "entrees": [
+        "Vue"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "komga-webui/src/main.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/i18n.ts": {
+      "fichier": "komga-webui/src/i18n.ts",
+      "langage": "typescript",
+      "lignes": 53,
+      "taille_bytes": 1559,
+      "entrees": [
+        "Vue",
+        "VueI18n"
+      ],
+      "sorties": [
+        "const betweenTwoAndFour",
+        "const lessThanTen",
+        "const locale",
+        "const locales",
+        "const matched",
+        "const messages",
+        "const moreThanTwenty",
+        "function loadLocaleMessages"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "komga-webui/src/functions/error-codes.ts",
+        "komga-webui/src/main.ts",
+        "komga-webui/src/views/BrowseBooks.vue",
+        "komga-webui/src/views/BrowseSeries.vue"
+      ],
+      "type_noeud": "feuille"
+    },
+    "komga-webui/src/shims-vue.d.ts": {
+      "fichier": "komga-webui/src/shims-vue.d.ts",
+      "langage": "typescript",
+      "lignes": 4,
+      "taille_bytes": 72,
+      "entrees": [
+        "Vue"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/public-path.js": {
+      "fichier": "komga-webui/src/public-path.js",
+      "langage": "javascript",
+      "lignes": 2,
+      "taille_bytes": 158,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/store.ts": {
+      "fichier": "komga-webui/src/store.ts",
+      "langage": "typescript",
+      "lignes": 300,
+      "taille_bytes": 9185,
+      "entrees": [
+        "Vue",
+        "Vuex",
+        "createPersistedState"
+      ],
+      "sorties": [
+        "const persistedState"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "komga-webui/src/main.ts",
+        "komga-webui/src/router.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/main.ts": {
+      "fichier": "komga-webui/src/main.ts",
+      "langage": "typescript",
+      "lignes": 109,
+      "taille_bytes": 3907,
+      "entrees": [
+        "App",
+        "Chart",
+        "Chartkick",
+        "Vue",
+        "Vuelidate",
+        "actuator",
+        "httpPlugin",
+        "i18n",
+        "komgaAnnouncements",
+        "komgaBooks",
+        "komgaClaim",
+        "komgaCollections",
+        "komgaFileSystem",
+        "komgaFonts",
+        "komgaHistory",
+        "komgaLibraries",
+        "komgaLogin",
+        "komgaMetrics",
+        "komgaOauth2",
+        "komgaPageHashes",
+        "komgaReadLists",
+        "komgaReferential",
+        "komgaReleases",
+        "komgaSeries",
+        "komgaSettings",
+        "komgaSse",
+        "komgaSyncPoints",
+        "komgaTasks",
+        "komgaTransientBooks",
+        "komgaUsers",
+        "logger",
+        "router",
+        "store",
+        "vuetify"
+      ],
+      "sorties": [
+        "interface Vue",
+        "interface Window"
+      ],
+      "appelle": [
+        "komga-webui/src/App.vue",
+        "komga-webui/src/i18n.ts",
+        "komga-webui/src/router.ts",
+        "komga-webui/src/store.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "komga-webui/src/shims-tsx.d.ts": {
+      "fichier": "komga-webui/src/shims-tsx.d.ts",
+      "langage": "typescript",
+      "lignes": 17,
+      "taille_bytes": 316,
+      "entrees": [
+        "Vue"
+      ],
+      "sorties": [
+        "interface Element",
+        "interface ElementClass",
+        "interface IntrinsicElements"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/router.ts": {
+      "fichier": "komga-webui/src/router.ts",
+      "langage": "typescript",
+      "lignes": 340,
+      "taille_bytes": 12374,
+      "entrees": [
+        "Router",
+        "Vue",
+        "store",
+        "urls"
+      ],
+      "sorties": [
+        "const adminGuard",
+        "const getLibraryRoute",
+        "const lStore",
+        "const noLibraryGuard",
+        "const noLibraryNorPinGuard",
+        "const qs",
+        "const query",
+        "const res",
+        "const router"
+      ],
+      "appelle": [
+        "komga-webui/src/functions/urls.ts",
+        "komga-webui/src/store.ts"
+      ],
+      "est_appele_par": [
+        "komga-webui/src/main.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/book-progress.ts": {
+      "fichier": "komga-webui/src/functions/book-progress.ts",
+      "langage": "typescript",
+      "lignes": 23,
+      "taille_bytes": 747,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/urls.ts": {
+      "fichier": "komga-webui/src/functions/urls.ts",
+      "langage": "typescript",
+      "lignes": 94,
+      "taille_bytes": 3521,
+      "entrees": [],
+      "sorties": [
+        "const baseUrl",
+        "const fullUrl",
+        "const urls",
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "komga-webui/src/functions/readium.ts",
+        "komga-webui/src/router.ts",
+        "komga-webui/src/services/komga-sse.service.ts",
+        "komga-webui/src/views/EpubReader.vue",
+        "komga-webui/src/views/LoginView.vue"
+      ],
+      "type_noeud": "feuille"
+    },
+    "komga-webui/src/functions/readium.ts": {
+      "fichier": "komga-webui/src/functions/readium.ts",
+      "langage": "typescript",
+      "lignes": 54,
+      "taille_bytes": 1856,
+      "entrees": [
+        "urls"
+      ],
+      "sorties": [
+        "export function",
+        "function locationsToR2Location",
+        "function locatorToR2Locator"
+      ],
+      "appelle": [
+        "komga-webui/src/functions/urls.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/filter.ts": {
+      "fichier": "komga-webui/src/functions/filter.ts",
+      "langage": "typescript",
+      "lignes": 31,
+      "taille_bytes": 1261,
+      "entrees": [],
+      "sorties": [
+        "const filterCustom",
+        "const sortCustom",
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/book-format.ts": {
+      "fichier": "komga-webui/src/functions/book-format.ts",
+      "langage": "typescript",
+      "lignes": 47,
+      "taille_bytes": 1652,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/query-params.ts": {
+      "fichier": "komga-webui/src/functions/query-params.ts",
+      "langage": "typescript",
+      "lignes": 19,
+      "taille_bytes": 684,
+      "entrees": [],
+      "sorties": [
+        "const sortDirs",
+        "const split",
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/book-title.ts": {
+      "fichier": "komga-webui/src/functions/book-title.ts",
+      "langage": "typescript",
+      "lignes": 10,
+      "taille_bytes": 352,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/file.ts": {
+      "fichier": "komga-webui/src/functions/file.ts",
+      "langage": "typescript",
+      "lignes": 17,
+      "taille_bytes": 482,
+      "entrees": [],
+      "sorties": [
+        "const data",
+        "const filesizePartial",
+        "const response",
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/resize-image.ts": {
+      "fichier": "komga-webui/src/functions/resize-image.ts",
+      "langage": "typescript",
+      "lignes": 45,
+      "taille_bytes": 1428,
+      "entrees": [],
+      "sorties": [
+        "const blob",
+        "const canvas",
+        "const ctx",
+        "const img",
+        "function getCanvasBlob"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/object.ts": {
+      "fichier": "komga-webui/src/functions/object.ts",
+      "langage": "typescript",
+      "lignes": 3,
+      "taille_bytes": 109,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/authors.ts": {
+      "fichier": "komga-webui/src/functions/authors.ts",
+      "langage": "typescript",
+      "lignes": 8,
+      "taille_bytes": 331,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/page.ts": {
+      "fichier": "komga-webui/src/functions/page.ts",
+      "langage": "typescript",
+      "lignes": 5,
+      "taille_bytes": 149,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/string.ts": {
+      "fichier": "komga-webui/src/functions/string.ts",
+      "langage": "typescript",
+      "lignes": 3,
+      "taille_bytes": 111,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/grid-utilities.ts": {
+      "fichier": "komga-webui/src/functions/grid-utilities.ts",
+      "langage": "typescript",
+      "lignes": 8,
+      "taille_bytes": 225,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/check-image.ts": {
+      "fichier": "komga-webui/src/functions/check-image.ts",
+      "langage": "typescript",
+      "lignes": 38,
+      "taille_bytes": 1728,
+      "entrees": [],
+      "sorties": [
+        "const img",
+        "export enum",
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/book-spreads.ts": {
+      "fichier": "komga-webui/src/functions/book-spreads.ts",
+      "langage": "typescript",
+      "lignes": 71,
+      "taille_bytes": 2233,
+      "entrees": [],
+      "sorties": [
+        "const canvas",
+        "const ctx",
+        "const firstPage",
+        "const lastPage",
+        "const p2",
+        "const pagesClone",
+        "const spreads",
+        "export function",
+        "function createEmptyPage",
+        "function createTransparentDataUrl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/error-codes.ts": {
+      "fichier": "komga-webui/src/functions/error-codes.ts",
+      "langage": "typescript",
+      "lignes": 10,
+      "taille_bytes": 260,
+      "entrees": [
+        "i18n"
+      ],
+      "sorties": [
+        "const match",
+        "export function"
+      ],
+      "appelle": [
+        "komga-webui/src/i18n.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/toc.ts": {
+      "fichier": "komga-webui/src/functions/toc.ts",
+      "langage": "typescript",
+      "lignes": 24,
+      "taille_bytes": 726,
+      "entrees": [],
+      "sorties": [
+        "const children",
+        "const flat",
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/shortcuts/paged-reader.ts": {
+      "fichier": "komga-webui/src/functions/shortcuts/paged-reader.ts",
+      "langage": "typescript",
+      "lignes": 40,
+      "taille_bytes": 1029,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/shortcuts/epubreader.ts": {
+      "fichier": "komga-webui/src/functions/shortcuts/epubreader.ts",
+      "langage": "typescript",
+      "lignes": 70,
+      "taille_bytes": 1996,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/shortcuts/reader.ts": {
+      "fichier": "komga-webui/src/functions/shortcuts/reader.ts",
+      "langage": "typescript",
+      "lignes": 12,
+      "taille_bytes": 289,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/shortcuts/continuous-reader.ts": {
+      "fichier": "komga-webui/src/functions/shortcuts/continuous-reader.ts",
+      "langage": "typescript",
+      "lignes": 10,
+      "taille_bytes": 311,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/functions/shortcuts/bookreader.ts": {
+      "fichier": "komga-webui/src/functions/shortcuts/bookreader.ts",
+      "langage": "typescript",
+      "lignes": 41,
+      "taille_bytes": 1419,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/zh-Hant.json": {
+      "fichier": "komga-webui/src/locales/zh-Hant.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 41435,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/ru.json": {
+      "fichier": "komga-webui/src/locales/ru.json",
+      "langage": "json",
+      "lignes": 978,
+      "taille_bytes": 55514,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/nl.json": {
+      "fichier": "komga-webui/src/locales/nl.json",
+      "langage": "json",
+      "lignes": 1061,
+      "taille_bytes": 43266,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/vi.json": {
+      "fichier": "komga-webui/src/locales/vi.json",
+      "langage": "json",
+      "lignes": 818,
+      "taille_bytes": 36604,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/hr.json": {
+      "fichier": "komga-webui/src/locales/hr.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 44818,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/sv.json": {
+      "fichier": "komga-webui/src/locales/sv.json",
+      "langage": "json",
+      "lignes": 995,
+      "taille_bytes": 39215,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/de.json": {
+      "fichier": "komga-webui/src/locales/de.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 46708,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/ti.json": {
+      "fichier": "komga-webui/src/locales/ti.json",
+      "langage": "json",
+      "lignes": 15,
+      "taille_bytes": 315,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/ja.json": {
+      "fichier": "komga-webui/src/locales/ja.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 50502,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/tr.json": {
+      "fichier": "komga-webui/src/locales/tr.json",
+      "langage": "json",
+      "lignes": 1036,
+      "taille_bytes": 42703,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/id.json": {
+      "fichier": "komga-webui/src/locales/id.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 43797,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/he.json": {
+      "fichier": "komga-webui/src/locales/he.json",
+      "langage": "json",
+      "lignes": 159,
+      "taille_bytes": 6979,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/th.json": {
+      "fichier": "komga-webui/src/locales/th.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 71320,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/el.json": {
+      "fichier": "komga-webui/src/locales/el.json",
+      "langage": "json",
+      "lignes": 216,
+      "taille_bytes": 10831,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/eo.json": {
+      "fichier": "komga-webui/src/locales/eo.json",
+      "langage": "json",
+      "lignes": 754,
+      "taille_bytes": 29078,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/fa.json": {
+      "fichier": "komga-webui/src/locales/fa.json",
+      "langage": "json",
+      "lignes": 818,
+      "taille_bytes": 41867,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/bg.json": {
+      "fichier": "komga-webui/src/locales/bg.json",
+      "langage": "json",
+      "lignes": 946,
+      "taille_bytes": 54165,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/it.json": {
+      "fichier": "komga-webui/src/locales/it.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 45496,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/uk.json": {
+      "fichier": "komga-webui/src/locales/uk.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 60560,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/ca.json": {
+      "fichier": "komga-webui/src/locales/ca.json",
+      "langage": "json",
+      "lignes": 973,
+      "taille_bytes": 41248,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/cs.json": {
+      "fichier": "komga-webui/src/locales/cs.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 45033,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/sl.json": {
+      "fichier": "komga-webui/src/locales/sl.json",
+      "langage": "json",
+      "lignes": 223,
+      "taille_bytes": 8141,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/fi.json": {
+      "fichier": "komga-webui/src/locales/fi.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 44736,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/pt-BR.json": {
+      "fichier": "komga-webui/src/locales/pt-BR.json",
+      "langage": "json",
+      "lignes": 882,
+      "taille_bytes": 36677,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/sk.json": {
+      "fichier": "komga-webui/src/locales/sk.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 46350,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/es.json": {
+      "fichier": "komga-webui/src/locales/es.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 46197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/ar.json": {
+      "fichier": "komga-webui/src/locales/ar.json",
+      "langage": "json",
+      "lignes": 1018,
+      "taille_bytes": 48034,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/nb.json": {
+      "fichier": "komga-webui/src/locales/nb.json",
+      "langage": "json",
+      "lignes": 976,
+      "taille_bytes": 38379,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/ko.json": {
+      "fichier": "komga-webui/src/locales/ko.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 45918,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/gl.json": {
+      "fichier": "komga-webui/src/locales/gl.json",
+      "langage": "json",
+      "lignes": 262,
+      "taille_bytes": 10012,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/en.json": {
+      "fichier": "komga-webui/src/locales/en.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 41873,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/ta.json": {
+      "fichier": "komga-webui/src/locales/ta.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 84889,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/hu.json": {
+      "fichier": "komga-webui/src/locales/hu.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 47504,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/pt.json": {
+      "fichier": "komga-webui/src/locales/pt.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 46191,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/fr.json": {
+      "fichier": "komga-webui/src/locales/fr.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 47821,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/pl.json": {
+      "fichier": "komga-webui/src/locales/pl.json",
+      "langage": "json",
+      "lignes": 1040,
+      "taille_bytes": 43041,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/da.json": {
+      "fichier": "komga-webui/src/locales/da.json",
+      "langage": "json",
+      "lignes": 914,
+      "taille_bytes": 36362,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/locales/zh-Hans.json": {
+      "fichier": "komga-webui/src/locales/zh-Hans.json",
+      "langage": "json",
+      "lignes": 1092,
+      "taille_bytes": 41311,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-transientbooks.service.ts": {
+      "fichier": "komga-webui/src/services/komga-transientbooks.service.ts",
+      "langage": "typescript",
+      "lignes": 36,
+      "taille_bytes": 1036,
+      "entrees": [],
+      "sorties": [
+        "const API_TRANSIENT_BOOKS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-readlists.service.ts": {
+      "fichier": "komga-webui/src/services/komga-readlists.service.ts",
+      "langage": "typescript",
+      "lignes": 204,
+      "taille_bytes": 6617,
+      "entrees": [],
+      "sorties": [
+        "const API_READLISTS",
+        "const body",
+        "const formData",
+        "const params",
+        "const qs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-login.service.ts": {
+      "fichier": "komga-webui/src/services/komga-login.service.ts",
+      "langage": "typescript",
+      "lignes": 25,
+      "taille_bytes": 607,
+      "entrees": [],
+      "sorties": [
+        "const API_LOGIN"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-sse.service.ts": {
+      "fichier": "komga-webui/src/services/komga-sse.service.ts",
+      "langage": "typescript",
+      "lignes": 120,
+      "taille_bytes": 5141,
+      "entrees": [
+        "Vue",
+        "urls"
+      ],
+      "sorties": [
+        "const API_SSE",
+        "const data"
+      ],
+      "appelle": [
+        "komga-webui/src/functions/urls.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-books.service.ts": {
+      "fichier": "komga-webui/src/services/komga-books.service.ts",
+      "langage": "typescript",
+      "lignes": 321,
+      "taille_bytes": 9720,
+      "entrees": [],
+      "sorties": [
+        "const API_BOOKS",
+        "const body",
+        "const params",
+        "const qs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-announcements.service.ts": {
+      "fichier": "komga-webui/src/services/komga-announcements.service.ts",
+      "langage": "typescript",
+      "lignes": 36,
+      "taille_bytes": 977,
+      "entrees": [],
+      "sorties": [
+        "const API_ANNOUNCEMENTS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-users.service.ts": {
+      "fichier": "komga-webui/src/services/komga-users.service.ts",
+      "langage": "typescript",
+      "lignes": 218,
+      "taille_bytes": 6265,
+      "entrees": [],
+      "sorties": [
+        "const API_USERS",
+        "const params",
+        "const qs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/actuator.service.ts": {
+      "fichier": "komga-webui/src/services/actuator.service.ts",
+      "langage": "typescript",
+      "lignes": 39,
+      "taille_bytes": 916,
+      "entrees": [],
+      "sorties": [
+        "const API_ACTUATOR"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-fonts.service.ts": {
+      "fichier": "komga-webui/src/services/komga-fonts.service.ts",
+      "langage": "typescript",
+      "lignes": 23,
+      "taille_bytes": 548,
+      "entrees": [],
+      "sorties": [
+        "const API_FONTS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-pagehashes.service.ts": {
+      "fichier": "komga-webui/src/services/komga-pagehashes.service.ts",
+      "langage": "typescript",
+      "lignes": 103,
+      "taille_bytes": 3213,
+      "entrees": [],
+      "sorties": [
+        "const API_PAGE_HASH",
+        "const params",
+        "const qs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-collections.service.ts": {
+      "fichier": "komga-webui/src/services/komga-collections.service.ts",
+      "langage": "typescript",
+      "lignes": 165,
+      "taille_bytes": 5832,
+      "entrees": [],
+      "sorties": [
+        "const API_COLLECTIONS",
+        "const body",
+        "const params",
+        "const qs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-series.service.ts": {
+      "fichier": "komga-webui/src/services/komga-series.service.ts",
+      "langage": "typescript",
+      "lignes": 225,
+      "taille_bytes": 7339,
+      "entrees": [],
+      "sorties": [
+        "const API_SERIES",
+        "const body",
+        "const params",
+        "const qs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-claim.service.ts": {
+      "fichier": "komga-webui/src/services/komga-claim.service.ts",
+      "langage": "typescript",
+      "lignes": 41,
+      "taille_bytes": 1049,
+      "entrees": [],
+      "sorties": [
+        "const API_CLAIM"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-filesystem.service.ts": {
+      "fichier": "komga-webui/src/services/komga-filesystem.service.ts",
+      "langage": "typescript",
+      "lignes": 26,
+      "taille_bytes": 694,
+      "entrees": [],
+      "sorties": [
+        "const API_FILESYSTEM"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-releases.service.ts": {
+      "fichier": "komga-webui/src/services/komga-releases.service.ts",
+      "langage": "typescript",
+      "lignes": 23,
+      "taille_bytes": 543,
+      "entrees": [],
+      "sorties": [
+        "const API_RELEASES"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-history.service.ts": {
+      "fichier": "komga-webui/src/services/komga-history.service.ts",
+      "langage": "typescript",
+      "lignes": 29,
+      "taille_bytes": 781,
+      "entrees": [],
+      "sorties": [
+        "const API_HISTORY",
+        "const qs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-tasks.service.ts": {
+      "fichier": "komga-webui/src/services/komga-tasks.service.ts",
+      "langage": "typescript",
+      "lignes": 23,
+      "taille_bytes": 532,
+      "entrees": [],
+      "sorties": [
+        "const API_TASKS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-settings.service.ts": {
+      "fichier": "komga-webui/src/services/komga-settings.service.ts",
+      "langage": "typescript",
+      "lignes": 98,
+      "taille_bytes": 3071,
+      "entrees": [],
+      "sorties": [
+        "const API_CLIENT_SETTINGS",
+        "const API_SETTINGS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-referential.service.ts": {
+      "fichier": "komga-webui/src/services/komga-referential.service.ts",
+      "langage": "typescript",
+      "lignes": 230,
+      "taille_bytes": 7560,
+      "entrees": [],
+      "sorties": [
+        "const data",
+        "const name",
+        "const params",
+        "const qs",
+        "const ret",
+        "const tag",
+        "const tags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-syncpoints.service.ts": {
+      "fichier": "komga-webui/src/services/komga-syncpoints.service.ts",
+      "langage": "typescript",
+      "lignes": 29,
+      "taille_bytes": 677,
+      "entrees": [],
+      "sorties": [
+        "const API_SYNCPOINTS",
+        "const qs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-oauth2.service.ts": {
+      "fichier": "komga-webui/src/services/komga-oauth2.service.ts",
+      "langage": "typescript",
+      "lignes": 24,
+      "taille_bytes": 619,
+      "entrees": [],
+      "sorties": [
+        "const API_OAUTH2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-libraries.service.ts": {
+      "fichier": "komga-webui/src/services/komga-libraries.service.ts",
+      "langage": "typescript",
+      "lignes": 122,
+      "taille_bytes": 3637,
+      "entrees": [],
+      "sorties": [
+        "const API_LIBRARIES"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/services/komga-metrics.service.ts": {
+      "fichier": "komga-webui/src/services/komga-metrics.service.ts",
+      "langage": "typescript",
+      "lignes": 36,
+      "taille_bytes": 995,
+      "entrees": [],
+      "sorties": [
+        "const API_METRICS",
+        "const params",
+        "const qs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/ImportBooks.vue": {
+      "fichier": "komga-webui/src/views/ImportBooks.vue",
+      "langage": "vue",
+      "lignes": 197,
+      "taille_bytes": 6142,
+      "entrees": [
+        "EmptyState",
+        "FileBrowserDialog",
+        "FileImportRow",
+        "SeriesPickerDialog",
+        "Vue"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/UISettings.vue": {
+      "fichier": "komga-webui/src/views/UISettings.vue",
+      "langage": "vue",
+      "lignes": 144,
+      "taille_bytes": 4366,
+      "entrees": [
+        "Vue"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/BrowseCollections.vue": {
+      "fichier": "komga-webui/src/views/BrowseCollections.vue",
+      "langage": "vue",
+      "lignes": 257,
+      "taille_bytes": 7673,
+      "entrees": [
+        "ItemBrowser",
+        "LibraryActionsMenu",
+        "LibraryNavigation",
+        "MultiSelectBar",
+        "PageSizeSelect",
+        "ToolbarSticky",
+        "Vue"
+      ],
+      "sorties": [
+        "const collectionsPage",
+        "const lib",
+        "const pageRequest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/LoginView.vue": {
+      "fichier": "komga-webui/src/views/LoginView.vue",
+      "langage": "vue",
+      "lignes": 344,
+      "taille_bytes": 10058,
+      "entrees": [
+        "Vue",
+        "urls"
+      ],
+      "sorties": [
+        "const errors",
+        "const field",
+        "const height",
+        "const url",
+        "const width"
+      ],
+      "appelle": [
+        "komga-webui/src/functions/urls.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/BrowseBook.vue": {
+      "fichier": "komga-webui/src/views/BrowseBook.vue",
+      "langage": "vue",
+      "lignes": 707,
+      "taille_bytes": 26558,
+      "entrees": [
+        "BookActionsMenu",
+        "ItemCard",
+        "ReadListsExpansionPanels",
+        "ReadMore",
+        "RtlIcon",
+        "ToolbarSticky",
+        "Vue",
+        "VueHorizontal"
+      ],
+      "sorties": [
+        "const allRoles",
+        "const modified",
+        "const rl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/WelcomeView.vue": {
+      "fichier": "komga-webui/src/views/WelcomeView.vue",
+      "langage": "vue",
+      "lignes": 50,
+      "taille_bytes": 1165,
+      "entrees": [
+        "Vue"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/DashboardView.vue": {
+      "fichier": "komga-webui/src/views/DashboardView.vue",
+      "langage": "vue",
+      "lignes": 592,
+      "taille_bytes": 23455,
+      "entrees": [
+        "EditRecommendedDialog",
+        "EmptyState",
+        "HorizontalScroller",
+        "ItemBrowser",
+        "LibraryActionsMenu",
+        "LibraryNavigation",
+        "MultiSelectBar",
+        "ToolbarSticky",
+        "Vue"
+      ],
+      "sorties": [
+        "const baseBookConditions",
+        "const books",
+        "const conditions",
+        "const config",
+        "const oneshots",
+        "const requestLibraries",
+        "const sections",
+        "const series",
+        "enum SectionType",
+        "interface SectionConfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/BrowseBooks.vue": {
+      "fichier": "komga-webui/src/views/BrowseBooks.vue",
+      "langage": "vue",
+      "lignes": 678,
+      "taille_bytes": 25499,
+      "entrees": [
+        "EmptyState",
+        "FilterDrawer",
+        "FilterList",
+        "FilterPanels",
+        "ItemBrowser",
+        "LibraryActionsMenu",
+        "LibraryNavigation",
+        "MultiSelectBar",
+        "PageSizeSelect",
+        "SortList",
+        "ToolbarSticky",
+        "Vue",
+        "i18n"
+      ],
+      "sorties": [
+        "const authorConditions",
+        "const booksPage",
+        "const conditions",
+        "const loc",
+        "const pageRequest",
+        "const requestLibraryIds",
+        "const validFilter",
+        "const validFilterMode"
+      ],
+      "appelle": [
+        "komga-webui/src/i18n.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/HistoryView.vue": {
+      "fichier": "komga-webui/src/views/HistoryView.vue",
+      "langage": "vue",
+      "lignes": 222,
+      "taille_bytes": 7015,
+      "entrees": [
+        "Vue"
+      ],
+      "sorties": [
+        "const itemsPage",
+        "const pageRequest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/BrowseOneshot.vue": {
+      "fichier": "komga-webui/src/views/BrowseOneshot.vue",
+      "langage": "vue",
+      "lignes": 874,
+      "taille_bytes": 33431,
+      "entrees": [
+        "CollectionsExpansionPanels",
+        "ItemCard",
+        "OneshotActionsMenu",
+        "ReadListsExpansionPanels",
+        "ReadMore",
+        "RtlIcon",
+        "ToolbarSticky",
+        "Vue",
+        "VueHorizontal"
+      ],
+      "sorties": [
+        "const allRoles",
+        "const col",
+        "const modified",
+        "const rl",
+        "const tags"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/EpubReader.vue": {
+      "fichier": "komga-webui/src/views/EpubReader.vue",
+      "langage": "vue",
+      "lignes": 1017,
+      "taille_bytes": 35071,
+      "entrees": [
+        "D2Reader",
+        "SettingsSelect",
+        "SettingsSwitch",
+        "ShortcutHelpDialog",
+        "TocList",
+        "Vue",
+        "screenfull",
+        "urls"
+      ],
+      "sorties": [
+        "const fontFamiliesInjectables",
+        "const iframe",
+        "const iframeWrapper",
+        "const initialLocation",
+        "const newValue",
+        "const progression",
+        "const rect",
+        "const scaleComputed",
+        "const shortcuts",
+        "const text",
+        "const url"
+      ],
+      "appelle": [
+        "komga-webui/src/functions/urls.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/BrowseSeries.vue": {
+      "fichier": "komga-webui/src/views/BrowseSeries.vue",
+      "langage": "vue",
+      "lignes": 1135,
+      "taille_bytes": 42544,
+      "entrees": [
+        "CollectionsExpansionPanels",
+        "EmptyState",
+        "FilterDrawer",
+        "FilterList",
+        "FilterPanels",
+        "ItemBrowser",
+        "ItemCard",
+        "MultiSelectBar",
+        "PageSizeSelect",
+        "ReadMore",
+        "RtlIcon",
+        "SeriesActionsMenu",
+        "SortList",
+        "ToolbarSticky",
+        "Vue",
+        "VueHorizontal",
+        "i18n"
+      ],
+      "sorties": [
+        "const authorConditions",
+        "const booksPage",
+        "const col",
+        "const conditions",
+        "const loc",
+        "const modified",
+        "const pageRequest",
+        "const tags",
+        "const validFilter",
+        "const validFilterMode"
+      ],
+      "appelle": [
+        "komga-webui/src/i18n.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/SearchView.vue": {
+      "fichier": "komga-webui/src/views/SearchView.vue",
+      "langage": "vue",
+      "lignes": 466,
+      "taille_bytes": 17848,
+      "entrees": [
+        "EmptyState",
+        "HorizontalScroller",
+        "ItemBrowser",
+        "MultiSelectBar",
+        "ToolbarSticky",
+        "Vue"
+      ],
+      "sorties": [
+        "const book",
+        "const books",
+        "const conditions",
+        "const oneshots",
+        "const series"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "komga-webui/src/views/NoPinnedLibraries.vue": {
+      "fichier": "komga-webui/src/views/NoPinnedLibraries.vue",
+      "langage": "vue",
+      "lignes": 35,
+      "taille_bytes": 721,
+      "entrees": [
+        "EmptyState",
+        "Vue"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "komga-webui/src/main.ts",
+      "vers": "komga-webui/src/App.vue",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/main.ts",
+      "vers": "komga-webui/src/i18n.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/main.ts",
+      "vers": "komga-webui/src/router.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/main.ts",
+      "vers": "komga-webui/src/store.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/router.ts",
+      "vers": "komga-webui/src/functions/urls.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/router.ts",
+      "vers": "komga-webui/src/store.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/functions/readium.ts",
+      "vers": "komga-webui/src/functions/urls.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/functions/error-codes.ts",
+      "vers": "komga-webui/src/i18n.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/services/komga-sse.service.ts",
+      "vers": "komga-webui/src/functions/urls.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/views/LoginView.vue",
+      "vers": "komga-webui/src/functions/urls.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/views/BrowseBooks.vue",
+      "vers": "komga-webui/src/i18n.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/views/EpubReader.vue",
+      "vers": "komga-webui/src/functions/urls.ts",
+      "type": "interne"
+    },
+    {
+      "de": "komga-webui/src/views/BrowseSeries.vue",
+      "vers": "komga-webui/src/i18n.ts",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'komga-webui/src/i18n.ts' (in=4)",
+    "point_entree → 'komga-webui/src/main.ts'",
+    "feuille → 'komga-webui/src/functions/urls.ts' (in=5)"
+  ]
+}

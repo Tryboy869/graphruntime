@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "projet": "ex_machina",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "elixir": 29
+    }
+  },
+  "stats": {
+    "fichiers_total": 29,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".credo.exs"
+  },
+  "noeuds": {
+    ".credo.exs": {
+      "fichier": ".credo.exs",
+      "langage": "elixir",
+      "lignes": 180,
+      "taille_bytes": 7409,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "mix.exs": {
+      "fichier": "mix.exs",
+      "langage": "elixir",
+      "lignes": 69,
+      "taille_bytes": 1850,
+      "entrees": [
+        "Mix.Project"
+      ],
+      "sorties": [
+        "def application",
+        "def project",
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".formatter.exs": {
+      "fichier": ".formatter.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 240,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/test_repo/migrations/1_migrate_all.exs": {
+      "fichier": "priv/test_repo/migrations/1_migrate_all.exs",
+      "langage": "elixir",
+      "lignes": 52,
+      "taille_bytes": 1098,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/test_helper.exs": {
+      "fichier": "test/test_helper.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 300,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ex_machina_test.exs": {
+      "fichier": "test/ex_machina_test.exs",
+      "langage": "elixir",
+      "lignes": 245,
+      "taille_bytes": 6693,
+      "entrees": [
+        "ExMachina",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def account_factory",
+        "def admin_account_factory",
+        "def article_factory",
+        "def comment_factory",
+        "def email_factory",
+        "def foo_bar_factory",
+        "def money_factory",
+        "def profile_factory",
+        "def room_number_factory",
+        "def user_factory",
+        "defmodule ExMachinaTest",
+        "defmodule Factory",
+        "defmodule FooBar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ex_machina/ecto_test.exs": {
+      "fichier": "test/ex_machina/ecto_test.exs",
+      "langage": "elixir",
+      "lignes": 329,
+      "taille_bytes": 11081,
+      "entrees": [
+        "ExMachina.Ecto",
+        "ExMachina.EctoCase"
+      ],
+      "sorties": [
+        "def user_factory",
+        "defmodule ExMachina",
+        "defmodule NoRepoTestFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ex_machina/ecto_strategy_test.exs": {
+      "fichier": "test/ex_machina/ecto_strategy_test.exs",
+      "langage": "elixir",
+      "lignes": 206,
+      "taille_bytes": 6405,
+      "entrees": [
+        "ExMachina.EctoCase",
+        "ExMachina.EctoStrategy"
+      ],
+      "sorties": [
+        "def whatever_factory",
+        "defmodule ExMachina",
+        "defmodule FactoryWithNoRepo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ex_machina/strategy_test.exs": {
+      "fichier": "test/ex_machina/strategy_test.exs",
+      "langage": "elixir",
+      "lignes": 83,
+      "taille_bytes": 3317,
+      "entrees": [
+        "ExMachina",
+        "ExMachina.Strategy",
+        "ExUnit.Case",
+        "FakeJsonStrategy"
+      ],
+      "sorties": [
+        "def handle_json_encode",
+        "def user_factory",
+        "defmodule ExMachina",
+        "defmodule FakeJsonStrategy",
+        "defmodule JsonFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ex_machina/sequence_test.exs": {
+      "fichier": "test/ex_machina/sequence_test.exs",
+      "langage": "elixir",
+      "lignes": 72,
+      "taille_bytes": 2110,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/ecto_case.ex": {
+      "fichier": "test/support/ecto_case.ex",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 145,
+      "entrees": [
+        "ExUnit.CaseTemplate"
+      ],
+      "sorties": [
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/test_repo.ex": {
+      "fichier": "test/support/test_repo.ex",
+      "langage": "elixir",
+      "lignes": 5,
+      "taille_bytes": 115,
+      "entrees": [
+        "Ecto.Repo"
+      ],
+      "sorties": [
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/test_factory.ex": {
+      "fichier": "test/support/test_factory.ex",
+      "langage": "elixir",
+      "lignes": 48,
+      "taille_bytes": 816,
+      "entrees": [
+        "ExMachina.Ecto"
+      ],
+      "sorties": [
+        "def article_factory",
+        "def comment_with_embedded_assocs_factory",
+        "def custom_factory",
+        "def invalid_cast_factory",
+        "def publisher_factory",
+        "def user_factory",
+        "def user_map_factory",
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/models/custom.ex": {
+      "fichier": "test/support/models/custom.ex",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 160,
+      "entrees": [
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/models/money.ex": {
+      "fichier": "test/support/models/money.ex",
+      "langage": "elixir",
+      "lignes": 3,
+      "taille_bytes": 45,
+      "entrees": [],
+      "sorties": [
+        "defmodule Money"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/models/invalid_cast.ex": {
+      "fichier": "test/support/models/invalid_cast.ex",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 135,
+      "entrees": [
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/models/article.ex": {
+      "fichier": "test/support/models/article.ex",
+      "langage": "elixir",
+      "lignes": 14,
+      "taille_bytes": 351,
+      "entrees": [
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/models/comment.ex": {
+      "fichier": "test/support/models/comment.ex",
+      "langage": "elixir",
+      "lignes": 37,
+      "taille_bytes": 646,
+      "entrees": [
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/models/publisher.ex": {
+      "fichier": "test/support/models/publisher.ex",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 119,
+      "entrees": [
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/models/invalid_type.ex": {
+      "fichier": "test/support/models/invalid_type.ex",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 228,
+      "entrees": [],
+      "sorties": [
+        "def cast",
+        "def dump",
+        "def embed_as",
+        "def equal",
+        "def load",
+        "def type",
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/models/user.ex": {
+      "fichier": "test/support/models/user.ex",
+      "langage": "elixir",
+      "lignes": 15,
+      "taille_bytes": 432,
+      "entrees": [
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/config.exs": {
+      "fichier": "config/config.exs",
+      "langage": "elixir",
+      "lignes": 34,
+      "taille_bytes": 1586,
+      "entrees": [
+        "Config"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/test.exs": {
+      "fichier": "config/test.exs",
+      "langage": "elixir",
+      "lignes": 13,
+      "taille_bytes": 284,
+      "entrees": [
+        "Config"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ex_machina.ex": {
+      "fichier": "lib/ex_machina.ex",
+      "langage": "elixir",
+      "lignes": 365,
+      "taille_bytes": 10725,
+      "entrees": [
+        "Application",
+        "ExMachina"
+      ],
+      "sorties": [
+        "def article_factory",
+        "def author_factory",
+        "def build",
+        "def build_list",
+        "def build_pair",
+        "def create",
+        "def create_list",
+        "def create_pair",
+        "def evaluate_lazy_attributes",
+        "def factory",
+        "def merge_attributes",
+        "def sequence",
+        "def start",
+        "def user_factory",
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ex_machina/strategy.ex": {
+      "fichier": "lib/ex_machina/strategy.ex",
+      "langage": "elixir",
+      "lignes": 203,
+      "taille_bytes": 6963,
+      "entrees": [
+        "ExMachina",
+        "ExMachina.Strategy",
+        "MyApp.JsonEncodeStrategy"
+      ],
+      "sorties": [
+        "def function_name",
+        "def handle_json_encode",
+        "def name_from_struct",
+        "def unquote",
+        "def user_factory",
+        "defmodule ExMachina",
+        "defmodule MyApp",
+        "type of"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ex_machina/ecto_strategy.ex": {
+      "fichier": "lib/ex_machina/ecto_strategy.ex",
+      "langage": "elixir",
+      "lignes": 153,
+      "taille_bytes": 4077,
+      "entrees": [
+        "ExMachina.Ecto",
+        "ExMachina.Strategy"
+      ],
+      "sorties": [
+        "def handle_insert",
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ex_machina/ecto.ex": {
+      "fichier": "lib/ex_machina/ecto.ex",
+      "langage": "elixir",
+      "lignes": 380,
+      "taille_bytes": 11904,
+      "entrees": [
+        "ExMachina",
+        "ExMachina.EctoStrategy"
+      ],
+      "sorties": [
+        "def article_factory",
+        "def drop_ecto_fields",
+        "def params_for",
+        "def params_with_assocs",
+        "def string_params_for",
+        "def string_params_with_assocs",
+        "def user_factory",
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ex_machina/sequence.ex": {
+      "fichier": "lib/ex_machina/sequence.ex",
+      "langage": "elixir",
+      "lignes": 129,
+      "taille_bytes": 3512,
+      "entrees": [
+        "Agent"
+      ],
+      "sorties": [
+        "def next",
+        "def reset",
+        "def start_link",
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ex_machina/undefined_factory_error.ex": {
+      "fichier": "lib/ex_machina/undefined_factory_error.ex",
+      "langage": "elixir",
+      "lignes": 21,
+      "taille_bytes": 446,
+      "entrees": [],
+      "sorties": [
+        "def exception",
+        "defmodule ExMachina"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

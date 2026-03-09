@@ -1,0 +1,1994 @@
+{
+  "meta": {
+    "projet": "asciinema-server",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "elixir": 111,
+      "toml": 4,
+      "rust": 3,
+      "shell": 1,
+      "javascript": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".iex.exs"
+  },
+  "noeuds": {
+    ".iex.exs": {
+      "fichier": ".iex.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 289,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "mix.exs": {
+      "fichier": "mix.exs",
+      "langage": "elixir",
+      "lignes": 117,
+      "taille_bytes": 3572,
+      "entrees": [
+        "Mix.Project"
+      ],
+      "sorties": [
+        "def application",
+        "def project",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".formatter.exs": {
+      "fichier": ".formatter.exs",
+      "langage": "elixir",
+      "lignes": 6,
+      "taille_bytes": 225,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "native/Cargo.toml": {
+      "fichier": "native/Cargo.toml",
+      "langage": "toml",
+      "lignes": 4,
+      "taille_bytes": 66,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "native/svg_raster/Cargo.toml": {
+      "fichier": "native/svg_raster/Cargo.toml",
+      "langage": "toml",
+      "lignes": 13,
+      "taille_bytes": 245,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "native/svg_raster/src/lib.rs": {
+      "fichier": "native/svg_raster/src/lib.rs",
+      "langage": "rust",
+      "lignes": 538,
+      "taille_bytes": 14955,
+      "entrees": [
+        "crc32fast::Hasher",
+        "flate2::Compression",
+        "flate2::write::ZlibEncoder",
+        "rustler::",
+        "rustler::types::binary::",
+        "std::io::Write"
+      ],
+      "sorties": [
+        "const CELL_X_RES",
+        "const CELL_Y_RES",
+        "const MAX_TERM_COLS",
+        "const MAX_TERM_ROWS",
+        "const PNG_SIGNATURE",
+        "fn append_chunk",
+        "fn draw_mosaic_block",
+        "fn encode_png_rgb8",
+        "fn fill_cell_quadrants",
+        "fn fill_cell_rect",
+        "fn fill_cell_sextants",
+        "fn fill_rect",
+        "fn render_png",
+        "fn sextant_mask",
+        "type BgRun",
+        "type MosaicBlock",
+        "type Rgb8"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "native/fts/Cargo.toml": {
+      "fichier": "native/fts/Cargo.toml",
+      "langage": "toml",
+      "lignes": 13,
+      "taille_bytes": 172,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "native/fts/src/lib.rs": {
+      "fichier": "native/fts/src/lib.rs",
+      "langage": "rust",
+      "lignes": 322,
+      "taille_bytes": 9627,
+      "entrees": [
+        "avt::",
+        "avt::parser::",
+        "avt::terminal::Terminal",
+        "avt::util::TextUnwrapper",
+        "indexmap::IndexSet",
+        "rustler::",
+        "std::collections::HashMap",
+        "std::str",
+        "std::sync::RwLock"
+      ],
+      "sorties": [
+        "const MAX_TEXT_LEN",
+        "fn convert_err",
+        "fn drain",
+        "fn dump",
+        "fn extend",
+        "fn feed",
+        "fn insert",
+        "fn load",
+        "fn new",
+        "fn resize",
+        "fn split_words",
+        "fn take",
+        "pub struct FtsResource",
+        "struct CappedIndexSet",
+        "struct CappedString",
+        "struct Fts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "native/vt/Cargo.toml": {
+      "fichier": "native/vt/Cargo.toml",
+      "langage": "toml",
+      "lignes": 12,
+      "taille_bytes": 151,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "native/vt/src/lib.rs": {
+      "fichier": "native/vt/src/lib.rs",
+      "langage": "rust",
+      "lignes": 189,
+      "taille_bytes": 4644,
+      "entrees": [
+        "avt::Vt",
+        "rustler::",
+        "std::str",
+        "std::sync::RwLock"
+      ],
+      "sorties": [
+        "fn chunk_to_term",
+        "fn convert_err",
+        "fn dump",
+        "fn dump_screen",
+        "fn feed",
+        "fn line_to_terms",
+        "fn load",
+        "fn new",
+        "fn resize",
+        "fn text",
+        "pub struct VtResource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/svg2png.sh": {
+      "fichier": "priv/svg2png.sh",
+      "langage": "shell",
+      "lignes": 29,
+      "taille_bytes": 583,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/seeds.exs": {
+      "fichier": "priv/repo/seeds.exs",
+      "langage": "elixir",
+      "lignes": 14,
+      "taille_bytes": 458,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250218201917_add_stream_id_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20250218201917_add_stream_id_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 239,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240217154250_add_terminal_font_family_to_users.exs": {
+      "fichier": "priv/repo/migrations/20240217154250_add_terminal_font_family_to_users.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 192,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20251125160250_add_timezone_to_users.exs": {
+      "fichier": "priv/repo/migrations/20251125160250_add_timezone_to_users.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 170,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20180514074835_fix_uniq_index_on_username.exs": {
+      "fichier": "priv/repo/migrations/20180514074835_fix_uniq_index_on_username.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 267,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20260119095945_create_asciicast_stats.exs": {
+      "fichier": "priv/repo/migrations/20260119095945_create_asciicast_stats.exs",
+      "langage": "elixir",
+      "lignes": 68,
+      "taille_bytes": 2185,
+      "entrees": [
+        "Ecto.Migration",
+        "asciicast_stats",
+        "asciicasts"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20251105115035_upgrade_oban_jobs_to_v13.exs": {
+      "fichier": "priv/repo/migrations/20251105115035_upgrade_oban_jobs_to_v13.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 183,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20251029213630_add_fts_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20251029213630_add_fts_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 29,
+      "taille_bytes": 901,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250704102213_add_audio_url_to_asciicasts_and_streams.exs": {
+      "fichier": "priv/repo/migrations/20250704102213_add_audio_url_to_asciicasts_and_streams.exs",
+      "langage": "elixir",
+      "lignes": 13,
+      "taille_bytes": 259,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250426120254_nullify_asciicast_stream_id_on_stream_delete.exs": {
+      "fichier": "priv/repo/migrations/20250426120254_nullify_asciicast_stream_id_on_stream_delete.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 293,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230713075841_add_more_indices_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20230713075841_add_more_indices_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 163,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20180624124338_add_is_admin_to_users.exs": {
+      "fichier": "priv/repo/migrations/20180624124338_add_is_admin_to_users.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 199,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20211211202637_rename_terminal_columns_lines_to_cols_rows.exs": {
+      "fichier": "priv/repo/migrations/20211211202637_rename_terminal_columns_lines_to_cols_rows.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 242,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20211211210159_add_cols_rows_overrides.exs": {
+      "fichier": "priv/repo/migrations/20211211210159_add_cols_rows_overrides.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 218,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230618154430_create_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20230618154430_create_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 35,
+      "taille_bytes": 860,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250711092005_rename_stream_limit_on_users.exs": {
+      "fichier": "priv/repo/migrations/20250711092005_rename_stream_limit_on_users.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 176,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250711204229_standardize_timestamp_precision.exs": {
+      "fichier": "priv/repo/migrations/20250711204229_standardize_timestamp_precision.exs",
+      "langage": "elixir",
+      "lignes": 47,
+      "taille_bytes": 1464,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20251212190444_update_custom_fonts.exs": {
+      "fichier": "priv/repo/migrations/20251212190444_update_custom_fonts.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 953,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240410075535_rename_and_shorten_stream_tokens.exs": {
+      "fichier": "priv/repo/migrations/20240410075535_rename_and_shorten_stream_tokens.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 302,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240308110750_add_theme_fields_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20240308110750_add_theme_fields_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 249,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250220102157_make_path_on_asciicasts_unique.exs": {
+      "fichier": "priv/repo/migrations/20250220102157_make_path_on_asciicasts_unique.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 160,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250721112104_add_env_to_streams.exs": {
+      "fichier": "priv/repo/migrations/20250721112104_add_env_to_streams.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 266,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250711151607_add_user_live_stream_limit_check.exs": {
+      "fichier": "priv/repo/migrations/20250711151607_add_user_live_stream_limit_check.exs",
+      "langage": "elixir",
+      "lignes": 89,
+      "taille_bytes": 2829,
+      "entrees": [
+        "Ecto.Migration",
+        "streams",
+        "users"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20241215191710_add_streaming_enabled_to_users.exs": {
+      "fichier": "priv/repo/migrations/20241215191710_add_streaming_enabled_to_users.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 216,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20260129203915_rename_asciicasts_indexes.exs": {
+      "fichier": "priv/repo/migrations/20260129203915_rename_asciicasts_indexes.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 485,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250425104755_reset_cur_viewer_count_for_offline_streams.exs": {
+      "fichier": "priv/repo/migrations/20250425104755_reset_cur_viewer_count_for_offline_streams.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 216,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20171027085309_add_idle_time_limit_to_asciicast.exs": {
+      "fichier": "priv/repo/migrations/20171027085309_add_idle_time_limit_to_asciicast.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 190,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250704141621_rename_online_to_live_on_streams.exs": {
+      "fichier": "priv/repo/migrations/20250704141621_rename_online_to_live_on_streams.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 162,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250209094100_add_cli_id_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20250209094100_add_cli_id_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 13,
+      "taille_bytes": 471,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240114204549_upgrade_oban_jobs_to_v12.exs": {
+      "fichier": "priv/repo/migrations/20240114204549_upgrade_oban_jobs_to_v12.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 183,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240409082127_add_index_on_user_id_secret_token_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20240409082127_add_index_on_user_id_secret_token_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 187,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250208135448_remove_legacy_stdout_from_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20250208135448_remove_legacy_stdout_from_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 214,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250209212642_make_asciiast_user_id_non_null.exs": {
+      "fichier": "priv/repo/migrations/20250209212642_make_asciiast_user_id_non_null.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 267,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250411105026_rename_terminal_fields.exs": {
+      "fichier": "priv/repo/migrations/20250411105026_rename_terminal_fields.exs",
+      "langage": "elixir",
+      "lignes": 31,
+      "taille_bytes": 1619,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230211162915_swap_primary_oban_indexes.exs": {
+      "fichier": "priv/repo/migrations/20230211162915_swap_primary_oban_indexes.exs",
+      "langage": "elixir",
+      "lignes": 22,
+      "taille_bytes": 669,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20260129121000_create_asciicast_fts.exs": {
+      "fichier": "priv/repo/migrations/20260129121000_create_asciicast_fts.exs",
+      "langage": "elixir",
+      "lignes": 68,
+      "taille_bytes": 1785,
+      "entrees": [
+        "Ecto.Migration",
+        "asciicasts"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250405191811_add_env_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20250405191811_add_env_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 281,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250411121133_add_term_version_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20250411121133_add_term_version_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 187,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20200901164454_convert_file_to_path.exs": {
+      "fichier": "priv/repo/migrations/20200901164454_convert_file_to_path.exs",
+      "langage": "elixir",
+      "lignes": 13,
+      "taille_bytes": 337,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250411121050_add_term_type_and_version_to_streams.exs": {
+      "fichier": "priv/repo/migrations/20250411121050_add_term_type_and_version_to_streams.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 218,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20170926072604_add_recorded_at_to_asciicast.exs": {
+      "fichier": "priv/repo/migrations/20170926072604_add_recorded_at_to_asciicast.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 192,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240502083959_lowercase_emails.exs": {
+      "fichier": "priv/repo/migrations/20240502083959_lowercase_emails.exs",
+      "langage": "elixir",
+      "lignes": 21,
+      "taille_bytes": 913,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250208140242_rename_api_tokens_to_clis.exs": {
+      "fichier": "priv/repo/migrations/20250208140242_rename_api_tokens_to_clis.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 423,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20170921075634_drop_stdin_from_asciicast.exs": {
+      "fichier": "priv/repo/migrations/20170921075634_drop_stdin_from_asciicast.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 202,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250711162031_fix_naming_inconsistencies.exs": {
+      "fichier": "priv/repo/migrations/20250711162031_fix_naming_inconsistencies.exs",
+      "langage": "elixir",
+      "lignes": 63,
+      "taille_bytes": 3977,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20190112165543_add_archivable_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20190112165543_add_archivable_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 213,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240329195017_add_theme_prefer_original_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20240329195017_add_theme_prefer_original_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 236,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20200831195118_remove_stdout_frames.exs": {
+      "fichier": "priv/repo/migrations/20200831195118_remove_stdout_frames.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 174,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250211203036_rename_live_streams_to_streams.exs": {
+      "fichier": "priv/repo/migrations/20250211203036_rename_live_streams_to_streams.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 167,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240329201531_add_theme_prefer_original_to_users.exs": {
+      "fichier": "priv/repo/migrations/20240329201531_add_theme_prefer_original_to_users.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 337,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230707114655_add_more_metadata_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20230707114655_add_more_metadata_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 38,
+      "taille_bytes": 971,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250417130647_force_snapshot_regeneration.exs": {
+      "fichier": "priv/repo/migrations/20250417130647_force_snapshot_regeneration.exs",
+      "langage": "elixir",
+      "lignes": 13,
+      "taille_bytes": 288,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230707120207_add_missing_indices_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20230707120207_add_missing_indices_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 220,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230708120726_add_viewer_count_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20230708120726_add_viewer_count_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 13,
+      "taille_bytes": 350,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20231219195815_add_speed_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20231219195815_add_speed_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 173,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20170920135754_initial.exs": {
+      "fichier": "priv/repo/migrations/20170920135754_initial.exs",
+      "langage": "elixir",
+      "lignes": 77,
+      "taille_bytes": 2889,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240519083033_add_index_on_asciicasts_visibility.exs": {
+      "fichier": "priv/repo/migrations/20240519083033_add_index_on_asciicasts_visibility.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 163,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250418154208_add_user_agent_and_shell_to_streams.exs": {
+      "fichier": "priv/repo/migrations/20250418154208_add_user_agent_and_shell_to_streams.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 211,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250307115515_add_default_stream_visibility_to_users.exs": {
+      "fichier": "priv/repo/migrations/20250307115515_add_default_stream_visibility_to_users.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 247,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20210417192109_add_oban_jobs_table.exs": {
+      "fichier": "priv/repo/migrations/20210417192109_add_oban_jobs_table.exs",
+      "langage": "elixir",
+      "lignes": 13,
+      "taille_bytes": 339,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20211211190233_rename_created_at_to_inserted_at.exs": {
+      "fichier": "priv/repo/migrations/20211211190233_rename_created_at_to_inserted_at.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 293,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230716092144_add_buffer_time_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20230716092144_add_buffer_time_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 187,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20260108101022_add_offline_grace_period_to_streams.exs": {
+      "fichier": "priv/repo/migrations/20260108101022_add_offline_grace_period_to_streams.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 224,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240512060058_add_visibility_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20240512060058_add_visibility_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 31,
+      "taille_bytes": 790,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230515080531_add_markers_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20230515080531_add_markers_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 176,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20170926074750_add_theme_fields_to_asciicast.exs": {
+      "fichier": "priv/repo/migrations/20170926074750_add_theme_fields_to_asciicast.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 245,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20260110200749_add_popularity_score_and_dirty_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20260110200749_add_popularity_score_and_dirty_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 22,
+      "taille_bytes": 706,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20260106164656_add_bold_is_bright_to_media.exs": {
+      "fichier": "priv/repo/migrations/20260106164656_add_bold_is_bright_to_media.exs",
+      "langage": "elixir",
+      "lignes": 17,
+      "taille_bytes": 427,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250417130426_add_index_for_snapshotless_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20250417130426_add_index_for_snapshotless_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 226,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250119143802_rename_stream_parser_to_protocol.exs": {
+      "fichier": "priv/repo/migrations/20250119143802_rename_stream_parser_to_protocol.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 336,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20251125134919_add_schedule_to_streams.exs": {
+      "fichier": "priv/repo/migrations/20251125134919_add_schedule_to_streams.exs",
+      "langage": "elixir",
+      "lignes": 12,
+      "taille_bytes": 257,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230817131250_add_parser_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20230817131250_add_parser_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 223,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20180514075806_fix_uniq_index_on_api_token.exs": {
+      "fichier": "priv/repo/migrations/20180514075806_fix_uniq_index_on_api_token.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 265,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250423163015_add_stream_limit_to_users.exs": {
+      "fichier": "priv/repo/migrations/20250423163015_add_stream_limit_to_users.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 178,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250219164050_add_stream_recording_enabled_to_users.exs": {
+      "fichier": "priv/repo/migrations/20250219164050_add_stream_recording_enabled_to_users.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 229,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20260129122000_drop_fts_from_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20260129122000_drop_fts_from_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 36,
+      "taille_bytes": 963,
+      "entrees": [
+        "Ecto.Migration",
+        "asciicast_fts"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240516181634_add_visibility_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20240516181634_add_visibility_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 31,
+      "taille_bytes": 771,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20181214193102_add_archived_at_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20181214193102_add_archived_at_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 193,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230402201325_add_terminal_line_height_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20230402201325_add_terminal_line_height_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 201,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20260219160410_add_adaptive_palette_to_media.exs": {
+      "fichier": "priv/repo/migrations/20260219160410_add_adaptive_palette_to_media.exs",
+      "langage": "elixir",
+      "lignes": 17,
+      "taille_bytes": 443,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20210509143841_add_more_indexes.exs": {
+      "fichier": "priv/repo/migrations/20210509143841_add_more_indexes.exs",
+      "langage": "elixir",
+      "lignes": 23,
+      "taille_bytes": 775,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230403182405_add_terminal_font_family_to_asciicasts.exs": {
+      "fichier": "priv/repo/migrations/20230403182405_add_terminal_font_family_to_asciicasts.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 202,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230701115122_add_online_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20230701115122_add_online_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 253,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230712082725_add_started_at_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20230712082725_add_started_at_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 250,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240516183427_add_default_asciicast_visibility_to_users.exs": {
+      "fichier": "priv/repo/migrations/20240516183427_add_default_asciicast_visibility_to_users.exs",
+      "langage": "elixir",
+      "lignes": 27,
+      "taille_bytes": 774,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20211212114046_insert_upgrade_jobs.exs": {
+      "fichier": "priv/repo/migrations/20211212114046_insert_upgrade_jobs.exs",
+      "langage": "elixir",
+      "lignes": 13,
+      "taille_bytes": 230,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20260110173221_create_asciicast_daily_views.exs": {
+      "fichier": "priv/repo/migrations/20260110173221_create_asciicast_daily_views.exs",
+      "langage": "elixir",
+      "lignes": 53,
+      "taille_bytes": 1809,
+      "entrees": [
+        "Ecto.Migration",
+        "asciicasts",
+        "dist",
+        "summed"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20250307113701_rename_visibility_columns.exs": {
+      "fichier": "priv/repo/migrations/20250307113701_rename_visibility_columns.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 486,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20230211162625_create_oban_peers.exs": {
+      "fichier": "priv/repo/migrations/20230211162625_create_oban_peers.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 178,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def down",
+        "def up",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/repo/migrations/20240421122804_add_snapshot_to_live_streams.exs": {
+      "fichier": "priv/repo/migrations/20240421122804_add_snapshot_to_live_streams.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 181,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "priv/static/js/embed.js": {
+      "fichier": "priv/static/js/embed.js",
+      "langage": "javascript",
+      "lignes": 118,
+      "taille_bytes": 3583,
+      "entrees": [],
+      "sorties": [
+        "const apiHost",
+        "const asciicastId",
+        "const color",
+        "const container",
+        "const fontFamily",
+        "const fontSize",
+        "const iframe",
+        "const keys",
+        "const location",
+        "const parser",
+        "const style",
+        "function apiHostFromScript",
+        "function insertAfter",
+        "function insertPlayer",
+        "function locationFromString",
+        "function params",
+        "function syncTextStyle"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/test_helper.exs": {
+      "fichier": "test/test_helper.exs",
+      "langage": "elixir",
+      "lignes": 6,
+      "taille_bytes": 168,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema_test.exs": {
+      "fichier": "test/asciinema_test.exs",
+      "langage": "elixir",
+      "lignes": 141,
+      "taille_bytes": 4055,
+      "entrees": [
+        "Asciinema.DataCase",
+        "Asciinema.Factory",
+        "Oban.Testing",
+        "Swoosh.TestAssertions"
+      ],
+      "sorties": [
+        "defmodule AsciinemaTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/vt_test.exs": {
+      "fichier": "test/asciinema/vt_test.exs",
+      "langage": "elixir",
+      "lignes": 33,
+      "taille_bytes": 830,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/svg_raster_test.exs": {
+      "fichier": "test/asciinema/svg_raster_test.exs",
+      "langage": "elixir",
+      "lignes": 164,
+      "taille_bytes": 4485,
+      "entrees": [
+        "Asciinema.PngUtil",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/streaming_test.exs": {
+      "fichier": "test/asciinema/streaming_test.exs",
+      "langage": "elixir",
+      "lignes": 365,
+      "taille_bytes": 11670,
+      "entrees": [
+        "Asciinema.DataCase",
+        "Asciinema.Factory"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/colors_test.exs": {
+      "fichier": "test/asciinema/colors_test.exs",
+      "langage": "elixir",
+      "lignes": 15,
+      "taille_bytes": 575,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/themes_test.exs": {
+      "fichier": "test/asciinema/themes_test.exs",
+      "langage": "elixir",
+      "lignes": 53,
+      "taille_bytes": 1360,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/accounts_test.exs": {
+      "fichier": "test/asciinema/accounts_test.exs",
+      "langage": "elixir",
+      "lignes": 139,
+      "taille_bytes": 4508,
+      "entrees": [
+        "Asciinema.DataCase",
+        "Asciinema.Factory",
+        "Oban.Testing"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/quantizer_test.exs": {
+      "fichier": "test/asciinema/quantizer_test.exs",
+      "langage": "elixir",
+      "lignes": 99,
+      "taille_bytes": 2264,
+      "entrees": [
+        "ExUnit.Case",
+        "ExUnitProperties"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/recordings_test.exs": {
+      "fichier": "test/asciinema/recordings_test.exs",
+      "langage": "elixir",
+      "lignes": 683,
+      "taille_bytes": 21025,
+      "entrees": [
+        "Asciinema.DataCase",
+        "Asciinema.Factory"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/authorization_test.exs": {
+      "fichier": "test/asciinema/authorization_test.exs",
+      "langage": "elixir",
+      "lignes": 343,
+      "taille_bytes": 10099,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/file_cache_test.exs": {
+      "fichier": "test/asciinema/file_cache_test.exs",
+      "langage": "elixir",
+      "lignes": 218,
+      "taille_bytes": 6506,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Asciinema",
+        "fn tmp_dir"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/rle_test.exs": {
+      "fichier": "test/asciinema/rle_test.exs",
+      "langage": "elixir",
+      "lignes": 55,
+      "taille_bytes": 2036,
+      "entrees": [
+        "ExUnit.Case",
+        "ExUnitProperties"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/leb128_test.exs": {
+      "fichier": "test/asciinema/leb128_test.exs",
+      "langage": "elixir",
+      "lignes": 47,
+      "taille_bytes": 1684,
+      "entrees": [
+        "ExUnit.Case",
+        "ExUnitProperties"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/workers/reschedule_streams_test.exs": {
+      "fichier": "test/asciinema/workers/reschedule_streams_test.exs",
+      "langage": "elixir",
+      "lignes": 15,
+      "taille_bytes": 466,
+      "entrees": [
+        "Asciinema.DataCase",
+        "Asciinema.Factory"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/recordings/event_stream_test.exs": {
+      "fichier": "test/asciinema/recordings/event_stream_test.exs",
+      "langage": "elixir",
+      "lignes": 43,
+      "taille_bytes": 1279,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/recordings/markers_test.exs": {
+      "fichier": "test/asciinema/recordings/markers_test.exs",
+      "langage": "elixir",
+      "lignes": 18,
+      "taille_bytes": 513,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/asciinema/recordings/text_test.exs": {
+      "fichier": "test/asciinema/recordings/text_test.exs",
+      "langage": "elixir",
+      "lignes": 46,
+      "taille_bytes": 2029,
+      "entrees": [
+        "Asciinema.DataCase",
+        "Asciinema.Factory"
+      ],
+      "sorties": [
+        "defmodule Asciinema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

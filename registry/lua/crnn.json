@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "projet": "crnn",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "shell": 3,
+      "lua": 20,
+      "cpp": 3,
+      "python": 1,
+      "yaml": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 28,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "third_party/lmdb-lua-ffi/src/lmdb.lua"
+  },
+  "noeuds": {
+    "thpp_build.sh": {
+      "fichier": "thpp_build.sh",
+      "langage": "shell",
+      "lignes": 41,
+      "taille_bytes": 983,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "install_all.sh": {
+      "fichier": "install_all.sh",
+      "langage": "shell",
+      "lignes": 159,
+      "taille_bytes": 3171,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "model/crnn_demo/config.lua": {
+      "fichier": "model/crnn_demo/config.lua",
+      "langage": "lua",
+      "lignes": 83,
+      "taille_bytes": 3060,
+      "entrees": [],
+      "sorties": [
+        "function bidirectionalLSTM",
+        "function convRelu",
+        "function createModel",
+        "function getConfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/utilities.lua": {
+      "fichier": "src/utilities.lua",
+      "langage": "lua",
+      "lignes": 306,
+      "taille_bytes": 8840,
+      "entrees": [],
+      "sorties": [
+        "function ascii2label",
+        "function cloneList",
+        "function cloneManyTimes",
+        "function diagnoseGradients",
+        "function label2ascii",
+        "function label2str",
+        "function loadAndResizeImage",
+        "function loadModelState",
+        "function logging",
+        "function modelSize",
+        "function modelState",
+        "function recognizeImageLexiconFree",
+        "function recognizeImageWithLexicion",
+        "function setupLogger",
+        "function shutdownLogger",
+        "function str2label",
+        "function tensorInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/build_cpp.sh": {
+      "fichier": "src/build_cpp.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 71,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/BiRnnJoin.lua": {
+      "fichier": "src/BiRnnJoin.lua",
+      "langage": "lua",
+      "lignes": 99,
+      "taille_bytes": 2445,
+      "entrees": [],
+      "sorties": [
+        "function BiRnnJoin",
+        "function makeBiRnnJoinUnit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/LstmLayer.lua": {
+      "fichier": "src/LstmLayer.lua",
+      "langage": "lua",
+      "lignes": 203,
+      "taille_bytes": 6746,
+      "entrees": [],
+      "sorties": [
+        "function LstmLayer",
+        "function makeLstmUnit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/demo.lua": {
+      "fichier": "src/demo.lua",
+      "langage": "lua",
+      "lignes": 40,
+      "taille_bytes": 1046,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/CtcCriterion.lua": {
+      "fichier": "src/CtcCriterion.lua",
+      "langage": "lua",
+      "lignes": 26,
+      "taille_bytes": 719,
+      "entrees": [],
+      "sorties": [
+        "function CtcCriterion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SharedParallelTable.lua": {
+      "fichier": "src/SharedParallelTable.lua",
+      "langage": "lua",
+      "lignes": 76,
+      "taille_bytes": 1810,
+      "entrees": [],
+      "sorties": [
+        "function SharedParallelTable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/inference.lua": {
+      "fichier": "src/inference.lua",
+      "langage": "lua",
+      "lignes": 36,
+      "taille_bytes": 1213,
+      "entrees": [],
+      "sorties": [
+        "function decodingWithLexicon",
+        "function naiveDecoding"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/training.lua": {
+      "fichier": "src/training.lua",
+      "langage": "lua",
+      "lignes": 118,
+      "taille_bytes": 4179,
+      "entrees": [],
+      "sorties": [
+        "function trainBatch",
+        "function trainModel",
+        "function validation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main_train.lua": {
+      "fichier": "src/main_train.lua",
+      "langage": "lua",
+      "lignes": 53,
+      "taille_bytes": 1440,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/DatasetLmdb.lua": {
+      "fichier": "src/DatasetLmdb.lua",
+      "langage": "lua",
+      "lignes": 120,
+      "taille_bytes": 4168,
+      "entrees": [],
+      "sorties": [
+        "function DatasetLmdb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/cpp/utils.hpp": {
+      "fichier": "src/cpp/utils.hpp",
+      "langage": "cpp",
+      "lignes": 70,
+      "taille_bytes": 1821,
+      "entrees": [
+        "<cmath>",
+        "<fblualib/LuaUtils.h>",
+        "<lua.hpp>",
+        "<luaT.h>",
+        "<string>",
+        "<thpp/Storage.h>",
+        "<thpp/Tensor.h>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class LogMath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/cpp/init.cpp": {
+      "fichier": "src/cpp/init.cpp",
+      "langage": "cpp",
+      "lignes": 8,
+      "taille_bytes": 128,
+      "entrees": [
+        "<lua.hpp>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/cpp/ctc.cpp": {
+      "fichier": "src/cpp/ctc.cpp",
+      "langage": "cpp",
+      "lignes": 212,
+      "taille_bytes": 7778,
+      "entrees": [
+        "<cmath>",
+        "<fblualib/LuaUtils.h>",
+        "<iostream>",
+        "<lua.hpp>",
+        "<luaT.h>",
+        "<string>",
+        "<thpp/Storage.h>",
+        "<thpp/Tensor.h>",
+        "<vector>"
+      ],
+      "sorties": [
+        "class Registerer",
+        "const bool",
+        "const int",
+        "const luaL_Reg",
+        "const thpp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tool/create_dataset.py": {
+      "fichier": "tool/create_dataset.py",
+      "langage": "python",
+      "lignes": 72,
+      "taille_bytes": 2174,
+      "entrees": [
+        "cv2",
+        "lmdb",
+        "numpy",
+        "os"
+      ],
+      "sorties": [
+        "def checkImageIsValid",
+        "def createDataset",
+        "def writeCache"
+      ],
+      "appelle": [
+        "third_party/lmdb-lua-ffi/src/lmdb.lua"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/.travis.yml": {
+      "fichier": "third_party/lmdb-lua-ffi/.travis.yml",
+      "langage": "yaml",
+      "lignes": 11,
+      "taille_bytes": 673,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/tests/test_integer_keys.lua": {
+      "fichier": "third_party/lmdb-lua-ffi/tests/test_integer_keys.lua",
+      "langage": "lua",
+      "lignes": 37,
+      "taille_bytes": 1038,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/tests/test_environment.lua": {
+      "fichier": "third_party/lmdb-lua-ffi/tests/test_environment.lua",
+      "langage": "lua",
+      "lignes": 56,
+      "taille_bytes": 1543,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/tests/test_reverse_keys.lua": {
+      "fichier": "third_party/lmdb-lua-ffi/tests/test_reverse_keys.lua",
+      "langage": "lua",
+      "lignes": 50,
+      "taille_bytes": 1479,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/tests/test_cursors.lua": {
+      "fichier": "third_party/lmdb-lua-ffi/tests/test_cursors.lua",
+      "langage": "lua",
+      "lignes": 89,
+      "taille_bytes": 2696,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/src/utils.lua": {
+      "fichier": "third_party/lmdb-lua-ffi/src/utils.lua",
+      "langage": "lua",
+      "lignes": 86,
+      "taille_bytes": 2618,
+      "entrees": [],
+      "sorties": [
+        "function dump"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/src/lmdb_ffi.lua": {
+      "fichier": "third_party/lmdb-lua-ffi/src/lmdb_ffi.lua",
+      "langage": "lua",
+      "lignes": 177,
+      "taille_bytes": 6066,
+      "entrees": [],
+      "sorties": [
+        "struct MDB_envinfo",
+        "struct MDB_stat",
+        "struct MDB_val"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/src/lmdb.lua": {
+      "fichier": "third_party/lmdb-lua-ffi/src/lmdb.lua",
+      "langage": "lua",
+      "lignes": 586,
+      "taille_bytes": 15324,
+      "entrees": [],
+      "sorties": [
+        "function _M",
+        "function cursor",
+        "function env",
+        "function txn"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tool/create_dataset.py"
+      ],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/src/lmdb_old.lua": {
+      "fichier": "third_party/lmdb-lua-ffi/src/lmdb_old.lua",
+      "langage": "lua",
+      "lignes": 533,
+      "taille_bytes": 14669,
+      "entrees": [],
+      "sorties": [
+        "function _M",
+        "function cur",
+        "function env",
+        "function txn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "third_party/lmdb-lua-ffi/src/underscore.lua": {
+      "fichier": "third_party/lmdb-lua-ffi/src/underscore.lua",
+      "langage": "lua",
+      "lignes": 425,
+      "taille_bytes": 9838,
+      "entrees": [],
+      "sorties": [
+        "function Underscore"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "tool/create_dataset.py",
+      "vers": "third_party/lmdb-lua-ffi/src/lmdb.lua",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

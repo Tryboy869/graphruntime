@@ -1,0 +1,916 @@
+{
+  "meta": {
+    "projet": "rust-base64",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "toml": 3,
+      "rust": 30
+    }
+  },
+  "stats": {
+    "fichiers_total": 33,
+    "edges_total": 4,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "examples/base64.rs"
+  },
+  "noeuds": {
+    "Cargo.toml": {
+      "fichier": "Cargo.toml",
+      "langage": "toml",
+      "lignes": 59,
+      "taille_bytes": 1551,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "clippy.toml": {
+      "fichier": "clippy.toml",
+      "langage": "toml",
+      "lignes": 1,
+      "taille_bytes": 16,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/base64.rs": {
+      "fichier": "examples/base64.rs",
+      "langage": "rust",
+      "lignes": 81,
+      "taille_bytes": 2318,
+      "entrees": [
+        "base64::",
+        "clap::Parser",
+        "std::fs::File",
+        "std::io::",
+        "std::path::PathBuf",
+        "std::process"
+      ],
+      "sorties": [
+        "enum Alphabet",
+        "fn main",
+        "struct Opt"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "fuzz/fuzzers/decode_random.rs",
+        "fuzz/fuzzers/roundtrip.rs",
+        "fuzz/fuzzers/roundtrip_no_pad.rs",
+        "fuzz/fuzzers/roundtrip_random_config.rs"
+      ],
+      "type_noeud": "feuille"
+    },
+    "benches/benchmarks.rs": {
+      "fichier": "benches/benchmarks.rs",
+      "langage": "rust",
+      "lignes": 238,
+      "taille_bytes": 7281,
+      "entrees": [
+        "base64::",
+        "criterion",
+        "criterion::",
+        "rand::",
+        "std::io::"
+      ],
+      "sorties": [
+        "const BYTE_SIZES",
+        "const LARGE_BYTE_SIZES",
+        "fn bench",
+        "fn decode_benchmarks",
+        "fn do_decode_bench",
+        "fn do_decode_bench_reuse_buf",
+        "fn do_decode_bench_slice",
+        "fn do_decode_bench_stream",
+        "fn do_encode_bench",
+        "fn do_encode_bench_display",
+        "fn do_encode_bench_reuse_buf",
+        "fn do_encode_bench_slice",
+        "fn do_encode_bench_stream",
+        "fn do_encode_bench_string_reuse_buf_stream",
+        "fn do_encode_bench_string_stream",
+        "fn encode_benchmarks",
+        "fn fill"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/encode.rs": {
+      "fichier": "tests/encode.rs",
+      "langage": "rust",
+      "lignes": 77,
+      "taille_bytes": 2755,
+      "entrees": [
+        "base64::"
+      ],
+      "sorties": [
+        "fn compare_encode",
+        "fn encode_all_ascii",
+        "fn encode_all_bytes",
+        "fn encode_all_bytes_url",
+        "fn encoded_len_overflow",
+        "fn encoded_len_padded",
+        "fn encoded_len_unpadded"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tests.rs": {
+      "fichier": "tests/tests.rs",
+      "langage": "rust",
+      "lignes": 161,
+      "taille_bytes": 4762,
+      "entrees": [
+        "base64::*",
+        "base64::engine::",
+        "base64::engine::general_purpose::",
+        "rand::"
+      ],
+      "sorties": [
+        "fn calculate_number_of_rounds",
+        "fn display_wrapper_matches_normal_encode",
+        "fn encode_engine_slice_error_when_buffer_too_small",
+        "fn roundtrip_decode_trailing_10_bytes",
+        "fn roundtrip_random",
+        "fn roundtrip_random_no_padding",
+        "fn roundtrip_random_short_no_padding",
+        "fn roundtrip_random_short_standard",
+        "fn roundtrip_random_with_fast_loop_standard"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/alphabet.rs": {
+      "fichier": "src/alphabet.rs",
+      "langage": "rust",
+      "lignes": 283,
+      "taille_bytes": 8919,
+      "entrees": [
+        "core::",
+        "core::convert::TryFrom",
+        "crate::PAD_BYTE",
+        "crate::alphabet::*",
+        "std::error"
+      ],
+      "sorties": [
+        "const ALPHABET_SIZE",
+        "const fn",
+        "fn detects_duplicate_end",
+        "fn detects_duplicate_middle",
+        "fn detects_duplicate_start",
+        "fn detects_length",
+        "fn detects_padding",
+        "fn detects_unprintable",
+        "fn fmt",
+        "fn same_as_unchecked",
+        "fn str_same_as_input",
+        "fn try_from",
+        "pub enum ParseAlphabetError",
+        "pub fn as_str",
+        "pub struct Alphabet",
+        "type Error"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/display.rs": {
+      "fichier": "src/display.rs",
+      "langage": "rust",
+      "lignes": 88,
+      "taille_bytes": 2731,
+      "entrees": [
+        "core::",
+        "core::fmt::",
+        "crate::engine::Engine",
+        "crate::engine::general_purpose::STANDARD",
+        "super::*",
+        "super::chunked_encoder::ChunkedEncoder",
+        "super::super::chunked_encoder::tests::"
+      ],
+      "sorties": [
+        "fn basic_display",
+        "fn display_encode_matches_normal_encode",
+        "fn encode_to_string",
+        "fn fmt",
+        "fn write_encoded_bytes",
+        "pub fn new",
+        "pub struct Base64Display",
+        "struct DisplaySinkTestHelper",
+        "struct FormatterSink",
+        "type Error"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/encode.rs": {
+      "fichier": "src/encode.rs",
+      "langage": "rust",
+      "lignes": 493,
+      "taille_bytes": 15864,
+      "entrees": [
+        "alloc::string::String",
+        "core::fmt",
+        "crate::",
+        "crate::PAD_BYTE",
+        "crate::engine::",
+        "crate::engine::general_purpose::STANDARD",
+        "rand::",
+        "std::error",
+        "std::str",
+        "super::*"
+      ],
+      "sorties": [
+        "const URL_SAFE_NO_PAD_ENGINE",
+        "fn add_padding_random_valid_utf8",
+        "fn assert_encoded_length",
+        "fn encode_engine_slice_into_nonempty_buffer_doesnt_clobber_suffix",
+        "fn encode_engine_string_into_nonempty_buffer_doesnt_clobber_prefix",
+        "fn encode_imap",
+        "fn encode_to_slice_random_valid_utf8",
+        "fn encode_with_padding_random_valid_utf8",
+        "fn encoded_size_correct_no_pad",
+        "fn encoded_size_correct_standard",
+        "fn encoded_size_overflow",
+        "fn fmt",
+        "pub enum EncodeSliceError",
+        "pub fn encode",
+        "pub fn encode_engine",
+        "pub fn encode_engine_slice",
+        "pub fn encode_engine_string"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/prelude.rs": {
+      "fichier": "src/prelude.rs",
+      "langage": "rust",
+      "lignes": 20,
+      "taille_bytes": 844,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/lib.rs": {
+      "fichier": "src/lib.rs",
+      "langage": "rust",
+      "lignes": 305,
+      "taille_bytes": 11409,
+      "entrees": [
+        "alloc",
+        "rstest_reuse"
+      ],
+      "sorties": [
+        "const PAD_BYTE"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/chunked_encoder.rs": {
+      "fichier": "src/chunked_encoder.rs",
+      "langage": "rust",
+      "lignes": 172,
+      "taille_bytes": 5297,
+      "entrees": [
+        "alloc::string::String",
+        "core::str",
+        "crate::",
+        "rand::",
+        "super::*"
+      ],
+      "sorties": [
+        "const BUF_SIZE",
+        "const CHUNK_SIZE",
+        "fn chunked_encode_empty",
+        "fn chunked_encode_fast_loop",
+        "fn chunked_encode_intermediate_fast_loop",
+        "fn chunked_encode_matches_normal_encode_random_string_sink",
+        "fn chunked_encode_slow_loop_only",
+        "fn chunked_encode_str",
+        "fn encode_to_string",
+        "fn write_encoded_bytes",
+        "pub fn chunked_encode_matches_normal_encode_random",
+        "pub fn encode",
+        "pub fn new",
+        "pub struct ChunkedEncoder",
+        "pub trait Sink",
+        "pub trait SinkTestHelper",
+        "struct StringSinkTestHelper",
+        "type Error"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/tests.rs": {
+      "fichier": "src/tests.rs",
+      "langage": "rust",
+      "lignes": 117,
+      "taille_bytes": 3274,
+      "entrees": [
+        "crate::",
+        "rand::",
+        "std::str"
+      ],
+      "sorties": [
+        "const ALPHABETS",
+        "fn roundtrip_random_config",
+        "fn roundtrip_random_config_long",
+        "fn roundtrip_random_config_short",
+        "fn sample",
+        "pub fn assert_encode_sanity",
+        "pub fn random_alphabet",
+        "pub fn random_config",
+        "pub fn random_engine"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/decode.rs": {
+      "fichier": "src/decode.rs",
+      "langage": "rust",
+      "lignes": 444,
+      "taille_bytes": 14945,
+      "entrees": [
+        "alloc::vec::Vec",
+        "core::fmt",
+        "crate::",
+        "crate::engine::",
+        "rand::",
+        "std::error",
+        "std::error::Error",
+        "super::*"
+      ],
+      "sorties": [
+        "fn decode_engine_estimation_works_for_various_lengths",
+        "fn decode_error",
+        "fn decode_into_nonempty_vec_doesnt_clobber_existing_prefix",
+        "fn decode_slice_doesnt_clobber_existing_prefix_or_suffix",
+        "fn decode_slice_error",
+        "fn decode_slice_output_length_errors",
+        "fn decode_slice_unchecked_doesnt_clobber_existing_prefix_or_suffix",
+        "fn decoded_len_est",
+        "fn deprecated_fns",
+        "fn do_decode_slice_doesnt_clobber_existing_prefix_or_suffix",
+        "fn fmt",
+        "fn invalid_last_symbol_debug",
+        "fn source",
+        "pub enum DecodeError",
+        "pub enum DecodeSliceError",
+        "pub fn decode",
+        "pub fn decode_engine",
+        "pub fn decode_engine_slice",
+        "pub fn decode_engine_vec",
+        "pub fn decoded_len_estimate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/read/decoder_tests.rs": {
+      "fichier": "src/read/decoder_tests.rs",
+      "langage": "rust",
+      "lignes": 487,
+      "taille_bytes": 15858,
+      "entrees": [
+        "crate::",
+        "rand::",
+        "std::",
+        "super::decoder::"
+      ],
+      "sorties": [
+        "fn consume_with_short_reads_and_validate",
+        "fn handles_short_read_from_delegate",
+        "fn internal_padding_anywhere_error",
+        "fn internal_padding_error_with_short_read_concatenated_texts_invalid_byte_error",
+        "fn read",
+        "fn read_in_short_increments",
+        "fn read_in_short_increments_with_short_delegate_reads",
+        "fn reports_invalid_byte_correctly",
+        "fn reports_invalid_last_symbol_correctly",
+        "fn simple",
+        "fn trailing_junk",
+        "struct RandomShortRead",
+        "struct ShortRead"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/read/decoder.rs": {
+      "fichier": "src/read/decoder.rs",
+      "langage": "rust",
+      "lignes": 341,
+      "taille_bytes": 14102,
+      "entrees": [
+        "crate::",
+        "std::"
+      ],
+      "sorties": [
+        "const BASE64_CHUNK_SIZE",
+        "const DECODED_CHUNK_SIZE",
+        "fn decode_to_buf",
+        "fn flush_decoded_buf",
+        "fn fmt",
+        "fn read",
+        "fn read_from_delegate",
+        "pub fn into_inner",
+        "pub fn new",
+        "pub struct DecoderReader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/read/mod.rs": {
+      "fichier": "src/read/mod.rs",
+      "langage": "rust",
+      "lignes": 6,
+      "taille_bytes": 150,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/write/encoder.rs": {
+      "fichier": "src/write/encoder.rs",
+      "langage": "rust",
+      "lignes": 409,
+      "taille_bytes": 17289,
+      "entrees": [
+        "crate::engine::Engine",
+        "std::"
+      ],
+      "sorties": [
+        "const MAX_INPUT_LEN",
+        "const MIN_ENCODE_CHUNK_SIZE",
+        "fn drop",
+        "fn flush",
+        "fn fmt",
+        "fn write",
+        "fn write_all_encoded_output",
+        "fn write_final_leftovers",
+        "fn write_to_delegate",
+        "pub fn finish",
+        "pub fn into_inner",
+        "pub fn new",
+        "pub struct EncoderWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/write/encoder_string_writer.rs": {
+      "fichier": "src/write/encoder_string_writer.rs",
+      "langage": "rust",
+      "lignes": 207,
+      "taille_bytes": 6252,
+      "entrees": [
+        "crate::",
+        "crate::engine::Engine",
+        "rand::Rng",
+        "std::cmp",
+        "std::io",
+        "std::io::Write",
+        "super::encoder::EncoderWriter"
+      ],
+      "sorties": [
+        "fn consume",
+        "fn every_possible_split_of_input",
+        "fn flush",
+        "fn incremental_writes",
+        "fn write",
+        "pub fn from_consumer",
+        "pub fn into_inner",
+        "pub fn new",
+        "pub struct EncoderStringWriter",
+        "pub trait StrConsumer",
+        "struct Utf8SingleCodeUnitWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/write/encoder_tests.rs": {
+      "fichier": "src/write/encoder_tests.rs",
+      "langage": "rust",
+      "lignes": 554,
+      "taille_bytes": 17008,
+      "entrees": [
+        "crate::",
+        "rand::Rng",
+        "std::",
+        "std::io::",
+        "super::EncoderWriter"
+      ],
+      "sorties": [
+        "const NO_PAD_ENGINE",
+        "const URL_SAFE_ENGINE",
+        "fn do_encode_random_config_matches_normal_encode",
+        "fn drop_calls_finish_for_you",
+        "fn encode_1_2_3_bytes",
+        "fn encode_nine_bytes_two_writes",
+        "fn encode_one_then_five_bytes",
+        "fn encode_one_then_two_bytes",
+        "fn encode_random_config_matches_normal_encode_reasonable_input_len",
+        "fn encode_random_config_matches_normal_encode_tiny_input_len",
+        "fn encode_three_bytes",
+        "fn encode_with_padding",
+        "fn encode_with_padding_multiple_writes",
+        "fn every_possible_split_of_input",
+        "fn finish_writes_extra_byte",
+        "fn flush",
+        "fn retry_interrupted_write_all",
+        "fn retrying_writes_that_error_with_interrupted_works",
+        "fn write",
+        "fn write_1_chunk_and_partial_encodes_only_complete_chunk",
+        "fn write_1_chunk_encodes_complete_chunk",
+        "fn write_2_partials_to_exactly_complete_chunk_encodes_complete_chunk",
+        "fn write_partial_chunk_encodes_partial_chunk",
+        "fn write_partial_then_enough_to_complete_chunk_and_another_chunk_and_another_partial_chunk_encodes_only_complete_chunks",
+        "fn write_partial_then_enough_to_complete_chunk_and_another_chunk_encodes_complete_chunks",
+        "fn write_partial_then_enough_to_complete_chunk_but_not_complete_another_chunk_encodes_complete_chunk_without_consuming_remaining",
+        "fn writes_that_only_write_part_of_input_and_sometimes_interrupt_produce_correct_encoded_data",
+        "struct InterruptingWriter",
+        "struct PartialInterruptingWriter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/write/mod.rs": {
+      "fichier": "src/write/mod.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 251,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/engine/naive.rs": {
+      "fichier": "src/engine/naive.rs",
+      "langage": "rust",
+      "lignes": 195,
+      "taille_bytes": 6528,
+      "entrees": [
+        "crate::",
+        "std::ops::"
+      ],
+      "sorties": [
+        "const BOTTOM_BYTE",
+        "const DECODE_INPUT_CHUNK_SIZE",
+        "const ENCODE_INPUT_CHUNK_SIZE",
+        "const LOW_SIX_BITS",
+        "fn config",
+        "fn decode_byte_into_u32",
+        "fn decoded_len_estimate",
+        "fn encode_padding",
+        "fn internal_decode",
+        "fn internal_decoded_len_estimate",
+        "fn internal_encode",
+        "fn new",
+        "pub struct Naive",
+        "pub struct NaiveConfig",
+        "pub struct NaiveEstimate",
+        "type Config",
+        "type DecodeEstimate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/engine/tests.rs": {
+      "fichier": "src/engine/tests.rs",
+      "langage": "rust",
+      "lignes": 1625,
+      "taille_bytes": 55488,
+      "entrees": [
+        "crate::",
+        "rand::",
+        "rstest::rstest",
+        "rstest_reuse::",
+        "std::"
+      ],
+      "sorties": [
+        "fn all_engines",
+        "fn all_engines_except_decoder_reader",
+        "fn all_pad_modes",
+        "fn assert_all_suffixes_ok",
+        "fn assert_tolerant_decode",
+        "fn config",
+        "fn decode_detect_1_invalid_byte_in_last_quad_invalid_byte",
+        "fn decode_detect_1_valid_symbol_in_last_quad_invalid_length",
+        "fn decode_detect_invalid_last_symbol",
+        "fn decode_detect_invalid_last_symbol_every_possible_three_symbols",
+        "fn decode_detect_invalid_last_symbol_every_possible_two_symbols",
+        "fn decode_doesnt_write_extra_bytes",
+        "fn decode_into_slice_fits_in_precisely_sized_slice",
+        "fn decode_invalid_byte_error",
+        "fn decode_invalid_trailing_bits_ignored_when_configured",
+        "fn decode_invalid_trailing_bytes_all_pad_modes_invalid_byte",
+        "fn decode_invalid_trailing_bytes_invalid_byte",
+        "fn decode_invalid_trailing_padding_as_invalid_byte_at_first_byte_all_modes",
+        "fn decode_invalid_trailing_padding_as_invalid_byte_at_first_pad_byte",
+        "fn decode_length_estimate_delta",
+        "fn decode_malleability_test_case_2_byte_suffix_no_padding",
+        "fn decode_malleability_test_case_2_byte_suffix_short_padding",
+        "fn decode_malleability_test_case_2_byte_suffix_too_much_padding",
+        "fn decode_malleability_test_case_2_byte_suffix_valid_two_padding_symbols",
+        "fn decode_malleability_test_case_3_byte_suffix_invalid_trailing_symbol",
+        "fn decode_malleability_test_case_3_byte_suffix_no_padding",
+        "fn decode_malleability_test_case_3_byte_suffix_valid",
+        "fn decode_pad_mode_indifferent_padding_accepts_anything",
+        "fn decode_pad_mode_requires_canonical_accepts_canonical",
+        "fn decode_pad_mode_requires_canonical_rejects_non_canonical",
+        "fn decode_pad_mode_requires_no_padding_accepts_no_padding",
+        "fn decode_pad_mode_requires_no_padding_rejects_any_padding",
+        "fn decode_padding_before_final_non_padding_char_error_invalid_byte_at_first_pad",
+        "fn decode_padding_before_final_non_padding_char_error_invalid_byte_at_first_pad_all_modes",
+        "fn decode_padding_before_final_non_padding_char_error_invalid_byte_at_first_pad_non_canonical_padding_suffix",
+        "fn decode_padding_starts_before_final_chunk_error_invalid_byte_at_first_pad",
+        "fn decode_slice_checked_fails_gracefully_at_all_output_lengths",
+        "fn decode_too_little_data_before_padding_error_invalid_byte",
+        "fn detects_users_real_world_invalid_suffix",
+        "fn do_invalid_trailing_byte",
+        "fn do_invalid_trailing_padding_as_invalid_byte_at_first_padding",
+        "fn encode_doesnt_write_extra_bytes",
+        "fn encode_engine_slice_fits_into_precisely_sized_slice",
+        "fn estimate_via_u128_inflation",
+        "fn fill_rand",
+        "fn fill_rand_len",
+        "fn generate_random_encoded_data",
+        "fn inner_decode_reports_padding_position",
+        "fn internal_decode",
+        "fn internal_decoded_len_estimate",
+        "fn internal_encode",
+        "fn pad_modes_allowing_padding",
+        "fn prefixed_data",
+        "fn random",
+        "fn random_alphabet",
+        "fn rfc_test_vectors_std_alphabet",
+        "fn roundtrip_random",
+        "fn seeded_rng",
+        "fn standard",
+        "fn standard_allow_trailing_bits",
+        "fn standard_unpadded",
+        "fn standard_with_pad_mode",
+        "struct DecoderReaderEngine",
+        "struct DecoderReaderEngineWrapper",
+        "struct GeneralPurposeWrapper",
+        "struct NaiveWrapper",
+        "trait EngineWrapper",
+        "type Config",
+        "type DecodeEstimate",
+        "type Engine"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/engine/mod.rs": {
+      "fichier": "src/engine/mod.rs",
+      "langage": "rust",
+      "lignes": 478,
+      "taille_bytes": 18030,
+      "entrees": [
+        "alloc::",
+        "alloc::vec::Vec",
+        "crate::",
+        "crate::chunked_encoder"
+      ],
+      "sorties": [
+        "fn config",
+        "fn decode",
+        "fn decode_slice",
+        "fn decode_slice_unchecked",
+        "fn decode_vec",
+        "fn decoded_len_estimate",
+        "fn encode",
+        "fn encode_padding",
+        "fn encode_slice",
+        "fn encode_string",
+        "fn inner",
+        "fn internal_decode",
+        "fn internal_decoded_len_estimate",
+        "fn internal_encode",
+        "pub enum DecodePaddingMode",
+        "pub struct DecodeMetadata",
+        "pub trait Config",
+        "pub trait DecodeEstimate",
+        "pub trait Engine",
+        "type Config",
+        "type DecodeEstimate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/engine/general_purpose/decode_suffix.rs": {
+      "fichier": "src/engine/general_purpose/decode_suffix.rs",
+      "langage": "rust",
+      "lignes": 165,
+      "taille_bytes": 7013,
+      "entrees": [
+        "crate::"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/engine/general_purpose/mod.rs": {
+      "fichier": "src/engine/general_purpose/mod.rs",
+      "langage": "rust",
+      "lignes": 389,
+      "taille_bytes": 17368,
+      "entrees": [
+        "core::convert::TryInto",
+        "crate::"
+      ],
+      "sorties": [
+        "const BLOCKS_PER_FAST_LOOP",
+        "const LOW_SIX_BITS",
+        "const LOW_SIX_BITS_U8",
+        "fn config",
+        "fn encode_padding",
+        "fn internal_decode",
+        "fn internal_decoded_len_estimate",
+        "fn internal_encode",
+        "fn read_u64",
+        "pub struct GeneralPurpose",
+        "pub struct GeneralPurposeConfig",
+        "type Config",
+        "type DecodeEstimate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/engine/general_purpose/decode.rs": {
+      "fichier": "src/engine/general_purpose/decode.rs",
+      "langage": "rust",
+      "lignes": 357,
+      "taille_bytes": 11416,
+      "entrees": [
+        "crate::",
+        "crate::engine::general_purpose::STANDARD",
+        "super::*"
+      ],
+      "sorties": [
+        "const UNROLLED_INPUT_CHUNK_SIZE",
+        "const UNROLLED_OUTPUT_CHUNK_SIZE",
+        "fn decode_chunk_4",
+        "fn decode_chunk_4_writes_only_3_bytes",
+        "fn decode_chunk_8",
+        "fn decode_chunk_8_writes_only_6_bytes",
+        "fn decoded_len_estimate",
+        "fn estimate_short_lengths",
+        "fn estimate_via_u128_inflation",
+        "pub struct GeneralPurposeEstimate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuzz/Cargo.toml": {
+      "fichier": "fuzz/Cargo.toml",
+      "langage": "toml",
+      "lignes": 40,
+      "taille_bytes": 703,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuzz/fuzzers/roundtrip_random_config.rs": {
+      "fichier": "fuzz/fuzzers/roundtrip_random_config.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 315,
+      "entrees": [
+        "base64",
+        "base64::*"
+      ],
+      "sorties": [],
+      "appelle": [
+        "examples/base64.rs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuzz/fuzzers/utils.rs": {
+      "fichier": "fuzz/fuzzers/utils.rs",
+      "langage": "rust",
+      "lignes": 39,
+      "taille_bytes": 1155,
+      "entrees": [
+        "base64::",
+        "rand",
+        "rand_pcg",
+        "self::rand::",
+        "self::rand_pcg::Pcg32",
+        "self::sha2::Digest",
+        "sha2"
+      ],
+      "sorties": [
+        "pub fn random_engine"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuzz/fuzzers/roundtrip_no_pad.rs": {
+      "fichier": "fuzz/fuzzers/roundtrip_no_pad.rs",
+      "langage": "rust",
+      "lignes": 17,
+      "taille_bytes": 568,
+      "entrees": [
+        "base64",
+        "base64::",
+        "libfuzzer_sys"
+      ],
+      "sorties": [],
+      "appelle": [
+        "examples/base64.rs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuzz/fuzzers/roundtrip.rs": {
+      "fichier": "fuzz/fuzzers/roundtrip.rs",
+      "langage": "rust",
+      "lignes": 11,
+      "taille_bytes": 308,
+      "entrees": [
+        "base64",
+        "base64::"
+      ],
+      "sorties": [],
+      "appelle": [
+        "examples/base64.rs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "fuzz/fuzzers/decode_random.rs": {
+      "fichier": "fuzz/fuzzers/decode_random.rs",
+      "langage": "rust",
+      "lignes": 15,
+      "taille_bytes": 354,
+      "entrees": [
+        "base64",
+        "base64::*"
+      ],
+      "sorties": [],
+      "appelle": [
+        "examples/base64.rs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "fuzz/fuzzers/roundtrip_random_config.rs",
+      "vers": "examples/base64.rs",
+      "type": "interne"
+    },
+    {
+      "de": "fuzz/fuzzers/roundtrip_no_pad.rs",
+      "vers": "examples/base64.rs",
+      "type": "interne"
+    },
+    {
+      "de": "fuzz/fuzzers/roundtrip.rs",
+      "vers": "examples/base64.rs",
+      "type": "interne"
+    },
+    {
+      "de": "fuzz/fuzzers/decode_random.rs",
+      "vers": "examples/base64.rs",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'examples/base64.rs' (in=4)"
+  ]
+}

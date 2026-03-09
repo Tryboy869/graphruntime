@@ -1,0 +1,2175 @@
+{
+  "meta": {
+    "projet": "Bogus",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 1,
+      "shell": 1,
+      "json": 1,
+      "powershell": 1,
+      "csharp": 114,
+      "unknown": 2
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "appveyor.yml"
+  },
+  "noeuds": {
+    "appveyor.yml": {
+      "fichier": "appveyor.yml",
+      "langage": "yaml",
+      "lignes": 72,
+      "taille_bytes": 2236,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.sh": {
+      "fichier": "build.sh",
+      "langage": "shell",
+      "lignes": 31,
+      "taille_bytes": 1159,
+      "entrees": [],
+      "sorties": [
+        "export DOTNET_CLI_TELEMETRY_OPTOUT",
+        "export DOTNET_EXE",
+        "export DOTNET_MULTILEVEL_LOOKUP",
+        "export DOTNET_SKIP_FIRST_TIME_EXPERIENCE"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "global.json": {
+      "fichier": "global.json",
+      "langage": "json",
+      "lignes": 7,
+      "taille_bytes": 112,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build.ps1": {
+      "fichier": "build.ps1",
+      "langage": "powershell",
+      "lignes": 43,
+      "taille_bytes": 1753,
+      "entrees": [],
+      "sorties": [
+        "function ExecSafe"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/RuleSetTests.cs": {
+      "fichier": "Source/Bogus.Tests/RuleSetTests.cs",
+      "langage": "csharp",
+      "lignes": 167,
+      "taille_bytes": 4819,
+      "entrees": [
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Customer",
+        "public class EmptyObject",
+        "public class RuleSetTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/CloneTests.cs": {
+      "fichier": "Source/Bogus.Tests/CloneTests.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 1848,
+      "entrees": [
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class CloneTests",
+        "public class Order"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/TransliterateTests.cs": {
+      "fichier": "Source/Bogus.Tests/TransliterateTests.cs",
+      "langage": "csharp",
+      "lignes": 67,
+      "taille_bytes": 1515,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class TransliterateTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/StrictModeTests.cs": {
+      "fichier": "Source/Bogus.Tests/StrictModeTests.cs",
+      "langage": "csharp",
+      "lignes": 114,
+      "taille_bytes": 3440,
+      "entrees": [
+        "FluentAssertions",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "const string",
+        "public class StrictModeTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ExtensionsForTesting.cs": {
+      "fichier": "Source/Bogus.Tests/ExtensionsForTesting.cs",
+      "langage": "csharp",
+      "lignes": 23,
+      "taille_bytes": 485,
+      "entrees": [
+        "Newtonsoft.Json",
+        "System",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/HandleBarTests.cs": {
+      "fichier": "Source/Bogus.Tests/HandleBarTests.cs",
+      "langage": "csharp",
+      "lignes": 25,
+      "taille_bytes": 518,
+      "entrees": [
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class HandleBarTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/Bogus.Tests.csproj": {
+      "fichier": "Source/Bogus.Tests/Bogus.Tests.csproj",
+      "langage": "unknown",
+      "lignes": 43,
+      "taille_bytes": 1793,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/PersonTest.cs": {
+      "fichier": "Source/Bogus.Tests/PersonTest.cs",
+      "langage": "csharp",
+      "lignes": 289,
+      "taille_bytes": 7455,
+      "entrees": [
+        "Bogus.DataSets",
+        "Bogus.Extensions.Brazil",
+        "Bogus.Extensions.Canada",
+        "Bogus.Extensions.Finland",
+        "Bogus.Extensions.UnitedStates",
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Abstractions",
+        "Z.ExtensionMethods.ObjectExtensions"
+      ],
+      "sorties": [
+        "public class PersonTest",
+        "public class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/SeededTest.cs": {
+      "fichier": "Source/Bogus.Tests/SeededTest.cs",
+      "langage": "csharp",
+      "lignes": 33,
+      "taille_bytes": 779,
+      "entrees": [
+        "System.Collections.Generic",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class SeededTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/FluentTests.cs": {
+      "fichier": "Source/Bogus.Tests/FluentTests.cs",
+      "langage": "csharp",
+      "lignes": 456,
+      "taille_bytes": 12375,
+      "entrees": [
+        "Bogus.DataSets",
+        "Bogus.Extensions",
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class Examples",
+        "public class Issue47",
+        "public class Order",
+        "public class Order2",
+        "public class OrderFaker",
+        "public class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/UniquenessTests.cs": {
+      "fichier": "Source/Bogus.Tests/UniquenessTests.cs",
+      "langage": "csharp",
+      "lignes": 175,
+      "taille_bytes": 4667,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit",
+        "Z.ExtensionMethods",
+        "Z.ExtensionMethods.ObjectExtensions"
+      ],
+      "sorties": [
+        "public class Issue57Child",
+        "public class Issue57Parent",
+        "public class UniquenessTests",
+        "public class User",
+        "public class Video"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/Rant_Generator.cs": {
+      "fichier": "Source/Bogus.Tests/Rant_Generator.cs",
+      "langage": "csharp",
+      "lignes": 86,
+      "taille_bytes": 3112,
+      "entrees": [
+        "Newtonsoft.Json",
+        "Newtonsoft.Json.Linq",
+        "Rant",
+        "Rant.Resources",
+        "System.IO",
+        "System.Linq",
+        "System.Reflection",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Rant_Generator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ValidationDeltaTests.cs": {
+      "fichier": "Source/Bogus.Tests/ValidationDeltaTests.cs",
+      "langage": "csharp",
+      "lignes": 67,
+      "taille_bytes": 2222,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class ValidationDeltaTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/README_Generator.cs": {
+      "fichier": "Source/Bogus.Tests/README_Generator.cs",
+      "langage": "csharp",
+      "lignes": 359,
+      "taille_bytes": 11351,
+      "entrees": [
+        "FluentAssertions",
+        "MoreLinq",
+        "Newtonsoft.Json",
+        "Newtonsoft.Json.Linq",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Reflection",
+        "System.Text",
+        "System.Text.RegularExpressions",
+        "System.Xml.Linq",
+        "System.Xml.XPath",
+        "Xunit",
+        "Xunit.Abstractions",
+        "Z.ExtensionMethods"
+      ],
+      "sorties": [
+        "public class README_Generator",
+        "public class Record"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/BsonTests.cs": {
+      "fichier": "Source/Bogus.Tests/BsonTests.cs",
+      "langage": "csharp",
+      "lignes": 136,
+      "taille_bytes": 3106,
+      "entrees": [
+        "Bogus.Bson",
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class BsonTests",
+        "public class ExtraStuff"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/RandomizerTest.cs": {
+      "fichier": "Source/Bogus.Tests/RandomizerTest.cs",
+      "langage": "csharp",
+      "lignes": 564,
+      "taille_bytes": 14711,
+      "entrees": [
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Text",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class RandomizerTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/StackOverflowQuestions/Question66444118.cs": {
+      "fichier": "Source/Bogus.Tests/StackOverflowQuestions/Question66444118.cs",
+      "langage": "csharp",
+      "lignes": 64,
+      "taille_bytes": 1961,
+      "entrees": [
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Reflection",
+        "System.Runtime.Serialization",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class BackingFieldBinder",
+        "public class Foo",
+        "public class Question66444118"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/StackOverflowQuestions/Question60136934.cs": {
+      "fichier": "Source/Bogus.Tests/StackOverflowQuestions/Question60136934.cs",
+      "langage": "csharp",
+      "lignes": 62,
+      "taille_bytes": 1312,
+      "entrees": [
+        "FluentAssertions",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "enum Foo",
+        "public class Question60136934"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue23.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue23.cs",
+      "langage": "csharp",
+      "lignes": 23,
+      "taille_bytes": 524,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue23",
+        "public class TestClass"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue178.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue178.cs",
+      "langage": "csharp",
+      "lignes": 50,
+      "taille_bytes": 1282,
+      "entrees": [
+        "Bogus.Extensions",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue178"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest197.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest197.cs",
+      "langage": "csharp",
+      "lignes": 25,
+      "taille_bytes": 549,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Internet2",
+        "public class PullRequest197"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue10.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue10.cs",
+      "langage": "csharp",
+      "lignes": 76,
+      "taille_bytes": 1935,
+      "entrees": [
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Bar",
+        "public class Issue10"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue225.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue225.cs",
+      "langage": "csharp",
+      "lignes": 37,
+      "taille_bytes": 912,
+      "entrees": [
+        "Bogus.Extensions",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue225"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue192.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue192.cs",
+      "langage": "csharp",
+      "lignes": 24,
+      "taille_bytes": 488,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue192"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue45.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue45.cs",
+      "langage": "csharp",
+      "lignes": 38,
+      "taille_bytes": 942,
+      "entrees": [
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue45",
+        "public class Issue45Object"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue313.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue313.cs",
+      "langage": "csharp",
+      "lignes": 24,
+      "taille_bytes": 523,
+      "entrees": [
+        "Bogus.Extensions.Extras",
+        "FluentAssertions"
+      ],
+      "sorties": [
+        "const string",
+        "public class Issue313"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue124.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue124.cs",
+      "langage": "csharp",
+      "lignes": 195,
+      "taille_bytes": 4762,
+      "entrees": [
+        "Bogus.Extensions",
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Abstractions",
+        "Z.ExtensionMethods.ObjectExtensions"
+      ],
+      "sorties": [
+        "public class Bar",
+        "public class Foo",
+        "public class Issue124",
+        "public class Person",
+        "public class Qux"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue355.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue355.cs",
+      "langage": "csharp",
+      "lignes": 15,
+      "taille_bytes": 285,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue355"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest513.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest513.cs",
+      "langage": "csharp",
+      "lignes": 15,
+      "taille_bytes": 285,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PullRequest513"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue271.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue271.cs",
+      "langage": "csharp",
+      "lignes": 17,
+      "taille_bytes": 390,
+      "entrees": [
+        "Bogus.Extensions.Brazil",
+        "FluentAssertions"
+      ],
+      "sorties": [
+        "public class Issue271"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue232.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue232.cs",
+      "langage": "csharp",
+      "lignes": 44,
+      "taille_bytes": 1098,
+      "entrees": [
+        "Bogus.Extensions",
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class Issue232"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue538.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue538.cs",
+      "langage": "csharp",
+      "lignes": 25,
+      "taille_bytes": 759,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue538"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue218.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue218.cs",
+      "langage": "csharp",
+      "lignes": 55,
+      "taille_bytes": 1292,
+      "entrees": [
+        "Bogus.Tests.Models",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue218"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest258.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest258.cs",
+      "langage": "csharp",
+      "lignes": 31,
+      "taille_bytes": 658,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PullRequest258"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest180.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest180.cs",
+      "langage": "csharp",
+      "lignes": 31,
+      "taille_bytes": 720,
+      "entrees": [
+        "FluentAssertions",
+        "System.Globalization",
+        "System.Threading",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PullRequest180"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue70.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue70.cs",
+      "langage": "csharp",
+      "lignes": 71,
+      "taille_bytes": 1631,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "class BaseA",
+        "class BaseB",
+        "class ClassC",
+        "class DerivedA",
+        "class DerivedB",
+        "public class Issue70"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue121.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue121.cs",
+      "langage": "csharp",
+      "lignes": 82,
+      "taille_bytes": 1910,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class Issue121",
+        "public class TestObject"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue114.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue114.cs",
+      "langage": "csharp",
+      "lignes": 23,
+      "taille_bytes": 554,
+      "entrees": [
+        "Bogus.Extensions.Extras",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue114"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue93.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue93.cs",
+      "langage": "csharp",
+      "lignes": 36,
+      "taille_bytes": 803,
+      "entrees": [
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "class MyObj",
+        "public class Issue93"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue126.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue126.cs",
+      "langage": "csharp",
+      "lignes": 77,
+      "taille_bytes": 2311,
+      "entrees": [
+        "Bogus.Extensions",
+        "Bogus.Tests.Models",
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class CustomFaker",
+        "public class Issue126"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue253.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue253.cs",
+      "langage": "csharp",
+      "lignes": 74,
+      "taille_bytes": 2213,
+      "entrees": [
+        "Bogus.Tests.Models",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue253"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue48.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue48.cs",
+      "langage": "csharp",
+      "lignes": 49,
+      "taille_bytes": 1295,
+      "entrees": [
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Client",
+        "public class Issue48",
+        "public class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue193.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue193.cs",
+      "langage": "csharp",
+      "lignes": 119,
+      "taille_bytes": 3286,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue193"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue318.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue318.cs",
+      "langage": "csharp",
+      "lignes": 24,
+      "taille_bytes": 544,
+      "entrees": [
+        "Bogus.Extensions.UnitedKingdom",
+        "FluentAssertions"
+      ],
+      "sorties": [
+        "public class Issue318"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue49.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue49.cs",
+      "langage": "csharp",
+      "lignes": 29,
+      "taille_bytes": 679,
+      "entrees": [
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue49"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest259.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest259.cs",
+      "langage": "csharp",
+      "lignes": 49,
+      "taille_bytes": 1461,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit",
+        "static"
+      ],
+      "sorties": [
+        "class Drink",
+        "public class PullRequest259"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest194.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest194.cs",
+      "langage": "csharp",
+      "lignes": 36,
+      "taille_bytes": 784,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PullRequest194"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue55.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue55.cs",
+      "langage": "csharp",
+      "lignes": 104,
+      "taille_bytes": 2631,
+      "entrees": [
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Bar",
+        "public class DerivedFaker",
+        "public class Issue55"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue104.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue104.cs",
+      "langage": "csharp",
+      "lignes": 106,
+      "taille_bytes": 2791,
+      "entrees": [
+        "Bogus.Tests.Models",
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class CustomFaker",
+        "public class Issue104",
+        "public class Order2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue601.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue601.cs",
+      "langage": "csharp",
+      "lignes": 21,
+      "taille_bytes": 530,
+      "entrees": [
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Text",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue601"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest149.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest149.cs",
+      "langage": "csharp",
+      "lignes": 16,
+      "taille_bytes": 272,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PullRequest149"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest500.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest500.cs",
+      "langage": "csharp",
+      "lignes": 141,
+      "taille_bytes": 3982,
+      "entrees": [
+        "FluentAssertions",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PersonTest",
+        "public class PullRequest500"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue328.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue328.cs",
+      "langage": "csharp",
+      "lignes": 21,
+      "taille_bytes": 746,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue328"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue280.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue280.cs",
+      "langage": "csharp",
+      "lignes": 93,
+      "taille_bytes": 3320,
+      "entrees": [
+        "FluentAssertions",
+        "System.CodeDom",
+        "System.Reflection",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Foo",
+        "public class Issue280",
+        "public class MagicFaker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue134.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue134.cs",
+      "langage": "csharp",
+      "lignes": 57,
+      "taille_bytes": 1417,
+      "entrees": [
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit",
+        "Z.ExtensionMethods"
+      ],
+      "sorties": [
+        "public class Foo",
+        "public class HandlebarFaker",
+        "public class Issue134"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue249.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue249.cs",
+      "langage": "csharp",
+      "lignes": 36,
+      "taille_bytes": 1222,
+      "entrees": [
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue249",
+        "public class UrlModel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue152.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue152.cs",
+      "langage": "csharp",
+      "lignes": 18,
+      "taille_bytes": 378,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue152"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue260.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue260.cs",
+      "langage": "csharp",
+      "lignes": 43,
+      "taille_bytes": 970,
+      "entrees": [
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class Issue260"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue319.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue319.cs",
+      "langage": "csharp",
+      "lignes": 36,
+      "taille_bytes": 752,
+      "entrees": [
+        "Bogus.Extensions",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue319"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue279.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue279.cs",
+      "langage": "csharp",
+      "lignes": 290,
+      "taille_bytes": 8606,
+      "entrees": [
+        "Bogus.Tests.Models",
+        "FluentAssertions",
+        "System.Collections",
+        "System.Collections.Generic",
+        "System.Collections.Specialized",
+        "System.ComponentModel",
+        "System.Diagnostics",
+        "System.Linq",
+        "System.Net.Cache",
+        "Xunit",
+        "Z.ExtensionMethods"
+      ],
+      "sorties": [
+        "public class Bar",
+        "public class Issue279",
+        "public class ReorderFaker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest261.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest261.cs",
+      "langage": "csharp",
+      "lignes": 32,
+      "taille_bytes": 703,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class PullRequest261"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue115.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue115.cs",
+      "langage": "csharp",
+      "lignes": 64,
+      "taille_bytes": 1464,
+      "entrees": [
+        "Bogus.Tests.Models",
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class Customer",
+        "public class Issue115"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue255.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue255.cs",
+      "langage": "csharp",
+      "lignes": 129,
+      "taille_bytes": 3511,
+      "entrees": [
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class ChildWithMixedInterface",
+        "public class ChildWithNormalInterface",
+        "public class Issue255"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue99.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue99.cs",
+      "langage": "csharp",
+      "lignes": 16,
+      "taille_bytes": 346,
+      "entrees": [
+        "Bogus.DataSets",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue99"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue100.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue100.cs",
+      "langage": "csharp",
+      "lignes": 207,
+      "taille_bytes": 5245,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class Issue100"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue61.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue61.cs",
+      "langage": "csharp",
+      "lignes": 31,
+      "taille_bytes": 727,
+      "entrees": [
+        "static"
+      ],
+      "sorties": [
+        "public class Issue61",
+        "public class SomeUser"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue169.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue169.cs",
+      "langage": "csharp",
+      "lignes": 15,
+      "taille_bytes": 271,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue169"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue309.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue309.cs",
+      "langage": "csharp",
+      "lignes": 79,
+      "taille_bytes": 1964,
+      "entrees": [
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.Linq.Expressions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class Hobby",
+        "public class Issue309",
+        "public class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue132.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue132.cs",
+      "langage": "csharp",
+      "lignes": 168,
+      "taille_bytes": 3670,
+      "entrees": [
+        "Bogus.DataSets",
+        "Bogus.Extensions",
+        "FluentAssertions",
+        "System.Globalization",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue132"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue179.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue179.cs",
+      "langage": "csharp",
+      "lignes": 70,
+      "taille_bytes": 1654,
+      "entrees": [
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class Buz",
+        "public class Issue179"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue342.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue342.cs",
+      "langage": "csharp",
+      "lignes": 16,
+      "taille_bytes": 295,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue342"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue321.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue321.cs",
+      "langage": "csharp",
+      "lignes": 124,
+      "taille_bytes": 3099,
+      "entrees": [
+        "Bogus.Extensions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class AppUser",
+        "public class Issue321",
+        "public class Member",
+        "public class Union"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue102.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue102.cs",
+      "langage": "csharp",
+      "lignes": 32,
+      "taille_bytes": 997,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue102"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue143.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue143.cs",
+      "langage": "csharp",
+      "lignes": 52,
+      "taille_bytes": 1410,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class Issue143"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/PullRequest510.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/PullRequest510.cs",
+      "langage": "csharp",
+      "lignes": 106,
+      "taille_bytes": 2628,
+      "entrees": [
+        "Bogus.Extensions.UnitedKingdom",
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class PullRequest510"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue411.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue411.cs",
+      "langage": "csharp",
+      "lignes": 51,
+      "taille_bytes": 1238,
+      "entrees": [
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue411"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue581.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue581.cs",
+      "langage": "csharp",
+      "lignes": 25,
+      "taille_bytes": 534,
+      "entrees": [
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Text",
+        "System.Threading.Tasks",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue581"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue168.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue168.cs",
+      "langage": "csharp",
+      "lignes": 15,
+      "taille_bytes": 278,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue168"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue86.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue86.cs",
+      "langage": "csharp",
+      "lignes": 34,
+      "taille_bytes": 761,
+      "entrees": [
+        "Bogus.DataSets",
+        "Bogus.Extensions",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue86"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue389.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue389.cs",
+      "langage": "csharp",
+      "lignes": 48,
+      "taille_bytes": 1096,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Foo",
+        "public class FooBase",
+        "public class Issue389",
+        "public class Zoo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/GitHubIssues/Issue13.cs": {
+      "fichier": "Source/Bogus.Tests/GitHubIssues/Issue13.cs",
+      "langage": "csharp",
+      "lignes": 110,
+      "taille_bytes": 2927,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class Issue13",
+        "public class ReadOnly",
+        "public class TestObject"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ExtensionTests/NorwegianExtensionTest.cs": {
+      "fichier": "Source/Bogus.Tests/ExtensionTests/NorwegianExtensionTest.cs",
+      "langage": "csharp",
+      "lignes": 109,
+      "taille_bytes": 3107,
+      "entrees": [
+        "Bogus.Extensions.Norway",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NorwegianExtensionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ExtensionTests/SwedishExtensionTest.cs": {
+      "fichier": "Source/Bogus.Tests/ExtensionTests/SwedishExtensionTest.cs",
+      "langage": "csharp",
+      "lignes": 114,
+      "taille_bytes": 3218,
+      "entrees": [
+        "Bogus.DataSets",
+        "Bogus.Extensions.Sweden",
+        "FluentAssertions",
+        "System",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class SwedishExtensionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ExtensionTests/IranianExtensionTests.cs": {
+      "fichier": "Source/Bogus.Tests/ExtensionTests/IranianExtensionTests.cs",
+      "langage": "csharp",
+      "lignes": 80,
+      "taille_bytes": 2260,
+      "entrees": [
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class IranianExtensionTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ExtensionTests/DanishExtentionTest.cs": {
+      "fichier": "Source/Bogus.Tests/ExtensionTests/DanishExtentionTest.cs",
+      "langage": "csharp",
+      "lignes": 152,
+      "taille_bytes": 4538,
+      "entrees": [
+        "Bogus.DataSets",
+        "Bogus.Extensions.Denmark",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DanishExtensionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ExtensionTests/ExtensionTest.cs": {
+      "fichier": "Source/Bogus.Tests/ExtensionTests/ExtensionTest.cs",
+      "langage": "csharp",
+      "lignes": 306,
+      "taille_bytes": 8516,
+      "entrees": [
+        "Bogus.Extensions.Italy",
+        "Bogus.Extensions.Portugal",
+        "Bogus.Extensions.Romania",
+        "Bogus.Extensions.UnitedKingdom",
+        "FluentAssertions",
+        "System",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class ExtensionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ExtensionTests/BelgianExtensionTests.cs": {
+      "fichier": "Source/Bogus.Tests/ExtensionTests/BelgianExtensionTests.cs",
+      "langage": "csharp",
+      "lignes": 107,
+      "taille_bytes": 3140,
+      "entrees": [
+        "Bogus.DataSets",
+        "Bogus.Extensions.Belgium",
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class BelgianExtensionTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ExtensionTests/PolishExtensionTest.cs": {
+      "fichier": "Source/Bogus.Tests/ExtensionTests/PolishExtensionTest.cs",
+      "langage": "csharp",
+      "lignes": 105,
+      "taille_bytes": 2786,
+      "entrees": [
+        "Bogus.Extensions.Poland",
+        "FluentAssertions",
+        "System",
+        "System.Collections.Generic",
+        "System.Drawing",
+        "System.Linq",
+        "System.Text",
+        "System.Threading.Tasks",
+        "Xunit",
+        "static"
+      ],
+      "sorties": [
+        "public class PolishExtensionTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/ExtensionTests/RegistrationPlateExtensionsForGreatBritainTests.cs": {
+      "fichier": "Source/Bogus.Tests/ExtensionTests/RegistrationPlateExtensionsForGreatBritainTests.cs",
+      "langage": "csharp",
+      "lignes": 115,
+      "taille_bytes": 4069,
+      "entrees": [
+        "Bogus.DataSets",
+        "Bogus.Extensions.UnitedKingdom",
+        "FluentAssertions",
+        "System",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class RegistrationPlateExtensionsForGreatBritainTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/InternetTests.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/InternetTests.cs",
+      "langage": "csharp",
+      "lignes": 193,
+      "taille_bytes": 4510,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Net",
+        "Xunit",
+        "Xunit.Abstractions",
+        "Z.ExtensionMethods"
+      ],
+      "sorties": [
+        "public class InternetTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/DatabaseTests.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/DatabaseTests.cs",
+      "langage": "csharp",
+      "lignes": 38,
+      "taille_bytes": 686,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class DatabaseTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/FinanceTest.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/FinanceTest.cs",
+      "langage": "csharp",
+      "lignes": 196,
+      "taille_bytes": 5231,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "System",
+        "System.Collections.Generic",
+        "System.Linq",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class FinanceTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/LoremTests.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/LoremTests.cs",
+      "langage": "csharp",
+      "lignes": 163,
+      "taille_bytes": 3273,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "System.Linq",
+        "Xunit",
+        "Xunit.Abstractions",
+        "Z.ExtensionMethods"
+      ],
+      "sorties": [
+        "public class LoremTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/DateTest.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/DateTest.cs",
+      "langage": "csharp",
+      "lignes": 469,
+      "taille_bytes": 12790,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "System",
+        "System.Globalization",
+        "Xunit"
+      ],
+      "sorties": [
+        "const int"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/CommerceTest.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/CommerceTest.cs",
+      "langage": "csharp",
+      "lignes": 81,
+      "taille_bytes": 1650,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class CommerceTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/NameTests.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/NameTests.cs",
+      "langage": "csharp",
+      "lignes": 176,
+      "taille_bytes": 3980,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class NameTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/PhoneNumbersTest.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/PhoneNumbersTest.cs",
+      "langage": "csharp",
+      "lignes": 36,
+      "taille_bytes": 693,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PhoneNumbersTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/DateTest.net60.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/DateTest.net60.cs",
+      "langage": "csharp",
+      "lignes": 206,
+      "taille_bytes": 6621,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "System.Globalization",
+        "Xunit"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/SystemTest.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/SystemTest.cs",
+      "langage": "csharp",
+      "lignes": 154,
+      "taille_bytes": 4060,
+      "entrees": [
+        "Bogus.Bson",
+        "FluentAssertions",
+        "Xunit",
+        "Z.ExtensionMethods",
+        "Z.ExtensionMethods.ObjectExtensions"
+      ],
+      "sorties": [
+        "public class SystemTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/RantTests.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/RantTests.cs",
+      "langage": "csharp",
+      "lignes": 35,
+      "taille_bytes": 890,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class RantTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/VehicleTest.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/VehicleTest.cs",
+      "langage": "csharp",
+      "lignes": 58,
+      "taille_bytes": 1077,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class VehicleTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/ImageTest.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/ImageTest.cs",
+      "langage": "csharp",
+      "lignes": 125,
+      "taille_bytes": 4086,
+      "entrees": [
+        "Bogus.DataSets",
+        "FluentAssertions",
+        "System.IO",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class ImageTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/CompanyTest.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/CompanyTest.cs",
+      "langage": "csharp",
+      "lignes": 67,
+      "taille_bytes": 1368,
+      "entrees": [
+        "Bogus.DataSets",
+        "Bogus.Extensions.Brazil",
+        "Bogus.Extensions.UnitedStates",
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class CompanyTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/MusicTests.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/MusicTests.cs",
+      "langage": "csharp",
+      "lignes": 24,
+      "taille_bytes": 467,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class MusicTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/AddressTest.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/AddressTest.cs",
+      "langage": "csharp",
+      "lignes": 162,
+      "taille_bytes": 3311,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class AddressTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/HackerTests.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/HackerTests.cs",
+      "langage": "csharp",
+      "lignes": 31,
+      "taille_bytes": 771,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class HackerTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DataSetTests/CardTests.cs": {
+      "fichier": "Source/Bogus.Tests/DataSetTests/CardTests.cs",
+      "langage": "csharp",
+      "lignes": 20,
+      "taille_bytes": 444,
+      "entrees": [
+        "Xunit"
+      ],
+      "sorties": [
+        "public class CardTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/SchemaTests/LocaleSchemaTests.cs": {
+      "fichier": "Source/Bogus.Tests/SchemaTests/LocaleSchemaTests.cs",
+      "langage": "csharp",
+      "lignes": 97,
+      "taille_bytes": 2584,
+      "entrees": [
+        "Argon",
+        "System",
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Runtime.CompilerServices",
+        "System.Threading.Tasks",
+        "VerifyTests",
+        "VerifyXunit",
+        "Xunit",
+        "Z.ExtensionMethods",
+        "static"
+      ],
+      "sorties": [
+        "const string",
+        "public class InterceptedContractResolver",
+        "public class LocaleSchemaTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/HandlebarsTests/ArgumentsTest.cs": {
+      "fichier": "Source/Bogus.Tests/HandlebarsTests/ArgumentsTest.cs",
+      "langage": "csharp",
+      "lignes": 174,
+      "taille_bytes": 4411,
+      "entrees": [
+        "FluentAssertions",
+        "System",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class ArgumentsTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/DistributionTests/GaussianTests.cs": {
+      "fichier": "Source/Bogus.Tests/DistributionTests/GaussianTests.cs",
+      "langage": "csharp",
+      "lignes": 205,
+      "taille_bytes": 7554,
+      "entrees": [
+        "Bogus.Distributions.Gaussian",
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class GaussianTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/Models/Order.cs": {
+      "fichier": "Source/Bogus.Tests/Models/Order.cs",
+      "langage": "csharp",
+      "lignes": 8,
+      "taille_bytes": 165,
+      "entrees": [],
+      "sorties": [
+        "public class Order"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/LocaleTests/TrLocale.cs": {
+      "fichier": "Source/Bogus.Tests/LocaleTests/TrLocale.cs",
+      "langage": "csharp",
+      "lignes": 23,
+      "taille_bytes": 486,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit",
+        "Xunit.Abstractions"
+      ],
+      "sorties": [
+        "public class TrLocale"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Bogus.Tests/LocaleTests/PtLocale.cs": {
+      "fichier": "Source/Bogus.Tests/LocaleTests/PtLocale.cs",
+      "langage": "csharp",
+      "lignes": 48,
+      "taille_bytes": 1104,
+      "entrees": [
+        "FluentAssertions",
+        "Xunit"
+      ],
+      "sorties": [
+        "public class PtLocale"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Benchmark/BenchStringFill.cs": {
+      "fichier": "Source/Benchmark/BenchStringFill.cs",
+      "langage": "csharp",
+      "lignes": 55,
+      "taille_bytes": 1291,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "Bogus"
+      ],
+      "sorties": [
+        "public class BenchStringFill"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Benchmark/BenchRandomSubset.cs": {
+      "fichier": "Source/Benchmark/BenchRandomSubset.cs",
+      "langage": "csharp",
+      "lignes": 71,
+      "taille_bytes": 1957,
+      "entrees": [
+        "BenchmarkDotNet.Attributes",
+        "Bogus",
+        "System.Collections.Generic",
+        "System.Linq"
+      ],
+      "sorties": [
+        "public class BenchRandomSubset"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Source/Benchmark/Benchmark.csproj": {
+      "fichier": "Source/Benchmark/Benchmark.csproj",
+      "langage": "unknown",
+      "lignes": 24,
+      "taille_bytes": 707,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

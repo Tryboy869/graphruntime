@@ -1,0 +1,1494 @@
+{
+  "meta": {
+    "projet": "flipper",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 2,
+      "json": 2,
+      "ruby": 116
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "docker-compose.yml"
+  },
+  "noeuds": {
+    "docker-compose.yml": {
+      "fichier": "docker-compose.yml",
+      "langage": "yaml",
+      "lignes": 37,
+      "taille_bytes": 788,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package.json": {
+      "fichier": "package.json",
+      "langage": "json",
+      "lignes": 10,
+      "taille_bytes": 168,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package-lock.json": {
+      "fichier": "package-lock.json",
+      "langage": "json",
+      "lignes": 41,
+      "taille_bytes": 1196,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".codeclimate.yml": {
+      "fichier": ".codeclimate.yml",
+      "langage": "yaml",
+      "lignes": 3,
+      "taille_bytes": 58,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/instrumentation_last_accessed_at.rb": {
+      "fichier": "examples/instrumentation_last_accessed_at.rb",
+      "langage": "ruby",
+      "lignes": 38,
+      "taille_bytes": 908,
+      "entrees": [],
+      "sorties": [
+        "class FlipperSubscriber",
+        "def call"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/percentage_of_actors_group.rb": {
+      "fichier": "examples/percentage_of_actors_group.rb",
+      "langage": "ruby",
+      "lignes": 35,
+      "taille_bytes": 1112,
+      "entrees": [
+        "Flipper::Identifier"
+      ],
+      "sorties": [
+        "class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/individual_actor.rb": {
+      "fichier": "examples/individual_actor.rb",
+      "langage": "ruby",
+      "lignes": 28,
+      "taille_bytes": 572,
+      "entrees": [],
+      "sorties": [
+        "class User",
+        "def initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/configuring_default.rb": {
+      "fichier": "examples/configuring_default.rb",
+      "langage": "ruby",
+      "lignes": 19,
+      "taille_bytes": 543,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/percentage_of_actors.rb": {
+      "fichier": "examples/percentage_of_actors.rb",
+      "langage": "ruby",
+      "lignes": 31,
+      "taille_bytes": 767,
+      "entrees": [
+        "Flipper::Identifier"
+      ],
+      "sorties": [
+        "class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mirroring.rb": {
+      "fichier": "examples/mirroring.rb",
+      "langage": "ruby",
+      "lignes": 59,
+      "taille_bytes": 1877,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/dsl.rb": {
+      "fichier": "examples/dsl.rb",
+      "langage": "ruby",
+      "lignes": 57,
+      "taille_bytes": 1425,
+      "entrees": [
+        "Flipper::Identifier"
+      ],
+      "sorties": [
+        "class Person"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/basic.rb": {
+      "fichier": "examples/basic.rb",
+      "langage": "ruby",
+      "lignes": 19,
+      "taille_bytes": 329,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/expressions.rb": {
+      "fichier": "examples/expressions.rb",
+      "langage": "ruby",
+      "lignes": 237,
+      "taille_bytes": 7289,
+      "entrees": [
+        "Flipper::Identifier"
+      ],
+      "sorties": [
+        "class Org",
+        "class User",
+        "def assert",
+        "def refute",
+        "def reset"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/group_with_members.rb": {
+      "fichier": "examples/group_with_members.rb",
+      "langage": "ruby",
+      "lignes": 83,
+      "taille_bytes": 1559,
+      "entrees": [
+        "Flipper::Identifier"
+      ],
+      "sorties": [
+        "class Team",
+        "class TeamActor",
+        "class User",
+        "def allowed",
+        "def flipper_id",
+        "def id",
+        "def initialize",
+        "def member"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/memoizing.rb": {
+      "fichier": "examples/memoizing.rb",
+      "langage": "ruby",
+      "lignes": 35,
+      "taille_bytes": 966,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/instrumentation.rb": {
+      "fichier": "examples/instrumentation.rb",
+      "langage": "ruby",
+      "lignes": 42,
+      "taille_bytes": 1005,
+      "entrees": [],
+      "sorties": [
+        "class FlipperSubscriber",
+        "def call"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/group.rb": {
+      "fichier": "examples/group.rb",
+      "langage": "ruby",
+      "lignes": 38,
+      "taille_bytes": 788,
+      "entrees": [],
+      "sorties": [
+        "class User",
+        "def admin",
+        "def initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/percentage_of_time.rb": {
+      "fichier": "examples/percentage_of_time.rb",
+      "langage": "ruby",
+      "lignes": 27,
+      "taille_bytes": 622,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/group_dynamic_lookup.rb": {
+      "fichier": "examples/group_dynamic_lookup.rb",
+      "langage": "ruby",
+      "lignes": 75,
+      "taille_bytes": 1644,
+      "entrees": [
+        "Flipper::Identifier"
+      ],
+      "sorties": [
+        "class Team",
+        "class User",
+        "def id",
+        "def initialize",
+        "def member"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/importing.rb": {
+      "fichier": "examples/importing.rb",
+      "langage": "ruby",
+      "lignes": 29,
+      "taille_bytes": 1060,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/percentage_of_actors_enabled_check.rb": {
+      "fichier": "examples/percentage_of_actors_enabled_check.rb",
+      "langage": "ruby",
+      "lignes": 35,
+      "taille_bytes": 644,
+      "entrees": [],
+      "sorties": [
+        "class User",
+        "def initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/enabled_for_actor.rb": {
+      "fichier": "examples/enabled_for_actor.rb",
+      "langage": "ruby",
+      "lignes": 37,
+      "taille_bytes": 941,
+      "entrees": [],
+      "sorties": [
+        "class User",
+        "def admin",
+        "def initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/strict.rb": {
+      "fichier": "examples/strict.rb",
+      "langage": "ruby",
+      "lignes": 18,
+      "taille_bytes": 578,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/active_record/internals.rb": {
+      "fichier": "examples/active_record/internals.rb",
+      "langage": "ruby",
+      "lignes": 107,
+      "taille_bytes": 3325,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/active_record/basic.rb": {
+      "fichier": "examples/active_record/basic.rb",
+      "langage": "ruby",
+      "lignes": 20,
+      "taille_bytes": 329,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/active_record/ar_setup.rb": {
+      "fichier": "examples/active_record/ar_setup.rb",
+      "langage": "ruby",
+      "lignes": 45,
+      "taille_bytes": 1096,
+      "entrees": [
+        "Flipper::Model::ActiveRecord"
+      ],
+      "sorties": [
+        "CREATE TABLE flipper_features",
+        "CREATE TABLE flipper_gates",
+        "CREATE TABLE users",
+        "class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/active_record/group_migration.rb": {
+      "fichier": "examples/active_record/group_migration.rb",
+      "langage": "ruby",
+      "lignes": 68,
+      "taille_bytes": 2709,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/active_record/cached.rb": {
+      "fichier": "examples/active_record/cached.rb",
+      "langage": "ruby",
+      "lignes": 23,
+      "taille_bytes": 561,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/sequel/internals.rb": {
+      "fichier": "examples/sequel/internals.rb",
+      "langage": "ruby",
+      "lignes": 54,
+      "taille_bytes": 3231,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/sequel/basic.rb": {
+      "fichier": "examples/sequel/basic.rb",
+      "langage": "ruby",
+      "lignes": 25,
+      "taille_bytes": 475,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/redis/internals.rb": {
+      "fichier": "examples/redis/internals.rb",
+      "langage": "ruby",
+      "lignes": 62,
+      "taille_bytes": 1536,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/redis/basic.rb": {
+      "fichier": "examples/redis/basic.rb",
+      "langage": "ruby",
+      "lignes": 20,
+      "taille_bytes": 274,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mongo/internals.rb": {
+      "fichier": "examples/mongo/internals.rb",
+      "langage": "ruby",
+      "lignes": 46,
+      "taille_bytes": 1427,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/mongo/basic.rb": {
+      "fichier": "examples/mongo/basic.rb",
+      "langage": "ruby",
+      "lignes": 21,
+      "taille_bytes": 357,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/rollout/basic.rb": {
+      "fichier": "examples/rollout/basic.rb",
+      "langage": "ruby",
+      "lignes": 26,
+      "taille_bytes": 444,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/rollout/import.rb": {
+      "fichier": "examples/rollout/import.rb",
+      "langage": "ruby",
+      "lignes": 33,
+      "taille_bytes": 981,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cloud/backoff_policy.rb": {
+      "fichier": "examples/cloud/backoff_policy.rb",
+      "langage": "ruby",
+      "lignes": 13,
+      "taille_bytes": 385,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cloud/cloud_setup.rb": {
+      "fichier": "examples/cloud/cloud_setup.rb",
+      "langage": "ruby",
+      "lignes": 20,
+      "taille_bytes": 692,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cloud/basic.rb": {
+      "fichier": "examples/cloud/basic.rb",
+      "langage": "ruby",
+      "lignes": 22,
+      "taille_bytes": 386,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cloud/threaded.rb": {
+      "fichier": "examples/cloud/threaded.rb",
+      "langage": "ruby",
+      "lignes": 33,
+      "taille_bytes": 690,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cloud/import.rb": {
+      "fichier": "examples/cloud/import.rb",
+      "langage": "ruby",
+      "lignes": 17,
+      "taille_bytes": 458,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cloud/forked.rb": {
+      "fichier": "examples/cloud/forked.rb",
+      "langage": "ruby",
+      "lignes": 36,
+      "taille_bytes": 790,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cloud/poll_interval/server.rb": {
+      "fichier": "examples/cloud/poll_interval/server.rb",
+      "langage": "ruby",
+      "lignes": 98,
+      "taille_bytes": 2417,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/cloud/poll_interval/client.rb": {
+      "fichier": "examples/cloud/poll_interval/client.rb",
+      "langage": "ruby",
+      "lignes": 108,
+      "taille_bytes": 2940,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_rails/helper.rb": {
+      "fichier": "test_rails/helper.rb",
+      "langage": "ruby",
+      "lignes": 31,
+      "taille_bytes": 647,
+      "entrees": [],
+      "sorties": [
+        "def silence"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_rails/system/test_help_test.rb": {
+      "fichier": "test_rails/system/test_help_test.rb",
+      "langage": "ruby",
+      "lignes": 52,
+      "taille_bytes": 1374,
+      "entrees": [],
+      "sorties": [
+        "class FeaturesController",
+        "class TestApp",
+        "class TestHelpTest",
+        "def index"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_rails/generators/flipper/active_record_generator_test.rb": {
+      "fichier": "test_rails/generators/flipper/active_record_generator_test.rb",
+      "langage": "ruby",
+      "lignes": 41,
+      "taille_bytes": 1379,
+      "entrees": [],
+      "sorties": [
+        "class CreateFlipperTables",
+        "class FlipperActiveRecordGeneratorTest",
+        "def down",
+        "def test_generates_migration",
+        "def up"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_rails/generators/flipper/update_generator_test.rb": {
+      "fichier": "test_rails/generators/flipper/update_generator_test.rb",
+      "langage": "ruby",
+      "lignes": 96,
+      "taille_bytes": 3263,
+      "entrees": [],
+      "sorties": [
+        "class UpdateGeneratorTest",
+        "def require_migrations"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test_rails/generators/flipper/setup_generator_test.rb": {
+      "fichier": "test_rails/generators/flipper/setup_generator_test.rb",
+      "langage": "ruby",
+      "lignes": 69,
+      "taille_bytes": 2254,
+      "entrees": [],
+      "sorties": [
+        "class SetupGeneratorTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/test_helper.rb": {
+      "fichier": "test/test_helper.rb",
+      "langage": "ruby",
+      "lignes": 7,
+      "taille_bytes": 218,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/adapters/actor_limit_test.rb": {
+      "fichier": "test/adapters/actor_limit_test.rb",
+      "langage": "ruby",
+      "lignes": 20,
+      "taille_bytes": 579,
+      "entrees": [],
+      "sorties": [
+        "class Flipper",
+        "def setup",
+        "def test_enable_fails_when_limit_exceeded"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/adapters/active_record_test.rb": {
+      "fichier": "test/adapters/active_record_test.rb",
+      "langage": "ruby",
+      "lignes": 79,
+      "taille_bytes": 3174,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE flipper_features",
+        "CREATE TABLE flipper_gates",
+        "class ActiveRecordTest",
+        "def setup",
+        "def teardown",
+        "def test_models_honor_table_name_prefixes_and_suffixes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/adapters/sequel_test.rb": {
+      "fichier": "test/adapters/sequel_test.rb",
+      "langage": "ruby",
+      "lignes": 31,
+      "taille_bytes": 723,
+      "entrees": [],
+      "sorties": [
+        "class SequelTest",
+        "def feature_class",
+        "def gate_class",
+        "def setup",
+        "def teardown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/adapters/memory_test.rb": {
+      "fichier": "test/adapters/memory_test.rb",
+      "langage": "ruby",
+      "lignes": 9,
+      "taille_bytes": 169,
+      "entrees": [],
+      "sorties": [
+        "class MemoryTest",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/adapters/redis_cache_test.rb": {
+      "fichier": "test/adapters/redis_cache_test.rb",
+      "langage": "ruby",
+      "lignes": 19,
+      "taille_bytes": 526,
+      "entrees": [],
+      "sorties": [
+        "class RedisCacheTest",
+        "def setup",
+        "def teardown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/adapters/dalli_test.rb": {
+      "fichier": "test/adapters/dalli_test.rb",
+      "langage": "ruby",
+      "lignes": 22,
+      "taille_bytes": 585,
+      "entrees": [],
+      "sorties": [
+        "class DalliTest",
+        "def setup",
+        "def teardown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/adapters/mongo_test.rb": {
+      "fichier": "test/adapters/mongo_test.rb",
+      "langage": "ruby",
+      "lignes": 25,
+      "taille_bytes": 770,
+      "entrees": [],
+      "sorties": [
+        "class MongoTest",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/adapters/redis_test.rb": {
+      "fichier": "test/adapters/redis_test.rb",
+      "langage": "ruby",
+      "lignes": 14,
+      "taille_bytes": 402,
+      "entrees": [],
+      "sorties": [
+        "class RedisTest",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/adapters/pstore_test.rb": {
+      "fichier": "test/adapters/pstore_test.rb",
+      "langage": "ruby",
+      "lignes": 17,
+      "taille_bytes": 474,
+      "entrees": [],
+      "sorties": [
+        "class PstoreTest",
+        "def setup",
+        "def test_defaults_path_to_flipper_pstore"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/typecast_ips.rb": {
+      "fichier": "benchmark/typecast_ips.rb",
+      "langage": "ruby",
+      "lignes": 27,
+      "taille_bytes": 1427,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/instrumentation_ips.rb": {
+      "fichier": "benchmark/instrumentation_ips.rb",
+      "langage": "ruby",
+      "lignes": 21,
+      "taille_bytes": 652,
+      "entrees": [],
+      "sorties": [
+        "class FlipperSubscriber",
+        "def call"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/enabled_ips.rb": {
+      "fichier": "benchmark/enabled_ips.rb",
+      "langage": "ruby",
+      "lignes": 10,
+      "taille_bytes": 244,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/active_record_adapter_ips.rb": {
+      "fichier": "benchmark/active_record_adapter_ips.rb",
+      "langage": "ruby",
+      "lignes": 18,
+      "taille_bytes": 448,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/active_record_ips.rb": {
+      "fichier": "benchmark/active_record_ips.rb",
+      "langage": "ruby",
+      "lignes": 17,
+      "taille_bytes": 544,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/enabled_profile.rb": {
+      "fichier": "benchmark/enabled_profile.rb",
+      "langage": "ruby",
+      "lignes": 20,
+      "taille_bytes": 453,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/enabled_multiple_actors_ips.rb": {
+      "fichier": "benchmark/enabled_multiple_actors_ips.rb",
+      "langage": "ruby",
+      "lignes": 20,
+      "taille_bytes": 657,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmark/active_record_setup.rb": {
+      "fichier": "benchmark/active_record_setup.rb",
+      "langage": "ruby",
+      "lignes": 31,
+      "taille_bytes": 761,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE flipper_features",
+        "CREATE TABLE flipper_gates"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper_spec.rb": {
+      "fichier": "spec/flipper_spec.rb",
+      "langage": "ruby",
+      "lignes": 422,
+      "taille_bytes": 14435,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/spec_helper.rb": {
+      "fichier": "spec/spec_helper.rb",
+      "langage": "ruby",
+      "lignes": 112,
+      "taille_bytes": 3264,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper_integration_spec.rb": {
+      "fichier": "spec/flipper_integration_spec.rb",
+      "langage": "ruby",
+      "lignes": 783,
+      "taille_bytes": 22768,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/dsl_spec.rb": {
+      "fichier": "spec/flipper/dsl_spec.rb",
+      "langage": "ruby",
+      "lignes": 346,
+      "taille_bytes": 10686,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/configuration_spec.rb": {
+      "fichier": "spec/flipper/configuration_spec.rb",
+      "langage": "ruby",
+      "lignes": 50,
+      "taille_bytes": 1391,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/gate_values_spec.rb": {
+      "fichier": "spec/flipper/gate_values_spec.rb",
+      "langage": "ruby",
+      "lignes": 103,
+      "taille_bytes": 2848,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/engine_spec.rb": {
+      "fichier": "spec/flipper/engine_spec.rb",
+      "langage": "ruby",
+      "lignes": 374,
+      "taille_bytes": 11605,
+      "entrees": [],
+      "sorties": [
+        "def initializer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/cloud_spec.rb": {
+      "fichier": "spec/flipper/cloud_spec.rb",
+      "langage": "ruby",
+      "lignes": 186,
+      "taille_bytes": 8177,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/poller_spec.rb": {
+      "fichier": "spec/flipper/poller_spec.rb",
+      "langage": "ruby",
+      "lignes": 390,
+      "taille_bytes": 11128,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/adapter_builder_spec.rb": {
+      "fichier": "spec/flipper/adapter_builder_spec.rb",
+      "langage": "ruby",
+      "lignes": 72,
+      "taille_bytes": 2190,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/cli_spec.rb": {
+      "fichier": "spec/flipper/cli_spec.rb",
+      "langage": "ruby",
+      "lignes": 217,
+      "taille_bytes": 6251,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/exporter_spec.rb": {
+      "fichier": "spec/flipper/exporter_spec.rb",
+      "langage": "ruby",
+      "lignes": 16,
+      "taille_bytes": 533,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/adapter_spec.rb": {
+      "fichier": "spec/flipper/adapter_spec.rb",
+      "langage": "ruby",
+      "lignes": 166,
+      "taille_bytes": 6047,
+      "entrees": [
+        "Flipper::Adapter"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expression_spec.rb": {
+      "fichier": "spec/flipper/expression_spec.rb",
+      "langage": "ruby",
+      "lignes": 188,
+      "taille_bytes": 5231,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/feature_spec.rb": {
+      "fichier": "spec/flipper/feature_spec.rb",
+      "langage": "ruby",
+      "lignes": 1227,
+      "taille_bytes": 39053,
+      "entrees": [],
+      "sorties": [
+        "def actor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/export_spec.rb": {
+      "fichier": "spec/flipper/export_spec.rb",
+      "langage": "ruby",
+      "lignes": 13,
+      "taille_bytes": 456,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/ui_spec.rb": {
+      "fichier": "spec/flipper/ui_spec.rb",
+      "langage": "ruby",
+      "lignes": 197,
+      "taille_bytes": 5973,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/gate_spec.rb": {
+      "fichier": "spec/flipper/gate_spec.rb",
+      "langage": "ruby",
+      "lignes": 39,
+      "taille_bytes": 754,
+      "entrees": [],
+      "sorties": [
+        "def data_type",
+        "def key",
+        "def name"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/typecast_spec.rb": {
+      "fichier": "spec/flipper/typecast_spec.rb",
+      "langage": "ruby",
+      "lignes": 232,
+      "taille_bytes": 5867,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/feature_check_context_spec.rb": {
+      "fichier": "spec/flipper/feature_check_context_spec.rb",
+      "langage": "ruby",
+      "lignes": 65,
+      "taille_bytes": 1963,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/identifier_spec.rb": {
+      "fichier": "spec/flipper/identifier_spec.rb",
+      "langage": "ruby",
+      "lignes": 12,
+      "taille_bytes": 295,
+      "entrees": [
+        "Flipper::Identifier"
+      ],
+      "sorties": [
+        "class BlahBlah"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/registry_spec.rb": {
+      "fichier": "spec/flipper/registry_spec.rb",
+      "langage": "ruby",
+      "lignes": 140,
+      "taille_bytes": 2893,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api_spec.rb": {
+      "fichier": "spec/flipper/api_spec.rb",
+      "langage": "ruby",
+      "lignes": 130,
+      "taille_bytes": 3538,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/actor_spec.rb": {
+      "fichier": "spec/flipper/actor_spec.rb",
+      "langage": "ruby",
+      "lignes": 56,
+      "taille_bytes": 1758,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/json_params_spec.rb": {
+      "fichier": "spec/flipper/api/json_params_spec.rb",
+      "langage": "ruby",
+      "lignes": 79,
+      "taille_bytes": 2847,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/action_spec.rb": {
+      "fichier": "spec/flipper/api/action_spec.rb",
+      "langage": "ruby",
+      "lignes": 110,
+      "taille_bytes": 3307,
+      "entrees": [],
+      "sorties": [
+        "def delete",
+        "def get",
+        "def head",
+        "def noooope",
+        "def post",
+        "def put"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/features_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/features_spec.rb",
+      "langage": "ruby",
+      "lignes": 262,
+      "taille_bytes": 7456,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/groups_gate_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/groups_gate_spec.rb",
+      "langage": "ruby",
+      "lignes": 178,
+      "taille_bytes": 5567,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/actors_gate_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/actors_gate_spec.rb",
+      "langage": "ruby",
+      "lignes": 160,
+      "taille_bytes": 4969,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/clear_feature_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/clear_feature_spec.rb",
+      "langage": "ruby",
+      "lignes": 45,
+      "taille_bytes": 1362,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/percentage_of_actors_gate_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/percentage_of_actors_gate_spec.rb",
+      "langage": "ruby",
+      "lignes": 163,
+      "taille_bytes": 4788,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/boolean_gate_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/boolean_gate_spec.rb",
+      "langage": "ruby",
+      "lignes": 54,
+      "taille_bytes": 1542,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/feature_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/feature_spec.rb",
+      "langage": "ruby",
+      "lignes": 242,
+      "taille_bytes": 6275,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/actors_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/actors_spec.rb",
+      "langage": "ruby",
+      "lignes": 103,
+      "taille_bytes": 2508,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/expression_gate_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/expression_gate_spec.rb",
+      "langage": "ruby",
+      "lignes": 157,
+      "taille_bytes": 5166,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/percentage_of_time_gate_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/percentage_of_time_gate_spec.rb",
+      "langage": "ruby",
+      "lignes": 163,
+      "taille_bytes": 4754,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/actions/import_spec.rb": {
+      "fichier": "spec/flipper/api/v1/actions/import_spec.rb",
+      "langage": "ruby",
+      "lignes": 73,
+      "taille_bytes": 1997,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/api/v1/decorators/feature_spec.rb": {
+      "fichier": "spec/flipper/api/v1/decorators/feature_spec.rb",
+      "langage": "ruby",
+      "lignes": 27,
+      "taille_bytes": 841,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/instrumenters/memory_spec.rb": {
+      "fichier": "spec/flipper/instrumenters/memory_spec.rb",
+      "langage": "ruby",
+      "lignes": 43,
+      "taille_bytes": 1240,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/instrumenters/noop_spec.rb": {
+      "fichier": "spec/flipper/instrumenters/noop_spec.rb",
+      "langage": "ruby",
+      "lignes": 27,
+      "taille_bytes": 668,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/greater_than_or_equal_to_spec.rb": {
+      "fichier": "spec/flipper/expressions/greater_than_or_equal_to_spec.rb",
+      "langage": "ruby",
+      "lignes": 28,
+      "taille_bytes": 824,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/now_spec.rb": {
+      "fichier": "spec/flipper/expressions/now_spec.rb",
+      "langage": "ruby",
+      "lignes": 11,
+      "taille_bytes": 275,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/number_spec.rb": {
+      "fichier": "spec/flipper/expressions/number_spec.rb",
+      "langage": "ruby",
+      "lignes": 21,
+      "taille_bytes": 582,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/not_equal_spec.rb": {
+      "fichier": "spec/flipper/expressions/not_equal_spec.rb",
+      "langage": "ruby",
+      "lignes": 15,
+      "taille_bytes": 455,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/equal_spec.rb": {
+      "fichier": "spec/flipper/expressions/equal_spec.rb",
+      "langage": "ruby",
+      "lignes": 24,
+      "taille_bytes": 737,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/less_than_spec.rb": {
+      "fichier": "spec/flipper/expressions/less_than_spec.rb",
+      "langage": "ruby",
+      "lignes": 32,
+      "taille_bytes": 942,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/string_spec.rb": {
+      "fichier": "spec/flipper/expressions/string_spec.rb",
+      "langage": "ruby",
+      "lignes": 11,
+      "taille_bytes": 270,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/greater_than_spec.rb": {
+      "fichier": "spec/flipper/expressions/greater_than_spec.rb",
+      "langage": "ruby",
+      "lignes": 28,
+      "taille_bytes": 817,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/any_spec.rb": {
+      "fichier": "spec/flipper/expressions/any_spec.rb",
+      "langage": "ruby",
+      "lignes": 15,
+      "taille_bytes": 424,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/percentage_of_actors_spec.rb": {
+      "fichier": "spec/flipper/expressions/percentage_of_actors_spec.rb",
+      "langage": "ruby",
+      "lignes": 20,
+      "taille_bytes": 774,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/less_than_or_equal_to_spec.rb": {
+      "fichier": "spec/flipper/expressions/less_than_or_equal_to_spec.rb",
+      "langage": "ruby",
+      "lignes": 28,
+      "taille_bytes": 821,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/percentage_spec.rb": {
+      "fichier": "spec/flipper/expressions/percentage_spec.rb",
+      "langage": "ruby",
+      "lignes": 15,
+      "taille_bytes": 368,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "spec/flipper/expressions/time_spec.rb": {
+      "fichier": "spec/flipper/expressions/time_spec.rb",
+      "langage": "ruby",
+      "lignes": 29,
+      "taille_bytes": 813,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

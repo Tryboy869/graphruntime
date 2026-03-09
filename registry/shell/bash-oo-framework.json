@@ -1,0 +1,919 @@
+{
+  "meta": {
+    "projet": "bash-oo-framework",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "shell": 66,
+      "yaml": 2,
+      "json": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 69,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "example/v1/exception-demo/maid.sh"
+  },
+  "noeuds": {
+    "your-script.sh": {
+      "fichier": "your-script.sh",
+      "langage": "shell",
+      "lignes": 9,
+      "taille_bytes": 222,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".travis.yml": {
+      "fichier": ".travis.yml",
+      "langage": "yaml",
+      "lignes": 17,
+      "taille_bytes": 503,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package.json": {
+      "fichier": "package.json",
+      "langage": "json",
+      "lignes": 38,
+      "taille_bytes": 1045,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".cirrus.yml": {
+      "fichier": ".cirrus.yml",
+      "langage": "yaml",
+      "lignes": 19,
+      "taille_bytes": 413,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/escaping.sh": {
+      "fichier": "test/escaping.sh",
+      "langage": "shell",
+      "lignes": 31,
+      "taille_bytes": 638,
+      "entrees": [
+        "util/exception"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/test-imports.sh": {
+      "fichier": "test/test-imports.sh",
+      "langage": "shell",
+      "lignes": 42,
+      "taille_bytes": 565,
+      "entrees": [
+        "UI/Cursor",
+        "util/log"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/human.sh": {
+      "fichier": "example/human.sh",
+      "langage": "shell",
+      "lignes": 83,
+      "taille_bytes": 1779,
+      "entrees": [
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/testing.sh": {
+      "fichier": "example/testing.sh",
+      "langage": "shell",
+      "lignes": 33,
+      "taille_bytes": 799,
+      "entrees": [
+        "util/exception"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/exitcode.sh": {
+      "fichier": "example/exitcode.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 155,
+      "entrees": [
+        "util/exception"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/trycatch.sh": {
+      "fichier": "example/trycatch.sh",
+      "langage": "shell",
+      "lignes": 29,
+      "taille_bytes": 604,
+      "entrees": [
+        "util/exception"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/string.sh": {
+      "fichier": "example/string.sh",
+      "langage": "shell",
+      "lignes": 25,
+      "taille_bytes": 589,
+      "entrees": [
+        "util/log"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/array.sh": {
+      "fichier": "example/array.sh",
+      "langage": "shell",
+      "lignes": 59,
+      "taille_bytes": 1319,
+      "entrees": [
+        "util/log"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/debug.sh": {
+      "fichier": "example/v1/debug.sh",
+      "langage": "shell",
+      "lignes": 24,
+      "taille_bytes": 308,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/logging.sh": {
+      "fichier": "example/v1/logging.sh",
+      "langage": "shell",
+      "lignes": 114,
+      "taille_bytes": 2791,
+      "entrees": [
+        "lib/type-core",
+        "lib/types/base",
+        "lib/types/ui"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/assign-reference.sh": {
+      "fichier": "example/v1/assign-reference.sh",
+      "langage": "shell",
+      "lignes": 50,
+      "taille_bytes": 715,
+      "entrees": [
+        "lib/types/base",
+        "lib/types/ui",
+        "lib/types/util/test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/seamless3.sh": {
+      "fichier": "example/v1/seamless3.sh",
+      "langage": "shell",
+      "lignes": 312,
+      "taille_bytes": 5036,
+      "entrees": [
+        "lib/system/oo"
+      ],
+      "sorties": [
+        "function test1",
+        "function test10",
+        "function test2",
+        "function test3",
+        "function test4",
+        "function test5",
+        "function test6",
+        "function test7",
+        "function test8",
+        "function test9",
+        "function testCursor",
+        "function testProperties"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/seamless.sh": {
+      "fichier": "example/v1/seamless.sh",
+      "langage": "shell",
+      "lignes": 761,
+      "taille_bytes": 20074,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/seamless4.sh": {
+      "fichier": "example/v1/seamless4.sh",
+      "langage": "shell",
+      "lignes": 178,
+      "taille_bytes": 2949,
+      "entrees": [
+        "lib/system/oo",
+        "lib/type/util/test"
+      ],
+      "sorties": [
+        "function test2",
+        "function testArrayMethods",
+        "function testBoolean",
+        "function testBooleanInClass",
+        "function testParamPassing",
+        "function testPassingAsParameter",
+        "function testPassingAsParameterCall",
+        "function testPassingAsParameterSimple",
+        "function testPrivate",
+        "function testStatic"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/seamless2.sh": {
+      "fichier": "example/v1/seamless2.sh",
+      "langage": "shell",
+      "lignes": 268,
+      "taille_bytes": 6379,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/capture-pipe.sh": {
+      "fichier": "example/v1/capture-pipe.sh",
+      "langage": "shell",
+      "lignes": 21,
+      "taille_bytes": 368,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/run-tests.sh": {
+      "fichier": "example/v1/run-tests.sh",
+      "langage": "shell",
+      "lignes": 181,
+      "taille_bytes": 4250,
+      "entrees": [
+        "lib/type-core",
+        "lib/types/base",
+        "lib/types/ui",
+        "lib/types/util/test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/steffen.sh": {
+      "fichier": "example/v1/steffen.sh",
+      "langage": "shell",
+      "lignes": 10,
+      "taille_bytes": 243,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/serialization.sh": {
+      "fichier": "example/v1/serialization.sh",
+      "langage": "shell",
+      "lignes": 84,
+      "taille_bytes": 1792,
+      "entrees": [
+        "lib/type-core",
+        "lib/types/base",
+        "lib/types/ui",
+        "lib/types/util/test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/try-catch.sh": {
+      "fichier": "example/v1/try-catch.sh",
+      "langage": "shell",
+      "lignes": 96,
+      "taille_bytes": 1817,
+      "entrees": [
+        "lib/types/base",
+        "lib/types/ui",
+        "lib/types/util/test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/exception-demo/demo.sh": {
+      "fichier": "example/v1/exception-demo/demo.sh",
+      "langage": "shell",
+      "lignes": 13,
+      "taille_bytes": 175,
+      "entrees": [
+        "maid"
+      ],
+      "sorties": [],
+      "appelle": [
+        "example/v1/exception-demo/maid.sh"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/exception-demo/run.sh": {
+      "fichier": "example/v1/exception-demo/run.sh",
+      "langage": "shell",
+      "lignes": 13,
+      "taille_bytes": 255,
+      "entrees": [
+        "lib/type-core",
+        "lib/types/base",
+        "lib/types/ui",
+        "tests/exception-demo/demo"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/exception-demo/maid.sh": {
+      "fichier": "example/v1/exception-demo/maid.sh",
+      "langage": "shell",
+      "lignes": 5,
+      "taille_bytes": 110,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "example/v1/exception-demo/demo.sh"
+      ],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/import2.sh": {
+      "fichier": "example/v1/tmp/import2.sh",
+      "langage": "shell",
+      "lignes": 83,
+      "taille_bytes": 2336,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/test2.sh": {
+      "fichier": "example/v1/tmp/test2.sh",
+      "langage": "shell",
+      "lignes": 48,
+      "taille_bytes": 606,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/build-min.sh": {
+      "fichier": "example/v1/tmp/build-min.sh",
+      "langage": "shell",
+      "lignes": 37,
+      "taille_bytes": 706,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/named-params.sh": {
+      "fichier": "example/v1/tmp/named-params.sh",
+      "langage": "shell",
+      "lignes": 55,
+      "taille_bytes": 1454,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/backtrace-test.sh": {
+      "fichier": "example/v1/tmp/backtrace-test.sh",
+      "langage": "shell",
+      "lignes": 30,
+      "taille_bytes": 557,
+      "entrees": [
+        "lib/types/base",
+        "lib/types/ui",
+        "lib/types/util/test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/test.sh": {
+      "fichier": "example/v1/tmp/test.sh",
+      "langage": "shell",
+      "lignes": 35,
+      "taille_bytes": 767,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/test-extractlocal.sh": {
+      "fichier": "example/v1/tmp/test-extractlocal.sh",
+      "langage": "shell",
+      "lignes": 44,
+      "taille_bytes": 1049,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/core-test.sh": {
+      "fichier": "example/v1/tmp/core-test.sh",
+      "langage": "shell",
+      "lignes": 78,
+      "taille_bytes": 1425,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/assigning-local.sh": {
+      "fichier": "example/v1/tmp/assigning-local.sh",
+      "langage": "shell",
+      "lignes": 113,
+      "taille_bytes": 2385,
+      "entrees": [
+        "lib/types/base",
+        "lib/types/ui",
+        "lib/types/util/test"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/import.sh": {
+      "fichier": "example/v1/tmp/import.sh",
+      "langage": "shell",
+      "lignes": 86,
+      "taille_bytes": 2437,
+      "entrees": [
+        "Array/Contains"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/v1/tmp/types/examples.sh": {
+      "fichier": "example/v1/tmp/types/examples.sh",
+      "langage": "shell",
+      "lignes": 130,
+      "taille_bytes": 2745,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/oo-bootstrap.sh": {
+      "fichier": "lib/oo-bootstrap.sh",
+      "langage": "shell",
+      "lignes": 190,
+      "taille_bytes": 5422,
+      "entrees": [],
+      "sorties": [
+        "export PS4"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/UI/Cursor.sh": {
+      "fichier": "lib/UI/Cursor.sh",
+      "langage": "shell",
+      "lignes": 36,
+      "taille_bytes": 672,
+      "entrees": [
+        "util/class"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/UI/Color.sh": {
+      "fichier": "lib/UI/Color.sh",
+      "langage": "shell",
+      "lignes": 153,
+      "taille_bytes": 4744,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/UI/Console.sh": {
+      "fichier": "lib/UI/Console.sh",
+      "langage": "shell",
+      "lignes": 17,
+      "taille_bytes": 386,
+      "entrees": [
+        "UI/Color"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/UI/Color.var.sh": {
+      "fichier": "lib/UI/Color.var.sh",
+      "langage": "shell",
+      "lignes": 155,
+      "taille_bytes": 3634,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/exits.sh": {
+      "fichier": "lib/util/exits.sh",
+      "langage": "shell",
+      "lignes": 24,
+      "taille_bytes": 901,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/class.sh": {
+      "fichier": "lib/util/class.sh",
+      "langage": "shell",
+      "lignes": 146,
+      "taille_bytes": 4338,
+      "entrees": [
+        "util/type"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/command.sh": {
+      "fichier": "lib/util/command.sh",
+      "langage": "shell",
+      "lignes": 40,
+      "taille_bytes": 928,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/exception.sh": {
+      "fichier": "lib/util/exception.sh",
+      "langage": "shell",
+      "lignes": 262,
+      "taille_bytes": 7900,
+      "entrees": [
+        "String/GetSpaces"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/log.sh": {
+      "fichier": "lib/util/log.sh",
+      "langage": "shell",
+      "lignes": 146,
+      "taille_bytes": 4026,
+      "entrees": [
+        "UI/Color",
+        "util/bash4"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/bash4.sh": {
+      "fichier": "lib/util/bash4.sh",
+      "langage": "shell",
+      "lignes": 1,
+      "taille_bytes": 115,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/test.sh": {
+      "fichier": "lib/util/test.sh",
+      "langage": "shell",
+      "lignes": 74,
+      "taille_bytes": 2776,
+      "entrees": [
+        "util/class"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/tryCatch.sh": {
+      "fichier": "lib/util/tryCatch.sh",
+      "langage": "shell",
+      "lignes": 72,
+      "taille_bytes": 2353,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/pipe.sh": {
+      "fichier": "lib/util/pipe.sh",
+      "langage": "shell",
+      "lignes": 9,
+      "taille_bytes": 127,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/type.sh": {
+      "fichier": "lib/util/type.sh",
+      "langage": "shell",
+      "lignes": 793,
+      "taille_bytes": 25304,
+      "entrees": [
+        "Array/Contains",
+        "TypePrimitives",
+        "util/bash4",
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/namedParameters.sh": {
+      "fichier": "lib/util/namedParameters.sh",
+      "langage": "shell",
+      "lignes": 247,
+      "taille_bytes": 10072,
+      "entrees": [
+        "util/variable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/util/variable.sh": {
+      "fichier": "lib/util/variable.sh",
+      "langage": "shell",
+      "lignes": 161,
+      "taille_bytes": 4200,
+      "entrees": [
+        "util/command"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/TypePrimitives/integer.sh": {
+      "fichier": "lib/TypePrimitives/integer.sh",
+      "langage": "shell",
+      "lignes": 14,
+      "taille_bytes": 194,
+      "entrees": [
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/TypePrimitives/boolean.sh": {
+      "fichier": "lib/TypePrimitives/boolean.sh",
+      "langage": "shell",
+      "lignes": 33,
+      "taille_bytes": 599,
+      "entrees": [
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/TypePrimitives/map.sh": {
+      "fichier": "lib/TypePrimitives/map.sh",
+      "langage": "shell",
+      "lignes": 60,
+      "taille_bytes": 1026,
+      "entrees": [
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/TypePrimitives/string.sh": {
+      "fichier": "lib/TypePrimitives/string.sh",
+      "langage": "shell",
+      "lignes": 198,
+      "taille_bytes": 4079,
+      "entrees": [
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/TypePrimitives/array.sh": {
+      "fichier": "lib/TypePrimitives/array.sh",
+      "langage": "shell",
+      "lignes": 206,
+      "taille_bytes": 3434,
+      "entrees": [
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/Array/Intersect.sh": {
+      "fichier": "lib/Array/Intersect.sh",
+      "langage": "shell",
+      "lignes": 21,
+      "taille_bytes": 436,
+      "entrees": [
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/Array/Contains.sh": {
+      "fichier": "lib/Array/Contains.sh",
+      "langage": "shell",
+      "lignes": 8,
+      "taille_bytes": 127,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/Array/List.sh": {
+      "fichier": "lib/Array/List.sh",
+      "langage": "shell",
+      "lignes": 13,
+      "taille_bytes": 261,
+      "entrees": [
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/Array/Reverse.sh": {
+      "fichier": "lib/Array/Reverse.sh",
+      "langage": "shell",
+      "lignes": 24,
+      "taille_bytes": 505,
+      "entrees": [
+        "util/namedParameters"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/String/UUID.sh": {
+      "fichier": "lib/String/UUID.sh",
+      "langage": "shell",
+      "lignes": 24,
+      "taille_bytes": 412,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/String/SlashReplacement.sh": {
+      "fichier": "lib/String/SlashReplacement.sh",
+      "langage": "shell",
+      "lignes": 17,
+      "taille_bytes": 521,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/String/SanitizeForVariable.sh": {
+      "fichier": "lib/String/SanitizeForVariable.sh",
+      "langage": "shell",
+      "lignes": 4,
+      "taille_bytes": 89,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/String/IsNumber.sh": {
+      "fichier": "lib/String/IsNumber.sh",
+      "langage": "shell",
+      "lignes": 10,
+      "taille_bytes": 150,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/String/GetSpaces.sh": {
+      "fichier": "lib/String/GetSpaces.sh",
+      "langage": "shell",
+      "lignes": 8,
+      "taille_bytes": 118,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "example/v1/exception-demo/demo.sh",
+      "vers": "example/v1/exception-demo/maid.sh",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

@@ -1,0 +1,2061 @@
+{
+  "meta": {
+    "projet": "psysh",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 1,
+      "php": 119
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "composer.json"
+  },
+  "noeuds": {
+    "composer.json": {
+      "fichier": "composer.json",
+      "langage": "json",
+      "lignes": 60,
+      "taille_bytes": 1752,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/CodeCleaner.php": {
+      "fichier": "src/CodeCleaner.php",
+      "langage": "php",
+      "lignes": 710,
+      "taille_bytes": 24358,
+      "entrees": [
+        "PhpParser\\NodeTraverser",
+        "PhpParser\\NodeVisitor\\NameResolver",
+        "PhpParser\\Node\\Expr\\ClassConstFetch",
+        "PhpParser\\Node\\Expr\\FuncCall",
+        "PhpParser\\Node\\Name",
+        "PhpParser\\Node\\Name\\FullyQualified",
+        "PhpParser\\Node\\Stmt\\Expression",
+        "PhpParser\\Node\\Stmt\\Namespace_",
+        "PhpParser\\Node\\Stmt\\Use_",
+        "PhpParser\\Parser",
+        "PhpParser\\PrettyPrinter\\Standard",
+        "Psy\\CodeCleaner\\AbstractClassPass",
+        "Psy\\CodeCleaner\\AssignThisVariablePass",
+        "Psy\\CodeCleaner\\CallTimePassByReferencePass",
+        "Psy\\CodeCleaner\\CalledClassPass",
+        "Psy\\CodeCleaner\\CodeCleanerPass",
+        "Psy\\CodeCleaner\\EmptyArrayDimFetchPass",
+        "Psy\\CodeCleaner\\ExitPass",
+        "Psy\\CodeCleaner\\FinalClassPass",
+        "Psy\\CodeCleaner\\FunctionContextPass",
+        "Psy\\CodeCleaner\\FunctionReturnInWriteContextPass",
+        "Psy\\CodeCleaner\\ImplicitReturnPass",
+        "Psy\\CodeCleaner\\ImplicitUsePass",
+        "Psy\\CodeCleaner\\IssetPass",
+        "Psy\\CodeCleaner\\LabelContextPass",
+        "Psy\\CodeCleaner\\LeavePsyshAlonePass",
+        "Psy\\CodeCleaner\\ListPass",
+        "Psy\\CodeCleaner\\LoopContextPass",
+        "Psy\\CodeCleaner\\MagicConstantsPass",
+        "Psy\\CodeCleaner\\NamespaceAwarePass",
+        "Psy\\CodeCleaner\\NamespacePass",
+        "Psy\\CodeCleaner\\PassableByReferencePass",
+        "Psy\\CodeCleaner\\RequirePass",
+        "Psy\\CodeCleaner\\ReturnTypePass",
+        "Psy\\CodeCleaner\\StrictTypesPass",
+        "Psy\\CodeCleaner\\UseStatementPass",
+        "Psy\\CodeCleaner\\ValidClassNamePass",
+        "Psy\\CodeCleaner\\ValidConstructorPass",
+        "Psy\\CodeCleaner\\ValidFunctionNamePass",
+        "Psy\\Exception\\ParseErrorException",
+        "Psy\\Util\\Str"
+      ],
+      "sorties": [
+        "class CodeCleaner",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/EnvInterface.php": {
+      "fichier": "src/EnvInterface.php",
+      "langage": "php",
+      "lignes": 25,
+      "taille_bytes": 443,
+      "entrees": [],
+      "sorties": [
+        "interface EnvInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ShellLogger.php": {
+      "fichier": "src/ShellLogger.php",
+      "langage": "php",
+      "lignes": 101,
+      "taille_bytes": 2338,
+      "entrees": [
+        "Psy\\Logger\\CallbackLogger"
+      ],
+      "sorties": [
+        "class ShellLogger",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SystemEnv.php": {
+      "fichier": "src/SystemEnv.php",
+      "langage": "php",
+      "lignes": 34,
+      "taille_bytes": 666,
+      "entrees": [],
+      "sorties": [
+        "class SystemEnv",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/OutputAware.php": {
+      "fichier": "src/OutputAware.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 584,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "interface OutputAware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ConfigPaths.php": {
+      "fichier": "src/ConfigPaths.php",
+      "langage": "php",
+      "lignes": 507,
+      "taille_bytes": 14307,
+      "entrees": [],
+      "sorties": [
+        "class ConfigPaths",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/functions.php": {
+      "fichier": "src/functions.php",
+      "langage": "php",
+      "lignes": 637,
+      "taille_bytes": 24890,
+      "entrees": [
+        "Psy\\Exception\\BreakException",
+        "Psy\\Exception\\InvalidManualException",
+        "Psy\\ExecutionLoop\\ProcessForker",
+        "Psy\\ManualUpdater\\ManualUpdate",
+        "Psy\\Util\\DependencyChecker",
+        "Psy\\VersionUpdater\\GitHubChecker",
+        "Psy\\VersionUpdater\\Installer",
+        "Psy\\VersionUpdater\\SelfUpdate",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\Console\\Input\\ArgvInput",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputOption"
+      ],
+      "sorties": [
+        "function bin",
+        "function debug",
+        "function info",
+        "function sh"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ExecutionClosure.php": {
+      "fichier": "src/ExecutionClosure.php",
+      "langage": "php",
+      "lignes": 92,
+      "taille_bytes": 2420,
+      "entrees": [],
+      "sorties": [
+        "class ExecutionClosure",
+        "const NOOP_INPUT",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Sudo.php": {
+      "fichier": "src/Sudo.php",
+      "langage": "php",
+      "lignes": 213,
+      "taille_bytes": 6074,
+      "entrees": [],
+      "sorties": [
+        "class Sudo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ParserFactory.php": {
+      "fichier": "src/ParserFactory.php",
+      "langage": "php",
+      "lignes": 35,
+      "taille_bytes": 733,
+      "entrees": [
+        "PhpParser\\Parser",
+        "PhpParser\\ParserFactory"
+      ],
+      "sorties": [
+        "class ParserFactory",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ContextAware.php": {
+      "fichier": "src/ContextAware.php",
+      "langage": "php",
+      "lignes": 26,
+      "taille_bytes": 529,
+      "entrees": [],
+      "sorties": [
+        "interface ContextAware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ExecutionLoopClosure.php": {
+      "fichier": "src/ExecutionLoopClosure.php",
+      "langage": "php",
+      "lignes": 97,
+      "taille_bytes": 3538,
+      "entrees": [
+        "Psy\\Exception\\BreakException",
+        "Psy\\Exception\\InterruptException",
+        "Psy\\Exception\\ThrowUpException"
+      ],
+      "sorties": [
+        "class ExecutionLoopClosure",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Shell.php": {
+      "fichier": "src/Shell.php",
+      "langage": "php",
+      "lignes": 2410,
+      "taille_bytes": 74277,
+      "entrees": [
+        "$__psysh_include__",
+        "Psy\\CodeCleaner\\NoReturnValue",
+        "Psy\\Completion\\CompletionEngine",
+        "Psy\\Completion\\Source\\CommandOptionSource",
+        "Psy\\Completion\\Source\\CommandSource",
+        "Psy\\Completion\\Source\\HistorySource",
+        "Psy\\Completion\\Source\\MatcherAdapterSource",
+        "Psy\\Exception\\BreakException",
+        "Psy\\Exception\\ErrorException",
+        "Psy\\Exception\\Exception",
+        "Psy\\Exception\\InterruptException",
+        "Psy\\Exception\\RuntimeException",
+        "Psy\\Exception\\ThrowUpException",
+        "Psy\\ExecutionLoop\\ProcessForker",
+        "Psy\\ExecutionLoop\\RunkitReloader",
+        "Psy\\ExecutionLoop\\SignalHandler",
+        "Psy\\ExecutionLoop\\UopzReloader",
+        "Psy\\Formatter\\TraceFormatter",
+        "Psy\\Input\\ShellInput",
+        "Psy\\Input\\SilentInput",
+        "Psy\\Output\\ShellOutput",
+        "Psy\\Readline\\InteractiveReadlineInterface",
+        "Psy\\Readline\\Readline",
+        "Psy\\Readline\\ReadlineAware",
+        "Psy\\TabCompletion\\AutoCompleter",
+        "Psy\\TabCompletion\\Matcher",
+        "Psy\\TabCompletion\\Matcher\\CommandsMatcher",
+        "Psy\\Util\\Tty",
+        "Psy\\VarDumper\\PresenterAware",
+        "Symfony\\Component\\Console\\Application",
+        "Symfony\\Component\\Console\\Command\\Command",
+        "Symfony\\Component\\Console\\Exception\\ExceptionInterface",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\Console\\Input\\ArrayInput",
+        "Symfony\\Component\\Console\\Input\\InputArgument",
+        "Symfony\\Component\\Console\\Input\\InputDefinition",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Input\\StringInput",
+        "Symfony\\Component\\Console\\Output\\ConsoleOutput",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Output\\StreamOutput"
+      ],
+      "sorties": [
+        "class Shell",
+        "const VERSION",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Configuration.php": {
+      "fichier": "src/Configuration.php",
+      "langage": "php",
+      "lignes": 3191,
+      "taille_bytes": 100571,
+      "entrees": [
+        "Psy\\Clipboard\\ClipboardMethod",
+        "Psy\\Clipboard\\CommandClipboardMethod",
+        "Psy\\Clipboard\\NullClipboardMethod",
+        "Psy\\Clipboard\\Osc52ClipboardMethod",
+        "Psy\\Exception\\DeprecatedException",
+        "Psy\\Exception\\InvalidManualException",
+        "Psy\\Exception\\RuntimeException",
+        "Psy\\ExecutionLoop\\ExecutionLoggingListener",
+        "Psy\\ExecutionLoop\\InputLoggingListener",
+        "Psy\\ExecutionLoop\\ProcessForker",
+        "Psy\\Formatter\\SignatureFormatter",
+        "Psy\\Logger\\CallbackLogger",
+        "Psy\\Manual\\ManualInterface",
+        "Psy\\Manual\\V2Manual",
+        "Psy\\Manual\\V3Manual",
+        "Psy\\Output\\OutputPager",
+        "Psy\\Output\\ShellOutput",
+        "Psy\\Output\\Theme",
+        "Psy\\Readline\\Interactive\\Input\\History",
+        "Psy\\TabCompletion\\AutoCompleter",
+        "Psy\\Util\\Tty",
+        "Psy\\VarDumper\\Presenter",
+        "Psy\\VersionUpdater\\Checker",
+        "Psy\\VersionUpdater\\GitHubChecker",
+        "Psy\\VersionUpdater\\IntervalChecker",
+        "Psy\\VersionUpdater\\NoopChecker",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatterStyle",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Input\\InputOption",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class Configuration",
+        "const COLOR_MODE_AUTO",
+        "const COLOR_MODE_DISABLED",
+        "const COLOR_MODE_FORCED",
+        "const INTERACTIVE_MODE_AUTO",
+        "const INTERACTIVE_MODE_DISABLED",
+        "const INTERACTIVE_MODE_FORCED",
+        "const PROJECT_TRUST_ALWAYS",
+        "const PROJECT_TRUST_NEVER",
+        "const PROJECT_TRUST_PROMPT",
+        "const VERBOSITY_DEBUG",
+        "const VERBOSITY_NORMAL",
+        "const VERBOSITY_QUIET",
+        "const VERBOSITY_VERBOSE",
+        "const VERBOSITY_VERY_VERBOSE",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ShellAware.php": {
+      "fichier": "src/ShellAware.php",
+      "langage": "php",
+      "lignes": 26,
+      "taille_bytes": 523,
+      "entrees": [],
+      "sorties": [
+        "interface ShellAware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/SuperglobalsEnv.php": {
+      "fichier": "src/SuperglobalsEnv.php",
+      "langage": "php",
+      "lignes": 32,
+      "taille_bytes": 620,
+      "entrees": [],
+      "sorties": [
+        "class SuperglobalsEnv",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ProjectTrust.php": {
+      "fichier": "src/ProjectTrust.php",
+      "langage": "php",
+      "lignes": 473,
+      "taille_bytes": 13422,
+      "entrees": [
+        "Symfony\\Component\\Console\\Helper\\QuestionHelper",
+        "Symfony\\Component\\Console\\Input\\InputInterface",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Question\\ConfirmationQuestion"
+      ],
+      "sorties": [
+        "class ProjectTrust",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/CommandAware.php": {
+      "fichier": "src/CommandAware.php",
+      "langage": "php",
+      "lignes": 30,
+      "taille_bytes": 582,
+      "entrees": [
+        "Psy\\Command\\Command"
+      ],
+      "sorties": [
+        "interface CommandAware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Context.php": {
+      "fichier": "src/Context.php",
+      "langage": "php",
+      "lignes": 303,
+      "taille_bytes": 7817,
+      "entrees": [],
+      "sorties": [
+        "class Context",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/CodeCleanerAware.php": {
+      "fichier": "src/CodeCleanerAware.php",
+      "langage": "php",
+      "lignes": 26,
+      "taille_bytes": 572,
+      "entrees": [],
+      "sorties": [
+        "interface CodeCleanerAware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Sudo/SudoVisitor.php": {
+      "fichier": "src/Sudo/SudoVisitor.php",
+      "langage": "php",
+      "lignes": 134,
+      "taille_bytes": 5759,
+      "entrees": [
+        "PhpParser\\Node",
+        "PhpParser\\NodeVisitorAbstract",
+        "PhpParser\\Node\\Arg",
+        "PhpParser\\Node\\Expr\\Assign",
+        "PhpParser\\Node\\Expr\\ClassConstFetch",
+        "PhpParser\\Node\\Expr\\MethodCall",
+        "PhpParser\\Node\\Expr\\New_",
+        "PhpParser\\Node\\Expr\\PropertyFetch",
+        "PhpParser\\Node\\Expr\\StaticCall",
+        "PhpParser\\Node\\Expr\\StaticPropertyFetch",
+        "PhpParser\\Node\\Identifier",
+        "PhpParser\\Node\\Name",
+        "PhpParser\\Node\\Name\\FullyQualified",
+        "PhpParser\\Node\\Scalar\\String_",
+        "Psy\\Sudo"
+      ],
+      "sorties": [
+        "class SudoVisitor",
+        "const CLASS_CONST_FETCH",
+        "const METHOD_CALL",
+        "const NEW_INSTANCE",
+        "const PROPERTY_ASSIGN",
+        "const PROPERTY_FETCH",
+        "const STATIC_CALL",
+        "const STATIC_PROPERTY_ASSIGN",
+        "const STATIC_PROPERTY_FETCH",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Manual/V3Manual.php": {
+      "fichier": "src/Manual/V3Manual.php",
+      "langage": "php",
+      "lignes": 106,
+      "taille_bytes": 3163,
+      "entrees": [
+        "Psy\\Exception\\InvalidManualException"
+      ],
+      "sorties": [
+        "class V3Manual",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Manual/V2Manual.php": {
+      "fichier": "src/Manual/V2Manual.php",
+      "langage": "php",
+      "lignes": 82,
+      "taille_bytes": 1796,
+      "entrees": [],
+      "sorties": [
+        "class V2Manual",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Manual/ManualInterface.php": {
+      "fichier": "src/Manual/ManualInterface.php",
+      "langage": "php",
+      "lignes": 44,
+      "taille_bytes": 1047,
+      "entrees": [],
+      "sorties": [
+        "interface ManualInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/AutoCompleter.php": {
+      "fichier": "src/TabCompletion/AutoCompleter.php",
+      "langage": "php",
+      "lignes": 110,
+      "taille_bytes": 2879,
+      "entrees": [
+        "Psy\\TabCompletion\\Matcher\\AbstractMatcher"
+      ],
+      "sorties": [
+        "class AutoCompleter",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/MongoDatabaseMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/MongoDatabaseMatcher.php",
+      "langage": "php",
+      "lignes": 67,
+      "taille_bytes": 1684,
+      "entrees": [],
+      "sorties": [
+        "class MongoDatabaseMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/MagicMethodsMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/MagicMethodsMatcher.php",
+      "langage": "php",
+      "lignes": 147,
+      "taille_bytes": 4155,
+      "entrees": [
+        "InvalidArgumentException",
+        "Psy\\Util\\Docblock"
+      ],
+      "sorties": [
+        "class MagicMethodsMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/ClassMethodsMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/ClassMethodsMatcher.php",
+      "langage": "php",
+      "lignes": 80,
+      "taille_bytes": 2148,
+      "entrees": [],
+      "sorties": [
+        "class ClassMethodsMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/CommandsMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/CommandsMatcher.php",
+      "langage": "php",
+      "lignes": 111,
+      "taille_bytes": 2517,
+      "entrees": [
+        "Psy\\CommandAware",
+        "Psy\\Command\\Command"
+      ],
+      "sorties": [
+        "class CommandsMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/ClassAttributesMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/ClassAttributesMatcher.php",
+      "langage": "php",
+      "lignes": 87,
+      "taille_bytes": 2257,
+      "entrees": [],
+      "sorties": [
+        "class ClassAttributesMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/ClassNamesMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/ClassNamesMatcher.php",
+      "langage": "php",
+      "lignes": 78,
+      "taille_bytes": 2481,
+      "entrees": [],
+      "sorties": [
+        "class ClassNamesMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/KeywordsMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/KeywordsMatcher.php",
+      "langage": "php",
+      "lignes": 81,
+      "taille_bytes": 2044,
+      "entrees": [],
+      "sorties": [
+        "class KeywordsMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/ConstantsMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/ConstantsMatcher.php",
+      "langage": "php",
+      "lignes": 52,
+      "taille_bytes": 1309,
+      "entrees": [],
+      "sorties": [
+        "class ConstantsMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/AbstractMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/AbstractMatcher.php",
+      "langage": "php",
+      "lignes": 183,
+      "taille_bytes": 5049,
+      "entrees": [],
+      "sorties": [
+        "abstract class AbstractMatcher",
+        "const CONSTANT_SYNTAX",
+        "const MISC_OPERATORS",
+        "const T_AND_EQUAL",
+        "const T_BOOLEAN_AND",
+        "const T_BOOLEAN_OR",
+        "const T_CLONE",
+        "const T_DOUBLE_COLON",
+        "const T_ENCAPSED_AND_WHITESPACE",
+        "const T_INCLUDE",
+        "const T_INCLUDE_ONCE",
+        "const T_NAME_QUALIFIED",
+        "const T_NEW",
+        "const T_NS_SEPARATOR",
+        "const T_OBJECT_OPERATOR",
+        "const T_OPEN_TAG",
+        "const T_REQUIRE",
+        "const T_REQUIRE_ONCE",
+        "const T_STRING",
+        "const T_VARIABLE",
+        "const T_WHITESPACE",
+        "const VAR_SYNTAX",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/FunctionsMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/FunctionsMatcher.php",
+      "langage": "php",
+      "lignes": 54,
+      "taille_bytes": 1393,
+      "entrees": [],
+      "sorties": [
+        "class FunctionsMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/FunctionDefaultParametersMatcher.php",
+      "langage": "php",
+      "lignes": 53,
+      "taille_bytes": 1228,
+      "entrees": [],
+      "sorties": [
+        "class FunctionDefaultParametersMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/MongoClientMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/MongoClientMatcher.php",
+      "langage": "php",
+      "lignes": 67,
+      "taille_bytes": 1708,
+      "entrees": [],
+      "sorties": [
+        "class MongoClientMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/MagicPropertiesMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/MagicPropertiesMatcher.php",
+      "langage": "php",
+      "lignes": 144,
+      "taille_bytes": 4074,
+      "entrees": [
+        "InvalidArgumentException",
+        "Psy\\Util\\Docblock"
+      ],
+      "sorties": [
+        "class MagicPropertiesMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/AbstractDefaultParametersMatcher.php",
+      "langage": "php",
+      "lignes": 74,
+      "taille_bytes": 2070,
+      "entrees": [],
+      "sorties": [
+        "abstract class AbstractDefaultParametersMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/ObjectMethodDefaultParametersMatcher.php",
+      "langage": "php",
+      "lignes": 71,
+      "taille_bytes": 1789,
+      "entrees": [],
+      "sorties": [
+        "class ObjectMethodDefaultParametersMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/ClassMethodDefaultParametersMatcher.php",
+      "langage": "php",
+      "lignes": 64,
+      "taille_bytes": 1645,
+      "entrees": [],
+      "sorties": [
+        "class ClassMethodDefaultParametersMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/AbstractContextAwareMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/AbstractContextAwareMatcher.php",
+      "langage": "php",
+      "lignes": 65,
+      "taille_bytes": 1338,
+      "entrees": [
+        "Psy\\Context",
+        "Psy\\ContextAware"
+      ],
+      "sorties": [
+        "abstract class AbstractContextAwareMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/ObjectAttributesMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/ObjectAttributesMatcher.php",
+      "langage": "php",
+      "lignes": 78,
+      "taille_bytes": 1938,
+      "entrees": [
+        "InvalidArgumentException"
+      ],
+      "sorties": [
+        "class ObjectAttributesMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/VariablesMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/VariablesMatcher.php",
+      "langage": "php",
+      "lignes": 76,
+      "taille_bytes": 2072,
+      "entrees": [],
+      "sorties": [
+        "class VariablesMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/Matcher/ObjectMethodsMatcher.php": {
+      "fichier": "src/TabCompletion/Matcher/ObjectMethodsMatcher.php",
+      "langage": "php",
+      "lignes": 80,
+      "taille_bytes": 2080,
+      "entrees": [
+        "InvalidArgumentException"
+      ],
+      "sorties": [
+        "class ObjectMethodsMatcher",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/AutoloadWarmer/ComposerAutoloadWarmer.php": {
+      "fichier": "src/TabCompletion/AutoloadWarmer/ComposerAutoloadWarmer.php",
+      "langage": "php",
+      "lignes": 544,
+      "taille_bytes": 19185,
+      "entrees": [
+        "$projectAutoload",
+        "Psy\\Shell"
+      ],
+      "sorties": [
+        "class ComposerAutoloadWarmer",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/TabCompletion/AutoloadWarmer/AutoloadWarmerInterface.php": {
+      "fichier": "src/TabCompletion/AutoloadWarmer/AutoloadWarmerInterface.php",
+      "langage": "php",
+      "lignes": 32,
+      "taille_bytes": 903,
+      "entrees": [],
+      "sorties": [
+        "interface AutoloadWarmerInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Clipboard/CommandClipboardMethod.php": {
+      "fichier": "src/Clipboard/CommandClipboardMethod.php",
+      "langage": "php",
+      "lignes": 68,
+      "taille_bytes": 1663,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class CommandClipboardMethod",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Clipboard/ClipboardMethod.php": {
+      "fichier": "src/Clipboard/ClipboardMethod.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 397,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "interface ClipboardMethod",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Clipboard/Osc52ClipboardMethod.php": {
+      "fichier": "src/Clipboard/Osc52ClipboardMethod.php",
+      "langage": "php",
+      "lignes": 31,
+      "taille_bytes": 743,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class Osc52ClipboardMethod",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Clipboard/NullClipboardMethod.php": {
+      "fichier": "src/Clipboard/NullClipboardMethod.php",
+      "langage": "php",
+      "lignes": 57,
+      "taille_bytes": 1816,
+      "entrees": [
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "class NullClipboardMethod",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/DependencyChecker.php": {
+      "fichier": "src/Util/DependencyChecker.php",
+      "langage": "php",
+      "lignes": 49,
+      "taille_bytes": 1274,
+      "entrees": [],
+      "sorties": [
+        "class DependencyChecker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/TerminalColor.php": {
+      "fichier": "src/Util/TerminalColor.php",
+      "langage": "php",
+      "lignes": 356,
+      "taille_bytes": 10949,
+      "entrees": [
+        "Psy\\Readline\\Interactive\\Helper\\DebugLog"
+      ],
+      "sorties": [
+        "class TerminalColor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Docblock.php": {
+      "fichier": "src/Util/Docblock.php",
+      "langage": "php",
+      "lignes": 720,
+      "taille_bytes": 22181,
+      "entrees": [
+        "Psy\\Reflection\\ReflectionMagicMethod",
+        "Psy\\Reflection\\ReflectionMagicProperty"
+      ],
+      "sorties": [
+        "class Docblock",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Tty.php": {
+      "fichier": "src/Util/Tty.php",
+      "langage": "php",
+      "lignes": 74,
+      "taille_bytes": 1924,
+      "entrees": [],
+      "sorties": [
+        "class Tty"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Mirror.php": {
+      "fichier": "src/Util/Mirror.php",
+      "langage": "php",
+      "lignes": 149,
+      "taille_bytes": 5022,
+      "entrees": [
+        "Psy\\Exception\\RuntimeException",
+        "Psy\\Reflection\\ReflectionConstant",
+        "Psy\\Reflection\\ReflectionNamespace"
+      ],
+      "sorties": [
+        "class Mirror",
+        "const CONSTANT",
+        "const METHOD",
+        "const PROPERTY",
+        "const STATIC_PROPERTY"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Str.php": {
+      "fichier": "src/Util/Str.php",
+      "langage": "php",
+      "lignes": 127,
+      "taille_bytes": 3585,
+      "entrees": [],
+      "sorties": [
+        "class Str",
+        "const UNVIS_RX"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Util/Json.php": {
+      "fichier": "src/Util/Json.php",
+      "langage": "php",
+      "lignes": 31,
+      "taille_bytes": 625,
+      "entrees": [],
+      "sorties": [
+        "class Json"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/VarDumper/Presenter.php": {
+      "fichier": "src/VarDumper/Presenter.php",
+      "langage": "php",
+      "lignes": 137,
+      "taille_bytes": 3887,
+      "entrees": [
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\VarDumper\\Caster\\Caster",
+        "Symfony\\Component\\VarDumper\\Cloner\\Stub"
+      ],
+      "sorties": [
+        "class Presenter",
+        "const VERBOSE",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/VarDumper/Dumper.php": {
+      "fichier": "src/VarDumper/Dumper.php",
+      "langage": "php",
+      "lignes": 108,
+      "taille_bytes": 3033,
+      "entrees": [
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatter",
+        "Symfony\\Component\\VarDumper\\Cloner\\Cursor",
+        "Symfony\\Component\\VarDumper\\Dumper\\CliDumper"
+      ],
+      "sorties": [
+        "class Dumper",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/VarDumper/Cloner.php": {
+      "fichier": "src/VarDumper/Cloner.php",
+      "langage": "php",
+      "lignes": 43,
+      "taille_bytes": 939,
+      "entrees": [
+        "Symfony\\Component\\VarDumper\\Caster\\Caster",
+        "Symfony\\Component\\VarDumper\\Cloner\\Data",
+        "Symfony\\Component\\VarDumper\\Cloner\\Stub",
+        "Symfony\\Component\\VarDumper\\Cloner\\VarCloner"
+      ],
+      "sorties": [
+        "class Cloner",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/VarDumper/PresenterAware.php": {
+      "fichier": "src/VarDumper/PresenterAware.php",
+      "langage": "php",
+      "lignes": 24,
+      "taille_bytes": 485,
+      "entrees": [],
+      "sorties": [
+        "interface PresenterAware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/InteractiveReadlineInterface.php": {
+      "fichier": "src/Readline/InteractiveReadlineInterface.php",
+      "langage": "php",
+      "lignes": 75,
+      "taille_bytes": 2162,
+      "entrees": [
+        "Psy\\Completion\\CompletionEngine",
+        "Psy\\Output\\Theme",
+        "Psy\\Readline\\Interactive\\Input\\History",
+        "Psy\\Readline\\Interactive\\Terminal",
+        "Symfony\\Component\\Console\\Output\\OutputInterface"
+      ],
+      "sorties": [
+        "interface InteractiveReadlineInterface",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/ReadlineAware.php": {
+      "fichier": "src/Readline/ReadlineAware.php",
+      "langage": "php",
+      "lignes": 26,
+      "taille_bytes": 516,
+      "entrees": [],
+      "sorties": [
+        "interface ReadlineAware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Readline.php": {
+      "fichier": "src/Readline/Readline.php",
+      "langage": "php",
+      "lignes": 86,
+      "taille_bytes": 1832,
+      "entrees": [],
+      "sorties": [
+        "interface Readline",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/GNUReadline.php": {
+      "fichier": "src/Readline/GNUReadline.php",
+      "langage": "php",
+      "lignes": 167,
+      "taille_bytes": 4136,
+      "entrees": [],
+      "sorties": [
+        "class GNUReadline",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Userland.php": {
+      "fichier": "src/Readline/Userland.php",
+      "langage": "php",
+      "lignes": 161,
+      "taille_bytes": 3733,
+      "entrees": [
+        "Psy\\Exception\\BreakException",
+        "Psy\\Readline\\Hoa\\Console",
+        "Psy\\Readline\\Hoa\\ConsoleCursor",
+        "Psy\\Readline\\Hoa\\ConsoleInput",
+        "Psy\\Readline\\Hoa\\ConsoleOutput",
+        "Psy\\Readline\\Hoa\\ConsoleTput",
+        "Psy\\Readline\\Hoa\\Readline",
+        "Psy\\Readline\\Hoa\\Ustring"
+      ],
+      "sorties": [
+        "class Userland",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Transient.php": {
+      "fichier": "src/Readline/Transient.php",
+      "langage": "php",
+      "lignes": 156,
+      "taille_bytes": 3057,
+      "entrees": [
+        "Psy\\Exception\\BreakException"
+      ],
+      "sorties": [
+        "class Transient",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Libedit.php": {
+      "fichier": "src/Readline/Libedit.php",
+      "langage": "php",
+      "lignes": 122,
+      "taille_bytes": 3519,
+      "entrees": [
+        "Psy\\ConfigPaths",
+        "Psy\\Util\\Str"
+      ],
+      "sorties": [
+        "class Libedit",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/InteractiveReadline.php": {
+      "fichier": "src/Readline/InteractiveReadline.php",
+      "langage": "php",
+      "lignes": 440,
+      "taille_bytes": 11975,
+      "entrees": [
+        "Psy\\Completion\\CompletionEngine",
+        "Psy\\Exception\\ThrowUpException",
+        "Psy\\Output\\Theme",
+        "Psy\\Readline\\Interactive\\Helper\\DebugLog",
+        "Psy\\Readline\\Interactive\\Input\\History",
+        "Psy\\Readline\\Interactive\\Input\\StdinReader",
+        "Psy\\Readline\\Interactive\\InteractiveSession",
+        "Psy\\Readline\\Interactive\\Readline",
+        "Psy\\Readline\\Interactive\\Suggestion\\Source\\ContextAwareSource",
+        "Psy\\Readline\\Interactive\\Terminal",
+        "Psy\\Shell",
+        "Psy\\ShellAware",
+        "Psy\\Util\\TerminalColor",
+        "Psy\\Util\\Tty",
+        "Symfony\\Component\\Console\\Formatter\\OutputFormatterStyle",
+        "Symfony\\Component\\Console\\Output\\OutputInterface",
+        "Symfony\\Component\\Console\\Output\\StreamOutput"
+      ],
+      "sorties": [
+        "class InteractiveReadline",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/Readline.php": {
+      "fichier": "src/Readline/Hoa/Readline.php",
+      "langage": "php",
+      "lignes": 1032,
+      "taille_bytes": 27002,
+      "entrees": [],
+      "sorties": [
+        "class Readline",
+        "const STATE_BREAK",
+        "const STATE_CONTINUE",
+        "const STATE_NO_ECHO",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/Event.php": {
+      "fichier": "src/Readline/Hoa/Event.php",
+      "langage": "php",
+      "lignes": 193,
+      "taille_bytes": 6085,
+      "entrees": [],
+      "sorties": [
+        "class Event",
+        "const KEY_EVENT",
+        "const KEY_SOURCE",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ProtocolNodeLibrary.php": {
+      "fichier": "src/Readline/Hoa/ProtocolNodeLibrary.php",
+      "langage": "php",
+      "lignes": 90,
+      "taille_bytes": 3215,
+      "entrees": [],
+      "sorties": [
+        "class ProtocolNodeLibrary",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ExceptionIdle.php": {
+      "fichier": "src/Readline/Hoa/ExceptionIdle.php",
+      "langage": "php",
+      "lignes": 267,
+      "taille_bytes": 7239,
+      "entrees": [],
+      "sorties": [
+        "class ExceptionIdle",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/StreamPointable.php": {
+      "fichier": "src/Readline/Hoa/StreamPointable.php",
+      "langage": "php",
+      "lignes": 75,
+      "taille_bytes": 2448,
+      "entrees": [],
+      "sorties": [
+        "const SEEK_CURRENT",
+        "const SEEK_END",
+        "const SEEK_SET",
+        "interface StreamPointable",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/IStream.php": {
+      "fichier": "src/Readline/Hoa/IStream.php",
+      "langage": "php",
+      "lignes": 50,
+      "taille_bytes": 1863,
+      "entrees": [],
+      "sorties": [
+        "interface IStream",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ConsoleException.php": {
+      "fichier": "src/Readline/Hoa/ConsoleException.php",
+      "langage": "php",
+      "lignes": 46,
+      "taille_bytes": 1817,
+      "entrees": [],
+      "sorties": [
+        "class ConsoleException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/FileReadWrite.php": {
+      "fichier": "src/Readline/Hoa/FileReadWrite.php",
+      "langage": "php",
+      "lignes": 279,
+      "taille_bytes": 6964,
+      "entrees": [],
+      "sorties": [
+        "class FileReadWrite",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/EventBucket.php": {
+      "fichier": "src/Readline/Hoa/EventBucket.php",
+      "langage": "php",
+      "lignes": 109,
+      "taille_bytes": 2945,
+      "entrees": [],
+      "sorties": [
+        "class EventBucket",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ProtocolNode.php": {
+      "fichier": "src/Readline/Hoa/ProtocolNode.php",
+      "langage": "php",
+      "lignes": 323,
+      "taille_bytes": 8115,
+      "entrees": [],
+      "sorties": [
+        "class ProtocolNode",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/StreamPathable.php": {
+      "fichier": "src/Readline/Hoa/StreamPathable.php",
+      "langage": "php",
+      "lignes": 55,
+      "taille_bytes": 2020,
+      "entrees": [],
+      "sorties": [
+        "interface StreamPathable",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/StreamStatable.php": {
+      "fichier": "src/Readline/Hoa/StreamStatable.php",
+      "langage": "php",
+      "lignes": 115,
+      "taille_bytes": 3063,
+      "entrees": [],
+      "sorties": [
+        "const SIZE_UNDEFINED",
+        "interface StreamStatable",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/FileLink.php": {
+      "fichier": "src/Readline/Hoa/FileLink.php",
+      "langage": "php",
+      "lignes": 149,
+      "taille_bytes": 4288,
+      "entrees": [],
+      "sorties": [
+        "class FileLink",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ConsoleInput.php": {
+      "fichier": "src/Readline/Hoa/ConsoleInput.php",
+      "langage": "php",
+      "lignes": 168,
+      "taille_bytes": 4253,
+      "entrees": [],
+      "sorties": [
+        "class ConsoleInput",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/AutocompleterWord.php": {
+      "fichier": "src/Readline/Hoa/AutocompleterWord.php",
+      "langage": "php",
+      "lignes": 119,
+      "taille_bytes": 3179,
+      "entrees": [],
+      "sorties": [
+        "class AutocompleterWord",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/EventSource.php": {
+      "fichier": "src/Readline/Hoa/EventSource.php",
+      "langage": "php",
+      "lignes": 44,
+      "taille_bytes": 1779,
+      "entrees": [],
+      "sorties": [
+        "interface EventSource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/FileDirectory.php": {
+      "fichier": "src/Readline/Hoa/FileDirectory.php",
+      "langage": "php",
+      "lignes": 221,
+      "taille_bytes": 6488,
+      "entrees": [],
+      "sorties": [
+        "class FileDirectory",
+        "const MODE_CREATE",
+        "const MODE_CREATE_RECURSIVE",
+        "const MODE_READ",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/StreamException.php": {
+      "fichier": "src/Readline/Hoa/StreamException.php",
+      "langage": "php",
+      "lignes": 46,
+      "taille_bytes": 1815,
+      "entrees": [],
+      "sorties": [
+        "class StreamException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ConsoleTput.php": {
+      "fichier": "src/Readline/Hoa/ConsoleTput.php",
+      "langage": "php",
+      "lignes": 841,
+      "taille_bytes": 21406,
+      "entrees": [],
+      "sorties": [
+        "class ConsoleTput",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/StreamOut.php": {
+      "fichier": "src/Readline/Hoa/StreamOut.php",
+      "langage": "php",
+      "lignes": 95,
+      "taille_bytes": 2728,
+      "entrees": [],
+      "sorties": [
+        "interface StreamOut",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/EventListens.php": {
+      "fichier": "src/Readline/Hoa/EventListens.php",
+      "langage": "php",
+      "lignes": 83,
+      "taille_bytes": 2648,
+      "entrees": [],
+      "sorties": [
+        "public func tion",
+        "trait EventListens"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/File.php": {
+      "fichier": "src/Readline/Hoa/File.php",
+      "langage": "php",
+      "lignes": 274,
+      "taille_bytes": 7575,
+      "entrees": [],
+      "sorties": [
+        "abstract class File",
+        "const MODE_APPEND_READ_WRITE",
+        "const MODE_APPEND_WRITE",
+        "const MODE_CREATE_READ_WRITE",
+        "const MODE_CREATE_WRITE",
+        "const MODE_READ",
+        "const MODE_READ_WRITE",
+        "const MODE_TRUNCATE_READ_WRITE",
+        "const MODE_TRUNCATE_WRITE",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ConsoleCursor.php": {
+      "fichier": "src/Readline/Hoa/ConsoleCursor.php",
+      "langage": "php",
+      "lignes": 695,
+      "taille_bytes": 20843,
+      "entrees": [],
+      "sorties": [
+        "class ConsoleCursor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ConsoleOutput.php": {
+      "fichier": "src/Readline/Hoa/ConsoleOutput.php",
+      "langage": "php",
+      "lignes": 208,
+      "taille_bytes": 5358,
+      "entrees": [],
+      "sorties": [
+        "class ConsoleOutput",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/Exception.php": {
+      "fichier": "src/Readline/Hoa/Exception.php",
+      "langage": "php",
+      "lignes": 79,
+      "taille_bytes": 2720,
+      "entrees": [],
+      "sorties": [
+        "class Exception",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/Console.php": {
+      "fichier": "src/Readline/Hoa/Console.php",
+      "langage": "php",
+      "lignes": 347,
+      "taille_bytes": 7985,
+      "entrees": [],
+      "sorties": [
+        "class Console",
+        "const IS_BLOCK",
+        "const IS_CHARACTER",
+        "const IS_DIRECTORY",
+        "const IS_FIFO",
+        "const IS_LINK",
+        "const IS_REGULAR",
+        "const IS_SOCKET",
+        "const IS_WHITEOUT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/StreamLockable.php": {
+      "fichier": "src/Readline/Hoa/StreamLockable.php",
+      "langage": "php",
+      "lignes": 85,
+      "taille_bytes": 2608,
+      "entrees": [],
+      "sorties": [
+        "const LOCK_EXCLUSIVE",
+        "const LOCK_NO_BLOCK",
+        "const LOCK_RELEASE",
+        "const LOCK_SHARED",
+        "interface StreamLockable",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/EventListenable.php": {
+      "fichier": "src/Readline/Hoa/EventListenable.php",
+      "langage": "php",
+      "lignes": 48,
+      "taille_bytes": 1934,
+      "entrees": [],
+      "sorties": [
+        "interface EventListenable",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/Protocol.php": {
+      "fichier": "src/Readline/Hoa/Protocol.php",
+      "langage": "php",
+      "lignes": 223,
+      "taille_bytes": 6625,
+      "entrees": [],
+      "sorties": [
+        "class Protocol",
+        "const NO_RESOLUTION",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/FileLinkReadWrite.php": {
+      "fichier": "src/Readline/Hoa/FileLinkReadWrite.php",
+      "langage": "php",
+      "lignes": 279,
+      "taille_bytes": 6977,
+      "entrees": [],
+      "sorties": [
+        "class FileLinkReadWrite",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/Autocompleter.php": {
+      "fichier": "src/Readline/Hoa/Autocompleter.php",
+      "langage": "php",
+      "lignes": 57,
+      "taille_bytes": 2132,
+      "entrees": [],
+      "sorties": [
+        "interface Autocompleter",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/IteratorFileSystem.php": {
+      "fichier": "src/Readline/Hoa/IteratorFileSystem.php",
+      "langage": "php",
+      "lignes": 86,
+      "taille_bytes": 2812,
+      "entrees": [],
+      "sorties": [
+        "class IteratorFileSystem",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/EventListener.php": {
+      "fichier": "src/Readline/Hoa/EventListener.php",
+      "langage": "php",
+      "lignes": 137,
+      "taille_bytes": 4082,
+      "entrees": [],
+      "sorties": [
+        "class EventListener",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ProtocolWrapper.php": {
+      "fichier": "src/Readline/Hoa/ProtocolWrapper.php",
+      "langage": "php",
+      "lignes": 473,
+      "taille_bytes": 13698,
+      "entrees": [],
+      "sorties": [
+        "class ProtocolWrapper",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/IteratorRecursiveDirectory.php": {
+      "fichier": "src/Readline/Hoa/IteratorRecursiveDirectory.php",
+      "langage": "php",
+      "lignes": 126,
+      "taille_bytes": 3796,
+      "entrees": [],
+      "sorties": [
+        "class IteratorRecursiveDirectory",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/StreamContext.php": {
+      "fichier": "src/Readline/Hoa/StreamContext.php",
+      "langage": "php",
+      "lignes": 141,
+      "taille_bytes": 3629,
+      "entrees": [],
+      "sorties": [
+        "class StreamContext",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ProtocolException.php": {
+      "fichier": "src/Readline/Hoa/ProtocolException.php",
+      "langage": "php",
+      "lignes": 44,
+      "taille_bytes": 1781,
+      "entrees": [],
+      "sorties": [
+        "class ProtocolException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/StreamTouchable.php": {
+      "fichier": "src/Readline/Hoa/StreamTouchable.php",
+      "langage": "php",
+      "lignes": 110,
+      "taille_bytes": 3170,
+      "entrees": [],
+      "sorties": [
+        "const DO_NOT_MAKE_DIRECTORY",
+        "const DO_NOT_OVERWRITE",
+        "const MAKE_DIRECTORY",
+        "const OVERWRITE",
+        "interface StreamTouchable",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/FileGeneric.php": {
+      "fichier": "src/Readline/Hoa/FileGeneric.php",
+      "langage": "php",
+      "lignes": 487,
+      "taille_bytes": 11444,
+      "entrees": [],
+      "sorties": [
+        "abstract class FileGeneric",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/EventException.php": {
+      "fichier": "src/Readline/Hoa/EventException.php",
+      "langage": "php",
+      "lignes": 44,
+      "taille_bytes": 1780,
+      "entrees": [],
+      "sorties": [
+        "class EventException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/FileLinkRead.php": {
+      "fichier": "src/Readline/Hoa/FileLinkRead.php",
+      "langage": "php",
+      "lignes": 231,
+      "taille_bytes": 5988,
+      "entrees": [],
+      "sorties": [
+        "class FileLinkRead",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/AutocompleterPath.php": {
+      "fichier": "src/Readline/Hoa/AutocompleterPath.php",
+      "langage": "php",
+      "lignes": 194,
+      "taille_bytes": 5039,
+      "entrees": [],
+      "sorties": [
+        "class AutocompleterPath",
+        "const PWD",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/AutocompleterAggregate.php": {
+      "fichier": "src/Readline/Hoa/AutocompleterAggregate.php",
+      "langage": "php",
+      "lignes": 118,
+      "taille_bytes": 3340,
+      "entrees": [],
+      "sorties": [
+        "class AutocompleterAggregate",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/FileRead.php": {
+      "fichier": "src/Readline/Hoa/FileRead.php",
+      "langage": "php",
+      "lignes": 177,
+      "taille_bytes": 4689,
+      "entrees": [],
+      "sorties": [
+        "class FileRead",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ConsoleWindow.php": {
+      "fichier": "src/Readline/Hoa/ConsoleWindow.php",
+      "langage": "php",
+      "lignes": 529,
+      "taille_bytes": 12441,
+      "entrees": [],
+      "sorties": [
+        "class ConsoleWindow"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/ConsoleProcessus.php": {
+      "fichier": "src/Readline/Hoa/ConsoleProcessus.php",
+      "langage": "php",
+      "lignes": 892,
+      "taille_bytes": 20930,
+      "entrees": [],
+      "sorties": [
+        "class ConsoleProcessus",
+        "const SIGABRT",
+        "const SIGALRM",
+        "const SIGBUS",
+        "const SIGCHLD",
+        "const SIGCONT",
+        "const SIGEMT",
+        "const SIGFPE",
+        "const SIGHUP",
+        "const SIGILL",
+        "const SIGINFO",
+        "const SIGINT",
+        "const SIGIO",
+        "const SIGKILL",
+        "const SIGPIPE",
+        "const SIGPROF",
+        "const SIGQUIT",
+        "const SIGSEGV",
+        "const SIGSTOP",
+        "const SIGSYS",
+        "const SIGTERM",
+        "const SIGTRAP",
+        "const SIGTSTP",
+        "const SIGTTIN",
+        "const SIGTTOU",
+        "const SIGURG",
+        "const SIGUSR1",
+        "const SIGUSR2",
+        "const SIGVTALRM",
+        "const SIGWINCH",
+        "const SIGXCPU",
+        "const SIGXFSZ",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/FileException.php": {
+      "fichier": "src/Readline/Hoa/FileException.php",
+      "langage": "php",
+      "lignes": 48,
+      "taille_bytes": 1845,
+      "entrees": [],
+      "sorties": [
+        "class FileException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/Xcallable.php": {
+      "fichier": "src/Readline/Hoa/Xcallable.php",
+      "langage": "php",
+      "lignes": 256,
+      "taille_bytes": 7352,
+      "entrees": [],
+      "sorties": [
+        "class Xcallable",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/Readline/Hoa/FileDoesNotExistException.php": {
+      "fichier": "src/Readline/Hoa/FileDoesNotExistException.php",
+      "langage": "php",
+      "lignes": 48,
+      "taille_bytes": 1873,
+      "entrees": [],
+      "sorties": [
+        "class FileDoesNotExistException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

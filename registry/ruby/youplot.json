@@ -1,0 +1,286 @@
+{
+  "meta": {
+    "projet": "YouPlot",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "ruby": 16
+    }
+  },
+  "stats": {
+    "fichiers_total": 16,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "test/test_helper.rb"
+  },
+  "noeuds": {
+    "test/test_helper.rb": {
+      "fichier": "test/test_helper.rb",
+      "langage": "ruby",
+      "lignes": 8,
+      "taille_bytes": 107,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/youplot_test.rb": {
+      "fichier": "test/youplot_test.rb",
+      "langage": "ruby",
+      "lignes": 21,
+      "taille_bytes": 528,
+      "entrees": [],
+      "sorties": [
+        "class YouPlotTest",
+        "def teardown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/unicode_plot_test.rb": {
+      "fichier": "test/unicode_plot_test.rb",
+      "langage": "ruby",
+      "lignes": 20,
+      "taille_bytes": 520,
+      "entrees": [],
+      "sorties": [
+        "class UnicodePlotTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/youplot/iris_test.rb": {
+      "fichier": "test/youplot/iris_test.rb",
+      "langage": "ruby",
+      "lignes": 178,
+      "taille_bytes": 5341,
+      "entrees": [],
+      "sorties": [
+        "class YouPlotIRISTest",
+        "def fixture",
+        "def setup",
+        "def shutdown",
+        "def startup",
+        "def teardown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/youplot/simple_test.rb": {
+      "fichier": "test/youplot/simple_test.rb",
+      "langage": "ruby",
+      "lignes": 272,
+      "taille_bytes": 7771,
+      "entrees": [],
+      "sorties": [
+        "class YouPlotSimpleTest",
+        "def fixture",
+        "def setup",
+        "def shutdown",
+        "def startup",
+        "def teardown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/youplot/dsv_test.rb": {
+      "fichier": "test/youplot/dsv_test.rb",
+      "langage": "ruby",
+      "lignes": 131,
+      "taille_bytes": 5066,
+      "entrees": [],
+      "sorties": [
+        "class YouPlotDSVTest",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/youplot/backends/processing_test.rb": {
+      "fichier": "test/youplot/backends/processing_test.rb",
+      "langage": "ruby",
+      "lignes": 17,
+      "taille_bytes": 594,
+      "entrees": [],
+      "sorties": [
+        "class ProcessingTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/youplot.rb": {
+      "fichier": "lib/youplot.rb",
+      "langage": "ruby",
+      "lignes": 22,
+      "taille_bytes": 681,
+      "entrees": [],
+      "sorties": [
+        "def run_as_executable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/youplot/dsv.rb": {
+      "fichier": "lib/youplot/dsv.rb",
+      "langage": "ruby",
+      "lignes": 87,
+      "taille_bytes": 2265,
+      "entrees": [],
+      "sorties": [
+        "def get_headers",
+        "def get_series",
+        "def parse",
+        "def transpose2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/youplot/parser.rb": {
+      "fichier": "lib/youplot/parser.rb",
+      "langage": "ruby",
+      "lignes": 410,
+      "taille_bytes": 13201,
+      "entrees": [],
+      "sorties": [
+        "class Error",
+        "class Parser",
+        "def apply_config_file",
+        "def config_file_candidate_paths",
+        "def configure",
+        "def create_base_parser",
+        "def create_main_parser",
+        "def create_sub_parser",
+        "def find_config_file",
+        "def initialize",
+        "def parse_options",
+        "def read_config_file",
+        "def show_config_info",
+        "def show_main_help",
+        "def sub_parser_add_canvas",
+        "def sub_parser_add_fmt_xyxy",
+        "def sub_parser_add_fmt_yx",
+        "def sub_parser_add_grid",
+        "def sub_parser_add_symbol",
+        "def sub_parser_add_xlim",
+        "def sub_parser_add_xscale",
+        "def sub_parser_add_ylim"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/youplot/command.rb": {
+      "fichier": "lib/youplot/command.rb",
+      "langage": "ruby",
+      "lignes": 227,
+      "taille_bytes": 5645,
+      "entrees": [],
+      "sorties": [
+        "class Command",
+        "def create_plot",
+        "def initialize",
+        "def main",
+        "def main_progressive",
+        "def out",
+        "def output_data",
+        "def output_plot",
+        "def output_plot_progressive",
+        "def parse_dsv",
+        "def run",
+        "def run_as_executable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/youplot/options.rb": {
+      "fichier": "lib/youplot/options.rb",
+      "langage": "ruby",
+      "lignes": 18,
+      "taille_bytes": 310,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/youplot/parameters.rb": {
+      "fichier": "lib/youplot/parameters.rb",
+      "langage": "ruby",
+      "lignes": 34,
+      "taille_bytes": 538,
+      "entrees": [],
+      "sorties": [
+        "def to_hc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/youplot/version.rb": {
+      "fichier": "lib/youplot/version.rb",
+      "langage": "ruby",
+      "lignes": 5,
+      "taille_bytes": 70,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/youplot/backends/processing.rb": {
+      "fichier": "lib/youplot/backends/processing.rb",
+      "langage": "ruby",
+      "lignes": 36,
+      "taille_bytes": 828,
+      "entrees": [],
+      "sorties": [
+        "def count_values"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/youplot/backends/unicode_plot.rb": {
+      "fichier": "lib/youplot/backends/unicode_plot.rb",
+      "langage": "ruby",
+      "lignes": 227,
+      "taille_bytes": 7218,
+      "entrees": [],
+      "sorties": [
+        "class Error",
+        "def barplot",
+        "def boxplot",
+        "def check_series_size",
+        "def colors",
+        "def density",
+        "def get_method2",
+        "def histogram",
+        "def line",
+        "def lineplot",
+        "def lines",
+        "def plot_fmt",
+        "def plot_xyxy",
+        "def plot_xyy",
+        "def scatter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

@@ -1,0 +1,2791 @@
+{
+  "meta": {
+    "projet": "Nimble",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "swift": 113,
+      "yaml": 2,
+      "c": 5
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 51,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 1,
+    "points_entree": 0,
+    "fichier_plus_appele": "Sources/Nimble/Nimble.h"
+  },
+  "noeuds": {
+    "Package.swift": {
+      "fichier": "Package.swift",
+      "langage": "swift",
+      "lignes": 66,
+      "taille_bytes": 2231,
+      "entrees": [
+        "PackageDescription"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".swiftlint.yml": {
+      "fichier": ".swiftlint.yml",
+      "langage": "yaml",
+      "lignes": 37,
+      "taille_bytes": 520,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Package@swift-5.9.swift": {
+      "fichier": "Package@swift-5.9.swift",
+      "langage": "swift",
+      "lignes": 66,
+      "taille_bytes": 2231,
+      "entrees": [
+        "PackageDescription"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/.swiftlint.yml": {
+      "fichier": "Tests/.swiftlint.yml",
+      "langage": "yaml",
+      "lignes": 2,
+      "taille_bytes": 32,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleObjectiveCTests/NimbleSpecHelper.h": {
+      "fichier": "Tests/NimbleObjectiveCTests/NimbleSpecHelper.h",
+      "langage": "c",
+      "lignes": 24,
+      "taille_bytes": 942,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleObjectiveC",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/AsyncAwaitTest+Require.swift": {
+      "fichier": "Tests/NimbleTests/AsyncAwaitTest+Require.swift",
+      "langage": "swift",
+      "lignes": 289,
+      "taille_bytes": 11209,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "class EncapsulatedValue",
+        "class Error",
+        "func isMainThread",
+        "func someAsyncFunction",
+        "func testPollUnwrapNegativeCase",
+        "func testPollUnwrapPositiveCase",
+        "func testSubjectUnderTestIsReleasedFromMemory",
+        "func testToAlwaysNegativeMatches",
+        "func testToAlwaysPositiveMatches",
+        "func testToEventuallyMatcherIsAlwaysExecutedOnMainActor",
+        "func testToEventuallyNegativeMatches",
+        "func testToEventuallyOnMain",
+        "func testToEventuallyPositiveMatches",
+        "func testToEventuallySyncCase",
+        "func testToEventuallyWaitingOnMainTask",
+        "func testToEventuallyWithAsyncExpectationDoesExecuteExpressionOnMainActorWhenTestRunsOnMainActor",
+        "func testToEventuallyWithAsyncExpectationDoesNotNecessarilyExecutesExpressionOnMainActor",
+        "func testToEventuallyWithAsyncExpressions",
+        "func testToEventuallyWithCustomDefaultTimeout",
+        "func testToEventuallyWithSyncExpectationAlwaysExecutesExpressionOnMainActor",
+        "func testToNeverNegativeMatches",
+        "func testToNeverPositiveMatches",
+        "func testToPositiveMatches",
+        "func value",
+        "struct MySubject"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/SynchronousTest.swift": {
+      "fichier": "Tests/NimbleTests/SynchronousTest.swift",
+      "langage": "swift",
+      "lignes": 131,
+      "taille_bytes": 4140,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "class Error",
+        "func testChain",
+        "func testChainFail",
+        "func testFailAlwaysFails",
+        "func testNotToMatchesLikeToNot",
+        "func testToMatchAgainstLazyProperties",
+        "func testToMatchesIfMatcherReturnsTrue",
+        "func testToNegativeMatches",
+        "func testToNotMatchesIfMatcherReturnsTrue",
+        "func testToNotNegativeMatches",
+        "func testToNotProvidesAMemoizedActualValueExpression",
+        "func testToNotProvidesAMemoizedActualValueExpressionIsEvaluatedAtMatcherControl",
+        "func testToNotProvidesActualValueExpression",
+        "func testToProvidesAMemoizedActualValueExpression",
+        "func testToProvidesAMemoizedActualValueExpressionIsEvaluatedAtMatcherControl",
+        "func testToProvidesActualValueExpression",
+        "func testUnexpectedErrorsThrownFails"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/AsyncAwaitTest.swift": {
+      "fichier": "Tests/NimbleTests/AsyncAwaitTest.swift",
+      "langage": "swift",
+      "lignes": 462,
+      "taille_bytes": 16161,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "class EncapsulatedValue",
+        "class Error",
+        "func isMainThread",
+        "func someAsyncFunction",
+        "func stopWaiting",
+        "func testNestedBackgroundAsyncWithOperationQueue",
+        "func testNestedMainAsyncWithOperationQueue",
+        "func testSubjectUnderTestIsReleasedFromMemory",
+        "func testToAlwaysNegativeMatches",
+        "func testToAlwaysPositiveMatches",
+        "func testToEventuallyMatcherIsAlwaysExecutedOnMainActor",
+        "func testToEventuallyNegativeMatches",
+        "func testToEventuallyOnMain",
+        "func testToEventuallyPositiveMatches",
+        "func testToEventuallySyncCase",
+        "func testToEventuallyWaitingOnMainTask",
+        "func testToEventuallyWithAsyncExpectationDoesExecuteExpressionOnMainActorWhenTestRunsOnMainActor",
+        "func testToEventuallyWithAsyncExpectationDoesNotNecessarilyExecutesExpressionOnMainActor",
+        "func testToEventuallyWithAsyncExpressions",
+        "func testToEventuallyWithCustomDefaultTimeout",
+        "func testToEventuallyWithSyncExpectationAlwaysExecutesExpressionOnMainActor",
+        "func testToNeverNegativeMatches",
+        "func testToNeverPositiveMatches",
+        "func testToPositiveMatches",
+        "func testWaitUntilDetectsStalledMainThreadActivity",
+        "func testWaitUntilDoesNotCompleteBeforeRunLoopIsWaiting",
+        "func testWaitUntilErrorsIfDoneIsCalledMultipleTimes",
+        "func testWaitUntilNegativeMatches",
+        "func testWaitUntilNestedMainQueueAsyncCalls",
+        "func testWaitUntilOperationQueueWithMainUnderlyingQueueAndBarrier",
+        "func testWaitUntilPositiveMatches",
+        "func testWaitUntilTimesOutIfNotCalled",
+        "func testWaitUntilTimesOutWhenExceedingItsTime",
+        "func testWaitUntilUsingSendable",
+        "func testWaitUntilWithCustomDefaultsTimeout",
+        "func value",
+        "struct MySubject"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/DSLTest.swift": {
+      "fichier": "Tests/NimbleTests/DSLTest.swift",
+      "langage": "swift",
+      "lignes": 250,
+      "taille_bytes": 8950,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testAsyncRequireWithCustomError",
+        "func testExpectAsyncClosure",
+        "func testExpectAutoclosureNonThrowing",
+        "func testExpectAutoclosureThrowing",
+        "func testExpectClosure",
+        "func testExpectCombinedSyncAndAsyncExpects",
+        "func testExpectCombinedSyncAndAsyncRequirements",
+        "func testRequire",
+        "func testRequireAsyncClosure",
+        "func testRequireAutoclosureNonThrowing",
+        "func testRequireAutoclosureThrowing",
+        "func testRequireClosure",
+        "func testRequireFail",
+        "func testRequireWithCustomError",
+        "func testUnwrap",
+        "func testUnwrapAsync",
+        "struct MyCustomError"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/LinuxSupport.swift": {
+      "fichier": "Tests/NimbleTests/LinuxSupport.swift",
+      "langage": "swift",
+      "lignes": 9,
+      "taille_bytes": 169,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/PollingTest+Require.swift": {
+      "fichier": "Tests/NimbleTests/PollingTest+Require.swift",
+      "langage": "swift",
+      "lignes": 249,
+      "taille_bytes": 8629,
+      "entrees": [
+        "Dispatch",
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "class Error",
+        "func testPollUnwrapMessage",
+        "func testPollUnwrapMessageAsync",
+        "func testPollUnwrapNegativeCase",
+        "func testPollUnwrapPositiveCase",
+        "func testSubjectUnderTestIsReleasedFromMemory",
+        "func testToAlwaysNegativeMatches",
+        "func testToAlwaysPositiveMatches",
+        "func testToEventuallyAllowsInBackgroundThread",
+        "func testToEventuallyNegativeMatches",
+        "func testToEventuallyPositiveMatches",
+        "func testToEventuallySyncCase",
+        "func testToEventuallyWithCustomDefaultTimeout",
+        "func testToNeverNegativeMatches",
+        "func testToNeverPositiveMatches"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/UserDescriptionTest.swift": {
+      "fichier": "Tests/NimbleTests/UserDescriptionTest.swift",
+      "langage": "swift",
+      "lignes": 76,
+      "taille_bytes": 2150,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testNotToMatcher_CustomFailureMessage",
+        "func testToEventuallyMatch_CustomFailureMessage",
+        "func testToEventuallyNotMatch_CustomFailureMessage",
+        "func testToMatcher_CustomFailureMessage",
+        "func testToNotEventuallyMatch_CustomFailureMessage",
+        "func testToNotMatcher_CustomFailureMessage"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/StatusTest.swift": {
+      "fichier": "Tests/NimbleTests/StatusTest.swift",
+      "langage": "swift",
+      "lignes": 54,
+      "taille_bytes": 1106,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testAsync",
+        "func testChainedExecution",
+        "func testSingleExecution",
+        "func testUnexecuted"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/PredicateTest.swift": {
+      "fichier": "Tests/NimbleTests/PredicateTest.swift",
+      "langage": "swift",
+      "lignes": 31,
+      "taille_bytes": 928,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testDefineDefaultMessage",
+        "func testDefineNilableDefaultMessage",
+        "func testSimpleDefaultMessage",
+        "func testSimpleNilableDefaultMessage"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/SwiftTestingSupportTest.swift": {
+      "fichier": "Tests/NimbleTests/SwiftTestingSupportTest.swift",
+      "langage": "swift",
+      "lignes": 36,
+      "taille_bytes": 814,
+      "entrees": [
+        "Nimble",
+        "Testing",
+        "XCTest"
+      ],
+      "sorties": [
+        "class MixedSwiftTestingXCTestSupport",
+        "func testAlsoRecordsErrorsToXCTest",
+        "func testAlsoRecordsRequireErrorsToXCTest"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/NimbleTimeIntervalTest.swift": {
+      "fichier": "Tests/NimbleTests/NimbleTimeIntervalTest.swift",
+      "langage": "swift",
+      "lignes": 40,
+      "taille_bytes": 2092,
+      "entrees": [
+        "XCTest"
+      ],
+      "sorties": [
+        "func testDivideLeftHandMicroseconds",
+        "func testDivideLeftHandMilliseconds",
+        "func testDivideLeftHandNanoseconds",
+        "func testDivideLeftHandSeconds"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/AsyncTimerSequenceTest.swift": {
+      "fichier": "Tests/NimbleTests/AsyncTimerSequenceTest.swift",
+      "langage": "swift",
+      "lignes": 128,
+      "taille_bytes": 3246,
+      "entrees": [
+        "Foundation",
+        "XCTest"
+      ],
+      "sorties": [
+        "func advanced",
+        "func collect",
+        "func intervalSince",
+        "func now",
+        "func sleep",
+        "func testOutputsVoidAtSpecifiedIntervals",
+        "func testOutputsVoidAtSpecifiedIntervals2",
+        "func testOutputsVoidAtSpecifiedIntervals3",
+        "public func rounded",
+        "struct FakeClock",
+        "struct FakeInstant"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/OnFailureThrowsTest.swift": {
+      "fichier": "Tests/NimbleTests/OnFailureThrowsTest.swift",
+      "langage": "swift",
+      "lignes": 40,
+      "taille_bytes": 1157,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "enum MyError",
+        "func testFailedThrowsAnError",
+        "func testMixedThrowsAnError",
+        "func testPassedDoesNotThrow",
+        "func testUnexecutedLogsAnError"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/PollingTest.swift": {
+      "fichier": "Tests/NimbleTests/PollingTest.swift",
+      "langage": "swift",
+      "lignes": 414,
+      "taille_bytes": 13455,
+      "entrees": [
+        "CoreFoundation",
+        "Dispatch",
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "class Error",
+        "func spinAndReturnTrue",
+        "func testCombiningAsyncWaitUntilAndToEventuallyIsNotAllowed",
+        "func testNestedBackgroundAsyncWithOperationQueue",
+        "func testNestedMainAsyncWithOperationQueue",
+        "func testSubjectUnderTestIsReleasedFromMemory",
+        "func testToAlwaysDetectsStalledMainThreadActivity",
+        "func testToAlwaysNegativeMatches",
+        "func testToAlwaysPositiveMatches",
+        "func testToEventuallyAllowsInBackgroundThread",
+        "func testToEventuallyNegativeMatches",
+        "func testToEventuallyPositiveMatches",
+        "func testToEventuallySyncCase",
+        "func testToEventuallyWithCustomDefaultTimeout",
+        "func testToNeverDoesNotFailStalledMainThreadActivity",
+        "func testToNeverNegativeMatches",
+        "func testToNeverPositiveMatches",
+        "func testWaitUntilAllowsInBackgroundThread",
+        "func testWaitUntilDoesNotCompleteBeforeRunLoopIsWaiting",
+        "func testWaitUntilErrorsIfDoneIsCalledMultipleTimes",
+        "func testWaitUntilNegativeMatches",
+        "func testWaitUntilNestedMainQueueAsyncCalls",
+        "func testWaitUntilOperationQueueWithMainUnderlyingQueueAndBarrier",
+        "func testWaitUntilPositiveMatches",
+        "func testWaitUntilTimesOutIfNotCalled",
+        "func testWaitUntilTimesOutWhenExceedingItsTime",
+        "func testWaitUntilWithCustomDefaultsTimeout"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Helpers/BackgroundThreadObject.swift": {
+      "fichier": "Tests/NimbleTests/Helpers/BackgroundThreadObject.swift",
+      "langage": "swift",
+      "lignes": 18,
+      "taille_bytes": 580,
+      "entrees": [
+        "Foundation",
+        "Nimble"
+      ],
+      "sorties": [
+        "class BackgroundThreadObject"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Helpers/AsyncHelpers.swift": {
+      "fichier": "Tests/NimbleTests/Helpers/AsyncHelpers.swift",
+      "langage": "swift",
+      "lignes": 88,
+      "taille_bytes": 3033,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func asyncBeCloseTo",
+        "func asyncContain",
+        "func asyncEqual",
+        "func asyncEqualityCheck",
+        "func testAsyncBeCloseTo",
+        "func testAsyncContain",
+        "func testAsyncEqual"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Helpers/ObjectWithLazyProperty.swift": {
+      "fichier": "Tests/NimbleTests/Helpers/ObjectWithLazyProperty.swift",
+      "langage": "swift",
+      "lignes": 7,
+      "taille_bytes": 160,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "class ObjectWithLazyProperty"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/MatchTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/MatchTest.swift",
+      "langage": "swift",
+      "lignes": 39,
+      "taille_bytes": 1112,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testMatchNegative",
+        "func testMatchNegativeMessage",
+        "func testMatchNils",
+        "func testMatchPositive",
+        "func testMatchPositiveMessage"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/MatchErrorTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/MatchErrorTest.swift",
+      "langage": "swift",
+      "lignes": 75,
+      "taille_bytes": 3077,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testDoesNotMatchNils",
+        "func testMatchErrorNegative",
+        "func testMatchErrorPositive",
+        "func testMatchNSErrorNegative",
+        "func testMatchNSErrorPositive",
+        "func testMatchNegativeMessage",
+        "func testMatchPositiveMessage"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/AsyncPredicateTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/AsyncPredicateTest.swift",
+      "langage": "swift",
+      "lignes": 64,
+      "taille_bytes": 1887,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func call",
+        "func testAsyncMatchersWithAsyncExpectations",
+        "func testAsyncMatchersWithSyncExpectations",
+        "func testAsyncPollingWithAsyncMatchers",
+        "func testSyncPollingWithAsyncMatchers"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/HaveCountTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/HaveCountTest.swift",
+      "langage": "swift",
+      "lignes": 78,
+      "taille_bytes": 2048,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testHaveCountForArray",
+        "func testHaveCountForDictionary",
+        "func testHaveCountForSet"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeginWithTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeginWithTest.swift",
+      "langage": "swift",
+      "lignes": 47,
+      "taille_bytes": 1606,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testNegativeMatches",
+        "func testPositiveMatches"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeLogicalTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeLogicalTest.swift",
+      "langage": "swift",
+      "lignes": 235,
+      "taille_bytes": 7351,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "enum ConvertsToBool",
+        "func testShouldMatchBoolConvertibleTypesThatConvertToTrue",
+        "func testShouldMatchFalse",
+        "func testShouldMatchNilBools",
+        "func testShouldMatchNilTypes",
+        "func testShouldMatchNonNilTypes",
+        "func testShouldMatchTrue",
+        "func testShouldNotMatchBoolConvertibleTypesThatConvertToFalse",
+        "func testShouldNotMatchFalse",
+        "func testShouldNotMatchNilBools",
+        "func testShouldNotMatchNilTypes",
+        "func testShouldNotMatchNonNilTypes",
+        "func testShouldNotMatchTrue"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeEmptyTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeEmptyTest.swift",
+      "langage": "swift",
+      "lignes": 214,
+      "taille_bytes": 7175,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testBeEmptyNegative",
+        "func testBeEmptyPositive",
+        "func testNilMatches"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeVoidTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeVoidTest.swift",
+      "langage": "swift",
+      "lignes": 29,
+      "taille_bytes": 725,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testBeVoid"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeCloseToTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeCloseToTest.swift",
+      "langage": "swift",
+      "lignes": 156,
+      "taille_bytes": 6901,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testBeCloseTo",
+        "func testBeCloseToArray",
+        "func testBeCloseToOperator",
+        "func testBeCloseToOperatorWithDate",
+        "func testBeCloseToWithCGFloat",
+        "func testBeCloseToWithDate",
+        "func testBeCloseToWithNSDate",
+        "func testBeCloseToWithNSNumber",
+        "func testBeCloseToWithin",
+        "func testBeCloseToWithinOperator",
+        "func testBeCloseToWithinOperatorWithDate",
+        "func testCombinationWithAllPass",
+        "func testPlusMinusOperator",
+        "func testPlusMinusOperatorWithDate"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/EndWithTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/EndWithTest.swift",
+      "langage": "swift",
+      "lignes": 50,
+      "taille_bytes": 1727,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testEndWithNegatives",
+        "func testEndWithPositives"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeAnInstanceOfTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeAnInstanceOfTest.swift",
+      "langage": "swift",
+      "lignes": 89,
+      "taille_bytes": 4069,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "enum TestEnum",
+        "func testFailureMessages",
+        "func testFailureMessagesSwiftTypes",
+        "func testNestedMatchers",
+        "func testPositiveMatch",
+        "func testPositiveMatchSwiftTypes"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeResultTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeResultTest.swift",
+      "langage": "swift",
+      "lignes": 188,
+      "taille_bytes": 6703,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "enum TestError",
+        "func testNegativeMatches",
+        "func testPositiveMatch",
+        "func testPositiveMatchWithClosure",
+        "func testPositiveNegatedMatch"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/AllPassTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/AllPassTest.swift",
+      "langage": "swift",
+      "lignes": 110,
+      "taille_bytes": 3690,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testAllPassArray",
+        "func testAllPassCollectionsWithOptionals",
+        "func testAllPassMatcher",
+        "func testAllPassSet",
+        "func testAllPassWithNilAsExpectedValue"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/PostNotificationTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/PostNotificationTest.swift",
+      "langage": "swift",
+      "lignes": 132,
+      "taille_bytes": 5456,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testFailsWhenNoNotificationsArePosted",
+        "func testFailsWhenNotificationIsPostedUnexpectedly",
+        "func testFailsWhenNotificationWithWrongNameIsPosted",
+        "func testFailsWhenNotificationWithWrongObjectIsPosted",
+        "func testPassesWhenAllExpectedNotificationsArePosted",
+        "func testPassesWhenAllExpectedNotificationsarePostedInDistributedNotificationCenter",
+        "func testPassesWhenExpectedNotificationEventuallyIsPosted",
+        "func testPassesWhenExpectedNotificationIsPosted",
+        "func testPassesWhenNoNotificationsArePosted",
+        "func testPassesWhenNotificationIsNotPosted",
+        "func testPassesWhenNotificationIsPostedFromADifferentThread",
+        "func testPassesWhenNotificationIsPostedFromADifferentThreadAndToNotCalled"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/RaisesExceptionTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/RaisesExceptionTest.swift",
+      "langage": "swift",
+      "lignes": 173,
+      "taille_bytes": 10819,
+      "entrees": [
+        "Nimble",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testChainOnRaiseException",
+        "func testNSExceptionName",
+        "func testNegativeMatches",
+        "func testNegativeMatchesDoNotCallClosureWithoutException",
+        "func testNegativeMatchesWithClosure",
+        "func testNonVoidClosure",
+        "func testPositiveMatches",
+        "func testPositiveMatchesWithClosures"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeGreaterThanTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeGreaterThanTest.swift",
+      "langage": "swift",
+      "lignes": 41,
+      "taille_bytes": 1320,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testGreaterThan",
+        "func testGreaterThanOperator"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/EqualTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/EqualTest.swift",
+      "langage": "swift",
+      "lignes": 516,
+      "taille_bytes": 20995,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testArrayEquality",
+        "func testArrayEqualityWithOptionalElement",
+        "func testArrayOfOptionalsEquality",
+        "func testCustomNSObjectEquality",
+        "func testDataEquality",
+        "func testDictEqualityWithOptionalElement",
+        "func testDictionariesWithDifferentSequences",
+        "func testDictionaryEquality",
+        "func testDoesNotMatchNils",
+        "func testEquality",
+        "func testImplicitMemberSyntax",
+        "func testNSObjectEquality",
+        "func testOperatorEquality",
+        "func testOperatorEqualityWithArrays",
+        "func testOperatorEqualityWithDictionaries",
+        "func testOptionalEquality",
+        "func testSetEquality",
+        "func testTuple",
+        "func testTuple2Array",
+        "func testTuple3Array",
+        "func testTuple4Array",
+        "func testTuple5Array",
+        "func testTuple6Array"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/ElementsEqualTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/ElementsEqualTest.swift",
+      "langage": "swift",
+      "lignes": 59,
+      "taille_bytes": 2331,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testElementsEqualDifferentSequenceTypes",
+        "func testSequenceElementsEquality",
+        "func testSequenceElementsEqualityUsingMatcherClosure"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/ToSucceedTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/ToSucceedTest.swift",
+      "langage": "swift",
+      "lignes": 38,
+      "taille_bytes": 951,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testToSucceed"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/NegationTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/NegationTest.swift",
+      "langage": "swift",
+      "lignes": 43,
+      "taille_bytes": 1053,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testAsyncNil",
+        "func testAsyncNonNil",
+        "func testSyncNil",
+        "func testSyncNonNil"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/MapTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/MapTest.swift",
+      "langage": "swift",
+      "lignes": 248,
+      "taille_bytes": 6534,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func someFailingOperation",
+        "func someOperation",
+        "func testCompactMap",
+        "func testCompactMapAsync",
+        "func testCompactMapWithActor",
+        "func testCompactMapWithAsyncFunction",
+        "func testFailableMap",
+        "func testFailableMapAsync",
+        "func testFailableMapWithActor",
+        "func testFailableMapWithAsyncFunction",
+        "func testMap",
+        "func testMapAsync",
+        "func testMapWithActor",
+        "func testMapWithAsyncFunction",
+        "struct Value"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/AlwaysFailMatcher.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/AlwaysFailMatcher.swift",
+      "langage": "swift",
+      "lignes": 43,
+      "taille_bytes": 1182,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func alwaysFail",
+        "func asyncAlwaysFail",
+        "func testAlwaysFail",
+        "func testAsyncAlwaysFail"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/ThrowAssertionTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/ThrowAssertionTest.swift",
+      "langage": "swift",
+      "lignes": 80,
+      "taille_bytes": 2313,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testChainOnThrowAssertion",
+        "func testErrorThrown",
+        "func testNegativeMatch",
+        "func testNegativeMessage",
+        "func testNonVoidClosure",
+        "func testPositiveMatch",
+        "func testPositiveMessage",
+        "func testPostAssertionCodeNotRun"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeginWithPrefixTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeginWithPrefixTest.swift",
+      "langage": "swift",
+      "lignes": 67,
+      "taille_bytes": 2605,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testBeginWithSequencePrefix",
+        "func testBeginWithSequencePrefixUsingMatcherClosure",
+        "func testBeginWithSequencePrefixWithDifferentSequenceTypes"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeGreaterThanOrEqualToTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeGreaterThanOrEqualToTest.swift",
+      "langage": "swift",
+      "lignes": 48,
+      "taille_bytes": 1689,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testGreaterThanOrEqualTo",
+        "func testGreaterThanOrEqualToOperator"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/SatisfyAllOfTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/SatisfyAllOfTest.swift",
+      "langage": "swift",
+      "lignes": 142,
+      "taille_bytes": 7218,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func increment",
+        "func testAsyncOperatorAnd",
+        "func testAsyncSatisfyAllOf",
+        "func testAsyncSatisfyAllOfCachesExpressionBeforePassingToMatchers",
+        "func testFunction",
+        "func testOperatorAnd",
+        "func testSatisfyAllOf",
+        "func testSatisfyAllOfCachesExpressionBeforePassingToMatchers"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeNilTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeNilTest.swift",
+      "langage": "swift",
+      "lignes": 42,
+      "taille_bytes": 1036,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func producesNil",
+        "func testBeNil"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeAKindOfTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeAKindOfTest.swift",
+      "langage": "swift",
+      "lignes": 95,
+      "taille_bytes": 4132,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "enum TestEnum",
+        "func testFailureMessages",
+        "func testNestedMatchers",
+        "func testPositiveMatch"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeLessThanOrEqualToTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeLessThanOrEqualToTest.swift",
+      "langage": "swift",
+      "lignes": 46,
+      "taille_bytes": 1517,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testLessThanOrEqualTo",
+        "func testLessThanOrEqualToOperator"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/ContainTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/ContainTest.swift",
+      "langage": "swift",
+      "lignes": 148,
+      "taille_bytes": 5123,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testCollectionArguments",
+        "func testContainNSStringSubstring",
+        "func testContainSequence",
+        "func testContainSequenceAndSetAlgebra",
+        "func testContainSetAlgebra",
+        "func testContainSubstring",
+        "func testVariadicArguments"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/SatisfyAnyOfTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/SatisfyAnyOfTest.swift",
+      "langage": "swift",
+      "lignes": 142,
+      "taille_bytes": 7597,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func increment",
+        "func testAsyncOperatorOr",
+        "func testAsyncSatisfyAllOfCachesExpressionBeforePassingToMatchers",
+        "func testAsyncSatisfyAnyOf",
+        "func testFunction",
+        "func testOperatorOr",
+        "func testSatisfyAllOfCachesExpressionBeforePassingToMatchers",
+        "func testSatisfyAnyOf"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeLessThanTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeLessThanTest.swift",
+      "langage": "swift",
+      "lignes": 38,
+      "taille_bytes": 1161,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testLessThan",
+        "func testLessThanOperator"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/ThrowErrorTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/ThrowErrorTest.swift",
+      "langage": "swift",
+      "lignes": 174,
+      "taille_bytes": 7198,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "enum CustomDebugStringConvertibleError",
+        "enum EquatableError",
+        "enum NimbleError",
+        "func testChainOnThrowError",
+        "func testNegativeMatches",
+        "func testNegativeMatchesDoNotCallClosureWithoutError",
+        "func testNegativeMatchesWithClosure",
+        "func testNegativeNegatedMatches",
+        "func testNonVoidClosure",
+        "func testPositiveMatches",
+        "func testPositiveMatchesWithClosures",
+        "func testPositiveNegatedMatches"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/ContainElementSatisfyingTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/ContainElementSatisfyingTest.swift",
+      "langage": "swift",
+      "lignes": 144,
+      "taille_bytes": 5901,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testAsyncContainElementSatisfying",
+        "func testAsyncContainElementSatisfyingDefaultErrorMessage",
+        "func testAsyncContainElementSatisfyingNegativeCase",
+        "func testAsyncContainElementSatisfyingNegativeCaseDefaultErrorMessage",
+        "func testAsyncContainElementSatisfyingNegativeCaseSpecificErrorMessage",
+        "func testAsyncContainElementSatisfyingSpecificErrorMessage",
+        "func testContainElementSatisfying",
+        "func testContainElementSatisfyingDefaultErrorMessage",
+        "func testContainElementSatisfyingNegativeCase",
+        "func testContainElementSatisfyingNegativeCaseDefaultErrorMessage",
+        "func testContainElementSatisfyingNegativeCaseSpecificErrorMessage",
+        "func testContainElementSatisfyingSpecificErrorMessage"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeIdenticalToObjectTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeIdenticalToObjectTest.swift",
+      "langage": "swift",
+      "lignes": 73,
+      "taille_bytes": 2714,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testBeIdenticalToAnyObjectProtocol",
+        "func testBeIdenticalToNegative",
+        "func testBeIdenticalToNegativeMessage",
+        "func testBeIdenticalToPositive",
+        "func testBeIdenticalToPositiveMessage",
+        "func testFailsOnNils",
+        "func testOperators",
+        "func testbeIdenticalToAsSubmatcher"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/AsyncAllPassTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/AsyncAllPassTest.swift",
+      "langage": "swift",
+      "lignes": 145,
+      "taille_bytes": 5340,
+      "entrees": [
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testAllPassArray",
+        "func testAllPassCollectionsWithOptionals",
+        "func testAllPassMatcher",
+        "func testAllPassSet",
+        "func testAllPassWithNilAsExpectedValue"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeIdenticalToTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeIdenticalToTest.swift",
+      "langage": "swift",
+      "lignes": 56,
+      "taille_bytes": 1808,
+      "entrees": [
+        "Foundation",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testBeAlias",
+        "func testBeIdenticalToNegative",
+        "func testBeIdenticalToNegativeMessage",
+        "func testBeIdenticalToPositive",
+        "func testBeIdenticalToPositiveMessage",
+        "func testOperators"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Tests/NimbleTests/Matchers/BeWithinTest.swift": {
+      "fichier": "Tests/NimbleTests/Matchers/BeWithinTest.swift",
+      "langage": "swift",
+      "lignes": 46,
+      "taille_bytes": 1453,
+      "entrees": [
+        "Foundation",
+        "Nimble",
+        "NimbleSharedTestHelpers",
+        "XCTest"
+      ],
+      "sorties": [
+        "func testBeWithinNegativeMatches",
+        "func testBeWithinPositiveMatches"
+      ],
+      "appelle": [
+        "Sources/Nimble/Nimble.h"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/NimbleObjectiveC/include/NMBExceptionCapture.h": {
+      "fichier": "Sources/NimbleObjectiveC/include/NMBExceptionCapture.h",
+      "langage": "c",
+      "lignes": 11,
+      "taille_bytes": 412,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/NimbleObjectiveC/include/NMBStringify.h": {
+      "fichier": "Sources/NimbleObjectiveC/include/NMBStringify.h",
+      "langage": "c",
+      "lignes": 18,
+      "taille_bytes": 755,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/NimbleObjectiveC/include/DSL.h": {
+      "fichier": "Sources/NimbleObjectiveC/include/DSL.h",
+      "langage": "c",
+      "lignes": 389,
+      "taille_bytes": 15053,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/DSL.swift": {
+      "fichier": "Sources/Nimble/DSL.swift",
+      "langage": "swift",
+      "lignes": 142,
+      "taille_bytes": 6735,
+      "entrees": [
+        "class",
+        "struct"
+      ],
+      "sorties": [
+        "public func expect",
+        "public func expects",
+        "public func fail"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/DSL+Require.swift": {
+      "fichier": "Sources/Nimble/DSL+Require.swift",
+      "langage": "swift",
+      "lignes": 305,
+      "taille_bytes": 20049,
+      "entrees": [],
+      "sorties": [
+        "public func require",
+        "public func requireFail",
+        "public func requirea",
+        "public func requires",
+        "public func unwrap",
+        "public func unwrapa",
+        "public func unwraps"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/DSL+Wait.swift": {
+      "fichier": "Sources/Nimble/DSL+Wait.swift",
+      "langage": "swift",
+      "lignes": 120,
+      "taille_bytes": 4745,
+      "entrees": [
+        "Dispatch",
+        "Foundation"
+      ],
+      "sorties": [
+        "public class NMBWait",
+        "public class func",
+        "public func waitUntil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Nimble.h": {
+      "fichier": "Sources/Nimble/Nimble.h",
+      "langage": "c",
+      "lignes": 24,
+      "taille_bytes": 786,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "Tests/NimbleObjectiveCTests/NimbleSpecHelper.h",
+        "Tests/NimbleTests/AsyncAwaitTest+Require.swift",
+        "Tests/NimbleTests/AsyncAwaitTest.swift",
+        "Tests/NimbleTests/DSLTest.swift",
+        "Tests/NimbleTests/Helpers/AsyncHelpers.swift",
+        "Tests/NimbleTests/Helpers/BackgroundThreadObject.swift",
+        "Tests/NimbleTests/Matchers/AllPassTest.swift",
+        "Tests/NimbleTests/Matchers/AlwaysFailMatcher.swift",
+        "Tests/NimbleTests/Matchers/AsyncAllPassTest.swift",
+        "Tests/NimbleTests/Matchers/AsyncPredicateTest.swift",
+        "Tests/NimbleTests/Matchers/BeAKindOfTest.swift",
+        "Tests/NimbleTests/Matchers/BeAnInstanceOfTest.swift",
+        "Tests/NimbleTests/Matchers/BeCloseToTest.swift",
+        "Tests/NimbleTests/Matchers/BeEmptyTest.swift",
+        "Tests/NimbleTests/Matchers/BeGreaterThanOrEqualToTest.swift",
+        "Tests/NimbleTests/Matchers/BeGreaterThanTest.swift",
+        "Tests/NimbleTests/Matchers/BeIdenticalToObjectTest.swift",
+        "Tests/NimbleTests/Matchers/BeLessThanOrEqualToTest.swift",
+        "Tests/NimbleTests/Matchers/BeLessThanTest.swift",
+        "Tests/NimbleTests/Matchers/BeLogicalTest.swift",
+        "Tests/NimbleTests/Matchers/BeNilTest.swift",
+        "Tests/NimbleTests/Matchers/BeResultTest.swift",
+        "Tests/NimbleTests/Matchers/BeVoidTest.swift",
+        "Tests/NimbleTests/Matchers/BeWithinTest.swift",
+        "Tests/NimbleTests/Matchers/BeginWithPrefixTest.swift",
+        "Tests/NimbleTests/Matchers/BeginWithTest.swift",
+        "Tests/NimbleTests/Matchers/ContainElementSatisfyingTest.swift",
+        "Tests/NimbleTests/Matchers/ContainTest.swift",
+        "Tests/NimbleTests/Matchers/ElementsEqualTest.swift",
+        "Tests/NimbleTests/Matchers/EndWithTest.swift",
+        "Tests/NimbleTests/Matchers/EqualTest.swift",
+        "Tests/NimbleTests/Matchers/HaveCountTest.swift",
+        "Tests/NimbleTests/Matchers/MapTest.swift",
+        "Tests/NimbleTests/Matchers/MatchErrorTest.swift",
+        "Tests/NimbleTests/Matchers/MatchTest.swift",
+        "Tests/NimbleTests/Matchers/NegationTest.swift",
+        "Tests/NimbleTests/Matchers/PostNotificationTest.swift",
+        "Tests/NimbleTests/Matchers/RaisesExceptionTest.swift",
+        "Tests/NimbleTests/Matchers/SatisfyAllOfTest.swift",
+        "Tests/NimbleTests/Matchers/SatisfyAnyOfTest.swift",
+        "Tests/NimbleTests/Matchers/ThrowAssertionTest.swift",
+        "Tests/NimbleTests/Matchers/ThrowErrorTest.swift",
+        "Tests/NimbleTests/Matchers/ToSucceedTest.swift",
+        "Tests/NimbleTests/OnFailureThrowsTest.swift",
+        "Tests/NimbleTests/PollingTest+Require.swift",
+        "Tests/NimbleTests/PollingTest.swift",
+        "Tests/NimbleTests/PredicateTest.swift",
+        "Tests/NimbleTests/StatusTest.swift",
+        "Tests/NimbleTests/SwiftTestingSupportTest.swift",
+        "Tests/NimbleTests/SynchronousTest.swift",
+        "Tests/NimbleTests/UserDescriptionTest.swift"
+      ],
+      "type_noeud": "hub"
+    },
+    "Sources/Nimble/FailureMessage.swift": {
+      "fichier": "Sources/Nimble/FailureMessage.swift",
+      "langage": "swift",
+      "lignes": 92,
+      "taille_bytes": 2906,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public class FailureMessage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/DSL+AsyncAwait.swift": {
+      "fichier": "Sources/Nimble/DSL+AsyncAwait.swift",
+      "langage": "swift",
+      "lignes": 169,
+      "taille_bytes": 7549,
+      "entrees": [
+        "Dispatch"
+      ],
+      "sorties": [
+        "public func expect",
+        "public func expecta",
+        "public func waitUntil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Polling+Require.swift": {
+      "fichier": "Sources/Nimble/Polling+Require.swift",
+      "langage": "swift",
+      "lignes": 762,
+      "taille_bytes": 41207,
+      "entrees": [
+        "Dispatch"
+      ],
+      "sorties": [
+        "public func alwaysTo",
+        "public func neverTo",
+        "public func pollUnwrap",
+        "public func pollUnwrapa",
+        "public func pollUnwraps",
+        "public func toAlways",
+        "public func toEventually",
+        "public func toEventuallyNot",
+        "public func toNever",
+        "public func toNotEventually"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Expression.swift": {
+      "fichier": "Sources/Nimble/Expression.swift",
+      "langage": "swift",
+      "lignes": 115,
+      "taille_bytes": 5040,
+      "entrees": [],
+      "sorties": [
+        "public func cast",
+        "public func evaluate",
+        "public func toAsyncExpression",
+        "public func withCaching",
+        "public func withoutCaching"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/AsyncExpression.swift": {
+      "fichier": "Sources/Nimble/AsyncExpression.swift",
+      "langage": "swift",
+      "lignes": 130,
+      "taille_bytes": 5647,
+      "entrees": [],
+      "sorties": [
+        "public func cast",
+        "public func evaluate",
+        "public func toSynchronousExpression",
+        "public func withCaching",
+        "public func withoutCaching"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Expectation.swift": {
+      "fichier": "Sources/Nimble/Expectation.swift",
+      "langage": "swift",
+      "lignes": 332,
+      "taille_bytes": 12998,
+      "entrees": [],
+      "sorties": [
+        "func applying",
+        "func run",
+        "func verify",
+        "public func notTo",
+        "public func onFailure",
+        "public func to",
+        "public func toNot",
+        "public func verify"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Polling.swift": {
+      "fichier": "Sources/Nimble/Polling.swift",
+      "langage": "swift",
+      "lignes": 357,
+      "taille_bytes": 16641,
+      "entrees": [
+        "Dispatch",
+        "Foundation"
+      ],
+      "sorties": [
+        "public func alwaysTo",
+        "public func neverTo",
+        "public func toAlways",
+        "public func toEventually",
+        "public func toEventuallyNot",
+        "public func toNever",
+        "public func toNotEventually"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Requirement.swift": {
+      "fichier": "Sources/Nimble/Requirement.swift",
+      "langage": "swift",
+      "lignes": 210,
+      "taille_bytes": 8735,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "func run",
+        "public func notTo",
+        "public func to",
+        "public func toNot",
+        "public func verify"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Polling+AsyncAwait.swift": {
+      "fichier": "Sources/Nimble/Polling+AsyncAwait.swift",
+      "langage": "swift",
+      "lignes": 599,
+      "taille_bytes": 28176,
+      "entrees": [
+        "Dispatch"
+      ],
+      "sorties": [
+        "func poll",
+        "func updateMatcherResult",
+        "public func alwaysTo",
+        "public func neverTo",
+        "public func toAlways",
+        "public func toEventually",
+        "public func toEventuallyNot",
+        "public func toNever",
+        "public func toNotEventually"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/ExpectationMessage.swift": {
+      "fichier": "Sources/Nimble/ExpectationMessage.swift",
+      "langage": "swift",
+      "lignes": 258,
+      "taille_bytes": 10224,
+      "entrees": [
+        "class"
+      ],
+      "sorties": [
+        "func toObjectiveC",
+        "func walk",
+        "public class NMBExpectationMessage",
+        "public func appended",
+        "public func appendedBeNilHint",
+        "public func prepended",
+        "public func replacedExpectation",
+        "public func toString",
+        "public func toSwift",
+        "public func wrappedExpectation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Utils/SourceLocation.swift": {
+      "fichier": "Sources/Nimble/Utils/SourceLocation.swift",
+      "langage": "swift",
+      "lignes": 39,
+      "taille_bytes": 1262,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Utils/Errors.swift": {
+      "fichier": "Sources/Nimble/Utils/Errors.swift",
+      "langage": "swift",
+      "lignes": 63,
+      "taille_bytes": 1586,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Utils/NimbleTimeInterval.swift": {
+      "fichier": "Sources/Nimble/Utils/NimbleTimeInterval.swift",
+      "langage": "swift",
+      "lignes": 113,
+      "taille_bytes": 4563,
+      "entrees": [
+        "CDispatch",
+        "Dispatch",
+        "Foundation"
+      ],
+      "sorties": [
+        "public func advanced"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Utils/AsyncAwait.swift": {
+      "fichier": "Sources/Nimble/Utils/AsyncAwait.swift",
+      "langage": "swift",
+      "lignes": 238,
+      "taille_bytes": 6691,
+      "entrees": [
+        "Dispatch",
+        "Foundation"
+      ],
+      "sorties": [
+        "func complete",
+        "func finish",
+        "func handleCancellation",
+        "func isCompleted",
+        "func isIncomplete",
+        "func run",
+        "func toPollResult"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Utils/AsyncTimerSequence.swift": {
+      "fichier": "Sources/Nimble/Utils/AsyncTimerSequence.swift",
+      "langage": "swift",
+      "lignes": 137,
+      "taille_bytes": 4226,
+      "entrees": [
+        "Dispatch",
+        "Foundation"
+      ],
+      "sorties": [
+        "func advanced",
+        "func intervalSince",
+        "func makeAsyncIterator",
+        "func nextDeadline",
+        "func now",
+        "func rounded",
+        "func sleep",
+        "struct AsyncIterator",
+        "struct AsyncTimerSequence"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Utils/Stringers.swift": {
+      "fichier": "Sources/Nimble/Utils/Stringers.swift",
+      "langage": "swift",
+      "lignes": 188,
+      "taille_bytes": 5955,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func prettyCollectionType",
+        "public func stringify"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Utils/PollAwait.swift": {
+      "fichier": "Sources/Nimble/Utils/PollAwait.swift",
+      "langage": "swift",
+      "lignes": 215,
+      "taille_bytes": 6163,
+      "entrees": [
+        "CoreFoundation",
+        "Dispatch",
+        "Foundation"
+      ],
+      "sorties": [
+        "func isCompleted",
+        "func isIncomplete",
+        "func set",
+        "func synchronousWaitUntil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/ToSucceed.swift": {
+      "fichier": "Sources/Nimble/Matchers/ToSucceed.swift",
+      "langage": "swift",
+      "lignes": 37,
+      "taille_bytes": 1103,
+      "entrees": [],
+      "sorties": [
+        "public func succeed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/AsyncMatcher.swift": {
+      "fichier": "Sources/Nimble/Matchers/AsyncMatcher.swift",
+      "langage": "swift",
+      "lignes": 118,
+      "taille_bytes": 5391,
+      "entrees": [],
+      "sorties": [
+        "func satisfies",
+        "public func satisfies"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeLessThanOrEqual.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeLessThanOrEqual.swift",
+      "langage": "swift",
+      "lignes": 48,
+      "taille_bytes": 1853,
+      "entrees": [
+        "enum"
+      ],
+      "sorties": [
+        "public func beLessThanOrEqualTo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/AllPass.swift": {
+      "fichier": "Sources/Nimble/Matchers/AllPass.swift",
+      "langage": "swift",
+      "lignes": 111,
+      "taille_bytes": 4504,
+      "entrees": [
+        "class",
+        "protocol",
+        "struct"
+      ],
+      "sorties": [
+        "public func allPass"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/Equal+Tuple.swift": {
+      "fichier": "Sources/Nimble/Matchers/Equal+Tuple.swift",
+      "langage": "swift",
+      "lignes": 198,
+      "taille_bytes": 5631,
+      "entrees": [],
+      "sorties": [
+        "public func equal"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/Matcher.swift": {
+      "fichier": "Sources/Nimble/Matchers/Matcher.swift",
+      "langage": "swift",
+      "lignes": 324,
+      "taille_bytes": 12230,
+      "entrees": [
+        "class"
+      ],
+      "sorties": [
+        "func satisfies",
+        "public class NMBMatcher",
+        "public func satisfies",
+        "public func toBoolean",
+        "public func toObjectiveC",
+        "public func toSwift"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/PostNotification.swift": {
+      "fichier": "Sources/Nimble/Matchers/PostNotification.swift",
+      "langage": "swift",
+      "lignes": 111,
+      "taille_bytes": 3519,
+      "entrees": [
+        "Foundation",
+        "center:"
+      ],
+      "sorties": [
+        "func addObserver",
+        "func startObserving",
+        "public func postDistributedNotifications",
+        "public func postNotifications"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/Map.swift": {
+      "fichier": "Sources/Nimble/Matchers/Map.swift",
+      "langage": "swift",
+      "lignes": 97,
+      "taille_bytes": 4945,
+      "entrees": [],
+      "sorties": [
+        "public func compactMap",
+        "public func map"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/SatisfyAnyOf.swift": {
+      "fichier": "Sources/Nimble/Matchers/SatisfyAnyOf.swift",
+      "langage": "swift",
+      "lignes": 123,
+      "taille_bytes": 4841,
+      "entrees": [
+        "class"
+      ],
+      "sorties": [
+        "public func satisfyAnyOf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeGreaterThanOrEqualTo.swift",
+      "langage": "swift",
+      "lignes": 50,
+      "taille_bytes": 1959,
+      "entrees": [
+        "enum"
+      ],
+      "sorties": [
+        "public func beGreaterThanOrEqualTo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/Equal.swift": {
+      "fichier": "Sources/Nimble/Matchers/Equal.swift",
+      "langage": "swift",
+      "lignes": 272,
+      "taille_bytes": 8569,
+      "entrees": [
+        "class"
+      ],
+      "sorties": [
+        "public func equal"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/ContainElementSatisfying.swift": {
+      "fichier": "Sources/Nimble/Matchers/ContainElementSatisfying.swift",
+      "langage": "swift",
+      "lignes": 82,
+      "taille_bytes": 3042,
+      "entrees": [
+        "class",
+        "protocol",
+        "struct"
+      ],
+      "sorties": [
+        "public func containElementSatisfying"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeginWith.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeginWith.swift",
+      "langage": "swift",
+      "lignes": 57,
+      "taille_bytes": 2522,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func beginWith"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeGreaterThan.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeGreaterThan.swift",
+      "langage": "swift",
+      "lignes": 49,
+      "taille_bytes": 1861,
+      "entrees": [
+        "enum"
+      ],
+      "sorties": [
+        "public func beGreaterThan"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/SatisfyAllOf.swift": {
+      "fichier": "Sources/Nimble/Matchers/SatisfyAllOf.swift",
+      "langage": "swift",
+      "lignes": 123,
+      "taille_bytes": 4855,
+      "entrees": [
+        "class"
+      ],
+      "sorties": [
+        "public func satisfyAllOf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/Equal+TupleArray.swift": {
+      "fichier": "Sources/Nimble/Matchers/Equal+TupleArray.swift",
+      "langage": "swift",
+      "lignes": 204,
+      "taille_bytes": 6144,
+      "entrees": [],
+      "sorties": [
+        "public func equal"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeResult.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeResult.swift",
+      "langage": "swift",
+      "lignes": 154,
+      "taille_bytes": 5215,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func beFailure",
+        "public func beSuccess"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeAnInstanceOf.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeAnInstanceOf.swift",
+      "langage": "swift",
+      "lignes": 56,
+      "taille_bytes": 2223,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func beAnInstanceOf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeLogical.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeLogical.swift",
+      "langage": "swift",
+      "lignes": 148,
+      "taille_bytes": 4835,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func beFalse",
+        "public func beFalsy",
+        "public func beTrue",
+        "public func beTruthy"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/Match.swift": {
+      "fichier": "Sources/Nimble/Matchers/Match.swift",
+      "langage": "swift",
+      "lignes": 23,
+      "taille_bytes": 901,
+      "entrees": [
+        "class"
+      ],
+      "sorties": [
+        "public func match"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/MatcherProtocols.swift": {
+      "fichier": "Sources/Nimble/Matchers/MatcherProtocols.swift",
+      "langage": "swift",
+      "lignes": 106,
+      "taille_bytes": 3058,
+      "entrees": [
+        "CoreGraphics",
+        "Foundation"
+      ],
+      "sorties": [
+        "func NMB_compare",
+        "func contains",
+        "func object",
+        "public func NMB_compare"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/MatchError.swift": {
+      "fichier": "Sources/Nimble/Matchers/MatchError.swift",
+      "langage": "swift",
+      "lignes": 68,
+      "taille_bytes": 2252,
+      "entrees": [],
+      "sorties": [
+        "public func matchError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/HaveCount.swift": {
+      "fichier": "Sources/Nimble/Matchers/HaveCount.swift",
+      "langage": "swift",
+      "lignes": 73,
+      "taille_bytes": 3281,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func haveCount"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/EndWith.swift": {
+      "fichier": "Sources/Nimble/Matchers/EndWith.swift",
+      "langage": "swift",
+      "lignes": 67,
+      "taille_bytes": 2778,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func endWith"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/ThrowError.swift": {
+      "fichier": "Sources/Nimble/Matchers/ThrowError.swift",
+      "langage": "swift",
+      "lignes": 261,
+      "taille_bytes": 8930,
+      "entrees": [],
+      "sorties": [
+        "public func throwError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeLessThan.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeLessThan.swift",
+      "langage": "swift",
+      "lignes": 48,
+      "taille_bytes": 1792,
+      "entrees": [
+        "enum"
+      ],
+      "sorties": [
+        "public func beLessThan"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeCloseTo.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeCloseTo.swift",
+      "langage": "swift",
+      "lignes": 195,
+      "taille_bytes": 7010,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public class NMBObjCBeCloseToMatcher",
+        "public func beCloseTo",
+        "public func defaultDelta"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/Negation.swift": {
+      "fichier": "Sources/Nimble/Matchers/Negation.swift",
+      "langage": "swift",
+      "lignes": 37,
+      "taille_bytes": 1130,
+      "entrees": [],
+      "sorties": [
+        "public func not"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/ThrowAssertion.swift": {
+      "fichier": "Sources/Nimble/Matchers/ThrowAssertion.swift",
+      "langage": "swift",
+      "lignes": 155,
+      "taille_bytes": 7690,
+      "entrees": [
+        "CwlPosixPreconditionTesting",
+        "CwlPreconditionTesting",
+        "Glibc"
+      ],
+      "sorties": [
+        "public class BadInstructionException",
+        "public func catchBadInstruction",
+        "public func throwAssertion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeWithin.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeWithin.swift",
+      "langage": "swift",
+      "lignes": 21,
+      "taille_bytes": 927,
+      "entrees": [],
+      "sorties": [
+        "public func beWithin"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/Contain.swift": {
+      "fichier": "Sources/Nimble/Matchers/Contain.swift",
+      "langage": "swift",
+      "lignes": 137,
+      "taille_bytes": 5688,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func contain"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/RaisesException.swift": {
+      "fichier": "Sources/Nimble/Matchers/RaisesException.swift",
+      "langage": "swift",
+      "lignes": 222,
+      "taille_bytes": 7234,
+      "entrees": [
+        "class"
+      ],
+      "sorties": [
+        "public class NMBObjCRaiseExceptionMatcher",
+        "public func raiseException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeNil.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeNil.swift",
+      "langage": "swift",
+      "lignes": 56,
+      "taille_bytes": 1609,
+      "entrees": [
+        "Foundation"
+      ],
+      "sorties": [
+        "public func beNil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeIdenticalTo.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeIdenticalTo.swift",
+      "langage": "swift",
+      "lignes": 71,
+      "taille_bytes": 2228,
+      "entrees": [
+        "class"
+      ],
+      "sorties": [
+        "public func be",
+        "public func beIdenticalTo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/ElementsEqual.swift": {
+      "fichier": "Sources/Nimble/Matchers/ElementsEqual.swift",
+      "langage": "swift",
+      "lignes": 42,
+      "taille_bytes": 2107,
+      "entrees": [],
+      "sorties": [
+        "public func elementsEqual"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Sources/Nimble/Matchers/BeAKindOf.swift": {
+      "fichier": "Sources/Nimble/Matchers/BeAKindOf.swift",
+      "langage": "swift",
+      "lignes": 67,
+      "taille_bytes": 2470,
+      "entrees": [
+        "class"
+      ],
+      "sorties": [
+        "public func beAKindOf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "Tests/NimbleObjectiveCTests/NimbleSpecHelper.h",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/AsyncAwaitTest+Require.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/SynchronousTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/AsyncAwaitTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/DSLTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/PollingTest+Require.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/UserDescriptionTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/StatusTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/PredicateTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/SwiftTestingSupportTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/OnFailureThrowsTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/PollingTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Helpers/BackgroundThreadObject.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Helpers/AsyncHelpers.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/MatchTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/MatchErrorTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/AsyncPredicateTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/HaveCountTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeginWithTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeLogicalTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeEmptyTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeVoidTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeCloseToTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/EndWithTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeAnInstanceOfTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeResultTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/AllPassTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/PostNotificationTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/RaisesExceptionTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeGreaterThanTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/EqualTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/ElementsEqualTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/ToSucceedTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/NegationTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/MapTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/AlwaysFailMatcher.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/ThrowAssertionTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeginWithPrefixTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeGreaterThanOrEqualToTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/SatisfyAllOfTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeNilTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeAKindOfTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeLessThanOrEqualToTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/ContainTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/SatisfyAnyOfTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeLessThanTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/ThrowErrorTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/ContainElementSatisfyingTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeIdenticalToObjectTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/AsyncAllPassTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    },
+    {
+      "de": "Tests/NimbleTests/Matchers/BeWithinTest.swift",
+      "vers": "Sources/Nimble/Nimble.h",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 'Sources/Nimble/Nimble.h' (in=51, 42% du projet)"
+  ]
+}

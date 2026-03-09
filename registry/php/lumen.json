@@ -1,0 +1,412 @@
+{
+  "meta": {
+    "projet": "lumen",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 1,
+      "xml": 1,
+      "yaml": 1,
+      "php": 22
+    }
+  },
+  "stats": {
+    "fichiers_total": 25,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "composer.json"
+  },
+  "noeuds": {
+    "composer.json": {
+      "fichier": "composer.json",
+      "langage": "json",
+      "lignes": 40,
+      "taille_bytes": 1034,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "phpunit.xml": {
+      "fichier": "phpunit.xml",
+      "langage": "xml",
+      "lignes": 17,
+      "taille_bytes": 592,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".styleci.yml": {
+      "fichier": ".styleci.yml",
+      "langage": "yaml",
+      "lignes": 6,
+      "taille_bytes": 71,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/TestCase.php": {
+      "fichier": "tests/TestCase.php",
+      "langage": "php",
+      "lignes": 18,
+      "taille_bytes": 332,
+      "entrees": [
+        "Laravel\\Lumen\\Testing\\TestCase"
+      ],
+      "sorties": [
+        "abstract class TestCase",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/ExampleTest.php": {
+      "fichier": "tests/ExampleTest.php",
+      "langage": "php",
+      "lignes": 23,
+      "taille_bytes": 450,
+      "entrees": [
+        "Laravel\\Lumen\\Testing\\DatabaseMigrations",
+        "Laravel\\Lumen\\Testing\\DatabaseTransactions"
+      ],
+      "sorties": [
+        "class ExampleTest",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "bootstrap/app.php": {
+      "fichier": "bootstrap/app.php",
+      "langage": "php",
+      "lignes": 115,
+      "taille_bytes": 3460,
+      "entrees": [
+        "__DIR__."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "public/index.php": {
+      "fichier": "public/index.php",
+      "langage": "php",
+      "lignes": 28,
+      "taille_bytes": 897,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "database/seeders/DatabaseSeeder.php": {
+      "fichier": "database/seeders/DatabaseSeeder.php",
+      "langage": "php",
+      "lignes": 19,
+      "taille_bytes": 323,
+      "entrees": [
+        "Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents",
+        "Illuminate\\Database\\Seeder"
+      ],
+      "sorties": [
+        "class DatabaseSeeder",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "database/factories/UserFactory.php": {
+      "fichier": "database/factories/UserFactory.php",
+      "langage": "php",
+      "lignes": 29,
+      "taille_bytes": 541,
+      "entrees": [
+        "App\\Models\\User",
+        "Illuminate\\Database\\Eloquent\\Factories\\Factory"
+      ],
+      "sorties": [
+        "class UserFactory",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Listeners/ExampleListener.php": {
+      "fichier": "app/Listeners/ExampleListener.php",
+      "langage": "php",
+      "lignes": 31,
+      "taille_bytes": 496,
+      "entrees": [
+        "App\\Events\\ExampleEvent",
+        "Illuminate\\Contracts\\Queue\\ShouldQueue",
+        "Illuminate\\Queue\\InteractsWithQueue"
+      ],
+      "sorties": [
+        "class ExampleListener",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Console/Kernel.php": {
+      "fichier": "app/Console/Kernel.php",
+      "langage": "php",
+      "lignes": 29,
+      "taille_bytes": 546,
+      "entrees": [
+        "Illuminate\\Console\\Scheduling\\Schedule",
+        "Laravel\\Lumen\\Console\\Kernel"
+      ],
+      "sorties": [
+        "class Kernel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Events/Event.php": {
+      "fichier": "app/Events/Event.php",
+      "langage": "php",
+      "lignes": 10,
+      "taille_bytes": 121,
+      "entrees": [
+        "Illuminate\\Queue\\SerializesModels",
+        "SerializesModels"
+      ],
+      "sorties": [
+        "abstract class Event"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Events/ExampleEvent.php": {
+      "fichier": "app/Events/ExampleEvent.php",
+      "langage": "php",
+      "lignes": 16,
+      "taille_bytes": 203,
+      "entrees": [],
+      "sorties": [
+        "class ExampleEvent",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Jobs/Job.php": {
+      "fichier": "app/Jobs/Job.php",
+      "langage": "php",
+      "lignes": 24,
+      "taille_bytes": 720,
+      "entrees": [
+        "Illuminate\\Bus\\Queueable",
+        "Illuminate\\Contracts\\Queue\\ShouldQueue",
+        "Illuminate\\Queue\\InteractsWithQueue",
+        "Illuminate\\Queue\\SerializesModels",
+        "InteractsWithQueue"
+      ],
+      "sorties": [
+        "abstract class Job"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Jobs/ExampleJob.php": {
+      "fichier": "app/Jobs/ExampleJob.php",
+      "langage": "php",
+      "lignes": 26,
+      "taille_bytes": 315,
+      "entrees": [],
+      "sorties": [
+        "class ExampleJob",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Providers/AppServiceProvider.php": {
+      "fichier": "app/Providers/AppServiceProvider.php",
+      "langage": "php",
+      "lignes": 18,
+      "taille_bytes": 266,
+      "entrees": [
+        "Illuminate\\Support\\ServiceProvider"
+      ],
+      "sorties": [
+        "class AppServiceProvider",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Providers/AuthServiceProvider.php": {
+      "fichier": "app/Providers/AuthServiceProvider.php",
+      "langage": "php",
+      "lignes": 39,
+      "taille_bytes": 1023,
+      "entrees": [
+        "App\\Models\\User",
+        "Illuminate\\Support\\Facades\\Gate",
+        "Illuminate\\Support\\ServiceProvider"
+      ],
+      "sorties": [
+        "class AuthServiceProvider",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Providers/EventServiceProvider.php": {
+      "fichier": "app/Providers/EventServiceProvider.php",
+      "langage": "php",
+      "lignes": 29,
+      "taille_bytes": 593,
+      "entrees": [
+        "Laravel\\Lumen\\Providers\\EventServiceProvider"
+      ],
+      "sorties": [
+        "class EventServiceProvider",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Http/Middleware/ExampleMiddleware.php": {
+      "fichier": "app/Http/Middleware/ExampleMiddleware.php",
+      "langage": "php",
+      "lignes": 20,
+      "taille_bytes": 337,
+      "entrees": [
+        "Closure"
+      ],
+      "sorties": [
+        "class ExampleMiddleware",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Http/Middleware/Authenticate.php": {
+      "fichier": "app/Http/Middleware/Authenticate.php",
+      "langage": "php",
+      "lignes": 44,
+      "taille_bytes": 911,
+      "entrees": [
+        "Closure",
+        "Illuminate\\Contracts\\Auth\\Factory"
+      ],
+      "sorties": [
+        "class Authenticate",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Http/Controllers/ExampleController.php": {
+      "fichier": "app/Http/Controllers/ExampleController.php",
+      "langage": "php",
+      "lignes": 18,
+      "taille_bytes": 236,
+      "entrees": [],
+      "sorties": [
+        "class ExampleController",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Http/Controllers/Controller.php": {
+      "fichier": "app/Http/Controllers/Controller.php",
+      "langage": "php",
+      "lignes": 10,
+      "taille_bytes": 148,
+      "entrees": [
+        "Laravel\\Lumen\\Routing\\Controller"
+      ],
+      "sorties": [
+        "class Controller"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Models/User.php": {
+      "fichier": "app/Models/User.php",
+      "langage": "php",
+      "lignes": 33,
+      "taille_bytes": 796,
+      "entrees": [
+        "Authenticatable",
+        "Illuminate\\Auth\\Authenticatable",
+        "Illuminate\\Contracts\\Auth\\Access\\Authorizable",
+        "Illuminate\\Contracts\\Auth\\Authenticatable",
+        "Illuminate\\Database\\Eloquent\\Factories\\HasFactory",
+        "Illuminate\\Database\\Eloquent\\Model",
+        "Laravel\\Lumen\\Auth\\Authorizable"
+      ],
+      "sorties": [
+        "class User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "app/Exceptions/Handler.php": {
+      "fichier": "app/Exceptions/Handler.php",
+      "langage": "php",
+      "lignes": 54,
+      "taille_bytes": 1368,
+      "entrees": [
+        "Illuminate\\Auth\\Access\\AuthorizationException",
+        "Illuminate\\Database\\Eloquent\\ModelNotFoundException",
+        "Illuminate\\Validation\\ValidationException",
+        "Laravel\\Lumen\\Exceptions\\Handler",
+        "Symfony\\Component\\HttpKernel\\Exception\\HttpException",
+        "Throwable"
+      ],
+      "sorties": [
+        "class Handler",
+        "public func tion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "routes/web.php": {
+      "fichier": "routes/web.php",
+      "langage": "php",
+      "lignes": 18,
+      "taille_bytes": 527,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}
