@@ -1,0 +1,1551 @@
+{
+  "meta": {
+    "projet": "shellcheck",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "haskell": 29,
+      "yaml": 2
+    }
+  },
+  "stats": {
+    "fichiers_total": 31,
+    "edges_total": 102,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 4,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 7,
+    "points_entree": 12,
+    "fichier_plus_appele": "src/ShellCheck/Interface.hs"
+  },
+  "noeuds": {
+    "shellcheck.hs": {
+      "fichier": "shellcheck.hs",
+      "langage": "haskell",
+      "lignes": 635,
+      "taille_bytes": 21925,
+      "entrees": [
+        "Control.Exception",
+        "Control.Monad",
+        "Control.Monad.Except",
+        "Control.Monad.IO.Class",
+        "Control.Monad.Trans.Class",
+        "Data.Bits",
+        "Data.Char",
+        "Data.Either",
+        "Data.Functor",
+        "Data.IORef",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Monoid",
+        "Data.Semigroup",
+        "Prelude",
+        "ShellCheck.Checker",
+        "ShellCheck.Data",
+        "ShellCheck.Formatter.Format",
+        "ShellCheck.Interface",
+        "ShellCheck.Regex",
+        "System.Console.GetOpt",
+        "System.Directory",
+        "System.Environment",
+        "System.Exit",
+        "System.FilePath",
+        "System.IO",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Checker.hs",
+        "src/ShellCheck/Data.hs",
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Prelude.hs",
+        "src/ShellCheck/Regex.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "stack.yaml": {
+      "fichier": "stack.yaml",
+      "langage": "yaml",
+      "lignes": 35,
+      "taille_bytes": 1133,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/shellcheck.hs": {
+      "fichier": "test/shellcheck.hs",
+      "langage": "haskell",
+      "lignes": 41,
+      "taille_bytes": 1737,
+      "entrees": [
+        "Control.Monad",
+        "System.Exit",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "snap/snapcraft.yaml": {
+      "fichier": "snap/snapcraft.yaml",
+      "langage": "yaml",
+      "lignes": 57,
+      "taille_bytes": 1611,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/ShellCheck/Checker.hs": {
+      "fichier": "src/ShellCheck/Checker.hs",
+      "langage": "haskell",
+      "lignes": 575,
+      "taille_bytes": 19919,
+      "entrees": [
+        "Control.Monad",
+        "Control.Monad.Identity",
+        "Data.Either",
+        "Data.Functor",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Ord",
+        "Debug.Trace",
+        "Prelude",
+        "ShellCheck.ASTLib",
+        "ShellCheck.Analyzer",
+        "ShellCheck.Interface",
+        "ShellCheck.Parser",
+        "Test.QuickCheck.All",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/Analyzer.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Parser.hs",
+        "src/ShellCheck/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "shellcheck.hs",
+        "src/ShellCheck/Debug.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/ShellCheck/Prelude.hs": {
+      "fichier": "src/ShellCheck/Prelude.hs",
+      "langage": "haskell",
+      "lignes": 51,
+      "taille_bytes": 1540,
+      "entrees": [
+        "Data.Semigroup"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "shellcheck.hs",
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/CFGAnalysis.hs",
+        "src/ShellCheck/Checker.hs",
+        "src/ShellCheck/Checks/Commands.hs",
+        "src/ShellCheck/Checks/ShellSupport.hs",
+        "src/ShellCheck/Debug.hs",
+        "src/ShellCheck/Fixer.hs",
+        "src/ShellCheck/Parser.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "src/ShellCheck/Parser.hs": {
+      "fichier": "src/ShellCheck/Parser.hs",
+      "langage": "haskell",
+      "lignes": 3669,
+      "taille_bytes": 135447,
+      "entrees": [
+        "<-",
+        "Control.Applicative",
+        "Control.Monad",
+        "Control.Monad.Identity",
+        "Control.Monad.Trans",
+        "Data.Char",
+        "Data.Functor",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Monoid",
+        "Debug.Trace",
+        "GHC.Exts",
+        "Prelude",
+        "ShellCheck.AST",
+        "ShellCheck.ASTLib",
+        "ShellCheck.Data",
+        "ShellCheck.Interface",
+        "ShellCheck.Prelude",
+        "System.IO",
+        "Test.QuickCheck.All",
+        "Text.Parsec",
+        "Text.Parsec.Error",
+        "Text.Parsec.Pos",
+        "qualified"
+      ],
+      "sorties": [
+        "type SCBase",
+        "type SCParser"
+      ],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/Data.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/Checker.hs",
+        "src/ShellCheck/Checks/Commands.hs",
+        "src/ShellCheck/Debug.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "src/ShellCheck/ASTLib.hs": {
+      "fichier": "src/ShellCheck/ASTLib.hs",
+      "langage": "haskell",
+      "lignes": 926,
+      "taille_bytes": 34574,
+      "entrees": [
+        "Control.Monad",
+        "Control.Monad.Writer",
+        "Data.Char",
+        "Data.Functor",
+        "Data.Functor.Identity",
+        "Data.List",
+        "Data.Maybe",
+        "Numeric",
+        "ShellCheck.AST",
+        "ShellCheck.Prelude",
+        "ShellCheck.Regex",
+        "Test.QuickCheck",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/Prelude.hs",
+        "src/ShellCheck/Regex.hs"
+      ],
+      "est_appele_par": [
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/Checker.hs",
+        "src/ShellCheck/Checks/Commands.hs",
+        "src/ShellCheck/Checks/ControlFlow.hs",
+        "src/ShellCheck/Checks/ShellSupport.hs",
+        "src/ShellCheck/Parser.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "src/ShellCheck/Regex.hs": {
+      "fichier": "src/ShellCheck/Regex.hs",
+      "langage": "haskell",
+      "lignes": 80,
+      "taille_bytes": 2651,
+      "entrees": [
+        "Control.Monad",
+        "Data.List",
+        "Data.Maybe",
+        "Text.Regex.TDFA"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "shellcheck.hs",
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/Checks/Commands.hs",
+        "src/ShellCheck/Checks/ShellSupport.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "src/ShellCheck/AST.hs": {
+      "fichier": "src/ShellCheck/AST.hs",
+      "langage": "haskell",
+      "lignes": 289,
+      "taille_bytes": 14112,
+      "entrees": [
+        "Control.DeepSeq",
+        "Control.Monad.Identity",
+        "GHC.Generics",
+        "Prelude",
+        "Text.Parsec",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/CFGAnalysis.hs",
+        "src/ShellCheck/Checks/Commands.hs",
+        "src/ShellCheck/Checks/ControlFlow.hs",
+        "src/ShellCheck/Checks/ShellSupport.hs",
+        "src/ShellCheck/Debug.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Parser.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "src/ShellCheck/Interface.hs": {
+      "fichier": "src/ShellCheck/Interface.hs",
+      "langage": "haskell",
+      "lignes": 341,
+      "taille_bytes": 9691,
+      "entrees": [
+        "Control.DeepSeq",
+        "Control.Monad.Identity",
+        "Data.List",
+        "Data.Monoid",
+        "Data.Ord",
+        "Data.Semigroup",
+        "GHC.Generics",
+        "ShellCheck.AST",
+        "qualified"
+      ],
+      "sorties": [
+        "type Code",
+        "type ErrorMessage"
+      ],
+      "appelle": [
+        "src/ShellCheck/AST.hs"
+      ],
+      "est_appele_par": [
+        "shellcheck.hs",
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/Analyzer.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/Checker.hs",
+        "src/ShellCheck/Checks/Commands.hs",
+        "src/ShellCheck/Checks/ControlFlow.hs",
+        "src/ShellCheck/Checks/ShellSupport.hs",
+        "src/ShellCheck/Data.hs",
+        "src/ShellCheck/Debug.hs",
+        "src/ShellCheck/Fixer.hs",
+        "src/ShellCheck/Formatter/CheckStyle.hs",
+        "src/ShellCheck/Formatter/Diff.hs",
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Formatter/GCC.hs",
+        "src/ShellCheck/Formatter/JSON.hs",
+        "src/ShellCheck/Formatter/JSON1.hs",
+        "src/ShellCheck/Formatter/Quiet.hs",
+        "src/ShellCheck/Formatter/TTY.hs",
+        "src/ShellCheck/Parser.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "src/ShellCheck/CFG.hs": {
+      "fichier": "src/ShellCheck/CFG.hs",
+      "langage": "haskell",
+      "lignes": 1319,
+      "taille_bytes": 49282,
+      "entrees": [
+        "Control.DeepSeq",
+        "Control.Monad",
+        "Control.Monad.Identity",
+        "Control.Monad.RWS.Lazy",
+        "Data.Array.ST",
+        "Data.Array.Unboxed",
+        "Data.Graph.Inductive.Basic",
+        "Data.Graph.Inductive.Graph",
+        "Data.Graph.Inductive.PatriciaTree",
+        "Data.Graph.Inductive.Query.DFS",
+        "Data.Graph.Inductive.Query.Dominators",
+        "Data.List",
+        "Data.Maybe",
+        "Debug.Trace",
+        "GHC.Generics",
+        "ShellCheck.AST",
+        "ShellCheck.ASTLib",
+        "ShellCheck.Data",
+        "ShellCheck.Interface",
+        "ShellCheck.Prelude",
+        "ShellCheck.Regex",
+        "Test.QuickCheck.All",
+        "Test.QuickCheck.Test",
+        "qualified"
+      ],
+      "sorties": [
+        "type CFGraph",
+        "type CFM",
+        "type CFW"
+      ],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/Data.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Prelude.hs",
+        "src/ShellCheck/Regex.hs"
+      ],
+      "est_appele_par": [
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/CFGAnalysis.hs",
+        "src/ShellCheck/Checks/Commands.hs",
+        "src/ShellCheck/Checks/ControlFlow.hs",
+        "src/ShellCheck/Debug.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "src/ShellCheck/Analyzer.hs": {
+      "fichier": "src/ShellCheck/Analyzer.hs",
+      "langage": "haskell",
+      "lignes": 55,
+      "taille_bytes": 1891,
+      "entrees": [
+        "Data.List",
+        "Data.Monoid",
+        "ShellCheck.Analytics",
+        "ShellCheck.AnalyzerLib",
+        "ShellCheck.Interface",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [
+        "src/ShellCheck/Checker.hs",
+        "src/ShellCheck/Debug.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/ShellCheck/Analytics.hs": {
+      "fichier": "src/ShellCheck/Analytics.hs",
+      "langage": "haskell",
+      "lignes": 5260,
+      "taille_bytes": 268222,
+      "entrees": [
+        "Control.Arrow",
+        "Control.Monad",
+        "Control.Monad.Identity",
+        "Control.Monad.Reader",
+        "Control.Monad.State",
+        "Control.Monad.Writer",
+        "Data.Char",
+        "Data.Function",
+        "Data.Functor",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Ord",
+        "Data.Semigroup",
+        "Debug.Trace",
+        "ShellCheck.AST",
+        "ShellCheck.ASTLib",
+        "ShellCheck.AnalyzerLib",
+        "ShellCheck.CFG",
+        "ShellCheck.Data",
+        "ShellCheck.Interface",
+        "ShellCheck.Parser",
+        "ShellCheck.Prelude",
+        "ShellCheck.Regex",
+        "Test.QuickCheck.All",
+        "Test.QuickCheck.Test",
+        "qualified"
+      ],
+      "sorties": [
+        "message forSuccess"
+      ],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/Data.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Parser.hs",
+        "src/ShellCheck/Prelude.hs",
+        "src/ShellCheck/Regex.hs"
+      ],
+      "est_appele_par": [
+        "src/ShellCheck/Analyzer.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/ShellCheck/Fixer.hs": {
+      "fichier": "src/ShellCheck/Fixer.hs",
+      "langage": "haskell",
+      "lignes": 412,
+      "taille_bytes": 13368,
+      "entrees": [
+        "Control.Monad",
+        "Control.Monad.State",
+        "Data.Array",
+        "Data.List",
+        "Data.Semigroup",
+        "GHC.Exts",
+        "ShellCheck.Interface",
+        "ShellCheck.Prelude",
+        "Test.QuickCheck"
+      ],
+      "sorties": [
+        "class Ranged",
+        "type Fixer"
+      ],
+      "appelle": [
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "src/ShellCheck/Formatter/Diff.hs",
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Formatter/TTY.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "src/ShellCheck/AnalyzerLib.hs": {
+      "fichier": "src/ShellCheck/AnalyzerLib.hs",
+      "langage": "haskell",
+      "lignes": 944,
+      "taille_bytes": 35870,
+      "entrees": [
+        "Control.Arrow",
+        "Control.DeepSeq",
+        "Control.Monad",
+        "Control.Monad.Identity",
+        "Control.Monad.RWS",
+        "Control.Monad.State",
+        "Control.Monad.Writer",
+        "Data.Char",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Semigroup",
+        "ShellCheck.AST",
+        "ShellCheck.ASTLib",
+        "ShellCheck.Data",
+        "ShellCheck.Interface",
+        "ShellCheck.Parser",
+        "ShellCheck.Prelude",
+        "ShellCheck.Regex",
+        "Test.QuickCheck.All",
+        "Test.QuickCheck.Test",
+        "qualified"
+      ],
+      "sorties": [
+        "type Analysis",
+        "type AnalyzerM"
+      ],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/Data.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Parser.hs",
+        "src/ShellCheck/Prelude.hs",
+        "src/ShellCheck/Regex.hs"
+      ],
+      "est_appele_par": [
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/Analyzer.hs",
+        "src/ShellCheck/Checks/Commands.hs",
+        "src/ShellCheck/Checks/ControlFlow.hs",
+        "src/ShellCheck/Checks/Custom.hs",
+        "src/ShellCheck/Checks/ShellSupport.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "src/ShellCheck/CFGAnalysis.hs": {
+      "fichier": "src/ShellCheck/CFGAnalysis.hs",
+      "langage": "haskell",
+      "lignes": 1439,
+      "taille_bytes": 55131,
+      "entrees": [
+        "Control.DeepSeq",
+        "Control.Monad",
+        "Control.Monad.ST",
+        "Data.Array.Unboxed",
+        "Data.Char",
+        "Data.Graph.Inductive.Graph",
+        "Data.Graph.Inductive.Query.DFS",
+        "Data.List",
+        "Data.Maybe",
+        "Data.STRef",
+        "Debug.Trace",
+        "GHC.Generics",
+        "ShellCheck.AST",
+        "ShellCheck.CFG",
+        "ShellCheck.Prelude",
+        "Test.QuickCheck",
+        "qualified"
+      ],
+      "sorties": [
+        "type FunctionValue",
+        "type StateMap",
+        "type VariableProperties"
+      ],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/Prelude.hs"
+      ],
+      "est_appele_par": [
+        "src/ShellCheck/Checks/ControlFlow.hs",
+        "src/ShellCheck/Debug.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/ShellCheck/Debug.hs": {
+      "fichier": "src/ShellCheck/Debug.hs",
+      "langage": "haskell",
+      "lignes": 313,
+      "taille_bytes": 9082,
+      "entrees": [
+        "Control.Monad",
+        "Control.Monad.Identity",
+        "Control.Monad.RWS",
+        "Control.Monad.Writer",
+        "Data.Graph.Inductive.Graph",
+        "Data.List",
+        "Data.Maybe",
+        "Debug.Trace",
+        "ShellCheck.AST",
+        "ShellCheck.Analyzer",
+        "ShellCheck.CFG",
+        "ShellCheck.CFGAnalysis",
+        "ShellCheck.Checker",
+        "ShellCheck.Interface",
+        "ShellCheck.Parser",
+        "ShellCheck.Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/Analyzer.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/CFGAnalysis.hs",
+        "src/ShellCheck/Checker.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Parser.hs",
+        "src/ShellCheck/Prelude.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Data.hs": {
+      "fichier": "src/ShellCheck/Data.hs",
+      "langage": "haskell",
+      "lignes": 178,
+      "taille_bytes": 6919,
+      "entrees": [
+        "Data.Version",
+        "Paths_ShellCheck",
+        "ShellCheck.Interface"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [
+        "shellcheck.hs",
+        "src/ShellCheck/Analytics.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/Checks/Commands.hs",
+        "src/ShellCheck/Checks/ControlFlow.hs",
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Parser.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "src/ShellCheck/Formatter/Format.hs": {
+      "fichier": "src/ShellCheck/Formatter/Format.hs",
+      "langage": "haskell",
+      "lignes": 82,
+      "taille_bytes": 2561,
+      "entrees": [
+        "Control.Monad",
+        "Data.Array",
+        "Data.List",
+        "ShellCheck.Data",
+        "ShellCheck.Fixer",
+        "ShellCheck.Interface",
+        "System.Environment",
+        "System.IO",
+        "System.Info"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Data.hs",
+        "src/ShellCheck/Fixer.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [
+        "shellcheck.hs",
+        "src/ShellCheck/Formatter/CheckStyle.hs",
+        "src/ShellCheck/Formatter/Diff.hs",
+        "src/ShellCheck/Formatter/GCC.hs",
+        "src/ShellCheck/Formatter/JSON.hs",
+        "src/ShellCheck/Formatter/JSON1.hs",
+        "src/ShellCheck/Formatter/Quiet.hs",
+        "src/ShellCheck/Formatter/TTY.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "src/ShellCheck/Formatter/GCC.hs": {
+      "fichier": "src/ShellCheck/Formatter/GCC.hs",
+      "langage": "haskell",
+      "lignes": 65,
+      "taille_bytes": 2017,
+      "entrees": [
+        "Data.List",
+        "ShellCheck.Formatter.Format",
+        "ShellCheck.Interface",
+        "System.IO",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Formatter/Quiet.hs": {
+      "fichier": "src/ShellCheck/Formatter/Quiet.hs",
+      "langage": "haskell",
+      "lignes": 36,
+      "taille_bytes": 1198,
+      "entrees": [
+        "Control.Monad",
+        "Data.IORef",
+        "ShellCheck.Formatter.Format",
+        "ShellCheck.Interface",
+        "System.Exit"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Formatter/Diff.hs": {
+      "fichier": "src/ShellCheck/Formatter/Diff.hs",
+      "langage": "haskell",
+      "lignes": 260,
+      "taille_bytes": 9129,
+      "entrees": [
+        "Control.Monad",
+        "Data.Algorithm.Diff",
+        "Data.Array",
+        "Data.IORef",
+        "Data.List",
+        "Data.Maybe",
+        "GHC.Exts",
+        "ShellCheck.Fixer",
+        "ShellCheck.Formatter.Format",
+        "ShellCheck.Interface",
+        "System.FilePath",
+        "System.IO",
+        "Test.QuickCheck",
+        "qualified"
+      ],
+      "sorties": [
+        "type ColorFunc"
+      ],
+      "appelle": [
+        "src/ShellCheck/Fixer.hs",
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Formatter/CheckStyle.hs": {
+      "fichier": "src/ShellCheck/Formatter/CheckStyle.hs",
+      "langage": "haskell",
+      "lignes": 95,
+      "taille_bytes": 2826,
+      "entrees": [
+        "Data.Char",
+        "Data.List",
+        "ShellCheck.Formatter.Format",
+        "ShellCheck.Interface",
+        "System.IO",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Formatter/TTY.hs": {
+      "fichier": "src/ShellCheck/Formatter/TTY.hs",
+      "langage": "haskell",
+      "lignes": 197,
+      "taille_bytes": 7196,
+      "entrees": [
+        "Control.DeepSeq",
+        "Control.Monad",
+        "Data.Array",
+        "Data.Foldable",
+        "Data.IORef",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Ord",
+        "ShellCheck.Fixer",
+        "ShellCheck.Formatter.Format",
+        "ShellCheck.Interface",
+        "System.IO",
+        "System.Info",
+        "qualified"
+      ],
+      "sorties": [
+        "type ColorFunc",
+        "type Ranking"
+      ],
+      "appelle": [
+        "src/ShellCheck/Fixer.hs",
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Formatter/JSON1.hs": {
+      "fichier": "src/ShellCheck/Formatter/JSON1.hs",
+      "langage": "haskell",
+      "lignes": 128,
+      "taille_bytes": 3878,
+      "entrees": [
+        "Control.DeepSeq",
+        "Data.Aeson",
+        "Data.IORef",
+        "Data.Monoid",
+        "ShellCheck.Formatter.Format",
+        "ShellCheck.Interface",
+        "System.IO",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Formatter/JSON.hs": {
+      "fichier": "src/ShellCheck/Formatter/JSON.hs",
+      "langage": "haskell",
+      "lignes": 111,
+      "taille_bytes": 3307,
+      "entrees": [
+        "Control.DeepSeq",
+        "Data.Aeson",
+        "Data.IORef",
+        "Data.Monoid",
+        "GHC.Exts",
+        "ShellCheck.Formatter.Format",
+        "ShellCheck.Interface",
+        "System.IO",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/Formatter/Format.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Checks/ControlFlow.hs": {
+      "fichier": "src/ShellCheck/Checks/ControlFlow.hs",
+      "langage": "haskell",
+      "lignes": 101,
+      "taille_bytes": 3359,
+      "entrees": [
+        "Control.Monad",
+        "Control.Monad.Reader",
+        "Data.Graph.Inductive.Graph",
+        "Data.List",
+        "Data.Maybe",
+        "ShellCheck.AST",
+        "ShellCheck.ASTLib",
+        "ShellCheck.AnalyzerLib",
+        "ShellCheck.CFG",
+        "ShellCheck.CFGAnalysis",
+        "ShellCheck.Data",
+        "ShellCheck.Interface",
+        "Test.QuickCheck.All",
+        "Test.QuickCheck.Test",
+        "qualified"
+      ],
+      "sorties": [
+        "type ControlFlowCheck",
+        "type ControlFlowEffectCheck",
+        "type ControlFlowNodeCheck"
+      ],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/CFGAnalysis.hs",
+        "src/ShellCheck/Data.hs",
+        "src/ShellCheck/Interface.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Checks/Commands.hs": {
+      "fichier": "src/ShellCheck/Checks/Commands.hs",
+      "langage": "haskell",
+      "lignes": 1475,
+      "taille_bytes": 71323,
+      "entrees": [
+        "Control.Monad",
+        "Control.Monad.RWS",
+        "Data.Char",
+        "Data.Functor.Identity",
+        "Data.List",
+        "Data.Maybe",
+        "Debug.Trace",
+        "ShellCheck.AST",
+        "ShellCheck.ASTLib",
+        "ShellCheck.AnalyzerLib",
+        "ShellCheck.CFG",
+        "ShellCheck.Data",
+        "ShellCheck.Interface",
+        "ShellCheck.Parser",
+        "ShellCheck.Prelude",
+        "ShellCheck.Regex",
+        "Test.QuickCheck.All",
+        "Test.QuickCheck.Test",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/CFG.hs",
+        "src/ShellCheck/Data.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Parser.hs",
+        "src/ShellCheck/Prelude.hs",
+        "src/ShellCheck/Regex.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Checks/ShellSupport.hs": {
+      "fichier": "src/ShellCheck/Checks/ShellSupport.hs",
+      "langage": "haskell",
+      "lignes": 711,
+      "taille_bytes": 34642,
+      "entrees": [
+        "Control.Monad",
+        "Control.Monad.RWS",
+        "Data.Char",
+        "Data.Functor.Identity",
+        "Data.List",
+        "Data.Maybe",
+        "ShellCheck.AST",
+        "ShellCheck.ASTLib",
+        "ShellCheck.AnalyzerLib",
+        "ShellCheck.Interface",
+        "ShellCheck.Prelude",
+        "ShellCheck.Regex",
+        "Test.QuickCheck.All",
+        "Test.QuickCheck.Test",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/AST.hs",
+        "src/ShellCheck/ASTLib.hs",
+        "src/ShellCheck/AnalyzerLib.hs",
+        "src/ShellCheck/Interface.hs",
+        "src/ShellCheck/Prelude.hs",
+        "src/ShellCheck/Regex.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ShellCheck/Checks/Custom.hs": {
+      "fichier": "src/ShellCheck/Checks/Custom.hs",
+      "langage": "haskell",
+      "lignes": 21,
+      "taille_bytes": 533,
+      "entrees": [
+        "ShellCheck.AnalyzerLib",
+        "Test.QuickCheck"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/ShellCheck/AnalyzerLib.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "shellcheck.hs",
+      "vers": "src/ShellCheck/Checker.hs",
+      "type": "interne"
+    },
+    {
+      "de": "shellcheck.hs",
+      "vers": "src/ShellCheck/Data.hs",
+      "type": "interne"
+    },
+    {
+      "de": "shellcheck.hs",
+      "vers": "src/ShellCheck/Formatter/Format.hs",
+      "type": "interne"
+    },
+    {
+      "de": "shellcheck.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "shellcheck.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "shellcheck.hs",
+      "vers": "src/ShellCheck/Regex.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checker.hs",
+      "vers": "src/ShellCheck/ASTLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checker.hs",
+      "vers": "src/ShellCheck/Analyzer.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checker.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checker.hs",
+      "vers": "src/ShellCheck/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checker.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Parser.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Parser.hs",
+      "vers": "src/ShellCheck/ASTLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Parser.hs",
+      "vers": "src/ShellCheck/Data.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Parser.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Parser.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/ASTLib.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/ASTLib.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/ASTLib.hs",
+      "vers": "src/ShellCheck/Regex.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/AST.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Interface.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/CFG.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/CFG.hs",
+      "vers": "src/ShellCheck/ASTLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/CFG.hs",
+      "vers": "src/ShellCheck/Data.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/CFG.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/CFG.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/CFG.hs",
+      "vers": "src/ShellCheck/Regex.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analyzer.hs",
+      "vers": "src/ShellCheck/Analytics.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analyzer.hs",
+      "vers": "src/ShellCheck/AnalyzerLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analyzer.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analytics.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analytics.hs",
+      "vers": "src/ShellCheck/ASTLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analytics.hs",
+      "vers": "src/ShellCheck/AnalyzerLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analytics.hs",
+      "vers": "src/ShellCheck/CFG.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analytics.hs",
+      "vers": "src/ShellCheck/Data.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analytics.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analytics.hs",
+      "vers": "src/ShellCheck/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analytics.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Analytics.hs",
+      "vers": "src/ShellCheck/Regex.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Fixer.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Fixer.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/AnalyzerLib.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/AnalyzerLib.hs",
+      "vers": "src/ShellCheck/ASTLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/AnalyzerLib.hs",
+      "vers": "src/ShellCheck/Data.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/AnalyzerLib.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/AnalyzerLib.hs",
+      "vers": "src/ShellCheck/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/AnalyzerLib.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/AnalyzerLib.hs",
+      "vers": "src/ShellCheck/Regex.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/CFGAnalysis.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/CFGAnalysis.hs",
+      "vers": "src/ShellCheck/CFG.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/CFGAnalysis.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Debug.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Debug.hs",
+      "vers": "src/ShellCheck/Analyzer.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Debug.hs",
+      "vers": "src/ShellCheck/CFG.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Debug.hs",
+      "vers": "src/ShellCheck/CFGAnalysis.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Debug.hs",
+      "vers": "src/ShellCheck/Checker.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Debug.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Debug.hs",
+      "vers": "src/ShellCheck/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Debug.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Data.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/Format.hs",
+      "vers": "src/ShellCheck/Data.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/Format.hs",
+      "vers": "src/ShellCheck/Fixer.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/Format.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/GCC.hs",
+      "vers": "src/ShellCheck/Formatter/Format.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/GCC.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/Quiet.hs",
+      "vers": "src/ShellCheck/Formatter/Format.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/Quiet.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/Diff.hs",
+      "vers": "src/ShellCheck/Fixer.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/Diff.hs",
+      "vers": "src/ShellCheck/Formatter/Format.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/Diff.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/CheckStyle.hs",
+      "vers": "src/ShellCheck/Formatter/Format.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/CheckStyle.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/TTY.hs",
+      "vers": "src/ShellCheck/Fixer.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/TTY.hs",
+      "vers": "src/ShellCheck/Formatter/Format.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/TTY.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/JSON1.hs",
+      "vers": "src/ShellCheck/Formatter/Format.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/JSON1.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/JSON.hs",
+      "vers": "src/ShellCheck/Formatter/Format.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Formatter/JSON.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ControlFlow.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ControlFlow.hs",
+      "vers": "src/ShellCheck/ASTLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ControlFlow.hs",
+      "vers": "src/ShellCheck/AnalyzerLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ControlFlow.hs",
+      "vers": "src/ShellCheck/CFG.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ControlFlow.hs",
+      "vers": "src/ShellCheck/CFGAnalysis.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ControlFlow.hs",
+      "vers": "src/ShellCheck/Data.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ControlFlow.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Commands.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Commands.hs",
+      "vers": "src/ShellCheck/ASTLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Commands.hs",
+      "vers": "src/ShellCheck/AnalyzerLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Commands.hs",
+      "vers": "src/ShellCheck/CFG.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Commands.hs",
+      "vers": "src/ShellCheck/Data.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Commands.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Commands.hs",
+      "vers": "src/ShellCheck/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Commands.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Commands.hs",
+      "vers": "src/ShellCheck/Regex.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ShellSupport.hs",
+      "vers": "src/ShellCheck/AST.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ShellSupport.hs",
+      "vers": "src/ShellCheck/ASTLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ShellSupport.hs",
+      "vers": "src/ShellCheck/AnalyzerLib.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ShellSupport.hs",
+      "vers": "src/ShellCheck/Interface.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ShellSupport.hs",
+      "vers": "src/ShellCheck/Prelude.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/ShellSupport.hs",
+      "vers": "src/ShellCheck/Regex.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/ShellCheck/Checks/Custom.hs",
+      "vers": "src/ShellCheck/AnalyzerLib.hs",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'shellcheck.hs'",
+    "hub → 'src/ShellCheck/Prelude.hs' (in=13, 42% du projet)",
+    "central → 'src/ShellCheck/Parser.hs' (in=5, out=5)",
+    "hub → 'src/ShellCheck/ASTLib.hs' (in=8, 26% du projet)",
+    "hub → 'src/ShellCheck/Regex.hs' (in=7, 23% du projet)",
+    "hub → 'src/ShellCheck/AST.hs' (in=11, 35% du projet)",
+    "hub → 'src/ShellCheck/Interface.hs' (in=21, 68% du projet)",
+    "central → 'src/ShellCheck/CFG.hs' (in=5, out=6)",
+    "central → 'src/ShellCheck/Fixer.hs' (in=3, out=2)",
+    "central → 'src/ShellCheck/AnalyzerLib.hs' (in=6, out=7)",
+    "point_entree → 'src/ShellCheck/Debug.hs'",
+    "hub → 'src/ShellCheck/Data.hs' (in=8, 26% du projet)",
+    "hub → 'src/ShellCheck/Formatter/Format.hs' (in=8, 26% du projet)",
+    "point_entree → 'src/ShellCheck/Formatter/GCC.hs'",
+    "point_entree → 'src/ShellCheck/Formatter/Quiet.hs'",
+    "point_entree → 'src/ShellCheck/Formatter/Diff.hs'",
+    "point_entree → 'src/ShellCheck/Formatter/CheckStyle.hs'",
+    "point_entree → 'src/ShellCheck/Formatter/TTY.hs'",
+    "point_entree → 'src/ShellCheck/Formatter/JSON1.hs'",
+    "point_entree → 'src/ShellCheck/Formatter/JSON.hs'",
+    "point_entree → 'src/ShellCheck/Checks/ControlFlow.hs'",
+    "point_entree → 'src/ShellCheck/Checks/Commands.hs'",
+    "point_entree → 'src/ShellCheck/Checks/ShellSupport.hs'"
+  ]
+}

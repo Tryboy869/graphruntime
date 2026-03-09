@@ -1,0 +1,3085 @@
+{
+  "meta": {
+    "projet": "zio",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 1,
+      "yaml": 1,
+      "scala": 118
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 12,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+  },
+  "noeuds": {
+    "renovate.json": {
+      "fichier": "renovate.json",
+      "langage": "json",
+      "lignes": 45,
+      "taille_bytes": 867,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".gitpod.yml": {
+      "fichier": ".gitpod.yml",
+      "langage": "yaml",
+      "lignes": 9,
+      "taille_bytes": 142,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stacktracer/src/main/scala/zio/stacktracer/TracingImplicits.scala": {
+      "fichier": "stacktracer/src/main/scala/zio/stacktracer/TracingImplicits.scala",
+      "langage": "scala",
+      "lignes": 8,
+      "taille_bytes": 161,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stacktracer/src/main/scala/zio/internal/stacktracer/ParsedTrace.scala": {
+      "fichier": "stacktracer/src/main/scala/zio/internal/stacktracer/ParsedTrace.scala",
+      "langage": "scala",
+      "lignes": 7,
+      "taille_bytes": 127,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stacktracer/src/main/scala/zio/internal/stacktracer/TracerUtils.scala": {
+      "fichier": "stacktracer/src/main/scala/zio/internal/stacktracer/TracerUtils.scala",
+      "langage": "scala",
+      "lignes": 56,
+      "taille_bytes": 1750,
+      "entrees": [],
+      "sorties": [
+        "def parse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stacktracer/src/main/scala-3/zio/internal/stacktracer/Tracer.scala": {
+      "fichier": "stacktracer/src/main/scala-3/zio/internal/stacktracer/Tracer.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1456,
+      "entrees": [],
+      "sorties": [
+        "def apply",
+        "def unapply",
+        "type Traced",
+        "type Type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stacktracer/src/main/scala-3/zio/internal/stacktracer/Macros.scala": {
+      "fichier": "stacktracer/src/main/scala-3/zio/internal/stacktracer/Macros.scala",
+      "langage": "scala",
+      "lignes": 74,
+      "taille_bytes": 2725,
+      "entrees": [
+        "quotes.reflect._",
+        "scala.annotation.nowarn",
+        "scala.quoted._",
+        "zio.internal.stacktracer.Tracer.createTrace",
+        "zio.stacktracer.DisableAutoTrace"
+      ],
+      "sorties": [
+        "def autoTraceImpl",
+        "def loop",
+        "def newTraceImpl",
+        "def sourceLocation",
+        "def traceInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stacktracer/src/main/scala-3/zio/internal/stacktracer/SourceLocation.scala": {
+      "fichier": "stacktracer/src/main/scala-3/zio/internal/stacktracer/SourceLocation.scala",
+      "langage": "scala",
+      "lignes": 24,
+      "taille_bytes": 864,
+      "entrees": [
+        "zio.stacktracer.TracingImplicits.disableAutoTrace"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stacktracer/src/main/scala-2/zio/internal/stacktracer/Tracer.scala": {
+      "fichier": "stacktracer/src/main/scala-2/zio/internal/stacktracer/Tracer.scala",
+      "langage": "scala",
+      "lignes": 39,
+      "taille_bytes": 1333,
+      "entrees": [],
+      "sorties": [
+        "def apply",
+        "def newTrace",
+        "def unapply",
+        "trait Traced",
+        "type Type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stacktracer/src/main/scala-2/zio/internal/stacktracer/Macros.scala": {
+      "fichier": "stacktracer/src/main/scala-2/zio/internal/stacktracer/Macros.scala",
+      "langage": "scala",
+      "lignes": 84,
+      "taille_bytes": 3311,
+      "entrees": [
+        "c.universe._",
+        "scala.reflect.macros.",
+        "zio.internal.stacktracer.Tracer.createTrace",
+        "zio.stacktracer.DisableAutoTrace"
+      ],
+      "sorties": [
+        "def autoTraceImpl",
+        "def loop",
+        "def newTraceImpl",
+        "def sourceLocation",
+        "def traceInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stacktracer/src/main/scala-2/zio/internal/stacktracer/SourceLocation.scala": {
+      "fichier": "stacktracer/src/main/scala-2/zio/internal/stacktracer/SourceLocation.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 823,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-magnolia/src/main/scala-3/zio/test/magnolia/DeriveDiff.scala": {
+      "fichier": "test-magnolia/src/main/scala-3/zio/test/magnolia/DeriveDiff.scala",
+      "langage": "scala",
+      "lignes": 37,
+      "taille_bytes": 1061,
+      "entrees": [
+        "magnolia1._",
+        "scala.quoted._",
+        "zio.test.diff."
+      ],
+      "sorties": [
+        "def join",
+        "def split",
+        "trait LowPri"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-magnolia/src/main/scala-3/zio/test/magnolia/DeriveGen.scala": {
+      "fichier": "test-magnolia/src/main/scala-3/zio/test/magnolia/DeriveGen.scala",
+      "langage": "scala",
+      "lignes": 127,
+      "taille_bytes": 5016,
+      "entrees": [
+        "java.time.",
+        "java.util.UUID",
+        "scala.compiletime.",
+        "scala.deriving._",
+        "zio.Chunk",
+        "zio._",
+        "zio.test.Gen"
+      ],
+      "sorties": [
+        "def apply",
+        "def derive",
+        "def genProduct",
+        "def genSum",
+        "trait DeriveGen"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-magnolia/src/main/scala-3/zio/test/magnolia/TypeUnionDerivation.scala": {
+      "fichier": "test-magnolia/src/main/scala-3/zio/test/magnolia/TypeUnionDerivation.scala",
+      "langage": "scala",
+      "lignes": 65,
+      "taille_bytes": 2099,
+      "entrees": [
+        "quotes.reflect.*",
+        "scala.quoted.*",
+        "zio.test.Gen"
+      ],
+      "sorties": [
+        "class TypeAndDeriveGen",
+        "def derive",
+        "def rec",
+        "def typeUnionDeriveGen"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveDiff.scala": {
+      "fichier": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveDiff.scala",
+      "langage": "scala",
+      "lignes": 37,
+      "taille_bytes": 1058,
+      "entrees": [
+        "magnolia1._",
+        "zio.test.diff."
+      ],
+      "sorties": [
+        "def fallback",
+        "def join",
+        "def split",
+        "trait DeriveDiff",
+        "trait LowPri",
+        "type Typeclass"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala": {
+      "fichier": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "langage": "scala",
+      "lignes": 249,
+      "taille_bytes": 9007,
+      "entrees": [
+        "java.time.",
+        "java.util.UUID",
+        "magnolia1._",
+        "zio.Chunk",
+        "zio.test.Gen"
+      ],
+      "sorties": [
+        "def apply",
+        "def derive",
+        "def instance",
+        "def join",
+        "def split",
+        "trait DeriveGen",
+        "type Typeclass"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "test-refined/src/main/scala/zio/test/refined/BooleanInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/CharInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/CollectionInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/GenericInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/NumericInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/StringInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/types/CharInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/types/DigitInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/types/NetInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/types/NumericInstances.scala",
+        "test-refined/src/main/scala/zio/test/refined/types/StringInstance.scala",
+        "test-refined/src/main/scala/zio/test/refined/types/TimeInstances.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "test-refined/src/main/scala/zio/test/refined/all.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/all.scala",
+      "langage": "scala",
+      "lignes": 28,
+      "taille_bytes": 901,
+      "entrees": [
+        "zio.test.refined.types.AllTypesInstances"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/CharInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/CharInstances.scala",
+      "langage": "scala",
+      "lignes": 51,
+      "taille_bytes": 2012,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.char._",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "trait CharInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/GenericInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/GenericInstances.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1197,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.generic.Equal",
+        "shapeless.Witness",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "def equalArbitraryGen",
+        "trait GenericInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/NumericInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/NumericInstances.scala",
+      "langage": "scala",
+      "lignes": 118,
+      "taille_bytes": 4081,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.internal.WitnessAs",
+        "eu.timepit.refined.numeric.",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "def byteGreaterThanGen",
+        "def byteLessThanGen",
+        "def doubleGreaterThanGen",
+        "def doubleLessThanGen",
+        "def intGreaterThanGen",
+        "def intLessThanGen",
+        "def longGreaterThanGen",
+        "def longLessThanGen",
+        "def shortGreaterThanGen",
+        "def shortLessThanGen",
+        "trait NumericInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/CollectionInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/CollectionInstances.scala",
+      "langage": "scala",
+      "lignes": 109,
+      "taille_bytes": 3585,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.collection.",
+        "zio.",
+        "zio.test.Gen",
+        "zio.test.Gen.",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "def listSizeRefinedGen",
+        "def nonEmptyChunkRefinedGen",
+        "def nonEmptyListRefinedGen",
+        "def nonEmptyVectorRefinedGen",
+        "def sizedChunkRefinedGen",
+        "def vectorSizeRefinedGen",
+        "trait CollectionInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/BooleanInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/BooleanInstances.scala",
+      "langage": "scala",
+      "lignes": 43,
+      "taille_bytes": 1399,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.boolean.Or",
+        "zio.Random",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "def orGen",
+        "trait BooleanInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/StringInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/StringInstances.scala",
+      "langage": "scala",
+      "lignes": 108,
+      "taille_bytes": 4146,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.string.",
+        "shapeless.Witness",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "def endsWithString1Gen",
+        "def endsWithStringGen",
+        "def endsWithStringNGen",
+        "def startsWithString1Gen",
+        "def startsWithStringGen",
+        "def startsWithStringNGen",
+        "trait StringInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/types/NetInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/types/NetInstances.scala",
+      "langage": "scala",
+      "lignes": 70,
+      "taille_bytes": 4354,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.types.net._",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "trait NetInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/types/all.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/types/all.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 239,
+      "entrees": [],
+      "sorties": [
+        "trait AllTypesInstances"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/types/CharInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/types/CharInstances.scala",
+      "langage": "scala",
+      "lignes": 15,
+      "taille_bytes": 640,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.types.char._",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "trait CharInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/types/NumericInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/types/NumericInstances.scala",
+      "langage": "scala",
+      "lignes": 90,
+      "taille_bytes": 7439,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.types.numeric._",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "trait NumericInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/types/TimeInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/types/TimeInstances.scala",
+      "langage": "scala",
+      "lignes": 24,
+      "taille_bytes": 1208,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.types.time.",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "trait TimeInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/types/StringInstance.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/types/StringInstance.scala",
+      "langage": "scala",
+      "lignes": 49,
+      "taille_bytes": 2309,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.collection.",
+        "eu.timepit.refined.numeric.Interval",
+        "eu.timepit.refined.types.string.",
+        "shapeless.Nat._1",
+        "shapeless.Witness",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "class FiniteStringPartiallyApplied",
+        "def apply",
+        "def finiteStringGen",
+        "def hexStringGen",
+        "def nonEmptyFiniteStringGen",
+        "def nonEmptyStringGen",
+        "def trimmedStringGen",
+        "trait StringInstance"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test-refined/src/main/scala/zio/test/refined/types/DigitInstances.scala": {
+      "fichier": "test-refined/src/main/scala/zio/test/refined/types/DigitInstances.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 1347,
+      "entrees": [
+        "eu.timepit.refined.api.Refined",
+        "eu.timepit.refined.types.all._",
+        "zio.test.Gen",
+        "zio.test.magnolia.DeriveGen"
+      ],
+      "sorties": [
+        "trait DigitInstances"
+      ],
+      "appelle": [
+        "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/shared/src/test/scala/zio/examples/test/ExampleSpec.scala": {
+      "fichier": "examples/shared/src/test/scala/zio/examples/test/ExampleSpec.scala",
+      "langage": "scala",
+      "lignes": 24,
+      "taille_bytes": 557,
+      "entrees": [
+        "zio.test._"
+      ],
+      "sorties": [
+        "def spec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/shared/src/test/scala/zio/examples/test/ZLayerInjectExampleSpec.scala": {
+      "fichier": "examples/shared/src/test/scala/zio/examples/test/ZLayerInjectExampleSpec.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 1189,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/shared/src/main/scala/zio/examples/RealWorldProvideExample.scala": {
+      "fichier": "examples/shared/src/main/scala/zio/examples/RealWorldProvideExample.scala",
+      "langage": "scala",
+      "lignes": 3,
+      "taille_bytes": 56,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/shared/src/main/scala/zio/examples/FromFunctionExample.scala": {
+      "fichier": "examples/shared/src/main/scala/zio/examples/FromFunctionExample.scala",
+      "langage": "scala",
+      "lignes": 47,
+      "taille_bytes": 1187,
+      "entrees": [
+        "zio._"
+      ],
+      "sorties": [
+        "def execute",
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/shared/src/main/scala/zio/examples/ZLayerInjectExample.scala": {
+      "fichier": "examples/shared/src/main/scala/zio/examples/ZLayerInjectExample.scala",
+      "langage": "scala",
+      "lignes": 27,
+      "taille_bytes": 631,
+      "entrees": [
+        "java.io.IOException",
+        "zio._",
+        "zio.examples.types._"
+      ],
+      "sorties": [
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/shared/src/main/scala/zio/examples/types/OldLady.scala": {
+      "fichier": "examples/shared/src/main/scala/zio/examples/types/OldLady.scala",
+      "langage": "scala",
+      "lignes": 55,
+      "taille_bytes": 1126,
+      "entrees": [
+        "zio._"
+      ],
+      "sorties": [
+        "def contentsOfStomach",
+        "trait Bear",
+        "trait Fly",
+        "trait OldLady",
+        "trait Spider"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/shared/src/main/scala-2/zio/examples/macros/AccessibleMacroExample.scala": {
+      "fichier": "examples/shared/src/main/scala-2/zio/examples/macros/AccessibleMacroExample.scala",
+      "langage": "scala",
+      "lignes": 192,
+      "taille_bytes": 10422,
+      "entrees": [
+        "zio._",
+        "zio.macros.",
+        "zio.stream."
+      ],
+      "sorties": [
+        "def _bar",
+        "def _baz",
+        "def _dependent",
+        "def _foo2",
+        "def _foo3",
+        "def _function",
+        "def _poly",
+        "def _poly2",
+        "def _sink",
+        "def _someExistingMethod",
+        "def _stream",
+        "def _value",
+        "def _value2",
+        "def _value3",
+        "def _withEx",
+        "def _withEx1",
+        "def bar",
+        "def baz",
+        "def dependent",
+        "def foo2",
+        "def foo3",
+        "def function",
+        "def poly",
+        "def poly2",
+        "def sink",
+        "def someExistingMethod",
+        "def stream",
+        "def value2",
+        "def value3",
+        "def withEx",
+        "def withEx1",
+        "trait CompanionService",
+        "trait Foo",
+        "trait FooBarService",
+        "trait Service",
+        "type AccessibleMacroExample"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/jvm/src/test/scala/zio/examples/test/ExampleSpecWithJUnit.scala": {
+      "fichier": "examples/jvm/src/test/scala/zio/examples/test/ExampleSpecWithJUnit.scala",
+      "langage": "scala",
+      "lignes": 23,
+      "taille_bytes": 485,
+      "entrees": [
+        "zio.test._",
+        "zio.test.junit.JUnitRunnableSpec"
+      ],
+      "sorties": [
+        "class ExampleSpecWithJUnit",
+        "def spec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/jvm/src/main/scala/zio/examples/metrics/JvmMetricAppExample.scala": {
+      "fichier": "examples/jvm/src/main/scala/zio/examples/metrics/JvmMetricAppExample.scala",
+      "langage": "scala",
+      "lignes": 31,
+      "taille_bytes": 842,
+      "entrees": [
+        "zio._",
+        "zio.http._",
+        "zio.metrics.connectors.",
+        "zio.metrics.connectors.prometheus.PrometheusPublisher",
+        "zio.metrics.jvm.DefaultJvmMetrics"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/jvm/src/main/scala/zio/examples/metrics/MetricAppExample.scala": {
+      "fichier": "examples/jvm/src/main/scala/zio/examples/metrics/MetricAppExample.scala",
+      "langage": "scala",
+      "lignes": 40,
+      "taille_bytes": 1170,
+      "entrees": [
+        "java.lang.Runtime._",
+        "zio._",
+        "zio.http._",
+        "zio.metrics.Metric",
+        "zio.metrics.connectors.",
+        "zio.metrics.connectors.prometheus.PrometheusPublisher"
+      ],
+      "sorties": [
+        "def memoryUsage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/QueueBackPressureBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/QueueBackPressureBenchmark.scala",
+      "langage": "scala",
+      "lignes": 118,
+      "taille_bytes": 3481,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._",
+        "zio.stm._"
+      ],
+      "sorties": [
+        "class QueueBackPressureBenchmark",
+        "def createQueues",
+        "def fs2Queue",
+        "def zioQueueMPMC",
+        "def zioQueueMPSC",
+        "def zioQueueSPMC",
+        "def zioTQueue"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/FiberRefsBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/FiberRefsBenchmark.scala",
+      "langage": "scala",
+      "lignes": 78,
+      "taille_bytes": 2333,
+      "entrees": [
+        "BenchmarkUtil._",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations."
+      ],
+      "sorties": [
+        "class FiberRefsBenchmark",
+        "def commonList",
+        "def forkRef",
+        "def joinChain",
+        "def joinRef",
+        "def joinUpdatedRef",
+        "def locally",
+        "def updateRef"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/BenchmarkUtil.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/BenchmarkUtil.scala",
+      "langage": "scala",
+      "lignes": 50,
+      "taille_bytes": 1670,
+      "entrees": [
+        "cats._",
+        "cats.effect.",
+        "scala.concurrent.ExecutionContext"
+      ],
+      "sorties": [
+        "def catsForeach",
+        "def catsForeachDiscard",
+        "def catsForkAll",
+        "def catsRepeat",
+        "def repeat",
+        "def unsafeRun",
+        "def verify"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/BubbleSortBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/BubbleSortBenchmark.scala",
+      "langage": "scala",
+      "lignes": 46,
+      "taille_bytes": 1176,
+      "entrees": [
+        "CatsIOArray._",
+        "ZIOArray._",
+        "cats.effect.IO",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "scala.collection.immutable.Range",
+        "zio.BenchmarkUtil.unsafeRun"
+      ],
+      "sorties": [
+        "class BubbleSortBenchmark",
+        "def assertSorted",
+        "def catsBubbleSort",
+        "def createTestArray",
+        "def zioBubbleSort"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/BroadFlatMapBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/BroadFlatMapBenchmark.scala",
+      "langage": "scala",
+      "lignes": 84,
+      "taille_bytes": 2189,
+      "entrees": [
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "com.twitter.util.",
+        "java.util.concurrent.CompletableFuture",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "scala.concurrent.Await",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration.Duration.Inf",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class BroadFlatMapBenchmark",
+        "def catsBroadFlatMap",
+        "def completableFutureBroadFlatMap",
+        "def fib",
+        "def futureBroadFlatMap",
+        "def twitterBroadFlatMap",
+        "def zioBroadFlatMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ShallowAttemptBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ShallowAttemptBenchmark.scala",
+      "langage": "scala",
+      "lignes": 140,
+      "taille_bytes": 3883,
+      "entrees": [
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "com.twitter.util.",
+        "io.reactivex.Single",
+        "java.util.concurrent.CompletableFuture",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "reactor.core.publisher.Mono",
+        "scala.concurrent.Await",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration.Duration.Inf",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class ShallowAttemptBenchmark",
+        "def catsShallowAttempt",
+        "def completableFutureShallowAttempt",
+        "def futureShallowAttempt",
+        "def monoShallowAttempt",
+        "def rxSingleShallowAttempt",
+        "def throwup",
+        "def twitterShallowAttempt",
+        "def zioShallowAttempt",
+        "def zioShallowAttemptBaseline"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/StreamBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/StreamBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 434,
+      "taille_bytes": 11390,
+      "entrees": [
+        "akka.Done",
+        "akka.actor.ActorSystem",
+        "akka.stream.scaladsl.",
+        "cats.effect.",
+        "cats.effect.unsafe.implicits.global",
+        "fs2.",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "scala.concurrent.",
+        "scala.concurrent.duration.",
+        "zio.BenchmarkUtil._",
+        "zio.stream._"
+      ],
+      "sorties": [
+        "class CSVStreamBenchmarks",
+        "class StreamBenchmarks",
+        "def akkaChunkFilterMapSum",
+        "def akkaCsvTokenize",
+        "def akkaGroupWithin",
+        "def akkaSliding",
+        "def akkaTakeWhile",
+        "def alphanumeric",
+        "def chop",
+        "def fs2ChunkFilterMapSum",
+        "def fs2CsvTokenize",
+        "def fs2GroupAdjacentBy",
+        "def fs2GroupWithin",
+        "def fs2MapAccum",
+        "def fs2Sliding",
+        "def fs2TakeWhile",
+        "def genChoppedCsv",
+        "def genCsv",
+        "def setup",
+        "def shutdown",
+        "def zioChunkChunkFilterMapSum",
+        "def zioChunkFilterMapSum",
+        "def zioChunkToConstBaseline",
+        "def zioChunkToConstDirect",
+        "def zioChunkToConstFromFunction",
+        "def zioCsvTokenize",
+        "def zioGroupAdjacentBy",
+        "def zioGroupByKey",
+        "def zioGroupWithin",
+        "def zioMapAccum",
+        "def zioSliding",
+        "def zioTakeWhile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ParallelMergeSortBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ParallelMergeSortBenchmark.scala",
+      "langage": "scala",
+      "lignes": 133,
+      "taille_bytes": 3415,
+      "entrees": [
+        "java.lang.",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "scala.collection.Iterable"
+      ],
+      "sorties": [
+        "class ParallelMergeSortBenchmark",
+        "def scalaCollectionSort",
+        "def setup",
+        "def zioSort"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/QueueSequentialBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/QueueSequentialBenchmark.scala",
+      "langage": "scala",
+      "lignes": 98,
+      "taille_bytes": 2597,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._",
+        "zio.stm._"
+      ],
+      "sorties": [
+        "class QueueSequentialBenchmark",
+        "def createQueues",
+        "def fs2Queue",
+        "def repeat",
+        "def zioQueue",
+        "def zioTQueue"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/AwaitBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/AwaitBenchmark.scala",
+      "langage": "scala",
+      "lignes": 46,
+      "taille_bytes": 915,
+      "entrees": [
+        "BenchmarkUtil._",
+        "BenchmarkUtil.unsafeRun",
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations."
+      ],
+      "sorties": [
+        "class AwaitBenchmark",
+        "def catsAwait",
+        "def setup",
+        "def zioAwait"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ForEachBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ForEachBenchmark.scala",
+      "langage": "scala",
+      "lignes": 113,
+      "taille_bytes": 2157,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.unsafe.implicits.global",
+        "cats.syntax.all._",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class ForEachBenchmark",
+        "def catsForEachFork",
+        "def catsForEachForkAwait",
+        "def catsForEachIncrementRef",
+        "def catsForkEachUnit",
+        "def createList",
+        "def zioForEachFork",
+        "def zioForEachForkAwait",
+        "def zioForEachIncrementRef",
+        "def zioForEachUnit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ForkInterruptBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ForkInterruptBenchmark.scala",
+      "langage": "scala",
+      "lignes": 42,
+      "taille_bytes": 1122,
+      "entrees": [
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations."
+      ],
+      "sorties": [
+        "class ForkInterruptBenchmark",
+        "def catsForkInterrupt",
+        "def loop",
+        "def zioForkInterrupt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/NewEncodingBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/NewEncodingBenchmark.scala",
+      "langage": "scala",
+      "lignes": 356,
+      "taille_bytes": 10523,
+      "entrees": [
+        "capture._",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "partial._",
+        "scala.annotation.tailrec",
+        "scala.util.control.NoStackTrace"
+      ],
+      "sorties": [
+        "class NewEncodingBenchmark",
+        "def catchAll",
+        "def classicBroadFlatMap",
+        "def erase",
+        "def eval",
+        "def experimentBroadFlatMap",
+        "def experimentFullBroadFlatMap",
+        "def fail",
+        "def fib",
+        "def flatMap",
+        "def loop",
+        "def map",
+        "def onFailure",
+        "def onSuccess",
+        "def outerLoop",
+        "def resumeOuterLoop",
+        "def stack",
+        "def succeed",
+        "def unsafeRun",
+        "type Erased",
+        "type ErasedK"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/BlockingBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/BlockingBenchmark.scala",
+      "langage": "scala",
+      "lignes": 59,
+      "taille_bytes": 1172,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class BlockingBenchmark",
+        "def catsBlockingGranular",
+        "def zioBlockingGranular",
+        "def zioBlockingOverlay",
+        "def zioBlockingRegion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ForkAllDiscardBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ForkAllDiscardBenchmark.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 720,
+      "entrees": [
+        "java.util.concurrent._",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class ForkAllDiscardBenchmark",
+        "def run",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/HubBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/HubBenchmark.scala",
+      "langage": "scala",
+      "lignes": 422,
+      "taille_bytes": 14700,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect._",
+        "cats.effect.std.",
+        "cats.effect.unsafe.implicits.global",
+        "cats.syntax.all._",
+        "cstm.",
+        "fs2.concurrent.Topic",
+        "io.github.timwspence.cats.stm.",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._",
+        "zio.stm._"
+      ],
+      "sorties": [
+        "class HubBenchmarks",
+        "def catsForkAll",
+        "def catsJoinAll",
+        "def catsParallel",
+        "def catsQueueBounded",
+        "def catsQueueBoundedBackPressure",
+        "def catsQueueBoundedParallel",
+        "def catsQueueBoundedSequential",
+        "def catsQueueUnbounded",
+        "def catsQueueUnboundedParallel",
+        "def catsQueueUnboundedSequential",
+        "def catsRepeat",
+        "def catsSequential",
+        "def catsTQueueParallel",
+        "def catsTQueueSequential",
+        "def catsTQueueUnbounded",
+        "def fs2TopicBackPressure",
+        "def fs2TopicBounded",
+        "def fs2TopicParallel",
+        "def fs2TopicSequential",
+        "def publish",
+        "def subscribe",
+        "def zioForkAll",
+        "def zioHubBounded",
+        "def zioHubBoundedBackPressure",
+        "def zioHubBoundedParallel",
+        "def zioHubBoundedSequential",
+        "def zioHubUnbounded",
+        "def zioHubUnboundedParallel",
+        "def zioHubUnboundedSequential",
+        "def zioJoinAll",
+        "def zioParallel",
+        "def zioQueueBounded",
+        "def zioQueueBoundedBackPressure",
+        "def zioQueueBoundedParallel",
+        "def zioQueueBoundedSequential",
+        "def zioQueueUnbounded",
+        "def zioQueueUnboundedParallel",
+        "def zioQueueUnboundedSequential",
+        "def zioRepeat",
+        "def zioSequential",
+        "def zioTHubBounded",
+        "def zioTHubBoundedBackPressure",
+        "def zioTHubBoundedParallel",
+        "def zioTHubBoundedSequential",
+        "def zioTHubUnbounded",
+        "def zioTHubUnboundedParallel",
+        "def zioTHubUnboundedSequential",
+        "def zioTQueueBounded",
+        "def zioTQueueBoundedBackPressure",
+        "def zioTQueueBoundedParallel",
+        "def zioTQueueBoundedSequential",
+        "def zioTQueueUnbounded",
+        "def zioTQueueUnboundedParallel",
+        "def zioTQueueUnboundedSequential",
+        "trait CatsHubLike",
+        "trait ZIOHubLike"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ZEnvironmentBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ZEnvironmentBenchmark.scala",
+      "langage": "scala",
+      "lignes": 347,
+      "taille_bytes": 8285,
+      "entrees": [
+        "BenchmarkUtil._",
+        "BenchmarkedEnvironment._",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "org.openjdk.jmh.infra.Blackhole"
+      ],
+      "sorties": [
+        "class ZEnvironmentBenchmark",
+        "def access",
+        "def accessAfterScoped",
+        "def accessAfterScopedUncached",
+        "def accessScope",
+        "def add",
+        "def addGetMulti",
+        "def addGetOne",
+        "def addGetRepeat",
+        "def addGetRepeatBaseline",
+        "def makeLarge",
+        "def makeSmall",
+        "def prune",
+        "def pruneOne",
+        "def setup",
+        "def union",
+        "type Env",
+        "type SmallEnv"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ForkAllBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ForkAllBenchmark.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 720,
+      "entrees": [
+        "java.util.concurrent._",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class ForkAllBenchmark",
+        "def run",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/GenBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/GenBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 107,
+      "taille_bytes": 2798,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "org.scalacheck",
+        "zio.BenchmarkUtil.unsafeRun",
+        "zio.test.Gen"
+      ],
+      "sorties": [
+        "class GenBenchmarks",
+        "def hedgehogDoubles",
+        "def hedgehogIntListsOfSizeN",
+        "def hedgehogStringsOfSizeN",
+        "def nyayaDoubles",
+        "def nyayaIntListsOfSizeN",
+        "def nyayaStringsOfSizeN",
+        "def scalaCheckDoubles",
+        "def scalaCheckIntListsOfSizeN",
+        "def scalaCheckStringsOfSizeN",
+        "def zioDouble",
+        "def zioIntListsOfSizeN",
+        "def zioStringsOfSizeN"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/PromiseBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/PromiseBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 123,
+      "taille_bytes": 3310,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.kernel.Deferred",
+        "cats.effect.unsafe.implicits.global",
+        "cats.instances.list._",
+        "cats.syntax.foldable._",
+        "cats.syntax.traverse._",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class PromiseBenchmarks",
+        "def catsPromiseDoneAwait",
+        "def catsPromiseMultiAwaitDone",
+        "def catsPromiseMultiAwaitMultiDone",
+        "def createCompleters",
+        "def createWaitersCats",
+        "def createWaitersZIO",
+        "def zioPromiseDoneAwait",
+        "def zioPromiseMultiAwaitDone",
+        "def zioPromiseMultiAwaitMultiDone"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/RegionBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/RegionBenchmark.scala",
+      "langage": "scala",
+      "lignes": 149,
+      "taille_bytes": 4677,
+      "entrees": [
+        "BenchmarkUtil.unsafeRun",
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations."
+      ],
+      "sorties": [
+        "class RegionBenchmark",
+        "def catsBracket",
+        "def catsEnsuring",
+        "def catsUninterruptible",
+        "def catsUninterruptibleMask",
+        "def nest",
+        "def zioBracket",
+        "def zioEnsuring",
+        "def zioProvideEnvironment",
+        "def zioUninterruptible",
+        "def zioUninterruptible2",
+        "def zioUninterruptibleMask"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/NarrowFlatMapBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/NarrowFlatMapBenchmark.scala",
+      "langage": "scala",
+      "lignes": 114,
+      "taille_bytes": 2759,
+      "entrees": [
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "com.twitter.util.",
+        "io.reactivex.Single",
+        "java.util.concurrent.CompletableFuture",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "reactor.core.publisher.Mono",
+        "scala.concurrent.Await",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration.Duration.Inf",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class NarrowFlatMapBenchmark",
+        "def catsNarrowFlatMap",
+        "def completableFutureNarrowFlatMap",
+        "def futureNarrowFlatMap",
+        "def loop",
+        "def monoNarrowFlatMap",
+        "def rxSingleNarrowFlatMap",
+        "def twitterNarrowFlatMap",
+        "def zioNarrowFlatMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/CustomExecutorBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/CustomExecutorBenchmark.scala",
+      "langage": "scala",
+      "lignes": 60,
+      "taille_bytes": 1602,
+      "entrees": [
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "scala.concurrent.Await",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class CustomExecutorBenchmark",
+        "def customExecutor",
+        "def customExecutorInitBoth",
+        "def defaultExecutor",
+        "def defaultExecutorInitBoth",
+        "def fib"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/UnsafeRunBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/UnsafeRunBenchmark.scala",
+      "langage": "scala",
+      "lignes": 97,
+      "taille_bytes": 3533,
+      "entrees": [
+        "BenchmarkUtil.unsafeRun",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations."
+      ],
+      "sorties": [
+        "class UnsafeRunBenchmark",
+        "def cioLeft",
+        "def cioRight",
+        "def makeLeftCio",
+        "def makeLeftZio",
+        "def makeRightCio",
+        "def makeRightZio",
+        "def setup",
+        "def zioLeft",
+        "def zioRight"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/AsyncResumptionBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/AsyncResumptionBenchmark.scala",
+      "langage": "scala",
+      "lignes": 44,
+      "taille_bytes": 1003,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class AsyncResumptionBenchmark",
+        "def catsAsyncResumptionBenchmark",
+        "def zioAsyncResumptionBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/FiberRefBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/FiberRefBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 182,
+      "taille_bytes": 5469,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil.verify"
+      ],
+      "sorties": [
+        "class FiberRefBenchmarks",
+        "def combine",
+        "def createAndJoin",
+        "def createAndJoinExpensive",
+        "def createAndJoinInitialValue",
+        "def createAndJoinUpdatesDeep",
+        "def createAndJoinUpdatesWide",
+        "def createFiberRefsAndYield",
+        "def createUpdateAndRead",
+        "def diff",
+        "def empty",
+        "def go",
+        "def justYield",
+        "def patch"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/CollectAllBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/CollectAllBenchmark.scala",
+      "langage": "scala",
+      "lignes": 77,
+      "taille_bytes": 2165,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.implicits._",
+        "cats.effect.unsafe.implicits.global",
+        "cats.implicits._",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "scala.concurrent.",
+        "scala.concurrent.duration.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class CollectAllBenchmark",
+        "def catsCollectAll",
+        "def catsCollectAllPar",
+        "def catsCollectAllParN",
+        "def futureCollectAll",
+        "def zioCollectAll",
+        "def zioCollectAllPar",
+        "def zioCollectAllParN"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/DeepAsyncBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/DeepAsyncBenchmark.scala",
+      "langage": "scala",
+      "lignes": 166,
+      "taille_bytes": 3914,
+      "entrees": [
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "scala.concurrent.Await",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration.Duration.Inf",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class DeepAsyncBenchmark",
+        "def catsDeepAsyncInterruptMany",
+        "def catsDeepAsyncInterruptOne",
+        "def catsDeepAsyncMany",
+        "def catsDeepAsyncOne",
+        "def futureDeepAsyncMany",
+        "def futureDeepAsyncOne",
+        "def recurse",
+        "def zioDeepAsyncInterruptMany",
+        "def zioDeepAsyncInterruptOne",
+        "def zioDeepAsyncMany",
+        "def zioDeepAsyncOne"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ZIOArray.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ZIOArray.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1476,
+      "entrees": [
+        "cats.effect.IO",
+        "scala."
+      ],
+      "sorties": [
+        "def bubbleSort",
+        "def innerLoop",
+        "def outerLoop",
+        "def swapIJ"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ArrayFillBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ArrayFillBenchmark.scala",
+      "langage": "scala",
+      "lignes": 65,
+      "taille_bytes": 1674,
+      "entrees": [
+        "BenchmarkUtil.unsafeRun",
+        "cats.effect.IO",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "reactor.core.publisher.Mono",
+        "scala.collection.immutable.Range"
+      ],
+      "sorties": [
+        "class ArrayFillBenchmark",
+        "def arrayFill",
+        "def catsArrayFill",
+        "def createTestArray",
+        "def monoArrayFill",
+        "def zioArrayFill"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ConfigProviderBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ConfigProviderBenchmark.scala",
+      "langage": "scala",
+      "lignes": 51,
+      "taille_bytes": 1483,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class ConfigProviderBenchmark",
+        "def loadFlatConfig",
+        "def loadIndexedConfig",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/QueueParallelBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/QueueParallelBenchmark.scala",
+      "langage": "scala",
+      "lignes": 75,
+      "taille_bytes": 2132,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._",
+        "zio.stm._"
+      ],
+      "sorties": [
+        "class QueueParallelBenchmark",
+        "def createQueues",
+        "def fs2Queue",
+        "def zioQueue",
+        "def zioTQueue"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/QueueChunkBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/QueueChunkBenchmark.scala",
+      "langage": "scala",
+      "lignes": 97,
+      "taille_bytes": 2234,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class QueueChunkBenchmark",
+        "def parallel",
+        "def parallelChunked",
+        "def sequential",
+        "def sequentialChunked",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ScopeBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ScopeBenchmark.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 876,
+      "entrees": [
+        "BenchmarkUtil.unsafeRun",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations."
+      ],
+      "sorties": [
+        "class ScopeBenchmark",
+        "def closeBenchmark",
+        "def makeScope"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/StreamParBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/StreamParBenchmark.scala",
+      "langage": "scala",
+      "lignes": 249,
+      "taille_bytes": 6165,
+      "entrees": [
+        "akka.NotUsed",
+        "akka.actor.ActorSystem",
+        "akka.stream.scaladsl.",
+        "cats.effect.",
+        "cats.effect.unsafe.implicits.global",
+        "fs2.",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "scala.concurrent.",
+        "scala.concurrent.duration.",
+        "zio.BenchmarkUtil._",
+        "zio.stream._"
+      ],
+      "sorties": [
+        "class StreamParBenchmark",
+        "def akkaFlatMapPar",
+        "def akkaMapPar",
+        "def akkaMapParUnordered",
+        "def akkaMerge",
+        "def akkaMergeChunks",
+        "def fs2FlatMapPar",
+        "def fs2MapPar",
+        "def fs2MapParUnordered",
+        "def fs2Merge",
+        "def setup",
+        "def shutdown",
+        "def zioFlatMapPar",
+        "def zioFlatMapParChunks",
+        "def zioFlatMapParChunksFair",
+        "def zioMapPar",
+        "def zioMapParUnordered",
+        "def zioMerge",
+        "def zioMerge2",
+        "def zioMergeWithIdentity"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/LeftBindBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/LeftBindBenchmark.scala",
+      "langage": "scala",
+      "lignes": 118,
+      "taille_bytes": 3187,
+      "entrees": [
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "com.twitter.util.",
+        "io.reactivex.Single",
+        "java.util.concurrent.CompletableFuture",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "reactor.core.publisher.Mono",
+        "scala.concurrent.Await",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration.Duration.Inf",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class LeftBindBenchmark",
+        "def catsLeftBindBenchmark",
+        "def completableFutureLeftBindBenchmark",
+        "def futureLeftBindBenchmark",
+        "def loop",
+        "def monoLeftBindBenchmark",
+        "def rxSingleLeftBindBenchmark",
+        "def twitterLeftBindBenchmark",
+        "def zioLeftBindBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/ForkJoinBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/ForkJoinBenchmark.scala",
+      "langage": "scala",
+      "lignes": 91,
+      "taille_bytes": 3043,
+      "entrees": [
+        "BenchmarkUtil._",
+        "BenchmarkUtil.unsafeRun",
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations."
+      ],
+      "sorties": [
+        "class ForkJoinBenchmark",
+        "def catsForkJoin",
+        "def setup",
+        "def zioForkDaemonJoin",
+        "def zioForkDaemonJoinNoFiberRoots",
+        "def zioForkJoin"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/DeepAttemptBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/DeepAttemptBenchmark.scala",
+      "langage": "scala",
+      "lignes": 128,
+      "taille_bytes": 3311,
+      "entrees": [
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "com.twitter.util.",
+        "io.reactivex.Single",
+        "java.util.concurrent.CompletableFuture",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "reactor.core.publisher.Mono",
+        "scala.concurrent.Await",
+        "scala.concurrent.Future",
+        "scala.concurrent.duration.Duration.Inf",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class DeepAttemptBenchmark",
+        "def catsDeepAttempt",
+        "def completableFutureDeepAttempt",
+        "def descend",
+        "def descent",
+        "def futureDeepAttempt",
+        "def halfway",
+        "def monoDeepAttempt",
+        "def rxSingleDeepAttempt",
+        "def twitterDeepAttempt",
+        "def zioDeepAttempt",
+        "def zioDeepAttemptBaseline"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/AsyncConcurrentBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/AsyncConcurrentBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 76,
+      "taille_bytes": 2028,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.unsafe.implicits.global",
+        "cats.syntax.all._",
+        "java.util.concurrent.LinkedBlockingQueue",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class AsyncConcurrentBenchmarks",
+        "def catsAsyncConcurrent",
+        "def effect",
+        "def zioAsyncConcurent"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/EmptyRaceBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/EmptyRaceBenchmark.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 932,
+      "entrees": [
+        "cats.effect.IO",
+        "cats.effect.unsafe.implicits.global",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations."
+      ],
+      "sorties": [
+        "class EmptyRaceBenchmark",
+        "def catsEmptyRace",
+        "def loop",
+        "def zioEmptyRace"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/MapBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/MapBenchmark.scala",
+      "langage": "scala",
+      "lignes": 107,
+      "taille_bytes": 2477,
+      "entrees": [
+        "cats.effect._",
+        "cats.effect.unsafe.implicits.global",
+        "com.twitter.util.",
+        "io.reactivex.Single",
+        "java.util.concurrent.CompletableFuture",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "reactor.core.publisher.Mono",
+        "scala.annotation.tailrec",
+        "scala.concurrent.",
+        "scala.concurrent.duration.Duration.Inf",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class MapBenchmark",
+        "def catsMap",
+        "def completableFutureMap",
+        "def futureMap",
+        "def monoMap",
+        "def rxSingleMap",
+        "def sumTo",
+        "def twitterFutureMap",
+        "def zioMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/RechunkBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/RechunkBenchmark.scala",
+      "langage": "scala",
+      "lignes": 78,
+      "taille_bytes": 2228,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil.unsafeRun",
+        "zio.stream."
+      ],
+      "sorties": [
+        "class RechunkBenchmark",
+        "def rechunkHugeToLarge",
+        "def rechunkLargeToHuge",
+        "def rechunkLargeToSmall",
+        "def rechunkSmallTo1",
+        "def rechunkSmallToLarge",
+        "def rechunkSmallToSmall",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/test/GenBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/test/GenBenchmark.scala",
+      "langage": "scala",
+      "lignes": 43,
+      "taille_bytes": 919,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "zio.",
+        "zio.BenchmarkUtil._"
+      ],
+      "sorties": [
+        "class GenBenchmark",
+        "def causes",
+        "def listOfN",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkCreationBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkCreationBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 241,
+      "taille_bytes": 3956,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.Chunk"
+      ],
+      "sorties": [
+        "class ChunkCreationBenchmarks",
+        "def arrayCreate01",
+        "def arrayCreate02",
+        "def arrayCreate04",
+        "def arrayCreate08",
+        "def arrayCreate16",
+        "def arrayCreate32",
+        "def chunkCreate01",
+        "def chunkCreate02",
+        "def chunkCreate04",
+        "def chunkCreate08",
+        "def chunkCreate16",
+        "def chunkCreate32",
+        "def setup",
+        "def vectorCreate01",
+        "def vectorCreate02",
+        "def vectorCreate04",
+        "def vectorCreate08",
+        "def vectorCreate16",
+        "def vectorCreate32"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkFlatMapBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkFlatMapBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 31,
+      "taille_bytes": 724,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio._"
+      ],
+      "sorties": [
+        "class ChunkFlatMapBenchmarks",
+        "def flatMap",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkUpdateBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkUpdateBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 47,
+      "taille_bytes": 912,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "zio.Chunk"
+      ],
+      "sorties": [
+        "class ChunkUpdateBenchmarks",
+        "def chunkUpdate",
+        "def vectorUpdate"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkFoldBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkFoldBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 41,
+      "taille_bytes": 956,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio._"
+      ],
+      "sorties": [
+        "class ChunkFoldBenchmarks",
+        "def foldChunk",
+        "def foldList",
+        "def foldVector",
+        "def foldZIO",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkMapBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkMapBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 68,
+      "taille_bytes": 1740,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio._"
+      ],
+      "sorties": [
+        "class ChunkMapBenchmarks",
+        "def mapIntArray",
+        "def mapIntChunk",
+        "def mapIntList",
+        "def mapIntVector",
+        "def mapStringArray",
+        "def mapStringChunk",
+        "def mapStringList",
+        "def mapStringVector",
+        "def mapZIO",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/MixedChunkBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/MixedChunkBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 107,
+      "taille_bytes": 3517,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio._"
+      ],
+      "sorties": [
+        "class MixedChunkBenchmarks",
+        "def filter",
+        "def filterMaterialized",
+        "def filterMaterializedZIO",
+        "def filterZIO",
+        "def find",
+        "def findMaterialized",
+        "def flatMap",
+        "def flatMapMaterialized",
+        "def fold",
+        "def foldMaterialized",
+        "def foldZIO",
+        "def foldZIOMaterialized",
+        "def map",
+        "def mapMaterialized",
+        "def mapZIO",
+        "def mapZIOMaterialized",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ArrayBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ArrayBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 100,
+      "taille_bytes": 1660,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._"
+      ],
+      "sorties": [
+        "class ArrayBenchmarks",
+        "def find",
+        "def findOptimized",
+        "def flatMap",
+        "def flatMapOptimized",
+        "def fold",
+        "def foldOptimized",
+        "def map",
+        "def mapOptimized",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkAppendBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkAppendBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 74,
+      "taille_bytes": 1243,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "zio.Chunk"
+      ],
+      "sorties": [
+        "class ChunkAppendBenchmarks",
+        "def arrayAppend",
+        "def chunkAppend",
+        "def listAppend",
+        "def vectorAppend"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkPrependBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkPrependBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 74,
+      "taille_bytes": 1248,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "zio.Chunk"
+      ],
+      "sorties": [
+        "class ChunkPrependBenchmarks",
+        "def arrayPrepend",
+        "def chunkPrepend",
+        "def listPrepend",
+        "def vectorPrepend"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkFindBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkFindBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 31,
+      "taille_bytes": 704,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio._"
+      ],
+      "sorties": [
+        "class ChunkFindBenchmarks",
+        "def find",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkConcatBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkConcatBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 121,
+      "taille_bytes": 2233,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "zio.Chunk"
+      ],
+      "sorties": [
+        "class ChunkConcatBenchmarks",
+        "def balancedConcatOnce",
+        "def balancedConcatRecursive",
+        "def concatBalancedRec",
+        "def leftConcat0",
+        "def leftConcat1",
+        "def leftConcat10",
+        "def rightConcat0",
+        "def rightConcat1",
+        "def rightConcat10",
+        "def setUp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChunkIndexedSeqComparison.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChunkIndexedSeqComparison.scala",
+      "langage": "scala",
+      "lignes": 269,
+      "taille_bytes": 6570,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "org.openjdk.jmh.infra.Blackhole",
+        "zio._"
+      ],
+      "sorties": [
+        "class ChunkIndexedSeqComparison",
+        "def addString",
+        "def canEqual",
+        "def collect",
+        "def collectFirst",
+        "def combinations",
+        "def contains",
+        "def containsSlice",
+        "def copyToArray",
+        "def count",
+        "def diff",
+        "def distinct",
+        "def drop",
+        "def dropRight",
+        "def endsWith",
+        "def filterNot",
+        "def flatMap",
+        "def fold",
+        "def foreach",
+        "def groupBy",
+        "def grouped",
+        "def indexOf",
+        "def indexOfSlice",
+        "def indices",
+        "def init",
+        "def inits",
+        "def intersect",
+        "def isDefinedAt",
+        "def isTraversableAgain",
+        "def iterator",
+        "def last",
+        "def lastIndexOf",
+        "def lastIndexOfSlice",
+        "def lastIndexWhere",
+        "def lengthCompare",
+        "def max",
+        "def maxBy",
+        "def min",
+        "def minBy",
+        "def mkString",
+        "def padTo",
+        "def partition",
+        "def patch",
+        "def permutations",
+        "def product",
+        "def reduce",
+        "def reduceLeft",
+        "def reduceLeftOption",
+        "def reduceOption",
+        "def reduceRight",
+        "def reduceRightOption",
+        "def reverse",
+        "def reverseIterator",
+        "def sameElements",
+        "def scan",
+        "def scanLeft",
+        "def scanRight",
+        "def segmentLength",
+        "def setup",
+        "def sizeBenchmark",
+        "def slice",
+        "def sliding",
+        "def sortBy",
+        "def sortWith",
+        "def sorted",
+        "def span",
+        "def startsWith",
+        "def sum",
+        "def tail",
+        "def tails",
+        "def take",
+        "def takeRight",
+        "def toIndexedSeq",
+        "def toSeq",
+        "def toSet",
+        "def transpose",
+        "def unzip",
+        "def unzip3",
+        "def updated",
+        "def view"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/chunks/ChainBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/chunks/ChainBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 53,
+      "taille_bytes": 1294,
+      "entrees": [
+        "cats.data.Chain",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "zio.Chunk"
+      ],
+      "sorties": [
+        "class ChainBenchmarks",
+        "def foldLeftLargeChain",
+        "def foldLeftLargeChunk",
+        "def foldLeftLargeList",
+        "def foldLeftLargeVector",
+        "def mapLargeChain",
+        "def mapLargeChunk",
+        "def mapLargeList",
+        "def mapLargeVector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/metrics/MetricBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/metrics/MetricBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 917,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._",
+        "zio.ZIO"
+      ],
+      "sorties": [
+        "class MetricBenchmarks",
+        "def exponentialDynamic",
+        "def exponentialStatic"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/OneElementQueueConcBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/OneElementQueueConcBenchmark.scala",
+      "langage": "scala",
+      "lignes": 105,
+      "taille_bytes": 2626,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "org.openjdk.jmh.infra.Blackhole",
+        "zio.internal.BenchUtils._",
+        "zio.internal.ProducerConsumerBenchmark."
+      ],
+      "sorties": [
+        "class OfferCounters",
+        "class PollCounters",
+        "def backoff",
+        "def createQ",
+        "def doOffer",
+        "def doPoll",
+        "def group1Offer",
+        "def group1Poll",
+        "def group2Offer",
+        "def group2Poll",
+        "def mkEl",
+        "def this",
+        "type QueueElement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/JucBlockingQueue.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/JucBlockingQueue.scala",
+      "langage": "scala",
+      "lignes": 26,
+      "taille_bytes": 819,
+      "entrees": [
+        "java.util.concurrent.LinkedBlockingQueue"
+      ],
+      "sorties": [
+        "class JucBlockingQueue"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/NotThreadSafeQueue.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/NotThreadSafeQueue.scala",
+      "langage": "scala",
+      "lignes": 41,
+      "taille_bytes": 925,
+      "entrees": [],
+      "sorties": [
+        "class NotThreadSafeQueue"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/ForeachPar_Benchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/ForeachPar_Benchmark.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 1011,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._",
+        "zio._"
+      ],
+      "sorties": [
+        "class ForeachParDiscardBenchmark",
+        "def foreachForkJoinDiscard",
+        "def foreachParDiscard",
+        "def naiveForeachParDiscard"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/MetricBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/MetricBenchmark.scala",
+      "langage": "scala",
+      "lignes": 55,
+      "taille_bytes": 1675,
+      "entrees": [
+        "java.time.Instant",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.Unsafe",
+        "zio.metrics.MetricKeyType.Frequency",
+        "zio.metrics._"
+      ],
+      "sorties": [
+        "class MetricBenchmark",
+        "def setup",
+        "def tearDown",
+        "def updateMetric"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/MergeAllParBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/MergeAllParBenchmark.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 790,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._",
+        "zio.ZIO.succeed",
+        "zio._"
+      ],
+      "sorties": [
+        "def mergeAllPar",
+        "def naiveMergeAllPar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/RingBufferMethodDispatchBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/RingBufferMethodDispatchBenchmark.scala",
+      "langage": "scala",
+      "lignes": 110,
+      "taille_bytes": 2374,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._"
+      ],
+      "sorties": [
+        "def allArb",
+        "def allPow2",
+        "def allUnbounded",
+        "def createQ",
+        "def doOffer",
+        "def doPoll",
+        "def mkEl",
+        "def onlyPow2Pow2",
+        "def puPow2",
+        "def puUnbounded",
+        "type QueueElement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/ProducerConsumerBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/ProducerConsumerBenchmark.scala",
+      "langage": "scala",
+      "lignes": 136,
+      "taille_bytes": 3424,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "org.openjdk.jmh.infra.Blackhole",
+        "zio.internal.BenchUtils._",
+        "zio.internal.ProducerConsumerBenchmark."
+      ],
+      "sorties": [
+        "class OfferCounters",
+        "class PollCounters",
+        "def backoff",
+        "def createQ",
+        "def doOffer",
+        "def doPoll",
+        "def group1Offer",
+        "def group1Poll",
+        "def group2Offer",
+        "def group2Poll",
+        "def group3Offer",
+        "def group4Offer",
+        "def group4Poll",
+        "def group5Offer",
+        "def groupt3Poll",
+        "def groupt5Poll",
+        "def mkEl",
+        "def this",
+        "type QueueElement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/ZSchedulerBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/ZSchedulerBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 219,
+      "taille_bytes": 6153,
+      "entrees": [
+        "cats.effect.",
+        "cats.effect.std.",
+        "cats.effect.unsafe.IORuntime",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._",
+        "zio._"
+      ],
+      "sorties": [
+        "class ZSchedulerBenchmarks",
+        "def catsChainedFork",
+        "def catsForkMany",
+        "def catsPingPong",
+        "def catsRuntimeChainedFork",
+        "def catsRuntimeForkMany",
+        "def catsRuntimePingPong",
+        "def catsRuntimeYieldMany",
+        "def catsYieldMany",
+        "def iterate",
+        "def zioChainedFork",
+        "def zioFixedThreadPoolChainedFork",
+        "def zioFixedThreadPoolForkMany",
+        "def zioFixedThreadPoolPingPong",
+        "def zioFixedThreadPoolYieldMany",
+        "def zioForkMany",
+        "def zioPingPong",
+        "def zioSchedulerChainedFork",
+        "def zioSchedulerForkMany",
+        "def zioSchedulerPingPong",
+        "def zioSchedulerYieldMany",
+        "def zioYieldMany"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/OfferBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/OfferBenchmark.scala",
+      "langage": "scala",
+      "lignes": 46,
+      "taille_bytes": 1032,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "zio.internal.BenchUtils._"
+      ],
+      "sorties": [
+        "def createQ",
+        "def mkEl",
+        "def offer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/BenchQueueType.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/BenchQueueType.scala",
+      "langage": "scala",
+      "lignes": 26,
+      "taille_bytes": 1581,
+      "entrees": [],
+      "sorties": [
+        "def lookup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/WeakConcurrentBagBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/WeakConcurrentBagBenchmark.scala",
+      "langage": "scala",
+      "lignes": 74,
+      "taille_bytes": 1747,
+      "entrees": [
+        "WeakConcurrentBagBenchmark._",
+        "java.util.concurrent.",
+        "java.util.concurrent.atomic.AtomicLong",
+        "org.openjdk.jmh.annotations."
+      ],
+      "sorties": [
+        "class WeakConcurrentBagBenchmark",
+        "def add",
+        "def apply",
+        "def createBag",
+        "def isAlive",
+        "def printStats"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/PingPongBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/PingPongBenchmark.scala",
+      "langage": "scala",
+      "lignes": 66,
+      "taille_bytes": 1717,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "org.openjdk.jmh.infra.",
+        "zio.internal.BenchUtils._"
+      ],
+      "sorties": [
+        "def mkEl",
+        "def poll",
+        "def roundtrip",
+        "def setup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/PollBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/PollBenchmark.scala",
+      "langage": "scala",
+      "lignes": 52,
+      "taille_bytes": 1186,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "zio.internal.BenchUtils._"
+      ],
+      "sorties": [
+        "def createQ",
+        "def fill",
+        "def mkEl",
+        "def poll"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/OneElementQueueSeqBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/OneElementQueueSeqBenchmark.scala",
+      "langage": "scala",
+      "lignes": 52,
+      "taille_bytes": 1301,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._"
+      ],
+      "sorties": [
+        "def createQ",
+        "def doOffer",
+        "def doPoll",
+        "def mkEl",
+        "def oneElOfferAndPoll",
+        "def pow2RBOfferAndPoll",
+        "type QueueElement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/OneElementConcQueueNoMetric.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/OneElementConcQueueNoMetric.scala",
+      "langage": "scala",
+      "lignes": 59,
+      "taille_bytes": 1420,
+      "entrees": [
+        "java.util.concurrent.atomic.AtomicReference"
+      ],
+      "sorties": [
+        "class OneElementConcQueueNoMetric"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/ReduceAllParBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/ReduceAllParBenchmark.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 789,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio.BenchmarkUtil._",
+        "zio._"
+      ],
+      "sorties": [
+        "def naiveReduceAllPar",
+        "def reduceAllPar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/BenchUtils.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/BenchUtils.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 916,
+      "entrees": [],
+      "sorties": [
+        "def queueByType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/JCToolsQueue.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/JCToolsQueue.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 903,
+      "entrees": [],
+      "sorties": [
+        "class JCToolsQueue"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/ConcurrentWeakHashSetBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/ConcurrentWeakHashSetBenchmark.scala",
+      "langage": "scala",
+      "lignes": 278,
+      "taille_bytes": 9278,
+      "entrees": [
+        "java.util",
+        "java.util.Collections",
+        "java.util.concurrent.",
+        "java.util.concurrent.atomic.AtomicInteger",
+        "org.openjdk.jmh.annotations._",
+        "org.openjdk.jmh.infra.Blackhole",
+        "org.springframework.util.",
+        "scala.annotation.nowarn",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def appendNewKeyToJavaSet",
+        "def appendNewKeyToSpringMap",
+        "def appendNewKeyToZioSet",
+        "def createCachedKey",
+        "def javaAddConcurrent",
+        "def javaAddSerial",
+        "def javaContainsConcurrent",
+        "def javaContainsSerial",
+        "def javaIterateConcurrent",
+        "def javaIterateSerial",
+        "def javaRemoveConcurrent",
+        "def javaRemoveSerial",
+        "def setup",
+        "def springAddConcurrent",
+        "def springAddSerial",
+        "def springContainsConcurrent",
+        "def springContainsSerial",
+        "def springIterateConcurrent",
+        "def springIterateSerial",
+        "def springRemoveConcurrent",
+        "def springRemoveSerial",
+        "def zioAddConcurrent",
+        "def zioAddSerial",
+        "def zioContainsConcurrent",
+        "def zioContainsSerial",
+        "def zioIterateConcurrent",
+        "def zioIterateSerial",
+        "def zioRemoveConcurrent",
+        "def zioRemoveSerial"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/internal/RoundtripBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/internal/RoundtripBenchmark.scala",
+      "langage": "scala",
+      "lignes": 62,
+      "taille_bytes": 1497,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "zio.internal.BenchUtils._"
+      ],
+      "sorties": [
+        "def createQ",
+        "def doOffer",
+        "def doPoll",
+        "def mkEl",
+        "def offerAndPoll",
+        "type QueueElement"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/stm/TArrayOpsBenchmarks.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/stm/TArrayOpsBenchmarks.scala",
+      "langage": "scala",
+      "lignes": 85,
+      "taille_bytes": 2291,
+      "entrees": [
+        "BenchmarkUtil.unsafeRun",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations.",
+        "zio._"
+      ],
+      "sorties": [
+        "class TArrayOpsBenchmarks",
+        "def find",
+        "def findSTM",
+        "def fold",
+        "def foldSTM",
+        "def indexWhere",
+        "def indexWhereSTM",
+        "def lookup",
+        "def reduceOption",
+        "def reduceOptionSTM",
+        "def setup",
+        "def transform",
+        "def transformSTM",
+        "def update",
+        "def updateSTM"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "benchmarks/src/main/scala/zio/stm/TReentrantLockBenchmark.scala": {
+      "fichier": "benchmarks/src/main/scala/zio/stm/TReentrantLockBenchmark.scala",
+      "langage": "scala",
+      "lignes": 149,
+      "taille_bytes": 3618,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.locks.StampedLock",
+        "org.openjdk.jmh.annotations.",
+        "org.openjdk.jmh.infra.Blackhole",
+        "zio.BenchmarkUtil._",
+        "zio._"
+      ],
+      "sorties": [
+        "class TReentrantLockBenchmark",
+        "def doWork",
+        "def doWorkZIO",
+        "def javaLockRead",
+        "def javaLockReadGroup",
+        "def javaLockReadGroup1",
+        "def javaLockReadGroup2",
+        "def javaLockReadGroup3",
+        "def javaLockWrite",
+        "def javaLockWriteGroup",
+        "def javaLockWriteGroup1",
+        "def javaLockWriteGroup2",
+        "def javaLockWriteGroup3",
+        "def zioLockRead",
+        "def zioLockReadGroup",
+        "def zioLockReadGroup1",
+        "def zioLockReadGroup2",
+        "def zioLockReadGroup3",
+        "def zioLockWrite",
+        "def zioLockWriteGroup",
+        "def zioLockWriteGroup1",
+        "def zioLockWriteGroup2",
+        "def zioLockWriteGroup3"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/CharInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/GenericInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/NumericInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/CollectionInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/BooleanInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/StringInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/types/NetInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/types/CharInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/types/NumericInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/types/TimeInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/types/StringInstance.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    },
+    {
+      "de": "test-refined/src/main/scala/zio/test/refined/types/DigitInstances.scala",
+      "vers": "test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'test-magnolia/src/main/scala-2/zio/test/magnolia/DeriveGen.scala' (in=12)"
+  ]
+}

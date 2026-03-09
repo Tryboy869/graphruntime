@@ -1,0 +1,323 @@
+{
+  "meta": {
+    "projet": "worm",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "html": 1,
+      "nim": 20
+    }
+  },
+  "stats": {
+    "fichiers_total": 21,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "index.html"
+  },
+  "noeuds": {
+    "index.html": {
+      "fichier": "index.html",
+      "langage": "html",
+      "lignes": 101,
+      "taille_bytes": 2985,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/atoms.nim": {
+      "fichier": "src/atoms.nim",
+      "langage": "nim",
+      "lignes": 103,
+      "taille_bytes": 5531,
+      "entrees": [],
+      "sorties": [
+        "func getIpcAtoms",
+        "func getNetAtoms"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/worm.nim": {
+      "fichier": "src/worm.nim",
+      "langage": "nim",
+      "lignes": 29,
+      "taille_bytes": 528,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/log.nim": {
+      "fichier": "src/log.nim",
+      "langage": "nim",
+      "lignes": 11,
+      "taille_bytes": 371,
+      "entrees": [
+        "std/logging"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wormc.nim": {
+      "fichier": "src/wormc.nim",
+      "langage": "nim",
+      "lignes": 216,
+      "taille_bytes": 7818,
+      "entrees": [],
+      "sorties": [
+        "type Layout"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/types.nim": {
+      "fichier": "src/types.nim",
+      "langage": "nim",
+      "lignes": 61,
+      "taille_bytes": 2240,
+      "entrees": [
+        "std/options",
+        "x11/[xlib"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/wm.nim": {
+      "fichier": "src/wm.nim",
+      "langage": "nim",
+      "lignes": 1190,
+      "taille_bytes": 39253,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events.nim": {
+      "fichier": "src/events.nim",
+      "langage": "nim",
+      "lignes": 42,
+      "taille_bytes": 1237,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/buttonrelease.nim": {
+      "fichier": "src/events/buttonrelease.nim",
+      "langage": "nim",
+      "lignes": 15,
+      "taille_bytes": 564,
+      "entrees": [
+        "../types",
+        "../wm",
+        "std/options",
+        "x11/[xlib,x]"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/clientmessage.nim": {
+      "fichier": "src/events/clientmessage.nim",
+      "langage": "nim",
+      "lignes": 700,
+      "taille_bytes": 33653,
+      "entrees": [
+        "../wm",
+        "regex",
+        "std/[options",
+        "x11/[xlib"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/expose.nim": {
+      "fichier": "src/events/expose.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 461,
+      "entrees": [
+        "../wm",
+        "std/options",
+        "x11/[xlib"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/destroynotify.nim": {
+      "fichier": "src/events/destroynotify.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 716,
+      "entrees": [
+        "../wm",
+        "std/options",
+        "x11/[xlib,x]"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/maprequest.nim": {
+      "fichier": "src/events/maprequest.nim",
+      "langage": "nim",
+      "lignes": 213,
+      "taille_bytes": 8556,
+      "entrees": [
+        "../wm",
+        "regex",
+        "std/[options",
+        "x11/[x"
+      ],
+      "sorties": [
+        "func getProperty",
+        "type Hints"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/configurenotify.nim": {
+      "fichier": "src/events/configurenotify.nim",
+      "langage": "nim",
+      "lignes": 14,
+      "taille_bytes": 648,
+      "entrees": [
+        "../wm",
+        "std/options",
+        "x11/xlib"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/configurerequest.nim": {
+      "fichier": "src/events/configurerequest.nim",
+      "langage": "nim",
+      "lignes": 16,
+      "taille_bytes": 710,
+      "entrees": [
+        "../types",
+        "../wm",
+        "std/options",
+        "x11/[xlib]"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/leavenotify.nim": {
+      "fichier": "src/events/leavenotify.nim",
+      "langage": "nim",
+      "lignes": 18,
+      "taille_bytes": 662,
+      "entrees": [
+        "../wm",
+        "x11/xlib"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/motionnotify.nim": {
+      "fichier": "src/events/motionnotify.nim",
+      "langage": "nim",
+      "lignes": 50,
+      "taille_bytes": 2477,
+      "entrees": [
+        "../wm",
+        "std/options",
+        "x11/[xlib"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/buttonpress.nim": {
+      "fichier": "src/events/buttonpress.nim",
+      "langage": "nim",
+      "lignes": 120,
+      "taille_bytes": 5291,
+      "entrees": [
+        "../wm",
+        "std/[os",
+        "x11/[xlib"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/enternotify.nim": {
+      "fichier": "src/events/enternotify.nim",
+      "langage": "nim",
+      "lignes": 28,
+      "taille_bytes": 1210,
+      "entrees": [
+        "../wm",
+        "std/options",
+        "x11/xlib"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/unmapnotify.nim": {
+      "fichier": "src/events/unmapnotify.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 704,
+      "entrees": [
+        "../wm",
+        "std/options",
+        "x11/[xlib,x]"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/events/propertynotify.nim": {
+      "fichier": "src/events/propertynotify.nim",
+      "langage": "nim",
+      "lignes": 23,
+      "taille_bytes": 865,
+      "entrees": [
+        "../wm",
+        "std/options",
+        "x11/[xlib"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

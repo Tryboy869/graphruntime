@@ -1,0 +1,671 @@
+{
+  "meta": {
+    "projet": "not-so-smart-contracts",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "solidity": 25
+    }
+  },
+  "stats": {
+    "fichiers_total": 25,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "variable shadowing/inherited_state.sol"
+  },
+  "noeuds": {
+    "variable shadowing/inherited_state.sol": {
+      "fichier": "variable shadowing/inherited_state.sol",
+      "langage": "solidity",
+      "lignes": 13,
+      "taille_bytes": 239,
+      "entrees": [
+        "owner"
+      ],
+      "sorties": [
+        "contract Suicidal",
+        "function suicide"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integer_overflow/integer_overflow_1.sol": {
+      "fichier": "integer_overflow/integer_overflow_1.sol",
+      "langage": "solidity",
+      "lignes": 17,
+      "taille_bytes": 420,
+      "entrees": [
+        "value"
+      ],
+      "sorties": [
+        "contract Overflow",
+        "function add",
+        "function safe_add"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unprotected_function/Unprotected.sol": {
+      "fichier": "unprotected_function/Unprotected.sol",
+      "langage": "solidity",
+      "lignes": 30,
+      "taille_bytes": 504,
+      "entrees": [
+        "msg.sender==owner)"
+      ],
+      "sorties": [
+        "contract Unprotected",
+        "function Unprotected",
+        "function changeOwner",
+        "function changeOwner_fixed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unprotected_function/WalletLibrary_source_code/WalletLibrary.sol": {
+      "fichier": "unprotected_function/WalletLibrary_source_code/WalletLibrary.sol",
+      "langage": "solidity",
+      "lignes": 462,
+      "taille_bytes": 16136,
+      "entrees": [],
+      "sorties": [
+        "contract Wallet",
+        "contract WalletAbi",
+        "contract WalletEvents",
+        "contract WalletLibrary",
+        "function Wallet",
+        "function addOwner",
+        "function changeOwner",
+        "function changeRequirement",
+        "function clearPending",
+        "function confirm",
+        "function confirmAndCheck",
+        "function create",
+        "function execute",
+        "function getOwner",
+        "function hasConfirmed",
+        "function initDaylimit",
+        "function initMultiowned",
+        "function initWallet",
+        "function isOwner",
+        "function kill",
+        "function removeOwner",
+        "function reorganizeOwners",
+        "function resetSpentToday",
+        "function revoke",
+        "function setDailyLimit",
+        "function today",
+        "function underLimit",
+        "struct PendingState",
+        "struct Transaction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "forced_ether_reception/coin.sol": {
+      "fichier": "forced_ether_reception/coin.sol",
+      "langage": "solidity",
+      "lignes": 183,
+      "taille_bytes": 6858,
+      "entrees": [
+        "!frozenAccount[_from])",
+        "!frozenAccount[_to])",
+        "_to",
+        "_value",
+        "balanceOf[_from]",
+        "balanceOf[_to]",
+        "msg.sender"
+      ],
+      "sorties": [
+        "contract MyAdvancedToken",
+        "contract TokenERC20",
+        "contract owned",
+        "function MyAdvancedToken",
+        "function TokenERC20",
+        "function _transfer",
+        "function approve",
+        "function approveAndCall",
+        "function buy",
+        "function migrate_and_destroy",
+        "function owned",
+        "function transfer",
+        "function transferFrom",
+        "function transferOwnership",
+        "interface tokenRecipient"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "honeypots/VarLoop/VarLoop.sol": {
+      "fichier": "honeypots/VarLoop/VarLoop.sol",
+      "langage": "solidity",
+      "lignes": 39,
+      "taille_bytes": 684,
+      "entrees": [
+        "msg.sender==owner)"
+      ],
+      "sorties": [
+        "contract Test1",
+        "function Test",
+        "function withdraw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "honeypots/GiftBox/GiftBox.sol": {
+      "fichier": "honeypots/GiftBox/GiftBox.sol",
+      "langage": "solidity",
+      "lignes": 68,
+      "taille_bytes": 1253,
+      "entrees": [],
+      "sorties": [
+        "contract NEW_YEARS_GIFT",
+        "function GetGift",
+        "function GetHash",
+        "function PassHasBeenSet",
+        "function Revoce",
+        "function SetMessage",
+        "function SetPass"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "honeypots/KOTH/KOTH.sol": {
+      "fichier": "honeypots/KOTH/KOTH.sol",
+      "langage": "solidity",
+      "lignes": 31,
+      "taille_bytes": 1076,
+      "entrees": [],
+      "sorties": [
+        "contract CEOThrone",
+        "contract Ownable",
+        "function Ownable",
+        "function Stake",
+        "function withdraw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "honeypots/PrivateBank/PrivateBank.sol": {
+      "fichier": "honeypots/PrivateBank/PrivateBank.sol",
+      "langage": "solidity",
+      "lignes": 68,
+      "taille_bytes": 1273,
+      "entrees": [],
+      "sorties": [
+        "contract Log",
+        "contract Private_Bank",
+        "function AddMessage",
+        "function CashOut",
+        "function Deposit",
+        "function Private_Bank",
+        "struct Message"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "honeypots/Lottery/Lottery.sol": {
+      "fichier": "honeypots/Lottery/Lottery.sol",
+      "langage": "solidity",
+      "lignes": 97,
+      "taille_bytes": 3802,
+      "entrees": [
+        "msg.sender==owner)",
+        "winner[msg.sender]"
+      ],
+      "sorties": [
+        "contract OpenAddressLottery",
+        "function OpenAddressLottery",
+        "function forceReseed",
+        "function kill",
+        "function luckyNumberOfAddress",
+        "function participate",
+        "function reseed",
+        "struct SeedComponents"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "honeypots/Multiplicator/Multiplicator.sol": {
+      "fichier": "honeypots/Multiplicator/Multiplicator.sol",
+      "langage": "solidity",
+      "lignes": 26,
+      "taille_bytes": 442,
+      "entrees": [
+        "msg.sender"
+      ],
+      "sorties": [
+        "contract Multiplicator",
+        "function multiplicate",
+        "function withdraw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "race_condition/RaceCondition.sol": {
+      "fichier": "race_condition/RaceCondition.sol",
+      "langage": "solidity",
+      "lignes": 50,
+      "taille_bytes": 1589,
+      "entrees": [
+        "msg.sender",
+        "msg.value"
+      ],
+      "sorties": [
+        "contract ERC20",
+        "contract RaceCondition",
+        "function RaceCondition",
+        "function allowance",
+        "function approve",
+        "function balanceOf",
+        "function buy",
+        "function changePrice",
+        "function totalSupply",
+        "function transfer",
+        "function transferFrom"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "unchecked_external_call/KotET_source_code/KingOfTheEtherThrone.sol": {
+      "fichier": "unchecked_external_call/KotET_source_code/KingOfTheEtherThrone.sol",
+      "langage": "solidity",
+      "lignes": 170,
+      "taille_bytes": 6546,
+      "entrees": [],
+      "sorties": [
+        "contract KingOfTheEtherThrone",
+        "function KingOfTheEtherThrone",
+        "function claimThrone",
+        "function numberOfMonarchs",
+        "function sweepCommission",
+        "function transferOwnership",
+        "struct Monarch"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "wrong_constructor_name/incorrect_constructor.sol": {
+      "fichier": "wrong_constructor_name/incorrect_constructor.sol",
+      "langage": "solidity",
+      "lignes": 25,
+      "taille_bytes": 465,
+      "entrees": [
+        "msg.sender==owner)"
+      ],
+      "sorties": [
+        "contract Missing",
+        "function IamMissing",
+        "function withdraw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "wrong_constructor_name/Rubixi_source_code/Rubixi.sol": {
+      "fichier": "wrong_constructor_name/Rubixi_source_code/Rubixi.sol",
+      "langage": "solidity",
+      "lignes": 155,
+      "taille_bytes": 6007,
+      "entrees": [],
+      "sorties": [
+        "contract Rubixi",
+        "function DynamicPyramid",
+        "function addPayout",
+        "function changeFeePercentage",
+        "function changeMultiplier",
+        "function changeOwner",
+        "function collectAllFees",
+        "function collectFeesInEther",
+        "function collectPercentOfFees",
+        "function currentFeePercentage",
+        "function currentMultiplier",
+        "function currentPyramidBalanceApproximately",
+        "function feesSeperateFromBalanceApproximately",
+        "function init",
+        "function nextPayoutWhenPyramidBalanceTotalsApproximately",
+        "function numberOfParticipantsWaitingForPayout",
+        "function participantDetails",
+        "function totalParticipants",
+        "struct Participant"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "bad_randomness/theRun_source_code/theRun.sol": {
+      "fichier": "bad_randomness/theRun_source_code/theRun.sol",
+      "langage": "solidity",
+      "lignes": 173,
+      "taille_bytes": 5938,
+      "entrees": [],
+      "sorties": [
+        "contract theRun",
+        "function ChangeOwnership",
+        "function CollectAllFees",
+        "function GetAndReduceFeesByFraction",
+        "function NextPayout",
+        "function Participate",
+        "function PayoutQueueSize",
+        "function PlayerInfo",
+        "function Total_of_Players",
+        "function WatchBalance",
+        "function WatchBalanceInEther",
+        "function WatchFees",
+        "function WatchLastPayout",
+        "function WatchWinningPot",
+        "function init",
+        "function random",
+        "function theRun",
+        "struct Player"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "incorrect_interface/Bob.sol": {
+      "fichier": "incorrect_interface/Bob.sol",
+      "langage": "solidity",
+      "lignes": 17,
+      "taille_bytes": 243,
+      "entrees": [],
+      "sorties": [
+        "contract Alice",
+        "contract Bob",
+        "function set",
+        "function set_fixed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "incorrect_interface/Alice.sol": {
+      "fichier": "incorrect_interface/Alice.sol",
+      "langage": "solidity",
+      "lignes": 18,
+      "taille_bytes": 235,
+      "entrees": [],
+      "sorties": [
+        "contract Alice",
+        "function set",
+        "function set_fixed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "reentrancy/Reentrancy.sol": {
+      "fichier": "reentrancy/Reentrancy.sol",
+      "langage": "solidity",
+      "lignes": 43,
+      "taille_bytes": 1311,
+      "entrees": [],
+      "sorties": [
+        "contract Reentrance",
+        "function addToBalance",
+        "function getBalance",
+        "function withdrawBalance",
+        "function withdrawBalance_fixed",
+        "function withdrawBalance_fixed_2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "reentrancy/ReentrancyExploit.sol": {
+      "fichier": "reentrancy/ReentrancyExploit.sol",
+      "langage": "solidity",
+      "lignes": 39,
+      "taille_bytes": 1173,
+      "entrees": [
+        "vulnerable_contract.call",
+        "vulnerable_contract.call.value"
+      ],
+      "sorties": [
+        "contract ReentranceExploit",
+        "function ReentranceExploit",
+        "function deposit",
+        "function get_money",
+        "function launch_attack"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "reentrancy/SpankChain_source_code/SpankChain.sol": {
+      "fichier": "reentrancy/SpankChain_source_code/SpankChain.sol",
+      "langage": "solidity",
+      "lignes": 155,
+      "taille_bytes": 7641,
+      "entrees": [
+        "_spender.call",
+        "balances[_from]",
+        "balances[msg.sender]"
+      ],
+      "sorties": [
+        "contract HumanStandardToken",
+        "contract StandardToken",
+        "contract Token",
+        "function HumanStandardToken",
+        "function allowance",
+        "function approve",
+        "function approveAndCall",
+        "function balanceOf",
+        "function by",
+        "function totalSupply",
+        "function transfer",
+        "function transferFrom"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "reentrancy/SpankChain_source_code/SpankChain_Payment.sol": {
+      "fichier": "reentrancy/SpankChain_source_code/SpankChain_Payment.sol",
+      "langage": "solidity",
+      "lignes": 888,
+      "taille_bytes": 35466,
+      "entrees": [
+        "!virtualChannels[_vcID].isClose",
+        "Channels[_lcID].isOpen",
+        "Channels[_lcID].partyAddresses[0]",
+        "Channels[_lcID].partyAddresses[1]",
+        "Channels[_lcID].token.transfer",
+        "Channels[_lcID].token.transferFrom",
+        "Channels[_lcID].updateLCtimeout",
+        "_addr",
+        "_balances[0]",
+        "_endIndex",
+        "_hashedMsg",
+        "_isContained",
+        "_partyA",
+        "_partyI",
+        "_spender.call",
+        "_startIndex",
+        "balances[_from]",
+        "balances[msg.sender]",
+        "channel.erc20Balances[0]",
+        "channel.ethBalances[0]",
+        "channel.isOpen",
+        "channel.isOpen)",
+        "channel.isUpdateLCSettling",
+        "channel.numOpenVC",
+        "channel.partyAddresses[0]",
+        "channel.partyAddresses[1]",
+        "channel.sequence",
+        "channel.updateLCtimeout",
+        "len",
+        "msg.sender",
+        "msg.value",
+        "now",
+        "possibleTotalEthBeforeDeposit",
+        "possibleTotalTokenBeforeDeposit",
+        "recipient",
+        "totalEthDeposit",
+        "totalTokenDeposit",
+        "virtualChannels[_vcID].isInSettlementState",
+        "virtualChannels[_vcID].partyA",
+        "virtualChannels[_vcID].sequence",
+        "virtualChannels[_vcID].updateVCtimeout"
+      ],
+      "sorties": [
+        "contract HumanStandardToken",
+        "contract LedgerChannel",
+        "contract StandardToken",
+        "contract Token",
+        "function LCOpenTimeout",
+        "function _isContained",
+        "function allowance",
+        "function approve",
+        "function approveAndCall",
+        "function balanceOf",
+        "function by",
+        "function byzantineCloseChannel",
+        "function closeVirtualChannel",
+        "function consensusCloseChannel",
+        "function createChannel",
+        "function deposit",
+        "function getChannel",
+        "function getVirtualChannel",
+        "function hexstrToBytes",
+        "function initVCstate",
+        "function isSignedBy",
+        "function joinChannel",
+        "function parseInt16Char",
+        "function recoverSigner",
+        "function settleVC",
+        "function substring",
+        "function toEthereumSignedMessage",
+        "function totalSupply",
+        "function transfer",
+        "function transferFrom",
+        "function uintToBytes32",
+        "function uintToString",
+        "function updateLCstate",
+        "struct Channel",
+        "struct VirtualChannel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "reentrancy/DAO_source_code/DAO.sol": {
+      "fichier": "reentrancy/DAO_source_code/DAO.sol",
+      "langage": "solidity",
+      "lignes": 1238,
+      "taille_bytes": 45790,
+      "entrees": [],
+      "sorties": [
+        "contract DAO",
+        "contract DAOInterface",
+        "contract DAO_Creator",
+        "contract ManagedAccount",
+        "contract ManagedAccountInterface",
+        "contract Token",
+        "contract TokenCreation",
+        "contract TokenCreationInterface",
+        "contract TokenInterface",
+        "function DAO",
+        "function ManagedAccount",
+        "function TokenCreation",
+        "function actualBalance",
+        "function allowance",
+        "function approve",
+        "function balanceOf",
+        "function changeAllowedRecipients",
+        "function changeProposalDeposit",
+        "function checkProposalCode",
+        "function closeProposal",
+        "function createDAO",
+        "function createNewDAO",
+        "function createTokenProxy",
+        "function divisor",
+        "function executeProposal",
+        "function getMyReward",
+        "function getNewDAOAddress",
+        "function halveMinQuorum",
+        "function isBlocked",
+        "function isRecipientAllowed",
+        "function minQuorum",
+        "function newContract",
+        "function newProposal",
+        "function numberOfProposals",
+        "function payOut",
+        "function receiveEther",
+        "function refund",
+        "function retrieveDAOReward",
+        "function splitDAO",
+        "function transfer",
+        "function transferFrom",
+        "function transferFromWithoutReward",
+        "function transferPaidOut",
+        "function transferWithoutReward",
+        "function unblockMe",
+        "function vote",
+        "function withdrawRewardFor",
+        "struct Proposal",
+        "struct SplitData"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "denial_of_service/auction.sol": {
+      "fichier": "denial_of_service/auction.sol",
+      "langage": "solidity",
+      "lignes": 53,
+      "taille_bytes": 1391,
+      "entrees": [
+        "currentFrontrunner.send",
+        "msg.value"
+      ],
+      "sorties": [
+        "contract DosAuction",
+        "contract SecureAuction",
+        "function bid",
+        "function withdraw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "denial_of_service/list_dos.sol": {
+      "fichier": "denial_of_service/list_dos.sol",
+      "langage": "solidity",
+      "lignes": 41,
+      "taille_bytes": 1048,
+      "entrees": [
+        "refundAddresses[i].transfer"
+      ],
+      "sorties": [
+        "contract CrowdFundBad",
+        "contract CrowdFundPull",
+        "contract CrowdFundSafe",
+        "function refundDos",
+        "function refundSafe",
+        "function withdraw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

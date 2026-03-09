@@ -1,0 +1,557 @@
+{
+  "meta": {
+    "projet": "nimshellcodeloader",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "nim": 27,
+      "unknown": 2,
+      "csharp": 7
+    }
+  },
+  "stats": {
+    "fichiers_total": 36,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "core/public.nim"
+  },
+  "noeuds": {
+    "core/public.nim": {
+      "fichier": "core/public.nim",
+      "langage": "nim",
+      "lignes": 185,
+      "taille_bytes": 6456,
+      "entrees": [
+        "nimcrypto",
+        "sequtils",
+        "strformat",
+        "strutils"
+      ],
+      "sorties": [
+        "const encryptedDataConst",
+        "const encryptedFilePath",
+        "const encryptedFilePathRaw",
+        "const envKey",
+        "const icoPath",
+        "const iconObject",
+        "const rcName",
+        "const resourceText",
+        "const shellcodeDataConst",
+        "const source",
+        "const windresCmd"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "config/Compiler.ini": {
+      "fichier": "config/Compiler.ini",
+      "langage": "unknown",
+      "lignes": 24,
+      "taille_bytes": 2838,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gui/codeLoader/IniParse.cs": {
+      "fichier": "gui/codeLoader/IniParse.cs",
+      "langage": "csharp",
+      "lignes": 72,
+      "taille_bytes": 2689,
+      "entrees": [
+        "System.Collections.Generic",
+        "System.IO",
+        "System.Linq",
+        "System.Runtime.InteropServices",
+        "System.Text"
+      ],
+      "sorties": [
+        "class IniParse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gui/codeLoader/codeLoader.csproj": {
+      "fichier": "gui/codeLoader/codeLoader.csproj",
+      "langage": "unknown",
+      "lignes": 116,
+      "taille_bytes": 4810,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gui/codeLoader/Program.cs": {
+      "fichier": "gui/codeLoader/Program.cs",
+      "langage": "csharp",
+      "lignes": 21,
+      "taille_bytes": 478,
+      "entrees": [
+        "System.Collections.Generic",
+        "System.Linq",
+        "System.Windows.Forms"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gui/codeLoader/Form1.Designer.cs": {
+      "fichier": "gui/codeLoader/Form1.Designer.cs",
+      "langage": "csharp",
+      "lignes": 312,
+      "taille_bytes": 16221,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gui/codeLoader/Form1.cs": {
+      "fichier": "gui/codeLoader/Form1.cs",
+      "langage": "csharp",
+      "lignes": 191,
+      "taille_bytes": 6404,
+      "entrees": [
+        "System.Collections.Generic",
+        "System.Diagnostics",
+        "System.Drawing",
+        "System.IO",
+        "System.Windows.Forms"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gui/codeLoader/Properties/Settings.Designer.cs": {
+      "fichier": "gui/codeLoader/Properties/Settings.Designer.cs",
+      "langage": "csharp",
+      "lignes": 26,
+      "taille_bytes": 1084,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gui/codeLoader/Properties/Resources.Designer.cs": {
+      "fichier": "gui/codeLoader/Properties/Resources.Designer.cs",
+      "langage": "csharp",
+      "lignes": 63,
+      "taille_bytes": 2813,
+      "entrees": [
+        "System"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "gui/codeLoader/Properties/AssemblyInfo.cs": {
+      "fichier": "gui/codeLoader/Properties/AssemblyInfo.cs",
+      "langage": "csharp",
+      "lignes": 36,
+      "taille_bytes": 1292,
+      "entrees": [
+        "System.Runtime.CompilerServices",
+        "System.Runtime.InteropServices"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encryption/Xor.nim": {
+      "fichier": "encryption/Xor.nim",
+      "langage": "nim",
+      "lignes": 54,
+      "taille_bytes": 1374,
+      "entrees": [
+        "os",
+        "random",
+        "strutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encryption/Aes256Ctr.nim": {
+      "fichier": "encryption/Aes256Ctr.nim",
+      "langage": "nim",
+      "lignes": 60,
+      "taille_bytes": 1546,
+      "entrees": [
+        "nimcrypto",
+        "nimcrypto/sysrand",
+        "os",
+        "random"
+      ],
+      "sorties": [
+        "func toByteSeq"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "encryption/Caesar.nim": {
+      "fichier": "encryption/Caesar.nim",
+      "langage": "nim",
+      "lignes": 32,
+      "taille_bytes": 830,
+      "entrees": [
+        "random",
+        "sequtils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/Thread_Hijack_Inject_Load.nim": {
+      "fichier": "loaders/Thread_Hijack_Inject_Load.nim",
+      "langage": "nim",
+      "lignes": 53,
+      "taille_bytes": 1671,
+      "entrees": [
+        "../core/public",
+        "<tlhelp32.h>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumDesktopWindows.nim": {
+      "fichier": "loaders/EnumDesktopWindows.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 529,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/APC_Inject_Load.nim": {
+      "fichier": "loaders/APC_Inject_Load.nim",
+      "langage": "nim",
+      "lignes": 45,
+      "taille_bytes": 1476,
+      "entrees": [
+        "../core/public",
+        "<tlhelp32.h>",
+        "<vector>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumFontFamiliesW.nim": {
+      "fichier": "loaders/EnumFontFamiliesW.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 551,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/Early_Bird_APC_Inject_Load.nim": {
+      "fichier": "loaders/Early_Bird_APC_Inject_Load.nim",
+      "langage": "nim",
+      "lignes": 23,
+      "taille_bytes": 860,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumDirTreeW.nim": {
+      "fichier": "loaders/EnumDirTreeW.nim",
+      "langage": "nim",
+      "lignes": 40,
+      "taille_bytes": 1212,
+      "entrees": [
+        "../core/public",
+        "<stdio.h>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumChildWindows.nim": {
+      "fichier": "loaders/EnumChildWindows.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 481,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumFontsW.nim": {
+      "fichier": "loaders/EnumFontsW.nim",
+      "langage": "nim",
+      "lignes": 21,
+      "taille_bytes": 536,
+      "entrees": [
+        "../core/public",
+        "<windows.h>",
+        "<wingdi.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/CertEnumSystemStore.nim": {
+      "fichier": "loaders/CertEnumSystemStore.nim",
+      "langage": "nim",
+      "lignes": 16,
+      "taille_bytes": 553,
+      "entrees": [
+        "../core/public",
+        "<wincrypt.h>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/CryptEnumOIDInfo.nim": {
+      "fichier": "loaders/CryptEnumOIDInfo.nim",
+      "langage": "nim",
+      "lignes": 19,
+      "taille_bytes": 555,
+      "entrees": [
+        "../core/public",
+        "<wincrypt.h>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/Direct_Load.nim": {
+      "fichier": "loaders/Direct_Load.nim",
+      "langage": "nim",
+      "lignes": 19,
+      "taille_bytes": 487,
+      "entrees": [
+        "../core/public",
+        "<iomanip>",
+        "<iostream>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/CopyFile2.nim": {
+      "fichier": "loaders/CopyFile2.nim",
+      "langage": "nim",
+      "lignes": 28,
+      "taille_bytes": 934,
+      "entrees": [
+        "../core/public",
+        "<winbase.h>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumDesktopW.nim": {
+      "fichier": "loaders/EnumDesktopW.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 488,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/CopyFileEx.nim": {
+      "fichier": "loaders/CopyFileEx.nim",
+      "langage": "nim",
+      "lignes": 19,
+      "taille_bytes": 588,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/OEP_Hijack_Inject_Load.nim": {
+      "fichier": "loaders/OEP_Hijack_Inject_Load.nim",
+      "langage": "nim",
+      "lignes": 55,
+      "taille_bytes": 2475,
+      "entrees": [
+        "../core/public",
+        "<windows.h>",
+        "<winternl.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/Thread_Pool_Wait.nim": {
+      "fichier": "loaders/Thread_Pool_Wait.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 514,
+      "entrees": [
+        "../core/public",
+        "winim/lean"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumDisplayMonitors.nim": {
+      "fichier": "loaders/EnumDisplayMonitors.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 506,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/CertEnumSystemStoreLocation.nim": {
+      "fichier": "loaders/CertEnumSystemStoreLocation.nim",
+      "langage": "nim",
+      "lignes": 16,
+      "taille_bytes": 585,
+      "entrees": [
+        "../core/public",
+        "<wincrypt.h>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumFontFamiliesExW.nim": {
+      "fichier": "loaders/EnumFontFamiliesExW.nim",
+      "langage": "nim",
+      "lignes": 22,
+      "taille_bytes": 614,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumObjects.nim": {
+      "fichier": "loaders/EnumObjects.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 573,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/Fiber_Load.nim": {
+      "fichier": "loaders/Fiber_Load.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 496,
+      "entrees": [
+        "../core/public",
+        "winim/lean"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/EnumLanguageGroupLocalesW.nim": {
+      "fichier": "loaders/EnumLanguageGroupLocalesW.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 521,
+      "entrees": [
+        "../core/public",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "loaders/CreateTimerQueueTimer_Tech.nim": {
+      "fichier": "loaders/CreateTimerQueueTimer_Tech.nim",
+      "langage": "nim",
+      "lignes": 25,
+      "taille_bytes": 848,
+      "entrees": [
+        "../core/public",
+        "<stdio.h>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

@@ -1,0 +1,1446 @@
+{
+  "meta": {
+    "projet": "auto-editor",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "javascript": 1,
+      "toml": 1,
+      "json": 1,
+      "html": 8,
+      "python": 1,
+      "nim": 44
+    }
+  },
+  "stats": {
+    "fichiers_total": 56,
+    "edges_total": 40,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 1,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 5,
+    "fichier_plus_appele": "src/ffmpeg.nim"
+  },
+  "noeuds": {
+    "docs/server.js": {
+      "fichier": "docs/server.js",
+      "langage": "javascript",
+      "lignes": 38,
+      "taille_bytes": 1050,
+      "entrees": [
+        "express"
+      ],
+      "sorties": [
+        "const app",
+        "const newPath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/hunim.toml": {
+      "fichier": "docs/hunim.toml",
+      "langage": "toml",
+      "lignes": 4,
+      "taille_bytes": 83,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/package.json": {
+      "fichier": "docs/package.json",
+      "langage": "json",
+      "lignes": 14,
+      "taille_bytes": 238,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/templates/default.html": {
+      "fichier": "docs/templates/default.html",
+      "langage": "html",
+      "lignes": 19,
+      "taille_bytes": 286,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/src/404.html": {
+      "fichier": "docs/src/404.html",
+      "langage": "html",
+      "lignes": 31,
+      "taille_bytes": 657,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/src/index.html": {
+      "fichier": "docs/src/index.html",
+      "langage": "html",
+      "lignes": 57,
+      "taille_bytes": 2437,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/src/ref/options.html": {
+      "fichier": "docs/src/ref/options.html",
+      "langage": "html",
+      "lignes": 133,
+      "taille_bytes": 5540,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/src/ref/edit.html": {
+      "fichier": "docs/src/ref/edit.html",
+      "langage": "html",
+      "lignes": 90,
+      "taille_bytes": 4994,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/components/init_head.html": {
+      "fichier": "docs/components/init_head.html",
+      "langage": "html",
+      "lignes": 2,
+      "taille_bytes": 93,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/components/head_icon.html": {
+      "fichier": "docs/components/head_icon.html",
+      "langage": "html",
+      "lignes": 4,
+      "taille_bytes": 303,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "docs/components/nav.html": {
+      "fichier": "docs/components/nav.html",
+      "langage": "html",
+      "lignes": 18,
+      "taille_bytes": 674,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test.py": {
+      "fichier": "tests/test.py",
+      "langage": "python",
+      "lignes": 858,
+      "taille_bytes": 31376,
+      "entrees": [
+        "argparse",
+        "av",
+        "collections.abc",
+        "concurrent.futures",
+        "dataclasses",
+        "fractions",
+        "hashlib",
+        "os",
+        "shutil",
+        "struct",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "wave"
+      ],
+      "sorties": [
+        "class Audio",
+        "class FileInfo",
+        "class Runner",
+        "class SkipTest",
+        "class Subtitle",
+        "class Video",
+        "def __init__",
+        "def calculate_sha256",
+        "def check",
+        "def desc",
+        "def fileinfo",
+        "def info",
+        "def levels",
+        "def main",
+        "def pipe_to_console",
+        "def raw",
+        "def run_tests",
+        "def subdump",
+        "def test_SAR",
+        "def test_attachment_copy",
+        "def test_audio_norm_ebu",
+        "def test_audio_norm_f",
+        "def test_audio_norm_peak",
+        "def test_backwards_range",
+        "def test_clip_sequence",
+        "def test_codecs",
+        "def test_cut_out",
+        "def test_decode_hevc",
+        "def test_edit_negative",
+        "def test_edit_positive",
+        "def test_encode_hevc",
+        "def test_example",
+        "def test_export",
+        "def test_export_json",
+        "def test_export_subtitles",
+        "def test_frame_rate",
+        "def test_frame_rate_60",
+        "def test_gif",
+        "def test_help",
+        "def test_high_speed",
+        "def test_import_v1",
+        "def test_input_extension",
+        "def test_margin",
+        "def test_motion",
+        "def test_movflags",
+        "def test_options",
+        "def test_parser",
+        "def test_premiere",
+        "def test_premiere_multi",
+        "def test_premiere_named_export",
+        "def test_prores",
+        "def test_res_with_v1",
+        "def test_res_with_v2",
+        "def test_resolution",
+        "def test_scale",
+        "def test_silent_threshold",
+        "def test_sn",
+        "def test_sr_units",
+        "def test_to_mono",
+        "def test_track",
+        "def test_units",
+        "def test_version",
+        "def test_video_speed",
+        "def test_video_to_mp3",
+        "def test_wav_output",
+        "def test_yuv442p",
+        "def timed_test"
+      ],
+      "appelle": [
+        "src/av.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/unit.nim": {
+      "fichier": "tests/unit.nim",
+      "langage": "nim",
+      "lignes": 179,
+      "taille_bytes": 5739,
+      "entrees": [
+        "../src/[av",
+        "../src/cmds/info",
+        "../src/exports/[kdenlive",
+        "../src/media",
+        "../src/util/[color",
+        "../src/wavutil",
+        "std/[os",
+        "unittest"
+      ],
+      "sorties": [
+        "const bufSize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/resampler.nim": {
+      "fichier": "src/resampler.nim",
+      "langage": "nim",
+      "lignes": 170,
+      "taille_bytes": 6105,
+      "entrees": [
+        "ffmpeg",
+        "log",
+        "std/strformat"
+      ],
+      "sorties": [
+        "func getFormatName",
+        "func getLayoutName",
+        "func stringToChannelLayout",
+        "type AudioResampler"
+      ],
+      "appelle": [
+        "src/ffmpeg.nim",
+        "src/log.nim"
+      ],
+      "est_appele_par": [
+        "src/wavutil.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/av.nim": {
+      "fichier": "src/av.nim",
+      "langage": "nim",
+      "lignes": 541,
+      "taille_bytes": 17871,
+      "entrees": [
+        "ffmpeg",
+        "log",
+        "std/[strformat",
+        "util/dict"
+      ],
+      "sorties": [
+        "const FF_PROFILE_UNKNOWN",
+        "func bitRate",
+        "func canonicalName",
+        "func dialogue",
+        "func duration",
+        "func name",
+        "func pixFmtName",
+        "func prettyFrame",
+        "func sampFmtName",
+        "func time",
+        "type InputContainer",
+        "type MediaCache",
+        "type OutputContainer"
+      ],
+      "appelle": [
+        "src/ffmpeg.nim",
+        "src/log.nim"
+      ],
+      "est_appele_par": [
+        "src/edit.nim",
+        "src/media.nim",
+        "src/preview.nim",
+        "src/wavutil.nim",
+        "tests/test.py"
+      ],
+      "type_noeud": "central"
+    },
+    "src/media.nim": {
+      "fichier": "src/media.nim",
+      "langage": "nim",
+      "lignes": 146,
+      "taille_bytes": 4286,
+      "entrees": [
+        "av",
+        "ffmpeg",
+        "util/lang"
+      ],
+      "sorties": [
+        "func getRes"
+      ],
+      "appelle": [
+        "src/av.nim",
+        "src/ffmpeg.nim"
+      ],
+      "est_appele_par": [
+        "src/edit.nim",
+        "src/timeline.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/edit.nim": {
+      "fichier": "src/edit.nim",
+      "langage": "nim",
+      "lignes": 397,
+      "taille_bytes": 11761,
+      "entrees": [
+        "av",
+        "exports/[fcp7",
+        "ffmpeg",
+        "imports/[fcp7",
+        "log",
+        "media",
+        "palet/edit",
+        "preview",
+        "render/format",
+        "std/[options",
+        "std/browsers",
+        "std/math",
+        "timeline",
+        "util/[color"
+      ],
+      "sorties": [
+        "const black",
+        "const chars",
+        "const prefix",
+        "func appendFilename",
+        "func normalizeRange"
+      ],
+      "appelle": [
+        "src/av.nim",
+        "src/ffmpeg.nim",
+        "src/log.nim",
+        "src/media.nim",
+        "src/preview.nim",
+        "src/timeline.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/cache.nim": {
+      "fichier": "src/cache.nim",
+      "langage": "nim",
+      "lignes": 102,
+      "taille_bytes": 2974,
+      "entrees": [
+        "about",
+        "ffmpeg",
+        "log",
+        "std/[algorithm"
+      ],
+      "sorties": [
+        "const Sha1DigestSize",
+        "const cacheFileLimit",
+        "type CacheEntry"
+      ],
+      "appelle": [
+        "src/about.nim",
+        "src/ffmpeg.nim",
+        "src/log.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/log.nim": {
+      "fichier": "src/log.nim",
+      "langage": "nim",
+      "lignes": 224,
+      "taille_bytes": 5536,
+      "entrees": [
+        "ffmpeg",
+        "std/[envvars",
+        "util/color"
+      ],
+      "sorties": [
+        "func getFlag",
+        "func getNumber",
+        "func pack",
+        "func toTimecode",
+        "type BarType",
+        "type Code",
+        "type PackedInt",
+        "type StringInterner",
+        "type mainArgs"
+      ],
+      "appelle": [
+        "src/ffmpeg.nim"
+      ],
+      "est_appele_par": [
+        "src/av.nim",
+        "src/cache.nim",
+        "src/edit.nim",
+        "src/graph.nim",
+        "src/main.nim",
+        "src/preview.nim",
+        "src/resampler.nim",
+        "src/timeline.nim",
+        "src/wavutil.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/preview.nim": {
+      "fichier": "src/preview.nim",
+      "langage": "nim",
+      "lignes": 140,
+      "taille_bytes": 3999,
+      "entrees": [
+        "av",
+        "csort",
+        "ffmpeg",
+        "log",
+        "std/[sets",
+        "std/math",
+        "timeline"
+      ],
+      "sorties": [
+        "func allCuts",
+        "func mean",
+        "func median",
+        "func round",
+        "func timeFrame"
+      ],
+      "appelle": [
+        "src/av.nim",
+        "src/ffmpeg.nim",
+        "src/log.nim",
+        "src/timeline.nim"
+      ],
+      "est_appele_par": [
+        "src/edit.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/graph.nim": {
+      "fichier": "src/graph.nim",
+      "langage": "nim",
+      "lignes": 164,
+      "taille_bytes": 4846,
+      "entrees": [
+        "ffmpeg",
+        "log",
+        "std/strformat"
+      ],
+      "sorties": [
+        "type Graph"
+      ],
+      "appelle": [
+        "src/ffmpeg.nim",
+        "src/log.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/ffmpeg.nim": {
+      "fichier": "src/ffmpeg.nim",
+      "langage": "nim",
+      "lignes": 778,
+      "taille_bytes": 29670,
+      "entrees": [],
+      "sorties": [
+        "const AVERROR_EOF",
+        "const AVINDEX_KEYFRAME",
+        "const AV_ERROR_MAX_STRING_SIZE",
+        "const AV_PIX_FMT_NONE",
+        "const AV_PIX_FMT_RGB24",
+        "const AV_PIX_FMT_RGB8",
+        "const AV_PIX_FMT_YUV420P",
+        "const AV_PIX_FMT_YUV422P10LE",
+        "const AV_PIX_FMT_YUYV422",
+        "const FF_COMPLIANCE_EXPERIMENTAL",
+        "const FF_COMPLIANCE_INOFFICIAL",
+        "const FF_COMPLIANCE_NORMAL",
+        "const FF_COMPLIANCE_STRICT",
+        "func AVERROR",
+        "type AVAudioFifo",
+        "type AVCodecDescriptor",
+        "type AVProfile",
+        "type AVRational",
+        "type SwrContext",
+        "type SwsContext"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/av.nim",
+        "src/cache.nim",
+        "src/edit.nim",
+        "src/graph.nim",
+        "src/log.nim",
+        "src/main.nim",
+        "src/media.nim",
+        "src/preview.nim",
+        "src/resampler.nim",
+        "src/timeline.nim",
+        "src/wavutil.nim"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/about.nim": {
+      "fichier": "src/about.nim",
+      "langage": "nim",
+      "lignes": 1,
+      "taille_bytes": 26,
+      "entrees": [],
+      "sorties": [
+        "const version"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/cache.nim",
+        "src/main.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/wavutil.nim": {
+      "fichier": "src/wavutil.nim",
+      "langage": "nim",
+      "lignes": 270,
+      "taille_bytes": 9386,
+      "entrees": [
+        "av",
+        "ffmpeg",
+        "log",
+        "resampler",
+        "std/strformat"
+      ],
+      "sorties": [
+        "type AudioBuffer"
+      ],
+      "appelle": [
+        "src/av.nim",
+        "src/ffmpeg.nim",
+        "src/log.nim",
+        "src/resampler.nim"
+      ],
+      "est_appele_par": [
+        "src/timeline.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/timeline.nim": {
+      "fichier": "src/timeline.nim",
+      "langage": "nim",
+      "lignes": 310,
+      "taille_bytes": 8701,
+      "entrees": [
+        "ffmpeg",
+        "log",
+        "media",
+        "std/[options",
+        "std/math",
+        "util/[color",
+        "wavutil"
+      ],
+      "sorties": [
+        "func isNonlinear",
+        "func len",
+        "func makeSaneTimebase",
+        "func stem",
+        "func timelineIsEmpty",
+        "func uniqueSources",
+        "type Clip",
+        "type Clip2",
+        "type v1",
+        "type v2",
+        "type v3"
+      ],
+      "appelle": [
+        "src/ffmpeg.nim",
+        "src/log.nim",
+        "src/media.nim",
+        "src/wavutil.nim"
+      ],
+      "est_appele_par": [
+        "src/edit.nim",
+        "src/preview.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/main.nim": {
+      "fichier": "src/main.nim",
+      "langage": "nim",
+      "lignes": 472,
+      "taille_bytes": 14583,
+      "entrees": [
+        "about",
+        "cli",
+        "cmds/[completion",
+        "edit",
+        "ffmpeg",
+        "log",
+        "palet/edit",
+        "std/[options",
+        "std/posix_utils",
+        "tinyre",
+        "util/[color"
+      ],
+      "sorties": [
+        "const PUBLIC_KEY_HEX",
+        "func actionFromUserSpeed",
+        "func categoryName",
+        "func handleLegacyOptions",
+        "func validateKey"
+      ],
+      "appelle": [
+        "src/about.nim",
+        "src/cli.nim",
+        "src/ffmpeg.nim",
+        "src/log.nim",
+        "src/palet/edit.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/cli.nim": {
+      "fichier": "src/cli.nim",
+      "langage": "nim",
+      "lignes": 303,
+      "taille_bytes": 13560,
+      "entrees": [
+        "std/[macros"
+      ],
+      "sorties": [
+        "const commands",
+        "const mainOptions",
+        "const whisperOptions",
+        "type Categories",
+        "type CmdDef",
+        "type OptDef",
+        "type OptKind"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/main.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/util/color.nim": {
+      "fichier": "src/util/color.nim",
+      "langage": "nim",
+      "lignes": 48,
+      "taille_bytes": 1717,
+      "entrees": [
+        "../ffmpeg",
+        "std/[strutils"
+      ],
+      "sorties": [
+        "func findColor",
+        "func parseColor",
+        "func toString",
+        "type RGBColor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/util/dict.nim": {
+      "fichier": "src/util/dict.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 588,
+      "entrees": [
+        "../ffmpeg",
+        "std/tables"
+      ],
+      "sorties": [
+        "const AV_DICT_IGNORE_SUFFIX",
+        "func avdict_to_dict"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/util/lang.nim": {
+      "fichier": "src/util/lang.nim",
+      "langage": "nim",
+      "lignes": 18,
+      "taille_bytes": 336,
+      "entrees": [
+        "std/json"
+      ],
+      "sorties": [
+        "func toLang",
+        "type Lang"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/util/rules.nim": {
+      "fichier": "src/util/rules.nim",
+      "langage": "nim",
+      "lignes": 65,
+      "taille_bytes": 1856,
+      "entrees": [
+        "../[ffmpeg",
+        "std/strformat"
+      ],
+      "sorties": [
+        "func defaultAudioCodec",
+        "func defaultSubtitleCodec",
+        "func defaultVideoCodec",
+        "type Rules"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/util/bar.nim": {
+      "fichier": "src/util/bar.nim",
+      "langage": "nim",
+      "lignes": 201,
+      "taille_bytes": 6002,
+      "entrees": [
+        "../log",
+        "std/[times",
+        "std/[typedthreads",
+        "std/osproc"
+      ],
+      "sorties": [
+        "const sleepRate",
+        "func tick"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/util/fun.nim": {
+      "fichier": "src/util/fun.nim",
+      "langage": "nim",
+      "lignes": 180,
+      "taille_bytes": 4800,
+      "entrees": [
+        "../log",
+        "std/[base64",
+        "std/math"
+      ],
+      "sorties": [
+        "const tb",
+        "func aspectRatio",
+        "func b64urlDecode",
+        "func hexToBytes",
+        "func splitext",
+        "func toTb",
+        "func wrapText"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/analyze/motion.nim": {
+      "fichier": "src/analyze/motion.nim",
+      "langage": "nim",
+      "lignes": 224,
+      "taille_bytes": 7128,
+      "entrees": [
+        "../[av",
+        "../util/bar",
+        "std/[math"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/analyze/subtitle.nim": {
+      "fichier": "src/analyze/subtitle.nim",
+      "langage": "nim",
+      "lignes": 60,
+      "taille_bytes": 1771,
+      "entrees": [
+        "../[av",
+        "std/math",
+        "tinyre"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/analyze/audio.nim": {
+      "fichier": "src/analyze/audio.nim",
+      "langage": "nim",
+      "lignes": 201,
+      "taille_bytes": 6774,
+      "entrees": [
+        "../[av",
+        "../util/bar",
+        "std/[math"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/palet/lexer.nim": {
+      "fichier": "src/palet/lexer.nim",
+      "langage": "nim",
+      "lignes": 204,
+      "taille_bytes": 5750,
+      "entrees": [
+        "std/strutils"
+      ],
+      "sorties": [
+        "func initLexer",
+        "func isWhiteSpace"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/palet/edit.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/palet/edit.nim": {
+      "fichier": "src/palet/edit.nim",
+      "langage": "nim",
+      "lignes": 339,
+      "taille_bytes": 10949,
+      "entrees": [
+        "../[av",
+        "../analyze/[audio",
+        "../util/[bar",
+        "lexer",
+        "std/[math",
+        "tinyre"
+      ],
+      "sorties": [
+        "func isSymbol"
+      ],
+      "appelle": [
+        "src/palet/lexer.nim"
+      ],
+      "est_appele_par": [
+        "src/main.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/cmds/levels.nim": {
+      "fichier": "src/cmds/levels.nim",
+      "langage": "nim",
+      "lignes": 202,
+      "taille_bytes": 5472,
+      "entrees": [
+        "../[av",
+        "../analyze/[audio",
+        "std/[options",
+        "tinyre"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/cmds/info.nim": {
+      "fichier": "src/cmds/info.nim",
+      "langage": "nim",
+      "lignes": 179,
+      "taille_bytes": 5129,
+      "entrees": [
+        "../[av",
+        "../util/[fun",
+        "std/[json"
+      ],
+      "sorties": [
+        "func bt709",
+        "func fourccToString",
+        "func getJsonInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/cmds/cache.nim": {
+      "fichier": "src/cmds/cache.nim",
+      "langage": "nim",
+      "lignes": 50,
+      "taille_bytes": 1348,
+      "entrees": [
+        "../about",
+        "std/[os"
+      ],
+      "sorties": [
+        "func formatBytes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/cmds/subdump.nim": {
+      "fichier": "src/cmds/subdump.nim",
+      "langage": "nim",
+      "lignes": 45,
+      "taille_bytes": 1372,
+      "entrees": [
+        "../[av"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/cmds/desc.nim": {
+      "fichier": "src/cmds/desc.nim",
+      "langage": "nim",
+      "lignes": 16,
+      "taille_bytes": 425,
+      "entrees": [
+        "../[av"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/cmds/completion.nim": {
+      "fichier": "src/cmds/completion.nim",
+      "langage": "nim",
+      "lignes": 33,
+      "taille_bytes": 631,
+      "entrees": [
+        "../[cli",
+        "std/[strformat"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/cmds/whisper.nim": {
+      "fichier": "src/cmds/whisper.nim",
+      "langage": "nim",
+      "lignes": 182,
+      "taille_bytes": 6101,
+      "entrees": [
+        "../[av",
+        "../util/fun",
+        "std/[strformat"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/exports/json.nim": {
+      "fichier": "src/exports/json.nim",
+      "langage": "nim",
+      "lignes": 127,
+      "taille_bytes": 3923,
+      "entrees": [
+        "../log",
+        "../timeline",
+        "../util/[color",
+        "std/[json"
+      ],
+      "sorties": [
+        "func effectGroupToJson"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/exports/fcp11.nim": {
+      "fichier": "src/exports/fcp11.nim",
+      "langage": "nim",
+      "lignes": 222,
+      "taille_bytes": 6729,
+      "entrees": [
+        "../[ffmpeg",
+        "std/[algorithm",
+        "std/[strformat",
+        "std/math"
+      ],
+      "sorties": [
+        "func fraction",
+        "func getColorspace",
+        "func makeName",
+        "func timecode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/exports/kdenlive.nim": {
+      "fichier": "src/exports/kdenlive.nim",
+      "langage": "nim",
+      "lignes": 578,
+      "taille_bytes": 17219,
+      "entrees": [
+        "../[log",
+        "../util/fun",
+        "std/[json"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/exports/fcp7.nim": {
+      "fichier": "src/exports/fcp7.nim",
+      "langage": "nim",
+      "lignes": 354,
+      "taille_bytes": 11356,
+      "entrees": [
+        "../[ffmpeg",
+        "std/[os",
+        "std/math",
+        "std/strutils"
+      ],
+      "sorties": [
+        "const DEPTH",
+        "func param",
+        "func setTbNtsc",
+        "func speedup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/exports/shotcut.nim": {
+      "fichier": "src/exports/shotcut.nim",
+      "langage": "nim",
+      "lignes": 204,
+      "taille_bytes": 5903,
+      "entrees": [
+        "../[log",
+        "../util/[color",
+        "std/[strformat",
+        "std/math",
+        "std/os"
+      ],
+      "sorties": [
+        "func addProp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/render/format.nim": {
+      "fichier": "src/render/format.nim",
+      "langage": "nim",
+      "lignes": 347,
+      "taille_bytes": 12496,
+      "entrees": [
+        "../[av",
+        "../util/[bar",
+        "audio",
+        "std/[heapqueue",
+        "std/math",
+        "subtitle",
+        "video"
+      ],
+      "sorties": [
+        "const MAX_AUDIO_AHEAD",
+        "func initPriority",
+        "type Priority"
+      ],
+      "appelle": [
+        "src/render/audio.nim",
+        "src/render/subtitle.nim",
+        "src/render/video.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "src/render/subtitle.nim": {
+      "fichier": "src/render/subtitle.nim",
+      "langage": "nim",
+      "lignes": 89,
+      "taille_bytes": 3821,
+      "entrees": [
+        "../av",
+        "../ffmpeg",
+        "../log",
+        "../timeline"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "src/render/format.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/render/video.nim": {
+      "fichier": "src/render/video.nim",
+      "langage": "nim",
+      "lignes": 567,
+      "taille_bytes": 21769,
+      "entrees": [
+        "../av",
+        "../ffmpeg",
+        "../graph",
+        "../log",
+        "../timeline",
+        "../util/[color",
+        "std/[sets",
+        "std/math",
+        "std/options",
+        "std/strformat"
+      ],
+      "sorties": [
+        "const codecTag",
+        "func toInt",
+        "type KeyframeIndex",
+        "type VideoFrame"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/render/format.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/render/audio.nim": {
+      "fichier": "src/render/audio.nim",
+      "langage": "nim",
+      "lignes": 923,
+      "taille_bytes": 36331,
+      "entrees": [
+        "../[av",
+        "../graph",
+        "../log",
+        "../resampler",
+        "../timeline",
+        "std/json",
+        "std/math",
+        "std/memfiles",
+        "std/os",
+        "std/sequtils",
+        "std/strformat",
+        "std/strutils",
+        "std/tables"
+      ],
+      "sorties": [
+        "const AV_CH_LAYOUT_MONO",
+        "const AV_CH_LAYOUT_STEREO",
+        "const maxAtempo"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/render/format.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/imports/json.nim": {
+      "fichier": "src/imports/json.nim",
+      "langage": "nim",
+      "lignes": 168,
+      "taille_bytes": 5724,
+      "entrees": [
+        "../ffmpeg",
+        "../log",
+        "../media",
+        "../timeline",
+        "../util/[color",
+        "std/[strformat"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/imports/fcp7.nim": {
+      "fichier": "src/imports/fcp7.nim",
+      "langage": "nim",
+      "lignes": 211,
+      "taille_bytes": 7046,
+      "entrees": [
+        "../[ffmpeg",
+        "../util/color",
+        "std/[strutils"
+      ],
+      "sorties": [
+        "func readFilters",
+        "func readTbNtsc",
+        "func uriToPath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "tests/test.py",
+      "vers": "src/av.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/resampler.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/resampler.nim",
+      "vers": "src/log.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/av.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/av.nim",
+      "vers": "src/log.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/media.nim",
+      "vers": "src/av.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/media.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/edit.nim",
+      "vers": "src/av.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/edit.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/edit.nim",
+      "vers": "src/log.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/edit.nim",
+      "vers": "src/media.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/edit.nim",
+      "vers": "src/preview.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/edit.nim",
+      "vers": "src/timeline.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/cache.nim",
+      "vers": "src/about.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/cache.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/cache.nim",
+      "vers": "src/log.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/log.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/preview.nim",
+      "vers": "src/av.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/preview.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/preview.nim",
+      "vers": "src/log.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/preview.nim",
+      "vers": "src/timeline.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/graph.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/graph.nim",
+      "vers": "src/log.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/wavutil.nim",
+      "vers": "src/av.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/wavutil.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/wavutil.nim",
+      "vers": "src/log.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/wavutil.nim",
+      "vers": "src/resampler.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/timeline.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/timeline.nim",
+      "vers": "src/log.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/timeline.nim",
+      "vers": "src/media.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/timeline.nim",
+      "vers": "src/wavutil.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/main.nim",
+      "vers": "src/about.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/main.nim",
+      "vers": "src/cli.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/main.nim",
+      "vers": "src/ffmpeg.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/main.nim",
+      "vers": "src/log.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/main.nim",
+      "vers": "src/palet/edit.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/palet/edit.nim",
+      "vers": "src/palet/lexer.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/render/format.nim",
+      "vers": "src/render/audio.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/render/format.nim",
+      "vers": "src/render/subtitle.nim",
+      "type": "interne"
+    },
+    {
+      "de": "src/render/format.nim",
+      "vers": "src/render/video.nim",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "central → 'src/av.nim' (in=5, out=2)",
+    "point_entree → 'src/edit.nim'",
+    "point_entree → 'src/cache.nim'",
+    "point_entree → 'src/graph.nim'",
+    "feuille → 'src/ffmpeg.nim' (in=11)",
+    "point_entree → 'src/main.nim'",
+    "point_entree → 'src/render/format.nim'"
+  ]
+}

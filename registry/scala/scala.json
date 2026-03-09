@@ -1,0 +1,2498 @@
+{
+  "meta": {
+    "projet": "scala",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 1,
+      "scala": 118,
+      "html": 1
+    },
+    "official_runtime": true
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": ".travis.yml"
+  },
+  "noeuds": {
+    ".travis.yml": {
+      "fichier": ".travis.yml",
+      "langage": "yaml",
+      "lignes": 78,
+      "taille_bytes": 4200,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/VersionUtil.scala": {
+      "fichier": "project/VersionUtil.scala",
+      "langage": "scala",
+      "lignes": 202,
+      "taille_bytes": 9675,
+      "entrees": [
+        "BuildSettings.autoImport._",
+        "Keys._",
+        "java.io.",
+        "java.text.SimpleDateFormat",
+        "java.time.Instant",
+        "java.time.format.DateTimeFormatter.ISO_DATE_TIME",
+        "java.util.",
+        "org.eclipse.jgit.revwalk.RevWalk",
+        "org.eclipse.jgit.storage.file.FileRepositoryBuilder",
+        "sbt._",
+        "scala.collection.JavaConverters._",
+        "scala.sys.process._"
+      ],
+      "sorties": [
+        "def cross",
+        "def mavenVersion",
+        "def toMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/GenerateDocsData.scala": {
+      "fichier": "project/GenerateDocsData.scala",
+      "langage": "scala",
+      "lignes": 170,
+      "taille_bytes": 7330,
+      "entrees": [
+        "Fixup._",
+        "java.io.File",
+        "java.nio.charset.StandardCharsets.UTF_8",
+        "s.",
+        "scala.tools.nsc.Settings",
+        "schema._",
+        "settings._"
+      ],
+      "sorties": [
+        "class SettingsDescriptor",
+        "def dehtmlfy",
+        "def descriptor",
+        "def element",
+        "def emit",
+        "def escape",
+        "def indented",
+        "def isAdvanced_",
+        "def isDeprecated_",
+        "def isPreso_",
+        "def isPrivate_",
+        "def isStandard_",
+        "def isVerbose_",
+        "def isWarning_",
+        "def markdownifyBackquote",
+        "def maybe",
+        "def maybes",
+        "def mergeChoice",
+        "def option",
+        "def run",
+        "def schema",
+        "trait SettingsDescriptorModel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/MimaFilters.scala": {
+      "fichier": "project/MimaFilters.scala",
+      "langage": "scala",
+      "lignes": 65,
+      "taille_bytes": 3568,
+      "entrees": [
+        "autoImport._",
+        "com.typesafe.tools.mima.core._",
+        "com.typesafe.tools.mima.plugin.MimaPlugin",
+        "sbt._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/ScaladocSettings.scala": {
+      "fichier": "project/ScaladocSettings.scala",
+      "langage": "scala",
+      "lignes": 28,
+      "taille_bytes": 1025,
+      "entrees": [
+        "sbt.Keys.",
+        "sbt._"
+      ],
+      "sorties": [
+        "def extractResourcesFromWebjar",
+        "def isWebjar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/Osgi.scala": {
+      "fichier": "project/Osgi.scala",
+      "langage": "scala",
+      "lignes": 105,
+      "taille_bytes": 5434,
+      "entrees": [
+        "VersionUtil.versionProperties",
+        "aQute.bnd.osgi.Builder",
+        "aQute.bnd.osgi.Constants._",
+        "collection.JavaConverters._",
+        "java.util.jar.Attributes",
+        "sbt.",
+        "sbt.Keys._"
+      ],
+      "sorties": [
+        "def bundleTask",
+        "def resourceDirectoryRef",
+        "def settings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/AutomaticModuleName.scala": {
+      "fichier": "project/AutomaticModuleName.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 658,
+      "entrees": [
+        "sbt.",
+        "sbt.Keys._"
+      ],
+      "sorties": [
+        "def settings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/ScriptCommands.scala": {
+      "fichier": "project/ScriptCommands.scala",
+      "langage": "scala",
+      "lignes": 192,
+      "taille_bytes": 8188,
+      "entrees": [
+        "BuildSettings.autoImport._",
+        "Keys._",
+        "VersionUtil._",
+        "java.nio.file.Paths",
+        "sbt._",
+        "sbt.complete.Parser._",
+        "sbt.complete.Parsers._"
+      ],
+      "sorties": [
+        "def all",
+        "def enableOptimizerCommand",
+        "def env",
+        "def restarr",
+        "def restarrFull",
+        "def sequence",
+        "def setupBootstrapLocker",
+        "def setupBootstrapPublish",
+        "def setupBootstrapQuick",
+        "def setupBootstrapStarr",
+        "def setupPublishCore",
+        "def setupPublishCoreNonOpt",
+        "def setupValidateTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/Quiet.scala": {
+      "fichier": "project/Quiet.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 262,
+      "entrees": [
+        "Keys._",
+        "sbt._"
+      ],
+      "sorties": [
+        "def silenceScalaBinaryVersionWarning"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/BuildSettings.scala": {
+      "fichier": "project/BuildSettings.scala",
+      "langage": "scala",
+      "lignes": 20,
+      "taille_bytes": 819,
+      "entrees": [
+        "autoImport._",
+        "sbt._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/JitWatch.scala": {
+      "fichier": "project/JitWatch.scala",
+      "langage": "scala",
+      "lignes": 92,
+      "taille_bytes": 5476,
+      "entrees": [
+        "Keys._",
+        "java.io.FileWriter",
+        "java.util.Properties",
+        "sbt._"
+      ],
+      "sorties": [
+        "def jitwatchSettings"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/genprod.scala": {
+      "fichier": "project/genprod.scala",
+      "langage": "scala",
+      "lignes": 479,
+      "taille_bytes": 15146,
+      "entrees": [
+        "genprod._",
+        "scala.tools.nsc.io._"
+      ],
+      "sorties": [
+        "class AbstractFunction",
+        "class Function",
+        "class Group",
+        "class Product",
+        "class Tuple",
+        "def absFunctionFiles",
+        "def allfiles",
+        "def apply",
+        "def arities",
+        "def body",
+        "def cases",
+        "def classAnnotation",
+        "def className",
+        "def comment",
+        "def companionObject",
+        "def constructorArgs",
+        "def contraCoArgs",
+        "def contravariantSpecs",
+        "def covariantArgs",
+        "def covariantSpecs",
+        "def curryComment",
+        "def curryMethod",
+        "def descriptiveComment",
+        "def fields",
+        "def fileName",
+        "def funArgs",
+        "def functionFiles",
+        "def functionNTemplate",
+        "def genprodString",
+        "def header",
+        "def imports",
+        "def invariantArgs",
+        "def longCurry",
+        "def make",
+        "def mdefs",
+        "def mkToString",
+        "def moreMethods",
+        "def packageDef",
+        "def productFiles",
+        "def proj",
+        "def run",
+        "def shortCurry",
+        "def str",
+        "def swap",
+        "def targs",
+        "def to",
+        "def toStr",
+        "def tupleFiles",
+        "def tupleMethod",
+        "def typeArgsString",
+        "def typeArgsToTupleSyntacticSugarString",
+        "def unapply",
+        "def unlift",
+        "def vdefs",
+        "def writeFile",
+        "def xdefs",
+        "trait Arity"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/PartestTestListener.scala": {
+      "fichier": "project/PartestTestListener.scala",
+      "langage": "scala",
+      "lignes": 103,
+      "taille_bytes": 4653,
+      "entrees": [
+        "java.io.",
+        "java.util.EnumSet",
+        "sbt.",
+        "sbt.internal.util.EscHelpers.removeEscapeSequences",
+        "sbt.testing."
+      ],
+      "sorties": [
+        "class PartestTestListener",
+        "def groupOf",
+        "def testOf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/License.scala": {
+      "fichier": "project/License.scala",
+      "langage": "scala",
+      "lignes": 18,
+      "taille_bytes": 583,
+      "entrees": [
+        "sbt._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/DottySupport.scala": {
+      "fichier": "project/DottySupport.scala",
+      "langage": "scala",
+      "lignes": 136,
+      "taille_bytes": 4945,
+      "entrees": [
+        "java.io.File",
+        "sbt.Keys._",
+        "sbt._",
+        "sbt.librarymanagement."
+      ],
+      "sorties": [
+        "def accept",
+        "def fetchSourceJarOf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/TestJDeps.scala": {
+      "fichier": "project/TestJDeps.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 1207,
+      "entrees": [
+        "sbt._",
+        "scala.util.Properties.isJavaAtLeast"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/TestJarSize.scala": {
+      "fichier": "project/TestJarSize.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 1292,
+      "entrees": [
+        "jarSize._",
+        "sbt._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/ScalaTool.scala": {
+      "fichier": "project/ScalaTool.scala",
+      "langage": "scala",
+      "lignes": 51,
+      "taille_bytes": 2362,
+      "entrees": [
+        "org.apache.commons.lang3.StringUtils.replaceEach",
+        "org.apache.commons.lang3.SystemUtils",
+        "sbt._"
+      ],
+      "sorties": [
+        "def patchedToolScript",
+        "def writeScript"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/PartestUtil.scala": {
+      "fichier": "project/PartestUtil.scala",
+      "langage": "scala",
+      "lignes": 118,
+      "taille_bytes": 5385,
+      "entrees": [
+        "ParserUtil.Opt",
+        "sbt._",
+        "sbt.complete._",
+        "scala.util.matching.Regex"
+      ],
+      "sorties": [
+        "def allTestCases",
+        "def equivCanon",
+        "def expandGrep",
+        "def isParentOf",
+        "def isTestCase",
+        "def mayContainTestCase",
+        "def mkTestPathParser",
+        "def parentChain",
+        "def partestParser",
+        "def sibling",
+        "def testFilePaths"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/SavedLogs.scala": {
+      "fichier": "project/SavedLogs.scala",
+      "langage": "scala",
+      "lignes": 52,
+      "taille_bytes": 1576,
+      "entrees": [
+        "Keys._",
+        "java.io.",
+        "sbt._",
+        "sbt.internal.util.ConsoleAppender",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def clearSavedLogsImpl",
+        "def showSavedLogsImpl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/ScalaOptionParser.scala": {
+      "fichier": "project/ScalaOptionParser.scala",
+      "langage": "scala",
+      "lignes": 144,
+      "taille_bytes": 11501,
+      "entrees": [
+        "ParserUtil._",
+        "sbt._",
+        "sbt.complete.Parser._",
+        "sbt.complete.Parsers._",
+        "sbt.complete._"
+      ],
+      "sorties": [
+        "def BooleanSetting",
+        "def ChoiceSetting",
+        "def FileSetting",
+        "def IntSetting",
+        "def MultiChoiceSetting",
+        "def MultiStringSetting",
+        "def PathSetting",
+        "def PhaseSettingParser",
+        "def ScalaVersionSetting",
+        "def StringSetting",
+        "def scalaParser"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/GenerateFunctionConverters.scala": {
+      "fichier": "project/GenerateFunctionConverters.scala",
+      "langage": "scala",
+      "lignes": 433,
+      "taille_bytes": 18634,
+      "entrees": [
+        "compiler._",
+        "scala.tools.nsc._"
+      ],
+      "sorties": [
+        "def apply",
+        "def arity",
+        "def defs",
+        "def generate",
+        "def impls",
+        "def indent",
+        "def mkRef",
+        "def mkVec",
+        "def mkVecVec",
+        "def nonBlank",
+        "def primitiveBox",
+        "def priorityName",
+        "def run",
+        "def sameText",
+        "def sourceFile",
+        "def text",
+        "def toVec",
+        "def us",
+        "def withPriority",
+        "def write"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/GenerateAnyVals.scala": {
+      "fichier": "project/GenerateAnyVals.scala",
+      "langage": "scala",
+      "lignes": 514,
+      "taille_bytes": 20699,
+      "entrees": [
+        "scala.language.implicitConversions"
+      ],
+      "sorties": [
+        "class GenerateAnyVals",
+        "def allCompanions",
+        "def assemble",
+        "def bitwiseOps",
+        "def box",
+        "def boxUnboxInterpolations",
+        "def boxedName",
+        "def boxedSimpleName",
+        "def cardinal",
+        "def cardinalCompanion",
+        "def classDoc",
+        "def classDocTemplate",
+        "def classLines",
+        "def clumps",
+        "def coercionComment",
+        "def commonClassLines",
+        "def comparisonOps",
+        "def floatingCompanion",
+        "def headerTemplate",
+        "def implicitCoercions",
+        "def indent",
+        "def indentN",
+        "def interpolate",
+        "def interpolations",
+        "def isCardinal",
+        "def isFloatingType",
+        "def isIntegerType",
+        "def isSubrangeType",
+        "def isWideType",
+        "def lcname",
+        "def make",
+        "def mkBinOpsGroup",
+        "def mkClass",
+        "def mkCoercions",
+        "def mkImports",
+        "def mkObject",
+        "def mkShiftOps",
+        "def mkStringOps",
+        "def mkUnaryOps",
+        "def nonUnitCompanions",
+        "def numeric",
+        "def objectDoc",
+        "def objectLines",
+        "def opType",
+        "def otherOps",
+        "def representation",
+        "def run",
+        "def shiftOps",
+        "def unaryOps",
+        "def unary_",
+        "def unbox",
+        "def values",
+        "def zeroRep",
+        "trait GenerateAnyValReps",
+        "trait GenerateAnyValTemplates"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/ParserUtil.scala": {
+      "fichier": "project/ParserUtil.scala",
+      "langage": "scala",
+      "lignes": 42,
+      "taille_bytes": 2179,
+      "entrees": [
+        "sbt._",
+        "sbt.complete.Parser._",
+        "sbt.complete.Parsers._",
+        "sbt.complete._"
+      ],
+      "sorties": [
+        "def FileParser",
+        "def Opt",
+        "def concat",
+        "def displayPath",
+        "def ensureSuffix",
+        "def matching",
+        "def notStartingWith",
+        "def pathOf",
+        "def relativize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/TravisOutput.scala": {
+      "fichier": "project/TravisOutput.scala",
+      "langage": "scala",
+      "lignes": 69,
+      "taille_bytes": 1716,
+      "entrees": [
+        "java.io._",
+        "java.util.TimerTask",
+        "java.util.concurrent.TimeUnit"
+      ],
+      "sorties": [
+        "def install",
+        "def installIfOnTravis",
+        "def write"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/src/test/scala/PartestUtilTest.scala": {
+      "fichier": "project/src/test/scala/PartestUtilTest.scala",
+      "langage": "scala",
+      "lignes": 69,
+      "taille_bytes": 2688,
+      "entrees": [
+        "sbt._",
+        "sbt.complete._",
+        "scala.Console."
+      ],
+      "sorties": [
+        "def main",
+        "def pp",
+        "def ppStr",
+        "def prependTokens",
+        "def test",
+        "def testGen",
+        "def tests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/nan-ordering.scala": {
+      "fichier": "test/scalacheck/nan-ordering.scala",
+      "langage": "scala",
+      "lignes": 130,
+      "taille_bytes": 4835,
+      "entrees": [
+        "Gen._",
+        "Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/Ctrie.scala": {
+      "fichier": "test/scalacheck/Ctrie.scala",
+      "langage": "scala",
+      "lignes": 216,
+      "taille_bytes": 4726,
+      "entrees": [
+        "Prop._",
+        "annotation.unused",
+        "collection._",
+        "collection.concurrent.TrieMap",
+        "org.scalacheck.Gen._",
+        "org.scalacheck._",
+        "scala.language.reflectiveCalls"
+      ],
+      "sorties": [
+        "def check",
+        "def clear",
+        "def elementRange",
+        "def flush",
+        "def get",
+        "def hasGrown",
+        "def inParallel",
+        "def println",
+        "def result",
+        "def spawn"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/treeset.scala": {
+      "fichier": "test/scalacheck/treeset.scala",
+      "langage": "scala",
+      "lignes": 174,
+      "taille_bytes": 6525,
+      "entrees": [
+        "<-",
+        "Arbitrary._",
+        "Gen._",
+        "Prop._",
+        "collection.immutable._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "def genSliceParms",
+        "def genTreeSet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/CheckCollections.scala": {
+      "fichier": "test/scalacheck/CheckCollections.scala",
+      "langage": "scala",
+      "lignes": 52,
+      "taille_bytes": 1488,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck.Properties",
+        "scala.reflect.internal.util.Collections._"
+      ],
+      "sorties": [
+        "def checkStackOverflow",
+        "def map2ConserveOld"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/ReflectionExtractors.scala": {
+      "fichier": "test/scalacheck/ReflectionExtractors.scala",
+      "langage": "scala",
+      "lignes": 53,
+      "taille_bytes": 1742,
+      "entrees": [
+        "Arbitrary._",
+        "Flag._",
+        "Gen._",
+        "Prop._",
+        "org.scalacheck._",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/t4147.scala": {
+      "fichier": "test/scalacheck/t4147.scala",
+      "langage": "scala",
+      "lignes": 68,
+      "taille_bytes": 1793,
+      "entrees": [
+        "collection.mutable",
+        "org.scalacheck.Gen",
+        "org.scalacheck.Prop.",
+        "org.scalacheck.Properties"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/sanitycheck.scala": {
+      "fichier": "test/scalacheck/sanitycheck.scala",
+      "langage": "scala",
+      "lignes": 15,
+      "taille_bytes": 479,
+      "entrees": [
+        "java.io.File",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/array-new.scala": {
+      "fichier": "test/scalacheck/array-new.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 1096,
+      "entrees": [
+        "Arbitrary._",
+        "Buildable._",
+        "Gen._",
+        "Prop._",
+        "org.scalacheck._",
+        "scala.reflect.ClassTag",
+        "util._"
+      ],
+      "sorties": [
+        "def smallInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/VectorMap.scala": {
+      "fichier": "test/scalacheck/VectorMap.scala",
+      "langage": "scala",
+      "lignes": 28,
+      "taille_bytes": 713,
+      "entrees": [
+        "Prop._",
+        "org.scalacheck._",
+        "scala.collection.immutable.VectorMap"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/treemap.scala": {
+      "fichier": "test/scalacheck/treemap.scala",
+      "langage": "scala",
+      "lignes": 174,
+      "taille_bytes": 6874,
+      "entrees": [
+        "<-",
+        "Arbitrary._",
+        "Buildable._",
+        "Gen._",
+        "Prop._",
+        "collection.immutable._",
+        "org.scalacheck._",
+        "util._"
+      ],
+      "sorties": [
+        "def genSliceParms",
+        "def genTreeMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/primitive-eqeq.scala": {
+      "fichier": "test/scalacheck/primitive-eqeq.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 1037,
+      "entrees": [
+        "Gen._",
+        "Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "def equalObjectsEqualHashcodes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/CheckEither.scala": {
+      "fichier": "test/scalacheck/CheckEither.scala",
+      "langage": "scala",
+      "lignes": 255,
+      "taille_bytes": 10554,
+      "entrees": [
+        "org.scalacheck.",
+        "org.scalacheck.Arbitrary.",
+        "org.scalacheck.Gen.oneOf",
+        "org.scalacheck.Prop._",
+        "scala.util.Either.LeftProjection"
+      ],
+      "sorties": [
+        "def orFail"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/array-old.scala": {
+      "fichier": "test/scalacheck/array-old.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 1040,
+      "entrees": [
+        "Arbitrary._",
+        "Buildable._",
+        "Gen._",
+        "Prop._",
+        "org.scalacheck._",
+        "util._"
+      ],
+      "sorties": [
+        "def smallInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scan.scala": {
+      "fichier": "test/scalacheck/scan.scala",
+      "langage": "scala",
+      "lignes": 16,
+      "taille_bytes": 293,
+      "entrees": [
+        "Gen._",
+        "Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/MutablePriorityQueue.scala": {
+      "fichier": "test/scalacheck/MutablePriorityQueue.scala",
+      "langage": "scala",
+      "lignes": 102,
+      "taille_bytes": 3216,
+      "entrees": [
+        "Arbitrary._",
+        "Prop._",
+        "ord._",
+        "org.scalacheck._",
+        "scala.collection.mutable.PriorityQueue"
+      ],
+      "sorties": [
+        "def checkInvariant"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/range.scala": {
+      "fichier": "test/scalacheck/range.scala",
+      "langage": "scala",
+      "lignes": 319,
+      "taille_bytes": 10096,
+      "entrees": [
+        "Arbitrary._",
+        "Gen._",
+        "Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "abstract class RangeTest",
+        "class Counter",
+        "def apply",
+        "def compare",
+        "def expectedSize",
+        "def fromInt",
+        "def genArbitraryRange",
+        "def genBoundaryRange",
+        "def genOne",
+        "def genRangeByOne",
+        "def genRangeClosedByOne",
+        "def genRangeOpenByOne",
+        "def genReasonableSizeRange",
+        "def genSmallRange",
+        "def minus",
+        "def multiple",
+        "def myGen",
+        "def negate",
+        "def parseString",
+        "def plus",
+        "def str",
+        "def testRange",
+        "def times",
+        "def toDouble",
+        "def toFloat",
+        "def toInt",
+        "def toLong",
+        "def within"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/list.scala": {
+      "fichier": "test/scalacheck/list.scala",
+      "langage": "scala",
+      "lignes": 21,
+      "taille_bytes": 957,
+      "entrees": [
+        "Gen._",
+        "Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "def sorted"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/redblacktree.scala": {
+      "fichier": "test/scalacheck/redblacktree.scala",
+      "langage": "scala",
+      "lignes": 434,
+      "taille_bytes": 16382,
+      "entrees": [
+        "<-",
+        "Gen._",
+        "Prop._",
+        "RB._",
+        "collection.immutable.",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "abstract class BulkTest",
+        "abstract class RedBlackTreeTest",
+        "def areAllLeavesBlack",
+        "def areBlackNodesToLeavesEqual",
+        "def areRedNodeChildrenBlack",
+        "def blackNodesToLeaves",
+        "def gen",
+        "def genInput",
+        "def genParm",
+        "def genTree",
+        "def generateKey",
+        "def height",
+        "def maximumSize",
+        "def minimumSize",
+        "def mkTree",
+        "def modify",
+        "def newValue",
+        "def nodeAt",
+        "def orderIsPreserved",
+        "def rootIsBlack",
+        "def setOp",
+        "def setup",
+        "def treeContains",
+        "def treeOp",
+        "def unapply",
+        "trait RedBlackTreeInvariants",
+        "type ModifyParm"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/t2460.scala": {
+      "fichier": "test/scalacheck/t2460.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 818,
+      "entrees": [
+        "org.scalacheck.Gen",
+        "org.scalacheck.Prop.forAll",
+        "org.scalacheck.Properties"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/substringTests.scala": {
+      "fichier": "test/scalacheck/substringTests.scala",
+      "langage": "scala",
+      "lignes": 19,
+      "taille_bytes": 611,
+      "entrees": [
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/SeqMap.scala": {
+      "fichier": "test/scalacheck/SeqMap.scala",
+      "langage": "scala",
+      "lignes": 41,
+      "taille_bytes": 1322,
+      "entrees": [
+        "Arbitrary.arbitrary",
+        "Gen._",
+        "Prop._",
+        "org.scalacheck._",
+        "scala.collection.immutable.SeqMap"
+      ],
+      "sorties": [
+        "def removed",
+        "def updated"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/TreeSeqMapTest.scala": {
+      "fichier": "test/scalacheck/TreeSeqMapTest.scala",
+      "langage": "scala",
+      "lignes": 28,
+      "taille_bytes": 722,
+      "entrees": [
+        "Prop._",
+        "org.scalacheck._",
+        "scala.collection.immutable.TreeSeqMap"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/duration.scala": {
+      "fichier": "test/scalacheck/duration.scala",
+      "langage": "scala",
+      "lignes": 72,
+      "taille_bytes": 2297,
+      "entrees": [
+        "Arbitrary._",
+        "Gen._",
+        "Prop._",
+        "concurrent.duration.Duration.fromNanos",
+        "math._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "def mul"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/Unrolled.scala": {
+      "fichier": "test/scalacheck/Unrolled.scala",
+      "langage": "scala",
+      "lignes": 26,
+      "taille_bytes": 525,
+      "entrees": [
+        "Gen._",
+        "Prop._",
+        "collection.mutable.UnrolledBuffer",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/concurrent-map.scala": {
+      "fichier": "test/scalacheck/concurrent-map.scala",
+      "langage": "scala",
+      "lignes": 71,
+      "taille_bytes": 1612,
+      "entrees": [
+        "java.util.concurrent._",
+        "org.scalacheck.Gen._",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._",
+        "scala.collection._",
+        "scala.jdk.CollectionConverters._",
+        "scala.language.reflectiveCalls"
+      ],
+      "sorties": [
+        "def inParallel",
+        "def result"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/ArrayTest.scala": {
+      "fichier": "test/scalacheck/scala/ArrayTest.scala",
+      "langage": "scala",
+      "lignes": 40,
+      "taille_bytes": 1057,
+      "entrees": [
+        "org.scalacheck.",
+        "org.scalacheck.Prop.forAll",
+        "scala.util.Random"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/OptionTest.scala": {
+      "fichier": "test/scalacheck/scala/OptionTest.scala",
+      "langage": "scala",
+      "lignes": 328,
+      "taille_bytes": 7342,
+      "entrees": [
+        "org.scalacheck.Prop",
+        "org.scalacheck.Prop.AnyOperators",
+        "org.scalacheck.Properties"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/jdk/AccumulatorTest.scala": {
+      "fichier": "test/scalacheck/scala/jdk/AccumulatorTest.scala",
+      "langage": "scala",
+      "lignes": 104,
+      "taille_bytes": 2900,
+      "entrees": [
+        "Arbitrary.arbitrary",
+        "org.scalacheck.",
+        "org.scalacheck.Prop.forAll"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/math/BigIntProperties.scala": {
+      "fichier": "test/scalacheck/scala/math/BigIntProperties.scala",
+      "langage": "scala",
+      "lignes": 149,
+      "taille_bytes": 10263,
+      "entrees": [
+        "Arbitrary.arbitrary",
+        "java.lang.Character",
+        "java.math.BigInteger",
+        "org.scalacheck.",
+        "org.scalacheck.Prop._",
+        "scala.annotation.nowarn",
+        "scala.util.Random"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/DeprecationProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/DeprecationProps.scala",
+      "langage": "scala",
+      "lignes": 54,
+      "taille_bytes": 1507,
+      "entrees": [
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/UnliftableProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/UnliftableProps.scala",
+      "langage": "scala",
+      "lignes": 163,
+      "taille_bytes": 7622,
+      "entrees": [
+        "org.junit.Assert.",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/TypecheckedProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/TypecheckedProps.scala",
+      "langage": "scala",
+      "lignes": 216,
+      "taille_bytes": 6667,
+      "entrees": [
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [
+        "class Cell",
+        "class Foo",
+        "trait TypecheckedTypes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/DefinitionDeconstructionProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/DefinitionDeconstructionProps.scala",
+      "langage": "scala",
+      "lignes": 292,
+      "taille_bytes": 10474,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [
+        "def matches",
+        "trait ClassDeconstruction",
+        "trait DefDeconstruction",
+        "trait ImportDeconstruction",
+        "trait ModsDeconstruction",
+        "trait ObjectDeconstruction",
+        "trait PackageDeconstruction",
+        "trait TraitDeconstruction",
+        "trait ValVarDeconstruction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/TypeDeconstructionProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/TypeDeconstructionProps.scala",
+      "langage": "scala",
+      "lignes": 80,
+      "taille_bytes": 2230,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/TermConstructionProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/TermConstructionProps.scala",
+      "langage": "scala",
+      "lignes": 328,
+      "taille_bytes": 10293,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [
+        "def blockInvariant",
+        "def plusOne",
+        "def whileTrue",
+        "def withEvidence"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/QuasiquoteProperties.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/QuasiquoteProperties.scala",
+      "langage": "scala",
+      "lignes": 127,
+      "taille_bytes": 4440,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.reflect.runtime.currentMirror",
+        "scala.reflect.runtime.universe._",
+        "scala.tools.reflect."
+      ],
+      "sorties": [
+        "abstract class QuasiquoteProperties",
+        "def apply",
+        "def assertEqAst",
+        "def assertThrows",
+        "def eqAst",
+        "def fails",
+        "def result",
+        "def test",
+        "def typecheck",
+        "def typecheckPat",
+        "def typecheckTyp",
+        "def unapply",
+        "trait Helpers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/TypeConstructionProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/TypeConstructionProps.scala",
+      "langage": "scala",
+      "lignes": 44,
+      "taille_bytes": 1387,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/PatternDeconstructionProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/PatternDeconstructionProps.scala",
+      "langage": "scala",
+      "lignes": 46,
+      "taille_bytes": 1595,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/ArbitraryTreesAndNames.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/ArbitraryTreesAndNames.scala",
+      "langage": "scala",
+      "lignes": 298,
+      "taille_bytes": 11561,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.language.implicitConversions",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [
+        "def arbitrarySized",
+        "def genAlternative",
+        "def genAnnotated",
+        "def genAppliedTypeTree",
+        "def genApply",
+        "def genAssign",
+        "def genBind",
+        "def genBlock",
+        "def genCaseDef",
+        "def genClassDef",
+        "def genCompoundTypeTree",
+        "def genConstant",
+        "def genDefDef",
+        "def genExistentialTypeTree",
+        "def genFlagSet",
+        "def genFunction",
+        "def genIdent",
+        "def genIf",
+        "def genImport",
+        "def genImportSelector",
+        "def genLabelDef",
+        "def genLiteral",
+        "def genMatch",
+        "def genModifiers",
+        "def genModuleDef",
+        "def genName",
+        "def genNamedArg",
+        "def genNew",
+        "def genPackageDef",
+        "def genRefTree",
+        "def genReferenceToBoxed",
+        "def genReturn",
+        "def genSelect",
+        "def genSelectFromTypeTree",
+        "def genSingletonTypeTree",
+        "def genStar",
+        "def genSuper",
+        "def genTemplate",
+        "def genTermName",
+        "def genThis",
+        "def genThrow",
+        "def genTree",
+        "def genTreeIsTerm",
+        "def genTreeIsTermWrapped",
+        "def genTreeIsType",
+        "def genTreeIsTypeWrapped",
+        "def genTry",
+        "def genTypeApply",
+        "def genTypeBoundsTree",
+        "def genTypeDef",
+        "def genTypeName",
+        "def genTypeSelect",
+        "def genTypeTree",
+        "def genTyped",
+        "def genUnApply",
+        "def genValDef",
+        "def shortIdent",
+        "def smallList",
+        "trait ArbitraryTreesAndNames"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/ErrorProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/ErrorProps.scala",
+      "langage": "scala",
+      "lignes": 213,
+      "taille_bytes": 7240,
+      "entrees": [
+        "java.lang.StringBuilder"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/DefinitionConstructionProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/DefinitionConstructionProps.scala",
+      "langage": "scala",
+      "lignes": 459,
+      "taille_bytes": 17365,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.language.reflectiveCalls",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [
+        "def assertSameAnnots",
+        "def classWith",
+        "trait ClassConstruction",
+        "trait DefConstruction",
+        "trait ImportConstruction",
+        "trait MethodConstruction",
+        "trait PackageConstruction",
+        "trait PatDefConstruction",
+        "trait QuasiquoteSliceTypeTests",
+        "trait TraitConstruction",
+        "trait TypeDefConstruction",
+        "trait ValDefConstruction"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/LiftableProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/LiftableProps.scala",
+      "langage": "scala",
+      "lignes": 168,
+      "taille_bytes": 6207,
+      "entrees": [
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/PatternConstructionProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/PatternConstructionProps.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1264,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/RuntimeErrorProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/RuntimeErrorProps.scala",
+      "langage": "scala",
+      "lignes": 76,
+      "taille_bytes": 1633,
+      "entrees": [
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [
+        "def testFails"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/ForProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/ForProps.scala",
+      "langage": "scala",
+      "lignes": 72,
+      "taille_bytes": 2397,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [
+        "def genForEnums",
+        "def genForEq",
+        "def genForFilter",
+        "def genForFrom",
+        "def genSimpleBind"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/reflect/quasiquotes/TermDeconstructionProps.scala": {
+      "fichier": "test/scalacheck/scala/reflect/quasiquotes/TermDeconstructionProps.scala",
+      "langage": "scala",
+      "lignes": 258,
+      "taille_bytes": 7613,
+      "entrees": [
+        "org.scalacheck._",
+        "scala.reflect.runtime.universe._"
+      ],
+      "sorties": [
+        "def matches"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/IntegralParseTest.scala": {
+      "fichier": "test/scalacheck/scala/collection/IntegralParseTest.scala",
+      "langage": "scala",
+      "lignes": 292,
+      "taille_bytes": 10177,
+      "entrees": [
+        "NumericStringGenerators._",
+        "org.scalacheck.",
+        "org.scalacheck.Prop._",
+        "scala.jdk.CollectionConverters._",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "def nonStandardNumbers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/ViewProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/ViewProperties.scala",
+      "langage": "scala",
+      "lignes": 57,
+      "taille_bytes": 2555,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck._",
+        "scala.collection.mutable.ListBuffer"
+      ],
+      "sorties": [
+        "type Elem",
+        "type SomeSeqOps"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/MapViewProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/MapViewProperties.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1439,
+      "entrees": [
+        "org.scalacheck.Arbitrary._",
+        "org.scalacheck.Prop.forAll",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/FloatFormatTest.scala": {
+      "fichier": "test/scalacheck/scala/collection/FloatFormatTest.scala",
+      "langage": "scala",
+      "lignes": 111,
+      "taille_bytes": 3172,
+      "entrees": [
+        "StringParsers._",
+        "org.scalacheck.",
+        "org.scalacheck.Prop._",
+        "scala.jdk.CollectionConverters._",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "def deq",
+        "def genBogifiedString"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/IteratorProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/IteratorProperties.scala",
+      "langage": "scala",
+      "lignes": 54,
+      "taille_bytes": 2338,
+      "entrees": [
+        "org.scalacheck.",
+        "org.scalacheck.Prop."
+      ],
+      "sorties": [
+        "class SimpleIterable",
+        "def check",
+        "def iterator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/IndexOfSliceTest.scala": {
+      "fichier": "test/scalacheck/scala/collection/IndexOfSliceTest.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 1174,
+      "entrees": [
+        "org.scalacheck.",
+        "org.scalacheck.Prop._",
+        "scala.collection.immutable."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/StringOpsProps.scala": {
+      "fichier": "test/scalacheck/scala/collection/StringOpsProps.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 1178,
+      "entrees": [
+        "java.io.",
+        "org.scalacheck.",
+        "org.scalacheck.Prop._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def maybe",
+        "def shorter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/convert/WrapperProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/convert/WrapperProperties.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 568,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck.Properties",
+        "scala.collection.immutable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/MapProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/MapProperties.scala",
+      "langage": "scala",
+      "lignes": 116,
+      "taille_bytes": 5268,
+      "entrees": [
+        "Gen._",
+        "org.scalacheck.Arbitrary",
+        "org.scalacheck.Arbitrary.arbInt",
+        "org.scalacheck.Gen",
+        "org.scalacheck.Properties",
+        "org.scalacheck.commands.Commands",
+        "scala.collection.mutable",
+        "scala.util."
+      ],
+      "sorties": [
+        "class MapBuilderStateProperties"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/BitSetProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/BitSetProperties.scala",
+      "langage": "scala",
+      "lignes": 59,
+      "taille_bytes": 1952,
+      "entrees": [
+        "Gen._",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/ListProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/ListProperties.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1660,
+      "entrees": [
+        "org.scalacheck.Arbitrary.arbitrary",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._",
+        "scala.collection.",
+        "scala.collection.mutable."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/RangeProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/RangeProperties.scala",
+      "langage": "scala",
+      "lignes": 76,
+      "taille_bytes": 2208,
+      "entrees": [
+        "Prop._",
+        "RangeProperties._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "class RangeProperties"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/ListMapProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/ListMapProperties.scala",
+      "langage": "scala",
+      "lignes": 23,
+      "taille_bytes": 631,
+      "entrees": [
+        "Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/ListMapBuilderProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/ListMapBuilderProperties.scala",
+      "langage": "scala",
+      "lignes": 58,
+      "taille_bytes": 2094,
+      "entrees": [
+        "org.scalacheck.Arbitrary._",
+        "org.scalacheck.Gen._",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "def interpret"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/QueueProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/QueueProperties.scala",
+      "langage": "scala",
+      "lignes": 69,
+      "taille_bytes": 2389,
+      "entrees": [
+        "Prop._",
+        "org.scalacheck._",
+        "scala.collection.",
+        "scala.collection.mutable."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/WrappedStringProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/WrappedStringProperties.scala",
+      "langage": "scala",
+      "lignes": 72,
+      "taille_bytes": 2108,
+      "entrees": [
+        "Prop._",
+        "WrappedStringProperties._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "class WrappedStringProperties"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/NumericRangeProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/NumericRangeProperties.scala",
+      "langage": "scala",
+      "lignes": 56,
+      "taille_bytes": 2081,
+      "entrees": [
+        "NumericRangeProperties._",
+        "Prop._",
+        "org.scalacheck._",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "class NumericRangeProperties"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/SeqProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/SeqProperties.scala",
+      "langage": "scala",
+      "lignes": 96,
+      "taille_bytes": 4109,
+      "entrees": [
+        "Gen._",
+        "org.scalacheck.Arbitrary",
+        "org.scalacheck.Gen",
+        "org.scalacheck.Properties",
+        "org.scalacheck.commands.Commands",
+        "scala.collection.mutable",
+        "scala.util."
+      ],
+      "sorties": [
+        "class SeqBuilderStateProperties"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/VectorMapProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/VectorMapProperties.scala",
+      "langage": "scala",
+      "lignes": 146,
+      "taille_bytes": 6046,
+      "entrees": [
+        "Gen._",
+        "Prop._",
+        "commands.Commands",
+        "org.scalacheck._",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "def append",
+        "def init",
+        "def removeRandom",
+        "def tail",
+        "def updateRandom"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/SetProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/SetProperties.scala",
+      "langage": "scala",
+      "lignes": 96,
+      "taille_bytes": 4062,
+      "entrees": [
+        "Gen._",
+        "org.scalacheck.",
+        "org.scalacheck.commands.Commands",
+        "scala.collection.mutable",
+        "scala.util."
+      ],
+      "sorties": [
+        "class SetBuilderStateProperties"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/ImmutableChampHashSetProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/ImmutableChampHashSetProperties.scala",
+      "langage": "scala",
+      "lignes": 379,
+      "taille_bytes": 14697,
+      "entrees": [
+        "org.scalacheck.Arbitrary._",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/immutable/ImmutableChampHashMapProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/immutable/ImmutableChampHashMapProperties.scala",
+      "langage": "scala",
+      "lignes": 374,
+      "taille_bytes": 16283,
+      "entrees": [
+        "org.scalacheck.Arbitrary._",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._",
+        "scala.collection.Hashing"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/HashMapProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/HashMapProperties.scala",
+      "langage": "scala",
+      "lignes": 41,
+      "taille_bytes": 1946,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck._",
+        "scala.collection.immutable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/LinkedHashMapProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/LinkedHashMapProperties.scala",
+      "langage": "scala",
+      "lignes": 15,
+      "taille_bytes": 480,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck.Properties",
+        "scala.annotation.nowarn"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/MapProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/MapProperties.scala",
+      "langage": "scala",
+      "lignes": 56,
+      "taille_bytes": 1716,
+      "entrees": [
+        "Gen._",
+        "org.scalacheck.Arbitrary.arbitrary",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "def testMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/BitSetProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/BitSetProperties.scala",
+      "langage": "scala",
+      "lignes": 72,
+      "taille_bytes": 2499,
+      "entrees": [
+        "Gen._",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/ArrayBufferProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/ArrayBufferProperties.scala",
+      "langage": "scala",
+      "lignes": 39,
+      "taille_bytes": 1263,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "def check",
+        "type Elem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/BuilderProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/BuilderProperties.scala",
+      "langage": "scala",
+      "lignes": 96,
+      "taille_bytes": 3697,
+      "entrees": [
+        "Gen._",
+        "org.scalacheck.Arbitrary",
+        "org.scalacheck.Arbitrary.arbInt",
+        "org.scalacheck.Gen",
+        "org.scalacheck.commands.Commands",
+        "scala.collection.mutable",
+        "scala.util."
+      ],
+      "sorties": [
+        "class BuilderProperties",
+        "class SeqBuilderStateProperties"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/HashSetProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/HashSetProperties.scala",
+      "langage": "scala",
+      "lignes": 51,
+      "taille_bytes": 2471,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck._",
+        "scala.collection.immutable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/ArrayOpsProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/ArrayOpsProperties.scala",
+      "langage": "scala",
+      "lignes": 112,
+      "taille_bytes": 4638,
+      "entrees": [
+        "org.scalacheck.Arbitrary._",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/LinkedHashSetProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/LinkedHashSetProperties.scala",
+      "langage": "scala",
+      "lignes": 15,
+      "taille_bytes": 455,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck.Properties",
+        "scala.annotation.nowarn"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/MutablePriorityQueue.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/MutablePriorityQueue.scala",
+      "langage": "scala",
+      "lignes": 103,
+      "taille_bytes": 3226,
+      "entrees": [
+        "ord._",
+        "org.scalacheck.Arbitrary._",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "def checkInvariant"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/MutableTreeSet.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/MutableTreeSet.scala",
+      "langage": "scala",
+      "lignes": 220,
+      "taille_bytes": 7237,
+      "entrees": [
+        "java.io._",
+        "org.scalacheck.Arbitrary._",
+        "org.scalacheck.Prop.forAll",
+        "org.scalacheck._",
+        "scala.collection.",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "def in",
+        "def keysInView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/MutableTreeMap.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/MutableTreeMap.scala",
+      "langage": "scala",
+      "lignes": 357,
+      "taille_bytes": 12430,
+      "entrees": [
+        "java.io._",
+        "org.scalacheck.Arbitrary._",
+        "org.scalacheck.Gen._",
+        "org.scalacheck.Prop.forAll",
+        "org.scalacheck._",
+        "scala.collection.",
+        "scala.collection.mutable.",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "def entriesInView",
+        "def genRedBlackTree",
+        "def genTreeMap",
+        "def in",
+        "trait Generators"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/SetProperties.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/SetProperties.scala",
+      "langage": "scala",
+      "lignes": 54,
+      "taille_bytes": 1703,
+      "entrees": [
+        "Gen._",
+        "org.scalacheck.Arbitrary.arbitrary",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "def testSet",
+        "type Elem"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/collection/mutable/RedBlackTree.scala": {
+      "fichier": "test/scalacheck/scala/collection/mutable/RedBlackTree.scala",
+      "langage": "scala",
+      "lignes": 211,
+      "taille_bytes": 7513,
+      "entrees": [
+        "Gen._",
+        "Prop._",
+        "RB._",
+        "collection.mutable.",
+        "org.scalacheck._"
+      ],
+      "sorties": [
+        "abstract class RedBlackTreeTest",
+        "def BlackTree",
+        "def RedTree",
+        "def areAllLeavesBlack",
+        "def areBlackNodesToLeavesEqual",
+        "def areRedNodeChildrenBlack",
+        "def blackNodesToLeaves",
+        "def genInput",
+        "def genParm",
+        "def genTree",
+        "def generateKey",
+        "def height",
+        "def maximumSize",
+        "def minimumSize",
+        "def mkTree",
+        "def modify",
+        "def newValue",
+        "def nodeAt",
+        "def orderIsPreserved",
+        "def rootIsBlack",
+        "def setup",
+        "def sizeIsConsistent",
+        "def treeContains",
+        "trait RedBlackTreeInvariants",
+        "type ModifyParm"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/tools/nsc/PhaseAssemblyTest.scala": {
+      "fichier": "test/scalacheck/scala/tools/nsc/PhaseAssemblyTest.scala",
+      "langage": "scala",
+      "lignes": 72,
+      "taille_bytes": 2660,
+      "entrees": [
+        "Prop._",
+        "org.scalacheck._",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def randomBefore"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/tools/nsc/scaladoc/CommentFactoryTest.scala": {
+      "fichier": "test/scalacheck/scala/tools/nsc/scaladoc/CommentFactoryTest.scala",
+      "langage": "scala",
+      "lignes": 189,
+      "taille_bytes": 5093,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck._",
+        "scala.tools.nsc.Global",
+        "scala.tools.nsc.doc",
+        "scala.tools.nsc.doc.base.comment._",
+        "scala.tools.nsc.doc.model._",
+        "scala.tools.nsc.doc.model.diagram._"
+      ],
+      "sorties": [
+        "class Factory",
+        "def createBody",
+        "def getComment",
+        "def parse",
+        "def parseComment",
+        "def strip"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/tools/nsc/scaladoc/IndexScriptTest.scala": {
+      "fichier": "test/scalacheck/scala/tools/nsc/scaladoc/IndexScriptTest.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1362,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "org.scalacheck._",
+        "scala.tools.nsc.doc",
+        "scala.tools.nsc.doc.html.page.IndexScript"
+      ],
+      "sorties": [
+        "def createIndexScript"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/tools/nsc/scaladoc/SettingsUtil.scala": {
+      "fichier": "test/scalacheck/scala/tools/nsc/scaladoc/SettingsUtil.scala",
+      "langage": "scala",
+      "lignes": 28,
+      "taille_bytes": 1053,
+      "entrees": [
+        "java.nio.file.",
+        "scala.tools.nsc.Settings",
+        "scala.tools.nsc.scaladoc.HtmlFactoryTest.RESOURCES"
+      ],
+      "sorties": [
+        "def configureClassAndSourcePath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/scalacheck/scala/tools/nsc/scaladoc/HtmlFactoryTest.scala": {
+      "fichier": "test/scalacheck/scala/tools/nsc/scaladoc/HtmlFactoryTest.scala",
+      "langage": "scala",
+      "lignes": 643,
+      "taille_bytes": 25274,
+      "entrees": [
+        "java.io.StringWriter",
+        "org.scalacheck.Prop._",
+        "org.scalacheck._",
+        "scala.collection.mutable",
+        "scala.tools.nsc.ScalaDocReporter",
+        "scala.tools.nsc.doc.",
+        "scala.tools.nsc.doc.html.HtmlFactory",
+        "scala.tools.nsc.doc.html.HtmlPage",
+        "scala.tools.nsc.doc.html.HtmlTags.textOf"
+      ],
+      "sorties": [
+        "def checkText",
+        "def createFactory",
+        "def createTemplates",
+        "def ifExists"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/script-tests/jar-manifest/src/jar-test.scala": {
+      "fichier": "test/script-tests/jar-manifest/src/jar-test.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 1047,
+      "entrees": [
+        "scala.tools.nsc.util.HasClassPath"
+      ],
+      "sorties": [
+        "class Printable",
+        "def bippyBingle",
+        "def bippyBoo",
+        "def echo",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/benchmarks/vector-results.html": {
+      "fichier": "test/benchmarks/vector-results.html",
+      "langage": "html",
+      "lignes": 93,
+      "taille_bytes": 5145,
+      "entrees": [],
+      "sorties": [
+        "function ChartData",
+        "function drawChart",
+        "function drawCharts"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/benchmarks/src/main/scala/scala/util/hashing/MurmurHash3Benchmark.scala": {
+      "fichier": "test/benchmarks/src/main/scala/scala/util/hashing/MurmurHash3Benchmark.scala",
+      "langage": "scala",
+      "lignes": 159,
+      "taille_bytes": 5162,
+      "entrees": [
+        "MurmurHash3._",
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "org.openjdk.jmh.infra.Blackhole",
+        "scala.collection.immutable.ArraySeq"
+      ],
+      "sorties": [
+        "class MurmurHash3Benchmark",
+        "def swap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/benchmarks/src/main/scala/scala/util/matching/RegexUnapplyBenchmark.scala": {
+      "fichier": "test/benchmarks/src/main/scala/scala/util/matching/RegexUnapplyBenchmark.scala",
+      "langage": "scala",
+      "lignes": 56,
+      "taille_bytes": 1489,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "org.openjdk.jmh.infra.Blackhole"
+      ],
+      "sorties": [
+        "class RegexUnapplyBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/benchmarks/src/main/scala/scala/util/matching/RegexUnapplyGroupsBenchmark.scala": {
+      "fichier": "test/benchmarks/src/main/scala/scala/util/matching/RegexUnapplyGroupsBenchmark.scala",
+      "langage": "scala",
+      "lignes": 37,
+      "taille_bytes": 892,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "org.openjdk.jmh.infra.Blackhole"
+      ],
+      "sorties": [
+        "class RegexUnapplyGroupsBenchmark"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/benchmarks/src/main/scala/scala/math/BigIntFactorialBenchmark.scala": {
+      "fichier": "test/benchmarks/src/main/scala/scala/math/BigIntFactorialBenchmark.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 757,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "org.openjdk.jmh.infra.Blackhole",
+        "scala.annotation.tailrec"
+      ],
+      "sorties": [
+        "class BigIntFactorialBenchmark",
+        "def factorial"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/benchmarks/src/main/scala/scala/math/BigIntEulerProblem15Benchmark.scala": {
+      "fichier": "test/benchmarks/src/main/scala/scala/math/BigIntEulerProblem15Benchmark.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 807,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "org.openjdk.jmh.annotations._",
+        "org.openjdk.jmh.infra.Blackhole"
+      ],
+      "sorties": [
+        "class BigIntEulerProblem15Benchmark",
+        "def computeAnswer",
+        "def eulerProblem15"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

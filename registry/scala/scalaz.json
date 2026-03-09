@@ -1,0 +1,2824 @@
+{
+  "meta": {
+    "projet": "scalaz",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "scala": 120
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 2,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalazArbitrary.scala"
+  },
+  "noeuds": {
+    "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalaCheckBinding.scala": {
+      "fichier": "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalaCheckBinding.scala",
+      "langage": "scala",
+      "lignes": 42,
+      "taille_bytes": 1463,
+      "entrees": [
+        "Gen.",
+        "org.scalacheck."
+      ],
+      "sorties": [
+        "def bind",
+        "def point",
+        "def xmap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalazArbitrary.scala": {
+      "fichier": "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalazArbitrary.scala",
+      "langage": "scala",
+      "lignes": 617,
+      "taille_bytes": 26688,
+      "entrees": [
+        "Arbitrary._",
+        "FingerTree._",
+        "Gen._",
+        "NonEmptyList._",
+        "ScalaCheckBinding._",
+        "Scalaz._",
+        "Tags._",
+        "Zipper._",
+        "java.math.BigInteger",
+        "java.util.concurrent.Callable",
+        "org.scalacheck.",
+        "reflect.ClassTag",
+        "scalaz.Ordering._",
+        "scalaz.iteratee.Input._"
+      ],
+      "sorties": [
+        "def fingerTree",
+        "def forest",
+        "def stateTArb",
+        "def storeTArb"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tests/jvm/src/test/scala/scalaz/TreeLocTestJVM.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalazProperties.scala": {
+      "fichier": "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalazProperties.scala",
+      "langage": "scala",
+      "lignes": 776,
+      "taille_bytes": 36627,
+      "entrees": [
+        "Prop.forAll",
+        "Scalaz._",
+        "ScalazArbitrary.Arbitrary_Maybe",
+        "org.scalacheck._",
+        "scala.math.",
+        "std.list._"
+      ],
+      "sorties": [
+        "def antisymmetric",
+        "def associative",
+        "def associativity",
+        "def bindApConsistency",
+        "def cobindAssociative",
+        "def cobindLeftIdentity",
+        "def cobindRightIdentity",
+        "def collapse",
+        "def commutative",
+        "def commutativity",
+        "def compose",
+        "def composite",
+        "def composition",
+        "def consCorrectness",
+        "def densityIsLeftKan",
+        "def dinaturalityFirst",
+        "def dinaturalitySecond",
+        "def doubleSet",
+        "def emptyIsEmpty",
+        "def emptyMap",
+        "def emptyPlusIdentity",
+        "def errorsRaised",
+        "def errorsStopComputation",
+        "def firstFirstIsDimap",
+        "def firstIsSwappedSecond",
+        "def homomorphism",
+        "def idempotency",
+        "def identity",
+        "def identityTraverse",
+        "def identityTraverse1",
+        "def interchange",
+        "def laws",
+        "def leftFM1Consistent",
+        "def leftFMConsistent",
+        "def leftIdentity",
+        "def leftKanIsDensity",
+        "def leftPlusIdentity",
+        "def leftRight",
+        "def leftZero",
+        "def mapApConsistency",
+        "def mapfstEqualsFirstAndThenMapsnd",
+        "def mapfstEqualsSecondAndThenMapsnd",
+        "def minmaxpred",
+        "def minmaxsucc",
+        "def naturality",
+        "def naturality1",
+        "def orderAndEqualConsistent",
+        "def parallelFusion",
+        "def parallelFusion1",
+        "def predn",
+        "def predorder",
+        "def predsucc",
+        "def purity",
+        "def raisedErrorsHandled",
+        "def reflexive",
+        "def retention",
+        "def rightFM1Consistent",
+        "def rightFMConsistent",
+        "def rightIdentity",
+        "def rightLeft",
+        "def rightPlusIdentity",
+        "def rightZero",
+        "def scalaOrdering",
+        "def secondIsSwappedFirst",
+        "def secondSecondIsDimap",
+        "def sequentialFusion",
+        "def sequentialFusion1",
+        "def snocCorrectness",
+        "def strongLaws",
+        "def succn",
+        "def succorder",
+        "def succpred",
+        "def tailrecBindConsistency",
+        "def transitive",
+        "def transitiveOrder",
+        "def unfoldlOptConsistency",
+        "def unfoldlSumOptConsistency",
+        "def unfoldrOptConsistency",
+        "def unfoldrSumOptConsistency",
+        "def zipPreservation",
+        "def zipSymmetric"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tests/jvm/src/test/scala/scalaz/std/java/TimeTestJVM.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "project/TupleNInstances.scala": {
+      "fichier": "project/TupleNInstances.scala",
+      "langage": "scala",
+      "lignes": 75,
+      "taille_bytes": 2419,
+      "entrees": [
+        "sbt.*"
+      ],
+      "sorties": [
+        "def apply",
+        "def go",
+        "def point",
+        "def tupleNBindRec",
+        "def tupleNMonad",
+        "def tupleNTraverse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/GenTypeClass.scala": {
+      "fichier": "project/GenTypeClass.scala",
+      "langage": "scala",
+      "lignes": 644,
+      "taille_bytes": 21176,
+      "entrees": [
+        "Kind._",
+        "TypeClass._",
+        "pack.head",
+        "sbt.*"
+      ],
+      "sorties": [
+        "def ToTypeClassOpsSource",
+        "def core",
+        "def createOrUpdate",
+        "def doc",
+        "def effect",
+        "def extendsListText",
+        "def extendsToSyntaxListText",
+        "def extensionIdent",
+        "def file",
+        "def fqn",
+        "def fromIso",
+        "def isScala2",
+        "def packageString",
+        "def packageString0",
+        "def parse",
+        "def separateByScalaVersion",
+        "def sources",
+        "def syntaxPack",
+        "def typeclassSource",
+        "def updateSource",
+        "trait Isomorphism",
+        "trait To"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/build.scala": {
+      "fichier": "project/build.scala",
+      "langage": "scala",
+      "lignes": 412,
+      "taille_bytes": 13802,
+      "entrees": [
+        "GenTypeClass.*",
+        "com.jsuereth.sbtpgp.SbtPgp.autoImport.PgpKeys.publishLocalSigned",
+        "com.jsuereth.sbtpgp.SbtPgp.autoImport.PgpKeys.publishSigned",
+        "java.awt.Desktop",
+        "org.portablescala.sbtplatformdeps.PlatformDepsPlugin.autoImport.*",
+        "org.scalajs.jsenv.nodejs.NodeJSEnv",
+        "org.scalajs.sbtplugin.ScalaJSPlugin.autoImport.*",
+        "sbt.*",
+        "sbt.Keys.*",
+        "sbtbuildinfo.BuildInfoPlugin.autoImport.*",
+        "sbtcrossproject.CrossPlugin.autoImport.*",
+        "sbtrelease.ReleasePlugin.autoImport.*",
+        "sbtrelease.ReleaseStateTransformations.*",
+        "sbtrelease.Utilities.*",
+        "scalajscrossproject.ScalaJSCrossPlugin.autoImport.*",
+        "scalanativecrossproject.ScalaNativeCrossPlugin.autoImport.*"
+      ],
+      "sorties": [
+        "def scala2",
+        "def scala3",
+        "def shared",
+        "type Sett"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/ScalazUtil.scala": {
+      "fichier": "project/ScalazUtil.scala",
+      "langage": "scala",
+      "lignes": 7,
+      "taille_bytes": 122,
+      "entrees": [],
+      "sorties": [
+        "def initLower"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/GenerateTupleW.scala": {
+      "fichier": "project/GenerateTupleW.scala",
+      "langage": "scala",
+      "lignes": 63,
+      "taille_bytes": 2158,
+      "entrees": [
+        "sbt.*"
+      ],
+      "sorties": [
+        "def apply",
+        "def mapMkString",
+        "def writeFileScalazPackage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/IterateeUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/IterateeUsage.scala",
+      "langage": "scala",
+      "lignes": 65,
+      "taille_bytes": 3276,
+      "entrees": [
+        "effect._",
+        "iteratee._",
+        "java.io.StringReader",
+        "scalaz._"
+      ],
+      "sorties": [
+        "def iter123",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/WriterUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/WriterUsage.scala",
+      "langage": "scala",
+      "lignes": 70,
+      "taille_bytes": 2728,
+      "entrees": [
+        "scalaz._",
+        "std.list._",
+        "syntax.apply._",
+        "syntax.semigroup._",
+        "syntax.writer._"
+      ],
+      "sorties": [
+        "def main",
+        "type Logger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/KleisliUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/KleisliUsage.scala",
+      "langage": "scala",
+      "lignes": 79,
+      "taille_bytes": 2842,
+      "entrees": [
+        "Kleisli._",
+        "Scalaz._",
+        "scala.util._",
+        "scalaz._"
+      ],
+      "sorties": [
+        "def cities",
+        "def continents",
+        "def countries",
+        "def index",
+        "def inhabitants",
+        "def main",
+        "def save"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/EnumUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/EnumUsage.scala",
+      "langage": "scala",
+      "lignes": 23,
+      "taille_bytes": 710,
+      "entrees": [
+        "scalaz._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/DirectTypeClassUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/DirectTypeClassUsage.scala",
+      "langage": "scala",
+      "lignes": 46,
+      "taille_bytes": 1111,
+      "entrees": [
+        "scalaz._",
+        "std.list.listInstance",
+        "std.option.",
+        "std.option.optionInstance."
+      ],
+      "sorties": [
+        "def append",
+        "def direct1",
+        "def direct2",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/DisjunctionUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/DisjunctionUsage.scala",
+      "langage": "scala",
+      "lignes": 72,
+      "taille_bytes": 2251,
+      "entrees": [
+        "Scalaz._",
+        "scalaz._"
+      ],
+      "sorties": [
+        "def bracketNotation",
+        "def infixNotation",
+        "def main",
+        "def patternMatch"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/ContravariantCoyonedaUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/ContravariantCoyonedaUsage.scala",
+      "langage": "scala",
+      "lignes": 568,
+      "taille_bytes": 23252,
+      "entrees": [
+        "scalaz.",
+        "scalaz.std.anyVal._",
+        "scalaz.std.function._",
+        "scalaz.std.list._",
+        "scalaz.std.option._",
+        "scalaz.std.string._",
+        "scalaz.std.tuple._",
+        "scalaz.std.vector._",
+        "scalaz.syntax.arrow._",
+        "scalaz.syntax.monoid._",
+        "scalaz.syntax.order._",
+        "scalaz.syntax.show._",
+        "scalaz.syntax.std.option._",
+        "scalaz.syntax.std.string._",
+        "scalaz.syntax.traverse._"
+      ],
+      "sorties": [
+        "def CCBinOrd",
+        "def apply",
+        "def binOrdFanout",
+        "def caseInsensitively",
+        "def caseInsensitivelyOrd",
+        "def dateOrd",
+        "def describe",
+        "def main",
+        "def nonschwartzian",
+        "def numerically1",
+        "def numerically2",
+        "def numerically3",
+        "def ordFanout",
+        "def parseCommaNum",
+        "def parseDate",
+        "def recItem",
+        "def recItemOrd",
+        "def schwartzian",
+        "def sortDataBy",
+        "def sortSpecBinOrdF",
+        "def sortSpecOrd",
+        "def sortSpecOrdF",
+        "def sortSpecOrdL",
+        "def sortTypeBinOrd",
+        "def sortTypeOrd",
+        "def unitBinOrd",
+        "def unitOrd",
+        "trait Binfmt",
+        "type BinOrd",
+        "type SortSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/FingerTreeUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/FingerTreeUsage.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1489,
+      "entrees": [
+        "FingerTree._",
+        "std.anyVal._",
+        "std.option._"
+      ],
+      "sorties": [
+        "def lazyListToTree",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/ReaderWriterStateTUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/ReaderWriterStateTUsage.scala",
+      "langage": "scala",
+      "lignes": 191,
+      "taille_bytes": 5720,
+      "entrees": [
+        "Free.Trampoline",
+        "Scalaz._",
+        "Token._",
+        "rle._",
+        "scalaz._"
+      ],
+      "sorties": [
+        "def done",
+        "def emit",
+        "def encode",
+        "def incLength",
+        "def initial",
+        "def main",
+        "def maybeEmit",
+        "def newToken",
+        "def uncons",
+        "def writeOutput",
+        "type RunLength"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/FoldableUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/FoldableUsage.scala",
+      "langage": "scala",
+      "lignes": 86,
+      "taille_bytes": 3826,
+      "entrees": [
+        "scalaz._",
+        "scalaz.std.anyVal._",
+        "scalaz.std.lazylist._",
+        "scalaz.std.list._",
+        "scalaz.std.option._",
+        "scalaz.std.string._",
+        "scalaz.std.vector._",
+        "scalaz.syntax.equal._",
+        "scalaz.syntax.foldable._",
+        "scalaz.syntax.std.option._"
+      ],
+      "sorties": [
+        "def lazyOr",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/STUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/STUsage.scala",
+      "langage": "scala",
+      "lignes": 47,
+      "taille_bytes": 1407,
+      "entrees": [
+        "ST._",
+        "effect._",
+        "reflect.ClassTag",
+        "scalaz._",
+        "std.anyVal._",
+        "std.list._",
+        "std.string._",
+        "syntax.equal._"
+      ],
+      "sorties": [
+        "def apply",
+        "def binSort",
+        "def e1",
+        "def e2",
+        "def main",
+        "def test",
+        "def test2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/FreeMonadsUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/FreeMonadsUsage.scala",
+      "langage": "scala",
+      "lignes": 77,
+      "taille_bytes": 2466,
+      "entrees": [
+        "scalaz._"
+      ],
+      "sorties": [
+        "def freeState",
+        "def freeWriter",
+        "def liftF",
+        "def read",
+        "def withState",
+        "def withWriter",
+        "def write",
+        "trait Console",
+        "type Ast",
+        "type StateAst",
+        "type TellAst"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/StateTUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/StateTUsage.scala",
+      "langage": "scala",
+      "lignes": 153,
+      "taille_bytes": 6505,
+      "entrees": [
+        "S._",
+        "scalaz._",
+        "scalaz.std.list._",
+        "scalaz.std.string._",
+        "scalaz.syntax.monad._",
+        "scalaz.syntax.traverse._"
+      ],
+      "sorties": [
+        "def evaluate",
+        "def getNFibs",
+        "def getNthFib",
+        "def main",
+        "def subName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/DivideExample.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/DivideExample.scala",
+      "langage": "scala",
+      "lignes": 16,
+      "taille_bytes": 282,
+      "entrees": [
+        "scalaz.std.anyVal._",
+        "scalaz.std.string._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/ArrowUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/ArrowUsage.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 870,
+      "entrees": [
+        "Scalaz._",
+        "scalaz._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/IsomorphismUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/IsomorphismUsage.scala",
+      "langage": "scala",
+      "lignes": 46,
+      "taille_bytes": 1496,
+      "entrees": [
+        "scalaz._",
+        "std.anyVal._",
+        "std.list._",
+        "syntax.equal._",
+        "syntax.monad._",
+        "syntax.monoid._",
+        "syntax.traverse._"
+      ],
+      "sorties": [
+        "def equivalentIsoSet",
+        "def from_",
+        "def iso",
+        "def isoFunctor",
+        "def isoSet",
+        "def main",
+        "def to",
+        "def to_"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/PartiallyApplied.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/PartiallyApplied.scala",
+      "langage": "scala",
+      "lignes": 20,
+      "taille_bytes": 400,
+      "entrees": [
+        "scalaz._",
+        "std.function._",
+        "syntax.monad._"
+      ],
+      "sorties": [
+        "def function1",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/StringUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/StringUsage.scala",
+      "langage": "scala",
+      "lignes": 17,
+      "taille_bytes": 297,
+      "entrees": [
+        "scalaz._",
+        "std.string._",
+        "stringSyntax._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/FreeUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/FreeUsage.scala",
+      "langage": "scala",
+      "lignes": 96,
+      "taille_bytes": 3860,
+      "entrees": [
+        "scala.util.Random",
+        "scalaz.",
+        "scalaz.effect.IO",
+        "scalaz.std.function._",
+        "scalaz.syntax.monad._"
+      ],
+      "sorties": [
+        "def apply",
+        "def choose",
+        "def exec",
+        "def liftIO",
+        "def main",
+        "def nextIntInRange",
+        "def nextNonNegativeInt",
+        "def nextString",
+        "def runRng",
+        "def setSeed",
+        "type RandomReader",
+        "type Rng"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/IListUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/IListUsage.scala",
+      "langage": "scala",
+      "lignes": 63,
+      "taille_bytes": 1604,
+      "entrees": [
+        "Scalaz._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/ContTUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/ContTUsage.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 276,
+      "entrees": [
+        "scalaz._",
+        "scalaz.syntax.all._"
+      ],
+      "sorties": [
+        "def syntaxUsage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/NewTypeUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/NewTypeUsage.scala",
+      "langage": "scala",
+      "lignes": 25,
+      "taille_bytes": 805,
+      "entrees": [
+        "Tags.",
+        "scalaz._",
+        "std.anyVal.",
+        "std.list.listInstance"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/WordCount.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/WordCount.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1660,
+      "entrees": [
+        "scalaz.",
+        "scalaz.State",
+        "scalaz.std.anyVal._"
+      ],
+      "sorties": [
+        "def atWordStart",
+        "def main",
+        "def wordCount"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/FreeApUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/FreeApUsage.scala",
+      "langage": "scala",
+      "lignes": 79,
+      "taille_bytes": 3141,
+      "entrees": [
+        "scala.reflect.ClassTag",
+        "scalaz.",
+        "scalaz.std.option._",
+        "scalaz.syntax.applicative._",
+        "scalaz.syntax.std.option._"
+      ],
+      "sorties": [
+        "def apply",
+        "def main",
+        "def parseBool",
+        "def parseInt",
+        "def parseOpt",
+        "def parseString",
+        "def toOption",
+        "def toValidation",
+        "type Parse",
+        "type ValidatedParse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/Foldable1Usage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/Foldable1Usage.scala",
+      "langage": "scala",
+      "lignes": 81,
+      "taille_bytes": 3670,
+      "entrees": [
+        "scalaz.",
+        "scalaz.std.anyVal._",
+        "scalaz.std.option._",
+        "scalaz.std.string._",
+        "scalaz.syntax.equal._",
+        "scalaz.syntax.foldable1._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/TrampolineUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/TrampolineUsage.scala",
+      "langage": "scala",
+      "lignes": 74,
+      "taille_bytes": 1856,
+      "entrees": [
+        "scalaz._"
+      ],
+      "sorties": [
+        "def ack",
+        "def ackermann",
+        "def apply",
+        "def main",
+        "def quickSort",
+        "def runQuickSort"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/NameNeedValueUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/NameNeedValueUsage.scala",
+      "langage": "scala",
+      "lignes": 57,
+      "taille_bytes": 901,
+      "entrees": [
+        "Name.name._",
+        "Need.need._",
+        "scalaz._"
+      ],
+      "sorties": [
+        "class Inc",
+        "def apply",
+        "def main",
+        "def undefined"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/EndoUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/EndoUsage.scala",
+      "langage": "scala",
+      "lignes": 67,
+      "taille_bytes": 2465,
+      "entrees": [
+        "scalaz.",
+        "scalaz.std.anyVal._",
+        "scalaz.std.function._",
+        "scalaz.syntax.foldable._",
+        "scalaz.syntax.monoid._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/BifunctorUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/BifunctorUsage.scala",
+      "langage": "scala",
+      "lignes": 114,
+      "taille_bytes": 4244,
+      "entrees": [
+        "std.anyVal._",
+        "std.either._",
+        "std.list._",
+        "std.string._",
+        "std.tuple._",
+        "syntax.bifunctor._",
+        "syntax.either._",
+        "syntax.equal._",
+        "syntax.validation._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/StrongUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/StrongUsage.scala",
+      "langage": "scala",
+      "lignes": 24,
+      "taille_bytes": 587,
+      "entrees": [
+        "Scalaz._",
+        "scalaz.Strong.uncurry",
+        "scalaz._"
+      ],
+      "sorties": [
+        "def len",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/TagUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/TagUsage.scala",
+      "langage": "scala",
+      "lignes": 109,
+      "taille_bytes": 4854,
+      "entrees": [
+        "Tags._",
+        "it",
+        "std.anyVal._",
+        "std.list._",
+        "std.option._",
+        "syntax.equal._",
+        "syntax.foldable._",
+        "syntax.monoid._"
+      ],
+      "sorties": [
+        "def main",
+        "def minOption",
+        "def minOption_v2",
+        "def sortList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/ApplyUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/ApplyUsage.scala",
+      "langage": "scala",
+      "lignes": 150,
+      "taille_bytes": 6618,
+      "entrees": [
+        "scalaz.",
+        "scalaz.Apply",
+        "scalaz.std.anyVal._",
+        "scalaz.std.list._",
+        "scalaz.std.option._",
+        "scalaz.std.string._",
+        "scalaz.std.tuple._",
+        "scalaz.std.vector._",
+        "scalaz.syntax.apply._",
+        "scalaz.syntax.equal._",
+        "scalaz.syntax.std.option._",
+        "scalaz.syntax.writer._"
+      ],
+      "sorties": [
+        "def add8",
+        "def addAndLog",
+        "def compute",
+        "def log",
+        "def main",
+        "type Logged"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/CaseInsensitiveUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/CaseInsensitiveUsage.scala",
+      "langage": "scala",
+      "lignes": 25,
+      "taille_bytes": 475,
+      "entrees": [
+        "scalaz."
+      ],
+      "sorties": [
+        "def main",
+        "def maps",
+        "def sets"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/FunctorUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/FunctorUsage.scala",
+      "langage": "scala",
+      "lignes": 94,
+      "taille_bytes": 2923,
+      "entrees": [
+        "std.anyVal._",
+        "std.list._",
+        "std.map._",
+        "std.option._",
+        "std.string._",
+        "std.tuple._",
+        "syntax.equal._",
+        "syntax.functor._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/MonadTransUsage.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/MonadTransUsage.scala",
+      "langage": "scala",
+      "lignes": 27,
+      "taille_bytes": 628,
+      "entrees": [
+        "F.apply",
+        "scalaz._",
+        "scalaz.std.option._",
+        "scalaz.syntax.all._"
+      ],
+      "sorties": [
+        "def syntaxUsage",
+        "def syntaxUsage2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/MixedBag.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/MixedBag.scala",
+      "langage": "scala",
+      "lignes": 144,
+      "taille_bytes": 3775,
+      "entrees": [
+        "DList._",
+        "Kleisli._",
+        "WriterT._",
+        "scalaz._",
+        "scalaz.std.list",
+        "std.anyVal._",
+        "std.lazylist._",
+        "std.list._",
+        "std.option._",
+        "std.string._",
+        "std.vector._",
+        "syntax.compose._",
+        "syntax.equal._",
+        "syntax.monad._",
+        "syntax.monoid._",
+        "syntax.semigroup._",
+        "syntax.strictTree._",
+        "syntax.traverse._",
+        "syntax.tree._",
+        "syntax.writer._"
+      ],
+      "sorties": [
+        "def dListExample",
+        "def flatten",
+        "def flattenWriter",
+        "def kleisliArrow",
+        "def leaf",
+        "def main",
+        "def map",
+        "def monoid",
+        "def node",
+        "def strictTree",
+        "def traverseBigLazyList",
+        "def traverseBigList",
+        "def tree",
+        "def zipper",
+        "type Tree"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/transformers/typecheck/TypeCheckerWithExplicitTypes_Monadic.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/transformers/typecheck/TypeCheckerWithExplicitTypes_Monadic.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 2025,
+      "entrees": [
+        "TypeCheckerWithExplicitTypesAST._",
+        "scalaz."
+      ],
+      "sorties": [
+        "def compare",
+        "def find",
+        "def success",
+        "def typeCheck",
+        "def typeError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/transformers/typecheck/TypeCheckerWithExplicitTypesAST.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/transformers/typecheck/TypeCheckerWithExplicitTypesAST.scala",
+      "langage": "scala",
+      "lignes": 40,
+      "taille_bytes": 1118,
+      "entrees": [],
+      "sorties": [
+        "def litToTy",
+        "trait Literal",
+        "trait Type",
+        "type TypeEnv"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/transformers/typecheck/TypeCheckerWithExplicitTypes.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/transformers/typecheck/TypeCheckerWithExplicitTypes.scala",
+      "langage": "scala",
+      "lignes": 47,
+      "taille_bytes": 1919,
+      "entrees": [
+        "TypeCheckerWithExplicitTypesAST._"
+      ],
+      "sorties": [
+        "def compare",
+        "def find",
+        "def success",
+        "def typeCheck",
+        "def typeError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala/scalaz/example/transformers/typecheck/TypeCheckerWithExplicitTypes_MonadTransformers.scala": {
+      "fichier": "example/src/main/scala/scalaz/example/transformers/typecheck/TypeCheckerWithExplicitTypes_MonadTransformers.scala",
+      "langage": "scala",
+      "lignes": 53,
+      "taille_bytes": 2202,
+      "entrees": [
+        "TypeCheckerWithExplicitTypesAST._",
+        "scalaz.",
+        "scalaz.Kleisli._",
+        "scalaz.ReaderT"
+      ],
+      "sorties": [
+        "def compare",
+        "def find",
+        "def liftK",
+        "def success",
+        "def typeCheck",
+        "def typeError"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala-2/scalaz/example/CodensityUsage.scala": {
+      "fichier": "example/src/main/scala-2/scalaz/example/CodensityUsage.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 850,
+      "entrees": [
+        "effect._",
+        "scalaz._"
+      ],
+      "sorties": [
+        "def apply",
+        "def bracketCodensity",
+        "def resource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala-2/scalaz/example/AdjunctUsage.scala": {
+      "fichier": "example/src/main/scala-2/scalaz/example/AdjunctUsage.scala",
+      "langage": "scala",
+      "lignes": 126,
+      "taille_bytes": 5540,
+      "entrees": [
+        "Scalaz._",
+        "State._",
+        "scalaz._"
+      ],
+      "sorties": [
+        "def main",
+        "def run2RWState",
+        "type ROIRIWW",
+        "type RWState"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala-2/scalaz/example/TraverseUsage.scala": {
+      "fichier": "example/src/main/scala-2/scalaz/example/TraverseUsage.scala",
+      "langage": "scala",
+      "lignes": 104,
+      "taille_bytes": 4687,
+      "entrees": [
+        "scalaz.State._",
+        "scalaz._",
+        "scalaz.std.anyVal._",
+        "scalaz.std.list._",
+        "scalaz.std.option._",
+        "scalaz.std.string._",
+        "scalaz.std.vector._",
+        "scalaz.syntax.equal._",
+        "scalaz.syntax.traverse._",
+        "scalaz.syntax.validation._"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala-2/scalaz/example/SyntaxUsage.scala": {
+      "fichier": "example/src/main/scala-2/scalaz/example/SyntaxUsage.scala",
+      "langage": "scala",
+      "lignes": 188,
+      "taille_bytes": 4841,
+      "entrees": [
+        "Kleisli._",
+        "Scalaz._",
+        "scalaz.Scalaz._",
+        "scalaz.Tags.Last",
+        "scalaz._",
+        "scalaz.std.anyVal._",
+        "scalaz.std.list._",
+        "scalaz.std.option._",
+        "scalaz.std.option.optionSyntax._",
+        "scalaz.std.stream.streamSyntax._",
+        "scalaz.syntax.applicative0._",
+        "scalaz.syntax.applicativeError0._",
+        "scalaz.syntax.bind._",
+        "scalaz.syntax.equal._",
+        "scalaz.syntax.monad._",
+        "scalaz.syntax.monadError0._",
+        "scalaz.syntax.monadTell._",
+        "scalaz.syntax.monoid._",
+        "scalaz.syntax.traverse0._",
+        "std.list._",
+        "std.option._",
+        "std.option.optionInstance.monadSyntax._",
+        "syntax.monad._"
+      ],
+      "sorties": [
+        "def foo",
+        "def main",
+        "def mixingApplicativeAndBindSyntax",
+        "def mixingMonadAndTraverseSyntax",
+        "def mixingMonadTellAndMonadErrorSyntax",
+        "def stdSyntax",
+        "def stdSyntaxUeber",
+        "def syntax1",
+        "def syntax2",
+        "def syntax3",
+        "def typed",
+        "def unambiguousFunctorSyntax"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/src/main/scala-2/scalaz/example/UnapplyInference.scala": {
+      "fichier": "example/src/main/scala-2/scalaz/example/UnapplyInference.scala",
+      "langage": "scala",
+      "lignes": 88,
+      "taille_bytes": 2490,
+      "entrees": [
+        "Kleisli._",
+        "scalaz._",
+        "scalaz.syntax.either._",
+        "std.list._",
+        "std.option._",
+        "std.tuple._",
+        "syntax.all._",
+        "syntax.compose._",
+        "syntax.functor._"
+      ],
+      "sorties": [
+        "def eitherTBifunctor",
+        "def eitherTBitraverse",
+        "def functorSyntaxChaining",
+        "def kleisliCompose",
+        "def kleisliU",
+        "def main",
+        "def stateTraverse1",
+        "def stateTraverse2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/js/src/test/scala/scalaz/std/java/EnumTest.scala": {
+      "fichier": "tests/js/src/test/scala/scalaz/std/java/EnumTest.scala",
+      "langage": "scala",
+      "lignes": 24,
+      "taille_bytes": 593,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "std.java.`enum`._",
+        "syntax.equal._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/EphemeralStreamTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/EphemeralStreamTestJVM.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 277,
+      "entrees": [
+        "scalaz.std.anyVal._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/StreamTTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/StreamTTestJVM.scala",
+      "langage": "scala",
+      "lignes": 23,
+      "taille_bytes": 917,
+      "entrees": [
+        "scala.concurrent._",
+        "std.AllInstances._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/SI7932Test.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/SI7932Test.scala",
+      "langage": "scala",
+      "lignes": 21,
+      "taille_bytes": 364,
+      "entrees": [],
+      "sorties": [
+        "def category"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/FreeTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/FreeTestJVM.scala",
+      "langage": "scala",
+      "lignes": 24,
+      "taille_bytes": 536,
+      "entrees": [
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def apply",
+        "trait FTestApi"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/TraverseTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/TraverseTestJVM.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 1077,
+      "entrees": [
+        "scalaz.State._",
+        "scalaz.effect._",
+        "std.AllInstances._",
+        "syntax.traverse._"
+      ],
+      "sorties": [
+        "def traverseImpl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/NonEmptyListTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/NonEmptyListTestJVM.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 640,
+      "entrees": [
+        "NonEmptyList._",
+        "std.AllInstances._",
+        "syntax.foldable1._",
+        "syntax.traverse._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/TreeTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/TreeTestJVM.scala",
+      "langage": "scala",
+      "lignes": 47,
+      "taille_bytes": 1352,
+      "entrees": [
+        "Tree._",
+        "org.scalacheck.Gen",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def genTree"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/StrictTreeTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/StrictTreeTestJVM.scala",
+      "langage": "scala",
+      "lignes": 99,
+      "taille_bytes": 2164,
+      "entrees": [
+        "StrictTree._",
+        "org.scalacheck.Gen",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def genTree"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/TreeLocTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/TreeLocTestJVM.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 402,
+      "entrees": [
+        "org.scalacheck.Gen",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary"
+      ],
+      "sorties": [],
+      "appelle": [
+        "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalazArbitrary.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/std/FutureTest.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/std/FutureTest.scala",
+      "langage": "scala",
+      "lignes": 117,
+      "taille_bytes": 4543,
+      "entrees": [
+        "_root_.java.util.concurrent.Executors",
+        "org.scalacheck.",
+        "org.scalacheck.Arbitrary._",
+        "org.scalacheck.Prop.forAll",
+        "scala.concurrent.ExecutionContext.Implicits.global",
+        "scala.concurrent._",
+        "scala.concurrent.duration._",
+        "scalaz.Tags._",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.std.AllInstances._",
+        "scalaz.syntax.all._"
+      ],
+      "sorties": [
+        "class FutureTest",
+        "def futureArb",
+        "def futureSuccessArb",
+        "def loop"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/std/java/TimeTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/std/java/TimeTestJVM.scala",
+      "langage": "scala",
+      "lignes": 118,
+      "taille_bytes": 4090,
+      "entrees": [
+        "java.time._",
+        "org.scalacheck._",
+        "scala.jdk.CollectionConverters._",
+        "scalaz.",
+        "scalaz.scalacheck.ScalaCheckBinding._",
+        "scalaz.scalacheck.ScalazProperties",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.std.java.time._"
+      ],
+      "sorties": [],
+      "appelle": [
+        "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalazProperties.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/std/java/EnumTest.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/std/java/EnumTest.scala",
+      "langage": "scala",
+      "lignes": 49,
+      "taille_bytes": 1311,
+      "entrees": [
+        "java.util.concurrent.TimeUnit",
+        "std.java.`enum`._",
+        "syntax.`enum`._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/jvm/src/test/scala/scalaz/effect/ResourceTestJVM.scala": {
+      "fichier": "tests/jvm/src/test/scala/scalaz/effect/ResourceTestJVM.scala",
+      "langage": "scala",
+      "lignes": 17,
+      "taille_bytes": 406,
+      "entrees": [
+        "std.effect.autoCloseable._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/examples/adts.scala": {
+      "fichier": "tests/src/test/scala/examples/adts.scala",
+      "langage": "scala",
+      "lignes": 160,
+      "taille_bytes": 5063,
+      "entrees": [
+        "Scalaz._",
+        "java.lang.String",
+        "scala.",
+        "scalaz._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/KleisliTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/KleisliTest.scala",
+      "langage": "scala",
+      "lignes": 166,
+      "taille_bytes": 6281,
+      "entrees": [
+        "org.scalacheck.Arbitrary",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._",
+        "syntax.all._",
+        "syntax.arrow._",
+        "syntax.choice._",
+        "syntax.compose._",
+        "syntax.proChoice._",
+        "syntax.profunctor._",
+        "syntax.split._",
+        "syntax.strong._"
+      ],
+      "sorties": [
+        "def alt",
+        "def applicative",
+        "def apply",
+        "def arrow",
+        "def bind",
+        "def bindRec",
+        "def category",
+        "def choice",
+        "def compose",
+        "def decidable",
+        "def divisible",
+        "def empty",
+        "def functor",
+        "def monadReader",
+        "def monoid",
+        "def plus",
+        "def proChoice",
+        "def profunctor",
+        "def readerApply",
+        "def readerArrow",
+        "def readerCategory",
+        "def readerFunctor",
+        "def readerMonadReader",
+        "def readerXApply",
+        "def readerXFunctor",
+        "def semigroup",
+        "def strong",
+        "def zip",
+        "type ConstInt",
+        "type IntOr",
+        "type KleisliEither",
+        "type KleisliOpt",
+        "type KleisliOptInt",
+        "type ReaderX"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/NeedTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/NeedTest.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 900,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/SemigroupTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/SemigroupTest.scala",
+      "langage": "scala",
+      "lignes": 13,
+      "taille_bytes": 305,
+      "entrees": [
+        "InvariantFunctorTest._",
+        "std.AllInstances._",
+        "syntax.invariantFunctor._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/MemoTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/MemoTest.scala",
+      "langage": "scala",
+      "lignes": 52,
+      "taille_bytes": 1128,
+      "entrees": [
+        "scalaz.std.anyVal._"
+      ],
+      "sorties": [
+        "def doubler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/IndexedContsTTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/IndexedContsTTest.scala",
+      "langage": "scala",
+      "lignes": 44,
+      "taille_bytes": 1533,
+      "entrees": [
+        "org.scalacheck.Arbitrary",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.std.anyVal._"
+      ],
+      "sorties": [
+        "def alt",
+        "def bifunctor",
+        "def bind",
+        "def contravariant",
+        "def functor",
+        "def functorLeft",
+        "def functorRight",
+        "def monad",
+        "type ContTMaybeBoolean"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/FreeTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/FreeTest.scala",
+      "langage": "scala",
+      "lignes": 247,
+      "taille_bytes": 8592,
+      "entrees": [
+        "Free._",
+        "FreeState._",
+        "FreeStateT._",
+        "org.scalacheck.",
+        "scalaz.scalacheck.ScalaCheckBinding._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def append",
+        "def apply",
+        "def bind",
+        "def bindRec",
+        "def comonad",
+        "def foldable",
+        "def foldable1",
+        "def freeGen",
+        "def functor",
+        "def get",
+        "def go",
+        "def map",
+        "def monad",
+        "def monoid",
+        "def point",
+        "def put",
+        "def run",
+        "def semigroup",
+        "def tailrecM",
+        "def traverse",
+        "def traverse1",
+        "def traverseImpl",
+        "def zero",
+        "type FreeState",
+        "type FreeStateT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/AltTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/AltTest.scala",
+      "langage": "scala",
+      "lignes": 52,
+      "taille_bytes": 1213,
+      "entrees": [
+        "examples.adt._",
+        "examples.recadt._",
+        "examples.recgadt._"
+      ],
+      "sorties": [
+        "class AltTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/BooleanSyntaxTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/BooleanSyntaxTest.scala",
+      "langage": "scala",
+      "lignes": 87,
+      "taille_bytes": 1796,
+      "entrees": [
+        "org.scalacheck.Prop.forAll",
+        "std.AllInstances._",
+        "syntax.std.boolean._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/SyntaxTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/SyntaxTest.scala",
+      "langage": "scala",
+      "lignes": 64,
+      "taille_bytes": 1690,
+      "entrees": [
+        "std.string._",
+        "std.tuple._",
+        "syntax.functor._",
+        "syntax.show._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/MonadPlusTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/MonadPlusTest.scala",
+      "langage": "scala",
+      "lignes": 54,
+      "taille_bytes": 1650,
+      "entrees": [
+        "\\&/._",
+        "std.AllInstances._",
+        "std.option.",
+        "syntax.monadPlus._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/OptionTTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/OptionTTest.scala",
+      "langage": "scala",
+      "lignes": 62,
+      "taille_bytes": 2375,
+      "entrees": [
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._",
+        "syntax.std.option._"
+      ],
+      "sorties": [
+        "def alt",
+        "def apply",
+        "def bind",
+        "def bindRec",
+        "def decidable",
+        "def foldable",
+        "def functor",
+        "def monad",
+        "def monadError",
+        "def traverse",
+        "type ConstInt",
+        "type IntOr",
+        "type OptionTEither",
+        "type OptionTList",
+        "type OptionTOption"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/PLensTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/PLensTest.scala",
+      "langage": "scala",
+      "lignes": 19,
+      "taille_bytes": 348,
+      "entrees": [
+        "PLens._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def category",
+        "def choice",
+        "def split"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/Traverse1Test.scala": {
+      "fichier": "tests/src/test/scala/scalaz/Traverse1Test.scala",
+      "langage": "scala",
+      "lignes": 26,
+      "taille_bytes": 600,
+      "entrees": [
+        "std.AllInstances._",
+        "syntax.traverse1._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/ISetTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/ISetTest.scala",
+      "langage": "scala",
+      "lignes": 299,
+      "taille_bytes": 8174,
+      "entrees": [
+        "ISet._",
+        "org.scalacheck.Arbitrary",
+        "org.scalacheck.Prop.forAll",
+        "scala.util.Random",
+        "scalaz.scalacheck.ScalaCheckBinding._",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.anyVal._",
+        "std.list._",
+        "std.option._",
+        "std.string._",
+        "std.tuple._",
+        "syntax.std.option._"
+      ],
+      "sorties": [
+        "def structurallySound"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/TheseTTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/TheseTTest.scala",
+      "langage": "scala",
+      "lignes": 27,
+      "taille_bytes": 857,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def functor",
+        "type TheseTList",
+        "type TheseTListInt",
+        "type TheseTOptionInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/OneOrTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/OneOrTest.scala",
+      "langage": "scala",
+      "lignes": 67,
+      "taille_bytes": 2609,
+      "entrees": [
+        "OneOr._",
+        "org.scalacheck.Prop._",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def applicative",
+        "def apply",
+        "def cobind",
+        "def comonad",
+        "def foldable",
+        "def foldable1",
+        "def functor",
+        "def traverse",
+        "def traverse1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/MonadErrorTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/MonadErrorTest.scala",
+      "langage": "scala",
+      "lignes": 47,
+      "taille_bytes": 1240,
+      "entrees": [
+        "Isomorphism.<~>",
+        "std.AllInstances._",
+        "syntax.either._",
+        "syntax.monadError._"
+      ],
+      "sorties": [
+        "def decode",
+        "trait Decoder"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/CodensityTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/CodensityTest.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 1149,
+      "entrees": [
+        "org.scalacheck.Arbitrary",
+        "scalaz.scalacheck.ScalaCheckBinding._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.anyVal._",
+        "std.list._",
+        "std.option._"
+      ],
+      "sorties": [
+        "def applicative",
+        "def apply",
+        "def functor",
+        "def monad",
+        "def monade",
+        "def plus"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/TracedTTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/TracedTTest.scala",
+      "langage": "scala",
+      "lignes": 47,
+      "taille_bytes": 2005,
+      "entrees": [
+        "org.scalacheck.Arbitrary",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.std.anyVal._"
+      ],
+      "sorties": [
+        "def applicative",
+        "def apply",
+        "def cobind",
+        "def comonoad",
+        "def comonoadStore",
+        "def contravariant",
+        "def distributive",
+        "def functor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/MaybeTTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/MaybeTTest.scala",
+      "langage": "scala",
+      "lignes": 53,
+      "taille_bytes": 1975,
+      "entrees": [
+        "org.scalacheck.Prop._",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def apply",
+        "def bindRec",
+        "def decidable",
+        "def foldable",
+        "def functor",
+        "def monad",
+        "def monadEither",
+        "def monadError",
+        "def traverse",
+        "type ConstInt",
+        "type IntOr",
+        "type MaybeTEither",
+        "type MaybeTList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/IdTTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/IdTTest.scala",
+      "langage": "scala",
+      "lignes": 41,
+      "taille_bytes": 1697,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def apply",
+        "def bindRec",
+        "def decidable",
+        "def divisible",
+        "def equal",
+        "def foldable",
+        "def functor",
+        "def monad",
+        "def order",
+        "def traverse",
+        "type ConstInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/DigitTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/DigitTest.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 749,
+      "entrees": [
+        "Scalaz._",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/WriterTTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/WriterTTest.scala",
+      "langage": "scala",
+      "lignes": 114,
+      "taille_bytes": 5729,
+      "entrees": [
+        "Id._",
+        "org.scalacheck.",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalaCheckBinding._",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def applicative",
+        "def apply",
+        "def bind",
+        "def bindRec",
+        "def comonad",
+        "def decidable",
+        "def divisible",
+        "def foldable",
+        "def functor",
+        "def monad",
+        "def monadError",
+        "def monadPlus",
+        "def monoid",
+        "def plus",
+        "def plusEmpty",
+        "def traverse",
+        "type ConstInt",
+        "type IntOr",
+        "type WriterTEither",
+        "type WriterTOpt",
+        "type WriterTOptInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/MapTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/MapTest.scala",
+      "langage": "scala",
+      "lignes": 1027,
+      "taille_bytes": 35501,
+      "entrees": [
+        "==>>._",
+        "\\&/._",
+        "org.scalacheck.Arbitrary",
+        "org.scalacheck.Prop.forAll",
+        "scala.util.Random",
+        "scalaz.Maybe.",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.anyVal._",
+        "std.list._",
+        "std.option._",
+        "std.string._",
+        "std.tuple._"
+      ],
+      "sorties": [
+        "def band",
+        "def bind",
+        "def checkValidity",
+        "def fNone",
+        "def functor",
+        "def go",
+        "def isWeightsValid",
+        "def monoid",
+        "def rec",
+        "def semiLattice",
+        "def semigroup",
+        "def structurallySound",
+        "def traverse",
+        "type IntMap"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/OptionalTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/OptionalTest.scala",
+      "langage": "scala",
+      "lignes": 103,
+      "taille_bytes": 3644,
+      "entrees": [
+        "Scalaz.Id",
+        "std.AllInstances._",
+        "syntax.optional._"
+      ],
+      "sorties": [
+        "def definedTests",
+        "def failure",
+        "def failureNel",
+        "def left",
+        "def right",
+        "def success",
+        "def successNel",
+        "def undefinedTests",
+        "type EitherInt",
+        "type VString",
+        "type VStringNel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/SpecLite.scala": {
+      "fichier": "tests/src/test/scala/scalaz/SpecLite.scala",
+      "langage": "scala",
+      "lignes": 109,
+      "taille_bytes": 3528,
+      "entrees": [
+        "org.scalacheck._",
+        "reflect.ClassTag"
+      ],
+      "sorties": [
+        "abstract class SpecLite",
+        "class AnyOps",
+        "def check",
+        "def checkAll",
+        "def fail",
+        "def koMessage",
+        "def mustBe_",
+        "def mustMatch",
+        "def mustThrowA",
+        "def must_",
+        "def prop",
+        "def test",
+        "def withProp"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/CoKleisliTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/CoKleisliTest.scala",
+      "langage": "scala",
+      "lignes": 39,
+      "taille_bytes": 1324,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.std.option._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def arrow",
+        "def bindRec",
+        "def compose",
+        "def monad",
+        "def prochoice",
+        "def profunctor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/DequeueTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/DequeueTest.scala",
+      "langage": "scala",
+      "lignes": 52,
+      "taille_bytes": 1692,
+      "entrees": [
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/LazyEitherTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/LazyEitherTest.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 994,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._",
+        "syntax.either._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/LeibnizTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/LeibnizTest.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 305,
+      "entrees": [
+        "Leibniz.refl"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/EndomorphicTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/EndomorphicTest.scala",
+      "langage": "scala",
+      "lignes": 39,
+      "taille_bytes": 1287,
+      "entrees": [
+        "CokleisliTest._",
+        "KleisliTest._",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def monoid",
+        "def semigroup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/DisjunctionTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/DisjunctionTest.scala",
+      "langage": "scala",
+      "lignes": 102,
+      "taille_bytes": 3069,
+      "entrees": [
+        "Maybe._",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.syntax.either._",
+        "std.AllInstances._",
+        "syntax.apply._",
+        "syntax.either._",
+        "syntax.validation._"
+      ],
+      "sorties": [
+        "def band",
+        "def monoid",
+        "def semigroup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/EitherTTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/EitherTTest.scala",
+      "langage": "scala",
+      "lignes": 152,
+      "taille_bytes": 6344,
+      "entrees": [
+        "java.util.concurrent.atomic.AtomicInteger",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.syntax.either._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def append",
+        "def apply",
+        "def bifoldable",
+        "def bifunctor",
+        "def bindRec",
+        "def bitraverse",
+        "def bitraverseImpl",
+        "def brokenMethod",
+        "def compilationTests",
+        "def filterComp",
+        "def foldable",
+        "def functor",
+        "def monad",
+        "def monadError",
+        "def monadPlus",
+        "def monadReader",
+        "def nondeterminism",
+        "def nondeterminismFunctor",
+        "def nondeterminismMonad",
+        "def plus",
+        "def traverse",
+        "def zero",
+        "type EitherTComputation",
+        "type EitherTList",
+        "type EitherTListInt",
+        "type EitherTOptionInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/ValidationTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/ValidationTest.scala",
+      "langage": "scala",
+      "lignes": 137,
+      "taille_bytes": 4904,
+      "entrees": [
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._",
+        "syntax.applicative._",
+        "syntax.functor._",
+        "syntax.plus._",
+        "syntax.show._",
+        "syntax.std.string._",
+        "syntax.validation._"
+      ],
+      "sorties": [
+        "def alt",
+        "def applicative",
+        "def bitraverse",
+        "def equal",
+        "def errmsg",
+        "def order",
+        "def plus",
+        "def semigroup",
+        "def show",
+        "def traverse",
+        "type ValidationInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/DievTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/DievTest.scala",
+      "langage": "scala",
+      "lignes": 55,
+      "taille_bytes": 1601,
+      "entrees": [
+        "org.scalacheck.Prop.forAll",
+        "scala.util.Random",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/TreeLocTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/TreeLocTest.scala",
+      "langage": "scala",
+      "lignes": 39,
+      "taille_bytes": 1260,
+      "entrees": [
+        "EphemeralStream.",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.std.option._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def equal",
+        "def order",
+        "def streamEqualApprox",
+        "def treeEqual"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/ProductTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/ProductTest.scala",
+      "langage": "scala",
+      "lignes": 28,
+      "taille_bytes": 1059,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "type EitherTuple2",
+        "type OneAndOption",
+        "type OneAndOptionPair",
+        "type OptionList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/BooleanTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/BooleanTest.scala",
+      "langage": "scala",
+      "lignes": 39,
+      "taille_bytes": 890,
+      "entrees": [
+        "org.scalacheck.Prop.forAll",
+        "scalaz.std."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/BitraverseTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/BitraverseTest.scala",
+      "langage": "scala",
+      "lignes": 46,
+      "taille_bytes": 2222,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.std.AllInstances.",
+        "scalaz.syntax.either._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/AlignTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/AlignTest.scala",
+      "langage": "scala",
+      "lignes": 65,
+      "taille_bytes": 2270,
+      "entrees": [
+        "org.scalacheck.Prop.forAll",
+        "std.AllInstances._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/ApplicativeTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/ApplicativeTest.scala",
+      "langage": "scala",
+      "lignes": 97,
+      "taille_bytes": 3726,
+      "entrees": [
+        "==>>._",
+        "IList._",
+        "org.scalacheck.Gen",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "std.anyVal._",
+        "std.list._",
+        "std.option._",
+        "std.string._",
+        "syntax.all._"
+      ],
+      "sorties": [
+        "def const",
+        "def filterMList",
+        "def filterMMap",
+        "def pred",
+        "def replicateM"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/IListTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/IListTest.scala",
+      "langage": "scala",
+      "lignes": 457,
+      "taille_bytes": 14361,
+      "entrees": [
+        "Maybe.just",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.Maybe.just",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.syntax.`enum`._",
+        "scalaz.syntax.show._",
+        "std.AllInstances._",
+        "syntax.bifunctor._",
+        "syntax.foldable._",
+        "syntax.traverse._"
+      ],
+      "sorties": [
+        "def align",
+        "def alt",
+        "def bindrec",
+        "def cobind",
+        "def equal",
+        "def foo",
+        "def intersperse",
+        "def isEmpty",
+        "def monadPlus",
+        "def monoid",
+        "def order",
+        "def traverse",
+        "def zip"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/DensityTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/DensityTest.scala",
+      "langage": "scala",
+      "lignes": 37,
+      "taille_bytes": 1316,
+      "entrees": [
+        "Scalaz._",
+        "org.scalacheck.Arbitrary",
+        "scalaz.scalacheck.ScalaCheckBinding._",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._"
+      ],
+      "sorties": [
+        "class DensityTest",
+        "def combind",
+        "def comonad",
+        "def forFree",
+        "type PairInt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/OneAndTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/OneAndTest.scala",
+      "langage": "scala",
+      "lignes": 137,
+      "taille_bytes": 5844,
+      "entrees": [
+        "OneAnd.oneAndNelIso",
+        "org.scalacheck.Prop.",
+        "org.scalacheck.Prop.forAll",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def align",
+        "def alt",
+        "def applicative",
+        "def apply",
+        "def bind",
+        "def foldable",
+        "def foldable1",
+        "def functor",
+        "def monad",
+        "def plus",
+        "def semigroup",
+        "def traverse",
+        "def traverse1",
+        "type OneAndList",
+        "type OneAndNel",
+        "type OneAndOption"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/TannenTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/TannenTest.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 1220,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "std.AllInstances._"
+      ],
+      "sorties": [
+        "def bifoldable",
+        "def bifunctor",
+        "def bitraverse",
+        "def foldable",
+        "def functor",
+        "def traverse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/UnapplyTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/UnapplyTest.scala",
+      "langage": "scala",
+      "lignes": 148,
+      "taille_bytes": 4692,
+      "entrees": [],
+      "sorties": [
+        "class M0",
+        "class MAB",
+        "class MT",
+        "def mequiv",
+        "def teq",
+        "def teq2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/AlterTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/AlterTest.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 787,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.std.AllInstances._"
+      ],
+      "sorties": [
+        "def equal",
+        "def monoid",
+        "def semigroup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/FunctorTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/FunctorTest.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 643,
+      "entrees": [
+        "org.scalacheck.Prop.forAll",
+        "std.AllInstances._",
+        "std.iterable._",
+        "std.option.some",
+        "syntax.functor._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/MonadTransTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/MonadTransTest.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 361,
+      "entrees": [
+        "std.AllInstances._",
+        "std.option.some",
+        "syntax.either._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/ApTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/ApTest.scala",
+      "langage": "scala",
+      "lignes": 21,
+      "taille_bytes": 693,
+      "entrees": [
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties._",
+        "scalaz.std.AllInstances._"
+      ],
+      "sorties": [
+        "def monoid",
+        "def semigroup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/IdSyntaxTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/IdSyntaxTest.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 509,
+      "entrees": [
+        "std.AllInstances._",
+        "syntax.id._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/src/test/scala/scalaz/ReducerTest.scala": {
+      "fichier": "tests/src/test/scala/scalaz/ReducerTest.scala",
+      "langage": "scala",
+      "lignes": 61,
+      "taille_bytes": 2102,
+      "entrees": [
+        "EndoTest.endoIntEqual",
+        "scalaz.Tags._",
+        "scalaz.scalacheck.ScalazArbitrary._",
+        "scalaz.scalacheck.ScalazProperties.reducer",
+        "scalaz.std.AllInstances._",
+        "scalaz.syntax.contravariant._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "tests/jvm/src/test/scala/scalaz/TreeLocTestJVM.scala",
+      "vers": "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalazArbitrary.scala",
+      "type": "interne"
+    },
+    {
+      "de": "tests/jvm/src/test/scala/scalaz/std/java/TimeTestJVM.scala",
+      "vers": "scalacheck-binding/src/main/scala/scalaz/scalacheck/ScalazProperties.scala",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

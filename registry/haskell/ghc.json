@@ -1,0 +1,5603 @@
+{
+  "meta": {
+    "projet": "ghc",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "javascript": 1,
+      "yaml": 4,
+      "haskell": 98,
+      "shell": 1,
+      "c": 5,
+      "json": 10,
+      "python": 1
+    },
+    "official_runtime": true
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 447,
+    "edges_circulaires": 6,
+    "noeuds_centraux": 11,
+    "noeuds_feuilles": 3,
+    "noeuds_hubs": 7,
+    "points_entree": 24,
+    "fichier_plus_appele": "hadrian/src/Hadrian/Expression.hs"
+  },
+  "noeuds": {
+    "ghc-interp.js": {
+      "fichier": "ghc-interp.js",
+      "langage": "javascript",
+      "lignes": 101,
+      "taille_bytes": 2906,
+      "entrees": [],
+      "sorties": [
+        "const script",
+        "function stdin_end",
+        "function stdin_readable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hie.yaml": {
+      "fichier": "hie.yaml",
+      "langage": "yaml",
+      "lignes": 8,
+      "taille_bytes": 355,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".gitlab-ci.yml": {
+      "fichier": ".gitlab-ci.yml",
+      "langage": "yaml",
+      "lignes": 1331,
+      "taille_bytes": 42562,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/Setup.hs": {
+      "fichier": "hadrian/Setup.hs",
+      "langage": "haskell",
+      "lignes": 3,
+      "taille_bytes": 47,
+      "entrees": [
+        "Distribution.Simple"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/hie.yaml": {
+      "fichier": "hadrian/hie.yaml",
+      "langage": "yaml",
+      "lignes": 5,
+      "taille_bytes": 240,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/completion.sh": {
+      "fichier": "hadrian/completion.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 241,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/stack.yaml": {
+      "fichier": "hadrian/stack.yaml",
+      "langage": "yaml",
+      "lignes": 44,
+      "taille_bytes": 1218,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bindist/cwrappers/cwrapper.c": {
+      "fichier": "hadrian/bindist/cwrappers/cwrapper.c",
+      "langage": "c",
+      "lignes": 161,
+      "taille_bytes": 4615,
+      "entrees": [
+        "<stdarg.h>",
+        "<stdio.h>",
+        "<stdlib.h>",
+        "<string.h>",
+        "<windows.h>",
+        "the"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bindist/cwrappers/getLocation.c": {
+      "fichier": "hadrian/bindist/cwrappers/getLocation.c",
+      "langage": "c",
+      "lignes": 40,
+      "taille_bytes": 686,
+      "entrees": [
+        "<stdio.h>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bindist/cwrappers/getLocation.h": {
+      "fichier": "hadrian/bindist/cwrappers/getLocation.h",
+      "langage": "c",
+      "lignes": 4,
+      "taille_bytes": 60,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bindist/cwrappers/version-wrapper.c": {
+      "fichier": "hadrian/bindist/cwrappers/version-wrapper.c",
+      "langage": "c",
+      "lignes": 30,
+      "taille_bytes": 901,
+      "entrees": [
+        "<stddef.h>",
+        "<windows.h>",
+        "the"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bindist/cwrappers/cwrapper.h": {
+      "fichier": "hadrian/bindist/cwrappers/cwrapper.h",
+      "langage": "c",
+      "lignes": 7,
+      "taille_bytes": 302,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-bootstrap-9_12_2.json": {
+      "fichier": "hadrian/bootstrap/plan-bootstrap-9_12_2.json",
+      "langage": "json",
+      "lignes": 328,
+      "taille_bytes": 8581,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-bootstrap-9_10_2.json": {
+      "fichier": "hadrian/bootstrap/plan-bootstrap-9_10_2.json",
+      "langage": "json",
+      "lignes": 376,
+      "taille_bytes": 10438,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-bootstrap-9_12_1.json": {
+      "fichier": "hadrian/bootstrap/plan-bootstrap-9_12_1.json",
+      "langage": "json",
+      "lignes": 328,
+      "taille_bytes": 8581,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/bootstrap.py": {
+      "fichier": "hadrian/bootstrap/bootstrap.py",
+      "langage": "python",
+      "lignes": 524,
+      "taille_bytes": 18508,
+      "entrees": [
+        "argparse",
+        "ast",
+        "enum",
+        "hashlib",
+        "json",
+        "pathlib",
+        "platform",
+        "shutil",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "textwrap",
+        "typing",
+        "urllib.request"
+      ],
+      "sorties": [
+        "class BadTarball",
+        "class Compiler",
+        "class PackageSource",
+        "def __init__",
+        "def __str__",
+        "def _get_ghc_info",
+        "def archive_name",
+        "def bi_from_json",
+        "def bootstrap",
+        "def check_builtin",
+        "def check_call",
+        "def dep_from_json",
+        "def fetch_from_plan",
+        "def find_ghc",
+        "def gen_fetch_plan",
+        "def hash_file",
+        "def install_dep",
+        "def install_sdist",
+        "def linuxname",
+        "def macname",
+        "def main",
+        "def make_archive",
+        "def package_cabal_url",
+        "def package_url",
+        "def read_bootstrap_info",
+        "def resolve_dep",
+        "def subprocess_run",
+        "def verify_sha256"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-9_10_2.json": {
+      "fichier": "hadrian/bootstrap/plan-9_10_2.json",
+      "langage": "json",
+      "lignes": 1004,
+      "taille_bytes": 33378,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-bootstrap-9_10_3.json": {
+      "fichier": "hadrian/bootstrap/plan-bootstrap-9_10_3.json",
+      "langage": "json",
+      "lignes": 376,
+      "taille_bytes": 10438,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-9_12_1.json": {
+      "fichier": "hadrian/bootstrap/plan-9_12_1.json",
+      "langage": "json",
+      "lignes": 902,
+      "taille_bytes": 28533,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-9_10_1.json": {
+      "fichier": "hadrian/bootstrap/plan-9_10_1.json",
+      "langage": "json",
+      "lignes": 1020,
+      "taille_bytes": 34377,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-9_10_3.json": {
+      "fichier": "hadrian/bootstrap/plan-9_10_3.json",
+      "langage": "json",
+      "lignes": 1004,
+      "taille_bytes": 33378,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-9_12_2.json": {
+      "fichier": "hadrian/bootstrap/plan-9_12_2.json",
+      "langage": "json",
+      "lignes": 902,
+      "taille_bytes": 28533,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/plan-bootstrap-9_10_1.json": {
+      "fichier": "hadrian/bootstrap/plan-bootstrap-9_10_1.json",
+      "langage": "json",
+      "lignes": 385,
+      "taille_bytes": 10773,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/bootstrap/src/Main.hs": {
+      "fichier": "hadrian/bootstrap/src/Main.hs",
+      "langage": "haskell",
+      "lignes": 233,
+      "taille_bytes": 7950,
+      "entrees": [
+        "Data.Either",
+        "Data.Foldable",
+        "Data.Maybe",
+        "Data.String",
+        "Data.Traversable",
+        "System.Environment",
+        "System.Exit",
+        "System.IO",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Environment.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Expression.hs": {
+      "fichier": "hadrian/src/Expression.hs",
+      "langage": "haskell",
+      "lignes": 170,
+      "taille_bytes": 5399,
+      "entrees": [
+        "Base",
+        "Builder",
+        "Context",
+        "Expression.Type",
+        "Hadrian.Expression",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Oracles.Cabal",
+        "Oracles.Flag"
+      ],
+      "sorties": [
+        "class BuilderPredicate"
+      ],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Oracles/Flag.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Main.hs": {
+      "fichier": "hadrian/src/Main.hs",
+      "langage": "haskell",
+      "lignes": 167,
+      "taille_bytes": 6855,
+      "entrees": [
+        "Control.Exception",
+        "Data.IORef",
+        "Development.Shake",
+        "Hadrian.Utilities",
+        "Settings.Parser",
+        "System.Directory",
+        "System.Environment",
+        "System.Exit",
+        "System.IO",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Environment.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Settings/Parser.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Base.hs": {
+      "fichier": "hadrian/src/Base.hs",
+      "langage": "haskell",
+      "lignes": 220,
+      "taille_bytes": 7618,
+      "entrees": [
+        "Control.Applicative",
+        "Control.Monad.Extra",
+        "Control.Monad.Reader",
+        "Control.Monad.State",
+        "Data.Foldable",
+        "Data.Kind",
+        "Data.List.Extra",
+        "Data.Maybe",
+        "Data.Semigroup",
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "Development.Shake.FilePath",
+        "Development.Shake.Util",
+        "GHC.Stack",
+        "Hadrian.Oracles.DirectoryContents",
+        "Hadrian.Package",
+        "Hadrian.Utilities",
+        "Stage",
+        "Way",
+        "qualified"
+      ],
+      "sorties": [
+        "type Vec"
+      ],
+      "appelle": [
+        "hadrian/src/Hadrian/Oracles/DirectoryContents.hs",
+        "hadrian/src/Hadrian/Package.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Stage.hs",
+        "hadrian/src/Way.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression.hs",
+        "hadrian/src/Hadrian/BuildPath.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Hadrian/Oracles/TextFile.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Oracles/TestSettings.hs",
+        "hadrian/src/Packages.hs",
+        "hadrian/src/Rules/Clean.hs",
+        "hadrian/src/Rules/Codes.hs",
+        "hadrian/src/Rules/Compile.hs",
+        "hadrian/src/Rules/Dependencies.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Lint.hs",
+        "hadrian/src/Rules/Nofib.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Selftest.hs",
+        "hadrian/src/Rules/SimpleTargets.hs",
+        "hadrian/src/Rules/SourceDist.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Program.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "hadrian/src/UserSettings.hs": {
+      "fichier": "hadrian/src/UserSettings.hs",
+      "langage": "haskell",
+      "lignes": 65,
+      "taille_bytes": 2716,
+      "entrees": [
+        "Expression",
+        "Flavour.Type"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Expression.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Flavour.hs",
+        "hadrian/src/Rules.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Stage.hs": {
+      "fichier": "hadrian/src/Stage.hs",
+      "langage": "haskell",
+      "lignes": 137,
+      "taille_bytes": 5371,
+      "entrees": [
+        "Development.Shake.Classes",
+        "GHC.Generics"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal/Type.hs",
+        "hadrian/src/Rules/ToolArgs.hs"
+      ],
+      "type_noeud": "feuille"
+    },
+    "hadrian/src/Packages.hs": {
+      "fichier": "hadrian/src/Packages.hs",
+      "langage": "haskell",
+      "lignes": 238,
+      "taille_bytes": 11293,
+      "entrees": [
+        "Base",
+        "Context.Type",
+        "Hadrian.Package",
+        "Hadrian.Utilities",
+        "Oracles.Flag",
+        "Oracles.Setting"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Package.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Setting.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Context.hs": {
+      "fichier": "hadrian/src/Context.hs",
+      "langage": "haskell",
+      "lignes": 185,
+      "taille_bytes": 7239,
+      "entrees": [
+        "Base",
+        "Context.Path",
+        "Context.Type",
+        "GHC.Toolchain.Target",
+        "Hadrian.Expression",
+        "Hadrian.Haskell.Cabal",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Oracles.Cabal",
+        "Oracles.Setting",
+        "Packages"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Oracles/Path.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Expression.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/CabalReinstall.hs",
+        "hadrian/src/Rules/Compile.hs",
+        "hadrian/src/Rules/Dependencies.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Selftest.hs",
+        "hadrian/src/Rules/SimpleTargets.hs",
+        "hadrian/src/Rules/SourceDist.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings/Builders/Cabal.hs",
+        "hadrian/src/Settings/Program.hs",
+        "hadrian/src/Target.hs",
+        "hadrian/src/Utilities.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Flavour.hs": {
+      "fichier": "hadrian/src/Flavour.hs",
+      "langage": "haskell",
+      "lignes": 708,
+      "taille_bytes": 26312,
+      "entrees": [
+        "Control.Monad.Except",
+        "Data.Either",
+        "Data.Map",
+        "Expression",
+        "Flavour.Type",
+        "Oracles.Flag",
+        "Packages",
+        "Settings.Parser",
+        "Text.Parsec.Char",
+        "Text.Parsec.Combinator",
+        "Text.Parsec.Prim",
+        "UserSettings",
+        "qualified"
+      ],
+      "sorties": [
+        "type Parser"
+      ],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Settings/Parser.hs",
+        "hadrian/src/UserSettings.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/CommandLine.hs": {
+      "fichier": "hadrian/src/CommandLine.hs",
+      "langage": "haskell",
+      "lignes": 409,
+      "taille_bytes": 17941,
+      "entrees": [
+        "Data.Either",
+        "Data.List.Extra",
+        "Debug.Trace",
+        "Development.Shake",
+        "Flavour",
+        "Hadrian.Utilities",
+        "Settings.Parser",
+        "System.Console.GetOpt",
+        "System.Environment",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Environment.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Settings/Parser.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/SimpleTargets.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/Haddock.hs",
+        "hadrian/src/Settings/Builders/Make.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs",
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Environment.hs": {
+      "fichier": "hadrian/src/Environment.hs",
+      "langage": "haskell",
+      "lignes": 20,
+      "taille_bytes": 809,
+      "entrees": [
+        "System.Environment"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "hadrian/bootstrap/src/Main.hs",
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Main.hs",
+        "hadrian/src/Rules/Nofib.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs"
+      ],
+      "type_noeud": "feuille"
+    },
+    "hadrian/src/Utilities.hs": {
+      "fichier": "hadrian/src/Utilities.hs",
+      "langage": "haskell",
+      "lignes": 71,
+      "taille_bytes": 2683,
+      "entrees": [
+        "Context",
+        "Expression",
+        "Hadrian.Haskell.Cabal",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Utilities",
+        "Settings",
+        "Target",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Settings.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Target.hs": {
+      "fichier": "hadrian/src/Target.hs",
+      "langage": "haskell",
+      "lignes": 40,
+      "taille_bytes": 1475,
+      "entrees": [
+        "Builder",
+        "Context",
+        "Data.Char",
+        "Data.List.Extra",
+        "Hadrian.Target",
+        "qualified"
+      ],
+      "sorties": [
+        "type Target"
+      ],
+      "appelle": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Target.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Builder.hs": {
+      "fichier": "hadrian/src/Builder.hs",
+      "langage": "haskell",
+      "lignes": 627,
+      "taille_bytes": 26318,
+      "entrees": [
+        "Base",
+        "Context",
+        "Control.Exception.Extra",
+        "Development.Shake.Classes",
+        "Development.Shake.Command",
+        "Development.Shake.FilePath",
+        "GHC.Generics",
+        "GHC.IO.Encoding",
+        "GHC.Platform.ArchOS",
+        "GHC.ResponseFile",
+        "GHC.Toolchain",
+        "GHC.Toolchain.Program",
+        "Hadrian.Builder",
+        "Hadrian.Builder.Ar",
+        "Hadrian.Builder.Sphinx",
+        "Hadrian.Builder.Tar",
+        "Hadrian.Oracles.Path",
+        "Hadrian.Oracles.TextFile",
+        "Hadrian.Utilities",
+        "Oracles.Flag",
+        "Oracles.Setting",
+        "Packages",
+        "System.Exit",
+        "System.IO",
+        "qualified"
+      ],
+      "sorties": [
+        "class CmdWrap",
+        "class HasExit"
+      ],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Builder/Ar.hs",
+        "hadrian/src/Hadrian/Builder/Sphinx.hs",
+        "hadrian/src/Hadrian/Builder/Tar.hs",
+        "hadrian/src/Hadrian/Oracles/Path.hs",
+        "hadrian/src/Hadrian/Oracles/TextFile.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules.hs": {
+      "fichier": "hadrian/src/Rules.hs",
+      "langage": "haskell",
+      "lignes": 142,
+      "taille_bytes": 6066,
+      "entrees": [
+        "Expression",
+        "Packages",
+        "Rules.ToolArgs",
+        "Settings",
+        "Settings.Program",
+        "Target",
+        "UserSettings",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/UserSettings.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Progress.hs": {
+      "fichier": "hadrian/src/Progress.hs",
+      "langage": "haskell",
+      "lignes": 12,
+      "taille_bytes": 625,
+      "entrees": [
+        "Development.Shake"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings.hs": {
+      "fichier": "hadrian/src/Settings.hs",
+      "langage": "haskell",
+      "lignes": 136,
+      "taille_bytes": 5115,
+      "entrees": [
+        "CommandLine",
+        "Expression",
+        "Flavour",
+        "GHC.Platform.ArchOS",
+        "GHC.Toolchain.Target",
+        "Hadrian.Oracles.TextFile",
+        "Oracles.Setting",
+        "Packages",
+        "Settings.Flavours.Benchmark",
+        "Settings.Flavours.Development",
+        "Settings.Flavours.GhcInGhci",
+        "Settings.Flavours.Performance",
+        "Settings.Flavours.Quick",
+        "Settings.Flavours.QuickCross",
+        "Settings.Flavours.Quickest",
+        "Settings.Flavours.Release",
+        "Settings.Flavours.Validate",
+        "Settings.Parser",
+        "UserSettings"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/TextFile.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings/Flavours/Benchmark.hs",
+        "hadrian/src/Settings/Flavours/Development.hs",
+        "hadrian/src/Settings/Flavours/GhcInGhci.hs",
+        "hadrian/src/Settings/Flavours/Performance.hs",
+        "hadrian/src/Settings/Flavours/Quick.hs",
+        "hadrian/src/Settings/Flavours/QuickCross.hs",
+        "hadrian/src/Settings/Flavours/Quickest.hs",
+        "hadrian/src/Settings/Flavours/Release.hs",
+        "hadrian/src/Settings/Flavours/Validate.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Settings/Parser.hs",
+        "hadrian/src/UserSettings.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Rules.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/CabalReinstall.hs",
+        "hadrian/src/Rules/Compile.hs",
+        "hadrian/src/Rules/Dependencies.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Selftest.hs",
+        "hadrian/src/Rules/SimpleTargets.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Builders/SplitSections.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Utilities.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Way.hs": {
+      "fichier": "hadrian/src/Way.hs",
+      "langage": "haskell",
+      "lignes": 75,
+      "taille_bytes": 2829,
+      "entrees": [
+        "Way.Type"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Parser.hs": {
+      "fichier": "hadrian/src/Settings/Parser.hs",
+      "langage": "haskell",
+      "lignes": 273,
+      "taille_bytes": 9521,
+      "entrees": [
+        "Control.Applicative",
+        "Control.Monad.Except",
+        "Control.Monad.State",
+        "Data.Either",
+        "Data.List",
+        "qualified"
+      ],
+      "sorties": [
+        "class Applicative",
+        "type Key",
+        "type SettingError",
+        "type SettingsM",
+        "type Val"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Flavour.hs",
+        "hadrian/src/Main.hs",
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "feuille"
+    },
+    "hadrian/src/Settings/Packages.hs": {
+      "fichier": "hadrian/src/Settings/Packages.hs",
+      "langage": "haskell",
+      "lignes": 470,
+      "taille_bytes": 20945,
+      "entrees": [
+        "Data.Version.Extra",
+        "Expression",
+        "Flavour",
+        "GHC.Platform.ArchOS",
+        "GHC.Toolchain.Target",
+        "Oracles.Flag",
+        "Oracles.Setting",
+        "Packages",
+        "Settings",
+        "Settings.Builders.Common",
+        "Settings.Program",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Flavour.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Oracles/TestSettings.hs",
+        "hadrian/src/Rules.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/CabalReinstall.hs",
+        "hadrian/src/Rules/Codes.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Nofib.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Selftest.hs",
+        "hadrian/src/Rules/SimpleTargets.hs",
+        "hadrian/src/Rules/SourceDist.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/Cabal.hs",
+        "hadrian/src/Settings/Builders/Ghc.hs",
+        "hadrian/src/Settings/Builders/Haddock.hs",
+        "hadrian/src/Settings/Builders/HsCpp.hs",
+        "hadrian/src/Settings/Builders/Make.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs",
+        "hadrian/src/Settings/Builders/SplitSections.hs",
+        "hadrian/src/Settings/Default.hs",
+        "hadrian/src/Settings/Flavours/Development.hs",
+        "hadrian/src/Settings/Program.hs",
+        "hadrian/src/Settings/Warnings.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "hadrian/src/Settings/Default.hs": {
+      "fichier": "hadrian/src/Settings/Default.hs",
+      "langage": "haskell",
+      "lignes": 353,
+      "taille_bytes": 12152,
+      "entrees": [
+        "CommandLine",
+        "Expression",
+        "Flavour.Type",
+        "Oracles.Flag",
+        "Oracles.Setting",
+        "Packages",
+        "Settings.Builders.Alex",
+        "Settings.Builders.Ar",
+        "Settings.Builders.Cabal",
+        "Settings.Builders.Cc",
+        "Settings.Builders.Configure",
+        "Settings.Builders.DeriveConstants",
+        "Settings.Builders.GenApply",
+        "Settings.Builders.GenPrimopCode",
+        "Settings.Builders.Ghc",
+        "Settings.Builders.GhcPkg",
+        "Settings.Builders.Haddock",
+        "Settings.Builders.Happy",
+        "Settings.Builders.HsCpp",
+        "Settings.Builders.Hsc2Hs",
+        "Settings.Builders.Ld",
+        "Settings.Builders.Make",
+        "Settings.Builders.RunTest",
+        "Settings.Builders.SplitSections",
+        "Settings.Builders.Win32Tarballs",
+        "Settings.Builders.Xelatex",
+        "Settings.Packages",
+        "Settings.Warnings",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Builder/Ar.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings/Builders/Alex.hs",
+        "hadrian/src/Settings/Builders/Cc.hs",
+        "hadrian/src/Settings/Builders/Configure.hs",
+        "hadrian/src/Settings/Builders/DeriveConstants.hs",
+        "hadrian/src/Settings/Builders/GenApply.hs",
+        "hadrian/src/Settings/Builders/GenPrimopCode.hs",
+        "hadrian/src/Settings/Builders/Ghc.hs",
+        "hadrian/src/Settings/Builders/GhcPkg.hs",
+        "hadrian/src/Settings/Builders/Haddock.hs",
+        "hadrian/src/Settings/Builders/Happy.hs",
+        "hadrian/src/Settings/Builders/HsCpp.hs",
+        "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+        "hadrian/src/Settings/Builders/Ld.hs",
+        "hadrian/src/Settings/Builders/Make.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs",
+        "hadrian/src/Settings/Builders/SplitSections.hs",
+        "hadrian/src/Settings/Builders/Win32Tarballs.hs",
+        "hadrian/src/Settings/Builders/Xelatex.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Settings/Warnings.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Rules/Program.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Program.hs": {
+      "fichier": "hadrian/src/Settings/Program.hs",
+      "langage": "haskell",
+      "lignes": 61,
+      "taille_bytes": 2536,
+      "entrees": [
+        "Base",
+        "Context",
+        "GHC.Platform.ArchOS",
+        "Oracles.Flag",
+        "Oracles.Flavour",
+        "Packages",
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Settings/Warnings.hs": {
+      "fichier": "hadrian/src/Settings/Warnings.hs",
+      "langage": "haskell",
+      "lignes": 99,
+      "taille_bytes": 5539,
+      "entrees": [
+        "Expression",
+        "Oracles.Flag",
+        "Oracles.Setting",
+        "Packages"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Builders/Ghc.hs",
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Flavours/Benchmark.hs": {
+      "fichier": "hadrian/src/Settings/Flavours/Benchmark.hs",
+      "langage": "haskell",
+      "lignes": 25,
+      "taille_bytes": 1030,
+      "entrees": [
+        "Expression",
+        "Flavour",
+        "Oracles.Flag",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Flavours/Quick.hs": {
+      "fichier": "hadrian/src/Settings/Flavours/Quick.hs",
+      "langage": "haskell",
+      "lignes": 46,
+      "taille_bytes": 1471,
+      "entrees": [
+        "Expression",
+        "Flavour",
+        "Oracles.Flag",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Flavours/Development.hs": {
+      "fichier": "hadrian/src/Settings/Flavours/Development.hs",
+      "langage": "haskell",
+      "lignes": 36,
+      "taille_bytes": 1530,
+      "entrees": [
+        "Expression",
+        "Flavour",
+        "Oracles.Flag",
+        "Packages",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Flavours/Release.hs": {
+      "fichier": "hadrian/src/Settings/Flavours/Release.hs",
+      "langage": "haskell",
+      "lignes": 16,
+      "taille_bytes": 509,
+      "entrees": [
+        "Flavour",
+        "Settings.Flavours.Performance"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Settings/Flavours/Performance.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Flavours/Quickest.hs": {
+      "fichier": "hadrian/src/Settings/Flavours/Quickest.hs",
+      "langage": "haskell",
+      "lignes": 26,
+      "taille_bytes": 827,
+      "entrees": [
+        "Expression",
+        "Flavour",
+        "Oracles.Flag",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Flavours/Performance.hs": {
+      "fichier": "hadrian/src/Settings/Flavours/Performance.hs",
+      "langage": "haskell",
+      "lignes": 22,
+      "taille_bytes": 771,
+      "entrees": [
+        "Expression",
+        "Flavour"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flavour.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Flavours/Release.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Flavours/Validate.hs": {
+      "fichier": "hadrian/src/Settings/Flavours/Validate.hs",
+      "langage": "haskell",
+      "lignes": 50,
+      "taille_bytes": 1755,
+      "entrees": [
+        "Expression",
+        "Flavour"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flavour.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Flavours/QuickCross.hs": {
+      "fichier": "hadrian/src/Settings/Flavours/QuickCross.hs",
+      "langage": "haskell",
+      "lignes": 41,
+      "taille_bytes": 1530,
+      "entrees": [
+        "Expression",
+        "Flavour",
+        "Oracles.Flag",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Flavours/GhcInGhci.hs": {
+      "fichier": "hadrian/src/Settings/Flavours/GhcInGhci.hs",
+      "langage": "haskell",
+      "lignes": 29,
+      "taille_bytes": 1033,
+      "entrees": [
+        "Expression",
+        "Flavour",
+        "Oracles.Flag",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/GhcPkg.hs": {
+      "fichier": "hadrian/src/Settings/Builders/GhcPkg.hs",
+      "langage": "haskell",
+      "lignes": 62,
+      "taille_bytes": 2539,
+      "entrees": [
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Xelatex.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Xelatex.hs",
+      "langage": "haskell",
+      "lignes": 13,
+      "taille_bytes": 441,
+      "entrees": [
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Ar.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Ar.hs",
+      "langage": "haskell",
+      "lignes": 26,
+      "taille_bytes": 951,
+      "entrees": [
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Cc.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Cc.hs",
+      "langage": "haskell",
+      "lignes": 38,
+      "taille_bytes": 1626,
+      "entrees": [
+        "Hadrian.Haskell.Cabal.Type",
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Hsc2Hs.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+      "langage": "haskell",
+      "lignes": 61,
+      "taille_bytes": 2557,
+      "entrees": [
+        "Builder",
+        "GHC.Toolchain",
+        "GHC.Toolchain.Program",
+        "Hadrian.Haskell.Cabal.Type",
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Ld.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Ld.hs",
+      "langage": "haskell",
+      "lignes": 10,
+      "taille_bytes": 377,
+      "entrees": [
+        "GHC.Toolchain",
+        "GHC.Toolchain.Program",
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Haddock.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Haddock.hs",
+      "langage": "haskell",
+      "lignes": 87,
+      "taille_bytes": 3806,
+      "entrees": [
+        "CommandLine",
+        "Hadrian.Haskell.Cabal",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Utilities",
+        "Packages",
+        "Rules.Documentation",
+        "Settings.Builders.Common",
+        "Settings.Builders.Ghc",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Builders/Ghc.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/SplitSections.hs": {
+      "fichier": "hadrian/src/Settings/Builders/SplitSections.hs",
+      "langage": "haskell",
+      "lignes": 37,
+      "taille_bytes": 1260,
+      "entrees": [
+        "Expression",
+        "Flavour.Type",
+        "Packages",
+        "Settings",
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Common.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Common.hs",
+      "langage": "haskell",
+      "lignes": 74,
+      "taille_bytes": 2381,
+      "entrees": [
+        "Base",
+        "Expression",
+        "GHC.Toolchain",
+        "GHC.Toolchain.Program",
+        "Hadrian.Haskell.Cabal.Type",
+        "Oracles.Flag",
+        "Oracles.Setting",
+        "Settings",
+        "UserSettings"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/UserSettings.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Lint.hs",
+        "hadrian/src/Settings/Builders/Alex.hs",
+        "hadrian/src/Settings/Builders/Ar.hs",
+        "hadrian/src/Settings/Builders/Cabal.hs",
+        "hadrian/src/Settings/Builders/Cc.hs",
+        "hadrian/src/Settings/Builders/Configure.hs",
+        "hadrian/src/Settings/Builders/DeriveConstants.hs",
+        "hadrian/src/Settings/Builders/GenApply.hs",
+        "hadrian/src/Settings/Builders/GenPrimopCode.hs",
+        "hadrian/src/Settings/Builders/Ghc.hs",
+        "hadrian/src/Settings/Builders/GhcPkg.hs",
+        "hadrian/src/Settings/Builders/Haddock.hs",
+        "hadrian/src/Settings/Builders/Happy.hs",
+        "hadrian/src/Settings/Builders/HsCpp.hs",
+        "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+        "hadrian/src/Settings/Builders/Ld.hs",
+        "hadrian/src/Settings/Builders/Make.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs",
+        "hadrian/src/Settings/Builders/SplitSections.hs",
+        "hadrian/src/Settings/Builders/Win32Tarballs.hs",
+        "hadrian/src/Settings/Builders/Xelatex.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Settings/Program.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "hadrian/src/Settings/Builders/Alex.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Alex.hs",
+      "langage": "haskell",
+      "lignes": 8,
+      "taille_bytes": 297,
+      "entrees": [
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Happy.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Happy.hs",
+      "langage": "haskell",
+      "lignes": 9,
+      "taille_bytes": 368,
+      "entrees": [
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/GenPrimopCode.hs": {
+      "fichier": "hadrian/src/Settings/Builders/GenPrimopCode.hs",
+      "langage": "haskell",
+      "lignes": 26,
+      "taille_bytes": 1711,
+      "entrees": [
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Cabal.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Cabal.hs",
+      "langage": "haskell",
+      "lignes": 262,
+      "taille_bytes": 10767,
+      "entrees": [
+        "Builder",
+        "Context",
+        "Control.Exception",
+        "Development.Shake.FilePath",
+        "GHC.Toolchain",
+        "GHC.Toolchain.Program",
+        "Hadrian.Haskell.Cabal",
+        "Packages",
+        "Settings.Builders.Common",
+        "Settings.Program",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Settings/Builders/HsCpp.hs": {
+      "fichier": "hadrian/src/Settings/Builders/HsCpp.hs",
+      "langage": "haskell",
+      "lignes": 17,
+      "taille_bytes": 563,
+      "entrees": [
+        "GHC.Toolchain.Program",
+        "Packages",
+        "Settings.Builders.Common",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Configure.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Configure.hs",
+      "langage": "haskell",
+      "lignes": 29,
+      "taille_bytes": 1443,
+      "entrees": [
+        "GHC.Toolchain.Target",
+        "Rules.Gmp",
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/DeriveConstants.hs": {
+      "fichier": "hadrian/src/Settings/Builders/DeriveConstants.hs",
+      "langage": "haskell",
+      "lignes": 50,
+      "taille_bytes": 1959,
+      "entrees": [
+        "Builder",
+        "GHC.Toolchain",
+        "GHC.Toolchain.Program",
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/GenApply.hs": {
+      "fichier": "hadrian/src/Settings/Builders/GenApply.hs",
+      "langage": "haskell",
+      "lignes": 17,
+      "taille_bytes": 385,
+      "entrees": [
+        "Builder",
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Ghc.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Ghc.hs",
+      "langage": "haskell",
+      "lignes": 272,
+      "taille_bytes": 11111,
+      "entrees": [
+        "Data.Version.Extra",
+        "Flavour",
+        "Hadrian.Haskell.Cabal",
+        "Hadrian.Haskell.Cabal.Type",
+        "Packages",
+        "Settings.Builders.Common",
+        "Settings.Warnings",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Settings/Warnings.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Builders/Haddock.hs",
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/RunTest.hs": {
+      "fichier": "hadrian/src/Settings/Builders/RunTest.hs",
+      "langage": "haskell",
+      "lignes": 418,
+      "taille_bytes": 19665,
+      "entrees": [
+        "CommandLine",
+        "Flavour",
+        "GHC.Toolchain.Target",
+        "Hadrian.Utilities",
+        "Oracles.TestSettings",
+        "Packages",
+        "Settings.Builders.Common",
+        "Settings.Program",
+        "System.Directory",
+        "System.Environment",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Environment.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Oracles/TestSettings.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Win32Tarballs.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Win32Tarballs.hs",
+      "langage": "haskell",
+      "lignes": 13,
+      "taille_bytes": 516,
+      "entrees": [
+        "Settings.Builders.Common"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Settings/Builders/Make.hs": {
+      "fichier": "hadrian/src/Settings/Builders/Make.hs",
+      "langage": "haskell",
+      "lignes": 42,
+      "taille_bytes": 1576,
+      "entrees": [
+        "CommandLine",
+        "Oracles.Setting",
+        "Packages",
+        "Rules.Gmp",
+        "Settings.Builders.Common",
+        "Settings.Program"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Oracles/Flag.hs": {
+      "fichier": "hadrian/src/Oracles/Flag.hs",
+      "langage": "haskell",
+      "lignes": 105,
+      "taille_bytes": 3800,
+      "entrees": [
+        "Base",
+        "GHC.Platform.ArchOS",
+        "GHC.Toolchain.Target",
+        "Hadrian.Expression",
+        "Hadrian.Oracles.TextFile",
+        "Oracles.Setting",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/TextFile.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Oracles/Setting.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Expression.hs",
+        "hadrian/src/Flavour.hs",
+        "hadrian/src/Packages.hs",
+        "hadrian/src/Rules/Compile.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Default.hs",
+        "hadrian/src/Settings/Flavours/Benchmark.hs",
+        "hadrian/src/Settings/Flavours/Development.hs",
+        "hadrian/src/Settings/Flavours/GhcInGhci.hs",
+        "hadrian/src/Settings/Flavours/Quick.hs",
+        "hadrian/src/Settings/Flavours/QuickCross.hs",
+        "hadrian/src/Settings/Flavours/Quickest.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Settings/Program.hs",
+        "hadrian/src/Settings/Warnings.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Oracles/ModuleFiles.hs": {
+      "fichier": "hadrian/src/Oracles/ModuleFiles.hs",
+      "langage": "haskell",
+      "lignes": 191,
+      "taille_bytes": 9114,
+      "entrees": [
+        "<-",
+        "Base",
+        "Builder",
+        "Context",
+        "Expression",
+        "Hadrian.Haskell.Cabal.Type",
+        "qualified"
+      ],
+      "sorties": [
+        "type ModuleName",
+        "type instance"
+      ],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Expression.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Rules/Dependencies.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Selftest.hs",
+        "hadrian/src/Rules/SourceDist.hs",
+        "hadrian/src/Rules/ToolArgs.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Oracles/Flavour.hs": {
+      "fichier": "hadrian/src/Oracles/Flavour.hs",
+      "langage": "haskell",
+      "lignes": 34,
+      "taille_bytes": 934,
+      "entrees": [
+        "Base",
+        "Flavour",
+        "Settings"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Settings.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/Ghc.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs",
+        "hadrian/src/Settings/Flavours/Benchmark.hs",
+        "hadrian/src/Settings/Flavours/Development.hs",
+        "hadrian/src/Settings/Flavours/GhcInGhci.hs",
+        "hadrian/src/Settings/Flavours/Performance.hs",
+        "hadrian/src/Settings/Flavours/Quick.hs",
+        "hadrian/src/Settings/Flavours/QuickCross.hs",
+        "hadrian/src/Settings/Flavours/Quickest.hs",
+        "hadrian/src/Settings/Flavours/Release.hs",
+        "hadrian/src/Settings/Flavours/Validate.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Settings/Program.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Oracles/Setting.hs": {
+      "fichier": "hadrian/src/Oracles/Setting.hs",
+      "langage": "haskell",
+      "lignes": 223,
+      "taille_bytes": 8505,
+      "entrees": [
+        "Base",
+        "Control.Monad.Trans",
+        "Control.Monad.Trans.Maybe",
+        "GHC.Platform.ArchOS",
+        "GHC.Toolchain",
+        "Hadrian.Expression",
+        "Hadrian.Oracles.Path",
+        "Hadrian.Oracles.TextFile",
+        "System.Directory",
+        "System.Info.Extra"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Path.hs",
+        "hadrian/src/Hadrian/Oracles/TextFile.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/TestSettings.hs",
+        "hadrian/src/Packages.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/CabalReinstall.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Nofib.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/SourceDist.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Builders/Make.hs",
+        "hadrian/src/Settings/Default.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Settings/Warnings.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Oracles/TestSettings.hs": {
+      "fichier": "hadrian/src/Oracles/TestSettings.hs",
+      "langage": "haskell",
+      "lignes": 125,
+      "taille_bytes": 5229,
+      "entrees": [
+        "Base",
+        "Hadrian.Oracles.TextFile",
+        "Oracles.Setting",
+        "Packages",
+        "Settings.Program"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Hadrian/Oracles/TextFile.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Expression.hs": {
+      "fichier": "hadrian/src/Hadrian/Expression.hs",
+      "langage": "haskell",
+      "lignes": 144,
+      "taille_bytes": 4555,
+      "entrees": [
+        "Control.Monad.Extra",
+        "Control.Monad.Trans",
+        "Control.Monad.Trans.Reader",
+        "Development.Shake",
+        "Hadrian.Target",
+        "Hadrian.Utilities",
+        "qualified"
+      ],
+      "sorties": [
+        "class ToPredicate",
+        "type Args",
+        "type Predicate"
+      ],
+      "appelle": [
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression.hs",
+        "hadrian/src/Flavour.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Builder/Git.hs",
+        "hadrian/src/Hadrian/Builder/Sphinx.hs",
+        "hadrian/src/Hadrian/Builder/Tar.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Hadrian/Oracles/ArgsHash.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Rules.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/CabalReinstall.hs",
+        "hadrian/src/Rules/Compile.hs",
+        "hadrian/src/Rules/Dependencies.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Nofib.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Builders/SplitSections.hs",
+        "hadrian/src/Settings/Default.hs",
+        "hadrian/src/Settings/Flavours/Benchmark.hs",
+        "hadrian/src/Settings/Flavours/Development.hs",
+        "hadrian/src/Settings/Flavours/GhcInGhci.hs",
+        "hadrian/src/Settings/Flavours/Performance.hs",
+        "hadrian/src/Settings/Flavours/Quick.hs",
+        "hadrian/src/Settings/Flavours/QuickCross.hs",
+        "hadrian/src/Settings/Flavours/Quickest.hs",
+        "hadrian/src/Settings/Flavours/Validate.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Settings/Warnings.hs",
+        "hadrian/src/UserSettings.hs",
+        "hadrian/src/Utilities.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "hadrian/src/Hadrian/Package.hs": {
+      "fichier": "hadrian/src/Hadrian/Package.hs",
+      "langage": "haskell",
+      "lignes": 84,
+      "taille_bytes": 2903,
+      "entrees": [
+        "Development.Shake.Classes",
+        "Development.Shake.FilePath",
+        "GHC.Generics",
+        "Hadrian.Utilities"
+      ],
+      "sorties": [
+        "type PackageName"
+      ],
+      "appelle": [
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Type.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal/Type.hs",
+        "hadrian/src/Packages.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Utilities.hs": {
+      "fichier": "hadrian/src/Hadrian/Utilities.hs",
+      "langage": "haskell",
+      "lignes": 692,
+      "taille_bytes": 26110,
+      "entrees": [
+        "Control.Applicative",
+        "Control.Monad.Extra",
+        "Data.Char",
+        "Data.Dynamic",
+        "Data.Functor",
+        "Data.HashMap.Strict",
+        "Data.List.Extra",
+        "Data.Maybe",
+        "Data.Typeable",
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "Development.Shake.FilePath",
+        "System.Environment",
+        "System.IO.Error",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Environment.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Builder.hs",
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Builder/Ar.hs",
+        "hadrian/src/Hadrian/Builder/Sphinx.hs",
+        "hadrian/src/Hadrian/Builder/Tar.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+        "hadrian/src/Hadrian/Oracles/DirectoryContents.hs",
+        "hadrian/src/Hadrian/Oracles/Path.hs",
+        "hadrian/src/Hadrian/Package.hs",
+        "hadrian/src/Main.hs",
+        "hadrian/src/Packages.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/CabalReinstall.hs",
+        "hadrian/src/Rules/Compile.hs",
+        "hadrian/src/Rules/Dependencies.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Selftest.hs",
+        "hadrian/src/Rules/SourceDist.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings/Builders/Haddock.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs",
+        "hadrian/src/Utilities.hs",
+        "hadrian/src/Way/Type.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "hadrian/src/Hadrian/Target.hs": {
+      "fichier": "hadrian/src/Hadrian/Target.hs",
+      "langage": "haskell",
+      "lignes": 29,
+      "taille_bytes": 1154,
+      "entrees": [
+        "Development.Shake.Classes",
+        "GHC.Generics"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Hadrian/Oracles/ArgsHash.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Rules.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/CabalReinstall.hs",
+        "hadrian/src/Rules/Compile.hs",
+        "hadrian/src/Rules/Dependencies.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Gmp.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Selftest.hs",
+        "hadrian/src/Rules/SourceDist.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/Configure.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Target.hs",
+        "hadrian/src/Utilities.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "hadrian/src/Hadrian/Builder.hs": {
+      "fichier": "hadrian/src/Hadrian/Builder.hs",
+      "langage": "haskell",
+      "lignes": 164,
+      "taille_bytes": 7059,
+      "entrees": [
+        "Data.List",
+        "Development.Shake",
+        "Development.Shake.FilePath",
+        "Hadrian.Expression",
+        "Hadrian.Oracles.ArgsHash",
+        "Hadrian.Target",
+        "Hadrian.Utilities"
+      ],
+      "sorties": [
+        "class ShakeValue"
+      ],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/ArgsHash.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Expression.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Rules/SourceDist.hs",
+        "hadrian/src/Settings/Builders/Cabal.hs",
+        "hadrian/src/Settings/Builders/DeriveConstants.hs",
+        "hadrian/src/Settings/Builders/GenApply.hs",
+        "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+        "hadrian/src/Target.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Hadrian/BuildPath.hs": {
+      "fichier": "hadrian/src/Hadrian/BuildPath.hs",
+      "langage": "haskell",
+      "lignes": 167,
+      "taille_bytes": 6727,
+      "entrees": [
+        "Base",
+        "Data.Functor",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Rules/Compile.hs",
+        "hadrian/src/Rules/Dependencies.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Gmp.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Haskell/Hash.hs": {
+      "fichier": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "langage": "haskell",
+      "lignes": 248,
+      "taille_bytes": 9859,
+      "entrees": [
+        "Base",
+        "Builder",
+        "Context.Type",
+        "Control.Arrow",
+        "Control.Monad",
+        "Data.ByteString",
+        "Data.List",
+        "Data.Map",
+        "Data.Maybe",
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "Flavour.Type",
+        "Hadrian.Expression",
+        "Hadrian.Haskell.Cabal",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Oracles.Cabal",
+        "Hadrian.Package",
+        "Hadrian.Target",
+        "Oracles.Setting",
+        "Packages",
+        "Settings",
+        "System.Directory.Extra",
+        "Way",
+        "qualified"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Package.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Way.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Hadrian/Haskell/Cabal.hs": {
+      "fichier": "hadrian/src/Hadrian/Haskell/Cabal.hs",
+      "langage": "haskell",
+      "lignes": 88,
+      "taille_bytes": 3549,
+      "entrees": [
+        "Development.Shake",
+        "Distribution.PackageDescription",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Oracles.Cabal",
+        "Hadrian.Package",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Package.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Hadrian/Haskell/Cabal/Type.hs": {
+      "fichier": "hadrian/src/Hadrian/Haskell/Cabal/Type.hs",
+      "langage": "haskell",
+      "lignes": 85,
+      "taille_bytes": 3574,
+      "entrees": [
+        "Development.Shake.Classes",
+        "Distribution.PackageDescription",
+        "GHC.Generics",
+        "Hadrian.Package"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Package.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs": {
+      "fichier": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "langage": "haskell",
+      "lignes": 471,
+      "taille_bytes": 24512,
+      "entrees": [
+        "Base",
+        "Builder",
+        "Context",
+        "Data.Bifunctor",
+        "Data.List.Extra",
+        "Development.Shake",
+        "Distribution.Simple.LocalBuildInfo",
+        "Distribution.Simple.Utils",
+        "Hadrian.Expression",
+        "Hadrian.Haskell.Cabal",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Oracles.ArgsHash",
+        "Hadrian.Oracles.Cabal",
+        "Hadrian.Target",
+        "Packages",
+        "Settings",
+        "System.Directory",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/ArgsHash.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Oracles/DirectoryContents.hs": {
+      "fichier": "hadrian/src/Hadrian/Oracles/DirectoryContents.hs",
+      "langage": "haskell",
+      "lignes": 64,
+      "taille_bytes": 2685,
+      "entrees": [
+        "Control.Monad",
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "Development.Shake.FilePath",
+        "GHC.Generics",
+        "Hadrian.Utilities",
+        "qualified"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Base.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Oracles/Path.hs": {
+      "fichier": "hadrian/src/Hadrian/Oracles/Path.hs",
+      "langage": "haskell",
+      "lignes": 60,
+      "taille_bytes": 2029,
+      "entrees": [
+        "Control.Monad",
+        "Data.Char",
+        "Data.List.Extra",
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "Development.Shake.FilePath",
+        "Hadrian.Utilities",
+        "System.Directory",
+        "System.Info.Extra"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Rules/Test.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Oracles/TextFile.hs": {
+      "fichier": "hadrian/src/Hadrian/Oracles/TextFile.hs",
+      "langage": "haskell",
+      "lignes": 189,
+      "taille_bytes": 8751,
+      "entrees": [
+        "Base",
+        "Control.Monad",
+        "Data.List",
+        "Data.Maybe",
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "Development.Shake.Config",
+        "Text.Read",
+        "qualified"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "hadrian/src/Base.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Oracles/TestSettings.hs",
+        "hadrian/src/Rules/Compile.hs",
+        "hadrian/src/Settings.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Oracles/ArgsHash.hs": {
+      "fichier": "hadrian/src/Hadrian/Oracles/ArgsHash.hs",
+      "langage": "haskell",
+      "lignes": 51,
+      "taille_bytes": 2484,
+      "entrees": [
+        "Control.Monad",
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "Hadrian.Expression",
+        "Hadrian.Target"
+      ],
+      "sorties": [
+        "type TrackArgument",
+        "type instance"
+      ],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Target.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Oracles/Cabal.hs": {
+      "fichier": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "langage": "haskell",
+      "lignes": 41,
+      "taille_bytes": 1600,
+      "entrees": [
+        "Context.Type",
+        "Development.Shake",
+        "Distribution.Simple",
+        "Distribution.System",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Oracles.Cabal.Type",
+        "Hadrian.Package",
+        "Stage"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Package.hs",
+        "hadrian/src/Stage.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Selftest.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings/Builders/Cabal.hs",
+        "hadrian/src/Settings/Builders/Ghc.hs",
+        "hadrian/src/Settings/Builders/Haddock.hs",
+        "hadrian/src/Settings/Default.hs",
+        "hadrian/src/Utilities.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Hadrian/Oracles/Cabal/Type.hs": {
+      "fichier": "hadrian/src/Hadrian/Oracles/Cabal/Type.hs",
+      "langage": "haskell",
+      "lignes": 62,
+      "taille_bytes": 2742,
+      "entrees": [
+        "Context.Type",
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Package",
+        "Stage",
+        "qualified"
+      ],
+      "sorties": [
+        "type instance"
+      ],
+      "appelle": [
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Package.hs",
+        "hadrian/src/Stage.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs": {
+      "fichier": "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+      "langage": "haskell",
+      "lignes": 79,
+      "taille_bytes": 3524,
+      "entrees": [
+        "Builder",
+        "Context",
+        "Control.Monad",
+        "Data.Maybe",
+        "Development.Shake",
+        "Distribution.Simple.GHC",
+        "Distribution.Simple.Program.Builtin",
+        "Distribution.Simple.Program.Db",
+        "Distribution.Verbosity",
+        "Hadrian.Haskell.Cabal.Parse",
+        "Hadrian.Oracles.Cabal.Type",
+        "Hadrian.Package",
+        "Hadrian.Utilities"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Package.hs",
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Hadrian/Builder/Ar.hs": {
+      "fichier": "hadrian/src/Hadrian/Builder/Ar.hs",
+      "langage": "haskell",
+      "lignes": 58,
+      "taille_bytes": 2797,
+      "entrees": [
+        "Control.Monad",
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "GHC.Generics",
+        "Hadrian.Utilities"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Settings/Default.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Builder/Git.hs": {
+      "fichier": "hadrian/src/Hadrian/Builder/Git.hs",
+      "langage": "haskell",
+      "lignes": 14,
+      "taille_bytes": 318,
+      "entrees": [
+        "Expression"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Builder/Tar.hs": {
+      "fichier": "hadrian/src/Hadrian/Builder/Tar.hs",
+      "langage": "haskell",
+      "lignes": 43,
+      "taille_bytes": 1393,
+      "entrees": [
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "GHC.Generics",
+        "Hadrian.Expression",
+        "Hadrian.Utilities"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Hadrian/Builder/Sphinx.hs": {
+      "fichier": "hadrian/src/Hadrian/Builder/Sphinx.hs",
+      "langage": "haskell",
+      "lignes": 42,
+      "taille_bytes": 1569,
+      "entrees": [
+        "Development.Shake",
+        "Development.Shake.Classes",
+        "GHC.Generics",
+        "Hadrian.Expression",
+        "Hadrian.Utilities"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Way/Type.hs": {
+      "fichier": "hadrian/src/Way/Type.hs",
+      "langage": "haskell",
+      "lignes": 98,
+      "taille_bytes": 3037,
+      "entrees": [
+        "Data.IntSet",
+        "Data.List",
+        "Data.Maybe",
+        "Development.Shake.Classes",
+        "Hadrian.Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Hadrian/Utilities.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Expression/Type.hs": {
+      "fichier": "hadrian/src/Expression/Type.hs",
+      "langage": "haskell",
+      "lignes": 19,
+      "taille_bytes": 605,
+      "entrees": [
+        "Builder",
+        "Context.Type",
+        "Data.Set",
+        "Way.Type",
+        "qualified"
+      ],
+      "sorties": [
+        "type Args",
+        "type Expr",
+        "type Predicate",
+        "type Ways"
+      ],
+      "appelle": [
+        "hadrian/src/Hadrian/Builder.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression.hs",
+        "hadrian/src/Flavour.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal.hs",
+        "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+        "hadrian/src/Hadrian/Haskell/Hash.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal/Type.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Packages.hs",
+        "hadrian/src/Rules/Documentation.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Rules/ToolArgs.hs",
+        "hadrian/src/Settings/Builders/Cc.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Builders/Ghc.hs",
+        "hadrian/src/Settings/Builders/Haddock.hs",
+        "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+        "hadrian/src/Settings/Builders/SplitSections.hs",
+        "hadrian/src/Settings/Default.hs",
+        "hadrian/src/UserSettings.hs",
+        "hadrian/src/Utilities.hs",
+        "hadrian/src/Way.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "hadrian/src/Rules/Test.hs": {
+      "fichier": "hadrian/src/Rules/Test.hs",
+      "langage": "haskell",
+      "lignes": 337,
+      "taille_bytes": 14501,
+      "entrees": [
+        "Base",
+        "CommandLine",
+        "Expression",
+        "Flavour",
+        "GHC.Toolchain",
+        "GHC.Toolchain.Program",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Oracles.Cabal",
+        "Hadrian.Oracles.Path",
+        "Oracles.Flag",
+        "Oracles.Setting",
+        "Oracles.TestSettings",
+        "Packages",
+        "Settings",
+        "Settings.Builders.RunTest",
+        "Settings.Program",
+        "Target",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Oracles/Path.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Oracles/TestSettings.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules/Selftest.hs": {
+      "fichier": "hadrian/src/Rules/Selftest.hs",
+      "langage": "haskell",
+      "lignes": 125,
+      "taille_bytes": 4325,
+      "entrees": [
+        "Base",
+        "Context",
+        "Hadrian.Haskell.Cabal",
+        "Oracles.ModuleFiles",
+        "Packages",
+        "Settings",
+        "Target",
+        "Test.QuickCheck",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules/Clean.hs": {
+      "fichier": "hadrian/src/Rules/Clean.hs",
+      "langage": "haskell",
+      "lignes": 45,
+      "taille_bytes": 1261,
+      "entrees": [
+        "Base",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Rules/Documentation.hs": {
+      "fichier": "hadrian/src/Rules/Documentation.hs",
+      "langage": "haskell",
+      "lignes": 435,
+      "taille_bytes": 15967,
+      "entrees": [
+        "Base",
+        "Context",
+        "Expression",
+        "Flavour",
+        "Hadrian.BuildPath",
+        "Hadrian.Haskell.Cabal",
+        "Hadrian.Haskell.Cabal.Type",
+        "Oracles.ModuleFiles",
+        "Oracles.Setting",
+        "Packages",
+        "Settings",
+        "Target",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/BuildPath.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Builders/Haddock.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Rules/Dependencies.hs": {
+      "fichier": "hadrian/src/Rules/Dependencies.hs",
+      "langage": "haskell",
+      "lignes": 59,
+      "taille_bytes": 2084,
+      "entrees": [
+        "Base",
+        "Context",
+        "Data.Bifunctor",
+        "Expression",
+        "Hadrian.BuildPath",
+        "Oracles.ModuleFiles",
+        "Rules.Generate",
+        "Settings",
+        "Target",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/BuildPath.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Settings.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules/ToolArgs.hs": {
+      "fichier": "hadrian/src/Rules/ToolArgs.hs",
+      "langage": "haskell",
+      "lignes": 203,
+      "taille_bytes": 8316,
+      "entrees": [
+        "Context",
+        "Data.Version.Extra",
+        "Development.Shake",
+        "Expression",
+        "Hadrian.Haskell.Cabal.Type",
+        "Hadrian.Oracles.Cabal",
+        "Oracles.ModuleFiles",
+        "Oracles.Setting",
+        "Packages",
+        "Rules.Generate",
+        "Settings",
+        "Stage",
+        "System.Directory",
+        "System.Environment",
+        "Target",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Environment.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Packages.hs",
+        "hadrian/src/Stage.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Rules.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Rules/SimpleTargets.hs": {
+      "fichier": "hadrian/src/Rules/SimpleTargets.hs",
+      "langage": "haskell",
+      "lignes": 80,
+      "taille_bytes": 2710,
+      "entrees": [
+        "Base",
+        "CommandLine",
+        "Context",
+        "Data.Foldable",
+        "Packages",
+        "Settings"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules/BinaryDist.hs": {
+      "fichier": "hadrian/src/Rules/BinaryDist.hs",
+      "langage": "haskell",
+      "lignes": 535,
+      "taille_bytes": 23220,
+      "entrees": [
+        "CommandLine",
+        "Context",
+        "Data.Either",
+        "Expression",
+        "Oracles.Flavour",
+        "Oracles.Setting",
+        "Packages",
+        "Settings",
+        "Settings.Program",
+        "Target",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/CommandLine.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flavour.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Rules/CabalReinstall.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Rules/SourceDist.hs": {
+      "fichier": "hadrian/src/Rules/SourceDist.hs",
+      "langage": "haskell",
+      "lignes": 197,
+      "taille_bytes": 8689,
+      "entrees": [
+        "Base",
+        "Builder",
+        "Context",
+        "Hadrian.Target",
+        "Oracles.ModuleFiles",
+        "Oracles.Setting",
+        "Packages",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/Builder.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules/CabalReinstall.hs": {
+      "fichier": "hadrian/src/Rules/CabalReinstall.hs",
+      "langage": "haskell",
+      "lignes": 92,
+      "taille_bytes": 3535,
+      "entrees": [
+        "Context",
+        "Data.Either",
+        "Expression",
+        "Oracles.Setting",
+        "Packages",
+        "Rules.BinaryDist",
+        "Settings",
+        "Target",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules/Lint.hs": {
+      "fichier": "hadrian/src/Rules/Lint.hs",
+      "langage": "haskell",
+      "lignes": 124,
+      "taille_bytes": 4388,
+      "entrees": [
+        "Base",
+        "Settings.Builders.Common",
+        "System.Directory",
+        "System.Exit"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Settings/Builders/Common.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules/Codes.hs": {
+      "fichier": "hadrian/src/Rules/Codes.hs",
+      "langage": "haskell",
+      "lignes": 37,
+      "taille_bytes": 914,
+      "entrees": [
+        "Base",
+        "Packages",
+        "Settings.Program"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Rules/Program.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules/Compile.hs": {
+      "fichier": "hadrian/src/Rules/Compile.hs",
+      "langage": "haskell",
+      "lignes": 314,
+      "taille_bytes": 11849,
+      "entrees": [
+        "Base",
+        "Context",
+        "Expression",
+        "Hadrian.BuildPath",
+        "Hadrian.Oracles.TextFile",
+        "Oracles.Flag",
+        "Rules.Generate",
+        "Settings",
+        "Target",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [
+        "interface files",
+        "type Basename"
+      ],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/BuildPath.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/TextFile.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Settings.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "hadrian/src/Rules/Program.hs": {
+      "fichier": "hadrian/src/Rules/Program.hs",
+      "langage": "haskell",
+      "lignes": 113,
+      "taille_bytes": 4614,
+      "entrees": [
+        "Base",
+        "Context",
+        "Expression",
+        "Hadrian.Haskell.Cabal",
+        "Hadrian.Haskell.Cabal.Type",
+        "Oracles.Flag",
+        "Oracles.ModuleFiles",
+        "Oracles.Setting",
+        "Packages",
+        "Rules.Library",
+        "Rules.Register",
+        "Settings",
+        "Settings.Default",
+        "Settings.Program",
+        "Target",
+        "Utilities",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Expression/Type.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Oracles/Cabal.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/ModuleFiles.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings.hs",
+        "hadrian/src/Settings/Default.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Builder.hs",
+        "hadrian/src/Oracles/TestSettings.hs",
+        "hadrian/src/Rules.hs",
+        "hadrian/src/Rules/BinaryDist.hs",
+        "hadrian/src/Rules/Codes.hs",
+        "hadrian/src/Rules/Test.hs",
+        "hadrian/src/Settings/Builders/Cabal.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Builders/DeriveConstants.hs",
+        "hadrian/src/Settings/Builders/HsCpp.hs",
+        "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+        "hadrian/src/Settings/Builders/Ld.hs",
+        "hadrian/src/Settings/Builders/Make.hs",
+        "hadrian/src/Settings/Builders/RunTest.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "hadrian/src/Rules/Gmp.hs": {
+      "fichier": "hadrian/src/Rules/Gmp.hs",
+      "langage": "haskell",
+      "lignes": 177,
+      "taille_bytes": 7374,
+      "entrees": [
+        "Base",
+        "Context",
+        "Hadrian.BuildPath",
+        "Hadrian.Expression",
+        "Oracles.Flag",
+        "Oracles.Setting",
+        "Packages",
+        "Settings.Builders.Common",
+        "Target",
+        "Utilities"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Context.hs",
+        "hadrian/src/Hadrian/BuildPath.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Hadrian/Target.hs",
+        "hadrian/src/Hadrian/Utilities.hs",
+        "hadrian/src/Oracles/Flag.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings/Builders/Common.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [
+        "hadrian/src/Settings/Builders/Configure.hs",
+        "hadrian/src/Settings/Builders/Make.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "hadrian/src/Rules/Nofib.hs": {
+      "fichier": "hadrian/src/Rules/Nofib.hs",
+      "langage": "haskell",
+      "lignes": 56,
+      "taille_bytes": 1773,
+      "entrees": [
+        "Base",
+        "Expression",
+        "Oracles.Setting",
+        "Packages",
+        "System.Environment",
+        "System.Exit"
+      ],
+      "sorties": [],
+      "appelle": [
+        "hadrian/src/Base.hs",
+        "hadrian/src/Environment.hs",
+        "hadrian/src/Hadrian/Expression.hs",
+        "hadrian/src/Oracles/Setting.hs",
+        "hadrian/src/Settings/Packages.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    }
+  },
+  "edges": [
+    {
+      "de": "hadrian/bootstrap/src/Main.hs",
+      "vers": "hadrian/src/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Expression.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Expression.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Expression.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Expression.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Expression.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Expression.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Expression.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Main.hs",
+      "vers": "hadrian/src/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Main.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Main.hs",
+      "vers": "hadrian/src/Settings/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Base.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/DirectoryContents.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Base.hs",
+      "vers": "hadrian/src/Hadrian/Package.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Base.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Base.hs",
+      "vers": "hadrian/src/Stage.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Base.hs",
+      "vers": "hadrian/src/Way.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/UserSettings.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/UserSettings.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Packages.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Packages.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Packages.hs",
+      "vers": "hadrian/src/Hadrian/Package.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Packages.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Packages.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Packages.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Context.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Context.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Context.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Context.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Context.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Path.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Context.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Context.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Context.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Flavour.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Flavour.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Flavour.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Flavour.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Flavour.hs",
+      "vers": "hadrian/src/Settings/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Flavour.hs",
+      "vers": "hadrian/src/UserSettings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/CommandLine.hs",
+      "vers": "hadrian/src/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/CommandLine.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/CommandLine.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/CommandLine.hs",
+      "vers": "hadrian/src/Settings/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Utilities.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Utilities.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Utilities.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Utilities.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Utilities.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Utilities.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Utilities.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Target.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Target.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Target.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Builder/Ar.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Builder/Sphinx.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Builder/Tar.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Path.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/TextFile.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Builder.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules.hs",
+      "vers": "hadrian/src/Rules/ToolArgs.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules.hs",
+      "vers": "hadrian/src/UserSettings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/CommandLine.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/TextFile.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Flavours/Benchmark.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Flavours/Development.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Flavours/GhcInGhci.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Flavours/Performance.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Flavours/Quick.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Flavours/QuickCross.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Flavours/Quickest.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Flavours/Release.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Flavours/Validate.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/Settings/Parser.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings.hs",
+      "vers": "hadrian/src/UserSettings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Way.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Packages.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Packages.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Packages.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Packages.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Packages.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Packages.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "hadrian/src/Settings/Packages.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "hadrian/src/Settings/Packages.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/CommandLine.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Hadrian/Builder/Ar.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Alex.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Cc.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Configure.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/DeriveConstants.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/GenApply.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/GenPrimopCode.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Ghc.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/GhcPkg.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Haddock.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Happy.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/HsCpp.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Ld.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Make.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/RunTest.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/SplitSections.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Win32Tarballs.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Builders/Xelatex.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Default.hs",
+      "vers": "hadrian/src/Settings/Warnings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Program.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Program.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Program.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Program.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Program.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Program.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Warnings.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Warnings.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Warnings.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Warnings.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Benchmark.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Benchmark.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Benchmark.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Quick.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Quick.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Quick.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Development.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Development.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Development.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Development.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Release.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Release.hs",
+      "vers": "hadrian/src/Settings/Flavours/Performance.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Quickest.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Quickest.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Quickest.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Performance.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Performance.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Validate.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/Validate.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/QuickCross.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/QuickCross.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/QuickCross.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/GhcInGhci.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/GhcInGhci.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Flavours/GhcInGhci.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/GhcPkg.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Xelatex.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Ar.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Cc.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Cc.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Hsc2Hs.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Ld.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Ld.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Haddock.hs",
+      "vers": "hadrian/src/CommandLine.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Haddock.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Haddock.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Haddock.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Haddock.hs",
+      "vers": "hadrian/src/Rules/Documentation.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Haddock.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Haddock.hs",
+      "vers": "hadrian/src/Settings/Builders/Ghc.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Haddock.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/SplitSections.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/SplitSections.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/SplitSections.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/SplitSections.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/SplitSections.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Common.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Common.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Common.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Common.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Common.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Common.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Common.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Common.hs",
+      "vers": "hadrian/src/UserSettings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Alex.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Happy.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/GenPrimopCode.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Cabal.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Cabal.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Cabal.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Cabal.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Cabal.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Cabal.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/HsCpp.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/HsCpp.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/HsCpp.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Configure.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Configure.hs",
+      "vers": "hadrian/src/Rules/Gmp.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Configure.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/DeriveConstants.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/DeriveConstants.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/DeriveConstants.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/GenApply.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/GenApply.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Ghc.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Ghc.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Ghc.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Ghc.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Ghc.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Ghc.hs",
+      "vers": "hadrian/src/Settings/Warnings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/RunTest.hs",
+      "vers": "hadrian/src/CommandLine.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/RunTest.hs",
+      "vers": "hadrian/src/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/RunTest.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/RunTest.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/RunTest.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/RunTest.hs",
+      "vers": "hadrian/src/Oracles/TestSettings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/RunTest.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/RunTest.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/RunTest.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Win32Tarballs.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Make.hs",
+      "vers": "hadrian/src/CommandLine.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Make.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Make.hs",
+      "vers": "hadrian/src/Rules/Gmp.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Make.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Make.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Settings/Builders/Make.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Flag.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Flag.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Flag.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/TextFile.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Flag.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Flag.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/ModuleFiles.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/ModuleFiles.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/ModuleFiles.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/ModuleFiles.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/ModuleFiles.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Flavour.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Flavour.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "hadrian/src/Oracles/Setting.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Setting.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Setting.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Path.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/Setting.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/TextFile.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/TestSettings.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/TestSettings.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/TextFile.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/TestSettings.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/TestSettings.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Oracles/TestSettings.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Expression.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Expression.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Package.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Utilities.hs",
+      "vers": "hadrian/src/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/ArgsHash.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/BuildPath.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Hadrian/Package.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Hash.hs",
+      "vers": "hadrian/src/Way.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal.hs",
+      "vers": "hadrian/src/Hadrian/Package.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Type.hs",
+      "vers": "hadrian/src/Hadrian/Package.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/ArgsHash.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/DirectoryContents.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Path.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/TextFile.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/ArgsHash.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/ArgsHash.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "vers": "hadrian/src/Hadrian/Package.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "vers": "hadrian/src/Stage.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal/Type.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal/Type.hs",
+      "vers": "hadrian/src/Hadrian/Package.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal/Type.hs",
+      "vers": "hadrian/src/Stage.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+      "vers": "hadrian/src/Hadrian/Haskell/Cabal/Parse.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+      "vers": "hadrian/src/Hadrian/Package.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Oracles/Cabal/Rules.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder/Ar.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder/Git.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder/Tar.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder/Tar.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder/Sphinx.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Hadrian/Builder/Sphinx.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Way/Type.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Expression/Type.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/CommandLine.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Path.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Oracles/TestSettings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Settings/Builders/RunTest.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Test.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Selftest.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Selftest.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Selftest.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Selftest.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Selftest.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Selftest.hs",
+      "vers": "hadrian/src/Oracles/ModuleFiles.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Selftest.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Selftest.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Clean.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Hadrian/BuildPath.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Oracles/ModuleFiles.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Documentation.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Dependencies.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Dependencies.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Dependencies.hs",
+      "vers": "hadrian/src/Hadrian/BuildPath.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Dependencies.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Dependencies.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Dependencies.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Dependencies.hs",
+      "vers": "hadrian/src/Oracles/ModuleFiles.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Dependencies.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Oracles/ModuleFiles.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/ToolArgs.hs",
+      "vers": "hadrian/src/Stage.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SimpleTargets.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SimpleTargets.hs",
+      "vers": "hadrian/src/CommandLine.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SimpleTargets.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SimpleTargets.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SimpleTargets.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/CommandLine.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/Oracles/Flavour.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/BinaryDist.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SourceDist.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SourceDist.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SourceDist.hs",
+      "vers": "hadrian/src/Hadrian/Builder.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SourceDist.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SourceDist.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SourceDist.hs",
+      "vers": "hadrian/src/Oracles/ModuleFiles.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SourceDist.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/SourceDist.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/CabalReinstall.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/CabalReinstall.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/CabalReinstall.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/CabalReinstall.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/CabalReinstall.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/CabalReinstall.hs",
+      "vers": "hadrian/src/Rules/BinaryDist.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/CabalReinstall.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/CabalReinstall.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Lint.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Lint.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Codes.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Codes.hs",
+      "vers": "hadrian/src/Rules/Program.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Codes.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Compile.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Compile.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Compile.hs",
+      "vers": "hadrian/src/Hadrian/BuildPath.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Compile.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Compile.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/TextFile.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Compile.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Compile.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Compile.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Compile.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Expression/Type.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Hadrian/Oracles/Cabal.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Oracles/ModuleFiles.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Settings.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Settings/Default.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Program.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "circulaire"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Context.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Hadrian/BuildPath.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Hadrian/Target.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Hadrian/Utilities.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Oracles/Flag.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Settings/Builders/Common.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Gmp.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Nofib.hs",
+      "vers": "hadrian/src/Base.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Nofib.hs",
+      "vers": "hadrian/src/Environment.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Nofib.hs",
+      "vers": "hadrian/src/Hadrian/Expression.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Nofib.hs",
+      "vers": "hadrian/src/Oracles/Setting.hs",
+      "type": "interne"
+    },
+    {
+      "de": "hadrian/src/Rules/Nofib.hs",
+      "vers": "hadrian/src/Settings/Packages.hs",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'hadrian/src/Expression.hs'",
+    "point_entree → 'hadrian/src/Main.hs'",
+    "hub → 'hadrian/src/Base.hs' (in=28, 23% du projet)",
+    "central → 'hadrian/src/UserSettings.hs' (in=4, out=2)",
+    "feuille → 'hadrian/src/Stage.hs' (in=4)",
+    "point_entree → 'hadrian/src/Packages.hs'",
+    "central → 'hadrian/src/Context.hs' (in=20, out=8)",
+    "point_entree → 'hadrian/src/Flavour.hs'",
+    "central → 'hadrian/src/CommandLine.hs' (in=8, out=4)",
+    "feuille → 'hadrian/src/Environment.hs' (in=7)",
+    "point_entree → 'hadrian/src/Utilities.hs'",
+    "point_entree → 'hadrian/src/Target.hs'",
+    "point_entree → 'hadrian/src/Builder.hs'",
+    "point_entree → 'hadrian/src/Rules.hs'",
+    "central → 'hadrian/src/Settings.hs' (in=18, out=18)",
+    "feuille → 'hadrian/src/Settings/Parser.hs' (in=4)",
+    "hub → 'hadrian/src/Settings/Packages.hs' (in=31, 26% du projet)",
+    "point_entree → 'hadrian/src/Settings/Program.hs'",
+    "hub → 'hadrian/src/Settings/Builders/Common.hs' (in=24, 20% du projet)",
+    "point_entree → 'hadrian/src/Settings/Builders/Cabal.hs'",
+    "central → 'hadrian/src/Oracles/Flag.hs' (in=19, out=5)",
+    "central → 'hadrian/src/Oracles/ModuleFiles.hs' (in=6, out=5)",
+    "central → 'hadrian/src/Oracles/Flavour.hs' (in=18, out=2)",
+    "central → 'hadrian/src/Oracles/Setting.hs' (in=21, out=4)",
+    "hub → 'hadrian/src/Hadrian/Expression.hs' (in=40, 33% du projet)",
+    "hub → 'hadrian/src/Hadrian/Utilities.hs' (in=30, 25% du projet)",
+    "hub → 'hadrian/src/Hadrian/Target.hs' (in=25, 21% du projet)",
+    "central → 'hadrian/src/Hadrian/Builder.hs' (in=13, out=4)",
+    "point_entree → 'hadrian/src/Hadrian/Haskell/Hash.hs'",
+    "point_entree → 'hadrian/src/Hadrian/Haskell/Cabal.hs'",
+    "central → 'hadrian/src/Hadrian/Oracles/Cabal.hs' (in=15, out=3)",
+    "point_entree → 'hadrian/src/Hadrian/Oracles/Cabal/Type.hs'",
+    "point_entree → 'hadrian/src/Hadrian/Oracles/Cabal/Rules.hs'",
+    "hub → 'hadrian/src/Expression/Type.hs' (in=25, 21% du projet)",
+    "point_entree → 'hadrian/src/Rules/Test.hs'",
+    "point_entree → 'hadrian/src/Rules/Selftest.hs'",
+    "point_entree → 'hadrian/src/Rules/Dependencies.hs'",
+    "point_entree → 'hadrian/src/Rules/SimpleTargets.hs'",
+    "point_entree → 'hadrian/src/Rules/SourceDist.hs'",
+    "point_entree → 'hadrian/src/Rules/CabalReinstall.hs'",
+    "point_entree → 'hadrian/src/Rules/Lint.hs'",
+    "point_entree → 'hadrian/src/Rules/Codes.hs'",
+    "point_entree → 'hadrian/src/Rules/Compile.hs'",
+    "central → 'hadrian/src/Rules/Program.hs' (in=15, out=13)",
+    "point_entree → 'hadrian/src/Rules/Nofib.hs'",
+    "circulaire → 6 cycles détectés"
+  ]
+}

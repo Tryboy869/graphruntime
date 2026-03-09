@@ -1,0 +1,2582 @@
+{
+  "meta": {
+    "projet": "electric",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 15,
+      "yaml": 2,
+      "javascript": 5,
+      "typescript": 87,
+      "html": 4,
+      "sql": 6,
+      "toml": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 59,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 7,
+    "noeuds_hubs": 0,
+    "points_entree": 3,
+    "fichier_plus_appele": "examples/linearlite/src/config.ts"
+  },
+  "noeuds": {
+    "tsconfig.base.json": {
+      "fichier": "tsconfig.base.json",
+      "langage": "json",
+      "lignes": 17,
+      "taille_bytes": 386,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package.json": {
+      "fichier": "package.json",
+      "langage": "json",
+      "lignes": 45,
+      "taille_bytes": 1699,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pnpm-workspace.yaml": {
+      "fichier": "pnpm-workspace.yaml",
+      "langage": "yaml",
+      "lignes": 5,
+      "taille_bytes": 81,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "eslint.config.mjs": {
+      "fichier": "eslint.config.mjs",
+      "langage": "javascript",
+      "lignes": 60,
+      "taille_bytes": 1230,
+      "entrees": [
+        "tseslint",
+        "tsparser"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tsconfig.build.json": {
+      "fichier": "tsconfig.build.json",
+      "langage": "json",
+      "lignes": 3,
+      "taille_bytes": 40,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/next.config.js": {
+      "fichier": "examples/proxy-auth/next.config.js",
+      "langage": "javascript",
+      "lignes": 7,
+      "taille_bytes": 107,
+      "entrees": [],
+      "sorties": [
+        "const config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/playwright.config.ts": {
+      "fichier": "examples/proxy-auth/playwright.config.ts",
+      "langage": "typescript",
+      "lignes": 2,
+      "taille_bytes": 72,
+      "entrees": [
+        "config"
+      ],
+      "sorties": [],
+      "appelle": [
+        "examples/linearlite/src/config.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/package.json": {
+      "fichier": "examples/proxy-auth/package.json",
+      "langage": "json",
+      "lignes": 44,
+      "taille_bytes": 1397,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/sst.config.ts": {
+      "fichier": "examples/proxy-auth/sst.config.ts",
+      "langage": "typescript",
+      "lignes": 58,
+      "taille_bytes": 1568,
+      "entrees": [],
+      "sorties": [
+        "const dbName",
+        "const staticSite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/tsconfig.json": {
+      "fichier": "examples/proxy-auth/tsconfig.json",
+      "langage": "json",
+      "lignes": 28,
+      "taille_bytes": 655,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/sst-env.d.ts": {
+      "fichier": "examples/proxy-auth/sst-env.d.ts",
+      "langage": "typescript",
+      "lignes": 14,
+      "taille_bytes": 279,
+      "entrees": [],
+      "sorties": [
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/index.html": {
+      "fichier": "examples/proxy-auth/index.html",
+      "langage": "html",
+      "lignes": 13,
+      "taille_bytes": 374,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/db/migrations/001-create-users-table-with-examples.sql": {
+      "fichier": "examples/proxy-auth/db/migrations/001-create-users-table-with-examples.sql",
+      "langage": "sql",
+      "lignes": 15,
+      "taille_bytes": 256,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/app/layout.tsx": {
+      "fichier": "examples/proxy-auth/app/layout.tsx",
+      "langage": "typescript",
+      "lignes": 26,
+      "taille_bytes": 570,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/app/page.tsx": {
+      "fichier": "examples/proxy-auth/app/page.tsx",
+      "langage": "typescript",
+      "lignes": 131,
+      "taille_bytes": 3460,
+      "entrees": [],
+      "sorties": [
+        "const classFor",
+        "const orgIdKey",
+        "const orgSearchParam",
+        "const org_id",
+        "const queryParams",
+        "const searchParams",
+        "const usersShape",
+        "interface UserAccumulator",
+        "type User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/proxy-auth/app/shape-proxy/route.ts": {
+      "fichier": "examples/proxy-auth/app/shape-proxy/route.ts",
+      "langage": "typescript",
+      "lignes": 64,
+      "taille_bytes": 2041,
+      "entrees": [],
+      "sorties": [
+        "const baseUrl",
+        "const headers",
+        "const org_id",
+        "const originUrl",
+        "const response",
+        "const url"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/redis/package.json": {
+      "fichier": "examples/redis/package.json",
+      "langage": "json",
+      "lignes": 62,
+      "taille_bytes": 1815,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/redis/tsconfig.json": {
+      "fichier": "examples/redis/tsconfig.json",
+      "langage": "json",
+      "lignes": 105,
+      "taille_bytes": 10814,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/redis/tsconfig.build.json": {
+      "fichier": "examples/redis/tsconfig.build.json",
+      "langage": "json",
+      "lignes": 105,
+      "taille_bytes": 10734,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/redis/src/index.ts": {
+      "fichier": "examples/redis/src/index.ts",
+      "langage": "typescript",
+      "lignes": 84,
+      "taille_bytes": 2422,
+      "entrees": [],
+      "sorties": [
+        "const REDIS_HOST",
+        "const REDIS_PORT",
+        "const client",
+        "const itemsStream",
+        "const pipeline",
+        "const script",
+        "const updateKeyScriptSha1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/redis/db/migrations/01-create_items_table.sql": {
+      "fichier": "examples/redis/db/migrations/01-create_items_table.sql",
+      "langage": "sql",
+      "lignes": 15,
+      "taille_bytes": 410,
+      "entrees": [
+        "generate_series"
+      ],
+      "sorties": [
+        "CREATE TABLE IF"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/playwright.config.ts": {
+      "fichier": "examples/write-patterns/playwright.config.ts",
+      "langage": "typescript",
+      "lignes": 2,
+      "taille_bytes": 72,
+      "entrees": [
+        "config"
+      ],
+      "sorties": [],
+      "appelle": [
+        "examples/linearlite/src/config.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/vite.config.ts": {
+      "fichier": "examples/write-patterns/vite.config.ts",
+      "langage": "typescript",
+      "lignes": 45,
+      "taille_bytes": 1077,
+      "entrees": [
+        "react"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/package.json": {
+      "fichier": "examples/write-patterns/package.json",
+      "langage": "json",
+      "lignes": 60,
+      "taille_bytes": 1923,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/sst.config.ts": {
+      "fichier": "examples/write-patterns/sst.config.ts",
+      "langage": "typescript",
+      "lignes": 99,
+      "taille_bytes": 2589,
+      "entrees": [],
+      "sorties": [
+        "const cluster",
+        "const dbName",
+        "const service",
+        "const website"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/tsconfig.json": {
+      "fichier": "examples/write-patterns/tsconfig.json",
+      "langage": "json",
+      "lignes": 24,
+      "taille_bytes": 582,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/sst-env.d.ts": {
+      "fichier": "examples/write-patterns/sst-env.d.ts",
+      "langage": "typescript",
+      "lignes": 22,
+      "taille_bytes": 485,
+      "entrees": [],
+      "sorties": [
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/index.html": {
+      "fichier": "examples/write-patterns/index.html",
+      "langage": "html",
+      "lignes": 20,
+      "taille_bytes": 624,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/shared/migrations/01-create-todos.sql": {
+      "fichier": "examples/write-patterns/shared/migrations/01-create-todos.sql",
+      "langage": "sql",
+      "lignes": 23,
+      "taille_bytes": 403,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE IF"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/shared/migrations/02-add-write-id.sql": {
+      "fichier": "examples/write-patterns/shared/migrations/02-add-write-id.sql",
+      "langage": "sql",
+      "lignes": 11,
+      "taille_bytes": 591,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/shared/backend/api.js": {
+      "fichier": "examples/write-patterns/shared/backend/api.js",
+      "langage": "javascript",
+      "lignes": 262,
+      "taille_bytes": 6552,
+      "entrees": [
+        "bodyParser",
+        "cors",
+        "express",
+        "pg"
+      ],
+      "sorties": [
+        "const DATABASE_URL",
+        "const ELECTRIC_URL",
+        "const PORT",
+        "const app",
+        "const client",
+        "const createSchema",
+        "const createTodo",
+        "const deleteTodo",
+        "const electricUrl",
+        "const headers",
+        "const idSchema",
+        "const nodeStream",
+        "const params",
+        "const pool",
+        "const response",
+        "const sql",
+        "const transactionsSchema",
+        "const updateSchema",
+        "const updateTodo"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/write-patterns/patterns/1-online-writes/index.tsx",
+        "examples/write-patterns/patterns/2-optimistic-state/index.tsx",
+        "examples/write-patterns/patterns/3-shared-persistent/index.tsx",
+        "examples/write-patterns/patterns/4-through-the-db/sync.ts"
+      ],
+      "type_noeud": "feuille"
+    },
+    "examples/write-patterns/shared/app/main.tsx": {
+      "fichier": "examples/write-patterns/shared/app/main.tsx",
+      "langage": "typescript",
+      "lignes": 13,
+      "taille_bytes": 251,
+      "entrees": [
+        "App",
+        "React",
+        "ReactDOM"
+      ],
+      "sorties": [
+        "const root"
+      ],
+      "appelle": [
+        "examples/linearlite/src/App.tsx"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/shared/app/vite-env.d.ts": {
+      "fichier": "examples/write-patterns/shared/app/vite-env.d.ts",
+      "langage": "typescript",
+      "lignes": 2,
+      "taille_bytes": 91,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/shared/app/client.ts": {
+      "fichier": "examples/write-patterns/shared/app/client.ts",
+      "langage": "typescript",
+      "lignes": 74,
+      "taille_bytes": 1659,
+      "entrees": [],
+      "sorties": [
+        "const API_URL",
+        "const backoffMultiplier",
+        "const delay",
+        "const initialDelayMs",
+        "const maxRetries",
+        "const options",
+        "const url",
+        "type RequestOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/shared/app/config.ts": {
+      "fichier": "examples/write-patterns/shared/app/config.ts",
+      "langage": "typescript",
+      "lignes": 4,
+      "taille_bytes": 129,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/shared/app/App.tsx": {
+      "fichier": "examples/write-patterns/shared/app/App.tsx",
+      "langage": "typescript",
+      "lignes": 21,
+      "taille_bytes": 320,
+      "entrees": [],
+      "sorties": [
+        "const App"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/patterns/index.ts": {
+      "fichier": "examples/write-patterns/patterns/index.ts",
+      "langage": "typescript",
+      "lignes": 4,
+      "taille_bytes": 255,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/patterns/2-optimistic-state/index.tsx": {
+      "fichier": "examples/write-patterns/patterns/2-optimistic-state/index.tsx",
+      "langage": "typescript",
+      "lignes": 190,
+      "taille_bytes": 5288,
+      "entrees": [
+        "React",
+        "api"
+      ],
+      "sorties": [
+        "const data",
+        "const fetchPromise",
+        "const form",
+        "const formData",
+        "const path",
+        "const sorted",
+        "const syncPromise",
+        "const title",
+        "type PartialTodo",
+        "type Todo",
+        "type Write"
+      ],
+      "appelle": [
+        "examples/write-patterns/shared/backend/api.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/patterns/3-shared-persistent/index.tsx": {
+      "fichier": "examples/write-patterns/patterns/3-shared-persistent/index.tsx",
+      "langage": "typescript",
+      "lignes": 260,
+      "taille_bytes": 6620,
+      "entrees": [
+        "React",
+        "api"
+      ],
+      "sorties": [
+        "const KEY",
+        "const computeOptimisticState",
+        "const data",
+        "const fetchPromise",
+        "const form",
+        "const formData",
+        "const id",
+        "const localWrites",
+        "const matchFn",
+        "const optimisticState",
+        "const path",
+        "const sorted",
+        "const syncPromise",
+        "const title",
+        "const todos",
+        "const write",
+        "function addLocalWrite",
+        "type LocalWrite",
+        "type PartialTodo",
+        "type Todo"
+      ],
+      "appelle": [
+        "examples/write-patterns/shared/backend/api.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/patterns/4-through-the-db/index.tsx": {
+      "fichier": "examples/write-patterns/patterns/4-through-the-db/index.tsx",
+      "langage": "typescript",
+      "lignes": 167,
+      "taille_bytes": 3707,
+      "entrees": [
+        "ChangeLogSynchronizer",
+        "React",
+        "loadPGlite"
+      ],
+      "sorties": [
+        "const db",
+        "const form",
+        "const formData",
+        "const pglite",
+        "const results",
+        "const title",
+        "const todos",
+        "function ThroughTheDB",
+        "type Todo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/patterns/4-through-the-db/db.ts": {
+      "fichier": "examples/write-patterns/patterns/4-through-the-db/db.ts",
+      "langage": "typescript",
+      "lignes": 43,
+      "taille_bytes": 1136,
+      "entrees": [
+        "localSchemaMigrations"
+      ],
+      "sorties": [
+        "const DATA_DIR",
+        "const pglite",
+        "const registry"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/patterns/4-through-the-db/local-schema.sql": {
+      "fichier": "examples/write-patterns/patterns/4-through-the-db/local-schema.sql",
+      "langage": "sql",
+      "lignes": 345,
+      "taille_bytes": 9402,
+      "entrees": [
+        "todos_synced"
+      ],
+      "sorties": [
+        "CREATE TABLE IF"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/patterns/4-through-the-db/sync.ts": {
+      "fichier": "examples/write-patterns/patterns/4-through-the-db/sync.ts",
+      "langage": "typescript",
+      "lignes": 194,
+      "taille_bytes": 4459,
+      "entrees": [
+        "api"
+      ],
+      "sorties": [
+        "const groups",
+        "const path",
+        "const position",
+        "const result",
+        "const signal",
+        "const sorted",
+        "const transactions",
+        "type Change",
+        "type SendResult"
+      ],
+      "appelle": [
+        "examples/write-patterns/shared/backend/api.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/write-patterns/patterns/1-online-writes/index.tsx": {
+      "fichier": "examples/write-patterns/patterns/1-online-writes/index.tsx",
+      "langage": "typescript",
+      "lignes": 106,
+      "taille_bytes": 2609,
+      "entrees": [
+        "React",
+        "api"
+      ],
+      "sorties": [
+        "const data",
+        "const form",
+        "const formData",
+        "const path",
+        "const title",
+        "const todos",
+        "type Todo"
+      ],
+      "appelle": [
+        "examples/write-patterns/shared/backend/api.js"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/playwright.config.ts": {
+      "fichier": "examples/yjs/playwright.config.ts",
+      "langage": "typescript",
+      "lignes": 2,
+      "taille_bytes": 72,
+      "entrees": [
+        "config"
+      ],
+      "sorties": [],
+      "appelle": [
+        "examples/linearlite/src/config.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/tsconfig-server.json": {
+      "fichier": "examples/yjs/tsconfig-server.json",
+      "langage": "json",
+      "lignes": 22,
+      "taille_bytes": 513,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/package.json": {
+      "fichier": "examples/yjs/package.json",
+      "langage": "json",
+      "lignes": 55,
+      "taille_bytes": 1883,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/sst.config.ts": {
+      "fichier": "examples/yjs/sst.config.ts",
+      "langage": "typescript",
+      "lignes": 85,
+      "taille_bytes": 2357,
+      "entrees": [],
+      "sorties": [
+        "const cluster",
+        "const dbName",
+        "const service",
+        "const website"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/tsconfig.json": {
+      "fichier": "examples/yjs/tsconfig.json",
+      "langage": "json",
+      "lignes": 29,
+      "taille_bytes": 659,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/sst-env.d.ts": {
+      "fichier": "examples/yjs/sst-env.d.ts",
+      "langage": "typescript",
+      "lignes": 12,
+      "taille_bytes": 243,
+      "entrees": [],
+      "sorties": [
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/vitest.config.ts": {
+      "fichier": "examples/yjs/vitest.config.ts",
+      "langage": "typescript",
+      "lignes": 8,
+      "taille_bytes": 156,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/src/client/vite.config.ts": {
+      "fichier": "examples/yjs/src/client/vite.config.ts",
+      "langage": "typescript",
+      "lignes": 17,
+      "taille_bytes": 365,
+      "entrees": [
+        "path",
+        "react"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/src/client/app.tsx": {
+      "fichier": "examples/yjs/src/client/app.tsx",
+      "langage": "typescript",
+      "lignes": 9,
+      "taille_bytes": 255,
+      "entrees": [
+        "ElectricEditor",
+        "React",
+        "ReactDOM"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/src/client/index.html": {
+      "fichier": "examples/yjs/src/client/index.html",
+      "langage": "html",
+      "lignes": 21,
+      "taille_bytes": 487,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/src/client/common/utils.ts": {
+      "fichier": "examples/yjs/src/client/common/utils.ts",
+      "langage": "typescript",
+      "lignes": 17,
+      "taille_bytes": 470,
+      "entrees": [],
+      "sorties": [
+        "const cleanHexString",
+        "const hexStringToUint8Array",
+        "const uint8Array",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/src/client/components/electric-editor.tsx": {
+      "fichier": "examples/yjs/src/client/components/electric-editor.tsx",
+      "langage": "typescript",
+      "lignes": 201,
+      "taille_bytes": 5476,
+      "entrees": [],
+      "sorties": [
+        "const awareness",
+        "const databaseProvider",
+        "const editor",
+        "const editorViewRef",
+        "const options",
+        "const provider",
+        "const resumeStateProvider",
+        "const room",
+        "const serverUrl",
+        "const shapeUrl",
+        "const state",
+        "const statusHandler",
+        "const toggleNetwork",
+        "const user",
+        "const users",
+        "const ydoc",
+        "const ytext",
+        "function ElectricEditor",
+        "type UpdateTableSchema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/src/server/server.ts": {
+      "fichier": "examples/yjs/src/server/server.ts",
+      "langage": "typescript",
+      "lignes": 204,
+      "taille_bytes": 5572,
+      "entrees": [
+        "pg",
+        "type"
+      ],
+      "sorties": [
+        "const app",
+        "const arrayBuffer",
+        "const client_id",
+        "const connectionString",
+        "const electricHeaders",
+        "const electricUrl",
+        "const headers",
+        "const message",
+        "const newRequest",
+        "const originUrl",
+        "const params",
+        "const parseRequest",
+        "const pool",
+        "const port",
+        "const requestParams",
+        "const respHeaders",
+        "const responseHeaders",
+        "const room",
+        "const update",
+        "const url",
+        "const value",
+        "export const",
+        "export type",
+        "type InvalidRequest",
+        "type ValidRequest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/yjs/db/migrations/01-create_yjs_tables.sql": {
+      "fichier": "examples/yjs/db/migrations/01-create_yjs_tables.sql",
+      "langage": "sql",
+      "lignes": 27,
+      "taille_bytes": 649,
+      "entrees": [],
+      "sorties": [
+        "CREATE TABLE ydoc_awareness",
+        "CREATE TABLE ydoc_update"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/playwright.config.ts": {
+      "fichier": "examples/linearlite/playwright.config.ts",
+      "langage": "typescript",
+      "lignes": 2,
+      "taille_bytes": 72,
+      "entrees": [
+        "config"
+      ],
+      "sorties": [],
+      "appelle": [
+        "examples/linearlite/src/config.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/vite.config.ts": {
+      "fichier": "examples/linearlite/vite.config.ts",
+      "langage": "typescript",
+      "lignes": 31,
+      "taille_bytes": 639,
+      "entrees": [
+        "react",
+        "svgr"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/package.json": {
+      "fichier": "examples/linearlite/package.json",
+      "langage": "json",
+      "lignes": 105,
+      "taille_bytes": 3811,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/sst.config.ts": {
+      "fichier": "examples/linearlite/sst.config.ts",
+      "langage": "typescript",
+      "lignes": 107,
+      "taille_bytes": 2873,
+      "entrees": [],
+      "sorties": [
+        "const adminApi",
+        "const adminApiAuthToken",
+        "const databaseUri",
+        "const electricInfo",
+        "const isProduction",
+        "const result",
+        "const teamId",
+        "const website",
+        "function applyMigrations"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/postcss.config.mjs": {
+      "fichier": "examples/linearlite/postcss.config.mjs",
+      "langage": "javascript",
+      "lignes": 6,
+      "taille_bytes": 80,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/tsconfig.json": {
+      "fichier": "examples/linearlite/tsconfig.json",
+      "langage": "json",
+      "lignes": 26,
+      "taille_bytes": 640,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/sst-env.d.ts": {
+      "fichier": "examples/linearlite/sst-env.d.ts",
+      "langage": "typescript",
+      "lignes": 9,
+      "taille_bytes": 203,
+      "entrees": [],
+      "sorties": [
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/tailwind.config.js": {
+      "fichier": "examples/linearlite/tailwind.config.js",
+      "langage": "javascript",
+      "lignes": 91,
+      "taille_bytes": 1946,
+      "entrees": [
+        "forms",
+        "typography"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/index.html": {
+      "fichier": "examples/linearlite/index.html",
+      "langage": "html",
+      "lignes": 21,
+      "taille_bytes": 689,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/server.ts": {
+      "fichier": "examples/linearlite/server.ts",
+      "langage": "typescript",
+      "lignes": 102,
+      "taille_bytes": 2461,
+      "entrees": [
+        "postgres"
+      ],
+      "sorties": [
+        "const DATABASE_URL",
+        "const app",
+        "const content",
+        "const modified_columns",
+        "const port",
+        "const result",
+        "const sql"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/supabase/config.toml": {
+      "fichier": "examples/linearlite/supabase/config.toml",
+      "langage": "toml",
+      "lignes": 275,
+      "taille_bytes": 10061,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/supabase/functions/write-server/index.ts": {
+      "fichier": "examples/linearlite/supabase/functions/write-server/index.ts",
+      "langage": "typescript",
+      "lignes": 131,
+      "taille_bytes": 3894,
+      "entrees": [
+        "postgres"
+      ],
+      "sorties": [
+        "const DATABASE_URL",
+        "const app",
+        "const changeSetSchema",
+        "const commentChangeSchema",
+        "const content",
+        "const issueChangeSchema",
+        "const modified_columns",
+        "const result",
+        "const sql",
+        "type ChangeSet",
+        "type CommentChange",
+        "type IssueChange"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/backend/docker-compose.yml": {
+      "fichier": "examples/linearlite/backend/docker-compose.yml",
+      "langage": "yaml",
+      "lignes": 30,
+      "taille_bytes": 672,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/main.tsx": {
+      "fichier": "examples/linearlite/src/main.tsx",
+      "langage": "typescript",
+      "lignes": 18,
+      "taille_bytes": 678,
+      "entrees": [
+        "App"
+      ],
+      "sorties": [
+        "const container",
+        "const root"
+      ],
+      "appelle": [
+        "examples/linearlite/src/App.tsx"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/vite-env.d.ts": {
+      "fichier": "examples/linearlite/src/vite-env.d.ts",
+      "langage": "typescript",
+      "lignes": 1,
+      "taille_bytes": 38,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/pglite.ts": {
+      "fichier": "examples/linearlite/src/pglite.ts",
+      "langage": "typescript",
+      "lignes": 0,
+      "taille_bytes": 0,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/config.ts": {
+      "fichier": "examples/linearlite/src/config.ts",
+      "langage": "typescript",
+      "lignes": 3,
+      "taille_bytes": 38,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/playwright.config.ts",
+        "examples/linearlite/src/components/IssueModal.tsx",
+        "examples/proxy-auth/playwright.config.ts",
+        "examples/write-patterns/playwright.config.ts",
+        "examples/yjs/playwright.config.ts"
+      ],
+      "type_noeud": "feuille"
+    },
+    "examples/linearlite/src/pglite-worker.ts": {
+      "fichier": "examples/linearlite/src/pglite-worker.ts",
+      "langage": "typescript",
+      "lignes": 15,
+      "taille_bytes": 369,
+      "entrees": [],
+      "sorties": [
+        "const pg"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/migrations.ts": {
+      "fichier": "examples/linearlite/src/migrations.ts",
+      "langage": "typescript",
+      "lignes": 30,
+      "taille_bytes": 1025,
+      "entrees": [
+        "m1",
+        "postInitialSyncFtsIndex",
+        "postInitialSyncIndexes",
+        "type"
+      ],
+      "sorties": [
+        "const commands",
+        "const tables"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/electric.tsx": {
+      "fichier": "examples/linearlite/src/electric.tsx",
+      "langage": "typescript",
+      "lignes": 1,
+      "taille_bytes": 79,
+      "entrees": [],
+      "sorties": [
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/App.tsx": {
+      "fichier": "examples/linearlite/src/App.tsx",
+      "langage": "typescript",
+      "lignes": 204,
+      "taille_bytes": 5272,
+      "entrees": [
+        "Board",
+        "Issue",
+        "List",
+        "PGWorker",
+        "Root"
+      ],
+      "sorties": [
+        "const App",
+        "const LoadingScreen",
+        "const colFilterState",
+        "const colLiveIssues",
+        "const columnsLiveIssues",
+        "const filterState",
+        "const liveIssue",
+        "const liveIssues",
+        "const menuContextValue",
+        "const pg",
+        "const pgPromise",
+        "const router",
+        "const url",
+        "export const",
+        "interface MenuContextInterface",
+        "type PGliteWorkerWithLive",
+        "type Params"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/main.tsx",
+        "examples/write-patterns/shared/app/main.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/sync.ts": {
+      "fichier": "examples/linearlite/src/sync.ts",
+      "langage": "typescript",
+      "lignes": 320,
+      "taille_bytes": 9027,
+      "entrees": [
+        "comment",
+        "issue",
+        "type"
+      ],
+      "sorties": [
+        "const APPLY_CHANGES_URL",
+        "const ELECTRIC_SOURCE_ID",
+        "const ELECTRIC_SOURCE_SECRET",
+        "const ELECTRIC_URL",
+        "const WRITE_SERVER_URL",
+        "const changeSet",
+        "const commentRes",
+        "const commentUrl",
+        "const commentsSync",
+        "const currentSyncStatus",
+        "const currentSyncStatusJson",
+        "const doPostInitialSync",
+        "const handleStorageChange",
+        "const hasIssuesAtStart",
+        "const issueRes",
+        "const issueUrl",
+        "const issues",
+        "const issuesSync",
+        "const postInitialSyncDonePromise",
+        "const response",
+        "const syncMutex",
+        "export function",
+        "type PGliteWithExtensions",
+        "type SyncStatus"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/shims/react-contextmenu.d.ts": {
+      "fichier": "examples/linearlite/src/shims/react-contextmenu.d.ts",
+      "langage": "typescript",
+      "lignes": 106,
+      "taille_bytes": 2942,
+      "entrees": [],
+      "sorties": [
+        "export const",
+        "export function",
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/hooks/useLockBodyScroll.ts": {
+      "fichier": "examples/linearlite/src/hooks/useLockBodyScroll.ts",
+      "langage": "typescript",
+      "lignes": 14,
+      "taille_bytes": 509,
+      "entrees": [],
+      "sorties": [
+        "const originalStyle"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/Modal.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/hooks/useClickOutside.ts": {
+      "fichier": "examples/linearlite/src/hooks/useClickOutside.ts",
+      "langage": "typescript",
+      "lignes": 28,
+      "taille_bytes": 832,
+      "entrees": [],
+      "sorties": [
+        "const handleClick",
+        "export const"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/pages/root.tsx": {
+      "fichier": "examples/linearlite/src/pages/root.tsx",
+      "langage": "typescript",
+      "lignes": 31,
+      "taille_bytes": 741,
+      "entrees": [
+        "LeftMenu"
+      ],
+      "sorties": [
+        "const slideUp"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/LeftMenu.tsx"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/pages/Board/IssueBoard.tsx": {
+      "fichier": "examples/linearlite/src/pages/Board/IssueBoard.tsx",
+      "langage": "typescript",
+      "lignes": 245,
+      "taille_bytes": 8657,
+      "entrees": [
+        "IssueCol"
+      ],
+      "sorties": [
+        "const adjacentIssues",
+        "const columnIssues",
+        "const getNewKanbanOrder",
+        "const issues",
+        "const issuesByStatus",
+        "const issuesRes",
+        "const issuesResByStatus",
+        "const kanbanorder",
+        "const modified",
+        "const offset",
+        "const onDragEnd",
+        "const pg",
+        "const prevKanbanOrder",
+        "const status",
+        "export interface",
+        "interface MovedIssues"
+      ],
+      "appelle": [
+        "examples/linearlite/src/pages/Board/IssueCol.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/pages/Board/index.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/pages/Board/index.tsx": {
+      "fichier": "examples/linearlite/src/pages/Board/index.tsx",
+      "langage": "typescript",
+      "lignes": 38,
+      "taille_bytes": 1117,
+      "entrees": [
+        "IssueBoard",
+        "TopFilter"
+      ],
+      "sorties": [
+        "const issuesRes",
+        "const totalIssuesCount",
+        "export interface",
+        "function Board"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/TopFilter.tsx",
+        "examples/linearlite/src/pages/Board/IssueBoard.tsx"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "examples/linearlite/src/pages/Board/IssueCol.tsx": {
+      "fichier": "examples/linearlite/src/pages/Board/IssueCol.tsx",
+      "langage": "typescript",
+      "lignes": 164,
+      "taille_bytes": 4792,
+      "entrees": [
+        "AutoSizer",
+        "IssueItem",
+        "StatusIcon"
+      ],
+      "sorties": [
+        "const CHUNK_SIZE",
+        "const DraggableFixed",
+        "const DroppableFixed",
+        "const ListFixed",
+        "const Row",
+        "const endOffset",
+        "const handleOnItemsRendered",
+        "const issue",
+        "const issuesRes",
+        "const itemCount",
+        "const itemSpacing",
+        "const limit",
+        "const offset",
+        "const statusIcon",
+        "function IssueCol",
+        "function calculateWindow",
+        "interface Props"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/StatusIcon.tsx",
+        "examples/linearlite/src/pages/Board/IssueItem.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/pages/Board/IssueBoard.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/pages/Board/IssueItem.tsx": {
+      "fichier": "examples/linearlite/src/pages/Board/IssueItem.tsx",
+      "langage": "typescript",
+      "lignes": 92,
+      "taille_bytes": 2724,
+      "entrees": [
+        "Avatar",
+        "PriorityIcon",
+        "PriorityMenu",
+        "classNames"
+      ],
+      "sorties": [
+        "const IssueItem",
+        "const navigate",
+        "const pg",
+        "const priorityIcon",
+        "const updatePriority",
+        "export const",
+        "function getStyle",
+        "interface IssueProps"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Avatar.tsx",
+        "examples/linearlite/src/components/PriorityIcon.tsx",
+        "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/pages/Board/IssueCol.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/pages/List/IssueRow.tsx": {
+      "fichier": "examples/linearlite/src/pages/List/IssueRow.tsx",
+      "langage": "typescript",
+      "lignes": 96,
+      "taille_bytes": 3098,
+      "entrees": [
+        "Avatar",
+        "PriorityIcon",
+        "PriorityMenu",
+        "StatusIcon",
+        "StatusMenu",
+        "type"
+      ],
+      "sorties": [
+        "const handleChangePriority",
+        "const handleChangeStatus",
+        "const pg",
+        "function IssueRow",
+        "interface Props"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Avatar.tsx",
+        "examples/linearlite/src/components/PriorityIcon.tsx",
+        "examples/linearlite/src/components/StatusIcon.tsx",
+        "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx",
+        "examples/linearlite/src/components/contextmenu/StatusMenu.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/pages/List/IssueList.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/pages/List/index.tsx": {
+      "fichier": "examples/linearlite/src/pages/List/index.tsx",
+      "langage": "typescript",
+      "lignes": 67,
+      "taille_bytes": 2216,
+      "entrees": [
+        "IssueList",
+        "TopFilter"
+      ],
+      "sorties": [
+        "const CHUNK_SIZE",
+        "const currentOffset",
+        "const currentTotalCount",
+        "const endOffset",
+        "const filledItems",
+        "const issues",
+        "const issuesRes",
+        "const limit",
+        "const offset",
+        "const updateOffsetAndLimit",
+        "function List",
+        "function calculateWindow"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/TopFilter.tsx",
+        "examples/linearlite/src/pages/List/IssueList.tsx"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "examples/linearlite/src/pages/List/IssueList.tsx": {
+      "fichier": "examples/linearlite/src/pages/List/IssueList.tsx",
+      "langage": "typescript",
+      "lignes": 64,
+      "taille_bytes": 1402,
+      "entrees": [
+        "AutoSizer",
+        "IssueRow"
+      ],
+      "sorties": [
+        "const ListFixed",
+        "const VirtualIssueRow",
+        "const issue",
+        "export interface",
+        "function IssueList",
+        "type ListOnItemsRenderedProps"
+      ],
+      "appelle": [
+        "examples/linearlite/src/pages/List/IssueRow.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/pages/List/index.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/pages/Issue/index.tsx": {
+      "fichier": "examples/linearlite/src/pages/Issue/index.tsx",
+      "langage": "typescript",
+      "lignes": 267,
+      "taille_bytes": 9739,
+      "entrees": [
+        "Avatar",
+        "Comments",
+        "DeleteModal",
+        "Editor",
+        "PriorityIcon",
+        "PriorityMenu",
+        "StatusIcon",
+        "StatusMenu",
+        "debounce"
+      ],
+      "sorties": [
+        "const debounceTime",
+        "const descriptionIsDirty",
+        "const handleClose",
+        "const handleDelete",
+        "const handleDescriptionChange",
+        "const handleDescriptionChangeDebounced",
+        "const handlePriorityChange",
+        "const handleStatusChange",
+        "const handleTitleChange",
+        "const handleTitleChangeDebounced",
+        "const issue",
+        "const navigate",
+        "const pg",
+        "const shortId",
+        "const titleIsDirty",
+        "function IssuePage"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Avatar.tsx",
+        "examples/linearlite/src/components/PriorityIcon.tsx",
+        "examples/linearlite/src/components/StatusIcon.tsx",
+        "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx",
+        "examples/linearlite/src/components/contextmenu/StatusMenu.tsx",
+        "examples/linearlite/src/components/editor/Editor.tsx",
+        "examples/linearlite/src/pages/Issue/Comments.tsx",
+        "examples/linearlite/src/pages/Issue/DeleteModal.tsx"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "examples/linearlite/src/pages/Issue/Comments.tsx": {
+      "fichier": "examples/linearlite/src/pages/Issue/Comments.tsx",
+      "langage": "typescript",
+      "lignes": 103,
+      "taille_bytes": 3073,
+      "entrees": [
+        "Avatar",
+        "Editor",
+        "ReactMarkdown"
+      ],
+      "sorties": [
+        "const commentList",
+        "const comments",
+        "const commentsResults",
+        "const handlePost",
+        "const pg",
+        "export interface",
+        "function Comments"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Avatar.tsx",
+        "examples/linearlite/src/components/editor/Editor.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/pages/Issue/index.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/pages/Issue/DeleteModal.tsx": {
+      "fichier": "examples/linearlite/src/pages/Issue/DeleteModal.tsx",
+      "langage": "typescript",
+      "lignes": 48,
+      "taille_bytes": 1194,
+      "entrees": [
+        "Modal"
+      ],
+      "sorties": [
+        "const handleDelete",
+        "interface Props"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Modal.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/pages/Issue/index.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/types/types.ts": {
+      "fichier": "examples/linearlite/src/types/types.ts",
+      "langage": "typescript",
+      "lignes": 119,
+      "taille_bytes": 3390,
+      "entrees": [
+        "type"
+      ],
+      "sorties": [
+        "export const",
+        "export type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/Avatar.tsx": {
+      "fichier": "examples/linearlite/src/components/Avatar.tsx",
+      "langage": "typescript",
+      "lignes": 84,
+      "taille_bytes": 2056,
+      "entrees": [
+        "AvatarImg",
+        "classnames"
+      ],
+      "sorties": [
+        "function Avatar",
+        "function getAcronym",
+        "function stringToHslColor",
+        "interface Props"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/LeftMenu.tsx",
+        "examples/linearlite/src/pages/Board/IssueItem.tsx",
+        "examples/linearlite/src/pages/Issue/Comments.tsx",
+        "examples/linearlite/src/pages/Issue/index.tsx",
+        "examples/linearlite/src/pages/List/IssueRow.tsx"
+      ],
+      "type_noeud": "feuille"
+    },
+    "examples/linearlite/src/components/LeftMenu.tsx": {
+      "fichier": "examples/linearlite/src/components/LeftMenu.tsx",
+      "langage": "typescript",
+      "lignes": 195,
+      "taille_bytes": 7366,
+      "entrees": [
+        "AboutModal",
+        "Avatar",
+        "IssueModal",
+        "ItemGroup",
+        "PGliteConsoleModal",
+        "ProfileMenu",
+        "classnames"
+      ],
+      "sorties": [
+        "const classes",
+        "const ref",
+        "function LeftMenu"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/AboutModal.tsx",
+        "examples/linearlite/src/components/Avatar.tsx",
+        "examples/linearlite/src/components/IssueModal.tsx",
+        "examples/linearlite/src/components/ItemGroup.tsx",
+        "examples/linearlite/src/components/PGliteConsoleModal.tsx",
+        "examples/linearlite/src/components/ProfileMenu.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/pages/root.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/ItemGroup.tsx": {
+      "fichier": "examples/linearlite/src/components/ItemGroup.tsx",
+      "langage": "typescript",
+      "lignes": 28,
+      "taille_bytes": 794,
+      "entrees": [],
+      "sorties": [
+        "const Icon",
+        "function ItemGroup",
+        "interface Props"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/LeftMenu.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/PGliteConsoleModal.tsx": {
+      "fichier": "examples/linearlite/src/components/PGliteConsoleModal.tsx",
+      "langage": "typescript",
+      "lignes": 25,
+      "taille_bytes": 548,
+      "entrees": [
+        "Modal"
+      ],
+      "sorties": [
+        "const pg",
+        "interface Props"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Modal.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/components/LeftMenu.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/StatusIcon.tsx": {
+      "fichier": "examples/linearlite/src/components/StatusIcon.tsx",
+      "langage": "typescript",
+      "lignes": 15,
+      "taille_bytes": 390,
+      "entrees": [
+        "classNames"
+      ],
+      "sorties": [
+        "const Icon",
+        "const classes",
+        "interface Props"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/IssueModal.tsx",
+        "examples/linearlite/src/pages/Board/IssueCol.tsx",
+        "examples/linearlite/src/pages/Issue/index.tsx",
+        "examples/linearlite/src/pages/List/IssueRow.tsx"
+      ],
+      "type_noeud": "feuille"
+    },
+    "examples/linearlite/src/components/PriorityIcon.tsx": {
+      "fichier": "examples/linearlite/src/components/PriorityIcon.tsx",
+      "langage": "typescript",
+      "lignes": 13,
+      "taille_bytes": 392,
+      "entrees": [
+        "classNames"
+      ],
+      "sorties": [
+        "const Icon",
+        "const classes",
+        "interface Props"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/IssueModal.tsx",
+        "examples/linearlite/src/pages/Board/IssueItem.tsx",
+        "examples/linearlite/src/pages/Issue/index.tsx",
+        "examples/linearlite/src/pages/List/IssueRow.tsx"
+      ],
+      "type_noeud": "feuille"
+    },
+    "examples/linearlite/src/components/IssueModal.tsx": {
+      "fichier": "examples/linearlite/src/components/IssueModal.tsx",
+      "langage": "typescript",
+      "lignes": 195,
+      "taille_bytes": 6282,
+      "entrees": [
+        "Editor",
+        "Modal",
+        "PriorityIcon",
+        "PriorityMenu",
+        "StatusIcon",
+        "StatusMenu",
+        "config"
+      ],
+      "sorties": [
+        "const body",
+        "const date",
+        "const handleClickCloseBtn",
+        "const handleSubmit",
+        "const kanbanorder",
+        "const lastIssue",
+        "const pg",
+        "const ref",
+        "const reset",
+        "const timeoutRef",
+        "function IssueModal",
+        "interface Props"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Modal.tsx",
+        "examples/linearlite/src/components/PriorityIcon.tsx",
+        "examples/linearlite/src/components/StatusIcon.tsx",
+        "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx",
+        "examples/linearlite/src/components/contextmenu/StatusMenu.tsx",
+        "examples/linearlite/src/components/editor/Editor.tsx",
+        "examples/linearlite/src/config.ts"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/components/LeftMenu.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/ProfileMenu.tsx": {
+      "fichier": "examples/linearlite/src/components/ProfileMenu.tsx",
+      "langage": "typescript",
+      "lignes": 99,
+      "taille_bytes": 2803,
+      "entrees": [
+        "Toggle",
+        "classnames"
+      ],
+      "sorties": [
+        "const classes",
+        "const connectivityConnected",
+        "const connectivityState",
+        "const connectivityStateDisplay",
+        "const ref",
+        "interface Props"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Toggle.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/components/LeftMenu.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/Modal.tsx": {
+      "fichier": "examples/linearlite/src/components/Modal.tsx",
+      "langage": "typescript",
+      "lignes": 103,
+      "taille_bytes": 2621,
+      "entrees": [
+        "React",
+        "ReactDOM",
+        "classnames",
+        "useLockBodyScroll"
+      ],
+      "sorties": [
+        "const handleClick",
+        "const modal",
+        "const modalClasses",
+        "const outerRef",
+        "const ref",
+        "const sizeClasses",
+        "const wrapperClasses",
+        "function Modal",
+        "interface Props",
+        "type MouseEvent"
+      ],
+      "appelle": [
+        "examples/linearlite/src/hooks/useLockBodyScroll.ts"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/components/AboutModal.tsx",
+        "examples/linearlite/src/components/IssueModal.tsx",
+        "examples/linearlite/src/components/PGliteConsoleModal.tsx",
+        "examples/linearlite/src/pages/Issue/DeleteModal.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/Portal.tsx": {
+      "fichier": "examples/linearlite/src/components/Portal.tsx",
+      "langage": "typescript",
+      "lignes": 14,
+      "taille_bytes": 541,
+      "entrees": [],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/TopFilter.tsx": {
+      "fichier": "examples/linearlite/src/components/TopFilter.tsx",
+      "langage": "typescript",
+      "lignes": 216,
+      "taille_bytes": 7141,
+      "entrees": [
+        "FilterMenu",
+        "ViewOptionMenu",
+        "debounce"
+      ],
+      "sorties": [
+        "const checkFTSIndex",
+        "const eqStatuses",
+        "const handleSearch",
+        "const handleSearchInner",
+        "const indexReady",
+        "const pg",
+        "const res",
+        "const showFTSIndexProgress",
+        "const statusSet",
+        "const totalIssuesCount",
+        "interface Props"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/ViewOptionMenu.tsx",
+        "examples/linearlite/src/components/contextmenu/FilterMenu.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/pages/Board/index.tsx",
+        "examples/linearlite/src/pages/List/index.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/ViewOptionMenu.tsx": {
+      "fichier": "examples/linearlite/src/components/ViewOptionMenu.tsx",
+      "langage": "typescript",
+      "lignes": 92,
+      "taille_bytes": 2950,
+      "entrees": [
+        "Select"
+      ],
+      "sorties": [
+        "const handleOrderByChange",
+        "const handleOrderDirectionChange",
+        "const ref",
+        "interface Props"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Select.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/components/TopFilter.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/AboutModal.tsx": {
+      "fichier": "examples/linearlite/src/components/AboutModal.tsx",
+      "langage": "typescript",
+      "lignes": 59,
+      "taille_bytes": 1591,
+      "entrees": [
+        "Modal"
+      ],
+      "sorties": [
+        "interface Props"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/Modal.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/components/LeftMenu.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/Select.tsx": {
+      "fichier": "examples/linearlite/src/components/Select.tsx",
+      "langage": "typescript",
+      "lignes": 29,
+      "taille_bytes": 845,
+      "entrees": [
+        "classNames"
+      ],
+      "sorties": [
+        "const classes",
+        "interface Props"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/ViewOptionMenu.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/Toggle.tsx": {
+      "fichier": "examples/linearlite/src/components/Toggle.tsx",
+      "langage": "typescript",
+      "lignes": 41,
+      "taille_bytes": 1028,
+      "entrees": [
+        "classnames"
+      ],
+      "sorties": [
+        "const classes",
+        "const labelClasses",
+        "const onClick",
+        "interface Props"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/ProfileMenu.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx": {
+      "fichier": "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx",
+      "langage": "typescript",
+      "lignes": 70,
+      "taille_bytes": 1646,
+      "entrees": [],
+      "sorties": [
+        "const handleSelect",
+        "const normalizedKeyword",
+        "const options",
+        "function PriorityMenu",
+        "interface Props"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/IssueModal.tsx",
+        "examples/linearlite/src/pages/Board/IssueItem.tsx",
+        "examples/linearlite/src/pages/Issue/index.tsx",
+        "examples/linearlite/src/pages/List/IssueRow.tsx"
+      ],
+      "type_noeud": "feuille"
+    },
+    "examples/linearlite/src/components/contextmenu/FilterMenu.tsx": {
+      "fichier": "examples/linearlite/src/components/contextmenu/FilterMenu.tsx",
+      "langage": "typescript",
+      "lignes": 121,
+      "taille_bytes": 3301,
+      "entrees": [],
+      "sorties": [
+        "const handlePrioritySelect",
+        "const handleStatusSelect",
+        "const newPriority",
+        "const newStatus",
+        "const normalizedKeyword",
+        "const priorityOptions",
+        "const statusOptions",
+        "function FilterMenu",
+        "interface Props"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/TopFilter.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/contextmenu/menu.tsx": {
+      "fichier": "examples/linearlite/src/components/contextmenu/menu.tsx",
+      "langage": "typescript",
+      "lignes": 103,
+      "taille_bytes": 2275,
+      "entrees": [
+        "classnames"
+      ],
+      "sorties": [
+        "const Divider",
+        "const Header",
+        "const Item",
+        "const classes",
+        "const ref",
+        "const sizeClasses",
+        "export const",
+        "export interface",
+        "interface MenuItemProps",
+        "type MenuItemProps"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/contextmenu/StatusMenu.tsx": {
+      "fichier": "examples/linearlite/src/components/contextmenu/StatusMenu.tsx",
+      "langage": "typescript",
+      "lignes": 56,
+      "taille_bytes": 1480,
+      "entrees": [],
+      "sorties": [
+        "const handleSelect",
+        "const normalizedKeyword",
+        "const options",
+        "interface Props"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/IssueModal.tsx",
+        "examples/linearlite/src/pages/Issue/index.tsx",
+        "examples/linearlite/src/pages/List/IssueRow.tsx"
+      ],
+      "type_noeud": "feuille"
+    },
+    "examples/linearlite/src/components/editor/Editor.tsx": {
+      "fichier": "examples/linearlite/src/components/editor/Editor.tsx",
+      "langage": "typescript",
+      "lignes": 82,
+      "taille_bytes": 1744,
+      "entrees": [
+        "EditorMenu",
+        "Placeholder",
+        "StarterKit",
+        "Table",
+        "TableCell",
+        "TableHeader",
+        "TableRow"
+      ],
+      "sorties": [
+        "const Editor",
+        "const editor",
+        "const editorProps",
+        "const extensions",
+        "const markdownValue",
+        "interface EditorProps",
+        "type Extensions"
+      ],
+      "appelle": [
+        "examples/linearlite/src/components/editor/EditorMenu.tsx"
+      ],
+      "est_appele_par": [
+        "examples/linearlite/src/components/IssueModal.tsx",
+        "examples/linearlite/src/pages/Issue/Comments.tsx",
+        "examples/linearlite/src/pages/Issue/index.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/components/editor/EditorMenu.tsx": {
+      "fichier": "examples/linearlite/src/components/editor/EditorMenu.tsx",
+      "langage": "typescript",
+      "lignes": 128,
+      "taille_bytes": 4224,
+      "entrees": [
+        "classNames",
+        "type"
+      ],
+      "sorties": [
+        "const EditorMenu",
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/linearlite/src/components/editor/Editor.tsx"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/utils/filterState.ts": {
+      "fichier": "examples/linearlite/src/utils/filterState.ts",
+      "langage": "typescript",
+      "lignes": 115,
+      "taille_bytes": 3155,
+      "entrees": [
+        "issue"
+      ],
+      "sorties": [
+        "const orderBy",
+        "const orderDirection",
+        "const priority",
+        "const query",
+        "const setState",
+        "const sql",
+        "const sqlParams",
+        "const sqlWhere",
+        "const state",
+        "const status",
+        "export function",
+        "export interface"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/utils/notification.tsx": {
+      "fichier": "examples/linearlite/src/utils/notification.tsx",
+      "langage": "typescript",
+      "lignes": 49,
+      "taille_bytes": 2134,
+      "entrees": [],
+      "sorties": [
+        "const content",
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/utils/date.ts": {
+      "fichier": "examples/linearlite/src/utils/date.ts",
+      "langage": "typescript",
+      "lignes": 6,
+      "taille_bytes": 139,
+      "entrees": [
+        "dayjs"
+      ],
+      "sorties": [
+        "export function"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/linearlite/src/utils/changes.ts": {
+      "fichier": "examples/linearlite/src/utils/changes.ts",
+      "langage": "typescript",
+      "lignes": 39,
+      "taille_bytes": 1362,
+      "entrees": [],
+      "sorties": [
+        "export const",
+        "export type"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "examples/proxy-auth/playwright.config.ts",
+      "vers": "examples/linearlite/src/config.ts",
+      "type": "interne"
+    },
+    {
+      "de": "examples/write-patterns/playwright.config.ts",
+      "vers": "examples/linearlite/src/config.ts",
+      "type": "interne"
+    },
+    {
+      "de": "examples/write-patterns/shared/app/main.tsx",
+      "vers": "examples/linearlite/src/App.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/write-patterns/patterns/2-optimistic-state/index.tsx",
+      "vers": "examples/write-patterns/shared/backend/api.js",
+      "type": "interne"
+    },
+    {
+      "de": "examples/write-patterns/patterns/3-shared-persistent/index.tsx",
+      "vers": "examples/write-patterns/shared/backend/api.js",
+      "type": "interne"
+    },
+    {
+      "de": "examples/write-patterns/patterns/4-through-the-db/sync.ts",
+      "vers": "examples/write-patterns/shared/backend/api.js",
+      "type": "interne"
+    },
+    {
+      "de": "examples/write-patterns/patterns/1-online-writes/index.tsx",
+      "vers": "examples/write-patterns/shared/backend/api.js",
+      "type": "interne"
+    },
+    {
+      "de": "examples/yjs/playwright.config.ts",
+      "vers": "examples/linearlite/src/config.ts",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/playwright.config.ts",
+      "vers": "examples/linearlite/src/config.ts",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/main.tsx",
+      "vers": "examples/linearlite/src/App.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/root.tsx",
+      "vers": "examples/linearlite/src/components/LeftMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Board/IssueBoard.tsx",
+      "vers": "examples/linearlite/src/pages/Board/IssueCol.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Board/index.tsx",
+      "vers": "examples/linearlite/src/components/TopFilter.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Board/index.tsx",
+      "vers": "examples/linearlite/src/pages/Board/IssueBoard.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Board/IssueCol.tsx",
+      "vers": "examples/linearlite/src/components/StatusIcon.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Board/IssueCol.tsx",
+      "vers": "examples/linearlite/src/pages/Board/IssueItem.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Board/IssueItem.tsx",
+      "vers": "examples/linearlite/src/components/Avatar.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Board/IssueItem.tsx",
+      "vers": "examples/linearlite/src/components/PriorityIcon.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Board/IssueItem.tsx",
+      "vers": "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/List/IssueRow.tsx",
+      "vers": "examples/linearlite/src/components/Avatar.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/List/IssueRow.tsx",
+      "vers": "examples/linearlite/src/components/PriorityIcon.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/List/IssueRow.tsx",
+      "vers": "examples/linearlite/src/components/StatusIcon.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/List/IssueRow.tsx",
+      "vers": "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/List/IssueRow.tsx",
+      "vers": "examples/linearlite/src/components/contextmenu/StatusMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/List/index.tsx",
+      "vers": "examples/linearlite/src/components/TopFilter.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/List/index.tsx",
+      "vers": "examples/linearlite/src/pages/List/IssueList.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/List/IssueList.tsx",
+      "vers": "examples/linearlite/src/pages/List/IssueRow.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/index.tsx",
+      "vers": "examples/linearlite/src/components/Avatar.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/index.tsx",
+      "vers": "examples/linearlite/src/components/PriorityIcon.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/index.tsx",
+      "vers": "examples/linearlite/src/components/StatusIcon.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/index.tsx",
+      "vers": "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/index.tsx",
+      "vers": "examples/linearlite/src/components/contextmenu/StatusMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/index.tsx",
+      "vers": "examples/linearlite/src/components/editor/Editor.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/index.tsx",
+      "vers": "examples/linearlite/src/pages/Issue/Comments.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/index.tsx",
+      "vers": "examples/linearlite/src/pages/Issue/DeleteModal.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/Comments.tsx",
+      "vers": "examples/linearlite/src/components/Avatar.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/Comments.tsx",
+      "vers": "examples/linearlite/src/components/editor/Editor.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/pages/Issue/DeleteModal.tsx",
+      "vers": "examples/linearlite/src/components/Modal.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/LeftMenu.tsx",
+      "vers": "examples/linearlite/src/components/AboutModal.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/LeftMenu.tsx",
+      "vers": "examples/linearlite/src/components/Avatar.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/LeftMenu.tsx",
+      "vers": "examples/linearlite/src/components/IssueModal.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/LeftMenu.tsx",
+      "vers": "examples/linearlite/src/components/ItemGroup.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/LeftMenu.tsx",
+      "vers": "examples/linearlite/src/components/PGliteConsoleModal.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/LeftMenu.tsx",
+      "vers": "examples/linearlite/src/components/ProfileMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/PGliteConsoleModal.tsx",
+      "vers": "examples/linearlite/src/components/Modal.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/IssueModal.tsx",
+      "vers": "examples/linearlite/src/components/Modal.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/IssueModal.tsx",
+      "vers": "examples/linearlite/src/components/PriorityIcon.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/IssueModal.tsx",
+      "vers": "examples/linearlite/src/components/StatusIcon.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/IssueModal.tsx",
+      "vers": "examples/linearlite/src/components/contextmenu/PriorityMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/IssueModal.tsx",
+      "vers": "examples/linearlite/src/components/contextmenu/StatusMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/IssueModal.tsx",
+      "vers": "examples/linearlite/src/components/editor/Editor.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/IssueModal.tsx",
+      "vers": "examples/linearlite/src/config.ts",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/ProfileMenu.tsx",
+      "vers": "examples/linearlite/src/components/Toggle.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/Modal.tsx",
+      "vers": "examples/linearlite/src/hooks/useLockBodyScroll.ts",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/TopFilter.tsx",
+      "vers": "examples/linearlite/src/components/ViewOptionMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/TopFilter.tsx",
+      "vers": "examples/linearlite/src/components/contextmenu/FilterMenu.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/ViewOptionMenu.tsx",
+      "vers": "examples/linearlite/src/components/Select.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/AboutModal.tsx",
+      "vers": "examples/linearlite/src/components/Modal.tsx",
+      "type": "interne"
+    },
+    {
+      "de": "examples/linearlite/src/components/editor/Editor.tsx",
+      "vers": "examples/linearlite/src/components/editor/EditorMenu.tsx",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'examples/write-patterns/shared/backend/api.js' (in=4)",
+    "feuille → 'examples/linearlite/src/config.ts' (in=5)",
+    "point_entree → 'examples/linearlite/src/pages/Board/index.tsx'",
+    "point_entree → 'examples/linearlite/src/pages/List/index.tsx'",
+    "point_entree → 'examples/linearlite/src/pages/Issue/index.tsx'",
+    "feuille → 'examples/linearlite/src/components/Avatar.tsx' (in=5)",
+    "feuille → 'examples/linearlite/src/components/StatusIcon.tsx' (in=4)",
+    "feuille → 'examples/linearlite/src/components/PriorityIcon.tsx' (in=4)",
+    "feuille → 'examples/linearlite/src/components/contextmenu/PriorityMenu.tsx' (in=4)",
+    "feuille → 'examples/linearlite/src/components/contextmenu/StatusMenu.tsx' (in=3)"
+  ]
+}

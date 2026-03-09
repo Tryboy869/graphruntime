@@ -1,0 +1,3558 @@
+{
+  "meta": {
+    "projet": "scala-native",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "python": 1,
+      "yaml": 1,
+      "java": 2,
+      "scala": 99,
+      "c": 16,
+      "xml": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 39,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 3,
+    "noeuds_hubs": 0,
+    "points_entree": 12,
+    "fichier_plus_appele": "sandbox/src/main/scala-next/Test.scala"
+  },
+  "noeuds": {
+    "ScalaNativeLLDBFormatter.py": {
+      "fichier": "ScalaNativeLLDBFormatter.py",
+      "langage": "python",
+      "lignes": 263,
+      "taille_bytes": 8671,
+      "entrees": [
+        "__future__",
+        "lldb",
+        "logging",
+        "sys",
+        "weakref"
+      ],
+      "sorties": [
+        "class ArrayLikeSynthProvider",
+        "class ArraySynthProvider",
+        "class ScalaSynthProvider",
+        "class StringLikeSynthProvider",
+        "class StringSynthProvider",
+        "def __init__",
+        "def __lldb_init_module",
+        "def array_as_pointer",
+        "def attach_summary_to_type",
+        "def attach_synthetic_to_type",
+        "def gcm",
+        "def get_child_at_index",
+        "def get_child_index",
+        "def get_index_of_child",
+        "def get_summary",
+        "def get_synth_summary",
+        "def get_template_params",
+        "def has_children",
+        "def initialize_category",
+        "def num_children",
+        "def obj_summary",
+        "def ptr_and_len",
+        "def sequence_summary",
+        "def string_from_ptr",
+        "def summary_fn",
+        "def to_lldb_str",
+        "def tuple_summary",
+        "def tuple_summary_provider",
+        "def update"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".readthedocs.yaml": {
+      "fichier": ".readthedocs.yaml",
+      "langage": "yaml",
+      "lignes": 20,
+      "taille_bytes": 482,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java": {
+      "fichier": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "langage": "java",
+      "lignes": 8,
+      "taille_bytes": 181,
+      "entrees": [],
+      "sorties": [
+        "public class CompilationFailedException"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nscplugin/src/test/scala-3/scala/scalanative/NIRCompilerTest3.scala",
+        "nscplugin/src/test/scala-next/scala/scalanative/memory/SafeZoneTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/NIRCompilerTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/LexicalScopesTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/LinktimeIntrinsicsUsageTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/LocalNamesTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/MethodCallsTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/PositionsTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersReachabilityTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/unsafe/StackallocTest.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "testing-compiler-interface/src/main/java/scala/scalanative/api/NIRCompiler.java": {
+      "fichier": "testing-compiler-interface/src/main/java/scala/scalanative/api/NIRCompiler.java",
+      "langage": "java",
+      "lignes": 31,
+      "taille_bytes": 859,
+      "entrees": [
+        "java.nio.file.Path"
+      ],
+      "sorties": [
+        "public interface NIRCompiler"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/scala/scala/tools/nsc/MainGenericRunner.scala": {
+      "fichier": "scala-partest/src/main/scala/scala/tools/nsc/MainGenericRunner.scala",
+      "langage": "scala",
+      "lignes": 115,
+      "taille_bytes": 3615,
+      "entrees": [
+        "java.nio.file._",
+        "java.util.",
+        "java.util.function.BinaryOperator",
+        "scala.concurrent.ExecutionContext.Implicits.global",
+        "scala.concurrent._",
+        "scala.concurrent.duration._",
+        "scala.scalanative.build._",
+        "scala.scalanative.util.Scope",
+        "scala.tools.nsc.GenericRunnerCommand._",
+        "scala.tools.nsc.Properties.",
+        "scala.tools.partest.scalanative.Defaults"
+      ],
+      "sorties": [
+        "class MainGenericRunner",
+        "def loadSetting",
+        "def main",
+        "def process"
+      ],
+      "appelle": [
+        "scala-partest/src/main/scala/scala/tools/partest/scalanative/Defaults.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/scala/scala/tools/partest/scalanative/Framework.scala": {
+      "fichier": "scala-partest/src/main/scala/scala/tools/partest/scalanative/Framework.scala",
+      "langage": "scala",
+      "lignes": 28,
+      "taille_bytes": 939,
+      "entrees": [
+        "sbt.testing."
+      ],
+      "sorties": [
+        "class Framework",
+        "def fingerprints",
+        "def isModule",
+        "def name",
+        "def runner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/scala/scala/tools/partest/scalanative/Runner.scala": {
+      "fichier": "scala-partest/src/main/scala/scala/tools/partest/scalanative/Runner.scala",
+      "langage": "scala",
+      "lignes": 50,
+      "taille_bytes": 1872,
+      "entrees": [
+        "sbt.testing.TaskDef"
+      ],
+      "sorties": [
+        "def done",
+        "def tasks"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/scala/scala/tools/partest/scalanative/Defaults.scala": {
+      "fichier": "scala-partest/src/main/scala/scala/tools/partest/scalanative/Defaults.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1270,
+      "entrees": [
+        "java.nio.file.",
+        "scala.scalanative.build._",
+        "scala.scalanative.nir.Attr.Link"
+      ],
+      "sorties": [
+        "def errorFn",
+        "def workDir"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "scala-partest/src/main/scala/scala/tools/nsc/MainGenericRunner.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/scala/scala/tools/partest/scalanative/PartestTask.scala": {
+      "fichier": "scala-partest/src/main/scala/scala/tools/partest/scalanative/PartestTask.scala",
+      "langage": "scala",
+      "lignes": 172,
+      "taille_bytes": 5496,
+      "entrees": [
+        "_root_.sbt.testing._",
+        "java.io.File",
+        "java.net.URLClassLoader",
+        "scala.collection.mutable",
+        "scala.concurrent.ExecutionContext.Implicits.global",
+        "scala.concurrent._",
+        "scala.concurrent.duration._",
+        "scala.language.reflectiveCalls",
+        "scala.scalanative.build.Build",
+        "scala.scalanative.linker.LinktimeIntrinsicCallsResolver.FoundServiceProviders",
+        "scala.scalanative.linker.ReachabilityAnalysis"
+      ],
+      "sorties": [
+        "def execute",
+        "def precompileLibs",
+        "def tags",
+        "type SBTRunner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/scala/scala/tools/partest/scalanative/ScalaNativeDirectCompiler.scala": {
+      "fichier": "scala-partest/src/main/scala/scala/tools/partest/scalanative/ScalaNativeDirectCompiler.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 666,
+      "entrees": [
+        "scala.scalanative.nscplugin.ScalaNativePlugin",
+        "scala.tools.nsc.Settings",
+        "scala.tools.nsc.plugins.Plugin",
+        "scala.tools.nsc.reporters.Reporter",
+        "scala.tools.partest.nest."
+      ],
+      "sorties": [
+        "trait ScalaNativeDirectCompiler"
+      ],
+      "appelle": [
+        "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/ScalaNativePlugin.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/scala/scala/tools/partest/scalanative/ScalaNativePartestOptions.scala": {
+      "fichier": "scala-partest/src/main/scala/scala/tools/partest/scalanative/ScalaNativePartestOptions.scala",
+      "langage": "scala",
+      "lignes": 151,
+      "taille_bytes": 4872,
+      "entrees": [
+        "java.io.File.pathSeparator",
+        "java.nio.file.",
+        "scalanative.build"
+      ],
+      "sorties": [
+        "def apply",
+        "def descr",
+        "def error",
+        "def javaOptions",
+        "def setFilter",
+        "def show",
+        "def splitOption",
+        "def unapply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/new-partest/scala.tools.partest.scalanative/NativeTestInfo.scala": {
+      "fichier": "scala-partest/src/main/new-partest/scala.tools.partest.scalanative/NativeTestInfo.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 1105,
+      "entrees": [
+        "java.io.File",
+        "java.nio.file.Files",
+        "scala.tools.partest.FileOps",
+        "scala.tools.partest.nest.TestInfo"
+      ],
+      "sorties": [
+        "class NativeTestInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/new-partest/scala.tools.partest.scalanative/ScalaNativeSBTRunner.scala": {
+      "fichier": "scala-partest/src/main/new-partest/scala.tools.partest.scalanative/ScalaNativeSBTRunner.scala",
+      "langage": "scala",
+      "lignes": 145,
+      "taille_bytes": 4138,
+      "entrees": [
+        "ScalaNativePartestOptions._",
+        "_root_.sbt.testing._",
+        "f.exists",
+        "java.io.File",
+        "java.net.URLClassLoader",
+        "java.util.concurrent.TimeUnit",
+        "scala.scalanative.nir.Versions.",
+        "scala.tools.partest.nest._",
+        "scala.tools.partest.sbt.SBTRunner"
+      ],
+      "sorties": [
+        "class ScalaNativeSBTRunner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/new-partest/scala.tools.partest.scalanative/ScalaNativeRunner.scala": {
+      "fichier": "scala-partest/src/main/new-partest/scala.tools.partest.scalanative/ScalaNativeRunner.scala",
+      "langage": "scala",
+      "lignes": 19,
+      "taille_bytes": 522,
+      "entrees": [
+        "scala.tools.partest.nest",
+        "scala.tools.partest.nest."
+      ],
+      "sorties": [
+        "class ScalaNativeRunner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/legacy-partest/scala.tools/partest/scalanative/ScalaNativeSBTRunner.scala": {
+      "fichier": "scala-partest/src/main/legacy-partest/scala.tools/partest/scalanative/ScalaNativeSBTRunner.scala",
+      "langage": "scala",
+      "lignes": 83,
+      "taille_bytes": 2577,
+      "entrees": [
+        "_root_.sbt.testing._",
+        "java.io.File",
+        "java.net.URLClassLoader",
+        "scala.tools.partest.nest._",
+        "scala.tools.partest.sbt.SBTRunner"
+      ],
+      "sorties": [
+        "class ScalaNativeSBTRunner",
+        "def duration",
+        "def fingerprint",
+        "def fullyQualifiedName",
+        "def selector"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/legacy-partest/scala.tools/partest/scalanative/ScalaNativeSuiteRunner.scala": {
+      "fichier": "scala-partest/src/main/legacy-partest/scala.tools/partest/scalanative/ScalaNativeSuiteRunner.scala",
+      "langage": "scala",
+      "lignes": 93,
+      "taille_bytes": 2564,
+      "entrees": [
+        "ScalaNativePartestOptions._",
+        "f.exists",
+        "java.io.File",
+        "scala.scalanative.nir.Versions.",
+        "scala.tools.partest.",
+        "scala.tools.partest.nest."
+      ],
+      "sorties": [
+        "trait ScalaNativeSuiteRunner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scala-partest/src/main/legacy-partest/scala.tools/partest/scalanative/ScalaNativeRunner.scala": {
+      "fichier": "scala-partest/src/main/legacy-partest/scala.tools/partest/scalanative/ScalaNativeRunner.scala",
+      "langage": "scala",
+      "lignes": 41,
+      "taille_bytes": 1177,
+      "entrees": [
+        "java.io.File",
+        "scala.tools.partest.",
+        "scala.tools.partest.nest."
+      ],
+      "sorties": [
+        "class ScalaNativeRunner"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/MinWinBaseApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/MinWinBaseApi.scala",
+      "langage": "scala",
+      "lignes": 106,
+      "taille_bytes": 3462,
+      "entrees": [
+        "HandleApi._",
+        "MinWinBaseApi._",
+        "scala.language.implicitConversions",
+        "scala.scalanative.unsafe.",
+        "scala.scalanative.unsigned._",
+        "scala.scalanative.windows.util.Conversion"
+      ],
+      "sorties": [
+        "def DUMMYSTRUCTNAME",
+        "def DUMMYSTRUCTNAME_",
+        "def Internal",
+        "def InternalHigh",
+        "def InternalHigh_",
+        "def Internal_",
+        "def Offset",
+        "def OffsetHigh",
+        "def OffsetHigh_",
+        "def Offset_",
+        "def day",
+        "def dayOfWeek",
+        "def dayOfWeek_",
+        "def day_",
+        "def fileTime",
+        "def fileTime_",
+        "def fromUnixEpoch",
+        "def fromUnixEpochMillis",
+        "def hEvent",
+        "def hEvent_",
+        "def highFileTime",
+        "def highFileTime_",
+        "def hour",
+        "def hour_",
+        "def lowFileTime",
+        "def lowFileTime_",
+        "def milliseconds",
+        "def milliseconds_",
+        "def minute",
+        "def minute_",
+        "def month",
+        "def month_",
+        "def second",
+        "def second_",
+        "def toUnixEpochMillis",
+        "def toUnixEpochSeconds",
+        "def year",
+        "def year_",
+        "type DUMMYSTRUCTNAME",
+        "type FileTime",
+        "type FileTimeStruct",
+        "type OVERLAPPED",
+        "type SystemTime"
+      ],
+      "appelle": [
+        "windowslib/src/main/scala/scala/scalanative/windows/util/Conversion.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/WinBaseApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/WinBaseApi.scala",
+      "langage": "scala",
+      "lignes": 206,
+      "taille_bytes": 6531,
+      "entrees": [
+        "HandleApi.Handle",
+        "SecurityBaseApi._",
+        "WinBaseApi._",
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._",
+        "scala.scalanative.windows.winnt._"
+      ],
+      "sorties": [
+        "def CreateFileMappingA",
+        "def CreateFileMappingW",
+        "def CreateHardLinkW",
+        "def CreateSymbolicLinkW",
+        "def FormatMessageA",
+        "def FormatMessageW",
+        "def GetCurrentDirectoryA",
+        "def GetCurrentDirectoryW",
+        "def GetFileSecurityW",
+        "def LocalFree",
+        "def LookupAccountNameA",
+        "def LookupAccountNameW",
+        "def LookupAccountSidA",
+        "def LookupAccountSidW",
+        "def MoveFileExA",
+        "def MoveFileExW",
+        "def RegisterWaitForSingleObject",
+        "def UnregisterWait",
+        "def inheritHandle",
+        "def inheritHandle_",
+        "def length",
+        "def length_",
+        "def securityDescriptor",
+        "def securityDescriptor_",
+        "type CallbackContext",
+        "type LocalHandle",
+        "type SecurityAttributes",
+        "type SecurityInformation",
+        "type WaitOrTimerCallback"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/SysInfoApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/SysInfoApi.scala",
+      "langage": "scala",
+      "lignes": 45,
+      "taille_bytes": 1381,
+      "entrees": [
+        "MinWinBaseApi._",
+        "SysInfoApi._",
+        "scala.scalanative.unsafe."
+      ],
+      "sorties": [
+        "def GetLocalTime",
+        "def GetSystemInfo",
+        "def GetSystemTime",
+        "def SetLocalTime",
+        "def SetSystemTime",
+        "def activeProcessorsMask",
+        "def allocationGranularity",
+        "def maximalApplicationAddress",
+        "def minimumApplicationAddress",
+        "def numberOfProcessors",
+        "def oemId",
+        "def pagesSize",
+        "def processorLevel",
+        "def processorRevision",
+        "def processorType",
+        "type SystemInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/HandleApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/HandleApi.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1111,
+      "entrees": [
+        "scala.scalanative.runtime.Intrinsics.castLongToRawPtr",
+        "scala.scalanative.runtime.fromRawPtr",
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._",
+        "scala.scalanative.windows.HandleApi.Handle"
+      ],
+      "sorties": [
+        "def CloseHandle",
+        "def DuplicateHandle",
+        "def GetHandleInformation",
+        "def SetHandleInformation",
+        "type Handle"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/SynchApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/SynchApi.scala",
+      "langage": "scala",
+      "lignes": 94,
+      "taille_bytes": 2821,
+      "entrees": [
+        "HandleApi.Handle",
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._",
+        "scala.scalanative.windows.WinBaseApi._"
+      ],
+      "sorties": [
+        "def CreateEventA",
+        "def CreateEventExA",
+        "def CreateEventExW",
+        "def CreateEventW",
+        "def DeleteCriticalSection",
+        "def EnterCriticalSection",
+        "def InitializeConditionVariable",
+        "def InitializeCriticalEx",
+        "def InitializeCriticalSection",
+        "def InitializeCriticalSectionAndSpinCount",
+        "def LeaveCriticalSection",
+        "def ResetEvent",
+        "def SetCriticalSectionSpinCount",
+        "def SetEvent",
+        "def SizeOfConditionVariable",
+        "def SizeOfCriticalSection",
+        "def TryEnterCriticalSection",
+        "def WakeAllConditionVariable",
+        "def WakeConditionVariable",
+        "type ConditionVariable",
+        "type CriticalSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/MemoryApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/MemoryApi.scala",
+      "langage": "scala",
+      "lignes": 46,
+      "taille_bytes": 1120,
+      "entrees": [
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.windows.HandleApi.Handle"
+      ],
+      "sorties": [
+        "def FILE_MAP_ALL_ACCESS",
+        "def FILE_MAP_COPY",
+        "def FILE_MAP_EXECUTE",
+        "def FILE_MAP_LARGE_PAGES",
+        "def FILE_MAP_READ",
+        "def FILE_MAP_TARGETS_INVALID",
+        "def FILE_MAP_WRITE",
+        "def FlushViewOfFile",
+        "def MapViewOfFile",
+        "def UnmapViewOfFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/ProcessThreadsApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/ProcessThreadsApi.scala",
+      "langage": "scala",
+      "lignes": 208,
+      "taille_bytes": 6965,
+      "entrees": [
+        "HandleApi.Handle",
+        "MinWinBaseApi.FileTimeStruct",
+        "ProcessThreadsApi._",
+        "WinBaseApi.SecurityAttributes",
+        "scala.scalanative.unsafe.",
+        "scalanative.unsigned._"
+      ],
+      "sorties": [
+        "def CreateProcessW",
+        "def ExitProcess",
+        "def ExitThread",
+        "def FlushProcessWriteBuffers",
+        "def GetCurrentProcess",
+        "def GetCurrentProcessToken",
+        "def GetCurrentThread",
+        "def GetExitCodeProcess",
+        "def GetExitCodeThread",
+        "def GetProcessId",
+        "def GetProcessTimes",
+        "def OpenProcessToken",
+        "def OpenThreadToken",
+        "def ResumeThread",
+        "def SetThreadPriority",
+        "def TerminateProcess",
+        "def TerminateThread",
+        "def cb",
+        "def cbReserved2",
+        "def cbReserved2_",
+        "def cb_",
+        "def desktop",
+        "def desktop_",
+        "def fillAtribute",
+        "def fillAtribute_",
+        "def flags",
+        "def flags_",
+        "def lpReserved2",
+        "def lpReserved2_",
+        "def process",
+        "def processId",
+        "def processId_",
+        "def process_",
+        "def reserved",
+        "def reserved_",
+        "def showWindow",
+        "def showWindow_",
+        "def stdError",
+        "def stdError_",
+        "def stdInput",
+        "def stdInput_",
+        "def stdOutput",
+        "def stdOutput_",
+        "def thread",
+        "def threadId",
+        "def threadId_",
+        "def thread_",
+        "def title",
+        "def title_",
+        "def xCountChars",
+        "def xCountChars_",
+        "def xSize",
+        "def xSize_",
+        "def x_",
+        "def yCountChars",
+        "def yCountChars_",
+        "def ySize",
+        "def ySize_",
+        "def y_",
+        "type ProcessInformation",
+        "type StartupInfoW"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/SddlApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/SddlApi.scala",
+      "langage": "scala",
+      "lignes": 17,
+      "taille_bytes": 344,
+      "entrees": [
+        "SecurityBaseApi._",
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def ConvertSidToStringSidW",
+        "def ConvertStringSidToSidW"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/FileApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/FileApi.scala",
+      "langage": "scala",
+      "lignes": 392,
+      "taille_bytes": 12353,
+      "entrees": [
+        "FileApi._",
+        "MinWinBaseApi._",
+        "MinWinBaseApiOps._",
+        "WinBaseApi.SecurityAttributes",
+        "scala.language.implicitConversions",
+        "scala.scalanative.libc.wchar.wcscpy",
+        "scala.scalanative.unsafe.",
+        "scala.scalanative.unsigned._",
+        "scala.scalanative.windows.HandleApi.Handle",
+        "scalanative.libc.string.strcpy",
+        "util.Conversion._"
+      ],
+      "sorties": [
+        "abstract class Win32FileDataOps",
+        "def CreateDirectoryA",
+        "def CreateDirectoryW",
+        "def CreateFileA",
+        "def CreateFileW",
+        "def DeleteFileA",
+        "def DeleteFileW",
+        "def FindClose",
+        "def FindFirstFileA",
+        "def FindFirstFileW",
+        "def FindNextFileA",
+        "def FindNextFileW",
+        "def FlushFileBuffers",
+        "def GetFileAttributesA",
+        "def GetFileAttributesW",
+        "def GetFileInformationByHandle",
+        "def GetFileSizeEx",
+        "def GetFileTime",
+        "def GetFinalPathNameByHandleA",
+        "def GetFinalPathNameByHandleW",
+        "def GetFullPathNameA",
+        "def GetFullPathNameW",
+        "def GetLogicalDriveStringsW",
+        "def GetTempFileNameW",
+        "def GetTempPathA",
+        "def GetTempPathW",
+        "def GetVolumePathNameW",
+        "def LockFile",
+        "def ReadFile",
+        "def RemoveDirectoryW",
+        "def SetEndOfFile",
+        "def SetFileAttributesA",
+        "def SetFileAttributesW",
+        "def SetFilePointerEx",
+        "def SetFileTime",
+        "def UnlockFile",
+        "def alternateFileName",
+        "def alternateFileName_",
+        "def creationTime",
+        "def creationTime_",
+        "def creatorType",
+        "def fileAttributes",
+        "def fileAttributes_",
+        "def fileIndex",
+        "def fileIndex_",
+        "def fileName",
+        "def fileName_",
+        "def fileSize",
+        "def fileSize_",
+        "def fileType",
+        "def finderFlags",
+        "def lastAccessTime",
+        "def lastAccessTime_",
+        "def lastWriteTime",
+        "def lastWriteTime_",
+        "def numberOfLinks",
+        "def numberOfLinks_",
+        "def reserved0",
+        "def reserved0_",
+        "def reserved1",
+        "def reserved1_",
+        "def volumeSerialNumber",
+        "def volumeSerialNumber_",
+        "type ByHandleFileInformation",
+        "type Win32FindDataA",
+        "type Win32FindDataW"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/WinSocketApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/WinSocketApi.scala",
+      "langage": "scala",
+      "lignes": 230,
+      "taille_bytes": 7333,
+      "entrees": [
+        "WinSocketApi._",
+        "WinSocketApiExt._",
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._",
+        "scalanative.windows.",
+        "util.Conversion._"
+      ],
+      "sorties": [
+        "def WSACleanup",
+        "def WSAGetLastError",
+        "def WSAPoll",
+        "def WSASocketW",
+        "def WSAStartup",
+        "def closeSocket",
+        "def events",
+        "def events_",
+        "def highVersion",
+        "def ioctlSocket",
+        "def revents",
+        "def revents_",
+        "def socket",
+        "def socket_",
+        "def version",
+        "type Group",
+        "type Socket",
+        "type WSAData",
+        "type WSAPollFd",
+        "type WSAProtocolInfoW"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/ConsoleApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/ConsoleApi.scala",
+      "langage": "scala",
+      "lignes": 27,
+      "taille_bytes": 748,
+      "entrees": [
+        "ConsoleApi._",
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.windows.HandleApi.Handle"
+      ],
+      "sorties": [
+        "def GetStdHandle",
+        "def SetStdHandle",
+        "def stdErr",
+        "def stdIn",
+        "def stdOut"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/UserEnvApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/UserEnvApi.scala",
+      "langage": "scala",
+      "lignes": 20,
+      "taille_bytes": 421,
+      "entrees": [
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.windows.HandleApi.Handle"
+      ],
+      "sorties": [
+        "def GetUserProfileDirectoryA",
+        "def GetUserProfileDirectoryW"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/ProcessEnvApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/ProcessEnvApi.scala",
+      "langage": "scala",
+      "lignes": 9,
+      "taille_bytes": 226,
+      "entrees": [
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def FreeEnvironmentStringsW",
+        "def GetEnvironmentStringsW"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/AclApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/AclApi.scala",
+      "langage": "scala",
+      "lignes": 92,
+      "taille_bytes": 2873,
+      "entrees": [
+        "SecurityBaseApi._",
+        "WinBaseApi._",
+        "accctrl._",
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._"
+      ],
+      "sorties": [
+        "def GetNamedSecurityInfoA",
+        "def GetNamedSecurityInfoW",
+        "def SE_DS_OBJECT",
+        "def SE_DS_OBJECT_ALL",
+        "def SE_FILE_OBJECT",
+        "def SE_KERNEL_OBJECT",
+        "def SE_LMSHARE",
+        "def SE_PRINTER",
+        "def SE_PROVIDER_DEFINED_OBJECT",
+        "def SE_REGISTRY_KEY",
+        "def SE_REGISTRY_WOW64_32KEY",
+        "def SE_REGISTRY_WOW64_64KEY",
+        "def SE_SERVICE",
+        "def SE_UNKNOWN_OBJECT_TYPE",
+        "def SE_WINDOW_OBJECT",
+        "def SE_WMIGUID_OBJECT",
+        "def SetEntriesInAclW",
+        "def SetNamedSecurityInfoA",
+        "def SetNamedSecurityInfoW",
+        "type SecurityObjectType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/package.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/package.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 886,
+      "entrees": [
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._"
+      ],
+      "sorties": [
+        "def Infinite",
+        "type CTString",
+        "type CWString",
+        "type DWord",
+        "type DWordLong",
+        "type LargeInteger",
+        "type ULargeInteger",
+        "type WChar",
+        "type Word"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/NamedPipeApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/NamedPipeApi.scala",
+      "langage": "scala",
+      "lignes": 25,
+      "taille_bytes": 560,
+      "entrees": [
+        "HandleApi.Handle",
+        "WinBaseApi.SecurityAttributes",
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def CreatePipe",
+        "def PeekNamedPipe"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/WinNlsApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/WinNlsApi.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 987,
+      "entrees": [
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._"
+      ],
+      "sorties": [
+        "def GetLocaleInfoEx",
+        "def LOCALE_NAME_INVARIANT",
+        "def LOCALE_NAME_SYSTEM_DEFAULT",
+        "def LOCALE_NAME_USER_DEFAULT",
+        "def LOCALE_SISO3166CTRYNAME",
+        "def LOCALE_SISO3166CTRYNAME2",
+        "def LOCALE_SISO639LANGNAME",
+        "def LOCALE_SISO639LANGNAME2",
+        "type LCType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/ErrorCodes.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/ErrorCodes.scala",
+      "langage": "scala",
+      "lignes": 819,
+      "taille_bytes": 28270,
+      "entrees": [
+        "scala.scalanative.unsigned._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/ErrorHandlingApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/ErrorHandlingApi.scala",
+      "langage": "scala",
+      "lignes": 49,
+      "taille_bytes": 1180,
+      "entrees": [
+        "WinBaseApi._",
+        "WinBaseApiExt._",
+        "java.nio.charset.StandardCharsets",
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._"
+      ],
+      "sorties": [
+        "def GetLastError",
+        "def errorMessage",
+        "def lastErrorMessage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/SecurityBaseApi.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/SecurityBaseApi.scala",
+      "langage": "scala",
+      "lignes": 114,
+      "taille_bytes": 3334,
+      "entrees": [
+        "SecurityBaseApi._",
+        "scala.scalanative.unsafe.",
+        "scala.scalanative.windows.HandleApi.Handle",
+        "winnt.TokenInformationClass"
+      ],
+      "sorties": [
+        "def AccessCheck",
+        "def DuplicateToken",
+        "def FreeSid",
+        "def GetTokenInformation",
+        "def MapGenericMask",
+        "def SecurityAnonymous",
+        "def SecurityDelegation",
+        "def SecurityIdentification",
+        "def SecurityImpersonation",
+        "def control",
+        "def control_",
+        "def dAcl",
+        "def dAcl_",
+        "def emptyPriviligesSize",
+        "def genericAll",
+        "def genericAll_",
+        "def genericExecute",
+        "def genericExecute_",
+        "def genericRead",
+        "def genericRead_",
+        "def genericWrite",
+        "def genericWrite_",
+        "def group",
+        "def group_",
+        "def owner",
+        "def owner_",
+        "def revision",
+        "def revision_",
+        "def sAcl",
+        "def sAcl_",
+        "def sbz1",
+        "def sbz1_",
+        "type ACLPtr",
+        "type AccessMask",
+        "type GenericMapping",
+        "type PrivilegeSetPtr",
+        "type SIDPtr",
+        "type SecurityDescriptor",
+        "type SecurityDescriptorControl",
+        "type SecurityImpersonationLevel"
+      ],
+      "appelle": [
+        "windowslib/src/main/scala/scala/scalanative/windows/winnt/TokenInformationClass.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/crt/time.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/crt/time.scala",
+      "langage": "scala",
+      "lignes": 63,
+      "taille_bytes": 1572,
+      "entrees": [
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def asctime",
+        "def asctime_s",
+        "def daylight",
+        "def gmtime",
+        "def gmtime_s",
+        "def localtime",
+        "def localtime_s",
+        "def strftime",
+        "def time",
+        "def timezone",
+        "def tzname",
+        "def tzset",
+        "type clock_t",
+        "type errno_t",
+        "type time_t",
+        "type tm",
+        "type uid_t"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/winnt/AccessRights.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/winnt/AccessRights.scala",
+      "langage": "scala",
+      "lignes": 58,
+      "taille_bytes": 1509,
+      "entrees": [
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def FILE_APPEND_DATA",
+        "def FILE_EXECUTE",
+        "def FILE_GENERIC_ALL",
+        "def FILE_GENERIC_EXECUTE",
+        "def FILE_GENERIC_READ",
+        "def FILE_GENERIC_WRITE",
+        "def FILE_READ_ATTRIBUTES",
+        "def FILE_READ_DATA",
+        "def FILE_READ_EA",
+        "def FILE_WRITE_ATTRIBUTES",
+        "def FILE_WRITE_DATA",
+        "def FILE_WRITE_EA",
+        "def STANDARD_RIGHTS_EXECUTE",
+        "def STANDARD_RIGHTS_READ",
+        "def STANDARD_RIGHTS_WRITE",
+        "def SYNCHRONIZE"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/winnt/HelperMethods.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/winnt/HelperMethods.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 286,
+      "entrees": [
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.windows.SecurityBaseApi._"
+      ],
+      "sorties": [
+        "def setupUserGroupSid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/winnt/AccessToken.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/winnt/AccessToken.scala",
+      "langage": "scala",
+      "lignes": 68,
+      "taille_bytes": 2278,
+      "entrees": [
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def TOKEN_ADJUST_DEFAULT",
+        "def TOKEN_ADJUST_GROUP",
+        "def TOKEN_ADJUST_PRIVILEGES",
+        "def TOKEN_ADJUST_SESSIONID",
+        "def TOKEN_ALL_ACCESS",
+        "def TOKEN_ASSIGN_PRIMARY",
+        "def TOKEN_DUPLICATE",
+        "def TOKEN_EXECUTE",
+        "def TOKEN_IMPERSONATE",
+        "def TOKEN_QUERY",
+        "def TOKEN_QUERY_SOURCE",
+        "def TOKEN_READ",
+        "def TOKEN_WRITE"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/winnt/SidNameUse.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/winnt/SidNameUse.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1009,
+      "entrees": [
+        "scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def SidTypeAlias",
+        "def SidTypeComputer",
+        "def SidTypeDeletedAccount",
+        "def SidTypeDomain",
+        "def SidTypeGroup",
+        "def SidTypeInvalid",
+        "def SidTypeLabel",
+        "def SidTypeLogonSession",
+        "def SidTypeUnknown",
+        "def SidTypeUser",
+        "def SidTypeWellKnownGroup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/winnt/package.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/winnt/package.scala",
+      "langage": "scala",
+      "lignes": 21,
+      "taille_bytes": 534,
+      "entrees": [
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.windows.SecurityBaseApi._"
+      ],
+      "sorties": [
+        "def attributes",
+        "def attributes_",
+        "def sid",
+        "def size_",
+        "type AccessRights",
+        "type AccessToken",
+        "type SidAndAttributes",
+        "type SidNameUse",
+        "type TokenInformationClass"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/winnt/TokenInformationClass.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/winnt/TokenInformationClass.scala",
+      "langage": "scala",
+      "lignes": 150,
+      "taille_bytes": 4865,
+      "entrees": [
+        "scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def MaxTokenInfoClass",
+        "def TokenAccessInformation",
+        "def TokenAppContainerNumber",
+        "def TokenAppContainerSid",
+        "def TokenAuditPolicy",
+        "def TokenBnoIsolation",
+        "def TokenCapabilities",
+        "def TokenChildProcessFlags",
+        "def TokenDefaultDacl",
+        "def TokenDeviceClaimAttributes",
+        "def TokenDeviceGroups",
+        "def TokenElevation",
+        "def TokenElevationTokenInformationClass",
+        "def TokenGroups",
+        "def TokenGroupsAndPrivileges",
+        "def TokenHasRestrictions",
+        "def TokenImpersonationLevel",
+        "def TokenIntegrityLevel",
+        "def TokenIsAppContainer",
+        "def TokenIsRestricted",
+        "def TokenLinkedToken",
+        "def TokenLogonSid",
+        "def TokenMandatoryPolicy",
+        "def TokenOrigin",
+        "def TokenOwner",
+        "def TokenPrimaryGroup",
+        "def TokenPrivateNameSpace",
+        "def TokenPrivileges",
+        "def TokenProcessTrustLevel",
+        "def TokenRestrictedDeviceClaimAttributes",
+        "def TokenRestrictedDeviceGroups",
+        "def TokenRestrictedSids",
+        "def TokenRestrictedUserClaimAttributes",
+        "def TokenSandBoxInert",
+        "def TokenSecurityAttributes",
+        "def TokenSessionId",
+        "def TokenSessionReference",
+        "def TokenSingletonAttributes",
+        "def TokenSource",
+        "def TokenStatistics",
+        "def TokenTokenInformationClass",
+        "def TokenUIAccess",
+        "def TokenUser",
+        "def TokenUserClaimAttributes",
+        "def TokenVirtualizationAllowed",
+        "def TokenVirtualizationEnabled"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "windowslib/src/main/scala/scala/scalanative/windows/SecurityBaseApi.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/util/Conversion.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/util/Conversion.scala",
+      "langage": "scala",
+      "lignes": 31,
+      "taille_bytes": 802,
+      "entrees": [
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._",
+        "scala.scalanative.windows."
+      ],
+      "sorties": [
+        "def dwordPairToULargeInteger",
+        "def uLargeIntegerToDWordPair",
+        "def wordFromBytes",
+        "def wordToBytes"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "windowslib/src/main/scala/scala/scalanative/windows/MinWinBaseApi.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/accctrl/ops.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/accctrl/ops.scala",
+      "langage": "scala",
+      "lignes": 79,
+      "taille_bytes": 2977,
+      "entrees": [
+        "AclApi._",
+        "SecurityBaseApi._",
+        "WinBaseApi._",
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.windows._"
+      ],
+      "sorties": [
+        "def accessMode",
+        "def accessMode_",
+        "def accessPermisions",
+        "def accessPermisions_",
+        "def inheritedObjectTypeGuid",
+        "def inheritedObjectTypeGuid_",
+        "def inheritedObjectTypeName",
+        "def inheritedObjectTypeName_",
+        "def inheritence",
+        "def inheritence_",
+        "def multipleTrustee",
+        "def multipleTrusteeOperation",
+        "def multipleTrusteeOperation_",
+        "def multipleTrustee_",
+        "def objectType",
+        "def objectTypeGuid",
+        "def objectTypeGuid_",
+        "def objectTypeName",
+        "def objectTypeName_",
+        "def objectType_",
+        "def objectsAndName",
+        "def objectsAndName_",
+        "def objectsAndSid",
+        "def objectsAndSid_",
+        "def objectsPresent",
+        "def objectsPresent_",
+        "def sid",
+        "def sid_",
+        "def strName",
+        "def strName_",
+        "def trustee",
+        "def trusteeForm",
+        "def trusteeForm_",
+        "def trusteeType",
+        "def trusteeType_",
+        "def trustee_"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/accctrl/AccessMode.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/accctrl/AccessMode.scala",
+      "langage": "scala",
+      "lignes": 21,
+      "taille_bytes": 662,
+      "entrees": [
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def DENY_ACCESS",
+        "def GRANT_ACCESS",
+        "def NOT_USED_ACCESS",
+        "def REVOKE_ACCESS",
+        "def SET_ACCESS",
+        "def SET_AUDIT_FAILURE",
+        "def SET_AUDIT_SUCCESS"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/accctrl/TrusteeType.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/accctrl/TrusteeType.scala",
+      "langage": "scala",
+      "lignes": 25,
+      "taille_bytes": 914,
+      "entrees": [
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def TRUSTEE_IS_ALIAS",
+        "def TRUSTEE_IS_COMPUTER",
+        "def TRUSTEE_IS_DELETED",
+        "def TRUSTEE_IS_DOMAIN",
+        "def TRUSTEE_IS_GROUP",
+        "def TRUSTEE_IS_INVALID",
+        "def TRUSTEE_IS_UNKNOWN",
+        "def TRUSTEE_IS_USER",
+        "def TRUSTEE_IS_WELL_KNOWN_GROUP"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/accctrl/package.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/accctrl/package.scala",
+      "langage": "scala",
+      "lignes": 41,
+      "taille_bytes": 1225,
+      "entrees": [
+        "AclApi._",
+        "SecurityBaseApi._",
+        "scala.scalanative.unsafe._",
+        "scala.scalanative.unsigned._",
+        "scala.scalanative.windows._"
+      ],
+      "sorties": [
+        "type AccessMode",
+        "type ExplicitAccessW",
+        "type GUID",
+        "type MultipleTruteeOperation",
+        "type ObjectsAndNameW",
+        "type ObjectsAndSid",
+        "type ObjectsPresent",
+        "type TrusteeForm",
+        "type TrusteeType",
+        "type TrusteeW"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/accctrl/MultipleTrusteeOperation.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/accctrl/MultipleTrusteeOperation.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 334,
+      "entrees": [
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def NO_MULTIPLE_TRUSTEE",
+        "def TRUSTEE_IS_IMPERSONATE"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/scala/scala/scalanative/windows/accctrl/TrusteeForm.scala": {
+      "fichier": "windowslib/src/main/scala/scala/scalanative/windows/accctrl/TrusteeForm.scala",
+      "langage": "scala",
+      "lignes": 17,
+      "taille_bytes": 570,
+      "entrees": [
+        "scala.scalanative.unsafe._"
+      ],
+      "sorties": [
+        "def TRUSTEE_BAD_FORM",
+        "def TRUSTEE_IS_NAME",
+        "def TRUSTEE_IS_OBJECTS_AND_NAME",
+        "def TRUSTEE_IS_OBJECTS_AND_SID",
+        "def TRUSTEE_IS_SID"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/memory.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/memory.c",
+      "langage": "c",
+      "lignes": 16,
+      "taille_bytes": 615,
+      "entrees": [
+        "<winbase.h>",
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/time.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/time.c",
+      "langage": "c",
+      "lignes": 151,
+      "taille_bytes": 4877,
+      "entrees": [
+        "<errno.h>",
+        "<string.h>",
+        "<time.h>"
+      ],
+      "sorties": [
+        "struct scalanative_tm",
+        "struct tm"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/securityImpersonation.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/securityImpersonation.c",
+      "langage": "c",
+      "lignes": 10,
+      "taille_bytes": 407,
+      "entrees": [
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/console.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/console.c",
+      "langage": "c",
+      "lignes": 8,
+      "taille_bytes": 313,
+      "entrees": [
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/constants.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/constants.c",
+      "langage": "c",
+      "lignes": 11,
+      "taille_bytes": 353,
+      "entrees": [
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/winnls.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/winnls.c",
+      "langage": "c",
+      "lignes": 23,
+      "taille_bytes": 683,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/winSocket.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/winSocket.c",
+      "langage": "c",
+      "lignes": 12,
+      "taille_bytes": 369,
+      "entrees": [
+        "<winsock2.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/winnt/tokenInformationClass.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/winnt/tokenInformationClass.c",
+      "langage": "c",
+      "lignes": 80,
+      "taille_bytes": 3901,
+      "entrees": [
+        "<sdkddkver.h>",
+        "<windows.h>",
+        "<winnt.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/winnt/helpers.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/winnt/helpers.c",
+      "langage": "c",
+      "lignes": 17,
+      "taille_bytes": 587,
+      "entrees": [
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/winnt/accessToken.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/winnt/accessToken.c",
+      "langage": "c",
+      "lignes": 19,
+      "taille_bytes": 986,
+      "entrees": [
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/winnt/sidNameUse.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/winnt/sidNameUse.c",
+      "langage": "c",
+      "lignes": 17,
+      "taille_bytes": 812,
+      "entrees": [
+        "<windows.h>",
+        "<winnt.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/winnt/accessRights.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/winnt/accessRights.c",
+      "langage": "c",
+      "lignes": 25,
+      "taille_bytes": 1134,
+      "entrees": [
+        "<windows.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/accCtrl/trusteeForm.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/accCtrl/trusteeForm.c",
+      "langage": "c",
+      "lignes": 15,
+      "taille_bytes": 479,
+      "entrees": [
+        "<accctrl.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/accCtrl/securityObjectType.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/accCtrl/securityObjectType.c",
+      "langage": "c",
+      "lignes": 24,
+      "taille_bytes": 1098,
+      "entrees": [
+        "<accctrl.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/accCtrl/accessMode.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/accCtrl/accessMode.c",
+      "langage": "c",
+      "lignes": 13,
+      "taille_bytes": 529,
+      "entrees": [
+        "<accctrl.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "windowslib/src/main/resources/scala-native/windows/accCtrl/trusteeType.c": {
+      "fichier": "windowslib/src/main/resources/scala-native/windows/accCtrl/trusteeType.c",
+      "langage": "c",
+      "lignes": 17,
+      "taille_bytes": 735,
+      "entrees": [
+        "<accctrl.h>"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/src/main/scala/Test.scala": {
+      "fichier": "sandbox/src/main/scala/Test.scala",
+      "langage": "scala",
+      "lignes": 5,
+      "taille_bytes": 91,
+      "entrees": [],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sandbox/src/main/scala-next/Test.scala": {
+      "fichier": "sandbox/src/main/scala-next/Test.scala",
+      "langage": "scala",
+      "lignes": 4,
+      "taille_bytes": 114,
+      "entrees": [
+        "scala.language.experimental.captureChecking"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "nscplugin/src/test/scala-3/scala/NativeCompilerTest.scala",
+        "nscplugin/src/test/scala-3/scala/scalanative/NIRCompilerTest3.scala",
+        "nscplugin/src/test/scala-3/scala/scalanative/linker/StaticForwardersSuiteScala3.scala",
+        "nscplugin/src/test/scala-3/scala/scalanative/linker/TopLevelExternsTest.scala",
+        "nscplugin/src/test/scala-next/scala/scalanative/memory/SafeZoneTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/NIRCompilerTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/LexicalScopesTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/LinktimeIntrinsicsUsageTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/LocalNamesTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/MethodCallsTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/PositionsTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/linker/ExternObjectWithImplicitClass.scala",
+        "nscplugin/src/test/scala/scala/scalanative/linker/ExternVarArgsTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/linker/MethodAttributesTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/linker/StaticForwardersSuite.scala",
+        "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersReachabilityTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersTest.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/NIRCompilerTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/NIRCompilerTest.scala",
+      "langage": "scala",
+      "lignes": 884,
+      "taille_bytes": 24226,
+      "entrees": [
+        "java.nio.file.Files",
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.api.CompilationFailedException",
+        "scala.scalanative.buildinfo.ScalaNativeBuildInfo._",
+        "scala.scalanative.linker.compileAndLoad"
+      ],
+      "sorties": [
+        "class NIRCompilerTest"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/FilteredClassLoader.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/FilteredClassLoader.scala",
+      "langage": "scala",
+      "lignes": 18,
+      "taille_bytes": 584,
+      "entrees": [
+        "scala.annotation.nowarn"
+      ],
+      "sorties": [
+        "class FilteredClassLoader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+      "langage": "scala",
+      "lignes": 154,
+      "taille_bytes": 5328,
+      "entrees": [
+        "java.io.",
+        "java.net.URLClassLoader",
+        "java.nio.file."
+      ],
+      "sorties": [
+        "def apply",
+        "def getCompiler",
+        "def withSources",
+        "def writeSources"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nscplugin/src/test/scala-3/scala/NativeCompilerTest.scala",
+        "nscplugin/src/test/scala-next/scala/scalanative/memory/SafeZoneTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/LinktimeIntrinsicsUsageTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/compiler/MethodCallsTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersTest.scala",
+        "nscplugin/src/test/scala/scala/scalanative/unsafe/StackallocTest.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersReachabilityTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersReachabilityTest.scala",
+      "langage": "scala",
+      "lignes": 103,
+      "taille_bytes": 3256,
+      "entrees": [
+        "java.nio.file.Files",
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.api.CompilationFailedException",
+        "scala.scalanative.linker.compileAndLoad"
+      ],
+      "sorties": [
+        "class ExportedMembersReachabilityTest"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersTest.scala",
+      "langage": "scala",
+      "lignes": 207,
+      "taille_bytes": 5892,
+      "entrees": [
+        "java.nio.file.Files",
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.NIRCompiler",
+        "scala.scalanative.api.CompilationFailedException"
+      ],
+      "sorties": [
+        "class ExportedMembersTest"
+      ],
+      "appelle": [
+        "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/unsafe/StackallocTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/unsafe/StackallocTest.scala",
+      "langage": "scala",
+      "lignes": 148,
+      "taille_bytes": 3913,
+      "entrees": [
+        "java.nio.file.Files",
+        "org.junit.Assert._",
+        "org.junit.Assume._",
+        "org.junit._",
+        "scala.scalanative.NIRCompiler",
+        "scala.scalanative.api.CompilationFailedException",
+        "scala.scalanative.buildinfo.ScalaNativeBuildInfo._",
+        "scala.scalanative.linker.compileAndLoad"
+      ],
+      "sorties": [
+        "class StackallocTest",
+        "def assumeIsScala3"
+      ],
+      "appelle": [
+        "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/compiler/LexicalScopesTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/compiler/LexicalScopesTest.scala",
+      "langage": "scala",
+      "lignes": 186,
+      "taille_bytes": 5968,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.collection.mutable",
+        "scala.reflect.ClassTag",
+        "scala.scalanative.api.CompilationFailedException",
+        "scala.scalanative.buildinfo.ScalaNativeBuildInfo._",
+        "scala.scalanative.linker.compileAndLoad",
+        "scala.scalanative.nir.Defn.Define.DebugInfo.LexicalScope"
+      ],
+      "sorties": [
+        "class LexicalScopesTest",
+        "def assertContains",
+        "def assertContainsAll",
+        "def assertDistinct",
+        "def namedLets",
+        "def scopeOf",
+        "def scopeParents",
+        "def unapply"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/compiler/PositionsTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/compiler/PositionsTest.scala",
+      "langage": "scala",
+      "lignes": 152,
+      "taille_bytes": 5088,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.api.CompilationFailedException",
+        "scala.scalanative.buildinfo.ScalaNativeBuildInfo._",
+        "scala.scalanative.linker.compileAndLoad"
+      ],
+      "sorties": [
+        "class PositionsTest",
+        "def checkLinesRange",
+        "def checkPos",
+        "def isScala3",
+        "def unapply"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/compiler/LinktimeIntrinsicsUsageTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/compiler/LinktimeIntrinsicsUsageTest.scala",
+      "langage": "scala",
+      "lignes": 81,
+      "taille_bytes": 2551,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.NIRCompiler",
+        "scala.scalanative.api.CompilationFailedException",
+        "scala.scalanative.linker.compileAndLoad",
+        "scala.scalanative.nir._",
+        "scala.scalanative.util.Scope"
+      ],
+      "sorties": [
+        "class LinktimeIntrinsicsUsageTest"
+      ],
+      "appelle": [
+        "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/compiler/MethodCallsTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/compiler/MethodCallsTest.scala",
+      "langage": "scala",
+      "lignes": 152,
+      "taille_bytes": 5676,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.NIRCompiler",
+        "scala.scalanative.api.CompilationFailedException",
+        "scala.scalanative.linker.compileAndLoad",
+        "scala.scalanative.nir._",
+        "scala.scalanative.util.Scope"
+      ],
+      "sorties": [
+        "class MethodCallTest",
+        "def unapply",
+        "fn match"
+      ],
+      "appelle": [
+        "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/compiler/LocalNamesTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/compiler/LocalNamesTest.scala",
+      "langage": "scala",
+      "lignes": 387,
+      "taille_bytes": 13708,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.collection.mutable",
+        "scala.reflect.ClassTag",
+        "scala.scalanative.api.CompilationFailedException",
+        "scala.scalanative.buildinfo.ScalaNativeBuildInfo._",
+        "scala.scalanative.linker.compileAndLoad"
+      ],
+      "sorties": [
+        "class LocalNamesTest",
+        "def assertContains",
+        "def assertContainsAll",
+        "def assertDistinct",
+        "def checkHasLet",
+        "def checkLocalNames",
+        "def checkNotHasLet",
+        "def namedLets",
+        "def unapply"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/linker/StaticForwardersSuite.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/linker/StaticForwardersSuite.scala",
+      "langage": "scala",
+      "lignes": 80,
+      "taille_bytes": 2426,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.util.Scope"
+      ],
+      "sorties": [
+        "class StaticForwardersSuite"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/linker/ExternObjectWithImplicitClass.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/linker/ExternObjectWithImplicitClass.scala",
+      "langage": "scala",
+      "lignes": 87,
+      "taille_bytes": 3143,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.util.Scope"
+      ],
+      "sorties": [
+        "class ExternObjectWithImplicitClass"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/linker/package.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/linker/package.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 784,
+      "entrees": [
+        "java.nio.file.",
+        "scala.scalanative.io._",
+        "scala.scalanative.util.Scope"
+      ],
+      "sorties": [
+        "def compileAndLoad"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/linker/MethodAttributesTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/linker/MethodAttributesTest.scala",
+      "langage": "scala",
+      "lignes": 93,
+      "taille_bytes": 3261,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class MethodAttributesTest",
+        "def checkDefine",
+        "def checkLink",
+        "def checkLinkCppRuntime"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/test/scala/scala/scalanative/linker/ExternVarArgsTest.scala": {
+      "fichier": "nscplugin/src/test/scala/scala/scalanative/linker/ExternVarArgsTest.scala",
+      "langage": "scala",
+      "lignes": 97,
+      "taille_bytes": 3108,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class ExternVarArgsTest",
+        "def refersOnlyToExternMember"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/test/scala-next/scala/scalanative/memory/SafeZoneTest.scala": {
+      "fichier": "nscplugin/src/test/scala-next/scala/scalanative/memory/SafeZoneTest.scala",
+      "langage": "scala",
+      "lignes": 128,
+      "taille_bytes": 3803,
+      "entrees": [
+        "java.nio.file.Files",
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.NIRCompiler",
+        "scala.scalanative.api.CompilationFailedException"
+      ],
+      "sorties": [
+        "class SafeZoneTest",
+        "def nativeCompilation"
+      ],
+      "appelle": [
+        "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala-3/scala/NativeCompilerTest.scala": {
+      "fichier": "nscplugin/src/test/scala-3/scala/NativeCompilerTest.scala",
+      "langage": "scala",
+      "lignes": 224,
+      "taille_bytes": 6698,
+      "entrees": [
+        "java.nio.file.Files",
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.api._",
+        "scala.scalanative.io.VirtualDirectory",
+        "scala.scalanative.util.Scope",
+        "scalanative.NIRCompiler"
+      ],
+      "sorties": [
+        "class NativeCompilerTest",
+        "def compileAll",
+        "def nativeCompilation"
+      ],
+      "appelle": [
+        "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+        "sandbox/src/main/scala-next/Test.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala-3/scala/scalanative/NIRCompilerTest3.scala": {
+      "fichier": "nscplugin/src/test/scala-3/scala/scalanative/NIRCompilerTest3.scala",
+      "langage": "scala",
+      "lignes": 317,
+      "taille_bytes": 8449,
+      "entrees": [
+        "java.nio.file.Files",
+        "org.junit.Assert._",
+        "org.junit.Test",
+        "scala.scalanative.api.CompilationFailedException",
+        "scala.scalanative.linker.compileAndLoad",
+        "scala.scalanative.nir.*"
+      ],
+      "sorties": [
+        "class NIRCompilerTest3"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala",
+        "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nscplugin/src/test/scala-3/scala/scalanative/linker/StaticForwardersSuiteScala3.scala": {
+      "fichier": "nscplugin/src/test/scala-3/scala/scalanative/linker/StaticForwardersSuiteScala3.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 992,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class StaticForwardersSuiteScala3"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/test/scala-3/scala/scalanative/linker/TopLevelExternsTest.scala": {
+      "fichier": "nscplugin/src/test/scala-3/scala/scalanative/linker/TopLevelExternsTest.scala",
+      "langage": "scala",
+      "lignes": 43,
+      "taille_bytes": 1170,
+      "entrees": [
+        "org.junit.Assert._",
+        "org.junit.Test"
+      ],
+      "sorties": [
+        "class TopLevelExternsTest"
+      ],
+      "appelle": [
+        "sandbox/src/main/scala-next/Test.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenUtil.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenUtil.scala",
+      "langage": "scala",
+      "lignes": 144,
+      "taille_bytes": 3787,
+      "entrees": [
+        "core.Contexts._",
+        "core.Names.Name",
+        "core.Types._",
+        "dotty.tools.dotc.",
+        "dotty.tools.dotc.ast.tpd",
+        "dotty.tools.dotc.ast.tpd._",
+        "scala.collection.mutable",
+        "scala.compiletime.uninitialized",
+        "scala.scalanative.nir",
+        "scala.scalanative.util.ScopedVar"
+      ],
+      "sorties": [
+        "abstract class DeconstructorCommon",
+        "class ContextCached",
+        "def _1",
+        "def _2",
+        "def get",
+        "def isDefined",
+        "def isEmpty",
+        "def namedId",
+        "def unapply",
+        "fun match",
+        "trait NirGenUtil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/PrepNativeInterop.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/PrepNativeInterop.scala",
+      "langage": "scala",
+      "lignes": 297,
+      "taille_bytes": 9936,
+      "entrees": [
+        "NirGenUtil.ContextCached",
+        "core.Constants.Constant",
+        "core.Contexts._",
+        "core.Definitions",
+        "core.Flags._",
+        "core.Names._",
+        "core.StdNames._",
+        "core.Symbols._",
+        "core.Types._",
+        "dotty.tools._",
+        "dotty.tools.dotc._",
+        "dotty.tools.dotc.ast.tpd._",
+        "dotty.tools.dotc.config.*",
+        "dotty.tools.dotc.plugins.PluginPhase",
+        "enumsCtx._",
+        "scala.scalanative.nscplugin.CompilerCompat.SymUtilsCompat.*"
+      ],
+      "sorties": [
+        "abstract class ScalaEnumFctExtractors",
+        "class PrepNativeInterop",
+        "def fullMethod",
+        "def get",
+        "def intArg",
+        "def isImplicitClassCtor",
+        "def nameArg",
+        "def noArg",
+        "def scalaEnumValName",
+        "def unapply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/AdaptLazyVals.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/AdaptLazyVals.scala",
+      "langage": "scala",
+      "lignes": 230,
+      "taille_bytes": 8787,
+      "entrees": [
+        "LazyValsNames.*",
+        "core.Constants.",
+        "core.Contexts._",
+        "core.Names._",
+        "core.StdNames._",
+        "core.Symbols._",
+        "dotty.tools._",
+        "dotty.tools.dotc._",
+        "dotty.tools.dotc.ast.tpd._",
+        "dotty.tools.dotc.config.*",
+        "scala.annotation."
+      ],
+      "sorties": [
+        "class AdaptLazyVals",
+        "class LazyValsDefns",
+        "def classFieldPtr",
+        "def clean",
+        "def defn",
+        "def get",
+        "def prepareForTypeDef",
+        "def transformApply",
+        "def transformDefDef",
+        "fun match"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirPrimitives.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirPrimitives.scala",
+      "langage": "scala",
+      "lignes": 230,
+      "taille_bytes": 10071,
+      "entrees": [
+        "Contexts._",
+        "Names._",
+        "NirPrimitives._",
+        "StdNames._",
+        "Symbols._",
+        "Types._",
+        "dotty.tools.backend.jvm.DottyPrimitives",
+        "dotty.tools.dotc.ast.tpd._",
+        "dotty.tools.dotc.core._",
+        "dotty.tools.dotc.util.ReadOnlyMap",
+        "scala.collection.mutable",
+        "scala.scalanative.nscplugin.NirPrimitives"
+      ],
+      "sorties": [
+        "class NirPrimitives",
+        "def addPrimitive",
+        "def addPrimitives",
+        "def isNirPrimitive",
+        "def isRawPtrCastOp",
+        "def isRawPtrLoadOp",
+        "def isRawPtrOp",
+        "def isRawPtrStoreOp",
+        "def isRawSizeCastOp",
+        "def isUnsignedOp"
+      ],
+      "appelle": [
+        "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirPrimitives.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenExpr.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenExpr.scala",
+      "langage": "scala",
+      "lignes": 3189,
+      "taille_bytes": 113566,
+      "entrees": [
+        "!sym.isExtern",
+        "NirPrimitives._",
+        "ast.tpd._",
+        "core.Constants._",
+        "core.Contexts._",
+        "core.Denotations._",
+        "core.Flags._",
+        "core.Names._",
+        "core.StdNames._",
+        "core.SymDenotations._",
+        "core.Symbols._",
+        "core.TypeErasure.ErasedValueType",
+        "core.Types._",
+        "core._",
+        "defnNir.*",
+        "dotty.tools.FatalError",
+        "dotty.tools.backend.ScalaPrimitivesOps._",
+        "dotty.tools.backend.jvm.DottyBackendInterface.symExtensions",
+        "dotty.tools.dotc.",
+        "dotty.tools.dotc.ast.desugar",
+        "dotty.tools.dotc.util.Property",
+        "dotty.tools.dotc.util.Spans.*",
+        "match",
+        "nir.Comp._",
+        "nir.LinktimeCondition._",
+        "nir.SourcePosition",
+        "positionsConversions.fromSpan",
+        "scala.annotation.",
+        "scala.language.implicitConversions",
+        "scala.scalanative.nir.Defn.Define.DebugInfo",
+        "scala.scalanative.nscplugin.CompilerCompat.SymUtilsCompat.*",
+        "scala.scalanative.nscplugin.NirDefinitions.NonErasedType",
+        "scala.scalanative.util.",
+        "scala.scalanative.util.ScopedVar.scoped",
+        "transform."
+      ],
+      "sorties": [
+        "class ExprBuffer",
+        "def ContTree",
+        "def ValTree",
+        "def allocateClosure",
+        "def areSameFinals",
+        "def arg",
+        "def boxty",
+        "def canUseCurrentThis",
+        "def castToUnsigned",
+        "def castUnsignedInteger",
+        "def castUnsignedToFloat",
+        "def comparator",
+        "def currentClass",
+        "def currentMethod",
+        "def currentThis",
+        "def fail",
+        "def fallbackSourcePosition",
+        "def fromExtern",
+        "def genAlignmentOf",
+        "def genAnonClassMethod",
+        "def genAnonymousClass",
+        "def genAnonymousClassCtor",
+        "def genAnonymousClassMethods",
+        "def genApply",
+        "def genApplyMethod",
+        "def genApplyModuleMethod",
+        "def genApplyStaticMethod",
+        "def genArg",
+        "def genAssign",
+        "def genBlock",
+        "def genBody",
+        "def genCQuoteOp",
+        "def genCaptureFields",
+        "def genCastOp",
+        "def genClassFieldRawPtr",
+        "def genClosure",
+        "def genComparsion",
+        "def genEquals",
+        "def genExpr",
+        "def genIdent",
+        "def genIf",
+        "def genIfsChain",
+        "def genJavaSeqLiteral",
+        "def genLabelDef",
+        "def genLiteral",
+        "def genLoadExtern",
+        "def genMatch",
+        "def genMethodArgs",
+        "def genModule",
+        "def genOp",
+        "def genRawSizeCastOp",
+        "def genReturn",
+        "def genSafeZoneAlloc",
+        "def genSelect",
+        "def genSizeOf",
+        "def genStackalloc",
+        "def genStoreExtern",
+        "def genSwitch",
+        "def genSynchronized",
+        "def genThis",
+        "def genTry",
+        "def genTypeApply",
+        "def genTyped",
+        "def genValDef",
+        "def genWhileDo",
+        "def intOrFloatComparison",
+        "def internal",
+        "def isCaseLabelDef",
+        "def isImmutableField",
+        "def isLiteral",
+        "def isMaybeBoxed",
+        "def isNonNullExpr",
+        "def isNull",
+        "def isScalaTree",
+        "def isStatic",
+        "def isUnsigned",
+        "def liftStringConcat",
+        "def loop",
+        "def matchesName",
+        "def maybeNegate",
+        "def name",
+        "def numOfType",
+        "def qualifier",
+        "def qualifier0",
+        "def resolveAnonClassMethods",
+        "def resolveFunction",
+        "def rhs",
+        "def toExtern",
+        "def translateMatch",
+        "def unapply",
+        "def wrap",
+        "fun match",
+        "trait NirGenExpr"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirPositions.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirPositions.scala",
+      "langage": "scala",
+      "lignes": 69,
+      "taille_bytes": 2143,
+      "entrees": [
+        "Contexts._",
+        "dotty.tools.dotc.core._",
+        "dotty.tools.dotc.util.",
+        "dotty.tools.dotc.util.Spans.Span",
+        "dotty.tools.dotc.util._",
+        "java.nio.file.",
+        "scala.compiletime.uninitialized",
+        "scalanative.nir"
+      ],
+      "sorties": [
+        "class NirPositions",
+        "def nirSource",
+        "def toNIRSourceFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenName.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenName.scala",
+      "langage": "scala",
+      "lignes": 187,
+      "taille_bytes": 6536,
+      "entrees": [
+        "core.Contexts._",
+        "core.Flags._",
+        "core.StdNames._",
+        "core.Symbols._",
+        "dotty.tools.backend.jvm.DottyBackendInterface.symExtensions",
+        "dotty.tools.dotc.ast.tpd._",
+        "dotty.tools.dotc.core",
+        "scala.language.implicitConversions",
+        "scala.scalanative.nscplugin.CompilerCompat.SymUtilsCompat.*",
+        "scalanative.util.unreachable"
+      ],
+      "sorties": [
+        "def genExternSig",
+        "def genFieldName",
+        "def genLocalName",
+        "def genMethodName",
+        "def genModuleName",
+        "def genName",
+        "def genStaticMemberName",
+        "def genTypeName",
+        "def haveNoForwarders",
+        "def id",
+        "def owner",
+        "def paramTypes",
+        "def scope",
+        "trait NirGenName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenType.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenType.scala",
+      "langage": "scala",
+      "lignes": 372,
+      "taille_bytes": 12497,
+      "entrees": [
+        "core.Contexts._",
+        "core.Flags._",
+        "core.Names._",
+        "core.Phases._",
+        "core.StdNames._",
+        "core.Symbols._",
+        "core.TypeErasure._",
+        "core.TypeError",
+        "core.Types._",
+        "dotty.tools.dotc.",
+        "dotty.tools.dotc.ast.Trees._",
+        "dotty.tools.dotc.ast.tpd",
+        "dotty.tools.dotc.typer.TyperPhase",
+        "scala.language.implicitConversions",
+        "scala.scalanative.nscplugin.CompilerCompat.SymUtilsCompat.*",
+        "scala.scalanative.util.unsupported"
+      ],
+      "sorties": [
+        "def ctorParams",
+        "def genBoxType",
+        "def genExternMethodSig",
+        "def genExternType",
+        "def genMethodSig",
+        "def genMethodSigParamsImpl",
+        "def genRefType",
+        "def genTypeValue",
+        "def isAnonymousStruct",
+        "def isBlocking",
+        "def isCFuncPtrClass",
+        "def isCFuncPtrNClass",
+        "def isExtensionMethod",
+        "def isExtern",
+        "def isExternType",
+        "def isFixedSizeArray",
+        "def isPrimitiveValueType",
+        "def isRepeated",
+        "def isScalaModule",
+        "def isStaticInNIR",
+        "def isStaticMethod",
+        "def isStaticModule",
+        "def isStruct",
+        "def isTraitOrInterface",
+        "def isUnsignedType",
+        "def name",
+        "def natClassToInt",
+        "def parseDigit",
+        "def resolve",
+        "trait NirGenType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NativeInteropUtil.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NativeInteropUtil.scala",
+      "langage": "scala",
+      "lignes": 65,
+      "taille_bytes": 2318,
+      "entrees": [
+        "NirGenUtil.ContextCached",
+        "dotty.tools.dotc.ast.tpd._",
+        "dotty.tools.dotc.core.",
+        "dotty.tools.dotc.core.Contexts.",
+        "dotty.tools.dotc.core.Flags._",
+        "dotty.tools.dotc.core.Names._",
+        "dotty.tools.dotc.core.Types._",
+        "dotty.tools.dotc.plugins.PluginPhase",
+        "scala.scalanative.nscplugin.CompilerCompat.SymUtilsCompat.*"
+      ],
+      "sorties": [
+        "def isExported",
+        "def isExtern",
+        "def isExternType",
+        "def isScalaModule",
+        "def isTopLevelExtern",
+        "def isTraitOrInterface",
+        "def usesVariadicArgs",
+        "trait NativeInteropUtil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/GenNIR.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/GenNIR.scala",
+      "langage": "scala",
+      "lignes": 42,
+      "taille_bytes": 1228,
+      "entrees": [
+        "dotty.tools._",
+        "dotty.tools.dotc._",
+        "dotty.tools.dotc.core.Contexts._",
+        "dotty.tools.dotc.core._",
+        "dotty.tools.dotc.plugins._",
+        "java.net.URI",
+        "java.nio.file.Path"
+      ],
+      "sorties": [
+        "class GenNIR"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/ScalaNativePlugin.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/ScalaNativePlugin.scala",
+      "langage": "scala",
+      "lignes": 57,
+      "taille_bytes": 2667,
+      "entrees": [
+        "dotty.tools.dotc.core.Contexts.",
+        "dotty.tools.dotc.plugins._",
+        "dotty.tools.dotc.report",
+        "java.net.",
+        "java.nio.file.Paths",
+        "scala.annotation.nowarn"
+      ],
+      "sorties": [
+        "class ScalaNativePlugin"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "scala-partest/src/main/scala/scala/tools/partest/scalanative/ScalaNativeDirectCompiler.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/GenReflectiveInstantisation.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/GenReflectiveInstantisation.scala",
+      "langage": "scala",
+      "lignes": 402,
+      "taille_bytes": 12966,
+      "entrees": [
+        "GenReflectiveInstantisation._",
+        "core.Contexts._",
+        "core.Flags._",
+        "core.StdNames._",
+        "core.Symbols._",
+        "dotty.tools.dotc.ast.tpd._",
+        "dotty.tools.dotc.core",
+        "positionsConversions.given",
+        "scala.collection.mutable",
+        "scala.language.implicitConversions",
+        "scala.scalanative.util.ScopedVar"
+      ],
+      "sorties": [
+        "def genReflectiveInstantiation",
+        "def nonEmpty",
+        "def toSeq",
+        "trait GenReflectiveInstantisation"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/GenNativeExports.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/GenNativeExports.scala",
+      "langage": "scala",
+      "lignes": 186,
+      "taille_bytes": 6588,
+      "entrees": [
+        "core.Annotations.*",
+        "core.Contexts._",
+        "core.Flags._",
+        "core.Symbols._",
+        "dotty.tools.dotc.",
+        "dotty.tools.dotc.ast.tpd._",
+        "scala.language.implicitConversions",
+        "scala.scalanative.nscplugin.CompilerCompat.SymUtilsCompat.*",
+        "scala.scalanative.util.ScopedVar.scoped",
+        "self.positionsConversions.given"
+      ],
+      "sorties": [
+        "def accessorExternSig",
+        "def externGetter",
+        "def externSetter",
+        "def genTopLevelExports",
+        "def getterName",
+        "def isExported",
+        "def setterName",
+        "trait GenNativeExports"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/CompilerCompat.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/CompilerCompat.scala",
+      "langage": "scala",
+      "lignes": 31,
+      "taille_bytes": 1038,
+      "entrees": [
+        "LazyValHandleNameCompatDef.*",
+        "NameKinds.*",
+        "SymUtilsCompatDef.*",
+        "dotty.tools.dotc.core.NameKinds",
+        "dotty.tools.dotc.core.NameKinds.SuffixNameKind",
+        "dotty.tools.dotc.transform.*"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirDefinitions.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirDefinitions.scala",
+      "langage": "scala",
+      "lignes": 263,
+      "taille_bytes": 16049,
+      "entrees": [
+        "NirGenUtil.ContextCached",
+        "core.Contexts._",
+        "core.Names._",
+        "core.Symbols._",
+        "core.Types._",
+        "dotty.tools.dotc.core",
+        "dotty.tools.dotc.util.Property.StickyKey",
+        "scala.annotation."
+      ],
+      "sorties": [
+        "def alternatives",
+        "def get"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirCodeGen.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirCodeGen.scala",
+      "langage": "scala",
+      "lignes": 236,
+      "taille_bytes": 8200,
+      "entrees": [
+        "core.Contexts._",
+        "core.Symbols._",
+        "dotty.tools.dotc.",
+        "dotty.tools.dotc.ast.Trees._",
+        "dotty.tools.dotc.ast.tpd",
+        "java.nio.channels.Channels",
+        "scala.collection.mutable",
+        "scala.language.implicitConversions",
+        "scala.scalanative.util",
+        "scalanative.nir.Defn.Define.DebugInfo",
+        "scalanative.nir.serialization.serializeBinary",
+        "tpd._"
+      ],
+      "sorties": [
+        "class CollectMethodInfo",
+        "class MethodEnv",
+        "class MethodLabelsEnv",
+        "class NirCodeGen",
+        "def caseInsensitiveNameOf",
+        "def collect",
+        "def collectTypeDefs",
+        "def enter",
+        "def enterExitType",
+        "def enterLabel",
+        "def resolve",
+        "def resolveEntry",
+        "def resolveExit",
+        "def resolveExitType",
+        "def resolveLabel",
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/PostInlineNativeInterop.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/PostInlineNativeInterop.scala",
+      "langage": "scala",
+      "lignes": 149,
+      "taille_bytes": 5021,
+      "entrees": [
+        "NirGenUtil.ContextCached",
+        "core.Constants.Constant",
+        "core.Contexts._",
+        "core.Definitions",
+        "core.Flags._",
+        "core.Names._",
+        "core.StdNames._",
+        "core.Symbols._",
+        "core.Types._",
+        "dotty.tools._",
+        "dotty.tools.dotc._",
+        "dotty.tools.dotc.ast.tpd._",
+        "dotty.tools.dotc.plugins.PluginPhase",
+        "dotty.tools.dotc.transform.SeqLiterals",
+        "scala.scalanative.nscplugin.CompilerCompat.SymUtilsCompat.setter"
+      ],
+      "sorties": [
+        "class PostInlineNativeInterop",
+        "def dealiasTypeMapper",
+        "fun match"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenStat.scala": {
+      "fichier": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirGenStat.scala",
+      "langage": "scala",
+      "lignes": 970,
+      "taille_bytes": 32704,
+      "entrees": [
+        "LinktimeProperty.Type._",
+        "core.Constants._",
+        "core.Contexts._",
+        "core.Flags._",
+        "core.Phases._",
+        "core.StdNames._",
+        "core.Symbols._",
+        "dotty.tools.FatalError",
+        "dotty.tools.dotc.",
+        "dotty.tools.dotc.ast.tpd",
+        "dotty.tools.dotc.ast.tpd._",
+        "dotty.tools.dotc.core.Annotations.Annotation",
+        "dotty.tools.dotc.core.NameKinds",
+        "positionsConversions.fromSpan",
+        "scala.collection.mutable",
+        "scala.language.implicitConversions",
+        "scala.scalanative.nir.Defn.Define.DebugInfo",
+        "scala.scalanative.nir.Defn.Define.DebugInfo._",
+        "scala.scalanative.nscplugin.CompilerCompat.SymUtilsCompat._",
+        "scala.scalanative.util.",
+        "scala.scalanative.util.ScopedVar."
+      ],
+      "sorties": [
+        "def externMethodDecl",
+        "def genBody",
+        "def genClass",
+        "def genEntry",
+        "def genExternMethod",
+        "def genVars",
+        "def getFixedAlignment",
+        "def hasAccessBoundary",
+        "def isCurClassSetter",
+        "def isExcluded",
+        "def isExternCall",
+        "def isExternMethodAlias",
+        "def isExternMethodForwarder",
+        "def isExternMethodRuntimeOverload",
+        "def isInheritedField",
+        "def linktimeResolvedAlignment",
+        "def parent",
+        "def requireLiteralStringAnnotation",
+        "def resolve",
+        "def traits",
+        "def unapply",
+        "def validate",
+        "def validateExternCtor",
+        "def withOptSynchronized",
+        "enum Type",
+        "trait NirGenStat"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/resources/scalac-plugin.xml": {
+      "fichier": "nscplugin/src/main/resources/scalac-plugin.xml",
+      "langage": "xml",
+      "lignes": 4,
+      "taille_bytes": 109,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3-compat/nirPrimitives/until_3.8.2.scala": {
+      "fichier": "nscplugin/src/main/scala-3-compat/nirPrimitives/until_3.8.2.scala",
+      "langage": "scala",
+      "lignes": 12,
+      "taille_bytes": 476,
+      "entrees": [
+        "dotty.tools.backend.jvm.DottyPrimitives",
+        "dotty.tools.dotc.ast.tpd.Apply",
+        "dotty.tools.dotc.core.Contexts.Context",
+        "dotty.tools.dotc.core.Types.Type"
+      ],
+      "sorties": [
+        "abstract class NirPrimitivesCompat"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-3-compat/nirPrimitives/since_3.8.3.scala": {
+      "fichier": "nscplugin/src/main/scala-3-compat/nirPrimitives/since_3.8.3.scala",
+      "langage": "scala",
+      "lignes": 12,
+      "taille_bytes": 461,
+      "entrees": [
+        "dotty.tools.backend.jvm.DottyPrimitives",
+        "dotty.tools.dotc.ast.tpd.Apply",
+        "dotty.tools.dotc.core.Contexts.Context",
+        "dotty.tools.dotc.core.Types.Type"
+      ],
+      "sorties": [
+        "abstract class NirPrimitivesCompat"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenUtil.scala": {
+      "fichier": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenUtil.scala",
+      "langage": "scala",
+      "lignes": 44,
+      "taille_bytes": 1236,
+      "entrees": [
+        "global._",
+        "scala.collection.mutable",
+        "scala.tools.nsc.Global"
+      ],
+      "sorties": [
+        "def genParamSyms",
+        "def namedId",
+        "trait NirGenUtil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/PrepNativeInterop.scala": {
+      "fichier": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/PrepNativeInterop.scala",
+      "langage": "scala",
+      "lignes": 496,
+      "taille_bytes": 17374,
+      "entrees": [
+        "PrepNativeInterop._",
+        "global._",
+        "global.definitions._",
+        "kind.isBaseKind",
+        "nirAddons.nirDefinitions._",
+        "scala.collection.mutable.Buffer",
+        "scala.tools.nsc",
+        "scala.tools.nsc._"
+      ],
+      "sorties": [
+        "abstract class PrepNativeInterop",
+        "class NativeInteropPhase",
+        "class NativeInteropTransformer",
+        "def unapply",
+        "def widenDealiasType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirPhase.scala": {
+      "fichier": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirPhase.scala",
+      "langage": "scala",
+      "lignes": 16,
+      "taille_bytes": 436,
+      "entrees": [
+        "scala.tools.nsc.Global",
+        "scala.tools.nsc.plugins.PluginComponent"
+      ],
+      "sorties": [
+        "abstract class NirPhase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirPrimitives.scala": {
+      "fichier": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirPrimitives.scala",
+      "langage": "scala",
+      "lignes": 206,
+      "taille_bytes": 7947,
+      "entrees": [
+        "NirPrimitives._",
+        "global._",
+        "global.definitions._",
+        "nirAddons._",
+        "nirDefinitions._",
+        "rootMirror._",
+        "scala.collection.mutable",
+        "scala.tools.nsc._",
+        "scalaPrimitives._"
+      ],
+      "sorties": [
+        "abstract class NirPrimitives",
+        "def addPrimitives",
+        "def init",
+        "def initPrepJSPrimitives",
+        "def isNirPrimitive",
+        "def isRawPtrCastOp",
+        "def isRawPtrLoadOp",
+        "def isRawPtrOp",
+        "def isRawPtrStoreOp",
+        "def isRawSizeCastOp",
+        "type ThisNirGlobalAddons"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirPrimitives.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenPhase.scala": {
+      "fichier": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenPhase.scala",
+      "langage": "scala",
+      "lignes": 252,
+      "taille_bytes": 8738,
+      "entrees": [
+        "global._",
+        "global.definitions._",
+        "java.nio.file.",
+        "java.util.stream.",
+        "nir.Defn.Define.DebugInfo",
+        "nirAddons._",
+        "scala.collection.JavaConverters._",
+        "scala.collection.mutable",
+        "scala.language.implicitConversions",
+        "scala.reflect.internal.util.",
+        "scala.reflect.internal.util._",
+        "scala.scalanative.util.ScopedVar.scoped",
+        "scala.tools.nsc."
+      ],
+      "sorties": [
+        "abstract class NirGenPhase",
+        "class NirCodePhase",
+        "def caseInsensitiveNameOf",
+        "def collectClassDefs",
+        "def fallbackSourcePosition",
+        "def relativePath",
+        "def toNIRSource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenFile.scala": {
+      "fichier": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenFile.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 939,
+      "entrees": [
+        "global._",
+        "java.io.FileOutputStream",
+        "java.nio.channels.Channels",
+        "java.nio.file.",
+        "scala.tools.nsc.Global",
+        "scala.tools.nsc.io.AbstractFile"
+      ],
+      "sorties": [
+        "def genIRFile",
+        "def genPathFor",
+        "trait NirGenFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/ScalaNativeOptions.scala": {
+      "fichier": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/ScalaNativeOptions.scala",
+      "langage": "scala",
+      "lignes": 25,
+      "taille_bytes": 812,
+      "entrees": [
+        "java.nio.file.Path"
+      ],
+      "sorties": [
+        "def forceStrictFinalFields",
+        "def genStaticForwardersForNonTopLevelObjects",
+        "def positionRelativizationPaths",
+        "trait ScalaNativeOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenExpr.scala": {
+      "fichier": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenExpr.scala",
+      "langage": "scala",
+      "lignes": 3221,
+      "taille_bytes": 113215,
+      "entrees": [
+        "!sym.isExtern",
+        "global.",
+        "global.definitions._",
+        "nir.Comp._",
+        "nir.LinktimeCondition._",
+        "nirAddons._",
+        "nirDefinitions._",
+        "scala.annotation.",
+        "scala.collection.mutable",
+        "scala.reflect.internal.Flags.BRIDGE",
+        "scala.tools.nsc",
+        "scalaPrimitives._",
+        "scalanative.nscplugin.NirPrimitives._",
+        "scalanative.util.",
+        "scalanative.util.ScopedVar.scoped",
+        "treeInfo."
+      ],
+      "sorties": [
+        "class ExprBuffer",
+        "class FixupBuffer",
+        "def apply",
+        "def areSameFinals",
+        "def binaryOperationType",
+        "def boxValue",
+        "def boxty",
+        "def castConv",
+        "def coercionTypes",
+        "def comparator",
+        "def ensureBoxed",
+        "def fail",
+        "def fromExtern",
+        "def functionMethodSymbols",
+        "def genAlignmentOf",
+        "def genApply",
+        "def genApplyBox",
+        "def genApplyDynamic",
+        "def genApplyExternAccessor",
+        "def genApplyLabel",
+        "def genApplyMethod",
+        "def genApplyModuleMethod",
+        "def genApplyNew",
+        "def genApplyNewArray",
+        "def genApplyNewStruct",
+        "def genApplyPrimitive",
+        "def genApplyTypeApply",
+        "def genApplyUnbox",
+        "def genArg",
+        "def genArrayOp",
+        "def genArrayValue",
+        "def genAssign",
+        "def genBinaryOp",
+        "def genBlock",
+        "def genCFuncFromScalaFunction",
+        "def genCFuncPtrApply",
+        "def genCQuoteOp",
+        "def genCastOp",
+        "def genClassFieldRawPtr",
+        "def genCoercion",
+        "def genComparsion",
+        "def genDynCall",
+        "def genEquals",
+        "def genExpr",
+        "def genFuncExternForwarder",
+        "def genFunction",
+        "def genHashCode",
+        "def genIdent",
+        "def genIf",
+        "def genIfsChain",
+        "def genLabel",
+        "def genLabelDef",
+        "def genLiteral",
+        "def genLiteralValue",
+        "def genLoadExtern",
+        "def genMatch",
+        "def genMethodArgs",
+        "def genModule",
+        "def genRawPtrCastOp",
+        "def genRawPtrElemOp",
+        "def genRawPtrLoadOp",
+        "def genRawPtrOp",
+        "def genRawPtrStoreOp",
+        "def genRawSizeCastOp",
+        "def genReturn",
+        "def genSelect",
+        "def genSimpleOp",
+        "def genSizeOf",
+        "def genStaticMember",
+        "def genStoreExtern",
+        "def genSwitch",
+        "def genSynchronized",
+        "def genTailRecLabel",
+        "def genThis",
+        "def genThrow",
+        "def genTry",
+        "def genTryCatch",
+        "def genTryFinally",
+        "def genTyped",
+        "def genUnaryOp",
+        "def genUnsignedOp",
+        "def genValDef",
+        "def getLinktimeCondition",
+        "def intOrFloatComparison",
+        "def internal",
+        "def isArrayLikeOp",
+        "def isCaseLabelDef",
+        "def isClassTagBasedWrapArrayMethod",
+        "def isLiteral",
+        "def isNonNullExpr",
+        "def isNull",
+        "def isScalaTree",
+        "def isUnsigned",
+        "def liftStringConcat",
+        "def loop",
+        "def matchesName",
+        "def maybeNegate",
+        "def name",
+        "def negateBits",
+        "def negateBool",
+        "def negateFloat",
+        "def negateInt",
+        "def numOfType",
+        "def reportClosingOverLocalState",
+        "def resolveFunction",
+        "def toExtern",
+        "def translateMatch",
+        "def tree",
+        "def unapply",
+        "def unboxValue",
+        "def withGeneratedForwarder",
+        "def wrap",
+        "trait NirGenExpr",
+        "type Case"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenName.scala": {
+      "fichier": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirGenName.scala",
+      "langage": "scala",
+      "lignes": 205,
+      "taille_bytes": 6547,
+      "entrees": [
+        "global.",
+        "global.definitions._",
+        "nirAddons.nirDefinitions._",
+        "scala.tools.nsc.Global",
+        "scalanative.util.unreachable"
+      ],
+      "sorties": [
+        "def genAnonName",
+        "def genExternSig",
+        "def genFieldName",
+        "def genFuncPtrExternForwarderName",
+        "def genLocalName",
+        "def genMethodName",
+        "def genModuleName",
+        "def genName",
+        "def genStaticMemberName",
+        "def genTypeName",
+        "def isExtern",
+        "trait NirGenName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "scala-partest/src/main/scala/scala/tools/nsc/MainGenericRunner.scala",
+      "vers": "scala-partest/src/main/scala/scala/tools/partest/scalanative/Defaults.scala",
+      "type": "interne"
+    },
+    {
+      "de": "scala-partest/src/main/scala/scala/tools/partest/scalanative/ScalaNativeDirectCompiler.scala",
+      "vers": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/ScalaNativePlugin.scala",
+      "type": "interne"
+    },
+    {
+      "de": "windowslib/src/main/scala/scala/scalanative/windows/MinWinBaseApi.scala",
+      "vers": "windowslib/src/main/scala/scala/scalanative/windows/util/Conversion.scala",
+      "type": "interne"
+    },
+    {
+      "de": "windowslib/src/main/scala/scala/scalanative/windows/SecurityBaseApi.scala",
+      "vers": "windowslib/src/main/scala/scala/scalanative/windows/winnt/TokenInformationClass.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/NIRCompilerTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/NIRCompilerTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersReachabilityTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersReachabilityTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersTest.scala",
+      "vers": "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/unsafe/StackallocTest.scala",
+      "vers": "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/unsafe/StackallocTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/LexicalScopesTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/LexicalScopesTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/PositionsTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/PositionsTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/LinktimeIntrinsicsUsageTest.scala",
+      "vers": "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/LinktimeIntrinsicsUsageTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/LinktimeIntrinsicsUsageTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/MethodCallsTest.scala",
+      "vers": "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/MethodCallsTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/MethodCallsTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/LocalNamesTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/compiler/LocalNamesTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/linker/StaticForwardersSuite.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/linker/ExternObjectWithImplicitClass.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/linker/MethodAttributesTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala/scala/scalanative/linker/ExternVarArgsTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala-next/scala/scalanative/memory/SafeZoneTest.scala",
+      "vers": "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala-next/scala/scalanative/memory/SafeZoneTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala-next/scala/scalanative/memory/SafeZoneTest.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala-3/scala/NativeCompilerTest.scala",
+      "vers": "nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala-3/scala/NativeCompilerTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala-3/scala/scalanative/NIRCompilerTest3.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala-3/scala/scalanative/NIRCompilerTest3.scala",
+      "vers": "testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala-3/scala/scalanative/linker/StaticForwardersSuiteScala3.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/test/scala-3/scala/scalanative/linker/TopLevelExternsTest.scala",
+      "vers": "sandbox/src/main/scala-next/Test.scala",
+      "type": "interne"
+    },
+    {
+      "de": "nscplugin/src/main/scala-3/scala/scalanative/nscplugin/NirPrimitives.scala",
+      "vers": "nscplugin/src/main/scala-2/scala/scalanative/nscplugin/NirPrimitives.scala",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'testing-compiler-interface/src/main/java/scala/scalanative/api/CompilationFailedException.java' (in=11)",
+    "feuille → 'sandbox/src/main/scala-next/Test.scala' (in=17)",
+    "point_entree → 'nscplugin/src/test/scala/scala/scalanative/NIRCompilerTest.scala'",
+    "feuille → 'nscplugin/src/test/scala/scala/scalanative/NIRCompiler.scala' (in=6)",
+    "point_entree → 'nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersReachabilityTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala/scala/scalanative/unsafe/ExportedMembersTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala/scala/scalanative/unsafe/StackallocTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala/scala/scalanative/compiler/LexicalScopesTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala/scala/scalanative/compiler/PositionsTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala/scala/scalanative/compiler/LinktimeIntrinsicsUsageTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala/scala/scalanative/compiler/MethodCallsTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala/scala/scalanative/compiler/LocalNamesTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala-next/scala/scalanative/memory/SafeZoneTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala-3/scala/NativeCompilerTest.scala'",
+    "point_entree → 'nscplugin/src/test/scala-3/scala/scalanative/NIRCompilerTest3.scala'"
+  ]
+}

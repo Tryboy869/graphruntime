@@ -1,0 +1,1938 @@
+{
+  "meta": {
+    "projet": "livebook",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "elixir": 109,
+      "toml": 3,
+      "rust": 5,
+      "json": 2,
+      "html": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "mix.exs"
+  },
+  "noeuds": {
+    "mix.exs": {
+      "fichier": "mix.exs",
+      "langage": "elixir",
+      "lignes": 349,
+      "taille_bytes": 11046,
+      "entrees": [
+        "Mix.Project"
+      ],
+      "sorties": [
+        "const graphDefinition",
+        "const graphEl",
+        "const graphId",
+        "const preEl",
+        "def application",
+        "def project",
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".formatter.exs": {
+      "fichier": ".formatter.exs",
+      "langage": "elixir",
+      "lignes": 5,
+      "taille_bytes": 180,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/mix.exs": {
+      "fichier": "elixirkit_next/mix.exs",
+      "langage": "elixir",
+      "lignes": 23,
+      "taille_bytes": 331,
+      "entrees": [
+        "Mix.Project"
+      ],
+      "sorties": [
+        "def application",
+        "def project",
+        "defmodule ElixirKit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/.formatter.exs": {
+      "fichier": "elixirkit_next/.formatter.exs",
+      "langage": "elixir",
+      "lignes": 4,
+      "taille_bytes": 97,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/elixirkit_rs/Cargo.toml": {
+      "fichier": "elixirkit_next/elixirkit_rs/Cargo.toml",
+      "langage": "toml",
+      "lignes": 11,
+      "taille_bytes": 142,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/elixirkit_rs/src/lib.rs": {
+      "fichier": "elixirkit_next/elixirkit_rs/src/lib.rs",
+      "langage": "rust",
+      "lignes": 336,
+      "taille_bytes": 10249,
+      "entrees": [
+        "std::io::",
+        "std::net::",
+        "std::os::windows::process::CommandExt",
+        "std::path::PathBuf",
+        "std::process::",
+        "std::sync::",
+        "std::thread",
+        "std::time::",
+        "tracing::Level"
+      ],
+      "sorties": [
+        "const CONNECT_POLL",
+        "const CONNECT_TIMEOUT",
+        "const CONNECT_TIMEOUT_DEBUG",
+        "enum Message",
+        "fn parse_event",
+        "fn read_message",
+        "fn run_event_loop",
+        "fn spawn_output_thread",
+        "fn start_elixir",
+        "fn write_message",
+        "pub fn current_dir",
+        "pub fn env",
+        "pub fn env_remove",
+        "pub fn env_set",
+        "pub fn new",
+        "pub fn release",
+        "pub fn send",
+        "pub fn start",
+        "pub struct Command"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/cli_example/Cargo.toml": {
+      "fichier": "elixirkit_next/examples/cli_example/Cargo.toml",
+      "langage": "toml",
+      "lignes": 7,
+      "taille_bytes": 126,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/cli_example/src-elixir/mix.exs": {
+      "fichier": "elixirkit_next/examples/cli_example/src-elixir/mix.exs",
+      "langage": "elixir",
+      "lignes": 26,
+      "taille_bytes": 407,
+      "entrees": [
+        "Mix.Project"
+      ],
+      "sorties": [
+        "def application",
+        "def project",
+        "defmodule Example"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/cli_example/src-elixir/.formatter.exs": {
+      "fichier": "elixirkit_next/examples/cli_example/src-elixir/.formatter.exs",
+      "langage": "elixir",
+      "lignes": 4,
+      "taille_bytes": 97,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/cli_example/src-elixir/test/test_helper.exs": {
+      "fichier": "elixirkit_next/examples/cli_example/src-elixir/test/test_helper.exs",
+      "langage": "elixir",
+      "lignes": 1,
+      "taille_bytes": 15,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/cli_example/src-elixir/test/example_test.exs": {
+      "fichier": "elixirkit_next/examples/cli_example/src-elixir/test/example_test.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 138,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule ExampleTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/cli_example/src-elixir/lib/example.ex": {
+      "fichier": "elixirkit_next/examples/cli_example/src-elixir/lib/example.ex",
+      "langage": "elixir",
+      "lignes": 43,
+      "taille_bytes": 911,
+      "entrees": [
+        "Application",
+        "GenServer"
+      ],
+      "sorties": [
+        "def handle_info",
+        "def init",
+        "def start",
+        "def start_link",
+        "defmodule Example"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/cli_example/src/main.rs": {
+      "fichier": "elixirkit_next/examples/cli_example/src/main.rs",
+      "langage": "rust",
+      "lignes": 22,
+      "taille_bytes": 575,
+      "entrees": [
+        "elixirkit::Command"
+      ],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-elixir/mix.exs": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-elixir/mix.exs",
+      "langage": "elixir",
+      "lignes": 26,
+      "taille_bytes": 407,
+      "entrees": [
+        "Mix.Project"
+      ],
+      "sorties": [
+        "def application",
+        "def project",
+        "defmodule Example"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-elixir/.formatter.exs": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-elixir/.formatter.exs",
+      "langage": "elixir",
+      "lignes": 4,
+      "taille_bytes": 97,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-elixir/test/test_helper.exs": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-elixir/test/test_helper.exs",
+      "langage": "elixir",
+      "lignes": 1,
+      "taille_bytes": 15,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-elixir/test/example_test.exs": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-elixir/test/example_test.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 138,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule ExampleTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-elixir/lib/example.ex": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-elixir/lib/example.ex",
+      "langage": "elixir",
+      "lignes": 48,
+      "taille_bytes": 926,
+      "entrees": [
+        "Application",
+        "GenServer"
+      ],
+      "sorties": [
+        "def handle_info",
+        "def init",
+        "def start",
+        "def start_link",
+        "defmodule Example"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-tauri/Cargo.toml": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-tauri/Cargo.toml",
+      "langage": "toml",
+      "lignes": 24,
+      "taille_bytes": 730,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-tauri/tauri.conf.json": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-tauri/tauri.conf.json",
+      "langage": "json",
+      "lignes": 25,
+      "taille_bytes": 447,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-tauri/build.rs": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-tauri/build.rs",
+      "langage": "rust",
+      "lignes": 3,
+      "taille_bytes": 39,
+      "entrees": [],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-tauri/capabilities/default.json": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-tauri/capabilities/default.json",
+      "langage": "json",
+      "lignes": 11,
+      "taille_bytes": 248,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-tauri/src/lib.rs": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-tauri/src/lib.rs",
+      "langage": "rust",
+      "lignes": 39,
+      "taille_bytes": 1331,
+      "entrees": [
+        "elixirkit::Command",
+        "std::thread",
+        "tauri_plugin_dialog::DialogExt"
+      ],
+      "sorties": [
+        "pub fn run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src-tauri/src/main.rs": {
+      "fichier": "elixirkit_next/examples/tauri_example/src-tauri/src/main.rs",
+      "langage": "rust",
+      "lignes": 6,
+      "taille_bytes": 182,
+      "entrees": [],
+      "sorties": [
+        "fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/examples/tauri_example/src/index.html": {
+      "fichier": "elixirkit_next/examples/tauri_example/src/index.html",
+      "langage": "html",
+      "lignes": 1,
+      "taille_bytes": 50,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/test/test_helper.exs": {
+      "fichier": "elixirkit_next/test/test_helper.exs",
+      "langage": "elixir",
+      "lignes": 1,
+      "taille_bytes": 15,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/test/elixirkit_test.exs": {
+      "fichier": "elixirkit_next/test/elixirkit_test.exs",
+      "langage": "elixir",
+      "lignes": 3,
+      "taille_bytes": 62,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule ElixirKitTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "elixirkit_next/lib/elixirkit.ex": {
+      "fichier": "elixirkit_next/lib/elixirkit.ex",
+      "langage": "elixir",
+      "lignes": 37,
+      "taille_bytes": 985,
+      "entrees": [
+        "GenServer"
+      ],
+      "sorties": [
+        "def handle_call",
+        "def handle_info",
+        "def init",
+        "def publish",
+        "def start_link",
+        "defmodule ElixirKit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/test_helper.exs": {
+      "fichier": "test/test_helper.exs",
+      "langage": "elixir",
+      "lignes": 94,
+      "taille_bytes": 2914,
+      "entrees": [],
+      "sorties": [
+        "def list",
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_test.exs": {
+      "fichier": "test/livebook_test.exs",
+      "langage": "elixir",
+      "lignes": 29,
+      "taille_bytes": 533,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule LivebookTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/plugs/auth_plug_test.exs": {
+      "fichier": "test/livebook_web/plugs/auth_plug_test.exs",
+      "langage": "elixir",
+      "lignes": 128,
+      "taille_bytes": 4230,
+      "entrees": [
+        "LivebookWeb.ConnCase"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/plugs/user_plug_test.exs": {
+      "fichier": "test/livebook_web/plugs/user_plug_test.exs",
+      "langage": "elixir",
+      "lignes": 66,
+      "taille_bytes": 1625,
+      "entrees": [
+        "ExUnit.Case",
+        "Plug.Conn",
+        "Plug.Test"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/plugs/proxy_plug_test.exs": {
+      "fichier": "test/livebook_web/plugs/proxy_plug_test.exs",
+      "langage": "elixir",
+      "lignes": 152,
+      "taille_bytes": 5035,
+      "entrees": [
+        "Livebook.AppHelpers",
+        "LivebookWeb.ConnCase"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/channels/js_view_channel_test.exs": {
+      "fichier": "test/livebook_web/channels/js_view_channel_test.exs",
+      "langage": "elixir",
+      "lignes": 124,
+      "taille_bytes": 4537,
+      "entrees": [
+        "LivebookWeb.ChannelCase"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/helpers/html_helpers_test.exs": {
+      "fichier": "test/livebook_web/helpers/html_helpers_test.exs",
+      "langage": "elixir",
+      "lignes": 64,
+      "taille_bytes": 1784,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/helpers/ansi_helpers_test.exs": {
+      "fichier": "test/livebook_web/helpers/ansi_helpers_test.exs",
+      "langage": "elixir",
+      "lignes": 60,
+      "taille_bytes": 2524,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/app_auth_live_test.exs": {
+      "fichier": "test/livebook_web/live/app_auth_live_test.exs",
+      "langage": "elixir",
+      "lignes": 148,
+      "taille_bytes": 4537,
+      "entrees": [
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/open_live_test.exs": {
+      "fichier": "test/livebook_web/live/open_live_test.exs",
+      "langage": "elixir",
+      "lignes": 351,
+      "taille_bytes": 10148,
+      "entrees": [
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/learn_live_test.exs": {
+      "fichier": "test/livebook_web/live/learn_live_test.exs",
+      "langage": "elixir",
+      "lignes": 31,
+      "taille_bytes": 1073,
+      "entrees": [
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/app_live_test.exs": {
+      "fichier": "test/livebook_web/live/app_live_test.exs",
+      "langage": "elixir",
+      "lignes": 140,
+      "taille_bytes": 4290,
+      "entrees": [
+        "Livebook.AppHelpers",
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/home_live_test.exs": {
+      "fichier": "test/livebook_web/live/home_live_test.exs",
+      "langage": "elixir",
+      "lignes": 251,
+      "taille_bytes": 7339,
+      "entrees": [
+        "Livebook.SessionHelpers",
+        "Livebook.TestHelpers",
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/settings_live_test.exs": {
+      "fichier": "test/livebook_web/live/settings_live_test.exs",
+      "langage": "elixir",
+      "lignes": 106,
+      "taille_bytes": 2974,
+      "entrees": [
+        "Livebook.TestHelpers",
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/file_select_component_test.exs": {
+      "fichier": "test/livebook_web/live/file_select_component_test.exs",
+      "langage": "elixir",
+      "lignes": 41,
+      "taille_bytes": 1205,
+      "entrees": [
+        "Livebook.TestHelpers",
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/session_live_test.exs": {
+      "fichier": "test/livebook_web/live/session_live_test.exs",
+      "langage": "elixir",
+      "lignes": 2950,
+      "taille_bytes": 96921,
+      "entrees": [
+        "Livebook.SessionHelpers",
+        "Livebook.TestHelpers",
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "def bar",
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/app_session_live_test.exs": {
+      "fichier": "test/livebook_web/live/app_session_live_test.exs",
+      "langage": "elixir",
+      "lignes": 260,
+      "taille_bytes": 8089,
+      "entrees": [
+        "Livebook.AppHelpers",
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/apps_dashboard_live_test.exs": {
+      "fichier": "test/livebook_web/live/apps_dashboard_live_test.exs",
+      "langage": "elixir",
+      "lignes": 85,
+      "taille_bytes": 2520,
+      "entrees": [
+        "Livebook.AppHelpers",
+        "Livebook.TestHelpers",
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/output/plain_text_component_test.exs": {
+      "fichier": "test/livebook_web/live/output/plain_text_component_test.exs",
+      "langage": "elixir",
+      "lignes": 20,
+      "taille_bytes": 561,
+      "entrees": [
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/live/hub/edit_live_test.exs": {
+      "fichier": "test/livebook_web/live/hub/edit_live_test.exs",
+      "langage": "elixir",
+      "lignes": 434,
+      "taille_bytes": 13353,
+      "entrees": [
+        "Livebook.HubHelpers",
+        "Livebook.TestHelpers",
+        "LivebookWeb.ConnCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/controllers/session_controller_test.exs": {
+      "fichier": "test/livebook_web/controllers/session_controller_test.exs",
+      "langage": "elixir",
+      "lignes": 538,
+      "taille_bytes": 17345,
+      "entrees": [
+        "LivebookWeb.ConnCase"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/controllers/user_controller_test.exs": {
+      "fichier": "test/livebook_web/controllers/user_controller_test.exs",
+      "langage": "elixir",
+      "lignes": 12,
+      "taille_bytes": 342,
+      "entrees": [
+        "LivebookWeb.ConnCase"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/controllers/errors_test.exs": {
+      "fichier": "test/livebook_web/controllers/errors_test.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 250,
+      "entrees": [
+        "LivebookWeb.ConnCase"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_web/controllers/endpoint_test.exs": {
+      "fichier": "test/livebook_web/controllers/endpoint_test.exs",
+      "langage": "elixir",
+      "lignes": 24,
+      "taille_bytes": 722,
+      "entrees": [
+        "LivebookWeb.ConnCase"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/apps_test.exs": {
+      "fichier": "test/livebook_teams/apps_test.exs",
+      "langage": "elixir",
+      "lignes": 73,
+      "taille_bytes": 2298,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/teams_test.exs": {
+      "fichier": "test/livebook_teams/teams_test.exs",
+      "langage": "elixir",
+      "lignes": 442,
+      "taille_bytes": 16628,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/hubs_test.exs": {
+      "fichier": "test/livebook_teams/hubs_test.exs",
+      "langage": "elixir",
+      "lignes": 220,
+      "taille_bytes": 7808,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/live_markdown/import_test.exs": {
+      "fichier": "test/livebook_teams/live_markdown/import_test.exs",
+      "langage": "elixir",
+      "lignes": 48,
+      "taille_bytes": 1523,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/hubs/team_client_test.exs": {
+      "fichier": "test/livebook_teams/hubs/team_client_test.exs",
+      "langage": "elixir",
+      "lignes": 918,
+      "taille_bytes": 33809,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/cli/deploy_test.exs": {
+      "fichier": "test/livebook_teams/cli/deploy_test.exs",
+      "langage": "elixir",
+      "lignes": 604,
+      "taille_bytes": 19135,
+      "entrees": [
+        "Livebook.AppHelpers",
+        "Livebook.TeamsIntegrationCase"
+      ],
+      "sorties": [
+        "defmodule LivebookCLI"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/web/open_live_test.exs": {
+      "fichier": "test/livebook_teams/web/open_live_test.exs",
+      "langage": "elixir",
+      "lignes": 97,
+      "taille_bytes": 3659,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/web/apps_live_test.exs": {
+      "fichier": "test/livebook_teams/web/apps_live_test.exs",
+      "langage": "elixir",
+      "lignes": 577,
+      "taille_bytes": 17568,
+      "entrees": [
+        "Livebook.AppHelpers",
+        "Livebook.TeamsIntegrationCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/web/session_live_test.exs": {
+      "fichier": "test/livebook_teams/web/session_live_test.exs",
+      "langage": "elixir",
+      "lignes": 844,
+      "taille_bytes": 30941,
+      "entrees": [
+        "Livebook.SessionHelpers",
+        "Livebook.TeamsIntegrationCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/web/admin_live_test.exs": {
+      "fichier": "test/livebook_teams/web/admin_live_test.exs",
+      "langage": "elixir",
+      "lignes": 185,
+      "taille_bytes": 5962,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/web/app_session_live_test.exs": {
+      "fichier": "test/livebook_teams/web/app_session_live_test.exs",
+      "langage": "elixir",
+      "lignes": 316,
+      "taille_bytes": 9645,
+      "entrees": [
+        "Livebook.AppHelpers",
+        "Livebook.TeamsIntegrationCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/web/hub/edit_live_test.exs": {
+      "fichier": "test/livebook_teams/web/hub/edit_live_test.exs",
+      "langage": "elixir",
+      "lignes": 544,
+      "taille_bytes": 17356,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase",
+        "Livebook.TestHelpers",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule Global",
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/web/hub/deployment_group_test.exs": {
+      "fichier": "test/livebook_teams/web/hub/deployment_group_test.exs",
+      "langage": "elixir",
+      "lignes": 318,
+      "taille_bytes": 10350,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase",
+        "Livebook.TestHelpers",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/web/hub/new_live_test.exs": {
+      "fichier": "test/livebook_teams/web/hub/new_live_test.exs",
+      "langage": "elixir",
+      "lignes": 139,
+      "taille_bytes": 4468,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase",
+        "Phoenix.LiveViewTest"
+      ],
+      "sorties": [
+        "defmodule LivebookWeb"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook_teams/zta/livebook_teams_test.exs": {
+      "fichier": "test/livebook_teams/zta/livebook_teams_test.exs",
+      "langage": "elixir",
+      "lignes": 116,
+      "taille_bytes": 4094,
+      "entrees": [
+        "Livebook.TeamsIntegrationCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/session_test.exs": {
+      "fichier": "test/livebook/session_test.exs",
+      "langage": "elixir",
+      "lignes": 2202,
+      "taille_bytes": 74438,
+      "entrees": [
+        "ExUnit.CaptureLog",
+        "ExUnit.Case",
+        "Livebook.AppHelpers",
+        "Livebook.HubHelpers",
+        "Livebook.SessionHelpers",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Global",
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/app_test.exs": {
+      "fichier": "test/livebook/app_test.exs",
+      "langage": "elixir",
+      "lignes": 259,
+      "taille_bytes": 8779,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/config_test.exs": {
+      "fichier": "test/livebook/config_test.exs",
+      "langage": "elixir",
+      "lignes": 99,
+      "taille_bytes": 2922,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/apps_test.exs": {
+      "fichier": "test/livebook/apps_test.exs",
+      "langage": "elixir",
+      "lignes": 211,
+      "taille_bytes": 6725,
+      "entrees": [
+        "ExUnit.CaptureLog",
+        "ExUnit.Case",
+        "Livebook.HubHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/epmd_test.exs": {
+      "fichier": "test/livebook/epmd_test.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 150,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/users_test.exs": {
+      "fichier": "test/livebook/users_test.exs",
+      "langage": "elixir",
+      "lignes": 17,
+      "taille_bytes": 355,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/learn_test.exs": {
+      "fichier": "test/livebook/learn_test.exs",
+      "langage": "elixir",
+      "lignes": 18,
+      "taille_bytes": 497,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/secrets_test.exs": {
+      "fichier": "test/livebook/secrets_test.exs",
+      "langage": "elixir",
+      "lignes": 28,
+      "taille_bytes": 931,
+      "entrees": [
+        "Livebook.DataCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/utils_test.exs": {
+      "fichier": "test/livebook/utils_test.exs",
+      "langage": "elixir",
+      "lignes": 54,
+      "taille_bytes": 2027,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/storage_test.exs": {
+      "fichier": "test/livebook/storage_test.exs",
+      "langage": "elixir",
+      "lignes": 105,
+      "taille_bytes": 3103,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/sessions_test.exs": {
+      "fichier": "test/livebook/sessions_test.exs",
+      "langage": "elixir",
+      "lignes": 71,
+      "taille_bytes": 2218,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/settings_test.exs": {
+      "fichier": "test/livebook/settings_test.exs",
+      "langage": "elixir",
+      "lignes": 70,
+      "taille_bytes": 2092,
+      "entrees": [
+        "Livebook.DataCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/notebook_test.exs": {
+      "fichier": "test/livebook/notebook_test.exs",
+      "langage": "elixir",
+      "lignes": 553,
+      "taille_bytes": 15230,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/intellisense/elixir_test.exs": {
+      "fichier": "test/livebook/intellisense/elixir_test.exs",
+      "langage": "elixir",
+      "lignes": 2504,
+      "taille_bytes": 75041,
+      "entrees": [
+        "Enum",
+        "ExUnit.Case",
+        "Livebook.TestHelpers",
+        "Protocol",
+        "System"
+      ],
+      "sorties": [
+        "def foo",
+        "def foobar",
+        "def hello",
+        "defmodule Livebook",
+        "defmodule RemoteModule",
+        "defmodule Sample"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/intellisense/python_test.exs": {
+      "fichier": "test/livebook/intellisense/python_test.exs",
+      "langage": "elixir",
+      "lignes": 1138,
+      "taille_bytes": 33301,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers",
+        "Pythonx",
+        "ipaddress",
+        "sys",
+        "time"
+      ],
+      "sorties": [
+        "class BadCallable",
+        "class GoodCallable",
+        "def __call__",
+        "def __getattr__",
+        "def __init__",
+        "def fun",
+        "def fun_kwargs",
+        "def fun_nonpositional_kwargs",
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/notebook/content_loader_test.exs": {
+      "fichier": "test/livebook/notebook/content_loader_test.exs",
+      "langage": "elixir",
+      "lignes": 67,
+      "taille_bytes": 2237,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/notebook/export/elixir_test.exs": {
+      "fichier": "test/livebook/notebook/export/elixir_test.exs",
+      "langage": "elixir",
+      "lignes": 253,
+      "taille_bytes": 5685,
+      "entrees": [
+        "ExUnit.Case",
+        "Pythonx"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/live_markdown/markdown_helpers_test.exs": {
+      "fichier": "test/livebook/live_markdown/markdown_helpers_test.exs",
+      "langage": "elixir",
+      "lignes": 407,
+      "taille_bytes": 8717,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/live_markdown/import_test.exs": {
+      "fichier": "test/livebook/live_markdown/import_test.exs",
+      "langage": "elixir",
+      "lignes": 1514,
+      "taille_bytes": 39375,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/live_markdown/export_test.exs": {
+      "fichier": "test/livebook/live_markdown/export_test.exs",
+      "langage": "elixir",
+      "lignes": 1425,
+      "taille_bytes": 32733,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/teams/connection_test.exs": {
+      "fichier": "test/livebook/teams/connection_test.exs",
+      "langage": "elixir",
+      "lignes": 86,
+      "taille_bytes": 2397,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def call",
+        "def init",
+        "defmodule ErrorPlug",
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/ecto_types/hex_color_test.exs": {
+      "fichier": "test/livebook/ecto_types/hex_color_test.exs",
+      "langage": "elixir",
+      "lignes": 4,
+      "taille_bytes": 118,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/hubs/provider_test.exs": {
+      "fichier": "test/livebook/hubs/provider_test.exs",
+      "langage": "elixir",
+      "lignes": 62,
+      "taille_bytes": 1699,
+      "entrees": [
+        "Livebook.DataCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/hubs/dockerfile_test.exs": {
+      "fichier": "test/livebook/hubs/dockerfile_test.exs",
+      "langage": "elixir",
+      "lignes": 420,
+      "taille_bytes": 13867,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers",
+        "files/data.csv",
+        "ghcr.io/livebook-dev/livebook:#",
+        "notebook.livemd"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/hubs/personal_test.exs": {
+      "fichier": "test/livebook/hubs/personal_test.exs",
+      "langage": "elixir",
+      "lignes": 28,
+      "taille_bytes": 758,
+      "entrees": [
+        "Livebook.DataCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/apps/path_app_spec_test.exs": {
+      "fichier": "test/livebook/apps/path_app_spec_test.exs",
+      "langage": "elixir",
+      "lignes": 89,
+      "taille_bytes": 2755,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/apps/manager_test.exs": {
+      "fichier": "test/livebook/apps/manager_test.exs",
+      "langage": "elixir",
+      "lignes": 162,
+      "taille_bytes": 5064,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/apps/deployer_test.exs": {
+      "fichier": "test/livebook/apps/deployer_test.exs",
+      "langage": "elixir",
+      "lignes": 206,
+      "taille_bytes": 6622,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/k8s_test.exs": {
+      "fichier": "test/livebook/runtime/k8s_test.exs",
+      "langage": "elixir",
+      "lignes": 125,
+      "taille_bytes": 3981,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/standalone_test.exs": {
+      "fichier": "test/livebook/runtime/standalone_test.exs",
+      "langage": "elixir",
+      "lignes": 58,
+      "taille_bytes": 1891,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/attached_test.exs": {
+      "fichier": "test/livebook/runtime/attached_test.exs",
+      "langage": "elixir",
+      "lignes": 15,
+      "taille_bytes": 424,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/fly_test.exs": {
+      "fichier": "test/livebook/runtime/fly_test.exs",
+      "langage": "elixir",
+      "lignes": 102,
+      "taille_bytes": 2960,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/dependencies_test.exs": {
+      "fichier": "test/livebook/runtime/dependencies_test.exs",
+      "langage": "elixir",
+      "lignes": 484,
+      "taille_bytes": 14806,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/evaluator_test.exs": {
+      "fichier": "test/livebook/runtime/evaluator_test.exs",
+      "langage": "elixir",
+      "lignes": 1718,
+      "taille_bytes": 53963,
+      "entrees": [
+        "Enum",
+        "ExUnit.Case",
+        "Integer",
+        "Livebook.Runtime.EvaluatorTest.DoctestsGeneratedBase",
+        "Livebook.TestHelpers",
+        "sys"
+      ],
+      "sorties": [
+        "def bad_math",
+        "def data",
+        "def exit",
+        "def first",
+        "def foo",
+        "def fun",
+        "def meow",
+        "def raise_with_stacktrace",
+        "defmodule Foo",
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/evaluator/object_tracker_test.exs": {
+      "fichier": "test/livebook/runtime/evaluator/object_tracker_test.exs",
+      "langage": "elixir",
+      "lignes": 79,
+      "taille_bytes": 2717,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/evaluator/client_tracker_test.exs": {
+      "fichier": "test/livebook/runtime/evaluator/client_tracker_test.exs",
+      "langage": "elixir",
+      "lignes": 38,
+      "taille_bytes": 1298,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/evaluator/io_proxy_test.exs": {
+      "fichier": "test/livebook/runtime/evaluator/io_proxy_test.exs",
+      "langage": "elixir",
+      "lignes": 234,
+      "taille_bytes": 7221,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/erl_dist/runtime_server_test.exs": {
+      "fichier": "test/livebook/runtime/erl_dist/runtime_server_test.exs",
+      "langage": "elixir",
+      "lignes": 371,
+      "taille_bytes": 13045,
+      "entrees": [
+        "ExUnit.Case",
+        "GenServer"
+      ],
+      "sorties": [
+        "def definitions",
+        "def handle_info",
+        "def init",
+        "def start_link",
+        "defmodule Kino",
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/erl_dist/smart_cell_gl_test.exs": {
+      "fichier": "test/livebook/runtime/erl_dist/smart_cell_gl_test.exs",
+      "langage": "elixir",
+      "lignes": 28,
+      "taille_bytes": 857,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/erl_dist/node_manager_test.exs": {
+      "fichier": "test/livebook/runtime/erl_dist/node_manager_test.exs",
+      "langage": "elixir",
+      "lignes": 27,
+      "taille_bytes": 905,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/runtime/erl_dist/io_forward_gl_test.exs": {
+      "fichier": "test/livebook/runtime/erl_dist/io_forward_gl_test.exs",
+      "langage": "elixir",
+      "lignes": 19,
+      "taille_bytes": 549,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/session/data_test.exs": {
+      "fichier": "test/livebook/session/data_test.exs",
+      "langage": "elixir",
+      "lignes": 5105,
+      "taille_bytes": 182316,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/session/file_guard_test.exs": {
+      "fichier": "test/livebook/session/file_guard_test.exs",
+      "langage": "elixir",
+      "lignes": 43,
+      "taille_bytes": 1400,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/file_system/git_test.exs": {
+      "fichier": "test/livebook/file_system/git_test.exs",
+      "langage": "elixir",
+      "lignes": 255,
+      "taille_bytes": 8831,
+      "entrees": [
+        "Livebook.DataCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/file_system/local_test.exs": {
+      "fichier": "test/livebook/file_system/local_test.exs",
+      "langage": "elixir",
+      "lignes": 611,
+      "taille_bytes": 19198,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/file_system/file_test.exs": {
+      "fichier": "test/livebook/file_system/file_test.exs",
+      "langage": "elixir",
+      "lignes": 491,
+      "taille_bytes": 15022,
+      "entrees": [
+        "ExUnit.Case",
+        "Livebook.Factory",
+        "Livebook.HubHelpers",
+        "Livebook.TestHelpers"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/file_system/s3_test.exs": {
+      "fichier": "test/livebook/file_system/s3_test.exs",
+      "langage": "elixir",
+      "lignes": 1048,
+      "taille_bytes": 33860,
+      "entrees": [
+        "Livebook.DataCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/text/delta_test.exs": {
+      "fichier": "test/livebook/text/delta_test.exs",
+      "langage": "elixir",
+      "lignes": 114,
+      "taille_bytes": 3787,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/text/js_test.exs": {
+      "fichier": "test/livebook/text/js_test.exs",
+      "langage": "elixir",
+      "lignes": 134,
+      "taille_bytes": 3894,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/text/delta/transformation_test.exs": {
+      "fichier": "test/livebook/text/delta/transformation_test.exs",
+      "langage": "elixir",
+      "lignes": 342,
+      "taille_bytes": 7755,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/users/user_test.exs": {
+      "fichier": "test/livebook/users/user_test.exs",
+      "langage": "elixir",
+      "lignes": 33,
+      "taille_bytes": 908,
+      "entrees": [
+        "Livebook.DataCase"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/utils/time_test.exs": {
+      "fichier": "test/livebook/utils/time_test.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 118,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/livebook/utils/ansi_test.exs": {
+      "fichier": "test/livebook/utils/ansi_test.exs",
+      "langage": "elixir",
+      "lignes": 88,
+      "taille_bytes": 3485,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Livebook"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

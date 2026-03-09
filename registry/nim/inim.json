@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "projet": "inim",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "shell": 1,
+      "nim": 10
+    }
+  },
+  "stats": {
+    "fichiers_total": 11,
+    "edges_total": 2,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "inim.nim"
+  },
+  "noeuds": {
+    "setupci.sh": {
+      "fichier": "setupci.sh",
+      "langage": "shell",
+      "lignes": 21,
+      "taille_bytes": 478,
+      "entrees": [],
+      "sorties": [
+        "export BRANCH",
+        "export CHOOSENIM_CHOOSE_VERSION",
+        "export PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "inim.nim": {
+      "fichier": "inim.nim",
+      "langage": "nim",
+      "lignes": 636,
+      "taille_bytes": 19589,
+      "entrees": [
+        "cligen",
+        "inimpkg/commands",
+        "noise",
+        "os"
+      ],
+      "sorties": [
+        "type App"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tests/test.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/test_error_output.nim": {
+      "fichier": "tests/test_error_output.nim",
+      "langage": "nim",
+      "lignes": 3,
+      "taille_bytes": 43,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_piping_with_end_echo.nim": {
+      "fichier": "tests/test_piping_with_end_echo.nim",
+      "langage": "nim",
+      "lignes": 4,
+      "taille_bytes": 36,
+      "entrees": [
+        "os"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test.nim": {
+      "fichier": "tests/test.nim",
+      "langage": "nim",
+      "lignes": 45,
+      "taille_bytes": 1551,
+      "entrees": [
+        "inim",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "inim.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_piping_file.nim": {
+      "fichier": "tests/test_piping_file.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 63,
+      "entrees": [
+        "strutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_commands.nim": {
+      "fichier": "tests/test_commands.nim",
+      "langage": "nim",
+      "lignes": 30,
+      "taille_bytes": 772,
+      "entrees": [
+        "../inimpkg/commands",
+        "os",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_interface.nim": {
+      "fichier": "tests/test_interface.nim",
+      "langage": "nim",
+      "lignes": 133,
+      "taille_bytes": 3944,
+      "entrees": [
+        "osproc",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "inimpkg/embedded.nim": {
+      "fichier": "inimpkg/embedded.nim",
+      "langage": "nim",
+      "lignes": 6,
+      "taille_bytes": 223,
+      "entrees": [
+        "inimpkg/commands",
+        "typetraits"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "inimpkg/commands.nim": {
+      "fichier": "inimpkg/commands.nim",
+      "langage": "nim",
+      "lignes": 60,
+      "taille_bytes": 1463,
+      "entrees": [
+        "algorithm",
+        "macros",
+        "os",
+        "osproc",
+        "strutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "inimpkg/logic.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "inimpkg/logic.nim": {
+      "fichier": "inimpkg/logic.nim",
+      "langage": "nim",
+      "lignes": 532,
+      "taille_bytes": 15733,
+      "entrees": [
+        "commands",
+        "os",
+        "sequtils"
+      ],
+      "sorties": [
+        "export app",
+        "type App"
+      ],
+      "appelle": [
+        "inimpkg/commands.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "tests/test.nim",
+      "vers": "inim.nim",
+      "type": "interne"
+    },
+    {
+      "de": "inimpkg/logic.nim",
+      "vers": "inimpkg/commands.nim",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

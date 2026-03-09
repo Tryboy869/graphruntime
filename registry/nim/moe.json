@@ -1,0 +1,1935 @@
+{
+  "meta": {
+    "projet": "moe",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "toml": 5,
+      "nim": 115
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "example/moerc.toml"
+  },
+  "noeuds": {
+    "example/moerc.toml": {
+      "fichier": "example/moerc.toml",
+      "langage": "toml",
+      "lignes": 543,
+      "taille_bytes": 16638,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/keybindings.toml": {
+      "fichier": "example/keybindings.toml",
+      "langage": "toml",
+      "lignes": 138,
+      "taille_bytes": 3104,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/themes/vivid.toml": {
+      "fichier": "example/themes/vivid.toml",
+      "langage": "toml",
+      "lignes": 287,
+      "taille_bytes": 7034,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/themes/light.toml": {
+      "fichier": "example/themes/light.toml",
+      "langage": "toml",
+      "lignes": 287,
+      "taille_bytes": 7034,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "example/themes/dark.toml": {
+      "fichier": "example/themes/dark.toml",
+      "langage": "toml",
+      "lignes": 289,
+      "taille_bytes": 7109,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxastro.nim": {
+      "fichier": "tests/test_syntaxastro.nim",
+      "langage": "nim",
+      "lignes": 394,
+      "taille_bytes": 10950,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxastro",
+        "../src/moepkg/syntax/tokenizer",
+        "Layout",
+        "std/unittest"
+      ],
+      "sorties": [
+        "const title"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_config_loader.nim": {
+      "fichier": "tests/test_config_loader.nim",
+      "langage": "nim",
+      "lignes": 2514,
+      "taille_bytes": 75804,
+      "entrees": [
+        "../src/moepkg/[config_loader",
+        "config_test_helper",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxmarkdown.nim": {
+      "fichier": "tests/test_syntaxmarkdown.nim",
+      "langage": "nim",
+      "lignes": 1031,
+      "taille_bytes": 33765,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxmarkdown",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_command_handler.nim": {
+      "fichier": "tests/test_command_handler.nim",
+      "langage": "nim",
+      "lignes": 1869,
+      "taille_bytes": 64599,
+      "entrees": [
+        "../src/moepkg/[buffer",
+        "../src/moepkg/command_handlers/command_handler",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [
+        "const boolOptions",
+        "const floatOptions",
+        "const intOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_backgroundprocess.nim": {
+      "fichier": "tests/test_backgroundprocess.nim",
+      "langage": "nim",
+      "lignes": 523,
+      "taille_bytes": 16229,
+      "entrees": [
+        "../src/moepkg/background_process",
+        "pkg/chronos",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxjson.nim": {
+      "fichier": "tests/test_syntaxjson.nim",
+      "langage": "nim",
+      "lignes": 608,
+      "taille_bytes": 16208,
+      "entrees": [
+        "../src/moepkg/syntax/[tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_terminal_handler.nim": {
+      "fichier": "tests/test_terminal_handler.nim",
+      "langage": "nim",
+      "lignes": 337,
+      "taille_bytes": 11978,
+      "entrees": [
+        "../src/moepkg/[terminal_mode",
+        "../src/moepkg/command_handlers/terminal_handler",
+        "../src/moepkg/terminal/pty",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_motion.nim": {
+      "fichier": "tests/test_motion.nim",
+      "langage": "nim",
+      "lignes": 672,
+      "taille_bytes": 26104,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/motion",
+        "../src/moepkg/types",
+        "pkg/results",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxgitrebasetodo.nim": {
+      "fichier": "tests/test_syntaxgitrebasetodo.nim",
+      "langage": "nim",
+      "lignes": 249,
+      "taille_bytes": 7462,
+      "entrees": [
+        "../src/moepkg/syntax/[tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_buffer.nim": {
+      "fichier": "tests/test_buffer.nim",
+      "langage": "nim",
+      "lignes": 906,
+      "taille_bytes": 30425,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editor_render_modes.nim": {
+      "fichier": "tests/test_editor_render_modes.nim",
+      "langage": "nim",
+      "lignes": 96,
+      "taille_bytes": 3966,
+      "entrees": [
+        "../src/moepkg/[editor",
+        "../src/moepkg/editor_render_modes",
+        "pkg/celina",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_statusline.nim": {
+      "fichier": "tests/test_statusline.nim",
+      "langage": "nim",
+      "lignes": 1137,
+      "taille_bytes": 36495,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/config",
+        "../src/moepkg/modes",
+        "../src/moepkg/registers",
+        "../src/moepkg/status_line",
+        "../src/moepkg/syntax/tokenizer",
+        "../src/moepkg/types",
+        "pkg/celina",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_command_registry_integration.nim": {
+      "fichier": "tests/test_command_registry_integration.nim",
+      "langage": "nim",
+      "lignes": 3710,
+      "taille_bytes": 134419,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/command_registry",
+        "../src/moepkg/config",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/motion",
+        "../src/moepkg/registers",
+        "../src/moepkg/types",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxjavascript.nim": {
+      "fichier": "tests/test_syntaxjavascript.nim",
+      "langage": "nim",
+      "lignes": 1471,
+      "taille_bytes": 41513,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxjavascript",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_app_info.nim": {
+      "fichier": "tests/test_app_info.nim",
+      "langage": "nim",
+      "lignes": 79,
+      "taille_bytes": 3110,
+      "entrees": [
+        "../src/moepkg/app_info",
+        "pkg/results",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_modified_lines.nim": {
+      "fichier": "tests/test_modified_lines.nim",
+      "langage": "nim",
+      "lignes": 479,
+      "taille_bytes": 18056,
+      "entrees": [
+        "../src/moepkg/[buffer",
+        "pkg/celina",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_theme.nim": {
+      "fichier": "tests/test_theme.nim",
+      "langage": "nim",
+      "lignes": 83,
+      "taille_bytes": 4007,
+      "entrees": [
+        "../src/moepkg/color",
+        "../src/moepkg/theme",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_vscode_theme.nim": {
+      "fichier": "tests/test_vscode_theme.nim",
+      "langage": "nim",
+      "lignes": 1085,
+      "taille_bytes": 42970,
+      "entrees": [
+        "../src/moepkg/color",
+        "../src/moepkg/theme",
+        "../src/moepkg/vscode_theme",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_backup_manager_handler.nim": {
+      "fichier": "tests/test_backup_manager_handler.nim",
+      "langage": "nim",
+      "lignes": 887,
+      "taille_bytes": 29212,
+      "entrees": [
+        "../src/moepkg/backup_manager",
+        "../src/moepkg/command_handlers/backup_manager_handler",
+        "../src/moepkg/key_bindings",
+        "std/[unittest"
+      ],
+      "sorties": [
+        "const TestViewportHeight"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_message_log.nim": {
+      "fichier": "tests/test_message_log.nim",
+      "langage": "nim",
+      "lignes": 109,
+      "taille_bytes": 3819,
+      "entrees": [
+        "../src/moepkg/message_log",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_sidebar.nim": {
+      "fichier": "tests/test_sidebar.nim",
+      "langage": "nim",
+      "lignes": 526,
+      "taille_bytes": 17287,
+      "entrees": [
+        "../src/moepkg/[buffer",
+        "pkg/celina",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_build.nim": {
+      "fichier": "tests/test_build.nim",
+      "langage": "nim",
+      "lignes": 326,
+      "taille_bytes": 11475,
+      "entrees": [
+        "../src/moepkg/build",
+        "../src/moepkg/syntax/tokenizer",
+        "pkg/chronos",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxpython.nim": {
+      "fichier": "tests/test_syntaxpython.nim",
+      "langage": "nim",
+      "lignes": 1154,
+      "taille_bytes": 30796,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxpython",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_debug_handler.nim": {
+      "fichier": "tests/test_debug_handler.nim",
+      "langage": "nim",
+      "lignes": 227,
+      "taille_bytes": 7833,
+      "entrees": [
+        "../src/moepkg/command_handlers/debug_handler",
+        "../src/moepkg/debug_viewer",
+        "../src/moepkg/key_bindings",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_jsonrpc.nim": {
+      "fichier": "tests/test_jsonrpc.nim",
+      "langage": "nim",
+      "lignes": 455,
+      "taille_bytes": 17030,
+      "entrees": [
+        "../src/moepkg/lsp/jsonrpc",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_hash_lexer.nim": {
+      "fichier": "tests/test_hash_lexer.nim",
+      "langage": "nim",
+      "lignes": 338,
+      "taille_bytes": 12228,
+      "entrees": [
+        "../src/moepkg/syntax/[tokenizer",
+        "../src/moepkg/syntax/lexer/hash_lexer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_buffer_manager_handler.nim": {
+      "fichier": "tests/test_buffer_manager_handler.nim",
+      "langage": "nim",
+      "lignes": 557,
+      "taille_bytes": 21438,
+      "entrees": [
+        "../src/moepkg/buffer_manager",
+        "../src/moepkg/command_handlers/buffer_manager_handler",
+        "../src/moepkg/key_bindings",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_references_viewer.nim": {
+      "fichier": "tests/test_references_viewer.nim",
+      "langage": "nim",
+      "lignes": 383,
+      "taille_bytes": 13000,
+      "entrees": [
+        "../src/moepkg/references_viewer",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_persist.nim": {
+      "fichier": "tests/test_persist.nim",
+      "langage": "nim",
+      "lignes": 345,
+      "taille_bytes": 11502,
+      "entrees": [
+        "../src/moepkg/persist",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [
+        "const TestPersistDir"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_highlight.nim": {
+      "fichier": "tests/test_highlight.nim",
+      "langage": "nim",
+      "lignes": 791,
+      "taille_bytes": 28725,
+      "entrees": [
+        "../src/moepkg/highlight",
+        "../src/moepkg/syntax/tokenizer",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxcpp.nim": {
+      "fichier": "tests/test_syntaxcpp.nim",
+      "langage": "nim",
+      "lignes": 786,
+      "taille_bytes": 21395,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxcpp",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_command_config.nim": {
+      "fichier": "tests/test_command_config.nim",
+      "langage": "nim",
+      "lignes": 233,
+      "taille_bytes": 7454,
+      "entrees": [
+        "../src/moepkg/command_config",
+        "../src/moepkg/command_line",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_primitives.nim": {
+      "fichier": "tests/test_primitives.nim",
+      "langage": "nim",
+      "lignes": 47,
+      "taille_bytes": 2145,
+      "entrees": [
+        "../src/moepkg/primitives",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_command_completion.nim": {
+      "fichier": "tests/test_command_completion.nim",
+      "langage": "nim",
+      "lignes": 1059,
+      "taille_bytes": 35986,
+      "entrees": [
+        "../src/moepkg/[command_line",
+        "../src/moepkg/command_completion",
+        "std/[unittest"
+      ],
+      "sorties": [
+        "const executeSetPrimaryOptions"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_command_registry.nim": {
+      "fichier": "tests/test_command_registry.nim",
+      "langage": "nim",
+      "lignes": 927,
+      "taille_bytes": 30397,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/command_registry",
+        "../src/moepkg/config",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/motion",
+        "../src/moepkg/types",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_handler.nim": {
+      "fichier": "tests/test_handler.nim",
+      "langage": "nim",
+      "lignes": 2157,
+      "taille_bytes": 70306,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/clipboard",
+        "../src/moepkg/config",
+        "../src/moepkg/config_loader",
+        "../src/moepkg/editor",
+        "../src/moepkg/filer",
+        "../src/moepkg/handler",
+        "../src/moepkg/modes",
+        "../src/moepkg/registers",
+        "../src/moepkg/render_utils",
+        "../src/moepkg/types",
+        "config_test_helper",
+        "pkg/celina",
+        "pkg/celina/core/mouse_logic",
+        "std/[unittest",
+        "std/strutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_end_lexer.nim": {
+      "fichier": "tests/test_end_lexer.nim",
+      "langage": "nim",
+      "lignes": 279,
+      "taille_bytes": 8269,
+      "entrees": [
+        "../src/moepkg/syntax/lexer/end_lexer",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_repeat_command.nim": {
+      "fichier": "tests/test_repeat_command.nim",
+      "langage": "nim",
+      "lignes": 424,
+      "taille_bytes": 13816,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/command_registry",
+        "../src/moepkg/config",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/motion",
+        "../src/moepkg/types",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editor_render_window.nim": {
+      "fichier": "tests/test_editor_render_window.nim",
+      "langage": "nim",
+      "lignes": 1209,
+      "taille_bytes": 36710,
+      "entrees": [
+        "../src/moepkg/[editor",
+        "../src/moepkg/editor_render_helpers",
+        "../src/moepkg/editor_render_window",
+        "pkg/celina",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_backup.nim": {
+      "fichier": "tests/test_backup.nim",
+      "langage": "nim",
+      "lignes": 325,
+      "taille_bytes": 10474,
+      "entrees": [
+        "../src/moepkg/[backup",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [
+        "const TestBackupDir"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_hover_popup.nim": {
+      "fichier": "tests/test_hover_popup.nim",
+      "langage": "nim",
+      "lignes": 585,
+      "taille_bytes": 17716,
+      "entrees": [
+        "../src/moepkg/hover_popup",
+        "pkg/celina",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_lsp_integration.nim": {
+      "fichier": "tests/test_lsp_integration.nim",
+      "langage": "nim",
+      "lignes": 1209,
+      "taille_bytes": 41218,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/lsp/protocol/types",
+        "../src/moepkg/lsp_integration",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_signature_help.nim": {
+      "fichier": "tests/test_signature_help.nim",
+      "langage": "nim",
+      "lignes": 710,
+      "taille_bytes": 23215,
+      "entrees": [
+        "../src/moepkg/lsp/protocol/types",
+        "../src/moepkg/signature_help",
+        "pkg/celina",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editor.nim": {
+      "fichier": "tests/test_editor.nim",
+      "langage": "nim",
+      "lignes": 1062,
+      "taille_bytes": 31670,
+      "entrees": [
+        "../src/moepkg/[editor",
+        "../src/moepkg/buffer_backends/gap_buffer",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_diff_viewer.nim": {
+      "fichier": "tests/test_diff_viewer.nim",
+      "langage": "nim",
+      "lignes": 1026,
+      "taille_bytes": 30181,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/color",
+        "../src/moepkg/diff_viewer",
+        "../src/moepkg/highlight",
+        "../src/moepkg/syntax/syntaxdiff",
+        "../src/moepkg/syntax/tokenizer",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [
+        "export results"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxrust.nim": {
+      "fichier": "tests/test_syntaxrust.nim",
+      "langage": "nim",
+      "lignes": 1130,
+      "taille_bytes": 30448,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxrust",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_keybind_config.nim": {
+      "fichier": "tests/test_keybind_config.nim",
+      "langage": "nim",
+      "lignes": 1304,
+      "taille_bytes": 40715,
+      "entrees": [
+        "../src/moepkg/config_loader",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/keybind_config",
+        "../src/moepkg/modes",
+        "../src/moepkg/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxcommiteditmsg.nim": {
+      "fichier": "tests/test_syntaxcommiteditmsg.nim",
+      "langage": "nim",
+      "lignes": 114,
+      "taille_bytes": 4040,
+      "entrees": [
+        "../src/moepkg/syntax/[tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_piece_table.nim": {
+      "fichier": "tests/test_piece_table.nim",
+      "langage": "nim",
+      "lignes": 1480,
+      "taille_bytes": 45410,
+      "entrees": [
+        "../src/moepkg/buffer_backends/piece_table",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tlspintegration.nim": {
+      "fichier": "tests/tlspintegration.nim",
+      "langage": "nim",
+      "lignes": 1083,
+      "taille_bytes": 38190,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/lsp/protocol/types",
+        "../src/moepkg/lsp_integration",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_diff_viewer_handler.nim": {
+      "fichier": "tests/test_diff_viewer_handler.nim",
+      "langage": "nim",
+      "lignes": 768,
+      "taille_bytes": 25085,
+      "entrees": [
+        "../src/moepkg/command_handlers/diff_viewer_handler",
+        "../src/moepkg/diff_viewer",
+        "../src/moepkg/key_bindings",
+        "std/[unittest]"
+      ],
+      "sorties": [
+        "const TestViewportHeight"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_configmode.nim": {
+      "fichier": "tests/test_configmode.nim",
+      "langage": "nim",
+      "lignes": 1882,
+      "taille_bytes": 52855,
+      "entrees": [
+        "../src/moepkg/config",
+        "../src/moepkg/config_mode",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_lsp_protocol_types.nim": {
+      "fichier": "tests/test_lsp_protocol_types.nim",
+      "langage": "nim",
+      "lignes": 313,
+      "taille_bytes": 10825,
+      "entrees": [
+        "../src/moepkg/lsp/protocol/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_filer.nim": {
+      "fichier": "tests/test_filer.nim",
+      "langage": "nim",
+      "lignes": 1346,
+      "taille_bytes": 38047,
+      "entrees": [
+        "../src/moepkg/[buffer",
+        "../src/moepkg/filer",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_config_handler.nim": {
+      "fichier": "tests/test_config_handler.nim",
+      "langage": "nim",
+      "lignes": 1397,
+      "taille_bytes": 46528,
+      "entrees": [
+        "../src/moepkg/command_handlers/config_handler",
+        "../src/moepkg/config",
+        "../src/moepkg/config_mode",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/types",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_rope.nim": {
+      "fichier": "tests/test_rope.nim",
+      "langage": "nim",
+      "lignes": 311,
+      "taille_bytes": 8659,
+      "entrees": [
+        "../src/moepkg/buffer_backends/rope",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxyaml.nim": {
+      "fichier": "tests/test_syntaxyaml.nim",
+      "langage": "nim",
+      "lignes": 1457,
+      "taille_bytes": 38588,
+      "entrees": [
+        "../src/moepkg/syntax/[tokenizer",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_registers.nim": {
+      "fichier": "tests/test_registers.nim",
+      "langage": "nim",
+      "lignes": 380,
+      "taille_bytes": 14301,
+      "entrees": [
+        "../src/moepkg/registers",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxc.nim": {
+      "fichier": "tests/test_syntaxc.nim",
+      "langage": "nim",
+      "lignes": 1113,
+      "taille_bytes": 29010,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxc",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxdiff.nim": {
+      "fichier": "tests/test_syntaxdiff.nim",
+      "langage": "nim",
+      "lignes": 143,
+      "taille_bytes": 4777,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxdiff",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_completion.nim": {
+      "fichier": "tests/test_completion.nim",
+      "langage": "nim",
+      "lignes": 879,
+      "taille_bytes": 30284,
+      "entrees": [
+        "../src/moepkg/[buffer",
+        "../src/moepkg/lsp/protocol/types",
+        "pkg/celina",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxhaskell.nim": {
+      "fichier": "tests/test_syntaxhaskell.nim",
+      "langage": "nim",
+      "lignes": 1106,
+      "taille_bytes": 29667,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxhaskell",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxcsharp.nim": {
+      "fichier": "tests/test_syntaxcsharp.nim",
+      "langage": "nim",
+      "lignes": 935,
+      "taille_bytes": 26104,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxcsharp",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_buffer_search.nim": {
+      "fichier": "tests/test_buffer_search.nim",
+      "langage": "nim",
+      "lignes": 377,
+      "taille_bytes": 16398,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_unicode_utils.nim": {
+      "fichier": "tests/test_unicode_utils.nim",
+      "langage": "nim",
+      "lignes": 883,
+      "taille_bytes": 30562,
+      "entrees": [
+        "../src/moepkg/[buffer",
+        "../src/moepkg/buffer_backends/gap_buffer",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_buffer_cross_backend.nim": {
+      "fichier": "tests/test_buffer_cross_backend.nim",
+      "langage": "nim",
+      "lignes": 764,
+      "taille_bytes": 25139,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_lexer.nim": {
+      "fichier": "tests/test_lexer.nim",
+      "langage": "nim",
+      "lignes": 640,
+      "taille_bytes": 20844,
+      "entrees": [
+        "../src/moepkg/syntax/[tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_logger.nim": {
+      "fichier": "tests/test_logger.nim",
+      "langage": "nim",
+      "lignes": 100,
+      "taille_bytes": 3839,
+      "entrees": [
+        "../src/moepkg/logger",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editorconfig_helper.nim": {
+      "fichier": "tests/test_editorconfig_helper.nim",
+      "langage": "nim",
+      "lignes": 482,
+      "taille_bytes": 16888,
+      "entrees": [
+        "../src/moepkg/[buffer",
+        "../src/moepkg/editorconfig_helper",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editor_codelens.nim": {
+      "fichier": "tests/test_editor_codelens.nim",
+      "langage": "nim",
+      "lignes": 368,
+      "taille_bytes": 13794,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/config",
+        "../src/moepkg/editor",
+        "../src/moepkg/editor_codelens",
+        "../src/moepkg/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_moerc.nim": {
+      "fichier": "tests/test_moerc.nim",
+      "langage": "nim",
+      "lignes": 53,
+      "taille_bytes": 2415,
+      "entrees": [
+        "../src/moepkg/config_loader",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [
+        "const ExampleMoerc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_documentsymbol_viewer.nim": {
+      "fichier": "tests/test_documentsymbol_viewer.nim",
+      "langage": "nim",
+      "lignes": 617,
+      "taille_bytes": 21840,
+      "entrees": [
+        "../src/moepkg/documentsymbol_viewer",
+        "../src/moepkg/lsp/protocol/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxlatex.nim": {
+      "fichier": "tests/test_syntaxlatex.nim",
+      "langage": "nim",
+      "lignes": 276,
+      "taille_bytes": 9206,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxlatex",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntax_checker.nim": {
+      "fichier": "tests/test_syntax_checker.nim",
+      "langage": "nim",
+      "lignes": 439,
+      "taille_bytes": 17071,
+      "entrees": [
+        "../src/moepkg/background_process",
+        "../src/moepkg/buffer",
+        "../src/moepkg/syntax/tokenizer",
+        "../src/moepkg/syntax_checker",
+        "pkg/chronos",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_config.nim": {
+      "fichier": "tests/test_config.nim",
+      "langage": "nim",
+      "lignes": 649,
+      "taille_bytes": 23601,
+      "entrees": [
+        "../src/moepkg/config",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_lsp_protocol_enums.nim": {
+      "fichier": "tests/test_lsp_protocol_enums.nim",
+      "langage": "nim",
+      "lignes": 189,
+      "taille_bytes": 5163,
+      "entrees": [
+        "../src/moepkg/lsp/protocol/enums",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_commands.nim": {
+      "fichier": "tests/test_commands.nim",
+      "langage": "nim",
+      "lignes": 723,
+      "taille_bytes": 23379,
+      "entrees": [
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_visual_commands.nim": {
+      "fichier": "tests/test_visual_commands.nim",
+      "langage": "nim",
+      "lignes": 1823,
+      "taille_bytes": 62407,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/command_handlers/visual_commands",
+        "../src/moepkg/modes",
+        "../src/moepkg/registers",
+        "../src/moepkg/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_visual_handler.nim": {
+      "fichier": "tests/test_visual_handler.nim",
+      "langage": "nim",
+      "lignes": 664,
+      "taille_bytes": 25144,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/command_handlers/visual_handler",
+        "../src/moepkg/command_registry",
+        "../src/moepkg/config",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/motion",
+        "../src/moepkg/registers",
+        "../src/moepkg/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_git_diff.nim": {
+      "fichier": "tests/test_git_diff.nim",
+      "langage": "nim",
+      "lignes": 529,
+      "taille_bytes": 16663,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/git_diff",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_log_viewer_handler.nim": {
+      "fichier": "tests/test_log_viewer_handler.nim",
+      "langage": "nim",
+      "lignes": 976,
+      "taille_bytes": 32614,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/command_handlers/log_viewer_handler",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/types",
+        "std/[unittest"
+      ],
+      "sorties": [
+        "const TestViewportHeight"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_sqrt_decomp.nim": {
+      "fichier": "tests/test_sqrt_decomp.nim",
+      "langage": "nim",
+      "lignes": 1040,
+      "taille_bytes": 29993,
+      "entrees": [
+        "../src/moepkg/buffer_backends/sqrt_decomp",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_normal_commands.nim": {
+      "fichier": "tests/test_normal_commands.nim",
+      "langage": "nim",
+      "lignes": 70,
+      "taille_bytes": 3214,
+      "entrees": [
+        "../src/moepkg/command_handlers/normal_commands",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/types",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_clipboard.nim": {
+      "fichier": "tests/test_clipboard.nim",
+      "langage": "nim",
+      "lignes": 227,
+      "taille_bytes": 8275,
+      "entrees": [
+        "../src/moepkg/clipboard",
+        "../src/moepkg/config",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_normal_handler.nim": {
+      "fichier": "tests/test_normal_handler.nim",
+      "langage": "nim",
+      "lignes": 2056,
+      "taille_bytes": 76719,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/command_handlers/normal_handler",
+        "../src/moepkg/command_registry",
+        "../src/moepkg/config",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/motion",
+        "../src/moepkg/registers",
+        "../src/moepkg/types",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_word_dictionary.nim": {
+      "fichier": "tests/test_word_dictionary.nim",
+      "langage": "nim",
+      "lignes": 265,
+      "taille_bytes": 7178,
+      "entrees": [
+        "../src/moepkg/syntax/tokenizer",
+        "../src/moepkg/word_dictionary",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_encoding.nim": {
+      "fichier": "tests/test_encoding.nim",
+      "langage": "nim",
+      "lignes": 94,
+      "taille_bytes": 3968,
+      "entrees": [
+        "../src/moepkg/encoding",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editor_window.nim": {
+      "fichier": "tests/test_editor_window.nim",
+      "langage": "nim",
+      "lignes": 1223,
+      "taille_bytes": 39815,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/config",
+        "../src/moepkg/editor",
+        "../src/moepkg/editor_window",
+        "../src/moepkg/help_viewer",
+        "../src/moepkg/modes",
+        "../src/moepkg/render_utils",
+        "../src/moepkg/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_insert_handler.nim": {
+      "fichier": "tests/test_insert_handler.nim",
+      "langage": "nim",
+      "lignes": 1893,
+      "taille_bytes": 68504,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/command_handlers/insert_handler",
+        "../src/moepkg/command_registry",
+        "../src/moepkg/completion",
+        "../src/moepkg/config",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/motion",
+        "../src/moepkg/registers",
+        "../src/moepkg/signature_help",
+        "../src/moepkg/syntax/tokenizer",
+        "../src/moepkg/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxshell.nim": {
+      "fichier": "tests/test_syntaxshell.nim",
+      "langage": "nim",
+      "lignes": 1092,
+      "taille_bytes": 29334,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxshell",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_color.nim": {
+      "fichier": "tests/test_color.nim",
+      "langage": "nim",
+      "lignes": 369,
+      "taille_bytes": 11103,
+      "entrees": [
+        "../src/moepkg/color",
+        "pkg/celina",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editor_lsp.nim": {
+      "fichier": "tests/test_editor_lsp.nim",
+      "langage": "nim",
+      "lignes": 964,
+      "taille_bytes": 28212,
+      "entrees": [
+        "../src/moepkg/[editor",
+        "../src/moepkg/editor_lsp",
+        "../src/moepkg/lsp/protocol/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_lsp_client.nim": {
+      "fichier": "tests/test_lsp_client.nim",
+      "langage": "nim",
+      "lignes": 621,
+      "taille_bytes": 21845,
+      "entrees": [
+        "../src/moepkg/lsp/client",
+        "../src/moepkg/lsp/protocol/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_modes.nim": {
+      "fichier": "tests/test_modes.nim",
+      "langage": "nim",
+      "lignes": 155,
+      "taille_bytes": 5495,
+      "entrees": [
+        "../src/moepkg/modes",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_window_manager.nim": {
+      "fichier": "tests/test_window_manager.nim",
+      "langage": "nim",
+      "lignes": 1212,
+      "taille_bytes": 41403,
+      "entrees": [
+        "../src/moepkg/[types",
+        "../src/moepkg/window_manager",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_help_viewer.nim": {
+      "fichier": "tests/test_help_viewer.nim",
+      "langage": "nim",
+      "lignes": 373,
+      "taille_bytes": 11425,
+      "entrees": [
+        "../src/moepkg/help_viewer",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_buffer_undo_redo.nim": {
+      "fichier": "tests/test_buffer_undo_redo.nim",
+      "langage": "nim",
+      "lignes": 897,
+      "taille_bytes": 29589,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/syntax/tokenizer",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_lsp_service.nim": {
+      "fichier": "tests/test_lsp_service.nim",
+      "langage": "nim",
+      "lignes": 648,
+      "taille_bytes": 23794,
+      "entrees": [
+        "../src/moepkg/lsp/protocol/types",
+        "../src/moepkg/lsp_service",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_logviewer.nim": {
+      "fichier": "tests/test_logviewer.nim",
+      "langage": "nim",
+      "lignes": 80,
+      "taille_bytes": 2979,
+      "entrees": [
+        "../src/moepkg/log_viewer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_references_handler.nim": {
+      "fichier": "tests/test_references_handler.nim",
+      "langage": "nim",
+      "lignes": 454,
+      "taille_bytes": 16480,
+      "entrees": [
+        "../src/moepkg/command_handlers/references_handler",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/references_viewer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_callhierarchy_viewer.nim": {
+      "fichier": "tests/test_callhierarchy_viewer.nim",
+      "langage": "nim",
+      "lignes": 399,
+      "taille_bytes": 13678,
+      "entrees": [
+        "../src/moepkg/callhierarchy_viewer",
+        "../src/moepkg/lsp/protocol/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editor_file.nim": {
+      "fichier": "tests/test_editor_file.nim",
+      "langage": "nim",
+      "lignes": 561,
+      "taille_bytes": 18339,
+      "entrees": [
+        "../src/moepkg/[editor",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxtoml.nim": {
+      "fichier": "tests/test_syntaxtoml.nim",
+      "langage": "nim",
+      "lignes": 1701,
+      "taille_bytes": 44582,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxtoml",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_search_utils.nim": {
+      "fichier": "tests/test_search_utils.nim",
+      "langage": "nim",
+      "lignes": 343,
+      "taille_bytes": 10910,
+      "entrees": [
+        "../src/moepkg/search_utils",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_replace_handler.nim": {
+      "fichier": "tests/test_replace_handler.nim",
+      "langage": "nim",
+      "lignes": 795,
+      "taille_bytes": 29680,
+      "entrees": [
+        "../src/moepkg/buffer",
+        "../src/moepkg/command_handlers/replace_handler",
+        "../src/moepkg/command_registry",
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/motion",
+        "../src/moepkg/registers",
+        "../src/moepkg/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_lsp_client_integration.nim": {
+      "fichier": "tests/test_lsp_client_integration.nim",
+      "langage": "nim",
+      "lignes": 578,
+      "taille_bytes": 17144,
+      "entrees": [
+        "../src/moepkg/lsp/client",
+        "../src/moepkg/lsp/protocol/types",
+        "pkg/chronos",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_gap_buffer.nim": {
+      "fichier": "tests/test_gap_buffer.nim",
+      "langage": "nim",
+      "lignes": 1820,
+      "taille_bytes": 53472,
+      "entrees": [
+        "../src/moepkg/buffer_backends/gap_buffer",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tlsp.nim": {
+      "fichier": "tests/tlsp.nim",
+      "langage": "nim",
+      "lignes": 356,
+      "taille_bytes": 11783,
+      "entrees": [
+        "../src/moepkg/lsp/jsonrpc",
+        "../src/moepkg/lsp/protocol/[types",
+        "../src/moepkg/lsp_integration",
+        "../src/moepkg/lsp_service",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editor_newline.nim": {
+      "fichier": "tests/test_editor_newline.nim",
+      "langage": "nim",
+      "lignes": 70,
+      "taille_bytes": 1800,
+      "entrees": [
+        "../src/moepkg/buffer_backends/gap_buffer",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntaxtypescript.nim": {
+      "fichier": "tests/test_syntaxtypescript.nim",
+      "langage": "nim",
+      "lignes": 1506,
+      "taille_bytes": 41944,
+      "entrees": [
+        "../src/moepkg/syntax/syntaxtypescript",
+        "../src/moepkg/syntax/tokenizer",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_syntax_flags.nim": {
+      "fichier": "tests/test_syntax_flags.nim",
+      "langage": "nim",
+      "lignes": 125,
+      "taille_bytes": 4379,
+      "entrees": [
+        "../src/moepkg/syntax/flags",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_lsp_worker.nim": {
+      "fichier": "tests/test_lsp_worker.nim",
+      "langage": "nim",
+      "lignes": 705,
+      "taille_bytes": 23963,
+      "entrees": [
+        "../src/moepkg/lsp/worker",
+        "pkg/results",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_string_builder.nim": {
+      "fichier": "tests/test_string_builder.nim",
+      "langage": "nim",
+      "lignes": 122,
+      "taille_bytes": 3908,
+      "entrees": [
+        "../src/moepkg/string_builder",
+        "std/unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_key_bindings.nim": {
+      "fichier": "tests/test_key_bindings.nim",
+      "langage": "nim",
+      "lignes": 1603,
+      "taille_bytes": 55846,
+      "entrees": [
+        "../src/moepkg/key_bindings",
+        "../src/moepkg/modes",
+        "../src/moepkg/types",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/test_editor_render_helpers.nim": {
+      "fichier": "tests/test_editor_render_helpers.nim",
+      "langage": "nim",
+      "lignes": 1120,
+      "taille_bytes": 39830,
+      "entrees": [
+        "../src/moepkg/editor_render_helpers",
+        "pkg/celina",
+        "std/[unittest"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

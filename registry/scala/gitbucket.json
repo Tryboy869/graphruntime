@@ -1,0 +1,2749 @@
+{
+  "meta": {
+    "projet": "gitbucket",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "scala": 119,
+      "xml": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 12,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "src/main/scala/gitbucket/core/api/JsonFormat.scala"
+  },
+  "noeuds": {
+    "project/Checksums.scala": {
+      "fichier": "project/Checksums.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 883,
+      "entrees": [
+        "io._",
+        "java.security.MessageDigest",
+        "sbt._",
+        "scala.annotation._"
+      ],
+      "sorties": [
+        "def compute",
+        "def generate",
+        "def hex",
+        "def loop",
+        "def raw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "project/PluginsJson.scala": {
+      "fichier": "project/PluginsJson.scala",
+      "langage": "scala",
+      "lignes": 15,
+      "taille_bytes": 417,
+      "entrees": [
+        "com.eclipsesource.json.Json",
+        "scala.collection.JavaConverters._"
+      ],
+      "sorties": [
+        "def getUrls"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/TestingGitBucketServer.scala": {
+      "fichier": "src/test/scala/gitbucket/core/TestingGitBucketServer.scala",
+      "langage": "scala",
+      "lignes": 68,
+      "taille_bytes": 2094,
+      "entrees": [
+        "gitbucket.core.util.",
+        "java.io.File",
+        "java.net.InetSocketAddress",
+        "java.nio.file.Files",
+        "org.apache.http.client.methods.HttpGet",
+        "org.eclipse.jetty.server.",
+        "org.eclipse.jetty.server.handler.StatisticsHandler",
+        "org.eclipse.jetty.webapp.WebAppContext",
+        "org.kohsuke.github.GitHub"
+      ],
+      "sorties": [
+        "class TestingGitBucketServer",
+        "def client",
+        "def close",
+        "def getDirectory"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/test/scala/gitbucket/core/api/ApiIntegrationTest.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/GitBucketCoreModuleSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/GitBucketCoreModuleSpec.scala",
+      "langage": "scala",
+      "lignes": 71,
+      "taille_bytes": 2372,
+      "entrees": [
+        "io.github.gitbucket.solidbase.Solidbase",
+        "io.github.gitbucket.solidbase.model.Module",
+        "java.sql.DriverManager",
+        "liquibase.database.core.",
+        "org.junit.runner.Description",
+        "org.scalatest.Tag",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "org.testcontainers.mysql.MySQLContainer",
+        "org.testcontainers.postgresql.PostgreSQLContainer",
+        "org.testcontainers.utility.DockerImageName"
+      ],
+      "sorties": [
+        "class GitBucketCoreModuleSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/api/JsonFormatSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/api/JsonFormatSpec.scala",
+      "langage": "scala",
+      "lignes": 101,
+      "taille_bytes": 3369,
+      "entrees": [
+        "ApiSpecModels.*",
+        "org.json4s.",
+        "org.json4s.jackson.JsonMethods",
+        "org.scalatest.Assertion",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class JsonFormatSpec",
+        "def assertEqualJson",
+        "def normalizeJson"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/api/ApiSpecModels.scala": {
+      "fichier": "src/test/scala/gitbucket/core/api/ApiSpecModels.scala",
+      "langage": "scala",
+      "lignes": 858,
+      "taille_bytes": 29765,
+      "entrees": [
+        "gitbucket.core.api.ApiBranchProtectionResponse.Restrictions",
+        "gitbucket.core.model.*",
+        "gitbucket.core.plugin.PluginInfo",
+        "gitbucket.core.service.ProtectedBranchService.ProtectedBranchInfo",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.util.JGitUtil.",
+        "gitbucket.core.util.RepositoryName",
+        "java.util.",
+        "org.eclipse.jgit.diff.DiffEntry.ChangeType",
+        "org.eclipse.jgit.lib.ObjectId"
+      ],
+      "sorties": [
+        "def date"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/api/ApiIntegrationTest.scala": {
+      "fichier": "src/test/scala/gitbucket/core/api/ApiIntegrationTest.scala",
+      "langage": "scala",
+      "lignes": 314,
+      "taille_bytes": 11739,
+      "entrees": [
+        "gitbucket.core.TestingGitBucketServer",
+        "java.io.File",
+        "java.util.logging.",
+        "org.apache.commons.io.IOUtils",
+        "org.eclipse.jgit.api.Git",
+        "org.kohsuke.github.GHCommitState",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "class ApiIntegrationTest"
+      ],
+      "appelle": [
+        "src/test/scala/gitbucket/core/TestingGitBucketServer.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/WebHookJsonFormatSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/WebHookJsonFormatSpec.scala",
+      "langage": "scala",
+      "lignes": 178,
+      "taille_bytes": 5497,
+      "entrees": [
+        "gitbucket.core.api.ApiSpecModels.*",
+        "gitbucket.core.api.JsonFormat",
+        "gitbucket.core.service.WebHookService.*",
+        "gitbucket.core.util.GitSpecUtil.*",
+        "org.eclipse.jgit.lib.",
+        "org.scalatest.Assertion",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class WebHookJsonFormatSpec"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/api/JsonFormat.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/AccessTokenServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/AccessTokenServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 95,
+      "taille_bytes": 3299,
+      "entrees": [
+        "gitbucket.core.model.*",
+        "gitbucket.core.model.Profile.*",
+        "gitbucket.core.model.Profile.profile.blockingApi.*",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class AccessTokenServiceSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/SystemSettingsServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/SystemSettingsServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 113,
+      "taille_bytes": 4649,
+      "entrees": [
+        "gitbucket.core.service.SystemSettingsService.SshAddress",
+        "java.util.Properties",
+        "org.scalatest.matchers.should.Matchers",
+        "org.scalatest.wordspec.AnyWordSpecLike"
+      ],
+      "sorties": [
+        "class SystemSettingsServiceSpec",
+        "trait MockContext"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/ProtectedBranchServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/ProtectedBranchServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 382,
+      "taille_bytes": 15170,
+      "entrees": [
+        "gitbucket.core.model.CommitState",
+        "gitbucket.core.service.ProtectedBranchService.",
+        "gitbucket.core.util.GitSpecUtil.*",
+        "org.eclipse.jgit.lib.ObjectId",
+        "org.eclipse.jgit.transport.",
+        "org.scalatest.funspec.AnyFunSpec"
+      ],
+      "sorties": [
+        "class ProtectedBranchServiceSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/AccountServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/AccountServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 111,
+      "taille_bytes": 3743,
+      "entrees": [
+        "gitbucket.core.model.",
+        "java.util.Date",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class AccountServiceSpec",
+        "def user"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/LabelsServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/LabelsServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 133,
+      "taille_bytes": 5628,
+      "entrees": [
+        "gitbucket.core.model.*",
+        "org.scalatest.funspec.AnyFunSpec"
+      ],
+      "sorties": [
+        "class LabelsServiceSpec",
+        "def getLabel",
+        "def getLabels"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/PullRequestServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/PullRequestServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 362,
+      "taille_bytes": 13091,
+      "entrees": [
+        "gitbucket.core.model.*",
+        "gitbucket.core.util.GitSpecUtil.*",
+        "gitbucket.core.util.JGitUtil",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.lib.Constants",
+        "org.eclipse.jgit.treewalk.TreeWalk",
+        "org.scalatest.funspec.AnyFunSpec",
+        "scala.collection.mutable",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "class PullRequestServiceSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/CommitStatusServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/CommitStatusServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 102,
+      "taille_bytes": 3621,
+      "entrees": [
+        "gitbucket.core.model.*",
+        "gitbucket.core.model.Profile.*",
+        "gitbucket.core.model.Profile.profile.blockingApi.*",
+        "gitbucket.core.model.Session",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class CommitStatusServiceSpec",
+        "def findById",
+        "def generateFixture1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/AccountFederationServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/AccountFederationServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 112,
+      "taille_bytes": 4115,
+      "entrees": [
+        "org.scalatest.funspec.AnyFunSpec"
+      ],
+      "sorties": [
+        "class AccountFederationServiceSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/RepositoryServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/RepositoryServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 39,
+      "taille_bytes": 1591,
+      "entrees": [
+        "gitbucket.core.model.*",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class RepositoryServiceSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/WebHookServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/WebHookServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 152,
+      "taille_bytes": 6904,
+      "entrees": [
+        "gitbucket.core.model.",
+        "gitbucket.core.model.WebHookContentType",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class WebHookServiceSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/ServiceSpecBase.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/ServiceSpecBase.scala",
+      "langage": "scala",
+      "lignes": 190,
+      "taille_bytes": 6453,
+      "entrees": [
+        "gitbucket.core.GitBucketCoreModule",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.*",
+        "gitbucket.core.model.Profile.profile.blockingApi.*",
+        "gitbucket.core.model.Session",
+        "gitbucket.core.service.SystemSettingsService.",
+        "gitbucket.core.util.",
+        "io.github.gitbucket.solidbase.Solidbase",
+        "java.io.File",
+        "java.sql.DriverManager",
+        "javax.servlet.http.",
+        "liquibase.database.core.H2Database",
+        "liquibase.database.jvm.JdbcConnection",
+        "org.apache.commons.io.FileUtils",
+        "org.mockito.Mockito.*",
+        "scala.util.Random",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def createSystemSettings",
+        "def generateNewAccount",
+        "def generateNewIssue",
+        "def generateNewPullRequest",
+        "def generateNewUserWithDBRepository",
+        "def user",
+        "def withTestDB",
+        "trait ServiceSpecBase"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/GitBucketCoreModule.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/service/MergeServiceSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/service/MergeServiceSpec.scala",
+      "langage": "scala",
+      "lignes": 304,
+      "taille_bytes": 11813,
+      "entrees": [
+        "MergeServiceSpec.*",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.*",
+        "gitbucket.core.model.Profile.*",
+        "gitbucket.core.model.Profile.profile.blockingApi.*",
+        "gitbucket.core.model.Session",
+        "gitbucket.core.plugin.ReceiveHook",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.util.Directory.*",
+        "gitbucket.core.util.GitSpecUtil.*",
+        "gitbucket.core.util.Implicits.*",
+        "java.io.File",
+        "java.net.InetSocketAddress",
+        "java.nio.charset.StandardCharsets",
+        "java.util.Date",
+        "javax.servlet.http.",
+        "org.eclipse.jetty.server.",
+        "org.eclipse.jetty.server.handler.AbstractHandler",
+        "org.eclipse.jetty.webapp.WebAppContext",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.lib.ObjectId",
+        "org.eclipse.jgit.revwalk.*",
+        "org.json4s.",
+        "org.json4s.JsonAST.",
+        "org.json4s.jackson.JsonMethods.*",
+        "org.scalatest.funspec.AnyFunSpec",
+        "scala.jdk.CollectionConverters.*",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "class MergeServiceSpec",
+        "class TestServer",
+        "def createConfrict",
+        "def initRepository"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/ssh/GitCommandSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/ssh/GitCommandSpec.scala",
+      "langage": "scala",
+      "lignes": 102,
+      "taille_bytes": 5457,
+      "entrees": [
+        "gitbucket.core.service.SystemSettingsService.SshAddress",
+        "org.apache.sshd.server.channel.ChannelSession",
+        "org.apache.sshd.server.shell.UnknownCommand",
+        "org.scalatest.matchers.should.Matchers",
+        "org.scalatest.wordspec.AnyWordSpec"
+      ],
+      "sorties": [
+        "class GitCommandFactorySpec",
+        "trait MockContext"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/util/StringUtilSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/util/StringUtilSpec.scala",
+      "langage": "scala",
+      "lignes": 179,
+      "taille_bytes": 5816,
+      "entrees": [
+        "org.scalatest.funspec.AnyFunSpec"
+      ],
+      "sorties": [
+        "class StringUtilSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/util/GitSpecUtil.scala": {
+      "fichier": "src/test/scala/gitbucket/core/util/GitSpecUtil.scala",
+      "langage": "scala",
+      "lignes": 134,
+      "taille_bytes": 4286,
+      "entrees": [
+        "java.io.File",
+        "java.nio.file._",
+        "org.apache.commons.io.FileUtils",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.dircache.DirCache",
+        "org.eclipse.jgit.errors._",
+        "org.eclipse.jgit.lib._",
+        "org.eclipse.jgit.merge._",
+        "org.eclipse.jgit.revwalk._",
+        "org.eclipse.jgit.treewalk._",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def _getPathObjectId",
+        "def createFile",
+        "def createTestRepository",
+        "def getFile",
+        "def mergeAndCommit",
+        "def withTestFolder",
+        "def withTestRepository"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/util/DirectorySpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/util/DirectorySpec.scala",
+      "langage": "scala",
+      "lignes": 16,
+      "taille_bytes": 415,
+      "entrees": [
+        "org.scalatest.funspec.AnyFunSpec"
+      ],
+      "sorties": [
+        "class DirectorySpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/util/HttpClientUtilSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/util/HttpClientUtilSpec.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 431,
+      "entrees": [
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class HttpClientUtilSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/util/FileUtilSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/util/FileUtilSpec.scala",
+      "langage": "scala",
+      "lignes": 15,
+      "taille_bytes": 383,
+      "entrees": [
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class FileUtilSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/util/JGitUtilSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/util/JGitUtilSpec.scala",
+      "langage": "scala",
+      "lignes": 522,
+      "taille_bytes": 19354,
+      "entrees": [
+        "gitbucket.core.util.GitSpecUtil.*",
+        "gitbucket.core.util.JGitUtil.BranchInfoSimple",
+        "org.apache.commons.io.IOUtils",
+        "org.eclipse.jgit.diff.DiffEntry.ChangeType",
+        "org.eclipse.jgit.lib.Constants",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "scala.jdk.CollectionConverters.*"
+      ],
+      "sorties": [
+        "class JGitUtilSpec",
+        "def list"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/util/ValidationsSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/util/ValidationsSpec.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 1384,
+      "entrees": [
+        "org.scalatest.funspec.AnyFunSpec",
+        "org.scalatra.i18n.Messages"
+      ],
+      "sorties": [
+        "class ValidationsSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/util/EditorConfigUtilSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/util/EditorConfigUtilSpec.scala",
+      "langage": "scala",
+      "lignes": 49,
+      "taille_bytes": 1609,
+      "entrees": [
+        "GitSpecUtil._",
+        "org.scalatest.funsuite.AnyFunSuite"
+      ],
+      "sorties": [
+        "class EditorConfigUtilSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/model/CommitStateSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/model/CommitStateSpec.scala",
+      "langage": "scala",
+      "lignes": 24,
+      "taille_bytes": 776,
+      "entrees": [
+        "gitbucket.core.model.CommitState._",
+        "org.scalatest.funspec.AnyFunSpec"
+      ],
+      "sorties": [
+        "class CommitStateSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/view/PaginationSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/view/PaginationSpec.scala",
+      "langage": "scala",
+      "lignes": 73,
+      "taille_bytes": 2502,
+      "entrees": [
+        "org.scalatest.funspec.AnyFunSpec"
+      ],
+      "sorties": [
+        "class PaginationSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/view/MarkdownSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/view/MarkdownSpec.scala",
+      "langage": "scala",
+      "lignes": 160,
+      "taille_bytes": 4793,
+      "entrees": [
+        "Markdown._",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "org.mockito.Mockito._",
+        "org.scalatest.funspec.AnyFunSpec"
+      ],
+      "sorties": [
+        "class MarkdownSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/view/AvatarImageProviderSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/view/AvatarImageProviderSpec.scala",
+      "langage": "scala",
+      "lignes": 217,
+      "taille_bytes": 7896,
+      "entrees": [
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.Account",
+        "gitbucket.core.service.RequestCache",
+        "gitbucket.core.service.SystemSettingsService.",
+        "java.text.SimpleDateFormat",
+        "java.util.Date",
+        "javax.servlet.http.",
+        "org.mockito.Mockito._",
+        "org.scalatest.funspec.AnyFunSpec",
+        "play.twirl.api.Html"
+      ],
+      "sorties": [
+        "class AvatarImageProviderImpl",
+        "class AvatarImageProviderSpec",
+        "def toHtml"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/service/RequestCache.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/scala/gitbucket/core/view/HelpersSpec.scala": {
+      "fichier": "src/test/scala/gitbucket/core/view/HelpersSpec.scala",
+      "langage": "scala",
+      "lignes": 142,
+      "taille_bytes": 4617,
+      "entrees": [
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "helpers._",
+        "java.util.Date",
+        "java.util.TimeZone",
+        "org.mockito.Mockito._",
+        "org.scalatest.funspec.AnyFunSpec"
+      ],
+      "sorties": [
+        "class HelpersSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/test/resources/logback-test.xml": {
+      "fichier": "src/test/resources/logback-test.xml",
+      "langage": "xml",
+      "lignes": 30,
+      "taille_bytes": 862,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/ScalatraBootstrap.scala": {
+      "fichier": "src/main/scala/ScalatraBootstrap.scala",
+      "langage": "scala",
+      "lignes": 73,
+      "taille_bytes": 2827,
+      "entrees": [
+        "gitbucket.core.controller.",
+        "gitbucket.core.service.SystemSettingsService",
+        "gitbucket.core.servlet._",
+        "gitbucket.core.util.Directory",
+        "java.util.EnumSet",
+        "javax.servlet._",
+        "org.scalatra._"
+      ],
+      "sorties": [
+        "class ScalatraBootstrap"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/service/SystemSettingsService.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/GitBucketCoreModule.scala": {
+      "fichier": "src/main/scala/gitbucket/core/GitBucketCoreModule.scala",
+      "langage": "scala",
+      "lignes": 129,
+      "taille_bytes": 5657,
+      "entrees": [
+        "JDBCUtil._",
+        "gitbucket.core.model.Activity",
+        "gitbucket.core.util.Directory.ActivityLog",
+        "gitbucket.core.util.JDBCUtil",
+        "io.github.gitbucket.solidbase.Solidbase",
+        "io.github.gitbucket.solidbase.migration.",
+        "io.github.gitbucket.solidbase.model.",
+        "java.io.FileOutputStream",
+        "java.nio.charset.StandardCharsets",
+        "java.sql.Connection",
+        "java.util.UUID",
+        "java.util.logging.Level",
+        "org.json4s.",
+        "org.json4s.jackson.Serialization",
+        "org.json4s.jackson.Serialization.write",
+        "scala.util.Using"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "src/test/scala/gitbucket/core/service/ServiceSpecBase.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/JsonFormat.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/JsonFormat.scala",
+      "langage": "scala",
+      "lignes": 84,
+      "taille_bytes": 2773,
+      "entrees": [
+        "java.time._",
+        "java.time.format.DateTimeFormatter",
+        "java.util.Date",
+        "org.json4s._",
+        "org.json4s.jackson.Serialization",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "def apiPathSerializer",
+        "def apply",
+        "def sshPathSerializer"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/main/scala/gitbucket/core/service/CommitsService.scala",
+        "src/main/scala/gitbucket/core/service/MergeService.scala",
+        "src/main/scala/gitbucket/core/service/PullRequestService.scala",
+        "src/main/scala/gitbucket/core/service/RepositoryCommitFileService.scala",
+        "src/test/scala/gitbucket/core/service/WebHookJsonFormatSpec.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "src/main/scala/gitbucket/core/api/CreateAnIssue.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateAnIssue.scala",
+      "langage": "scala",
+      "lignes": 12,
+      "taille_bytes": 240,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiLabel.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiLabel.scala",
+      "langage": "scala",
+      "lignes": 19,
+      "taille_bytes": 511,
+      "entrees": [
+        "gitbucket.core.model.Label",
+        "gitbucket.core.util.RepositoryName"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/UpdateARef.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/UpdateARef.scala",
+      "langage": "scala",
+      "lignes": 7,
+      "taille_bytes": 188,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateAFile.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateAFile.scala",
+      "langage": "scala",
+      "lignes": 13,
+      "taille_bytes": 274,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiWebhook.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiWebhook.scala",
+      "langage": "scala",
+      "lignes": 44,
+      "taille_bytes": 999,
+      "entrees": [
+        "gitbucket.core.model."
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/UpdateAUser.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/UpdateAUser.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 233,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiPullRequestReviewComment.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiPullRequestReviewComment.scala",
+      "langage": "scala",
+      "lignes": 68,
+      "taille_bytes": 2438,
+      "entrees": [
+        "gitbucket.core.model.CommitComment",
+        "gitbucket.core.util.RepositoryName",
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiPersonIdent.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiPersonIdent.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 516,
+      "entrees": [
+        "gitbucket.core.util.JGitUtil.CommitInfo",
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def author",
+        "def committer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateAStatus.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateAStatus.scala",
+      "langage": "scala",
+      "lignes": 26,
+      "taille_bytes": 998,
+      "entrees": [
+        "gitbucket.core.model.CommitState"
+      ],
+      "sorties": [
+        "def isValid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/AddLabelsToAnIssue.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/AddLabelsToAnIssue.scala",
+      "langage": "scala",
+      "lignes": 6,
+      "taille_bytes": 160,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateARef.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateARef.scala",
+      "langage": "scala",
+      "lignes": 7,
+      "taille_bytes": 185,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiPusher.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiPusher.scala",
+      "langage": "scala",
+      "lignes": 9,
+      "taille_bytes": 235,
+      "entrees": [
+        "gitbucket.core.model.Account"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiCommits.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiCommits.scala",
+      "langage": "scala",
+      "lignes": 134,
+      "taille_bytes": 3934,
+      "entrees": [
+        "ApiCommits._",
+        "gitbucket.core.model.Account",
+        "gitbucket.core.util.JGitUtil.",
+        "gitbucket.core.util.RepositoryName",
+        "org.eclipse.jgit.diff.DiffEntry.ChangeType"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiMilestone.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiMilestone.scala",
+      "langage": "scala",
+      "lignes": 49,
+      "taille_bytes": 1571,
+      "entrees": [
+        "gitbucket.core.model.",
+        "gitbucket.core.util.RepositoryName",
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/main/scala/gitbucket/core/service/MilestonesService.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiIssue.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiIssue.scala",
+      "langage": "scala",
+      "lignes": 64,
+      "taille_bytes": 1814,
+      "entrees": [
+        "gitbucket.core.model.Issue",
+        "gitbucket.core.util.RepositoryName",
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateAComment.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateAComment.scala",
+      "langage": "scala",
+      "lignes": 7,
+      "taille_bytes": 157,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateALabel.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateALabel.scala",
+      "langage": "scala",
+      "lignes": 18,
+      "taille_bytes": 353,
+      "entrees": [],
+      "sorties": [
+        "def isValid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiTag.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiTag.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 683,
+      "entrees": [
+        "gitbucket.core.util.RepositoryName"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiRelease.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiRelease.scala",
+      "langage": "scala",
+      "lignes": 42,
+      "taille_bytes": 1102,
+      "entrees": [
+        "gitbucket.core.model.",
+        "gitbucket.core.util.RepositoryName"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiGroup.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiGroup.scala",
+      "langage": "scala",
+      "lignes": 20,
+      "taille_bytes": 511,
+      "entrees": [
+        "gitbucket.core.model.Account",
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiCombinedCommitStatus.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiCombinedCommitStatus.scala",
+      "langage": "scala",
+      "lignes": 31,
+      "taille_bytes": 965,
+      "entrees": [
+        "gitbucket.core.model."
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiBranchProtectionRequest.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiBranchProtectionRequest.scala",
+      "langage": "scala",
+      "lignes": 21,
+      "taille_bytes": 616,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiError.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiError.scala",
+      "langage": "scala",
+      "lignes": 3,
+      "taille_bytes": 107,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiBranch.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiBranch.scala",
+      "langage": "scala",
+      "lignes": 33,
+      "taille_bytes": 876,
+      "entrees": [
+        "gitbucket.core.util.RepositoryName"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiRepository.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiRepository.scala",
+      "langage": "scala",
+      "lignes": 68,
+      "taille_bytes": 1901,
+      "entrees": [
+        "gitbucket.core.model.",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo"
+      ],
+      "sorties": [
+        "def apply",
+        "def forDummyPayload"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiCommitStatus.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiCommitStatus.scala",
+      "langage": "scala",
+      "lignes": 37,
+      "taille_bytes": 1077,
+      "entrees": [
+        "gitbucket.core.model.CommitStatus",
+        "gitbucket.core.util.RepositoryName",
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiRef.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiRef.scala",
+      "langage": "scala",
+      "lignes": 55,
+      "taille_bytes": 1689,
+      "entrees": [
+        "gitbucket.core.util.JGitUtil.TagInfo",
+        "gitbucket.core.util.RepositoryName",
+        "org.eclipse.jgit.lib.Ref"
+      ],
+      "sorties": [
+        "def fromRef",
+        "def fromTag"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiPlugin.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiPlugin.scala",
+      "langage": "scala",
+      "lignes": 17,
+      "taille_bytes": 378,
+      "entrees": [
+        "gitbucket.core.plugin.PluginInfo"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiPath.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiPath.scala",
+      "langage": "scala",
+      "lignes": 13,
+      "taille_bytes": 361,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiCommitListItem.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiCommitListItem.scala",
+      "langage": "scala",
+      "lignes": 44,
+      "taille_bytes": 1363,
+      "entrees": [
+        "gitbucket.core.api.ApiCommitListItem._",
+        "gitbucket.core.util.JGitUtil.CommitInfo",
+        "gitbucket.core.util.RepositoryName"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiBranchProtectionResponse.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiBranchProtectionResponse.scala",
+      "langage": "scala",
+      "lignes": 97,
+      "taille_bytes": 3145,
+      "entrees": [
+        "gitbucket.core.service.ProtectedBranchService",
+        "org.json4s._"
+      ],
+      "sorties": [
+        "def apply",
+        "def status"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/service/ProtectedBranchService.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiContents.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiContents.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1110,
+      "entrees": [
+        "gitbucket.core.util.JGitUtil.FileInfo",
+        "gitbucket.core.util.RepositoryName",
+        "java.util.Base64"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateAPullRequest.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateAPullRequest.scala",
+      "langage": "scala",
+      "lignes": 25,
+      "taille_bytes": 503,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateAGroup.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateAGroup.scala",
+      "langage": "scala",
+      "lignes": 8,
+      "taille_bytes": 143,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiEndPoint.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiEndPoint.scala",
+      "langage": "scala",
+      "lignes": 3,
+      "taille_bytes": 108,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiCommit.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiCommit.scala",
+      "langage": "scala",
+      "lignes": 50,
+      "taille_bytes": 1567,
+      "entrees": [
+        "gitbucket.core.util.JGitUtil",
+        "gitbucket.core.util.JGitUtil.CommitInfo",
+        "gitbucket.core.util.RepositoryName",
+        "java.util.Date",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.diff.DiffEntry"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateAMilestone.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateAMilestone.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 279,
+      "entrees": [
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def isValid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiUser.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiUser.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 1354,
+      "entrees": [
+        "gitbucket.core.model.Account",
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateAUser.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateAUser.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 217,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiComment.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiComment.scala",
+      "langage": "scala",
+      "lignes": 37,
+      "taille_bytes": 924,
+      "entrees": [
+        "gitbucket.core.model.IssueComment",
+        "gitbucket.core.util.RepositoryName",
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateARepository.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateARepository.scala",
+      "langage": "scala",
+      "lignes": 19,
+      "taille_bytes": 395,
+      "entrees": [],
+      "sorties": [
+        "def isValid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiPullRequest.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiPullRequest.scala",
+      "langage": "scala",
+      "lignes": 77,
+      "taille_bytes": 2816,
+      "entrees": [
+        "gitbucket.core.model.",
+        "java.util.Date"
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/AddACollaborator.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/AddACollaborator.scala",
+      "langage": "scala",
+      "lignes": 9,
+      "taille_bytes": 212,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/ApiRepositoryCollaborator.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/ApiRepositoryCollaborator.scala",
+      "langage": "scala",
+      "lignes": 6,
+      "taille_bytes": 106,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/MergeAPullRequest.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/MergeAPullRequest.scala",
+      "langage": "scala",
+      "lignes": 23,
+      "taille_bytes": 465,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateARelease.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateARelease.scala",
+      "langage": "scala",
+      "lignes": 10,
+      "taille_bytes": 217,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/FieldSerializable.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/FieldSerializable.scala",
+      "langage": "scala",
+      "lignes": 4,
+      "taille_bytes": 82,
+      "entrees": [],
+      "sorties": [
+        "trait FieldSerializable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/api/CreateARepositoryWebhook.scala": {
+      "fichier": "src/main/scala/gitbucket/core/api/CreateARepositoryWebhook.scala",
+      "langage": "scala",
+      "lignes": 35,
+      "taille_bytes": 884,
+      "entrees": [],
+      "sorties": [
+        "def isValid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/RepositoryService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/RepositoryService.scala",
+      "langage": "scala",
+      "lignes": 853,
+      "taille_bytes": 35251,
+      "entrees": [
+        "RepositoryService._",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.dateColumnType",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.plugin.PluginRegistry",
+        "gitbucket.core.util.Directory.",
+        "gitbucket.core.util.JGitUtil.FileInfo",
+        "gitbucket.core.util._",
+        "org.apache.commons.io.FileUtils",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.lib.",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def addCollaborator",
+        "def choiceTemplate",
+        "def deleteRepository",
+        "def getAllRepositories",
+        "def getCollaboratorUserNames",
+        "def getCollaborators",
+        "def getContentTemplate",
+        "def getForkedRepositories",
+        "def getPublicRepositories",
+        "def getRepository",
+        "def getRepositoryNamesOfUser",
+        "def getUserRepositories",
+        "def getVisibleRepositories",
+        "def hasDeveloperRole",
+        "def hasGuestRole",
+        "def hasOwnerRole",
+        "def httpUrl",
+        "def insertRepository",
+        "def isReadable",
+        "def isWritable",
+        "def openRepoUrl",
+        "def readmeFiles",
+        "def removeCollaborator",
+        "def removeCollaborators",
+        "def renameRepository",
+        "def saveRepositoryDefaultBranch",
+        "def saveRepositoryOptions",
+        "def splitPath",
+        "def sshUrl",
+        "def this",
+        "def updateLastActivityDate",
+        "trait RepositoryService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/PullRequestService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/PullRequestService.scala",
+      "langage": "scala",
+      "lignes": 841,
+      "taille_bytes": 30201,
+      "entrees": [
+        "PullRequestService.*",
+        "com.github.difflib.DiffUtils",
+        "com.github.difflib.patch.DeltaType",
+        "gitbucket.core.api.JsonFormat",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile.*",
+        "gitbucket.core.model.Profile.profile.blockingApi.*",
+        "gitbucket.core.model.activity.OpenPullRequestInfo",
+        "gitbucket.core.plugin.PluginRegistry",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.service.SystemSettingsService.SystemSettings",
+        "gitbucket.core.util.Directory.*",
+        "gitbucket.core.util.Implicits.*",
+        "gitbucket.core.util.JGitUtil",
+        "gitbucket.core.util.JGitUtil.",
+        "gitbucket.core.util.StringUtil.*",
+        "gitbucket.core.view",
+        "gitbucket.core.view.helpers",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.dircache.",
+        "org.eclipse.jgit.lib.",
+        "org.eclipse.jgit.revwalk.",
+        "org.eclipse.jgit.treewalk.",
+        "scala.jdk.CollectionConverters.*",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def createPullRequest",
+        "def createRevertCommit",
+        "def getPullRequest",
+        "def getPullRequestByRequestCommit",
+        "def getPullRequestComments",
+        "def getPullRequestCommitFromTo",
+        "def getPullRequestCountGroupByUser",
+        "def getPullRequestFromBranch",
+        "def getPullRequestsByBranch",
+        "def getPullRequestsByRequest",
+        "def getRequestCompareInfo",
+        "def getSingleDiff",
+        "def markMergeAndClosePullRequest",
+        "def parseCompareIdentifier",
+        "def updateBaseBranch",
+        "def updateCommitId",
+        "def updateDraftToPullRequest",
+        "def updateMergedCommitIds",
+        "def updatePullRequests",
+        "def updatePullRequestsByApi",
+        "trait PullRequestService"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/api/JsonFormat.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/ActivityService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/ActivityService.scala",
+      "langage": "scala",
+      "lignes": 98,
+      "taille_bytes": 3029,
+      "entrees": [
+        "ActivityService._",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.Activity",
+        "gitbucket.core.util.ConfigUtil",
+        "gitbucket.core.util.Directory._",
+        "java.io.FileOutputStream",
+        "java.nio.charset.StandardCharsets",
+        "org.apache.commons.io.input.ReversedLinesFileReader",
+        "org.json4s._",
+        "org.json4s.jackson.Serialization",
+        "org.json4s.jackson.Serialization.",
+        "scala.collection.mutable.ListBuffer",
+        "scala.language.reflectiveCalls",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def getActivitiesByUser",
+        "def getRecentActivitiesByRepos",
+        "def getRecentPublicActivities",
+        "def isNewsFeedEnabled",
+        "def recordActivity",
+        "trait ActivityService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/CommitStatusService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/CommitStatusService.scala",
+      "langage": "scala",
+      "lignes": 96,
+      "taille_bytes": 3393,
+      "entrees": [
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.dateColumnType",
+        "gitbucket.core.model.Profile.profile.blockingApi._"
+      ],
+      "sorties": [
+        "def createCommitStatus",
+        "def getCommitStatus",
+        "def getCommitStatusWithSummary",
+        "def getCommitStatuses",
+        "def getCommitStatusesWithCreator",
+        "def getRecentStatusContexts",
+        "trait CommitStatusService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/CommitsService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/CommitsService.scala",
+      "langage": "scala",
+      "lignes": 171,
+      "taille_bytes": 5375,
+      "entrees": [
+        "gitbucket.core.api.JsonFormat",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.dateColumnType",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.model.activity.",
+        "gitbucket.core.plugin.PluginRegistry",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.util.",
+        "gitbucket.core.util.Directory._",
+        "java.io.File",
+        "org.apache.commons.io.FileUtils"
+      ],
+      "sorties": [
+        "def createCommitComment",
+        "def deleteCommitComment",
+        "def getCommitComment",
+        "def getCommitComments",
+        "def loadCommitCommentDiff",
+        "def saveCommitCommentDiff",
+        "def updateCommitComment",
+        "def updateCommitCommentPosition",
+        "trait CommitsService"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/api/JsonFormat.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/SystemSettingsService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/SystemSettingsService.scala",
+      "langage": "scala",
+      "lignes": 497,
+      "taille_bytes": 19963,
+      "entrees": [
+        "com.nimbusds.jose.JWSAlgorithm",
+        "com.nimbusds.oauth2.sdk.auth.Secret",
+        "com.nimbusds.oauth2.sdk.id.",
+        "gitbucket.core.service.SystemSettingsService.",
+        "gitbucket.core.util.ConfigUtil._",
+        "gitbucket.core.util.Directory._",
+        "javax.servlet.http.HttpServletRequest",
+        "scala.reflect.ClassTag",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def apply",
+        "def baseUrl",
+        "def getUrl",
+        "def isDefaultPort",
+        "def loadSystemSettings",
+        "def parseBaseUrl",
+        "def saveSystemSettings",
+        "def sshBindAddress",
+        "def sshPublicAddress",
+        "def sshUrl",
+        "trait SystemSettingsService"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/main/scala/ScalatraBootstrap.scala",
+        "src/main/scala/gitbucket/core/ssh/SshServerListener.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/ProtectedBranchService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/ProtectedBranchService.scala",
+      "langage": "scala",
+      "lignes": 242,
+      "taille_bytes": 8716,
+      "entrees": [
+        "ProtectedBranchService._",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile.*",
+        "gitbucket.core.model.Profile.profile.blockingApi.*",
+        "gitbucket.core.plugin.ReceiveHook",
+        "gitbucket.core.util.SyntaxSugars.*",
+        "org.eclipse.jgit.transport."
+      ],
+      "sorties": [
+        "class ProtectedBranchReceiveHook",
+        "def disableBranchProtection",
+        "def disabled",
+        "def enableBranchProtection",
+        "def getProtectedBranchInfo",
+        "def getProtectedBranchList",
+        "def getStopReason",
+        "def isAdministrator",
+        "def isPushAllowed",
+        "def needStatusCheck",
+        "def unSuccessedContexts",
+        "trait ProtectedBranchService"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/main/scala/gitbucket/core/api/ApiBranchProtectionResponse.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/WebHookService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/WebHookService.scala",
+      "langage": "scala",
+      "lignes": 899,
+      "taille_bytes": 31556,
+      "entrees": [
+        "ExecutionContext.Implicits.global",
+        "WebHookService._",
+        "fr.brouillard.oss.security.xhub.XHub",
+        "fr.brouillard.oss.security.xhub.XHub.",
+        "gitbucket.core.api._",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.model.WebHookContentType",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.service.SystemSettingsService.SystemSettings",
+        "gitbucket.core.util.",
+        "gitbucket.core.util.JGitUtil.CommitInfo",
+        "gitbucket.core.view.helpers.getApiMilestone",
+        "org.apache.http.HttpRequest",
+        "org.apache.http.HttpResponse",
+        "org.apache.http.NameValuePair",
+        "org.apache.http.client.entity.EntityBuilder",
+        "org.apache.http.client.entity.UrlEncodedFormEntity",
+        "org.apache.http.client.methods.HttpPost",
+        "org.apache.http.client.utils.URLEncodedUtils",
+        "org.apache.http.entity.ContentType",
+        "org.apache.http.impl.client.HttpClientBuilder",
+        "org.apache.http.message.BasicNameValuePair",
+        "org.apache.http.protocol.HttpContext",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.lib.ObjectId",
+        "org.slf4j.LoggerFactory",
+        "scala.concurrent._",
+        "scala.util."
+      ],
+      "sorties": [
+        "def addAccountWebHook",
+        "def addWebHook",
+        "def addXHubSignature",
+        "def apply",
+        "def callIssueCommentWebHook",
+        "def callIssuesWebHook",
+        "def callPullRequestReviewCommentWebHook",
+        "def callPullRequestWebHook",
+        "def callPullRequestWebHookByRequestBranch",
+        "def callWebHook",
+        "def callWebHookOf",
+        "def createDummyPayload",
+        "def deleteAccountWebHook",
+        "def deleteWebHook",
+        "def deleteWebHookById",
+        "def getAccountWebHook",
+        "def getAccountWebHooks",
+        "def getAccountWebHooksByEvent",
+        "def getPullRequestsByRequestForWebhook",
+        "def getWebHook",
+        "def getWebHookById",
+        "def getWebHooks",
+        "def getWebHooksByEvent",
+        "def postContent",
+        "def process",
+        "def updateAccountWebHook",
+        "def updateWebHook",
+        "def updateWebHookByApi",
+        "trait WebHookIssueCommentService",
+        "trait WebHookPayload",
+        "trait WebHookPullRequestReviewCommentService",
+        "trait WebHookPullRequestService",
+        "trait WebHookService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/AccountFederationService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/AccountFederationService.scala",
+      "langage": "scala",
+      "lignes": 90,
+      "taille_bytes": 3497,
+      "entrees": [
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile.",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.util.SyntaxSugars.~",
+        "org.slf4j.LoggerFactory"
+      ],
+      "sorties": [
+        "def createAccountFederation",
+        "def findAvailableUserName",
+        "def getAccountByFederation",
+        "def getOrCreateFederatedUser",
+        "def hasAccountFederation",
+        "trait AccountFederationService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/MergeService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/MergeService.scala",
+      "langage": "scala",
+      "lignes": 833,
+      "taille_bytes": 31401,
+      "entrees": [
+        "MergeService.*",
+        "gitbucket.core.api.JsonFormat",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile.profile.blockingApi.*",
+        "gitbucket.core.model.activity.",
+        "gitbucket.core.plugin.",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.service.SystemSettingsService.SystemSettings",
+        "gitbucket.core.service.WebHookService.WebHookPushPayload",
+        "gitbucket.core.util.",
+        "gitbucket.core.util.Directory._",
+        "gitbucket.core.util.JGitUtil.CommitInfo",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.errors.NoMergeBaseException",
+        "org.eclipse.jgit.lib.",
+        "org.eclipse.jgit.merge.",
+        "org.eclipse.jgit.revwalk.",
+        "org.eclipse.jgit.transport.",
+        "scala.jdk.CollectionConverters.*",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "class MergeCacheInfo",
+        "def _cloneCommit",
+        "def _updateBranch",
+        "def checkConflict",
+        "def checkConflictCache",
+        "def checkConflictForce",
+        "def createMergeCommit",
+        "def fetchAsPullRequest",
+        "def merge",
+        "def mergePullRequest",
+        "def mergeWithMergeCommit",
+        "def mergeWithRebase",
+        "def mergeWithSquash",
+        "def pullRemote",
+        "def rebase",
+        "def squash",
+        "def tryMergeRemote",
+        "def updateRefs",
+        "trait MergeService"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/api/JsonFormat.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/AccessTokenService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/AccessTokenService.scala",
+      "langage": "scala",
+      "lignes": 59,
+      "taille_bytes": 2044,
+      "entrees": [
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.util.StringUtil",
+        "java.security.SecureRandom"
+      ],
+      "sorties": [
+        "def deleteAccessToken",
+        "def generateAccessToken",
+        "def getAccessTokens",
+        "def getAccountByAccessToken",
+        "def hasAccessToken",
+        "def makeAccessTokenString",
+        "def tokenToHash",
+        "trait AccessTokenService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/OpenIDConnectService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/OpenIDConnectService.scala",
+      "langage": "scala",
+      "lignes": 222,
+      "taille_bytes": 7678,
+      "entrees": [
+        "com.nimbusds.jose.",
+        "com.nimbusds.jose.JWSAlgorithm.Family",
+        "com.nimbusds.jose.proc.BadJOSEException",
+        "com.nimbusds.jose.util.DefaultResourceRetriever",
+        "com.nimbusds.jwt.JWT",
+        "com.nimbusds.oauth2.sdk._",
+        "com.nimbusds.oauth2.sdk.auth.ClientSecretBasic",
+        "com.nimbusds.oauth2.sdk.id.",
+        "com.nimbusds.openid.connect.sdk.",
+        "com.nimbusds.openid.connect.sdk.claims.IDTokenClaimsSet",
+        "com.nimbusds.openid.connect.sdk.op.OIDCProviderMetadata",
+        "com.nimbusds.openid.connect.sdk.validators.IDTokenValidator",
+        "gitbucket.core.model.Account",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "java.net.URI",
+        "org.slf4j.LoggerFactory",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def authenticate",
+        "def createOIDCAuthenticationRequest",
+        "def createOIDLogoutRequest",
+        "def obtainOIDCToken",
+        "def validateOIDCAuthenticationResponse",
+        "def validateOIDCTokenResponse",
+        "trait OpenIDConnectService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/GpgKeyService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/GpgKeyService.scala",
+      "langage": "scala",
+      "lignes": 28,
+      "taille_bytes": 1168,
+      "entrees": [
+        "gitbucket.core.model.GpgKey",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "java.io.ByteArrayInputStream",
+        "org.bouncycastle.bcpg.ArmoredInputStream",
+        "org.bouncycastle.openpgp.PGPPublicKeyRing",
+        "org.bouncycastle.openpgp.bc.BcPGPObjectFactory",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def addGpgPublicKey",
+        "def deleteGpgPublicKey",
+        "def getGpgPublicKeys",
+        "trait GpgKeyService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/HandleCommentService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/HandleCommentService.scala",
+      "langage": "scala",
+      "lignes": 187,
+      "taille_bytes": 6919,
+      "entrees": [
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.model.activity.",
+        "gitbucket.core.plugin.",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.util.Implicits._"
+      ],
+      "sorties": [
+        "def deleteCommentByApi",
+        "def handleComment",
+        "def updateCommentByApi",
+        "trait HandleCommentService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/IssuesService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/IssuesService.scala",
+      "langage": "scala",
+      "lignes": 1207,
+      "taille_bytes": 43934,
+      "entrees": [
+        "IssuesService._",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.dateColumnType",
+        "gitbucket.core.model.Profile.profile._",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.plugin.PluginRegistry",
+        "gitbucket.core.util.Implicits._",
+        "gitbucket.core.util.JGitUtil.CommitInfo",
+        "gitbucket.core.util.StringUtil._",
+        "gitbucket.core.util.SyntaxSugars._",
+        "javax.servlet.http.HttpServletRequest",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def apply",
+        "def changeIssueToPullRequest",
+        "def closeIssuesFromMessage",
+        "def condQuery",
+        "def countIssue",
+        "def countIssueGroupByLabels",
+        "def countIssueGroupByPriorities",
+        "def createComment",
+        "def createIssueComment",
+        "def createReferComment",
+        "def deleteAllIssueAssignees",
+        "def deleteAllIssueLabels",
+        "def deleteComment",
+        "def deleteIssueAssignee",
+        "def deleteIssueLabel",
+        "def getAssignableUserNames",
+        "def getComment",
+        "def getCommentForApi",
+        "def getComments",
+        "def getCommentsForApi",
+        "def getIssue",
+        "def getIssueAssignees",
+        "def getIssueLabel",
+        "def getIssueLabels",
+        "def getMergedComment",
+        "def getOpenIssues",
+        "def insertIssue",
+        "def isEmpty",
+        "def nonEmpty",
+        "def page",
+        "def registerIssueAssignee",
+        "def registerIssueLabel",
+        "def searchIssue",
+        "def searchIssueByApi",
+        "def searchIssuesByKeyword",
+        "def searchPullRequestByApi",
+        "def toFilterString",
+        "def toURL",
+        "def updateClosed",
+        "def updateComment",
+        "def updateIssue",
+        "def updateMilestoneId",
+        "def updatePriorityId",
+        "trait IssuesService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/RepositoryCreationService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/RepositoryCreationService.scala",
+      "langage": "scala",
+      "lignes": 311,
+      "taille_bytes": 11535,
+      "entrees": [
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile.profile.blockingApi.*",
+        "gitbucket.core.model.activity.",
+        "gitbucket.core.plugin.PluginRegistry",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.servlet.Database",
+        "gitbucket.core.util.",
+        "gitbucket.core.util.Directory.*",
+        "java.nio.file.Files",
+        "java.util.concurrent.ConcurrentHashMap",
+        "org.apache.commons.io.FileUtils",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.dircache.DirCache",
+        "org.eclipse.jgit.lib.",
+        "scala.concurrent.ExecutionContext.Implicits.global",
+        "scala.concurrent.Future",
+        "scala.jdk.CollectionConverters._",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def canCreateRepository",
+        "def createRepository",
+        "def endCreation",
+        "def forkRepository",
+        "def getCreationError",
+        "def insertDefaultLabels",
+        "def insertDefaultPriorities",
+        "def isCreating",
+        "def startCreation",
+        "trait RepositoryCreationService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/IssueCreationService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/IssueCreationService.scala",
+      "langage": "scala",
+      "lignes": 98,
+      "taille_bytes": 3253,
+      "entrees": [
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.model.activity.CreateIssueInfo",
+        "gitbucket.core.plugin.PluginRegistry",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.util.Implicits._"
+      ],
+      "sorties": [
+        "def createIssue",
+        "trait IssueCreationService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/RepositorySearchService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/RepositorySearchService.scala",
+      "langage": "scala",
+      "lignes": 159,
+      "taille_bytes": 5452,
+      "entrees": [
+        "Directory._",
+        "RepositorySearchService._",
+        "gitbucket.core.model.Issue",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.util.StringUtil",
+        "gitbucket.core.util._",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.lib.FileMode",
+        "org.eclipse.jgit.revwalk.RevWalk",
+        "org.eclipse.jgit.treewalk.TreeWalk",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def countFiles",
+        "def countIssues",
+        "def countWikiPages",
+        "def getHighlightText",
+        "def searchFiles",
+        "def searchIssues",
+        "def searchRepositoryFiles",
+        "def searchWikiPages",
+        "trait RepositorySearchService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/PaginationHelper.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/PaginationHelper.scala",
+      "langage": "scala",
+      "lignes": 15,
+      "taille_bytes": 263,
+      "entrees": [
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "def page"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/LabelsService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/LabelsService.scala",
+      "langage": "scala",
+      "lignes": 46,
+      "taille_bytes": 1783,
+      "entrees": [
+        "gitbucket.core.model.Label",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.util.StringUtil"
+      ],
+      "sorties": [
+        "def createLabel",
+        "def deleteLabel",
+        "def getLabel",
+        "def getLabels",
+        "def updateLabel",
+        "trait LabelsService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/CustomFieldsService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/CustomFieldsService.scala",
+      "langage": "scala",
+      "lignes": 97,
+      "taille_bytes": 3184,
+      "entrees": [
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.profile.blockingApi._"
+      ],
+      "sorties": [
+        "def createCustomField",
+        "def deleteCustomField",
+        "def getCustomField",
+        "def getCustomFieldValues",
+        "def getCustomFields",
+        "def getCustomFieldsWithValue",
+        "def insertOrUpdateCustomFieldValue",
+        "def updateCustomField",
+        "trait CustomFieldsService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/AccountService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/AccountService.scala",
+      "langage": "scala",
+      "lignes": 371,
+      "taille_bytes": 13200,
+      "entrees": [
+        "StringUtil._",
+        "com.nimbusds.jose.",
+        "com.nimbusds.jose.crypto.",
+        "com.nimbusds.jwt.",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.dateColumnType",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.plugin.PluginRegistry",
+        "gitbucket.core.service.SystemSettingsService.SystemSettings",
+        "gitbucket.core.util.",
+        "java.security.SecureRandom",
+        "org.slf4j.LoggerFactory"
+      ],
+      "sorties": [
+        "def addAccountPreference",
+        "def addOrUpdateAccountPreference",
+        "def authenticate",
+        "def createAccount",
+        "def createGroup",
+        "def decodeResetPasswordToken",
+        "def generateResetPasswordToken",
+        "def getAccountByMailAddress",
+        "def getAccountByUserName",
+        "def getAccountByUserNameIgnoreCase",
+        "def getAccountExtraMailAddresses",
+        "def getAccountPreference",
+        "def getAccountsByUserNames",
+        "def getAllUsers",
+        "def getGroupMembers",
+        "def getGroupNames",
+        "def getGroupsByUserName",
+        "def isLastAdministrator",
+        "def removeUser",
+        "def removeUserRelatedData",
+        "def suspendAccount",
+        "def updateAccount",
+        "def updateAccountExtraMailAddresses",
+        "def updateAccountPreference",
+        "def updateAvatarImage",
+        "def updateGroup",
+        "def updateGroupMembers",
+        "def updateLastLoginDate",
+        "trait AccountService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/ReleaseService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/ReleaseService.scala",
+      "langage": "scala",
+      "lignes": 113,
+      "taille_bytes": 3514,
+      "entrees": [
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.dateColumnType",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.util.JGitUtil"
+      ],
+      "sorties": [
+        "def createRelease",
+        "def createReleaseAsset",
+        "def deleteRelease",
+        "def deleteReleaseAssets",
+        "def getRelease",
+        "def getReleaseAsset",
+        "def getReleaseAssets",
+        "def getReleaseAssetsMap",
+        "def getReleases",
+        "def updateRelease",
+        "trait ReleaseService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/RequestCache.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/RequestCache.scala",
+      "langage": "scala",
+      "lignes": 64,
+      "taille_bytes": 2027,
+      "entrees": [
+        "Implicits.request2Session",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile.",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.util.Implicits"
+      ],
+      "sorties": [
+        "def getAccountByMailAddressFromCache",
+        "def getAccountByUserNameFromCache",
+        "def getIssueFromCache",
+        "def getRepositoryInfoFromCache",
+        "trait RequestCache"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "src/test/scala/gitbucket/core/view/AvatarImageProviderSpec.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/PrioritiesService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/PrioritiesService.scala",
+      "langage": "scala",
+      "lignes": 102,
+      "taille_bytes": 3155,
+      "entrees": [
+        "gitbucket.core.model.Priority",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.profile.blockingApi._"
+      ],
+      "sorties": [
+        "def createPriority",
+        "def deletePriority",
+        "def getDefaultPriority",
+        "def getPriorities",
+        "def getPriority",
+        "def reorderPriorities",
+        "def setDefaultPriority",
+        "def updatePriority",
+        "trait PrioritiesService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/MilestonesService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/MilestonesService.scala",
+      "langage": "scala",
+      "lignes": 90,
+      "taille_bytes": 3205,
+      "entrees": [
+        "gitbucket.core.api.ApiMilestone",
+        "gitbucket.core.model.Milestone",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.dateColumnType",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo"
+      ],
+      "sorties": [
+        "def closeMilestone",
+        "def createMilestone",
+        "def deleteMilestone",
+        "def getApiMilestone",
+        "def getMilestone",
+        "def getMilestones",
+        "def getMilestonesWithIssueCount",
+        "def openMilestone",
+        "def updateMilestone",
+        "trait MilestonesService"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/api/ApiMilestone.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/RepositoryCommitFileService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/RepositoryCommitFileService.scala",
+      "langage": "scala",
+      "lignes": 272,
+      "taille_bytes": 9408,
+      "entrees": [
+        "gitbucket.core.api.JsonFormat",
+        "gitbucket.core.model.",
+        "gitbucket.core.model.Profile.profile.blockingApi.*",
+        "gitbucket.core.model.activity.",
+        "gitbucket.core.plugin.PluginRegistry",
+        "gitbucket.core.service.SystemSettingsService.SystemSettings",
+        "gitbucket.core.service.WebHookService.WebHookPushPayload",
+        "gitbucket.core.util.",
+        "gitbucket.core.util.Directory.getRepositoryDir",
+        "gitbucket.core.util.JGitUtil.CommitInfo",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.dircache.",
+        "org.eclipse.jgit.lib.*",
+        "org.eclipse.jgit.transport.",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def commitFile",
+        "def commitFiles",
+        "trait RepositoryCommitFileService"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/api/JsonFormat.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/WikiService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/WikiService.scala",
+      "langage": "scala",
+      "lignes": 358,
+      "taille_bytes": 11796,
+      "entrees": [
+        "WikiService._",
+        "gitbucket.core.controller.Context",
+        "gitbucket.core.model.Account",
+        "gitbucket.core.service.RepositoryService.RepositoryInfo",
+        "gitbucket.core.util._",
+        "java.io.ByteArrayInputStream",
+        "java.util.Date",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.api.errors.PatchFormatException",
+        "org.eclipse.jgit.diff.",
+        "org.eclipse.jgit.dircache.DirCache",
+        "org.eclipse.jgit.lib._",
+        "org.eclipse.jgit.patch._",
+        "org.eclipse.jgit.treewalk.CanonicalTreeParser",
+        "scala.jdk.CollectionConverters._",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "def createWikiRepository",
+        "def deleteWikiPage",
+        "def getWikiBranch",
+        "def getWikiPage",
+        "def getWikiPageList",
+        "def revertWikiPage",
+        "def saveWikiPage",
+        "def wikiHttpUrl",
+        "def wikiSshUrl",
+        "trait WikiService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/SshKeyService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/SshKeyService.scala",
+      "langage": "scala",
+      "lignes": 21,
+      "taille_bytes": 778,
+      "entrees": [
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.model.SshKey"
+      ],
+      "sorties": [
+        "def addPublicKey",
+        "def deletePublicKey",
+        "def getAllKeys",
+        "def getPublicKeys",
+        "trait SshKeyService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/service/DeployKeyService.scala": {
+      "fichier": "src/main/scala/gitbucket/core/service/DeployKeyService.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 1129,
+      "entrees": [
+        "gitbucket.core.model.DeployKey",
+        "gitbucket.core.model.Profile._",
+        "gitbucket.core.model.Profile.profile.blockingApi._"
+      ],
+      "sorties": [
+        "def addDeployKey",
+        "def deleteDeployKey",
+        "def getAllDeployKeys",
+        "def getDeployKeys",
+        "trait DeployKeyService"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/ssh/SshServerListener.scala": {
+      "fichier": "src/main/scala/gitbucket/core/ssh/SshServerListener.scala",
+      "langage": "scala",
+      "lignes": 83,
+      "taille_bytes": 2756,
+      "entrees": [
+        "gitbucket.core.service.SystemSettingsService",
+        "gitbucket.core.service.SystemSettingsService.SshAddress",
+        "gitbucket.core.util.Directory",
+        "java.util.concurrent.atomic.AtomicReference",
+        "javax.servlet.",
+        "org.apache.sshd.server.keyprovider.SimpleGeneratorHostKeyProvider",
+        "org.slf4j.LoggerFactory"
+      ],
+      "sorties": [
+        "class SshServerListener",
+        "def start",
+        "def stop"
+      ],
+      "appelle": [
+        "src/main/scala/gitbucket/core/service/SystemSettingsService.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/ssh/GitCommand.scala": {
+      "fichier": "src/main/scala/gitbucket/core/ssh/GitCommand.scala",
+      "langage": "scala",
+      "lignes": 273,
+      "taille_bytes": 9667,
+      "entrees": [
+        "Directory._",
+        "GitCommand._",
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.plugin.",
+        "gitbucket.core.service.",
+        "gitbucket.core.service.SystemSettingsService.SshAddress",
+        "gitbucket.core.servlet.",
+        "gitbucket.core.ssh.PublicKeyAuthenticator.AuthType",
+        "gitbucket.core.util.Directory",
+        "java.io.",
+        "org.apache.sshd.server.",
+        "org.apache.sshd.server.channel.ChannelSession",
+        "org.apache.sshd.server.command.",
+        "org.apache.sshd.server.session.",
+        "org.apache.sshd.server.shell.UnknownCommand",
+        "org.eclipse.jgit.api.Git",
+        "org.eclipse.jgit.errors.RepositoryNotFoundException",
+        "org.eclipse.jgit.transport.",
+        "org.slf4j.LoggerFactory",
+        "scala.util.Using"
+      ],
+      "sorties": [
+        "abstract class DefaultGitCommand",
+        "abstract class GitCommand",
+        "class DefaultGitReceivePack",
+        "class DefaultGitUploadPack",
+        "class GitCommandFactory",
+        "class PluginGitReceivePack",
+        "class PluginGitUploadPack"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/ssh/SshUtil.scala": {
+      "fichier": "src/main/scala/gitbucket/core/ssh/SshUtil.scala",
+      "langage": "scala",
+      "lignes": 37,
+      "taille_bytes": 999,
+      "entrees": [
+        "java.security.PublicKey",
+        "java.util.Base64",
+        "org.apache.sshd.common.config.keys.KeyUtils",
+        "org.apache.sshd.common.util.buffer.ByteArrayBuffer",
+        "org.eclipse.jgit.lib.Constants",
+        "org.slf4j.LoggerFactory"
+      ],
+      "sorties": [
+        "def fingerPrint",
+        "def str2PublicKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/main/scala/gitbucket/core/ssh/PublicKeyAuthenticator.scala": {
+      "fichier": "src/main/scala/gitbucket/core/ssh/PublicKeyAuthenticator.scala",
+      "langage": "scala",
+      "lignes": 115,
+      "taille_bytes": 4002,
+      "entrees": [
+        "gitbucket.core.model.Profile.profile.blockingApi._",
+        "gitbucket.core.service.",
+        "gitbucket.core.servlet.Database",
+        "gitbucket.core.ssh.PublicKeyAuthenticator.AuthType",
+        "java.security.PublicKey",
+        "org.apache.sshd.common.AttributeRepository",
+        "org.apache.sshd.server.auth.pubkey.PublickeyAuthenticator",
+        "org.apache.sshd.server.session.ServerSession",
+        "org.slf4j.LoggerFactory"
+      ],
+      "sorties": [
+        "class PublicKeyAuthenticator",
+        "def getAuthType",
+        "def putAuthType",
+        "def userName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "src/test/scala/gitbucket/core/api/ApiIntegrationTest.scala",
+      "vers": "src/test/scala/gitbucket/core/TestingGitBucketServer.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/test/scala/gitbucket/core/service/WebHookJsonFormatSpec.scala",
+      "vers": "src/main/scala/gitbucket/core/api/JsonFormat.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/test/scala/gitbucket/core/service/ServiceSpecBase.scala",
+      "vers": "src/main/scala/gitbucket/core/GitBucketCoreModule.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/test/scala/gitbucket/core/view/AvatarImageProviderSpec.scala",
+      "vers": "src/main/scala/gitbucket/core/service/RequestCache.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/main/scala/ScalatraBootstrap.scala",
+      "vers": "src/main/scala/gitbucket/core/service/SystemSettingsService.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/main/scala/gitbucket/core/api/ApiBranchProtectionResponse.scala",
+      "vers": "src/main/scala/gitbucket/core/service/ProtectedBranchService.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/main/scala/gitbucket/core/service/PullRequestService.scala",
+      "vers": "src/main/scala/gitbucket/core/api/JsonFormat.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/main/scala/gitbucket/core/service/CommitsService.scala",
+      "vers": "src/main/scala/gitbucket/core/api/JsonFormat.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/main/scala/gitbucket/core/service/MergeService.scala",
+      "vers": "src/main/scala/gitbucket/core/api/JsonFormat.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/main/scala/gitbucket/core/service/MilestonesService.scala",
+      "vers": "src/main/scala/gitbucket/core/api/ApiMilestone.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/main/scala/gitbucket/core/service/RepositoryCommitFileService.scala",
+      "vers": "src/main/scala/gitbucket/core/api/JsonFormat.scala",
+      "type": "interne"
+    },
+    {
+      "de": "src/main/scala/gitbucket/core/ssh/SshServerListener.scala",
+      "vers": "src/main/scala/gitbucket/core/service/SystemSettingsService.scala",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "feuille → 'src/main/scala/gitbucket/core/api/JsonFormat.scala' (in=5)"
+  ]
+}

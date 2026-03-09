@@ -1,0 +1,1705 @@
+{
+  "meta": {
+    "projet": "nim",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "yaml": 1,
+      "nim": 115,
+      "unknown": 3,
+      "shell": 1
+    },
+    "official_runtime": true
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 16,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 2,
+    "fichier_plus_appele": "nimsuggest/tests/module_20265.nim"
+  },
+  "noeuds": {
+    "azure-pipelines.yml": {
+      "fichier": "azure-pipelines.yml",
+      "langage": "yaml",
+      "lignes": 172,
+      "taille_bytes": 5839,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "koch.nim": {
+      "fichier": "koch.nim",
+      "langage": "nim",
+      "lignes": 791,
+      "taille_bytes": 32190,
+      "entrees": [
+        "std/[assertions",
+        "std/[os",
+        "tools"
+      ],
+      "sorties": [
+        "const VersionAsString",
+        "const buildScript",
+        "const nimFFI",
+        "const zippyTests",
+        "interface with"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "koch.nim.cfg": {
+      "fichier": "koch.nim.cfg",
+      "langage": "unknown",
+      "lignes": 7,
+      "taille_bytes": 161,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "build_all.sh": {
+      "fichier": "build_all.sh",
+      "langage": "shell",
+      "lignes": 17,
+      "taille_bytes": 545,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tester.nim": {
+      "fichier": "nimsuggest/tester.nim",
+      "langage": "nim",
+      "lignes": 394,
+      "taille_bytes": 11650,
+      "entrees": [
+        "os",
+        "sequtils",
+        "std/compilesettings"
+      ],
+      "sorties": [
+        "const cursorMarker",
+        "const libpath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/nimsuggest.nim.cfg": {
+      "fichier": "nimsuggest/nimsuggest.nim.cfg",
+      "langage": "unknown",
+      "lignes": 27,
+      "taille_bytes": 439,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/crashtester.nim": {
+      "fichier": "nimsuggest/crashtester.nim",
+      "langage": "nim",
+      "lignes": 52,
+      "taille_bytes": 1273,
+      "entrees": [
+        "strutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/sexp.nim": {
+      "fichier": "nimsuggest/sexp.nim",
+      "langage": "nim",
+      "lignes": 657,
+      "taille_bytes": 18049,
+      "entrees": [
+        "std/[assertions",
+        "std/private/decode_helpers"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/procmonitor.nim": {
+      "fichier": "nimsuggest/procmonitor.nim",
+      "langage": "nim",
+      "lignes": 34,
+      "taille_bytes": 882,
+      "entrees": [
+        "os",
+        "posix",
+        "posix_utils",
+        "winlean"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "nimsuggest/nimsuggest.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/nimsuggest.nim": {
+      "fichier": "nimsuggest/nimsuggest.nim",
+      "langage": "nim",
+      "lignes": 1406,
+      "taille_bytes": 48891,
+      "entrees": [
+        "../dist/checksums/src/checksums/sha1",
+        "algorithm",
+        "checksums/sha1",
+        "compiler",
+        "compiler/renderer",
+        "compiler/sempass2",
+        "compiler/trees",
+        "compiler/types",
+        "compiler/wordrecg",
+        "posix",
+        "procmonitor",
+        "std/typedthreads",
+        "strformat",
+        "strutils",
+        "tables",
+        "times",
+        "winlean"
+      ],
+      "sorties": [
+        "const DummyEof",
+        "const HighestSuggestProtocolVersion",
+        "const Usage",
+        "export AbsoluteFile",
+        "export IdeCmd",
+        "export Suggest",
+        "func deduplicateSymInfoPair",
+        "func isInRange",
+        "type NimSuggest"
+      ],
+      "appelle": [
+        "nimsuggest/procmonitor.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tv3_typeDefinition.nim": {
+      "fichier": "nimsuggest/tests/tv3_typeDefinition.nim",
+      "langage": "nim",
+      "lignes": 32,
+      "taille_bytes": 574,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tdot1.nim": {
+      "fichier": "nimsuggest/tests/tdot1.nim",
+      "langage": "nim",
+      "lignes": 14,
+      "taille_bytes": 304,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tv3_con.nim": {
+      "fichier": "nimsuggest/tests/tv3_con.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 290,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tdef2.nim": {
+      "fichier": "nimsuggest/tests/tdef2.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 714,
+      "entrees": [
+        "fixtures/mstrutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tconcept2.nim": {
+      "fichier": "nimsuggest/tests/tconcept2.nim",
+      "langage": "nim",
+      "lignes": 15,
+      "taille_bytes": 642,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tuse.nim": {
+      "fichier": "nimsuggest/tests/tuse.nim",
+      "langage": "nim",
+      "lignes": 22,
+      "taille_bytes": 617,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tdot4.nim": {
+      "fichier": "nimsuggest/tests/tdot4.nim",
+      "langage": "nim",
+      "lignes": 21,
+      "taille_bytes": 865,
+      "entrees": [
+        "fixtures/mstrutils",
+        "system"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/t21923.nim": {
+      "fichier": "nimsuggest/tests/t21923.nim",
+      "langage": "nim",
+      "lignes": 15,
+      "taille_bytes": 304,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/twithin_macro_prefix.nim": {
+      "fichier": "nimsuggest/tests/twithin_macro_prefix.nim",
+      "langage": "nim",
+      "lignes": 48,
+      "taille_bytes": 1440,
+      "entrees": [
+        "fixtures/mclass_macro",
+        "system"
+      ],
+      "sorties": [
+        "class Animal",
+        "class Cat",
+        "class Dog",
+        "class Rabbit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tv3_globalSymbols.nim": {
+      "fichier": "nimsuggest/tests/tv3_globalSymbols.nim",
+      "langage": "nim",
+      "lignes": 14,
+      "taille_bytes": 649,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tinclude.nim": {
+      "fichier": "nimsuggest/tests/tinclude.nim",
+      "langage": "nim",
+      "lignes": 25,
+      "taille_bytes": 1116,
+      "entrees": [
+        "fixtures/minclude_import"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/top_highlight.nim": {
+      "fichier": "nimsuggest/tests/top_highlight.nim",
+      "langage": "nim",
+      "lignes": 11,
+      "taille_bytes": 166,
+      "entrees": [
+        "json"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tgenerics.nim": {
+      "fichier": "nimsuggest/tests/tgenerics.nim",
+      "langage": "nim",
+      "lignes": 18,
+      "taille_bytes": 328,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tv3_outline.nim": {
+      "fichier": "nimsuggest/tests/tv3_outline.nim",
+      "langage": "nim",
+      "lignes": 45,
+      "taille_bytes": 1933,
+      "entrees": [],
+      "sorties": [
+        "const con"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/t21185.nim": {
+      "fichier": "nimsuggest/tests/t21185.nim",
+      "langage": "nim",
+      "lignes": 18,
+      "taille_bytes": 358,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tsug_accquote.nim": {
+      "fichier": "nimsuggest/tests/tsug_accquote.nim",
+      "langage": "nim",
+      "lignes": 10,
+      "taille_bytes": 272,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tv3_forward_definition.nim": {
+      "fichier": "nimsuggest/tests/tv3_forward_definition.nim",
+      "langage": "nim",
+      "lignes": 23,
+      "taille_bytes": 1251,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tenum_field.nim": {
+      "fichier": "nimsuggest/tests/tenum_field.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 362,
+      "entrees": [],
+      "sorties": [
+        "const BarFoo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tchk1.nim": {
+      "fichier": "nimsuggest/tests/tchk1.nim",
+      "langage": "nim",
+      "lignes": 27,
+      "taille_bytes": 773,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tv3_import.nim": {
+      "fichier": "nimsuggest/tests/tv3_import.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 112,
+      "entrees": [
+        "tv#[!]#3"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tsetter_highlight.nim": {
+      "fichier": "nimsuggest/tests/tsetter_highlight.nim",
+      "langage": "nim",
+      "lignes": 10,
+      "taille_bytes": 188,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tdef_let.nim": {
+      "fichier": "nimsuggest/tests/tdef_let.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 128,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tobj_highlight.nim": {
+      "fichier": "nimsuggest/tests/tobj_highlight.nim",
+      "langage": "nim",
+      "lignes": 11,
+      "taille_bytes": 175,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tcase.nim": {
+      "fichier": "nimsuggest/tests/tcase.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 347,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tfatal1.nim": {
+      "fichier": "nimsuggest/tests/tfatal1.nim",
+      "langage": "nim",
+      "lignes": 15,
+      "taille_bytes": 572,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tsi_highlight.nim": {
+      "fichier": "nimsuggest/tests/tsi_highlight.nim",
+      "langage": "nim",
+      "lignes": 11,
+      "taille_bytes": 197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tcon1.nim": {
+      "fichier": "nimsuggest/tests/tcon1.nim",
+      "langage": "nim",
+      "lignes": 43,
+      "taille_bytes": 1624,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tno_deref.nim": {
+      "fichier": "nimsuggest/tests/tno_deref.nim",
+      "langage": "nim",
+      "lignes": 14,
+      "taille_bytes": 190,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/ttype_highlight.nim": {
+      "fichier": "nimsuggest/tests/ttype_highlight.nim",
+      "langage": "nim",
+      "lignes": 23,
+      "taille_bytes": 520,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/t20265_2.nim": {
+      "fichier": "nimsuggest/tests/t20265_2.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 201,
+      "entrees": [
+        "module_20265"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nimsuggest/tests/module_20265.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tmacro_highlight.nim": {
+      "fichier": "nimsuggest/tests/tmacro_highlight.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 253,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tcon_variable.nim": {
+      "fichier": "nimsuggest/tests/tcon_variable.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 252,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tuse_structure.nim": {
+      "fichier": "nimsuggest/tests/tuse_structure.nim",
+      "langage": "nim",
+      "lignes": 15,
+      "taille_bytes": 294,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/timport2.nim": {
+      "fichier": "nimsuggest/tests/timport2.nim",
+      "langage": "nim",
+      "lignes": 9,
+      "taille_bytes": 271,
+      "entrees": [
+        "fixtures/[mstrutils",
+        "fixtures/mcl#[!]#"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tchk2.nim": {
+      "fichier": "nimsuggest/tests/tchk2.nim",
+      "langage": "nim",
+      "lignes": 35,
+      "taille_bytes": 690,
+      "entrees": [],
+      "sorties": [
+        "type ObjSeq",
+        "type ObjStr",
+        "type SomeSturct"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/timport_highlight.nim": {
+      "fichier": "nimsuggest/tests/timport_highlight.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 240,
+      "entrees": [
+        "json",
+        "std/[os,streams]#[!]#",
+        "std/paths"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tdef_forward.nim": {
+      "fichier": "nimsuggest/tests/tdef_forward.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 264,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tsug_pragmas.nim": {
+      "fichier": "nimsuggest/tests/tsug_pragmas.nim",
+      "langage": "nim",
+      "lignes": 40,
+      "taille_bytes": 1784,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tsug_enum.nim": {
+      "fichier": "nimsuggest/tests/tsug_enum.nim",
+      "langage": "nim",
+      "lignes": 18,
+      "taille_bytes": 306,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tic.nim": {
+      "fichier": "nimsuggest/tests/tic.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 788,
+      "entrees": [
+        "std/[appdirs"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tconcept1.nim": {
+      "fichier": "nimsuggest/tests/tconcept1.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 525,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/module_20265.nim": {
+      "fichier": "nimsuggest/tests/module_20265.nim",
+      "langage": "nim",
+      "lignes": 6,
+      "taille_bytes": 84,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "nimsuggest/tests/t20265_1.nim",
+        "nimsuggest/tests/t20265_2.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tqualified_highlight.nim": {
+      "fichier": "nimsuggest/tests/tqualified_highlight.nim",
+      "langage": "nim",
+      "lignes": 11,
+      "taille_bytes": 185,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tsug_template.nim": {
+      "fichier": "nimsuggest/tests/tsug_template.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 418,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tsug_recursive.nim": {
+      "fichier": "nimsuggest/tests/tsug_recursive.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 155,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tcallstrlit_highlight.nim": {
+      "fichier": "nimsuggest/tests/tcallstrlit_highlight.nim",
+      "langage": "nim",
+      "lignes": 11,
+      "taille_bytes": 188,
+      "entrees": [],
+      "sorties": [
+        "func foo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tgeneric_highlight.nim": {
+      "fichier": "nimsuggest/tests/tgeneric_highlight.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 250,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/ttemplate_highlight.nim": {
+      "fichier": "nimsuggest/tests/ttemplate_highlight.nim",
+      "langage": "nim",
+      "lignes": 9,
+      "taille_bytes": 168,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tchk_compiles.nim": {
+      "fichier": "nimsuggest/tests/tchk_compiles.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 196,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/taccent_highlight.nim": {
+      "fichier": "nimsuggest/tests/taccent_highlight.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 101,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/timport1.nim": {
+      "fichier": "nimsuggest/tests/timport1.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 141,
+      "entrees": [
+        "bito#[!]#"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tv3_definition.nim": {
+      "fichier": "nimsuggest/tests/tv3_definition.nim",
+      "langage": "nim",
+      "lignes": 9,
+      "taille_bytes": 152,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tsug_regression.nim": {
+      "fichier": "nimsuggest/tests/tsug_regression.nim",
+      "langage": "nim",
+      "lignes": 34,
+      "taille_bytes": 1293,
+      "entrees": [
+        "tables"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/ttempl_inst.nim": {
+      "fichier": "nimsuggest/tests/ttempl_inst.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 351,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tdot2.nim": {
+      "fichier": "nimsuggest/tests/tdot2.nim",
+      "langage": "nim",
+      "lignes": 28,
+      "taille_bytes": 762,
+      "entrees": [],
+      "sorties": [
+        "const zField"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tcursor_at_end.nim": {
+      "fichier": "nimsuggest/tests/tcursor_at_end.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tsug_typedecl.nim": {
+      "fichier": "nimsuggest/tests/tsug_typedecl.nim",
+      "langage": "nim",
+      "lignes": 26,
+      "taille_bytes": 864,
+      "entrees": [
+        "system"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/t22448.nim": {
+      "fichier": "nimsuggest/tests/t22448.nim",
+      "langage": "nim",
+      "lignes": 11,
+      "taille_bytes": 164,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tv3_generics.nim": {
+      "fichier": "nimsuggest/tests/tv3_generics.nim",
+      "langage": "nim",
+      "lignes": 18,
+      "taille_bytes": 336,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tv3.nim": {
+      "fichier": "nimsuggest/tests/tv3.nim",
+      "langage": "nim",
+      "lignes": 27,
+      "taille_bytes": 554,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/t20265_1.nim": {
+      "fichier": "nimsuggest/tests/t20265_1.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 203,
+      "entrees": [
+        "module_20265"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nimsuggest/tests/module_20265.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/twithin_macro.nim": {
+      "fichier": "nimsuggest/tests/twithin_macro.nim",
+      "langage": "nim",
+      "lignes": 51,
+      "taille_bytes": 1720,
+      "entrees": [
+        "fixtures/mclass_macro",
+        "system"
+      ],
+      "sorties": [
+        "class Animal",
+        "class Cat",
+        "class Dog",
+        "class Rabbit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tarrowcrash.nim": {
+      "fichier": "nimsuggest/tests/tarrowcrash.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 488,
+      "entrees": [
+        "sugar"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/t20440.nim": {
+      "fichier": "nimsuggest/tests/t20440.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 99,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/ttype_decl.nim": {
+      "fichier": "nimsuggest/tests/ttype_decl.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 462,
+      "entrees": [
+        "strutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tdef1.nim": {
+      "fichier": "nimsuggest/tests/tdef1.nim",
+      "langage": "nim",
+      "lignes": 18,
+      "taille_bytes": 548,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tuse_enum.nim": {
+      "fichier": "nimsuggest/tests/tuse_enum.nim",
+      "langage": "nim",
+      "lignes": 15,
+      "taille_bytes": 259,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/tdot3.nim": {
+      "fichier": "nimsuggest/tests/tdot3.nim",
+      "langage": "nim",
+      "lignes": 27,
+      "taille_bytes": 774,
+      "entrees": [
+        "dep"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/timport3.nim": {
+      "fichier": "nimsuggest/tests/timport3.nim",
+      "langage": "nim",
+      "lignes": 9,
+      "taille_bytes": 315,
+      "entrees": [
+        "fixtu#[!]#",
+        "nimpre#[!]#"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/fixtures/minclude_import.nim": {
+      "fichier": "nimsuggest/tests/fixtures/minclude_import.nim",
+      "langage": "nim",
+      "lignes": 15,
+      "taille_bytes": 399,
+      "entrees": [
+        "mfakeassert",
+        "minclude_include",
+        "minclude_types"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nimsuggest/tests/fixtures/mfakeassert.nim",
+        "nimsuggest/tests/fixtures/minclude_include.nim",
+        "nimsuggest/tests/fixtures/minclude_types.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimsuggest/tests/fixtures/minclude_include.nim": {
+      "fichier": "nimsuggest/tests/fixtures/minclude_include.nim",
+      "langage": "nim",
+      "lignes": 4,
+      "taille_bytes": 189,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "nimsuggest/tests/fixtures/minclude_import.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/fixtures/mdep_v2.nim": {
+      "fichier": "nimsuggest/tests/fixtures/mdep_v2.nim",
+      "langage": "nim",
+      "lignes": 9,
+      "taille_bytes": 57,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/fixtures/mdep_v1.nim": {
+      "fichier": "nimsuggest/tests/fixtures/mdep_v1.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 42,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/fixtures/mclass_macro.nim": {
+      "fichier": "nimsuggest/tests/fixtures/mclass_macro.nim",
+      "langage": "nim",
+      "lignes": 164,
+      "taille_bytes": 3959,
+      "entrees": [
+        "macros"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/fixtures/mstrutils.nim": {
+      "fichier": "nimsuggest/tests/fixtures/mstrutils.nim",
+      "langage": "nim",
+      "lignes": 19,
+      "taille_bytes": 582,
+      "entrees": [
+        "mfakeassert"
+      ],
+      "sorties": [
+        "func replace",
+        "func rereplace",
+        "func rerereplace"
+      ],
+      "appelle": [
+        "nimsuggest/tests/fixtures/mfakeassert.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/fixtures/mfakeassert.nim": {
+      "fichier": "nimsuggest/tests/fixtures/mfakeassert.nim",
+      "langage": "nim",
+      "lignes": 5,
+      "taille_bytes": 150,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "nimsuggest/tests/fixtures/minclude_import.nim",
+        "nimsuggest/tests/fixtures/mstrutils.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimsuggest/tests/fixtures/minclude_types.nim": {
+      "fichier": "nimsuggest/tests/fixtures/minclude_types.nim",
+      "langage": "nim",
+      "lignes": 6,
+      "taille_bytes": 142,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "nimsuggest/tests/fixtures/minclude_import.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/mimports.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/mimports.nim",
+      "langage": "nim",
+      "lignes": 9,
+      "taille_bytes": 178,
+      "entrees": [
+        "mimportsb"
+      ],
+      "sorties": [
+        "export mimportsb"
+      ],
+      "appelle": [
+        "tests_disabled/ic/ic_disabled/mimportsb.nim"
+      ],
+      "est_appele_par": [
+        "tests_disabled/ic/ic_disabled/timports.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/tgenerics.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/tgenerics.nim",
+      "langage": "nim",
+      "lignes": 38,
+      "taille_bytes": 426,
+      "entrees": [
+        "tables"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/timports.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/timports.nim",
+      "langage": "nim",
+      "lignes": 29,
+      "taille_bytes": 576,
+      "entrees": [
+        "mimports"
+      ],
+      "sorties": [],
+      "appelle": [
+        "tests_disabled/ic/ic_disabled/mimports.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/tconverter.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/tconverter.nim",
+      "langage": "nim",
+      "lignes": 18,
+      "taille_bytes": 187,
+      "entrees": [
+        "mdefconverter"
+      ],
+      "sorties": [],
+      "appelle": [
+        "tests_disabled/ic/ic_disabled/mdefconverter.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/tmethods.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/tmethods.nim",
+      "langage": "nim",
+      "lignes": 28,
+      "taille_bytes": 314,
+      "entrees": [
+        "mbaseobj"
+      ],
+      "sorties": [],
+      "appelle": [
+        "tests_disabled/ic/ic_disabled/mbaseobj.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/mdefconverter.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/mdefconverter.nim",
+      "langage": "nim",
+      "lignes": 2,
+      "taille_bytes": 42,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "tests_disabled/ic/ic_disabled/tconverter.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/mcompiletime_counter.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/mcompiletime_counter.nim",
+      "langage": "nim",
+      "lignes": 15,
+      "taille_bytes": 231,
+      "entrees": [
+        "std/macrocache",
+        "std/macros"
+      ],
+      "sorties": [
+        "const myCounter"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "tests_disabled/ic/ic_disabled/tcompiletime_counter.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/mimportsb.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/mimportsb.nim",
+      "langage": "nim",
+      "lignes": 4,
+      "taille_bytes": 88,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "tests_disabled/ic/ic_disabled/mimports.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/mbaseobj.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/mbaseobj.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 104,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "tests_disabled/ic/ic_disabled/tmethods.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/tgenericinst.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/tgenericinst.nim",
+      "langage": "nim",
+      "lignes": 11,
+      "taille_bytes": 258,
+      "entrees": [
+        "<iostream>"
+      ],
+      "sorties": [
+        "struct Foo",
+        "type Foo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/tstdlib_import_changed.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/tstdlib_import_changed.nim",
+      "langage": "nim",
+      "lignes": 15,
+      "taille_bytes": 157,
+      "entrees": [
+        "std"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests_disabled/ic/ic_disabled/tcompiletime_counter.nim": {
+      "fichier": "tests_disabled/ic/ic_disabled/tcompiletime_counter.nim",
+      "langage": "nim",
+      "lignes": 24,
+      "taille_bytes": 284,
+      "entrees": [
+        "mcompiletime_counter"
+      ],
+      "sorties": [
+        "const intId"
+      ],
+      "appelle": [
+        "tests_disabled/ic/ic_disabled/mcompiletime_counter.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/caasdriver.nim": {
+      "fichier": "testament/caasdriver.nim",
+      "langage": "nim",
+      "lignes": 195,
+      "taille_bytes": 6126,
+      "entrees": [
+        "osproc"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/important_packages.nim": {
+      "fichier": "testament/important_packages.nim",
+      "langage": "nim",
+      "lignes": 192,
+      "taille_bytes": 7175,
+      "entrees": [],
+      "sorties": [
+        "type NimblePackage"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "testament/categories.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "testament/specs.nim": {
+      "fichier": "testament/specs.nim",
+      "langage": "nim",
+      "lignes": 525,
+      "taille_bytes": 18307,
+      "entrees": [
+        "compiler/platform",
+        "sequtils"
+      ],
+      "sorties": [
+        "const lineMax",
+        "const whiteListMulti",
+        "type TestamentData"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "testament/azure.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "testament/azure.nim": {
+      "fichier": "testament/azure.nim",
+      "langage": "nim",
+      "lignes": 147,
+      "taille_bytes": 4947,
+      "entrees": [
+        "base64",
+        "specs"
+      ],
+      "sorties": [],
+      "appelle": [
+        "testament/specs.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/htmlgen.nim": {
+      "fichier": "testament/htmlgen.nim",
+      "langage": "nim",
+      "lignes": 149,
+      "taille_bytes": 5072,
+      "entrees": [
+        "strutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/testament.nim": {
+      "fichier": "testament/testament.nim",
+      "langage": "nim",
+      "lignes": 845,
+      "taille_bytes": 31766,
+      "entrees": [
+        "../dist/checksums/src/checksums/md5",
+        "backend",
+        "categories",
+        "compiler/nodejs",
+        "lib/stdtest/specialpaths",
+        "lib/stdtest/testutils",
+        "std/private/gitutils",
+        "std/sugar"
+      ],
+      "sorties": [
+        "const disabledFilesDefault"
+      ],
+      "appelle": [
+        "testament/backend.nim",
+        "testament/categories.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "testament/testament.nim.cfg": {
+      "fichier": "testament/testament.nim.cfg",
+      "langage": "unknown",
+      "lignes": 8,
+      "taille_bytes": 264,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/categories.nim": {
+      "fichier": "testament/categories.nim",
+      "langage": "nim",
+      "lignes": 750,
+      "taille_bytes": 28966,
+      "entrees": [
+        "important_packages",
+        "std/[strformat",
+        "std/private/gitutils",
+        "std/sequtils"
+      ],
+      "sorties": [
+        "const AdditionalCategories",
+        "const MegaTestCat",
+        "const cfgExt",
+        "const libpathenv",
+        "const outputExceptedFile",
+        "const outputGottenFile",
+        "const refHashes",
+        "const rpath",
+        "const tempExt",
+        "const whiteListedDirs"
+      ],
+      "appelle": [
+        "testament/important_packages.nim"
+      ],
+      "est_appele_par": [
+        "testament/testament.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "testament/backend.nim": {
+      "fichier": "testament/backend.nim",
+      "langage": "nim",
+      "lignes": 70,
+      "taille_bytes": 1868,
+      "entrees": [
+        "strutils"
+      ],
+      "sorties": [
+        "const commLen"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "testament/testament.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/tcolumn.nim": {
+      "fichier": "testament/tests/shouldfail/tcolumn.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 160,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/terrormsg.nim": {
+      "fichier": "testament/tests/shouldfail/terrormsg.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 144,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/treject.nim": {
+      "fichier": "testament/tests/shouldfail/treject.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 173,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/tccodecheck.nim": {
+      "fichier": "testament/tests/shouldfail/tccodecheck.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 102,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/toutput.nim": {
+      "fichier": "testament/tests/shouldfail/toutput.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 58,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/tnotenoughretries.nim": {
+      "fichier": "testament/tests/shouldfail/tnotenoughretries.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 318,
+      "entrees": [
+        "os"
+      ],
+      "sorties": [
+        "const tempFile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/tfile.nim": {
+      "fichier": "testament/tests/shouldfail/tfile.nim",
+      "langage": "nim",
+      "lignes": 6,
+      "taille_bytes": 107,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/toutputsub.nim": {
+      "fichier": "testament/tests/shouldfail/toutputsub.nim",
+      "langage": "nim",
+      "lignes": 5,
+      "taille_bytes": 67,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/tnimout.nim": {
+      "fichier": "testament/tests/shouldfail/tnimout.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 92,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/tline.nim": {
+      "fichier": "testament/tests/shouldfail/tline.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 161,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/ttimeout.nim": {
+      "fichier": "testament/tests/shouldfail/ttimeout.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 60,
+      "entrees": [
+        "os"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "testament/tests/shouldfail/tvalgrind.nim": {
+      "fichier": "testament/tests/shouldfail/tvalgrind.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 750,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "nimsuggest/nimsuggest.nim",
+      "vers": "nimsuggest/procmonitor.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimsuggest/tests/t20265_2.nim",
+      "vers": "nimsuggest/tests/module_20265.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimsuggest/tests/t20265_1.nim",
+      "vers": "nimsuggest/tests/module_20265.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimsuggest/tests/fixtures/minclude_import.nim",
+      "vers": "nimsuggest/tests/fixtures/mfakeassert.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimsuggest/tests/fixtures/minclude_import.nim",
+      "vers": "nimsuggest/tests/fixtures/minclude_include.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimsuggest/tests/fixtures/minclude_import.nim",
+      "vers": "nimsuggest/tests/fixtures/minclude_types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimsuggest/tests/fixtures/mstrutils.nim",
+      "vers": "nimsuggest/tests/fixtures/mfakeassert.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests_disabled/ic/ic_disabled/mimports.nim",
+      "vers": "tests_disabled/ic/ic_disabled/mimportsb.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests_disabled/ic/ic_disabled/timports.nim",
+      "vers": "tests_disabled/ic/ic_disabled/mimports.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests_disabled/ic/ic_disabled/tconverter.nim",
+      "vers": "tests_disabled/ic/ic_disabled/mdefconverter.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests_disabled/ic/ic_disabled/tmethods.nim",
+      "vers": "tests_disabled/ic/ic_disabled/mbaseobj.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests_disabled/ic/ic_disabled/tcompiletime_counter.nim",
+      "vers": "tests_disabled/ic/ic_disabled/mcompiletime_counter.nim",
+      "type": "interne"
+    },
+    {
+      "de": "testament/azure.nim",
+      "vers": "testament/specs.nim",
+      "type": "interne"
+    },
+    {
+      "de": "testament/testament.nim",
+      "vers": "testament/backend.nim",
+      "type": "interne"
+    },
+    {
+      "de": "testament/testament.nim",
+      "vers": "testament/categories.nim",
+      "type": "interne"
+    },
+    {
+      "de": "testament/categories.nim",
+      "vers": "testament/important_packages.nim",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'nimsuggest/tests/fixtures/minclude_import.nim'",
+    "point_entree → 'testament/testament.nim'"
+  ]
+}

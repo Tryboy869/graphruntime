@@ -1,0 +1,2003 @@
+{
+  "meta": {
+    "projet": "nico",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "nim": 54,
+      "unknown": 3,
+      "html": 8,
+      "json": 3,
+      "javascript": 2
+    }
+  },
+  "stats": {
+    "fichiers_total": 70,
+    "edges_total": 41,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 1,
+    "points_entree": 1,
+    "fichier_plus_appele": "nico.nim"
+  },
+  "noeuds": {
+    "nicosynth.nim": {
+      "fichier": "nicosynth.nim",
+      "langage": "nim",
+      "lignes": 233,
+      "taille_bytes": 6307,
+      "entrees": [
+        "nico",
+        "nico/gui",
+        "strformat",
+        "strutils"
+      ],
+      "sorties": [
+        "const initData",
+        "const maxNote",
+        "const minNote"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico.nim": {
+      "fichier": "nico.nim",
+      "langage": "nim",
+      "lignes": 3338,
+      "taille_bytes": 95520,
+      "entrees": [
+        "algorithm",
+        "json",
+        "math",
+        "nico/backends/common",
+        "nico/backends/sdl2",
+        "nico/controller",
+        "nico/fontdata",
+        "nico/keycodes",
+        "nico/ringbuffer",
+        "nico/spritedraw",
+        "os",
+        "random",
+        "strscans",
+        "strutils",
+        "tables",
+        "times",
+        "unicode",
+        "unittest"
+      ],
+      "sorties": [
+        "const DEG2RAD",
+        "const RAD2DEG",
+        "const bayer4x4int",
+        "export ColorId",
+        "export Event",
+        "export EventKind",
+        "export EventListener",
+        "export NicoAxis",
+        "export NicoButton",
+        "export NicoController",
+        "export NicoControllerKind",
+        "export Palette",
+        "export Pfloat",
+        "export Pint",
+        "export ProfilerNode",
+        "export SfxId",
+        "export StencilBlend",
+        "export StencilMode",
+        "export SynthData",
+        "export SynthDataStep",
+        "export SynthShape",
+        "export Touch",
+        "export TouchState",
+        "export abs",
+        "export assetPath",
+        "export audioInSample",
+        "export audioOut",
+        "export basePath",
+        "export btn",
+        "export btnp",
+        "export btnpr",
+        "export btnup",
+        "export cameraX",
+        "export clipMinX",
+        "export cos",
+        "export currentColor",
+        "export debug",
+        "export errorPopup",
+        "export getConfigValue",
+        "export getFullSpeedGif",
+        "export getKeyMap",
+        "export getKeyNamesForBtn",
+        "export getMusic",
+        "export getPerformanceCounter",
+        "export getPerformanceFrequency",
+        "export getRealDt",
+        "export getRecordSeconds",
+        "export getUnmappedJoysticks",
+        "export getVSync",
+        "export glide",
+        "export hideMouse",
+        "export isTextInput",
+        "export joinPath",
+        "export loadConfig",
+        "export loadMusic",
+        "export loadSfx",
+        "export math",
+        "export music",
+        "export musicGetPos",
+        "export musicSeek",
+        "export nico",
+        "export note",
+        "export noteStrToNote",
+        "export noteToNoteStr",
+        "export pitch",
+        "export pitchbend",
+        "export pow",
+        "export profileBegin",
+        "export profileCollect",
+        "export profileEnd",
+        "export profileGetLastStats",
+        "export profileGetLastStatsPeak",
+        "export profileHistory",
+        "export saveConfig",
+        "export screenHeight",
+        "export screenWidth",
+        "export setAudioBufferSize",
+        "export setAudioCallback",
+        "export setClipboardText",
+        "export setFullSpeedGif",
+        "export setKeyMap",
+        "export setLinearFilter",
+        "export setRecordSeconds",
+        "export setShaderBool",
+        "export setShaderFloat",
+        "export setVSync",
+        "export sfx",
+        "export showMouse",
+        "export shuffle",
+        "export sin",
+        "export spritedraw",
+        "export startTextInput",
+        "export stopTextInput",
+        "export synth",
+        "export synthDataFromString",
+        "export synthDataToString",
+        "export synthIndex",
+        "export synthShape",
+        "export synthUpdate",
+        "export timeStep",
+        "export toPfloat",
+        "export toPint",
+        "export updateConfigValue",
+        "export vibrato",
+        "export volume",
+        "export waitUntilReady",
+        "export wavData",
+        "export writePath"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "exampleApp/src/main.nim",
+        "examples/adither.nim",
+        "examples/audio.nim",
+        "examples/benchmark.nim",
+        "examples/camera.nim",
+        "examples/coro.nim",
+        "examples/gui.nim",
+        "examples/gui2.nim",
+        "examples/lines.nim",
+        "examples/overlap.nim",
+        "examples/paintout.nim",
+        "examples/palette.nim",
+        "examples/platformer.nim",
+        "examples/rotation.nim",
+        "examples/sat.nim",
+        "examples/scale.nim",
+        "examples/screenscale.nim",
+        "examples/stencil.nim",
+        "examples/stencil2.nim",
+        "examples/textinput.nim",
+        "examples/texture.nim",
+        "examples/tweaker.nim",
+        "examples/vertex.nim",
+        "examples/webrtc/src/main.nim",
+        "nico/console.nim",
+        "nico/debug.nim",
+        "nico/gui.nim",
+        "nico/gui2.nim",
+        "nico/tweaks.nim",
+        "nico/utils.nim",
+        "nico/vec.nim",
+        "nicosynth.nim",
+        "tests/camera.nim",
+        "tests/config.nim",
+        "tests/copymem.nim",
+        "tests/fonts.nim",
+        "tests/palette.nim",
+        "tests/rgba.nim",
+        "tests/tilemap.nim"
+      ],
+      "type_noeud": "hub"
+    },
+    "nico.nim.cfg": {
+      "fichier": "nico.nim.cfg",
+      "langage": "unknown",
+      "lignes": 2,
+      "taille_bytes": 55,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nicosynth.nim.cfg": {
+      "fichier": "nicosynth.nim.cfg",
+      "langage": "unknown",
+      "lignes": 2,
+      "taille_bytes": 12,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nicoandroid.nim.cfg": {
+      "fichier": "nicoandroid.nim.cfg",
+      "langage": "unknown",
+      "lignes": 1,
+      "taille_bytes": 13,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nicoboot.nim": {
+      "fichier": "nicoboot.nim",
+      "langage": "nim",
+      "lignes": 46,
+      "taille_bytes": 1430,
+      "entrees": [
+        "os",
+        "osproc",
+        "parseopt"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nicoandroid.nim": {
+      "fichier": "nicoandroid.nim",
+      "langage": "nim",
+      "lignes": 21,
+      "taille_bytes": 647,
+      "entrees": [
+        "httpclient",
+        "os",
+        "osproc",
+        "strutils",
+        "zippy/ziparchives"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/palette.nim": {
+      "fichier": "examples/palette.nim",
+      "langage": "nim",
+      "lignes": 23,
+      "taille_bytes": 454,
+      "entrees": [
+        "nico"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/vertex.nim": {
+      "fichier": "examples/vertex.nim",
+      "langage": "nim",
+      "lignes": 558,
+      "taille_bytes": 13620,
+      "entrees": [
+        "hashes",
+        "nico",
+        "nico/console",
+        "nico/vec",
+        "sequtils",
+        "sets"
+      ],
+      "sorties": [
+        "const cohesionRadius",
+        "const maxBoids",
+        "const maxBullets",
+        "const minBoids",
+        "const separationRadius",
+        "const shipAttackRadius",
+        "const shipMaxForce",
+        "const shipMaxSpeed",
+        "type Boid",
+        "type BoidState",
+        "type Bullet"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/gui.nim": {
+      "fichier": "examples/gui.nim",
+      "langage": "nim",
+      "lignes": 86,
+      "taille_bytes": 2094,
+      "entrees": [
+        "nico",
+        "nico/gui"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/tweaker.nim": {
+      "fichier": "examples/tweaker.nim",
+      "langage": "nim",
+      "lignes": 29,
+      "taille_bytes": 589,
+      "entrees": [
+        "macros",
+        "nico"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/paintout.nim": {
+      "fichier": "examples/paintout.nim",
+      "langage": "nim",
+      "lignes": 161,
+      "taille_bytes": 2986,
+      "entrees": [
+        "math",
+        "nico"
+      ],
+      "sorties": [
+        "const textOptions"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/overlap.nim": {
+      "fichier": "examples/overlap.nim",
+      "langage": "nim",
+      "lignes": 41,
+      "taille_bytes": 669,
+      "entrees": [
+        "nico"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/camera.nim": {
+      "fichier": "examples/camera.nim",
+      "langage": "nim",
+      "lignes": 74,
+      "taille_bytes": 1480,
+      "entrees": [
+        "nico",
+        "nico/vec",
+        "std/math",
+        "std/strformat"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/screenscale.nim": {
+      "fichier": "examples/screenscale.nim",
+      "langage": "nim",
+      "lignes": 59,
+      "taille_bytes": 1113,
+      "entrees": [
+        "nico",
+        "strformat"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/vertex.html": {
+      "fichier": "examples/vertex.html",
+      "langage": "html",
+      "lignes": 128,
+      "taille_bytes": 5099,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/benchmark.nim": {
+      "fichier": "examples/benchmark.nim",
+      "langage": "nim",
+      "lignes": 216,
+      "taille_bytes": 5063,
+      "entrees": [
+        "nico",
+        "nico/utils",
+        "strformat",
+        "times"
+      ],
+      "sorties": [
+        "type BenchmarkMode"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/coro.nim": {
+      "fichier": "examples/coro.nim",
+      "langage": "nim",
+      "lignes": 39,
+      "taille_bytes": 651,
+      "entrees": [
+        "nico",
+        "sequtils"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/stencil.nim": {
+      "fichier": "examples/stencil.nim",
+      "langage": "nim",
+      "lignes": 103,
+      "taille_bytes": 2437,
+      "entrees": [
+        "math",
+        "nico",
+        "nico/vec"
+      ],
+      "sorties": [
+        "const moveSpeed"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/sat.nim": {
+      "fichier": "examples/sat.nim",
+      "langage": "nim",
+      "lignes": 368,
+      "taille_bytes": 9755,
+      "entrees": [
+        "nico",
+        "nico/vec"
+      ],
+      "sorties": [
+        "type ContactData",
+        "type Line",
+        "type Object"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/textinput.nim": {
+      "fichier": "examples/textinput.nim",
+      "langage": "nim",
+      "lignes": 34,
+      "taille_bytes": 735,
+      "entrees": [
+        "nico"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/stencil2.nim": {
+      "fichier": "examples/stencil2.nim",
+      "langage": "nim",
+      "lignes": 103,
+      "taille_bytes": 2437,
+      "entrees": [
+        "math",
+        "nico",
+        "nico/vec"
+      ],
+      "sorties": [
+        "const moveSpeed"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/platformer.nim": {
+      "fichier": "examples/platformer.nim",
+      "langage": "nim",
+      "lignes": 736,
+      "taille_bytes": 17887,
+      "entrees": [
+        "math",
+        "nico",
+        "nico/vec",
+        "sequtils"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/lines.nim": {
+      "fichier": "examples/lines.nim",
+      "langage": "nim",
+      "lignes": 26,
+      "taille_bytes": 475,
+      "entrees": [
+        "nico"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/rotation.nim": {
+      "fichier": "examples/rotation.nim",
+      "langage": "nim",
+      "lignes": 58,
+      "taille_bytes": 1197,
+      "entrees": [
+        "math",
+        "nico",
+        "nico/vec"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/gui2.nim": {
+      "fichier": "examples/gui2.nim",
+      "langage": "nim",
+      "lignes": 108,
+      "taille_bytes": 2439,
+      "entrees": [
+        "nico",
+        "nico/debug",
+        "nico/gui2",
+        "strformat"
+      ],
+      "sorties": [
+        "type Level"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/texture.nim": {
+      "fichier": "examples/texture.nim",
+      "langage": "nim",
+      "lignes": 58,
+      "taille_bytes": 1346,
+      "entrees": [
+        "nico",
+        "nico/vec"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/scale.nim": {
+      "fichier": "examples/scale.nim",
+      "langage": "nim",
+      "lignes": 54,
+      "taille_bytes": 965,
+      "entrees": [
+        "nico"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/nico_minimal.html": {
+      "fichier": "examples/nico_minimal.html",
+      "langage": "html",
+      "lignes": 126,
+      "taille_bytes": 5049,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/adither.nim": {
+      "fichier": "examples/adither.nim",
+      "langage": "nim",
+      "lignes": 41,
+      "taille_bytes": 817,
+      "entrees": [
+        "nico"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/platformer.html": {
+      "fichier": "examples/platformer.html",
+      "langage": "html",
+      "lignes": 126,
+      "taille_bytes": 4964,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/audio.nim": {
+      "fichier": "examples/audio.nim",
+      "langage": "nim",
+      "lignes": 342,
+      "taille_bytes": 10222,
+      "entrees": [
+        "nico",
+        "strutils"
+      ],
+      "sorties": [
+        "type Instrument",
+        "type Pattern",
+        "type Row",
+        "type Song",
+        "type SongRow",
+        "type View"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/paintout.html": {
+      "fichier": "examples/paintout.html",
+      "langage": "html",
+      "lignes": 96,
+      "taille_bytes": 3488,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/screenscale.html": {
+      "fichier": "examples/screenscale.html",
+      "langage": "html",
+      "lignes": 126,
+      "taille_bytes": 4965,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/assets/map.json": {
+      "fichier": "examples/assets/map.json",
+      "langage": "json",
+      "lignes": 38,
+      "taille_bytes": 1786,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/webrtc/peerjs.js": {
+      "fichier": "examples/webrtc/peerjs.js",
+      "langage": "javascript",
+      "lignes": 10137,
+      "taille_bytes": 315271,
+      "entrees": [],
+      "sorties": [
+        "function API",
+        "function BaseConnection",
+        "function BufferBuilder",
+        "function DataConnection",
+        "function EE",
+        "function EncodingQueue",
+        "function EventEmitter",
+        "function Events",
+        "function Logger",
+        "function MediaConnection",
+        "function Module",
+        "function Negotiator",
+        "function Packer",
+        "function Peer",
+        "function PeerOptions",
+        "function Socket",
+        "function Unpacker",
+        "function __",
+        "function _defineProperty",
+        "function _getRequireWildcardCache",
+        "function _interopRequireDefault",
+        "function _interopRequireWildcard",
+        "function _typeof",
+        "function _utf8Replace",
+        "function adapterFactory",
+        "function addListener",
+        "function addTrackToStreamAndFireEvent",
+        "function adopt",
+        "function class_1",
+        "function clearEvent",
+        "function compactObject",
+        "function deprecated",
+        "function detectBrowser",
+        "function disableLog",
+        "function disableWarnings",
+        "function extractVersion",
+        "function filterIceServers",
+        "function filterStats",
+        "function fireAddTrack",
+        "function fixNegotiationNeeded",
+        "function fixStatsType",
+        "function fulfilled",
+        "function getCommonCapabilities",
+        "function isActionAllowedInSignalingState",
+        "function isObject",
+        "function localRequire",
+        "function log",
+        "function makeError",
+        "function maybeAddCandidate",
+        "function newRequire",
+        "function rejected",
+        "function removeAllowExtmapMixed",
+        "function removeTrackFromStreamAndFireEvent",
+        "function replaceExternalStreamId",
+        "function replaceInternalStreamId",
+        "function resolve",
+        "function shimAddTrackRemoveTrack",
+        "function shimAddTrackRemoveTrackWithNative",
+        "function shimAddTransceiver",
+        "function shimCallbacksAPI",
+        "function shimConnectionState",
+        "function shimConstraints",
+        "function shimCreateAnswer",
+        "function shimCreateOffer",
+        "function shimCreateOfferLegacy",
+        "function shimGetDisplayMedia",
+        "function shimGetSendersWithDtmf",
+        "function shimGetStats",
+        "function shimGetUserMedia",
+        "function shimLocalStreamsAPI",
+        "function shimMaxMessageSize",
+        "function shimMediaStream",
+        "function shimOnTrack",
+        "function shimPeerConnection",
+        "function shimRTCDataChannel",
+        "function shimRTCIceCandidate",
+        "function shimRTCIceServerUrls",
+        "function shimReceiverGetStats",
+        "function shimRemoteStreamsAPI",
+        "function shimRemoveStream",
+        "function shimReplaceTrack",
+        "function shimSendThrowTypeError",
+        "function shimSenderGetStats",
+        "function shimSenderReceiverGetStats",
+        "function shimTrackEventTransceiver",
+        "function step",
+        "function utf8Length",
+        "function verb",
+        "function walkStats",
+        "function wrapDcSend",
+        "function wrapPeerConnectionEvent",
+        "function writeMediaSection"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/webrtc/index.html": {
+      "fichier": "examples/webrtc/index.html",
+      "langage": "html",
+      "lignes": 29,
+      "taille_bytes": 774,
+      "entrees": [],
+      "sorties": [
+        "function handleMouseDown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/webrtc/main.js": {
+      "fichier": "examples/webrtc/main.js",
+      "langage": "javascript",
+      "lignes": 7734,
+      "taille_bytes": 366487,
+      "entrees": [],
+      "sorties": [
+        "function HEX21HEX24_936079",
+        "function HEX21HEX26_936044",
+        "function HEX24_1715214",
+        "function HEX2AHEX3D_16615052",
+        "function HEX2AHEX3D_16620012",
+        "function HEX2A_15880086",
+        "function HEX2BHEX3D_14310027",
+        "function HEX2BHEX3D_16480026",
+        "function HEX2DHEX3D_14310001",
+        "function HEX2EHEX2E_1980220",
+        "function HEX2F_16070221",
+        "function HEX2F_325648",
+        "function HEX3Aanonymous_13310312",
+        "function HEX3Aanonymous_13310329",
+        "function HEX3Aanonymous_13310378",
+        "function HEX3Aanonymous_13310396",
+        "function HEX3Aanonymous_13310414",
+        "function HEX3Aanonymous_13310431",
+        "function HEX3Aanonymous_13320328",
+        "function HEX3Aanonymous_13335271",
+        "function HEX3Aanonymous_13335310",
+        "function HEX3Aanonymous_13340009",
+        "function HEX3Aanonymous_13445681",
+        "function HEX3Aanonymous_13455077",
+        "function HEX3Aanonymous_15035005",
+        "function HEX3Aanonymous_16370001",
+        "function HEX3Aanonymous_16370021",
+        "function HEX3Aanonymous_16385001",
+        "function HEX3Aanonymous_16415065",
+        "function HEX3Aanonymous_16415072",
+        "function HEX3CHEX3DHEX25_4294",
+        "function HEX3DHEX3D_14650015",
+        "function HEX3DHEX3D_16745003",
+        "function HEX3DHEX3D_1995064",
+        "function HEX5BHEX5DHEX3D_13365137",
+        "function HEX5BHEX5DHEX3D_14940122",
+        "function HEX5BHEX5D_11880005",
+        "function HEX5BHEX5D_12000012",
+        "function HEX5BHEX5D_13360780",
+        "function HEX5BHEX5D_15045273",
+        "function abs_75247",
+        "function abs_75264",
+        "function addChar",
+        "function addInt",
+        "function add_11860141",
+        "function add_11985715",
+        "function add_142042",
+        "function arrayConstr",
+        "function audio_clock_13520126",
+        "function axis_11560056",
+        "function axisp_11560074",
+        "function boxfill_13930261",
+        "function btn_11575014",
+        "function btn_13930021",
+        "function btnp_11610014",
+        "function btnp_13930024",
+        "function btnpr_11610070",
+        "function btnpr_13930030",
+        "function chckIndx",
+        "function chckNilDisp",
+        "function chckRange",
+        "function checkpoint_11940268",
+        "function circfill_13930306",
+        "function clamp_11700049",
+        "function clamp_13515015",
+        "function clamp_13520033",
+        "function clamp_16355262",
+        "function clip_13916347",
+        "function cls_14025143",
+        "function contains_11915054",
+        "function contains_13335120",
+        "function create_font_from_surface_14645315",
+        "function create_window_13310305",
+        "function create_window_15290171",
+        "function cstrToNimstr",
+        "function default_console_formatter_11815061",
+        "function dither_pass_13980439",
+        "function divInt",
+        "function draw_paddle_16240014",
+        "function enlarge_13440161",
+        "function enlarge_15015172",
+        "function ensure_initialized_11915399",
+        "function epoch_time_10685401",
+        "function eqStrings",
+        "function failed_assert_impl_102680",
+        "function failure_occurred_11797482",
+        "function failure_occurred_11797501",
+        "function failure_occurred_11825052",
+        "function failure_occurred_11860134",
+        "function find_11915061",
+        "function find_13335127",
+        "function find_16370040",
+        "function find_normalized_9740014",
+        "function fixed_size_15115335",
+        "function floor_mod_12000040",
+        "function font_blit_14395026",
+        "function game_draw_16755026",
+        "function game_init_16365040",
+        "function game_update_16405085",
+        "function get_12160014",
+        "function get_context2d_12306722",
+        "function glob_11915048",
+        "function glyph_13916240",
+        "function glyph_13916246",
+        "function handle_data_16240034",
+        "function has_key_13350324",
+        "function has_key_14925316",
+        "function hash_11531109",
+        "function hash_14930001",
+        "function hline_13930273",
+        "function idx_12000033",
+        "function init_11915551",
+        "function init_13585444",
+        "function init_13930484",
+        "function init_rand_13655612",
+        "function init_table_12132016",
+        "function init_table_14655011",
+        "function integer_out_of_range_error_8745049",
+        "function integer_scale_15115367",
+        "function invalid_format_string_9740046",
+        "function isObj",
+        "function is_fat_pointer_235401",
+        "function is_filled_1004018",
+        "function is_filled_11731418",
+        "function is_nim_exception_156082",
+        "function is_power_of_two_890029",
+        "function is_undefined_315483",
+        "function is_valid_11915448",
+        "function join_path_13651002",
+        "function len_11915267",
+        "function len_13555139",
+        "function len_15025138",
+        "function length2_16355274",
+        "function lerp_13465007",
+        "function lerp_13520013",
+        "function load_config_13585429",
+        "function load_font_15030045",
+        "function load_palette_pico8_13916297",
+        "function load_surface_rgba_13455063",
+        "function makeNimstrLit",
+        "function match_filter_11915167",
+        "function max_85014",
+        "function min_75281",
+        "function mnewString",
+        "function modInt",
+        "function mulInt",
+        "function must_rehash_13415601",
+        "function must_rehash_14990601",
+        "function mute",
+        "function negInt",
+        "function new_11531272",
+        "function new_12170777",
+        "function new_14645321",
+        "function new_console_output_formatter_11810214",
+        "function new_nico_controller_11531267",
+        "function new_ring_buffer_11985602",
+        "function new_ring_buffer_12210092",
+        "function new_seq_11985618",
+        "function new_seq_12170839",
+        "function new_seq_12210108",
+        "function new_seq_13585451",
+        "function new_seq_225128",
+        "function new_surface_12170771",
+        "function new_surface_rgba_12170886",
+        "function next_13653458",
+        "function next_try_1005014",
+        "function nimCopy",
+        "function nimCopyAux",
+        "function nimMax",
+        "function nimMin",
+        "function npuParseBiggestInt",
+        "function npuParseInt",
+        "function nsuAddf",
+        "function nsuCmpIgnoreStyle",
+        "function nsuEndsWith",
+        "function nsuFormatOpenArray",
+        "function nsuFormatSingleElem",
+        "function nsuRemoveSuffixCharSet",
+        "function nsuSplitChar",
+        "function nsuSplitString",
+        "function nsuStartsWith",
+        "function nsuToLowerAsciiChar",
+        "function nsuformatBiggestFloat",
+        "function nsuformatFloat",
+        "function nucruneLen",
+        "function nuctoUTF8",
+        "function overlap_16232340",
+        "function plot4pointsfill_14325073",
+        "function present_13300349",
+        "function print_13916259",
+        "function printc_13916265",
+        "function process_13460052",
+        "function pset_13930200",
+        "function pset_14025252",
+        "function pset_raw_13930757",
+        "function raiseDivByZero",
+        "function raiseException",
+        "function raiseIndexError",
+        "function raiseOverflow",
+        "function raiseRangeError",
+        "function raise_assert_102614",
+        "function rand_13655243",
+        "function rand_13655281",
+        "function rand_13655435",
+        "function rand_16355095",
+        "function rand_16355120",
+        "function randomize_13670222",
+        "function randomize_13670261",
+        "function rawEcho",
+        "function raw_get_13350333",
+        "function raw_get_14925325",
+        "function raw_get_known_hc_13441593",
+        "function raw_get_known_hc_15016648",
+        "function raw_insert_13441108",
+        "function raw_insert_15016130",
+        "function raw_parse_int_8750201",
+        "function read_file_13450043",
+        "function rectfill_13930223",
+        "function reprEnum",
+        "function reraiseException",
+        "function reset_ball_16345020",
+        "function resize_13300340",
+        "function resize_canvas_13300344",
+        "function rgb_12210056",
+        "function rnd_16355023",
+        "function rnd_16355045",
+        "function rnd_16365052",
+        "function rotl_13653430",
+        "function run_13645051",
+        "function run_15290725",
+        "function sample_16355051",
+        "function sample_16365058",
+        "function setConstr",
+        "function set_12150837",
+        "function set_button_state_11625015",
+        "function set_color_13916289",
+        "function set_font_13916237",
+        "function set_palette_13980014",
+        "function set_spritesheet_15125015",
+        "function set_window_title_13650039",
+        "function set_window_title_15290478",
+        "function should_run_11915214",
+        "function skip_8695026",
+        "function srand_15285015",
+        "function stencil_test_13916483",
+        "function step_13520216",
+        "function stop_13455173",
+        "function subInt",
+        "function substr_341022",
+        "function substr_eq_8970026",
+        "function suite_ended_11797522",
+        "function suite_ended_11797538",
+        "function suite_ended_11855045",
+        "function suite_ended_11915028",
+        "function suite_ended_11930629",
+        "function suite_started_11797444",
+        "function suite_started_11797461",
+        "function suite_started_11820214",
+        "function suite_started_11860089",
+        "function sys_fatal_102618",
+        "function sys_fatal_235018",
+        "function test_ended_11797503",
+        "function test_ended_11797520",
+        "function test_ended_11840234",
+        "function test_ended_11865014",
+        "function test_ended_11940228",
+        "function test_started_11797463",
+        "function test_started_11797480",
+        "function test_started_11825035",
+        "function test_started_11860110",
+        "function text_width_13916277",
+        "function toJSStr",
+        "function to_float_26459",
+        "function to_nico_keycode_13297221",
+        "function to_pint_12170085",
+        "function to_pint_12170102",
+        "function to_pint_12170119",
+        "function unhandledException",
+        "function update_11535262",
+        "function vec2f_15860005",
+        "function vec2f_16345024",
+        "function vec2i_15375016",
+        "function wrap_14550013",
+        "function write_11640258",
+        "function write_data_11640233",
+        "function write_line_11645242",
+        "function xml_escape_11855061"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/webrtc/src/peerjs.nim": {
+      "fichier": "examples/webrtc/src/peerjs.nim",
+      "langage": "nim",
+      "lignes": 24,
+      "taille_bytes": 1346,
+      "entrees": [
+        "dom",
+        "jsffi"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "examples/webrtc/src/main.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "examples/webrtc/src/main.nim": {
+      "fichier": "examples/webrtc/src/main.nim",
+      "langage": "nim",
+      "lignes": 323,
+      "taille_bytes": 8722,
+      "entrees": [
+        "dom",
+        "jsffi",
+        "nico",
+        "nico/vec",
+        "peerjs",
+        "strscans",
+        "strutils"
+      ],
+      "sorties": [
+        "const idLen",
+        "const idPrefix"
+      ],
+      "appelle": [
+        "examples/webrtc/src/peerjs.nim",
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nico/gui.nim": {
+      "fichier": "nico/gui.nim",
+      "langage": "nim",
+      "lignes": 1251,
+      "taille_bytes": 39260,
+      "entrees": [
+        "nico",
+        "nico/utils",
+        "std/wordwrap",
+        "strutils"
+      ],
+      "sorties": [
+        "export TextAlign"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/ringbuffer.nim": {
+      "fichier": "nico/ringbuffer.nim",
+      "langage": "nim",
+      "lignes": 88,
+      "taille_bytes": 2144,
+      "entrees": [
+        "math",
+        "unittest"
+      ],
+      "sorties": [
+        "func idx"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/spritedraw.nim": {
+      "fichier": "nico/spritedraw.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 365,
+      "entrees": [],
+      "sorties": [
+        "type SpriteDraw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/controller.nim": {
+      "fichier": "nico/controller.nim",
+      "langage": "nim",
+      "lignes": 177,
+      "taille_bytes": 5436,
+      "entrees": [
+        "sdl2_nim/sdl"
+      ],
+      "sorties": [
+        "type NicoAxis",
+        "type NicoButton",
+        "type NicoController",
+        "type NicoControllerKind"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/stb_vorbis.nim": {
+      "fichier": "nico/stb_vorbis.nim",
+      "langage": "nim",
+      "lignes": 5480,
+      "taille_bytes": 188703,
+      "entrees": [
+        "<alloca.h>",
+        "<assert.h>",
+        "<crtdbg.h>",
+        "<limits.h>",
+        "<malloc.h>",
+        "<math.h>",
+        "<stdio.h>",
+        "<stdlib.h>",
+        "<string.h>"
+      ],
+      "sorties": [
+        "const stb_vorbis_alloc",
+        "const uint8",
+        "const unsigned",
+        "enum STBVorbisError",
+        "struct stb_vorbis"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/debug.nim": {
+      "fichier": "nico/debug.nim",
+      "langage": "nim",
+      "lignes": 113,
+      "taille_bytes": 3920,
+      "entrees": [
+        "macros",
+        "nico",
+        "nico/vec",
+        "sequtils",
+        "strutils"
+      ],
+      "sorties": [
+        "const debugColor",
+        "const debugDrawTime",
+        "type DebugKind",
+        "type DebugObject"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/console.nim": {
+      "fichier": "nico/console.nim",
+      "langage": "nim",
+      "lignes": 153,
+      "taille_bytes": 4466,
+      "entrees": [
+        "nico",
+        "strutils",
+        "tables"
+      ],
+      "sorties": [
+        "type ConsoleCommandCallback"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/gui2.nim": {
+      "fichier": "nico/gui2.nim",
+      "langage": "nim",
+      "lignes": 1370,
+      "taille_bytes": 41349,
+      "entrees": [
+        "algorithm",
+        "nico",
+        "nico/debug",
+        "strformat",
+        "tables"
+      ],
+      "sorties": [
+        "const hPadding",
+        "const hSpacing",
+        "const resizeBarHeight",
+        "const scrollBarWidth",
+        "const titleBarHeight",
+        "const vPadding",
+        "const vSpacing",
+        "func makeRect",
+        "func pointInRect",
+        "type GuiAlign",
+        "type GuiBoxDrawFunc",
+        "type GuiSkin",
+        "type GuiTextDrawFunc",
+        "type Rect",
+        "type RenderData",
+        "type RenderStatus",
+        "type RenderStyle",
+        "type RenderType",
+        "type WindowData"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/tweaks.nim": {
+      "fichier": "nico/tweaks.nim",
+      "langage": "nim",
+      "lignes": 288,
+      "taille_bytes": 8017,
+      "entrees": [
+        "json",
+        "nico",
+        "nico/console",
+        "nico/gui2",
+        "nico/vec",
+        "os",
+        "strutils",
+        "tables"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/fontdata.nim": {
+      "fichier": "nico/fontdata.nim",
+      "langage": "nim",
+      "lignes": 6,
+      "taille_bytes": 9475,
+      "entrees": [
+        "nico/backends/common"
+      ],
+      "sorties": [
+        "const defaultFontChars"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/utils.nim": {
+      "fichier": "nico/utils.nim",
+      "langage": "nim",
+      "lignes": 283,
+      "taille_bytes": 8432,
+      "entrees": [
+        "nico",
+        "strscans",
+        "strutils"
+      ],
+      "sorties": [
+        "type TextAlign"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/matrix.nim": {
+      "fichier": "nico/matrix.nim",
+      "langage": "nim",
+      "lignes": 393,
+      "taille_bytes": 10347,
+      "entrees": [
+        "math",
+        "nico/vec"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/keycodes.nim": {
+      "fichier": "nico/keycodes.nim",
+      "langage": "nim",
+      "lignes": 479,
+      "taille_bytes": 22515,
+      "entrees": [],
+      "sorties": [
+        "const KMOD_ALT",
+        "const KMOD_CAPS",
+        "const KMOD_CTRL",
+        "const KMOD_GUI",
+        "const KMOD_LALT",
+        "const KMOD_LCTRL",
+        "const KMOD_LGUI",
+        "const KMOD_LSHIFT",
+        "const KMOD_MODE",
+        "const KMOD_NONE",
+        "const KMOD_NUM",
+        "const KMOD_RALT",
+        "const KMOD_RCTRL",
+        "const KMOD_RESERVED",
+        "const KMOD_RGUI",
+        "const KMOD_RSHIFT",
+        "const KMOD_SHIFT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/quat.nim": {
+      "fichier": "nico/quat.nim",
+      "langage": "nim",
+      "lignes": 64,
+      "taille_bytes": 1723,
+      "entrees": [
+        "math",
+        "nico/vec"
+      ],
+      "sorties": [
+        "type Quat"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/grids.nim": {
+      "fichier": "nico/grids.nim",
+      "langage": "nim",
+      "lignes": 71,
+      "taille_bytes": 1660,
+      "entrees": [
+        "nico/vec"
+      ],
+      "sorties": [
+        "type Grid"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/vec.nim": {
+      "fichier": "nico/vec.nim",
+      "langage": "nim",
+      "lignes": 545,
+      "taille_bytes": 11619,
+      "entrees": [
+        "nico",
+        "std/hashes",
+        "std/math"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/backends/sdl2.nim": {
+      "fichier": "nico/backends/sdl2.nim",
+      "langage": "nim",
+      "lignes": 2177,
+      "taille_bytes": 65380,
+      "entrees": [
+        "<emscripten.h>",
+        "common",
+        "gifenc",
+        "nico/controller",
+        "nico/ringbuffer",
+        "nico/stb_vorbis",
+        "nimPNG",
+        "sdl2_nim/sdl",
+        "std/hashes",
+        "std/json",
+        "std/math",
+        "std/opengl",
+        "std/os",
+        "std/osproc",
+        "std/parsecfg",
+        "std/random",
+        "std/sequtils",
+        "std/streams",
+        "std/strformat",
+        "std/strutils",
+        "std/tables",
+        "std/times"
+      ],
+      "sorties": [
+        "const float",
+        "const vec3",
+        "const vec4",
+        "type LogPriority",
+        "type em_callback_func"
+      ],
+      "appelle": [
+        "nico/backends/common.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nico/backends/common.nim": {
+      "fichier": "nico/backends/common.nim",
+      "langage": "nim",
+      "lignes": 742,
+      "taille_bytes": 18568,
+      "entrees": [
+        "algorithm",
+        "hashes",
+        "math",
+        "nico/controller",
+        "nico/keycodes",
+        "nico/ringbuffer",
+        "strutils",
+        "tables",
+        "times",
+        "unicode"
+      ],
+      "sorties": [
+        "const audioChannelAuto",
+        "const deadzone",
+        "const maxPaletteSize",
+        "const maxPlayers",
+        "const musicBufferSize",
+        "const nAudioChannels",
+        "const recordingEnabled",
+        "export keycodes",
+        "type AudioChannelId",
+        "type DitherMode",
+        "type KeyListener",
+        "type Palette",
+        "type ProfilerNode",
+        "type ResizeFunc",
+        "type StencilBlend",
+        "type StencilMode",
+        "type Touch",
+        "type TouchState"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nico/backends/sdl2.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/palette.nim": {
+      "fichier": "tests/palette.nim",
+      "langage": "nim",
+      "lignes": 57,
+      "taille_bytes": 1608,
+      "entrees": [
+        "nico",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/camera.nim": {
+      "fichier": "tests/camera.nim",
+      "langage": "nim",
+      "lignes": 26,
+      "taille_bytes": 441,
+      "entrees": [
+        "nico",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/fonts.nim": {
+      "fichier": "tests/fonts.nim",
+      "langage": "nim",
+      "lignes": 20,
+      "taille_bytes": 315,
+      "entrees": [
+        "nico",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/rgba.nim": {
+      "fichier": "tests/rgba.nim",
+      "langage": "nim",
+      "lignes": 25,
+      "taille_bytes": 569,
+      "entrees": [
+        "nico",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/tilemap.nim": {
+      "fichier": "tests/tilemap.nim",
+      "langage": "nim",
+      "lignes": 61,
+      "taille_bytes": 1371,
+      "entrees": [
+        "nico",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/config.nim": {
+      "fichier": "tests/config.nim",
+      "langage": "nim",
+      "lignes": 21,
+      "taille_bytes": 381,
+      "entrees": [
+        "nico",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/copymem.nim": {
+      "fichier": "tests/copymem.nim",
+      "langage": "nim",
+      "lignes": 29,
+      "taille_bytes": 684,
+      "entrees": [
+        "nico",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/assets/spritesheet.json": {
+      "fichier": "tests/assets/spritesheet.json",
+      "langage": "json",
+      "lignes": 14,
+      "taille_bytes": 249,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/assets/map.json": {
+      "fichier": "tests/assets/map.json",
+      "langage": "json",
+      "lignes": 31,
+      "taille_bytes": 1537,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "exampleApp/index.html": {
+      "fichier": "exampleApp/index.html",
+      "langage": "html",
+      "lignes": 28,
+      "taille_bytes": 695,
+      "entrees": [],
+      "sorties": [
+        "function handleMouseDown"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "exampleApp/nico_minimal.html": {
+      "fichier": "exampleApp/nico_minimal.html",
+      "langage": "html",
+      "lignes": 126,
+      "taille_bytes": 5089,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "exampleApp/src/main.nim": {
+      "fichier": "exampleApp/src/main.nim",
+      "langage": "nim",
+      "lignes": 21,
+      "taille_bytes": 450,
+      "entrees": [
+        "nico"
+      ],
+      "sorties": [
+        "const appName",
+        "const orgName"
+      ],
+      "appelle": [
+        "nico.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "nicosynth.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/palette.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/vertex.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/gui.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/tweaker.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/paintout.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/overlap.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/camera.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/screenscale.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/benchmark.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/coro.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/stencil.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/sat.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/textinput.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/stencil2.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/platformer.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/lines.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/rotation.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/gui2.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/texture.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/scale.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/adither.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/audio.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/webrtc/src/main.nim",
+      "vers": "examples/webrtc/src/peerjs.nim",
+      "type": "interne"
+    },
+    {
+      "de": "examples/webrtc/src/main.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nico/gui.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nico/debug.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nico/console.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nico/gui2.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nico/tweaks.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nico/utils.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nico/vec.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nico/backends/sdl2.nim",
+      "vers": "nico/backends/common.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/palette.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/camera.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/fonts.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/rgba.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/tilemap.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/config.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/copymem.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    },
+    {
+      "de": "exampleApp/src/main.nim",
+      "vers": "nico.nim",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 'nico.nim' (in=39, 56% du projet)",
+    "point_entree → 'examples/webrtc/src/main.nim'"
+  ]
+}

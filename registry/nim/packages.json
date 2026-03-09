@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "projet": "packages",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "shell": 1,
+      "nim": 2
+    }
+  },
+  "stats": {
+    "fichiers_total": 3,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "getmergebase.sh"
+  },
+  "noeuds": {
+    "getmergebase.sh": {
+      "fichier": "getmergebase.sh",
+      "langage": "shell",
+      "lignes": 27,
+      "taille_bytes": 1022,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pretty_json.nim": {
+      "fichier": "pretty_json.nim",
+      "langage": "nim",
+      "lignes": 41,
+      "taille_bytes": 899,
+      "entrees": [
+        "strutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package_scanner.nim": {
+      "fichier": "package_scanner.nim",
+      "langage": "nim",
+      "lignes": 238,
+      "taille_bytes": 7769,
+      "entrees": [
+        "std/httpclient",
+        "std/json",
+        "std/net",
+        "std/os",
+        "std/parseopt",
+        "std/streams",
+        "std/strutils",
+        "std/tables"
+      ],
+      "sorties": [
+        "const allowedNameChars",
+        "const usage"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

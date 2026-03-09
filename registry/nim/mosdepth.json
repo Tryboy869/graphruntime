@@ -1,0 +1,295 @@
+{
+  "meta": {
+    "projet": "mosdepth",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "nim": 5,
+      "unknown": 2,
+      "shell": 5,
+      "python": 2
+    }
+  },
+  "stats": {
+    "fichiers_total": 14,
+    "edges_total": 5,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "depthstat.nim"
+  },
+  "noeuds": {
+    "mosdepth.nim": {
+      "fichier": "mosdepth.nim",
+      "langage": "nim",
+      "lignes": 982,
+      "taille_bytes": 34081,
+      "entrees": [
+        "./depthstat",
+        "./int2str",
+        "algorithm",
+        "d4",
+        "docopt",
+        "hts",
+        "math",
+        "os",
+        "sequtils",
+        "strformat",
+        "strutils",
+        "tables",
+        "times"
+      ],
+      "sorties": [
+        "const MAX_COVERAGE"
+      ],
+      "appelle": [
+        "depthstat.nim",
+        "int2str.nim"
+      ],
+      "est_appele_par": [
+        "tests/funcs.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nim.cfg": {
+      "fichier": "nim.cfg",
+      "langage": "unknown",
+      "lignes": 25,
+      "taille_bytes": 626,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "depthstat.nim": {
+      "fichier": "depthstat.nim",
+      "langage": "nim",
+      "lignes": 79,
+      "taille_bytes": 2024,
+      "entrees": [
+        "unittest"
+      ],
+      "sorties": [
+        "type CountStat"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "mosdepth.nim",
+        "tests/funcs.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "int2str.nim": {
+      "fichier": "int2str.nim",
+      "langage": "nim",
+      "lignes": 95,
+      "taille_bytes": 3288,
+      "entrees": [
+        "bitops",
+        "strutils",
+        "times"
+      ],
+      "sorties": [
+        "const gDigitsLut",
+        "const powers_of_10"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "mosdepth.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "functional-tests.sh": {
+      "fichier": "functional-tests.sh",
+      "langage": "shell",
+      "lignes": 202,
+      "taille_bytes": 6686,
+      "entrees": [],
+      "sorties": [
+        "export MOSDEPTH_Q0",
+        "export MOSDEPTH_Q1"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/nim.cfg": {
+      "fichier": "tests/nim.cfg",
+      "langage": "unknown",
+      "lignes": 1,
+      "taille_bytes": 25,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/all.nim": {
+      "fichier": "tests/all.nim",
+      "langage": "nim",
+      "lignes": 1,
+      "taille_bytes": 13,
+      "entrees": [
+        "funcs"
+      ],
+      "sorties": [],
+      "appelle": [
+        "tests/funcs.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/funcs.nim": {
+      "fichier": "tests/funcs.nim",
+      "langage": "nim",
+      "lignes": 108,
+      "taille_bytes": 2492,
+      "entrees": [
+        "depthstat",
+        "hts",
+        "mosdepth",
+        "os",
+        "unittest"
+      ],
+      "sorties": [],
+      "appelle": [
+        "depthstat.nim",
+        "mosdepth.nim"
+      ],
+      "est_appele_par": [
+        "tests/all.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "scripts/plot-dist.py": {
+      "fichier": "scripts/plot-dist.py",
+      "langage": "python",
+      "lignes": 115,
+      "taille_bytes": 3617,
+      "entrees": [
+        "argparse",
+        "collections",
+        "itertools",
+        "json",
+        "operator",
+        "string",
+        "sys"
+      ],
+      "sorties": [
+        "def get_args",
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/hbb.sh": {
+      "fichier": "scripts/hbb.sh",
+      "langage": "shell",
+      "lignes": 7,
+      "taille_bytes": 424,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/build.sh": {
+      "fichier": "scripts/build.sh",
+      "langage": "shell",
+      "lignes": 21,
+      "taille_bytes": 377,
+      "entrees": [],
+      "sorties": [
+        "export PATH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/compare-time.sh": {
+      "fichier": "scripts/compare-time.sh",
+      "langage": "shell",
+      "lignes": 59,
+      "taille_bytes": 2164,
+      "entrees": [],
+      "sorties": [
+        "export LD_LIBRARY_PATH",
+        "export PATH",
+        "export TIMEFORMAT",
+        "export _MEM",
+        "export _USER_TIME",
+        "export _WALL_TIME",
+        "export bam",
+        "export cmd",
+        "export cram",
+        "export fasta"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/install.sh": {
+      "fichier": "scripts/install.sh",
+      "langage": "shell",
+      "lignes": 47,
+      "taille_bytes": 1274,
+      "entrees": [],
+      "sorties": [
+        "export HTSLIB",
+        "export LD_LIBRARY_PATH",
+        "export PATH",
+        "export base"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/plot-threads.py": {
+      "fichier": "scripts/plot-threads.py",
+      "langage": "python",
+      "lignes": 37,
+      "taille_bytes": 770,
+      "entrees": [
+        "matplotlib",
+        "seaborn"
+      ],
+      "sorties": [
+        "def to_secs"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "mosdepth.nim",
+      "vers": "depthstat.nim",
+      "type": "interne"
+    },
+    {
+      "de": "mosdepth.nim",
+      "vers": "int2str.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/all.nim",
+      "vers": "tests/funcs.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/funcs.nim",
+      "vers": "depthstat.nim",
+      "type": "interne"
+    },
+    {
+      "de": "tests/funcs.nim",
+      "vers": "mosdepth.nim",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

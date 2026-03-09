@@ -1,0 +1,2699 @@
+{
+  "meta": {
+    "projet": "sbt",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "shell": 4,
+      "scala": 97,
+      "java": 19
+    },
+    "official_runtime": true
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 17,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 3,
+    "fichier_plus_appele": "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala"
+  },
+  "noeuds": {
+    "sbt-allsources.sh": {
+      "fichier": "sbt-allsources.sh",
+      "langage": "shell",
+      "lignes": 3,
+      "taille_bytes": 72,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "sbt.sh": {
+      "fichier": "sbt.sh",
+      "langage": "shell",
+      "lignes": 1,
+      "taille_bytes": 3,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/citest2/Hello.scala": {
+      "fichier": "launcher-package/citest2/Hello.scala",
+      "langage": "scala",
+      "lignes": 7,
+      "taille_bytes": 97,
+      "entrees": [],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/citest2/src/test/scala/HelloTest.scala": {
+      "fichier": "launcher-package/citest2/src/test/scala/HelloTest.scala",
+      "langage": "scala",
+      "lignes": 7,
+      "taille_bytes": 109,
+      "entrees": [
+        "verify._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/citest/test.sh": {
+      "fichier": "launcher-package/citest/test.sh",
+      "langage": "shell",
+      "lignes": 40,
+      "taille_bytes": 1461,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/citest/Hello.scala": {
+      "fichier": "launcher-package/citest/Hello.scala",
+      "langage": "scala",
+      "lignes": 7,
+      "taille_bytes": 97,
+      "entrees": [],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/citest/src/test/scala/HelloTest.scala": {
+      "fichier": "launcher-package/citest/src/test/scala/HelloTest.scala",
+      "langage": "scala",
+      "lignes": 7,
+      "taille_bytes": 109,
+      "entrees": [
+        "verify._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/upload/sbt-upload.sh": {
+      "fichier": "launcher-package/upload/sbt-upload.sh",
+      "langage": "shell",
+      "lignes": 319,
+      "taille_bytes": 9534,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/integration-test/src/test/scala/RunnerScriptTest.scala": {
+      "fichier": "launcher-package/integration-test/src/test/scala/RunnerScriptTest.scala",
+      "langage": "scala",
+      "lignes": 380,
+      "taille_bytes": 16232,
+      "entrees": [],
+      "sorties": [
+        "abstract class RunnerScriptTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/integration-test/src/test/scala/IntegrationTestPaths.scala": {
+      "fichier": "launcher-package/integration-test/src/test/scala/IntegrationTestPaths.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 1149,
+      "entrees": [
+        "java.io.File"
+      ],
+      "sorties": [
+        "def citestDir",
+        "def sbtScript"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/integration-test/src/test/scala/ShellScriptUtil.scala": {
+      "fichier": "launcher-package/integration-test/src/test/scala/ShellScriptUtil.scala",
+      "langage": "scala",
+      "lignes": 192,
+      "taille_bytes": 7859,
+      "entrees": [
+        "java.io.File",
+        "java.io.PrintWriter",
+        "java.nio.file.Files",
+        "sbt.io.IO",
+        "scala.collection.mutable",
+        "scala.sys.process.",
+        "verify.BasicTestSuite"
+      ],
+      "sorties": [
+        "def isGitBashTest",
+        "def processLine",
+        "trait ShellScriptUtil"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/integration-test/src/test/scala/ExtendedRunnerTest.scala": {
+      "fichier": "launcher-package/integration-test/src/test/scala/ExtendedRunnerTest.scala",
+      "langage": "scala",
+      "lignes": 237,
+      "taille_bytes": 8287,
+      "entrees": [
+        "java.io.File",
+        "java.util.Locale",
+        "sbt.io.IO",
+        "scala.sys.process.*",
+        "scala.sys.process.ProcessLogger",
+        "verify.BasicTestSuite"
+      ],
+      "sorties": [
+        "def sbtProcess",
+        "def sbtProcessInDir",
+        "def sbtProcessWithOpts",
+        "def testVersion"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/integration-test/src/test/scala/LauncherTestHelper.scala": {
+      "fichier": "launcher-package/integration-test/src/test/scala/LauncherTestHelper.scala",
+      "langage": "scala",
+      "lignes": 24,
+      "taille_bytes": 934,
+      "entrees": [
+        "java.util.Locale"
+      ],
+      "sorties": [
+        "def isWindows",
+        "def launcherCommand",
+        "def useSbtw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/integration-test/src/test/scala/BspConfigTest.scala": {
+      "fichier": "launcher-package/integration-test/src/test/scala/BspConfigTest.scala",
+      "langage": "scala",
+      "lignes": 84,
+      "taille_bytes": 3041,
+      "entrees": [
+        "java.io.File",
+        "java.util.Locale",
+        "sbt.io.IO",
+        "scala.sys.process.*",
+        "ujson.*",
+        "verify.BasicTestSuite"
+      ],
+      "sorties": [
+        "def sbtProcessInDir"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "launcher-package/integration-test/src/test/scala/RunnerMemoryScriptTest.scala": {
+      "fichier": "launcher-package/integration-test/src/test/scala/RunnerMemoryScriptTest.scala",
+      "langage": "scala",
+      "lignes": 86,
+      "taille_bytes": 3380,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/test/scala/sbt/MultiParserSpec.scala": {
+      "fichier": "main-command/src/test/scala/sbt/MultiParserSpec.scala",
+      "langage": "scala",
+      "lignes": 144,
+      "taille_bytes": 6493,
+      "entrees": [
+        "sbt.internal.util.complete.Parser",
+        "scala.concurrent.duration.*",
+        "verify.BasicTestSuite"
+      ],
+      "sorties": [
+        "def parse",
+        "def parseEither"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/test/scala/sbt/internal/ClassLoaderCacheTest.scala": {
+      "fichier": "main-command/src/test/scala/sbt/internal/ClassLoaderCacheTest.scala",
+      "langage": "scala",
+      "lignes": 55,
+      "taille_bytes": 1945,
+      "entrees": [
+        "java.io.File",
+        "java.nio.file.Files",
+        "sbt.internal.classpath.ClassLoaderCache",
+        "sbt.io.IO",
+        "verify.BasicTestSuite"
+      ],
+      "sorties": [],
+      "appelle": [
+        "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/test/scala/sbt/internal/util/RunHandlerTest.scala": {
+      "fichier": "main-command/src/test/scala/sbt/internal/util/RunHandlerTest.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 690,
+      "entrees": [
+        "verify.BasicTestSuite"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/test/scala/sbt/internal/client/NetworkClientParseArgsTest.scala": {
+      "fichier": "main-command/src/test/scala/sbt/internal/client/NetworkClientParseArgsTest.scala",
+      "langage": "scala",
+      "lignes": 146,
+      "taille_bytes": 5885,
+      "entrees": [
+        "verify.BasicTestSuite"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/CommandUtil.scala": {
+      "fichier": "main-command/src/main/scala/sbt/CommandUtil.scala",
+      "langage": "scala",
+      "lignes": 97,
+      "taille_bytes": 3431,
+      "entrees": [
+        "java.io.File",
+        "java.util.regex.",
+        "sbt.internal.util.AttributeKey",
+        "sbt.internal.util.Util.nilSeq",
+        "sbt.internal.util.complete.DefaultParsers.*",
+        "sbt.internal.util.complete.Parser",
+        "sbt.io.IO",
+        "sbt.io.syntax.*"
+      ],
+      "sorties": [
+        "def aligned",
+        "def bootDirectory",
+        "def detail",
+        "def fill",
+        "def ignoreLine",
+        "def layoutDetails",
+        "def notReadable",
+        "def processLine",
+        "def readLines",
+        "def readable",
+        "def searchHelp",
+        "def singleArgument",
+        "def withAttribute"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/Highlight.scala": {
+      "fichier": "main-command/src/main/scala/sbt/Highlight.scala",
+      "langage": "scala",
+      "lignes": 31,
+      "taille_bytes": 873,
+      "entrees": [
+        "java.util.regex.Pattern",
+        "sbt.internal.util.",
+        "scala.Console."
+      ],
+      "sorties": [
+        "def bold",
+        "def showMatches"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/ExceptionCategory.scala": {
+      "fichier": "main-command/src/main/scala/sbt/ExceptionCategory.scala",
+      "langage": "scala",
+      "lignes": 35,
+      "taille_bytes": 1144,
+      "entrees": [
+        "java.lang.reflect.InvocationTargetException",
+        "sbt.internal.util.",
+        "scala.annotation.tailrec"
+      ],
+      "sorties": [
+        "def isFull"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/Watched.scala": {
+      "fichier": "main-command/src/main/scala/sbt/Watched.scala",
+      "langage": "scala",
+      "lignes": 72,
+      "taille_bytes": 2145,
+      "entrees": [
+        "java.io.File",
+        "java.nio.file.FileSystems",
+        "sbt.internal.LabeledFunctions.*",
+        "sbt.internal.io.",
+        "sbt.io.*",
+        "scala.concurrent.duration.*",
+        "scala.util.Properties"
+      ],
+      "sorties": [
+        "def apply",
+        "def clearScreen",
+        "def closeWatch",
+        "def createWatchService",
+        "type WatchSource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/BasicKeys.scala": {
+      "fichier": "main-command/src/main/scala/sbt/BasicKeys.scala",
+      "langage": "scala",
+      "lignes": 177,
+      "taille_bytes": 5296,
+      "entrees": [
+        "java.io.File",
+        "java.nio.file.Path",
+        "sbt.internal.classpath.ClassLoaderCache",
+        "sbt.internal.inc.classpath.",
+        "sbt.internal.server.ServerHandler",
+        "sbt.internal.util.AttributeKey",
+        "sbt.librarymanagement.ModuleID",
+        "sbt.util.",
+        "scala.concurrent.duration.FiniteDuration",
+        "xsbti."
+      ],
+      "sorties": [],
+      "appelle": [
+        "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala",
+        "main-command/src/main/scala/sbt/internal/server/ServerHandler.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "main-command/src/main/scala/sbt/State.scala": {
+      "fichier": "main-command/src/main/scala/sbt/State.scala",
+      "langage": "scala",
+      "lignes": 450,
+      "taille_bytes": 19747,
+      "entrees": [
+        "BasicCommandStrings.",
+        "ExceptionCategory.*",
+        "java.io.File",
+        "java.net.",
+        "java.util.concurrent.Callable",
+        "match",
+        "sbt.internal.classpath.ClassLoaderCache",
+        "sbt.internal.inc.classpath.",
+        "sbt.internal.util.*",
+        "sbt.internal.util.complete.",
+        "sbt.util.Logger"
+      ],
+      "sorties": [
+        "def addExitHook",
+        "def baseDir",
+        "def call",
+        "def classLoaderCache",
+        "def clearGlobalLog",
+        "def continue",
+        "def currentOption",
+        "def defaultReload",
+        "def exit",
+        "def fail",
+        "def get",
+        "def handleError",
+        "def has",
+        "def initializeClassLoaderCache",
+        "def interactive",
+        "def isNetworkCommand",
+        "def keepLastLog",
+        "def locked",
+        "def log",
+        "def newHistory",
+        "def previous",
+        "def process",
+        "def put",
+        "def reboot",
+        "def reload",
+        "def remove",
+        "def runCmd",
+        "def runExitHooks",
+        "def setInteractive",
+        "def setMaxSize",
+        "def setNext",
+        "def source",
+        "def stateOps",
+        "def update",
+        "trait Identity",
+        "trait StateOps"
+      ],
+      "appelle": [
+        "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala"
+      ],
+      "est_appele_par": [
+        "main-command/src/main/scala/sbt/internal/ui/UITask.scala",
+        "main-command/src/main/scala/sbt/internal/ui/UserThread.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/BasicCommandStrings.scala": {
+      "fichier": "main-command/src/main/scala/sbt/BasicCommandStrings.scala",
+      "langage": "scala",
+      "lignes": 262,
+      "taille_bytes": 9243,
+      "entrees": [
+        "any",
+        "sbt.internal.util.complete.HistoryCommands",
+        "sbt.util.Level"
+      ],
+      "sorties": [
+        "def AliasDetailed",
+        "def AppendCommand",
+        "def AppendLastDetailed",
+        "def ApplyCommand",
+        "def ApplyDetailed",
+        "def ClearCaches",
+        "def ClearCachesDetailed",
+        "def ClearOnFailure",
+        "def Client",
+        "def ClientDetailed",
+        "def CompleteExec",
+        "def CompletionsBrief",
+        "def CompletionsDetailed",
+        "def DashClient",
+        "def DashDashClient",
+        "def DashDashDetachStdio",
+        "def DashDashServer",
+        "def FailureWall",
+        "def HistoryHelpBrief",
+        "def IfLast",
+        "def IfLastCommon",
+        "def IfLastDetailed",
+        "def JavaClient",
+        "def MapExec",
+        "def Multi",
+        "def MultiBrief",
+        "def MultiDetailed",
+        "def OldShell",
+        "def OldShellDetailed",
+        "def OnFailure",
+        "def OnFailureDetailed",
+        "def PopOnFailure",
+        "def PromptChannel",
+        "def ReadCommand",
+        "def ReadDetailed",
+        "def ReadFiles",
+        "def RebootCommand",
+        "def RebootDetailed",
+        "def ReportResult",
+        "def ServerDetailed",
+        "def Shell",
+        "def ShellDetailed",
+        "def StartServer",
+        "def StartServerDetailed",
+        "def StashOnFailure",
+        "def addPluginSbtFileHelp",
+        "def cleanFullDetailed",
+        "def continuousBriefHelp",
+        "def continuousDetail",
+        "def exitBrief",
+        "def helpBrief",
+        "def helpDetailed",
+        "def historyHelp",
+        "def logLevelHelp",
+        "def runEarly",
+        "def shutdownBrief",
+        "def templateBrief",
+        "def templateDetailed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/BasicCommands.scala": {
+      "fichier": "main-command/src/main/scala/sbt/BasicCommands.scala",
+      "langage": "scala",
+      "lignes": 608,
+      "taille_bytes": 24150,
+      "entrees": [
+        "BasicCommandStrings.*",
+        "BasicKeys.*",
+        "Command.applyEffect",
+        "CommandUtil.*",
+        "DefaultParsers.*",
+        "first.head",
+        "java.io.File",
+        "java.nio.file.Paths",
+        "sbt.internal.client.NetworkClient",
+        "sbt.internal.inc.ModuleUtilities",
+        "sbt.internal.inc.PlainVirtualFile",
+        "sbt.internal.inc.classpath.ClasspathUtil.toLoader",
+        "sbt.internal.util.",
+        "sbt.internal.util.Types.",
+        "sbt.internal.util.Util.*",
+        "sbt.internal.util.complete.",
+        "sbt.io.IO",
+        "sbt.util.Level",
+        "scala.Function.tupled",
+        "scala.collection.mutable.ListBuffer",
+        "scala.util.control.NonFatal",
+        "xsbti.VirtualFile"
+      ],
+      "sorties": [
+        "def addAlias",
+        "def addPluginSbtFile",
+        "def alias",
+        "def aliasBody",
+        "def aliasNames",
+        "def aliases",
+        "def allAliases",
+        "def append",
+        "def argsStr",
+        "def call",
+        "def callParser",
+        "def clearOnFailure",
+        "def client",
+        "def clientParser",
+        "def combinedLax",
+        "def completeExecCommand",
+        "def completionsCommand",
+        "def completionsParser",
+        "def cpStr",
+        "def delegateToAlias",
+        "def doRead",
+        "def early",
+        "def exit",
+        "def fromCpStr",
+        "def getAlias",
+        "def help",
+        "def helpParser",
+        "def history",
+        "def historyParser",
+        "def ifLast",
+        "def ignore",
+        "def isAliasNamed",
+        "def isNamed",
+        "def mapExecCommand",
+        "def multiApplied",
+        "def multiParser",
+        "def newAlias",
+        "def nop",
+        "def oldshell",
+        "def popOnFailure",
+        "def printAlias",
+        "def printAliases",
+        "def read",
+        "def readParser",
+        "def reboot",
+        "def rebootImpl",
+        "def rebootParser",
+        "def removeAlias",
+        "def removeAliases",
+        "def removeTagged",
+        "def reportResultsCommand",
+        "def runAlias",
+        "def runClient",
+        "def runCompletions",
+        "def runHelp",
+        "def setOnFailure",
+        "def shutdown",
+        "def single",
+        "def stashOnFailure",
+        "def validateCommands"
+      ],
+      "appelle": [
+        "main-command/src/main/scala/sbt/internal/client/NetworkClient.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/MainControl.scala": {
+      "fichier": "main-command/src/main/scala/sbt/MainControl.scala",
+      "langage": "scala",
+      "lignes": 51,
+      "taille_bytes": 1318,
+      "entrees": [
+        "code",
+        "java.io.File"
+      ],
+      "sorties": [
+        "def apply",
+        "def arguments",
+        "def classpathExtra",
+        "def crossVersioned",
+        "def mainComponents"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/Command.scala": {
+      "fichier": "main-command/src/main/scala/sbt/Command.scala",
+      "langage": "scala",
+      "lignes": 298,
+      "taille_bytes": 10573,
+      "entrees": [
+        "CommandUtil.*",
+        "DefaultParsers.*",
+        "sbt.internal.inc.ReflectUtilities",
+        "sbt.internal.util.",
+        "sbt.internal.util.Types.const",
+        "sbt.internal.util.Util.",
+        "sbt.internal.util.complete."
+      ],
+      "sorties": [
+        "def apply",
+        "def applyEffect",
+        "def arb",
+        "def args",
+        "def brief",
+        "def briefDetail",
+        "def briefOnly",
+        "def combine",
+        "def command",
+        "def commands",
+        "def custom",
+        "def customHelp",
+        "def detail",
+        "def detailOnly",
+        "def distance",
+        "def help",
+        "def invalidValue",
+        "def make",
+        "def message",
+        "def more",
+        "def moreMessage",
+        "def nameOption",
+        "def parser",
+        "def process",
+        "def similar",
+        "def simpleParser",
+        "def single",
+        "def spacedAny",
+        "def spacedC",
+        "def suggestions",
+        "def tag",
+        "def tags",
+        "def this",
+        "def usageError",
+        "def validID",
+        "trait CommandDefinitions",
+        "trait Help"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/CommandChannel.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/CommandChannel.scala",
+      "langage": "scala",
+      "lignes": 127,
+      "taille_bytes": 4504,
+      "entrees": [
+        "java.util.concurrent.ConcurrentLinkedQueue",
+        "java.util.concurrent.atomic.AtomicReference",
+        "sbt.internal.ui.",
+        "sbt.internal.util.Terminal",
+        "sbt.protocol.EventMessage",
+        "sbt.util.Level",
+        "scala.jdk.CollectionConverters.*"
+      ],
+      "sorties": [
+        "abstract class CommandChannel",
+        "def name",
+        "def poll",
+        "def prompt",
+        "def publishBytes",
+        "def shutdown",
+        "def unprompt"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "main-command/src/main/scala/sbt/internal/ui/UITask.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/LabeledFunctions.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/LabeledFunctions.scala",
+      "langage": "scala",
+      "lignes": 163,
+      "taille_bytes": 6565,
+      "entrees": [],
+      "sorties": [
+        "def label"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/ConsoleChannel.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/ConsoleChannel.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 832,
+      "entrees": [
+        "sbt.internal.ui.",
+        "sbt.internal.util.*",
+        "sjsonnew.JsonFormat"
+      ],
+      "sorties": [
+        "def publishBytes",
+        "def publishEvent",
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/ui/UITask.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/ui/UITask.scala",
+      "langage": "scala",
+      "lignes": 126,
+      "taille_bytes": 4747,
+      "entrees": [
+        "java.io.File",
+        "java.nio.channels.ClosedChannelException",
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "sbt.BasicCommandStrings.",
+        "sbt.BasicKeys.",
+        "sbt.State",
+        "sbt.internal.CommandChannel",
+        "sbt.internal.util.*",
+        "sbt.internal.util.ConsoleAppender.",
+        "sbt.internal.util.Terminal.hasConsole",
+        "sbt.internal.util.complete.",
+        "scala.annotation.tailrec"
+      ],
+      "sorties": [
+        "def color",
+        "def readLine",
+        "def splitCommand",
+        "def terminalReader",
+        "trait Reader"
+      ],
+      "appelle": [
+        "main-command/src/main/scala/sbt/State.scala",
+        "main-command/src/main/scala/sbt/internal/CommandChannel.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "main-command/src/main/scala/sbt/internal/ui/UserThread.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/ui/UserThread.scala",
+      "langage": "scala",
+      "lignes": 109,
+      "taille_bytes": 3724,
+      "entrees": [
+        "java.util.concurrent.Executors",
+        "java.util.concurrent.atomic.",
+        "sbt.State",
+        "sbt.internal.util.",
+        "sbt.internal.util.JoinThread.*",
+        "scala.concurrent.duration.*"
+      ],
+      "sorties": [
+        "def submit"
+      ],
+      "appelle": [
+        "main-command/src/main/scala/sbt/State.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/util/RunHandler.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/util/RunHandler.scala",
+      "langage": "scala",
+      "lignes": 45,
+      "taille_bytes": 1232,
+      "entrees": [
+        "java.io.File",
+        "java.nio.file.Paths",
+        "sbt.internal.worker.JvmRunInfo",
+        "sbt.util.Logger",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "def jvmRun"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/util/JoinThread.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/util/JoinThread.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 800,
+      "entrees": [
+        "java.util.concurrent.TimeoutException",
+        "scala.annotation.tailrec",
+        "scala.concurrent.duration.*"
+      ],
+      "sorties": [
+        "def joinFor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/util/ReadJsonFromInputStream.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/util/ReadJsonFromInputStream.scala",
+      "langage": "scala",
+      "lignes": 110,
+      "taille_bytes": 3892,
+      "entrees": [
+        "java.io.InputStream",
+        "java.nio.channels.ClosedChannelException",
+        "java.util.concurrent.atomic.AtomicBoolean"
+      ],
+      "sorties": [
+        "def apply",
+        "def doDrainHeaders",
+        "def drainHeaders",
+        "def expandHeaderBuffer",
+        "def getLine",
+        "def run",
+        "def run1"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "main-command/src/main/scala/sbt/internal/client/ServerConnection.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/client/BspClient.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/client/BspClient.scala",
+      "langage": "scala",
+      "lignes": 71,
+      "taille_bytes": 1915,
+      "entrees": [
+        "java.io.",
+        "java.net.Socket",
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "sbt.Exit",
+        "scala.util.control.NonFatal"
+      ],
+      "sorties": [
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/client/ServerConnection.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/client/ServerConnection.scala",
+      "langage": "scala",
+      "lignes": 107,
+      "taille_bytes": 3029,
+      "entrees": [
+        "java.io.IOException",
+        "java.net.",
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "sbt.internal.protocol.*",
+        "sbt.internal.util.ReadJsonFromInputStream",
+        "sbt.protocol.*"
+      ],
+      "sorties": [
+        "abstract class ServerConnection",
+        "def onNotification",
+        "def onRequest",
+        "def onResponse",
+        "def onShutdown",
+        "def sendString",
+        "def shutdown",
+        "def writeEndLine",
+        "def writeLine"
+      ],
+      "appelle": [
+        "main-command/src/main/scala/sbt/internal/util/ReadJsonFromInputStream.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/client/NetworkClient.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/client/NetworkClient.scala",
+      "langage": "scala",
+      "lignes": 1527,
+      "taille_bytes": 56893,
+      "entrees": [
+        "NetworkClient.Arguments",
+        "Serialization.",
+        "java.io.",
+        "java.lang.",
+        "java.lang.ProcessBuilder.Redirect",
+        "java.net.",
+        "java.nio.file.Files",
+        "java.util.UUID",
+        "java.util.concurrent.",
+        "java.util.concurrent.TimeoutException",
+        "java.util.concurrent.atomic.",
+        "sbt.BasicCommandStrings.",
+        "sbt.internal.langserver.",
+        "sbt.internal.langserver.codec.JsonProtocol.given",
+        "sbt.internal.protocol.*",
+        "sbt.internal.util.",
+        "sbt.internal.worker.",
+        "sbt.internal.worker.codec.JsonProtocol.given",
+        "sbt.io.IO",
+        "sbt.io.syntax.*",
+        "sbt.protocol.*",
+        "sbt.protocol.codec.JsonProtocol.given",
+        "sbt.util.",
+        "scala.Console.",
+        "scala.annotation.tailrec",
+        "scala.collection.mutable",
+        "scala.concurrent.duration.*",
+        "scala.util.",
+        "scala.util.control.NonFatal",
+        "sjsonnew.BasicJsonProtocol.*",
+        "sjsonnew.shaded.scalajson.ast.unsafe.",
+        "sjsonnew.support.scalajson.unsafe.Converter"
+      ],
+      "sorties": [
+        "class NetworkClient",
+        "def appendLog",
+        "def batchExecute",
+        "def block",
+        "def blockUntilStart",
+        "def client",
+        "def complete",
+        "def completeExec",
+        "def connect",
+        "def connection",
+        "def drain",
+        "def elapsedString",
+        "def exitAbruptly",
+        "def fillCompletions",
+        "def getCompletions",
+        "def init",
+        "def log",
+        "def main",
+        "def messageTypeToLevel",
+        "def nativeRun",
+        "def onNotification",
+        "def onRequest",
+        "def onResponse",
+        "def onReturningResponse",
+        "def printResponse",
+        "def read",
+        "def run",
+        "def sendCancelAllCommand",
+        "def sendCommand",
+        "def sendCommandResponse",
+        "def sendExecCommand",
+        "def sendJson",
+        "def sendNotification",
+        "def splitDiagnostics",
+        "def splitLogMessage",
+        "def splitToMessage",
+        "def success",
+        "def this",
+        "def trace",
+        "def updateCompletions",
+        "def waitForServer",
+        "def withBaseDirectory",
+        "trait ConsoleInterface"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "main-command/src/main/scala/sbt/BasicCommands.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala",
+      "langage": "scala",
+      "lignes": 270,
+      "taille_bytes": 10588,
+      "entrees": [
+        "java.io.File",
+        "java.lang.management.ManagementFactory",
+        "java.lang.ref.",
+        "java.net.URLClassLoader",
+        "java.util.concurrent.atomic.",
+        "sbt.internal.inc.",
+        "sbt.internal.inc.classpath.",
+        "sbt.io.IO",
+        "scala.annotation.tailrec",
+        "scala.jdk.CollectionConverters.*",
+        "scala.util.control.NonFatal",
+        "xsbti.ScalaProvider",
+        "xsbti.compile."
+      ],
+      "sorties": [
+        "class CachedClassLoader",
+        "def addLoader",
+        "def apply",
+        "def clear",
+        "def commonParent",
+        "def isInvalidated",
+        "def scalaCompiler",
+        "def setParent",
+        "def this",
+        "def toClassLoader"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "main-command/src/main/scala/sbt/BasicKeys.scala",
+        "main-command/src/main/scala/sbt/State.scala",
+        "main-command/src/test/scala/sbt/internal/ClassLoaderCacheTest.scala",
+        "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincLmUtil.scala"
+      ],
+      "type_noeud": "feuille"
+    },
+    "main-command/src/main/scala/sbt/internal/server/Server.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/server/Server.scala",
+      "langage": "scala",
+      "lignes": 260,
+      "taille_bytes": 8962,
+      "entrees": [
+        "JsonProtocol.given",
+        "connection.*",
+        "java.io.",
+        "java.math.BigInteger",
+        "java.net.",
+        "java.nio.file.attribute.",
+        "java.security.SecureRandom",
+        "java.util.concurrent.atomic.",
+        "org.scalasbt.ipcsocket.*",
+        "sbt.internal.bsp.BuildServerConnection",
+        "sbt.internal.protocol.",
+        "sbt.internal.protocol.codec.*",
+        "sbt.internal.util.ErrorHandling",
+        "sbt.internal.util.Util.isWindows",
+        "sbt.io.IO",
+        "sbt.io.syntax.*",
+        "sbt.util.Logger",
+        "scala.concurrent.",
+        "scala.util.",
+        "sjsonnew.support.scalajson.unsafe.",
+        "xsbti.AppConfiguration"
+      ],
+      "sorties": [
+        "def acl",
+        "def addServerError",
+        "def authenticate",
+        "def ready",
+        "def shortName",
+        "def shutdown",
+        "def start",
+        "def tryClient"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/sbt/internal/server/ServerHandler.scala": {
+      "fichier": "main-command/src/main/scala/sbt/internal/server/ServerHandler.scala",
+      "langage": "scala",
+      "lignes": 86,
+      "taille_bytes": 3295,
+      "entrees": [
+        "sbt.internal.langserver.",
+        "sbt.internal.protocol.*",
+        "sbt.protocol.",
+        "sbt.util.Logger",
+        "sjsonnew.JsonFormat"
+      ],
+      "sorties": [
+        "def appendExec",
+        "def apply",
+        "def jsonRpcNotify",
+        "def jsonRpcRespond",
+        "def jsonRpcRespondError",
+        "def log",
+        "def name",
+        "def notify",
+        "def request",
+        "def response",
+        "trait ServerCallback"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "main-command/src/main/scala/sbt/BasicKeys.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/scala/xsbt/IPC.scala": {
+      "fichier": "main-command/src/main/scala/xsbt/IPC.scala",
+      "langage": "scala",
+      "lignes": 83,
+      "taille_bytes": 2478,
+      "entrees": [
+        "java.io.",
+        "java.net.",
+        "scala.annotation.tailrec",
+        "scala.util.control.NonFatal"
+      ],
+      "sorties": [
+        "def client",
+        "def close",
+        "def connection",
+        "def createServer",
+        "def isClosed",
+        "def makeServer",
+        "def nextPort",
+        "def port",
+        "def pullServer",
+        "def receive",
+        "def send",
+        "def server",
+        "def unmanagedServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/contraband-scala/sbt/ConnectionType.scala": {
+      "fichier": "main-command/src/main/contraband-scala/sbt/ConnectionType.scala",
+      "langage": "scala",
+      "lignes": 13,
+      "taille_bytes": 365,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/contraband-scala/sbt/CommandSource.scala": {
+      "fichier": "main-command/src/main/contraband-scala/sbt/CommandSource.scala",
+      "langage": "scala",
+      "lignes": 32,
+      "taille_bytes": 883,
+      "entrees": [],
+      "sorties": [
+        "def apply",
+        "def withChannelName"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/contraband-scala/sbt/ServerAuthentication.scala": {
+      "fichier": "main-command/src/main/contraband-scala/sbt/ServerAuthentication.scala",
+      "langage": "scala",
+      "lignes": 12,
+      "taille_bytes": 270,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/contraband-scala/sbt/Exec.scala": {
+      "fichier": "main-command/src/main/contraband-scala/sbt/Exec.scala",
+      "langage": "scala",
+      "lignes": 49,
+      "taille_bytes": 2034,
+      "entrees": [],
+      "sorties": [
+        "def apply",
+        "def newExecId",
+        "def withCommandLine",
+        "def withExecId",
+        "def withSource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/contraband-scala/sbt/internal/ExecFormats.scala": {
+      "fichier": "main-command/src/main/contraband-scala/sbt/internal/ExecFormats.scala",
+      "langage": "scala",
+      "lignes": 31,
+      "taille_bytes": 1168,
+      "entrees": [
+        "_root_.sjsonnew."
+      ],
+      "sorties": [
+        "trait ExecFormats"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/contraband-scala/sbt/internal/CommandSourceFormats.scala": {
+      "fichier": "main-command/src/main/contraband-scala/sbt/internal/CommandSourceFormats.scala",
+      "langage": "scala",
+      "lignes": 27,
+      "taille_bytes": 952,
+      "entrees": [
+        "_root_.sjsonnew."
+      ],
+      "sorties": [
+        "trait CommandSourceFormats"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/contraband-scala/sbt/internal/ServerAuthenticationFormats.scala": {
+      "fichier": "main-command/src/main/contraband-scala/sbt/internal/ServerAuthenticationFormats.scala",
+      "langage": "scala",
+      "lignes": 27,
+      "taille_bytes": 943,
+      "entrees": [
+        "_root_.sjsonnew."
+      ],
+      "sorties": [
+        "trait ServerAuthenticationFormats"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/contraband-scala/sbt/internal/ConnectionTypeFormats.scala": {
+      "fichier": "main-command/src/main/contraband-scala/sbt/internal/ConnectionTypeFormats.scala",
+      "langage": "scala",
+      "lignes": 29,
+      "taille_bytes": 983,
+      "entrees": [
+        "_root_.sjsonnew."
+      ],
+      "sorties": [
+        "trait ConnectionTypeFormats"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/java/sbt/internal/BootServerSocket.java": {
+      "fichier": "main-command/src/main/java/sbt/internal/BootServerSocket.java",
+      "langage": "java",
+      "lignes": 369,
+      "taille_bytes": 13470,
+      "entrees": [
+        "java.io.IOException",
+        "java.io.InputStream",
+        "java.io.OutputStream",
+        "java.io.UnsupportedEncodingException",
+        "java.lang.reflect.InvocationTargetException",
+        "java.lang.reflect.Method",
+        "java.net.ServerSocket",
+        "java.net.Socket",
+        "java.net.SocketException",
+        "java.net.SocketTimeoutException",
+        "java.nio.file.Files",
+        "java.nio.file.Path",
+        "java.nio.file.Paths",
+        "java.util.Set",
+        "java.util.concurrent.ConcurrentHashMap",
+        "java.util.concurrent.ExecutorService",
+        "java.util.concurrent.Executors",
+        "java.util.concurrent.Future",
+        "java.util.concurrent.LinkedBlockingQueue",
+        "java.util.concurrent.RejectedExecutionException",
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "java.util.concurrent.atomic.AtomicInteger",
+        "net.openhft.hashing.LongHashFunction",
+        "org.scalasbt.ipcsocket.UnixDomainServerSocket",
+        "org.scalasbt.ipcsocket.Win32NamedPipeServerSocket",
+        "org.scalasbt.ipcsocket.Win32NamedPipeSocket",
+        "org.scalasbt.ipcsocket.Win32SecurityLevel",
+        "sbt.internal.util.Terminal",
+        "xsbti.AppConfiguration"
+      ],
+      "sorties": [
+        "public class BootServerSocket"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/java/sbt/internal/ServerAlreadyBootingException.java": {
+      "fichier": "main-command/src/main/java/sbt/internal/ServerAlreadyBootingException.java",
+      "langage": "java",
+      "lignes": 18,
+      "taille_bytes": 370,
+      "entrees": [
+        "java.io.IOException"
+      ],
+      "sorties": [
+        "public class ServerAlreadyBootingException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "main-command/src/main/java/sbt/internal/classpath/WrappedLoader.java": {
+      "fichier": "main-command/src/main/java/sbt/internal/classpath/WrappedLoader.java",
+      "langage": "java",
+      "lignes": 46,
+      "taille_bytes": 1004,
+      "entrees": [
+        "java.net.URL",
+        "java.net.URLClassLoader",
+        "java.util.concurrent.atomic.AtomicBoolean"
+      ],
+      "sorties": [
+        "public class WrappedLoader"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/test/scala/sbt/internal/inc/ZincComponentCompilerSpec.scala": {
+      "fichier": "zinc-lm-integration/src/test/scala/sbt/internal/inc/ZincComponentCompilerSpec.scala",
+      "langage": "scala",
+      "lignes": 47,
+      "taille_bytes": 1595,
+      "entrees": [
+        "sbt.internal.util.ConsoleLogger",
+        "sbt.io.IO"
+      ],
+      "sorties": [
+        "class ZincComponentCompilerSpec",
+        "def isJava8"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/test/scala/sbt/internal/inc/ZincComponentManagerTest.scala": {
+      "fichier": "zinc-lm-integration/src/test/scala/sbt/internal/inc/ZincComponentManagerTest.scala",
+      "langage": "scala",
+      "lignes": 206,
+      "taille_bytes": 8489,
+      "entrees": [
+        "_root_.sbt.io.IO",
+        "_root_.sbt.io.syntax.*",
+        "hedgehog.*",
+        "hedgehog.core.Result",
+        "hedgehog.runner.*",
+        "java.io.File",
+        "java.util.concurrent.Callable",
+        "xsbti."
+      ],
+      "sorties": [
+        "def testDefine",
+        "def testFileMultiple",
+        "def testFileSingle",
+        "def testFilesMissingDefine",
+        "def testFilesMissingFail",
+        "def testFilesReturnsDefined",
+        "def testSecondaryCacheRead",
+        "def testSecondaryCacheWrite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/test/scala/sbt/internal/inc/IvyBridgeProviderSpecification.scala": {
+      "fichier": "zinc-lm-integration/src/test/scala/sbt/internal/inc/IvyBridgeProviderSpecification.scala",
+      "langage": "scala",
+      "lignes": 101,
+      "taille_bytes": 3870,
+      "entrees": [
+        "java.io.File",
+        "java.net.URLClassLoader",
+        "org.scalatest.*",
+        "org.scalatest.matchers.should.Matchers",
+        "sbt.internal.librarymanagement.ivy.*",
+        "sbt.io.IO",
+        "sbt.io.syntax.*",
+        "sbt.librarymanagement.*",
+        "sbt.util.Logger",
+        "xsbti.compile.CompilerBridgeProvider"
+      ],
+      "sorties": [
+        "abstract class IvyBridgeProviderSpecification",
+        "def currentBase",
+        "def currentManaged",
+        "def currentTarget",
+        "def getCompilerBridge",
+        "def getZincProvider",
+        "def secondaryCacheDirectory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincLmUtil.scala": {
+      "fichier": "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincLmUtil.scala",
+      "langage": "scala",
+      "lignes": 130,
+      "taille_bytes": 4678,
+      "entrees": [
+        "java.io.File",
+        "sbt.internal.inc.classpath.ClassLoaderCache",
+        "sbt.internal.util.MessageOnlyException",
+        "sbt.librarymanagement.",
+        "sbt.librarymanagement.syntax.*",
+        "xsbti.*",
+        "xsbti.ArtifactInfo.SbtOrganization",
+        "xsbti.compile."
+      ],
+      "sorties": [
+        "def fetchDefaultBridgeModule",
+        "def getDefaultBridgeModule",
+        "def getDefaultBridgeSourceModule",
+        "def hasScala2SbtBridge",
+        "def scalaCompiler",
+        "def scalaCompilerBridgeJars"
+      ],
+      "appelle": [
+        "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/main/scala/sbt/internal/inc/Errors.scala": {
+      "fichier": "zinc-lm-integration/src/main/scala/sbt/internal/inc/Errors.scala",
+      "langage": "scala",
+      "lignes": 24,
+      "taille_bytes": 828,
+      "entrees": [],
+      "sorties": [
+        "class InvalidComponent",
+        "def compiler",
+        "def library",
+        "def missingTemplate",
+        "def this"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/main/scala/sbt/internal/inc/IfMissing.scala": {
+      "fichier": "zinc-lm-integration/src/main/scala/sbt/internal/inc/IfMissing.scala",
+      "langage": "scala",
+      "lignes": 22,
+      "taille_bytes": 593,
+      "entrees": [],
+      "sorties": [
+        "def define",
+        "def fail",
+        "def run"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincComponentCompiler.scala": {
+      "fichier": "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincComponentCompiler.scala",
+      "langage": "scala",
+      "lignes": 346,
+      "taille_bytes": 13534,
+      "entrees": [
+        "ZincComponentCompiler.",
+        "java.io.File",
+        "java.nio.file.",
+        "java.util.concurrent.Callable",
+        "sbt.internal.inc.classpath.ClasspathUtil",
+        "sbt.internal.librarymanagement.JsonUtil",
+        "sbt.internal.util.",
+        "sbt.io.IO",
+        "sbt.io.syntax.*",
+        "sbt.librarymanagement.*",
+        "sbt.librarymanagement.syntax.*",
+        "sbt.util.InterfaceUtil.",
+        "targetDir.isDirectory)",
+        "xsbti.",
+        "xsbti.ArtifactInfo.*",
+        "xsbti.compile."
+      ],
+      "sorties": [
+        "def compiledBridge",
+        "def compiledBridgeJar",
+        "def getDefaultComponentProvider",
+        "def getDefaultLock",
+        "def interfaceProvider",
+        "def isPrefixedWith"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "zinc-lm-integration/src/main/java/xsbti/compile/ZincBridgeProvider.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincComponentManager.scala": {
+      "fichier": "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincComponentManager.scala",
+      "langage": "scala",
+      "lignes": 153,
+      "taille_bytes": 5431,
+      "entrees": [
+        "java.io.File",
+        "java.util.concurrent.Callable",
+        "sbt.internal.util.FullLogger",
+        "sbt.io.IO",
+        "xsbti.*",
+        "xsbti.ArtifactInfo.SbtOrganization"
+      ],
+      "sorties": [
+        "class ZincComponentManager",
+        "def createAndCache",
+        "def define",
+        "def file",
+        "def files",
+        "def fromSecondary",
+        "def getOrElse",
+        "def notFound"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "zinc-lm-integration/src/main/java/xsbti/compile/ZincBridgeProvider.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/main/scala/sbt/internal/inc/ResourceLoader.scala": {
+      "fichier": "zinc-lm-integration/src/main/scala/sbt/internal/inc/ResourceLoader.scala",
+      "langage": "scala",
+      "lignes": 40,
+      "taille_bytes": 1150,
+      "entrees": [
+        "java.util.Properties"
+      ],
+      "sorties": [
+        "def getPropertiesFor",
+        "def getSafePropertiesFor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "zinc-lm-integration/src/main/java/xsbti/compile/ZincBridgeProvider.java": {
+      "fichier": "zinc-lm-integration/src/main/java/xsbti/compile/ZincBridgeProvider.java",
+      "langage": "java",
+      "lignes": 84,
+      "taille_bytes": 3312,
+      "entrees": [
+        "java.io.File",
+        "sbt.internal.inc.ZincComponentCompiler",
+        "sbt.internal.inc.ZincComponentManager",
+        "sbt.librarymanagement.DependencyResolution",
+        "sbt.librarymanagement.Resolver",
+        "scala.None$",
+        "xsbti.ComponentProvider",
+        "xsbti.GlobalLock",
+        "xsbti.Logger"
+      ],
+      "sorties": [
+        "public interface ZincBridgeProvider"
+      ],
+      "appelle": [
+        "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincComponentCompiler.scala",
+        "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincComponentManager.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "worker/src/test/scala/sbt/internal/worker1/WorkerTest.scala": {
+      "fichier": "worker/src/test/scala/sbt/internal/worker1/WorkerTest.scala",
+      "langage": "scala",
+      "lignes": 19,
+      "taille_bytes": 761,
+      "entrees": [
+        "sbt.io.IO"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/ForkConsoleMain.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/ForkConsoleMain.java",
+      "langage": "java",
+      "lignes": 117,
+      "taille_bytes": 3751,
+      "entrees": [
+        "java.io.File",
+        "java.lang.reflect.Method",
+        "java.net.MalformedURLException",
+        "java.net.URL",
+        "java.net.URLClassLoader",
+        "java.nio.file.Paths",
+        "java.util.ArrayList",
+        "java.util.Collections",
+        "java.util.Iterator",
+        "java.util.List",
+        "java.util.ServiceLoader",
+        "java.util.stream.Collectors",
+        "java.util.stream.Stream",
+        "xsbti.compile.ConsoleInterface1"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/TestInfo.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/TestInfo.java",
+      "langage": "java",
+      "lignes": 58,
+      "taille_bytes": 1770,
+      "entrees": [
+        "java.io.Serializable",
+        "java.util.ArrayList",
+        "sbt.testing.TaskDef"
+      ],
+      "sorties": [
+        "public class TestInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/ForkTags.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/ForkTags.java",
+      "langage": "java",
+      "lignes": 17,
+      "taille_bytes": 275,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/FilePath.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/FilePath.java",
+      "langage": "java",
+      "lignes": 13,
+      "taille_bytes": 220,
+      "entrees": [
+        "java.net.URI"
+      ],
+      "sorties": [
+        "public class FilePath"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/ConsoleInfo.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/ConsoleInfo.java",
+      "langage": "java",
+      "lignes": 40,
+      "taille_bytes": 1117,
+      "entrees": [
+        "java.io.Serializable",
+        "java.net.URI",
+        "java.util.ArrayList"
+      ],
+      "sorties": [
+        "public class ConsoleInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/ForkTestMain.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/ForkTestMain.java",
+      "langage": "java",
+      "lignes": 514,
+      "taille_bytes": 16906,
+      "entrees": [
+        "java.io.IOException",
+        "java.io.PrintStream",
+        "java.io.Serializable",
+        "java.util.ArrayList",
+        "java.util.Arrays",
+        "java.util.Collection",
+        "java.util.LinkedHashSet",
+        "java.util.List",
+        "java.util.concurrent.*",
+        "org.scalasbt.shadedgson.com.google.gson.Gson",
+        "sbt.testing.*"
+      ],
+      "sorties": [
+        "class RunAborted",
+        "public class ForkTestMain"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/ZeroLogger.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/ZeroLogger.java",
+      "langage": "java",
+      "lignes": 24,
+      "taille_bytes": 549,
+      "entrees": [
+        "java.util.function.Supplier",
+        "xsbti.Logger"
+      ],
+      "sorties": [
+        "public class ZeroLogger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/FrameworkWrapper.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/FrameworkWrapper.java",
+      "langage": "java",
+      "lignes": 328,
+      "taille_bytes": 10135,
+      "entrees": [
+        "sbt.testing.*"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/WorkerError.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/WorkerError.java",
+      "langage": "java",
+      "lignes": 13,
+      "taille_bytes": 280,
+      "entrees": [
+        "java.io.Serializable"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/PersistedException.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/PersistedException.java",
+      "langage": "java",
+      "lignes": 18,
+      "taille_bytes": 436,
+      "entrees": [],
+      "sorties": [
+        "public class PersistedException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/WorkerMain.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/WorkerMain.java",
+      "langage": "java",
+      "lignes": 219,
+      "taille_bytes": 7791,
+      "entrees": [
+        "java.io.ByteArrayOutputStream",
+        "java.io.IOException",
+        "java.io.InputStream",
+        "java.io.PrintStream",
+        "java.lang.reflect.Method",
+        "java.net.InetAddress",
+        "java.net.MalformedURLException",
+        "java.net.Socket",
+        "java.net.URL",
+        "java.net.URLClassLoader",
+        "java.nio.file.Files",
+        "java.nio.file.Path",
+        "java.nio.file.Paths",
+        "java.util.ArrayList",
+        "java.util.Scanner",
+        "org.scalasbt.shadedgson.com.google.gson.Gson",
+        "org.scalasbt.shadedgson.com.google.gson.GsonBuilder",
+        "org.scalasbt.shadedgson.com.google.gson.JsonElement",
+        "org.scalasbt.shadedgson.com.google.gson.JsonObject",
+        "org.scalasbt.shadedgson.com.google.gson.JsonParser",
+        "org.scalasbt.shadedgson.com.google.gson.JsonPrimitive",
+        "org.scalasbt.shadedgson.com.google.gson.typeadapters.RuntimeTypeAdapterFactory",
+        "sbt.testing.*"
+      ],
+      "sorties": [],
+      "appelle": [
+        "worker/src/main/java/org/scalasbt/shadedgson/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/ThrowableAdapterFactory.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/ThrowableAdapterFactory.java",
+      "langage": "java",
+      "lignes": 155,
+      "taille_bytes": 5852,
+      "entrees": [
+        "java.io.IOException",
+        "java.util.ArrayList",
+        "org.scalasbt.shadedgson.com.google.gson.Gson",
+        "org.scalasbt.shadedgson.com.google.gson.TypeAdapter",
+        "org.scalasbt.shadedgson.com.google.gson.TypeAdapterFactory",
+        "org.scalasbt.shadedgson.com.google.gson.reflect.TypeToken",
+        "org.scalasbt.shadedgson.com.google.gson.stream.JsonReader",
+        "org.scalasbt.shadedgson.com.google.gson.stream.JsonWriter"
+      ],
+      "sorties": [
+        "class ThrowableAdapterFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/RunInfo.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/RunInfo.java",
+      "langage": "java",
+      "lignes": 44,
+      "taille_bytes": 1149,
+      "entrees": [
+        "java.io.Serializable",
+        "java.util.ArrayList"
+      ],
+      "sorties": [
+        "public class RunInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/sbt/internal/worker1/TestLogInfo.java": {
+      "fichier": "worker/src/main/java/sbt/internal/worker1/TestLogInfo.java",
+      "langage": "java",
+      "lignes": 25,
+      "taille_bytes": 565,
+      "entrees": [
+        "java.io.Serializable",
+        "java.util.ArrayList",
+        "sbt.testing.TaskDef"
+      ],
+      "sorties": [
+        "public class TestLogInfo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "worker/src/main/java/org/scalasbt/shadedgson/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java": {
+      "fichier": "worker/src/main/java/org/scalasbt/shadedgson/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java",
+      "langage": "java",
+      "lignes": 344,
+      "taille_bytes": 11378,
+      "entrees": [
+        "java.io.IOException",
+        "java.util.LinkedHashMap",
+        "java.util.Map",
+        "org.scalasbt.shadedgson.com.google.errorprone.annotations.CanIgnoreReturnValue",
+        "org.scalasbt.shadedgson.com.google.gson.Gson",
+        "org.scalasbt.shadedgson.com.google.gson.JsonElement",
+        "org.scalasbt.shadedgson.com.google.gson.JsonObject",
+        "org.scalasbt.shadedgson.com.google.gson.JsonParseException",
+        "org.scalasbt.shadedgson.com.google.gson.JsonPrimitive",
+        "org.scalasbt.shadedgson.com.google.gson.TypeAdapter",
+        "org.scalasbt.shadedgson.com.google.gson.TypeAdapterFactory",
+        "org.scalasbt.shadedgson.com.google.gson.reflect.TypeToken",
+        "org.scalasbt.shadedgson.com.google.gson.stream.JsonReader",
+        "org.scalasbt.shadedgson.com.google.gson.stream.JsonWriter"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "worker/src/main/java/sbt/internal/worker1/WorkerMain.java"
+      ],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/FallbackDependency.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/FallbackDependency.scala",
+      "langage": "scala",
+      "lignes": 13,
+      "taille_bytes": 212,
+      "entrees": [
+        "dataclass.data",
+        "java.net.URI",
+        "lmcoursier.definitions.Module"
+      ],
+      "sorties": [],
+      "appelle": [
+        "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Module.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/CoursierConfiguration.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/CoursierConfiguration.scala",
+      "langage": "scala",
+      "lignes": 76,
+      "taille_bytes": 2596,
+      "entrees": [
+        "coursier.cache.CacheDefaults",
+        "dataclass.",
+        "java.io.File",
+        "lmcoursier.credentials.Credentials",
+        "lmcoursier.definitions.",
+        "sbt.librarymanagement.",
+        "scala.concurrent.duration.",
+        "xsbti.Logger"
+      ],
+      "sorties": [],
+      "appelle": [
+        "lm-coursier/definitions/src/main/scala/lmcoursier/credentials/Credentials.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Authentication.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Authentication.scala",
+      "langage": "scala",
+      "lignes": 19,
+      "taille_bytes": 427,
+      "entrees": [
+        "dataclass.*"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Developer.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Developer.scala",
+      "langage": "scala",
+      "lignes": 9,
+      "taille_bytes": 130,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/FromCoursier.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/FromCoursier.scala",
+      "langage": "scala",
+      "lignes": 1,
+      "taille_bytes": 74,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/ModuleMatchers.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/ModuleMatchers.scala",
+      "langage": "scala",
+      "lignes": 13,
+      "taille_bytes": 324,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Strict.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Strict.scala",
+      "langage": "scala",
+      "lignes": 12,
+      "taille_bytes": 297,
+      "entrees": [
+        "dataclass.*"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Module.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Module.scala",
+      "langage": "scala",
+      "lignes": 8,
+      "taille_bytes": 166,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lm-coursier/definitions/src/main/scala/lmcoursier/FallbackDependency.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Info.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Info.scala",
+      "langage": "scala",
+      "lignes": 11,
+      "taille_bytes": 233,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Publication.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Publication.scala",
+      "langage": "scala",
+      "lignes": 10,
+      "taille_bytes": 165,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Reconciliation.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Reconciliation.scala",
+      "langage": "scala",
+      "lignes": 1,
+      "taille_bytes": 76,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/CachePolicy.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/CachePolicy.scala",
+      "langage": "scala",
+      "lignes": 1,
+      "taille_bytes": 73,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Attributes.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Attributes.scala",
+      "langage": "scala",
+      "lignes": 8,
+      "taille_bytes": 126,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Project.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Project.scala",
+      "langage": "scala",
+      "lignes": 14,
+      "taille_bytes": 370,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lm-coursier/src/main/scala/lmcoursier/IvyXml.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Definitions.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Definitions.scala",
+      "langage": "scala",
+      "lignes": 1,
+      "taille_bytes": 73,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/CacheLogger.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/CacheLogger.scala",
+      "langage": "scala",
+      "lignes": 1,
+      "taille_bytes": 73,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/DateTime.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/DateTime.scala",
+      "langage": "scala",
+      "lignes": 12,
+      "taille_bytes": 172,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Dependency.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Dependency.scala",
+      "langage": "scala",
+      "lignes": 13,
+      "taille_bytes": 282,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/credentials/Credentials.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/credentials/Credentials.scala",
+      "langage": "scala",
+      "lignes": 1,
+      "taille_bytes": 73,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "lm-coursier/definitions/src/main/scala/lmcoursier/CoursierConfiguration.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/credentials/DirectCredentials.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/credentials/DirectCredentials.scala",
+      "langage": "scala",
+      "lignes": 20,
+      "taille_bytes": 474,
+      "entrees": [
+        "dataclass.*"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/definitions/src/main/scala/lmcoursier/credentials/FileCredentials.scala": {
+      "fichier": "lm-coursier/definitions/src/main/scala/lmcoursier/credentials/FileCredentials.scala",
+      "langage": "scala",
+      "lignes": 8,
+      "taille_bytes": 153,
+      "entrees": [
+        "dataclass.data"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/test/scala/lmcoursier/IvyXmlTests.scala": {
+      "fichier": "lm-coursier/src/test/scala/lmcoursier/IvyXmlTests.scala",
+      "langage": "scala",
+      "lignes": 30,
+      "taille_bytes": 745,
+      "entrees": [
+        "lmcoursier.definitions.",
+        "org.scalatest.matchers.should.Matchers",
+        "org.scalatest.propspec.AnyPropSpec"
+      ],
+      "sorties": [
+        "class IvyXmlTests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/test/scala/lmcoursier/LockFileSpec.scala": {
+      "fichier": "lm-coursier/src/test/scala/lmcoursier/LockFileSpec.scala",
+      "langage": "scala",
+      "lignes": 155,
+      "taille_bytes": 5392,
+      "entrees": [
+        "java.io.File",
+        "lmcoursier.internal.*",
+        "org.scalatest.funsuite.AnyFunSuite",
+        "sbt.io.IO"
+      ],
+      "sorties": [
+        "class LockFileSpec"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/test/scala/lmcoursier/FromSbtPlatformSpec.scala": {
+      "fichier": "lm-coursier/src/test/scala/lmcoursier/FromSbtPlatformSpec.scala",
+      "langage": "scala",
+      "lignes": 110,
+      "taille_bytes": 3774,
+      "entrees": [
+        "org.scalatest.matchers.should.Matchers",
+        "org.scalatest.propspec.AnyPropSpec",
+        "sbt.librarymanagement.*"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/test/scala/lmcoursier/ResolutionSpec.scala": {
+      "fichier": "lm-coursier/src/test/scala/lmcoursier/ResolutionSpec.scala",
+      "langage": "scala",
+      "lignes": 312,
+      "taille_bytes": 11451,
+      "entrees": [
+        "org.scalatest.matchers.should.Matchers",
+        "org.scalatest.propspec.AnyPropSpec",
+        "sbt.internal.librarymanagement.cross.CrossVersionUtil",
+        "sbt.internal.util.ConsoleLogger",
+        "sbt.librarymanagement.*",
+        "sbt.librarymanagement.Configurations.Component",
+        "sbt.librarymanagement.Resolver.",
+        "sbt.librarymanagement.syntax.*",
+        "sbt.util.ShowLines.*"
+      ],
+      "sorties": [
+        "def configurations",
+        "def module",
+        "def resolvers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/test/scala/lmcoursier/CoursierDependencyResolutionTests.scala": {
+      "fichier": "lm-coursier/src/test/scala/lmcoursier/CoursierDependencyResolutionTests.scala",
+      "langage": "scala",
+      "lignes": 53,
+      "taille_bytes": 1899,
+      "entrees": [
+        "org.scalatest.matchers.should.Matchers",
+        "org.scalatest.propspec.AnyPropSpec",
+        "sbt.librarymanagement.Configuration",
+        "sbt.librarymanagement.ModuleDescriptorConfiguration",
+        "sbt.librarymanagement.ModuleID",
+        "sbt.librarymanagement.ModuleInfo",
+        "sbt.librarymanagement.UnresolvedWarningConfiguration",
+        "sbt.librarymanagement.UpdateConfiguration",
+        "sbt.util.Logger"
+      ],
+      "sorties": [
+        "class CoursierDependencyResolutionTests",
+        "def log",
+        "def success",
+        "def trace"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/CoursierDependencyResolution.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/CoursierDependencyResolution.scala",
+      "langage": "scala",
+      "lignes": 567,
+      "taille_bytes": 19894,
+      "entrees": [
+        "coursier.",
+        "coursier.cache.CacheDefaults",
+        "coursier.core.",
+        "coursier.internal.Typelevel",
+        "coursier.util.Artifact",
+        "java.io.File",
+        "java.net.",
+        "lmcoursier.definitions.ToCoursier",
+        "lmcoursier.internal.",
+        "lmcoursier.syntax.*",
+        "sbt.librarymanagement.*",
+        "sbt.util.Logger",
+        "sbt.util.ShowLines.*",
+        "scala.util.",
+        "scala.util.control.NonFatal"
+      ],
+      "sorties": [
+        "class CoursierDependencyResolution",
+        "def apply",
+        "def artifactsParams",
+        "def defaultCacheLocation",
+        "def isBom",
+        "def isUnknownProtocol",
+        "def moduleDescriptor",
+        "def this",
+        "def update",
+        "def updateParams"
+      ],
+      "appelle": [
+        "lm-coursier/src/main/scala/lmcoursier/definitions/ToCoursier.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/FromSbt.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/FromSbt.scala",
+      "langage": "scala",
+      "lignes": 242,
+      "taille_bytes": 6571,
+      "entrees": [
+        "->",
+        "coursier.ivy.IvyXml.",
+        "lmcoursier.definitions.",
+        "sbt.internal.librarymanagement.mavenint.SbtPomExtraProperties",
+        "sbt.librarymanagement."
+      ],
+      "sorties": [
+        "def addSuffix",
+        "def dependencies",
+        "def fallbackDependencies",
+        "def moduleVersion",
+        "def project"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/IvyXml.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/IvyXml.scala",
+      "langage": "scala",
+      "lignes": 124,
+      "taille_bytes": 3850,
+      "entrees": [
+        "lmcoursier.definitions.Project",
+        "scala.xml."
+      ],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [
+        "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Project.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/Inputs.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/Inputs.scala",
+      "langage": "scala",
+      "lignes": 152,
+      "taille_bytes": 4437,
+      "entrees": [
+        "coursier.ivy.IvyXml.",
+        "lmcoursier.definitions.",
+        "sbt.librarymanagement.",
+        "sbt.util.Logger",
+        "scala.annotation.tailrec",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def allExtends",
+        "def configExtendsSeq",
+        "def coursierConfigurationsMap",
+        "def exclusions",
+        "def exclusionsSeq",
+        "def forceVersions",
+        "def helper",
+        "def ivyGraphs",
+        "def ivyXmlMappings",
+        "def orderedConfigurations"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/syntax/package.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/syntax/package.scala",
+      "langage": "scala",
+      "lignes": 261,
+      "taille_bytes": 8588,
+      "entrees": [
+        "coursier.cache.CacheDefaults",
+        "java.io.File",
+        "lmcoursier.credentials.*",
+        "lmcoursier.definitions.*",
+        "sbt.librarymanagement.",
+        "scala.concurrent.duration.",
+        "xsbti.Logger"
+      ],
+      "sorties": [
+        "def addExclude",
+        "def addInclude",
+        "def addRepositoryAuthentication",
+        "def all",
+        "def apply",
+        "def attributes",
+        "def checkLegacyCache",
+        "def only",
+        "def withAttributes",
+        "def withCache",
+        "def withFollowHttpToHttpsRedirections",
+        "def withIvyHome",
+        "def withLog",
+        "def withLogger",
+        "def withRealm",
+        "def withRetry",
+        "def withSbtScalaOrganization",
+        "def withSbtScalaVersion",
+        "def withScalaOrganization",
+        "def withScalaVersion",
+        "def withStrict",
+        "def withTtl",
+        "def withUpdateConfiguration"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/definitions/FromCoursier.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/definitions/FromCoursier.scala",
+      "langage": "scala",
+      "lignes": 18,
+      "taille_bytes": 901,
+      "entrees": [],
+      "sorties": [
+        "def cachePolicy"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/definitions/Reconciliation.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/definitions/Reconciliation.scala",
+      "langage": "scala",
+      "lignes": 19,
+      "taille_bytes": 552,
+      "entrees": [],
+      "sorties": [
+        "def apply"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/definitions/CachePolicy.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/definitions/CachePolicy.scala",
+      "langage": "scala",
+      "lignes": 72,
+      "taille_bytes": 2508,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/definitions/Definitions.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/definitions/Definitions.scala",
+      "langage": "scala",
+      "lignes": 13,
+      "taille_bytes": 383,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/definitions/ToCoursier.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/definitions/ToCoursier.scala",
+      "langage": "scala",
+      "lignes": 220,
+      "taille_bytes": 8156,
+      "entrees": [
+        "lmcoursier.credentials.",
+        "sbt.librarymanagement.InclExclRule"
+      ],
+      "sorties": [
+        "def authentication",
+        "def cacheLogger",
+        "def cachePolicy",
+        "def configuration",
+        "def credentials",
+        "def dependency",
+        "def module",
+        "def moduleMatchers",
+        "def project",
+        "def publication",
+        "def reconciliation",
+        "def sameVersions",
+        "def strict"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lm-coursier/src/main/scala/lmcoursier/CoursierDependencyResolution.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/definitions/CacheLogger.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/definitions/CacheLogger.scala",
+      "langage": "scala",
+      "lignes": 38,
+      "taille_bytes": 1078,
+      "entrees": [],
+      "sorties": [
+        "abstract class CacheLogger",
+        "def checkingUpdates",
+        "def checkingUpdatesResult",
+        "def downloadLength",
+        "def downloadProgress",
+        "def downloadedArtifact",
+        "def downloadingArtifact",
+        "def foundLocally",
+        "def gettingLength",
+        "def gettingLengthResult",
+        "def init",
+        "def nop",
+        "def removedCorruptFile",
+        "def stop"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/internal/LockFileConstants.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/internal/LockFileConstants.scala",
+      "langage": "scala",
+      "lignes": 5,
+      "taille_bytes": 87,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lm-coursier/src/main/scala/lmcoursier/internal/SbtCoursierCache.scala": {
+      "fichier": "lm-coursier/src/main/scala/lmcoursier/internal/SbtCoursierCache.scala",
+      "langage": "scala",
+      "lignes": 65,
+      "taille_bytes": 1810,
+      "entrees": [
+        "SbtCoursierCache.*",
+        "coursier.cache.FileCache",
+        "coursier.core.*",
+        "coursier.util.Task",
+        "java.util.concurrent.ConcurrentHashMap",
+        "sbt.librarymanagement.UpdateReport"
+      ],
+      "sorties": [
+        "class SbtCoursierCache",
+        "def clear",
+        "def isEmpty",
+        "def putReport",
+        "def putResolution",
+        "def reportOpt",
+        "def resolutionOpt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "main-command/src/test/scala/sbt/internal/ClassLoaderCacheTest.scala",
+      "vers": "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala",
+      "type": "interne"
+    },
+    {
+      "de": "main-command/src/main/scala/sbt/BasicKeys.scala",
+      "vers": "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala",
+      "type": "interne"
+    },
+    {
+      "de": "main-command/src/main/scala/sbt/BasicKeys.scala",
+      "vers": "main-command/src/main/scala/sbt/internal/server/ServerHandler.scala",
+      "type": "interne"
+    },
+    {
+      "de": "main-command/src/main/scala/sbt/State.scala",
+      "vers": "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala",
+      "type": "interne"
+    },
+    {
+      "de": "main-command/src/main/scala/sbt/BasicCommands.scala",
+      "vers": "main-command/src/main/scala/sbt/internal/client/NetworkClient.scala",
+      "type": "interne"
+    },
+    {
+      "de": "main-command/src/main/scala/sbt/internal/ui/UITask.scala",
+      "vers": "main-command/src/main/scala/sbt/State.scala",
+      "type": "interne"
+    },
+    {
+      "de": "main-command/src/main/scala/sbt/internal/ui/UITask.scala",
+      "vers": "main-command/src/main/scala/sbt/internal/CommandChannel.scala",
+      "type": "interne"
+    },
+    {
+      "de": "main-command/src/main/scala/sbt/internal/ui/UserThread.scala",
+      "vers": "main-command/src/main/scala/sbt/State.scala",
+      "type": "interne"
+    },
+    {
+      "de": "main-command/src/main/scala/sbt/internal/client/ServerConnection.scala",
+      "vers": "main-command/src/main/scala/sbt/internal/util/ReadJsonFromInputStream.scala",
+      "type": "interne"
+    },
+    {
+      "de": "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincLmUtil.scala",
+      "vers": "main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala",
+      "type": "interne"
+    },
+    {
+      "de": "zinc-lm-integration/src/main/java/xsbti/compile/ZincBridgeProvider.java",
+      "vers": "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincComponentCompiler.scala",
+      "type": "interne"
+    },
+    {
+      "de": "zinc-lm-integration/src/main/java/xsbti/compile/ZincBridgeProvider.java",
+      "vers": "zinc-lm-integration/src/main/scala/sbt/internal/inc/ZincComponentManager.scala",
+      "type": "interne"
+    },
+    {
+      "de": "worker/src/main/java/sbt/internal/worker1/WorkerMain.java",
+      "vers": "worker/src/main/java/org/scalasbt/shadedgson/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java",
+      "type": "interne"
+    },
+    {
+      "de": "lm-coursier/definitions/src/main/scala/lmcoursier/FallbackDependency.scala",
+      "vers": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Module.scala",
+      "type": "interne"
+    },
+    {
+      "de": "lm-coursier/definitions/src/main/scala/lmcoursier/CoursierConfiguration.scala",
+      "vers": "lm-coursier/definitions/src/main/scala/lmcoursier/credentials/Credentials.scala",
+      "type": "interne"
+    },
+    {
+      "de": "lm-coursier/src/main/scala/lmcoursier/CoursierDependencyResolution.scala",
+      "vers": "lm-coursier/src/main/scala/lmcoursier/definitions/ToCoursier.scala",
+      "type": "interne"
+    },
+    {
+      "de": "lm-coursier/src/main/scala/lmcoursier/IvyXml.scala",
+      "vers": "lm-coursier/definitions/src/main/scala/lmcoursier/definitions/Project.scala",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'main-command/src/main/scala/sbt/BasicKeys.scala'",
+    "point_entree → 'main-command/src/main/scala/sbt/internal/ui/UITask.scala'",
+    "feuille → 'main-command/src/main/scala/sbt/internal/classpath/ClassLoaderCache.scala' (in=4)",
+    "point_entree → 'zinc-lm-integration/src/main/java/xsbti/compile/ZincBridgeProvider.java'"
+  ]
+}

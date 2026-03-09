@@ -1,0 +1,1520 @@
+{
+  "meta": {
+    "projet": "wtf-solidity",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "javascript": 1,
+      "toml": 1,
+      "json": 102,
+      "solidity": 16
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "mirror_gen.js"
+  },
+  "noeuds": {
+    "mirror_gen.js": {
+      "fichier": "mirror_gen.js",
+      "langage": "javascript",
+      "lignes": 68,
+      "taille_bytes": 2310,
+      "entrees": [],
+      "sorties": [
+        "const CDN_PREFIX",
+        "const cdnUrl",
+        "const cleanImagePath",
+        "const dirName",
+        "const filePath",
+        "const files",
+        "const fs",
+        "const imageRegex",
+        "const mirrorPath",
+        "const path",
+        "const processedContent",
+        "const readmeFiles",
+        "const stat",
+        "function findReadmeFiles",
+        "function main",
+        "function processImageLinks",
+        "function removeFrontmatter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "foundry.toml": {
+      "fichier": "foundry.toml",
+      "langage": "toml",
+      "lignes": 18,
+      "taille_bytes": 518,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "funding.json": {
+      "fichier": "funding.json",
+      "langage": "json",
+      "lignes": 5,
+      "taille_bytes": 109,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "20_SendETH/SendETH.sol": {
+      "fichier": "20_SendETH/SendETH.sol",
+      "langage": "solidity",
+      "lignes": 55,
+      "taille_bytes": 1590,
+      "entrees": [],
+      "sorties": [
+        "contract ReceiveETH",
+        "contract SendETH",
+        "function callETH",
+        "function getBalance",
+        "function sendETH",
+        "function transferETH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "28_Hash/Hash.sol": {
+      "fichier": "28_Hash/Hash.sol",
+      "langage": "solidity",
+      "lignes": 30,
+      "taille_bytes": 770,
+      "entrees": [],
+      "sorties": [
+        "contract Hash",
+        "function hash",
+        "function strong",
+        "function weak"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "21_CallContract/CallContract.sol": {
+      "fichier": "21_CallContract/CallContract.sol",
+      "langage": "solidity",
+      "lignes": 46,
+      "taille_bytes": 1268,
+      "entrees": [],
+      "sorties": [
+        "contract CallContract",
+        "contract OtherContract",
+        "function callGetX",
+        "function callGetX2",
+        "function callSetX",
+        "function getBalance",
+        "function getX",
+        "function setX",
+        "function setXTransferETH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "15_Errors/Error.sol": {
+      "fichier": "15_Errors/Error.sol",
+      "langage": "solidity",
+      "lignes": 37,
+      "taille_bytes": 1148,
+      "entrees": [
+        "_owners[tokenId]"
+      ],
+      "sorties": [
+        "contract Errors",
+        "function transferOwner1",
+        "function transferOwner2",
+        "function transferOwner3"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "S16_NFTReentrancy/NFTReentrancy.sol": {
+      "fichier": "S16_NFTReentrancy/NFTReentrancy.sol",
+      "langage": "solidity",
+      "lignes": 48,
+      "taille_bytes": 1479,
+      "entrees": [
+        "mintedAddress[msg.sender]"
+      ],
+      "sorties": [
+        "contract Attack",
+        "contract NFTReentrancy",
+        "function attack",
+        "function mint",
+        "function onERC721Received"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "48_TransparentProxy/TransparentProxy.sol": {
+      "fichier": "48_TransparentProxy/TransparentProxy.sol",
+      "langage": "solidity",
+      "lignes": 65,
+      "taille_bytes": 2125,
+      "entrees": [
+        "msg.sender"
+      ],
+      "sorties": [
+        "contract Foo",
+        "contract Logic1",
+        "contract Logic2",
+        "contract TransparentProxy",
+        "function foo",
+        "function upgrade"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "S15_OracleManipulation/test/Oracle.t.sol": {
+      "fichier": "S15_OracleManipulation/test/Oracle.t.sol",
+      "langage": "solidity",
+      "lignes": 82,
+      "taille_bytes": 2667,
+      "entrees": [],
+      "sorties": [
+        "contract OracleTest",
+        "function balanceOf",
+        "function deposit",
+        "function setUp",
+        "function swapBUSDtoWETH",
+        "function testOracleAttack",
+        "function withdraw",
+        "interface IBUSD",
+        "interface IWETH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "S15_OracleManipulation/src/Oracle.sol": {
+      "fichier": "S15_OracleManipulation/src/Oracle.sol",
+      "langage": "solidity",
+      "lignes": 123,
+      "taille_bytes": 3289,
+      "entrees": [],
+      "sorties": [
+        "contract oUSD",
+        "function addLiquidity",
+        "function balanceOf",
+        "function factory",
+        "function getPair",
+        "function getPrice",
+        "function getReserves",
+        "function price0CumulativeLast",
+        "function price1CumulativeLast",
+        "function removeLiquidity",
+        "function swap",
+        "function swapExactTokensForTokens",
+        "function swapTokensForExactTokens",
+        "function token0",
+        "function token1",
+        "function totalSupply",
+        "interface IUniswapV2Factory",
+        "interface IUniswapV2Pair",
+        "interface IUniswapV2Router"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "04_Return/Return.sol": {
+      "fichier": "04_Return/Return.sol",
+      "langage": "solidity",
+      "lignes": 38,
+      "taille_bytes": 1075,
+      "entrees": [],
+      "sorties": [
+        "contract Return",
+        "function readReturn",
+        "function returnMultiple",
+        "function returnNamed",
+        "function returnNamed2"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "36_MerkleTree/MerkleTree.sol": {
+      "fichier": "36_MerkleTree/MerkleTree.sol",
+      "langage": "solidity",
+      "lignes": 101,
+      "taille_bytes": 3534,
+      "entrees": [
+        "!mintedAddress[account]",
+        "_verify"
+      ],
+      "sorties": [
+        "contract MerkleTree",
+        "function _hashPair",
+        "function _leaf",
+        "function _verify",
+        "function mint",
+        "function processProof",
+        "function verify"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "S06_SignatureReplay/SingatureReplay.sol": {
+      "fichier": "S06_SignatureReplay/SingatureReplay.sol",
+      "langage": "solidity",
+      "lignes": 79,
+      "taille_bytes": 3041,
+      "entrees": [
+        "!mintedAddress[to]",
+        "verify"
+      ],
+      "sorties": [
+        "contract SigReplay",
+        "function badMint",
+        "function getMessageHash",
+        "function goodMint",
+        "function nonceMint",
+        "function toEthSignedMessageHash",
+        "function verify"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "24_Create/Create.sol": {
+      "fichier": "24_Create/Create.sol",
+      "langage": "solidity",
+      "lignes": 36,
+      "taille_bytes": 1155,
+      "entrees": [
+        "msg.sender"
+      ],
+      "sorties": [
+        "contract Pair",
+        "contract PairFactory",
+        "function createPair",
+        "function initialize"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "03_Function/Function.sol": {
+      "fichier": "03_Function/Function.sol",
+      "langage": "solidity",
+      "lignes": 40,
+      "taille_bytes": 1039,
+      "entrees": [],
+      "sorties": [
+        "contract FunctionTypes",
+        "function add",
+        "function addPure",
+        "function addView",
+        "function minus",
+        "function minusCall",
+        "function minusPayable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "S08_ContractCheck/ContractCheck.sol": {
+      "fichier": "S08_ContractCheck/ContractCheck.sol",
+      "langage": "solidity",
+      "lignes": 47,
+      "taille_bytes": 1491,
+      "entrees": [
+        "!isContract"
+      ],
+      "sorties": [
+        "contract ContractCheck",
+        "contract NotContract",
+        "function isContract",
+        "function mint"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "38_NFTSwap/NFTSwap.sol": {
+      "fichier": "38_NFTSwap/NFTSwap.sol",
+      "langage": "solidity",
+      "lignes": 128,
+      "taille_bytes": 4610,
+      "entrees": [
+        "_newPrice",
+        "_nft.getApproved",
+        "_nft.ownerOf",
+        "_order.owner",
+        "_order.price",
+        "_price",
+        "msg.value"
+      ],
+      "sorties": [
+        "contract NFTSwap",
+        "function list",
+        "function onERC721Received",
+        "function purchase",
+        "function revoke",
+        "function update",
+        "struct Order"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "S01_ReentrancyAttack/ReentrancyAttack.sol": {
+      "fichier": "S01_ReentrancyAttack/ReentrancyAttack.sol",
+      "langage": "solidity",
+      "lignes": 118,
+      "taille_bytes": 3600,
+      "entrees": [
+        "_status",
+        "balance",
+        "msg.value",
+        "success"
+      ],
+      "sorties": [
+        "contract Attack",
+        "contract Bank",
+        "contract GoodBank",
+        "contract ProtectedBank",
+        "function attack",
+        "function deposit",
+        "function getBalance",
+        "function withdraw"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/DataStorage.sol/Variables.json": {
+      "fichier": "out/DataStorage.sol/Variables.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 27863,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/DataStorage.sol/DataStorage.json": {
+      "fichier": "out/DataStorage.sol/DataStorage.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 15775,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/AbstractDemo.sol/Base.json": {
+      "fichier": "out/AbstractDemo.sol/Base.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 3219,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/AbstractDemo.sol/BaseImpl.json": {
+      "fichier": "out/AbstractDemo.sol/BaseImpl.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 12085,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/UncheckedCall.sol/UncheckedBank.json": {
+      "fichier": "out/UncheckedCall.sol/UncheckedBank.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 10411,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/UncheckedCall.sol/Attack.json": {
+      "fichier": "out/UncheckedCall.sol/Attack.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 9953,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/InsertionSort.sol/InsertionSort.json": {
+      "fichier": "out/InsertionSort.sol/InsertionSort.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 23526,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/CallContract.sol/CallContract.json": {
+      "fichier": "out/CallContract.sol/CallContract.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 12937,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/CallContract.sol/OtherContract.json": {
+      "fichier": "out/CallContract.sol/OtherContract.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 7652,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/TokenLocker.sol/TokenLocker.json": {
+      "fichier": "out/TokenLocker.sol/TokenLocker.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 26785,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ProxyContract.sol/Caller.json": {
+      "fichier": "out/ProxyContract.sol/Caller.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 10200,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ProxyContract.sol/Proxy.json": {
+      "fichier": "out/ProxyContract.sol/Proxy.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 6963,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ProxyContract.sol/Logic.json": {
+      "fichier": "out/ProxyContract.sol/Logic.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 7535,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/MerkleTree.sol/MerkleTree.json": {
+      "fichier": "out/MerkleTree.sol/MerkleTree.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 94542,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/MerkleTree.sol/MerkleProof.json": {
+      "fichier": "out/MerkleTree.sol/MerkleProof.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 6723,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Function.sol/FunctionTypes.json": {
+      "fichier": "out/Function.sol/FunctionTypes.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 10230,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Centralization.sol/Centralization.json": {
+      "fichier": "out/Centralization.sol/Centralization.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 62757,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/IERC20Metadata.sol/IERC20Metadata.json": {
+      "fichier": "out/IERC20Metadata.sol/IERC20Metadata.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 15020,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Strings.sol/Strings.json": {
+      "fichier": "out/Strings.sol/Strings.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 7474,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ERC721/IERC721.sol/IERC721.json": {
+      "fichier": "out/ERC721/IERC721.sol/IERC721.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 21085,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ERC721/IERC721Receiver.sol/IERC721Receiver.json": {
+      "fichier": "out/ERC721/IERC721Receiver.sol/IERC721Receiver.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 4905,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ERC721/ERC721.sol/ERC721.json": {
+      "fichier": "out/ERC721/ERC721.sol/ERC721.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 37263,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Create2.sol/Pair.json": {
+      "fichier": "out/Create2.sol/Pair.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 10340,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Create2.sol/PairFactory2.json": {
+      "fichier": "out/Create2.sol/PairFactory2.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 24117,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/String.sol/Strings.json": {
+      "fichier": "out/String.sol/Strings.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2867,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ModifierInheritance.sol/Identifier.json": {
+      "fichier": "out/ModifierInheritance.sol/Identifier.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 8427,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ModifierInheritance.sol/Base1.json": {
+      "fichier": "out/ModifierInheritance.sol/Base1.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2689,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/PaymentSplit.sol/PaymentSplit.json": {
+      "fichier": "out/PaymentSplit.sol/PaymentSplit.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 42542,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/DiamondInheritance.sol/God.json": {
+      "fichier": "out/DiamondInheritance.sol/God.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 6245,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/DiamondInheritance.sol/people.json": {
+      "fichier": "out/DiamondInheritance.sol/people.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 10871,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/DiamondInheritance.sol/Adam.json": {
+      "fichier": "out/DiamondInheritance.sol/Adam.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 8476,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/DiamondInheritance.sol/Eve.json": {
+      "fichier": "out/DiamondInheritance.sol/Eve.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 8474,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Airdrop.sol/ERC20.json": {
+      "fichier": "out/Airdrop.sol/ERC20.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 41466,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Airdrop.sol/Airdrop.json": {
+      "fichier": "out/Airdrop.sol/Airdrop.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 32005,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/EIP712.sol/EIP712.json": {
+      "fichier": "out/EIP712.sol/EIP712.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 14192,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ContractCheck.sol/ContractCheck.json": {
+      "fichier": "out/ContractCheck.sol/ContractCheck.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 53394,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ContractCheck.sol/NotContract.json": {
+      "fichier": "out/ContractCheck.sol/NotContract.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 12987,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Selector.sol/Selector.json": {
+      "fichier": "out/Selector.sol/Selector.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 47599,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Selector.sol/DemoContract.json": {
+      "fichier": "out/Selector.sol/DemoContract.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2645,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/IERC20.sol/IERC20.json": {
+      "fichier": "out/IERC20.sol/IERC20.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 11864,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/WETH.sol/WETH.json": {
+      "fichier": "out/WETH.sol/WETH.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 56626,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/SafeCast.sol/SafeCast.json": {
+      "fichier": "out/SafeCast.sol/SafeCast.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 5890,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Upgrade.sol/SimpleUpgrade.json": {
+      "fichier": "out/Upgrade.sol/SimpleUpgrade.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 14188,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Upgrade.sol/Logic2.json": {
+      "fichier": "out/Upgrade.sol/Logic2.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 14958,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Upgrade.sol/Logic1.json": {
+      "fichier": "out/Upgrade.sol/Logic1.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 14958,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Context.sol/Context.json": {
+      "fichier": "out/Context.sol/Context.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2867,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/StdStorage.sol/stdStorage.json": {
+      "fichier": "out/StdStorage.sol/stdStorage.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 3487,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/StdStorage.sol/stdStorageSafe.json": {
+      "fichier": "out/StdStorage.sol/stdStorageSafe.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 5353,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/IERC4626.sol/IERC4626.json": {
+      "fichier": "out/IERC4626.sol/IERC4626.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 42416,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ValueTypes.sol/ValueTypes.json": {
+      "fichier": "out/ValueTypes.sol/ValueTypes.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 24492,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Constant.sol/Constant.json": {
+      "fichier": "out/Constant.sol/Constant.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 14838,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ERC20.sol/ERC20.json": {
+      "fichier": "out/ERC20.sol/ERC20.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 41402,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Interface.sol/interactBAYC.json": {
+      "fichier": "out/Interface.sol/interactBAYC.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 11219,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Interface.sol/InsertionSort.json": {
+      "fichier": "out/Interface.sol/InsertionSort.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 3653,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Interface.sol/IERC721.json": {
+      "fichier": "out/Interface.sol/IERC721.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 14387,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Ownable.sol/Ownable.json": {
+      "fichier": "out/Ownable.sol/Ownable.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 7900,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/StdError.sol/stdError.json": {
+      "fichier": "out/StdError.sol/stdError.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 23095,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/IERC20Permit.sol/IERC20Permit.json": {
+      "fichier": "out/IERC20Permit.sol/IERC20Permit.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 8330,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/SendETH.sol/SendETH.json": {
+      "fichier": "out/SendETH.sol/SendETH.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 10221,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/SendETH.sol/ReceiveETH.json": {
+      "fichier": "out/SendETH.sol/ReceiveETH.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 5337,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/StdAssertions.sol/StdAssertions.json": {
+      "fichier": "out/StdAssertions.sol/StdAssertions.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 16192,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/EIP712Storage.sol/EIP712Storage.json": {
+      "fichier": "out/EIP712Storage.sol/EIP712Storage.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 24227,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/draft-IERC6093.sol/IERC1155Errors.json": {
+      "fichier": "out/draft-IERC6093.sol/IERC1155Errors.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 8204,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/draft-IERC6093.sol/IERC20Errors.json": {
+      "fichier": "out/draft-IERC6093.sol/IERC20Errors.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 7254,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/draft-IERC6093.sol/IERC721Errors.json": {
+      "fichier": "out/draft-IERC6093.sol/IERC721Errors.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 8122,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/StorageSlot.sol/StorageSlot.json": {
+      "fichier": "out/StorageSlot.sol/StorageSlot.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 4094,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ArrayAndStruct.sol/StructTypes.json": {
+      "fichier": "out/ArrayAndStruct.sol/StructTypes.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 5450,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ArrayAndStruct.sol/EnumTypes.json": {
+      "fichier": "out/ArrayAndStruct.sol/EnumTypes.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 4650,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ArrayAndStruct.sol/ArrayTypes.json": {
+      "fichier": "out/ArrayAndStruct.sol/ArrayTypes.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 21354,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/MultiCall.sol/Multicall.json": {
+      "fichier": "out/MultiCall.sol/Multicall.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 18934,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/IERC5267.sol/IERC5267.json": {
+      "fichier": "out/IERC5267.sol/IERC5267.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 4751,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/NFTReentrancy.sol/Attack.json": {
+      "fichier": "out/NFTReentrancy.sol/Attack.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 26270,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/NFTReentrancy.sol/NFTReentrancy.json": {
+      "fichier": "out/NFTReentrancy.sol/NFTReentrancy.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 94116,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Mapping.sol/Mapping.json": {
+      "fichier": "out/Mapping.sol/Mapping.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 9204,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Timelock.sol/Timelock.json": {
+      "fichier": "out/Timelock.sol/Timelock.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 57896,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/UniswapV2Flashloan.t.sol/UniswapV2FlashloanTest.json": {
+      "fichier": "out/UniswapV2Flashloan.t.sol/UniswapV2FlashloanTest.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 96966,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/StdToml.sol/stdToml.json": {
+      "fichier": "out/StdToml.sol/stdToml.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 3468,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ERC20/IERC20.sol/IERC20.json": {
+      "fichier": "out/ERC20/IERC20.sol/IERC20.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 12525,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ERC20/ERC20.sol/ERC20.json": {
+      "fichier": "out/ERC20/ERC20.sol/ERC20.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 23218,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/AccessControlExploit.sol/AccessControlExploit.json": {
+      "fichier": "out/AccessControlExploit.sol/AccessControlExploit.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 65695,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/IERC721.sol/IERC721.json": {
+      "fichier": "out/IERC721.sol/IERC721.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 14159,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/safeconsole.sol/safeconsole.json": {
+      "fichier": "out/safeconsole.sol/safeconsole.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 3016,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/SignedMath.sol/SignedMath.json": {
+      "fichier": "out/SignedMath.sol/SignedMath.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 3703,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Lib.sol/IUniswapV2Pair.json": {
+      "fichier": "out/Lib.sol/IUniswapV2Pair.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 4292,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Lib.sol/PoolAddress.json": {
+      "fichier": "out/Lib.sol/PoolAddress.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 2840,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Lib.sol/IUniswapV3Pool.json": {
+      "fichier": "out/Lib.sol/IUniswapV3Pool.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 3365,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Lib.sol/IWETH.json": {
+      "fichier": "out/Lib.sol/IWETH.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 11084,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Lib.sol/ILendingPool.json": {
+      "fichier": "out/Lib.sol/ILendingPool.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 4162,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Lib.sol/IERC20.json": {
+      "fichier": "out/Lib.sol/IERC20.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 10285,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Lib.sol/IUniswapV2Factory.json": {
+      "fichier": "out/Lib.sol/IUniswapV2Factory.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 3162,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/IERC721Receiver.sol/IERC721Receiver.json": {
+      "fichier": "out/IERC721Receiver.sol/IERC721Receiver.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 3617,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ERC721.sol/ERC721.json": {
+      "fichier": "out/ERC721.sol/ERC721.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 76545,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/IMulticall3.sol/IMulticall3.json": {
+      "fichier": "out/IMulticall3.sol/IMulticall3.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 19886,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/AaveV3Flashloan.sol/IFlashLoanSimpleReceiver.json": {
+      "fichier": "out/AaveV3Flashloan.sol/IFlashLoanSimpleReceiver.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 6197,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/AaveV3Flashloan.sol/AaveV3Flashloan.json": {
+      "fichier": "out/AaveV3Flashloan.sol/AaveV3Flashloan.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 22211,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/Honeypot.sol/HoneyPot.json": {
+      "fichier": "out/Honeypot.sol/HoneyPot.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 67552,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/33_Airdrop/IERC20.sol/IERC20.json": {
+      "fichier": "out/33_Airdrop/IERC20.sol/IERC20.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 11872,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ERC1155.sol/ERC1155.json": {
+      "fichier": "out/ERC1155.sol/ERC1155.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 92002,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ERC165.sol/ERC165.json": {
+      "fichier": "out/ERC165.sol/ERC165.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 4887,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ECDSA.sol/ECDSA.json": {
+      "fichier": "out/ECDSA.sol/ECDSA.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 4445,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "out/ABIEncode.sol/ABIEncode.json": {
+      "fichier": "out/ABIEncode.sol/ABIEncode.json",
+      "langage": "json",
+      "lignes": 1,
+      "taille_bytes": 39337,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}

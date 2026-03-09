@@ -1,0 +1,3082 @@
+{
+  "meta": {
+    "projet": "nimx",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "nim": 120
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 99,
+    "edges_circulaires": 2,
+    "noeuds_centraux": 2,
+    "noeuds_feuilles": 5,
+    "noeuds_hubs": 0,
+    "points_entree": 10,
+    "fichier_plus_appele": "nimx/view.nim"
+  },
+  "noeuds": {
+    "nakefile.nim": {
+      "fichier": "nakefile.nim",
+      "langage": "nim",
+      "lignes": 40,
+      "taille_bytes": 1036,
+      "entrees": [
+        "nimx/naketools",
+        "osproc"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/render_to_image.nim": {
+      "fichier": "nimx/render_to_image.nim",
+      "langage": "nim",
+      "lignes": 216,
+      "taille_bytes": 8082,
+      "entrees": [
+        "image",
+        "opengl"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nimx/image.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/menu.nim": {
+      "fichier": "nimx/menu.nim",
+      "langage": "nim",
+      "lignes": 227,
+      "taille_bytes": 6977,
+      "entrees": [
+        "macros",
+        "view"
+      ],
+      "sorties": [
+        "const menuItemHeight",
+        "type Menu",
+        "type MenuItem"
+      ],
+      "appelle": [
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [
+        "nimx/popup_button.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/stack_view.nim": {
+      "fichier": "nimx/stack_view.nim",
+      "langage": "nim",
+      "lignes": 48,
+      "taille_bytes": 1311,
+      "entrees": [
+        "nimx/[button"
+      ],
+      "sorties": [
+        "type StackView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/layout.nim": {
+      "fichier": "nimx/layout.nim",
+      "langage": "nim",
+      "lignes": 222,
+      "taille_bytes": 7193,
+      "entrees": [
+        "kiwi",
+        "macros",
+        "private/kiwi_vector_symbolics",
+        "view"
+      ],
+      "sorties": [
+        "const placeholderNames",
+        "export layout_vars",
+        "export symbolics"
+      ],
+      "appelle": [
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/serializers.nim": {
+      "fichier": "nimx/serializers.nim",
+      "langage": "nim",
+      "lignes": 357,
+      "taille_bytes": 11113,
+      "entrees": [
+        "json"
+      ],
+      "sorties": [
+        "type Deserializer",
+        "type JsonDeserializer",
+        "type JsonSerializer",
+        "type Serializer"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/segmented_control.nim",
+        "nimx/view.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/table_view2.nim": {
+      "fichier": "nimx/table_view2.nim",
+      "langage": "nim",
+      "lignes": 300,
+      "taille_bytes": 8716,
+      "entrees": [
+        "clip_view",
+        "intsets",
+        "kiwi",
+        "view"
+      ],
+      "sorties": [
+        "export view",
+        "type SelectionKind",
+        "type SelectionMode",
+        "type TableRow",
+        "type TableView"
+      ],
+      "appelle": [
+        "nimx/clip_view.nim",
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/gesture_detector.nim": {
+      "fichier": "nimx/gesture_detector.nim",
+      "langage": "nim",
+      "lignes": 326,
+      "taille_bytes": 10897,
+      "entrees": [
+        "view"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [
+        "nimx/gesture_detector_newtouch.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/progress_indicator.nim": {
+      "fichier": "nimx/progress_indicator.nim",
+      "langage": "nim",
+      "lignes": 103,
+      "taille_bytes": 2711,
+      "entrees": [
+        "abstract_window",
+        "animation",
+        "composition",
+        "math",
+        "times",
+        "view"
+      ],
+      "sorties": [
+        "const indeterminateComposition",
+        "const piComposition",
+        "export view",
+        "type ProgressIndicator"
+      ],
+      "appelle": [
+        "nimx/abstract_window.nim",
+        "nimx/animation.nim",
+        "nimx/composition.nim",
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/timer.nim": {
+      "fichier": "nimx/timer.nim",
+      "langage": "nim",
+      "lignes": 313,
+      "taille_bytes": 8889,
+      "entrees": [
+        "asyncdispatch",
+        "jsbind",
+        "perform_on_main_thread",
+        "sdl2",
+        "times",
+        "wasmrt"
+      ],
+      "sorties": [
+        "const profileTimers",
+        "type TimerID",
+        "type TimerState"
+      ],
+      "appelle": [
+        "nimx/perform_on_main_thread.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/context.nim": {
+      "fichier": "nimx/context.nim",
+      "langage": "nim",
+      "lignes": 605,
+      "taille_bytes": 19731,
+      "entrees": [
+        "composition",
+        "image",
+        "math",
+        "matrixes",
+        "nimsl/nimsl",
+        "opengl",
+        "portable_gl",
+        "private/text_drawing",
+        "system_logger",
+        "types"
+      ],
+      "sorties": [
+        "const arcComposition",
+        "const componentsCount",
+        "const ellipseComposition",
+        "const imageComposition",
+        "const imageVertexShaderCode",
+        "const lineComposition",
+        "const ninePartImageComposition",
+        "const numberOIndices",
+        "const numberOfQuadColumns",
+        "const one",
+        "const rectComposition",
+        "const roundedRectComposition",
+        "const simpleComposition",
+        "const triangleComposition",
+        "const vertexCount",
+        "export matrixes",
+        "export text_drawing",
+        "type GraphicsContext",
+        "type ShaderAttribute",
+        "type Transform3D",
+        "type Transform3DRef"
+      ],
+      "appelle": [
+        "nimx/composition.nim",
+        "nimx/image.nim",
+        "nimx/matrixes.nim",
+        "nimx/portable_gl.nim",
+        "nimx/system_logger.nim",
+        "nimx/types.nim"
+      ],
+      "est_appele_par": [
+        "nimx/composition.nim",
+        "nimx/popup_button.nim",
+        "nimx/segmented_control.nim",
+        "nimx/slider.nim",
+        "nimx/table_view_cell.nim"
+      ],
+      "type_noeud": "central"
+    },
+    "nimx/key_commands.nim": {
+      "fichier": "nimx/key_commands.nim",
+      "langage": "nim",
+      "lignes": 83,
+      "taille_bytes": 2144,
+      "entrees": [
+        "event",
+        "private/js_platform_detector"
+      ],
+      "sorties": [
+        "const web",
+        "type KeyCommand",
+        "type Modifier"
+      ],
+      "appelle": [
+        "nimx/event.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/control.nim": {
+      "fichier": "nimx/control.nim",
+      "langage": "nim",
+      "lignes": 35,
+      "taille_bytes": 862,
+      "entrees": [
+        "view"
+      ],
+      "sorties": [
+        "export view",
+        "type Control"
+      ],
+      "appelle": [
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [
+        "nimx/button.nim",
+        "nimx/popup_button.nim",
+        "nimx/segmented_control.nim",
+        "nimx/slider.nim",
+        "nimx/text_field.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/notification_center.nim": {
+      "fichier": "nimx/notification_center.nim",
+      "langage": "nim",
+      "lignes": 327,
+      "taille_bytes": 10505,
+      "entrees": [
+        "logging",
+        "tables",
+        "variant"
+      ],
+      "sorties": [
+        "const TEST_NOTIFICATION_INT",
+        "const TEST_NOTIFICATION_NO_PARAMS",
+        "const TEST_NOTIFICATION_OPENARRAY",
+        "const TEST_NOTIFICATION_SEQ",
+        "const TEST_NOTIFICATION_TWOARGS",
+        "const test1arg",
+        "export variant"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/view.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/color.nim": {
+      "fichier": "nimx/color.nim",
+      "langage": "nim",
+      "lignes": 5,
+      "taille_bytes": 183,
+      "entrees": [
+        "types"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nimx/types.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/ui_resource.nim": {
+      "fichier": "nimx/ui_resource.nim",
+      "langage": "nim",
+      "lignes": 121,
+      "taille_bytes": 3963,
+      "entrees": [
+        "./[",
+        "./assets/[asset_loading",
+        "./assets/asset_loading",
+        "./private/async",
+        "std/"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/formatted_text.nim": {
+      "fichier": "nimx/formatted_text.nim",
+      "langage": "nim",
+      "lignes": 859,
+      "taille_bytes": 28271,
+      "entrees": [
+        "./[context",
+        "./[font",
+        "./utils/lower_bound",
+        "std/[unicode"
+      ],
+      "sorties": [
+        "const GRADIENT_ENABLED",
+        "const SOFT_SHADOW_ENABLED",
+        "const STROKE_ENABLED",
+        "const gradientAndStrokeComposition",
+        "const magicStrokeMaxSizeCoof",
+        "const minShadowSpread",
+        "type ForEachLineAttributeCallback"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/app.nim": {
+      "fichier": "nimx/app.nim",
+      "langage": "nim",
+      "lignes": 113,
+      "taille_bytes": 3256,
+      "entrees": [
+        "abstract_window",
+        "event",
+        "logging",
+        "sequtils",
+        "window_event_handling"
+      ],
+      "sorties": [
+        "type Application",
+        "type EventFilter",
+        "type EventFilterControl"
+      ],
+      "appelle": [
+        "nimx/abstract_window.nim",
+        "nimx/event.nim",
+        "nimx/window_event_handling.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/pathutils.nim": {
+      "fichier": "nimx/pathutils.nim",
+      "langage": "nim",
+      "lignes": 131,
+      "taille_bytes": 3691,
+      "entrees": [
+        "jsbind/emscripten",
+        "strutils"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/perform_on_main_thread.nim": {
+      "fichier": "nimx/perform_on_main_thread.nim",
+      "langage": "nim",
+      "lignes": 91,
+      "taille_bytes": 2385,
+      "entrees": [
+        "locks",
+        "private/objc_appkit",
+        "sdl2"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/http_request.nim",
+        "nimx/image.nim",
+        "nimx/timer.nim"
+      ],
+      "type_noeud": "feuille"
+    },
+    "nimx/cursor.nim": {
+      "fichier": "nimx/cursor.nim",
+      "langage": "nim",
+      "lignes": 193,
+      "taille_bytes": 5387,
+      "entrees": [
+        "./private/windows/x11_window",
+        "darwin/app_kit",
+        "jsbind",
+        "jsbind/emscripten",
+        "sdl2",
+        "winim",
+        "x11/[xlib"
+      ],
+      "sorties": [
+        "const appKit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/autotest.nim": {
+      "fichier": "nimx/autotest.nim",
+      "langage": "nim",
+      "lignes": 242,
+      "taille_bytes": 7054,
+      "entrees": [
+        "./pathutils",
+        "android/app/activity",
+        "jnim",
+        "jsbind/emscripten",
+        "macros",
+        "nimx",
+        "os"
+      ],
+      "sorties": [
+        "const web",
+        "type FirefoxAutotestLogger",
+        "type TestRunnerContext",
+        "type UITestSuite",
+        "type UITestSuiteStep"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/outline_view.nim": {
+      "fichier": "nimx/outline_view.nim",
+      "langage": "nim",
+      "lignes": 588,
+      "taille_bytes": 19395,
+      "entrees": [
+        "kiwi",
+        "math",
+        "nimx/[view",
+        "scroll_view",
+        "variant"
+      ],
+      "sorties": [
+        "const circleRadius",
+        "const offsetOutline",
+        "const rowHeight",
+        "const tid",
+        "export TableViewCell"
+      ],
+      "appelle": [
+        "nimx/scroll_view.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/window.nim": {
+      "fichier": "nimx/window.nim",
+      "langage": "nim",
+      "lignes": 22,
+      "taille_bytes": 690,
+      "entrees": [
+        "abstract_window",
+        "private/windows/appkit_window",
+        "private/windows/emscripten_window",
+        "private/windows/js_canvas_window",
+        "private/windows/sdl_window",
+        "private/windows/web_window",
+        "private/windows/winapi_window",
+        "private/windows/x11_window"
+      ],
+      "sorties": [
+        "export abstract_window",
+        "export runApplication",
+        "export runUntilQuit",
+        "export startAnimation"
+      ],
+      "appelle": [
+        "nimx/abstract_window.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/gesture_detector_newtouch.nim": {
+      "fichier": "nimx/gesture_detector_newtouch.nim",
+      "langage": "nim",
+      "lignes": 3,
+      "taille_bytes": 63,
+      "entrees": [
+        "gesture_detector"
+      ],
+      "sorties": [
+        "export gesture_detector"
+      ],
+      "appelle": [
+        "nimx/gesture_detector.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/collection_view.nim": {
+      "fichier": "nimx/collection_view.nim",
+      "langage": "nim",
+      "lignes": 210,
+      "taille_bytes": 7920,
+      "entrees": [
+        "math",
+        "nimx",
+        "nimx/event",
+        "nimx/gesture_detector",
+        "nimx/types",
+        "nimx/view"
+      ],
+      "sorties": [
+        "const collectionCreator"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/class_registry.nim": {
+      "fichier": "nimx/class_registry.nim",
+      "langage": "nim",
+      "lignes": 186,
+      "taille_bytes": 5500,
+      "entrees": [
+        "tables",
+        "typetraits"
+      ],
+      "sorties": [
+        "const TName",
+        "const id",
+        "const tid",
+        "const typ",
+        "type ClassInfo",
+        "type ParentType"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/drag_and_drop.nim",
+        "nimx/view.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/unistring.nim": {
+      "fichier": "nimx/unistring.nim",
+      "langage": "nim",
+      "lignes": 67,
+      "taille_bytes": 1766,
+      "entrees": [
+        "unicode"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/split_view.nim": {
+      "fichier": "nimx/split_view.nim",
+      "langage": "nim",
+      "lignes": 203,
+      "taille_bytes": 6275,
+      "entrees": [
+        "./[",
+        "kiwi"
+      ],
+      "sorties": [
+        "const minSeparatorGap",
+        "export view",
+        "type SplitView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/numeric_text_field.nim": {
+      "fichier": "nimx/numeric_text_field.nim",
+      "langage": "nim",
+      "lignes": 116,
+      "taille_bytes": 3038,
+      "entrees": [
+        "nimx",
+        "strutils"
+      ],
+      "sorties": [
+        "const arrowComposition",
+        "const arrowMargin",
+        "type NumericTextField"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/keyboard.nim": {
+      "fichier": "nimx/keyboard.nim",
+      "langage": "nim",
+      "lignes": 265,
+      "taille_bytes": 4417,
+      "entrees": [
+        "private/js_platform_detector"
+      ],
+      "sorties": [
+        "type ModifiersSet",
+        "type VirtualKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/event.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/portable_gl.nim": {
+      "fichier": "nimx/portable_gl.nim",
+      "langage": "nim",
+      "lignes": 627,
+      "taille_bytes": 30809,
+      "entrees": [
+        "opengl",
+        "wasmrt",
+        "wasmrt/gl"
+      ],
+      "sorties": [
+        "const invalidBuffer",
+        "const invalidFrameBuffer",
+        "const invalidProgram",
+        "const invalidRenderBuffer",
+        "const invalidShader",
+        "const invalidTexture",
+        "const invalidUniformLocation",
+        "export GLuint"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/context.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/animation.nim": {
+      "fichier": "nimx/animation.nim",
+      "langage": "nim",
+      "lignes": 830,
+      "taille_bytes": 26272,
+      "entrees": [
+        "algorithm",
+        "logging",
+        "macros",
+        "math",
+        "times"
+      ],
+      "sorties": [
+        "const MIN_LOOP_DURATION",
+        "const PI_X2",
+        "type AnimationFunction",
+        "type CancelBehavior",
+        "type LoopPattern",
+        "type ProgressHandler",
+        "type TimingFunction"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/animation_runner.nim",
+        "nimx/progress_indicator.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/image_view.nim": {
+      "fichier": "nimx/image_view.nim",
+      "langage": "nim",
+      "lignes": 92,
+      "taille_bytes": 3237,
+      "entrees": [
+        "nimx"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/clip_view.nim": {
+      "fichier": "nimx/clip_view.nim",
+      "langage": "nim",
+      "lignes": 16,
+      "taille_bytes": 422,
+      "entrees": [
+        "./meta_extensions/[",
+        "./view"
+      ],
+      "sorties": [
+        "type ClipView"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/horizontal_list_view.nim",
+        "nimx/table_view2.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/rect_packer.nim": {
+      "fichier": "nimx/rect_packer.nim",
+      "langage": "nim",
+      "lignes": 83,
+      "taille_bytes": 2476,
+      "entrees": [],
+      "sorties": [
+        "type Point",
+        "type Rect",
+        "type RectPacker"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/window_event_handling.nim": {
+      "fichier": "nimx/window_event_handling.nim",
+      "langage": "nim",
+      "lignes": 79,
+      "taille_bytes": 2809,
+      "entrees": [
+        "abstract_window",
+        "drag_and_drop",
+        "types",
+        "view_event_handling"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nimx/abstract_window.nim",
+        "nimx/drag_and_drop.nim",
+        "nimx/types.nim",
+        "nimx/view_event_handling.nim"
+      ],
+      "est_appele_par": [
+        "nimx/app.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/font.nim": {
+      "fichier": "nimx/font.nim",
+      "langage": "nim",
+      "lignes": 440,
+      "taille_bytes": 14353,
+      "entrees": [
+        "./[",
+        "./assets/url_stream",
+        "./private/font/font_data",
+        "./private/font/fontconfig",
+        "./write_image_impl",
+        "os",
+        "private/font/js_glyph_provider",
+        "private/font/stb_ttf_glyph_provider",
+        "private/font/web_glyph_provider",
+        "private/simple_table",
+        "ttf/edtaa3func",
+        "unicode",
+        "wasmrt"
+      ],
+      "sorties": [
+        "const dumpDebugBitmaps",
+        "const preferredFonts",
+        "const pureWasm",
+        "type Baseline",
+        "type CharInfo",
+        "type FastString",
+        "type Font",
+        "type FontImpl",
+        "type GlyphProvider"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/popup_button.nim",
+        "nimx/segmented_control.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/undo_manager.nim": {
+      "fichier": "nimx/undo_manager.nim",
+      "langage": "nim",
+      "lignes": 75,
+      "taille_bytes": 1641,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/table_view.nim": {
+      "fichier": "nimx/table_view.nim",
+      "langage": "nim",
+      "lignes": 376,
+      "taille_bytes": 11527,
+      "entrees": [
+        "intsets",
+        "kiwi",
+        "view"
+      ],
+      "sorties": [
+        "export view",
+        "type TableRow"
+      ],
+      "appelle": [
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/drag_and_drop.nim": {
+      "fichier": "nimx/drag_and_drop.nim",
+      "langage": "nim",
+      "lignes": 74,
+      "taille_bytes": 2093,
+      "entrees": [
+        "./image",
+        "./pasteboard/pasteboard_item",
+        "class_registry",
+        "types",
+        "variant",
+        "view"
+      ],
+      "sorties": [
+        "type DragSystem"
+      ],
+      "appelle": [
+        "nimx/class_registry.nim",
+        "nimx/types.nim",
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [
+        "nimx/window_event_handling.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/scroll_bar.nim": {
+      "fichier": "nimx/scroll_bar.nim",
+      "langage": "nim",
+      "lignes": 97,
+      "taille_bytes": 2931,
+      "entrees": [
+        "composition",
+        "slider"
+      ],
+      "sorties": [
+        "const minKnobSize",
+        "export slider",
+        "type ScrollBar"
+      ],
+      "appelle": [
+        "nimx/composition.nim",
+        "nimx/slider.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/animation_runner.nim": {
+      "fichier": "nimx/animation_runner.nim",
+      "langage": "nim",
+      "lignes": 83,
+      "taille_bytes": 1917,
+      "entrees": [
+        "animation",
+        "logging",
+        "times"
+      ],
+      "sorties": [
+        "type AnimationRunner"
+      ],
+      "appelle": [
+        "nimx/animation.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/text_field.nim": {
+      "fichier": "nimx/text_field.nim",
+      "langage": "nim",
+      "lignes": 565,
+      "taille_bytes": 16733,
+      "entrees": [
+        "./meta_extensions/[",
+        "clipboard",
+        "control",
+        "unicode"
+      ],
+      "sorties": [
+        "const leftMargin",
+        "export control"
+      ],
+      "appelle": [
+        "nimx/control.nim"
+      ],
+      "est_appele_par": [
+        "nimx/form_view.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/toolbar.nim": {
+      "fichier": "nimx/toolbar.nim",
+      "langage": "nim",
+      "lignes": 21,
+      "taille_bytes": 551,
+      "entrees": [
+        "./[context"
+      ],
+      "sorties": [
+        "type Toolbar"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/linear_layout.nim": {
+      "fichier": "nimx/linear_layout.nim",
+      "langage": "nim",
+      "lignes": 275,
+      "taille_bytes": 8377,
+      "entrees": [
+        "nimx"
+      ],
+      "sorties": [
+        "const minSize",
+        "export view"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/button.nim": {
+      "fichier": "nimx/button.nim",
+      "langage": "nim",
+      "lignes": 327,
+      "taille_bytes": 9459,
+      "entrees": [
+        "control",
+        "nimx",
+        "property_visitor",
+        "view_event_handling"
+      ],
+      "sorties": [
+        "const checkButtonComposition",
+        "const radioButtonComposition",
+        "const regularButtonComposition",
+        "const selectionColor",
+        "export control",
+        "type ButtonBehavior",
+        "type ButtonStyle"
+      ],
+      "appelle": [
+        "nimx/control.nim",
+        "nimx/property_visitor.nim",
+        "nimx/view_event_handling.nim"
+      ],
+      "est_appele_par": [
+        "nimx/all_views.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/linkage_details.nim": {
+      "fichier": "nimx/linkage_details.nim",
+      "langage": "nim",
+      "lignes": 150,
+      "taille_bytes": 4057,
+      "entrees": [
+        "./system_logger",
+        "<stdlib.h>",
+        "macros"
+      ],
+      "sorties": [
+        "function working"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/form_view.nim": {
+      "fichier": "nimx/form_view.nim",
+      "langage": "nim",
+      "lignes": 50,
+      "taille_bytes": 1845,
+      "entrees": [
+        "tables",
+        "text_field",
+        "view"
+      ],
+      "sorties": [
+        "type FormView"
+      ],
+      "appelle": [
+        "nimx/text_field.nim",
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/view_event_handling.nim": {
+      "fichier": "nimx/view_event_handling.nim",
+      "langage": "nim",
+      "lignes": 214,
+      "taille_bytes": 6274,
+      "entrees": [
+        "view"
+      ],
+      "sorties": [
+        "export event"
+      ],
+      "appelle": [
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [
+        "nimx/button.nim",
+        "nimx/horizontal_list_view.nim",
+        "nimx/popup_button.nim",
+        "nimx/segmented_control.nim",
+        "nimx/slider.nim",
+        "nimx/view_event_handling_new.nim",
+        "nimx/window_event_handling.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/abstract_window.nim": {
+      "fichier": "nimx/abstract_window.nim",
+      "langage": "nim",
+      "lignes": 240,
+      "taille_bytes": 7482,
+      "entrees": [
+        "kiwi",
+        "times",
+        "view"
+      ],
+      "sorties": [
+        "const AW_FOCUS_ENTER",
+        "const AW_FOCUS_LEAVE",
+        "const DEFAULT_RUNNER",
+        "const fontSize",
+        "const profilerWidth",
+        "export view"
+      ],
+      "appelle": [
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [
+        "nimx/app.nim",
+        "nimx/event.nim",
+        "nimx/progress_indicator.nim",
+        "nimx/window.nim",
+        "nimx/window_event_handling.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/view_event_handling_new.nim": {
+      "fichier": "nimx/view_event_handling_new.nim",
+      "langage": "nim",
+      "lignes": 4,
+      "taille_bytes": 122,
+      "entrees": [
+        "view_event_handling"
+      ],
+      "sorties": [
+        "export view_event_handling"
+      ],
+      "appelle": [
+        "nimx/view_event_handling.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/color_picker.nim": {
+      "fichier": "nimx/color_picker.nim",
+      "langage": "nim",
+      "lignes": 403,
+      "taille_bytes": 10967,
+      "entrees": [
+        "./[context",
+        "./meta_extensions/[",
+        "std/[math",
+        "strutils",
+        "view"
+      ],
+      "sorties": [
+        "const cpHComposition",
+        "const cpSComposition",
+        "const cpVComposition",
+        "const hsvCircleComposition",
+        "export view"
+      ],
+      "appelle": [
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/view.nim": {
+      "fichier": "nimx/view.nim",
+      "langage": "nim",
+      "lignes": 550,
+      "taille_bytes": 17340,
+      "entrees": [
+        "class_registry",
+        "kiwi",
+        "notification_center",
+        "property_visitor",
+        "serializers",
+        "types",
+        "typetraits"
+      ],
+      "sorties": [
+        "const NimxFristResponderChangedInWindow",
+        "export animation_runner",
+        "export types",
+        "type AutoresizingFlag",
+        "type ClipType",
+        "type TT"
+      ],
+      "appelle": [
+        "nimx/class_registry.nim",
+        "nimx/notification_center.nim",
+        "nimx/property_visitor.nim",
+        "nimx/serializers.nim",
+        "nimx/types.nim"
+      ],
+      "est_appele_par": [
+        "nimx/abstract_window.nim",
+        "nimx/color_picker.nim",
+        "nimx/control.nim",
+        "nimx/drag_and_drop.nim",
+        "nimx/form_view.nim",
+        "nimx/gesture_detector.nim",
+        "nimx/horizontal_list_view.nim",
+        "nimx/layout.nim",
+        "nimx/menu.nim",
+        "nimx/progress_indicator.nim",
+        "nimx/table_view.nim",
+        "nimx/table_view2.nim",
+        "nimx/table_view_cell.nim",
+        "nimx/view_event_handling.nim"
+      ],
+      "type_noeud": "central"
+    },
+    "nimx/table_view_cell.nim": {
+      "fichier": "nimx/table_view_cell.nim",
+      "langage": "nim",
+      "lignes": 32,
+      "taille_bytes": 751,
+      "entrees": [
+        "context",
+        "types",
+        "view"
+      ],
+      "sorties": [
+        "export view",
+        "type TableViewCell"
+      ],
+      "appelle": [
+        "nimx/context.nim",
+        "nimx/types.nim",
+        "nimx/view.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/scroll_view.nim": {
+      "fichier": "nimx/scroll_view.nim",
+      "langage": "nim",
+      "lignes": 245,
+      "taille_bytes": 7812,
+      "entrees": [
+        "./[view",
+        "kiwi",
+        "math"
+      ],
+      "sorties": [
+        "const scrollBarWidth",
+        "export view",
+        "type ScrollView"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/outline_view.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/all_views.nim": {
+      "fichier": "nimx/all_views.nim",
+      "langage": "nim",
+      "lignes": 1,
+      "taille_bytes": 82,
+      "entrees": [
+        "button"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nimx/button.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/matrixes.nim": {
+      "fichier": "nimx/matrixes.nim",
+      "langage": "nim",
+      "lignes": 995,
+      "taille_bytes": 27242,
+      "entrees": [
+        "math",
+        "types"
+      ],
+      "sorties": [
+        "type Matrix3",
+        "type Matrix4",
+        "type TVector",
+        "type TVector2",
+        "type TVector3",
+        "type TVector4",
+        "type Vector2",
+        "type Vector3",
+        "type Vector4"
+      ],
+      "appelle": [
+        "nimx/types.nim"
+      ],
+      "est_appele_par": [
+        "nimx/context.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/types.nim": {
+      "fichier": "nimx/types.nim",
+      "langage": "nim",
+      "lignes": 174,
+      "taille_bytes": 5497,
+      "entrees": [
+        "math"
+      ],
+      "sorties": [
+        "const zeroPoint",
+        "const zeroRect",
+        "const zeroSize",
+        "type Color",
+        "type ColorComponent",
+        "type Coord",
+        "type Point",
+        "type Rect",
+        "type Size"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/color.nim",
+        "nimx/context.nim",
+        "nimx/drag_and_drop.nim",
+        "nimx/event.nim",
+        "nimx/horizontal_list_view.nim",
+        "nimx/image.nim",
+        "nimx/matrixes.nim",
+        "nimx/table_view_cell.nim",
+        "nimx/view.nim",
+        "nimx/window_event_handling.nim"
+      ],
+      "type_noeud": "feuille"
+    },
+    "nimx/composition.nim": {
+      "fichier": "nimx/composition.nim",
+      "langage": "nim",
+      "lignes": 577,
+      "taille_bytes": 18102,
+      "entrees": [
+        "context",
+        "nimsl/nimsl",
+        "private/helper_macros",
+        "strutils"
+      ],
+      "sorties": [
+        "const colorOperations",
+        "const commonDefinitions",
+        "const componentCount",
+        "const compositionFragmentFunctions",
+        "const distanceFunctions",
+        "const distanceSetOperations",
+        "const posAttr",
+        "const prefix",
+        "const preprocessedDefinition",
+        "const vertexCount",
+        "const vertexShaderCode",
+        "export context",
+        "export portable_gl",
+        "type PostEffectStackElem"
+      ],
+      "appelle": [
+        "nimx/context.nim"
+      ],
+      "est_appele_par": [
+        "nimx/context.nim",
+        "nimx/popup_button.nim",
+        "nimx/progress_indicator.nim",
+        "nimx/scroll_bar.nim",
+        "nimx/segmented_control.nim",
+        "nimx/slider.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/system_logger.nim": {
+      "fichier": "nimx/system_logger.nim",
+      "langage": "nim",
+      "lignes": 53,
+      "taille_bytes": 1362,
+      "entrees": [
+        "<CoreFoundation/CoreFoundation.h>",
+        "strutils"
+      ],
+      "sorties": [
+        "type SystemLogger"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/context.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/slider.nim": {
+      "fichier": "nimx/slider.nim",
+      "langage": "nim",
+      "lignes": 85,
+      "taille_bytes": 2743,
+      "entrees": [
+        "composition",
+        "context",
+        "control",
+        "view_event_handling"
+      ],
+      "sorties": [
+        "const sliderComposition",
+        "export control",
+        "type Slider"
+      ],
+      "appelle": [
+        "nimx/composition.nim",
+        "nimx/context.nim",
+        "nimx/control.nim",
+        "nimx/view_event_handling.nim"
+      ],
+      "est_appele_par": [
+        "nimx/scroll_bar.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/inspector_view.nim": {
+      "fichier": "nimx/inspector_view.nim",
+      "langage": "nim",
+      "lignes": 34,
+      "taille_bytes": 1004,
+      "entrees": [
+        "./[linear_layout",
+        "./property_editors/[propedit_registry",
+        "variant"
+      ],
+      "sorties": [
+        "export linear_layout",
+        "type InspectorView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/image.nim": {
+      "fichier": "nimx/image.nim",
+      "langage": "nim",
+      "lignes": 686,
+      "taille_bytes": 23739,
+      "entrees": [
+        "./assets/[",
+        "./http_request",
+        "./serializers",
+        "jsbind",
+        "jsbind/emscripten",
+        "load_image_impl",
+        "math",
+        "nimwebp",
+        "opengl",
+        "perform_on_main_thread",
+        "private/image_pvr",
+        "private/worker_queue",
+        "strutils",
+        "types",
+        "write_image_impl"
+      ],
+      "sorties": [
+        "const asyncResourceLoad",
+        "const loadAsyncTextureInMainThread",
+        "const web",
+        "type DecodedImageData",
+        "type ImageFileFormat",
+        "type ImageLoadingCtx"
+      ],
+      "appelle": [
+        "nimx/load_image_impl.nim",
+        "nimx/perform_on_main_thread.nim",
+        "nimx/types.nim",
+        "nimx/write_image_impl.nim"
+      ],
+      "est_appele_par": [
+        "nimx/context.nim",
+        "nimx/render_to_image.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/segmented_control.nim": {
+      "fichier": "nimx/segmented_control.nim",
+      "langage": "nim",
+      "lignes": 161,
+      "taille_bytes": 5131,
+      "entrees": [
+        "composition",
+        "context",
+        "control",
+        "font",
+        "property_visitor",
+        "serializers",
+        "view_event_handling"
+      ],
+      "sorties": [
+        "const scComposition",
+        "export control",
+        "type SegmentedControl"
+      ],
+      "appelle": [
+        "nimx/composition.nim",
+        "nimx/context.nim",
+        "nimx/control.nim",
+        "nimx/font.nim",
+        "nimx/property_visitor.nim",
+        "nimx/serializers.nim",
+        "nimx/view_event_handling.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/http_request.nim": {
+      "fichier": "nimx/http_request.nim",
+      "langage": "nim",
+      "lignes": 49,
+      "taille_bytes": 1684,
+      "entrees": [
+        "async_http_request",
+        "perform_on_main_thread"
+      ],
+      "sorties": [
+        "export async_http_request",
+        "type SdlHandlerContext"
+      ],
+      "appelle": [
+        "nimx/perform_on_main_thread.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/image_preview.nim": {
+      "fichier": "nimx/image_preview.nim",
+      "langage": "nim",
+      "lignes": 137,
+      "taille_bytes": 4540,
+      "entrees": [
+        "./[font",
+        "./assets/asset_loading",
+        "std/math"
+      ],
+      "sorties": [
+        "const bottomSize",
+        "const maxSize",
+        "const minSize",
+        "const titleSize",
+        "type ImagePreview"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/popup_button.nim": {
+      "fichier": "nimx/popup_button.nim",
+      "langage": "nim",
+      "lignes": 92,
+      "taille_bytes": 2784,
+      "entrees": [
+        "composition",
+        "context",
+        "control",
+        "font",
+        "menu",
+        "view_event_handling"
+      ],
+      "sorties": [
+        "const pbComposition",
+        "export control",
+        "type PopupButton"
+      ],
+      "appelle": [
+        "nimx/composition.nim",
+        "nimx/context.nim",
+        "nimx/control.nim",
+        "nimx/font.nim",
+        "nimx/menu.nim",
+        "nimx/view_event_handling.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/inspector_panel.nim": {
+      "fichier": "nimx/inspector_panel.nim",
+      "langage": "nim",
+      "lignes": 47,
+      "taille_bytes": 1559,
+      "entrees": [
+        "./[text_field"
+      ],
+      "sorties": [
+        "export panel_view",
+        "type InspectorPanel"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/screen.nim": {
+      "fichier": "nimx/screen.nim",
+      "langage": "nim",
+      "lignes": 25,
+      "taille_bytes": 718,
+      "entrees": [
+        "android/app/activity",
+        "android/content/context_wrapper",
+        "android/content/res/resources",
+        "android/util/display_metrics",
+        "darwin/app_kit",
+        "darwin/ui_kit",
+        "jsbind/emscripten"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/write_image_impl.nim": {
+      "fichier": "nimx/write_image_impl.nim",
+      "langage": "nim",
+      "lignes": 1562,
+      "taille_bytes": 63117,
+      "entrees": [
+        "<assert.h>",
+        "<math.h>",
+        "<stdarg.h>",
+        "<stdio.h>",
+        "<stdlib.h>",
+        "<string.h>"
+      ],
+      "sorties": [
+        "const unsigned",
+        "output alpha"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/image.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/view_render_to_image.nim": {
+      "fichier": "nimx/view_render_to_image.nim",
+      "langage": "nim",
+      "lignes": 10,
+      "taille_bytes": 297,
+      "entrees": [
+        "nimx"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/horizontal_list_view.nim": {
+      "fichier": "nimx/horizontal_list_view.nim",
+      "langage": "nim",
+      "lignes": 206,
+      "taille_bytes": 5573,
+      "entrees": [
+        "clip_view",
+        "nimx/gesture_detector",
+        "types",
+        "view",
+        "view_event_handling"
+      ],
+      "sorties": [
+        "export view"
+      ],
+      "appelle": [
+        "nimx/clip_view.nim",
+        "nimx/types.nim",
+        "nimx/view.nim",
+        "nimx/view_event_handling.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/event.nim": {
+      "fichier": "nimx/event.nim",
+      "langage": "nim",
+      "lignes": 108,
+      "taille_bytes": 3367,
+      "entrees": [
+        "abstract_window",
+        "keyboard",
+        "types",
+        "unicode"
+      ],
+      "sorties": [
+        "export keyboard",
+        "type ButtonState",
+        "type Event",
+        "type EventType"
+      ],
+      "appelle": [
+        "nimx/abstract_window.nim",
+        "nimx/keyboard.nim",
+        "nimx/types.nim"
+      ],
+      "est_appele_par": [
+        "nimx/app.nim",
+        "nimx/key_commands.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/load_image_impl.nim": {
+      "fichier": "nimx/load_image_impl.nim",
+      "langage": "nim",
+      "lignes": 7486,
+      "taille_bytes": 246161,
+      "entrees": [
+        "...",
+        "<arm_neon.h>",
+        "<assert.h>",
+        "<emmintrin.h>",
+        "<intrin.h>",
+        "<limits.h>",
+        "<math.h>",
+        "<stdarg.h>",
+        "<stddef.h>",
+        "<stdint.h>",
+        "<stdio.h>",
+        "<stdlib.h>",
+        "<string.h>",
+        "STBI_NOTUSED"
+      ],
+      "sorties": [
+        "const char"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/image.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/mini_profiler.nim": {
+      "fichier": "nimx/mini_profiler.nim",
+      "langage": "nim",
+      "lignes": 76,
+      "taille_bytes": 2034,
+      "entrees": [
+        "tables"
+      ],
+      "sorties": [
+        "type TT"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/layout_vars.nim": {
+      "fichier": "nimx/layout_vars.nim",
+      "langage": "nim",
+      "lignes": 86,
+      "taille_bytes": 3222,
+      "entrees": [
+        "kiwi"
+      ],
+      "sorties": [
+        "const leftToRight"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/property_visitor.nim": {
+      "fichier": "nimx/property_visitor.nim",
+      "langage": "nim",
+      "lignes": 93,
+      "taille_bytes": 2690,
+      "entrees": [
+        "./types",
+        "std/[tables]",
+        "variant"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/button.nim",
+        "nimx/segmented_control.nim",
+        "nimx/view.nim"
+      ],
+      "type_noeud": "feuille"
+    },
+    "nimx/naketools.nim": {
+      "fichier": "nimx/naketools.nim",
+      "langage": "nim",
+      "lignes": 1088,
+      "taille_bytes": 37615,
+      "entrees": [
+        "nake",
+        "nester",
+        "os",
+        "plists"
+      ],
+      "sorties": [
+        "const xCodeApp",
+        "export nake",
+        "type Builder",
+        "type VerTuple"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/expanding_view.nim": {
+      "fichier": "nimx/expanding_view.nim",
+      "langage": "nim",
+      "lignes": 112,
+      "taille_bytes": 3027,
+      "entrees": [
+        "nimx/button",
+        "nimx/color",
+        "nimx/common/expand_button",
+        "nimx/context",
+        "nimx/font",
+        "nimx/stack_view",
+        "nimx/types",
+        "nimx/view"
+      ],
+      "sorties": [
+        "const expandButtonSize",
+        "const titleSize",
+        "type ExpandingView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/view_dragging_listener.nim": {
+      "fichier": "nimx/view_dragging_listener.nim",
+      "langage": "nim",
+      "lignes": 57,
+      "taille_bytes": 1982,
+      "entrees": [
+        "nimx/[gesture_detector"
+      ],
+      "sorties": [
+        "const size",
+        "type DraggingScrollListener",
+        "type ResizingKnob",
+        "type ResizingScrollListener"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/panel_view.nim": {
+      "fichier": "nimx/panel_view.nim",
+      "langage": "nim",
+      "lignes": 84,
+      "taille_bytes": 2435,
+      "entrees": [
+        "./[view",
+        "./meta_extensions/[",
+        "std/[math]"
+      ],
+      "sorties": [
+        "const gradientComposition",
+        "type PanelView"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/common/expand_button.nim": {
+      "fichier": "nimx/common/expand_button.nim",
+      "langage": "nim",
+      "lignes": 28,
+      "taille_bytes": 734,
+      "entrees": [
+        "math",
+        "nimx"
+      ],
+      "sorties": [
+        "type ExpandButton"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/asset_loader.nim": {
+      "fichier": "nimx/assets/asset_loader.nim",
+      "langage": "nim",
+      "lignes": 63,
+      "taille_bytes": 1875,
+      "entrees": [
+        "asset_loading"
+      ],
+      "sorties": [
+        "const debugResCache",
+        "const jsEnv",
+        "const parallelLoaders",
+        "type AssetLoader"
+      ],
+      "appelle": [
+        "nimx/assets/asset_loading.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/asset_manager.nim": {
+      "fichier": "nimx/assets/asset_manager.nim",
+      "langage": "nim",
+      "lignes": 221,
+      "taille_bytes": 6822,
+      "entrees": [
+        "../pathutils",
+        "./[abstract_asset_bundle",
+        "android_asset_bundle",
+        "native_asset_bundle",
+        "strutils",
+        "variant",
+        "web_asset_bundle"
+      ],
+      "sorties": [
+        "const prefix"
+      ],
+      "appelle": [
+        "nimx/assets/android_asset_bundle.nim",
+        "nimx/assets/native_asset_bundle.nim",
+        "nimx/assets/web_asset_bundle.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "nimx/assets/asset_loading.nim": {
+      "fichier": "nimx/assets/asset_loading.nim",
+      "langage": "nim",
+      "lignes": 95,
+      "taille_bytes": 3810,
+      "entrees": [
+        "asset_cache",
+        "os"
+      ],
+      "sorties": [
+        "const anyUrlScheme",
+        "type SimpleStreamLoaderProc",
+        "type SimpleUrlLoaderProc",
+        "type StreamLoaderProc",
+        "type UrlLoaderProc"
+      ],
+      "appelle": [
+        "nimx/assets/asset_cache.nim"
+      ],
+      "est_appele_par": [
+        "nimx/assets/asset_loader.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/web_asset_bundle.nim": {
+      "fichier": "nimx/assets/web_asset_bundle.nim",
+      "langage": "nim",
+      "lignes": 31,
+      "taille_bytes": 878,
+      "entrees": [
+        "abstract_asset_bundle",
+        "nimx/pathutils",
+        "os"
+      ],
+      "sorties": [
+        "type WebAssetBundle"
+      ],
+      "appelle": [
+        "nimx/assets/abstract_asset_bundle.nim"
+      ],
+      "est_appele_par": [
+        "nimx/assets/asset_manager.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/android_asset_url_handler.nim": {
+      "fichier": "nimx/assets/android_asset_url_handler.nim",
+      "langage": "nim",
+      "lignes": 24,
+      "taille_bytes": 700,
+      "entrees": [
+        "android/app/activity",
+        "android/content/context",
+        "android/content/res/asset_manager",
+        "android/ndk/aasset_manager",
+        "jnim",
+        "sdl2",
+        "url_stream"
+      ],
+      "sorties": [
+        "const prefixLen"
+      ],
+      "appelle": [
+        "nimx/assets/url_stream.nim"
+      ],
+      "est_appele_par": [
+        "nimx/assets/android_asset_bundle.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/android_asset_bundle.nim": {
+      "fichier": "nimx/assets/android_asset_bundle.nim",
+      "langage": "nim",
+      "lignes": 13,
+      "taille_bytes": 438,
+      "entrees": [
+        "abstract_asset_bundle",
+        "android_asset_url_handler"
+      ],
+      "sorties": [
+        "type AndroidAssetBundle"
+      ],
+      "appelle": [
+        "nimx/assets/abstract_asset_bundle.nim",
+        "nimx/assets/android_asset_url_handler.nim"
+      ],
+      "est_appele_par": [
+        "nimx/assets/asset_manager.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/json_loading.nim": {
+      "fichier": "nimx/assets/json_loading.nim",
+      "langage": "nim",
+      "lignes": 19,
+      "taille_bytes": 601,
+      "entrees": [
+        "jsbind",
+        "json",
+        "url_stream"
+      ],
+      "sorties": [],
+      "appelle": [
+        "nimx/assets/url_stream.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/abstract_asset_bundle.nim": {
+      "fichier": "nimx/assets/abstract_asset_bundle.nim",
+      "langage": "nim",
+      "lignes": 12,
+      "taille_bytes": 465,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/assets/android_asset_bundle.nim",
+        "nimx/assets/native_asset_bundle.nim",
+        "nimx/assets/web_asset_bundle.nim"
+      ],
+      "type_noeud": "feuille"
+    },
+    "nimx/assets/asset_cache.nim": {
+      "fichier": "nimx/assets/asset_cache.nim",
+      "langage": "nim",
+      "lignes": 9,
+      "taille_bytes": 246,
+      "entrees": [
+        "tables",
+        "variant"
+      ],
+      "sorties": [
+        "type AssetCache"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/assets/asset_loading.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/native_asset_bundle.nim": {
+      "fichier": "nimx/assets/native_asset_bundle.nim",
+      "langage": "nim",
+      "lignes": 17,
+      "taille_bytes": 496,
+      "entrees": [
+        "abstract_asset_bundle",
+        "os"
+      ],
+      "sorties": [
+        "type NativeAssetBundle"
+      ],
+      "appelle": [
+        "nimx/assets/abstract_asset_bundle.nim"
+      ],
+      "est_appele_par": [
+        "nimx/assets/asset_manager.nim"
+      ],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/web_url_handler.nim": {
+      "fichier": "nimx/assets/web_url_handler.nim",
+      "langage": "nim",
+      "lignes": 118,
+      "taille_bytes": 3625,
+      "entrees": [
+        "async_http_request",
+        "jsbind",
+        "jsbind/emscripten",
+        "logging",
+        "nimx/http_request",
+        "nimx/private/js_data_view_stream",
+        "url_stream"
+      ],
+      "sorties": [
+        "const prefixLen",
+        "const web",
+        "type URLLoadingError"
+      ],
+      "appelle": [
+        "nimx/assets/url_stream.nim"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/assets/url_stream.nim": {
+      "fichier": "nimx/assets/url_stream.nim",
+      "langage": "nim",
+      "lignes": 43,
+      "taille_bytes": 1288,
+      "entrees": [
+        "streams"
+      ],
+      "sorties": [
+        "const prefixLen",
+        "export streams",
+        "type Error",
+        "type Handler",
+        "type UrlHandler"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "nimx/assets/android_asset_url_handler.nim",
+        "nimx/assets/json_loading.nim",
+        "nimx/assets/web_url_handler.nim"
+      ],
+      "type_noeud": "feuille"
+    },
+    "nimx/meta_extensions/visitors_gen.nim": {
+      "fichier": "nimx/meta_extensions/visitors_gen.nim",
+      "langage": "nim",
+      "lignes": 29,
+      "taille_bytes": 849,
+      "entrees": [
+        "../property_visitor",
+        "./property_desc",
+        "macros"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/meta_extensions/property_desc.nim": {
+      "fichier": "nimx/meta_extensions/property_desc.nim",
+      "langage": "nim",
+      "lignes": 86,
+      "taille_bytes": 2108,
+      "entrees": [
+        "../class_registry",
+        "macros"
+      ],
+      "sorties": [
+        "export class_registry"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/meta_extensions/serializers_gen.nim": {
+      "fichier": "nimx/meta_extensions/serializers_gen.nim",
+      "langage": "nim",
+      "lignes": 56,
+      "taille_bytes": 1735,
+      "entrees": [
+        "../serializers",
+        "../ui_resource",
+        "./property_desc",
+        "std/macros"
+      ],
+      "sorties": [
+        "export ui_resource"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/property_editors/propedit_registry.nim": {
+      "fichier": "nimx/property_editors/propedit_registry.nim",
+      "langage": "nim",
+      "lignes": 105,
+      "taille_bytes": 3017,
+      "entrees": [
+        "../font",
+        "../layout",
+        "../property_visitor",
+        "../text_field",
+        "../view",
+        "std/tables",
+        "variant"
+      ],
+      "sorties": [
+        "const editorRowHeight",
+        "const onChange"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/property_editors/standard_editors.nim": {
+      "fichier": "nimx/property_editors/standard_editors.nim",
+      "langage": "nim",
+      "lignes": 686,
+      "taille_bytes": 20815,
+      "entrees": [
+        "../[",
+        "../assets/asset_loading",
+        "../pasteboard/pasteboard_item",
+        "./propedit_registry",
+        "dom",
+        "os_files/dialog",
+        "std/[strutils",
+        "variant"
+      ],
+      "sorties": [
+        "const nimxPbImage",
+        "const offset"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/property_editors/autoresizing_mask_editor.nim": {
+      "fichier": "nimx/property_editors/autoresizing_mask_editor.nim",
+      "langage": "nim",
+      "lignes": 59,
+      "taille_bytes": 1909,
+      "entrees": [
+        "nimx/linear_layout",
+        "nimx/numeric_text_field",
+        "nimx/popup_button",
+        "nimx/property_editors/propedit_registry",
+        "nimx/property_visitor",
+        "variant"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/js_data_view_stream.nim": {
+      "fichier": "nimx/private/js_data_view_stream.nim",
+      "langage": "nim",
+      "lignes": 241,
+      "taille_bytes": 6524,
+      "entrees": [
+        "streams"
+      ],
+      "sorties": [
+        "type DataView",
+        "type DataViewStream"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/macos_vk_map.nim": {
+      "fichier": "nimx/private/macos_vk_map.nim",
+      "langage": "nim",
+      "lignes": 174,
+      "taille_bytes": 5195,
+      "entrees": [
+        "nimx/keyboard",
+        "tables"
+      ],
+      "sorties": [
+        "const virtualKeyMapping"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/async.nim": {
+      "fichier": "nimx/private/async.nim",
+      "langage": "nim",
+      "lignes": 7,
+      "taille_bytes": 160,
+      "entrees": [
+        "std/async"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/helper_macros.nim": {
+      "fichier": "nimx/private/helper_macros.nim",
+      "langage": "nim",
+      "lignes": 59,
+      "taille_bytes": 1574,
+      "entrees": [
+        "macros",
+        "typetraits"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/sdl_vk_map.nim": {
+      "fichier": "nimx/private/sdl_vk_map.nim",
+      "langage": "nim",
+      "lignes": 176,
+      "taille_bytes": 7924,
+      "entrees": [
+        "../keyboard",
+        "sdl2",
+        "std/[tables"
+      ],
+      "sorties": [
+        "const virtualKeyMapping"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/winapi_vk_map.nim": {
+      "fichier": "nimx/private/winapi_vk_map.nim",
+      "langage": "nim",
+      "lignes": 220,
+      "taille_bytes": 7273,
+      "entrees": [
+        "nimx/keyboard",
+        "tables",
+        "winim"
+      ],
+      "sorties": [
+        "const virtualKeyMapping"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/x11_vk_map.nim": {
+      "fichier": "nimx/private/x11_vk_map.nim",
+      "langage": "nim",
+      "lignes": 203,
+      "taille_bytes": 7273,
+      "entrees": [
+        "nimx/keyboard",
+        "tables",
+        "x11/[x"
+      ],
+      "sorties": [
+        "const virtualKeyMapping"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/objc_appkit.nim": {
+      "fichier": "nimx/private/objc_appkit.nim",
+      "langage": "nim",
+      "lignes": 8,
+      "taille_bytes": 275,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/js_vk_map.nim": {
+      "fichier": "nimx/private/js_vk_map.nim",
+      "langage": "nim",
+      "lignes": 173,
+      "taille_bytes": 4722,
+      "entrees": [
+        "nimx/keyboard",
+        "tables"
+      ],
+      "sorties": [
+        "const virtualKeyMapping"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/kiwi_vector_symbolics.nim": {
+      "fichier": "nimx/private/kiwi_vector_symbolics.nim",
+      "langage": "nim",
+      "lignes": 26,
+      "taille_bytes": 840,
+      "entrees": [
+        "kiwi"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/js_platform_detector.nim": {
+      "fichier": "nimx/private/js_platform_detector.nim",
+      "langage": "nim",
+      "lignes": 22,
+      "taille_bytes": 593,
+      "entrees": [
+        "jsbind/emscripten",
+        "wasmrt"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/worker_queue.nim": {
+      "fichier": "nimx/private/worker_queue.nim",
+      "langage": "nim",
+      "lignes": 77,
+      "taille_bytes": 1975,
+      "entrees": [
+        "locks",
+        "os"
+      ],
+      "sorties": [
+        "type TaskListNode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/text_drawing.nim": {
+      "fichier": "nimx/private/text_drawing.nim",
+      "langage": "nim",
+      "lignes": 252,
+      "taille_bytes": 6805,
+      "entrees": [
+        "../[font",
+        "unicode"
+      ],
+      "sorties": [
+        "const componentCount",
+        "const fontComposition",
+        "const fontSubpixelCompositionWithDynamicBase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/image_pvr.nim": {
+      "fichier": "nimx/private/image_pvr.nim",
+      "langage": "nim",
+      "lignes": 113,
+      "taille_bytes": 3230,
+      "entrees": [],
+      "sorties": [
+        "type PVRTextureHeaderV3",
+        "type ePVR3Format"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/simple_table.nim": {
+      "fichier": "nimx/private/simple_table.nim",
+      "langage": "nim",
+      "lignes": 25,
+      "taille_bytes": 962,
+      "entrees": [
+        "tables"
+      ],
+      "sorties": [
+        "export tables",
+        "type SimpleTable"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/windows/x11_window.nim": {
+      "fichier": "nimx/private/windows/x11_window.nim",
+      "langage": "nim",
+      "lignes": 364,
+      "taille_bytes": 11192,
+      "entrees": [
+        "asyncdispatch",
+        "nimx/[",
+        "nimx/private/x11_vk_map",
+        "opengl/glx",
+        "x11/[xlib",
+        "x11/x"
+      ],
+      "sorties": [
+        "const multiplierX",
+        "const multiplierY"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/windows/web_window.nim": {
+      "fichier": "nimx/private/windows/web_window.nim",
+      "langage": "nim",
+      "lignes": 401,
+      "taille_bytes": 11615,
+      "entrees": [
+        "nimx/[",
+        "nimx/private/js_vk_map",
+        "wasmrt"
+      ],
+      "sorties": [
+        "export abstract_window",
+        "type WebWindow"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/windows/sdl_window.nim": {
+      "fichier": "nimx/private/windows/sdl_window.nim",
+      "langage": "nim",
+      "lignes": 570,
+      "taille_bytes": 18598,
+      "entrees": [
+        "../../[",
+        "../../private/sdl_vk_map",
+        "asyncdispatch",
+        "darwin/app_kit/nswindow",
+        "opengl",
+        "sdl2",
+        "times",
+        "x11/[xresource"
+      ],
+      "sorties": [
+        "const fullCollectThreshold",
+        "const multiplierX",
+        "const multiplierY",
+        "export abstract_window",
+        "type SdlWindow",
+        "type WMinfoX11"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "nimx/private/windows/winapi_window.nim": {
+      "fichier": "nimx/private/windows/winapi_window.nim",
+      "langage": "nim",
+      "lignes": 364,
+      "taille_bytes": 11076,
+      "entrees": [
+        "nimx",
+        "nimx/[",
+        "opengl",
+        "std/[logging",
+        "strutils",
+        "unicode",
+        "winim"
+      ],
+      "sorties": [
+        "const GWLP_USERDATA",
+        "const WM_DPICHANGED",
+        "const animFrameTimeout",
+        "const class_name",
+        "const multiplierX",
+        "const multiplierY"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "nimx/render_to_image.nim",
+      "vers": "nimx/image.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/menu.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/layout.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/table_view2.nim",
+      "vers": "nimx/clip_view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/table_view2.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/gesture_detector.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/progress_indicator.nim",
+      "vers": "nimx/abstract_window.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/progress_indicator.nim",
+      "vers": "nimx/animation.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/progress_indicator.nim",
+      "vers": "nimx/composition.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/progress_indicator.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/timer.nim",
+      "vers": "nimx/perform_on_main_thread.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/context.nim",
+      "vers": "nimx/composition.nim",
+      "type": "circulaire"
+    },
+    {
+      "de": "nimx/context.nim",
+      "vers": "nimx/image.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/context.nim",
+      "vers": "nimx/matrixes.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/context.nim",
+      "vers": "nimx/portable_gl.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/context.nim",
+      "vers": "nimx/system_logger.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/context.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/key_commands.nim",
+      "vers": "nimx/event.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/control.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/color.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/app.nim",
+      "vers": "nimx/abstract_window.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/app.nim",
+      "vers": "nimx/event.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/app.nim",
+      "vers": "nimx/window_event_handling.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/outline_view.nim",
+      "vers": "nimx/scroll_view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/window.nim",
+      "vers": "nimx/abstract_window.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/gesture_detector_newtouch.nim",
+      "vers": "nimx/gesture_detector.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/window_event_handling.nim",
+      "vers": "nimx/abstract_window.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/window_event_handling.nim",
+      "vers": "nimx/drag_and_drop.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/window_event_handling.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/window_event_handling.nim",
+      "vers": "nimx/view_event_handling.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/table_view.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/drag_and_drop.nim",
+      "vers": "nimx/class_registry.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/drag_and_drop.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/drag_and_drop.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/scroll_bar.nim",
+      "vers": "nimx/composition.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/scroll_bar.nim",
+      "vers": "nimx/slider.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/animation_runner.nim",
+      "vers": "nimx/animation.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/text_field.nim",
+      "vers": "nimx/control.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/button.nim",
+      "vers": "nimx/control.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/button.nim",
+      "vers": "nimx/property_visitor.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/button.nim",
+      "vers": "nimx/view_event_handling.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/form_view.nim",
+      "vers": "nimx/text_field.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/form_view.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/view_event_handling.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/abstract_window.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/view_event_handling_new.nim",
+      "vers": "nimx/view_event_handling.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/color_picker.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/view.nim",
+      "vers": "nimx/class_registry.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/view.nim",
+      "vers": "nimx/notification_center.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/view.nim",
+      "vers": "nimx/property_visitor.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/view.nim",
+      "vers": "nimx/serializers.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/view.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/table_view_cell.nim",
+      "vers": "nimx/context.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/table_view_cell.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/table_view_cell.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/all_views.nim",
+      "vers": "nimx/button.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/matrixes.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/composition.nim",
+      "vers": "nimx/context.nim",
+      "type": "circulaire"
+    },
+    {
+      "de": "nimx/slider.nim",
+      "vers": "nimx/composition.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/slider.nim",
+      "vers": "nimx/context.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/slider.nim",
+      "vers": "nimx/control.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/slider.nim",
+      "vers": "nimx/view_event_handling.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/image.nim",
+      "vers": "nimx/load_image_impl.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/image.nim",
+      "vers": "nimx/perform_on_main_thread.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/image.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/image.nim",
+      "vers": "nimx/write_image_impl.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/segmented_control.nim",
+      "vers": "nimx/composition.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/segmented_control.nim",
+      "vers": "nimx/context.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/segmented_control.nim",
+      "vers": "nimx/control.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/segmented_control.nim",
+      "vers": "nimx/font.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/segmented_control.nim",
+      "vers": "nimx/property_visitor.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/segmented_control.nim",
+      "vers": "nimx/serializers.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/segmented_control.nim",
+      "vers": "nimx/view_event_handling.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/http_request.nim",
+      "vers": "nimx/perform_on_main_thread.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/popup_button.nim",
+      "vers": "nimx/composition.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/popup_button.nim",
+      "vers": "nimx/context.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/popup_button.nim",
+      "vers": "nimx/control.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/popup_button.nim",
+      "vers": "nimx/font.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/popup_button.nim",
+      "vers": "nimx/menu.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/popup_button.nim",
+      "vers": "nimx/view_event_handling.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/horizontal_list_view.nim",
+      "vers": "nimx/clip_view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/horizontal_list_view.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/horizontal_list_view.nim",
+      "vers": "nimx/view.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/horizontal_list_view.nim",
+      "vers": "nimx/view_event_handling.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/event.nim",
+      "vers": "nimx/abstract_window.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/event.nim",
+      "vers": "nimx/keyboard.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/event.nim",
+      "vers": "nimx/types.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/asset_loader.nim",
+      "vers": "nimx/assets/asset_loading.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/asset_manager.nim",
+      "vers": "nimx/assets/android_asset_bundle.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/asset_manager.nim",
+      "vers": "nimx/assets/native_asset_bundle.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/asset_manager.nim",
+      "vers": "nimx/assets/web_asset_bundle.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/asset_loading.nim",
+      "vers": "nimx/assets/asset_cache.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/web_asset_bundle.nim",
+      "vers": "nimx/assets/abstract_asset_bundle.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/android_asset_url_handler.nim",
+      "vers": "nimx/assets/url_stream.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/android_asset_bundle.nim",
+      "vers": "nimx/assets/abstract_asset_bundle.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/android_asset_bundle.nim",
+      "vers": "nimx/assets/android_asset_url_handler.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/json_loading.nim",
+      "vers": "nimx/assets/url_stream.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/native_asset_bundle.nim",
+      "vers": "nimx/assets/abstract_asset_bundle.nim",
+      "type": "interne"
+    },
+    {
+      "de": "nimx/assets/web_url_handler.nim",
+      "vers": "nimx/assets/url_stream.nim",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'nimx/table_view2.nim'",
+    "point_entree → 'nimx/progress_indicator.nim'",
+    "central → 'nimx/context.nim' (in=5, out=6)",
+    "point_entree → 'nimx/app.nim'",
+    "feuille → 'nimx/perform_on_main_thread.nim' (in=3)",
+    "point_entree → 'nimx/scroll_bar.nim'",
+    "point_entree → 'nimx/form_view.nim'",
+    "central → 'nimx/view.nim' (in=14, out=5)",
+    "point_entree → 'nimx/table_view_cell.nim'",
+    "feuille → 'nimx/types.nim' (in=10)",
+    "point_entree → 'nimx/segmented_control.nim'",
+    "point_entree → 'nimx/popup_button.nim'",
+    "point_entree → 'nimx/horizontal_list_view.nim'",
+    "feuille → 'nimx/property_visitor.nim' (in=3)",
+    "point_entree → 'nimx/assets/asset_manager.nim'",
+    "feuille → 'nimx/assets/abstract_asset_bundle.nim' (in=3)",
+    "feuille → 'nimx/assets/url_stream.nim' (in=3)",
+    "circulaire → 2 cycles détectés"
+  ]
+}

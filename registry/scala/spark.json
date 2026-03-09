@@ -1,0 +1,3177 @@
+{
+  "meta": {
+    "projet": "spark",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "xml": 4,
+      "toml": 1,
+      "yaml": 3,
+      "scala": 108,
+      "java": 4
+    }
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 15,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 2,
+    "fichier_plus_appele": "resource-managers/yarn/src/main/scala/org/apache/spark/util/YarnContainerInfoHelper.scala"
+  },
+  "noeuds": {
+    "scalastyle-config.xml": {
+      "fichier": "scalastyle-config.xml",
+      "langage": "xml",
+      "lignes": 854,
+      "taille_bytes": 47144,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pyproject.toml": {
+      "fichier": "pyproject.toml",
+      "langage": "toml",
+      "lignes": 71,
+      "taille_bytes": 2449,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".asf.yaml": {
+      "fichier": ".asf.yaml",
+      "langage": "yaml",
+      "lignes": 43,
+      "taille_bytes": 1389,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".pre-commit-config.yaml": {
+      "fichier": ".pre-commit-config.yaml",
+      "langage": "yaml",
+      "lignes": 33,
+      "taille_bytes": 1172,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "pom.xml": {
+      "fichier": "pom.xml",
+      "langage": "xml",
+      "lignes": 3688,
+      "taille_bytes": 136213,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/pom.xml": {
+      "fichier": "resource-managers/yarn/pom.xml",
+      "langage": "xml",
+      "lignes": 160,
+      "taille_bytes": 5528,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/launcher/TestClasspathBuilder.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/launcher/TestClasspathBuilder.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 1433,
+      "entrees": [
+        "java.util."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnProxyRedirectFilterSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnProxyRedirectFilterSuite.scala",
+      "langage": "scala",
+      "lignes": 55,
+      "taille_bytes": 2081,
+      "entrees": [
+        "jakarta.servlet.FilterChain",
+        "jakarta.servlet.http.",
+        "java.io.",
+        "org.apache.spark.SparkFunSuite",
+        "org.mockito.Mockito._"
+      ],
+      "sorties": [
+        "class YarnProxyRedirectFilterSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/LocalityPlacementStrategySuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/LocalityPlacementStrategySuite.scala",
+      "langage": "scala",
+      "lignes": 97,
+      "taille_bytes": 3694,
+      "entrees": [
+        "java.io.",
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.spark.",
+        "org.apache.spark.resource.ResourceProfile",
+        "org.mockito.Mockito._",
+        "scala.collection.mutable."
+      ],
+      "sorties": [
+        "class LocalityPlacementStrategySuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ResourceRequestTestHelper.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ResourceRequestTestHelper.scala",
+      "langage": "scala",
+      "lignes": 52,
+      "taille_bytes": 2189,
+      "entrees": [
+        "org.apache.hadoop.yarn.api.records.ResourceTypeInfo",
+        "org.apache.hadoop.yarn.util.resource.ResourceUtils",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def initializeResourceTypes",
+        "def withResourceTypes",
+        "trait ResourceRequestTestHelper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnShuffleIntegrationSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnShuffleIntegrationSuite.scala",
+      "langage": "scala",
+      "lignes": 187,
+      "taille_bytes": 6689,
+      "entrees": [
+        "java.io.File",
+        "java.nio.file.Files",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.spark._",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.internal.config.Network._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.network.shuffle.ShuffleTestAccessor",
+        "org.apache.spark.network.shuffledb.DBBackend",
+        "org.apache.spark.network.yarn.",
+        "org.apache.spark.tags.",
+        "org.apache.spark.util.Utils",
+        "org.scalatest.matchers.must.Matchers",
+        "org.scalatest.matchers.should.Matchers._"
+      ],
+      "sorties": [
+        "abstract class YarnShuffleAuthSuite",
+        "abstract class YarnShuffleIntegrationSuite",
+        "class YarnShuffleAuthWithLevelDBBackendSuite",
+        "class YarnShuffleAuthWithRocksDBBackendSuite",
+        "class YarnShuffleIntegrationWithLevelDBBackendSuite",
+        "class YarnShuffleIntegrationWithRocksDBBackendSuite",
+        "def main"
+      ],
+      "appelle": [
+        "resource-managers/yarn/src/test/scala/org/apache/spark/network/shuffle/ShuffleTestAccessor.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnAllocatorHealthTrackerSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnAllocatorHealthTrackerSuite.scala",
+      "langage": "scala",
+      "lignes": 169,
+      "taille_bytes": 7049,
+      "entrees": [
+        "java.util.Arrays",
+        "java.util.Collections",
+        "org.apache.hadoop.yarn.client.api.AMRMClient",
+        "org.apache.hadoop.yarn.client.api.AMRMClient.ContainerRequest",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.ExecutorFailureTracker",
+        "org.apache.spark.deploy.yarn.config.",
+        "org.apache.spark.internal.config.",
+        "org.apache.spark.util.ManualClock",
+        "org.mockito.Mockito._",
+        "org.scalatest.BeforeAndAfterEach",
+        "org.scalatest.matchers.must.Matchers"
+      ],
+      "sorties": [
+        "class YarnAllocatorHealthTrackerSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ExecutorRunnableSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ExecutorRunnableSuite.scala",
+      "langage": "scala",
+      "lignes": 106,
+      "taille_bytes": 4424,
+      "entrees": [
+        "com.fasterxml.jackson.core.`type`.TypeReference",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "java.io.IOException",
+        "org.apache.hadoop.yarn.api.records.",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.hadoop.yarn.util.Records",
+        "org.apache.spark.",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.network.util.JavaUtils",
+        "org.mockito.Mockito."
+      ],
+      "sorties": [
+        "class ExecutorRunnableSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ContainerPlacementStrategySuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ContainerPlacementStrategySuite.scala",
+      "langage": "scala",
+      "lignes": 175,
+      "taille_bytes": 7252,
+      "entrees": [
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.client.api.AMRMClient.ContainerRequest",
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.resource.ResourceProfile",
+        "org.apache.spark.util.ArrayImplicits._",
+        "org.scalatest.matchers.must.Matchers",
+        "yarnAllocatorSuite._"
+      ],
+      "sorties": [
+        "class ContainerPlacementStrategySuite",
+        "def createContainerRequest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ResourceRequestHelperSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ResourceRequestHelperSuite.scala",
+      "langage": "scala",
+      "lignes": 185,
+      "taille_bytes": 7348,
+      "entrees": [
+        "org.apache.hadoop.yarn.api.records.Resource",
+        "org.apache.hadoop.yarn.util.Records",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.yarn.ResourceRequestHelper._",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.config.",
+        "org.apache.spark.resource.ResourceUtils.AMOUNT",
+        "org.scalatest.matchers.must.Matchers",
+        "org.scalatest.matchers.should.Matchers._"
+      ],
+      "sorties": [
+        "class ResourceRequestHelperSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/BaseYarnClusterSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/BaseYarnClusterSuite.scala",
+      "langage": "scala",
+      "lignes": 297,
+      "taille_bytes": 11409,
+      "entrees": [
+        "java.io.",
+        "java.nio.charset.StandardCharsets",
+        "java.nio.file.Files",
+        "java.util.Properties",
+        "java.util.concurrent.TimeUnit",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.hadoop.yarn.server.MiniYARNCluster",
+        "org.apache.spark._",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.launcher._",
+        "org.apache.spark.util.Utils",
+        "org.scalactic.source.Position",
+        "org.scalatest.Tag",
+        "org.scalatest.concurrent.Eventually._",
+        "org.scalatest.matchers.must.Matchers",
+        "scala.concurrent.duration._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "abstract class BaseYarnClusterSuite",
+        "def newYarnConfig"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ApplicationMasterSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ApplicationMasterSuite.scala",
+      "langage": "scala",
+      "lignes": 44,
+      "taille_bytes": 1681,
+      "entrees": [
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.yarn.config._"
+      ],
+      "sorties": [
+        "class ApplicationMasterSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnShuffleAlternateNameConfigSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnShuffleAlternateNameConfigSuite.scala",
+      "langage": "scala",
+      "lignes": 91,
+      "taille_bytes": 3839,
+      "entrees": [
+        "java.net.URLClassLoader",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.spark._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.network.shuffledb.DBBackend",
+        "org.apache.spark.network.yarn.",
+        "org.apache.spark.tags."
+      ],
+      "sorties": [
+        "abstract class YarnShuffleAlternateNameConfigSuite",
+        "class YarnShuffleAlternateNameConfigWithLevelDBBackendSuite",
+        "class YarnShuffleAlternateNameConfigWithRocksDBBackendSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnSparkHadoopUtilSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnSparkHadoopUtilSuite.scala",
+      "langage": "scala",
+      "lignes": 181,
+      "taille_bytes": 6228,
+      "entrees": [
+        "java.io.",
+        "java.nio.file.Files",
+        "org.apache.hadoop.yarn.api.records.ApplicationAccessType",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.SparkHadoopUtil",
+        "org.apache.spark.internal.config.UI._",
+        "org.apache.spark.util.",
+        "org.scalatest.matchers.must.Matchers",
+        "org.scalatest.matchers.should.Matchers._"
+      ],
+      "sorties": [
+        "class YarnSparkHadoopUtilSuite",
+        "def bashTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ClientDistributedCacheManagerSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ClientDistributedCacheManagerSuite.scala",
+      "langage": "scala",
+      "lignes": 258,
+      "taille_bytes": 11397,
+      "entrees": [
+        "java.net.URI",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs.FileStatus",
+        "org.apache.hadoop.fs.FileSystem",
+        "org.apache.hadoop.fs.Path",
+        "org.apache.hadoop.yarn.api.records.LocalResource",
+        "org.apache.hadoop.yarn.api.records.LocalResourceType",
+        "org.apache.hadoop.yarn.api.records.LocalResourceVisibility",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.mockito.Mockito.when",
+        "org.scalatestplus.mockito.MockitoSugar",
+        "scala.collection.mutable",
+        "scala.collection.mutable.HashMap",
+        "scala.collection.mutable.Map"
+      ],
+      "sorties": [
+        "class ClientDistributedCacheManagerSuite",
+        "class MockClientDistributedCacheManager"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ClientSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ClientSuite.scala",
+      "langage": "scala",
+      "lignes": 902,
+      "taille_bytes": 39315,
+      "entrees": [
+        "Client._",
+        "java.io.",
+        "java.net.URI",
+        "java.nio.file.",
+        "java.util.Properties",
+        "java.util.concurrent.ConcurrentHashMap",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs.",
+        "org.apache.hadoop.mapreduce.MRJobConfig",
+        "org.apache.hadoop.security.UserGroupInformation",
+        "org.apache.hadoop.yarn.api.ApplicationConstants.Environment",
+        "org.apache.hadoop.yarn.api.protocolrecords.",
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.client.api.",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.hadoop.yarn.event.",
+        "org.apache.hadoop.yarn.server.resourcemanager.",
+        "org.apache.hadoop.yarn.server.resourcemanager.ahs.RMApplicationHistoryWriter",
+        "org.apache.hadoop.yarn.server.resourcemanager.metrics.SystemMetricsPublisher",
+        "org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMApp",
+        "org.apache.hadoop.yarn.server.resourcemanager.scheduler.YarnScheduler",
+        "org.apache.hadoop.yarn.server.security.ApplicationACLsManager",
+        "org.apache.hadoop.yarn.util.Records",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.launcher.SparkLauncher",
+        "org.apache.spark.resource.ResourceID",
+        "org.apache.spark.resource.ResourceUtils.AMOUNT",
+        "org.apache.spark.util.",
+        "org.mockito.ArgumentMatchers.",
+        "org.mockito.Mockito._",
+        "org.mockito.invocation.InvocationOnMock",
+        "org.scalatest.PrivateMethodTester",
+        "org.scalatest.matchers.must.Matchers",
+        "org.scalatest.matchers.should.Matchers._",
+        "scala.collection.mutable.",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class ClientSuite",
+        "def assertUserClasspathUrls",
+        "def classpath",
+        "def newEnv",
+        "def withAppConf"
+      ],
+      "appelle": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnScheduler.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnClusterSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnClusterSuite.scala",
+      "langage": "scala",
+      "lignes": 905,
+      "taille_bytes": 34950,
+      "entrees": [
+        "java.io.File",
+        "java.net.URL",
+        "java.nio.charset.StandardCharsets",
+        "java.nio.file.",
+        "java.util.",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.spark._",
+        "org.apache.spark.api.python.PythonUtils",
+        "org.apache.spark.deploy.SparkHadoopUtil",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.internal.config.Python.PYTHON_UNIX_DOMAIN_SOCKET_ENABLED",
+        "org.apache.spark.internal.config.UI._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.launcher._",
+        "org.apache.spark.scheduler.",
+        "org.apache.spark.scheduler.cluster.ExecutorInfo",
+        "org.apache.spark.tags.ExtendedYarnTest",
+        "org.apache.spark.util.",
+        "org.scalatest.concurrent.Eventually._",
+        "org.scalatest.exceptions.TestFailedException",
+        "org.scalatest.matchers.must.Matchers",
+        "org.scalatest.matchers.should.Matchers._",
+        "scala.collection.mutable",
+        "scala.concurrent.duration._",
+        "scala.io.Source",
+        "scala.sys.process.Process",
+        "scala.util.Properties.versionNumberString",
+        "scala.util.Try"
+      ],
+      "sorties": [
+        "class YarnClusterSuite",
+        "def createEmptyIvySettingsFile",
+        "def error",
+        "def main",
+        "def testIvySettingsDistribution"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/AmIpFilterSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/AmIpFilterSuite.scala",
+      "langage": "scala",
+      "lignes": 338,
+      "taille_bytes": 11697,
+      "entrees": [
+        "jakarta.servlet.",
+        "jakarta.servlet.http.",
+        "jakarta.ws.rs.core.MediaType",
+        "java.io.",
+        "java.net.HttpURLConnection",
+        "java.util",
+        "java.util.",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "org.apache.spark.SparkFunSuite",
+        "org.eclipse.jetty.ee10.servlet.",
+        "org.eclipse.jetty.server.",
+        "org.eclipse.jetty.util.thread.QueuedThreadPool",
+        "org.mockito.Mockito.",
+        "org.scalatest.concurrent.Eventually._",
+        "org.scalatest.time.SpanSugar._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class AmIpFilterSuite",
+        "class DummyFilterConfig",
+        "class EchoServlet",
+        "class TestAmIpFilter",
+        "def getRedirect",
+        "def withHttpEchoServer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnAllocatorSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnAllocatorSuite.scala",
+      "langage": "scala",
+      "lignes": 907,
+      "taille_bytes": 39922,
+      "entrees": [
+        "java.util",
+        "java.util.Collections",
+        "java.util.concurrent.atomic.AtomicInteger",
+        "org.apache.hadoop.net.",
+        "org.apache.hadoop.yarn.api.protocolrecords.AllocateResponse",
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.client.api.AMRMClient",
+        "org.apache.hadoop.yarn.client.api.AMRMClient.ContainerRequest",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.SparkHadoopUtil",
+        "org.apache.spark.deploy.yarn.ResourceRequestHelper._",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.resource.",
+        "org.apache.spark.resource.ResourceUtils.",
+        "org.apache.spark.resource.TestResourceIDs._",
+        "org.apache.spark.rpc.RpcEndpointRef",
+        "org.apache.spark.scheduler.SplitInfo",
+        "org.apache.spark.scheduler.cluster.CoarseGrainedClusterMessages.DecommissionExecutorsOnHost",
+        "org.apache.spark.util.ArrayImplicits._",
+        "org.apache.spark.util.ManualClock",
+        "org.mockito.ArgumentCaptor",
+        "org.mockito.Mockito._",
+        "org.mockito.invocation.InvocationOnMock",
+        "org.mockito.stubbing.Answer",
+        "org.scalatest.PrivateMethodTester",
+        "org.scalatest.matchers.must.Matchers",
+        "org.scalatest.matchers.should.Matchers._",
+        "scala.collection.mutable",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class MockResolver",
+        "class MockSplitInfo",
+        "class YarnAllocatorSuite",
+        "def createAllocator",
+        "def createContainer",
+        "def createContainerStatus",
+        "def createContainers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/scheduler/cluster/YarnSchedulerBackendSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/scheduler/cluster/YarnSchedulerBackendSuite.scala",
+      "langage": "scala",
+      "lignes": 137,
+      "taille_bytes": 5763,
+      "entrees": [
+        "jakarta.servlet.http.",
+        "java.net.URI",
+        "java.util.concurrent.atomic.AtomicReference",
+        "org.apache.spark._",
+        "org.apache.spark.resource.ResourceProfile",
+        "org.apache.spark.scheduler.TaskSchedulerImpl",
+        "org.apache.spark.serializer.JavaSerializer",
+        "org.apache.spark.ui.TestFilter",
+        "org.mockito.Mockito.when",
+        "org.scalatestplus.mockito.MockitoSugar"
+      ],
+      "sorties": [
+        "class TestFilter2",
+        "class YarnSchedulerBackendSuite",
+        "def setHostToLocalTaskCount",
+        "def setNodeExcludeList"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/network/yarn/YarnTestAccessor.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/network/yarn/YarnTestAccessor.scala",
+      "langage": "scala",
+      "lignes": 44,
+      "taille_bytes": 1463,
+      "entrees": [
+        "java.io.File"
+      ],
+      "sorties": [
+        "def getRegisteredExecutorFile",
+        "def getShuffleServiceConfOverlayResourceName",
+        "def getShuffleServiceInstance",
+        "def getShuffleServicePort",
+        "def shuffleServiceIntegrationTestingKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/network/yarn/YarnShuffleServiceSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/network/yarn/YarnShuffleServiceSuite.scala",
+      "langage": "scala",
+      "lignes": 1267,
+      "taille_bytes": 62265,
+      "entrees": [
+        "com.",
+        "com.codahale.metrics.MetricSet",
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "java.io.",
+        "java.nio.ByteBuffer",
+        "java.nio.charset.StandardCharsets",
+        "java.nio.file.Files",
+        "java.nio.file.attribute.PosixFilePermission._",
+        "java.util.EnumSet",
+        "org.apache.hadoop.fs.Path",
+        "org.apache.hadoop.metrics2.impl.MetricsSystemImpl",
+        "org.apache.hadoop.metrics2.lib.DefaultMetricsSystem",
+        "org.apache.hadoop.service.ServiceStateException",
+        "org.apache.hadoop.yarn.api.records.ApplicationId",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.hadoop.yarn.server.api.",
+        "org.apache.spark.SecurityManager",
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.network.server.BlockPushNonFatalFailure",
+        "org.apache.spark.network.shuffle.",
+        "org.apache.spark.network.shuffle.RemoteBlockPushResolver._",
+        "org.apache.spark.network.shuffle.protocol.ExecutorShuffleInfo",
+        "org.apache.spark.network.shuffledb.DBBackend",
+        "org.apache.spark.network.util.JavaUtils",
+        "org.apache.spark.network.util.TransportConf",
+        "org.apache.spark.network.yarn.util.HadoopConfigProvider",
+        "org.apache.spark.tags.ExtendedLevelDBTest",
+        "org.apache.spark.util.Utils",
+        "org.mockito.Mockito.",
+        "org.roaringbitmap.RoaringBitmap",
+        "org.scalatest.concurrent.Eventually._",
+        "org.scalatest.matchers.must.Matchers",
+        "org.scalatest.matchers.should.Matchers._",
+        "scala.annotation.tailrec",
+        "scala.collection.mutable",
+        "scala.concurrent.duration._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "abstract class YarnShuffleServiceSuite",
+        "class YarnShuffleServiceWithLevelDBBackendSuite",
+        "class YarnShuffleServiceWithRocksDBBackendSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/network/yarn/SslYarnShuffleServiceSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/network/yarn/SslYarnShuffleServiceSuite.scala",
+      "langage": "scala",
+      "lignes": 34,
+      "taille_bytes": 1379,
+      "entrees": [
+        "org.apache.spark.network.ssl.SslSampleConfigs"
+      ],
+      "sorties": [
+        "class SslYarnShuffleServiceWithRocksDBBackendSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/network/yarn/YarnShuffleServiceMetricsSuite.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/network/yarn/YarnShuffleServiceMetricsSuite.scala",
+      "langage": "scala",
+      "lignes": 104,
+      "taille_bytes": 4652,
+      "entrees": [
+        "org.apache.hadoop.metrics2.",
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.network.server.OneForOneStreamManager",
+        "org.apache.spark.network.shuffle.",
+        "org.mockito.ArgumentMatchers.",
+        "org.mockito.Mockito.",
+        "org.scalatest.matchers.must.Matchers",
+        "org.scalatest.matchers.should.Matchers._",
+        "scala.collection.mutable",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class YarnShuffleServiceMetricsSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/test/scala/org/apache/spark/network/shuffle/ShuffleTestAccessor.scala": {
+      "fichier": "resource-managers/yarn/src/test/scala/org/apache/spark/network/shuffle/ShuffleTestAccessor.scala",
+      "langage": "scala",
+      "lignes": 227,
+      "taille_bytes": 8005,
+      "entrees": [
+        "java.io.File",
+        "java.nio.channels.FileChannel",
+        "java.util.List",
+        "java.util.concurrent.ConcurrentMap",
+        "org.apache.hadoop.yarn.api.records.ApplicationId",
+        "org.apache.spark.network.shuffle.ExternalShuffleBlockResolver.AppExecId",
+        "org.apache.spark.network.shuffle.RemoteBlockPushResolver._",
+        "org.apache.spark.network.shuffle.protocol.",
+        "org.apache.spark.network.shuffledb.DB",
+        "org.apache.spark.network.shuffledb.DBBackend",
+        "org.apache.spark.network.util."
+      ],
+      "sorties": [
+        "def clearAppShuffleInfo",
+        "def closePartitionFiles",
+        "def createMergeManagerWithNoCleanupAfterReload",
+        "def createMergeManagerWithNoDBCleanup",
+        "def createMergeManagerWithNoOpAppShuffleDBCleanup",
+        "def createMergeManagerWithSynchronizedCleanup",
+        "def finalizeShuffleMerge",
+        "def getAppPathsInfo",
+        "def getAppsShuffleInfo",
+        "def getBlockResolver",
+        "def getExecutorInfo",
+        "def getMergedShuffleDataFile",
+        "def getMergedShuffleIndexFile",
+        "def getMergedShuffleMetaFile",
+        "def getOrCreateAppShufflePartitionInfo",
+        "def getOutdatedAppPathInfoCountDuringDBReload",
+        "def getOutdatedFinalizedShuffleCountDuringDBReload",
+        "def getPartitionFileHandlers",
+        "def isMergedShuffleCleanerShutdown",
+        "def mergeManagerDB",
+        "def recoveryFile",
+        "def registeredExecutorFile",
+        "def reloadAppShuffleInfo",
+        "def reloadRegisteredExecutors",
+        "def shuffleServiceDB"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnShuffleIntegrationSuite.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/util/YarnContainerInfoHelper.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/util/YarnContainerInfoHelper.scala",
+      "langage": "scala",
+      "lignes": 132,
+      "taille_bytes": 4930,
+      "entrees": [
+        "org.apache.hadoop.HadoopIllegalArgumentException",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.yarn.api.ApplicationConstants.Environment",
+        "org.apache.hadoop.yarn.api.records.",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.spark.deploy.yarn.YarnSparkHadoopUtil",
+        "org.apache.spark.internal.Logging"
+      ],
+      "sorties": [
+        "def convertToString",
+        "def getAttributes",
+        "def getClusterId",
+        "def getContainerId",
+        "def getLogUrls",
+        "def getLogUrlsFromBaseUrl",
+        "def getNodeManagerHost",
+        "def getNodeManagerHttpAddress",
+        "def getNodeManagerHttpPort",
+        "def getNodeManagerPort",
+        "def getYarnHttpScheme"
+      ],
+      "appelle": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnSparkHadoopUtil.scala"
+      ],
+      "est_appele_par": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/executor/YarnCoarseGrainedExecutorBackend.scala",
+        "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterSchedulerBackend.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/launcher/YarnCommandBuilderUtils.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/launcher/YarnCommandBuilderUtils.scala",
+      "langage": "scala",
+      "lignes": 39,
+      "taille_bytes": 1334,
+      "entrees": [
+        "scala.util.Properties"
+      ],
+      "sorties": [
+        "def findJarsDir",
+        "def quoteForBatchScript"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnSparkHadoopUtil.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ClientDistributedCacheManager.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ClientDistributedCacheManager.scala",
+      "langage": "scala",
+      "lignes": 201,
+      "taille_bytes": 7393,
+      "entrees": [
+        "java.net.URI",
+        "link",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs.",
+        "org.apache.hadoop.fs.permission.FsAction",
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.util.Records",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.Logging",
+        "scala.collection.mutable."
+      ],
+      "sorties": [
+        "def addResource",
+        "def updateConfiguration"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnRMClient.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnRMClient.scala",
+      "langage": "scala",
+      "lignes": 153,
+      "taille_bytes": 5763,
+      "entrees": [
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.client.api.AMRMClient",
+        "org.apache.hadoop.yarn.client.api.AMRMClient.ContainerRequest",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.hadoop.yarn.webapp.util.WebAppUtils",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.rpc.RpcEndpointRef",
+        "org.apache.spark.util.Utils",
+        "registered",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def createAllocator",
+        "def getAmIpFilterParams",
+        "def getMaxRegAttempts",
+        "def register",
+        "def unregister"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/SparkRackResolver.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/SparkRackResolver.scala",
+      "langage": "scala",
+      "lignes": 113,
+      "taille_bytes": 4126,
+      "entrees": [
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs.CommonConfigurationKeysPublic",
+        "org.apache.hadoop.net._",
+        "org.apache.hadoop.util.ReflectionUtils",
+        "org.apache.spark.internal.LogKeys.NODE_LOCATION",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.util.SparkStringUtils",
+        "scala.collection.mutable.ArrayBuffer",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def get",
+        "def resolve"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnScheduler.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnAllocatorNodeHealthTracker.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnAllocatorNodeHealthTracker.scala",
+      "langage": "scala",
+      "lignes": 152,
+      "taille_bytes": 6032,
+      "entrees": [
+        "org.apache.hadoop.yarn.client.api.AMRMClient",
+        "org.apache.hadoop.yarn.client.api.AMRMClient.ContainerRequest",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.deploy.ExecutorFailureTracker",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.LogKeys.",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.scheduler.HealthTracker",
+        "scala.collection.mutable.HashMap",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def handleResourceAllocationFailure",
+        "def isAllNodeExcluded",
+        "def setNumClusterNodes",
+        "def setSchedulerExcludedNodes"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMaster.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMaster.scala",
+      "langage": "scala",
+      "lignes": 976,
+      "taille_bytes": 39945,
+      "entrees": [
+        "java.io.IOException",
+        "java.lang.reflect.",
+        "java.net.",
+        "java.security.PrivilegedExceptionAction",
+        "java.util.concurrent.",
+        "org.apache.hadoop.fs.",
+        "org.apache.hadoop.security.UserGroupInformation",
+        "org.apache.hadoop.yarn.api._",
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.hadoop.yarn.exceptions.ApplicationAttemptNotFoundException",
+        "org.apache.hadoop.yarn.util.Records",
+        "org.apache.spark._",
+        "org.apache.spark.deploy.",
+        "org.apache.spark.deploy.history.HistoryServer",
+        "org.apache.spark.deploy.security.HadoopDelegationTokenManager",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.",
+        "org.apache.spark.internal.config.UI._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.metrics.",
+        "org.apache.spark.resource.ResourceProfile",
+        "org.apache.spark.rpc._",
+        "org.apache.spark.scheduler.MiscellaneousProcessDetails",
+        "org.apache.spark.scheduler.cluster.",
+        "org.apache.spark.scheduler.cluster.CoarseGrainedClusterMessages._",
+        "org.apache.spark.util._",
+        "scala.collection.mutable.HashMap",
+        "scala.concurrent.Promise",
+        "scala.concurrent.duration.Duration",
+        "scala.util.control.NonFatal"
+      ],
+      "sorties": [
+        "def main",
+        "def runUnmanaged",
+        "def setupDistributedCache",
+        "def stopUnmanaged"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterScheduler.scala",
+        "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterSchedulerBackend.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/LocalityPreferredContainerPlacementStrategy.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/LocalityPreferredContainerPlacementStrategy.scala",
+      "langage": "scala",
+      "lignes": 230,
+      "taille_bytes": 11665,
+      "entrees": [
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.yarn.api.records.ContainerId",
+        "org.apache.hadoop.yarn.client.api.AMRMClient.ContainerRequest",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.resource.ResourceProfile",
+        "org.apache.spark.util.ArrayImplicits._",
+        "scala.collection.mutable.",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def localityOfRequestedContainers"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnSparkHadoopUtil.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnSparkHadoopUtil.scala",
+      "langage": "scala",
+      "lignes": 212,
+      "taille_bytes": 9479,
+      "entrees": [
+        "org.apache.hadoop.yarn.api.ApplicationConstants",
+        "org.apache.hadoop.yarn.api.records.",
+        "org.apache.spark.",
+        "org.apache.spark.launcher.YarnCommandBuilderUtils",
+        "org.apache.spark.resource.ExecutorResourceRequest",
+        "org.apache.spark.util.Utils",
+        "scala.collection.immutable.",
+        "scala.collection.mutable.",
+        "scala.util.matching.Regex"
+      ],
+      "sorties": [
+        "def addPathToEnvironment",
+        "def escapeForShell",
+        "def executorOffHeapMemorySizeAsMb",
+        "def getApplicationAclsForYarn",
+        "def getContainerId",
+        "def replaceEnvVars"
+      ],
+      "appelle": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/launcher/YarnCommandBuilderUtils.scala"
+      ],
+      "est_appele_par": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/util/YarnContainerInfoHelper.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ExecutorRunnable.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ExecutorRunnable.scala",
+      "langage": "scala",
+      "lignes": 231,
+      "taille_bytes": 9163,
+      "entrees": [
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "com.fasterxml.jackson.module.scala.DefaultScalaModule",
+        "java.nio.ByteBuffer",
+        "java.util.Collections",
+        "org.apache.hadoop.fs.Path",
+        "org.apache.hadoop.io.DataOutputBuffer",
+        "org.apache.hadoop.security.UserGroupInformation",
+        "org.apache.hadoop.yarn.api.ApplicationConstants.Environment",
+        "org.apache.hadoop.yarn.api._",
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.client.api.NMClient",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.hadoop.yarn.ipc.YarnRPC",
+        "org.apache.hadoop.yarn.util.Records",
+        "org.apache.spark.",
+        "org.apache.spark.internal.",
+        "org.apache.spark.internal.LogKeys.",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.network.util.JavaUtils",
+        "org.apache.spark.util.Utils",
+        "scala.collection.mutable",
+        "scala.collection.mutable.",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def launchContextDebugInfo",
+        "def run",
+        "def startContainer"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnProxyRedirectFilter.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnProxyRedirectFilter.scala",
+      "langage": "scala",
+      "lignes": 81,
+      "taille_bytes": 3090,
+      "entrees": [
+        "YarnProxyRedirectFilter._",
+        "jakarta.servlet._",
+        "jakarta.servlet.http.",
+        "org.apache.spark.internal.Logging"
+      ],
+      "sorties": [
+        "class YarnProxyRedirectFilter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMasterSource.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMasterSource.scala",
+      "langage": "scala",
+      "lignes": 50,
+      "taille_bytes": 2028,
+      "entrees": [
+        "com.codahale.metrics.",
+        "org.apache.spark.metrics.source.Source"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMasterArguments.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMasterArguments.scala",
+      "langage": "scala",
+      "lignes": 104,
+      "taille_bytes": 3515,
+      "entrees": [
+        "scala.collection.mutable.ArrayBuffer"
+      ],
+      "sorties": [
+        "class ApplicationMasterArguments",
+        "def printUsageAndExit"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/Client.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/Client.scala",
+      "langage": "scala",
+      "lignes": 1835,
+      "taille_bytes": 78101,
+      "entrees": [
+        "!Utils.isLocalUri",
+        "Client._",
+        "ivySettingsFile.exists",
+        "ivySettingsFile.isFile",
+        "java.io.",
+        "java.net.",
+        "java.nio.ByteBuffer",
+        "java.nio.charset.StandardCharsets",
+        "java.nio.file.",
+        "java.util.",
+        "java.util.zip.",
+        "keytab",
+        "localizedPath",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs._",
+        "org.apache.hadoop.fs.permission.FsPermission",
+        "org.apache.hadoop.io.",
+        "org.apache.hadoop.mapreduce.MRJobConfig",
+        "org.apache.hadoop.security.UserGroupInformation",
+        "org.apache.hadoop.util.StringUtils",
+        "org.apache.hadoop.yarn.api.ApplicationConstants.Environment",
+        "org.apache.hadoop.yarn.api._",
+        "org.apache.hadoop.yarn.api.protocolrecords._",
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.client.api.",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.hadoop.yarn.exceptions.ApplicationNotFoundException",
+        "org.apache.hadoop.yarn.security.AMRMTokenIdentifier",
+        "org.apache.hadoop.yarn.util.Records",
+        "org.apache.spark.",
+        "org.apache.spark.api.python.PythonUtils",
+        "org.apache.spark.deploy.",
+        "org.apache.spark.deploy.security.HadoopDelegationTokenManager",
+        "org.apache.spark.deploy.yarn.ResourceRequestHelper._",
+        "org.apache.spark.deploy.yarn.YarnSparkHadoopUtil._",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.",
+        "org.apache.spark.internal.config.Python._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.launcher.",
+        "org.apache.spark.rpc.RpcEnv",
+        "org.apache.spark.util.",
+        "org.apache.spark.util.ArrayImplicits._",
+        "py4jFile.exists",
+        "pyArchivesFile.exists",
+        "scala.collection.immutable.",
+        "scala.collection.mutable.",
+        "scala.jdk.CollectionConverters._",
+        "scala.util.Using",
+        "scala.util.control.NonFatal"
+      ],
+      "sorties": [
+        "def addDistributedUri",
+        "def buildPath",
+        "def cleanupStagingDirInternal",
+        "def confToProperties",
+        "def createAppReport",
+        "def createApplicationSubmissionContext",
+        "def createLibraryPathPrefix",
+        "def distribute",
+        "def getApplicationId",
+        "def getApplicationReport",
+        "def getClusterPath",
+        "def getUserClasspath",
+        "def getUserClasspathUrls",
+        "def isUserClassPathFirst",
+        "def monitorApplication",
+        "def prepareLocalResources",
+        "def reportLauncherState",
+        "def run",
+        "def stop",
+        "def submitApplication",
+        "def writePropertiesToArchive"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/executor/YarnCoarseGrainedExecutorBackend.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnAllocator.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnAllocator.scala",
+      "langage": "scala",
+      "lignes": 1064,
+      "taille_bytes": 50060,
+      "entrees": [
+        "YarnAllocator._",
+        "java.util.LinkedHashMap",
+        "java.util.Map.Entry",
+        "java.util.concurrent.ConcurrentHashMap",
+        "java.util.concurrent.atomic.AtomicInteger",
+        "javax.annotation.concurrent.GuardedBy",
+        "org.apache.hadoop.yarn.api.protocolrecords.AllocateResponse",
+        "org.apache.hadoop.yarn.api.records._",
+        "org.apache.hadoop.yarn.client.api.AMRMClient",
+        "org.apache.hadoop.yarn.client.api.AMRMClient.ContainerRequest",
+        "org.apache.hadoop.yarn.conf.YarnConfiguration",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.ExecutorFailureTracker",
+        "org.apache.spark.deploy.yarn.ResourceRequestHelper._",
+        "org.apache.spark.deploy.yarn.YarnSparkHadoopUtil._",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.executor.ExecutorExitCode",
+        "org.apache.spark.internal.LogKeys",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.resource.ResourceProfile",
+        "org.apache.spark.resource.ResourceProfile.DEFAULT_RESOURCE_PROFILE_ID",
+        "org.apache.spark.rpc.",
+        "org.apache.spark.scheduler.",
+        "org.apache.spark.scheduler.cluster.CoarseGrainedClusterMessages.",
+        "org.apache.spark.scheduler.cluster.SchedulerBackendUtils",
+        "org.apache.spark.util.",
+        "scala.collection.mutable",
+        "scala.collection.mutable.",
+        "scala.jdk.CollectionConverters._",
+        "scala.util.control.NonFatal"
+      ],
+      "sorties": [
+        "def allocateResources",
+        "def getNumContainersPendingAllocate",
+        "def getNumExecutorsFailed",
+        "def getNumExecutorsRunning",
+        "def getNumExecutorsStarting",
+        "def getNumLocalityAwareTasks",
+        "def getNumReleasedContainers",
+        "def getPendingAllocate",
+        "def handleAllocatedContainers",
+        "def isAllNodeExcluded",
+        "def killExecutor",
+        "def requestTotalExecutorsWithPreferredLocalities",
+        "def setShutdown",
+        "def stop",
+        "def updateResourceRequests"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ResourceRequestHelper.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ResourceRequestHelper.scala",
+      "langage": "scala",
+      "lignes": 189,
+      "taille_bytes": 8576,
+      "entrees": [
+        "org.apache.hadoop.yarn.api.records.Resource",
+        "org.apache.hadoop.yarn.api.records.ResourceInformation",
+        "org.apache.hadoop.yarn.exceptions.ResourceNotFoundException",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.LogKeys.",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.resource.ResourceID",
+        "org.apache.spark.resource.ResourceUtils.",
+        "org.apache.spark.util.CausedBy",
+        "resource",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "def setResourceRequests",
+        "def validateResources"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ClientArguments.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ClientArguments.scala",
+      "langage": "scala",
+      "lignes": 99,
+      "taille_bytes": 3429,
+      "entrees": [
+        "org.apache.spark.internal.LogKeys.ARGS",
+        "org.apache.spark.internal.Logging",
+        "scala.collection.mutable.ArrayBuffer"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/config/package.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/config/package.scala",
+      "langage": "scala",
+      "lignes": 516,
+      "taille_bytes": 20983,
+      "entrees": [
+        "java.util.Properties",
+        "java.util.concurrent.TimeUnit",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.internal.config.ConfigBuilder",
+        "org.apache.spark.network.util.ByteUnit"
+      ],
+      "sorties": [
+        "def isHadoopProvided"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/executor/YarnCoarseGrainedExecutorBackend.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/executor/YarnCoarseGrainedExecutorBackend.scala",
+      "langage": "scala",
+      "lignes": 88,
+      "taille_bytes": 3214,
+      "entrees": [
+        "java.net.URL",
+        "org.apache.spark.SparkEnv",
+        "org.apache.spark.deploy.SparkHadoopUtil",
+        "org.apache.spark.deploy.yarn.Client",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.resource.ResourceProfile",
+        "org.apache.spark.rpc.RpcEnv",
+        "org.apache.spark.util.ArrayImplicits._",
+        "org.apache.spark.util.YarnContainerInfoHelper"
+      ],
+      "sorties": [
+        "def main"
+      ],
+      "appelle": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/Client.scala",
+        "resource-managers/yarn/src/main/scala/org/apache/spark/util/YarnContainerInfoHelper.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClientSchedulerBackend.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClientSchedulerBackend.scala",
+      "langage": "scala",
+      "lignes": 189,
+      "taille_bytes": 7180,
+      "entrees": [
+        "java.io.InterruptedIOException",
+        "org.apache.hadoop.yarn.api.records.",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.yarn.",
+        "org.apache.spark.deploy.yarn.config._",
+        "org.apache.spark.internal.",
+        "org.apache.spark.internal.LogKeys.",
+        "org.apache.spark.launcher.SparkAppHandle",
+        "org.apache.spark.scheduler.TaskSchedulerImpl",
+        "org.apache.spark.scheduler.cluster.CoarseGrainedClusterMessages._",
+        "scala.collection.mutable.ArrayBuffer"
+      ],
+      "sorties": [
+        "def stopMonitor"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterSchedulerBackend.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterSchedulerBackend.scala",
+      "langage": "scala",
+      "lignes": 50,
+      "taille_bytes": 1909,
+      "entrees": [
+        "org.apache.spark.SparkContext",
+        "org.apache.spark.deploy.yarn.ApplicationMaster",
+        "org.apache.spark.scheduler.TaskSchedulerImpl",
+        "org.apache.spark.util.YarnContainerInfoHelper"
+      ],
+      "sorties": [],
+      "appelle": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMaster.scala",
+        "resource-managers/yarn/src/main/scala/org/apache/spark/util/YarnContainerInfoHelper.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterManager.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterManager.scala",
+      "langage": "scala",
+      "lignes": 56,
+      "taille_bytes": 2217,
+      "entrees": [
+        "org.apache.spark.",
+        "org.apache.spark.scheduler."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterScheduler.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterScheduler.scala",
+      "langage": "scala",
+      "lignes": 37,
+      "taille_bytes": 1374,
+      "entrees": [
+        "org.apache.spark._",
+        "org.apache.spark.deploy.yarn.ApplicationMaster"
+      ],
+      "sorties": [],
+      "appelle": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMaster.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnSchedulerBackend.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnSchedulerBackend.scala",
+      "langage": "scala",
+      "lignes": 411,
+      "taille_bytes": 16179,
+      "entrees": [
+        "appId.isDefined",
+        "jakarta.servlet.DispatcherType",
+        "java.util.EnumSet",
+        "java.util.concurrent.atomic.AtomicBoolean",
+        "org.apache.hadoop.yarn.api.records.",
+        "org.apache.spark.SparkContext",
+        "org.apache.spark.deploy.security.HadoopDelegationTokenManager",
+        "org.apache.spark.internal.",
+        "org.apache.spark.internal.LogKeys",
+        "org.apache.spark.internal.config.UI._",
+        "org.apache.spark.resource.ResourceProfile",
+        "org.apache.spark.rpc._",
+        "org.apache.spark.scheduler._",
+        "org.apache.spark.scheduler.cluster.CoarseGrainedClusterMessages._",
+        "org.apache.spark.storage.",
+        "org.apache.spark.util.",
+        "scala.concurrent.",
+        "scala.util.",
+        "scala.util.control.NonFatal"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnScheduler.scala": {
+      "fichier": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnScheduler.scala",
+      "langage": "scala",
+      "lignes": 39,
+      "taille_bytes": 1541,
+      "entrees": [
+        "org.apache.hadoop.net.NetworkTopology",
+        "org.apache.spark._",
+        "org.apache.spark.deploy.yarn.SparkRackResolver",
+        "org.apache.spark.scheduler.TaskSchedulerImpl",
+        "org.apache.spark.util.Utils"
+      ],
+      "sorties": [],
+      "appelle": [
+        "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/SparkRackResolver.scala"
+      ],
+      "est_appele_par": [
+        "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ClientSuite.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/java/org/apache/spark/deploy/yarn/AmIpServletRequestWrapper.java": {
+      "fichier": "resource-managers/yarn/src/main/java/org/apache/spark/deploy/yarn/AmIpServletRequestWrapper.java",
+      "langage": "java",
+      "lignes": 54,
+      "taille_bytes": 1706,
+      "entrees": [
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletRequestWrapper",
+        "java.security.Principal"
+      ],
+      "sorties": [
+        "public class AmIpServletRequestWrapper"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/java/org/apache/spark/deploy/yarn/ProxyUtils.java": {
+      "fichier": "resource-managers/yarn/src/main/java/org/apache/spark/deploy/yarn/ProxyUtils.java",
+      "langage": "java",
+      "lignes": 126,
+      "taille_bytes": 4127,
+      "entrees": [
+        "jakarta.servlet.ServletException",
+        "jakarta.servlet.ServletRequest",
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse",
+        "java.io.IOException",
+        "java.io.PrintWriter",
+        "java.util.EnumSet",
+        "org.apache.hadoop.yarn.webapp.MimeType",
+        "org.apache.hadoop.yarn.webapp.hamlet2.Hamlet",
+        "org.apache.spark.internal.SparkLogger",
+        "org.apache.spark.internal.SparkLoggerFactory"
+      ],
+      "sorties": [
+        "public class ProxyUtils"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/java/org/apache/spark/deploy/yarn/AmIpFilter.java": {
+      "fichier": "resource-managers/yarn/src/main/java/org/apache/spark/deploy/yarn/AmIpFilter.java",
+      "langage": "java",
+      "lignes": 239,
+      "taille_bytes": 8616,
+      "entrees": [
+        "jakarta.servlet.*",
+        "jakarta.servlet.http.Cookie",
+        "jakarta.servlet.http.HttpServletRequest",
+        "jakarta.servlet.http.HttpServletResponse",
+        "java.io.IOException",
+        "java.net.*",
+        "java.util.HashMap",
+        "java.util.HashSet",
+        "java.util.Map",
+        "java.util.Set",
+        "java.util.concurrent.TimeUnit",
+        "org.apache.hadoop.classification.InterfaceAudience.Public",
+        "org.apache.hadoop.classification.VisibleForTesting",
+        "org.apache.hadoop.security.UserGroupInformation",
+        "org.apache.hadoop.util.Time",
+        "org.apache.spark.internal.SparkLogger",
+        "org.apache.spark.internal.SparkLoggerFactory"
+      ],
+      "sorties": [
+        "public class AmIpFilter"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/yarn/src/main/java/org/apache/spark/deploy/yarn/AmIpPrincipal.java": {
+      "fichier": "resource-managers/yarn/src/main/java/org/apache/spark/deploy/yarn/AmIpPrincipal.java",
+      "langage": "java",
+      "lignes": 35,
+      "taille_bytes": 1189,
+      "entrees": [
+        "java.security.Principal"
+      ],
+      "sorties": [
+        "public class AmIpPrincipal"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/pom.xml": {
+      "fichier": "resource-managers/kubernetes/core/pom.xml",
+      "langage": "xml",
+      "lignes": 186,
+      "taille_bytes": 6189,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/KubernetesConfSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/KubernetesConfSuite.scala",
+      "langage": "scala",
+      "lignes": 289,
+      "taille_bytes": 12652,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.submit._",
+        "org.apache.spark.resource.ResourceProfile.DEFAULT_RESOURCE_PROFILE_ID",
+        "org.apache.spark.util.Utils"
+      ],
+      "sorties": [
+        "class KubernetesConfSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/SecretVolumeUtils.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/SecretVolumeUtils.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 1395,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def containerHasVolume",
+        "def podHasVolume"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/KubernetesTestConf.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/KubernetesTestConf.scala",
+      "langage": "scala",
+      "lignes": 165,
+      "taille_bytes": 7121,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.Pod",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.submit.",
+        "org.apache.spark.util."
+      ],
+      "sorties": [
+        "def createDriverConf",
+        "def createExecutorConf",
+        "def key"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/KubernetesVolumeUtilsSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/KubernetesVolumeUtilsSuite.scala",
+      "langage": "scala",
+      "lignes": 319,
+      "taille_bytes": 15082,
+      "entrees": [
+        "org.apache.spark."
+      ],
+      "sorties": [
+        "class KubernetesVolumeUtilsSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/PodBuilderSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/PodBuilderSuite.scala",
+      "langage": "scala",
+      "lignes": 370,
+      "taille_bytes": 14460,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "io.fabric8.kubernetes.api.model._",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "io.fabric8.kubernetes.client.dsl.PodResource",
+        "java.io.File",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.apache.spark.deploy.k8s.features.",
+        "org.apache.spark.internal.config.ConfigEntry",
+        "org.mockito.ArgumentMatchers.any",
+        "org.mockito.Mockito.",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "abstract class PodBuilderSuite",
+        "class TestStep",
+        "class TestStepTwo",
+        "class TestStepWithConf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/KubernetesUtilsSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/KubernetesUtilsSuite.scala",
+      "langage": "scala",
+      "lignes": 163,
+      "taille_bytes": 7204,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "java.io.File",
+        "java.nio.charset.StandardCharsets",
+        "java.nio.file.Files",
+        "java.nio.file.StandardOpenOption._",
+        "org.apache.hadoop.conf.Configuration",
+        "org.apache.hadoop.fs.Path",
+        "org.apache.spark.",
+        "org.scalatest.PrivateMethodTester",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class KubernetesUtilsSuite",
+        "def appendFileAndUpload",
+        "def checkUploadException"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/Fabric8Aliases.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/Fabric8Aliases.scala",
+      "langage": "scala",
+      "lignes": 50,
+      "taille_bytes": 2944,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "io.fabric8.kubernetes.api.model.apps.",
+        "io.fabric8.kubernetes.client.dsl."
+      ],
+      "sorties": [
+        "type CONFIG_MAPS",
+        "type CONFIG_MAPS_RESOURCE",
+        "type CONFIG_MAPS_WITH_NAMESPACE",
+        "type DEPLOYMENTS",
+        "type DEPLOYMENTS_NAMESPACED",
+        "type DEPLOYMENT_RES",
+        "type LABELED_CONFIG_MAPS",
+        "type LABELED_PERSISTENT_VOLUME_CLAIMS",
+        "type LABELED_PODS",
+        "type PERSISTENT_VOLUME_CLAIMS",
+        "type PODS",
+        "type PODS_WITH_NAMESPACE",
+        "type PVC_WITH_NAMESPACE",
+        "type RESOURCE_LIST",
+        "type SINGLE_POD",
+        "type STATEFUL_SETS",
+        "type STATEFUL_SETS_NAMESPACED",
+        "type STATEFUL_SET_RES"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/SparkKubernetesDiagnosticsSetterSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/SparkKubernetesDiagnosticsSetterSuite.scala",
+      "langage": "scala",
+      "lignes": 83,
+      "taille_bytes": 3404,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.Pod",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "io.fabric8.kubernetes.client.dsl.PodResource",
+        "io.fabric8.kubernetes.client.dsl.base.PatchContext",
+        "org.apache.hadoop.util.StringUtils",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants.EXIT_EXCEPTION_ANNOTATION",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases.PODS",
+        "org.mockito.",
+        "org.mockito.ArgumentMatchers.any",
+        "org.mockito.Mockito._",
+        "org.scalatest.BeforeAndAfterEach",
+        "org.scalatestplus.mockito.MockitoSugar"
+      ],
+      "sorties": [
+        "class SparkKubernetesDiagnosticsSetterSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/MountVolumesFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/MountVolumesFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 576,
+      "taille_bytes": 22135,
+      "entrees": [
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.deploy.k8s._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class MountVolumesFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/KerberosConfDriverFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/KerberosConfDriverFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 170,
+      "taille_bytes": 6883,
+      "entrees": [
+        "KubernetesFeaturesTestUtils._",
+        "SecretVolumeUtils._",
+        "io.fabric8.kubernetes.api.model.",
+        "java.io.File",
+        "java.nio.file.Files",
+        "java.security.PrivilegedExceptionAction",
+        "java.util.Base64",
+        "org.apache.hadoop.io.Text",
+        "org.apache.hadoop.security.UserGroupInformation",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.SparkHadoopUtil",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.util.Utils",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class KerberosConfDriverFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/BasicDriverFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/BasicDriverFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 475,
+      "taille_bytes": 21547,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "org.apache.hadoop.fs.",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.features.KubernetesFeaturesTestUtils.TestResourceInformation",
+        "org.apache.spark.deploy.k8s.submit._",
+        "org.apache.spark.internal.config.UI._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.resource.ResourceID",
+        "org.apache.spark.resource.ResourceUtils._",
+        "org.apache.spark.util.Utils",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class BasicDriverFeatureStepSuite",
+        "def containerPort"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/HadoopConfExecutorFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/HadoopConfExecutorFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 80,
+      "taille_bytes": 3306,
+      "entrees": [
+        "SecretVolumeUtils._",
+        "java.io.File",
+        "java.nio.file.Files",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.features.KubernetesFeaturesTestUtils.containerHasEnvVar",
+        "org.apache.spark.util."
+      ],
+      "sorties": [
+        "class HadoopConfExecutorFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/EnvSecretsFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/EnvSecretsFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 47,
+      "taille_bytes": 1913,
+      "entrees": [
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.deploy.k8s._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class EnvSecretsFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/DriverServiceFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/DriverServiceFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 270,
+      "taille_bytes": 11626,
+      "entrees": [
+        "com.google.common.net.InternetDomainName",
+        "io.fabric8.kubernetes.api.model.Service",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.internal.config.UI._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.util.ManualClock",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class DriverServiceFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/DriverKubernetesCredentialsFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/DriverKubernetesCredentialsFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 135,
+      "taille_bytes": 6779,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.Secret",
+        "java.io.File",
+        "java.nio.charset.StandardCharsets",
+        "java.nio.file.Files",
+        "java.util.Base64",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.util.Utils",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class DriverKubernetesCredentialsFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/DriverCommandFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/DriverCommandFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 181,
+      "taille_bytes": 6266,
+      "entrees": [
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s._",
+        "org.apache.spark.deploy.k8s.submit._",
+        "org.apache.spark.internal.config.",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class DriverCommandFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/KubernetesFeaturesTestUtils.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/KubernetesFeaturesTestUtils.scala",
+      "langage": "scala",
+      "lignes": 72,
+      "taille_bytes": 2718,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "org.apache.spark.deploy.k8s.SparkPod",
+        "org.apache.spark.resource.ResourceID",
+        "org.mockito.ArgumentMatchers.any",
+        "org.mockito.Mockito.",
+        "org.mockito.invocation.InvocationOnMock",
+        "scala.jdk.CollectionConverters._",
+        "scala.reflect.ClassTag"
+      ],
+      "sorties": [
+        "def containerHasEnvVar",
+        "def filter",
+        "def getMockConfigStepForStepType",
+        "def getSecretsForStepType"
+      ],
+      "appelle": [
+        "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkPod.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/LocalDirsFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/LocalDirsFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 161,
+      "taille_bytes": 6891,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s._",
+        "org.apache.spark.util.SparkConfWithEnv"
+      ],
+      "sorties": [
+        "class LocalDirsFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/HadoopConfDriverFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/HadoopConfDriverFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 69,
+      "taille_bytes": 2682,
+      "entrees": [
+        "KubernetesFeaturesTestUtils._",
+        "SecretVolumeUtils._",
+        "io.fabric8.kubernetes.api.model.ConfigMap",
+        "java.io.File",
+        "java.nio.file.Files",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s._",
+        "org.apache.spark.util.",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class HadoopConfDriverFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/ExecutorKubernetesCredentialsFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/ExecutorKubernetesCredentialsFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 70,
+      "taille_bytes": 2616,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.PodSpec",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.scalatest.BeforeAndAfter"
+      ],
+      "sorties": [
+        "class ExecutorKubernetesCredentialsFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/NetworkPolicyFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/NetworkPolicyFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 60,
+      "taille_bytes": 2432,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.networking.v1.NetworkPolicy",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class NetworkPolicyFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/MountSecretsFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/MountSecretsFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 2084,
+      "entrees": [
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.deploy.k8s."
+      ],
+      "sorties": [
+        "class MountSecretsFeatureStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/PodTemplateConfigMapStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/PodTemplateConfigMapStepSuite.scala",
+      "langage": "scala",
+      "lignes": 90,
+      "taille_bytes": 4037,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.ConfigMap",
+        "java.io.PrintWriter",
+        "java.nio.file.Files",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s._",
+        "org.apache.spark.util.Utils"
+      ],
+      "sorties": [
+        "class PodTemplateConfigMapStepSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/BasicExecutorFeatureStepSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/BasicExecutorFeatureStepSuite.scala",
+      "langage": "scala",
+      "lignes": 733,
+      "taille_bytes": 32729,
+      "entrees": [
+        "com.google.common.net.InternetDomainName",
+        "io.fabric8.kubernetes.api.model._",
+        "java.util.Locale",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.KubernetesConf",
+        "org.apache.spark.deploy.k8s.features.KubernetesFeaturesTestUtils.TestResourceInformation",
+        "org.apache.spark.internal.config",
+        "org.apache.spark.internal.config.Python._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.resource.ResourceUtils._",
+        "org.apache.spark.resource.TestResourceIDs._",
+        "org.apache.spark.resource._",
+        "org.apache.spark.rpc.RpcEndpointAddress",
+        "org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend",
+        "org.apache.spark.util.Utils",
+        "org.scalatest.BeforeAndAfter",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class BasicExecutorFeatureStepSuite",
+        "def withPodNamePrefix"
+      ],
+      "appelle": [
+        "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesConf.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/ClientSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/ClientSuite.scala",
+      "langage": "scala",
+      "lignes": 379,
+      "taille_bytes": 15348,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model._",
+        "io.fabric8.kubernetes.api.model.apiextensions.v1.",
+        "io.fabric8.kubernetes.client.",
+        "io.fabric8.kubernetes.client.dsl.PodResource",
+        "java.io.File",
+        "java.nio.charset.StandardCharsets",
+        "java.nio.file.Files",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config.WAIT_FOR_APP_COMPLETION",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.apache.spark.deploy.k8s.submit.Client.submissionId",
+        "org.apache.spark.util.Utils",
+        "org.mockito.",
+        "org.mockito.Mockito.",
+        "org.scalatest.BeforeAndAfter",
+        "org.scalatestplus.mockito.MockitoSugar._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class ClientSuite",
+        "def testSetup"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/KubernetesDriverBuilderSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/KubernetesDriverBuilderSuite.scala",
+      "langage": "scala",
+      "lignes": 127,
+      "taille_bytes": 4817,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.HasMetadata",
+        "io.fabric8.kubernetes.api.model._",
+        "io.fabric8.kubernetes.api.model.apiextensions.v1.CustomResourceDefinitionBuilder",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.deploy.k8s._",
+        "org.apache.spark.deploy.k8s.features.",
+        "org.apache.spark.internal.config.ConfigEntry"
+      ],
+      "sorties": [
+        "class KubernetesDriverBuilderSuite",
+        "class TestStep",
+        "class TestStepWithDrvConf"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/K8sSubmitOpSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/K8sSubmitOpSuite.scala",
+      "langage": "scala",
+      "lignes": 170,
+      "taille_bytes": 6749,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model._",
+        "io.fabric8.kubernetes.client.",
+        "io.fabric8.kubernetes.client.dsl.",
+        "java.io.PrintStream",
+        "java.util.Arrays",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Config.KUBERNETES_SUBMIT_GRACE_PERIOD",
+        "org.apache.spark.deploy.k8s.Constants.",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases.",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils.TEST_SPARK_APP_ID",
+        "org.mockito.",
+        "org.mockito.Mockito.",
+        "org.scalatest.BeforeAndAfter",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class K8sSubmitOpSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/KubernetesClientUtilsSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/KubernetesClientUtilsSuite.scala",
+      "langage": "scala",
+      "lignes": 131,
+      "taille_bytes": 5773,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.ConfigMapBuilder",
+        "java.io.File",
+        "java.nio.charset.StandardCharsets",
+        "java.nio.file.Files",
+        "java.util.",
+        "java.util.UUID",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Config",
+        "org.apache.spark.util.Utils",
+        "org.scalatest.BeforeAndAfter",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class KubernetesClientUtilsSuite",
+        "def testSetup"
+      ],
+      "appelle": [
+        "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/Config.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/shuffle/KubernetesLocalDiskShuffleDataIOSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/shuffle/KubernetesLocalDiskShuffleDataIOSuite.scala",
+      "langage": "scala",
+      "lignes": 255,
+      "taille_bytes": 11255,
+      "entrees": [
+        "java.io.File",
+        "java.nio.file.Files",
+        "org.apache.spark.",
+        "org.apache.spark.LocalSparkContext.withSpark",
+        "org.apache.spark.deploy.k8s.Config.KUBERNETES_DRIVER_REUSE_PVC",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend",
+        "org.apache.spark.storage.BlockManager",
+        "org.mockito.Mockito.",
+        "org.scalatest.concurrent.Eventually.",
+        "scala.concurrent.duration._"
+      ],
+      "sorties": [
+        "class KubernetesLocalDiskShuffleDataIOSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/shuffle/ShuffleChecksumUtilsSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/shuffle/ShuffleChecksumUtilsSuite.scala",
+      "langage": "scala",
+      "lignes": 134,
+      "taille_bytes": 5140,
+      "entrees": [
+        "java.io.",
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.network.shuffle.checksum.ShuffleChecksumHelper.getChecksumFileName",
+        "org.apache.spark.shuffle.KubernetesLocalDiskShuffleExecutorComponents.verifyChecksum",
+        "org.apache.spark.storage."
+      ],
+      "sorties": [
+        "class ShuffleChecksumUtilsSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsPollingSnapshotSourceSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsPollingSnapshotSourceSuite.scala",
+      "langage": "scala",
+      "lignes": 122,
+      "taille_bytes": 4498,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "java.util.concurrent.TimeUnit",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils._",
+        "org.jmock.lib.concurrent.DeterministicScheduler",
+        "org.mockito.",
+        "org.mockito.Mockito.",
+        "org.scalatest.BeforeAndAfter"
+      ],
+      "sorties": [
+        "class ExecutorPodsPollingSnapshotSourceSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/KubernetesClusterSchedulerBackendSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/KubernetesClusterSchedulerBackendSuite.scala",
+      "langage": "scala",
+      "lignes": 317,
+      "taille_bytes": 13028,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "io.fabric8.kubernetes.client.dsl.PodResource",
+        "io.fabric8.kubernetes.client.dsl.base.PatchContext",
+        "java.util.Arrays",
+        "java.util.concurrent.TimeUnit",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.apache.spark.resource.",
+        "org.apache.spark.rpc.",
+        "org.apache.spark.scheduler.",
+        "org.apache.spark.scheduler.cluster.CoarseGrainedClusterMessages.",
+        "org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils.TEST_SPARK_APP_ID",
+        "org.jmock.lib.concurrent.DeterministicScheduler",
+        "org.mockito.",
+        "org.mockito.ArgumentMatchers.",
+        "org.mockito.Mockito.",
+        "org.scalatest.BeforeAndAfter",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class KubernetesClusterSchedulerBackendSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsSnapshotsStoreSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsSnapshotsStoreSuite.scala",
+      "langage": "scala",
+      "lignes": 145,
+      "taille_bytes": 5679,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "java.util.concurrent.TimeUnit",
+        "java.util.concurrent.atomic.AtomicReference",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.util.ManualClock",
+        "org.jmock.lib.concurrent.DeterministicScheduler",
+        "org.scalatest.BeforeAndAfter",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "class ExecutorPodsSnapshotsStoreSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/DeploymentAllocatorSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/DeploymentAllocatorSuite.scala",
+      "langage": "scala",
+      "lignes": 190,
+      "taille_bytes": 7813,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model._",
+        "io.fabric8.kubernetes.api.model.apps.Deployment",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "io.fabric8.kubernetes.client.dsl.",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.apache.spark.resource.",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils._",
+        "org.mockito.",
+        "org.mockito.ArgumentMatchers.",
+        "org.mockito.Mockito.",
+        "org.scalatest.BeforeAndAfter",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class DeploymentAllocatorSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsWatchSnapshotSourceSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsWatchSnapshotSourceSuite.scala",
+      "langage": "scala",
+      "lignes": 98,
+      "taille_bytes": 3841,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.Pod",
+        "io.fabric8.kubernetes.client.",
+        "io.fabric8.kubernetes.client.Watcher.Action",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.deploy.k8s.Config.KUBERNETES_EXECUTOR_ENABLE_API_WATCHER",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils._",
+        "org.mockito.",
+        "org.mockito.Mockito.",
+        "org.scalatest.BeforeAndAfter"
+      ],
+      "sorties": [
+        "class ExecutorPodsWatchSnapshotSourceSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/KubernetesClusterManagerSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/KubernetesClusterManagerSuite.scala",
+      "langage": "scala",
+      "lignes": 120,
+      "taille_bytes": 4662,
+      "entrees": [
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "org.apache.spark._",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.scheduler.TaskSchedulerImpl",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils.TEST_SPARK_APP_ID",
+        "org.apache.spark.scheduler.local.LocalSchedulerBackend",
+        "org.mockito.",
+        "org.mockito.Mockito.when",
+        "org.scalatest.BeforeAndAfter",
+        "org.scalatestplus.mockito.MockitoSugar.mock"
+      ],
+      "sorties": [
+        "class KubernetesClusterManagerSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/StatefulSetAllocatorSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/StatefulSetAllocatorSuite.scala",
+      "langage": "scala",
+      "lignes": 166,
+      "taille_bytes": 6713,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model._",
+        "io.fabric8.kubernetes.api.model.apps.StatefulSet",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "io.fabric8.kubernetes.client.dsl._",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.apache.spark.internal.config.DYN_ALLOCATION_EXECUTOR_IDLE_TIMEOUT",
+        "org.apache.spark.resource._",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils._",
+        "org.mockito.",
+        "org.mockito.ArgumentMatchers.",
+        "org.mockito.Mockito.",
+        "org.mockito.invocation.InvocationOnMock",
+        "org.mockito.stubbing.Answer",
+        "org.scalatest.BeforeAndAfter"
+      ],
+      "sorties": [
+        "class StatefulSetAllocatorSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsLifecycleManagerSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsLifecycleManagerSuite.scala",
+      "langage": "scala",
+      "lignes": 285,
+      "taille_bytes": 13024,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "io.fabric8.kubernetes.client.dsl.PodResource",
+        "io.fabric8.kubernetes.client.dsl.base.PatchContext",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Config",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.apache.spark.deploy.k8s.KubernetesUtils._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.scheduler.ExecutorExited",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils._",
+        "org.apache.spark.util.",
+        "org.mockito.",
+        "org.mockito.ArgumentMatchers.any",
+        "org.mockito.ArgumentMatchers.anyString",
+        "org.mockito.Mockito.",
+        "org.mockito.invocation.InvocationOnMock",
+        "org.mockito.stubbing.Answer",
+        "org.scalatest.BeforeAndAfter",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "class ExecutorPodsLifecycleManagerSuite"
+      ],
+      "appelle": [
+        "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/Config.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsAllocatorSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsAllocatorSuite.scala",
+      "langage": "scala",
+      "lignes": 1091,
+      "taille_bytes": 52588,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model._",
+        "io.fabric8.kubernetes.client.",
+        "io.fabric8.kubernetes.client.dsl.PodResource",
+        "java.time.Instant",
+        "java.time.temporal.ChronoUnit.MILLIS",
+        "java.util.concurrent.atomic.AtomicInteger",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.apache.spark.internal.config._",
+        "org.apache.spark.resource._",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils._",
+        "org.apache.spark.util.ManualClock",
+        "org.mockito.",
+        "org.mockito.ArgumentMatchers.",
+        "org.mockito.Mockito.",
+        "org.mockito.invocation.InvocationOnMock",
+        "org.mockito.stubbing.Answer",
+        "org.scalatest.BeforeAndAfter",
+        "org.scalatest.PrivateMethodTester._",
+        "scala.collection.mutable",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class ExecutorPodsAllocatorSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsSnapshotSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsSnapshotSuite.scala",
+      "langage": "scala",
+      "lignes": 87,
+      "taille_bytes": 3578,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.Pod",
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.scheduler.cluster.k8s.ExecutorLifecycleTestUtils._"
+      ],
+      "sorties": [
+        "class ExecutorPodsSnapshotSuite",
+        "def doTest",
+        "def testCase"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorResizePluginSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorResizePluginSuite.scala",
+      "langage": "scala",
+      "lignes": 290,
+      "taille_bytes": 11819,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model._",
+        "io.fabric8.kubernetes.api.model.metrics.v1beta1.",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "io.fabric8.kubernetes.client.dsl.",
+        "java.util.Collections",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.Fabric8Aliases._",
+        "org.mockito.ArgumentMatchers.",
+        "org.mockito.Mockito.",
+        "org.scalatest.BeforeAndAfter",
+        "org.scalatest.PrivateMethodTester",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "class ExecutorResizePluginSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorRollPluginSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorRollPluginSuite.scala",
+      "langage": "scala",
+      "lignes": 417,
+      "taille_bytes": 16499,
+      "entrees": [
+        "java.util.Date",
+        "org.apache.spark.SparkFunSuite",
+        "org.apache.spark.deploy.k8s.Config.ExecutorRollPolicy",
+        "org.apache.spark.executor.ExecutorMetrics",
+        "org.apache.spark.status.api.v1.ExecutorSummary",
+        "org.scalatest.PrivateMethodTester"
+      ],
+      "sorties": [
+        "class ExecutorRollPluginSuite"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/DeterministicExecutorPodsSnapshotsStore.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/DeterministicExecutorPodsSnapshotsStore.scala",
+      "langage": "scala",
+      "lignes": 69,
+      "taille_bytes": 2487,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.Pod",
+        "org.apache.spark.deploy.k8s.Constants.DEFAULT_EXECUTOR_CONTAINER_NAME",
+        "org.apache.spark.util.ManualClock",
+        "scala.collection.mutable"
+      ],
+      "sorties": [
+        "class DeterministicExecutorPodsSnapshotsStore",
+        "def removeDeletedExecutors"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/KubernetesExecutorBuilderSuite.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/KubernetesExecutorBuilderSuite.scala",
+      "langage": "scala",
+      "lignes": 91,
+      "taille_bytes": 3543,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model._",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.k8s._",
+        "org.apache.spark.deploy.k8s.features.KubernetesExecutorCustomFeatureConfigStep",
+        "org.apache.spark.internal.config.ConfigEntry",
+        "org.apache.spark.resource.ResourceProfile"
+      ],
+      "sorties": [
+        "class KubernetesExecutorBuilderSuite",
+        "class TestStepWithExecConf",
+        "def init"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorLifecycleTestUtils.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorLifecycleTestUtils.scala",
+      "langage": "scala",
+      "lignes": 269,
+      "taille_bytes": 9300,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model._",
+        "java.time.Instant",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.SparkPod",
+        "org.apache.spark.resource.ResourceProfile.DEFAULT_RESOURCE_PROFILE_ID",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def deletedExecutor",
+        "def executorPodWithId",
+        "def executorPodWithIdAndVolume",
+        "def failedExecutorWithSidecarStatusListedFirst",
+        "def failedExecutorWithoutDeletion",
+        "def finishedExecutorWithRunningSidecar",
+        "def pendingExecutor",
+        "def persistentVolumeClaim",
+        "def podWithAttachedContainerForId",
+        "def podWithAttachedContainerForIdAndVolume",
+        "def runningExecutor",
+        "def runningExecutorWithFailedContainer",
+        "def succeededExecutor",
+        "def unknownExecutor"
+      ],
+      "appelle": [
+        "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkPod.scala"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/test/resources/driver-podgroup-template.yml": {
+      "fichier": "resource-managers/kubernetes/core/src/test/resources/driver-podgroup-template.yml",
+      "langage": "yaml",
+      "lignes": 25,
+      "taille_bytes": 971,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/Config.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/Config.scala",
+      "langage": "scala",
+      "lignes": 888,
+      "taille_bytes": 40717,
+      "entrees": [
+        "java.util.Locale",
+        "java.util.concurrent.TimeUnit",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.internal.config."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/KubernetesClientUtilsSuite.scala",
+        "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsLifecycleManagerSuite.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesVolumeSpec.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesVolumeSpec.scala",
+      "langage": "scala",
+      "lignes": 48,
+      "taille_bytes": 1827,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkPod.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkPod.scala",
+      "langage": "scala",
+      "lignes": 66,
+      "taille_bytes": 2232,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "org.apache.spark.annotation."
+      ],
+      "sorties": [
+        "def initialPod",
+        "def transform"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/KubernetesFeaturesTestUtils.scala",
+        "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorLifecycleTestUtils.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesDriverSpec.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesDriverSpec.scala",
+      "langage": "scala",
+      "lignes": 36,
+      "taille_bytes": 1327,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.HasMetadata",
+        "org.apache.spark.annotation."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesConf.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesConf.scala",
+      "langage": "scala",
+      "lignes": 335,
+      "taille_bytes": 12428,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "java.util.",
+        "org.apache.spark.",
+        "org.apache.spark.annotation.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.deploy.k8s.features.DriverServiceFeatureStep._",
+        "org.apache.spark.deploy.k8s.submit._",
+        "org.apache.spark.internal.",
+        "org.apache.spark.internal.config.ConfigEntry",
+        "org.apache.spark.resource.ResourceProfile.DEFAULT_RESOURCE_PROFILE_ID",
+        "org.apache.spark.util."
+      ],
+      "sorties": [
+        "class KubernetesDriverConf",
+        "def annotations",
+        "def appId",
+        "def appName",
+        "def buildKubernetesResourceName",
+        "def contains",
+        "def createDriverConf",
+        "def createExecutorConf",
+        "def driverNodeSelector",
+        "def environment",
+        "def executorNodeSelector",
+        "def get",
+        "def getAppNameLabel",
+        "def getKubernetesAppId",
+        "def getOption",
+        "def getResourceNamePrefix",
+        "def image",
+        "def imagePullPolicy",
+        "def imagePullSecrets",
+        "def labels",
+        "def namespace",
+        "def nodeSelector",
+        "def schedulerName",
+        "def secretEnvNamesToKeyRefs",
+        "def secretNamesToMountPaths",
+        "def serviceAnnotations",
+        "def serviceLabels",
+        "def volumes",
+        "def workerDecommissioning"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/BasicExecutorFeatureStepSuite.scala"
+      ],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkKubernetesClientFactory.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkKubernetesClientFactory.scala",
+      "langage": "scala",
+      "lignes": 144,
+      "taille_bytes": 6267,
+      "entrees": [
+        "com.fasterxml.jackson.databind.ObjectMapper",
+        "io.fabric8.kubernetes.client.",
+        "io.fabric8.kubernetes.client.Config.KUBERNETES_REQUEST_RETRY_BACKOFFLIMIT_SYSTEM_PROPERTY",
+        "io.fabric8.kubernetes.client.Config.autoConfigure",
+        "io.fabric8.kubernetes.client.utils.Utils.getSystemPropertyOrEnvVar",
+        "java.io.File",
+        "java.nio.file.Files",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.annotation.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.internal.LogKeys.K8S_CONTEXT",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.internal.config.ConfigEntry",
+        "scala.language.implicitConversions"
+      ],
+      "sorties": [
+        "def connectionTimeout",
+        "def createKubernetesClient",
+        "def requestTimeout",
+        "def withOption"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/Constants.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/Constants.scala",
+      "langage": "scala",
+      "lignes": 140,
+      "taille_bytes": 6027,
+      "entrees": [
+        "org.apache.spark.annotation."
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesVolumeUtils.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesVolumeUtils.scala",
+      "langage": "scala",
+      "lignes": 164,
+      "taille_bytes": 6874,
+      "entrees": [
+        "java.lang.Long.parseLong",
+        "org.apache.spark.SparkConf",
+        "org.apache.spark.annotation.",
+        "org.apache.spark.deploy.k8s.Config._"
+      ],
+      "sorties": [
+        "def parseVolumesWithPrefix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkKubernetesDiagnosticsSetter.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkKubernetesDiagnosticsSetter.scala",
+      "langage": "scala",
+      "lignes": 82,
+      "taille_bytes": 3232,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.PodBuilder",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "io.fabric8.kubernetes.client.dsl.base.",
+        "org.apache.hadoop.util.StringUtils",
+        "org.apache.spark.",
+        "org.apache.spark.deploy.SparkDiagnosticsSetter",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants.EXIT_EXCEPTION_ANNOTATION",
+        "org.apache.spark.deploy.k8s.SparkKubernetesClientFactory.ClientType",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.util."
+      ],
+      "sorties": [
+        "def create",
+        "def this"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesExecutorSpec.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesExecutorSpec.scala",
+      "langage": "scala",
+      "lignes": 23,
+      "taille_bytes": 1010,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.HasMetadata"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesUtils.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesUtils.scala",
+      "langage": "scala",
+      "lignes": 417,
+      "taille_bytes": 15007,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model.",
+        "io.fabric8.kubernetes.client.KubernetesClient",
+        "java.io.",
+        "java.net.URI",
+        "java.security.SecureRandom",
+        "java.util.",
+        "opt2.isDefined",
+        "org.apache.hadoop.fs.",
+        "org.apache.spark.",
+        "org.apache.spark.annotation.",
+        "org.apache.spark.deploy.SparkHadoopUtil",
+        "org.apache.spark.deploy.k8s.Config.KUBERNETES_FILE_UPLOAD_PATH",
+        "org.apache.spark.internal.LogKeys.POD_ID",
+        "org.apache.spark.internal.Logging",
+        "org.apache.spark.launcher.SparkLauncher",
+        "org.apache.spark.resource.ResourceUtils",
+        "org.apache.spark.util.",
+        "org.apache.spark.util.DependencyUtils.downloadFile",
+        "org.apache.spark.util.Utils.getHadoopFileSystem",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [
+        "def addOwnerReference",
+        "def buildEnvVars",
+        "def buildEnvVarsWithFieldRef",
+        "def buildPodWithServiceAccount",
+        "def buildResourcesQuantities",
+        "def containerStatusDescription",
+        "def containersDescription",
+        "def formatPairsBundle",
+        "def formatPodState",
+        "def formatTime",
+        "def isLocalAndResolvable",
+        "def loadPodFromTemplate",
+        "def parseMasterUrl",
+        "def parsePrefixedKeyValuePairs",
+        "def renameMainAppResource",
+        "def requireBothOrNeitherDefined",
+        "def requireNandDefined",
+        "def requireSecondIfFirstIsDefined",
+        "def selectNamedContainer",
+        "def selectSparkContainer",
+        "def uniqueID",
+        "def uploadAndTransformFileUris",
+        "def uploadFileUri"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/features/HadoopConfDriverFeatureStep.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/features/HadoopConfDriverFeatureStep.scala",
+      "langage": "scala",
+      "lignes": 133,
+      "taille_bytes": 4268,
+      "entrees": [
+        "io.fabric8.kubernetes.api.model._",
+        "java.io.File",
+        "java.nio.file.Files",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config._",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.util.ArrayImplicits._",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/features/ExecutorKubernetesCredentialsFeatureStep.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/features/ExecutorKubernetesCredentialsFeatureStep.scala",
+      "langage": "scala",
+      "lignes": 41,
+      "taille_bytes": 1934,
+      "entrees": [
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config.",
+        "org.apache.spark.deploy.k8s.KubernetesUtils.buildPodWithServiceAccount"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/features/DriverServiceFeatureStep.scala": {
+      "fichier": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/features/DriverServiceFeatureStep.scala",
+      "langage": "scala",
+      "lignes": 107,
+      "taille_bytes": 4678,
+      "entrees": [
+        "DriverServiceFeatureStep._",
+        "io.fabric8.kubernetes.api.model.",
+        "kubernetesConf.getOption",
+        "org.apache.spark.deploy.k8s.",
+        "org.apache.spark.deploy.k8s.Config.",
+        "org.apache.spark.deploy.k8s.Constants._",
+        "org.apache.spark.internal.",
+        "scala.jdk.CollectionConverters._"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/YarnShuffleIntegrationSuite.scala",
+      "vers": "resource-managers/yarn/src/test/scala/org/apache/spark/network/shuffle/ShuffleTestAccessor.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/yarn/src/test/scala/org/apache/spark/deploy/yarn/ClientSuite.scala",
+      "vers": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnScheduler.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/yarn/src/main/scala/org/apache/spark/util/YarnContainerInfoHelper.scala",
+      "vers": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnSparkHadoopUtil.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/YarnSparkHadoopUtil.scala",
+      "vers": "resource-managers/yarn/src/main/scala/org/apache/spark/launcher/YarnCommandBuilderUtils.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/yarn/src/main/scala/org/apache/spark/executor/YarnCoarseGrainedExecutorBackend.scala",
+      "vers": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/Client.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/yarn/src/main/scala/org/apache/spark/executor/YarnCoarseGrainedExecutorBackend.scala",
+      "vers": "resource-managers/yarn/src/main/scala/org/apache/spark/util/YarnContainerInfoHelper.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterSchedulerBackend.scala",
+      "vers": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMaster.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterSchedulerBackend.scala",
+      "vers": "resource-managers/yarn/src/main/scala/org/apache/spark/util/YarnContainerInfoHelper.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterScheduler.scala",
+      "vers": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/ApplicationMaster.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnScheduler.scala",
+      "vers": "resource-managers/yarn/src/main/scala/org/apache/spark/deploy/yarn/SparkRackResolver.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/KubernetesFeaturesTestUtils.scala",
+      "vers": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkPod.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/features/BasicExecutorFeatureStepSuite.scala",
+      "vers": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/KubernetesConf.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/deploy/k8s/submit/KubernetesClientUtilsSuite.scala",
+      "vers": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/Config.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorPodsLifecycleManagerSuite.scala",
+      "vers": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/Config.scala",
+      "type": "interne"
+    },
+    {
+      "de": "resource-managers/kubernetes/core/src/test/scala/org/apache/spark/scheduler/cluster/k8s/ExecutorLifecycleTestUtils.scala",
+      "vers": "resource-managers/kubernetes/core/src/main/scala/org/apache/spark/deploy/k8s/SparkPod.scala",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'resource-managers/yarn/src/main/scala/org/apache/spark/executor/YarnCoarseGrainedExecutorBackend.scala'",
+    "point_entree → 'resource-managers/yarn/src/main/scala/org/apache/spark/scheduler/cluster/YarnClusterSchedulerBackend.scala'"
+  ]
+}

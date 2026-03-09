@@ -1,0 +1,614 @@
+{
+  "meta": {
+    "projet": "amm-arbitrageur",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "json": 4,
+      "typescript": 14,
+      "solidity": 9
+    }
+  },
+  "stats": {
+    "fichiers_total": 27,
+    "edges_total": 9,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 1,
+    "noeuds_hubs": 0,
+    "points_entree": 3,
+    "fichier_plus_appele": "bot/config.ts"
+  },
+  "noeuds": {
+    "pairs-bsc.json": {
+      "fichier": "pairs-bsc.json",
+      "langage": "json",
+      "lignes": 1843,
+      "taille_bytes": 42303,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "package.json": {
+      "fichier": "package.json",
+      "langage": "json",
+      "lignes": 40,
+      "taille_bytes": 1096,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".solhint.json": {
+      "fichier": ".solhint.json",
+      "langage": "json",
+      "lignes": 6,
+      "taille_bytes": 81,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tsconfig.json": {
+      "fichier": "tsconfig.json",
+      "langage": "json",
+      "lignes": 25,
+      "taille_bytes": 514,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "hardhat.config.ts": {
+      "fichier": "hardhat.config.ts",
+      "langage": "typescript",
+      "lignes": 43,
+      "taille_bytes": 983,
+      "entrees": [
+        "deployer"
+      ],
+      "sorties": [
+        "const BSC_RPC",
+        "const BSC_Tetsnet_RPC",
+        "const config"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "bot/tokens.ts": {
+      "fichier": "bot/tokens.ts",
+      "langage": "typescript",
+      "lignes": 182,
+      "taille_bytes": 8413,
+      "entrees": [
+        "fs",
+        "lodash",
+        "log",
+        "path"
+      ],
+      "sorties": [
+        "const ZERO_ADDRESS",
+        "const addr",
+        "const arbitragePair",
+        "const baseToken",
+        "const bscBaseTokens",
+        "const bscDexes",
+        "const bscQuoteTokens",
+        "const combinations",
+        "const factory",
+        "const factoryAbi",
+        "const factoryAddrs",
+        "const pair",
+        "const pairsFile",
+        "const quoteToken",
+        "export enum",
+        "export function",
+        "function getFactories",
+        "function getPairsFile"
+      ],
+      "appelle": [
+        "bot/log.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "bot/basetoken-price.ts": {
+      "fichier": "bot/basetoken-price.ts",
+      "langage": "typescript",
+      "lignes": 31,
+      "taille_bytes": 676,
+      "entrees": [
+        "AsyncLock",
+        "axios",
+        "config",
+        "log"
+      ],
+      "sorties": [
+        "const lock",
+        "const res"
+      ],
+      "appelle": [
+        "bot/config.ts",
+        "bot/log.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "bot/bot.d.ts": {
+      "fichier": "bot/bot.d.ts",
+      "langage": "typescript",
+      "lignes": 22,
+      "taille_bytes": 335,
+      "entrees": [],
+      "sorties": [
+        "interface AmmFactories",
+        "interface ArbitragePair",
+        "interface Token",
+        "interface TokenPair",
+        "interface Tokens"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "bot/config.ts": {
+      "fichier": "bot/config.ts",
+      "langage": "typescript",
+      "lignes": 30,
+      "taille_bytes": 784,
+      "entrees": [],
+      "sorties": [
+        "const bscScanApiKey",
+        "const bscScanUrl",
+        "const config",
+        "const contractAddr",
+        "const gasLimit",
+        "const gasPrice",
+        "interface Config"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "bot/basetoken-price.ts",
+        "bot/index.ts",
+        "bot/log.ts"
+      ],
+      "type_noeud": "feuille"
+    },
+    "bot/index.ts": {
+      "fichier": "bot/index.ts",
+      "langage": "typescript",
+      "lignes": 93,
+      "taille_bytes": 2823,
+      "entrees": [
+        "AsyncLock",
+        "config",
+        "log",
+        "pool"
+      ],
+      "sorties": [
+        "const flashBot",
+        "const gasCost",
+        "const lock",
+        "const netProfit",
+        "const pairs",
+        "const receipt",
+        "const response",
+        "function arbitrageFunc",
+        "function sleep"
+      ],
+      "appelle": [
+        "bot/config.ts",
+        "bot/log.ts"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "bot/log.ts": {
+      "fichier": "bot/log.ts",
+      "langage": "typescript",
+      "lignes": 17,
+      "taille_bytes": 485,
+      "entrees": [
+        "config"
+      ],
+      "sorties": [
+        "const logger"
+      ],
+      "appelle": [
+        "bot/config.ts"
+      ],
+      "est_appele_par": [
+        "bot/basetoken-price.ts",
+        "bot/index.ts",
+        "bot/tokens.ts"
+      ],
+      "type_noeud": "standard"
+    },
+    "test/SwapTest.ts": {
+      "fichier": "test/SwapTest.ts",
+      "langage": "typescript",
+      "lignes": 77,
+      "taille_bytes": 3080,
+      "entrees": [],
+      "sorties": [
+        "const USDT",
+        "const WBNB",
+        "const amountEth",
+        "const balanceAfter",
+        "const balanceBefore",
+        "const fbFactory",
+        "const mdexFactory",
+        "const mdexFactoryAddr",
+        "const pancakeFactory",
+        "const pancakeFactoryAddr",
+        "const res",
+        "const uniFactoryAbi",
+        "const uniPairAbi",
+        "const wethFactory"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/MathTest.ts": {
+      "fichier": "test/MathTest.ts",
+      "langage": "typescript",
+      "lignes": 81,
+      "taille_bytes": 3432,
+      "entrees": [
+        "lodash"
+      ],
+      "sorties": [
+        "const factory",
+        "const input",
+        "const res",
+        "const reserves"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/AccessControlTest.ts": {
+      "fichier": "test/AccessControlTest.ts",
+      "langage": "typescript",
+      "lignes": 60,
+      "taille_bytes": 1895,
+      "entrees": [],
+      "sorties": [
+        "const amount",
+        "const balance",
+        "const balanceAfter",
+        "const balanceBefore",
+        "const fbOwner",
+        "const wethAmount",
+        "const wethBlanceAfter",
+        "const wethBlanceBefore"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/shared/fixtures.ts": {
+      "fichier": "test/shared/fixtures.ts",
+      "langage": "typescript",
+      "lignes": 18,
+      "taille_bytes": 610,
+      "entrees": [],
+      "sorties": [
+        "const flashBot",
+        "const flashBotFactory",
+        "const tokenFactory",
+        "const weth",
+        "export const",
+        "interface FlashBotFixture"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "contracts/FlashBot.sol": {
+      "fichier": "contracts/FlashBot.sol",
+      "langage": "solidity",
+      "lignes": 389,
+      "taille_bytes": 15964,
+      "entrees": [
+        "Decimal",
+        "EnumerableSet",
+        "SafeERC20",
+        "SafeMath",
+        "amountIn",
+        "amountOut",
+        "balanceAfter",
+        "baseTokenOutAmount",
+        "baseTokensContains",
+        "msg.sender",
+        "pool0",
+        "pool0Token0",
+        "reserveIn",
+        "sender"
+      ],
+      "sorties": [
+        "contract FlashBot",
+        "function addBaseToken",
+        "function baseTokensContains",
+        "function calcBorrowAmount",
+        "function calcSolutionForQuadratic",
+        "function flashArbitrage",
+        "function getAmountIn",
+        "function getAmountOut",
+        "function getBaseTokens",
+        "function getOrderedReserves",
+        "function getProfit",
+        "function isbaseTokenSmaller",
+        "function removeBaseToken",
+        "function sqrt",
+        "function uniswapV2Call",
+        "function withdraw",
+        "struct ArbitrageInfo",
+        "struct CallbackData",
+        "struct OrderedReserves"
+      ],
+      "appelle": [
+        "contracts/libraries/Decimal.sol",
+        "contracts/libraries/SafeMath.sol"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "contracts/interfaces/IUniswapV2Callee.sol": {
+      "fichier": "contracts/interfaces/IUniswapV2Callee.sol",
+      "langage": "solidity",
+      "lignes": 6,
+      "taille_bytes": 201,
+      "entrees": [],
+      "sorties": [
+        "function uniswapV2Call",
+        "interface IUniswapV2Callee"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "contracts/interfaces/IUniswapV2Pair.sol": {
+      "fichier": "contracts/interfaces/IUniswapV2Pair.sol",
+      "langage": "solidity",
+      "lignes": 12,
+      "taille_bytes": 542,
+      "entrees": [],
+      "sorties": [
+        "function factory",
+        "function getReserves",
+        "function skim",
+        "function swap",
+        "function sync",
+        "function token0",
+        "function token1",
+        "interface IUniswapV2Pair"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "contracts/interfaces/IWETH.sol": {
+      "fichier": "contracts/interfaces/IWETH.sol",
+      "langage": "solidity",
+      "lignes": 8,
+      "taille_bytes": 232,
+      "entrees": [],
+      "sorties": [
+        "function deposit",
+        "function transfer",
+        "function withdraw",
+        "interface IWETH"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "contracts/test/InternalFuncTest.sol": {
+      "fichier": "contracts/test/InternalFuncTest.sol",
+      "langage": "solidity",
+      "lignes": 25,
+      "taille_bytes": 627,
+      "entrees": [],
+      "sorties": [
+        "contract InternalFuncTest",
+        "function _calcBorrowAmount",
+        "function _calcSolutionForQuadratic",
+        "function _sqrt"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "contracts/test/TestERC20.sol": {
+      "fichier": "contracts/test/TestERC20.sol",
+      "langage": "solidity",
+      "lignes": 8,
+      "taille_bytes": 284,
+      "entrees": [],
+      "sorties": [
+        "contract TestERC20"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "contracts/libraries/Decimal.sol": {
+      "fichier": "contracts/libraries/Decimal.sol",
+      "langage": "solidity",
+      "lignes": 255,
+      "taille_bytes": 4898,
+      "entrees": [
+        "SafeMathCopy"
+      ],
+      "sorties": [
+        "function add",
+        "function asUint256",
+        "function compareTo",
+        "function div",
+        "function equals",
+        "function getPartial",
+        "function greaterThan",
+        "function greaterThanOrEqualTo",
+        "function isZero",
+        "function lessThan",
+        "function lessThanOrEqualTo",
+        "function mul",
+        "function one",
+        "function pow",
+        "function ratio",
+        "function sub",
+        "function zero",
+        "struct D256"
+      ],
+      "appelle": [
+        "contracts/libraries/SafeMathCopy.sol"
+      ],
+      "est_appele_par": [
+        "contracts/FlashBot.sol"
+      ],
+      "type_noeud": "standard"
+    },
+    "contracts/libraries/SafeMathCopy.sol": {
+      "fichier": "contracts/libraries/SafeMathCopy.sol",
+      "langage": "solidity",
+      "lignes": 159,
+      "taille_bytes": 5288,
+      "entrees": [],
+      "sorties": [
+        "function add",
+        "function div",
+        "function mod",
+        "function mul",
+        "function sub"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "contracts/libraries/Decimal.sol"
+      ],
+      "type_noeud": "standard"
+    },
+    "contracts/libraries/SafeMath.sol": {
+      "fichier": "contracts/libraries/SafeMath.sol",
+      "langage": "solidity",
+      "lignes": 18,
+      "taille_bytes": 563,
+      "entrees": [],
+      "sorties": [
+        "function add",
+        "function mul",
+        "function sub"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "contracts/FlashBot.sol"
+      ],
+      "type_noeud": "standard"
+    },
+    "scripts/deploy.ts": {
+      "fichier": "scripts/deploy.ts",
+      "langage": "typescript",
+      "lignes": 21,
+      "taille_bytes": 520,
+      "entrees": [
+        "deployer"
+      ],
+      "sorties": [
+        "const FlashBot",
+        "const WethAddr",
+        "const flashBot"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/show-status.ts": {
+      "fichier": "scripts/show-status.ts",
+      "langage": "typescript",
+      "lignes": 23,
+      "taille_bytes": 550,
+      "entrees": [],
+      "sorties": [
+        "const flashBot",
+        "const owner",
+        "const tokens"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "scripts/add-basetoken.ts": {
+      "fichier": "scripts/add-basetoken.ts",
+      "langage": "typescript",
+      "lignes": 23,
+      "taille_bytes": 557,
+      "entrees": [],
+      "sorties": [
+        "const args",
+        "const flashBot"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "bot/tokens.ts",
+      "vers": "bot/log.ts",
+      "type": "interne"
+    },
+    {
+      "de": "bot/basetoken-price.ts",
+      "vers": "bot/config.ts",
+      "type": "interne"
+    },
+    {
+      "de": "bot/basetoken-price.ts",
+      "vers": "bot/log.ts",
+      "type": "interne"
+    },
+    {
+      "de": "bot/index.ts",
+      "vers": "bot/config.ts",
+      "type": "interne"
+    },
+    {
+      "de": "bot/index.ts",
+      "vers": "bot/log.ts",
+      "type": "interne"
+    },
+    {
+      "de": "bot/log.ts",
+      "vers": "bot/config.ts",
+      "type": "interne"
+    },
+    {
+      "de": "contracts/FlashBot.sol",
+      "vers": "contracts/libraries/Decimal.sol",
+      "type": "interne"
+    },
+    {
+      "de": "contracts/FlashBot.sol",
+      "vers": "contracts/libraries/SafeMath.sol",
+      "type": "interne"
+    },
+    {
+      "de": "contracts/libraries/Decimal.sol",
+      "vers": "contracts/libraries/SafeMathCopy.sol",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "point_entree → 'bot/basetoken-price.ts'",
+    "feuille → 'bot/config.ts' (in=3)",
+    "point_entree → 'bot/index.ts'",
+    "point_entree → 'contracts/FlashBot.sol'"
+  ]
+}

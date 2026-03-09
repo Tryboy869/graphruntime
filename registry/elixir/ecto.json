@@ -1,0 +1,2794 @@
+{
+  "meta": {
+    "projet": "ecto",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "elixir": 120
+    },
+    "official_runtime": true
+  },
+  "stats": {
+    "fichiers_total": 120,
+    "edges_total": 1,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "lib/ecto/query/inspect.ex"
+  },
+  "noeuds": {
+    "mix.exs": {
+      "fichier": "mix.exs",
+      "langage": "elixir",
+      "lignes": 182,
+      "taille_bytes": 5195,
+      "entrees": [
+        "Mix.Project"
+      ],
+      "sorties": [
+        "const graphDefinition",
+        "const graphEl",
+        "const graphId",
+        "const preEl",
+        "def application",
+        "def extras",
+        "def project",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".formatter.exs": {
+      "fichier": ".formatter.exs",
+      "langage": "elixir",
+      "lignes": 31,
+      "taille_bytes": 466,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/mix.exs": {
+      "fichier": "examples/friends/mix.exs",
+      "langage": "elixir",
+      "lignes": 41,
+      "taille_bytes": 795,
+      "entrees": [
+        "Mix.Project"
+      ],
+      "sorties": [
+        "def application",
+        "def project",
+        "defmodule Friends"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/.formatter.exs": {
+      "fichier": "examples/friends/.formatter.exs",
+      "langage": "elixir",
+      "lignes": 4,
+      "taille_bytes": 85,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/priv/repo/seeds.exs": {
+      "fichier": "examples/friends/priv/repo/seeds.exs",
+      "langage": "elixir",
+      "lignes": 7,
+      "taille_bytes": 283,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/priv/repo/migrations/20160626215043_create_people.exs": {
+      "fichier": "examples/friends/priv/repo/migrations/20160626215043_create_people.exs",
+      "langage": "elixir",
+      "lignes": 11,
+      "taille_bytes": 221,
+      "entrees": [
+        "Ecto.Migration"
+      ],
+      "sorties": [
+        "def change",
+        "defmodule Friends"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/test/test_helper.exs": {
+      "fichier": "examples/friends/test/test_helper.exs",
+      "langage": "elixir",
+      "lignes": 1,
+      "taille_bytes": 15,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/test/friends_test.exs": {
+      "fichier": "examples/friends/test/friends_test.exs",
+      "langage": "elixir",
+      "lignes": 8,
+      "taille_bytes": 116,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule FriendsTest"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/config/config.exs": {
+      "fichier": "examples/friends/config/config.exs",
+      "langage": "elixir",
+      "lignes": 10,
+      "taille_bytes": 205,
+      "entrees": [
+        "Config"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/lib/friends.ex": {
+      "fichier": "examples/friends/lib/friends.ex",
+      "langage": "elixir",
+      "lignes": 18,
+      "taille_bytes": 197,
+      "entrees": [],
+      "sorties": [
+        "def hello",
+        "defmodule Friends"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/lib/friends/repo.ex": {
+      "fichier": "examples/friends/lib/friends/repo.ex",
+      "langage": "elixir",
+      "lignes": 3,
+      "taille_bytes": 98,
+      "entrees": [
+        "Ecto.Repo"
+      ],
+      "sorties": [
+        "defmodule Friends"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/lib/friends/person.ex": {
+      "fichier": "examples/friends/lib/friends/person.ex",
+      "langage": "elixir",
+      "lignes": 15,
+      "taille_bytes": 359,
+      "entrees": [
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "def changeset",
+        "defmodule Friends"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "examples/friends/lib/friends/application.ex": {
+      "fichier": "examples/friends/lib/friends/application.ex",
+      "langage": "elixir",
+      "lignes": 21,
+      "taille_bytes": 601,
+      "entrees": [
+        "Application"
+      ],
+      "sorties": [
+        "def start",
+        "defmodule Friends"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/test_helper.exs": {
+      "fichier": "test/test_helper.exs",
+      "langage": "elixir",
+      "lignes": 9,
+      "taille_bytes": 261,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto_test.exs": {
+      "fichier": "test/ecto_test.exs",
+      "langage": "elixir",
+      "lignes": 159,
+      "taille_bytes": 4043,
+      "entrees": [
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Author",
+        "defmodule EctoTest",
+        "defmodule NoPrefixAssoc",
+        "defmodule NoPrefixNestedAssoc",
+        "defmodule Post",
+        "defmodule PrefixAssoc",
+        "defmodule PrefixSchema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/mix/ecto_test.exs": {
+      "fichier": "test/mix/ecto_test.exs",
+      "langage": "elixir",
+      "lignes": 59,
+      "taille_bytes": 1608,
+      "entrees": [
+        "ExUnit.Case",
+        "Mix.Ecto"
+      ],
+      "sorties": [
+        "def __adapter__",
+        "def config",
+        "defmodule Mix",
+        "defmodule Repo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/mix/tasks/ecto_test.exs": {
+      "fichier": "test/mix/tasks/ecto_test.exs",
+      "langage": "elixir",
+      "lignes": 17,
+      "taille_bytes": 516,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Mix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/mix/tasks/ecto.create_drop_test.exs": {
+      "fichier": "test/mix/tasks/ecto.create_drop_test.exs",
+      "langage": "elixir",
+      "lignes": 121,
+      "taille_bytes": 4087,
+      "entrees": [
+        "Ecto.Repo",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def checked_out",
+        "def checkout",
+        "def dumpers",
+        "def ensure_all_started",
+        "def init",
+        "def loaders",
+        "def storage_down",
+        "def storage_status",
+        "def storage_up",
+        "defmodule Adapter",
+        "defmodule Mix",
+        "defmodule NoStorageAdapter",
+        "defmodule NoStorageRepo",
+        "defmodule Repo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/mix/tasks/ecto.gen.repo_test.exs": {
+      "fichier": "test/mix/tasks/ecto.gen.repo_test.exs",
+      "langage": "elixir",
+      "lignes": 84,
+      "taille_bytes": 1950,
+      "entrees": [
+        "Config",
+        "Ecto.Repo",
+        "ExUnit.Case",
+        "Mix.Config",
+        "Mix.Tasks.Ecto.Gen.Repo"
+      ],
+      "sorties": [
+        "defmodule Mix",
+        "defmodule Repo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/eval_helpers.exs": {
+      "fichier": "test/support/eval_helpers.exs",
+      "langage": "elixir",
+      "lignes": 12,
+      "taille_bytes": 329,
+      "entrees": [],
+      "sorties": [
+        "defmodule Support"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/support/test_repo.exs": {
+      "fichier": "test/support/test_repo.exs",
+      "langage": "elixir",
+      "lignes": 216,
+      "taille_bytes": 5909,
+      "entrees": [
+        "Ecto.Repo"
+      ],
+      "sorties": [
+        "def autogenerate",
+        "def checked_out",
+        "def checkout",
+        "def delete",
+        "def dumpers",
+        "def ensure_all_started",
+        "def execute",
+        "def in_transaction",
+        "def init",
+        "def insert",
+        "def insert_all",
+        "def loaders",
+        "def prepare",
+        "def rollback",
+        "def stream",
+        "def transaction",
+        "def update",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/uuid_test.exs": {
+      "fichier": "test/ecto/uuid_test.exs",
+      "langage": "elixir",
+      "lignes": 120,
+      "taille_bytes": 3886,
+      "entrees": [
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/enum_test.exs": {
+      "fichier": "test/ecto/enum_test.exs",
+      "langage": "elixir",
+      "lignes": 650,
+      "taille_bytes": 25374,
+      "entrees": [
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Ecto",
+        "defmodule EnumSchema",
+        "defmodule SchemaDuplicateEnumKeys",
+        "defmodule SchemaDuplicateEnumMappings",
+        "defmodule SchemaDuplicateEnumValues",
+        "defmodule SchemaInvalidEnumValues"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/parameterized_type_test.exs": {
+      "fichier": "test/ecto/parameterized_type_test.exs",
+      "langage": "elixir",
+      "lignes": 235,
+      "taille_bytes": 9801,
+      "entrees": [
+        "Ecto.ParameterizedType",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def cast",
+        "def dump",
+        "def embed_as",
+        "def equal",
+        "def format",
+        "def init",
+        "def load",
+        "def params",
+        "def type",
+        "defmodule Ecto",
+        "defmodule MyErrorParameterizedType",
+        "defmodule MyParameterizedType",
+        "defmodule MyParameterizedTypeForPrimaryKey",
+        "defmodule Schema",
+        "defmodule SchemaWithParameterizedTypeAsPrimaryKey"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/type_test.exs": {
+      "fichier": "test/ecto/type_test.exs",
+      "langage": "elixir",
+      "lignes": 1458,
+      "taille_bytes": 52305,
+      "entrees": [
+        "Ecto.ParameterizedType",
+        "Ecto.Schema",
+        "Ecto.Type",
+        "ExUnit.Case",
+        "Kernel"
+      ],
+      "sorties": [
+        "def cast",
+        "def changeset",
+        "def dump",
+        "def embed_as",
+        "def equal",
+        "def format",
+        "def init",
+        "def load",
+        "def type",
+        "defmodule Custom",
+        "defmodule CustomAny",
+        "defmodule CustomParameterizedTypeWithFormat",
+        "defmodule CustomParameterizedTypeWithoutFormat",
+        "defmodule CustomWithCastError",
+        "defmodule Ecto",
+        "defmodule Schema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/repo_test.exs": {
+      "fichier": "test/ecto/repo_test.exs",
+      "langage": "elixir",
+      "lignes": 2492,
+      "taille_bytes": 84427,
+      "entrees": [
+        "Ecto",
+        "Ecto.Query",
+        "Ecto.Repo",
+        "Ecto.Schema",
+        "Ecto.Type",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def cast",
+        "def changeset",
+        "def checked_out",
+        "def checkout",
+        "def default_options",
+        "def dump",
+        "def dumpers",
+        "def ensure_all_started",
+        "def init",
+        "def load",
+        "def loaders",
+        "def prepare_query",
+        "def prepare_transaction",
+        "def type",
+        "defmodule CustomDynamicRepo",
+        "defmodule DefaultOptionRepo",
+        "defmodule DumpSchema",
+        "defmodule Ecto",
+        "defmodule MyEmbed",
+        "defmodule MyParent",
+        "defmodule MyParentWithPrefix",
+        "defmodule MyPrefixedSchemaWithAssoc",
+        "defmodule MyPrefixedSchemaWithPrefixedAssoc",
+        "defmodule MySchema",
+        "defmodule MySchemaChild",
+        "defmodule MySchemaCustomPK",
+        "defmodule MySchemaEmbedsMany",
+        "defmodule MySchemaEmbedsOne",
+        "defmodule MySchemaNoPK",
+        "defmodule MySchemaOneField",
+        "defmodule MySchemaWithAssoc",
+        "defmodule MySchemaWithBinaryId",
+        "defmodule MySchemaWithMultiAssoc",
+        "defmodule MySchemaWithNonStringPrefix",
+        "defmodule MySchemaWithPrefix",
+        "defmodule MySchemaWithPrefixedAssoc",
+        "defmodule MySchemaWritable",
+        "defmodule NoTransactionAdapter",
+        "defmodule NoTransactionRepo",
+        "defmodule PrefixedID",
+        "defmodule PrepareRepo",
+        "defmodule PrepareTransactionRepo",
+        "defmodule ReadOnlyRepo"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/json_test.exs": {
+      "fichier": "test/ecto/json_test.exs",
+      "langage": "elixir",
+      "lignes": 40,
+      "taille_bytes": 1258,
+      "entrees": [
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Ecto",
+        "defmodule User"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query_test.exs": {
+      "fichier": "test/ecto/query_test.exs",
+      "langage": "elixir",
+      "lignes": 1382,
+      "taille_bytes": 46961,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.QueryTest.Macros",
+        "Ecto.Schema",
+        "ExUnit.Case",
+        "Support.EvalHelpers",
+        "posts"
+      ],
+      "sorties": [
+        "defmodule Ecto",
+        "defmodule Post",
+        "defmodule Schema",
+        "fn _query",
+        "fn query"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/multi_test.exs": {
+      "fichier": "test/ecto/multi_test.exs",
+      "langage": "elixir",
+      "lignes": 688,
+      "taille_bytes": 19952,
+      "entrees": [
+        "Ecto.Schema",
+        "ExUnit.CaptureIO",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def multi",
+        "def run_ok",
+        "defmodule Comment",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/embedded_test.exs": {
+      "fichier": "test/ecto/embedded_test.exs",
+      "langage": "elixir",
+      "lignes": 110,
+      "taille_bytes": 3230,
+      "entrees": [
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Author",
+        "defmodule Ecto",
+        "defmodule Post",
+        "defmodule Settings",
+        "defmodule UUIDSchema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/changeset_test.exs": {
+      "fichier": "test/ecto/changeset_test.exs",
+      "langage": "elixir",
+      "lignes": 3641,
+      "taille_bytes": 115549,
+      "entrees": [
+        "Ecto.Changeset",
+        "Ecto.Schema",
+        "Ecto.Type",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def cast",
+        "def changeset",
+        "def dump",
+        "def equal",
+        "def exists",
+        "def load",
+        "def type",
+        "defmodule Category",
+        "defmodule Comment",
+        "defmodule CustomError",
+        "defmodule CustomErrorTest",
+        "defmodule CustomErrorWithType",
+        "defmodule CustomErrorWithoutMessage",
+        "defmodule Ecto",
+        "defmodule Email",
+        "defmodule MockRepo",
+        "defmodule NoSchemaPost",
+        "defmodule Post",
+        "defmodule RedactAllExceptPrimaryKeysSchema",
+        "defmodule RedactedEmbeddedSchema",
+        "defmodule RedactedSchema",
+        "defmodule SinglePkSchema",
+        "defmodule SocialSource",
+        "defmodule StringArray"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/schema_test.exs": {
+      "fichier": "test/ecto/schema_test.exs",
+      "langage": "elixir",
+      "lignes": 1289,
+      "taille_bytes": 37669,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule AssocCompositeKeys",
+        "defmodule AssocSchema",
+        "defmodule AutogenerateFail",
+        "defmodule CustomAssocSchema",
+        "defmodule CustomEmbeddedSchema",
+        "defmodule CustomSchema",
+        "defmodule DoubleSchema",
+        "defmodule Ecto",
+        "defmodule EmbeddedSchema",
+        "defmodule FieldAny",
+        "defmodule FieldAnyNested",
+        "defmodule FieldAnyVirtual",
+        "defmodule InlineEmbeddedSchema",
+        "defmodule InlineEmbedsMany",
+        "defmodule InlineEmbedsOne",
+        "defmodule InvalidCustomSchema",
+        "defmodule InvalidHasOption",
+        "defmodule MFA",
+        "defmodule PkAssocMisMatch",
+        "defmodule QueryableMisMatch",
+        "defmodule Schema",
+        "defmodule SchemaBadForeignKey",
+        "defmodule SchemaCompositeKeys",
+        "defmodule SchemaFail",
+        "defmodule SchemaFieldNameClash",
+        "defmodule SchemaInvalidDefault",
+        "defmodule SchemaInvalidFieldOption",
+        "defmodule SchemaInvalidFieldType",
+        "defmodule SchemaInvalidOptionParameterized",
+        "defmodule SchemaSkipValidationsDefault",
+        "defmodule SchemaWithContext",
+        "defmodule SchemaWithNonStringPrefix",
+        "defmodule SchemaWithParameterizedPrimaryKey",
+        "defmodule SchemaWithPrefix",
+        "defmodule SchemaWithRedactAllExceptPrimaryKeys",
+        "defmodule SchemaWithRedactFalse",
+        "defmodule SchemaWithoutDeriveInspect",
+        "defmodule ThroughMatch",
+        "defmodule TimestampsAutoGen",
+        "defmodule TimestampsCustom",
+        "defmodule TimestampsFalse"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/changeset/many_to_many_test.exs": {
+      "fichier": "test/ecto/changeset/many_to_many_test.exs",
+      "langage": "elixir",
+      "lignes": 383,
+      "taille_bytes": 14090,
+      "entrees": [
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def changeset",
+        "def send_to_self",
+        "def set_action",
+        "defmodule Author",
+        "defmodule Ecto",
+        "defmodule Post"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/changeset/embedded_no_pk_test.exs": {
+      "fichier": "test/ecto/changeset/embedded_no_pk_test.exs",
+      "langage": "elixir",
+      "lignes": 580,
+      "taille_bytes": 20885,
+      "entrees": [
+        "Ecto.Changeset",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def changeset",
+        "def optional_changeset",
+        "def set_action",
+        "defmodule Author",
+        "defmodule Ecto",
+        "defmodule Post",
+        "defmodule Profile",
+        "defmodule Topic"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/changeset/embedded_test.exs": {
+      "fichier": "test/ecto/changeset/embedded_test.exs",
+      "langage": "elixir",
+      "lignes": 1340,
+      "taille_bytes": 45531,
+      "entrees": [
+        "Ecto.Changeset",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def changeset",
+        "def changeset_with_position",
+        "def optional_changeset",
+        "def set_action",
+        "defmodule Author",
+        "defmodule Ecto",
+        "defmodule Nested",
+        "defmodule NestedInline",
+        "defmodule Post",
+        "defmodule Profile",
+        "defmodule Topic"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/changeset/belongs_to_test.exs": {
+      "fichier": "test/ecto/changeset/belongs_to_test.exs",
+      "langage": "elixir",
+      "lignes": 572,
+      "taille_bytes": 21424,
+      "entrees": [
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def changeset",
+        "def optional_changeset",
+        "def send_to_self",
+        "def set_action",
+        "defmodule Author",
+        "defmodule Ecto",
+        "defmodule Profile"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/changeset/has_assoc_test.exs": {
+      "fichier": "test/ecto/changeset/has_assoc_test.exs",
+      "langage": "elixir",
+      "lignes": 1473,
+      "taille_bytes": 51658,
+      "entrees": [
+        "Ecto.Schema",
+        "ExUnit.CaptureIO",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def changeset",
+        "def changeset_with_position",
+        "def failing_changeset",
+        "def optional_changeset",
+        "def send_to_self",
+        "def set_action",
+        "defmodule Author",
+        "defmodule Ecto",
+        "defmodule Post",
+        "defmodule Profile",
+        "defmodule Topic"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/repo/many_to_many_test.exs": {
+      "fichier": "test/ecto/repo/many_to_many_test.exs",
+      "langage": "elixir",
+      "lignes": 740,
+      "taille_bytes": 22656,
+      "entrees": [
+        "Ecto",
+        "Ecto.Query",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def send_to_self",
+        "defmodule Ecto",
+        "defmodule MyAssoc",
+        "defmodule MySchema",
+        "defmodule MySchemaAssoc",
+        "defmodule MySchemaPrefixAssoc",
+        "defmodule SubAssoc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/repo/embedded_test.exs": {
+      "fichier": "test/ecto/repo/embedded_test.exs",
+      "langage": "elixir",
+      "lignes": 410,
+      "taille_bytes": 12261,
+      "entrees": [
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Ecto",
+        "defmodule EmbedWithPrimaryKeyTypeId",
+        "defmodule MyAssoc",
+        "defmodule MyEmbed",
+        "defmodule MySchema",
+        "defmodule SchemaWithPrimaryKeyTypeIdEmbed",
+        "defmodule SubEmbed"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/repo/belongs_to_test.exs": {
+      "fichier": "test/ecto/repo/belongs_to_test.exs",
+      "langage": "elixir",
+      "lignes": 566,
+      "taille_bytes": 16894,
+      "entrees": [
+        "Ecto",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Ecto",
+        "defmodule MyAssoc",
+        "defmodule MySchema",
+        "defmodule SubAssoc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/repo/supervisor_test.exs": {
+      "fichier": "test/ecto/repo/supervisor_test.exs",
+      "langage": "elixir",
+      "lignes": 220,
+      "taille_bytes": 6994,
+      "entrees": [
+        "Ecto.Repo.Supervisor",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def handle_event",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/repo/has_assoc_test.exs": {
+      "fichier": "test/ecto/repo/has_assoc_test.exs",
+      "langage": "elixir",
+      "lignes": 681,
+      "taille_bytes": 20577,
+      "entrees": [
+        "Ecto",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def changeset",
+        "defmodule Ecto",
+        "defmodule MyAssoc",
+        "defmodule MySchema",
+        "defmodule SubAssoc"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/repo/autogenerate_test.exs": {
+      "fichier": "test/ecto/repo/autogenerate_test.exs",
+      "langage": "elixir",
+      "lignes": 299,
+      "taille_bytes": 9578,
+      "entrees": [
+        "Ecto.ParameterizedType",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "def autogenerate",
+        "def cast",
+        "def changeset",
+        "def dump",
+        "def init",
+        "def load",
+        "def type",
+        "defmodule Company",
+        "defmodule Ecto",
+        "defmodule Manager",
+        "defmodule NaiveMod",
+        "defmodule NaiveUsecMod",
+        "defmodule Office",
+        "defmodule ParameterizedTypePrefixedID",
+        "defmodule ParameterizedTypePrefixedUUID",
+        "defmodule ParameterizedTypeSchema",
+        "defmodule UtcMod",
+        "defmodule UtcUsecMod"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/inspect_test.exs": {
+      "fichier": "test/ecto/query/inspect_test.exs",
+      "langage": "elixir",
+      "lignes": 569,
+      "taille_bytes": 21465,
+      "entrees": [
+        "Ecto.ParameterizedType",
+        "Ecto.Query",
+        "Ecto.Schema",
+        "ExUnit.Case",
+        "p0"
+      ],
+      "sorties": [
+        "def cast",
+        "def dump",
+        "def embed_as",
+        "def equal",
+        "def init",
+        "def load",
+        "def plan",
+        "def type",
+        "defmodule Ecto",
+        "defmodule Inspect",
+        "defmodule MyParameterizedType"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/subquery_test.exs": {
+      "fichier": "test/ecto/query/subquery_test.exs",
+      "langage": "elixir",
+      "lignes": 593,
+      "taille_bytes": 24440,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Comment",
+        "defmodule Ecto",
+        "defmodule Post"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/planner_test.exs": {
+      "fichier": "test/ecto/query/planner_test.exs",
+      "langage": "elixir",
+      "lignes": 2910,
+      "taille_bytes": 99095,
+      "entrees": [
+        "Ecto.ParameterizedType",
+        "Ecto.Query",
+        "Ecto.Schema",
+        "Ecto.Type",
+        "ExUnit.Case",
+        "f1"
+      ],
+      "sorties": [
+        "def cast",
+        "def dump",
+        "def embed_as",
+        "def equal",
+        "def inactive",
+        "def init",
+        "def load",
+        "def type",
+        "defmodule Author",
+        "defmodule Barebone",
+        "defmodule Comment",
+        "defmodule CommentPost",
+        "defmodule Custom",
+        "defmodule CustomMap",
+        "defmodule Ecto",
+        "defmodule ParameterizedMap",
+        "defmodule Post",
+        "defmodule PostMeta"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder_test.exs": {
+      "fichier": "test/ecto/query/builder_test.exs",
+      "langage": "elixir",
+      "lignes": 910,
+      "taille_bytes": 23919,
+      "entrees": [
+        "Ecto.Query.Builder",
+        "ExUnit.Case",
+        "Kernel"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/cte_test.exs": {
+      "fichier": "test/ecto/query/builder/cte_test.exs",
+      "langage": "elixir",
+      "lignes": 116,
+      "taille_bytes": 4082,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.CTE",
+        "ExUnit.Case",
+        "Support.EvalHelpers"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/preload_test.exs": {
+      "fichier": "test/ecto/query/builder/preload_test.exs",
+      "langage": "elixir",
+      "lignes": 234,
+      "taille_bytes": 8278,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.Preload",
+        "ExUnit.Case",
+        "Support.EvalHelpers"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/dynamic_test.exs": {
+      "fichier": "test/ecto/query/builder/dynamic_test.exs",
+      "langage": "elixir",
+      "lignes": 89,
+      "taille_bytes": 3935,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.Dynamic",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/order_by_test.exs": {
+      "fichier": "test/ecto/query/builder/order_by_test.exs",
+      "langage": "elixir",
+      "lignes": 288,
+      "taille_bytes": 9710,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.OrderBy",
+        "ExUnit.Case",
+        "Kernel"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/windows_test.exs": {
+      "fichier": "test/ecto/query/builder/windows_test.exs",
+      "langage": "elixir",
+      "lignes": 227,
+      "taille_bytes": 8475,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.Windows",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/select_test.exs": {
+      "fichier": "test/ecto/query/builder/select_test.exs",
+      "langage": "elixir",
+      "lignes": 825,
+      "taille_bytes": 28890,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.Select",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Comment",
+        "defmodule Ecto",
+        "defmodule Post"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/filter_test.exs": {
+      "fichier": "test/ecto/query/builder/filter_test.exs",
+      "langage": "elixir",
+      "lignes": 162,
+      "taille_bytes": 5178,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.Filter",
+        "ExUnit.Case",
+        "Kernel"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/distinct_test.exs": {
+      "fichier": "test/ecto/query/builder/distinct_test.exs",
+      "langage": "elixir",
+      "lignes": 111,
+      "taille_bytes": 3562,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.Distinct",
+        "ExUnit.Case",
+        "Kernel"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/limit_offset_test.exs": {
+      "fichier": "test/ecto/query/builder/limit_offset_test.exs",
+      "langage": "elixir",
+      "lignes": 71,
+      "taille_bytes": 1991,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Schema",
+        "ExUnit.Case",
+        "Support.EvalHelpers"
+      ],
+      "sorties": [
+        "defmodule Ecto",
+        "defmodule Post"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/join_test.exs": {
+      "fichier": "test/ecto/query/builder/join_test.exs",
+      "langage": "elixir",
+      "lignes": 240,
+      "taille_bytes": 7552,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.Join",
+        "ExUnit.Case",
+        "Support.EvalHelpers"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/group_by_test.exs": {
+      "fichier": "test/ecto/query/builder/group_by_test.exs",
+      "langage": "elixir",
+      "lignes": 103,
+      "taille_bytes": 3727,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.GroupBy",
+        "ExUnit.Case",
+        "Kernel"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/lock_test.exs": {
+      "fichier": "test/ecto/query/builder/lock_test.exs",
+      "langage": "elixir",
+      "lignes": 32,
+      "taille_bytes": 866,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.Lock",
+        "ExUnit.Case",
+        "Support.EvalHelpers"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/update_test.exs": {
+      "fichier": "test/ecto/query/builder/update_test.exs",
+      "langage": "elixir",
+      "lignes": 120,
+      "taille_bytes": 4200,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.Update",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "test/ecto/query/builder/from_test.exs": {
+      "fichier": "test/ecto/query/builder/from_test.exs",
+      "langage": "elixir",
+      "lignes": 87,
+      "taille_bytes": 2515,
+      "entrees": [
+        "Ecto.Query",
+        "Ecto.Query.Builder.From",
+        "Ecto.Schema",
+        "ExUnit.Case"
+      ],
+      "sorties": [
+        "defmodule Ecto",
+        "defmodule Schema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integration_test/cases/assoc.exs": {
+      "fichier": "integration_test/cases/assoc.exs",
+      "langage": "elixir",
+      "lignes": 865,
+      "taille_bytes": 28816,
+      "entrees": [
+        "Ecto.Integration.Case",
+        "Ecto.Query"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integration_test/cases/interval.exs": {
+      "fichier": "integration_test/cases/interval.exs",
+      "langage": "elixir",
+      "lignes": 419,
+      "taille_bytes": 21132,
+      "entrees": [
+        "Ecto.Integration.Case",
+        "Ecto.Query"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integration_test/cases/repo.exs": {
+      "fichier": "integration_test/cases/repo.exs",
+      "langage": "elixir",
+      "lignes": 2411,
+      "taille_bytes": 89475,
+      "entrees": [
+        "Ecto.Changeset",
+        "Ecto.Integration.Case",
+        "Ecto.Query",
+        "Ecto.Schema",
+        "v1"
+      ],
+      "sorties": [
+        "def item_changeset",
+        "def order_changeset",
+        "def permalink_changeset",
+        "defmodule Ecto",
+        "defmodule Foo",
+        "defmodule ID",
+        "defmodule RAW"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integration_test/cases/windows.exs": {
+      "fichier": "integration_test/cases/windows.exs",
+      "langage": "elixir",
+      "lignes": 53,
+      "taille_bytes": 2195,
+      "entrees": [
+        "Ecto.Integration.Case",
+        "Ecto.Query"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integration_test/cases/joins.exs": {
+      "fichier": "integration_test/cases/joins.exs",
+      "langage": "elixir",
+      "lignes": 683,
+      "taille_bytes": 25473,
+      "entrees": [
+        "Ecto.Integration.Case",
+        "Ecto.Query",
+        "f1",
+        "p1"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integration_test/cases/type.exs": {
+      "fichier": "integration_test/cases/type.exs",
+      "langage": "elixir",
+      "lignes": 636,
+      "taille_bytes": 24647,
+      "entrees": [
+        "Ecto.Integration.Case",
+        "Ecto.Query"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integration_test/cases/preload.exs": {
+      "fichier": "integration_test/cases/preload.exs",
+      "langage": "elixir",
+      "lignes": 917,
+      "taille_bytes": 32199,
+      "entrees": [
+        "Ecto.Integration.Case",
+        "Ecto.Query"
+      ],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integration_test/support/schemas.exs": {
+      "fichier": "integration_test/support/schemas.exs",
+      "langage": "elixir",
+      "lignes": 424,
+      "taille_bytes": 11274,
+      "entrees": [
+        "Ecto.Changeset",
+        "Ecto.Integration.Schema",
+        "Ecto.Query",
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "def changeset",
+        "def preload_order",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "integration_test/support/types.exs": {
+      "fichier": "integration_test/support/types.exs",
+      "langage": "elixir",
+      "lignes": 53,
+      "taille_bytes": 1475,
+      "entrees": [
+        "Ecto.ParameterizedType",
+        "Ecto.Type"
+      ],
+      "sorties": [
+        "def cast",
+        "def dump",
+        "def embed_as",
+        "def init",
+        "def load",
+        "def type",
+        "defmodule CustomPermalink",
+        "defmodule ParameterizedPrefixedString",
+        "defmodule PrefixedString",
+        "defmodule WrappedInteger"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto.ex": {
+      "fichier": "lib/ecto.ex",
+      "langage": "elixir",
+      "lignes": 754,
+      "taille_bytes": 24310,
+      "entrees": [
+        "Ecto",
+        "Ecto.Changeset",
+        "Ecto.Query",
+        "Ecto.Repo",
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "def assoc",
+        "def assoc_loaded",
+        "def build_assoc",
+        "def changeset",
+        "def embedded_dump",
+        "def embedded_load",
+        "def get_meta",
+        "def min_age",
+        "def primary_key",
+        "def put_meta",
+        "def registration_changeset",
+        "def reset_fields",
+        "def start",
+        "def update_changeset",
+        "defmodule Comment",
+        "defmodule Ecto",
+        "defmodule Post",
+        "defmodule Repo",
+        "defmodule User",
+        "defmodule Weather",
+        "function to",
+        "struct in"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/mix/ecto.ex": {
+      "fichier": "lib/mix/ecto.ex",
+      "langage": "elixir",
+      "lignes": 148,
+      "taille_bytes": 4192,
+      "entrees": [],
+      "sorties": [
+        "def ensure_implements",
+        "def ensure_repo",
+        "def no_umbrella",
+        "def open",
+        "def parse_repo",
+        "defmodule Mix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/mix/tasks/ecto.gen.repo.ex": {
+      "fichier": "lib/mix/tasks/ecto.gen.repo.ex",
+      "langage": "elixir",
+      "lignes": 110,
+      "taille_bytes": 2928,
+      "entrees": [
+        "Ecto.Repo",
+        "Mix.Ecto",
+        "Mix.Generator",
+        "Mix.Task"
+      ],
+      "sorties": [
+        "def run",
+        "def start",
+        "defmodule Mix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/mix/tasks/ecto.create.ex": {
+      "fichier": "lib/mix/tasks/ecto.create.ex",
+      "langage": "elixir",
+      "lignes": 77,
+      "taille_bytes": 2017,
+      "entrees": [
+        "Mix.Ecto",
+        "Mix.Task"
+      ],
+      "sorties": [
+        "def run",
+        "defmodule Mix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/mix/tasks/ecto.drop.ex": {
+      "fichier": "lib/mix/tasks/ecto.drop.ex",
+      "langage": "elixir",
+      "lignes": 106,
+      "taille_bytes": 2914,
+      "entrees": [
+        "Mix.Ecto",
+        "Mix.Task"
+      ],
+      "sorties": [
+        "def run",
+        "defmodule Mix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/mix/tasks/ecto.ex": {
+      "fichier": "lib/mix/tasks/ecto.ex",
+      "langage": "elixir",
+      "lignes": 30,
+      "taille_bytes": 696,
+      "entrees": [
+        "Mix.Task"
+      ],
+      "sorties": [
+        "def run",
+        "defmodule Mix"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/association.ex": {
+      "fichier": "lib/ecto/association.ex",
+      "langage": "elixir",
+      "lignes": 1685,
+      "taille_bytes": 55108,
+      "entrees": [
+        "Ecto.Query"
+      ],
+      "sorties": [
+        "def after_verify_validation",
+        "def apply_defaults",
+        "def assoc_query",
+        "def association_from_schema",
+        "def association_key",
+        "def build",
+        "def combine_assoc_query",
+        "def combine_joins_query",
+        "def delete_all",
+        "def filter_through_chain",
+        "def inspect",
+        "def join_through_chain",
+        "def joins_query",
+        "def merge_source",
+        "def nilify_all",
+        "def on_repo_change",
+        "def preload_info",
+        "def related_from_query",
+        "def struct",
+        "def update_parent_prefix",
+        "def validate_defaults",
+        "def validate_preload_order",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/parameterized_type.ex": {
+      "fichier": "lib/ecto/parameterized_type.ex",
+      "langage": "elixir",
+      "lignes": 220,
+      "taille_bytes": 6826,
+      "entrees": [
+        "Ecto.ParameterizedType"
+      ],
+      "sorties": [
+        "def cast",
+        "def dump",
+        "def embed_as",
+        "def equal",
+        "def init",
+        "def load",
+        "def type",
+        "defmodule Ecto",
+        "defmodule MyApp",
+        "type is"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/queryable.ex": {
+      "fichier": "lib/ecto/queryable.ex",
+      "langage": "elixir",
+      "lignes": 151,
+      "taille_bytes": 4923,
+      "entrees": [],
+      "sorties": [
+        "def to_query"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/repo.ex": {
+      "fichier": "lib/ecto/repo.ex",
+      "langage": "elixir",
+      "lignes": 2556,
+      "taille_bytes": 95566,
+      "entrees": [
+        "Ecto.Changeset",
+        "Ecto.Repo",
+        "Mix.Config",
+        "`c:insert_all/3`.",
+        "the"
+      ],
+      "sorties": [
+        "def __adapter__",
+        "def aggregate",
+        "def all",
+        "def all_by",
+        "def checked_out",
+        "def checkout",
+        "def child_spec",
+        "def config",
+        "def default_options",
+        "def delete",
+        "def delete_all",
+        "def exists",
+        "def get",
+        "def get_by",
+        "def get_dynamic_repo",
+        "def handle_event",
+        "def in_transaction",
+        "def insert",
+        "def insert_all",
+        "def insert_or_update",
+        "def load",
+        "def one",
+        "def preload",
+        "def prepare_query",
+        "def prepare_transaction",
+        "def put_dynamic_repo",
+        "def reload",
+        "def rollback",
+        "def start_link",
+        "def stop",
+        "def stream",
+        "def transact",
+        "def transaction",
+        "def update",
+        "def update_all",
+        "defmodule Ecto",
+        "defmodule MyApp",
+        "defmodule Repo",
+        "function returns",
+        "struct was"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/schema.ex": {
+      "fichier": "lib/ecto/schema.ex",
+      "langage": "elixir",
+      "lignes": 2694,
+      "taille_bytes": 99268,
+      "entrees": [
+        "Ecto.Migration",
+        "Ecto.Schema",
+        "Elixir",
+        "MyApp.Schema",
+        "Post",
+        "`Ecto.assoc/2`",
+        "any",
+        "inspect",
+        "posts",
+        "the"
+      ],
+      "sorties": [
+        "def __after_verify__",
+        "def __belongs_to__",
+        "def __changeset__",
+        "def __define_timestamps__",
+        "def __embeds_many__",
+        "def __embeds_module__",
+        "def __embeds_one__",
+        "def __field__",
+        "def __has_many__",
+        "def __has_one__",
+        "def __many_to_many__",
+        "def __schema__",
+        "def __timestamps__",
+        "def association",
+        "def change",
+        "def changeset",
+        "def fun",
+        "defmodule Account",
+        "defmodule Comment",
+        "defmodule Ecto",
+        "defmodule Item",
+        "defmodule Mod",
+        "defmodule MyApp",
+        "defmodule Order",
+        "defmodule Organization",
+        "defmodule Parent",
+        "defmodule Post",
+        "defmodule Profile",
+        "defmodule SignUp",
+        "defmodule Task",
+        "defmodule User",
+        "defmodule UserOrganization",
+        "struct instead"
+      ],
+      "appelle": [
+        "lib/ecto/query/inspect.ex"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/exceptions.ex": {
+      "fichier": "lib/ecto/exceptions.ex",
+      "langage": "elixir",
+      "lignes": 321,
+      "taille_bytes": 8083,
+      "entrees": [],
+      "sorties": [
+        "def exception",
+        "def message",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/application.ex": {
+      "fichier": "lib/ecto/application.ex",
+      "langage": "elixir",
+      "lignes": 16,
+      "taille_bytes": 437,
+      "entrees": [
+        "Application"
+      ],
+      "sorties": [
+        "def start",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query.ex": {
+      "fichier": "lib/ecto/query.ex",
+      "langage": "elixir",
+      "lignes": 3106,
+      "taille_bytes": 108163,
+      "entrees": [
+        "ANDs",
+        "Ecto.Query",
+        "Post",
+        "[p",
+        "[p,o]",
+        "`AND`",
+        "`is_nil/1`",
+        "or",
+        "query",
+        "the"
+      ],
+      "sorties": [
+        "def exclude",
+        "def first",
+        "def has_named_binding",
+        "def last",
+        "def new",
+        "def newest_records",
+        "def paginate",
+        "def published",
+        "def published_multi",
+        "def put_query_prefix",
+        "def recursive_ctes",
+        "def reverse_order",
+        "def sort",
+        "def subquery",
+        "def with_minimum",
+        "def with_named_binding",
+        "defmodule BooleanExpr",
+        "defmodule ByExpr",
+        "defmodule DynamicExpr",
+        "defmodule Ecto",
+        "defmodule FromExpr",
+        "defmodule JoinExpr",
+        "defmodule LimitExpr",
+        "defmodule QueryExpr",
+        "defmodule SelectExpr",
+        "defmodule Tagged",
+        "defmodule Values",
+        "defmodule WithExpr",
+        "function and",
+        "function in"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/adapter.ex": {
+      "fichier": "lib/ecto/adapter.ex",
+      "langage": "elixir",
+      "lignes": 142,
+      "taille_bytes": 5047,
+      "entrees": [],
+      "sorties": [
+        "def dumpers",
+        "def loaders",
+        "def lookup_meta",
+        "defmodule Ecto",
+        "type usually"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/uuid.ex": {
+      "fichier": "lib/ecto/uuid.ex",
+      "langage": "elixir",
+      "lignes": 398,
+      "taille_bytes": 12763,
+      "entrees": [
+        "Ecto.Schema",
+        "Ecto.Type"
+      ],
+      "sorties": [
+        "def autogenerate",
+        "def bingenerate",
+        "def cast",
+        "def dump",
+        "def generate",
+        "def load",
+        "def type",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/json.ex": {
+      "fichier": "lib/ecto/json.ex",
+      "langage": "elixir",
+      "lignes": 52,
+      "taille_bytes": 1737,
+      "entrees": [],
+      "sorties": [
+        "def encode"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/embedded.ex": {
+      "fichier": "lib/ecto/embedded.ex",
+      "langage": "elixir",
+      "lignes": 301,
+      "taille_bytes": 9356,
+      "entrees": [
+        "Ecto.ParameterizedType"
+      ],
+      "sorties": [
+        "def build",
+        "def cast",
+        "def dump",
+        "def embed_as",
+        "def init",
+        "def load",
+        "def preload_info",
+        "def prepare",
+        "def type",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/enum.ex": {
+      "fichier": "lib/ecto/enum.ex",
+      "langage": "elixir",
+      "lignes": 393,
+      "taille_bytes": 10898,
+      "entrees": [
+        "Ecto.ParameterizedType",
+        "Ecto.Schema"
+      ],
+      "sorties": [
+        "def cast",
+        "def cast_value",
+        "def dump",
+        "def dump_values",
+        "def embed_as",
+        "def equal",
+        "def format",
+        "def init",
+        "def load",
+        "def mappings",
+        "def type",
+        "def values",
+        "defmodule Ecto",
+        "defmodule EnumSchema",
+        "defmodule MySchema"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/changeset.ex": {
+      "fichier": "lib/ecto/changeset.ex",
+      "langage": "elixir",
+      "lignes": 4327,
+      "taille_bytes": 155601,
+      "entrees": [
+        "Ecto.Changeset",
+        "Ecto.Schema",
+        "Inspect.Algebra",
+        "`changeset.params`.",
+        "case",
+        "the"
+      ],
+      "sorties": [
+        "def add_error",
+        "def apply_action",
+        "def apply_changes",
+        "def assoc_constraint",
+        "def cast",
+        "def cast_assoc",
+        "def cast_embed",
+        "def change",
+        "def changed",
+        "def changeset",
+        "def check_constraint",
+        "def constraints",
+        "def create_comment",
+        "def delete_change",
+        "def empty_values",
+        "def exclusion_constraint",
+        "def fetch_change",
+        "def fetch_field",
+        "def field_missing",
+        "def force_change",
+        "def foreign_key_constraint",
+        "def get_assoc",
+        "def get_change",
+        "def get_embed",
+        "def get_field",
+        "def inspect",
+        "def merge",
+        "def no_assoc_constraint",
+        "def optimistic_lock",
+        "def prepare_changes",
+        "def put_assoc",
+        "def put_change",
+        "def put_embed",
+        "def traverse_errors",
+        "def traverse_validations",
+        "def unique_constraint",
+        "def unsafe_validate_unique",
+        "def update_change",
+        "def validate_acceptance",
+        "def validate_change",
+        "def validate_confirmation",
+        "def validate_exclusion",
+        "def validate_format",
+        "def validate_inclusion",
+        "def validate_length",
+        "def validate_number",
+        "def validate_required",
+        "def validate_subset",
+        "def validations",
+        "defmodule Comment",
+        "defmodule Ecto",
+        "defmodule Post",
+        "defmodule User",
+        "fn type",
+        "function receives",
+        "function that",
+        "function with",
+        "message when",
+        "resource was",
+        "struct and",
+        "struct defined",
+        "type information"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/type.ex": {
+      "fichier": "lib/ecto/type.ex",
+      "langage": "elixir",
+      "lignes": 1594,
+      "taille_bytes": 47702,
+      "entrees": [
+        "Ecto.Schema",
+        "Ecto.Type",
+        "Kernel",
+        "for",
+        "type"
+      ],
+      "sorties": [
+        "def adapter_autogenerate",
+        "def adapter_dump",
+        "def adapter_load",
+        "def base",
+        "def cast",
+        "def composite",
+        "def dump",
+        "def embed_as",
+        "def embedded_dump",
+        "def embedded_load",
+        "def equal",
+        "def format",
+        "def include",
+        "def load",
+        "def match",
+        "def parameterized",
+        "def primitive",
+        "def trim",
+        "def type",
+        "defmodule Author",
+        "defmodule BlogPost",
+        "defmodule Ecto",
+        "defmodule EctoURI",
+        "defmodule EncodedId",
+        "defmodule ShortUrl"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/multi.ex": {
+      "fichier": "lib/ecto/multi.ex",
+      "langage": "elixir",
+      "lignes": 998,
+      "taille_bytes": 31907,
+      "entrees": [
+        "the"
+      ],
+      "sorties": [
+        "def __apply__",
+        "def all",
+        "def append",
+        "def delete",
+        "def delete_all",
+        "def error",
+        "def exists",
+        "def insert",
+        "def insert_all",
+        "def insert_or_update",
+        "def inspect",
+        "def merge",
+        "def new",
+        "def one",
+        "def prepend",
+        "def put",
+        "def reset",
+        "def run",
+        "def to_list",
+        "def update",
+        "def update_all",
+        "defmodule Ecto",
+        "defmodule PasswordManager",
+        "fn repo",
+        "function given"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/changeset/relation.ex": {
+      "fichier": "lib/ecto/changeset/relation.ex",
+      "langage": "elixir",
+      "lignes": 665,
+      "taille_bytes": 21459,
+      "entrees": [],
+      "sorties": [
+        "def apply_changes",
+        "def cast",
+        "def change",
+        "def empty",
+        "def filter_empty",
+        "def load",
+        "def on_replace",
+        "def surface_changes",
+        "defmodule Ecto",
+        "fn changeset",
+        "fn params",
+        "fn struct",
+        "fun when",
+        "function of"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/repo/queryable.ex": {
+      "fichier": "lib/ecto/repo/queryable.ex",
+      "langage": "elixir",
+      "lignes": 617,
+      "taille_bytes": 18047,
+      "entrees": [
+        "Ecto.Query.Planner"
+      ],
+      "sorties": [
+        "def aggregate",
+        "def all",
+        "def all_by",
+        "def delete_all",
+        "def exists",
+        "def get",
+        "def get_by",
+        "def one",
+        "def reload",
+        "def stream",
+        "def struct_load",
+        "def update_all",
+        "defmodule Ecto",
+        "fn row"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/repo/supervisor.ex": {
+      "fichier": "lib/ecto/repo/supervisor.ex",
+      "langage": "elixir",
+      "lignes": 227,
+      "taille_bytes": 6284,
+      "entrees": [
+        "Supervisor"
+      ],
+      "sorties": [
+        "def compile_config",
+        "def init",
+        "def init_config",
+        "def parse_url",
+        "def start_child",
+        "def start_link",
+        "def tuplet",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/repo/preloader.ex": {
+      "fichier": "lib/ecto/repo/preloader.ex",
+      "langage": "elixir",
+      "lignes": 832,
+      "taille_bytes": 27520,
+      "entrees": [
+        "Post"
+      ],
+      "sorties": [
+        "def expand",
+        "def normalize",
+        "def preload",
+        "def query",
+        "defmodule Ecto",
+        "fn preloader",
+        "fn tuplet"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/repo/schema.ex": {
+      "fichier": "lib/ecto/repo/schema.ex",
+      "langage": "elixir",
+      "lignes": 1322,
+      "taille_bytes": 43976,
+      "entrees": [
+        "Ecto.Query.Planner"
+      ],
+      "sorties": [
+        "def delete",
+        "def insert",
+        "def insert_all",
+        "def insert_or_update",
+        "def load",
+        "def update",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/repo/transaction.ex": {
+      "fichier": "lib/ecto/repo/transaction.ex",
+      "langage": "elixir",
+      "lignes": 59,
+      "taille_bytes": 1890,
+      "entrees": [],
+      "sorties": [
+        "def in_transaction",
+        "def rollback",
+        "def transact",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/repo/assoc.ex": {
+      "fichier": "lib/ecto/repo/assoc.ex",
+      "langage": "elixir",
+      "lignes": 141,
+      "taille_bytes": 4873,
+      "entrees": [],
+      "sorties": [
+        "def query",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/repo/registry.ex": {
+      "fichier": "lib/ecto/repo/registry.ex",
+      "langage": "elixir",
+      "lignes": 51,
+      "taille_bytes": 1244,
+      "entrees": [
+        "GenServer"
+      ],
+      "sorties": [
+        "def all_running",
+        "def associate",
+        "def handle_call",
+        "def handle_info",
+        "def init",
+        "def lookup",
+        "def start_link",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/adapter/queryable.ex": {
+      "fichier": "lib/ecto/adapter/queryable.ex",
+      "langage": "elixir",
+      "lignes": 130,
+      "taille_bytes": 5041,
+      "entrees": [],
+      "sorties": [
+        "def plan_query",
+        "def prepare_query",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/adapter/storage.ex": {
+      "fichier": "lib/ecto/adapter/storage.ex",
+      "langage": "elixir",
+      "lignes": 53,
+      "taille_bytes": 1425,
+      "entrees": [],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/adapter/schema.ex": {
+      "fichier": "lib/ecto/adapter/schema.ex",
+      "langage": "elixir",
+      "lignes": 92,
+      "taille_bytes": 3102,
+      "entrees": [],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/adapter/transaction.ex": {
+      "fichier": "lib/ecto/adapter/transaction.ex",
+      "langage": "elixir",
+      "lignes": 31,
+      "taille_bytes": 923,
+      "entrees": [],
+      "sorties": [
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/schema/loader.ex": {
+      "fichier": "lib/ecto/schema/loader.ex",
+      "langage": "elixir",
+      "lignes": 112,
+      "taille_bytes": 3143,
+      "entrees": [],
+      "sorties": [
+        "def load_struct",
+        "def safe_dump",
+        "def unsafe_load",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/schema/metadata.ex": {
+      "fichier": "lib/ecto/schema/metadata.ex",
+      "langage": "elixir",
+      "lignes": 66,
+      "taille_bytes": 1719,
+      "entrees": [
+        "Inspect.Algebra"
+      ],
+      "sorties": [
+        "def inspect",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/planner.ex": {
+      "fichier": "lib/ecto/query/planner.ex",
+      "langage": "elixir",
+      "lignes": 2757,
+      "taille_bytes": 88897,
+      "entrees": [
+        "the"
+      ],
+      "sorties": [
+        "def attach_prefix",
+        "def ensure_select",
+        "def new_query_cache",
+        "def normalize",
+        "def plan",
+        "def plan_assocs",
+        "def plan_cache",
+        "def plan_sources",
+        "def query",
+        "def query_to_joins",
+        "def rewrite_sources",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/api.ex": {
+      "fichier": "lib/ecto/query/api.ex",
+      "langage": "elixir",
+      "lignes": 1007,
+      "taille_bytes": 33507,
+      "entrees": [
+        "CustomFunctions",
+        "Ecto.Schema",
+        "Post",
+        "`as/1`",
+        "the",
+        "them",
+        "v1"
+      ],
+      "sorties": [
+        "def ago",
+        "def all",
+        "def any",
+        "def at_least_four",
+        "def avg",
+        "def coalesce",
+        "def constant",
+        "def count",
+        "def date_add",
+        "def datetime_add",
+        "def exists",
+        "def field",
+        "def filter",
+        "def fragment",
+        "def from_now",
+        "def identifier",
+        "def ilike",
+        "def is_nil",
+        "def json_extract_path",
+        "def left",
+        "def like",
+        "def map",
+        "def max",
+        "def merge",
+        "def min",
+        "def not",
+        "def parent_as",
+        "def selected_as",
+        "def splice",
+        "def struct",
+        "def sum",
+        "def type",
+        "def unpublished_by_title",
+        "def values",
+        "defmodule Car",
+        "defmodule CustomFunctions",
+        "defmodule Ecto",
+        "type at",
+        "type casting"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder.ex": {
+      "fichier": "lib/ecto/query/builder.ex",
+      "langage": "elixir",
+      "lignes": 1657,
+      "taille_bytes": 53243,
+      "entrees": [],
+      "sorties": [
+        "def add_select_alias",
+        "def apply_query",
+        "def atom",
+        "def atom_or_string",
+        "def bump_interpolations",
+        "def bump_subqueries",
+        "def constant",
+        "def count_alias",
+        "def count_binds",
+        "def error",
+        "def escape",
+        "def escape_binding",
+        "def escape_params",
+        "def escape_select_aliases",
+        "def escape_var",
+        "def find_var",
+        "def fragment",
+        "def fragment_pieces",
+        "def identifier",
+        "def interval",
+        "def json_path",
+        "def json_path_element",
+        "def late_binding",
+        "def merge_fragments",
+        "def negate",
+        "def not_nil",
+        "def quoted_atom",
+        "def quoted_atom_or_string",
+        "def quoted_interval",
+        "def quoted_type",
+        "def splice",
+        "def validate_type",
+        "defmodule Ecto",
+        "function to"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/window_api.ex": {
+      "fichier": "lib/ecto/query/window_api.ex",
+      "langage": "elixir",
+      "lignes": 232,
+      "taille_bytes": 7307,
+      "entrees": [],
+      "sorties": [
+        "def avg",
+        "def count",
+        "def cume_dist",
+        "def dense_rank",
+        "def filter",
+        "def first_value",
+        "def lag",
+        "def last_value",
+        "def lead",
+        "def max",
+        "def min",
+        "def nth_value",
+        "def ntile",
+        "def over",
+        "def percent_rank",
+        "def rank",
+        "def row_number",
+        "def sum",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/inspect.ex": {
+      "fichier": "lib/ecto/query/inspect.ex",
+      "langage": "elixir",
+      "lignes": 448,
+      "taille_bytes": 12634,
+      "entrees": [
+        "Inspect.Algebra",
+        "Kernel"
+      ],
+      "sorties": [
+        "def expr",
+        "def inspect",
+        "def inspect_fragment",
+        "def to_string"
+      ],
+      "appelle": [],
+      "est_appele_par": [
+        "lib/ecto/schema.ex"
+      ],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder/select.ex": {
+      "fichier": "lib/ecto/query/builder/select.ex",
+      "langage": "elixir",
+      "lignes": 579,
+      "taille_bytes": 18610,
+      "entrees": [
+        "Kernel"
+      ],
+      "sorties": [
+        "def apply",
+        "def build",
+        "def escape",
+        "def fields",
+        "def map_key",
+        "def merge",
+        "def select",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder/preload.ex": {
+      "fichier": "lib/ecto/query/builder/preload.ex",
+      "langage": "elixir",
+      "lignes": 337,
+      "taille_bytes": 10456,
+      "entrees": [
+        "Kernel"
+      ],
+      "sorties": [
+        "def apply",
+        "def build",
+        "def escape",
+        "def expand",
+        "def key",
+        "def preload",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder/group_by.ex": {
+      "fichier": "lib/ecto/query/builder/group_by.ex",
+      "langage": "elixir",
+      "lignes": 118,
+      "taille_bytes": 3986,
+      "entrees": [
+        "Kernel"
+      ],
+      "sorties": [
+        "def apply",
+        "def build",
+        "def escape",
+        "def field",
+        "def group_by",
+        "def group_or_partition_by",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder/distinct.ex": {
+      "fichier": "lib/ecto/query/builder/distinct.ex",
+      "langage": "elixir",
+      "lignes": 91,
+      "taille_bytes": 2824,
+      "entrees": [
+        "Kernel"
+      ],
+      "sorties": [
+        "def apply",
+        "def build",
+        "def distinct",
+        "def escape",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder/cte.ex": {
+      "fichier": "lib/ecto/query/builder/cte.ex",
+      "langage": "elixir",
+      "lignes": 121,
+      "taille_bytes": 4262,
+      "entrees": [
+        "Kernel"
+      ],
+      "sorties": [
+        "def apply",
+        "def apply_cte",
+        "def build",
+        "def build_cte",
+        "def escape",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder/join.ex": {
+      "fichier": "lib/ecto/query/builder/join.ex",
+      "langage": "elixir",
+      "lignes": 438,
+      "taille_bytes": 12189,
+      "entrees": [
+        "Kernel",
+        "when"
+      ],
+      "sorties": [
+        "def apply",
+        "def build",
+        "def build_on",
+        "def escape",
+        "def join",
+        "def qual",
+        "def runtime_aliases",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder/combination.ex": {
+      "fichier": "lib/ecto/query/builder/combination.ex",
+      "langage": "elixir",
+      "lignes": 36,
+      "taille_bytes": 1124,
+      "entrees": [
+        "Kernel"
+      ],
+      "sorties": [
+        "def apply",
+        "def build",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder/from.ex": {
+      "fichier": "lib/ecto/query/builder/from.ex",
+      "langage": "elixir",
+      "lignes": 241,
+      "taille_bytes": 7866,
+      "entrees": [
+        "when"
+      ],
+      "sorties": [
+        "def apply",
+        "def build",
+        "def escape",
+        "def hint",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "lib/ecto/query/builder/dynamic.ex": {
+      "fichier": "lib/ecto/query/builder/dynamic.ex",
+      "langage": "elixir",
+      "lignes": 112,
+      "taille_bytes": 4219,
+      "entrees": [
+        "Kernel"
+      ],
+      "sorties": [
+        "def build",
+        "def fully_expand",
+        "def partially_expand",
+        "defmodule Ecto"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [
+    {
+      "de": "lib/ecto/schema.ex",
+      "vers": "lib/ecto/query/inspect.ex",
+      "type": "interne"
+    }
+  ],
+  "patterns": []
+}

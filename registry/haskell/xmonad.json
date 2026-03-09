@@ -1,0 +1,1366 @@
+{
+  "meta": {
+    "projet": "xmonad",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "haskell": 30,
+      "unknown": 1,
+      "yaml": 2,
+      "shell": 1,
+      "html": 1
+    }
+  },
+  "stats": {
+    "fichiers_total": 35,
+    "edges_total": 86,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 1,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 4,
+    "points_entree": 2,
+    "fichier_plus_appele": "src/XMonad/StackSet.hs"
+  },
+  "noeuds": {
+    "Main.hs": {
+      "fichier": "Main.hs",
+      "langage": "haskell",
+      "lignes": 20,
+      "taille_bytes": 526,
+      "entrees": [
+        "XMonad"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "Setup.lhs": {
+      "fichier": "Setup.lhs",
+      "langage": "unknown",
+      "lignes": 3,
+      "taille_bytes": 76,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "stack.yaml": {
+      "fichier": "stack.yaml",
+      "langage": "yaml",
+      "lignes": 15,
+      "taille_bytes": 172,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    ".hlint.yaml": {
+      "fichier": ".hlint.yaml",
+      "langage": "yaml",
+      "lignes": 2,
+      "taille_bytes": 59,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "util/hpcReport.sh": {
+      "fichier": "util/hpcReport.sh",
+      "langage": "shell",
+      "lignes": 33,
+      "taille_bytes": 735,
+      "entrees": [],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "util/GenerateManpage.hs": {
+      "fichier": "util/GenerateManpage.hs",
+      "langage": "haskell",
+      "lignes": 73,
+      "taille_bytes": 2400,
+      "entrees": [
+        "Data.Char",
+        "Data.List"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Utils.hs": {
+      "fichier": "tests/Utils.hs",
+      "langage": "haskell",
+      "lignes": 47,
+      "taille_bytes": 1469,
+      "entrees": [
+        "Data.List",
+        "Graphics.X11.Xlib.Types",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs"
+      ],
+      "est_appele_par": [
+        "tests/Instances.hs",
+        "tests/Properties/Delete.hs",
+        "tests/Properties/Focus.hs",
+        "tests/Properties/GreedyView.hs",
+        "tests/Properties/Insert.hs",
+        "tests/Properties/Layout/Tall.hs",
+        "tests/Properties/Screen.hs",
+        "tests/Properties/Shift.hs",
+        "tests/Properties/StackSet.hs",
+        "tests/Properties/Swap.hs",
+        "tests/Properties/View.hs",
+        "tests/Properties/Workspace.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "tests/Instances.hs": {
+      "fichier": "tests/Instances.hs",
+      "langage": "haskell",
+      "lignes": 140,
+      "taille_bytes": 4606,
+      "entrees": [
+        "Control.Applicative",
+        "Control.Monad",
+        "Data.List",
+        "Debug.Trace",
+        "Graphics.X11",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet"
+      ],
+      "sorties": [
+        "type Tag",
+        "type Window"
+      ],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs",
+        "tests/Properties/Delete.hs",
+        "tests/Properties/Floating.hs",
+        "tests/Properties/Focus.hs",
+        "tests/Properties/GreedyView.hs",
+        "tests/Properties/Insert.hs",
+        "tests/Properties/Layout/Full.hs",
+        "tests/Properties/Layout/Tall.hs",
+        "tests/Properties/Screen.hs",
+        "tests/Properties/Shift.hs",
+        "tests/Properties/Stack.hs",
+        "tests/Properties/StackSet.hs",
+        "tests/Properties/Swap.hs",
+        "tests/Properties/View.hs",
+        "tests/Properties/Workspace.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "tests/loc.hs": {
+      "fichier": "tests/loc.hs",
+      "langage": "haskell",
+      "lignes": 14,
+      "taille_bytes": 460,
+      "entrees": [
+        "Control.Monad",
+        "System.Exit"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "tests/Properties.hs": {
+      "fichier": "tests/Properties.hs",
+      "langage": "haskell",
+      "lignes": 205,
+      "taille_bytes": 8665,
+      "entrees": [
+        "Control.Applicative",
+        "Control.Monad",
+        "Instances",
+        "Properties.Delete",
+        "Properties.Failure",
+        "Properties.Floating",
+        "Properties.Focus",
+        "Properties.GreedyView",
+        "Properties.Insert",
+        "Properties.Layout.Full",
+        "Properties.Layout.Tall",
+        "Properties.Screen",
+        "Properties.Shift",
+        "Properties.Stack",
+        "Properties.StackSet",
+        "Properties.Swap",
+        "Properties.View",
+        "Properties.Workspace",
+        "System.Environment",
+        "Test.QuickCheck",
+        "Text.Printf"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Properties/Delete.hs",
+        "tests/Properties/Failure.hs",
+        "tests/Properties/Floating.hs",
+        "tests/Properties/Focus.hs",
+        "tests/Properties/GreedyView.hs",
+        "tests/Properties/Insert.hs",
+        "tests/Properties/Layout/Full.hs",
+        "tests/Properties/Layout/Tall.hs",
+        "tests/Properties/Screen.hs",
+        "tests/Properties/Shift.hs",
+        "tests/Properties/Stack.hs",
+        "tests/Properties/Swap.hs",
+        "tests/Properties/View.hs",
+        "tests/Properties/Workspace.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "tests/Properties/Floating.hs": {
+      "fichier": "tests/Properties/Floating.hs",
+      "langage": "haskell",
+      "lignes": 36,
+      "taille_bytes": 1032,
+      "entrees": [
+        "Instances",
+        "Test.QuickCheck",
+        "XMonad.StackSet",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Insert.hs": {
+      "fichier": "tests/Properties/Insert.hs",
+      "langage": "haskell",
+      "lignes": 52,
+      "taille_bytes": 1793,
+      "entrees": [
+        "Data.List",
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/View.hs": {
+      "fichier": "tests/Properties/View.hs",
+      "langage": "haskell",
+      "lignes": 47,
+      "taille_bytes": 1406,
+      "entrees": [
+        "Data.List",
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Workspace.hs": {
+      "fichier": "tests/Properties/Workspace.hs",
+      "langage": "haskell",
+      "lignes": 65,
+      "taille_bytes": 1993,
+      "entrees": [
+        "Data.Maybe",
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Failure.hs": {
+      "fichier": "tests/Properties/Failure.hs",
+      "langage": "haskell",
+      "lignes": 30,
+      "taille_bytes": 1001,
+      "entrees": [
+        "Data.List",
+        "System.IO.Unsafe",
+        "XMonad.StackSet",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/StackSet.hs": {
+      "fichier": "tests/Properties/StackSet.hs",
+      "langage": "haskell",
+      "lignes": 135,
+      "taille_bytes": 4458,
+      "entrees": [
+        "Data.List",
+        "Data.Maybe",
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "point_entree"
+    },
+    "tests/Properties/Delete.hs": {
+      "fichier": "tests/Properties/Delete.hs",
+      "langage": "haskell",
+      "lignes": 70,
+      "taille_bytes": 2514,
+      "entrees": [
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Screen.hs": {
+      "fichier": "tests/Properties/Screen.hs",
+      "langage": "haskell",
+      "lignes": 72,
+      "taille_bytes": 2102,
+      "entrees": [
+        "Control.Applicative",
+        "Graphics.X11",
+        "Graphics.X11.Xlib.Types",
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.Layout",
+        "XMonad.Operations",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/Layout.hs",
+        "src/XMonad/Operations.hs",
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Stack.hs": {
+      "fichier": "tests/Properties/Stack.hs",
+      "langage": "haskell",
+      "lignes": 77,
+      "taille_bytes": 2711,
+      "entrees": [
+        "Data.Maybe",
+        "Data.Proxy",
+        "Instances",
+        "Test.QuickCheck",
+        "Test.QuickCheck.Classes",
+        "XMonad.StackSet",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Swap.hs": {
+      "fichier": "tests/Properties/Swap.hs",
+      "langage": "haskell",
+      "lignes": 47,
+      "taille_bytes": 1839,
+      "entrees": [
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/GreedyView.hs": {
+      "fichier": "tests/Properties/GreedyView.hs",
+      "langage": "haskell",
+      "lignes": 44,
+      "taille_bytes": 1481,
+      "entrees": [
+        "Data.List",
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Shift.hs": {
+      "fichier": "tests/Properties/Shift.hs",
+      "langage": "haskell",
+      "lignes": 70,
+      "taille_bytes": 2548,
+      "entrees": [
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Focus.hs": {
+      "fichier": "tests/Properties/Focus.hs",
+      "langage": "haskell",
+      "lignes": 74,
+      "taille_bytes": 2654,
+      "entrees": [
+        "Data.Maybe",
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Layout/Full.hs": {
+      "fichier": "tests/Properties/Layout/Full.hs",
+      "langage": "haskell",
+      "lignes": 34,
+      "taille_bytes": 969,
+      "entrees": [
+        "Data.Maybe",
+        "Instances",
+        "Test.QuickCheck",
+        "XMonad.Core",
+        "XMonad.Layout",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/Core.hs",
+        "src/XMonad/Layout.hs",
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "tests/Properties/Layout/Tall.hs": {
+      "fichier": "tests/Properties/Layout/Tall.hs",
+      "langage": "haskell",
+      "lignes": 140,
+      "taille_bytes": 4638,
+      "entrees": [
+        "Control.Applicative",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Ratio",
+        "Graphics.X11.Xlib.Types",
+        "Instances",
+        "Test.QuickCheck",
+        "Utils",
+        "XMonad.Core",
+        "XMonad.Layout",
+        "XMonad.StackSet"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/Core.hs",
+        "src/XMonad/Layout.hs",
+        "src/XMonad/StackSet.hs",
+        "tests/Instances.hs",
+        "tests/Utils.hs"
+      ],
+      "est_appele_par": [
+        "tests/Properties.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "man/xmonad.hs": {
+      "fichier": "man/xmonad.hs",
+      "langage": "haskell",
+      "lignes": 334,
+      "taille_bytes": 11980,
+      "entrees": [
+        "Data.Monoid",
+        "System.Exit",
+        "XMonad",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad.hs"
+      ],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "man/xmonad.1.html": {
+      "fichier": "man/xmonad.1.html",
+      "langage": "html",
+      "lignes": 490,
+      "taille_bytes": 15386,
+      "entrees": [],
+      "sorties": [
+        "type system"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/XMonad.hs": {
+      "fichier": "src/XMonad.hs",
+      "langage": "haskell",
+      "lignes": 47,
+      "taille_bytes": 1130,
+      "entrees": [
+        "Control.Monad.Reader",
+        "Control.Monad.State",
+        "Data.Bits",
+        "Graphics.X11",
+        "Graphics.X11.Xlib.Extras",
+        "XMonad.Config",
+        "XMonad.Core",
+        "XMonad.Layout",
+        "XMonad.Main",
+        "XMonad.ManageHook",
+        "XMonad.Operations"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/Config.hs",
+        "src/XMonad/Core.hs",
+        "src/XMonad/Layout.hs",
+        "src/XMonad/Main.hs",
+        "src/XMonad/ManageHook.hs",
+        "src/XMonad/Operations.hs"
+      ],
+      "est_appele_par": [
+        "Main.hs",
+        "man/xmonad.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/XMonad/ManageHook.hs": {
+      "fichier": "src/XMonad/ManageHook.hs",
+      "langage": "haskell",
+      "lignes": 125,
+      "taille_bytes": 4265,
+      "entrees": [
+        "Control.Exception",
+        "Control.Monad.Reader",
+        "Data.Maybe",
+        "Data.Monoid",
+        "Graphics.X11.Xlib",
+        "Graphics.X11.Xlib.Extras",
+        "XMonad.Core",
+        "XMonad.Operations",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/Core.hs",
+        "src/XMonad/Operations.hs"
+      ],
+      "est_appele_par": [
+        "src/XMonad.hs",
+        "src/XMonad/Config.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/XMonad/Main.hs": {
+      "fichier": "src/XMonad/Main.hs",
+      "langage": "haskell",
+      "lignes": 464,
+      "taille_bytes": 17986,
+      "entrees": [
+        "Control.Monad",
+        "Control.Monad.Reader",
+        "Control.Monad.State",
+        "Data.Bits",
+        "Data.Foldable",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Monoid",
+        "Data.Version",
+        "Graphics.X11.Xinerama",
+        "Graphics.X11.Xlib",
+        "Graphics.X11.Xlib.Extras",
+        "Graphics.X11.Xrandr",
+        "Paths_xmonad",
+        "System.Directory",
+        "System.Environment",
+        "System.Exit",
+        "System.FilePath",
+        "System.IO",
+        "System.Info",
+        "System.Locale.SetLocale",
+        "System.Posix.Process",
+        "XMonad.Core",
+        "XMonad.Operations",
+        "XMonad.StackSet",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/Core.hs",
+        "src/XMonad/Operations.hs",
+        "src/XMonad/StackSet.hs"
+      ],
+      "est_appele_par": [
+        "src/XMonad.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/XMonad/StackSet.hs": {
+      "fichier": "src/XMonad/StackSet.hs",
+      "langage": "haskell",
+      "lignes": 589,
+      "taille_bytes": 24211,
+      "entrees": [
+        "Control.Applicative.Backwards",
+        "Data.Foldable",
+        "Data.List",
+        "Data.List.NonEmpty",
+        "Data.Maybe",
+        "Prelude",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [],
+      "est_appele_par": [
+        "src/XMonad/Core.hs",
+        "src/XMonad/Main.hs",
+        "tests/Instances.hs",
+        "tests/Properties.hs",
+        "tests/Properties/Delete.hs",
+        "tests/Properties/Failure.hs",
+        "tests/Properties/Floating.hs",
+        "tests/Properties/Focus.hs",
+        "tests/Properties/GreedyView.hs",
+        "tests/Properties/Insert.hs",
+        "tests/Properties/Layout/Full.hs",
+        "tests/Properties/Layout/Tall.hs",
+        "tests/Properties/Screen.hs",
+        "tests/Properties/Shift.hs",
+        "tests/Properties/Stack.hs",
+        "tests/Properties/StackSet.hs",
+        "tests/Properties/Swap.hs",
+        "tests/Properties/View.hs",
+        "tests/Properties/Workspace.hs",
+        "tests/Utils.hs"
+      ],
+      "type_noeud": "hub"
+    },
+    "src/XMonad/Layout.hs": {
+      "fichier": "src/XMonad/Layout.hs",
+      "langage": "haskell",
+      "lignes": 258,
+      "taille_bytes": 10352,
+      "entrees": [
+        "Control.Arrow",
+        "Control.Monad",
+        "Data.Maybe",
+        "Graphics.X11",
+        "Graphics.X11.Xlib.Extras",
+        "XMonad.Core",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/Core.hs"
+      ],
+      "est_appele_par": [
+        "src/XMonad.hs",
+        "src/XMonad/Config.hs",
+        "src/XMonad/Operations.hs",
+        "tests/Properties/Layout/Full.hs",
+        "tests/Properties/Layout/Tall.hs",
+        "tests/Properties/Screen.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/XMonad/Config.hs": {
+      "fichier": "src/XMonad/Config.hs",
+      "langage": "haskell",
+      "lignes": 339,
+      "taille_bytes": 14565,
+      "entrees": [
+        "Data.Bits",
+        "Data.Default.Class",
+        "Data.Monoid",
+        "Graphics.X11.Xlib",
+        "Graphics.X11.Xlib.Extras",
+        "System.Exit",
+        "XMonad.Core",
+        "XMonad.Layout",
+        "XMonad.ManageHook",
+        "XMonad.Operations",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/Core.hs",
+        "src/XMonad/Layout.hs",
+        "src/XMonad/ManageHook.hs",
+        "src/XMonad/Operations.hs"
+      ],
+      "est_appele_par": [
+        "src/XMonad.hs"
+      ],
+      "type_noeud": "standard"
+    },
+    "src/XMonad/Operations.hs": {
+      "fichier": "src/XMonad/Operations.hs",
+      "langage": "haskell",
+      "lignes": 899,
+      "taille_bytes": 36768,
+      "entrees": [
+        "Control.Arrow",
+        "Control.Monad",
+        "Control.Monad.Fix",
+        "Control.Monad.Reader",
+        "Control.Monad.State",
+        "Data.Bits",
+        "Data.Function",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Monoid",
+        "Data.Ratio",
+        "Graphics.X11.Xinerama",
+        "Graphics.X11.Xlib",
+        "Graphics.X11.Xlib.Extras",
+        "System.Directory",
+        "System.IO",
+        "System.Posix.Process",
+        "XMonad.Core",
+        "XMonad.Layout",
+        "qualified"
+      ],
+      "sorties": [],
+      "appelle": [
+        "src/XMonad/Core.hs",
+        "src/XMonad/Layout.hs"
+      ],
+      "est_appele_par": [
+        "src/XMonad.hs",
+        "src/XMonad/Config.hs",
+        "src/XMonad/Main.hs",
+        "src/XMonad/ManageHook.hs",
+        "tests/Properties/Screen.hs"
+      ],
+      "type_noeud": "central"
+    },
+    "src/XMonad/Core.hs": {
+      "fichier": "src/XMonad/Core.hs",
+      "langage": "haskell",
+      "lignes": 896,
+      "taille_bytes": 38372,
+      "entrees": [
+        "Control.Applicative",
+        "Control.Exception",
+        "Control.Monad",
+        "Control.Monad.Fail",
+        "Control.Monad.Fix",
+        "Control.Monad.Reader",
+        "Control.Monad.State",
+        "Data.Char",
+        "Data.Default.Class",
+        "Data.List",
+        "Data.Maybe",
+        "Data.Monoid",
+        "Data.Semigroup",
+        "Data.Time.Clock",
+        "Data.Traversable",
+        "Data.Typeable",
+        "Graphics.X11.Xlib",
+        "Graphics.X11.Xlib.Extras",
+        "Prelude",
+        "System.Directory",
+        "System.Environment",
+        "System.Exit",
+        "System.FilePath",
+        "System.IO",
+        "System.Info",
+        "System.Posix.Env",
+        "System.Posix.IO",
+        "System.Posix.Process",
+        "System.Posix.Signals",
+        "System.Posix.Types",
+        "System.Process",
+        "XMonad.StackSet",
+        "qualified"
+      ],
+      "sorties": [
+        "class Typeable",
+        "type Directories",
+        "type ManageHook",
+        "type WindowSet",
+        "type WindowSpace",
+        "type WorkspaceId"
+      ],
+      "appelle": [
+        "src/XMonad/StackSet.hs"
+      ],
+      "est_appele_par": [
+        "src/XMonad.hs",
+        "src/XMonad/Config.hs",
+        "src/XMonad/Layout.hs",
+        "src/XMonad/Main.hs",
+        "src/XMonad/ManageHook.hs",
+        "src/XMonad/Operations.hs",
+        "tests/Properties/Layout/Full.hs",
+        "tests/Properties/Layout/Tall.hs"
+      ],
+      "type_noeud": "hub"
+    }
+  },
+  "edges": [
+    {
+      "de": "Main.hs",
+      "vers": "src/XMonad.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Utils.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Instances.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Instances.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Delete.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Failure.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Floating.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Focus.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/GreedyView.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Insert.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Layout/Full.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Layout/Tall.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Screen.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Shift.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Stack.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Swap.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/View.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties.hs",
+      "vers": "tests/Properties/Workspace.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Floating.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Floating.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Insert.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Insert.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Insert.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/View.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/View.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/View.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Workspace.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Workspace.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Workspace.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Failure.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/StackSet.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/StackSet.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/StackSet.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Delete.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Delete.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Delete.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Screen.hs",
+      "vers": "src/XMonad/Layout.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Screen.hs",
+      "vers": "src/XMonad/Operations.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Screen.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Screen.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Screen.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Stack.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Stack.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Swap.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Swap.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Swap.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/GreedyView.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/GreedyView.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/GreedyView.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Shift.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Shift.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Shift.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Focus.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Focus.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Focus.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Layout/Full.hs",
+      "vers": "src/XMonad/Core.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Layout/Full.hs",
+      "vers": "src/XMonad/Layout.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Layout/Full.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Layout/Full.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Layout/Tall.hs",
+      "vers": "src/XMonad/Core.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Layout/Tall.hs",
+      "vers": "src/XMonad/Layout.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Layout/Tall.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Layout/Tall.hs",
+      "vers": "tests/Instances.hs",
+      "type": "interne"
+    },
+    {
+      "de": "tests/Properties/Layout/Tall.hs",
+      "vers": "tests/Utils.hs",
+      "type": "interne"
+    },
+    {
+      "de": "man/xmonad.hs",
+      "vers": "src/XMonad.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad.hs",
+      "vers": "src/XMonad/Config.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad.hs",
+      "vers": "src/XMonad/Core.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad.hs",
+      "vers": "src/XMonad/Layout.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad.hs",
+      "vers": "src/XMonad/Main.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad.hs",
+      "vers": "src/XMonad/ManageHook.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad.hs",
+      "vers": "src/XMonad/Operations.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/ManageHook.hs",
+      "vers": "src/XMonad/Core.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/ManageHook.hs",
+      "vers": "src/XMonad/Operations.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Main.hs",
+      "vers": "src/XMonad/Core.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Main.hs",
+      "vers": "src/XMonad/Operations.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Main.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Layout.hs",
+      "vers": "src/XMonad/Core.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Config.hs",
+      "vers": "src/XMonad/Core.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Config.hs",
+      "vers": "src/XMonad/Layout.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Config.hs",
+      "vers": "src/XMonad/ManageHook.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Config.hs",
+      "vers": "src/XMonad/Operations.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Operations.hs",
+      "vers": "src/XMonad/Core.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Operations.hs",
+      "vers": "src/XMonad/Layout.hs",
+      "type": "interne"
+    },
+    {
+      "de": "src/XMonad/Core.hs",
+      "vers": "src/XMonad/StackSet.hs",
+      "type": "interne"
+    }
+  ],
+  "patterns": [
+    "hub → 'tests/Utils.hs' (in=12, 34% du projet)",
+    "hub → 'tests/Instances.hs' (in=15, 43% du projet)",
+    "point_entree → 'tests/Properties.hs'",
+    "point_entree → 'tests/Properties/StackSet.hs'",
+    "hub → 'src/XMonad/StackSet.hs' (in=20, 57% du projet)",
+    "central → 'src/XMonad/Operations.hs' (in=5, out=2)",
+    "hub → 'src/XMonad/Core.hs' (in=8, 23% du projet)"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "projet": "zpm",
+    "schema": "universal-graph-extractor v3.0",
+    "langages": {
+      "zig": 3
+    },
+    "official_runtime": true
+  },
+  "stats": {
+    "fichiers_total": 3,
+    "edges_total": 0,
+    "edges_circulaires": 0,
+    "noeuds_centraux": 0,
+    "noeuds_feuilles": 0,
+    "noeuds_hubs": 0,
+    "points_entree": 0,
+    "fichier_plus_appele": "build.zig"
+  },
+  "noeuds": {
+    "build.zig": {
+      "fichier": "build.zig",
+      "langage": "zig",
+      "lignes": 24,
+      "taille_bytes": 680,
+      "entrees": [],
+      "sorties": [
+        "const client_exe",
+        "const optimize",
+        "const server_exe",
+        "const std",
+        "const target",
+        "pub fn build"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/client/client-main.zig": {
+      "fichier": "src/client/client-main.zig",
+      "langage": "zig",
+      "lignes": 5,
+      "taille_bytes": 65,
+      "entrees": [],
+      "sorties": [
+        "const std",
+        "pub fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    },
+    "src/server/server-main.zig": {
+      "fichier": "src/server/server-main.zig",
+      "langage": "zig",
+      "lignes": 5,
+      "taille_bytes": 65,
+      "entrees": [],
+      "sorties": [
+        "const std",
+        "pub fn main"
+      ],
+      "appelle": [],
+      "est_appele_par": [],
+      "type_noeud": "standard"
+    }
+  },
+  "edges": [],
+  "patterns": []
+}
