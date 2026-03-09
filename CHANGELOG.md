@@ -1,3 +1,25 @@
+## [1.1.0-beta] — 2026-03-09
+
+### Added
+- `graphruntime add <source>` — Ajout de n'importe quelle source au registry local
+  - Accepte : `./local`, `github:user/repo`, `pip:pkg`, `npm:pkg`, `cargo:crate`, URL directe
+  - Auto-détection du nom et du langage
+  - Met à jour `~/.graphruntime/registry/index.json`
+  - Options : `--name`, `--language`, `--domain`, `--output`, `--registry`, `--no-index`
+- `graphruntime list` — Liste le registry local ou distant
+  - Filtres : `--language`, `--domain`, `--custom`, `--remote`
+  - Vue tableau avec nombre de nodes/edges par entrée
+
+### Registry
+- **331 packages** pré-analysés disponibles (vs 6 au lancement)
+- Couverture : 22 langages × domaines (backend, ai, infra, frontend, data, tools...)
+- Sources : PyPI top-downloads / npm API / crates.io API / GitHub stars
+- Accès : `graphruntime list --remote` ou `graphruntime pull <package>`
+
+### Improved
+- `graphruntime pull` — Recherche dans tous les dossiers langues du registry distant
+- `graphruntime config set` — Masque la clé API dans la sortie
+
 # Changelog
 
 All notable changes to GraphRuntime are documented here.

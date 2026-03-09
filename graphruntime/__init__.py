@@ -1,5 +1,5 @@
 """GraphRuntime — Universal Architecture Graph CLI"""
-__version__ = "1.0.0-beta"
+__version__ = "1.1.0-beta"
 __author__  = "Daouda Abdoul Anzize"
 
 from graphruntime.extractor import Extractor
