@@ -8,30 +8,6 @@
   <img src="assets/how-it-works.svg" alt="How GraphRuntime Works" width="100%"/>
 </p>
 
-<p align="center">
-  <a href="https://pypi.org/project/graphruntime/">
-    <img src="https://img.shields.io/pypi/v/graphruntime?style=flat-square&color=0ea5e9&label=PyPI&logo=python&logoColor=white" alt="PyPI version"/>
-  </a>
-  <a href="https://pypi.org/project/graphruntime/">
-    <img src="https://img.shields.io/pypi/dm/graphruntime?style=flat-square&color=8b5cf6&label=downloads%2Fmonth&logo=pypi&logoColor=white" alt="Downloads"/>
-  </a>
-  <a href="https://pypi.org/project/graphruntime/">
-    <img src="https://img.shields.io/pypi/pyversions/graphruntime?style=flat-square&color=10b981&logo=python&logoColor=white" alt="Python versions"/>
-  </a>
-  <a href="https://github.com/tryboy869/graphruntime/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/tryboy869/graphruntime?style=flat-square&color=f59e0b" alt="License"/>
-  </a>
-  <a href="https://github.com/tryboy869/graphruntime/stargazers">
-    <img src="https://img.shields.io/github/stars/tryboy869/graphruntime?style=flat-square&color=facc15&logo=github" alt="Stars"/>
-  </a>
-  <a href="https://github.com/tryboy869/graphruntime/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/tryboy869/graphruntime/ci.yml?branch=main&style=flat-square&label=CI&logo=github-actions&logoColor=white" alt="CI"/>
-  </a>
-  <img src="https://img.shields.io/badge/languages-42-f59e0b?style=flat-square&logo=code&logoColor=white" alt="42 languages"/>
-  <a href="https://github.com/tryboy869/graphruntime/issues">
-    <img src="https://img.shields.io/github/issues/tryboy869/graphruntime?style=flat-square&color=ef4444&logo=github" alt="Issues"/>
-  </a>
-</p>
 
 ---
 
