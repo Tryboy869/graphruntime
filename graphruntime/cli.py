@@ -15,10 +15,47 @@ from rich import print as rprint
 
 console = Console()
 
-VERSION        = "1.1.0-beta"
+VERSION = "2.0.0-beta"
 REGISTRY_BASE  = "https://raw.githubusercontent.com/tryboy869/graphruntime/main/registry"
 REGISTRY_INDEX = f"{REGISTRY_BASE}/index.json"
 CONFIG_PATH    = Path.home() / ".graphruntime" / "config.json"
+
+# ── SKILL.md — auto-injection dans chaque appel LLM ─────────────
+_SKILL_CACHE: dict = {"content": None}
+
+def _load_skill() -> str:
+    """Charge SKILL.md depuis GitHub (cache session)."""
+    if _SKILL_CACHE["content"] is not None:
+        return _SKILL_CACHE["content"]
+    try:
+        import urllib.request
+        url = "https://raw.githubusercontent.com/tryboy869/graphruntime/main/SKILL.md"
+        with urllib.request.urlopen(url, timeout=5) as resp:
+            _SKILL_CACHE["content"] = resp.read().decode("utf-8")
+    except Exception:
+        _SKILL_CACHE["content"] = ""
+    return _SKILL_CACHE["content"]
+
+def _system_prompt() -> str:
+    skill = _load_skill()
+    base  = (
+        "You are an expert software architect agent using GraphRuntime v2.0.\n"
+        "You select packages from the catalogue, extract their architecture graphs live, "
+        "analyze them, and generate production-ready runtime.json files.\n\n"
+    )
+    if skill:
+        base += f"SKILL.md (read before any action):\n{skill}\n\n"
+    base += (
+        "CRITICAL RULES:\n"
+        "- urllib3/requests/httpx = http_client ONLY — never cache\n"
+        "- koin/dagger/hilt = dependency_injection ONLY — never monitoring\n"
+        "- mocha/vitest/jest/rspec = testing ONLY — never production\n"
+        "- Build realistic topologies: frontend→api→db (not everything→api)\n"
+        "- entry_point must be a real source file, never a test file\n"
+    )
+    return base
+
+
 LOCAL_REGISTRY = Path.home() / ".graphruntime" / "registry"
 
 # ── Config ────────────────────────────────────────────────────────

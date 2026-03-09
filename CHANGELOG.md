@@ -1,3 +1,40 @@
+## [2.0.0-beta] — 2026-03-09
+
+### Architecture v2.0 — Registry-as-catalogue + Live extraction
+
+#### Breaking change
+- Les graph.json pré-calculés sont supprimés du registry
+- Le registry devient un **catalogue léger** (`registry/catalogue.json`, ~109KB)
+- Chaque entrée : `name`, `language`, `source`, `description`, `roles`, `stars`
+
+#### Nouveau : `graphruntime goal` — agent LLM complet
+```bash
+graphruntime goal "application de chat temps réel"
+```
+L'agent :
+1. Charge le catalogue léger
+2. Sélectionne les packages selon l'objectif et leurs `roles[]`
+3. Extrait les graphs **en live** depuis `github:user/repo`
+4. Analyse chaque graph frais (vraie compréhension architecturale)
+5. Génère le `runtime.json` avec topologie réaliste
+
+#### Nouveau : `agent.py` — GoalAgent
+- `GoalAgent.accomplish(objective)` — pipeline complet en une ligne
+- `extract_live(source)` — extraction depuis github/pip/npm/cargo
+- `summarize_graph()` — résumé compact pour le contexte LLM
+
+#### Amélioration : SKILL.md injecté automatiquement
+- `call_llm()` charge SKILL.md depuis GitHub (cache session)
+- Injecté comme system prompt à chaque appel LLM
+- Fonctionne avec Groq, OpenAI, Anthropic, Ollama
+- L'utilisateur dit l'objectif — l'IA comprend le format et les règles
+
+#### Pourquoi ce changement ?
+- Les graphs pré-calculés étaient statiques et souvent mal interprétés
+- Le LLM qui extrait lui-même comprend vraiment ce qu'il analyse
+- Le catalogue 200KB remplace 70MB de graph.json
+- Plus de `urllib3` assigné comme "cache" — l'IA lit le graph frais
+
 ## [1.1.0-beta] — 2026-03-09
 
 ### Added
